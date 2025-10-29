@@ -1,29 +1,80 @@
-# ShipFast — Javascript
+# Mubarak Muse - Personal Website
 
-Hey maker 👋 it's Marc from [ShipFast](https://shipfa.st/docs). Let's get your startup off the ground, FAST ⚡️
+Personal website built with Next.js and ShipFast boilerplate.
 
-<sub>**Watch/Star the repo to be notified when updates are pushed**</sub>
+## Features
 
-## Get Started
+- 🚀 Next.js 14 with App Router
+- 🎨 Tailwind CSS & DaisyUI
+- 🔐 Optional Supabase Authentication
+- 💳 Stripe Integration (optional)
+- 📧 Email functionality with Mailgun
+- 🤖 OpenAI integration
+- 📱 Responsive design
 
-1. Follow the [Get Started Tutorial](https://shipfa.st/docs) to clone the repo and run your local server 💻
+## Getting Started
 
-<sub>**Looking for the /pages router version?** Use this [documentation](https://shipfa.st/docs-old) instead</sub>
+### Prerequisites
 
-2. Follow the [Ship In 5 Minutes Tutorial](https://shipfa.st/docs/tutorials/ship-in-5-minutes) to learn the foundation and ship your app quickly ⚡️
+- Node.js 18+ 
+- npm or yarn
 
-## Links
+### Installation
 
-- [📚 Documentation](https://shipfa.st/docs)
-- [📣 Updates](https://shipfast.beehiiv.com/)
-- [🧑‍💻 Discord](https://shipfa.st/dashboard)
+1. Clone the repository:
+```bash
+git clone https://github.com/mubarakMuse/mubarakmuse.git
+cd mubarakmuse
+```
 
-## Support
+2. Install dependencies:
+```bash
+npm install
+```
 
-Reach out to me on [Twitter](https://twitter.com/marc_louvion) or marc@shipfa.st
+3. Create a `.env.local` file in the root directory:
+```env
+# Supabase (optional)
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
-\_
+# Stripe (optional)
+STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_WEBHOOK_SECRET=your_webhook_secret
 
-Let's ship it, FAST ⚡️
+# Mailgun (optional)
+MAILGUN_API_KEY=your_mailgun_api_key
 
-P.S. Want to showcase your startups? Get your [Indie Page](https://indiepa.ge?ref=shipfast_readme) and share your entrepreneurial journey. Join 2,732 founders ⭐️
+# OpenAI (optional)
+OPENAI_API_KEY=your_openai_api_key
+
+# Site URL
+SITE_URL=http://localhost:3000
+```
+
+4. Run the development server:
+```bash
+npm run dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Configuration
+
+Edit `config.js` to customize:
+- App name and description
+- Domain name
+- Stripe pricing plans
+- Mailgun settings
+- Theme colors
+
+## Deployment
+
+The easiest way to deploy is using [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mubarakMuse/mubarakmuse)
+
+## License
+
+MIT

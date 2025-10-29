@@ -11,6 +11,10 @@ export async function POST(req) {
     return NextResponse.json({ error: "Email is required" }, { status: 400 });
   }
 
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+    return NextResponse.json({ error: "Database not configured" }, { status: 500 });
+  }
+
   try {
     const supabase = createRouteHandlerClient({ cookies });
     await supabase.from("leads").insert({ email: body.email });

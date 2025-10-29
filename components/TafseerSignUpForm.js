@@ -11,13 +11,21 @@ const TafseerSignUpForm = () => {
   const [messageType, setMessageType] = useState(null); // Initialize message type
   const [formSubmitted, setFormSubmitted] = useState(false); // Track form submission
 
-  const supabase = new SupabaseClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-  );
+  const supabase = process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY 
+    ? new SupabaseClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+      )
+    : null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!supabase) {
+      setMessage('Database not configured. Please contact support.');
+      setMessageType('error');
+      return;
+    }
 
     try {
       const { error } = await supabase

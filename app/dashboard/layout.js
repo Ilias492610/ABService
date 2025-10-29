@@ -9,6 +9,11 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 // You can also add custom static UI elements like a Navbar, Sidebar, Footer, etc..
 // See https://shipfa.st/docs/tutorials/private-page
 export default async function LayoutPrivate({ children }) {
+  // Skip auth check if Supabase credentials are not configured
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+    return <>{children}</>;
+  }
+
   const supabase = createServerComponentClient({ cookies });
 
   const {
