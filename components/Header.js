@@ -4,26 +4,48 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import ButtonSignin from "./ButtonSignin";
 import logo from "@/app/icon.png";
 import config from "@/config";
 
 const links = [
   {
-    href: "/#pricing",
-    label: "Pricing",
+    href: "/",
+    label: "Home",
   },
   {
-    href: "/#testimonials",
-    label: "Reviews",
+    href: "/onderhoud",
+    label: "Onderhoud",
   },
   {
-    href: "/#faq",
-    label: "FAQ",
+    href: "/herstelling",
+    label: "Herstelling",
+  },
+  {
+    href: "/installaties",
+    label: "Installaties",
+  },
+  {
+    href: "/keuring",
+    label: "Keuring",
+  },
+  {
+    href: "/foutcodes",
+    label: "Foutcodes",
+  },
+  {
+    href: "/contact",
+    label: "Contact",
   },
 ];
 
-const cta = <ButtonSignin extraStyle="btn-primary" />;
+const cta = (
+  <a 
+    href="tel:0495799899" 
+    className="btn btn-primary"
+  >
+    Bel: 0495 79 98 99
+  </a>
+);
 
 // A header with a logo on the left, links in the center (like Pricing, etc...), and a CTA (like Get Started or Login) on the right.
 // The header is responsive, and on mobile, the links are hidden behind a burger button.
