@@ -29,10 +29,6 @@ const links = [
     label: "Keuring",
   },
   {
-    href: "/foutcodes",
-    label: "Foutcodes",
-  },
-  {
     href: "/contact",
     label: "Contact",
   },

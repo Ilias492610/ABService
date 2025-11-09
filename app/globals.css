@@ -23,7 +23,7 @@ progress::-webkit-progress-value {
 
 /* Custom colors for AB Service */
 :root {
-  --ab-teal: #2C9BA0;
+  --ab-teal: #2c9ba0;
   --ab-teal-dark: #1a7c80;
   --ab-teal-light: #e0f7f8;
 }

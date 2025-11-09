@@ -1,7 +1,7 @@
 "use client";
 
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Crisp } from "crisp-sdk-web";
 import NextTopLoader from "nextjs-toploader";
@@ -14,11 +14,31 @@ import config from "@/config";
 const CrispChat = () => {
   const pathname = usePathname();
 
-  const supabase = createClientComponentClient();
+  const hasSupabaseEnv =
+    typeof process !== "undefined" &&
+    process.env.NEXT_PUBLIC_SUPABASE_URL &&
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+  const supabase = useMemo(() => {
+    if (!hasSupabaseEnv) {
+      if (process.env.NODE_ENV === "development") {
+        // eslint-disable-next-line no-console
+        console.warn(
+          "Supabase environment variables are missing. Auth-based Crisp identification is disabled."
+        );
+      }
+      return null;
+    }
+    return createClientComponentClient();
+  }, [hasSupabaseEnv]);
   const [data, setData] = useState(null);
 
   // This is used to get the user data from Supabase Auth (if logged in) => user ID is used to identify users in Crisp
   useEffect(() => {
+    if (!supabase) {
+      return;
+    }
+
     const getUser = async () => {
       const {
         data: { session },
@@ -29,7 +49,7 @@ const CrispChat = () => {
       }
     };
     getUser();
-  },);
+  }, [supabase]);
 
   useEffect(() => {
     if (config?.crisp?.id) {
@@ -52,8 +72,8 @@ const CrispChat = () => {
 
   // Add User Unique ID to Crisp to easily identify users when reaching support (optional)
   useEffect(() => {
-    if (data?.user && config?.crisp?.id) {
-      Crisp.session.setData({ userId: data.user?.id });
+    if (data?.id && config?.crisp?.id) {
+      Crisp.session.setData({ userId: data.id });
     }
   }, [data]);
 

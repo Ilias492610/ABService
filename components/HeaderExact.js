@@ -106,12 +106,6 @@ const HeaderExact = () => {
                 </svg>
               </Link>
               <Link href="/keuring" className="text-gray-900 hover:text-[#2C9BA0] font-medium transition-colors uppercase text-sm">Keuring</Link>
-              <Link href="/foutcodes" className="text-gray-900 hover:text-[#2C9BA0] font-medium transition-colors uppercase text-sm flex items-center gap-1">
-                Foutcodes
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </Link>
               <Link href="/contact" className="text-gray-900 hover:text-[#2C9BA0] font-medium transition-colors uppercase text-sm">Contact</Link>
             </div>
 
@@ -134,7 +128,6 @@ const HeaderExact = () => {
               <Link href="/herstelling" className="block py-2 text-gray-900 font-medium uppercase text-sm">Herstelling</Link>
               <Link href="/installaties" className="block py-2 text-gray-900 font-medium uppercase text-sm">Installaties</Link>
               <Link href="/keuring" className="block py-2 text-gray-900 font-medium uppercase text-sm">Keuring</Link>
-              <Link href="/foutcodes" className="block py-2 text-gray-900 font-medium uppercase text-sm">Foutcodes</Link>
               <Link href="/contact" className="block py-2 text-gray-900 font-medium uppercase text-sm">Contact</Link>
             </div>
           </div>
