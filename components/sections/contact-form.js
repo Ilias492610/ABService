@@ -30,7 +30,7 @@ const ContactForm = () => {
                   type="text"
                   placeholder={placeholder}
                   required={placeholder.includes('*')}
-                  className="w-full rounded-md border border-transparent bg-[#e8eaed] px-4 py-3.5 text-base text-[#111827] placeholder:text-[#6b7280] focus:border-[#5fa69a] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3d8b7b]/15"
+                  className="w-full rounded-md border border-transparent bg-[#e8eaed] px-4 py-3.5 text-base text-[#111827] placeholder:text-[#6b7280] focus:border-donkerblauw focus:bg-white focus:outline-none focus:ring-2 focus:ring-donkerblauw/15"
                 />
               ))}
             </div>
@@ -46,7 +46,7 @@ const ContactForm = () => {
                 <select
                   value={service}
                   onChange={(event) => setService(event.target.value)}
-                  className="w-full appearance-none rounded-md border border-transparent bg-[#e8eaed] px-4 py-3.5 text-base text-[#111827] focus:border-[#5fa69a] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3d8b7b]/15"
+                  className="w-full appearance-none rounded-md border border-transparent bg-[#e8eaed] px-4 py-3.5 text-base text-[#111827] focus:border-donkerblauw focus:bg-white focus:outline-none focus:ring-2 focus:ring-donkerblauw/15"
                 >
                   <option>Onderhoud van uw gasketel</option>
                   <option>Herstelling van uw gasketel</option>
@@ -71,29 +71,29 @@ const ContactForm = () => {
                   key={placeholder}
                   type="text"
                   placeholder={placeholder}
-                  className="w-full rounded-md border border-transparent bg-[#e8eaed] px-4 py-3.5 text-base text-[#111827] placeholder:text-[#6b7280] focus:border-[#5fa69a] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3d8b7b]/15"
+                  className="w-full rounded-md border border-transparent bg-[#e8eaed] px-4 py-3.5 text-base text-[#111827] placeholder:text-[#6b7280] focus:border-donkerblauw focus:bg-white focus:outline-none focus:ring-2 focus:ring-donkerblauw/15"
                 />
               ))}
             </div>
             <textarea
               placeholder="Extra informatie"
               rows={4}
-              className="mt-5 w-full rounded-md border border-transparent bg-[#e8eaed] px-4 py-3.5 text-base text-[#111827] placeholder:text-[#6b7280] focus:border-[#5fa69a] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3d8b7b]/15"
+              className="mt-5 w-full rounded-md border border-transparent bg-[#e8eaed] px-4 py-3.5 text-base text-[#111827] placeholder:text-[#6b7280] focus:border-donkerblauw focus:bg-white focus:outline-none focus:ring-2 focus:ring-donkerblauw/15"
             />
           </div>
 
           <div className="space-y-6 pt-2">
             <label className="flex cursor-pointer select-none items-center text-sm text-[#6b7280]">
-              <input type="checkbox" required className="mr-3 h-5 w-5 rounded border-2 border-[#d0d9d7] text-[#5fa69a] focus:ring-[#5fa69a]" />
+              <input type="checkbox" required className="mr-3 h-5 w-5 rounded border-2 border-[#d0d9d7] text-donkerblauw focus:ring-donkerblauw" />
               Ik ga akkoord met het{' '}
-              <a href="#" className="ml-1 font-medium text-[#2e857e] hover:underline">
-                privacybeleid
-              </a>
+                              <a href="/privacy-policy" className="underline text-donkerblauw hover:text-[#0e2a3d]">
+                  privacybeleid
+                </a>
               .
             </label>
             <button
               type="submit"
-              className="w-full rounded-md bg-[#5fa69a] px-8 py-3.5 text-base font-semibold uppercase tracking-wide text-white shadow-sm transition-colors hover:bg-[#4c8b82] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5fa69a] sm:w-auto"
+              className="w-full rounded-md bg-donkerblauw px-8 py-3.5 text-base font-semibold uppercase tracking-wide text-white shadow-sm transition-colors hover:bg-[#0e2a3d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-donkerblauw sm:w-auto"
             >
               Aanvraag verzenden
             </button>

@@ -3,33 +3,27 @@ import Image from 'next/image';
 const brands = [
   {
     name: 'Bosch',
-    logo:
-      'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/672c335b-5eb0-457c-9053-b96b5a0b4e0e-verwarmingbros-be/assets/images/bosch-3.png',
+    logo: '/bosch.png',
   },
   {
     name: 'Buderus',
-    logo:
-      'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/672c335b-5eb0-457c-9053-b96b5a0b4e0e-verwarmingbros-be/assets/images/buderus-4.png',
+    logo: '/buderus.png',
   },
   {
     name: 'Bulex',
-    logo:
-      'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/672c335b-5eb0-457c-9053-b96b5a0b4e0e-verwarmingbros-be/assets/images/bulex-5.png',
+    logo: '/bulex.png',
   },
   {
     name: 'Junkers',
-    logo:
-      'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/672c335b-5eb0-457c-9053-b96b5a0b4e0e-verwarmingbros-be/assets/images/junkers-6.png',
+    logo: '/junkers.png',
   },
   {
     name: 'Vaillant',
-    logo:
-      'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/672c335b-5eb0-457c-9053-b96b5a0b4e0e-verwarmingbros-be/assets/images/vaillant-7.png',
+    logo: '/vaillant.png',
   },
   {
     name: 'Viessmann',
-    logo:
-      'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/672c335b-5eb0-457c-9053-b96b5a0b4e0e-verwarmingbros-be/assets/images/viessmann-8.png',
+    logo: '/viessmann.png',
   },
 ];
 

@@ -6,37 +6,32 @@ import { ArrowRight, Check, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    label: 'Installatie van een nieuwe cv-ketel',
-    title: 'Verwarming en sanitair warm water',
+    label: 'Onderhoud & keuring',
+    title: 'Onderhoud en keuring van gasketels',
     description:
-      'Een offerte voor de vervanging van uw cv-ketel wordt volledig gratis opgesteld. Voor kleine of beperkte werken rekenen wij wel een interventievergoeding aan. De uiteindelijke prijs is steeds afhankelijk van uw specifieke situatie, uw persoonlijke voorkeuren en de gekozen technische oplossingen.',
+      'We plannen snel een erkende technicus in voor Antwerpen en omgeving. Van jaarlijks onderhoud tot attesten na een aanpassing.',
     features: [
-      'Gratis en vrijblijvende offerte',
-      'Begeleiding bij aanvraag premies en subsidies',
-      'Snelle en vakkundige service',
-      'Gebruik van kwaliteitsmerken en duurzame oplossingen',
-      'Professionele installatie door erkende techniekers',
+      'Reiniging en afstelling volgens voorschriften',
+      'Offerte vooraf zonder verrassingen',
+      'Attesten en rapporten onmiddellijk beschikbaar',
+      'Advies voor efficiënt en veilig gebruik',
     ],
-    image:
-      'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f15d975f-aef8-4250-b1e6-83d5198662e2-verwarmingbros-be/assets/images/offerte-13.jpg',
+    image: '/Installatie.png',
+    link: '/onderhoud',
   },
   {
-    label: 'Het hele jaar comfort met Haier airconditioning',
-    title: 'Klimaatregeling',
+    label: 'Airconditioning',
+    title: 'Airconditioning installatie en onderhoud',
     description:
-      'Door de warme zomers is een airco geen luxe meer, maar een slimme investering in comfort. Met een Haier airconditioner geniet u van koeling én energiezuinige verwarming. Verwarming Bros zorgt steeds voor een vakkundige installatie en vervanging.',
-    features: [],
-    image:
-      'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f15d975f-aef8-4250-b1e6-83d5198662e2-verwarmingbros-be/assets/images/Airomainpage-16.png',
-  },
-  {
-    label: 'Dagelijks zacht, kalkvrij water met WaterGenius',
-    title: 'Waterbehandelingssysteem',
-    description:
-      'Geniet elke dag van zacht, zuiver water en zeg vaarwel tegen kalkaanslag. Met een WaterGenius waterontharder kiest u voor meer comfort, stralend sanitair en een langere levensduur van uw toestellen. Verwarming Bros staat in voor professionele plaatsing én vervanging, steeds met de juiste expertise en zorg.',
-    features: [],
-    image:
-      'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f15d975f-aef8-4250-b1e6-83d5198662e2-verwarmingbros-be/assets/images/waterverzachtermainpage-14.png',
+      'We installeren en onderhouden airconditioningsystemen voor een aangenaam klimaat in huis of kantoor. Van advies tot volledige installatie.',
+    features: [
+      'Energie-efficiënte systemen en onderhoud',
+      'Snelle installatie met minimale hinder',
+      'Garantie op installatie en onderdelen',
+      'Onderhoudscontracten voor optimale prestaties',
+    ],
+    image: '/Klimaatregeling.png',
+    link: '/installaties/airconditioning',
   },
 ];
 
@@ -69,7 +64,7 @@ const FeaturedServicesCarousel = () => {
         <div className="relative overflow-hidden rounded-2xl bg-[#f6faf9] p-8 lg:p-12">
           <div className="grid gap-10 lg:grid-cols-[minmax(0,_45fr)_minmax(0,_55fr)] lg:items-center">
             <div className="order-2 flex flex-col lg:order-1">
-              <span className="mb-4 text-xs font-semibold uppercase tracking-[0.1em] text-[#2f7a6f]">
+              <span className="mb-4 text-xs font-semibold uppercase tracking-[0.1em] text-donkerblauw">
                 {activeSlide.label}
               </span>
               <h2 className="mb-4 text-[36px] font-bold leading-[1.3] text-[#1a2c3d]">
@@ -83,7 +78,7 @@ const FeaturedServicesCarousel = () => {
                 <ul className="mb-8 space-y-3">
                   {activeSlide.features.map((feature) => (
                     <li key={feature} className="flex items-start text-base text-[#5a6c7d]">
-                      <Check className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-[#48bb78]" />
+                      <Check className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-donkerblauw" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -91,8 +86,8 @@ const FeaturedServicesCarousel = () => {
               )}
 
               <a
-                href="#"
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[#2f7a6f] px-6 text-base font-semibold text-white transition-transform duration-200 hover:scale-105 hover:bg-[#27685f]"
+                href={activeSlide.link}
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-donkerblauw px-6 text-base font-semibold text-white transition-transform duration-200 hover:scale-105 hover:bg-[#0e2a3d]"
               >
                 Meer informatie
                 <ArrowRight className="h-5 w-5" />
@@ -100,7 +95,7 @@ const FeaturedServicesCarousel = () => {
             </div>
 
             <div className="order-1 lg:order-2">
-              <div className="relative mx-auto aspect-square max-w-[520px] overflow-hidden rounded-xl bg-white shadow-[0_6px_18px_rgba(0,0,0,0.1)]">
+              <div className="relative mx-auto aspect-square max-w-[600px] overflow-hidden rounded-xl bg-white shadow-[0_6px_18px_rgba(0,0,0,0.1)]">
                 <Image
                   key={activeSlide.image}
                   src={activeSlide.image}
@@ -108,7 +103,7 @@ const FeaturedServicesCarousel = () => {
                   fill
                   unoptimized
                   sizes="(max-width: 768px) 100vw, 520px"
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </div>
@@ -140,7 +135,7 @@ const FeaturedServicesCarousel = () => {
               onClick={() => setCurrent(index)}
               aria-label={`Ga naar slide ${index + 1}`}
               className={`h-2.5 w-2.5 rounded-full transition-colors ${
-                current === index ? 'bg-[#2f7a6f]' : 'bg-[#d1d5db]'
+                current === index ? 'bg-donkerblauw' : 'bg-[#d1d5db]'
               }`}
             />
           ))}

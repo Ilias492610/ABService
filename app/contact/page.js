@@ -11,6 +11,7 @@ import Footer from '@/components/sections/footer';
 import CookieConsentModal from '@/components/sections/cookie-consent-modal';
 import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
 import GoogleRatingWidget from '@/components/sections/google-rating-widget';
+import FadeInSection from '@/components/animations/FadeInSection';
 
 const ContactPage = () => {
   return (
@@ -18,13 +19,27 @@ const ContactPage = () => {
       <HeaderTopBar />
       <MainNavigation />
       <main>
-        <PageHero />
-        <UrgentRepairHero />
-        <ServiceBenefits />
-        <CvRepairServices />
-        <BrandLogosCarousel />
-        <GoogleReviews />
-        <ContactCta />
+        <FadeInSection>
+          <PageHero />
+        </FadeInSection>
+        <FadeInSection delay={0.1}>
+          <UrgentRepairHero />
+        </FadeInSection>
+        <FadeInSection delay={0.2}>
+          <ServiceBenefits />
+        </FadeInSection>
+        <FadeInSection delay={0.25}>
+          <CvRepairServices />
+        </FadeInSection>
+        <FadeInSection delay={0.3}>
+          <BrandLogosCarousel />
+        </FadeInSection>
+        <FadeInSection delay={0.35}>
+          <GoogleReviews />
+        </FadeInSection>
+        <FadeInSection delay={0.4}>
+          <ContactCta />
+        </FadeInSection>
       </main>
       <Footer />
       <CookieConsentModal />

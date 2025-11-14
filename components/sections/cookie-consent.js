@@ -128,7 +128,7 @@ const SettingsModal = ({ onAccept, onReject, onClose }) => {
                 <button
                   type="button"
                   onClick={() => setFullText(true)}
-                  className="font-semibold text-[#0f52ba]"
+                  className="font-semibold text-donkerblauw"
                 >
                   Toon meer
                 </button>
@@ -166,7 +166,7 @@ const SettingsModal = ({ onAccept, onReject, onClose }) => {
               <button
                 type="button"
                 onClick={onAccept}
-                className="rounded-[6px] bg-[#0f52ba] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#0d47a1]"
+                className="rounded-[6px] bg-donkerblauw px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#0e2a3d]"
               >
                 Accepteren
               </button>
@@ -194,6 +194,9 @@ const SettingsModal = ({ onAccept, onReject, onClose }) => {
 };
 
 const CookieConsent = () => {
+  // Temporarily disabled - return null to hide
+  return null;
+
   const [status, setStatus] = useState(null);
   const [showSettings, setShowSettings] = useState(false);
 
@@ -236,7 +239,7 @@ const CookieConsent = () => {
               Wij hechten waarde aan uw privacy
             </h2>
             <p className="mt-4 text-sm text-[#4a5d58]">
-              Wij gebruiken cookies om uw browse-ervaring te verbeteren, gepersonaliseerde advertenties of inhoud te tonen en ons verkeer te analyseren. Door op "Accepteren" te klikken, stemt u in met ons gebruik van cookies.
+              Wij gebruiken cookies om uw browse-ervaring te verbeteren, gepersonaliseerde advertenties of inhoud te tonen en ons verkeer te analyseren. Door op &quot;Accepteren&quot; te klikken, stemt u in met ons gebruik van cookies.
             </p>
             <div className="mt-6 flex flex-col gap-2.5 sm:flex-row">
               <button
@@ -256,7 +259,7 @@ const CookieConsent = () => {
               <button
                 type="button"
                 onClick={() => handleConsent('accepted')}
-                className="flex-1 rounded-[6px] bg-[#0f52ba] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#0d47a1]"
+                className="flex-1 rounded-[6px] bg-donkerblauw px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#0e2a3d]"
               >
                 Accepteren
               </button>

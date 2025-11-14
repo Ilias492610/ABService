@@ -3,34 +3,34 @@ import { ArrowRight, Check } from 'lucide-react';
 const obligations = [
   {
     title: 'Wettelijke verplichting',
-    description: 'Een tweejaarlijkse controle is verplicht in Vlaanderen.',
+    description: 'Een tweejaarlijkse controle is verplicht in Vlaanderen en wordt in Antwerpen actief gecontroleerd.',
   },
   {
     title: 'Veiligheid & efficiëntie',
-    description: 'Voorkomt storingen en zorgt voor optimaal rendement.',
+    description: 'Voorkomt storingen, CO-gevaar en houdt uw energieverbruik onder controle.',
   },
   {
     title: 'Verzekering',
-    description: 'Zonder keuringsattest riskeert u problemen bij schadegevallen.',
+    description: 'Met een geldig attest vermijdt u discussies bij schadegevallen of verhuur.',
   },
 ];
 
 const advantages = [
   {
     title: 'Grondige reiniging',
-    description: 'Behoudt het maximale rendement van uw ketel.',
+    description: 'Behoudt het maximale rendement van uw ketel en sanitair warm water.',
   },
   {
     title: 'Optimale werking',
-    description: 'Een correcte afstelling verlaagt het verbruik.',
+    description: 'Een correcte afstelling verlaagt het verbruik en verhoogt het comfort.',
   },
   {
     title: 'Minder storingen',
-    description: 'Voorkomt onverwachte defecten en duurdere herstellingen.',
+    description: 'Voorkomt onverwachte defecten tijdens koude dagen.',
   },
   {
     title: 'Ervaren techniekers',
-    description: 'Wij detecteren problemen vroegtijdig en geven advies.',
+    description: 'Lokale experts die problemen vroegtijdig detecteren en gericht advies geven.',
   },
 ];
 
@@ -39,14 +39,14 @@ const LegalInspection = () => {
     <section className="bg-white py-16 md:py-20">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-7">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-[#2f7a6f]">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-donkerblauw">
             wettelijke verplichting
           </p>
           <h2 className="text-3xl font-bold text-[#1a2c3d] md:text-4xl">
-            Tweejaarlijkse keuring is verplicht en slim
+            Tweejaarlijkse keuring in Antwerpen is verplicht en slim
           </h2>
           <p className="mt-4 text-base text-[#5a6c7d]">
-            Regelmatig onderhoud houdt uw ketel veilig, efficiënt en betrouwbaar. Wij zorgen voor een officieel attest zodat u volledig in orde bent met de regelgeving.
+            Regelmatig onderhoud houdt uw ketel veilig, efficiënt en betrouwbaar. Wij zorgen voor een officieel attest – perfect voor de Antwerpse stadsdiensten, verhuurders en verzekeraars.
           </p>
           <ul className="mt-8 space-y-4">
             {obligations.map((item) => (
@@ -58,13 +58,13 @@ const LegalInspection = () => {
               </li>
             ))}
           </ul>
-          <p className="mt-8 font-semibold text-[#1a2c3d]">Voorkom risico’s en plan tijdig een keuring.</p>
+          <p className="mt-8 font-semibold text-[#1a2c3d]">Voorkom risico’s en plan tijdig een keuring in Antwerpen.</p>
           <p className="mt-2 text-sm text-[#5a6c7d]">
-            Een slecht onderhouden ketel kan leiden tot gevaarlijke situaties en hoge kosten. Met een grondige controle van Verwarming Bros verwarmt u zorgeloos.
+            Een slecht onderhouden ketel kan leiden tot gevaarlijke situaties en hoge kosten. Met een grondige controle van AB Service verwarmt u zorgeloos.
           </p>
           <a
             href="/contact"
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-[#2f7a6f] px-8 py-3.5 text-sm font-semibold uppercase text-white shadow-[0_2px_4px_rgba(43,122,109,0.15)] transition-colors hover:bg-[#27685f]"
+            className="mt-8 inline-flex items-center gap-2 rounded-md bg-donkerblauw px-8 py-3.5 text-sm font-semibold uppercase text-white shadow-[0_2px_4px_rgba(21,58,91,0.15)] transition-colors hover:bg-[#0e2a3d]"
           >
             Maak online een afspraak
             <ArrowRight className="h-4 w-4" />

@@ -8,6 +8,15 @@ const Resume = () => {
         <header className="text-center">
           <h1 className="text-4xl font-semibold">Mubarak Muse</h1>
           <p className="text-gray-500">+16128149554 | mubarak014@gmail.com</p>
+          <div className="mt-4 flex justify-center">
+            <a
+              href="/Mubarak-Muse-Resume.pdf"
+              download
+              className="rounded-md bg-blue-600 px-5 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-700"
+            >
+              Download CV
+            </a>
+          </div>
           <div className="mt-4">
             <a
               href="https://www.linkedin.com/in/mubarak-muse"

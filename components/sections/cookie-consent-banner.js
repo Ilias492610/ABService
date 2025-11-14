@@ -3,19 +3,8 @@
 import { useEffect, useState } from 'react';
 
 const CookieConsentBanner = () => {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const timer = window.setTimeout(() => {
-      setVisible(true);
-    }, 500);
-
-    return () => window.clearTimeout(timer);
-  }, []);
-
-  if (!visible) {
-    return null;
-  }
+  // Temporarily disabled - return null to hide
+  return null;
 
   const hide = () => setVisible(false);
 
@@ -32,7 +21,7 @@ const CookieConsentBanner = () => {
           Wij hechten waarde aan uw privacy
         </h2>
         <p id="cookie-consent-description" className="mb-5 text-sm leading-[1.6] text-[#4b5563]">
-          Wij gebruiken cookies om uw browse-ervaring te verbeteren, gepersonaliseerde advertenties of inhoud te tonen en ons verkeer te analyseren. Door op "Accepteren" te klikken, stemt u in met ons gebruik van cookies.
+          Wij gebruiken cookies om uw browse-ervaring te verbeteren, gepersonaliseerde advertenties of inhoud te tonen en ons verkeer te analyseren. Door op &quot;Accepteren&quot; te klikken, stemt u in met ons gebruik van cookies.
         </p>
         <div className="grid grid-cols-3 gap-2 text-[13px] font-semibold">
           <button
@@ -52,7 +41,7 @@ const CookieConsentBanner = () => {
           <button
             type="button"
             onClick={hide}
-            className="rounded-md bg-[#2d7a6e] px-4 py-2.5 text-white transition hover:brightness-95"
+            className="rounded-md bg-donkerblauw px-4 py-2.5 text-white transition hover:brightness-95"
           >
             Accepteren
           </button>

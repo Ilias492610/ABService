@@ -1,25 +1,32 @@
-import Image from 'next/image';
+import { ShieldCheck, Timer, Tag } from 'lucide-react';
 
 const benefitsData = [
   {
-    icon: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f15d975f-aef8-4250-b1e6-83d5198662e2-verwarmingbros-be/assets/icons/kwaliteit-1.png',
-    title: 'Service van topkwaliteit',
-    description: 'Vakkundige en betrouwbare vakmannen.',
-    alt: 'Topkwaliteit icoon',
+    key: 'speed',
+    title: 'Zo snel mogelijk ter plaatse',
+    description: 'We plannen onmiddellijk een technieker in voor Antwerpen en omliggende gemeenten.',
   },
   {
-    icon: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f15d975f-aef8-4250-b1e6-83d5198662e2-verwarmingbros-be/assets/icons/time-managament-2.png',
-    title: 'Snel & efficiënt',
-    description: 'Snelle service met efficiënte oplossingen.',
-    alt: 'Snel en efficiënt icoon',
+    key: 'price',
+    title: 'Transparante prijzen',
+    description: 'Duidelijke tarieven vooraf, inclusief verplaatsing en materialen.',
   },
   {
-    icon: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f15d975f-aef8-4250-b1e6-83d5198662e2-verwarmingbros-be/assets/icons/best-price-3.png',
-    title: 'Marktconforme prijzen',
-    description: 'Kwaliteit aan eerlijke en transparante prijzen.',
-    alt: 'Marktconforme prijzen icoon',
+    key: 'quality',
+    title: 'Erkend vakmanschap',
+    description: 'Gecertificeerde loodgieters met meer dan 20 jaar ervaring.',
   },
 ];
+
+const renderIcon = (key) => {
+  const map = {
+    quality: ShieldCheck,
+    speed: Timer,
+    price: Tag,
+  };
+  const Icon = map[key] ?? ShieldCheck;
+  return <Icon size={40} strokeWidth={1.6} className="text-[#123247]" aria-hidden />;
+};
 
 const ThreeBenefits = () => {
   return (
@@ -32,7 +39,7 @@ const ThreeBenefits = () => {
               className="text-center transition-transform duration-300 ease-out hover:-translate-y-1"
             >
               <div className="mx-auto mb-5 flex h-[60px] w-[60px] items-center justify-center rounded-full bg-[#e8f4f2]">
-                <Image src={benefit.icon} alt={benefit.alt} width={32} height={32} unoptimized />
+                {renderIcon(benefit.key)}
               </div>
               <h3 className="mb-3 text-xl font-semibold text-[#1a2c3d]">{benefit.title}</h3>
               <p className="text-[15px] leading-[1.6] text-[#5a6c7d]">{benefit.description}</p>

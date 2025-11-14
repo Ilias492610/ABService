@@ -1,50 +1,87 @@
 import { CheckCircle2, TriangleAlert } from 'lucide-react';
 
-const benefits = [
-  {
-    title: 'Veiligheid',
-    description: 'Voorkomt koolmonoxidelekken en andere risico’s.',
+const contentByVariant = {
+  maintenance: {
+    badge: 'preventief onderhoud',
+    heading: 'Waarom jaarlijks onderhoud in Antwerpen loont',
+    intro:
+      'Onze Antwerpse techniekers houden uw gasketel, sanitair en airco in topconditie. Zo vermijdt u onverwachte uitval en blijft uw energieverbruik onder controle.',
+    benefits: [
+      {
+        title: 'Maximaal rendement',
+        description: 'Een gereinigde en afgestelde installatie verbruikt minder energie en houdt uw factuur laag.',
+      },
+      {
+        title: 'Geldige attesten',
+        description: 'U ontvangt het wettelijk onderhoudsverslag, ideaal voor verzekeringen en verhuur.',
+      },
+      {
+        title: 'Langere levensduur',
+        description: 'Preventief vervangen van pakkingen en onderdelen voorkomt dure vervangingen.',
+      },
+      {
+        title: 'Lokale opvolging',
+        description: 'Snelle service vanuit Antwerpen voor vragen of bijkomende interventies.',
+      },
+    ],
+    dangers: [
+      { description: 'Hoger gasverbruik door vervuilde branders of warmtewisselaars.' },
+      { description: 'Risico op CO-ontwikkeling of waterlekken door te late controle.' },
+      { description: 'Garantieproblemen doordat wettelijke onderhoudsattesten ontbreken.' },
+    ],
+    closing: 'Kies voor een onderhoudspartner in Antwerpen en geniet van zorgeloze warmte.',
   },
-  {
-    title: 'Efficiëntie',
-    description: 'Een vakkundig herstelde ketel verbruikt minder energie.',
+  repair: {
+    badge: 'efficiënt en betrouwbaar',
+    heading: 'Waarom tijdige herstelling belangrijk is',
+    intro:
+      'Onze ervaren techniekers herstellen cv-ketels en sanitair in Antwerpen snel en professioneel. Zo vermijdt u gevaarlijke situaties en bijkomende schade.',
+    benefits: [
+      {
+        title: 'Veiligheid',
+        description: 'Voorkomt koolmonoxidelekken en andere risico’s.',
+      },
+      {
+        title: 'Efficiëntie',
+        description: 'Een vakkundig herstelde ketel verbruikt minder energie.',
+      },
+      {
+        title: 'Langere levensduur',
+        description: 'Beperkt slijtage en voorkomt dure vervangingen.',
+      },
+      {
+        title: 'Betrouwbaarheid',
+        description: 'Geen onverwachte uitval tijdens koude dagen.',
+      },
+    ],
+    dangers: [
+      { description: 'Hogere energiekosten door verminderde prestaties.' },
+      { description: 'Risico op koolmonoxidevorming, gevaarlijk voor de gezondheid.' },
+      { description: 'Brandgevaar door ophoping van vuil en defecten.' },
+    ],
+    closing: 'Laat problemen meteen aanpakken en verwarm opnieuw met een gerust hart.',
   },
-  {
-    title: 'Langere levensduur',
-    description: 'Beperkt slijtage en voorkomt dure vervangingen.',
-  },
-  {
-    title: 'Betrouwbaarheid',
-    description: 'Geen onverwachte uitval tijdens koude dagen.',
-  },
-];
+};
 
-const dangers = [
-  { description: 'Hogere energiekosten door verminderde prestaties.' },
-  { description: 'Risico op koolmonoxidevorming, gevaarlijk voor de gezondheid.' },
-  { description: 'Brandgevaar door ophoping van vuil en defecten.' },
-];
+const BenefitsDangers = ({ variant = 'repair' }) => {
+  const { badge, heading, intro, benefits, dangers, closing } =
+    contentByVariant[variant] ?? contentByVariant.repair;
 
-const BenefitsDangers = () => {
   return (
     <section className="bg-[#f4f8f8] py-16 md:py-20">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-[#2f7a6f]">
-            efficient en betrouwbaar
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-donkerblauw">
+            {badge}
           </p>
-          <h2 className="text-[30px] font-bold leading-[1.3] text-[#1a2c3d] md:text-[36px]">
-            Waarom tijdige herstelling belangrijk is
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-[#5a6c7d]">
-            Onze ervaren techniekers herstellen uw cv-ketel snel en professioneel. Zo vermijdt u gevaarlijke situaties en onnodige kosten.
-          </p>
+          <h2 className="text-[30px] font-bold leading-[1.3] text-[#1a2c3d] md:text-[36px]">{heading}</h2>
+          <p className="mt-4 text-base leading-relaxed text-[#5a6c7d]">{intro}</p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
             <h3 className="mb-6 text-[24px] font-semibold text-[#1a2c3d]">
-              Voordelen van een snelle herstelling
+              Voordelen op een rij
             </h3>
             <ul className="space-y-4">
               {benefits.map((benefit) => (
@@ -73,9 +110,7 @@ const BenefitsDangers = () => {
           </div>
         </div>
 
-        <p className="mt-12 text-center text-base text-[#5a6c7d]">
-          Kies voor zekerheid en laat uw cv-ketel tijdig herstellen!
-        </p>
+        <p className="mt-12 text-center text-base text-[#5a6c7d]">{closing}</p>
       </div>
     </section>
   );

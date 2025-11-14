@@ -6,10 +6,10 @@ const MaintenanceHero = () => {
           id="maintenance-hero-heading"
           className="text-[32px] font-semibold leading-[1.2] tracking-[-0.02em] text-[#1a3847] md:text-[40px] lg:text-[48px]"
         >
-          Onderhoud van uw gasketel
+          Onderhoud van uw installatie in Antwerpen
         </h1>
         <p className="mt-4 text-base text-[#4a5d58] md:text-lg">
-          Regelmatig onderhoud zorgt voor een zorgeloze werking en optimaal rendement van uw ketel.
+          Jaarlijkse controle van gasketels, sanitair en airco door erkende Antwerpse techniekers voor maximaal rendement.
         </p>
       </div>
     </section>

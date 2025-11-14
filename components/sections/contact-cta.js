@@ -3,21 +3,21 @@ const ContactCta = () => {
     <section className="bg-[#dfe8e6] py-16">
       <div className="mx-auto max-w-[960px] px-6 text-center">
         <h2 className="text-[30px] font-bold leading-tight text-[#1a2c3d] md:text-4xl">
-          Klaar voor een zorgeloze verwarming?
+          Hulp nodig in Antwerpen of de rand?
         </h2>
         <p className="mt-4 text-base text-[#5a6c7d] md:text-lg">
-          Wij garanderen snelle en efficiënte oplossingen. Plan vandaag nog uw herstelling of onderhoud en geniet opnieuw van comfort.
+          Bel of plan uw afspraak voor onderhoud, herstellingen of keuringen in Antwerpen en omstreken. Ons team staat klaar met snelle service en duidelijke afspraken.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="tel:0495799899"
-            className="inline-flex items-center justify-center rounded-md bg-[#2f7a6f] px-8 py-3.5 text-sm font-semibold uppercase text-white transition-colors hover:bg-[#27685f]"
+            href="tel:0484906966"
+            className="inline-flex items-center justify-center rounded-md bg-donkerblauw px-8 py-3.5 text-sm font-semibold uppercase text-white transition-colors hover:bg-[#0e2a3d]"
           >
-            Bel: 0495 79 98 99
+            Bel: 0484 906 966
           </a>
           <a
             href="/contact"
-            className="inline-flex items-center justify-center rounded-md border border-[#2f7a6f] px-8 py-3.5 text-sm font-semibold uppercase text-[#2f7a6f] transition-colors hover:bg-[#2f7a6f]/5"
+            className="inline-flex items-center justify-center rounded-md border border-donkerblauw px-8 py-3.5 text-sm font-semibold uppercase text-donkerblauw transition-colors hover:bg-donkerblauw/5"
           >
             Contact opnemen
           </a>

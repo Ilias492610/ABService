@@ -11,7 +11,9 @@ const ServiceBenefits = () => {
     return <FaqSection />;
   }
 
-  return <BenefitsDangers />;
+  const variant = pathname?.startsWith('/onderhoud') ? 'maintenance' : 'repair';
+
+  return <BenefitsDangers variant={variant} />;
 };
 
 export default ServiceBenefits;

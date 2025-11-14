@@ -6,10 +6,10 @@ const HerstellingHero = () => {
           id="herstelling-hero-heading"
           className="text-[32px] font-semibold leading-[1.2] tracking-[-0.02em] text-[#1a3847] md:text-[40px] lg:text-[48px]"
         >
-          Herstelling van uw gasketel
+          Herstelling van uw gasketel in Antwerpen
         </h1>
         <p className="mt-4 text-base text-[#4a5d58] md:text-lg">
-          Een storing? Wij staan klaar om u snel en professioneel te helpen.
+          Storingen worden snel opgelost door onze lokale techniekers zodat uw woning opnieuw warm en veilig is.
         </p>
       </div>
     </section>

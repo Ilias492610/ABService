@@ -259,8 +259,8 @@ const CodingGuide = () => {
 
         <p className="mt-4 text-sm text-gray-500">
           or call us at{' '}
-          <a href="tel:+17653511316" className="text-indigo-600 hover:underline">
-            +1 (765)-351-1316
+          <a href="tel:0484906966" className="text-indigo-600 hover:underline">
+            0484 906 966
           </a>
         </p>
       </div>

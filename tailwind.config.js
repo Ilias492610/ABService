@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'donkerblauw': '#153A5B',
+        'goudgeel': '#E6B23A',
+        'wit': '#FFFFFF',
+        'achtergrond': '#F5F5F5',
+      },
       backgroundImage: {
         gradient:
           "linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82)",

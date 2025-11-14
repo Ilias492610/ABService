@@ -1,5 +1,3 @@
-"use client";
-
 import HeaderTopBar from '@/components/sections/header-top-bar';
 import MainNavigation from '@/components/sections/main-navigation';
 import PageHero from '@/components/sections/page-hero';
@@ -13,6 +11,26 @@ import Footer from '@/components/sections/footer';
 import CookieConsentModal from '@/components/sections/cookie-consent-modal';
 import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
 import GoogleRatingWidget from '@/components/sections/google-rating-widget';
+import FadeInSection from '@/components/animations/FadeInSection';
+import { getSEOTags } from '@/libs/seo';
+
+export const metadata = getSEOTags({
+  title: 'Onderhoud cv-ketel en sanitair Antwerpen | AB Service',
+  description:
+    'Jaarlijks onderhoud van gasketels, sanitair en airco in Antwerpen door erkende techniekers. Officiële attesten, snelle planning en persoonlijk advies.',
+  keywords: [
+    'cv onderhoud Antwerpen',
+    'ketel onderhoud Antwerpen',
+    'sanitair onderhoud Antwerpen',
+    'onderhoud warmtepomp Antwerpen',
+  ],
+  canonicalUrlRelative: '/onderhoud',
+  openGraph: {
+    title: 'Onderhoud door AB Service in Antwerpen',
+    description:
+      'Laat uw verwarming, sanitair en airco onderhouden door erkende Antwerpse techniekers van AB Service.',
+  },
+});
 
 const OnderhoudPage = () => {
   return (
@@ -20,13 +38,27 @@ const OnderhoudPage = () => {
       <HeaderTopBar />
       <MainNavigation />
       <main>
-        <PageHero />
-        <UrgentRepairHero />
-        <ServiceBenefits />
-        <CvRepairServices />
-        <BrandLogosCarousel />
-        <GoogleReviews />
-        <ContactCta />
+        <FadeInSection>
+          <PageHero />
+        </FadeInSection>
+        <FadeInSection delay={0.1}>
+          <UrgentRepairHero />
+        </FadeInSection>
+        <FadeInSection delay={0.2}>
+          <ServiceBenefits />
+        </FadeInSection>
+        <FadeInSection delay={0.25}>
+          <CvRepairServices />
+        </FadeInSection>
+        <FadeInSection delay={0.3}>
+          <BrandLogosCarousel />
+        </FadeInSection>
+        <FadeInSection delay={0.35}>
+          <GoogleReviews />
+        </FadeInSection>
+        <FadeInSection delay={0.4}>
+          <ContactCta />
+        </FadeInSection>
       </main>
       <Footer />
       <CookieConsentModal />

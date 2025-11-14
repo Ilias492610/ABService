@@ -36,10 +36,10 @@ const links = [
 
 const cta = (
   <a 
-    href="tel:0495799899" 
+    href="tel:0484906966" 
     className="btn btn-primary"
   >
-    Bel: 0495 79 98 99
+  Bel: 0484 906 966
   </a>
 );
 

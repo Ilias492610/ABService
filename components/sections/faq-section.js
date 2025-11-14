@@ -13,8 +13,8 @@ const faqData = [
     answer: 'Wij bieden diensten aan voor Bosch, Buderus, Bulex, Junkers, Vaillant en Viessmann.',
   },
   {
-    question: 'Zijn jullie prijzen inclusief btw?',
-    answer: 'Al onze vermelde prijzen zijn exclusief btw.',
+    question: 'Bieden jullie garantie op jullie werk?',
+    answer: 'Ja, wij bieden garantie op al onze installaties en herstellingen. De exacte garantietermijn hangt af van het type werk, maar wij staan altijd klaar voor nazorg en bijkomende vragen.',
   },
   {
     question: 'Maken jullie een gratis offerte?',
@@ -46,20 +46,20 @@ const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="bg-[#dfe8e6] py-16 lg:py-20">
+    <section className="bg-donkerblauw py-16 lg:py-20">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-10 px-5 lg:flex-row lg:gap-20">
         <div className="lg:w-2/5">
-          <p className="mb-2 text-sm font-bold uppercase tracking-[1.2px] text-[#2f7a6f]">FAQS</p>
-          <h2 className="text-[32px] font-bold leading-tight text-[#1a2c3d] lg:text-[36px]">
+          <p className="mb-2 text-sm font-bold uppercase tracking-[1.2px] text-white">FAQS</p>
+          <h2 className="text-[32px] font-bold leading-tight text-white lg:text-[36px]">
             Veelgestelde vragen
           </h2>
-          <p className="mt-4 text-base text-[#5a6c7d]">
+          <p className="mt-4 text-base text-white/80">
             Hier vindt u antwoorden op de meest gestelde vragen over onze diensten. Niet gevonden wat u zocht? Bel ons
             voor meer informatie.
           </p>
           <a
-            href="tel:0495799899"
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-[#2f7a6f] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-[#27685f]"
+            href="tel:0484906966"
+            className="mt-8 inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold uppercase tracking-wide text-donkerblauw transition-colors hover:bg-gray-100"
           >
             <Phone className="h-4 w-4" />
             Bel ons

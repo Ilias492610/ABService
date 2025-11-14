@@ -34,8 +34,8 @@ const reviews = [
 const ReviewCard = ({ review }) => (
   <div className="relative flex h-full w-[340px] flex-shrink-0 snap-start flex-col rounded-xl bg-white p-8 shadow-[0_4px_14px_rgba(0,0,0,0.08)]">
     <Image
-      src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f15d975f-aef8-4250-b1e6-83d5198662e2-verwarmingbros-be/assets/images/images_17.png"
-      alt="Google logo"
+      src="/LogoZ.png"
+      alt="AB Service logo"
       width={24}
       height={24}
       unoptimized
@@ -85,7 +85,7 @@ const GoogleReviews = () => {
       <div className="mx-auto max-w-[1200px] px-4 lg:px-8">
         <div className="mb-12 grid gap-8 md:grid-cols-2 md:items-start">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#2f7a6f]">
+            <p className="text-xs font-semibold uppercase tracking-[0.08em] text-donkerblauw">
               Google reviews
             </p>
             <h2 className="mt-3 text-[42px] font-bold leading-tight text-[#1a2c3d]">
@@ -97,8 +97,8 @@ const GoogleReviews = () => {
               Benieuwd naar de ervaringen van onze klanten? Ontdek hun verhalen en beoordelingen en zie waarom ze voor ons kiezen!
             </p>
             <a
-              href="#"
-              className="mt-6 inline-flex items-center gap-2 rounded-md bg-[#2f7a6f] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#27685f]"
+              href="https://www.google.com/search?rlz=1C5CHFA_enBE1184BE1185&q=AB%20SERVICE%20Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MTAzNjUyNDYzNzA0MTSwNLGw3MDI-IpRyNFJIdg1KMzT2VUhKLUsM7W8eBErFkEA3PuvTEQAAAA&rldimm=4063521367014109489&tbm=lcl&cs=1&hl=nl&sa=X&ved=0CCEQ9fQKKABqFwoTCMD35-nZ6pADFQAAAAAdAAAAABAG&biw=1720&bih=1198&dpr=1#lkt=LocalPoiReviews"
+              className="mt-6 inline-flex items-center gap-2 rounded-md bg-donkerblauw px-6 py-3 font-semibold text-white transition-colors hover:bg-[#0e2a3d]"
             >
               Bekijk alle reviews
               <ArrowRight className="h-5 w-5" />
@@ -108,14 +108,14 @@ const GoogleReviews = () => {
 
         <div className="mb-12 inline-flex max-w-sm items-center gap-4 rounded-xl bg-white p-6 shadow-[0_4px_14px_rgba(0,0,0,0.08)]">
           <Image
-            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f15d975f-aef8-4250-b1e6-83d5198662e2-verwarmingbros-be/assets/images/images_17.png"
-            alt="Google"
+            src="/LogoZ.png"
+            alt="AB Service"
             width={40}
             height={40}
             unoptimized
           />
           <div>
-            <p className="font-bold text-[#1a2c3d]">Verwarming Bros</p>
+            <p className="font-bold text-[#1a2c3d]">AB Service</p>
             <div className="flex items-center gap-2">
               <span className="text-lg font-bold text-[#1a2c3d]">5.0</span>
               <div className="flex text-[#f59e0b]">

@@ -1,5 +1,3 @@
-"use client";
-
 import HeaderTopBar from '@/components/sections/header-top-bar';
 import MainNavigation from '@/components/sections/main-navigation';
 import PageHero from '@/components/sections/page-hero';
@@ -13,6 +11,26 @@ import Footer from '@/components/sections/footer';
 import CookieConsentModal from '@/components/sections/cookie-consent-modal';
 import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
 import GoogleRatingWidget from '@/components/sections/google-rating-widget';
+import FadeInSection from '@/components/animations/FadeInSection';
+import { getSEOTags } from '@/libs/seo';
+
+export const metadata = getSEOTags({
+  title: 'Herstelling cv-ketel Antwerpen | Spoed loodgieter | AB Service',
+  description:
+    'Defecte gasketel of storing in Antwerpen? AB Service herstelt alle merken met snelle interventies en duurzame oplossingen.',
+  keywords: [
+    'cv herstelling Antwerpen',
+    'gasketel reparatie Antwerpen',
+    'spoed loodgieter Antwerpen',
+    'cv technieker Antwerpen',
+  ],
+  canonicalUrlRelative: '/herstelling',
+  openGraph: {
+    title: 'Herstellingen door AB Service in Antwerpen',
+    description:
+      'Snelle en professionele herstelling van cv-ketels en sanitair in Antwerpen en randgemeenten.',
+  },
+});
 
 const HerstellingPage = () => {
   return (
@@ -20,13 +38,27 @@ const HerstellingPage = () => {
       <HeaderTopBar />
       <MainNavigation />
       <main>
-        <PageHero />
-        <UrgentRepairHero />
-        <ServiceBenefits />
-        <CvRepairServices />
-        <BrandLogosCarousel />
-        <GoogleReviews />
-        <ContactCta />
+        <FadeInSection>
+          <PageHero />
+        </FadeInSection>
+        <FadeInSection delay={0.1}>
+          <UrgentRepairHero />
+        </FadeInSection>
+        <FadeInSection delay={0.2}>
+          <ServiceBenefits />
+        </FadeInSection>
+        <FadeInSection delay={0.25}>
+          <CvRepairServices />
+        </FadeInSection>
+        <FadeInSection delay={0.3}>
+          <BrandLogosCarousel />
+        </FadeInSection>
+        <FadeInSection delay={0.35}>
+          <GoogleReviews />
+        </FadeInSection>
+        <FadeInSection delay={0.4}>
+          <ContactCta />
+        </FadeInSection>
       </main>
       <Footer />
       <CookieConsentModal />
