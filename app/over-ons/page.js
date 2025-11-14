@@ -118,15 +118,7 @@ const OverOnsPage = () => {
                   />
                 </div>
                 <p className="mt-4 text-sm text-[#5a6c7d]">
-                  Klanten waarderen onze persoonlijke aanpak en stiptheid. Bekijk onze{' '}
-                  <Link href="/diensten/spoedloodgieter-antwerpen" className="underline">
-                    spoedservice
-                  </Link>{' '}
-                  en{' '}
-                  <Link href="/diensten/badkamer-renovatie-antwerpen" className="underline">
-                    badkamerrenovaties
-                  </Link>
-                  .
+                  Klanten waarderen onze persoonlijke aanpak en stiptheid.
                 </p>
               </aside>
             </div>
