@@ -5,7 +5,7 @@ const ContactSection = () => {
         <div className="grid gap-12 lg:grid-cols-5 lg:gap-16">
           <div className="lg:col-span-2">
             <p className="text-xs font-semibold uppercase tracking-[0.08em] text-donkerblauw">
-              Uw loodgieter in Antwerpen
+              Uw warmtespecialist in Antwerpen
             </p>
             <h2 className="mt-2 mb-10 text-4xl font-bold text-[#1a2c3d]">
               Direct contact voor onderhoud en herstellingen

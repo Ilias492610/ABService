@@ -10,9 +10,9 @@ import GoogleRatingWidget from '@/components/sections/google-rating-widget';
 import FadeInSection from '@/components/animations/FadeInSection';
 
 export const metadata = {
-  title: 'Over AB Service | Loodgieter Antwerpen sinds 2004',
+  title: 'Over AB Service | Warmtespecialist Antwerpen sinds 2004',
   description:
-    'Maak kennis met AB Service: loodgieters met meer dan 20 jaar ervaring in Antwerpen voor lekdetectie, sanitair en gasketelonderhoud.',
+    'Maak kennis met AB Service: warmtespecialisten met meer dan 20 jaar ervaring in Antwerpen voor lekdetectie, sanitair en gasketelonderhoud.',
 };
 
 const values = [
@@ -41,9 +41,9 @@ const values = [
 const teamMembers = [
   {
     name: 'Technisch team',
-    role: 'Senior loodgieters',
+    role: 'Senior warmtespecialisten',
     description:
-      'Ervaren loodgieters die elk project in Antwerpen begeleiden van diagnose tot afwerking.',
+      'Ervaren warmtespecialisten die elk project in Antwerpen begeleiden van diagnose tot afwerking.',
   },
   {
     name: 'Planning & support',
@@ -78,10 +78,10 @@ const OverOnsPage = () => {
                 Over AB Service
               </p>
               <h1 className="text-[36px] font-bold leading-tight md:text-[46px]">
-                Loodgieterij met hart voor Antwerpen en haar bewoners
+                Warmtespecialist met hart voor Antwerpen en haar bewoners
               </h1>
               <p className="text-base leading-relaxed text-white/80 md:text-lg">
-                We zijn loodgieters met meer dan 20 jaar ervaring in het plaatsen, herstellen en onderhouden van sanitair en verwarming. Met een deskundig team en moderne technologie helpen we particulieren, appartementen, horeca en bedrijven.
+                We zijn warmtespecialisten met meer dan 20 jaar ervaring in het plaatsen, herstellen en onderhouden van sanitair en verwarming. Met een deskundig team en moderne technologie helpen we particulieren, appartementen, horeca en bedrijven.
               </p>
             </div>
           </section>
@@ -95,7 +95,7 @@ const OverOnsPage = () => {
                   Onze geschiedenis in een notendop
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-[#5a6c7d]">
-                  In 2004 startte AB Service als zelfstandige loodgieter in Antwerpen. Door mond-tot-mondreclame groeiden we uit tot een vaste waarde met een compact kernteam en een netwerk van gespecialiseerde partners voor elektriciteit, tegelwerk en schrijnwerk.
+                  In 2004 startte AB Service als zelfstandige warmtespecialist in Antwerpen. Door mond-tot-mondreclame groeiden we uit tot een vaste waarde met een compact kernteam en een netwerk van gespecialiseerde partners voor elektriciteit, tegelwerk en schrijnwerk.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-[#5a6c7d]">
                   We investeren in professionele meetapparatuur, permanente opleiding en een moderne planningstool. Zo combineren we ambacht met technologie en blijven we flexibel voor spoedinterventies.

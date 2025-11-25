@@ -8,7 +8,12 @@ const GoogleRatingWidget = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="inline-flex items-center gap-2 md:gap-4 rounded-xl bg-white p-2 md:p-4 shadow-[0_4px_14px_rgba(0,0,0,0.08)] relative">
+    <a 
+      href="https://www.google.com/search?rlz=1C5CHFA_enBE1184BE1185&q=AB%20SERVICE%20Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MTAzNjUyNDYzNzA0MTSwNLGw3MDI-IpRyNFJIdg1KMzT2VUhKLUsM7W8eBErFkEA3PuvTEQAAAA&rldimm=4063521367014109489&tbm=lcl&cs=1&hl=nl&sa=X&ved=0CCAQ9fQKKABqFwoTCNjWkIa5jpEDFQAAAAAdAAAAABAG&biw=1341&bih=1198&dpr=1#lkt=LocalPoiReviews"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 md:gap-4 rounded-xl bg-white p-2 md:p-4 shadow-[0_4px_14px_rgba(0,0,0,0.08)] relative hover:shadow-[0_6px_20px_rgba(0,0,0,0.12)] transition-shadow"
+    >
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" className="md:w-10 md:h-10" viewBox="0 0 48 48">
         <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
         <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
@@ -27,12 +32,15 @@ const GoogleRatingWidget = () => {
         </div>
       </div>
       <button
-        onClick={() => setIsVisible(false)}
+        onClick={(e) => {
+          e.preventDefault();
+          setIsVisible(false);
+        }}
         className="absolute -top-1 -right-1 bg-gray-200 hover:bg-gray-300 rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold text-gray-600"
       >
         ×
       </button>
-    </div>
+    </a>
   );
 };
 

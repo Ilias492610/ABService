@@ -15,7 +15,7 @@ import GoogleRatingWidget from '@/components/sections/google-rating-widget';
 import FadeInSection from '@/components/animations/FadeInSection';
 
 export const metadata = {
-  title: 'Loodgieter Antwerpen | Onderhoud, Keuring & Herstellingen | AB Service',
+  title: 'Warmtespecialist Antwerpen | Onderhoud, Keuring & Herstellingen | AB Service',
   description:
     'AB Service ondersteunt Antwerpen met onderhoud van gasketels, erkende keuringen en betrouwbare herstellingen voor sanitair en verwarming. Plan vandaag nog uw afspraak.',
 };

@@ -10,7 +10,7 @@ const CompanyIntro = () => {
             <div className="relative aspect-[8/7] overflow-hidden rounded-xl border-4 border-donkerblauw shadow-2xl">
               <Image
                 src="/Technici.png"
-                alt="Loodgieter van AB Service aan het werk in Antwerpen"
+                alt="Warmtespecialist van AB Service aan het werk in Antwerpen"
                 fill
                 unoptimized
                 className="object-cover"
@@ -23,10 +23,10 @@ const CompanyIntro = () => {
 
           <div className="lg:pl-[60px]">
             <h6 className="mb-3 text-xs font-semibold tracking-[2px] text-donkerblauw [font-variant-caps:small-caps]">
-              Uw loodgieter in Antwerpen
+              Uw warmtespecialist in Antwerpen
             </h6>
             <h2 className="mb-5 text-[36px] font-bold leading-[1.3] text-[#1a2c3d]">
-              Loodgieters met 20 jaar ervaring in sanitair en verwarming
+              Warmtespecialisten met 20 jaar ervaring in sanitair en verwarming
             </h2>
             <p className="mb-8 text-base leading-[1.7] text-[#5a6c7d]">
               AB Service is uw lokale partner voor gasketelonderhoud, sanitair herstellingen en erkende keuringen. Wij denken mee, werken proper en vertrekken pas wanneer alles weer perfect functioneert.

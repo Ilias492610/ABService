@@ -14,7 +14,7 @@ const benefitsData = [
   {
     key: 'quality',
     title: 'Erkend vakmanschap',
-    description: 'Gecertificeerde loodgieters met meer dan 20 jaar ervaring.',
+    description: 'Gecertificeerde warmtespecialisten met meer dan 20 jaar ervaring.',
   },
 ];
 

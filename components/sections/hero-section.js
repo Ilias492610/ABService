@@ -11,14 +11,24 @@ const HeroSectionHome = () => (
     <div className="absolute inset-0 bg-[#0f1e25]/90" />
     <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center px-4 text-center">
       <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-white/70">
-        Loodgieter Antwerpen & Omgeving
+        Warmtespecialist Antwerpen & Omgeving
       </p>
       <h1 className="mb-6 text-[42px] font-bold leading-tight md:text-[50px] lg:text-[54px]">
-        Loodgieter in Antwerpen voor onderhoud en herstellingen
+        Warmtespecialist in Antwerpen voor onderhoud en herstellingen
       </h1>
       <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
         Voor gasketelonderhoud, sanitair herstel en erkende keuringen rekent u op AB Service. Wij plannen snel een afspraak in Antwerpen, Deurne, Wilrijk, Merksem en omliggende gemeenten en zorgen voor een nette afwerking.
       </p>
+      
+      {/* 20 jaar ervaring badge - subtle */}
+      <div className="mb-8">
+        <img 
+          src="/20-jaar-ervaring-logo.svg" 
+          alt="20 jaar ervaring" 
+          className="mx-auto h-auto w-20 opacity-70 md:w-24"
+        />
+      </div>
+
       <div className="mb-12 flex w-full max-w-sm flex-col gap-4">
         <a
           href="tel:0484906966"

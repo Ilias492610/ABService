@@ -21,7 +21,7 @@ export const metadata = getSEOTags({
   keywords: [
     'cv herstelling Antwerpen',
     'gasketel reparatie Antwerpen',
-    'spoed loodgieter Antwerpen',
+    'spoed warmtespecialist Antwerpen',
     'cv technieker Antwerpen',
   ],
   canonicalUrlRelative: '/herstelling',

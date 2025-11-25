@@ -1,0 +1,32 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle with subtle border -->
+  <circle cx="100" cy="100" r="98" fill="rgba(15, 30, 37, 0.3)" stroke="rgba(255, 183, 3, 0.2)" stroke-width="2"/>
+  
+  <!-- Inner circle background -->
+  <circle cx="100" cy="100" r="90" fill="rgba(15, 30, 37, 0.5)"/>
+  
+  <!-- Left laurel wreath (simplified and smaller) -->
+  <g transform="translate(60, 100) scale(0.4)">
+    <path d="M0,0 Q-8,-15 -10,-30 Q-12,-45 -14,-60" stroke="rgba(255, 183, 3, 0.5)" stroke-width="2" fill="none"/>
+    <ellipse cx="-6" cy="-20" rx="4" ry="8" fill="rgba(255, 183, 3, 0.5)" transform="rotate(-30 -6 -20)"/>
+    <ellipse cx="-8" cy="-40" rx="4" ry="8" fill="rgba(255, 183, 3, 0.5)" transform="rotate(-20 -8 -40)"/>
+    <ellipse cx="2" cy="-25" rx="4" ry="8" fill="rgba(255, 183, 3, 0.4)" transform="rotate(20 2 -25)"/>
+  </g>
+  
+  <!-- Right laurel wreath (simplified and smaller) -->
+  <g transform="translate(140, 100) scale(0.4)">
+    <path d="M0,0 Q8,-15 10,-30 Q12,-45 14,-60" stroke="rgba(255, 183, 3, 0.5)" stroke-width="2" fill="none"/>
+    <ellipse cx="6" cy="-20" rx="4" ry="8" fill="rgba(255, 183, 3, 0.5)" transform="rotate(30 6 -20)"/>
+    <ellipse cx="8" cy="-40" rx="4" ry="8" fill="rgba(255, 183, 3, 0.5)" transform="rotate(20 8 -40)"/>
+    <ellipse cx="-2" cy="-25" rx="4" ry="8" fill="rgba(255, 183, 3, 0.4)" transform="rotate(-20 -2 -25)"/>
+  </g>
+  
+  <!-- Number 20 -->
+  <text x="100" y="95" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="rgba(255, 255, 255, 0.85)" text-anchor="middle">20</text>
+  
+  <!-- JAAR text -->
+  <text x="100" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="rgba(255, 183, 3, 0.7)" text-anchor="middle" letter-spacing="2">JAAR</text>
+  
+  <!-- ERVARING text -->
+  <text x="100" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="rgba(255, 255, 255, 0.7)" text-anchor="middle" letter-spacing="1.5">ERVARING</text>
+</svg>
