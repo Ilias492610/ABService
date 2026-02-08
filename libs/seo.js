@@ -65,11 +65,12 @@ export const getSEOTags = ({
     },
     icons: {
       icon: [
+        { url: "/favicon.ico", sizes: "any" },
         { url: "/favicon.png", sizes: "48x48", type: "image/png" },
         { url: "/icon.png", sizes: "512x512", type: "image/png" },
       ],
       apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
-      shortcut: ["/favicon.png"],
+      shortcut: ["/favicon.ico"],
     },
     alternates: {
       canonical: canonicalRelative,
