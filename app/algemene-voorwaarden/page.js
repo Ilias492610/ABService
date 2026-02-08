@@ -8,8 +8,20 @@ import { getSEOTags } from '@/libs/seo';
 import config from '@/config';
 
 export const metadata = getSEOTags({
-  title: `Algemene Voorwaarden | ${config.appName}`,
+  title: `Algemene voorwaarden verwarmingsdiensten | ${config.appName}`,
+  description:
+    "Algemene voorwaarden van AB Service voor onderhoud, herstelling, installatie en keuring van verwarmingsinstallaties.",
+  keywords: [
+    "algemene voorwaarden AB Service",
+    "voorwaarden verwarmingswerken Antwerpen",
+    "voorwaarden gasketel onderhoud",
+  ],
   canonicalUrlRelative: '/algemene-voorwaarden',
+  openGraph: {
+    title: "Algemene voorwaarden AB Service",
+    description:
+      "Overzicht van afspraken rond offertes, uitvoering, betaling, garantie en aansprakelijkheid.",
+  },
 });
 
 const AlgemeneVoorwaarden = () => {
@@ -62,7 +74,7 @@ const AlgemeneVoorwaarden = () => {
                 <div className="space-y-2 text-gray-700">
                   <p><strong>BTW:</strong> BE0792.534.639</p>
                   <p><strong>Telefoon:</strong> <a href="tel:0484906966" className="text-donkerblauw hover:underline">0484 906 966</a></p>
-                  <p><strong>E-mail:</strong> <a href="mailto:info@abservice.be" className="text-donkerblauw hover:underline">info@abservice.be</a></p>
+                  <p><strong>E-mail:</strong> <a href="mailto:info@abservice24.be" className="text-donkerblauw hover:underline">info@abservice24.be</a></p>
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed mt-8 text-center font-medium">Door samen te werken met AB Service gaat u akkoord met bovenstaande voorwaarden. We helpen u graag verder bij vragen of verduidelijkingen.</p>

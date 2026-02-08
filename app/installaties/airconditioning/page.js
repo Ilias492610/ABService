@@ -12,11 +12,12 @@ import FadeInSection from '@/components/animations/FadeInSection';
 import { getSEOTags } from '@/libs/seo';
 
 export const metadata = getSEOTags({
-  title: 'Airco installateur Antwerpen | Warmtepomp airconditioning | AB Service',
+  title: 'Airco installateur Antwerpen | Warmtespecialist warmtepomp-airco | AB Service',
   description:
-    'AB Service plaatst energiezuinige airconditioning in Antwerpen en randgemeenten. Persoonlijk advies, plaatsing door erkende koeltechniekers en onderhoud op maat.',
+    'AB Service is uw warmtespecialist in Antwerpen voor energiezuinige airconditioning. Persoonlijk advies, plaatsing door erkende koeltechniekers en onderhoud op maat.',
   keywords: [
     'airco installateur Antwerpen',
+    'warmtespecialist Antwerpen airco',
     'warmtepomp airco Antwerpen',
     'koeltechnieker Antwerpen',
     'airconditioning plaatsen Antwerpen',
@@ -286,4 +287,3 @@ const AirconditioningPage = () => {
 };
 
 export default AirconditioningPage;
-

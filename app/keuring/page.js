@@ -14,10 +14,11 @@ import FadeInSection from '@/components/animations/FadeInSection';
 import { getSEOTags } from '@/libs/seo';
 
 export const metadata = getSEOTags({
-  title: 'Gasketel keuren Antwerpen | Indienststelling en attesten | AB Service',
+  title: 'Gasketel keuring Antwerpen | Warmtespecialist en erkende technicus | AB Service',
   description:
-    'Laat uw nieuwe of aangepaste cv-installatie keuren door een erkende technicus in Antwerpen. AB Service levert officiële attesten en duidelijke rapporten.',
+    'Laat uw nieuwe of aangepaste cv-installatie keuren in Antwerpen door AB Service, uw warmtespecialist met erkende techniekers en officiële attesten.',
   keywords: [
+    'warmtespecialist Antwerpen keuring',
     'gasketel keuren Antwerpen',
     'indienststelling verwarming Antwerpen',
     'keuringsattest cv ketel Antwerpen',
@@ -67,4 +68,3 @@ const KeuringPage = () => {
 };
 
 export default KeuringPage;
-

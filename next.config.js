@@ -10,6 +10,28 @@ const nextConfig = {
       { protocol: 'https', hostname: 'slelguoygbfzlpylpxfs.supabase.co' },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'abservice24.be' }],
+        destination: 'https://www.abservice24.be/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'abservice.be' }],
+        destination: 'https://www.abservice24.be/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.abservice.be' }],
+        destination: 'https://www.abservice24.be/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {

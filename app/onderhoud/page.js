@@ -15,10 +15,12 @@ import FadeInSection from '@/components/animations/FadeInSection';
 import { getSEOTags } from '@/libs/seo';
 
 export const metadata = getSEOTags({
-  title: 'Onderhoud cv-ketel en sanitair Antwerpen | AB Service',
+  title: 'Onderhoud gasketel Antwerpen | Loodgieter & warmtespecialist | AB Service',
   description:
-    'Jaarlijks onderhoud van gasketels, sanitair en airco in Antwerpen door erkende techniekers. Officiële attesten, snelle planning en persoonlijk advies.',
+    'Jaarlijks onderhoud van gasketels, sanitair en airco in Antwerpen door loodgieters en warmtespecialisten. Officiële attesten, snelle planning en persoonlijk advies.',
   keywords: [
+    'loodgieter onderhoud Antwerpen',
+    'warmtespecialist onderhoud Antwerpen',
     'cv onderhoud Antwerpen',
     'ketel onderhoud Antwerpen',
     'sanitair onderhoud Antwerpen',
@@ -26,9 +28,9 @@ export const metadata = getSEOTags({
   ],
   canonicalUrlRelative: '/onderhoud',
   openGraph: {
-    title: 'Onderhoud door AB Service in Antwerpen',
+    title: 'Onderhoud door loodgieter in Antwerpen | AB Service',
     description:
-      'Laat uw verwarming, sanitair en airco onderhouden door erkende Antwerpse techniekers van AB Service.',
+      'Laat uw verwarming, sanitair en airco onderhouden door loodgieters en warmtespecialisten van AB Service.',
   },
 });
 
@@ -71,4 +73,3 @@ const OnderhoudPage = () => {
 };
 
 export default OnderhoudPage;
-

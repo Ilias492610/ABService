@@ -10,7 +10,7 @@ const TopHeader = () => {
         <div className="flex items-center">
           <Image
             src="/LogoZ.png"
-            alt="Logo"
+            alt="AB Service logo"
             width={80}
             height={80}
             unoptimized
@@ -27,13 +27,13 @@ const TopHeader = () => {
           </a>
 
           <a
-            href="mailto:info@abservice.be"
+            href="mailto:info@abservice24.be"
             className="flex items-center gap-[15px]"
           >
             <Mail size={20} className="flex-shrink-0 text-gray-900" />
             <div>
               <p className="mb-1 text-sm font-medium text-gray-900">E-mail ons</p>
-              <p className="text-sm text-gray-600">info@abservice.be</p>
+              <p className="text-sm text-gray-600">info@abservice24.be</p>
             </div>
           </a>
         </div>

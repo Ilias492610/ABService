@@ -1,5 +1,17 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Pagina niet gevonden | AB Service",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+};
+
 // Simple 404 page with a button to go home and a button to contact support
 // Show a cute SVG with your primary color
 export default function Custom404() {

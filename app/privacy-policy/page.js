@@ -8,8 +8,20 @@ import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
 
 export const metadata = getSEOTags({
-  title: `Privacybeleid | ${config.appName}`,
+  title: `Privacybeleid verwarmingsdiensten Antwerpen | ${config.appName}`,
+  description:
+    "Lees hoe AB Service persoonsgegevens verwerkt voor contactaanvragen, interventies en website-analyse in Antwerpen.",
+  keywords: [
+    "privacybeleid AB Service",
+    "gegevensverwerking verwarming Antwerpen",
+    "AVG beleid AB Service",
+  ],
   canonicalUrlRelative: "/privacy-policy",
+  openGraph: {
+    title: "Privacybeleid AB Service",
+    description:
+      "Transparante uitleg over gegevensverwerking, cookies en rechten van bezoekers en klanten.",
+  },
 });
 
 const PrivacyPolicy = () => {
@@ -92,7 +104,7 @@ const PrivacyPolicy = () => {
                 <h3 className="text-xl font-bold text-[#1a2c3d] mb-4">AB Service</h3>
                 <div className="space-y-2 text-gray-700">
                   <p><strong>Telefoon:</strong> <a href="tel:0484906966" className="text-donkerblauw hover:underline">0484 906 966</a></p>
-                  <p><strong>E-mail:</strong> <a href="mailto:info@abservice.be" className="text-donkerblauw hover:underline">info@abservice.be</a></p>
+                  <p><strong>E-mail:</strong> <a href="mailto:info@abservice24.be" className="text-donkerblauw hover:underline">info@abservice24.be</a></p>
                   <p><strong>BTW:</strong> BE0792.534.639</p>
                 </div>
               </div>

@@ -26,10 +26,10 @@ const CompanyIntro = () => {
               Uw warmtespecialist in Antwerpen
             </h6>
             <h2 className="mb-5 text-[36px] font-bold leading-[1.3] text-[#1a2c3d]">
-              Warmtespecialisten met 20 jaar ervaring in sanitair en verwarming
+              Ervaren loodgieters en warmtespecialisten in Antwerpen
             </h2>
             <p className="mb-8 text-base leading-[1.7] text-[#5a6c7d]">
-              AB Service is uw lokale partner voor gasketelonderhoud, sanitair herstellingen en erkende keuringen. Wij denken mee, werken proper en vertrekken pas wanneer alles weer perfect functioneert.
+              AB Service is uw lokale partner voor gasketelonderhoud, loodgieterswerk, sanitair herstellingen en erkende keuringen. Wij denken mee, werken proper en vertrekken pas wanneer alles weer perfect functioneert.
             </p>
             <ul className="mb-8 space-y-4">
               <li className="flex items-center text-base text-[#5a6c7d]">
@@ -42,7 +42,7 @@ const CompanyIntro = () => {
               </li>
               <li className="flex items-center text-base text-[#5a6c7d]">
                 <Check className="mr-3 h-5 w-5 shrink-0 text-donkerblauw" />
-                Onderhoud, herstellingen en keuringen met garantie
+                Loodgieterswerk, keteltechniek en keuringen met garantie
               </li>
             </ul>
             <a

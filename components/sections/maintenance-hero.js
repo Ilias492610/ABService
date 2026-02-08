@@ -6,10 +6,10 @@ const MaintenanceHero = () => {
           id="maintenance-hero-heading"
           className="text-[32px] font-semibold leading-[1.2] tracking-[-0.02em] text-[#1a3847] md:text-[40px] lg:text-[48px]"
         >
-          Onderhoud van uw installatie in Antwerpen
+          Onderhoud door uw loodgieter en warmtespecialist in Antwerpen
         </h1>
         <p className="mt-4 text-base text-[#4a5d58] md:text-lg">
-          Jaarlijkse controle van gasketels, sanitair en airco door erkende Antwerpse techniekers voor maximaal rendement.
+          Jaarlijkse controle van gasketels, sanitair en airco door lokale loodgieters en warmtespecialisten voor maximaal rendement.
         </p>
       </div>
     </section>

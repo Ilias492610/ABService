@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const HeroSectionHome = () => (
@@ -14,17 +15,19 @@ const HeroSectionHome = () => (
         Warmtespecialist Antwerpen & Omgeving
       </p>
       <h1 className="mb-6 text-[42px] font-bold leading-tight md:text-[50px] lg:text-[54px]">
-        Warmtespecialist in Antwerpen voor onderhoud en herstellingen
+        Loodgieter en warmtespecialist in Antwerpen voor onderhoud en herstellingen
       </h1>
       <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
-        Voor gasketelonderhoud, sanitair herstel en erkende keuringen rekent u op AB Service. Wij plannen snel een afspraak in Antwerpen, Deurne, Wilrijk, Merksem en omliggende gemeenten en zorgen voor een nette afwerking.
+        Voor gasketelonderhoud, loodgieterswerk, sanitair herstel en erkende keuringen rekent u op AB Service. Onze loodgieters en warmtespecialisten plannen snel een afspraak in Antwerpen, Deurne, Wilrijk, Merksem en omliggende gemeenten.
       </p>
       
       {/* 20 jaar ervaring badge - subtle */}
       <div className="mb-8">
-        <img 
-          src="/20-jaar-ervaring-logo.svg" 
-          alt="20 jaar ervaring" 
+        <Image
+          src="/20-jaar-ervaring-logo.svg"
+          alt="20 jaar ervaring"
+          width={96}
+          height={96}
           className="mx-auto h-auto w-20 opacity-70 md:w-24"
         />
       </div>

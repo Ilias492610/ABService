@@ -15,20 +15,22 @@ import FadeInSection from '@/components/animations/FadeInSection';
 import { getSEOTags } from '@/libs/seo';
 
 export const metadata = getSEOTags({
-  title: 'Herstelling cv-ketel Antwerpen | Spoed loodgieter | AB Service',
+  title: 'Herstelling gasketel Antwerpen | Spoed loodgieter en warmtespecialist | AB Service',
   description:
-    'Defecte gasketel of storing in Antwerpen? AB Service herstelt alle merken met snelle interventies en duurzame oplossingen.',
+    'Defecte gasketel of sanitairprobleem in Antwerpen? AB Service is uw spoed loodgieter en warmtespecialist voor snelle en duurzame herstellingen.',
   keywords: [
+    'spoed loodgieter Antwerpen',
+    'warmtespecialist herstelling Antwerpen',
     'cv herstelling Antwerpen',
     'gasketel reparatie Antwerpen',
-    'spoed warmtespecialist Antwerpen',
+    'sanitair herstelling Antwerpen',
     'cv technieker Antwerpen',
   ],
   canonicalUrlRelative: '/herstelling',
   openGraph: {
-    title: 'Herstellingen door AB Service in Antwerpen',
+    title: 'Spoed loodgieter Antwerpen | AB Service',
     description:
-      'Snelle en professionele herstelling van cv-ketels en sanitair in Antwerpen en randgemeenten.',
+      'Snelle en professionele herstelling van cv-ketels en sanitair in Antwerpen door lokale loodgieters.',
   },
 });
 
@@ -71,4 +73,3 @@ const HerstellingPage = () => {
 };
 
 export default HerstellingPage;
-

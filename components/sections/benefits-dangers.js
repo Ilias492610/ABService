@@ -5,7 +5,7 @@ const contentByVariant = {
     badge: 'preventief onderhoud',
     heading: 'Waarom jaarlijks onderhoud in Antwerpen loont',
     intro:
-      'Onze Antwerpse techniekers houden uw gasketel, sanitair en airco in topconditie. Zo vermijdt u onverwachte uitval en blijft uw energieverbruik onder controle.',
+      'Onze loodgieters en warmtespecialisten in Antwerpen houden uw gasketel, sanitair en airco in topconditie. Zo vermijdt u onverwachte uitval en blijft uw energieverbruik onder controle.',
     benefits: [
       {
         title: 'Maximaal rendement',
@@ -35,7 +35,7 @@ const contentByVariant = {
     badge: 'efficiënt en betrouwbaar',
     heading: 'Waarom tijdige herstelling belangrijk is',
     intro:
-      'Onze ervaren techniekers herstellen cv-ketels en sanitair in Antwerpen snel en professioneel. Zo vermijdt u gevaarlijke situaties en bijkomende schade.',
+      'Onze ervaren loodgieters en warmtespecialisten herstellen cv-ketels en sanitair in Antwerpen snel en professioneel. Zo vermijdt u gevaarlijke situaties en bijkomende schade.',
     benefits: [
       {
         title: 'Veiligheid',

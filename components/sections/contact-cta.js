@@ -6,7 +6,7 @@ const ContactCta = () => {
           Hulp nodig in Antwerpen of de rand?
         </h2>
         <p className="mt-4 text-base text-[#5a6c7d] md:text-lg">
-          Bel of plan uw afspraak voor onderhoud, herstellingen of keuringen in Antwerpen en omstreken. Ons team staat klaar met snelle service en duidelijke afspraken.
+          Bel of plan uw afspraak voor onderhoud, herstellingen of keuringen in Antwerpen en omstreken. Onze loodgieters en warmtespecialisten staan klaar met snelle service en duidelijke afspraken.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a

@@ -21,9 +21,9 @@ const services = [
     link: '/keuring',
   },
   {
-    title: 'Sanitair & badkamer herstelling',
+    title: 'Sanitair herstelling & loodgieterswerk',
     description:
-      'Herstellingen aan leidingen, kranen, douche en bad met duurzame materialen en nette afwerking zonder grote verbouwingen.',
+      'Herstellingen aan leidingen, kranen, douche en bad door een lokale loodgieter met duurzame materialen en nette afwerking.',
     price: 'Op maat',
     image: '/Onderhoud.png',
     alt: 'Warmtespecialist voert sanitair herstelling uit in badkamer te Wilrijk',
@@ -40,7 +40,7 @@ const ServicesGrid = () => {
             Diensten van AB Service
           </p>
           <h2 className="mb-[60px] text-[42px] font-bold leading-tight text-[#1a2c3d]">
-            Warmtespecialist voor elke uitdaging in Antwerpen
+            Loodgieter en warmtespecialist voor elke uitdaging in Antwerpen
           </h2>
         </div>
 

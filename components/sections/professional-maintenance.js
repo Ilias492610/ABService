@@ -29,11 +29,11 @@ const ProfessionalMaintenance = () => {
               verzekerd van optimale prestaties in antwerpen
             </p>
             <h2 className="mt-4 text-[28px] font-bold leading-[1.3] text-[#1a2c3d] md:text-[32px]">
-              Professioneel onderhoud van uw cv-installatie
+              Professioneel onderhoud door uw loodgieter en warmtespecialist
             </h2>
             <div className="mt-6 space-y-4 text-base leading-[1.6] text-[#5a6c7d]">
               <p>
-                Bij <span className="font-semibold text-[#1a2c3d]">AB Service</span> houden we gasketels, sanitair en airco in topconditie. Vanuit Antwerpen vertrekken we dagelijks voor onderhoud bij particulieren en bedrijven.
+                Bij <span className="font-semibold text-[#1a2c3d]">AB Service</span> houden we als loodgieters en warmtespecialisten gasketels, sanitair en airco in topconditie. Vanuit Antwerpen vertrekken we dagelijks voor onderhoud bij particulieren en bedrijven.
               </p>
               <p>
                 Een periodieke controle voorkomt storingen, verlengt de levensduur van uw installatie en houdt uw garantie geldig. Zo geniet u het hele jaar door van zorgeloze warmte.
@@ -81,11 +81,11 @@ const ProfessionalMaintenance = () => {
             snelle hulp in antwerpen
           </p>
           <h2 className="mt-4 text-[28px] font-bold leading-[1.3] text-[#1a2c3d] md:text-[32px]">
-            Professionele herstelling van uw cv-ketel
+            Professionele herstelling door uw loodgieter in Antwerpen
           </h2>
           <div className="mt-6 space-y-4 text-base leading-[1.6] text-[#5a6c7d]">
             <p>
-              Bij <span className="font-semibold text-[#1a2c3d]">AB Service</span> herstellen we alle merken en types gasketels. Onze techniekers zijn binnen Antwerpen snel ter plaatse en zorgen voor een duurzame oplossing zodat u opnieuw comfortabel kan verwarmen.
+              Bij <span className="font-semibold text-[#1a2c3d]">AB Service</span> herstellen we alle merken en types gasketels. Onze loodgieters en warmtespecialisten zijn binnen Antwerpen snel ter plaatse en zorgen voor een duurzame oplossing zodat u opnieuw comfortabel kan verwarmen.
             </p>
             <p>
               Een defecte ketel kan leiden tot gevaarlijke situaties, hogere energiekosten of uitval tijdens koude dagen. Laat ons het probleem tijdig oplossen en voorkom onverwachte verrassingen.

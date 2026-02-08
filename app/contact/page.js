@@ -12,6 +12,27 @@ import CookieConsentModal from '@/components/sections/cookie-consent-modal';
 import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
 import GoogleRatingWidget from '@/components/sections/google-rating-widget';
 import FadeInSection from '@/components/animations/FadeInSection';
+import { getSEOTags } from '@/libs/seo';
+
+export const metadata = getSEOTags({
+  title: 'Contact loodgieter en warmtespecialist Antwerpen | AB Service',
+  description:
+    'Contacteer AB Service, uw loodgieter en warmtespecialist in Antwerpen, voor onderhoud, herstelling, installatie of keuring.',
+  keywords: [
+    'contact loodgieter Antwerpen',
+    'warmtespecialist Antwerpen contact',
+    'contact gasketel Antwerpen',
+    'spoed loodgieter Antwerpen',
+    'interventie verwarming Antwerpen',
+    'AB Service contact',
+  ],
+  canonicalUrlRelative: '/contact',
+  openGraph: {
+    title: 'Contact loodgieter Antwerpen | AB Service',
+    description:
+      'Vraag snel een interventie of offerte aan bij uw loodgieter en warmtespecialist in Antwerpen.',
+  },
+});
 
 const ContactPage = () => {
   return (
@@ -52,4 +73,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-

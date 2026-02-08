@@ -9,7 +9,7 @@ const slides = [
     label: 'Onderhoud & keuring',
     title: 'Onderhoud en keuring van gasketels',
     description:
-      'We plannen snel een erkende technicus in voor Antwerpen en omgeving. Van jaarlijks onderhoud tot attesten na een aanpassing.',
+      'We plannen snel een erkende technicus en loodgieter in voor Antwerpen en omgeving. Van jaarlijks onderhoud tot attesten na een aanpassing.',
     features: [
       'Reiniging en afstelling volgens voorschriften',
       'Offerte vooraf zonder verrassingen',

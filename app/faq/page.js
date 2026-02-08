@@ -7,12 +7,21 @@ import CookieConsentBanner from '@/components/sections/cookie-consent-banner';
 import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
 import GoogleRatingWidget from '@/components/sections/google-rating-widget';
 import FadeInSection from '@/components/animations/FadeInSection';
+import { getSEOTags } from '@/libs/seo';
 
-export const metadata = {
-  title: 'FAQ Loodgieter Antwerpen | Veelgestelde vragen AB Service',
+export const metadata = getSEOTags({
+  title: 'FAQ Gasketels & Verwarming Antwerpen | AB Service',
   description:
-    'Antwoorden op veelgestelde vragen over loodgieterij, spoedservice, lekdetectie en badkamerrenovaties in Antwerpen door AB Service.',
-};
+    'Antwoorden op veelgestelde vragen over gasketelonderhoud, loodgieterswerken, herstellingen en interventies in Antwerpen.',
+  keywords: [
+    'faq loodgieter Antwerpen',
+    'faq gasketel Antwerpen',
+    'warmtespecialist Antwerpen vragen',
+    'veelgestelde vragen verwarming Antwerpen',
+    'AB Service FAQ',
+  ],
+  canonicalUrlRelative: '/faq',
+});
 
 const faqJsonLd = {
   '@context': 'https://schema.org',
@@ -20,7 +29,7 @@ const faqJsonLd = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Hoe snel kan een loodgieter langskomen in Antwerpen?',
+      name: 'Hoe snel kan een technicus voor gasketels langskomen in Antwerpen?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Voor spoedgevallen zijn we 24/7 bereikbaar en mikken we op een interventie binnen 60 minuten in Antwerpen en randgemeenten.',
@@ -36,10 +45,10 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'Kan ik een offerte krijgen voor een badkamerrenovatie?',
+      name: 'Kan ik een offerte krijgen voor onderhoud of een nieuwe gasketel?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Zeker. Na een plaatsbezoek stellen we een gedetailleerde offerte op inclusief planning, materialen en afwerking.',
+        text: 'Zeker. Na een plaatsbezoek stellen we een duidelijke offerte op voor onderhoud, herstelling of installatie van uw gasketel.',
       },
     },
   ],
@@ -47,17 +56,17 @@ const faqJsonLd = {
 
 const faqSections = [
   {
-    title: 'Spoedloodgieterij',
+    title: 'Spoed herstelling gasketel',
     questions: [
       {
-        question: 'Wat moet ik doen bij een gesprongen leiding?',
+        question: 'Wat moet ik doen bij een storing op mijn gasketel?',
         answer:
-          'Sluit indien mogelijk de hoofdkraan af en bel ons meteen. Geef aan waar het lek zich bevindt en of er elektriciteit in de buurt is. Wij begeleiden u telefonisch terwijl we onderweg zijn.',
+          'Noteer de foutcode en controleer of de cv-druk voldoende is. Vermijd herhaald resetten en bel ons meteen voor een veilige diagnose.',
       },
       {
         question: 'Welke spoedproblemen lossen jullie op?',
         answer:
-          'We verhelpen waterlekken, verstopte afvoeren, wc-overlopen, cv-storingen, defecte boilers en dringende sanitairproblemen in woningen en bedrijven.',
+          'We verhelpen cv-storingen, foutcodes, drukproblemen, uitval van warm water en defecte ketelonderdelen in woningen en bedrijven.',
       },
       {
         question: 'Zijn er extra kosten voor interventies buiten kantooruren?',
@@ -67,48 +76,53 @@ const faqSections = [
     ],
   },
   {
-    title: 'Lekdetectie',
+    title: 'Diagnose en foutcodes',
     questions: [
       {
-        question: 'Moet er altijd gebroken worden bij lekdetectie?',
+        question: 'Kan ik een foutcode zelf oplossen?',
         answer:
-          'Nee. Dankzij thermografie, akoestische detectie en vochtmetingen bepalen we meestal exact waar het lek zit zonder breekwerk. Enkel voor herstelling openen we gericht de muur of vloer.',
+          'Sommige meldingen zoals lage waterdruk kan u beperkt zelf controleren. Bij terugkerende of onbekende foutcodes is professionele diagnose noodzakelijk.',
       },
       {
-        question: 'Kan ik lekdetectie laten terugbetalen?',
+        question: 'Waarom komt dezelfde foutcode steeds terug?',
         answer:
-          'Veel brandverzekeringen vergoeden lekdetectie en gevolgschade. Ons rapport voldoet aan de vereisten van de meeste verzekeraars.',
+          'Terugkerende codes wijzen vaak op een onderliggend technisch probleem zoals sensorfouten, circulatieproblemen of verbrandingsafwijkingen.',
       },
       {
-        question: 'Hoe snel ontvang ik het rapport?',
+        question: 'Werken jullie op alle ketelmerken?',
         answer:
-          'Binnen 24 uur ontvangt u een digitaal rapport met foto\'s, meetdata en advies. Dit document kan u doorsturen naar uw verzekeraar of syndicus.',
+          'Ja. We werken dagelijks op onder meer Vaillant, Bulex, Bosch en Junkers en houden rekening met model- en generatieverschillen.',
       },
     ],
   },
   {
-    title: 'Badkamerrenovatie',
+    title: 'Onderhoud en installatie',
     questions: [
       {
-        question: 'Werken jullie met eigen mensen?',
+        question: 'Hoe vaak moet een gasketel onderhouden worden?',
         answer:
-          'Ja, onze loodgieters en tegelzetters maken deel uit van het vaste team. Voor elektriciteit en maatwerkmeubilair werken we met vaste partners.',
+          'Voor de meeste toestellen is periodiek onderhoud wettelijk of technisch aanbevolen. We adviseren het juiste onderhoudsschema op basis van uw installatie.',
       },
       {
-        question: 'Kan ik tijdens de werken thuis blijven?',
+        question: 'Kunnen jullie ook een nieuwe gasketel plaatsen?',
         answer:
-          'Absoluut. We houden rekening met uw gezinssituatie, beschermen vloeren en ruimen dagelijks op. U kan tijdens de renovatie thuis blijven indien er water en elektriciteit beschikbaar blijven.',
+          'Ja, we verzorgen vervanging en nieuwe installaties met correcte dimensionering, afstelling en oplevering volgens de geldende normen.',
       },
       {
-        question: 'Hoe verloopt de betaling?',
+        question: 'Ontvang ik een duidelijke offerte vooraf?',
         answer:
-          'We werken met overzichtelijke schijven: voorschot, tussentijdse betaling en saldo bij oplevering. Dit wordt vooraf afgesproken in de offerte.',
+          'Ja. U ontvangt vooraf een heldere offerte met scope, materialen en uitvoering, zonder verborgen kosten.',
       },
     ],
   },
   {
     title: 'Algemeen',
     questions: [
+      {
+        question: 'Doen jullie ook loodgieterswerken in Antwerpen?',
+        answer:
+          'Ja. Naast verwarmingswerken voeren we ook loodgieterswerken uit zoals lekherstellingen, sanitaire aanpassingen en vervanging van kranen of leidingen in Antwerpen en randgemeenten.',
+      },
       {
         question: 'In welke regio werken jullie?',
         answer:
@@ -144,10 +158,10 @@ const FAQPage = () => {
                 FAQ AB Service
               </p>
               <h1 className="text-[36px] font-bold leading-tight md:text-[46px]">
-                Antwoorden op veelgestelde vragen over onze loodgietersdiensten
+                Antwoorden op veelgestelde vragen over gasketels en verwarming
               </h1>
               <p className="text-base leading-relaxed text-white/80 md:text-lg">
-                Vind hier praktische info over spoedinterventies, lekdetectie, badkamerrenovaties en algemene werking.
+                Vind hier praktische info over spoedinterventies, foutcodes, onderhoud, loodgieterswerken en algemene werking.
                 Staat uw vraag er niet tussen? Contacteer ons, we helpen u graag verder.
               </p>
             </div>

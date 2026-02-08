@@ -13,12 +13,28 @@ import FloatingWhatsAppButton from '@/components/sections/floating-whatsapp-butt
 import CookieConsentBanner from '@/components/sections/cookie-consent-banner';
 import GoogleRatingWidget from '@/components/sections/google-rating-widget';
 import FadeInSection from '@/components/animations/FadeInSection';
+import { getSEOTags } from '@/libs/seo';
 
-export const metadata = {
-  title: 'Warmtespecialist Antwerpen | Onderhoud, Keuring & Herstellingen | AB Service',
+export const metadata = getSEOTags({
+  title: 'Loodgieter & Warmtespecialist Antwerpen | Onderhoud, Keuring & Herstellingen | AB Service',
   description:
-    'AB Service ondersteunt Antwerpen met onderhoud van gasketels, erkende keuringen en betrouwbare herstellingen voor sanitair en verwarming. Plan vandaag nog uw afspraak.',
-};
+    'AB Service is uw loodgieter en warmtespecialist in Antwerpen voor gasketelonderhoud, sanitair herstellingen, installaties en erkende keuringen.',
+  keywords: [
+    'loodgieter Antwerpen',
+    'warmtespecialist Antwerpen',
+    'spoed loodgieter Antwerpen',
+    'gasketel onderhoud Antwerpen',
+    'sanitair herstelling Antwerpen',
+    'gasketel herstelling Antwerpen',
+    'gasketel keuring Antwerpen',
+  ],
+  canonicalUrlRelative: '/',
+  openGraph: {
+    title: 'Loodgieter en warmtespecialist Antwerpen | AB Service',
+    description:
+      'Onderhoud, herstelling, installatie en keuring in Antwerpen door een lokale loodgieter en warmtespecialist.',
+  },
+});
 
 const HomePage = () => {
   return (

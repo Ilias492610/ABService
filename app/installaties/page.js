@@ -13,10 +13,12 @@ import FadeInSection from '@/components/animations/FadeInSection';
 import { getSEOTags } from '@/libs/seo';
 
 export const metadata = getSEOTags({
-  title: 'Installaties verwarming en sanitair Antwerpen | AB Service',
+  title: 'Loodgieter & warmtespecialist Antwerpen | Installaties verwarming en sanitair | AB Service',
   description:
-    'AB Service plaatst gasketels, sanitair en airco in Antwerpen en randgemeenten. Eén aanspreekpunt voor advies, plaatsing en onderhoud. Vraag uw vrijblijvende offerte.',
+    'AB Service is uw loodgieter en warmtespecialist in Antwerpen voor installatie van gasketels, sanitair en airco. Eén aanspreekpunt voor advies, plaatsing en onderhoud.',
   keywords: [
+    'loodgieter Antwerpen installaties',
+    'warmtespecialist Antwerpen installaties',
     'installatie gasketel Antwerpen',
     'sanitair plaatsen Antwerpen',
     'airco installateur Antwerpen',
@@ -24,9 +26,9 @@ export const metadata = getSEOTags({
   ],
   canonicalUrlRelative: '/installaties',
   openGraph: {
-    title: 'Installaties door AB Service in Antwerpen',
+    title: 'Installaties door loodgieter in Antwerpen | AB Service',
     description:
-      'Nieuwe gasketel, sanitair of airco nodig in Antwerpen? AB Service begeleidt u van studie tot oplevering.',
+      'Nieuwe gasketel, sanitair of airco nodig in Antwerpen? Uw loodgieter en warmtespecialist begeleidt u van studie tot oplevering.',
   },
 });
 
@@ -127,10 +129,10 @@ const HeroSection = () => (
         Installaties Antwerpen
       </span>
       <h1 className="text-[34px] font-bold leading-tight md:text-[44px] lg:text-[52px]">
-        Nieuwe installaties zonder zorgen voor verwarming, sanitair en airco
+        Nieuwe installaties door uw loodgieter en warmtespecialist in Antwerpen
       </h1>
       <p className="text-base leading-relaxed text-white/80 md:text-lg lg:max-w-3xl">
-        AB Service is uw erkende installateur in Antwerpen voor condensatieketels, sanitair en warmtepomp-airco&apos;s. We combineren technisch advies met een vlekkeloze uitvoering zodat uw woning klaar is voor de toekomst.
+        AB Service is uw erkende loodgieter en warmtespecialist in Antwerpen voor condensatieketels, sanitair en warmtepomp-airco&apos;s. We combineren technisch advies met een vlekkeloze uitvoering zodat uw woning klaar is voor de toekomst.
       </p>
       <div className="flex flex-col items-center justify-center gap-4 md:flex-row lg:justify-start">
         <a
@@ -345,4 +347,3 @@ const InstallatiesPage = () => {
 };
 
 export default InstallatiesPage;
-

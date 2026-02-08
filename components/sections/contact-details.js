@@ -30,8 +30,8 @@ const ContactDetails = () => {
             <h3 className="mb-3 text-xl font-bold text-[#1a2c3d]">Gegevens</h3>
             <div className="text-sm leading-relaxed text-[#5a6c7d]">
               <p>
-                <a href="mailto:info@abservice.be" className="font-semibold text-donkerblauw hover:underline">
-                  info@abservice.be
+                <a href="mailto:info@abservice24.be" className="font-semibold text-donkerblauw hover:underline">
+                  info@abservice24.be
                 </a>
               </p>
               <p>BTW BE0792.534.639</p>

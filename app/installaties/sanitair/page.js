@@ -12,10 +12,12 @@ import FadeInSection from '@/components/animations/FadeInSection';
 import { getSEOTags } from '@/libs/seo';
 
 export const metadata = getSEOTags({
-  title: 'Sanitair installateur Antwerpen | Badkamerrenovatie & leidingen | AB Service',
+  title: 'Loodgieter Antwerpen | Sanitair installateur & badkamerrenovatie | AB Service',
   description:
-    'AB Service realiseert sanitair installaties en badkamerrenovaties in Antwerpen. Eén aanspreekpunt voor leidingen, toestellen, warm water en afwerking.',
+    'AB Service is uw loodgieter in Antwerpen voor sanitair installaties, badkamerrenovaties en leidingwerk. Eén aanspreekpunt voor leidingen, warm water en afwerking.',
   keywords: [
+    'loodgieter Antwerpen',
+    'loodgieterswerk Antwerpen',
     'sanitair installateur Antwerpen',
     'badkamerrenovatie Antwerpen',
     'leidingwerk plaatsen Antwerpen',
@@ -23,8 +25,8 @@ export const metadata = getSEOTags({
   ],
   canonicalUrlRelative: '/installaties/sanitair',
   openGraph: {
-    title: 'Sanitair en badkamers op maat in Antwerpen | AB Service',
-    description: 'Van leidingen tot volledige badkamerrenovatie: AB Service verzorgt uw sanitairproject in Antwerpen.',
+    title: 'Sanitair loodgieter Antwerpen | AB Service',
+    description: 'Van leidingen tot volledige badkamerrenovatie: uw loodgieter AB Service verzorgt uw sanitairproject in Antwerpen.',
   },
 });
 
@@ -82,10 +84,10 @@ const HeroSection = () => (
           Sanitair Antwerpen
         </span>
         <h1 className="mt-6 text-[34px] font-bold leading-tight md:text-[44px] lg:text-[52px]">
-          Sanitair op maat: van leidingen tot luxueuze badkamers
+          Loodgieterswerk op maat: van leidingen tot luxueuze badkamers
         </h1>
         <p className="mt-4 text-lg text-white/80 md:text-xl">
-          AB Service verzorgt uw volledige sanitairproject in Antwerpen: vernieuwingswerken, warmwaterinstallaties en
+          AB Service verzorgt als loodgieter uw volledige sanitairproject in Antwerpen: vernieuwingswerken, warmwaterinstallaties en
           hoogwaardige afwerking. U krijgt één aanspreekpunt dat alle werken coördineert.
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -290,4 +292,3 @@ const SanitairPage = () => {
 };
 
 export default SanitairPage;
-

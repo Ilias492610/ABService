@@ -1,11 +1,13 @@
 import { Inter } from "next/font/google";
 import PlausibleProvider from "next-plausible";
 import { getSEOTags } from "@/libs/seo";
+import { getGlobalSchemaGraph } from "@/libs/schema";
 import ClientLayout from "@/components/LayoutClient";
 import config from "@/config";
 import "./globals.css";
 
 const font = Inter({ subsets: ["latin"] });
+const schemaGraph = getGlobalSchemaGraph();
 
 export const viewport = {
   // Will use the primary color of your theme to show a nice theme color in the URL bar of supported browsers
@@ -20,16 +22,17 @@ export const metadata = getSEOTags();
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme={config.colors.theme} className={font.className}>
-
-
-
-      {config.domainName && (
-        <head>
+    <html lang="nl-BE" data-theme={config.colors.theme} className={font.className}>
+      <head>
+        {config.domainName && (
           <PlausibleProvider domain={config.domainName} />
-          
-        </head>
-      )}
+        )}
+        <script
+          id="global-structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
+        />
+      </head>
       <body>
         {/* ClientLayout contains all the client wrappers (Crisp chat support, toast messages, tooltips, etc.) */}
         <ClientLayout>{children}</ClientLayout>

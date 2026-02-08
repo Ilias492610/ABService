@@ -12,10 +12,12 @@ import FadeInSection from '@/components/animations/FadeInSection';
 import { getSEOTags } from '@/libs/seo';
 
 export const metadata = getSEOTags({
-  title: 'Gasketel installeren Antwerpen | Condensatieketel vervanging | AB Service',
+  title: 'Gasketel installeren Antwerpen | Loodgieter & warmtespecialist | AB Service',
   description:
-    'AB Service vervangt en installeert gasketels in Antwerpen. Energiezuinige condensatieketels met attesten, premieadvies en onderhoud door erkende techniekers.',
+    'AB Service is uw loodgieter en warmtespecialist in Antwerpen voor vervanging en installatie van gasketels. Energiezuinige condensatieketels met attesten en premieadvies.',
   keywords: [
+    'loodgieter Antwerpen gasketel',
+    'warmtespecialist Antwerpen gasketel',
     'gasketel installeren Antwerpen',
     'condensatieketel vervangen Antwerpen',
     'cv installateur Antwerpen',
@@ -23,8 +25,8 @@ export const metadata = getSEOTags({
   ],
   canonicalUrlRelative: '/installaties/gasketels',
   openGraph: {
-    title: 'Condensatieketels op maat in Antwerpen | AB Service',
-    description: 'Laat uw gasketel plaatsen of vervangen door de erkende installateurs van AB Service in Antwerpen.',
+    title: 'Condensatieketel plaatsen Antwerpen | AB Service',
+    description: 'Laat uw gasketel plaatsen of vervangen door uw lokale loodgieter en warmtespecialist in Antwerpen.',
   },
 });
 
@@ -82,13 +84,13 @@ const Hero = () => (
           Condensatieketels Antwerpen
         </span>
         <h1 className="text-[34px] font-bold leading-tight md:text-[44px] lg:text-[52px]">
-          Nieuwe gasketel nodig? Wij regelen de volledige installatie
+          Nieuwe gasketel nodig? Uw loodgieter en warmtespecialist regelt alles
         </h1>
         <p className="mt-2 text-lg tracking-wide uppercase text-goudgeel">
           Plaatsing of vervanging van uw ketel in Antwerpen
         </p>
         <p className="mt-6 max-w-3xl text-base text-white/80 md:text-lg">
-          Uw huidige ketel verbruikt te veel of valt stil op koude dagen? AB Service plaatst energiezuinige condensatieketels
+          Uw huidige ketel verbruikt te veel of valt stil op koude dagen? AB Service, uw loodgieter en warmtespecialist, plaatst energiezuinige condensatieketels
           in Antwerpen en zorgt voor een feilloze overstap. Van rookgasafvoer tot regeling: alles wordt professioneel afgewerkt.
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -339,4 +341,3 @@ const GasketelsPage = () => {
 };
 
 export default GasketelsPage;
-

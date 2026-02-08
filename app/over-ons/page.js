@@ -8,12 +8,20 @@ import CookieConsentBanner from '@/components/sections/cookie-consent-banner';
 import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
 import GoogleRatingWidget from '@/components/sections/google-rating-widget';
 import FadeInSection from '@/components/animations/FadeInSection';
+import { getSEOTags } from '@/libs/seo';
 
-export const metadata = {
-  title: 'Over AB Service | Warmtespecialist Antwerpen sinds 2004',
+export const metadata = getSEOTags({
+  title: 'Over AB Service | Loodgieter en warmtespecialist Antwerpen sinds 2004',
   description:
-    'Maak kennis met AB Service: warmtespecialisten met meer dan 20 jaar ervaring in Antwerpen voor lekdetectie, sanitair en gasketelonderhoud.',
-};
+    'Maak kennis met AB Service: loodgieters en warmtespecialisten met meer dan 20 jaar ervaring in Antwerpen voor sanitair, gasketelonderhoud en herstellingen.',
+  keywords: [
+    'over AB Service',
+    'loodgieter Antwerpen',
+    'warmtespecialist Antwerpen',
+    'gasketel expert Antwerpen',
+  ],
+  canonicalUrlRelative: '/over-ons',
+});
 
 const values = [
   {
@@ -78,10 +86,10 @@ const OverOnsPage = () => {
                 Over AB Service
               </p>
               <h1 className="text-[36px] font-bold leading-tight md:text-[46px]">
-                Warmtespecialist met hart voor Antwerpen en haar bewoners
+                Loodgieter en warmtespecialist met hart voor Antwerpen
               </h1>
               <p className="text-base leading-relaxed text-white/80 md:text-lg">
-                We zijn warmtespecialisten met meer dan 20 jaar ervaring in het plaatsen, herstellen en onderhouden van sanitair en verwarming. Met een deskundig team en moderne technologie helpen we particulieren, appartementen, horeca en bedrijven.
+                We zijn loodgieters en warmtespecialisten met meer dan 20 jaar ervaring in het plaatsen, herstellen en onderhouden van sanitair en verwarming. Met een deskundig team en moderne technologie helpen we particulieren, appartementen, horeca en bedrijven.
               </p>
             </div>
           </section>

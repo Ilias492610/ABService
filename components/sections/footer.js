@@ -9,6 +9,7 @@ const dienstenLinks = [
 const algemeenLinks = [
   { text: 'Over ons', href: '/over-ons' },
   { text: 'FAQ', href: '/faq' },
+  { text: 'Foutcodes', href: '/foutcodes' },
   { text: 'Contact', href: '/contact' },
   { text: 'Privacy voorwaarden', href: '/privacy-policy' },
   { text: 'Algemene voorwaarden', href: '/algemene-voorwaarden' },

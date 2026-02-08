@@ -53,7 +53,11 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#1a2c3d]">info@abservice.be</h3>
+                  <h3 className="text-lg font-semibold text-[#1a2c3d]">
+                    <a href="mailto:info@abservice24.be" className="hover:underline">
+                      info@abservice24.be
+                    </a>
+                  </h3>
                   <p className="mt-1 text-[15px]">Mail ons voor offertes, onderhoudscontracten en plannen op maat.</p>
                 </div>
               </div>
@@ -170,4 +174,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-

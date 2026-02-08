@@ -18,6 +18,7 @@ const navigationLinks = [
     ],
   },
   { text: 'Keuring', href: '/keuring' },
+  { text: 'Foutcodes', href: '/foutcodes' },
   { text: 'Contact', href: '/contact' },
 ];
 
