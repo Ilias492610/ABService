@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import PlausibleProvider from "next-plausible";
+import { Analytics } from "@vercel/analytics/next";
 import { getSEOTags } from "@/libs/seo";
 import { getGlobalSchemaGraph } from "@/libs/schema";
 import ClientLayout from "@/components/LayoutClient";
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       <body>
         {/* ClientLayout contains all the client wrappers (Crisp chat support, toast messages, tooltips, etc.) */}
         <ClientLayout>{children}</ClientLayout>
+        <Analytics />
       </body>
     </html>
   );
