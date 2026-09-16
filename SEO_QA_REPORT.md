@@ -131,7 +131,8 @@ Chrome desktop and 390×844 mobile viewport were inspected against the productio
 ## Remaining operational checks
 
 - Add and test `MAILGUN_API_KEY`, sending domain and recipient configuration in Vercel.
-- Verify the Google Business Profile URL before adding the outbound profile link.
+- Controleer de Google-score periodiek op de officiële profielbestemming; de zwevende link gebruikt
+  de bestaande profiel-ID en toont bewust geen vast reviewaantal.
 - Rerun Lighthouse against the live canonical host after sufficient CDN warm-up and whenever the visual shell or critical images change.
 - Validate representative schema with Google Rich Results Test and Schema.org validator after public deployment.
 - Confirm Vercel Web Analytics is enabled for the production project and events appear without personal data.
