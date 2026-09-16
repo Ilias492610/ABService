@@ -7,28 +7,15 @@ import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 import {
   antwerpDistricts,
+  buildCoverageDirectoryGroups,
   coverageSources,
-  provinceGroups,
+  getDistrictPublicHref,
   serviceRegionHubs,
 } from "@/content/service-areas.mjs";
 
 export const metadata = buildPageMetadata(getPageDefinition("/werkgebied"));
 
-const directoryGroups = provinceGroups.map((group) => ({
-  name: group.name,
-  slug: group.slug,
-  hubPath: `/werkgebied/${group.slug}`,
-  areas: group.areas.map((area) => ({
-    name: area.name,
-    slug: area.slug,
-    href:
-      area.name === "Antwerpen"
-        ? "/"
-        : area.name === "Brussel"
-          ? "/werkgebied/brussel"
-          : null,
-  })),
-}));
+const directoryGroups = buildCoverageDirectoryGroups();
 
 export default function WorkAreaPage() {
   return (
@@ -74,13 +61,18 @@ export default function WorkAreaPage() {
           <p className="eyebrow">Stad Antwerpen</p>
           <h2>Tien districten, zonder dubbele Antwerpen-pagina</h2>
           <p className="section-lead">
-            De homepage blijft de hoofdlanding voor “loodgieter Antwerpen”. De negen andere
-            districten hebben een eigen pagina met controleerbare lokale context.
+            De homepage blijft de hoofdlanding voor “loodgieter Antwerpen”. Acht andere
+            districten hebben een indexeerbare pagina met controleerbare lokale context;
+            Berendrecht-Zandvliet-Lillo blijft voorlopig een niet-geïndexeerde onderzoeksroute.
           </p>
           <ul className="district-link-grid">
             {antwerpDistricts.map((district) => (
               <li key={district.slug}>
-                <Link href={district.canonicalPath}>{district.name}</Link>
+                {getDistrictPublicHref(district) ? (
+                  <Link href={getDistrictPublicHref(district)}>{district.name}</Link>
+                ) : (
+                  <span>{district.name}</span>
+                )}
               </li>
             ))}
           </ul>
@@ -91,8 +83,9 @@ export default function WorkAreaPage() {
           <p className="eyebrow">Alle gemeenten</p>
           <h2>Doorzoek de volledige lijst</h2>
           <p className="section-lead">
-            Alle namen staan in de pagina zelf en blijven ook zonder JavaScript leesbaar.
-            Alleen bestemmingen met voldoende eigen inhoud zijn klikbaar.
+            Alle 304 gemeenten en tien Antwerpse districten staan in de pagina zelf en blijven
+            ook zonder JavaScript leesbaar. Alleen bestemmingen met voldoende eigen inhoud zijn
+            klikbaar.
           </p>
           <MunicipalityFilter groups={directoryGroups} />
           <div className="source-note">

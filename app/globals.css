@@ -153,7 +153,9 @@ th { background: var(--mist); }
 .coverage-stats strong { color: var(--teal); font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1; }
 .coverage-stats span { margin-top: .45rem; color: var(--muted); font-weight: 750; }
 .district-link-grid, .area-name-grid, .inline-links { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
-.district-link-grid a, .inline-links a { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; background: white; padding: .55rem .85rem; color: var(--teal); font-weight: 800; text-decoration: none; }
+.district-link-grid a, .district-link-grid span, .inline-links a { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; background: white; padding: .55rem .85rem; color: var(--teal); font-weight: 800; text-decoration: none; }
+.district-link-grid span { background: var(--mist); color: var(--muted); font-weight: 700; }
+.inline-links span { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; background: var(--mist); padding: .55rem .85rem; color: var(--muted); font-weight: 700; }
 .district-link-grid a:hover, .inline-links a:hover { border-color: var(--teal); background: var(--teal-light); }
 .area-directory { margin-top: 2rem; }
 .area-search { position: sticky; top: 5.35rem; z-index: 20; border: 1px solid var(--line); border-radius: 1rem; background: rgb(255 255 255 / 97%); padding: 1rem; box-shadow: 0 14px 40px rgb(16 52 71 / 10%); }

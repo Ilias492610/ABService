@@ -23,7 +23,7 @@
 | `/advies/drukverlies-cv-ketel` | Drukverlies bij uw cv-ketel: oorzaken en veilige controle \| AB Service | Drukverlies bij uw cv-ketel: wat kunt u veilig controleren? | Pressure-loss information and safe triage | Index | Repair, fault codes, maintenance | Official Bosch user guidance; model-dependent pressure warning |
 | `/werkgebied` | Werkgebied AB Service \| Heel Vlaanderen en Brussel | AB Service in heel Vlaanderen en Brussel | Full service-area lookup | Index | Six hubs, ten Antwerp districts | Owner-confirmed coverage; official municipality counts |
 | `/werkgebied/{regio}` | Six unique regional titles | Regional/provincial name | Geographic orientation | Index | Municipalities, services, Antwerp districts where applicable | Owner coverage plus official administrative lists |
-| `/loodgieter-{district}` | Nine unique district titles | Verwarming en sanitair in district | Antwerp district intent | Index | Services, nearby districts, Antwerp hub | Owner coverage plus official district/wijk context; no project claims |
+| `/loodgieter-{district}` | Eight unique published district titles | Loodgieter in district voor relevante diensten | Antwerp district intent | Index | Services, nearby districts, Antwerp hub | Owner coverage plus official district/wijk context; no project claims |
 | `/privacy-policy` | Privacybeleid \| AB Service | Hoe AB Service website- en contactgegevens verwerkt | Privacy information | Index | Contact/legal | Matches Mailgun, Vercel hosting and Vercel Analytics code |
 | `/algemene-voorwaarden` | Algemene voorwaarden \| AB Service | Afspraken horen bij de concrete offerte of opdracht | General commercial framework | Index | Contact/legal | Conservative framework; no invented price/warranty clauses |
 
@@ -32,13 +32,14 @@
 | URL | H1 | Status | Reason | Sitemap/nav |
 |---|---|---|---|---|
 | `/installaties/airconditioning` | Airconditioning is niet opgenomen in het actieve websiteaanbod | `noindex, follow` | Active service and F-gas/certification evidence missing | Excluded |
+| `/loodgieter-berendrecht-zandvliet-lillo` | Loodgieter voor Berendrecht, Zandvliet en Lillo | `noindex, follow` | URL/search-intent research and additional unique evidence required | Excluded |
 
 ## Draft, non-routable candidates
 
 ### Locality pages
 
-The ten Antwerp districts are registered; Antwerpen resolves to `/` and nine district pages are
-published. The remaining 302 municipality candidates are data-only drafts. Each needs a distinct
+The ten Antwerp districts are registered; Antwerpen resolves to `/`, eight district pages are
+published and one district route remains noindex. The remaining 302 municipality candidates are data-only drafts. Each needs a distinct
 Search Console/search-demand opportunity, genuine project/review evidence or another strong source
 of unique customer value, plus similarity and editorial review.
 

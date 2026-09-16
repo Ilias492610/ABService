@@ -5,10 +5,12 @@ import ContactCta from "@/components/contact-cta";
 import PageHero from "@/components/page-hero";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
+import { getPublishedProjectsForHub, projects } from "@/content/projects.mjs";
 import {
   antwerpDistricts,
   coverageSources,
   getProvinceGroup,
+  getDistrictPublicHref,
   getServiceRegionHub,
   serviceRegionHubs,
 } from "@/content/service-areas.mjs";
@@ -33,6 +35,7 @@ export default async function RegionPage({ params }) {
   if (!hub || !group) notFound();
 
   const source = regio === "brussel" ? coverageSources[1] : coverageSources[0];
+  const localProjects = getPublishedProjectsForHub(hub.groupName, projects);
 
   return (
     <>
@@ -45,7 +48,7 @@ export default async function RegionPage({ params }) {
       />
       <PageHero
         eyebrow="Werkgebied"
-        title={hub.name}
+        title={hub.heading}
         intro={hub.summary}
         ctaLabel={`Aanvraag uit ${hub.name}`}
       />
@@ -66,10 +69,18 @@ export default async function RegionPage({ params }) {
           <div>
             <p className="eyebrow">Bewijsstatus</p>
             <h2>Lokale ervaring wordt controleerbaar toegevoegd</h2>
-            <p>
-              Projectcases en lokale reviews verschijnen hier pas na controle van werkbewijs,
-              toestemming en authentieke foto’s. Zo blijft de informatie bruikbaar en betrouwbaar.
-            </p>
+            {localProjects.length ? (
+              <ul className="link-list">
+                {localProjects.map((project) => (
+                  <li key={project.path}><Link href={project.path}>{project.title}</Link></li>
+                ))}
+              </ul>
+            ) : (
+              <p>
+                Projectcases en lokale reviews verschijnen hier pas na controle van werkbewijs,
+                toestemming en authentieke foto’s. Zo blijft de informatie bruikbaar en betrouwbaar.
+              </p>
+            )}
           </div>
         </div>
       </section>
@@ -102,12 +113,19 @@ export default async function RegionPage({ params }) {
             <p className="eyebrow">Stad Antwerpen</p>
             <h2>De tien districten</h2>
             <p className="section-lead">
-              Antwerpen verwijst naar de homepage. De overige districten hebben elk een eigen
-              lokale pagina; samen vormen ze geen tweede service×plaats-matrix.
+              Antwerpen verwijst naar de homepage. Acht districten hebben een indexeerbare lokale
+              pagina; Berendrecht-Zandvliet-Lillo blijft noindex tot de zoekintentie is onderzocht.
+              Samen vormen ze geen tweede service×plaats-matrix.
             </p>
             <ul className="district-link-grid">
               {antwerpDistricts.map((district) => (
-                <li key={district.slug}><Link href={district.canonicalPath}>{district.name}</Link></li>
+                <li key={district.slug}>
+                  {getDistrictPublicHref(district) ? (
+                    <Link href={getDistrictPublicHref(district)}>{district.name}</Link>
+                  ) : (
+                    <span>{district.name}</span>
+                  )}
+                </li>
               ))}
             </ul>
           </div>

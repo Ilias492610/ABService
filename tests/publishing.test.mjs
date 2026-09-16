@@ -27,6 +27,7 @@ test("the public route registry publishes verified guidance and withholds unsupp
   assert.ok(indexablePaths.includes("/werkgebied/antwerpen"));
   assert.ok(indexablePaths.includes("/werkgebied/brussel"));
   assert.ok(indexablePaths.includes("/loodgieter-wilrijk"));
+  assert.ok(!indexablePaths.includes("/loodgieter-berendrecht-zandvliet-lillo"));
   assert.ok(!indexablePaths.includes("/loodgieter-antwerpen"));
   assert.ok(indexablePaths.includes("/foutcodes/bosch"));
   assert.ok(indexablePaths.includes("/foutcodes/junkers"));
@@ -34,6 +35,10 @@ test("the public route registry publishes verified guidance and withholds unsupp
 
   assert.equal(
     pageRegistry.find((entry) => entry.path === "/installaties/airconditioning")?.status,
+    "noindex"
+  );
+  assert.equal(
+    pageRegistry.find((entry) => entry.path === "/loodgieter-berendrecht-zandvliet-lillo")?.status,
     "noindex"
   );
 });

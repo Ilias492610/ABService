@@ -6,11 +6,17 @@ Project pages are proof, not filler. Do not create `/projecten` or a case-study 
 
 ```js
 {
+  path: "/projecten/gasketel-vervangen-hoboken",
   title: "Gasketel vervangen in Hoboken",
   status: "published",
   service: "Gasketelinstallatie",
-  city: "Hoboken",
+  province: "Antwerpen",
+  city: "Antwerpen",
+  district: "Hoboken",
+  brand: "Niet van toepassing",
   approximateDate: "2026-08",
+  problem: "Feitelijk technisch probleem.",
+  solution: "Feitelijke oplossing.",
   situation: "Feitelijke beginsituatie zonder klantidentificatie.",
   workPerformed: ["Concrete stap 1", "Concrete stap 2"],
   outcome: "Feitelijk resultaat zonder prestatiegarantie.",
@@ -18,6 +24,8 @@ Project pages are proof, not filler. Do not create `/projecten` or a case-study 
     { src: "/projecten/bestandsnaam.webp", verified: true }
   ],
   customerApproval: true,
+  reviewApproved: false,
+  reviewText: "",
   workEvidence: "Interne verwijzing naar werkbon/factuur, niet publiek tonen."
 }
 ```
@@ -59,10 +67,11 @@ For every completed project, record municipality, Antwerp district where applica
 brand, problem, solution, authentic photos and approved review/testimonial status. Once a validated
 case is published:
 
-1. set `hasProjectEvidence: true` on the matching service-area record;
+1. voeg het geval aan `content/projects.mjs` toe; `deriveAreaEvidence` zet de lokale
+   project-/reviewstatus en score-input vervolgens automatisch;
 2. link the project to the relevant central service page;
 3. link the project to the municipality/district page if one is published;
-4. link it to the matching province/Brussels hub;
+4. de matching provincie-/Brusselhub haalt gepubliceerde, gevalideerde projecten automatisch op;
 5. add a reciprocal project link from the area page only when it is genuinely relevant;
 6. reassess—but do not automatically publish—the municipality page.
 

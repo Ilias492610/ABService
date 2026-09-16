@@ -11,6 +11,7 @@ Build local search visibility and qualified enquiries through useful, verifiable
 - `content/fault-guides.mjs` separates manufacturer-backed guides from withheld brand content.
 - `content/content-backlog.mjs` records locality, commercial-brand and unsupported-service drafts.
 - `content/projects.mjs` defines a strict evidence gate for future case studies.
+- `content/service-area-scoring.mjs` validates the bounded seven-factor priority score.
 - `content/service-areas.mjs` is the source of truth for 304 municipalities, ten Antwerp districts and six regional hubs.
 - `content/media.mjs` records owner-confirmed legacy assets as illustrations and explicitly excludes them as project evidence.
 - `libs/seo-data.mjs` builds metadata and sitemap entries.
@@ -46,7 +47,7 @@ The policy is enforced in tests. A content idea does not become indexable merely
 | Manufacturer guidance | Vaillant/Bulex/Bosch/Junkers foutcode | `/foutcodes/vaillant`, `/foutcodes/bulex`, `/foutcodes/bosch`, `/foutcodes/junkers` |
 | Complete coverage | municipality lookup and service territory | `/werkgebied` |
 | Regional coverage | province/region orientation | six `/werkgebied/{regio}` hubs |
-| Antwerp districts | district-specific plumbing intent | `/` for Antwerpen; nine `/loodgieter-{district}` pages |
+| Antwerp districts | district-specific plumbing intent | `/` for Antwerpen; eight indexable district pages; Berendrecht-Zandvliet-Lillo noindex |
 
 ## Geographic architecture
 
@@ -54,7 +55,8 @@ The policy is enforced in tests. A content idea does not become indexable merely
 - `/werkgebied` provides the customer-facing, filterable directory.
 - Six hubs explain geographic planning and link back to authoritative central service pages.
 - The homepage retains the “loodgieter Antwerpen” intent; no duplicate district-Antwerpen URL exists.
-- Nine other Antwerp districts have unique, indexable pages grounded in official geographic context.
+- Eight other Antwerp districts have unique, indexable pages grounded in official geographic
+  context. Berendrecht-Zandvliet-Lillo remains noindex pending URL/search-intent research.
 - 302 municipality candidates remain non-routable drafts pending evidence/search opportunity.
 - Global schema uses only the broad `Vlaams Gewest` and `Brussels Hoofdstedelijk Gewest` areas.
 - Website coverage is not copied into Google Business Profile; see `GOOGLE_BUSINESS_SERVICE_AREA_PLAN.md`.

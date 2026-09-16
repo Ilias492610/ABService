@@ -5,6 +5,9 @@
 
 ## Registered coverage
 
+The complete, generated municipality-by-municipality appendix is available in
+`SERVICE_AREA_REGISTRY.md`; it records all 304 served records and the 302 draft/no-route statuses.
+
 | Region | Registered municipalities | Published hub |
 |---|---:|---|
 | Province Antwerpen | 67 | `/werkgebied/antwerpen` |
@@ -24,15 +27,18 @@ All ten official districts are registered: Antwerpen, Berchem, Berendrecht-Zandv
 Borgerhout, Borsbeek, Deurne, Ekeren, Hoboken, Merksem and Wilrijk.
 
 - Antwerpen owns the homepage `/`; `/loodgieter-antwerpen` is intentionally not generated.
-- The other nine districts have indexable `/loodgieter-{district}` pages.
-- Evidence per district: owner-confirmed coverage plus official district/wijk geography.
+- Eight other districts have indexable `/loodgieter-{district}` pages.
+- Berendrecht-Zandvliet-Lillo has a routable `noindex, follow` research page until URL and
+  search-intent evidence are sufficient.
+- Evidence per published district: owner-confirmed coverage, the prompt's explicit Antwerp
+  district keyword priority, and official district/wijk geography from Stad in Cijfers.
 - No district page claims a local project, review, office, technician base or arrival time.
 
 ## Publication and indexability
 
-- 35 indexable routes in the central registry.
-- 1 routable `noindex` page: air conditioning.
-- 9 dedicated district pages.
+- 34 indexable routes in the central registry.
+- 2 routable `noindex` pages: air conditioning and Berendrecht-Zandvliet-Lillo.
+- 8 indexable district pages and 1 noindex district route.
 - 6 regional coverage hubs.
 - 302 municipality candidates remain data-only drafts.
 - 302 individual municipality URLs are intentionally not generated.
@@ -97,3 +103,4 @@ similarity review and either genuine work evidence or a defensible customer-purp
 - [Vlaanderen: 285 municipalities](https://www.vlaanderen.be/gemeenten-en-provincies/overzicht-van-vlaamse-steden-en-gemeenten)
 - [Brussels: 19 municipalities](https://be.brussels/nl/over-het-gewest/structuur-en-organisatie/plaatselijke-besturen-en-gemeenten/gemeenten)
 - [Antwerp: 10 districts](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
+- [Antwerp Stad in Cijfers: official area and wijk classification](https://stadincijfers.antwerpen.be/viewer/JiveEmbedded.aspx?favorite=ggw7_11002bez02&geolevel=ggw7&presel_code=introkaart_eengebied_new)

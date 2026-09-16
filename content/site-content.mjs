@@ -1,4 +1,4 @@
-import { indexableDistricts, serviceRegionHubs } from "./service-areas.mjs";
+import { routableDistricts, serviceRegionHubs } from "./service-areas.mjs";
 
 export const CONTENT_STATUS = Object.freeze({
   PUBLISHED: "published",
@@ -180,9 +180,9 @@ export const pageRegistry = Object.freeze([
     changeFrequency: "monthly",
     priority: hub.slug === "antwerpen" ? 0.75 : 0.65,
   })),
-  ...indexableDistricts.map((districtEntry) => ({
+  ...routableDistricts.map((districtEntry) => ({
     path: districtEntry.canonicalPath,
-    status: CONTENT_STATUS.PUBLISHED,
+    status: districtEntry.indexable ? CONTENT_STATUS.PUBLISHED : CONTENT_STATUS.NOINDEX,
     title: districtEntry.title,
     description: districtEntry.description,
     changeFrequency: "monthly",

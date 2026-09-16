@@ -2,7 +2,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/breadcrumbs";
 import ContactCta from "@/components/contact-cta";
 import PageHero from "@/components/page-hero";
-import { getDistrict } from "@/content/service-areas.mjs";
+import { getDistrict, getDistrictPublicHref } from "@/content/service-areas.mjs";
 
 const services = [
   ["Cv-ketelonderhoud", "/onderhoud"],
@@ -10,16 +10,6 @@ const services = [
   ["Sanitair en loodgieterswerk", "/installaties/sanitair"],
   ["Gasketelinstallatie", "/installaties/gasketels"],
 ];
-
-const answerFor = (question, district) => {
-  if (question.startsWith("Werkt") || question.startsWith("Komt") || question.startsWith("In welke")) {
-    return `Ja. ${district.name} behoort tot het bevestigde werkgebied. Een concrete afspraak volgt nadat AB Service de dienst, locatie, technische situatie en planning heeft beoordeeld.`;
-  }
-  if (question.includes("prijs") || question.includes("offerte")) {
-    return "Nee, één foto is zelden voldoende voor een betrouwbare prijs. Materiaal, bereikbaarheid, aansluitingen, omvang en eventuele vervolgdiagnose bepalen de uiteindelijke scope.";
-  }
-  return `Vermeld bij een aanvraag in ${district.name} het adres of de buurt, woningtype, verdieping, merk en model, zichtbare foutcode en bereikbaarheid. Voeg overzichts- en detailfoto’s toe zonder het toestel te openen.`;
-};
 
 export default function DistrictPage({ slug }) {
   const district = getDistrict(slug);
@@ -36,7 +26,7 @@ export default function DistrictPage({ slug }) {
       />
       <PageHero
         eyebrow={`Loodgieter ${district.name}`}
-        title={`Verwarming en sanitair in ${district.name}`}
+        title={district.heading}
         intro={district.intro}
         ctaLabel={`Aanvraag uit ${district.name}`}
       />
@@ -72,10 +62,10 @@ export default function DistrictPage({ slug }) {
           <p className="eyebrow">Praktische antwoorden</p>
           <h2>Veelgestelde vragen over {district.name}</h2>
           <div className="faq-list">
-            {district.faq.map((question) => (
+            {district.faq.map(([question, answer]) => (
               <details key={question}>
                 <summary>{question}</summary>
-                <p>{answerFor(question, district)}</p>
+                <p>{answer}</p>
               </details>
             ))}
           </div>
@@ -90,14 +80,18 @@ export default function DistrictPage({ slug }) {
               const nearby = getDistrict(nearbySlug);
               return (
                 <li key={nearbySlug}>
-                  <Link href={nearby.canonicalPath}>{nearby.name}</Link>
+                  {getDistrictPublicHref(nearby) ? (
+                    <Link href={getDistrictPublicHref(nearby)}>{nearby.name}</Link>
+                  ) : (
+                    <span>{nearby.name}</span>
+                  )}
                 </li>
               );
             })}
             <li><Link href="/werkgebied/antwerpen">Heel provincie Antwerpen</Link></li>
           </ul>
           <p className="source-note">
-            Lokale benamingen zijn gebaseerd op de officiële Antwerpse districts- en wijkindeling;
+            Lokale benamingen zijn gebaseerd op <a href={district.localSource.href} target="_blank" rel="noreferrer">{district.localSource.label} ↗</a>;
             ze zijn geen bewering over uitgevoerde projecten of lokale reviews.
           </p>
         </div>

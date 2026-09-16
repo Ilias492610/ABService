@@ -39,7 +39,7 @@ export default function MunicipalityFilter({ groups }) {
           autoComplete="off"
         />
         <p aria-live="polite">
-          {resultCount} {resultCount === 1 ? "gemeente gevonden" : "gemeenten gevonden"}
+          {resultCount} {resultCount === 1 ? "gebied gevonden" : "gebieden gevonden"}
         </p>
       </div>
       {filteredGroups.length ? (
