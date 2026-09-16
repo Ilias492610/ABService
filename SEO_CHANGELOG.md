@@ -14,6 +14,19 @@
 - Expanded automated policy coverage beyond the 25-test baseline, including directory search,
   similarity, score-bound and project-to-area derivation tests.
 
+## 16 September 2026 — Phase E production release
+
+- Merged GitHub pull request `#4` into `main` at commit `73f468e` after both Vercel preview checks passed.
+- Completed both connected Vercel production deployments successfully; the primary `ab-service`
+  project continues to serve `www.abservice24.be`.
+- Passed the post-deploy production crawl for 36 pages and 36 internal links.
+- Rechecked all four official geographic sources successfully after deployment.
+- Confirmed live 200 responses for the directory, representative hubs, district pages, sitemap
+  and robots.
+- Confirmed the live sitemap includes all six hubs and the indexable Wilrijk page, excludes the
+  noindex Berendrecht-Zandvliet-Lillo route, and that both routes emit the intended robots and
+  canonical metadata.
+
 ## 16 September 2026 — production release
 
 - Merged GitHub pull request `#2` into `main` at commit `4209f8d`.
