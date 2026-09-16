@@ -1,3 +1,5 @@
+import { serviceAreas } from "./service-areas.mjs";
+
 const asDraft = (slug, label, missingEvidence) => ({
   slug,
   label,
@@ -5,14 +7,21 @@ const asDraft = (slug, label, missingEvidence) => ({
   missingEvidence,
 });
 
-export const areaDrafts = Object.freeze([
-  "hoboken", "wilrijk", "deurne", "berchem", "merksem", "borgerhout",
-  "edegem", "mortsel", "ekeren", "kontich",
-].map((slug) => asDraft(slug, slug[0].toUpperCase() + slug.slice(1), [
-  "owner-confirmed service coverage",
-  "genuine local project or operational proof",
-  "unique local customer value",
-])));
+export const areaDrafts = Object.freeze(
+  serviceAreas
+    .filter(
+      (area) =>
+        !(area.slug === "antwerpen" && area.province === "Antwerpen") &&
+        !(area.slug === "brussel" && area.region === "Brussel")
+    )
+    .map((area) =>
+      asDraft(area.slug, area.name, [
+        "search demand or Search Console opportunity",
+        "genuine project/review evidence or sufficiently unique local value",
+        "similarity review and editorial approval",
+      ])
+    )
+);
 
 export const brandDrafts = Object.freeze([
   "vaillant", "bulex", "bosch", "junkers", "buderus", "viessmann",

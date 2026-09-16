@@ -12,7 +12,10 @@ test("global schema contains only verified business facts", () => {
 
   assert.equal(schema["@context"], "https://schema.org");
   assert.deepEqual(business["@type"], ["Plumber", "HVACBusiness"]);
-  assert.deepEqual(business.areaServed, { "@type": "City", name: "Antwerpen" });
+  assert.deepEqual(business.areaServed, [
+    { "@type": "AdministrativeArea", name: "Vlaams Gewest" },
+    { "@type": "AdministrativeArea", name: "Brussels Hoofdstedelijk Gewest" },
+  ]);
   assert.equal(business.telephone, "+32484906966");
   assert.ok(!("address" in business));
   assert.ok(!("aggregateRating" in business));

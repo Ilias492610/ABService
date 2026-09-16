@@ -6,11 +6,17 @@ Project pages are proof, not filler. Do not create `/projecten` or a case-study 
 
 ```js
 {
+  path: "/projecten/gasketel-vervangen-hoboken",
   title: "Gasketel vervangen in Hoboken",
   status: "published",
   service: "Gasketelinstallatie",
-  city: "Hoboken",
+  province: "Antwerpen",
+  city: "Antwerpen",
+  district: "Hoboken",
+  brand: "Niet van toepassing",
   approximateDate: "2026-08",
+  problem: "Feitelijk technisch probleem.",
+  solution: "Feitelijke oplossing.",
   situation: "Feitelijke beginsituatie zonder klantidentificatie.",
   workPerformed: ["Concrete stap 1", "Concrete stap 2"],
   outcome: "Feitelijk resultaat zonder prestatiegarantie.",
@@ -18,6 +24,8 @@ Project pages are proof, not filler. Do not create `/projecten` or a case-study 
     { src: "/projecten/bestandsnaam.webp", verified: true }
   ],
   customerApproval: true,
+  reviewApproved: false,
+  reviewText: "",
   workEvidence: "Interne verwijzing naar werkbon/factuur, niet publiek tonen."
 }
 ```
@@ -52,6 +60,23 @@ The existing files registered in `content/media.mjs` are owner-confirmed website
 6. Outcome and handover documents without guarantees beyond evidence.
 7. Authentic photo captions.
 8. Links to the relevant service, municipality page if published, and contact.
+
+## Project-to-area evidence workflow
+
+For every completed project, record municipality, Antwerp district where applicable, service,
+brand, problem, solution, authentic photos and approved review/testimonial status. Once a validated
+case is published:
+
+1. voeg het geval aan `content/projects.mjs` toe; `deriveAreaEvidence` zet de lokale
+   project-/reviewstatus en score-input vervolgens automatisch;
+2. link the project to the relevant central service page;
+3. link the project to the municipality/district page if one is published;
+4. de matching provincie-/Brusselhub haalt gepubliceerde, gevalideerde projecten automatisch op;
+5. add a reciprocal project link from the area page only when it is genuinely relevant;
+6. reassess—but do not automatically publish—the municipality page.
+
+A single project strengthens geographic evidence but does not prove a branch, review score,
+permanent local presence or guaranteed availability.
 
 ## SEO rules
 

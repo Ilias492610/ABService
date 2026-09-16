@@ -21,6 +21,9 @@
 | `/foutcodes/bosch` | Bosch foutcodes: officiële bron en veilige stappen \| AB Service | Bosch foutcodes: betekenis en veilige eerste stap | Bosch fault guidance | Index | Hub, contact, official documentation | Official Bosch codebook; limited to named Serie -4 scope |
 | `/foutcodes/junkers` | Junkers foutcodes: officiële bron en veilige stappen \| AB Service | Junkers foutcodes: betekenis en veilige eerste stap | Junkers fault guidance | Index | Hub, contact, official documentation | Official Bosch codebook and older-device documentation; limited to named Serie -4 scope |
 | `/advies/drukverlies-cv-ketel` | Drukverlies bij uw cv-ketel: oorzaken en veilige controle \| AB Service | Drukverlies bij uw cv-ketel: wat kunt u veilig controleren? | Pressure-loss information and safe triage | Index | Repair, fault codes, maintenance | Official Bosch user guidance; model-dependent pressure warning |
+| `/werkgebied` | Werkgebied AB Service \| Heel Vlaanderen en Brussel | AB Service in heel Vlaanderen en Brussel | Full service-area lookup | Index | Six hubs, ten Antwerp districts | Owner-confirmed coverage; official municipality counts |
+| `/werkgebied/{regio}` | Six unique regional titles | Loodgieter en verwarmingsservice in region/province | Geographic orientation | Index | Municipalities, services, Antwerp districts where applicable | Owner coverage plus official administrative lists |
+| `/loodgieter-{district}` | Eight unique published district titles | Loodgieter in district voor relevante diensten | Antwerp district intent | Index | Services, nearby districts, Antwerp hub | Owner coverage plus official district/wijk context; no project claims |
 | `/privacy-policy` | Privacybeleid \| AB Service | Hoe AB Service website- en contactgegevens verwerkt | Privacy information | Index | Contact/legal | Matches Mailgun, Vercel hosting and Vercel Analytics code |
 | `/algemene-voorwaarden` | Algemene voorwaarden \| AB Service | Afspraken horen bij de concrete offerte of opdracht | General commercial framework | Index | Contact/legal | Conservative framework; no invented price/warranty clauses |
 
@@ -29,12 +32,16 @@
 | URL | H1 | Status | Reason | Sitemap/nav |
 |---|---|---|---|---|
 | `/installaties/airconditioning` | Airconditioning is niet opgenomen in het actieve websiteaanbod | `noindex, follow` | Active service and F-gas/certification evidence missing | Excluded |
+| `/loodgieter-berendrecht-zandvliet-lillo` | Loodgieter voor Berendrecht, Zandvliet en Lillo | `noindex, follow` | URL/search-intent research and additional unique evidence required | Excluded |
 
 ## Draft, non-routable candidates
 
 ### Locality pages
 
-Hoboken, Wilrijk, Deurne, Berchem, Merksem, Borgerhout, Edegem, Mortsel, Ekeren and Kontich. Each needs owner-confirmed coverage, genuine local work evidence and unique local value.
+The ten Antwerp districts are registered; Antwerpen resolves to `/`, eight district pages are
+published and one district route remains noindex. The remaining 302 municipality candidates are data-only drafts. Each needs a distinct
+Search Console/search-demand opportunity, genuine project/review evidence or another strong source
+of unique customer value, plus similarity and editorial review.
 
 ### Commercial brand pages
 
@@ -50,7 +57,7 @@ Leak detection, water-leak repair, drain unblocking, boiler work, pipework and b
 
 ## Removed SEO risks
 
-- No location-doorway pages.
+- No mass-generated municipality doorway pages or service × place matrix.
 - No commercial brand pages inferred from logos or fault-code content.
 - No FAQPage schema.
 - No review score/count or AggregateRating.

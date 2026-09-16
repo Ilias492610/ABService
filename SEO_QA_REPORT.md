@@ -1,10 +1,32 @@
 # AB Service SEO QA Report
 
 **Audit date:** 16 September 2026  
-**Branch:** `codex/seo-transformation`  
+**Branch:** `codex/phase-e-service-areas`
 **Test target:** local Next.js production server on port 3100
 
-## Production release verification
+## Phase E pre-deployment verification
+
+- Registered exactly 304 municipalities: 67 Antwerpen, 38 Limburg, 55 Oost-Vlaanderen,
+  63 Vlaams-Brabant, 62 West-Vlaanderen and 19 Brussels.
+- Registered all ten Antwerp districts; eight district URLs are indexable, one is noindex and Antwerpen remains `/`.
+- Added six unique, indexable regional hubs and one complete `/werkgebied` directory.
+- Build currently generates 45 static pages/routes; the registry contains 34 indexable pages and
+  two routable `noindex` pages.
+- `npm test`: 34 pass, zero fail.
+- `npm run lint`: passes.
+- `npm run build`: Next.js 16.3.5 production build passes.
+- `npm run sources:audit`: four official geographic sources return HTTP 200.
+- `npm run seo:audit -- http://localhost:3100`: 36 routable pages and 36 internal links pass.
+- Chrome desktop and 390×844 mobile checks pass for `/werkgebied` and `/loodgieter-wilrijk`.
+- The municipality filter returned one result for “Gent”; 314 searchable area elements were
+  present in the initial rendered DOM: all 304 municipalities plus ten Antwerp districts.
+- Mobile width matched document width (390 px), with one H1 and no Next.js error overlay.
+- Mobile navigation expanded correctly and included the new Werkgebied destination.
+- Observed console errors originated from installed Chrome extensions; no application-origin
+  error was recorded.
+- Production deployment results are recorded after the release step.
+
+## Previous production release verification (before Phase E)
 
 - Pull request [#2](https://github.com/Ilias492610/ABService/pull/2) was merged into `main` as commit `4209f8d`.
 - The primary Vercel project `ab-service` completed deployment `2eTDodM2Q` with status **Ready** and serves `www.abservice24.be`.
@@ -36,10 +58,11 @@ The homepage lab LCP improved by 28.7 seconds under comparable mobile Lighthouse
 ## Automated verification
 
 - `npm audit --omit=dev`: zero vulnerabilities.
-- `npm test`: 25 tests pass, zero fail.
+- Baseline release: `npm test` had 25 tests; the final Phase E total is recorded after the last
+  pre-deployment verification run.
 - `npm run lint`: ESLint flat-config run passes with zero warnings/errors.
-- `npm run build`: Next.js 16.3.5 production build passes; 29 routes generated.
-- `npm run seo:audit -- http://localhost:3100`: 20 routable pages and 20 internal links pass.
+- `npm run build`: Next.js 16.3.5 production build passes; 45 routes generated.
+- `npm run seo:audit -- http://localhost:3100`: 36 routable pages and 36 internal links pass.
 
 The SEO crawl verifies:
 
@@ -62,7 +85,7 @@ The SEO crawl verifies:
 
 - Global graph parses as JSON and contains Organization, WebSite and a Plumber/HVACBusiness entity.
 - No address, geo, hours, price range, aggregate rating, review, award or certification is emitted.
-- `areaServed` contains only owner-confirmed Antwerp.
+- `areaServed` contains the owner-confirmed `Vlaams Gewest` and `Brussels Hoofdstedelijk Gewest`, not 304 keyword entries.
 - Interior pages emit BreadcrumbList matching the visible breadcrumb.
 - FAQPage schema was removed.
 - Unit tests guard verified-only properties and breadcrumb ordering.

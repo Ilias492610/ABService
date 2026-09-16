@@ -2,7 +2,7 @@
 
 ## Objective
 
-Build local search visibility and qualified enquiries through useful, verifiable pages rather than page volume. The primary entity is AB Service, a plumbing, sanitary and heating service business serving Antwerp. The canonical website is `https://www.abservice24.be`.
+Build local search visibility and qualified enquiries through useful, verifiable pages rather than page volume. The primary entity is AB Service, an Antwerp-market plumbing, sanitary and heating service business with owner-confirmed coverage throughout Flanders and Brussels. The canonical website is `https://www.abservice24.be`.
 
 ## Architecture
 
@@ -11,6 +11,8 @@ Build local search visibility and qualified enquiries through useful, verifiable
 - `content/fault-guides.mjs` separates manufacturer-backed guides from withheld brand content.
 - `content/content-backlog.mjs` records locality, commercial-brand and unsupported-service drafts.
 - `content/projects.mjs` defines a strict evidence gate for future case studies.
+- `content/service-area-scoring.mjs` validates the bounded seven-factor priority score.
+- `content/service-areas.mjs` is the source of truth for 304 municipalities, ten Antwerp districts and six regional hubs.
 - `content/media.mjs` records owner-confirmed legacy assets as illustrations and explicitly excludes them as project evidence.
 - `libs/seo-data.mjs` builds metadata and sitemap entries.
 - `libs/schema-data.mjs` builds verified global and breadcrumb schema.
@@ -43,6 +45,21 @@ The policy is enforced in tests. A content idea does not become indexable merely
 | Questions | onderhoud, keuring, herstel, prijs | `/faq` |
 | Fault guidance | cv-ketel foutcodes | `/foutcodes` |
 | Manufacturer guidance | Vaillant/Bulex/Bosch/Junkers foutcode | `/foutcodes/vaillant`, `/foutcodes/bulex`, `/foutcodes/bosch`, `/foutcodes/junkers` |
+| Complete coverage | municipality lookup and service territory | `/werkgebied` |
+| Regional coverage | province/region orientation | six `/werkgebied/{regio}` hubs |
+| Antwerp districts | district-specific plumbing intent | `/` for Antwerpen; eight indexable district pages; Berendrecht-Zandvliet-Lillo noindex |
+
+## Geographic architecture
+
+- All 304 municipalities are registered as served, but only useful destinations are links.
+- `/werkgebied` provides the customer-facing, filterable directory.
+- Six hubs explain geographic planning and link back to authoritative central service pages.
+- The homepage retains the “loodgieter Antwerpen” intent; no duplicate district-Antwerpen URL exists.
+- Eight other Antwerp districts have unique, indexable pages grounded in official geographic
+  context. Berendrecht-Zandvliet-Lillo remains noindex pending URL/search-intent research.
+- 302 municipality candidates remain non-routable drafts pending evidence/search opportunity.
+- Global schema uses only the broad `Vlaams Gewest` and `Brussels Hoofdstedelijk Gewest` areas.
+- Website coverage is not copied into Google Business Profile; see `GOOGLE_BUSINESS_SERVICE_AREA_PLAN.md`.
 
 ## Priority and current status
 
@@ -64,7 +81,7 @@ The policy is enforced in tests. A content idea does not become indexable merely
 
 - Confirm the exact Google Business Profile URL and add a lightweight outbound link.
 - Confirm technician recognition numbers and scope before publishing them.
-- Confirm business hours, service-area municipalities and whether customers are served at a physical address.
+- Confirm business hours, routine GBP service areas and whether customers are served at a physical address.
 - Confirm active brands and air-conditioning/F-gas capability.
 - Confirm an actual pricing policy before publishing amounts.
 - Supply authentic completed-project evidence and consented photography.
@@ -72,7 +89,7 @@ The policy is enforced in tests. A content idea does not become indexable merely
 ### Priority 3 — publish only after evidence gates pass
 
 - First real project/case study and projects hub.
-- One unique locality page at a time, starting with the strongest evidenced municipality.
+- One additional municipality page at a time, starting with the strongest evidenced/search-backed opportunity.
 - Commercial brand-service pages for brands supported by work evidence.
 - Additional service pages where operational scope is confirmed.
 - Further advisory articles based on real customer questions and technician expertise.
@@ -87,6 +104,8 @@ The policy is enforced in tests. A content idea does not become indexable merely
 - Repair, maintenance and fault-code pages link to the pressure-loss decision guide.
 - FAQ links back to the relevant service explanation.
 - Footer provides a compact service and knowledge hub on every page.
+- Navigation, homepage and footer lead to `/werkgebied`; hubs lead to services and districts.
+- District pages lead to nearby districts, the Antwerp hub, tariffs and central service authorities.
 
 ## Content quality gate
 

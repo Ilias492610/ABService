@@ -25,10 +25,10 @@ export const buildGlobalSchemaGraph = (origin = business.canonicalOrigin) => ({
       telephone: business.phoneInternational,
       vatID: business.vatId,
       image: absoluteUrl(origin, "/icon.png"),
-      areaServed: {
-        "@type": "City",
-        name: business.primaryMarket,
-      },
+      areaServed: business.serviceRegions.map((name) => ({
+        "@type": "AdministrativeArea",
+        name,
+      })),
       parentOrganization: { "@id": `${origin}/#organization` },
     },
     {

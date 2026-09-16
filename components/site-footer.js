@@ -21,6 +21,16 @@ const knowledgeLinks = [
   ["Algemene voorwaarden", "/algemene-voorwaarden"],
 ];
 
+const areaLinks = [
+  ["Volledig werkgebied", "/werkgebied"],
+  ["Provincie Antwerpen", "/werkgebied/antwerpen"],
+  ["Limburg", "/werkgebied/limburg"],
+  ["Oost-Vlaanderen", "/werkgebied/oost-vlaanderen"],
+  ["Vlaams-Brabant", "/werkgebied/vlaams-brabant"],
+  ["West-Vlaanderen", "/werkgebied/west-vlaanderen"],
+  ["Brussel", "/werkgebied/brussel"],
+];
+
 export default function SiteFooter() {
   return (
     <footer className="site-footer">
@@ -29,7 +39,8 @@ export default function SiteFooter() {
           <p className="footer-brand">AB Service</p>
           <p>
             Praktische hulp bij verwarming, gasketels, sanitair en loodgieterswerk in
-            Antwerpen. Elke aanvraag wordt beoordeeld op basis van de werkelijke situatie.
+            Vlaanderen en Brussel. Elke aanvraag wordt beoordeeld op basis van de werkelijke
+            situatie, locatie en planning.
           </p>
           <dl className="business-facts">
             <div>
@@ -73,6 +84,14 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div>
+          <h2>Werkgebied</h2>
+          <ul>
+            {areaLinks.map(([label, href]) => (
+              <li key={href}><Link href={href}>{label}</Link></li>
+            ))}
+          </ul>
+        </div>
+        <div>
           <h2>Kennis en bedrijf</h2>
           <ul>
             {knowledgeLinks.map(([label, href]) => (
@@ -85,7 +104,7 @@ export default function SiteFooter() {
       </div>
       <div className="shell footer-bottom">
         <span>© {new Date().getFullYear()} AB Service</span>
-        <span>Antwerpen · {business.vatId}</span>
+        <span>Vlaanderen en Brussel · {business.vatId}</span>
       </div>
     </footer>
   );

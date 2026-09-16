@@ -10,4 +10,5 @@ export const business = Object.freeze({
   vatId: "BE0792.534.639",
   language: "nl-BE",
   primaryMarket: "Antwerpen",
+  serviceRegions: Object.freeze(["Vlaams Gewest", "Brussels Hoofdstedelijk Gewest"]),
 });
