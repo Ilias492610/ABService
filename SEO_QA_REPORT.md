@@ -1,10 +1,10 @@
 # AB Service SEO QA Report
 
 **Audit date:** 16 September 2026  
-**Branch:** `codex/phase-e-service-areas`
-**Test target:** local Next.js production server on port 3100
+**Release:** pull request [#4](https://github.com/Ilias492610/ABService/pull/4), merge commit `73f468e`
+**Test targets:** local Next.js production server on port 3100 and `https://www.abservice24.be`
 
-## Phase E pre-deployment verification
+## Phase E release verification
 
 - Registered exactly 304 municipalities: 67 Antwerpen, 38 Limburg, 55 Oost-Vlaanderen,
   63 Vlaams-Brabant, 62 West-Vlaanderen and 19 Brussels.
@@ -24,7 +24,16 @@
 - Mobile navigation expanded correctly and included the new Werkgebied destination.
 - Observed console errors originated from installed Chrome extensions; no application-origin
   error was recorded.
-- Production deployment results are recorded after the release step.
+- Both connected Vercel projects completed the production build successfully. Primary project
+  `ab-service` completed deployment `3rAk7QryKnvC6mQdvFbDqaC3LpTt`; secondary project
+  `ab-service-n4av` completed deployment `8kv27WgHA49t1v9tbwDHQ7kBddAw`.
+- `npm run seo:audit -- https://www.abservice24.be`: 36 public/noindex pages and 36 internal
+  links pass after deployment.
+- Live HTTP checks returned 200 for the homepage, directory, representative hubs, Wilrijk,
+  Berendrecht-Zandvliet-Lillo, sitemap and robots.
+- The live sitemap contains `/werkgebied`, all six hubs and Wilrijk; it excludes the noindex
+  Berendrecht-Zandvliet-Lillo route. The latter emits `noindex, follow` and its canonical, while
+  Wilrijk remains indexable with its correct canonical.
 
 ## Previous production release verification (before Phase E)
 
@@ -58,11 +67,11 @@ The homepage lab LCP improved by 28.7 seconds under comparable mobile Lighthouse
 ## Automated verification
 
 - `npm audit --omit=dev`: zero vulnerabilities.
-- Baseline release: `npm test` had 25 tests; the final Phase E total is recorded after the last
-  pre-deployment verification run.
+- Baseline release: `npm test` had 25 tests; the Phase E release has 34 passing tests.
 - `npm run lint`: ESLint flat-config run passes with zero warnings/errors.
 - `npm run build`: Next.js 16.3.5 production build passes; 45 routes generated.
 - `npm run seo:audit -- http://localhost:3100`: 36 routable pages and 36 internal links pass.
+- `npm run seo:audit -- https://www.abservice24.be`: 36 live pages and 36 internal links pass.
 
 The SEO crawl verifies:
 
