@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import JsonLd from "@/components/json-ld";
-import TrackedLink from "@/components/tracked-link";
+import FloatingTrustSignals from "@/components/floating-trust-signals";
 import { business } from "@/content/business.mjs";
 import { buildGlobalSchemaGraph } from "@/libs/schema-data.mjs";
 import "./globals.css";
@@ -51,17 +51,7 @@ export default function RootLayout({ children }) {
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
-        <TrackedLink
-          href={business.whatsappHref}
-          eventName="whatsapp_click"
-          eventProperties={{ location: "floating_button" }}
-          className="whatsapp-button"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Open WhatsApp om AB Service te contacteren"
-        >
-          WhatsApp
-        </TrackedLink>
+        <FloatingTrustSignals />
         {process.env.VERCEL ? <Analytics /> : null}
       </body>
     </html>

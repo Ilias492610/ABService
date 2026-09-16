@@ -1,5 +1,18 @@
 # AB Service SEO Changelog
 
+## 16 September 2026 — contactformulier en zwevende contactelementen
+
+- Herstelde het originele ronde WhatsApp-logo als lichte zwevende snelkoppeling met een
+  vooraf ingevulde begroeting.
+- Herstelde een sluitbare Google-beoordelingspopup met de bestaande profielbestemming en
+  de extern bevestigde score van 5,0, zonder een mogelijk verouderd reviewaantal te tonen.
+- Hield `AggregateRating` en reviewmarkup uit JSON-LD; de visuele beoordeling linkt rechtstreeks
+  naar Google en wordt als klik gemeten zonder persoonsgegevens.
+- Stelde `MAILGUN_API_KEY` als versleutelde Vercel-secret in voor Production, Preview en
+  Development van beide gekoppelde projecten. De sleutel staat niet in de repository.
+- Voegde regressietests toe voor beide contactbestemmingen, scoreweergave en de afwezigheid van
+  een onbewezen reviewaantal.
+
 ## 16 September 2026 — Phase E geographic architecture
 
 - Added a source-of-truth registry for 285 Flemish and 19 Brussels municipalities.
