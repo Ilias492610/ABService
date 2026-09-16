@@ -1,75 +1,54 @@
-import HeaderTopBar from '@/components/sections/header-top-bar';
-import MainNavigation from '@/components/sections/main-navigation';
-import PageHero from '@/components/sections/page-hero';
-import UrgentRepairHero from '@/components/sections/urgent-repair-hero';
-import ServiceBenefits from '@/components/sections/service-benefits';
-import CvRepairServices from '@/components/sections/cv-repair-services';
-import BrandLogosCarousel from '@/components/sections/brand-logos-carousel';
-import GoogleReviews from '@/components/sections/google-reviews';
-import ContactCta from '@/components/sections/contact-cta';
-import Footer from '@/components/sections/footer';
-import CookieConsentModal from '@/components/sections/cookie-consent-modal';
-import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
-import GoogleRatingWidget from '@/components/sections/google-rating-widget';
-import FadeInSection from '@/components/animations/FadeInSection';
-import { getSEOTags } from '@/libs/seo';
+import Breadcrumbs from "@/components/breadcrumbs";
+import ContactForm from "@/components/sections/contact-form";
+import PageHero from "@/components/page-hero";
+import TrackedLink from "@/components/tracked-link";
+import { business } from "@/content/business.mjs";
+import { buildPageMetadata } from "@/libs/seo-data.mjs";
+import { getPageDefinition } from "@/content/site-content.mjs";
 
-export const metadata = getSEOTags({
-  title: 'Contact loodgieter en warmtespecialist Antwerpen | AB Service',
-  description:
-    'Contacteer AB Service, uw loodgieter en warmtespecialist in Antwerpen, voor onderhoud, herstelling, installatie of keuring.',
-  keywords: [
-    'contact loodgieter Antwerpen',
-    'warmtespecialist Antwerpen contact',
-    'contact gasketel Antwerpen',
-    'spoed loodgieter Antwerpen',
-    'interventie verwarming Antwerpen',
-    'AB Service contact',
-  ],
-  canonicalUrlRelative: '/contact',
-  openGraph: {
-    title: 'Contact loodgieter Antwerpen | AB Service',
-    description:
-      'Vraag snel een interventie of offerte aan bij uw loodgieter en warmtespecialist in Antwerpen.',
-  },
-});
+export const metadata = buildPageMetadata(getPageDefinition("/contact"));
 
-const ContactPage = () => {
+export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <HeaderTopBar />
-      <MainNavigation />
-      <main>
-        <FadeInSection>
-          <PageHero />
-        </FadeInSection>
-        <FadeInSection delay={0.1}>
-          <UrgentRepairHero />
-        </FadeInSection>
-        <FadeInSection delay={0.2}>
-          <ServiceBenefits />
-        </FadeInSection>
-        <FadeInSection delay={0.25}>
-          <CvRepairServices />
-        </FadeInSection>
-        <FadeInSection delay={0.3}>
-          <BrandLogosCarousel />
-        </FadeInSection>
-        <FadeInSection delay={0.35}>
-          <GoogleReviews />
-        </FadeInSection>
-        <FadeInSection delay={0.4}>
-          <ContactCta />
-        </FadeInSection>
-      </main>
-      <Footer />
-      <CookieConsentModal />
-      <WhatsAppFloatButton />
-      <div className="fixed bottom-6 right-6 z-[9998] md:bottom-8 md:right-8">
-        <GoogleRatingWidget />
-      </div>
-    </div>
+    <>
+      <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }]} />
+      <PageHero
+        eyebrow="Contact"
+        title="Leg uw vraag voor aan AB Service"
+        intro="Omschrijf het werk of probleem zo concreet mogelijk. Een timing, prijs of afspraak is pas definitief nadat AB Service de aanvraag heeft beoordeeld en bevestigd."
+        ctaLabel="Ga naar het formulier"
+      />
+      <section className="section">
+        <div className="shell contact-layout">
+          <div>
+            <p className="eyebrow">Aanvraagformulier</p>
+            <h2>Welke informatie helpt?</h2>
+            <ContactForm />
+          </div>
+          <aside className="contact-aside">
+            <h2>Rechtstreeks contact</h2>
+            <dl>
+              <div>
+                <dt>Telefoon</dt>
+                <dd><TrackedLink href={business.phoneHref} eventName="phone_click" eventProperties={{ location: "contact_aside" }}>{business.phoneDisplay}</TrackedLink></dd>
+              </div>
+              <div>
+                <dt>E-mail</dt>
+                <dd><TrackedLink href={`mailto:${business.email}`} eventName="email_click" eventProperties={{ location: "contact_aside" }}>{business.email}</TrackedLink></dd>
+              </div>
+              <div>
+                <dt>WhatsApp</dt>
+                <dd><TrackedLink href={business.whatsappHref} eventName="whatsapp_click" eventProperties={{ location: "contact_aside" }} target="_blank" rel="noreferrer">Start een gesprek</TrackedLink></dd>
+              </div>
+              <div><dt>Onderneming</dt><dd>{business.vatId}</dd></div>
+            </dl>
+            <div className="warning-box">
+              <strong>Geen noodkanaal</strong>
+              <p>Gebruik het formulier niet bij gasgeur, mogelijke CO of direct gevaar. Verlaat de ruimte en contacteer de bevoegde nood- of distributiedienst.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </>
   );
-};
-
-export default ContactPage;
+}

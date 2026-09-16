@@ -1,80 +1,50 @@
-# Mubarak Muse - Personal Website
+# AB Service website
 
-Personal website built with Next.js and ShipFast boilerplate.
+Production website for AB Service, built with Next.js App Router. The site uses an evidence-first publication model: unsupported services, locations, brand relationships, reviews, prices and credentials must stay out of indexable output.
 
-## Features
+## Local setup
 
-- 🚀 Next.js 14 with App Router
-- 🎨 Tailwind CSS & DaisyUI
-- 🔐 Optional Supabase Authentication
-- 💳 Stripe Integration (optional)
-- 📧 Email functionality with Mailgun
-- 🤖 OpenAI integration
-- 📱 Responsive design
+Use Node.js 20.9 or newer.
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/mubarakMuse/mubarakmuse.git
-cd mubarakmuse
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Create a `.env.local` file in the root directory:
-```env
-# Supabase (optional)
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
-SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
-
-# Stripe (optional)
-STRIPE_SECRET_KEY=your_stripe_secret_key
-STRIPE_WEBHOOK_SECRET=your_webhook_secret
-
-# Mailgun (optional)
-MAILGUN_API_KEY=your_mailgun_api_key
-
-# OpenAI (optional)
-OPENAI_API_KEY=your_openai_api_key
-
-# Site URL
-SITE_URL=http://localhost:3000
-```
-
-4. Run the development server:
-```bash
+npm ci
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open `http://localhost:3000`.
 
-## Configuration
+## Environment
 
-Edit `config.js` to customize:
-- App name and description
-- Domain name
-- Stripe pricing plans
-- Mailgun settings
-- Theme colors
+The contact form uses Mailgun. Configure these values in the deployment environment:
 
-## Deployment
+```env
+MAILGUN_API_KEY=
+MAILGUN_DOMAIN=
+MAILGUN_FROM=
+CONTACT_FORM_TO=
+```
 
-The easiest way to deploy is using [Vercel](https://vercel.com):
+`CONTACT_FORM_TO` may contain a comma-separated recipient list. Never commit credentials. Vercel Analytics is rendered only in the Vercel environment.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mubarakMuse/mubarakmuse)
+## Verification
 
-## License
+```bash
+npm audit --omit=dev
+npm test
+npm run lint
+npm run build
+npm run start -- -p 3100
+npm run seo:audit -- http://localhost:3100
+```
 
-MIT
+The SEO audit crawls the built site and checks the sitemap, robots rules, metadata, canonicals, H1s, JSON-LD, image alternatives, internal links, draft/noindex boundaries and 404 behaviour.
+
+## Content sources
+
+- `content/business.mjs`: verified public business facts.
+- `content/site-content.mjs`: route metadata and publication state.
+- `content/fault-guides.mjs`: manufacturer-backed fault guidance.
+- `content/content-backlog.mjs`: evidence-gated draft topics.
+- `content/projects.mjs`: publication gate for real project cases.
+
+See `SEO_MASTERPLAN.md`, `SEO_CONTENT_INVENTORY.md`, `LOCAL_SEO_EXTERNAL_ACTIONS.md`, `SEO_QA_REPORT.md`, `SEO_CHANGELOG.md` and `PROJECT_CONTENT_GUIDE.md` before publishing new SEO content.

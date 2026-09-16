@@ -3,27 +3,24 @@ const formData = require("form-data");
 const Mailgun = require("mailgun.js");
 const mailgun = new Mailgun(formData);
 
-const apiKey = process.env.MAILGUN_API_KEY || process.env.API_KEY || "";
 const mailgunDomain =
   process.env.MAILGUN_DOMAIN ||
   config.mailgun.domain ||
   ((config.mailgun.subdomain ? `${config.mailgun.subdomain}.` : "") + config.domainName);
 const mailgunBaseUrl = process.env.MAILGUN_BASE_URL || config.mailgun.baseUrl;
 
-const mg = apiKey
-  ? mailgun.client({
-      username: "api",
-      key: apiKey,
-      ...(mailgunBaseUrl && { url: mailgunBaseUrl }),
-    })
-  : null;
+const getMailgunClient = () => {
+  const apiKey = process.env.MAILGUN_API_KEY || process.env.API_KEY || "";
+  if (!apiKey) {
+    throw new Error("Missing Mailgun API key. Set MAILGUN_API_KEY in the deployment environment.");
+  }
 
-if (!apiKey) {
-  console.group("⚠️ Mailgun API key is missing");
-  console.error("Set MAILGUN_API_KEY (or API_KEY) in .env.local to send emails.");
-  console.error("Mailgun contact form submissions will fail until this is configured.");
-  console.groupEnd();
-}
+  return mailgun.client({
+    username: "api",
+    key: apiKey,
+    ...(mailgunBaseUrl && { url: mailgunBaseUrl }),
+  });
+};
 
 /**
  * Sends an email using the provided parameters.
@@ -37,14 +34,11 @@ if (!apiKey) {
  * @returns {Promise} A Promise that resolves when the email is sent.
  */
 export const sendEmail = async ({ to, subject, text, html, replyTo }) => {
-  if (!mg) {
-    throw new Error("Missing Mailgun API key. Set MAILGUN_API_KEY in .env.local.");
-  }
-
   if (!mailgunDomain) {
-    throw new Error("Missing Mailgun domain. Set MAILGUN_DOMAIN in .env.local.");
+    throw new Error("Missing Mailgun domain. Set MAILGUN_DOMAIN in the deployment environment.");
   }
 
+  const mg = getMailgunClient();
   const recipients = Array.isArray(to) ? to : [to];
   const sender = process.env.MAILGUN_FROM || config.mailgun.fromAdmin;
 

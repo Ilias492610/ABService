@@ -1,16 +1,7 @@
 import { NextResponse } from 'next/server';
 import config from '@/config';
 import { sendEmail } from '@/libs/mailgun';
-
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-const cleanValue = (value) => {
-  if (typeof value !== 'string') {
-    return '';
-  }
-
-  return value.trim();
-};
+import { validateContactInput } from '@/libs/contact-validation.mjs';
 
 const escapeHtml = (value) =>
   value
@@ -76,28 +67,16 @@ const getRequestData = async (request) => {
 export async function POST(request) {
   try {
     const data = await getRequestData(request);
-    const name = cleanValue(data.name);
-    const phone = cleanValue(data.phone);
-    const email = cleanValue(data.email).toLowerCase();
-    const address = cleanValue(data.address || data.street);
-    const city = cleanValue(data.city);
-    const postalCode = cleanValue(data.postalCode);
-    const service = cleanValue(data.service);
-    const brand = cleanValue(data.brand);
-    const boilerType = cleanValue(data.boilerType || data.type);
-    const message = cleanValue(data.message);
-    const consent = data.consent === true || data.consent === 'true' || data.consent === 'on';
+    const validation = validateContactInput(data);
 
-    if (!name || !phone || !email || !consent) {
+    if (!validation.ok) {
       return buildErrorResponse(
         request,
-        'Naam, telefoon, e-mail en akkoord met het privacybeleid zijn verplicht.'
+        'Controleer de ingevulde velden en uw akkoord met het privacybeleid.'
       );
     }
 
-    if (!emailPattern.test(email)) {
-      return buildErrorResponse(request, 'Voer een geldig e-mailadres in.');
-    }
+    const { name, phone, email, address, city, postalCode, service, brand, boilerType, message } = validation.data;
 
     const recipientSource =
       process.env.CONTACT_FORM_TO ||
@@ -150,10 +129,7 @@ export async function POST(request) {
       html,
       replyTo: email,
     });
-    console.info('Contact aanvraag verstuurd via Mailgun', {
-      id: mailgunResponse?.id,
-      recipients,
-    });
+    console.info('Contact aanvraag verstuurd via Mailgun', { id: mailgunResponse?.id });
 
     return buildSuccessResponse(request);
   } catch (error) {

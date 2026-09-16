@@ -1,70 +1,61 @@
-import TopHeader from '@/components/sections/top-header';
-import MainNavigation from '@/components/sections/main-navigation';
-import HeroSection from '@/components/sections/hero-section';
-import ProfessionalInspectionSection from '@/components/sections/professional-inspection-section';
-import LegalInspectionSection from '@/components/sections/legal-inspection-section';
-import SimpleInspectionSection from '@/components/sections/simple-inspection-section';
-import ReviewsSection from '@/components/sections/reviews-section';
-import ContactCtaSection from '@/components/sections/contact-cta-section';
-import Footer from '@/components/sections/footer';
-import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
-import CookieConsentBanner from '@/components/sections/cookie-consent-banner';
-import GoogleRatingWidget from '@/components/sections/google-rating-widget';
-import FadeInSection from '@/components/animations/FadeInSection';
-import { getSEOTags } from '@/libs/seo';
+import ServicePage from "@/components/service-page";
+import { buildPageMetadata } from "@/libs/seo-data.mjs";
+import { getPageDefinition } from "@/content/site-content.mjs";
 
-export const metadata = getSEOTags({
-  title: 'Gasketel keuring Antwerpen | Warmtespecialist en erkende technicus | AB Service',
-  description:
-    'Laat uw nieuwe of aangepaste cv-installatie keuren in Antwerpen door AB Service, uw warmtespecialist met erkende techniekers en officiële attesten.',
-  keywords: [
-    'warmtespecialist Antwerpen keuring',
-    'gasketel keuren Antwerpen',
-    'indienststelling verwarming Antwerpen',
-    'keuringsattest cv ketel Antwerpen',
-    'erkende technicus Antwerpen',
-  ],
-  canonicalUrlRelative: '/keuring',
-  openGraph: {
-    title: 'Keuring van cv-installaties in Antwerpen | AB Service',
-    description:
-      'AB Service verzorgt de verplichte keuring van cv-ketels in Antwerpen en bezorgt u meteen het officiële rapport.',
-  },
-});
+export const metadata = buildPageMetadata(getPageDefinition("/keuring"));
 
-const KeuringPage = () => {
+export default function KeuringPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <TopHeader />
-      <MainNavigation />
-      <main>
-        <FadeInSection>
-          <HeroSection />
-        </FadeInSection>
-        <FadeInSection delay={0.1}>
-          <ProfessionalInspectionSection />
-        </FadeInSection>
-        <FadeInSection delay={0.2}>
-          <LegalInspectionSection />
-        </FadeInSection>
-        <FadeInSection delay={0.25}>
-          <SimpleInspectionSection />
-        </FadeInSection>
-        <FadeInSection delay={0.3}>
-          <ReviewsSection />
-        </FadeInSection>
-        <FadeInSection delay={0.35}>
-          <ContactCtaSection />
-        </FadeInSection>
-      </main>
-      <Footer />
-      <WhatsAppFloatButton />
-      <CookieConsentBanner />
-      <div className="fixed bottom-6 right-6 z-[9998] md:bottom-8 md:right-8">
-        <GoogleRatingWidget />
-      </div>
-    </div>
+    <ServicePage
+      breadcrumb={[{ name: "Keuring", path: "/keuring" }]}
+      eyebrow="Eerste ingebruikname"
+      title="Keuring van een nieuwe of gewijzigde cv-installatie"
+      intro="Een keuring bij eerste ingebruikname is een afzonderlijke controle na bepaalde plaatsingen of wijzigingen. Ze mag niet worden verward met het periodieke onderhoud van een bestaand toestel."
+      answer="In Vlaanderen moet een nieuw of gewijzigd centraal stooktoestel vóór de eerste ingebruikname worden gekeurd in de situaties die de overheid omschrijft. Dat geldt onder meer bij plaatsing, vervanging, verplaatsing of relevante wijziging. De keuring moet worden uitgevoerd door een bevoegde erkende technicus."
+      sections={[
+        {
+          eyebrow: "Wanneer",
+          title: "Situaties waarin een eerste-keuring relevant kan zijn",
+          items: [
+            "Een nieuw centraal stooktoestel wordt geplaatst",
+            "Een bestaand toestel wordt vervangen of verplaatst",
+            "De installatie of afvoer wordt op een relevante manier gewijzigd",
+            "Documenten bij ingebruikname ontbreken of moeten worden verduidelijkt",
+          ],
+        },
+        {
+          eyebrow: "Voorbereiding",
+          title: "Leg installatiegegevens en documenten klaar",
+          paragraphs: [
+            "Bezorg merk, model, vermogen, brandstof, plaatsingsdatum en informatie over de rookgasafvoer. Voeg beschikbare handleidingen, schema’s en eerdere verslagen toe.",
+            "Een bedrijf is niet automatisch ‘erkend’ omdat het verwarmingswerk uitvoert. Controleer vóór de opdracht of de individuele technicus de erkenning bezit die voor uw installatie vereist is.",
+          ],
+        },
+        {
+          eyebrow: "Na de controle",
+          title: "Bewaar het rapport bij de installatie",
+          paragraphs: [
+            "De uitkomst moet correct worden vastgelegd. Een website kan geen goedkeuring voorspellen: toegankelijkheid, opstelling, verbranding, toevoer en afvoer moeten op de echte installatie worden beoordeeld.",
+          ],
+        },
+      ]}
+      steps={[
+        { title: "Context", text: "Omschrijf wat werd geplaatst of gewijzigd." },
+        { title: "Documenten", text: "Verzamel toestel- en installatiegegevens." },
+        { title: "Bevoegdheid", text: "Controleer de vereiste erkenning." },
+        { title: "Rapport", text: "Bewaar het ondertekende document zorgvuldig." },
+      ]}
+      relatedLinks={[
+        { label: "Verschil met periodiek onderhoud", href: "/onderhoud" },
+        { label: "Nieuwe gasketel laten beoordelen", href: "/installaties/gasketels" },
+        { label: "Contact opnemen", href: "/contact" },
+      ]}
+      sourceLinks={[
+        {
+          label: "Vlaanderen: keuring van een nieuwe of gewijzigde cv-installatie",
+          href: "https://www.vlaanderen.be/verplichte-keuring-van-een-nieuwe-of-gewijzigde-cv-installatie",
+        },
+      ]}
+    />
   );
-};
-
-export default KeuringPage;
+}

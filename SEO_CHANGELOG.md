@@ -1,0 +1,65 @@
+# AB Service SEO Changelog
+
+## 16 September 2026 — evidence-first transformation
+
+### Architecture
+
+- Added central business, route, fault-guide, content-backlog and project registries.
+- Added explicit `published`, `noindex` and `draft` states.
+- Added publication tests preventing draft/noindex leakage into navigation and sitemap.
+- Rebuilt the shared layout as a server-first header, footer, breadcrumb and CTA system.
+
+### Content
+
+- Rewrote `/`, `/onderhoud`, `/herstelling`, `/keuring`, `/installaties`, `/installaties/gasketels`, `/installaties/sanitair`, `/contact`, `/faq`, `/over-ons` and the fault-code cluster.
+- Added `/tarieven` without invented prices.
+- Separated periodic maintenance from first-use inspection.
+- Replaced unsafe premium language with current-measures guidance.
+- Added conservative gas, CO, water/electrical and reset guidance.
+- Removed unsupported 24/7, 60-minute, same-day, certification, review, team, history, brand, location, price, warranty and partnership claims.
+- Reduced Vaillant/Bulex codes to a manufacturer-backed set with model warnings and official sources.
+- Withheld Bosch/Junkers code claims pending official model evidence.
+
+### Technical SEO
+
+- Added conservative browser security headers and disabled the framework disclosure header.
+- Added unique titles, descriptions, canonicals, Open Graph and Twitter metadata from one registry.
+- Added generated Open Graph image output.
+- Replaced conflicting `next-sitemap` output with one App Router sitemap.
+- Removed fabricated current-date `lastmod` values and non-page sitemap entries.
+- Centralized robots rules and canonical host.
+- Added verified-only global JSON-LD and visible/schema breadcrumbs.
+- Removed AggregateRating, Review and FAQPage schema.
+- Corrected 404 metadata and canonical behaviour.
+
+### Local SEO
+
+- Confirmed Antwerp only from the owner prompt; surrounding municipality pages remain drafts.
+- Added external-action documentation for Google Business Profile, Search Console, Bing, Apple, citations, reviews, ads/LSA and backlinks.
+- Added legitimate review-request and service-area policies.
+
+### Conversion and privacy
+
+- Preserved phone, email, WhatsApp and contact form.
+- Added labelled fields, accessible validation, duplicate-submit prevention and truthful status messages.
+- Added privacy-safe click/form events; personal fields are filtered from analytics properties.
+- Rewrote privacy text to match Mailgun, Vercel hosting and Vercel Analytics.
+- Removed unconfigured Plausible and incorrect Google Analytics/Ads claims.
+
+### Performance and accessibility
+
+- Removed the Trust.Reviews widget, animation library and unused client components.
+- Replaced the image-heavy homepage with a lightweight CSS-led design while retaining the navy/teal/gold identity.
+- Added skip navigation, visible focus, semantic headings, reduced-motion support and compliant touch targets.
+- Corrected teal-on-white contrast.
+- Reduced homepage Lighthouse transfer from 8.6 MB to 251 KiB and LCP from 31 s to 2.3 s.
+
+### Dependencies and QA
+
+- Upgraded Next.js to 16.3.5 and React/React DOM to 19.3.0.
+- Migrated to ESLint flat config and direct ESLint CLI.
+- Removed Axios, Framer Motion, Lucide, React Hot Toast, DaisyUI, next-sitemap and next-plausible.
+- Updated Mailgun, form-data, PostCSS, Tailwind and Autoprefixer.
+- Reduced production audit from 16 advisories, including two critical, to zero.
+- Added 24 unit/policy tests and a rendered production SEO crawler.
+- Added desktop/mobile browser QA and repeatable Lighthouse comparisons.

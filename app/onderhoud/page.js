@@ -1,75 +1,66 @@
-import HeaderTopBar from '@/components/sections/header-top-bar';
-import MainNavigation from '@/components/sections/main-navigation';
-import PageHero from '@/components/sections/page-hero';
-import UrgentRepairHero from '@/components/sections/urgent-repair-hero';
-import ServiceBenefits from '@/components/sections/service-benefits';
-import CvRepairServices from '@/components/sections/cv-repair-services';
-import BrandLogosCarousel from '@/components/sections/brand-logos-carousel';
-import GoogleReviews from '@/components/sections/google-reviews';
-import ContactCta from '@/components/sections/contact-cta';
-import Footer from '@/components/sections/footer';
-import CookieConsentModal from '@/components/sections/cookie-consent-modal';
-import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
-import GoogleRatingWidget from '@/components/sections/google-rating-widget';
-import FadeInSection from '@/components/animations/FadeInSection';
-import { getSEOTags } from '@/libs/seo';
+import ServicePage from "@/components/service-page";
+import { buildPageMetadata } from "@/libs/seo-data.mjs";
+import { getPageDefinition } from "@/content/site-content.mjs";
 
-export const metadata = getSEOTags({
-  title: 'Onderhoud gasketel Antwerpen | Loodgieter & warmtespecialist | AB Service',
-  description:
-    'Jaarlijks onderhoud van gasketels, sanitair en airco in Antwerpen door loodgieters en warmtespecialisten. Officiële attesten, snelle planning en persoonlijk advies.',
-  keywords: [
-    'loodgieter onderhoud Antwerpen',
-    'warmtespecialist onderhoud Antwerpen',
-    'cv onderhoud Antwerpen',
-    'ketel onderhoud Antwerpen',
-    'sanitair onderhoud Antwerpen',
-    'onderhoud warmtepomp Antwerpen',
-  ],
-  canonicalUrlRelative: '/onderhoud',
-  openGraph: {
-    title: 'Onderhoud door loodgieter in Antwerpen | AB Service',
-    description:
-      'Laat uw verwarming, sanitair en airco onderhouden door loodgieters en warmtespecialisten van AB Service.',
-  },
-});
+export const metadata = buildPageMetadata(getPageDefinition("/onderhoud"));
 
-const OnderhoudPage = () => {
+export default function OnderhoudPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <HeaderTopBar />
-      <MainNavigation />
-      <main>
-        <FadeInSection>
-          <PageHero />
-        </FadeInSection>
-        <FadeInSection delay={0.1}>
-          <UrgentRepairHero />
-        </FadeInSection>
-        <FadeInSection delay={0.2}>
-          <ServiceBenefits />
-        </FadeInSection>
-        <FadeInSection delay={0.25}>
-          <CvRepairServices />
-        </FadeInSection>
-        <FadeInSection delay={0.3}>
-          <BrandLogosCarousel />
-        </FadeInSection>
-        <FadeInSection delay={0.35}>
-          <GoogleReviews />
-        </FadeInSection>
-        <FadeInSection delay={0.4}>
-          <ContactCta />
-        </FadeInSection>
-      </main>
-      <Footer />
-      <CookieConsentModal />
-      <WhatsAppFloatButton />
-      <div className="fixed bottom-6 right-6 z-[9998] md:bottom-8 md:right-8">
-        <GoogleRatingWidget />
-      </div>
-    </div>
+    <ServicePage
+      breadcrumb={[{ name: "Onderhoud", path: "/onderhoud" }]}
+      eyebrow="Cv-ketelonderhoud"
+      title="Onderhoud van uw cv-ketel in Antwerpen"
+      intro="Periodiek onderhoud ondersteunt een veilige, zuinige en betrouwbare werking. De wettelijke onderhoudsfrequentie hangt af van brandstof en vermogen; onderhoud is niet hetzelfde als een keuring bij eerste ingebruikname."
+      answer="In Vlaanderen moet een centraal stooktoestel op gas met een vermogen vanaf 20 kW in het algemeen om de twee jaar worden onderhouden door een erkende technicus gasvormige brandstof. Voor toestellen onder 20 kW is periodiek onderhoud aanbevolen, maar niet op dezelfde manier wettelijk verplicht."
+      sections={[
+        {
+          eyebrow: "Verschil",
+          title: "Onderhoud is geen eerste-keuring",
+          paragraphs: [
+            "Bij onderhoud wordt de bestaande installatie gecontroleerd en onderhouden volgens de toepasselijke regels en technische noden. Een keuring bij eerste ingebruikname is een afzonderlijk moment, bijvoorbeeld na plaatsing, vervanging, verplaatsing of een relevante wijziging.",
+            "Vraag bij twijfel welke handeling u nodig heeft. Het toesteltype, nominale vermogen, brandstof, bouwjaar en de laatste documenten helpen om dat correct te bepalen.",
+          ],
+        },
+        {
+          eyebrow: "Voorbereiding",
+          title: "Wat u bij uw aanvraag kunt doorgeven",
+          items: [
+            "Merk, model en nominale vermogen van het toestel",
+            "Datum van het vorige onderhoud en een foto van het attest, indien beschikbaar",
+            "Huidige druk, foutcode of afwijkend gedrag",
+            "Toegangssituatie rond toestel, rookgasafvoer en technische ruimte",
+          ],
+        },
+        {
+          eyebrow: "Na afloop",
+          title: "Vraag naar de juiste documenten",
+          paragraphs: [
+            "Welke controle, reiniging, meting of afstelling nodig is, hangt af van het toestel en de installatie. Als wettelijk onderhoud van toepassing is, hoort daar een correct ingevuld attest bij van de bevoegde erkende technicus.",
+            "AB Service publiceert geen erkenningsnummer op deze website zolang dat nummer niet als eigenaarsevidence is bevestigd. Vraag die informatie vóór de afspraak wanneer erkenning voor uw opdracht vereist is.",
+          ],
+        },
+      ]}
+      steps={[
+        { title: "Gegevens", text: "Bezorg toesteltype, vermogen en laatste documenten." },
+        { title: "Beoordeling", text: "De onderhoudsvraag en vereisten worden nagekeken." },
+        { title: "Afspraak", text: "Timing en verwachte scope worden bevestigd." },
+        { title: "Documenten", text: "Bewaar het verslag of attest bij uw installatie." },
+      ]}
+      relatedLinks={[
+        { label: "Wanneer is een cv-keuring nodig?", href: "/keuring" },
+        { label: "Probleem of foutcode laten beoordelen", href: "/herstelling" },
+        { label: "Hoe worden tarieven bepaald?", href: "/tarieven" },
+      ]}
+      sourceLinks={[
+        {
+          label: "Vlaanderen: verplicht onderhoud van uw cv-installatie",
+          href: "https://www.vlaanderen.be/verplicht-onderhoud-van-uw-cv-installatie-centrale-verwarming",
+        },
+        {
+          label: "Vlaanderen: informatie over erkende technici",
+          href: "https://www.vlaanderen.be/natuur-milieu-en-klimaat/informatie-voor-de-technicus-vloeibare-en-technicus-gasvormige-brandstof-cv-ketel",
+        },
+      ]}
+    />
   );
-};
-
-export default OnderhoudPage;
+}

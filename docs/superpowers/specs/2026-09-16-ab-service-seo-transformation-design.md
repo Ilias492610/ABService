@@ -27,7 +27,7 @@ The work is an in-place upgrade. Existing contact channels and valid routes rema
 The initial repository audit supports the following facts for reuse, subject to a final consistency check:
 
 - Brand name: AB Service.
-- Canonical host: `https://www.abservice.be`.
+- Canonical host: `https://www.abservice24.be`.
 - The telephone number, email address, VAT number, and social/profile URLs already present in the repository may be retained only after they are centralized and checked for consistency.
 - The owner-supplied master prompt confirms Antwerp as the primary market and confirms the core service scope: plumbing/sanitary work, heating maintenance, heating repair, heating inspection, and gas-boiler installation. The homepage may therefore target “loodgieter Antwerpen” naturally, while individual surrounding municipalities remain gated until separately confirmed.
 
@@ -196,7 +196,7 @@ Breadcrumbs are visible on all appropriate interior pages and match BreadcrumbLi
 - Include only canonical, indexable, successful URLs.
 - Exclude robots, manifests, icons, images, redirects, 404s, `noindex` pages, drafts, and the sitemap itself.
 - Do not fabricate `lastModified`. Emit it only when tied to a real content revision; otherwise omit it.
-- Use `https://www.abservice.be` consistently as the canonical origin.
+- Use `https://www.abservice24.be` consistently as the canonical origin.
 - Supply unique Dutch titles and descriptions aligned with visible page content.
 - Use page-specific Open Graph data and optimized, honest media. Do not present synthetic team/project scenes as documentary proof.
 - Emit correct robots directives per content state.

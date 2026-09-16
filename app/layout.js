@@ -1,43 +1,68 @@
 import { Inter } from "next/font/google";
-import PlausibleProvider from "next-plausible";
 import { Analytics } from "@vercel/analytics/next";
-import { getSEOTags } from "@/libs/seo";
-import { getGlobalSchemaGraph } from "@/libs/schema";
-import ClientLayout from "@/components/LayoutClient";
-import config from "@/config";
+import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
+import JsonLd from "@/components/json-ld";
+import TrackedLink from "@/components/tracked-link";
+import { business } from "@/content/business.mjs";
+import { buildGlobalSchemaGraph } from "@/libs/schema-data.mjs";
 import "./globals.css";
 
-const font = Inter({ subsets: ["latin"] });
-const schemaGraph = getGlobalSchemaGraph();
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const viewport = {
-  // Will use the primary color of your theme to show a nice theme color in the URL bar of supported browsers
-  themeColor: config.colors.main,
+  themeColor: "#103447",
   width: "device-width",
   initialScale: 1,
 };
 
-// This adds default SEO tags to all pages in our app.
-// You can override them in each page passing params to getSOTags() function.
-export const metadata = getSEOTags();
+export const metadata = {
+  metadataBase: new URL(business.canonicalOrigin),
+  title: {
+    default: "AB Service | Loodgieter en verwarming in Antwerpen",
+    template: "%s",
+  },
+  description:
+    "AB Service helpt in Antwerpen met loodgieterswerk, sanitair, verwarming, onderhoud, herstellingen, keuringen en gasketelinstallaties.",
+  applicationName: business.name,
+  creator: business.name,
+  publisher: business.name,
+  manifest: "/manifest.webmanifest",
+  formatDetection: { telephone: false, address: false, email: false },
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="nl-BE" data-theme={config.colors.theme} className={font.className}>
+    <html lang="nl-BE" className={inter.className}>
       <head>
-        {config.domainName && (
-          <PlausibleProvider domain={config.domainName} />
-        )}
-        <script
-          id="global-structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
-        />
+        <JsonLd data={buildGlobalSchemaGraph()} id="global-schema" />
       </head>
       <body>
-        {/* ClientLayout contains all the client wrappers (Crisp chat support, toast messages, tooltips, etc.) */}
-        <ClientLayout>{children}</ClientLayout>
-        <Analytics />
+        <a className="skip-link" href="#main-content">
+          Ga naar de inhoud
+        </a>
+        <SiteHeader />
+        <main id="main-content">{children}</main>
+        <SiteFooter />
+        <TrackedLink
+          href={business.whatsappHref}
+          eventName="whatsapp_click"
+          eventProperties={{ location: "floating_button" }}
+          className="whatsapp-button"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Open WhatsApp om AB Service te contacteren"
+        >
+          WhatsApp
+        </TrackedLink>
+        {process.env.VERCEL ? <Analytics /> : null}
       </body>
     </html>
   );
