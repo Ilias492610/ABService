@@ -1,5 +1,13 @@
 # AB Service SEO Changelog
 
+## 16 September 2026 — production release
+
+- Merged GitHub pull request `#2` into `main` at commit `4209f8d`.
+- Completed both existing Vercel production builds successfully; the primary `ab-service` deployment serves `www.abservice24.be`.
+- Passed the post-deploy production crawl for 20 pages and 20 internal links.
+- Verified the public pressure-loss and Bosch pages in Chrome after release.
+- Recorded the duplicate `ab-service-n4av` Vercel project for owner review without changing its configuration.
+
 ## 16 September 2026 — evidence-first transformation
 
 ### Architecture

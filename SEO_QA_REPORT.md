@@ -4,6 +4,15 @@
 **Branch:** `codex/seo-transformation`  
 **Test target:** local Next.js production server on port 3100
 
+## Production release verification
+
+- Pull request [#2](https://github.com/Ilias492610/ABService/pull/2) was merged into `main` as commit `4209f8d`.
+- The primary Vercel project `ab-service` completed deployment `2eTDodM2Q` with status **Ready** and serves `www.abservice24.be`.
+- A full crawl against `https://www.abservice24.be` passed for 20 registered pages and 20 internal links after deployment.
+- The new pressure-loss route and Bosch guide were loaded from the public production domain in Chrome; content, navigation, image delivery and source links render correctly.
+- No application-origin browser errors were observed. The Vercel deployment log view contained no displayed runtime error entries during the verification window.
+- The repository is connected to a second Vercel project, `ab-service-n4av`, which also built successfully. It is not the project shown as serving `www.abservice24.be`; remove it only after the owner confirms it is obsolete.
+
 ## Original baseline
 
 | Page | Performance | Accessibility | Best practices | SEO | Lab LCP | Transfer |
@@ -91,7 +100,7 @@ Chrome desktop and 390×844 mobile viewport were inspected against the productio
 
 - Add and test `MAILGUN_API_KEY`, sending domain and recipient configuration in Vercel.
 - Verify the Google Business Profile URL before adding the outbound profile link.
-- After deployment, rerun the crawl and Lighthouse against the live canonical host.
+- Rerun Lighthouse against the live canonical host after sufficient CDN warm-up and whenever the visual shell or critical images change.
 - Validate representative schema with Google Rich Results Test and Schema.org validator after public deployment.
 - Confirm Vercel Web Analytics is enabled for the production project and events appear without personal data.
 - Review the legally operative terms with a Belgian legal professional before adding stricter commercial clauses.
