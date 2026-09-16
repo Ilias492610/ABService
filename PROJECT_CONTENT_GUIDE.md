@@ -53,6 +53,22 @@ The existing files registered in `content/media.mjs` are owner-confirmed website
 7. Authentic photo captions.
 8. Links to the relevant service, municipality page if published, and contact.
 
+## Project-to-area evidence workflow
+
+For every completed project, record municipality, Antwerp district where applicable, service,
+brand, problem, solution, authentic photos and approved review/testimonial status. Once a validated
+case is published:
+
+1. set `hasProjectEvidence: true` on the matching service-area record;
+2. link the project to the relevant central service page;
+3. link the project to the municipality/district page if one is published;
+4. link it to the matching province/Brussels hub;
+5. add a reciprocal project link from the area page only when it is genuinely relevant;
+6. reassess—but do not automatically publish—the municipality page.
+
+A single project strengthens geographic evidence but does not prove a branch, review score,
+permanent local presence or guaranteed availability.
+
 ## SEO rules
 
 - URL: `/projecten/descriptive-service-city-slug`.

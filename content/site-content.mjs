@@ -1,3 +1,5 @@
+import { indexableDistricts, serviceRegionHubs } from "./service-areas.mjs";
+
 export const CONTENT_STATUS = Object.freeze({
   PUBLISHED: "published",
   NOINDEX: "noindex",
@@ -162,6 +164,31 @@ export const pageRegistry = Object.freeze([
     priority: 0.65,
   },
   {
+    path: "/werkgebied",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Werkgebied AB Service | Heel Vlaanderen en Brussel",
+    description:
+      "Controleer in welke gemeenten AB Service actief is voor verwarming, sanitair en loodgieterswerk: alle 285 Vlaamse en 19 Brusselse gemeenten.",
+    changeFrequency: "monthly",
+    priority: 0.75,
+  },
+  ...serviceRegionHubs.map((hub) => ({
+    path: hub.path,
+    status: CONTENT_STATUS.PUBLISHED,
+    title: hub.title,
+    description: hub.description,
+    changeFrequency: "monthly",
+    priority: hub.slug === "antwerpen" ? 0.75 : 0.65,
+  })),
+  ...indexableDistricts.map((districtEntry) => ({
+    path: districtEntry.canonicalPath,
+    status: CONTENT_STATUS.PUBLISHED,
+    title: districtEntry.title,
+    description: districtEntry.description,
+    changeFrequency: "monthly",
+    priority: districtEntry.priority === 1 ? 0.7 : 0.6,
+  })),
+  {
     path: "/privacy-policy",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Privacybeleid | AB Service",
@@ -209,6 +236,7 @@ export const navigation = Object.freeze([
   { label: "Tarieven", href: "/tarieven" },
   { label: "Foutcodes", href: "/foutcodes" },
   { label: "Advies", href: "/advies/drukverlies-cv-ketel" },
+  { label: "Werkgebied", href: "/werkgebied" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ]);

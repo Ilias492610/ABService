@@ -106,7 +106,7 @@ h3 { margin: 0 0 .7rem; font-size: 1.2rem; }
 .cta-card h2 { margin-bottom: .6rem; }
 .cta-card p { margin: 0; color: rgb(255 255 255 / 78%); }
 .site-footer { background: var(--navy-deep); color: rgb(255 255 255 / 78%); padding-top: 4rem; }
-.footer-grid { grid-template-columns: 1.5fr 1fr 1fr; padding-bottom: 3rem; }
+.footer-grid { grid-template-columns: 1.45fr 1fr 1fr 1fr; padding-bottom: 3rem; }
 .footer-brand { margin: 0 0 .8rem; color: white; font-size: 1.45rem; font-weight: 850; }
 .site-footer h2 { color: white; font-size: 1rem; letter-spacing: 0; }
 .site-footer ul { display: grid; gap: .48rem; margin: 0; padding: 0; list-style: none; }
@@ -148,6 +148,29 @@ th { background: var(--mist); }
 .legal-copy h2:first-child { margin-top: 0; }
 .legal-copy p, .legal-copy li { color: var(--muted); }
 .notice-page { min-height: 45vh; display: grid; place-items: center; padding-block: 5rem; text-align: center; }
+.coverage-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 3rem; }
+.coverage-stats > div { display: grid; border: 1px solid var(--line); border-radius: 1rem; background: var(--mist); padding: 1.35rem; }
+.coverage-stats strong { color: var(--teal); font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1; }
+.coverage-stats span { margin-top: .45rem; color: var(--muted); font-weight: 750; }
+.district-link-grid, .area-name-grid, .inline-links { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.district-link-grid a, .inline-links a { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; background: white; padding: .55rem .85rem; color: var(--teal); font-weight: 800; text-decoration: none; }
+.district-link-grid a:hover, .inline-links a:hover { border-color: var(--teal); background: var(--teal-light); }
+.area-directory { margin-top: 2rem; }
+.area-search { position: sticky; top: 5.35rem; z-index: 20; border: 1px solid var(--line); border-radius: 1rem; background: rgb(255 255 255 / 97%); padding: 1rem; box-shadow: 0 14px 40px rgb(16 52 71 / 10%); }
+.area-search label { display: block; margin-bottom: .4rem; font-weight: 850; }
+.area-search input { width: 100%; border: 1px solid #9fb4bf; border-radius: .6rem; padding: .8rem .9rem; }
+.area-search p { margin: .4rem 0 0; color: var(--muted); font-size: .85rem; }
+.area-groups { display: grid; gap: 2rem; margin-top: 2rem; }
+.area-group { scroll-margin-top: 10rem; }
+.area-group-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line); margin-bottom: 1rem; padding-bottom: .7rem; }
+.area-group-heading h3 { margin: 0; font-size: 1.45rem; }
+.area-group-heading a { color: var(--teal); font-weight: 800; }
+.area-name-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.area-name-grid li { min-width: 0; }
+.area-name-grid span, .area-name-grid a { display: block; border: 1px solid var(--line); border-radius: .5rem; padding: .5rem .65rem; overflow-wrap: anywhere; }
+.area-name-grid span { background: var(--mist); color: var(--muted); }
+.area-name-grid a { background: var(--teal-light); color: var(--teal); font-weight: 800; }
+.area-name-grid-large { margin-top: 1.5rem; }
 
 @media (max-width: 980px) {
   .desktop-nav, .nav-call { display: none; }
@@ -158,6 +181,7 @@ th { background: var(--mist); }
   .mobile-submenu .submenu-panel { border: 0; box-shadow: none; padding-left: 1rem; }
   .hero-grid, .contact-layout { grid-template-columns: 1fr; }
   .cards-grid, .steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid, .area-name-grid { grid-template-columns: repeat(2, 1fr); }
   .cta-card { align-items: flex-start; flex-direction: column; }
 }
 
@@ -165,7 +189,8 @@ th { background: var(--mist); }
   .topline-inner > span, .topline-links a[href^="mailto:"] { display: none; }
   .topline-inner { justify-content: flex-end; }
   .brand small { display: none; }
-  .cards-grid, .steps-grid, .related-grid, .footer-grid, .form-grid { grid-template-columns: 1fr; }
+  .cards-grid, .steps-grid, .related-grid, .footer-grid, .form-grid, .coverage-stats, .area-name-grid { grid-template-columns: 1fr; }
+  .area-group-heading { align-items: flex-start; flex-direction: column; }
   .field-full { grid-column: auto; }
   .footer-bottom { align-items: flex-start; flex-direction: column; gap: .3rem; }
   h1 { font-size: clamp(2.1rem, 12vw, 3.3rem); }

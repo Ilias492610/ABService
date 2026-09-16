@@ -78,6 +78,26 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <section className="section section-muted">
+        <div className="shell related-grid">
+          <div>
+            <p className="eyebrow">Werkgebied</p>
+            <h2>Antwerpen als basis, heel Vlaanderen en Brussel als werkgebied</h2>
+            <p className="section-lead">
+              AB Service neemt passende aanvragen aan uit alle Vlaamse en Brusselse gemeenten.
+              Afstand, technische scope en planning worden vóór de afspraak beoordeeld.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Controleer uw gemeente</h3>
+            <p>
+              Bekijk alle 304 gemeenten, de zes regionale overzichtspagina’s en de tien
+              districten van Antwerpen.
+            </p>
+            <Link href="/werkgebied">Bekijk het volledige werkgebied →</Link>
+          </div>
+        </div>
+      </section>
       <section className="section section-dark">
         <div className="shell">
           <p className="eyebrow">Eerst veilig handelen</p>

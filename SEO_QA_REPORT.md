@@ -4,6 +4,27 @@
 **Branch:** `codex/seo-transformation`  
 **Test target:** local Next.js production server on port 3100
 
+## Phase E pre-deployment verification
+
+- Registered exactly 304 municipalities: 67 Antwerpen, 38 Limburg, 55 Oost-Vlaanderen,
+  63 Vlaams-Brabant, 62 West-Vlaanderen and 19 Brussels.
+- Registered all ten Antwerp districts; nine district URLs are indexable and Antwerpen remains `/`.
+- Added six unique, indexable regional hubs and one complete `/werkgebied` directory.
+- Build currently generates 45 static pages/routes; the registry contains 35 indexable pages and
+  one routable `noindex` page.
+- `npm test`: 29 pass, zero fail.
+- `npm run lint`: passes.
+- `npm run build`: Next.js 16.3.5 production build passes.
+- `npm run seo:audit -- http://localhost:3100`: 36 routable pages and 36 internal links pass.
+- Chrome desktop and 390×844 mobile checks pass for `/werkgebied` and `/loodgieter-wilrijk`.
+- The municipality filter returned one result for “Gent”; all 304 municipality elements were
+  present in the initial rendered DOM.
+- Mobile width matched document width (390 px), with one H1 and no Next.js error overlay.
+- Mobile navigation expanded correctly and included the new Werkgebied destination.
+- Observed console errors originated from installed Chrome extensions; no application-origin
+  error was recorded.
+- Production deployment results are recorded after the release step.
+
 ## Production release verification
 
 - Pull request [#2](https://github.com/Ilias492610/ABService/pull/2) was merged into `main` as commit `4209f8d`.
@@ -36,7 +57,7 @@ The homepage lab LCP improved by 28.7 seconds under comparable mobile Lighthouse
 ## Automated verification
 
 - `npm audit --omit=dev`: zero vulnerabilities.
-- `npm test`: 25 tests pass, zero fail.
+- Baseline release: `npm test` had 25 tests; Phase E expands this to 29 passing tests.
 - `npm run lint`: ESLint flat-config run passes with zero warnings/errors.
 - `npm run build`: Next.js 16.3.5 production build passes; 29 routes generated.
 - `npm run seo:audit -- http://localhost:3100`: 20 routable pages and 20 internal links pass.
@@ -62,7 +83,7 @@ The SEO crawl verifies:
 
 - Global graph parses as JSON and contains Organization, WebSite and a Plumber/HVACBusiness entity.
 - No address, geo, hours, price range, aggregate rating, review, award or certification is emitted.
-- `areaServed` contains only owner-confirmed Antwerp.
+- `areaServed` contains the owner-confirmed `Vlaams Gewest` and `Brussels Hoofdstedelijk Gewest`, not 304 keyword entries.
 - Interior pages emit BreadcrumbList matching the visible breadcrumb.
 - FAQPage schema was removed.
 - Unit tests guard verified-only properties and breadcrumb ordering.

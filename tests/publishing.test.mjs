@@ -23,6 +23,11 @@ test("the public route registry publishes verified guidance and withholds unsupp
 
   assert.ok(indexablePaths.includes("/tarieven"));
   assert.ok(indexablePaths.includes("/advies/drukverlies-cv-ketel"));
+  assert.ok(indexablePaths.includes("/werkgebied"));
+  assert.ok(indexablePaths.includes("/werkgebied/antwerpen"));
+  assert.ok(indexablePaths.includes("/werkgebied/brussel"));
+  assert.ok(indexablePaths.includes("/loodgieter-wilrijk"));
+  assert.ok(!indexablePaths.includes("/loodgieter-antwerpen"));
   assert.ok(indexablePaths.includes("/foutcodes/bosch"));
   assert.ok(indexablePaths.includes("/foutcodes/junkers"));
   assert.ok(!indexablePaths.includes("/installaties/airconditioning"));
@@ -41,6 +46,7 @@ test("primary navigation links only to published destinations", () => {
 
   assert.ok(navPaths.includes("/tarieven"));
   assert.ok(navPaths.includes("/advies/drukverlies-cv-ketel"));
+  assert.ok(navPaths.includes("/werkgebied"));
   assert.ok(!navPaths.includes("/installaties/airconditioning"));
   assert.ok(navPaths.every((path) => publishedPaths.has(path)));
 });

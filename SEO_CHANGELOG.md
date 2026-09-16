@@ -1,5 +1,17 @@
 # AB Service SEO Changelog
 
+## 16 September 2026 — Phase E geographic architecture
+
+- Added a source-of-truth registry for 285 Flemish and 19 Brussels municipalities.
+- Added all ten Antwerp districts; retained the homepage as the sole Antwerpen intent owner.
+- Published `/werkgebied`, six regional hubs and nine unique district pages.
+- Kept 302 municipality candidates non-routable to prevent scaled doorway content.
+- Added an accessible municipality filter while retaining every name in server-rendered HTML.
+- Added broad truthful schema coverage for Flanders and Brussels without 304-name stuffing.
+- Added navigation, homepage, footer, hub, service and nearby-district internal links.
+- Added project-to-area evidence workflow and a separate Google Business Profile service-area plan.
+- Expanded automated policy coverage from 25 to 29 tests.
+
 ## 16 September 2026 — production release
 
 - Merged GitHub pull request `#2` into `main` at commit `4209f8d`.
