@@ -48,6 +48,17 @@ test("project publication gate accepts a complete consented case record", () => 
   assert.deepEqual(result, { ok: true, missing: [] });
 });
 
+test("project publication gate rejects non-text review content without throwing", () => {
+  const result = validateProjectForPublication({
+    ...completeProject,
+    reviewApproved: true,
+    reviewText: 42,
+  });
+
+  assert.equal(result.ok, false);
+  assert.ok(result.missing.includes("reviewText"));
+});
+
 test("published projects automatically strengthen their district and province hub", () => {
   const district = { name: "Hoboken", type: "district", prioritySignals: {} };
   const evidence = deriveAreaEvidence(district, [completeProject]);

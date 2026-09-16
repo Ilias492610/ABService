@@ -68,7 +68,11 @@ test("regional coverage has six unique published hubs", () => {
 test("published district pages have explicit answers, source provenance and unique substantive copy", () => {
   const fingerprints = indexableDistricts.map((district) => {
     assert.ok(district.heading.toLowerCase().includes("loodgieter"));
-    assert.match(district.localSource.href, /^https:\/\//);
+    assert.equal(
+      district.localSource.href,
+      "https://www.antwerpen.be/assets-proxy/b6b7cf63-3c94-4413-9374-4a36f88fd401"
+    );
+    assert.equal(district.localSource.verifiedStatus, 200);
     assert.ok(
       district.faq.every(
         (entry) => Array.isArray(entry) && entry.length === 2 && entry[1].length >= 80

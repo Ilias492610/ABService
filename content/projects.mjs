@@ -34,7 +34,10 @@ export const validateProjectForPublication = (project = {}) => {
     return typeof value !== "string" || value.trim() === "";
   });
 
-  if (project.reviewApproved === true && !project.reviewText?.trim()) {
+  if (
+    project.reviewApproved === true &&
+    (typeof project.reviewText !== "string" || project.reviewText.trim() === "")
+  ) {
     missing.push("reviewText");
   }
 
@@ -60,7 +63,10 @@ export const deriveAreaEvidence = (area, entries = projects) => {
       : normalize(project.city) === normalize(area.name)
   );
   const hasLocalReview = matchingProjects.some(
-    (project) => project.reviewApproved === true && project.reviewText?.trim()
+    (project) =>
+      project.reviewApproved === true &&
+      typeof project.reviewText === "string" &&
+      project.reviewText.trim() !== ""
   );
   const prioritySignals = {
     ...area.prioritySignals,

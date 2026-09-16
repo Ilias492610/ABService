@@ -12,9 +12,10 @@
 - Added six unique, indexable regional hubs and one complete `/werkgebied` directory.
 - Build currently generates 45 static pages/routes; the registry contains 34 indexable pages and
   two routable `noindex` pages.
-- `npm test`: 32 pass, zero fail.
+- `npm test`: 34 pass, zero fail.
 - `npm run lint`: passes.
 - `npm run build`: Next.js 16.3.5 production build passes.
+- `npm run sources:audit`: four official geographic sources return HTTP 200.
 - `npm run seo:audit -- http://localhost:3100`: 36 routable pages and 36 internal links pass.
 - Chrome desktop and 390×844 mobile checks pass for `/werkgebied` and `/loodgieter-wilrijk`.
 - The municipality filter returned one result for “Gent”; 314 searchable area elements were

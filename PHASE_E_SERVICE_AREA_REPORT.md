@@ -53,7 +53,8 @@ owns the intent.
 - Global navigation links to `/werkgebied`.
 - Homepage links to the full coverage directory.
 - Footer links to the directory and all six hubs.
-- The directory links to every hub and all ten Antwerp district destinations.
+- The directory lists all ten Antwerp districts and links to the homepage plus the eight
+  indexable district pages; the noindex research district remains plain text.
 - Each hub links to central service pages rather than duplicating service content.
 - District pages link to central services, tariffs, nearby districts and the Antwerp hub.
 - Future projects must link to their district/municipality, province hub and central service page.
@@ -103,4 +104,4 @@ similarity review and either genuine work evidence or a defensible customer-purp
 - [Vlaanderen: 285 municipalities](https://www.vlaanderen.be/gemeenten-en-provincies/overzicht-van-vlaamse-steden-en-gemeenten)
 - [Brussels: 19 municipalities](https://be.brussels/nl/over-het-gewest/structuur-en-organisatie/plaatselijke-besturen-en-gemeenten/gemeenten)
 - [Antwerp: 10 districts](https://www.antwerpen.be/info/waarom-een-apart-bestuur-per-district)
-- [Antwerp Stad in Cijfers: official area and wijk classification](https://stadincijfers.antwerpen.be/viewer/JiveEmbedded.aspx?favorite=ggw7_11002bez02&geolevel=ggw7&presel_code=introkaart_eengebied_new)
+- [Stad Antwerpen: official wijk data and cluster classification 2026](https://www.antwerpen.be/assets-proxy/b6b7cf63-3c94-4413-9374-4a36f88fd401)

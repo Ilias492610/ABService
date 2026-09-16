@@ -41,8 +41,10 @@ const unresearchedPrioritySignals = Object.freeze({
 });
 
 const antwerpNeighborhoodSource = Object.freeze({
-  label: "Stad in Cijfers: officiële gebieds- en wijkindeling Antwerpen",
-  href: "https://stadincijfers.antwerpen.be/viewer/JiveEmbedded.aspx?favorite=ggw7_11002bez02&geolevel=ggw7&presel_code=introkaart_eengebied_new",
+  label: "Stad Antwerpen: officiële wijkgegevens en clusterindeling 2026",
+  href: "https://www.antwerpen.be/assets-proxy/b6b7cf63-3c94-4413-9374-4a36f88fd401",
+  verifiedStatus: 200,
+  verifiedAt: "2026-09-16",
 });
 
 const makeArea = (name, province, region = "Vlaanderen") =>
@@ -143,7 +145,7 @@ export const isDistrictPublishable = (area) =>
   area.slug !== "antwerpen" &&
   area.keywordPriorityConfirmed === true &&
   area.hasUniqueContent === true &&
-  area.localSource?.href?.startsWith("https://") &&
+  area.localSource?.verifiedStatus === 200 &&
   Array.isArray(area.faq) &&
   area.faq.length >= 2 &&
   area.faq.every(

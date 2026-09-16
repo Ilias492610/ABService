@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/breadcrumbs";
 import ContactCta from "@/components/contact-cta";
 import PageHero from "@/components/page-hero";
 import { getDistrict, getDistrictPublicHref } from "@/content/service-areas.mjs";
+import { deriveAreaEvidence, projects } from "@/content/projects.mjs";
 
 const services = [
   ["Cv-ketelonderhoud", "/onderhoud"],
@@ -12,7 +13,7 @@ const services = [
 ];
 
 export default function DistrictPage({ slug }) {
-  const district = getDistrict(slug);
+  const district = deriveAreaEvidence(getDistrict(slug), projects);
 
   return (
     <>
@@ -57,6 +58,19 @@ export default function DistrictPage({ slug }) {
           </aside>
         </div>
       </section>
+      {district.matchingProjects.length > 0 && (
+        <section className="section section-dark">
+          <div className="shell">
+            <p className="eyebrow">Echte projecten</p>
+            <h2>Gecontroleerde projecten in {district.name}</h2>
+            <ul className="link-list">
+              {district.matchingProjects.map((project) => (
+                <li key={project.path}><Link href={project.path}>{project.title}</Link></li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
       <section className="section section-muted">
         <div className="shell">
           <p className="eyebrow">Praktische antwoorden</p>

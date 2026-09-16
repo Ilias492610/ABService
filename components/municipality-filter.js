@@ -29,7 +29,7 @@ export default function MunicipalityFilter({ groups }) {
   return (
     <div className="area-directory">
       <div className="area-search">
-        <label htmlFor="municipality-search">Zoek uw gemeente</label>
+        <label htmlFor="municipality-search">Zoek uw gemeente of district</label>
         <input
           id="municipality-search"
           type="search"
@@ -61,7 +61,7 @@ export default function MunicipalityFilter({ groups }) {
           ))}
         </div>
       ) : (
-        <p className="warning-box">Geen gemeente gevonden. Controleer de spelling of neem contact op.</p>
+        <p className="warning-box">Geen gebied gevonden. Controleer de spelling of neem contact op.</p>
       )}
     </div>
   );
