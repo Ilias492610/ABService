@@ -4,6 +4,18 @@
 **Release:** pull request [#4](https://github.com/Ilias492610/ABService/pull/4), merge commit `73f468e`
 **Test targets:** local Next.js production server on port 3100 and `https://www.abservice24.be`
 
+## Contactformulier en zwevende contactelementen
+
+- Productielogs lokaliseerden de formulierfout bij de ontbrekende `MAILGUN_API_KEY`; validatie,
+  browserpayload en de Next.js-route werkten tot aan die externe grens.
+- Een nieuwe Mailgun-key is uitsluitend als Vercel Secret ingesteld voor Production, Preview en
+  Development van beide gekoppelde projecten; geen sleutel staat in Git of documentatie.
+- Een echte POST naar de beschermde primaire preview doorliep de volledige route en antwoordde
+  met HTTP 200 en `{\"ok\":true}`. De Vercel-runtime logde daarna een geaccepteerde Mailgun message-ID.
+- De desktop- en 390×844-controle bevestigde het WhatsApp-logo, de juiste vooraf ingevulde link,
+  de Google 5,0-popup, de juiste profiel-ID en de werkende sluitknop.
+- De gerichte axe WCAG 2 A/AA-controle rapporteerde nul overtredingen.
+
 ## Phase E release verification
 
 - Registered exactly 304 municipalities: 67 Antwerpen, 38 Limburg, 55 Oost-Vlaanderen,
