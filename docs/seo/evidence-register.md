@@ -14,6 +14,9 @@
 | Gas-boiler renovation premium stopped/narrow exceptions | Vlaanderen/VEKA guidance | High | Published cautiously | Measures change |
 | Vaillant selected codes | Official Vaillant Belgium fault-code page | High but model-dependent | Published with warning/source | Manufacturer page change |
 | Bulex selected codes | Official Bulex Belgium fault-code page | High but model-dependent | Published with warning/source | Manufacturer page change |
+| Bosch/Junkers selected Serie -4 codes | Official Bosch fault-code booklet and model documentation | High within named scope; model-dependent | Published with subcodes, scope warning and sources | Manufacturer document change |
+| General pressure-loss guidance | Official Bosch Belgium user guidance | High for general triage; pressure remains model-dependent | Published with exact-model warning | Manufacturer guidance change |
+| Legacy image ownership | Owner confirmation in task | High for ownership; not evidence of depicted real-world event | Used only as labelled illustration; `projectEvidence: false` | Authentic project originals supplied |
 | 24/7, same-day or 60-minute response | No evidence | None | Removed | Written operational proof |
 | Review score/count | No verified live source | None | Removed | Verified profile URL and display policy |
 | Address/customer-facing office | No evidence | None | Not published | Owner + GBP evidence |

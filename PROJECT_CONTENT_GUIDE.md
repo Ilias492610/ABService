@@ -40,6 +40,8 @@ Capture horizontal and vertical originals before, during and after the work. Inc
 
 Do not use AI-generated, stock or unrelated imagery as a completed-project photograph. Neutral illustration is acceptable only when clearly labelled and not part of the proof section.
 
+The existing files registered in `content/media.mjs` are owner-confirmed website assets, but they are classified as `role: "illustration"` and `projectEvidence: false`. They may support service or advice pages with their supplied caption. They cannot unlock a project page, prove a technician, certify a location or serve as before/after evidence.
+
 ## Writing structure
 
 1. One-sentence answer: what was done and in which approved municipality.

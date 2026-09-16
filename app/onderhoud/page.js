@@ -1,4 +1,5 @@
 import ServicePage from "@/components/service-page";
+import { contentImages } from "@/content/media.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 
@@ -12,6 +13,7 @@ export default function OnderhoudPage() {
       title="Onderhoud van uw cv-ketel in Antwerpen"
       intro="Periodiek onderhoud ondersteunt een veilige, zuinige en betrouwbare werking. De wettelijke onderhoudsfrequentie hangt af van brandstof en vermogen; onderhoud is niet hetzelfde als een keuring bij eerste ingebruikname."
       answer="In Vlaanderen moet een centraal stooktoestel op gas met een vermogen vanaf 20 kW in het algemeen om de twee jaar worden onderhouden door een erkende technicus gasvormige brandstof. Voor toestellen onder 20 kW is periodiek onderhoud aanbevolen, maar niet op dezelfde manier wettelijk verplicht."
+      image={contentImages.maintenance}
       sections={[
         {
           eyebrow: "Verschil",
@@ -49,6 +51,7 @@ export default function OnderhoudPage() {
       relatedLinks={[
         { label: "Wanneer is een cv-keuring nodig?", href: "/keuring" },
         { label: "Probleem of foutcode laten beoordelen", href: "/herstelling" },
+        { label: "Wat te doen bij terugkerend drukverlies", href: "/advies/drukverlies-cv-ketel" },
         { label: "Hoe worden tarieven bepaald?", href: "/tarieven" },
       ]}
       sourceLinks={[

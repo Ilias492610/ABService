@@ -27,10 +27,10 @@ export default function FaultCodesPage() {
                 <Link href={`/foutcodes/${guide.slug}`}>Bekijk {guide.brand}-codes →</Link>
               </article>
             ))}
-            <article className="card"><h3>Bosch en Junkers</h3><p>De eerdere pagina’s bevatten geen voldoende onderbouwde modelspecifieke codes. Ze blijven daarom buiten de zoekindex tot officiële bronkoppeling per code beschikbaar is.</p><Link href="/contact">Vraag hulp met uw exacte model →</Link></article>
           </div>
         </div>
       </section>
+      <section className="section section-muted"><div className="shell narrow"><p className="eyebrow">Drukprobleem</p><h2>Daalt de druk telkens opnieuw?</h2><p className="section-lead">Terugkerend drukverlies is geen foutcode op zichzelf. Lees welke zichtbare controles veilig zijn en wanneer onderzoek nodig is.</p><Link href="/advies/drukverlies-cv-ketel">Lees de gids over drukverlies →</Link></div></section>
       <ContactCta title="Komt de code terug na één toegestane reset?" text="Noteer de code en het exacte toestelmodel. Open geen gas- of elektrische onderdelen en laat de oorzaak beoordelen." />
     </>
   );

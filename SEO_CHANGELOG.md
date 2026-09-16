@@ -18,7 +18,9 @@
 - Added conservative gas, CO, water/electrical and reset guidance.
 - Removed unsupported 24/7, 60-minute, same-day, certification, review, team, history, brand, location, price, warranty and partnership claims.
 - Reduced Vaillant/Bulex codes to a manufacturer-backed set with model warnings and official sources.
-- Withheld Bosch/Junkers code claims pending official model evidence.
+- Published Bosch/Junkers guides for a narrowly named Serie -4 scope using the official Bosch codebook and model-documentation links.
+- Added `/advies/drukverlies-cv-ketel` with safe checks, model-dependent pressure guidance and an official Bosch source.
+- Reintroduced six owner-supplied legacy images through `next/image`, with neutral alt text and visible captions stating they are illustrations rather than customer cases.
 
 ### Technical SEO
 
@@ -61,5 +63,5 @@
 - Removed Axios, Framer Motion, Lucide, React Hot Toast, DaisyUI, next-sitemap and next-plausible.
 - Updated Mailgun, form-data, PostCSS, Tailwind and Autoprefixer.
 - Reduced production audit from 16 advisories, including two critical, to zero.
-- Added 24 unit/policy tests and a rendered production SEO crawler.
+- Added 25 unit/policy tests, including media-provenance and Bosch/Junkers source guards, plus a rendered production SEO crawler.
 - Added desktop/mobile browser QA and repeatable Lighthouse comparisons.

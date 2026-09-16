@@ -36,7 +36,9 @@ test("sitemap entries contain only published pages and no fabricated dates", () 
   const urls = sitemap.map((entry) => entry.url);
 
   assert.ok(urls.includes("https://www.abservice24.be/tarieven"));
+  assert.ok(urls.includes("https://www.abservice24.be/advies/drukverlies-cv-ketel"));
+  assert.ok(urls.includes("https://www.abservice24.be/foutcodes/bosch"));
+  assert.ok(urls.includes("https://www.abservice24.be/foutcodes/junkers"));
   assert.ok(!urls.includes("https://www.abservice24.be/installaties/airconditioning"));
-  assert.ok(!urls.includes("https://www.abservice24.be/foutcodes/bosch"));
   assert.ok(sitemap.every((entry) => !("lastModified" in entry)));
 });

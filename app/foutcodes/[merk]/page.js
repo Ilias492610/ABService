@@ -36,7 +36,11 @@ export default async function FaultGuidePage({ params }) {
                   <tbody>{guide.codes.map((item) => <tr key={item.code}><td><strong>{item.code}</strong></td><td>{item.meaning}</td><td>{item.userAction}</td></tr>)}</tbody>
                 </table>
               </div>
-              <p style={{ marginTop: "1.25rem" }}>Bron: <a href={guide.sourceUrl} target="_blank" rel="noreferrer">{guide.sourceLabel} ↗</a>. Raadpleeg daarnaast de handleiding van uw model.</p>
+              <div className="source-note">
+                <p>Bron: <a href={guide.sourceUrl} target="_blank" rel="noreferrer">{guide.sourceLabel} ↗</a>.</p>
+                {guide.documentationUrl && <p>Modelcontrole: <a href={guide.documentationUrl} target="_blank" rel="noreferrer">{guide.documentationLabel} ↗</a>.</p>}
+                <p>Raadpleeg daarnaast altijd de handleiding van uw exacte model.</p>
+              </div>
             </>
           ) : (
             <div className="answer-box">Er worden op deze pagina nog geen codebetekenissen gepubliceerd. Deel het exacte model en de volledige code voor een gerichte beoordeling.</div>

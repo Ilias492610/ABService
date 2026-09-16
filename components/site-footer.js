@@ -13,6 +13,7 @@ const serviceLinks = [
 
 const knowledgeLinks = [
   ["Foutcodes", "/foutcodes"],
+  ["Drukverlies cv-ketel", "/advies/drukverlies-cv-ketel"],
   ["Veelgestelde vragen", "/faq"],
   ["Over AB Service", "/over-ons"],
   ["Contact", "/contact"],

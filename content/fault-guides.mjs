@@ -78,22 +78,88 @@ export const faultGuides = Object.freeze([
   {
     slug: "bosch",
     brand: "Bosch",
-    status: "noindex",
+    status: "published",
     modelWarning:
-      "Bosch-codes zijn modelafhankelijk. Deze pagina publiceert geen codebetekenissen zonder een gekoppelde officiële bron voor het exacte model.",
-    sourceLabel: "",
-    sourceUrl: "",
-    codes: [],
+      "Deze codes komen uit het officiële Bosch-codeboek voor de vermelde Serie -4 vanaf 2013. Controleer altijd het exacte model, bouwjaar, subcode en de eigen handleiding: dezelfde hoofdcode kan elders iets anders betekenen.",
+    sourceLabel: "Officieel Bosch-codeboek voor storingscodes",
+    sourceUrl:
+      "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
+    documentationLabel: "Bosch handleidingen en modeldocumentatie",
+    documentationUrl:
+      "https://www.bosch-homecomfort.com/be/nl/residentieel/service-ondersteuning/bedieningshandleidingen/",
+    codes: [
+      {
+        code: "E2 222/223",
+        meaning:
+          "Volgens het Bosch-codeboek is er bij deze Serie -4 een kortsluiting of onderbreking in de aanvoertemperatuursensor.",
+        userAction:
+          "Noteer hoofdcode, subcode en exact model. Open het toestel niet; sensor, bekabeling en regeling vragen technische diagnose.",
+      },
+      {
+        code: "E9 224/372/276",
+        meaning:
+          "De veiligheidstemperatuurbegrenzer is volgens het codeboek geactiveerd.",
+        userAction:
+          "Laat het toestel afkoelen en volg alleen de gebruikershandleiding. Reset hoogstens één keer wanneer de handleiding dat toestaat; laat een terugkerende melding onderzoeken.",
+      },
+      {
+        code: "EA 227",
+        meaning:
+          "Tijdens een ontstekingspoging werd volgens het codeboek geen vlam herkend.",
+        userAction:
+          "Stop onmiddellijk bij gasgeur. Zonder gasgeur: controleer uitsluitend wat de handleiding voor gebruikers toestaat en laat een terugkerende storing technisch beoordelen.",
+      },
+      {
+        code: "F7 228",
+        meaning:
+          "Er werd volgens het codeboek een vlamsignaal gemeten terwijl de brander uitgeschakeld hoort te zijn.",
+        userAction:
+          "Schakel het toestel niet herhaald aan en uit. Noteer de code en laat de verbrandings- en meetcomponenten professioneel controleren.",
+      },
+    ],
   },
   {
     slug: "junkers",
     brand: "Junkers",
-    status: "noindex",
+    status: "published",
     modelWarning:
-      "Junkers-codes zijn modelafhankelijk. Deze pagina publiceert geen codebetekenissen zonder een gekoppelde officiële bron voor het exacte model.",
-    sourceLabel: "",
-    sourceUrl: "",
-    codes: [],
+      "Deze codes komen uit het officiële Bosch-codeboek voor Junkers/Bosch-toestellen uit de vermelde Serie -4 vanaf 2013. Controleer het exacte model en de eigen handleiding; gebruik deze selectie niet voor andere modelreeksen.",
+    sourceLabel: "Officieel Bosch-codeboek voor storingscodes",
+    sourceUrl:
+      "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
+    documentationLabel: "Officiële documentatie voor oudere Bosch/Junkers-toestellen",
+    documentationUrl:
+      "https://www.bosch-homecomfort.com/be/nl/residentieel/professionals/voor-de-installateurs/technische-documentatie/documentatie-oude-bosch-toestellen/",
+    codes: [
+      {
+        code: "E2 222/223",
+        meaning:
+          "Volgens het officiële codeboek is er bij deze Serie -4 een kortsluiting of onderbreking in de aanvoertemperatuursensor.",
+        userAction:
+          "Noteer hoofdcode, subcode en model. Verwijder geen mantel; sensor, bedrading en regeling zijn werk voor een technicus.",
+      },
+      {
+        code: "E9 224/372/276",
+        meaning:
+          "De veiligheidstemperatuurbegrenzer is volgens het codeboek geactiveerd.",
+        userAction:
+          "Volg de gebruikershandleiding en reset niet herhaald. Laat de oorzaak beoordelen wanneer de melding blijft of terugkomt.",
+      },
+      {
+        code: "EA 227",
+        meaning:
+          "Volgens het codeboek werd tijdens de ontstekingspoging geen vlam herkend.",
+        userAction:
+          "Bij gasgeur: niet verder bedienen. Zonder gasgeur mag u alleen de gebruikerscontroles uit de exacte handleiding uitvoeren.",
+      },
+      {
+        code: "F7 228",
+        meaning:
+          "Er werd een vlamsignaal gemeten terwijl de brander uitgeschakeld hoort te zijn.",
+        userAction:
+          "Stop met resetten, noteer de volledige code en laat de verbrandings- en meetcomponenten professioneel controleren.",
+      },
+    ],
   },
 ]);
 

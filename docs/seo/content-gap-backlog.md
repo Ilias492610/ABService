@@ -10,9 +10,9 @@
 | Pipework | Draft | Scope, materials, boundaries and project evidence | 3 |
 | Bathroom renovation | Draft | Confirm whether AB Service is installer or total contractor; partner/scope proof | 4 |
 | Commercial Vaillant/Bulex brand pages | Draft | Actual service evidence and non-duplicative brand value | 3 |
-| Bosch/Junkers code guides | Noindex | Official sources mapped to exact supported model families | 2 |
+| Bosch/Junkers commercial service pages | Draft | Current proof that AB Service services each brand, exact scope and authentic work evidence | 3 |
 | Air conditioning | Noindex | Active service confirmation and required F-gas evidence | 4 |
-| Advice: pressure loss | Draft article | Technician-reviewed safe procedure and model caveats | 2 |
+| Further advice articles | Draft | Technician-reviewed question, safe scope, primary sources and unique user value | 3 |
 | Advice: maintenance versus inspection | Covered on services; possible article | Search demand plus unique decision guide | 3 |
 
 Do not turn cadence into a page quota. Publish only when evidence and usefulness justify the URL.

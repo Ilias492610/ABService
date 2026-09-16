@@ -11,6 +11,7 @@ Build local search visibility and qualified enquiries through useful, verifiable
 - `content/fault-guides.mjs` separates manufacturer-backed guides from withheld brand content.
 - `content/content-backlog.mjs` records locality, commercial-brand and unsupported-service drafts.
 - `content/projects.mjs` defines a strict evidence gate for future case studies.
+- `content/media.mjs` records owner-confirmed legacy assets as illustrations and explicitly excludes them as project evidence.
 - `libs/seo-data.mjs` builds metadata and sitemap entries.
 - `libs/schema-data.mjs` builds verified global and breadcrumb schema.
 - `libs/contact-validation.mjs` validates form data on client and server.
@@ -31,7 +32,8 @@ The policy is enforced in tests. A content idea does not become indexable merely
 |---|---|---|
 | Local entity | loodgieter Antwerpen; verwarming Antwerpen | `/` |
 | Maintenance | onderhoud cv-ketel; wettelijke frequentie | `/onderhoud` |
-| Repair | cv-ketel herstelling; geen warm water; drukverlies | `/herstelling` |
+| Repair | cv-ketel herstelling; geen warm water | `/herstelling` |
+| Pressure guidance | drukverlies cv-ketel; cv druk daalt | `/advies/drukverlies-cv-ketel` |
 | Inspection | keuring eerste ingebruikname; gewijzigde cv-installatie | `/keuring` |
 | Installation | verwarming en sanitair installeren | `/installaties` |
 | Gas boiler | gasketel plaatsen/vervangen Antwerpen | `/installaties/gasketels` |
@@ -40,7 +42,7 @@ The policy is enforced in tests. A content idea does not become indexable merely
 | Contact | AB Service contacteren | `/contact` |
 | Questions | onderhoud, keuring, herstel, prijs | `/faq` |
 | Fault guidance | cv-ketel foutcodes | `/foutcodes` |
-| Manufacturer guidance | Vaillant/Bulex foutcode | `/foutcodes/vaillant`, `/foutcodes/bulex` |
+| Manufacturer guidance | Vaillant/Bulex/Bosch/Junkers foutcode | `/foutcodes/vaillant`, `/foutcodes/bulex`, `/foutcodes/bosch`, `/foutcodes/junkers` |
 
 ## Priority and current status
 
@@ -54,6 +56,9 @@ The policy is enforced in tests. A content idea does not become indexable merely
 - Remove heavy review widget and unnecessary client animation code.
 - Upgrade to Next.js 16.3.5 and a zero-production-advisory dependency tree.
 - Add automated content policy, validation, schema and crawl tests.
+- Publish source-bounded Bosch/Junkers guidance from official Bosch documentation.
+- Publish a technically conservative pressure-loss guide with a manufacturer source.
+- Reuse owner-supplied legacy images only as labelled illustrations, never as customer or project proof.
 
 ### Priority 2 — owner evidence required
 
@@ -70,7 +75,7 @@ The policy is enforced in tests. A content idea does not become indexable merely
 - One unique locality page at a time, starting with the strongest evidenced municipality.
 - Commercial brand-service pages for brands supported by work evidence.
 - Additional service pages where operational scope is confirmed.
-- Helpful advisory articles based on real customer questions and technician expertise.
+- Further advisory articles based on real customer questions and technician expertise.
 
 ## Internal-link architecture
 
@@ -79,6 +84,7 @@ The policy is enforced in tests. A content idea does not become indexable merely
 - Inspection links to maintenance and installation.
 - Installation hub links to gas boilers, sanitary work and tariffs.
 - Fault-code hub links only to manufacturer-backed guides; detail guides link to repair/contact.
+- Repair, maintenance and fault-code pages link to the pressure-loss decision guide.
 - FAQ links back to the relevant service explanation.
 - Footer provides a compact service and knowledge hub on every page.
 

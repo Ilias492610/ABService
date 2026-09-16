@@ -27,10 +27,10 @@ The homepage lab LCP improved by 28.7 seconds under comparable mobile Lighthouse
 ## Automated verification
 
 - `npm audit --omit=dev`: zero vulnerabilities.
-- `npm test`: 24 tests pass, zero fail.
+- `npm test`: 25 tests pass, zero fail.
 - `npm run lint`: ESLint flat-config run passes with zero warnings/errors.
-- `npm run build`: Next.js 16.3.5 production build passes; 28 routes generated.
-- `npm run seo:audit -- http://localhost:3100`: 19 routable pages and 19 internal links pass.
+- `npm run build`: Next.js 16.3.5 production build passes; 29 routes generated.
+- `npm run seo:audit -- http://localhost:3100`: 20 routable pages and 20 internal links pass.
 
 The SEO crawl verifies:
 
@@ -69,6 +69,8 @@ Chrome desktop and 390×844 mobile viewport were inspected against the productio
 - Client and server reject missing, implausible, oversized and unrecognized service values.
 - Telephone, email and WhatsApp links are present.
 - Browser console showed no application-origin error. Observed errors were from installed Chrome extensions only.
+- Bosch and pressure-loss pages were rechecked at desktop width and at a 390×844 mobile viewport; headings, tables, links, menu behaviour and illustration captions remain readable without visible horizontal overflow.
+- Six legacy images are delivered with `next/image`, responsive `sizes`, descriptive neutral alt text and a visible “geen klantcase” caption. A unit test prevents these assets from being promoted to project evidence.
 - A live Mailgun submission was not sent: the local environment has no `MAILGUN_API_KEY`, and a real submission would create an external message. Client/server validation is automated; delivery must be smoke-tested in the configured deployment.
 
 ## Resolved technical issues
@@ -82,7 +84,8 @@ Chrome desktop and 390×844 mobile viewport were inspected against the productio
 - Vercel Analytics loads only on Vercel to avoid local 404 console noise.
 - Corrected accent contrast from 4.08:1 to approximately 5.54:1 on white.
 - Removed current-date sitemap modification claims.
-- Corrected noindex handling for air conditioning, Bosch and Junkers.
+- Retained correct `noindex` handling for air conditioning and published Bosch/Junkers only after mapping a bounded code set to official Bosch documentation.
+- Added the indexable pressure-loss guide, navigation/footer links and source-aware internal links.
 
 ## Remaining operational checks
 

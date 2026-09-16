@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/breadcrumbs";
+import ContentImage from "@/components/content-image";
 import ContactCta from "@/components/contact-cta";
 import PageHero from "@/components/page-hero";
 
@@ -14,6 +15,7 @@ export default function ServicePage({
   relatedLinks = [],
   sourceLinks = [],
   warning,
+  image,
 }) {
   return (
     <>
@@ -28,6 +30,7 @@ export default function ServicePage({
               <p>{warning}</p>
             </aside>
           )}
+          <ContentImage image={image} />
         </div>
       </section>
       {sections.map((section, index) => (

@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/breadcrumbs";
+import ContentImage from "@/components/content-image";
 import ContactCta from "@/components/contact-cta";
 import PageHero from "@/components/page-hero";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
+import { contentImages } from "@/content/media.mjs";
 
 export const metadata = buildPageMetadata(getPageDefinition("/installaties"));
 
@@ -33,6 +35,7 @@ export default function InstallatiesPage() {
         <div className="shell">
           <p className="eyebrow">Actief aanbod</p>
           <h2>Installatiewerk op basis van uw situatie</h2>
+          <ContentImage image={contentImages.installation} />
           <div className="cards-grid" style={{ marginTop: "2rem" }}>
             {offerings.map((offering) => (
               <article className="card" key={offering.href}>

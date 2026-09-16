@@ -135,6 +135,33 @@ export const pageRegistry = Object.freeze([
     priority: 0.6,
   },
   {
+    path: "/foutcodes/bosch",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Bosch foutcodes: officiële bron en veilige stappen | AB Service",
+    description:
+      "Bekijk geselecteerde Bosch-codes uit officiële modelgebonden documentatie, met veilige eerste stappen en een duidelijke waarschuwing om uw exacte toestel te controleren.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/junkers",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Junkers foutcodes: officiële bron en veilige stappen | AB Service",
+    description:
+      "Bekijk geselecteerde Junkers-codes uit officiële Bosch-documentatie, controleer uw exacte model en lees welke handelingen u veilig kunt uitvoeren.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/advies/drukverlies-cv-ketel",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Drukverlies bij uw cv-ketel: oorzaken en veilige controle | AB Service",
+    description:
+      "Daalt de druk van uw cv-installatie? Lees wat u veilig kunt controleren, waarom de juiste druk modelafhankelijk is en wanneer technisch onderzoek nodig is.",
+    changeFrequency: "monthly",
+    priority: 0.65,
+  },
+  {
     path: "/privacy-policy",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Privacybeleid | AB Service",
@@ -159,18 +186,6 @@ export const pageRegistry = Object.freeze([
     description:
       "Deze dienst is momenteel niet opgenomen in het actieve dienstenaanbod van de website.",
   },
-  {
-    path: "/foutcodes/bosch",
-    status: CONTENT_STATUS.NOINDEX,
-    title: "Bosch foutcodes | AB Service",
-    description: "Raadpleeg de handleiding die bij uw exacte Bosch-toestel hoort.",
-  },
-  {
-    path: "/foutcodes/junkers",
-    status: CONTENT_STATUS.NOINDEX,
-    title: "Junkers foutcodes | AB Service",
-    description: "Raadpleeg de handleiding die bij uw exacte Junkers-toestel hoort.",
-  },
 ]);
 
 export const indexablePages = Object.freeze(getIndexableEntries(pageRegistry));
@@ -193,6 +208,7 @@ export const navigation = Object.freeze([
   },
   { label: "Tarieven", href: "/tarieven" },
   { label: "Foutcodes", href: "/foutcodes" },
+  { label: "Advies", href: "/advies/drukverlies-cv-ketel" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ]);
