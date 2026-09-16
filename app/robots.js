@@ -1,17 +1,9 @@
-import { getSiteUrl, toAbsoluteUrl } from "@/libs/site";
-
-const siteUrl = getSiteUrl();
+import { business } from "@/content/business.mjs";
 
 export default function robots() {
   return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: ["/api/", "/404"],
-      },
-    ],
-    sitemap: toAbsoluteUrl("/sitemap.xml"),
-    host: siteUrl,
+    rules: [{ userAgent: "*", allow: "/", disallow: ["/api/"] }],
+    sitemap: `${business.canonicalOrigin}/sitemap.xml`,
+    host: business.canonicalOrigin,
   };
 }

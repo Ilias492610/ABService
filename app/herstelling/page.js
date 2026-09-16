@@ -1,75 +1,61 @@
-import HeaderTopBar from '@/components/sections/header-top-bar';
-import MainNavigation from '@/components/sections/main-navigation';
-import PageHero from '@/components/sections/page-hero';
-import UrgentRepairHero from '@/components/sections/urgent-repair-hero';
-import ServiceBenefits from '@/components/sections/service-benefits';
-import CvRepairServices from '@/components/sections/cv-repair-services';
-import BrandLogosCarousel from '@/components/sections/brand-logos-carousel';
-import GoogleReviews from '@/components/sections/google-reviews';
-import ContactCta from '@/components/sections/contact-cta';
-import Footer from '@/components/sections/footer';
-import CookieConsentModal from '@/components/sections/cookie-consent-modal';
-import WhatsAppFloatButton from '@/components/sections/whatsapp-float-button';
-import GoogleRatingWidget from '@/components/sections/google-rating-widget';
-import FadeInSection from '@/components/animations/FadeInSection';
-import { getSEOTags } from '@/libs/seo';
+import ServicePage from "@/components/service-page";
+import { contentImages } from "@/content/media.mjs";
+import { buildPageMetadata } from "@/libs/seo-data.mjs";
+import { getPageDefinition } from "@/content/site-content.mjs";
 
-export const metadata = getSEOTags({
-  title: 'Herstelling gasketel Antwerpen | Spoed loodgieter en warmtespecialist | AB Service',
-  description:
-    'Defecte gasketel of sanitairprobleem in Antwerpen? AB Service is uw spoed loodgieter en warmtespecialist voor snelle en duurzame herstellingen.',
-  keywords: [
-    'spoed loodgieter Antwerpen',
-    'warmtespecialist herstelling Antwerpen',
-    'cv herstelling Antwerpen',
-    'gasketel reparatie Antwerpen',
-    'sanitair herstelling Antwerpen',
-    'cv technieker Antwerpen',
-  ],
-  canonicalUrlRelative: '/herstelling',
-  openGraph: {
-    title: 'Spoed loodgieter Antwerpen | AB Service',
-    description:
-      'Snelle en professionele herstelling van cv-ketels en sanitair in Antwerpen door lokale loodgieters.',
-  },
-});
+export const metadata = buildPageMetadata(getPageDefinition("/herstelling"));
 
-const HerstellingPage = () => {
+export default function HerstellingPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <HeaderTopBar />
-      <MainNavigation />
-      <main>
-        <FadeInSection>
-          <PageHero />
-        </FadeInSection>
-        <FadeInSection delay={0.1}>
-          <UrgentRepairHero />
-        </FadeInSection>
-        <FadeInSection delay={0.2}>
-          <ServiceBenefits />
-        </FadeInSection>
-        <FadeInSection delay={0.25}>
-          <CvRepairServices />
-        </FadeInSection>
-        <FadeInSection delay={0.3}>
-          <BrandLogosCarousel />
-        </FadeInSection>
-        <FadeInSection delay={0.35}>
-          <GoogleReviews />
-        </FadeInSection>
-        <FadeInSection delay={0.4}>
-          <ContactCta />
-        </FadeInSection>
-      </main>
-      <Footer />
-      <CookieConsentModal />
-      <WhatsAppFloatButton />
-      <div className="fixed bottom-6 right-6 z-[9998] md:bottom-8 md:right-8">
-        <GoogleRatingWidget />
-      </div>
-    </div>
+    <ServicePage
+      breadcrumb={[{ name: "Herstelling", path: "/herstelling" }]}
+      eyebrow="Verwarming en warm water"
+      title="Herstelling van cv-ketel en verwarming"
+      intro="Geen verwarming, geen warm water, drukverlies of een terugkerende foutcode? Noteer wat u ziet en doet, zodat AB Service de aanvraag gericht kan beoordelen."
+      answer="Een foutcode is een aanwijzing, geen volledige diagnose. Vermeld het exacte toestelmodel, de code, wanneer het probleem begon en of er gasgeur, waterverlies, lawaai of stroomuitval is. Een afspraak en interventietijd zijn pas bevestigd na contact."
+      warning="Ruikt u gas, vermoedt u koolstofmonoxide of ziet u water bij elektrische onderdelen? Vermijd vlammen en schakelaars, verlaat de ruimte wanneer nodig en contacteer de bevoegde nood- of distributiedienst. Gebruik het toestel niet opnieuw tot de situatie veilig is verklaard."
+      image={contentImages.repair}
+      sections={[
+        {
+          eyebrow: "Eerste controle",
+          title: "Wat u veilig kunt noteren",
+          items: [
+            "Exacte merk- en modelaanduiding en de volledige foutcode",
+            "Huidige waterdruk zoals zichtbaar op het toestel",
+            "Of verwarming, warm water of beide uitvallen",
+            "Wanneer de storing optreedt en of ze na één reset terugkeert",
+            "Foto’s van het display en de installatie, zonder afscherming te verwijderen",
+          ],
+        },
+        {
+          eyebrow: "Niet doen",
+          title: "Vermijd herhaald resetten en zelf sleutelen",
+          paragraphs: [
+            "Een enkele reset volgens de gebruikershandleiding kan in sommige gevallen passend zijn. Blijft de code terugkomen, stop dan. Herhaald resetten kan een onderliggend probleem verbergen en maakt een onveilige situatie niet veilig.",
+            "Open geen verbrandingsruimte, gasblok of elektrische behuizing. Controleer alleen handelingen die expliciet voor gebruikers in de handleiding staan.",
+          ],
+        },
+        {
+          eyebrow: "Prijs",
+          title: "Waarom een herstelling geen vast bedrag heeft",
+          paragraphs: [
+            "De kost hangt af van diagnose, bereikbaarheid, benodigde onderdelen, bijkomend herstelwerk en de afgesproken timing. Een foutcode alleen bepaalt niet welk onderdeel defect is.",
+            "Vraag vooraf hoe onderzoek, verplaatsing, onderdelen en vervolgwerk in de offerte of werkbon worden behandeld.",
+          ],
+        },
+      ]}
+      steps={[
+        { title: "Melding", text: "Deel toestelgegevens, symptomen en foto’s." },
+        { title: "Risicocheck", text: "Veiligheidsinformatie krijgt voorrang." },
+        { title: "Diagnose", text: "De oorzaak wordt ter plaatse onderzocht." },
+        { title: "Vervolg", text: "Werk en onderdelen worden afgestemd en vastgelegd." },
+      ]}
+      relatedLinks={[
+        { label: "Zoek een foutcode op", href: "/foutcodes" },
+        { label: "Veilige controle bij drukverlies", href: "/advies/drukverlies-cv-ketel" },
+        { label: "Onderhoud van een cv-ketel", href: "/onderhoud" },
+        { label: "Tarieven en offertes", href: "/tarieven" },
+      ]}
+    />
   );
-};
-
-export default HerstellingPage;
+}

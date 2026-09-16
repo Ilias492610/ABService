@@ -1,34 +1,31 @@
 {
-  "name": "ship-fast-code",
+  "name": "abservice-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "test": "node --test tests/*.test.mjs",
+    "seo:audit": "node scripts/seo-audit.mjs"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.6.1",
-    "axios": "^1.4.0",
-    "eslint": "8.47.0",
-    "eslint-config-next": "13.4.19",
-    "form-data": "^4.0.0",
-    "framer-motion": "^12.23.24",
-    "lucide-react": "^0.553.0",
-    "mailgun.js": "^9.2.1",
-    "next": "^14.0.0",
-    "next-plausible": "^3.11.3",
-    "next-sitemap": "^4.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-hot-toast": "^2.4.1"
+    "@vercel/analytics": "2.0.1",
+    "form-data": "4.0.6",
+    "mailgun.js": "12.9.0",
+    "next": "16.3.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.15",
-    "daisyui": "^3.6.1",
-    "postcss": "^8.4.28",
-    "tailwindcss": "^3.3.3"
+    "autoprefixer": "10.4.21",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.5",
+    "postcss": "8.5.28",
+    "tailwindcss": "3.4.19"
   }
 }

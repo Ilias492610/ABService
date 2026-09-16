@@ -1,80 +1,137 @@
-import TopHeader from '@/components/sections/top-header';
-import MainNavigation from '@/components/sections/main-navigation';
-import HeroSection from '@/components/sections/hero-section';
-import ThreeBenefits from '@/components/sections/three-benefits';
-import BrandLogosSlider from '@/components/sections/brand-logos-slider';
-import CompanyIntro from '@/components/sections/company-intro';
-import ServicesGrid from '@/components/sections/services-grid';
-import FeaturedServicesCarousel from '@/components/sections/featured-services-carousel';
-import GoogleReviews from '@/components/sections/google-reviews';
-import ContactSection from '@/components/sections/contact-section';
-import Footer from '@/components/sections/footer';
-import FloatingWhatsAppButton from '@/components/sections/floating-whatsapp-button';
-import CookieConsentBanner from '@/components/sections/cookie-consent-banner';
-import GoogleRatingWidget from '@/components/sections/google-rating-widget';
-import FadeInSection from '@/components/animations/FadeInSection';
-import { getSEOTags } from '@/libs/seo';
+import Link from "next/link";
+import ContactCta from "@/components/contact-cta";
+import PageHero from "@/components/page-hero";
+import TrackedLink from "@/components/tracked-link";
+import { business } from "@/content/business.mjs";
+import { buildPageMetadata } from "@/libs/seo-data.mjs";
+import { getPageDefinition } from "@/content/site-content.mjs";
 
-export const metadata = getSEOTags({
-  title: 'Loodgieter & Warmtespecialist Antwerpen | Onderhoud, Keuring & Herstellingen | AB Service',
-  description:
-    'AB Service is uw loodgieter en warmtespecialist in Antwerpen voor gasketelonderhoud, sanitair herstellingen, installaties en erkende keuringen.',
-  keywords: [
-    'loodgieter Antwerpen',
-    'warmtespecialist Antwerpen',
-    'spoed loodgieter Antwerpen',
-    'gasketel onderhoud Antwerpen',
-    'sanitair herstelling Antwerpen',
-    'gasketel herstelling Antwerpen',
-    'gasketel keuring Antwerpen',
-  ],
-  canonicalUrlRelative: '/',
-  openGraph: {
-    title: 'Loodgieter en warmtespecialist Antwerpen | AB Service',
-    description:
-      'Onderhoud, herstelling, installatie en keuring in Antwerpen door een lokale loodgieter en warmtespecialist.',
+export const metadata = buildPageMetadata(getPageDefinition("/"));
+
+const services = [
+  {
+    title: "Onderhoud van uw cv-ketel",
+    text: "Duidelijke uitleg over het onderhoud, de wettelijke frequentie en de informatie die nodig is om uw toestel correct te beoordelen.",
+    href: "/onderhoud",
   },
-});
+  {
+    title: "Herstelling van verwarming",
+    text: "Een gerichte aanvraag bij uitval, foutcodes, drukverlies of problemen met warm water, zonder een onhaalbare responstijd te beloven.",
+    href: "/herstelling",
+  },
+  {
+    title: "Keuring van een cv-installatie",
+    text: "De keuring bij eerste ingebruikname of wijziging staat los van het periodieke onderhoud. Lees wanneer ze relevant is.",
+    href: "/keuring",
+  },
+  {
+    title: "Gasketelinstallatie",
+    text: "Van beoordeling en dimensionering tot een duidelijke offerte, plaatsing, ingebruikname en overdracht van documenten.",
+    href: "/installaties/gasketels",
+  },
+  {
+    title: "Sanitair en loodgieterswerk",
+    text: "Voor sanitaire toestellen, leidingen en gerichte loodgieterswerken in Antwerpen, op basis van de concrete situatie.",
+    href: "/installaties/sanitair",
+  },
+  {
+    title: "Tarieven en offertes",
+    text: "Geen lokprijzen: bekijk welke factoren een onderhoud, herstelling of installatie bepalen en hoe een offerte tot stand komt.",
+    href: "/tarieven",
+  },
+];
 
-const HomePage = () => {
+export default function HomePage() {
   return (
-    <div className="min-h-screen w-full bg-white">
-      <TopHeader />
-      <MainNavigation />
-      <main>
-        <FadeInSection>
-          <HeroSection />
-        </FadeInSection>
-        <FadeInSection delay={0.1}>
-          <ThreeBenefits />
-        </FadeInSection>
-        <FadeInSection delay={0.15}>
-          <BrandLogosSlider />
-        </FadeInSection>
-        <FadeInSection delay={0.2}>
-          <CompanyIntro />
-        </FadeInSection>
-        <FadeInSection delay={0.25}>
-          <ServicesGrid />
-        </FadeInSection>
-        <FadeInSection delay={0.3}>
-          <FeaturedServicesCarousel />
-        </FadeInSection>
-        <FadeInSection delay={0.35}>
-          <GoogleReviews />
-        </FadeInSection>
-        <FadeInSection delay={0.4}>
-          <ContactSection />
-        </FadeInSection>
-      </main>
-      <Footer />
-      <FloatingWhatsAppButton />
-      <CookieConsentBanner />
-      <div className="fixed bottom-6 right-6 z-[9998] md:bottom-8 md:right-8">
-        <GoogleRatingWidget />
-      </div>
-    </div>
+    <>
+      <PageHero
+        eyebrow="Loodgieter Antwerpen"
+        title="Verwarming en sanitair, helder aangepakt"
+        intro="AB Service behandelt aanvragen voor loodgieterswerk, sanitair, cv-ketelonderhoud, herstellingen, keuringen en gasketelinstallaties in Antwerpen. U krijgt eerst duidelijkheid over de situatie en de volgende stap."
+        ctaLabel="Leg uw situatie voor"
+      />
+      <section className="section section-compact">
+        <div className="shell narrow">
+          <p className="answer-box">
+            Een goede aanvraag begint met de juiste informatie. Vermeld het toesteltype, een
+            eventuele foutcode, wat er precies gebeurt en voeg waar mogelijk duidelijke foto’s
+            toe. AB Service beoordeelt daarna welke vervolgstap passend is.
+          </p>
+        </div>
+      </section>
+      <section className="section">
+        <div className="shell">
+          <p className="eyebrow">Diensten</p>
+          <h2>Waarmee kan AB Service helpen?</h2>
+          <p className="section-lead">
+            Elke pagina behandelt één duidelijke zoek- en klantvraag. Zo vindt u sneller de
+            informatie die bij uw situatie past.
+          </p>
+          <div className="cards-grid" style={{ marginTop: "2rem" }}>
+            {services.map((service) => (
+              <article className="card" key={service.href}>
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
+                <Link href={service.href}>Lees verder →</Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section section-dark">
+        <div className="shell">
+          <p className="eyebrow">Eerst veilig handelen</p>
+          <h2>Gasgeur of mogelijk koolstofmonoxide?</h2>
+          <div className="related-grid">
+            <div>
+              <h3>Bij gasgeur</h3>
+              <p>
+                Gebruik geen vlammen of elektrische schakelaars. Ventileer alleen als dat veilig
+                kan, verlaat de ruimte en contacteer vanop een veilige plaats de officiële
+                nood- of distributiedienst.
+              </p>
+            </div>
+            <div>
+              <h3>Bij mogelijke CO</h3>
+              <p>
+                Ga onmiddellijk naar frisse lucht, waarschuw hulpdiensten en ga niet terug naar
+                binnen. Start het toestel niet opnieuw voordat een bevoegde professional de
+                situatie veilig heeft verklaard.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="shell related-grid">
+          <div>
+            <p className="eyebrow">Transparant contact</p>
+            <h2>Geen score of belofte die we niet kunnen staven</h2>
+            <p className="section-lead">
+              Deze website toont geen vast reviewcijfer, gegarandeerde aankomsttijd, verzonnen
+              prijs of niet-bewezen erkenning. Voor actuele onafhankelijke informatie kunt u het
+              bedrijfsprofiel raadplegen zodra de profielkoppeling is geverifieerd.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Rechtstreeks contact</h3>
+            <p>
+              Bel, mail of stuur een WhatsApp-bericht. Gevaarlijke situaties horen bij de
+              bevoegde nood- of distributiediensten, niet bij een normaal webformulier.
+            </p>
+            <TrackedLink
+              href={business.whatsappHref}
+              eventName="whatsapp_click"
+              eventProperties={{ location: "homepage_trust" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open WhatsApp →
+            </TrackedLink>
+          </div>
+        </div>
+      </section>
+      <ContactCta />
+    </>
   );
-};
-
-export default HomePage;
+}
