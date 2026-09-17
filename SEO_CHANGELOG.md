@@ -1,5 +1,17 @@
 # AB Service SEO Changelog
 
+## 17 September 2026 — external local SEO execution
+
+- Resubmitted the canonical sitemap in the verified Search Console Domain property; 71 URLs were
+  discovered, and indexing was requested for the services, brands and projects hubs.
+- Updated the verified Google Business Profile description and service areas and removed the
+  unsupported 24-hour schedule.
+- Submitted a Google Business Profile appeal for the evidence-backed plumber primary category.
+- Sent correction and ownership requests for conflicting Trustlocal, Goudengids/Pagesdor,
+  SeFaireAider and AML Company listings.
+- Recorded the remaining owner-authenticated actions for KBO/My Enterprise, Bing and Apple
+  Business. No paid campaign was launched without a confirmed budget.
+
 ## 17 September 2026 — active services, brand pages and project hub
 
 - Published `/diensten` plus dedicated pages for leak detection, water-leak repair, drain

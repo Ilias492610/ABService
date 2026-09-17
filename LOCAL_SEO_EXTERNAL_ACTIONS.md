@@ -2,6 +2,32 @@
 
 These actions occur outside the repository. Inspect account state first. Before saving a public/account change, verify the exact field and obtain action-time confirmation.
 
+## Execution status — 17 September 2026
+
+- Google Search Console Domain property `sc-domain:abservice24.be` is verified. The canonical
+  sitemap was resubmitted successfully and reports 71 discovered URLs. Manual indexing was
+  requested for `/diensten`, `/merken` and `/projecten`.
+- The verified Google Business Profile uses the correct website, telephone and public address.
+  The evidence-aligned business description is live, Vlaanderen and Brussels were added as
+  service areas, and the unsupported 24-hour schedule was removed. No standard hours are shown
+  until the owner supplies the real schedule.
+- Google rejected changing the primary category from heating contractor to plumber as a
+  purported identity change. An appeal was submitted with the enterprise number, official main
+  activity and unchanged business identity. Add the complete plumbing service catalogue after
+  that appeal is approved.
+- Correction requests were sent from the business account to Trustlocal, Goudengids/Pagesdor,
+  SeFaireAider and AML Company. These requests cover obsolete addresses, telephone numbers,
+  opening hours, unsupported certification/availability claims and owner access without a
+  duplicate listing.
+- The KBO/BCE-derived data still exposes an obsolete telephone number and an old establishment
+  address on some third-party sites. The source record must be checked in My Enterprise and
+  updated by a legal representative using itsme, eID or another CSAM key.
+- Bing Webmaster Tools, Bing Places and direct Trustlocal access are waiting for the owner to
+  complete Google's passkey/re-authentication prompt. Apple Business requires an Apple Business
+  login. No advertising campaign has been activated and no budget has been spent.
+- Recognition numbers, fixed prices and exact standard hours remain unpublished until the owner
+  provides the authoritative values. This is intentional, not an SEO omission.
+
 ## Evidence to collect first
 
 - Official registered business name and whether the visible name “AB Service” matches real-world branding.
