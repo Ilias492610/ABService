@@ -1,7 +1,7 @@
 # AB Service SEO QA Report
 
 **Audit date:** 17 September 2026
-**Release:** pull request [#7](https://github.com/Ilias492610/ABService/pull/7), merge commit `e287bd9`
+**Release:** `main`, foutcodecatalogus-codecommit `9d9dd61`
 **Test targets:** local Next.js production server on port 3100 and `https://www.abservice24.be`
 
 ## Uitgebreide foutcodecatalogus
@@ -25,6 +25,10 @@
 - De productie-crawl controleerde 36 routes en 36 interne links zonder fout. Chromium controleerde
   Bosch en Junkers op desktop en Vaillant en Bulex op 390×844: geen browserfouten of horizontale
   overflow. De zoekproeven `F0 244`, `b4`, `F.028` en `F.77` gaven de juiste modelgebonden regels.
+- GitHub `main` en Vercel-productiedeployment `dpl_4zebXoBsWFzqYTETt9vkMYQR2ToY` zijn gereed.
+  De publieke controle op `www.abservice24.be` bevestigde op 1440×1000 en 390×844 opnieuw 242
+  Bosch-regels en één correcte treffer voor `F0 244`, zonder browserfouten of overflow. De publieke
+  SEO-crawl controleerde 36 pagina's en 36 interne links zonder fout.
 
 ## Officiële Google Places-beoordelingen
 

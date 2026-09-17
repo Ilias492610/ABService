@@ -19,6 +19,8 @@
   regel aan een conservatieve, consumentveilige eerste stap.
 - Voegden regressietests toe voor exacte brondekking, officiële domeinen, duplicaten,
   bronlocaties, minimale inhoud en onveilige hersteltermen.
+- Publiceerden codecommit `9d9dd61` via Vercel-productiedeployment
+  `dpl_4zebXoBsWFzqYTETt9vkMYQR2ToY` en herhaalden de zoek- en SEO-controles op de publieke URL.
 
 ## 17 September 2026 — officiële Google Places-beoordelingen
 
