@@ -85,7 +85,7 @@ Use Pillow with aspect-ratio preservation and WebP quality tuned between 68 and 
 
 - [x] **Step 4: Register and place images honestly**
 
-Use `next/image`, explicit width/height and responsive `sizes`. Keep the homepage scene after the services section, place contact/over-ons media below primary copy, add the optimized legacy inspection image to `/keuring`, and retain visible disclosure captions.
+Use `next/image`, explicit width/height and responsive `sizes`. Keep the homepage scene after the services section, place contact/over-ons media below primary copy, and add the optimized legacy inspection image to `/keuring`.
 
 - [x] **Step 5: Verify file budgets and responsive rendering**
 

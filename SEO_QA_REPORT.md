@@ -20,8 +20,8 @@
 - Zeven bestaande illustraties en vijf aangeleverde, AI-gegenereerde marketingbeelden zijn als
   metadata-vrije WebP opgeslagen. Alle twaalf bestanden blijven onder 102 KiB; de tests bewaken
   een harde bovengrens van 250 KiB en verbieden projectbewijs voor deze beelden.
-- De gegenereerde beelden dragen alleen het korte bijschrift `Illustratief beeld.` Team- en
-  wagenbeelden zijn niet gebruikt; geen van deze beelden is als projectbewijs geregistreerd.
+- De zichtbare beeldbijschriften zijn op verzoek van de eigenaar verwijderd. Geen van deze
+  beelden is als zelfstandig projectbewijs geregistreerd.
 - `npm test`: 44 van 44 tests geslaagd. `npm run lint`, `npm run build`, `git diff --check` en de
   lokale SEO-crawl zijn geslaagd; Next.js genereerde 54 routes en de crawl controleerde 45 pagina's
   en 45 interne links.
@@ -206,8 +206,8 @@ Chrome desktop and 390×844 mobile viewport were inspected against the productio
 - Client and server reject missing, implausible, oversized and unrecognized service values.
 - Telephone, email and WhatsApp links are present.
 - Browser console showed no application-origin error. Observed errors were from installed Chrome extensions only.
-- Bosch and pressure-loss pages were rechecked at desktop width and at a 390×844 mobile viewport; headings, tables, links, menu behaviour and illustration captions remain readable without visible horizontal overflow.
-- Six legacy images are delivered with `next/image`, responsive `sizes`, descriptive neutral alt text and a visible “geen klantcase” caption. A unit test prevents these assets from being promoted to project evidence.
+- Bosch and pressure-loss pages were rechecked at desktop width and at a 390×844 mobile viewport; headings, tables, links and menu behaviour remain readable without visible horizontal overflow.
+- Legacy images are delivered with `next/image`, responsive `sizes` and descriptive neutral alt text. A unit test prevents these assets from being promoted to project evidence.
 - A live Mailgun submission was not sent: the local environment has no `MAILGUN_API_KEY`, and a real submission would create an external message. Client/server validation is automated; delivery must be smoke-tested in the configured deployment.
 
 ## Resolved technical issues

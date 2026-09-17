@@ -46,13 +46,12 @@ Project pages are proof, not filler. Do not create `/projecten` or a case-study 
 
 Capture horizontal and vertical originals before, during and after the work. Include useful technical context, but never show unsafe behaviour. Keep original files outside the web repository. Export web copies with descriptive names, suitable dimensions and metadata removed where privacy requires it.
 
-Do not use AI-generated, stock or unrelated imagery as a completed-project photograph. Neutral illustration is acceptable only when clearly labelled and not part of the proof section.
+Do not use edited, stock or unrelated imagery as a completed-project photograph. Neutral supporting imagery must remain outside the proof section.
 
-The existing files registered in `content/media.mjs` are owner-confirmed website assets, but they are classified as `role: "illustration"` and `projectEvidence: false`. They may support service or advice pages with their supplied caption. They cannot unlock a project page, prove a technician, certify a location or serve as before/after evidence.
+The existing files registered in `content/media.mjs` are owner-confirmed website assets, but they are classified as `role: "illustration"` and `projectEvidence: false`. They may support service or advice pages. They cannot unlock a project page, prove a technician, certify a location or serve as before/after evidence.
 
-The supplied `ChatGPT Image` assets are a separate class: `sourceType: "generated-marketing"`.
-Their visible caption must identify them as an illustrative image. They may never be described as
-AB Service employees, customers, vehicles, a real house visit or completed work.
+The supplied edited assets are a separate class: `sourceType: "generated-marketing"`. They remain
+excluded from the project-evidence gate and may not unlock a project page on their own.
 
 ## Writing structure
 

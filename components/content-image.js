@@ -13,7 +13,6 @@ export default function ContentImage({ image, priority = false }) {
         sizes="(max-width: 860px) calc(100vw - 2rem), 820px"
         priority={priority}
       />
-      <figcaption>{image.caption}</figcaption>
     </figure>
   );
 }

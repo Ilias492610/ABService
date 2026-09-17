@@ -1,5 +1,11 @@
 # AB Service SEO Changelog
 
+## 17 September 2026 — zichtbare beeldbijschriften verwijderd
+
+- Verwijderde op verzoek van de eigenaar alle zichtbare bijschriften onder de centrale
+  contentbeelden. Alt-teksten, responsieve `next/image`-optimalisatie en interne
+  `projectEvidence: false`-controles blijven behouden.
+
 ## 17 September 2026 — contactanker, lichte beeldset en negen extra foutcodemerken
 
 - Herstelde de primaire CTA op `/contact`: deze linkt naar `#aanvraagformulier`, terwijl het

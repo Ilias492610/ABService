@@ -74,6 +74,6 @@ Leak detection, water-leak repair, drain unblocking, boiler work, pipework and b
 - No stale hardcoded review count, copied fallback reviews, AggregateRating or Review schema.
 - No air-conditioning navigation or sitemap entry.
 - No synthetic staff, fleet or project imagery presented as proof.
-- Owner-supplied legacy images are labelled as illustrations and centrally marked `projectEvidence: false`.
-- AI-generated marketing images are visibly disclosed as generated illustration and cannot represent staff, customers, fleet or completed work.
+- Owner-supplied legacy images are centrally marked `projectEvidence: false`.
+- Edited marketing images remain outside the project-evidence gate.
 - No sitemap entries for icons, manifest, robots or sitemap files.
