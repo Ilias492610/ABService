@@ -4,8 +4,8 @@
 
 - Resubmitted the canonical sitemap in the verified Search Console Domain property; 71 URLs were
   discovered, and indexing was requested for the services, brands and projects hubs.
-- Updated the verified Google Business Profile description and service areas and removed the
-  unsupported 24-hour schedule.
+- Published the verified Google Business Profile description, submitted Vlaanderen and Brussels
+  as service areas for review, and removed the unsupported 24-hour schedule.
 - Submitted a Google Business Profile appeal for the evidence-backed plumber primary category.
 - Sent correction and ownership requests for conflicting Trustlocal, Goudengids/Pagesdor,
   SeFaireAider and AML Company listings.

@@ -8,9 +8,9 @@ These actions occur outside the repository. Inspect account state first. Before 
   sitemap was resubmitted successfully and reports 71 discovered URLs. Manual indexing was
   requested for `/diensten`, `/merken` and `/projecten`.
 - The verified Google Business Profile uses the correct website, telephone and public address.
-  The evidence-aligned business description is live, Vlaanderen and Brussels were added as
-  service areas, and the unsupported 24-hour schedule was removed. No standard hours are shown
-  until the owner supplies the real schedule.
+  The evidence-aligned business description is live, Vlaanderen and Brussels were submitted as
+  service areas and are still under Google review, and the unsupported 24-hour schedule was
+  removed. No standard hours are shown until the owner supplies the real schedule.
 - Google rejected changing the primary category from heating contractor to plumber as a
   purported identity change. An appeal was submitted with the enterprise number, official main
   activity and unchanged business identity. Add the complete plumbing service catalogue after
