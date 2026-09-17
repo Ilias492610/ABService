@@ -1,5 +1,22 @@
 # AB Service SEO Changelog
 
+## 17 September 2026 — officiële Google Places-beoordelingen
+
+- Verifieerde het officiële AB SERVICE-profiel op naam, telefoonnummer en adres en registreerde
+  Place ID `ChIJ38_PKjPxw0cRMfEVYieHZDg`.
+- Schakelde Places API (New) in binnen het afzonderlijke Google Cloud-project van AB Service en
+  beperkte de serverkey tot uitsluitend die API.
+- Verving de algemene homepage-reviewtekst door een request-time Google-sectie met de actuele
+  score, het actuele aantal en maximaal vijf volledig toegeschreven reviews zodra Google die
+  reviewobjecten beschikbaar stelt.
+- Google retourneert momenteel wel 5,0 en 35 beoordelingen, maar geen afzonderlijke
+  reviewteksten. Daarom toont de site geen gekopieerde of verzonnen reviewcards en linkt zij naar
+  het officiële Google Maps-profiel.
+- De API-response wordt niet vooraf opgehaald, gecachet of opgeslagen. De sleutel blijft
+  server-only in Vercel; privacybeleid, voorwaarden en tests zijn op de Places-integratie
+  afgestemd.
+- `AggregateRating` en `Review` blijven bewust afwezig uit JSON-LD.
+
 ## 16 September 2026 — contactformulier en zwevende contactelementen
 
 - Herstelde het originele ronde WhatsApp-logo als lichte zwevende snelkoppeling met een

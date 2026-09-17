@@ -19,8 +19,9 @@ export default function TermsPage() {
         <h2>5. Uitvoering en oplevering</h2><p>De specifieke planning wordt rechtstreeks bevestigd. Na uitvoering ontvangt de klant de documenten die voor de afgesproken opdracht van toepassing zijn. Controleer bij oplevering of zichtbare punten overeenkomen met de overeengekomen scope.</p>
         <h2>6. Prijs en betaling</h2><p>Prijs, voorschot, betaaltermijn en wijze van betaling volgen uit de aanvaarde offerte of factuur. Deze website publiceert daarover geen algemene bedragen of termijnen die ten onrechte voor iedere opdracht zouden gelden.</p>
         <h2>7. Klachten en aansprakelijkheid</h2><p>Meld een probleem zo snel mogelijk met een duidelijke omschrijving en bewijs, zodat onderzoek en een passende reactie mogelijk zijn. Wettelijke rechten en aansprakelijkheidsregels blijven van toepassing; deze pagina bevat geen beperking die dwingend recht uitsluit.</p>
-        <h2>8. Contact</h2><p>AB Service · {business.vatId} · <a href={business.phoneHref}>{business.phoneDisplay}</a> · <a href={`mailto:${business.email}`}>{business.email}</a>.</p>
-        <p><strong>Publicatiecontrole:</strong> bijgewerkt op 16 september 2026. Laat definitieve commerciële voorwaarden juridisch beoordelen voordat aanvullende boete-, garantie-, annulatie- of bevoegde-rechtbankclausules worden toegevoegd.</p>
+        <h2>8. Google Maps-content</h2><p>Profiel- en beoordelingsgegevens die op de website als Google Maps-content worden aangeduid, worden geleverd via Google Places. Op het gebruik daarvan zijn de <a href="https://cloud.google.com/maps-platform/terms" target="_blank" rel="noopener noreferrer">Google Maps Platform-voorwaarden</a> en het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">privacybeleid van Google</a> van toepassing.</p>
+        <h2>9. Contact</h2><p>AB Service · {business.vatId} · <a href={business.phoneHref}>{business.phoneDisplay}</a> · <a href={`mailto:${business.email}`}>{business.email}</a>.</p>
+        <p><strong>Publicatiecontrole:</strong> bijgewerkt op 17 september 2026. Laat definitieve commerciële voorwaarden juridisch beoordelen voordat aanvullende boete-, garantie-, annulatie- of bevoegde-rechtbankclausules worden toegevoegd.</p>
       </div></section>
     </>
   );
