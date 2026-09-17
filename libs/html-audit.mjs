@@ -45,6 +45,34 @@ export const auditHtml = ({ html, url, indexable }) => {
     issues.push("image zonder alt-attribuut");
   }
 
+  const currentUrl = new URL(url);
+  const documentIds = new Set(
+    (html.match(/<[a-z][^>]*>/gi) || [])
+      .map((tag) => getAttribute(tag, "id"))
+      .filter(Boolean)
+  );
+  const missingFragments = new Set();
+  for (const anchor of tags(html, "a")) {
+    const href = getAttribute(anchor, "href");
+    if (!href) continue;
+
+    try {
+      const target = new URL(href, url);
+      if (
+        target.origin === currentUrl.origin &&
+        target.pathname === currentUrl.pathname &&
+        target.search === currentUrl.search &&
+        target.hash
+      ) {
+        const fragment = decodeURIComponent(target.hash.slice(1));
+        if (!documentIds.has(fragment)) missingFragments.add(target.hash);
+      }
+    } catch {
+      // Malformed links are handled by the crawl layer.
+    }
+  }
+  for (const fragment of missingFragments) issues.push(`anker ${fragment} ontbreekt`);
+
   const schemaScripts = [
     ...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi),
   ];
@@ -63,7 +91,7 @@ export const auditHtml = ({ html, url, indexable }) => {
     }
   }
 
-  const origin = new URL(url).origin;
+  const origin = currentUrl.origin;
   const internalLinks = [
     ...new Set(
       tags(html, "a")

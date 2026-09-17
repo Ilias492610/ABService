@@ -168,6 +168,7 @@ a.review-author:hover strong { text-decoration: underline; text-underline-offset
 .form-status.success { background: #e5f6eb; color: #185b30; }
 .form-status.error { background: #fff0ec; color: var(--danger); }
 .contact-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr); gap: 2.5rem; }
+.contact-form-panel { scroll-margin-top: 6.5rem; }
 .contact-aside { align-self: start; border-radius: 1rem; background: var(--mist); padding: 1.5rem; }
 .contact-aside dl { display: grid; gap: 1rem; }
 .contact-aside dt { color: var(--muted); font-size: .8rem; font-weight: 800; text-transform: uppercase; }

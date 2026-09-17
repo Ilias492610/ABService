@@ -16,7 +16,7 @@ export default function GasketelsPage() {
       title="Een gasketel laten plaatsen of vervangen in Antwerpen"
       intro="De juiste oplossing hangt af van de woning, warmte- en warmwaterbehoefte, bestaande leidingen, regeling en rookgasafvoer. Daarom volgt een betrouwbare prijs pas na voldoende technische informatie."
       answer="AB Service werkt niet met een verzonnen online vanafprijs. Vraag een beoordeling aan met foto’s en toestelgegevens. Na controle kan een voorstel de gekozen oplossing, materialen, werk, uitsluitingen, btw en afspraken duidelijk omschrijven."
-      image={contentImages.gasBoiler}
+      image={contentImages.boilerServiceMarketing}
       sections={[
         {
           eyebrow: "Beoordeling",

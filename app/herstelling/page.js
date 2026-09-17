@@ -14,7 +14,7 @@ export default function HerstellingPage() {
       intro="Geen verwarming, geen warm water, drukverlies of een terugkerende foutcode? Noteer wat u ziet en doet, zodat AB Service de aanvraag gericht kan beoordelen."
       answer="Een foutcode is een aanwijzing, geen volledige diagnose. Vermeld het exacte toestelmodel, de code, wanneer het probleem begon en of er gasgeur, waterverlies, lawaai of stroomuitval is. Een afspraak en interventietijd zijn pas bevestigd na contact."
       warning="Ruikt u gas, vermoedt u koolstofmonoxide of ziet u water bij elektrische onderdelen? Vermijd vlammen en schakelaars, verlaat de ruimte wanneer nodig en contacteer de bevoegde nood- of distributiedienst. Gebruik het toestel niet opnieuw tot de situatie veilig is verklaard."
-      image={contentImages.repair}
+      image={contentImages.diagnosticsMarketing}
       sections={[
         {
           eyebrow: "Eerste controle",

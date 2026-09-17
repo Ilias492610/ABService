@@ -55,3 +55,14 @@ test("HTML audit reports duplicated JSON-LD payloads", () => {
 
   assert.deepEqual(result.issues, ["dubbele JSON-LD"]);
 });
+
+test("HTML audit reports a same-page link whose fragment target is missing", () => {
+  const html = `<!doctype html><html lang="nl-BE"><head>
+    <title>Contact</title><meta name="description" content="Contacteer AB Service">
+    <link rel="canonical" href="https://www.abservice24.be/contact">
+  </head><body><h1>Contact</h1><a href="#aanvraagformulier">Ga naar het formulier</a></body></html>`;
+
+  const result = auditHtml({ html, url: "https://www.abservice24.be/contact", indexable: true });
+
+  assert.deepEqual(result.issues, ["anker #aanvraagformulier ontbreekt"]);
+});

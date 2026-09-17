@@ -31,7 +31,7 @@ export default async function FaultGuidePage({ params }) {
           <div className="fault-catalog-intro">
             <p className="eyebrow">{guide.codeEntryCount} brongebonden codeverklaringen</p>
             <h2>Zoek eerst uw code, controleer daarna de toestelreeks</h2>
-            <p className="section-lead">De catalogus neemt alle foutcoderegels over uit de hieronder genoemde officiële bronnen. Gecombineerde regels tonen alle bijbehorende subcodes of bereiken. Een code die niet in de bron voor uw toestelreeks staat, mag u niet op basis van een andere reeks interpreteren.</p>
+            <p className="section-lead">De catalogus neemt alle foutcoderegels over binnen de hierboven afgebakende toestelreeks of het genoemde officiële merkoverzicht. Gecombineerde regels tonen alle bijbehorende subcodes of bereiken. Een code die niet in de bron voor uw toestelreeks staat, mag u niet op basis van een andere reeks interpreteren.</p>
           </div>
           <FaultCodeCatalog brand={guide.brand} catalogs={guide.catalogs} />
           <div className="source-note">

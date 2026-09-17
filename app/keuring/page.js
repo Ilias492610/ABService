@@ -1,4 +1,5 @@
 import ServicePage from "@/components/service-page";
+import { contentImages } from "@/content/media.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 
@@ -12,6 +13,7 @@ export default function KeuringPage() {
       title="Keuring van een nieuwe of gewijzigde cv-installatie"
       intro="Een keuring bij eerste ingebruikname is een afzonderlijke controle na bepaalde plaatsingen of wijzigingen. Ze mag niet worden verward met het periodieke onderhoud van een bestaand toestel."
       answer="In Vlaanderen moet een nieuw of gewijzigd centraal stooktoestel vóór de eerste ingebruikname worden gekeurd in de situaties die de overheid omschrijft. Dat geldt onder meer bij plaatsing, vervanging, verplaatsing of relevante wijziging. De keuring moet worden uitgevoerd door een bevoegde erkende technicus."
+      image={contentImages.inspection}
       sections={[
         {
           eyebrow: "Wanneer",

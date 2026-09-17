@@ -77,7 +77,7 @@ const codeRows = (rows, sourcePage) =>
     )
   );
 
-const catalog = ({ id, title, scope, sourceLabel, sourceUrl, sourcePages, rows }) =>
+export const createFaultCatalog = ({ id, title, scope, sourceLabel, sourceUrl, sourcePages, rows }) =>
   Object.freeze({
     id,
     title,
@@ -87,6 +87,8 @@ const catalog = ({ id, title, scope, sourceLabel, sourceUrl, sourcePages, rows }
     sourcePages,
     codes: codeRows(rows, sourcePages),
   });
+
+const catalog = createFaultCatalog;
 
 const VAILLANT_PUBLIC_URL = "https://www.vaillant.be/nl/advies/helpcentrum/foutcodes-ketel/";
 const VAILLANT_ECOTEC_URL =

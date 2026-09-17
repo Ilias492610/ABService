@@ -17,7 +17,7 @@ export default function SanitairPage() {
       intro="Voor de plaatsing of aanpassing van sanitaire toestellen en leidingen is een duidelijke scope nodig: wat blijft, wat verandert en welke afwerking hoort bij de opdracht?"
       answer="Bezorg foto’s, maten, het gewenste toestel en informatie over de bestaande toevoer en afvoer. AB Service kan daarna beoordelen of de aanvraag binnen het actieve loodgieters- en sanitaire aanbod past en welke informatie nog ontbreekt."
       warning="Bij een actieve waterlek: sluit de watertoevoer alleen af als u de afsluiter veilig kunt bereiken. Vermijd contact met water rond elektrische onderdelen en schakel indien nodig de bevoegde noodhulp in."
-      image={contentImages.sanitary}
+      image={contentImages.sanitaryMarketing}
       sections={[
         {
           eyebrow: "Mogelijke scope",

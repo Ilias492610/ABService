@@ -1,8 +1,10 @@
 import Breadcrumbs from "@/components/breadcrumbs";
+import ContentImage from "@/components/content-image";
 import ContactForm from "@/components/sections/contact-form";
 import PageHero from "@/components/page-hero";
 import TrackedLink from "@/components/tracked-link";
 import { business } from "@/content/business.mjs";
+import { contentImages } from "@/content/media.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 
@@ -17,13 +19,15 @@ export default function ContactPage() {
         title="Leg uw vraag voor aan AB Service"
         intro="Omschrijf het werk of probleem zo concreet mogelijk. Een timing, prijs of afspraak is pas definitief nadat AB Service de aanvraag heeft beoordeeld en bevestigd."
         ctaLabel="Ga naar het formulier"
+        ctaHref="#aanvraagformulier"
       />
       <section className="section">
         <div className="shell contact-layout">
-          <div>
+          <div id="aanvraagformulier" className="contact-form-panel" tabIndex={-1}>
             <p className="eyebrow">Aanvraagformulier</p>
             <h2>Welke informatie helpt?</h2>
             <ContactForm />
+            <ContentImage image={contentImages.customerAdviceMarketing} />
           </div>
           <aside className="contact-aside">
             <h2>Rechtstreeks contact</h2>

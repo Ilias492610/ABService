@@ -13,7 +13,7 @@ export default function FaultCodesPage() {
   return (
     <>
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Foutcodes", path: "/foutcodes" }]} />
-      <PageHero eyebrow="Cv-ketel foutcodes" title="Uitgebreide foutcodecatalogus per merk en toestelreeks" intro="Zoek in officiële Vaillant-, Bulex- en Bosch/Junkers-bronnen. Noteer altijd merk, exacte modelaanduiding, bouwjaar en de volledige hoofd- en subcode: dezelfde code kan per reeks iets anders betekenen." />
+      <PageHero eyebrow="Cv-ketel foutcodes" title="Uitgebreide foutcodecatalogus per merk en toestelreeks" intro="Zoek in officiële fabrikantbronnen voor dertien courante ketelmerken. Noteer altijd merk, exacte modelaanduiding, bouwjaar en de volledige hoofd- en subcode: dezelfde code kan per reeks iets anders betekenen." />
       <section className="section section-compact"><div className="shell narrow"><div className="warning-box"><strong>Stop bij gevaar</strong><p>Bij gasgeur, mogelijke koolstofmonoxide, rookgasproblemen of water bij elektrische delen: bedien het toestel niet verder en schakel de bevoegde hulp in.</p></div></div></section>
       <section className="section">
         <div className="shell">

@@ -1,8 +1,34 @@
 # AB Service SEO QA Report
 
 **Audit date:** 17 September 2026
-**Release:** `main`, foutcodecatalogus-codecommit `9d9dd61`
-**Test targets:** local Next.js production server on port 3100 and `https://www.abservice24.be`
+**Release:** lokale kandidaat voor `main`; productiecommit en deployment worden na publicatie ingevuld
+**Test targets:** lokale Next.js-productieserver op poort 3000 en `https://www.abservice24.be`
+
+## Contactanker, beeldherstel en negen extra foutcodemerken
+
+- De knop `Ga naar het formulier` verwijst nu naar `#aanvraagformulier`; het doel is
+  programmatisch focusbaar en heeft 6,5 rem scrollmarge voor de vaste navigatie.
+- Een echte Chromium-kliktest bevestigde op 1440×1000 en 390×844 dat de link bestaat, de URL-hash
+  wijzigt, het formulier op 104 pixels van de bovenrand landt en geen horizontale overflow ontstaat.
+- De foutcodehub bevat nu dertien merkgidsen en 922 brongebonden regels. Nieuw zijn Remeha 17,
+  Buderus 51, Viessmann 71, ACV 24, Intergas 11, Nefit Bosch 54, ATAG 14, Itho Daalderop 26 en
+  Ferroli 37: samen 305 nieuwe bronregels.
+- De catalogi zijn per genoemd model, handleiding of officieel online overzicht afgebakend. Ze
+  claimen geen universele merkdekking, dealerstatus of commerciële dienstscope.
+- `npm run sources:audit` bevestigde HTTP 200 voor de negen nieuwe officiële fabrikantbronnen en
+  de vier bestaande gebiedsbronnen.
+- Zeven bestaande illustraties en vijf aangeleverde, AI-gegenereerde marketingbeelden zijn als
+  metadata-vrije WebP opgeslagen. Alle twaalf bestanden blijven onder 102 KiB; de tests bewaken
+  een harde bovengrens van 250 KiB en verbieden projectbewijs voor deze beelden.
+- De gegenereerde beelden dragen zichtbaar het bijschrift dat het illustraties zijn en geen echte
+  medewerker, klantcase of projectbewijs. Team- en wagenbeelden zijn niet gebruikt.
+- `npm test`: 44 van 44 tests geslaagd. `npm run lint`, `npm run build`, `git diff --check` en de
+  lokale SEO-crawl zijn geslaagd; Next.js genereerde 54 routes en de crawl controleerde 45 pagina's
+  en 45 interne links.
+- Chromium vond op desktop exact één Remeha-resultaat voor `E:10` en op 390×844 exact één
+  Ferroli-resultaat voor `F66`; beide pagina's hadden de juiste H1 en geen horizontale overflow.
+- Mobiele Lighthouse op de homepage bleef 98/100/100/100 voor performance, toegankelijkheid,
+  best practices en SEO. LCP bleef 2,3 s, TBT 0 ms, CLS 0 en totale overdracht 298 KiB.
 
 ## Uitgebreide foutcodecatalogus
 

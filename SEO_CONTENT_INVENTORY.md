@@ -15,11 +15,20 @@
 | `/contact` | Contact opnemen met AB Service | Leg uw vraag voor aan AB Service | Contact and lead capture | Index | Privacy, tariffs | Verified phone, email and VAT from repository |
 | `/faq` | Veelgestelde vragen over verwarming en sanitair \| AB Service | Heldere antwoorden over verwarming en sanitair | Cross-service questions | Index | Maintenance, inspection, repair, tariffs | Rewritten from verified page facts |
 | `/over-ons` | Over AB Service \| Loodgieter en verwarming Antwerpen | Eén duidelijk aanspreekpunt voor verwarming en sanitair | Entity explanation | Index | Contact | Legal/contact identity and owner-confirmed scope |
-| `/foutcodes` | Foutcodes van cv-ketels: veilige eerste stappen \| AB Service | Uitgebreide foutcodecatalogus per merk en toestelreeks | Fault-code hub | Index | Vaillant, Bulex, Bosch, Junkers, pressure loss, contact | Official manufacturer tables plus model-scope publication policy |
+| `/foutcodes` | Foutcodes van cv-ketels: veilige eerste stappen \| AB Service | Uitgebreide foutcodecatalogus per merk en toestelreeks | Fault-code hub | Index | Thirteen brand guides, pressure loss, contact | Official manufacturer tables plus model-scope publication policy |
 | `/foutcodes/vaillant` | Vaillant foutcodes: betekenis en veilig handelen \| AB Service | Vaillant foutcodes: catalogus met officiële bronnen | Vaillant fault guidance and code lookup | Index | Hub, contact, official documentation | Vaillant Belgium overview plus complete ecoTEC plus CS/1-5 appendix; 90 source rows |
 | `/foutcodes/bulex` | Bulex foutcodes: betekenis en veilig handelen \| AB Service | Bulex foutcodes: catalogus met officiële bronnen | Bulex fault guidance and code lookup | Index | Hub, contact, official documentation | Bulex Belgium overview plus complete THEMA Condens appendix; 43 source rows |
 | `/foutcodes/bosch` | Bosch foutcodes: officiële bron en veilige stappen \| AB Service | Bosch foutcodes: catalogus met officiële bronnen | Bosch fault guidance and model-filtered lookup | Index | Hub, contact, official documentation | Official Bosch/Junkers codebook, six boiler series; 242 source rows |
 | `/foutcodes/junkers` | Junkers foutcodes: officiële bron en veilige stappen \| AB Service | Junkers foutcodes: catalogus met officiële bronnen | Junkers fault guidance and model-filtered lookup | Index | Hub, contact, official documentation | Official Bosch/Junkers codebook, six boiler series; 242 source rows |
+| `/foutcodes/remeha` | Remeha Avanta foutcodes: betekenis en stappen \| AB Service | Remeha foutcodes: catalogus met officiële bronnen | Remeha Avanta code lookup | Index | Hub, contact, official Storingswijzer | Complete public Avanta overview; 17 source rows |
+| `/foutcodes/buderus` | Buderus GB162 foutcodes: officiële bron \| AB Service | Buderus foutcodes: catalogus met officiële bronnen | Buderus GB162 V2 code lookup | Index | Hub, contact, official documentation | Complete named Logamax plus GB162 V2 table; 51 source rows |
+| `/foutcodes/viessmann` | Viessmann foutcodes: Vitodens en Vitotronic \| AB Service | Viessmann foutcodes: catalogus met officiële bronnen | Viessmann orientation lookup | Index | Hub, contact, official documentation | Official 200-W/300-W Vitotronic overview; 71 source rows; manufacturer non-universal warning retained |
+| `/foutcodes/acv` | ACV Prestige foutcodes: betekenis en stappen \| AB Service | ACV foutcodes: catalogus met officiële bronnen | ACV Prestige MKIII code lookup | Index | Hub, contact, official documentation | Complete named ESYS table; 24 source rows |
+| `/foutcodes/intergas` | Intergas Prestige foutcodes: officiële bron \| AB Service | Intergas foutcodes: catalogus met officiële bronnen | Intergas Prestige code lookup | Index | Hub, contact, official documentation | Complete named Prestige table; 11 grouped source rows |
+| `/foutcodes/nefit-bosch` | Nefit Bosch ProLine foutcodes \| AB Service | Nefit Bosch foutcodes: catalogus met officiële bronnen | Nefit ProLine HRC code lookup | Index | Hub, contact, official documentation | Complete blocking/locking rows in named manual; 54 source rows |
+| `/foutcodes/atag` | ATAG cv-ketel foutcodes: betekenis en stappen \| AB Service | ATAG foutcodes: catalogus met officiële bronnen | ATAG official overview lookup | Index | Hub, contact, official documentation | All entries in official multi-model overview; 14 source rows |
+| `/foutcodes/itho-daalderop` | Itho Daalderop Base Cube foutcodes \| AB Service | Itho Daalderop foutcodes: catalogus met officiële bronnen | Base Cube code lookup | Index | Hub, contact, official documentation | Complete warning/blocking/fault table; 26 source rows |
+| `/foutcodes/ferroli` | Ferroli BlueSense foutcodes: officiële bron \| AB Service | Ferroli foutcodes: catalogus met officiële bronnen | Ferroli BlueSense code lookup | Index | Hub, contact, official documentation | Complete A/F table in named service manual; 37 source rows |
 | `/advies/drukverlies-cv-ketel` | Drukverlies bij uw cv-ketel: oorzaken en veilige controle \| AB Service | Drukverlies bij uw cv-ketel: wat kunt u veilig controleren? | Pressure-loss information and safe triage | Index | Repair, fault codes, maintenance | Official Bosch user guidance; model-dependent pressure warning |
 | `/werkgebied` | Werkgebied AB Service \| Heel Vlaanderen en Brussel | AB Service in heel Vlaanderen en Brussel | Full service-area lookup | Index | Six hubs, ten Antwerp districts | Owner-confirmed coverage; official municipality counts |
 | `/werkgebied/{regio}` | Six unique regional titles | Loodgieter en verwarmingsservice in region/province | Geographic orientation | Index | Municipalities, services, Antwerp districts where applicable | Owner coverage plus official administrative lists |
@@ -45,7 +54,9 @@ of unique customer value, plus similarity and editorial review.
 
 ### Commercial brand pages
 
-Vaillant, Bulex, Bosch, Junkers, Buderus and Viessmann service pages. Fault-code guides do not prove that AB Service is an authorized partner or actively services every brand.
+Service pages for Vaillant, Bulex, Bosch, Junkers, Remeha, Buderus, Viessmann, ACV, Intergas,
+Nefit Bosch, ATAG, Itho Daalderop and Ferroli. Fault-code guides do not prove that AB Service is
+an authorized partner or actively services every brand.
 
 ### Additional service pages
 
@@ -64,4 +75,5 @@ Leak detection, water-leak repair, drain unblocking, boiler work, pipework and b
 - No air-conditioning navigation or sitemap entry.
 - No synthetic staff, fleet or project imagery presented as proof.
 - Owner-supplied legacy images are labelled as illustrations and centrally marked `projectEvidence: false`.
+- AI-generated marketing images are visibly disclosed as generated illustration and cannot represent staff, customers, fleet or completed work.
 - No sitemap entries for icons, manifest, robots or sitemap files.

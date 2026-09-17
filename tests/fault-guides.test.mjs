@@ -8,21 +8,35 @@ const bySlug = (slug) => faultGuides.find((guide) => guide.slug === slug);
 test("all published fault guides use official sources and explicit model caveats", () => {
   assert.deepEqual(
     faultGuides.map((guide) => guide.slug),
-    ["vaillant", "bulex", "bosch", "junkers"]
+    [
+      "vaillant",
+      "bulex",
+      "bosch",
+      "junkers",
+      "remeha",
+      "buderus",
+      "viessmann",
+      "acv",
+      "intergas",
+      "nefit-bosch",
+      "atag",
+      "itho-daalderop",
+      "ferroli",
+    ]
   );
 
   for (const guide of faultGuides) {
     assert.equal(guide.status, "published");
     assert.match(guide.modelWarning, /model|toestel|reeks|generatie/i);
     assert.equal(guide.codeEntryCount, guide.codes.length);
-    assert.ok(guide.catalogs.length >= 2);
+    assert.ok(guide.catalogs.length >= 1);
     assert.ok(guide.documentationUrl.startsWith("https://"));
 
     for (const catalog of guide.catalogs) {
       assert.ok(catalog.sourceUrl.startsWith("https://"));
       assert.match(
         new URL(catalog.sourceUrl).hostname,
-        /(^|\.)(vaillant\.be|bulex\.be|bosch-homecomfort\.com)$/
+        /(^|\.)(vaillant\.be|bulex\.be|bosch-homecomfort\.com|remeha\.be|boschtt-documents\.com|viessmann\.de|acv\.com|intergas-verwarming\.nl|nefit-bosch\.nl|atagwarmte\.nl|compano\.com|ferroli\.com)$/
       );
       assert.ok(catalog.scope.length >= 60);
       assert.ok(catalog.sourcePages.length > 0);
@@ -36,6 +50,15 @@ test("catalog coverage matches every row in the cited manufacturer tables", () =
   assert.equal(bySlug("bulex").codeEntryCount, 43);
   assert.equal(bySlug("bosch").codeEntryCount, 242);
   assert.equal(bySlug("junkers").codeEntryCount, 242);
+  assert.equal(bySlug("remeha").codeEntryCount, 17);
+  assert.equal(bySlug("buderus").codeEntryCount, 51);
+  assert.equal(bySlug("viessmann").codeEntryCount, 71);
+  assert.equal(bySlug("acv").codeEntryCount, 24);
+  assert.equal(bySlug("intergas").codeEntryCount, 11);
+  assert.equal(bySlug("nefit-bosch").codeEntryCount, 54);
+  assert.equal(bySlug("atag").codeEntryCount, 14);
+  assert.equal(bySlug("itho-daalderop").codeEntryCount, 26);
+  assert.equal(bySlug("ferroli").codeEntryCount, 37);
 
   assert.deepEqual(
     bySlug("bosch").catalogs.map(({ id, codes }) => [id, codes.length]),
@@ -81,6 +104,22 @@ test("representative current and historical code families stay searchable", () =
   }
   for (const fragment of ["EA 227", "F0 280", "H24", "b2-b6", "F1-F6"]) {
     assert.ok(boschCodes.some((code) => code.includes(fragment)));
+  }
+
+  const representativeCodes = {
+    remeha: "E:10",
+    buderus: "6A 227",
+    viessmann: "F2",
+    acv: "E02",
+    intergas: "5",
+    "nefit-bosch": "6A 227",
+    atag: "C105",
+    "itho-daalderop": "E35",
+    ferroli: "A01",
+  };
+
+  for (const [slug, code] of Object.entries(representativeCodes)) {
+    assert.ok(bySlug(slug).codes.some((entry) => entry.code === code), `${slug} mist ${code}`);
   }
 });
 

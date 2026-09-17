@@ -1,5 +1,22 @@
 # AB Service SEO Changelog
 
+## 17 September 2026 — contactanker, lichte beeldset en negen extra foutcodemerken
+
+- Herstelde de primaire CTA op `/contact`: deze linkt naar `#aanvraagformulier`, terwijl het
+  formulier een gelijknamig ID en scrollmarge voor de vaste navigatie kreeg.
+- Breidde de foutcodehub uit van vier naar dertien merkpagina's met Remeha, Buderus, Viessmann,
+  ACV, Intergas, Nefit Bosch, ATAG, Itho Daalderop en Ferroli.
+- Voegde 305 nieuwe brongebonden regels toe. Iedere catalogus is beperkt tot het genoemde model,
+  de genoemde handleiding of het officiële online overzicht; foutcodecontent geldt niet als bewijs
+  voor dealerstatus of voor de commerciële dienstscope van AB Service.
+- Converteerde zeven oudere illustraties en vijf geselecteerde aangeleverde marketingbeelden naar
+  metadata-vrije WebP-bestanden van maximaal 1280 pixels breed en 250 KiB per bestand.
+- Plaatste een beperkte selectie via `next/image`; niet-kritieke beelden blijven lazy-loaded.
+  AI-beelden dragen een zichtbare disclosure en blijven uitgesloten als personeels-, klant-,
+  voertuig- of projectbewijs.
+- Breidde geautomatiseerde tests uit voor fragmentankers, afbeeldingsformaat/-gewicht,
+  AI-disclosure, officiële brondomeinen, catalogusaantallen en representatieve zoekcodes.
+
 ## 17 September 2026 — uitgebreide merk- en modelgebonden foutcodecatalogus
 
 - Vervingen de korte selectie door 90 Vaillant-, 43 Bulex- en 242 Bosch/Junkers-

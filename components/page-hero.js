@@ -2,7 +2,13 @@ import Link from "next/link";
 import TrackedLink from "@/components/tracked-link";
 import { business } from "@/content/business.mjs";
 
-export default function PageHero({ eyebrow, title, intro, ctaLabel = "Bespreek uw aanvraag" }) {
+export default function PageHero({
+  eyebrow,
+  title,
+  intro,
+  ctaLabel = "Bespreek uw aanvraag",
+  ctaHref = "/contact",
+}) {
   return (
     <section className="page-hero">
       <div className="shell hero-grid">
@@ -11,7 +17,7 @@ export default function PageHero({ eyebrow, title, intro, ctaLabel = "Bespreek u
           <h1>{title}</h1>
           <p className="hero-intro">{intro}</p>
           <div className="button-row">
-            <Link href="/contact" className="button">
+            <Link href={ctaHref} className="button">
               {ctaLabel}
             </Link>
             <TrackedLink

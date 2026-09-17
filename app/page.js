@@ -1,7 +1,9 @@
 import Link from "next/link";
 import ContactCta from "@/components/contact-cta";
+import ContentImage from "@/components/content-image";
 import PageHero from "@/components/page-hero";
 import GoogleReviews from "@/components/sections/google-reviews";
+import { contentImages } from "@/content/media.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 
@@ -56,6 +58,7 @@ export default function HomePage() {
             eventuele foutcode, wat er precies gebeurt en voeg waar mogelijk duidelijke foto’s
             toe. AB Service beoordeelt daarna welke vervolgstap passend is.
           </p>
+          <ContentImage image={contentImages.homeVisitMarketing} />
         </div>
       </section>
       <section className="section">

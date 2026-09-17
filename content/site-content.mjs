@@ -114,7 +114,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Foutcodes van cv-ketels: veilige eerste stappen | AB Service",
     description:
-      "Doorzoek uitgebreide, modelgebonden foutcodecatalogi voor Vaillant, Bulex, Bosch en Junkers, met officiële bronnen en veilige eerste stappen.",
+      "Doorzoek 13 modelgebonden foutcodecatalogi voor courante cv-ketelmerken, met officiële fabrikantbronnen en veilige eerste stappen.",
     changeFrequency: "monthly",
     priority: 0.6,
   },
@@ -151,6 +151,87 @@ export const pageRegistry = Object.freeze([
     title: "Junkers foutcodes: officiële bron en veilige stappen | AB Service",
     description:
       "Doorzoek alle Junkers-ketelcodes uit het officiële Bosch/Junkers-codeboek per toestelreeks, bouwjaar en subcode.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/remeha",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Remeha Avanta foutcodes: betekenis en stappen | AB Service",
+    description:
+      "Doorzoek alle Remeha Avanta-codes uit de officiële Storingswijzer, met toestelwaarschuwing en veilige eerste stappen.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/buderus",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Buderus GB162 foutcodes: officiële bron | AB Service",
+    description:
+      "Doorzoek de volledige Buderus Logamax plus GB162 V2-foutcodetabel, met officiële bron en veilige eerste stappen.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/viessmann",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Viessmann foutcodes: Vitodens en Vitotronic | AB Service",
+    description:
+      "Zoek in de officiële Viessmann-tabel voor Vitodens 200-W en 300-W met Vitotronic, inclusief duidelijke modelafbakening.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/acv",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "ACV Prestige foutcodes: betekenis en stappen | AB Service",
+    description:
+      "Doorzoek de volledige ESYS-foutcodetabel voor ACV Prestige MKIII, met officiële handleiding en veilige eerste stappen.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/intergas",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Intergas Prestige foutcodes: officiële bron | AB Service",
+    description:
+      "Doorzoek de volledige Intergas Prestige-storingstabel, met modelwaarschuwing, officiële bron en veilige eerste stappen.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/nefit-bosch",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Nefit Bosch ProLine foutcodes | AB Service",
+    description:
+      "Doorzoek de blokkerende en vergrendelende codes voor Nefit Bosch ProLine HRC, met officiële bron en veilig advies.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/atag",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "ATAG cv-ketel foutcodes: betekenis en stappen | AB Service",
+    description:
+      "Doorzoek alle meldingen uit het officiële ATAG-foutcodeoverzicht, met modelcontrole en veilige eerste stappen.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/itho-daalderop",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Itho Daalderop Base Cube foutcodes | AB Service",
+    description:
+      "Doorzoek de volledige codetabel voor de Itho Daalderop Base Cube, met officiële handleiding en veilig advies.",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/foutcodes/ferroli",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Ferroli BlueSense foutcodes: officiële bron | AB Service",
+    description:
+      "Doorzoek de volledige A- en F-foutcodetabel voor Ferroli BlueSense, met modelwaarschuwing en veilige stappen.",
     changeFrequency: "monthly",
     priority: 0.6,
   },

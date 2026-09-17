@@ -12,6 +12,7 @@ export const auditExternalSources = async (sources, fetcher = fetch) => {
       const response = await fetcher(source.href, {
         method: "GET",
         redirect: "follow",
+        headers: { "User-Agent": "ABServiceSourceAudit/1.0" },
         signal: AbortSignal.timeout(20_000),
       });
       results.push({

@@ -50,6 +50,10 @@ Do not use AI-generated, stock or unrelated imagery as a completed-project photo
 
 The existing files registered in `content/media.mjs` are owner-confirmed website assets, but they are classified as `role: "illustration"` and `projectEvidence: false`. They may support service or advice pages with their supplied caption. They cannot unlock a project page, prove a technician, certify a location or serve as before/after evidence.
 
+The supplied `ChatGPT Image` assets are a separate class: `sourceType: "generated-marketing"`.
+Their visible caption must always identify them as AI-generated illustrations. They may never be
+described as AB Service employees, customers, vehicles, a real house visit or completed work.
+
 ## Writing structure
 
 1. One-sentence answer: what was done and in which approved municipality.
