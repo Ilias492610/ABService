@@ -4,6 +4,28 @@
 **Release:** pull request [#7](https://github.com/Ilias492610/ABService/pull/7), merge commit `e287bd9`
 **Test targets:** local Next.js production server on port 3100 and `https://www.abservice24.be`
 
+## Uitgebreide foutcodecatalogus
+
+- De gepubliceerde catalogus bevat 90 Vaillant-, 43 Bulex- en 242 Bosch/Junkers-
+  codeverklaringen. Aantallen zijn bronregels, niet noodzakelijk unieke displaycodes over alle
+  modellen heen: dezelfde code blijft bewust apart staan wanneer de betekenis per reeks verschilt.
+- Vaillant is afgebakend tot het officiële Belgische consumentenoverzicht en ecoTEC plus
+  CS/1-5-handleiding `0020282230_00`; Bulex tot het consumentenoverzicht en THEMA Condens
+  `0020124551_02`.
+- Bosch/Junkers volgt de keteldelen van het officiële 268 pagina's tellende codeboek voor Serie
+  7000i, Serie 9000i, Cerapur Maxx, Serie -4, Serie -3 en Serie -2. Gewone bedrijfscodes zijn niet
+  als fout gepresenteerd.
+- Iedere groep toont toestelreeks, officiële bron en paginabereik. De pagina waarschuwt dat merk,
+  model, bouwjaar en eventuele subcode samen gecontroleerd moeten worden.
+- `tests/fault-guides.test.mjs` bewaakt brondomeinen, aantallen per tabel, duplicaten, bronlocaties,
+  veilige eerste stappen, representatieve actuele en historische codes en de zoekaliassen voor
+  gegroepeerde bereiken.
+- `npm test`: 42 van 42 tests geslaagd; `npm run lint`, `npm run build` en `git diff --check`
+  geslaagd. Next.js bouwde alle vier merkpagina's statisch binnen een totaal van 45 pagina's.
+- De productie-crawl controleerde 36 routes en 36 interne links zonder fout. Chromium controleerde
+  Bosch en Junkers op desktop en Vaillant en Bulex op 390×844: geen browserfouten of horizontale
+  overflow. De zoekproeven `F0 244`, `b4`, `F.028` en `F.77` gaven de juiste modelgebonden regels.
+
 ## Officiële Google Places-beoordelingen
 
 - Places API (New) antwoordde voor Place ID `ChIJ38_PKjPxw0cRMfEVYieHZDg` met naam

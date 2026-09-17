@@ -1,5 +1,25 @@
 # AB Service SEO Changelog
 
+## 17 September 2026 — uitgebreide merk- en modelgebonden foutcodecatalogus
+
+- Vervingen de korte selectie door 90 Vaillant-, 43 Bulex- en 242 Bosch/Junkers-
+  codeverklaringen uit officiële fabrikantbronnen.
+- Namen voor Vaillant het volledige Belgische consumentenoverzicht en de volledige
+  ecoTEC plus CS/1-5-tabel uit handleiding `0020282230_00` op.
+- Namen voor Bulex het volledige Belgische consumentenoverzicht en de volledige THEMA Condens-
+  tabel uit handleiding `0020124551_02` op.
+- Namen voor Bosch/Junkers alle ketelstoringsregels op uit het officiële codeboek voor Serie
+  7000i, Serie 9000i, Cerapur Maxx en de generaties -4, -3 en -2.
+- Hielden codes per toestelreeks gescheiden en behielden gecombineerde hoofd- en subcodes waar
+  de fabrikant die als één regel documenteert.
+- Voegden een toegankelijke zoekfunctie en model-/bronfilter toe; zoeken werkt ook zonder punt,
+  spatie of koppelteken en vindt iedere afzonderlijke code binnen gegroepeerde bronreeksen zoals
+  `F0 242-253`, `b2-b6` en `F1-F6`.
+- Vertaalden technische installateurstappen niet naar doe-het-zelfadvies, maar koppelden iedere
+  regel aan een conservatieve, consumentveilige eerste stap.
+- Voegden regressietests toe voor exacte brondekking, officiële domeinen, duplicaten,
+  bronlocaties, minimale inhoud en onveilige hersteltermen.
+
 ## 17 September 2026 — officiële Google Places-beoordelingen
 
 - Verifieerde het officiële AB SERVICE-profiel op naam, telefoonnummer en adres en registreerde

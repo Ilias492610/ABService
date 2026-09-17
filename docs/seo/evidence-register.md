@@ -12,9 +12,9 @@
 | Gas ≥20 kW generally two-year maintenance in Flanders | Vlaanderen official guidance | High | Published with source | Regulation change |
 | First-use inspection separate from maintenance | Vlaanderen official guidance | High | Published with source | Regulation change |
 | Gas-boiler renovation premium stopped/narrow exceptions | Vlaanderen/VEKA guidance | High | Published cautiously | Measures change |
-| Vaillant selected codes | Official Vaillant Belgium fault-code page | High but model-dependent | Published with warning/source | Manufacturer page change |
-| Bulex selected codes | Official Bulex Belgium fault-code page | High but model-dependent | Published with warning/source | Manufacturer page change |
-| Bosch/Junkers selected Serie -4 codes | Official Bosch fault-code booklet and model documentation | High within named scope; model-dependent | Published with subcodes, scope warning and sources | Manufacturer document change |
+| Vaillant fault codes | Official Vaillant Belgium consumer overview plus ecoTEC plus CS/1-5 installation and maintenance manual `0020282230_00`, appendix D | High within named sources and model scope | 90 source-bound explanations published with source, model and safety warnings | Manufacturer page/manual change |
+| Bulex fault codes | Official Bulex Belgium consumer overview plus THEMA Condens manual `0020124551_02`, appendix D | High within named sources and model scope | 43 source-bound explanations published with source, model and safety warnings | Manufacturer page/manual change |
+| Bosch/Junkers boiler fault codes | Official Bosch/Junkers installer codebook, boiler sections for 7000i, 9000i, Cerapur Maxx and generations -4, -3 and -2 | High within named codebook scope; model-dependent | 242 source-bound explanations per brand page, grouped by series with subcodes and pages | Manufacturer codebook change |
 | General pressure-loss guidance | Official Bosch Belgium user guidance | High for general triage; pressure remains model-dependent | Published with exact-model warning | Manufacturer guidance change |
 | Legacy image ownership | Owner confirmation in task | High for ownership; not evidence of depicted real-world event | Used only as labelled illustration; `projectEvidence: false` | Authentic project originals supplied |
 | 24/7, same-day or 60-minute response | No evidence | None | Removed | Written operational proof |

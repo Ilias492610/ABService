@@ -13,7 +13,7 @@ export default function FaultCodesPage() {
   return (
     <>
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Foutcodes", path: "/foutcodes" }]} />
-      <PageHero eyebrow="Cv-ketel foutcodes" title="Gebruik een foutcode als aanwijzing, niet als diagnose" intro="Een code kan per model en bouwjaar verschillen. Noteer daarom altijd merk, exacte modelaanduiding en de volledige code en controleer de gebruikershandleiding van uw toestel." />
+      <PageHero eyebrow="Cv-ketel foutcodes" title="Uitgebreide foutcodecatalogus per merk en toestelreeks" intro="Zoek in officiële Vaillant-, Bulex- en Bosch/Junkers-bronnen. Noteer altijd merk, exacte modelaanduiding, bouwjaar en de volledige hoofd- en subcode: dezelfde code kan per reeks iets anders betekenen." />
       <section className="section section-compact"><div className="shell narrow"><div className="warning-box"><strong>Stop bij gevaar</strong><p>Bij gasgeur, mogelijke koolstofmonoxide, rookgasproblemen of water bij elektrische delen: bedien het toestel niet verder en schakel de bevoegde hulp in.</p></div></div></section>
       <section className="section">
         <div className="shell">
@@ -23,8 +23,9 @@ export default function FaultCodesPage() {
             {published.map((guide) => (
               <article className="card" key={guide.slug}>
                 <h3>{guide.brand}</h3>
+                <p><strong>{guide.codeEntryCount} brongebonden codeverklaringen</strong> uit {guide.catalogs.length} {guide.catalogs.length === 1 ? "officiële tabel" : "officiële tabellen"}.</p>
                 <p>{guide.modelWarning}</p>
-                <Link href={`/foutcodes/${guide.slug}`}>Bekijk {guide.brand}-codes →</Link>
+                <Link href={`/foutcodes/${guide.slug}`}>Zoek in {guide.brand}-codes →</Link>
               </article>
             ))}
           </div>

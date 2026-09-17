@@ -114,7 +114,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Foutcodes van cv-ketels: veilige eerste stappen | AB Service",
     description:
-      "Een cv-foutcode is modelafhankelijk. Lees wat u veilig kunt controleren en wanneer u de installatie niet opnieuw mag starten.",
+      "Doorzoek uitgebreide, modelgebonden foutcodecatalogi voor Vaillant, Bulex, Bosch en Junkers, met officiële bronnen en veilige eerste stappen.",
     changeFrequency: "monthly",
     priority: 0.6,
   },
@@ -123,7 +123,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Vaillant foutcodes: betekenis en veilig handelen | AB Service",
     description:
-      "Bekijk algemene uitleg bij Vaillant foutcodes, controleer altijd de handleiding van uw model en lees wanneer professionele hulp nodig is.",
+      "Doorzoek alle codes uit het officiële Vaillant-overzicht en de volledige ecoTEC plus CS/1-5-tabel, met modelwaarschuwingen en veilige eerste stappen.",
     changeFrequency: "monthly",
     priority: 0.6,
   },
@@ -132,7 +132,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Bulex foutcodes: betekenis en veilig handelen | AB Service",
     description:
-      "Bekijk algemene uitleg bij Bulex foutcodes, controleer de handleiding van uw toestel en vermijd herhaald resetten bij een terugkerende storing.",
+      "Doorzoek alle codes uit het officiële Bulex-overzicht en de volledige THEMA Condens-tabel, met bronvermelding en veilige eerste stappen.",
     changeFrequency: "monthly",
     priority: 0.6,
   },
@@ -141,7 +141,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Bosch foutcodes: officiële bron en veilige stappen | AB Service",
     description:
-      "Bekijk geselecteerde Bosch-codes uit officiële modelgebonden documentatie, met veilige eerste stappen en een duidelijke waarschuwing om uw exacte toestel te controleren.",
+      "Doorzoek alle ketelcodes uit het officiële Bosch-codeboek voor 7000i, 9000i, Cerapur Maxx en de generaties -4, -3 en -2.",
     changeFrequency: "monthly",
     priority: 0.6,
   },
@@ -150,7 +150,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Junkers foutcodes: officiële bron en veilige stappen | AB Service",
     description:
-      "Bekijk geselecteerde Junkers-codes uit officiële Bosch-documentatie, controleer uw exacte model en lees welke handelingen u veilig kunt uitvoeren.",
+      "Doorzoek alle Junkers-ketelcodes uit het officiële Bosch/Junkers-codeboek per toestelreeks, bouwjaar en subcode.",
     changeFrequency: "monthly",
     priority: 0.6,
   },
