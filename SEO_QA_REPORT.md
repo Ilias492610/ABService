@@ -20,8 +20,8 @@
 - Zeven bestaande illustraties en vijf aangeleverde, AI-gegenereerde marketingbeelden zijn als
   metadata-vrije WebP opgeslagen. Alle twaalf bestanden blijven onder 102 KiB; de tests bewaken
   een harde bovengrens van 250 KiB en verbieden projectbewijs voor deze beelden.
-- De gegenereerde beelden dragen zichtbaar het bijschrift dat het illustraties zijn en geen echte
-  medewerker, klantcase of projectbewijs. Team- en wagenbeelden zijn niet gebruikt.
+- De gegenereerde beelden dragen alleen het korte bijschrift `Illustratief beeld.` Team- en
+  wagenbeelden zijn niet gebruikt; geen van deze beelden is als projectbewijs geregistreerd.
 - `npm test`: 44 van 44 tests geslaagd. `npm run lint`, `npm run build`, `git diff --check` en de
   lokale SEO-crawl zijn geslaagd; Next.js genereerde 54 routes en de crawl controleerde 45 pagina's
   en 45 interne links.

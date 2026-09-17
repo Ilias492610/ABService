@@ -17,8 +17,7 @@ const generatedMarketingImage = (src, alt) =>
     width: 1280,
     height: 960,
     alt,
-    caption:
-      "Illustratief, AI-gegenereerd marketingbeeld; geen klantcase, geen echte medewerker en geen projectbewijs.",
+    caption: "Illustratief beeld.",
     ownerConfirmed: true,
     sourceType: "generated-marketing",
     role: "illustration",

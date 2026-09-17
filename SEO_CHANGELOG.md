@@ -12,10 +12,10 @@
 - Converteerde zeven oudere illustraties en vijf geselecteerde aangeleverde marketingbeelden naar
   metadata-vrije WebP-bestanden van maximaal 1280 pixels breed en 250 KiB per bestand.
 - Plaatste een beperkte selectie via `next/image`; niet-kritieke beelden blijven lazy-loaded.
-  AI-beelden dragen een zichtbare disclosure en blijven uitgesloten als personeels-, klant-,
-  voertuig- of projectbewijs.
+  AI-bewerkte marketingbeelden tonen alleen de korte caption `Illustratief beeld.` en blijven
+  uitgesloten als personeels-, klant-, voertuig- of projectbewijs.
 - Breidde geautomatiseerde tests uit voor fragmentankers, afbeeldingsformaat/-gewicht,
-  AI-disclosure, officiële brondomeinen, catalogusaantallen en representatieve zoekcodes.
+  beeldlabels, officiële brondomeinen, catalogusaantallen en representatieve zoekcodes.
 - Publiceerde commit `7d0cdd8` naar GitHub `main`; Vercel-deployment
   `dpl_9kCQetdutyeWYYYzUzW78DkBSyGi` werd `READY` en kreeg de alias `www.abservice24.be`.
 - De live SEO-crawl controleerde 45 pagina's en 45 interne links; alle negen merkpagina's staan in

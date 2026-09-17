@@ -16,7 +16,11 @@ test("registered content images are lightweight WebP illustrations with transpar
   assert.ok(images.every((image) => image.role === "illustration"));
   assert.ok(images.every((image) => image.projectEvidence === false));
   assert.ok(images.every((image) => image.alt.startsWith("Illustratieve")));
-  assert.ok(images.every((image) => image.caption.includes("geen klantcase")));
+  assert.ok(
+    images
+      .filter((image) => image.sourceType !== "generated-marketing")
+      .every((image) => image.caption.includes("geen klantcase"))
+  );
   assert.ok(images.every((image) => image.src.startsWith("/media/") && image.src.endsWith(".webp")));
 
   for (const image of images) {
@@ -31,7 +35,5 @@ test("AI-generated marketing images are never presented as documentary evidence"
   );
 
   assert.ok(generatedImages.length >= 4);
-  assert.ok(
-    generatedImages.every((image) => image.caption.includes("geen echte medewerker"))
-  );
+  assert.ok(generatedImages.every((image) => image.caption === "Illustratief beeld."));
 });
