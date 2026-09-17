@@ -16,6 +16,9 @@
   server-only in Vercel; privacybeleid, voorwaarden en tests zijn op de Places-integratie
   afgestemd.
 - `AggregateRating` en `Review` blijven bewust afwezig uit JSON-LD.
+- Mergede pull request `#7` als commit `e287bd9`; beide Vercel-productiechecks slaagden en de
+  publieke desktop-, mobiele en SEO-crawlcontroles bevestigden de live 5,0/35-weergave zonder
+  applicatie- of runtimefouten.
 
 ## 16 September 2026 — contactformulier en zwevende contactelementen
 

@@ -1,7 +1,7 @@
 # AB Service SEO QA Report
 
 **Audit date:** 17 September 2026
-**Release:** pull request [#4](https://github.com/Ilias492610/ABService/pull/4), merge commit `73f468e`
+**Release:** pull request [#7](https://github.com/Ilias492610/ABService/pull/7), merge commit `e287bd9`
 **Test targets:** local Next.js production server on port 3100 and `https://www.abservice24.be`
 
 ## Officiële Google Places-beoordelingen
@@ -26,6 +26,11 @@
 - Privacybeleid en voorwaarden verwijzen naar Google Privacy en Google Maps Platform Terms;
   reviewdata wordt niet vooraf opgehaald, gecachet of opgeslagen.
 - `AggregateRating` en `Review` blijven afwezig uit JSON-LD.
+- Beide productiechecks slaagden: primaire deployment `DN7n2ttXesZnU8cevhQPKHQ6NyXp` en
+  secundaire deployment `GiUun3cLBtgP24RVhm7je8n228fZ`. De publieke desktop- en mobiele
+  hercontrole op `www.abservice24.be` gaf dezelfde live 5,0/35-data; de publieke SEO-crawl
+  controleerde opnieuw 36 routes en 36 interne links zonder fout en de recente productielogs
+  bevatten geen error-events.
 
 ## Contactformulier en zwevende contactelementen
 
