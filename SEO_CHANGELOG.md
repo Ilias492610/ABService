@@ -16,6 +16,10 @@
   voertuig- of projectbewijs.
 - Breidde geautomatiseerde tests uit voor fragmentankers, afbeeldingsformaat/-gewicht,
   AI-disclosure, officiële brondomeinen, catalogusaantallen en representatieve zoekcodes.
+- Publiceerde commit `7d0cdd8` naar GitHub `main`; Vercel-deployment
+  `dpl_9kCQetdutyeWYYYzUzW78DkBSyGi` werd `READY` en kreeg de alias `www.abservice24.be`.
+- De live SEO-crawl controleerde 45 pagina's en 45 interne links; alle negen merkpagina's staan in
+  de sitemap en de live contactpagina bevat de werkende `#aanvraagformulier`-bestemming.
 
 ## 17 September 2026 — uitgebreide merk- en modelgebonden foutcodecatalogus
 

@@ -150,6 +150,6 @@ Run: `npm test -- --runInBand`, `npm run lint`, `npm run build`, `git diff --che
 
 Measure homepage image requests and transferred bytes in Chromium; keep the primary content responsive and record the result without claiming lab Lighthouse values that were not measured.
 
-- [ ] **Step 4: Commit, push and verify production**
+- [x] **Step 4: Commit, push and verify production**
 
 Push normal commits to `main` without force, wait for Vercel `Ready`, repeat the public crawl and representative contact/image/fault-search browser checks, and record the deployment ID.

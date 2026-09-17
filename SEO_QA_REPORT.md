@@ -1,7 +1,7 @@
 # AB Service SEO QA Report
 
 **Audit date:** 17 September 2026
-**Release:** lokale kandidaat voor `main`; productiecommit en deployment worden na publicatie ingevuld
+**Release:** `main` commit `7d0cdd8`; Vercel production `dpl_9kCQetdutyeWYYYzUzW78DkBSyGi`
 **Test targets:** lokale Next.js-productieserver op poort 3000 en `https://www.abservice24.be`
 
 ## Contactanker, beeldherstel en negen extra foutcodemerken
@@ -29,8 +29,12 @@
   Ferroli-resultaat voor `F66`; beide pagina's hadden de juiste H1 en geen horizontale overflow.
 - Mobiele Lighthouse op de homepage bleef 98/100/100/100 voor performance, toegankelijkheid,
   best practices en SEO. LCP bleef 2,3 s, TBT 0 ms, CLS 0 en totale overdracht 298 KiB.
+- De publieke deployment is gecontroleerd: `npm run seo:audit -- https://www.abservice24.be`
+  slaagde met 45 pagina's en 45 interne links. Alle negen nieuwe merkpagina's, `/contact`,
+  sitemap en robots gaven HTTP 200; de live contact-HTML bevat precies één CTA-fragment en één
+  formulierdoel-ID. Alle negen nieuwe gidsen staan in de live sitemap.
 
-## Uitgebreide foutcodecatalogus
+## Vorige foutcodecatalogusrelease (9d9dd61)
 
 - De gepubliceerde catalogus bevat 90 Vaillant-, 43 Bulex- en 242 Bosch/Junkers-
   codeverklaringen. Aantallen zijn bronregels, niet noodzakelijk unieke displaycodes over alle
