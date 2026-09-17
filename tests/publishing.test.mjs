@@ -7,6 +7,7 @@ import {
   navigation,
   pageRegistry,
 } from "../content/site-content.mjs";
+import { brandServices } from "../content/brand-services.mjs";
 
 test("indexable output excludes noindex and draft entries", () => {
   const entries = [
@@ -16,6 +17,12 @@ test("indexable output excludes noindex and draft entries", () => {
   ];
 
   assert.deepEqual(getIndexableEntries(entries), [entries[0]]);
+});
+
+test("published commercial brand pages carry unique model-intake value", () => {
+  assert.equal(brandServices.length, 13);
+  assert.equal(new Set(brandServices.map((entry) => entry.requestNote)).size, 13);
+  assert.ok(brandServices.every((entry) => entry.requestNote.length >= 120));
 });
 
 test("the public route registry publishes verified guidance and withholds unsupported pages", () => {

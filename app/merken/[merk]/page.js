@@ -55,6 +55,10 @@ export default async function BrandServicePage({ params }) {
             <li>Herstelling en vervanging van onderdelen na technische diagnose</li>
             <li>Advies wanneer herstel technisch of economisch niet meer passend is</li>
           </ul>
+          <div className="warning-box">
+            <strong>Specifiek voor {entry.brand}</strong>
+            <p>{entry.requestNote}</p>
+          </div>
         </div>
       </section>
       <section className="section section-muted">

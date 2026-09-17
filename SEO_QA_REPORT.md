@@ -13,9 +13,11 @@
   leidingwerk en badkamerrenovatie; dezelfde waarden worden client- en server-side gevalideerd.
 - Merkpagina’s linken naar de bijbehorende brongebonden foutcodegids, maar claimen nergens
   fabrikant-, dealer- of partnerstatus.
+- Elke merkpagina bevat eigen modelspecifieke intake-informatie; een regressietest bewaakt dat
+  alle dertien teksten uniek en inhoudelijk substantieel blijven.
 - Projectpagina’s publiceren geen klantnamen, adressen, exacte datums, projectreviews of
   herkenbare toestelgegevens. De eigenaar bevestigde de werktypes en de gebruikte beeldrechten.
-- `npm test`: 45 van 45 tests geslaagd. `npm run lint`, `npm run build` en `git diff --check`
+- `npm test`: 46 van 46 tests geslaagd. `npm run lint`, `npm run build` en `git diff --check`
   zijn geslaagd; de productiebuild genereerde 82 route-uitvoeren.
 - De lokale productie-SEO-crawl controleerde 73 pagina’s en 73 interne links zonder fout.
 - Chromium controleerde `/diensten`, `/diensten/lekdetectie`, `/merken`, `/merken/vaillant`,
