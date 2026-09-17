@@ -74,6 +74,10 @@ export default function SiteFooter() {
               </dd>
             </div>
             <div>
+              <dt>Bereikbaarheid</dt>
+              <dd>{business.hoursLabel}</dd>
+            </div>
+            <div>
               <dt>BTW</dt>
               <dd>{business.vatId}</dd>
             </div>

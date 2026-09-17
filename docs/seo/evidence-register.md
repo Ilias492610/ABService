@@ -29,11 +29,12 @@
 | General pressure-loss guidance | Official Bosch Belgium user guidance | High for general triage; pressure remains model-dependent | Published with exact-model warning | Manufacturer guidance change |
 | Website image ownership and authenticity | Owner confirmation in task | High | Optimized WebP media published from the owner archive | Image rights or provenance change |
 | Anonymized practice cases | Owner confirmation that the represented work types were performed | Medium-high; customer-identifying facts intentionally withheld | Six cases published without names, addresses, exact dates, reviews or partnership claims | New or corrected project record |
-| 24/7, same-day or 60-minute response | No evidence | None | Removed | Written operational proof |
+| 24/7 availability | Owner confirmation on 17 September 2026 plus Google Business Profile submission | High | Published as availability only; no fixed response or arrival time | Operational-hours change |
+| Same-day or 60-minute response | No evidence | None | Not published | Written operational proof |
 | Google profile, score and review count | Official Places API (New), Place ID `ChIJ38_PKjPxw0cRMfEVYieHZDg`, matched to 0484 90 69 66 and Voorzorgstraat 12A | High and live | Published through request-time server integration; no AggregateRating schema | API/profile/configuration change |
 | Individual Google review texts | Official Places API currently returns no review objects for this profile | High for current response | No copied fallback; cards appear only when Google supplies attributed review objects | Places response change |
 | Address/customer-facing office | No evidence | None | Not published | Owner + GBP evidence |
-| Opening hours | No evidence | None | Not published | Owner + GBP evidence |
+| Opening hours | Owner confirmation on 17 September 2026; 24/7 Google Business Profile edit submitted | High | Published as `Mo-Su 00:00-23:59` and visible 24/7 wording | Owner or GBP hours change |
 | Surrounding municipalities | No per-area evidence | Low | Draft | Coverage and local work proof |
 | Manufacturer authorization/partners | No evidence | None | Not published | Current agreements/listings |
 | Certifications/recognition | No evidence | None | Not published | Recognition number and holder |

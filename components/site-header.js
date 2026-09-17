@@ -35,7 +35,7 @@ export default function SiteHeader() {
     <header className="site-header">
       <div className="topline">
         <div className="shell topline-inner">
-          <span>Loodgieter en verwarmingsservice in Antwerpen</span>
+          <span>{business.availabilityLabel} · Loodgieter en verwarmingsservice in Antwerpen</span>
           <div className="topline-links">
             <TrackedLink
               href={business.phoneHref}

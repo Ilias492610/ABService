@@ -4,7 +4,7 @@
 
 | URL | Title | H1 | Primary intent | Indexability | Main internal links | Evidence basis |
 |---|---|---|---|---|---|---|
-| `/` | Loodgieter en verwarmingsservice in Antwerpen \| AB Service | Verwarming en sanitair, helder aangepakt | Local entity, service discovery and official Google profile evidence | Index | Core services, tariffs, contact, Google Maps | Owner-confirmed Antwerp market/core scope plus request-time Places API data |
+| `/` | Loodgieter en verwarmingsservice in Antwerpen \| AB Service | Verwarming en sanitair, helder aangepakt | Local entity, service discovery and official Google profile evidence | Index | Core services, tariffs, contact, Google Maps | Owner-confirmed Antwerp market/core scope and 24/7 availability plus request-time Places API data |
 | `/onderhoud` | Onderhoud van uw cv-ketel in Antwerpen \| AB Service | Onderhoud van uw cv-ketel in Antwerpen | Maintenance duty and request | Index | Inspection, repair, tariffs | Owner scope plus Vlaanderen guidance |
 | `/herstelling` | Herstelling van verwarming en cv-ketel \| AB Service | Herstelling van cv-ketel en verwarming | Repair and safe triage | Index | Fault codes, pressure loss, maintenance, tariffs | Owner scope; conservative safety guidance |
 | `/keuring` | Keuring van een cv-installatie in Antwerpen \| AB Service | Keuring van een nieuwe of gewijzigde cv-installatie | First-use inspection | Index | Maintenance, gas boilers, contact | Owner scope plus Vlaanderen guidance |
@@ -18,7 +18,7 @@
 | `/projecten` | Uitgevoerde projecten voor verwarming en sanitair \| AB Service | Uitgevoerd werk voor verwarming en sanitair | Project and proof hub | Index | Six anonymized cases, contact | Owner-confirmed work types and owner image archive |
 | `/projecten/{slug}` | Six unique case titles | Unique case H1 | Heating, boiler, leak, sanitary, drain and bathroom practice cases | Index | Project hub and contact | Owner-confirmed, anonymized work descriptions; no client identity or review claims |
 | `/tarieven` | Tarieven en offertes voor loodgieterswerk \| AB Service | Tarieven zonder lokprijs of verrassende belofte | Pricing and quote process | Index | Contact, services | No amounts claimed; process-only content |
-| `/contact` | Contact opnemen met AB Service | Leg uw vraag voor aan AB Service | Contact and lead capture | Index | Privacy, tariffs | Verified phone, email and VAT from repository |
+| `/contact` | Contact opnemen met AB Service | Leg uw vraag voor aan AB Service | Contact and lead capture | Index | Privacy, tariffs | Verified phone, email and VAT plus owner-confirmed 24/7 availability |
 | `/faq` | Veelgestelde vragen over verwarming en sanitair \| AB Service | Heldere antwoorden over verwarming en sanitair | Cross-service questions | Index | Maintenance, inspection, repair, tariffs | Rewritten from verified page facts |
 | `/over-ons` | Over AB Service \| Loodgieter en verwarming Antwerpen | Eén duidelijk aanspreekpunt voor verwarming en sanitair | Entity explanation | Index | Contact | Legal/contact identity and owner-confirmed scope |
 | `/foutcodes` | Foutcodes van cv-ketels: veilige eerste stappen \| AB Service | Uitgebreide foutcodecatalogus per merk en toestelreeks | Fault-code hub | Index | Thirteen brand guides, pressure loss, contact | Official manufacturer tables plus model-scope publication policy |

@@ -61,7 +61,7 @@ export default function HomePage() {
   return (
     <>
       <PageHero
-        eyebrow="Loodgieter Antwerpen"
+        eyebrow="24/7 bereikbaar · Loodgieter Antwerpen"
         title="Verwarming en sanitair, helder aangepakt"
         intro="AB Service behandelt aanvragen voor loodgieterswerk, sanitair, cv-ketelonderhoud, herstellingen, keuringen en gasketelinstallaties in Antwerpen. U krijgt eerst duidelijkheid over de situatie en de volgende stap."
         ctaLabel="Leg uw situatie voor"

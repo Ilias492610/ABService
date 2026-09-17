@@ -21,7 +21,7 @@ const groups = [
     questions: [
       ["Mag ik een foutcode resetten?", "Volg alleen de gebruikershandleiding van uw exacte toestel. Hoogstens één reset kan passend zijn; komt de storing terug, laat de oorzaak onderzoeken."],
       ["Wat doe ik bij gasgeur?", "Gebruik geen vlammen of elektrische schakelaars. Ventileer alleen als dat veilig kan, verlaat de ruimte en bel vanop een veilige plaats de bevoegde nood- of distributiedienst."],
-      ["Garandeert AB Service een aankomsttijd?", "Nee. De website belooft geen 24/7-bereikbaarheid, interventie binnen een vast aantal minuten of herstelling op dezelfde dag. Timing is pas bevestigd na rechtstreeks contact."],
+      ["Is AB Service 24/7 bereikbaar?", "Ja. AB Service is 24 uur per dag, 7 dagen per week bereikbaar voor aanvragen. Een concrete interventie- of aankomsttijd wordt na rechtstreeks contact bevestigd; er wordt geen vaste responstijd of herstelling op dezelfde dag gegarandeerd."],
     ],
   },
   {

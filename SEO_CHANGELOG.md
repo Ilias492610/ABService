@@ -1,5 +1,16 @@
 # AB Service SEO Changelog
 
+## 17 September 2026 — owner-confirmed 24/7 availability restored
+
+- Recorded the owner's current confirmation that AB Service is open and reachable 24 hours per
+  day, seven days per week.
+- Submitted 24-hour opening for all seven days in the verified Google Business Profile; Google
+  currently marks the edit as under review.
+- Restored 24/7 wording in the global header, homepage, contact page, FAQ and footer without adding
+  a guaranteed arrival time or same-day repair promise.
+- Added `Mo-Su 00:00-23:59` to the LocalBusiness schema and updated the evidence register and
+  external-action documentation.
+
 ## 17 September 2026 — external local SEO execution
 
 - Resubmitted the canonical sitemap in the verified Search Console Domain property; 71 URLs were

@@ -15,5 +15,8 @@ export const business = Object.freeze({
   vatId: "BE0792.534.639",
   language: "nl-BE",
   primaryMarket: "Antwerpen",
+  openingHours: "Mo-Su 00:00-23:59",
+  hoursLabel: "24 uur per dag, 7 dagen per week",
+  availabilityLabel: "24/7 bereikbaar",
   serviceRegions: Object.freeze(["Vlaams Gewest", "Brussels Hoofdstedelijk Gewest"]),
 });

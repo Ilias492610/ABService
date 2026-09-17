@@ -18,7 +18,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Loodgieter en verwarmingsservice in Antwerpen | AB Service",
     description:
-      "AB Service helpt in Antwerpen met sanitair, onderhoud, herstellingen, keuringen en gasketelinstallaties. Neem contact op voor een gerichte aanvraag.",
+      "AB Service is 24/7 bereikbaar voor sanitair, onderhoud, herstellingen, keuringen en gasketelinstallaties in Antwerpen.",
     changeFrequency: "weekly",
     priority: 1,
   },
@@ -141,7 +141,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Contact opnemen met AB Service",
     description:
-      "Neem contact op met AB Service over sanitair, verwarming, onderhoud, herstelling, keuring of een gasketelinstallatie in Antwerpen.",
+      "AB Service is 24/7 bereikbaar voor aanvragen over sanitair, verwarming, onderhoud, herstelling, keuring en gasketelinstallaties.",
     changeFrequency: "monthly",
     priority: 0.8,
   },

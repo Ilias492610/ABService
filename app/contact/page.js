@@ -44,6 +44,7 @@ export default function ContactPage() {
                 <dt>WhatsApp</dt>
                 <dd><TrackedLink href={business.whatsappHref} eventName="whatsapp_click" eventProperties={{ location: "contact_aside" }} target="_blank" rel="noreferrer">Start een gesprek</TrackedLink></dd>
               </div>
+              <div><dt>Bereikbaarheid</dt><dd>{business.hoursLabel}</dd></div>
               <div><dt>Onderneming</dt><dd>{business.vatId}</dd></div>
             </dl>
             <div className="warning-box">

@@ -17,9 +17,9 @@ test("global schema contains only verified business facts", () => {
     { "@type": "AdministrativeArea", name: "Brussels Hoofdstedelijk Gewest" },
   ]);
   assert.equal(business.telephone, "+32484906966");
+  assert.equal(business.openingHours, "Mo-Su 00:00-23:59");
   assert.ok(!("address" in business));
   assert.ok(!("aggregateRating" in business));
-  assert.ok(!("openingHours" in business));
   assert.ok(!("priceRange" in business));
 });
 

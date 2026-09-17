@@ -9,24 +9,23 @@ These actions occur outside the repository. Inspect account state first. Before 
   requested for `/diensten`, `/merken` and `/projecten`.
 - The verified Google Business Profile uses the correct website, telephone and public address.
   The evidence-aligned business description is live, Vlaanderen and Brussels were submitted as
-  service areas and are still under Google review, and the unsupported 24-hour schedule was
-  removed. No standard hours are shown until the owner supplies the real schedule.
+  service areas and are still under Google review. After owner confirmation, 24-hour opening was
+  submitted for all seven days and is under Google review.
 - Google rejected changing the primary category from heating contractor to plumber as a
   purported identity change. An appeal was submitted with the enterprise number, official main
   activity and unchanged business identity. Add the complete plumbing service catalogue after
   that appeal is approved.
 - Correction requests were sent from the business account to Trustlocal, Goudengids/Pagesdor,
   SeFaireAider and AML Company. These requests cover obsolete addresses, telephone numbers,
-  opening hours, unsupported certification/availability claims and owner access without a
-  duplicate listing.
+  unsupported certification/response-time claims and owner access without a duplicate listing.
 - The KBO/BCE-derived data still exposes an obsolete telephone number and an old establishment
   address on some third-party sites. The source record must be checked in My Enterprise and
   updated by a legal representative using itsme, eID or another CSAM key.
 - Bing Webmaster Tools, Bing Places and direct Trustlocal access are waiting for the owner to
   complete Google's passkey/re-authentication prompt. Apple Business requires an Apple Business
   login. No advertising campaign has been activated and no budget has been spent.
-- Recognition numbers, fixed prices and exact standard hours remain unpublished until the owner
-  provides the authoritative values. This is intentional, not an SEO omission.
+- Recognition numbers and fixed prices remain unpublished until the owner provides the
+  authoritative values. This is intentional, not an SEO omission.
 
 ## Evidence to collect first
 
@@ -49,7 +48,7 @@ These actions occur outside the repository. Inspect account state first. Before 
 5. Set `https://www.abservice24.be/` as the website URL and use the verified phone.
 6. If customers are not received at the address during stated hours, configure a service-area business and hide the address.
 7. Add only genuine service areas. Google permits up to 20, but that is not a target; fewer accurate areas are better than keyword coverage.
-8. Enter accurate hours and special hours. Do not claim 24/7 availability.
+8. Keep the owner-confirmed 24/7 hours accurate and add special-hour exceptions when applicable.
 9. Add services using plain descriptions consistent with the website. Do not add fixed prices unless a real maintained price list exists.
 10. Upload authentic photos: logo, real technicians with permission, tools, vehicles without misleading location claims and completed work with customer consent.
 11. Link the verified profile from the website without copying a stale score or review count.
@@ -101,7 +100,7 @@ Priority sources may include recognized Belgian trade/business directories, supp
 
 - Confirm Belgian availability and category eligibility before planning Local Services Ads.
 - Confirm all licence, recognition, insurance, background-check and service-area requirements before applying.
-- Build ad groups around confirmed services, not unsupported “24/7”, “within 60 minutes”, air-conditioning or municipality claims.
+- Build ad groups around confirmed services and the owner-confirmed 24/7 availability, but never claim “within 60 minutes”, guaranteed same-day attendance, unsupported air-conditioning or unsupported municipality evidence.
 - Use landing pages that match the ad intent: maintenance, repair, inspection, gas boilers, sanitary or tariffs.
 - Configure call/form conversions without importing personal data into analytics.
 - Add negative keywords for jobs not accepted and locations outside the actual service area.

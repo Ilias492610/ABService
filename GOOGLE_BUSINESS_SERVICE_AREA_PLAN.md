@@ -46,7 +46,7 @@ all 20 automatically:
 - Prefer a smaller accurate set over filling all 20 slots.
 - Remove any area that is only technically possible but not part of normal operations.
 - Hide the address if customers are not received there during the stated hours.
-- Use real opening/contact hours; never restore “24/7” without operational proof.
+- Use the owner-confirmed 24/7 opening/contact hours and keep special-hour exceptions current.
 - Record the final selected areas and change date in `LOCAL_SEO_EXTERNAL_ACTIONS.md`.
 
 ## Measurement
