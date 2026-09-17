@@ -1,7 +1,7 @@
 # AB Service SEO QA Report
 
 **Audit date:** 17 September 2026
-**Release:** on-site brand, service and project expansion prepared after `d7212b8`; production release identifier is recorded after deployment.
+**Release:** feature commit `0a1da76`; primary Vercel production `dpl_FJvhkYU1F81gZewXEGMaetKwUS1M`
 **Test targets:** lokale Next.js-productieserver op poort 3100 en `https://www.abservice24.be`
 
 ## Actieve diensten, ketelmerken en praktijkcases
@@ -25,6 +25,13 @@
   opnieuw 104 pixels onder de bovenrand.
 - Mobiele Lighthouse op de lokale productiehomepage scoorde 97 performance, 100 toegankelijkheid,
   100 best practices en 100 SEO; LCP 2,6 s, CLS 0 en totale overdracht 300 KiB.
+- GitHub `main` bevat featurecommit `0a1da76`; zowel `ab-service` als `ab-service-n4av`
+  rapporteerden een geslaagde Vercel-productiecheck.
+- De primaire productiealias `www.abservice24.be` wees na de release naar deployment
+  `dpl_FJvhkYU1F81gZewXEGMaetKwUS1M`. De live crawl controleerde 73 pagina’s en 73 interne links.
+- De live desktopcontrole van `/projecten` vond zes kaarten, de mobiele controle van
+  `/merken/vaillant` bevestigde de foutcodelink en het formulieranker, en de Vercel-errorlogscan
+  vond geen error-events.
 
 ## Vorige release: contactanker, beeldherstel en negen extra foutcodemerken
 

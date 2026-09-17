@@ -11,6 +11,9 @@
 - Added the new services to navigation, footer, homepage, contact-form validation and internal links.
 - Updated the owner-image registry and removed remaining “illustrative” wording from alternative text.
 - Expanded automated coverage for the project gate, media provenance, published paths and sitemap.
+- Published feature commit `0a1da76` to GitHub `main`; both Vercel project checks succeeded.
+- Primary production deployment `dpl_FJvhkYU1F81gZewXEGMaetKwUS1M` received the
+  `www.abservice24.be` alias and passed the 73-page/73-link live crawl.
 
 ## 17 September 2026 — zichtbare beeldbijschriften verwijderd
 
