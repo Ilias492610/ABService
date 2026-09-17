@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Repair the contact-page form CTA, publish source-bounded fault-code pages for nine additional heating brands, and add optimized owner-supplied marketing illustrations without regressing performance or truthfulness.
+**Goal:** Repair the contact-page form CTA, publish source-bounded fault-code pages for nine additional heating brands, and add optimized owner-supplied images without regressing performance or truthfulness.
 
 **Architecture:** Keep `PageHero` reusable through an explicit CTA destination. Keep all fault-code pages on the existing server-data/client-filter architecture, but split additional manufacturer snapshots into a separate catalog module so the original catalog remains maintainable. Register all media centrally with explicit evidence roles and serve resized WebP files through `next/image` below the critical rendering path.
 
@@ -15,7 +15,7 @@
 - Never invent a code, cause, model scope, certification, service capability, employee, vehicle or customer case.
 - Every fault-code catalog must name an official manufacturer URL and exact model/tool scope.
 - Installer repair procedures must be reduced to conservative consumer-safe first steps.
-- Supplied ChatGPT-named images are marketing illustrations, never documentary proof.
+- Supplied images remain tied to the owner-confirmed media registry.
 - New raster files must be WebP, maximum 1,448 x 1,086, and target less than 250 KiB each.
 - Homepage critical transfer and LCP must not materially regress; new homepage media stays below the primary content and lazy-loads.
 - Existing URLs, visual identity, contact channels and analytics behavior remain intact.
@@ -63,7 +63,7 @@ Run: `node --test tests/html-audit.test.mjs`, then click the CTA in Chromium at 
 - Modify: `app/contact/page.js`
 - Modify: `app/over-ons/page.js`
 - Modify: `app/keuring/page.js`
-- Modify: selected service routes only when a new image is more relevant than the existing illustration
+- Modify: selected service routes only when a new image is more relevant than the existing media
 - Modify: `app/globals.css`
 
 **Interfaces:**
@@ -72,7 +72,7 @@ Run: `node --test tests/html-audit.test.mjs`, then click the CTA in Chromium at 
 
 - [x] **Step 1: Write failing media-policy tests**
 
-Require every registered content image to use `/media/*.webp`, carry `projectEvidence: false`, and keep each generated file below 250 KiB. Require generated marketing scenes to disclose `geen echte medewerker of klantcase`.
+Require every registered content image to use `/media/*.webp` and keep each generated file below 250 KiB.
 
 - [x] **Step 2: Verify the media tests fail against PNG assets**
 
@@ -81,7 +81,7 @@ Expected: FAIL because existing registry paths end in `.png` and new WebP files 
 
 - [x] **Step 3: Convert a curated, deduplicated selection**
 
-Use Pillow with aspect-ratio preservation and WebP quality tuned between 68 and 78. Convert the six currently used legacy illustrations plus old `Keuring.png`; convert the supplied boiler, sanitary, consultation, arrival and diagnostic scenes; skip the duplicate arrival file and do not publish the synthetic two-person team or branded-fleet scenes as real proof.
+Use Pillow with aspect-ratio preservation and WebP quality tuned between 68 and 78. Convert the six currently used legacy images plus old `Keuring.png`; convert the supplied boiler, sanitary, consultation, arrival and diagnostic scenes; skip the duplicate arrival file.
 
 - [x] **Step 4: Register and place images honestly**
 

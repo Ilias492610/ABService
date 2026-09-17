@@ -33,7 +33,7 @@ export default function GasketelsPage() {
           title: "Leg de volledige scope schriftelijk vast",
           paragraphs: [
             "Een offerte hoort duidelijk te maken welke materialen, aansluitingen, aanpassingen, werkuren en documenten inbegrepen zijn. Ook uitsluitingen en mogelijke meerwerken verdienen een heldere beschrijving.",
-            "Deze website noemt geen vaste merken of fabrikantpartners zolang de actuele commerciële of technische relatie niet is bevestigd. De geschikte oplossing wordt per installatie besproken.",
+            "AB Service onderhoudt en herstelt meerdere courante ketelmerken als onafhankelijke dienstverlener. Een merkvermelding is geen claim van officiële fabrikant- of dealerstatus. De geschikte oplossing wordt per installatie besproken.",
           ],
         },
         {
@@ -54,6 +54,8 @@ export default function GasketelsPage() {
         { label: "Installatie-overzicht", href: "/installaties" },
         { label: "Keuring bij eerste ingebruikname", href: "/keuring" },
         { label: "Prijsfactoren en offertes", href: "/tarieven" },
+        { label: "Ondersteunde ketelmerken", href: "/merken" },
+        { label: "Praktijkcase: gasketel vervangen", href: "/projecten/gasketel-vervangen" },
       ]}
       sourceLinks={[
         {

@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 
 import {
   deriveAreaEvidence,
+  getPublishedProjects,
   getPublishedProjectsForHub,
   validateProjectForPublication,
 } from "../content/projects.mjs";
@@ -67,4 +68,14 @@ test("published projects automatically strengthen their district and province hu
   assert.equal(evidence.hasLocalReview, false);
   assert.equal(evidence.projectCount, 1);
   assert.deepEqual(getPublishedProjectsForHub("Antwerpen", [completeProject]), [completeProject]);
+});
+
+test("owner-confirmed anonymized practice cases pass the publication gate", () => {
+  const projects = getPublishedProjects();
+
+  assert.equal(projects.length, 6);
+  assert.ok(projects.every((project) => validateProjectForPublication(project).ok));
+  assert.equal(new Set(projects.map((project) => project.path)).size, projects.length);
+  assert.ok(projects.every((project) => project.city === "Regio Antwerpen"));
+  assert.ok(projects.every((project) => project.reviewApproved === false));
 });

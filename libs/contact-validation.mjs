@@ -7,6 +7,12 @@ export const CONTACT_SERVICES = Object.freeze([
   "Keuring cv-installatie",
   "Installatie gasketel",
   "Sanitair of loodgieterswerk",
+  "Lekdetectie",
+  "Waterlek herstellen",
+  "Ontstopping",
+  "Boiler plaatsen of herstellen",
+  "Leidingen plaatsen of aanpassen",
+  "Badkamerrenovatie",
   "Andere vraag",
 ]);
 

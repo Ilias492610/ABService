@@ -40,6 +40,21 @@ const services = [
     text: "Geen lokprijzen: bekijk welke factoren een onderhoud, herstelling of installatie bepalen en hoe een offerte tot stand komt.",
     href: "/tarieven",
   },
+  {
+    title: "Lekdetectie en waterlekken",
+    text: "Gericht onderzoek en herstel bij vocht, zichtbaar lekverlies of een verdachte leiding of aansluiting.",
+    href: "/diensten/lekdetectie",
+  },
+  {
+    title: "Ontstopping en afvoer",
+    text: "Beoordeling en ontstopping van bereikbare sanitaire afvoeren, met vervolgadvies bij terugkerende problemen.",
+    href: "/diensten/ontstopping",
+  },
+  {
+    title: "Alle diensten",
+    text: "Bekijk ook boilers, leidingwerk, waterlekherstel en het loodgieterswerk binnen een badkamerrenovatie.",
+    href: "/diensten",
+  },
 ];
 
 export default function HomePage() {
@@ -125,6 +140,27 @@ export default function HomePage() {
         </div>
       </section>
       <GoogleReviews />
+      <section className="section section-muted">
+        <div className="shell related-grid">
+          <div>
+            <p className="eyebrow">Uitgevoerd werk</p>
+            <h2>Bekijk praktijkcases van AB Service</h2>
+            <p className="section-lead">
+              Geanonimiseerde voorbeelden tonen het probleem, de uitgevoerde werkzaamheden en
+              de controle bij oplevering.
+            </p>
+            <Link href="/projecten">Bekijk de projecten →</Link>
+          </div>
+          <div>
+            <p className="eyebrow">Cv-ketelmerken</p>
+            <h2>Onderhoud en herstelling voor 13 merken</h2>
+            <p className="section-lead">
+              Van Vaillant en Bulex tot Remeha, Buderus, Viessmann, ACV, ATAG en Ferroli.
+            </p>
+            <Link href="/merken">Bekijk alle merken →</Link>
+          </div>
+        </div>
+      </section>
       <ContactCta />
     </>
   );

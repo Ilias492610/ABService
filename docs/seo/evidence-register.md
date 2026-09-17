@@ -9,6 +9,8 @@
 | VAT BE0792.534.639 | Repeated repository content | Medium | Published | Owner/legal registry check |
 | Antwerp primary market | Owner master prompt | High | Published | Service-area change |
 | Maintenance, repair, inspection, gas boilers, sanitary/plumbing scope | Owner master prompt | High | Published | Operational scope change |
+| Leak detection, water-leak repair, drain unblocking, boiler work, pipework and bathroom renovation | Owner confirmation on 17 September 2026 | High | Six service pages published with scoped wording | Operational scope change |
+| Thirteen serviced boiler brands | Owner confirmation on 17 September 2026 | High for maintenance/repair scope; no manufacturer affiliation | Brand-service pages published as independent service | Operational scope or partnership change |
 | Gas ≥20 kW generally two-year maintenance in Flanders | Vlaanderen official guidance | High | Published with source | Regulation change |
 | First-use inspection separate from maintenance | Vlaanderen official guidance | High | Published with source | Regulation change |
 | Gas-boiler renovation premium stopped/narrow exceptions | Vlaanderen/VEKA guidance | High | Published cautiously | Measures change |
@@ -25,8 +27,8 @@
 | Itho Daalderop fault codes | Official Base Cube manual | High within named model scope | 26 warning/blocking/fault rows with model warning | Manufacturer manual change |
 | Ferroli fault codes | Official BlueSense service manual | High within named model scope | 37 A/F source rows with model warning | Manufacturer manual change |
 | General pressure-loss guidance | Official Bosch Belgium user guidance | High for general triage; pressure remains model-dependent | Published with exact-model warning | Manufacturer guidance change |
-| Legacy image ownership | Owner confirmation in task | High for ownership; not evidence of a specific project record | Supporting website media; `projectEvidence: false` | Authentic project originals supplied |
-| Edited marketing images supplied in task | Owner confirmation in task | High for ownership; not independently tied to a project record | WebP supporting media; `projectEvidence: false` | Link to a consented project record when used as project proof |
+| Website image ownership and authenticity | Owner confirmation in task | High | Optimized WebP media published from the owner archive | Image rights or provenance change |
+| Anonymized practice cases | Owner confirmation that the represented work types were performed | Medium-high; customer-identifying facts intentionally withheld | Six cases published without names, addresses, exact dates, reviews or partnership claims | New or corrected project record |
 | 24/7, same-day or 60-minute response | No evidence | None | Removed | Written operational proof |
 | Google profile, score and review count | Official Places API (New), Place ID `ChIJ38_PKjPxw0cRMfEVYieHZDg`, matched to 0484 90 69 66 and Voorzorgstraat 12A | High and live | Published through request-time server integration; no AggregateRating schema | API/profile/configuration change |
 | Individual Google review texts | Official Places API currently returns no review objects for this profile | High for current response | No copied fallback; cards appear only when Google supplies attributed review objects | Places response change |
@@ -38,6 +40,6 @@
 | Air-conditioning/F-gas service | No evidence | None | Noindex; removed from nav | Current service and certificate proof |
 | Prices/payment methods/warranties | No current written policy | None | Not published | Owner-approved maintained terms |
 | Team/history/years of experience | No evidence | None | Removed | Documentary owner evidence |
-| Projects/testimonials | No authentic records/consent | None | Draft | Project gate passes |
+| Customer testimonials attached to projects | No approved project-specific testimonial text | None | Not published | Approved testimonial and project match |
 
 Official sources are linked from the relevant public pages and the design specification.

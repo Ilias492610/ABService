@@ -55,6 +55,7 @@ export default function HerstellingPage() {
         { label: "Veilige controle bij drukverlies", href: "/advies/drukverlies-cv-ketel" },
         { label: "Onderhoud van een cv-ketel", href: "/onderhoud" },
         { label: "Tarieven en offertes", href: "/tarieven" },
+        { label: "Praktijkcase: ketelstoring onderzocht", href: "/projecten/cv-ketel-storing-gediagnosticeerd" },
       ]}
     />
   );

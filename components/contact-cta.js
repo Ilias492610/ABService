@@ -15,7 +15,7 @@ export default function ContactCta({ title = "Wilt u uw situatie bespreken?", te
           </p>
         </div>
         <div className="button-row">
-          <Link href="/contact" className="button">
+          <Link href="/contact#aanvraagformulier" className="button">
             Naar het contactformulier
           </Link>
           <TrackedLink

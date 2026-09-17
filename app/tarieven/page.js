@@ -11,6 +11,8 @@ const priceFactors = [
   ["Herstelling", "Diagnose, benodigde tijd, onderdelen, bereikbaarheid, vervolgwerk en de afgesproken planning."],
   ["Installatie", "Materiaalkeuze, dimensionering, leidingwerk, afvoer, regeling, bescherming, demontage en oplevering."],
   ["Sanitair", "Toestel, leidingtracé, afsluitbaarheid, afvoer, wandopbouw, bereikbaarheid en gewenste afwerking."],
+  ["Lek of ontstopping", "Diagnose, bereikbaarheid, leidingmateriaal, gebruikte middelen, benodigde apparatuur en vervolgwerk."],
+  ["Badkamerrenovatie", "Maatvoering, toestellen, leidingwerk, sloop, afwerking en afstemming met andere vakmensen."],
 ];
 
 export default function TarievenPage() {

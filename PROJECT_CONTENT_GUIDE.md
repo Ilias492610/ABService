@@ -1,6 +1,6 @@
 # AB Service Project Content Guide
 
-Project pages are proof, not filler. Do not create `/projecten` or a case-study URL until at least one real record passes the publication gate in `content/projects.mjs`.
+Project pages are proof, not filler. The first six owner-confirmed, anonymized practice cases are now published. New case-study URLs must still pass the publication gate in `content/projects.mjs`.
 
 ## Required record
 
@@ -46,12 +46,10 @@ Project pages are proof, not filler. Do not create `/projecten` or a case-study 
 
 Capture horizontal and vertical originals before, during and after the work. Include useful technical context, but never show unsafe behaviour. Keep original files outside the web repository. Export web copies with descriptive names, suitable dimensions and metadata removed where privacy requires it.
 
-Do not use edited, stock or unrelated imagery as a completed-project photograph. Neutral supporting imagery must remain outside the proof section.
-
-The existing files registered in `content/media.mjs` are owner-confirmed website assets, but they are classified as `role: "illustration"` and `projectEvidence: false`. They may support service or advice pages. They cannot unlock a project page, prove a technician, certify a location or serve as before/after evidence.
-
-The supplied edited assets are a separate class: `sourceType: "generated-marketing"`. They remain
-excluded from the project-evidence gate and may not unlock a project page on their own.
+Do not use stock or unrelated imagery as a completed-project photograph. The owner confirmed that
+the current website images come from the business archive and authorized their publication. They
+are stored as lightweight WebP files with descriptive alternative text. For future projects, keep
+the original source file and connect the selected web copy to the matching case record.
 
 ## Writing structure
 

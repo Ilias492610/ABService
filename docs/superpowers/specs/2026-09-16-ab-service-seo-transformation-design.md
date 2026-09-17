@@ -231,7 +231,7 @@ Remove the slow Trust.Reviews widget, hardcoded `5.0`, hardcoded `15 reviews`, a
 
 Image policy:
 
-- Retain neutral illustrations or decorative images only when they are clearly not offered as proof.
+- Retain only relevant, owner-approved images and optimize them for the web.
 - Remove or reframe synthetic-looking staff, vehicle, inspection, installation, and project scenes that could mislead users.
 - Do not add fake alt text that asserts a person, municipality, brand, project, or event not visible and verified.
 - Give informative images concise Dutch alt text; use empty alt text for decorative images.

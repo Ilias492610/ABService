@@ -9,11 +9,13 @@ Build local search visibility and qualified enquiries through useful, verifiable
 - `content/business.mjs` is the source of truth for verified public identity and contact facts.
 - `content/site-content.mjs` controls route metadata, publication state, navigation and sitemap eligibility.
 - `content/fault-guides.mjs` separates manufacturer-backed guides from withheld brand content.
-- `content/content-backlog.mjs` records locality, commercial-brand and unsupported-service drafts.
-- `content/projects.mjs` defines a strict evidence gate for future case studies.
+- `content/content-backlog.mjs` records locality drafts and future unsupported content.
+- `content/additional-services.mjs` is the source of truth for six owner-confirmed plumbing services.
+- `content/brand-services.mjs` is the source of truth for thirteen owner-confirmed serviced boiler brands.
+- `content/projects.mjs` contains the publication gate and six owner-confirmed, anonymized practice cases.
 - `content/service-area-scoring.mjs` validates the bounded seven-factor priority score.
 - `content/service-areas.mjs` is the source of truth for 304 municipalities, ten Antwerp districts and six regional hubs.
-- `content/media.mjs` records owner-confirmed legacy assets as illustrations and explicitly excludes them as project evidence.
+- `content/media.mjs` records the owner-confirmed image archive and optimized web variants.
 - `libs/seo-data.mjs` builds metadata and sitemap entries.
 - `libs/schema-data.mjs` builds verified global and breadcrumb schema.
 - `libs/contact-validation.mjs` validates form data on client and server.
@@ -40,6 +42,10 @@ The policy is enforced in tests. A content idea does not become indexable merely
 | Installation | verwarming en sanitair installeren | `/installaties` |
 | Gas boiler | gasketel plaatsen/vervangen Antwerpen | `/installaties/gasketels` |
 | Sanitary | sanitaire installatie; loodgieterswerk Antwerpen | `/installaties/sanitair` |
+| Service hub | loodgietersdiensten; verwarmingsdiensten | `/diensten` |
+| Additional plumbing | lekdetectie, waterlek, ontstopping, boiler, leidingen, badkamerrenovatie | six `/diensten/{slug}` pages |
+| Brand service | onderhoud en herstelling per ketelmerk | `/merken` and thirteen `/merken/{merk}` pages |
+| Projects | uitgevoerd loodgieters- en verwarmingswerk | `/projecten` and six anonymized cases |
 | Pricing | loodgieter tarieven; offertefactoren | `/tarieven` |
 | Contact | AB Service contacteren | `/contact` |
 | Questions | onderhoud, keuring, herstel, prijs | `/faq` |
@@ -66,7 +72,7 @@ The policy is enforced in tests. A content idea does not become indexable merely
 ### Priority 1 — complete
 
 - Rewrite core commercial pages in Belgian Dutch.
-- Remove unsupported availability, response-time, review, certification, price, premium, brand, region, team and history claims.
+- Remove unsupported availability, response-time, certification, price, premium, partnership, team and history claims.
 - Separate maintenance, first-use inspection, repair and installation language.
 - Publish truthful `/tarieven` without invented prices.
 - Centralize metadata, canonicals, schema, sitemap, navigation and business facts.
@@ -75,35 +81,35 @@ The policy is enforced in tests. A content idea does not become indexable merely
 - Add automated content policy, validation, schema and crawl tests.
 - Publish source-bounded Bosch/Junkers guidance from official Bosch documentation.
 - Publish a technically conservative pressure-loss guide with a manufacturer source.
-- Reuse owner-supplied legacy images only as labelled illustrations, never as customer or project proof.
+- Reuse owner-confirmed images as lightweight WebP assets with descriptive alternative text.
+- Publish the owner-confirmed brand-service cluster, six additional service pages and six anonymized practice cases.
 
-### Priority 2 — owner evidence required
+### Priority 2 — remaining owner facts required
 
-- Confirm the exact Google Business Profile URL and add a lightweight outbound link.
+- Keep the verified Google Business Profile destination and request-time Places integration operational.
 - Confirm technician recognition numbers and scope before publishing them.
 - Confirm business hours, routine GBP service areas and whether customers are served at a physical address.
-- Confirm active brands and air-conditioning/F-gas capability.
+- Confirm air-conditioning/F-gas capability before indexing that service.
 - Confirm an actual pricing policy before publishing amounts.
-- Supply authentic completed-project evidence and consented photography.
 
-### Priority 3 — publish only after evidence gates pass
+### Priority 3 — future expansion only after evidence gates pass
 
-- First real project/case study and projects hub.
 - One additional municipality page at a time, starting with the strongest evidenced/search-backed opportunity.
-- Commercial brand-service pages for brands supported by work evidence.
-- Additional service pages where operational scope is confirmed.
 - Further advisory articles based on real customer questions and technician expertise.
 
 ## Internal-link architecture
 
-- Home routes users to the five confirmed services and pricing.
+- Home routes users to core and additional services, projects, brands and pricing.
 - Maintenance links to inspection, repair and tariffs.
 - Inspection links to maintenance and installation.
 - Installation hub links to gas boilers, sanitary work and tariffs.
 - Fault-code hub links only to manufacturer-backed guides; detail guides link to repair/contact.
 - Repair, maintenance and fault-code pages link to the pressure-loss decision guide.
 - FAQ links back to the relevant service explanation.
-- Footer provides a compact service and knowledge hub on every page.
+- Footer provides compact service, project, brand and knowledge links on every page.
+- `/diensten` distributes authority to eleven active service pages.
+- `/merken` links to thirteen independent-service pages and each brand page links to its fault guide.
+- `/projecten` links to six cases and each case returns to contact.
 - Navigation, homepage and footer lead to `/werkgebied`; hubs lead to services and districts.
 - District pages lead to nearby districts, the Antwerp hub, tariffs and central service authorities.
 
@@ -142,8 +148,8 @@ Before publication, verify intent, unique value, factual accuracy, commercial re
 - Monthly: Search Console coverage, queries, broken links, form delivery and analytics events.
 - Quarterly: service facts, official legal guidance, privacy implementation, dependencies and content gaps.
 - After each release: tests, lint, build, production crawl, schema parse, desktop/mobile inspection and representative Lighthouse runs.
-- Before publishing a project, locality, brand or new service: rerun the evidence and content quality gates.
+- Before publishing a locality, additional project, brand or service: rerun the evidence and content quality gates.
 
 ## Next actions
 
-Follow `LOCAL_SEO_EXTERNAL_ACTIONS.md` for account-level work. Follow `PROJECT_CONTENT_GUIDE.md` for genuine project collection. Keep draft candidates in `docs/seo/content-gap-backlog.md` until the listed evidence is available.
+The on-site expansion is complete. The next phase is the account-level work in `LOCAL_SEO_EXTERNAL_ACTIONS.md`. Use `PROJECT_CONTENT_GUIDE.md` when adding future cases and keep locality or air-conditioning candidates in `docs/seo/content-gap-backlog.md` until their evidence is available.

@@ -36,6 +36,9 @@ test("sitemap entries contain only published pages and no fabricated dates", () 
   const urls = sitemap.map((entry) => entry.url);
 
   assert.ok(urls.includes("https://www.abservice24.be/tarieven"));
+  assert.ok(urls.includes("https://www.abservice24.be/diensten/lekdetectie"));
+  assert.ok(urls.includes("https://www.abservice24.be/merken/vaillant"));
+  assert.ok(urls.includes("https://www.abservice24.be/projecten/gasketel-vervangen"));
   assert.ok(urls.includes("https://www.abservice24.be/advies/drukverlies-cv-ketel"));
   assert.ok(urls.includes("https://www.abservice24.be/foutcodes/bosch"));
   assert.ok(urls.includes("https://www.abservice24.be/foutcodes/junkers"));

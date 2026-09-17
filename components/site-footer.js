@@ -8,6 +8,10 @@ const serviceLinks = [
   ["Keuring cv-installatie", "/keuring"],
   ["Gasketel installeren", "/installaties/gasketels"],
   ["Sanitair en loodgieterswerk", "/installaties/sanitair"],
+  ["Lekdetectie", "/diensten/lekdetectie"],
+  ["Waterlek herstellen", "/diensten/waterlek-herstellen"],
+  ["Ontstopping", "/diensten/ontstopping"],
+  ["Alle diensten", "/diensten"],
   ["Tarieven en offertes", "/tarieven"],
 ];
 
@@ -16,6 +20,8 @@ const knowledgeLinks = [
   ["Drukverlies cv-ketel", "/advies/drukverlies-cv-ketel"],
   ["Veelgestelde vragen", "/faq"],
   ["Over AB Service", "/over-ons"],
+  ["Ketelmerken", "/merken"],
+  ["Projecten", "/projecten"],
   ["Contact", "/contact"],
   ["Privacybeleid", "/privacy-policy"],
   ["Algemene voorwaarden", "/algemene-voorwaarden"],

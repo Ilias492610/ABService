@@ -32,6 +32,14 @@ const groups = [
       ["Is een formulierinzending al een afspraak?", "Nee. De verzending bevestigt alleen dat de aanvraag is ontvangen. Een afspraak, timing en prijs worden afzonderlijk bevestigd."],
     ],
   },
+  {
+    title: "Lekken, afvoer en renovatie",
+    questions: [
+      ["Voert AB Service lekdetectie en waterlekherstel uit?", "Ja. Deel de zichtbare signalen, de locatie en foto’s. De geschikte onderzoeksmethode en het mogelijke herstel hangen af van leidingtype en bereikbaarheid."],
+      ["Kan AB Service een verstopte afvoer aanpakken?", "Ja, voor bereikbare sanitaire afvoeren. Vermeld altijd welke chemische producten al zijn gebruikt en of meerdere afvoeren tegelijk problemen geven."],
+      ["Doet AB Service volledige badkamerrenovaties?", "AB Service voert het afgesproken loodgieters- en sanitaire deel uit. Wie sloop, elektriciteit, ventilatie, waterdichting, tegels en andere afwerking verzorgt, wordt vooraf duidelijk vastgelegd."],
+    ],
+  },
 ];
 
 export default function FaqPage() {
@@ -54,7 +62,7 @@ export default function FaqPage() {
               </div>
             </section>
           ))}
-          <p>Meer context: <Link href="/onderhoud">onderhoud</Link>, <Link href="/keuring">keuring</Link>, <Link href="/herstelling">herstelling</Link> en <Link href="/tarieven">tarieven</Link>.</p>
+          <p>Meer context: <Link href="/onderhoud">onderhoud</Link>, <Link href="/keuring">keuring</Link>, <Link href="/herstelling">herstelling</Link>, <Link href="/diensten">alle diensten</Link> en <Link href="/tarieven">tarieven</Link>.</p>
         </div>
       </section>
       <ContactCta />

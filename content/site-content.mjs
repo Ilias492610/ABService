@@ -1,4 +1,7 @@
 import { routableDistricts, serviceRegionHubs } from "./service-areas.mjs";
+import { additionalServices } from "./additional-services.mjs";
+import { brandServices } from "./brand-services.mjs";
+import { getPublishedProjects } from "./projects.mjs";
 
 export const CONTENT_STATUS = Object.freeze({
   PUBLISHED: "published",
@@ -73,6 +76,57 @@ export const pageRegistry = Object.freeze([
     changeFrequency: "monthly",
     priority: 0.8,
   },
+  {
+    path: "/diensten",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Loodgieter- en verwarmingsdiensten | AB Service",
+    description:
+      "Bekijk alle diensten van AB Service voor verwarming, cv-ketels, sanitair, lekken, afvoer, boilers, leidingen en badkamerrenovatie.",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
+  ...additionalServices.map((service) => ({
+    path: service.path,
+    status: CONTENT_STATUS.PUBLISHED,
+    title: `${service.title} | AB Service`,
+    description: service.description,
+    changeFrequency: "monthly",
+    priority: 0.75,
+  })),
+  {
+    path: "/merken",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Cv-ketelmerken voor onderhoud en herstelling | AB Service",
+    description:
+      "Bekijk de cv-ketelmerken waarvoor AB Service onderhoud, diagnose en herstelling uitvoert in Antwerpen, Vlaanderen en Brussel.",
+    changeFrequency: "monthly",
+    priority: 0.75,
+  },
+  ...brandServices.map((entry) => ({
+    path: entry.path,
+    status: CONTENT_STATUS.PUBLISHED,
+    title: `${entry.brand} onderhoud en herstelling | AB Service`,
+    description: `AB Service onderhoudt en herstelt ${entry.productFocus}. Vraag een beoordeling aan met model, productcode en foutmelding.`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  })),
+  {
+    path: "/projecten",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Uitgevoerde projecten voor verwarming en sanitair | AB Service",
+    description:
+      "Bekijk geanonimiseerde praktijkcases van AB Service rond cv-ketels, waterlekken, sanitair, afvoer en badkamerleidingwerk.",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
+  ...getPublishedProjects().map((project) => ({
+    path: project.path,
+    status: CONTENT_STATUS.PUBLISHED,
+    title: `${project.title} | AB Service`,
+    description: `${project.problem} Lees welke werken AB Service uitvoerde en wat bij de oplevercontrole werd vastgesteld.`,
+    changeFrequency: "yearly",
+    priority: 0.6,
+  })),
   {
     path: "/tarieven",
     status: CONTENT_STATUS.PUBLISHED,
@@ -305,13 +359,21 @@ export const navigation = Object.freeze([
   { label: "Home", href: "/" },
   {
     label: "Diensten",
-    href: "/installaties",
+    href: "/diensten",
     children: [
       { label: "Onderhoud", href: "/onderhoud" },
       { label: "Herstelling", href: "/herstelling" },
       { label: "Keuring", href: "/keuring" },
       { label: "Gasketels", href: "/installaties/gasketels" },
       { label: "Sanitair", href: "/installaties/sanitair" },
+      { label: "Lekdetectie", href: "/diensten/lekdetectie" },
+      { label: "Waterlek herstellen", href: "/diensten/waterlek-herstellen" },
+      { label: "Ontstopping", href: "/diensten/ontstopping" },
+      { label: "Boilers", href: "/diensten/boiler" },
+      { label: "Leidingen", href: "/diensten/leidingen" },
+      { label: "Badkamerrenovatie", href: "/diensten/badkamerrenovatie" },
+      { label: "Ketelmerken", href: "/merken" },
+      { label: "Projecten", href: "/projecten" },
     ],
   },
   { label: "Tarieven", href: "/tarieven" },

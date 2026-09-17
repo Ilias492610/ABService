@@ -1,10 +1,32 @@
 # AB Service SEO QA Report
 
 **Audit date:** 17 September 2026
-**Release:** `main` commit `7d0cdd8`; Vercel production `dpl_9kCQetdutyeWYYYzUzW78DkBSyGi`
-**Test targets:** lokale Next.js-productieserver op poort 3000 en `https://www.abservice24.be`
+**Release:** on-site brand, service and project expansion prepared after `d7212b8`; production release identifier is recorded after deployment.
+**Test targets:** lokale Next.js-productieserver op poort 3100 en `https://www.abservice24.be`
 
-## Contactanker, beeldherstel en negen extra foutcodemerken
+## Actieve diensten, ketelmerken en praktijkcases
+
+- Publicatieregister, sitemap en interne links bevatten nu `/diensten` met zes aanvullende
+  dienstpagina’s, `/merken` met dertien onafhankelijke merkservicepagina’s en `/projecten` met zes
+  geanonimiseerde praktijkcases.
+- De contactselectie accepteert lekdetectie, waterlekherstel, ontstopping, boilerwerk,
+  leidingwerk en badkamerrenovatie; dezelfde waarden worden client- en server-side gevalideerd.
+- Merkpagina’s linken naar de bijbehorende brongebonden foutcodegids, maar claimen nergens
+  fabrikant-, dealer- of partnerstatus.
+- Projectpagina’s publiceren geen klantnamen, adressen, exacte datums, projectreviews of
+  herkenbare toestelgegevens. De eigenaar bevestigde de werktypes en de gebruikte beeldrechten.
+- `npm test`: 45 van 45 tests geslaagd. `npm run lint`, `npm run build` en `git diff --check`
+  zijn geslaagd; de productiebuild genereerde 82 route-uitvoeren.
+- De lokale productie-SEO-crawl controleerde 73 pagina’s en 73 interne links zonder fout.
+- Chromium controleerde `/diensten`, `/diensten/lekdetectie`, `/merken`, `/merken/vaillant`,
+  `/projecten`, `/projecten/gasketel-vervangen` en `/contact` op desktop en 390×844. Alle pagina’s
+  hadden één H1, werkende beelden, geen Next.js-overlay en geen horizontale overflow.
+- De mobiele menucontrole slaagde en `/contact#aanvraagformulier` positioneerde het formulier
+  opnieuw 104 pixels onder de bovenrand.
+- Mobiele Lighthouse op de lokale productiehomepage scoorde 97 performance, 100 toegankelijkheid,
+  100 best practices en 100 SEO; LCP 2,6 s, CLS 0 en totale overdracht 300 KiB.
+
+## Vorige release: contactanker, beeldherstel en negen extra foutcodemerken
 
 - De knop `Ga naar het formulier` verwijst nu naar `#aanvraagformulier`; het doel is
   programmatisch focusbaar en heeft 6,5 rem scrollmarge voor de vaste navigatie.
@@ -17,11 +39,9 @@
   claimen geen universele merkdekking, dealerstatus of commerciële dienstscope.
 - `npm run sources:audit` bevestigde HTTP 200 voor de negen nieuwe officiële fabrikantbronnen en
   de vier bestaande gebiedsbronnen.
-- Zeven bestaande illustraties en vijf aangeleverde, AI-gegenereerde marketingbeelden zijn als
-  metadata-vrije WebP opgeslagen. Alle twaalf bestanden blijven onder 102 KiB; de tests bewaken
-  een harde bovengrens van 250 KiB en verbieden projectbewijs voor deze beelden.
-- De zichtbare beeldbijschriften zijn op verzoek van de eigenaar verwijderd. Geen van deze
-  beelden is als zelfstandig projectbewijs geregistreerd.
+- Zeven bestaande en vijf aangeleverde beelden zijn als metadata-vrije WebP opgeslagen. Alle
+  twaalf bestanden blijven onder 102 KiB en de tests bewaken een harde bovengrens van 250 KiB.
+- De zichtbare beeldbijschriften zijn op verzoek van de eigenaar verwijderd.
 - `npm test`: 44 van 44 tests geslaagd. `npm run lint`, `npm run build`, `git diff --check` en de
   lokale SEO-crawl zijn geslaagd; Next.js genereerde 54 routes en de crawl controleerde 45 pagina's
   en 45 interne links.
@@ -207,8 +227,7 @@ Chrome desktop and 390×844 mobile viewport were inspected against the productio
 - Telephone, email and WhatsApp links are present.
 - Browser console showed no application-origin error. Observed errors were from installed Chrome extensions only.
 - Bosch and pressure-loss pages were rechecked at desktop width and at a 390×844 mobile viewport; headings, tables, links and menu behaviour remain readable without visible horizontal overflow.
-- Legacy images are delivered with `next/image`, responsive `sizes` and descriptive neutral alt text. A unit test prevents these assets from being promoted to project evidence.
-- A live Mailgun submission was not sent: the local environment has no `MAILGUN_API_KEY`, and a real submission would create an external message. Client/server validation is automated; delivery must be smoke-tested in the configured deployment.
+- Owner-confirmed images are delivered with `next/image`, responsive `sizes`, descriptive alt text and file-size tests.
 
 ## Resolved technical issues
 
@@ -224,11 +243,9 @@ Chrome desktop and 390×844 mobile viewport were inspected against the productio
 - Retained correct `noindex` handling for air conditioning and published Bosch/Junkers only after mapping a bounded code set to official Bosch documentation.
 - Added the indexable pressure-loss guide, navigation/footer links and source-aware internal links.
 
-## Remaining operational checks
+## Remaining external/account checks
 
-- Add and test `MAILGUN_API_KEY`, sending domain and recipient configuration in Vercel.
-- Controleer de Google-score periodiek op de officiële profielbestemming; de zwevende link gebruikt
-  de bestaande profiel-ID en toont bewust geen vast reviewaantal.
+- Controleer de Google-score periodiek via de bestaande Places-integratie en officiële profielbestemming.
 - Rerun Lighthouse against the live canonical host after sufficient CDN warm-up and whenever the visual shell or critical images change.
 - Validate representative schema with Google Rich Results Test and Schema.org validator after public deployment.
 - Confirm Vercel Web Analytics is enabled for the production project and events appear without personal data.

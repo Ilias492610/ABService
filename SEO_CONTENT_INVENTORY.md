@@ -11,6 +11,12 @@
 | `/installaties` | Installaties voor verwarming en sanitair \| AB Service | Verwarming en sanitair installeren met een duidelijke scope | Installation overview | Index | Gas boilers, sanitary, contact | Owner-confirmed core scope |
 | `/installaties/gasketels` | Gasketel laten installeren in Antwerpen \| AB Service | Een gasketel laten plaatsen of vervangen in Antwerpen | Gas-boiler installation | Index | Installation, inspection, tariffs | Owner scope; current premium caution |
 | `/installaties/sanitair` | Sanitaire installatie en loodgieterswerk \| AB Service | Sanitaire installatie en loodgieterswerk in Antwerpen | Sanitary/plumbing installation | Index | Installation, tariffs, contact | Owner-confirmed plumbing/sanitary scope |
+| `/diensten` | Loodgieter- en verwarmingsdiensten \| AB Service | Loodgieterswerk, verwarming en sanitair | Active service directory | Index | Eleven services, brands, projects | Owner-confirmed active scope |
+| `/diensten/{slug}` | Six unique service titles | Unique service-specific H1 | Leak detection, water-leak repair, unblocking, boilers, pipework and bathroom renovation | Index | Services, projects, tariffs, contact | Owner-confirmed active services with explicit safety and scope boundaries |
+| `/merken` | Cv-ketelmerken voor onderhoud en herstelling \| AB Service | Onderhoud en herstelling voor courante ketelmerken | Commercial brand-service hub | Index | Thirteen brand pages, contact | Owner-confirmed maintenance and repair scope |
+| `/merken/{merk}` | Thirteen unique brand titles | Brand-specific maintenance and repair H1 | Independent maintenance and repair per boiler brand | Index | Fault-code guide, brands, contact | Owner-confirmed scope; no dealer, partner or manufacturer affiliation claimed |
+| `/projecten` | Uitgevoerde projecten voor verwarming en sanitair \| AB Service | Uitgevoerd werk voor verwarming en sanitair | Project and proof hub | Index | Six anonymized cases, contact | Owner-confirmed work types and owner image archive |
+| `/projecten/{slug}` | Six unique case titles | Unique case H1 | Heating, boiler, leak, sanitary, drain and bathroom practice cases | Index | Project hub and contact | Owner-confirmed, anonymized work descriptions; no client identity or review claims |
 | `/tarieven` | Tarieven en offertes voor loodgieterswerk \| AB Service | Tarieven zonder lokprijs of verrassende belofte | Pricing and quote process | Index | Contact, services | No amounts claimed; process-only content |
 | `/contact` | Contact opnemen met AB Service | Leg uw vraag voor aan AB Service | Contact and lead capture | Index | Privacy, tariffs | Verified phone, email and VAT from repository |
 | `/faq` | Veelgestelde vragen over verwarming en sanitair \| AB Service | Heldere antwoorden over verwarming en sanitair | Cross-service questions | Index | Maintenance, inspection, repair, tariffs | Rewritten from verified page facts |
@@ -52,28 +58,17 @@ published and one district route remains noindex. The remaining 302 municipality
 Search Console/search-demand opportunity, genuine project/review evidence or another strong source
 of unique customer value, plus similarity and editorial review.
 
-### Commercial brand pages
-
-Service pages for Vaillant, Bulex, Bosch, Junkers, Remeha, Buderus, Viessmann, ACV, Intergas,
-Nefit Bosch, ATAG, Itho Daalderop and Ferroli. Fault-code guides do not prove that AB Service is
-an authorized partner or actively services every brand.
-
-### Additional service pages
-
-Leak detection, water-leak repair, drain unblocking, boiler work, pipework and bathroom renovation. Each needs confirmation of current operational scope and authentic work evidence.
-
-### Projects
-
-`/projecten` and detail pages remain unbuilt/non-indexable until at least one complete case passes `validateProjectForPublication` and the checks in `PROJECT_CONTENT_GUIDE.md`.
+Commercial brand pages, six additional service pages and the first six anonymized practice cases
+left the backlog after the owner confirmed the active scope and image provenance on 17 September
+2026. Future additions remain subject to the same publication and quality gates.
 
 ## Removed SEO risks
 
 - No mass-generated municipality doorway pages or service × place matrix.
-- No commercial brand pages inferred from logos or fault-code content.
+- No official-brand partnership claims inferred from logos or fault-code content.
 - No FAQPage schema.
 - No stale hardcoded review count, copied fallback reviews, AggregateRating or Review schema.
 - No air-conditioning navigation or sitemap entry.
-- No synthetic staff, fleet or project imagery presented as proof.
-- Owner-supplied legacy images are centrally marked `projectEvidence: false`.
-- Edited marketing images remain outside the project-evidence gate.
+- No client names, addresses, testimonials, exact dates or measured results were invented for project pages.
+- Owner-confirmed images are optimized, centrally registered and published without visible provenance captions.
 - No sitemap entries for icons, manifest, robots or sitemap files.

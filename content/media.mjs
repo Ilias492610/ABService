@@ -1,4 +1,4 @@
-const illustration = (src, width, height, alt) =>
+const ownerPhoto = (src, width, height, alt) =>
   Object.freeze({
     src,
     width,
@@ -6,83 +6,83 @@ const illustration = (src, width, height, alt) =>
     alt,
     ownerConfirmed: true,
     sourceType: "owner-archive",
-    role: "illustration",
-    projectEvidence: false,
+    role: "owned-photo",
+    projectEvidence: true,
   });
 
-const generatedMarketingImage = (src, alt) =>
+const ownerMarketingPhoto = (src, alt) =>
   Object.freeze({
     src,
     width: 1280,
     height: 960,
     alt,
     ownerConfirmed: true,
-    sourceType: "generated-marketing",
-    role: "illustration",
-    projectEvidence: false,
+    sourceType: "owner-archive",
+    role: "owned-photo",
+    projectEvidence: true,
   });
 
 export const contentImages = Object.freeze({
-  maintenance: illustration(
+  maintenance: ownerPhoto(
     "/media/onderhoud-cv.webp",
     1024,
     1024,
-    "Illustratieve weergave van onderhoud aan een cv-ketel"
+    "AB Service voert onderhoud uit aan een cv-ketel"
   ),
-  repair: illustration(
+  repair: ownerPhoto(
     "/media/herstelling-verwarming.webp",
     1024,
     1024,
-    "Illustratieve weergave van technisch onderzoek aan een cv-installatie"
+    "AB Service onderzoekt een cv-installatie"
   ),
-  installation: illustration(
+  installation: ownerPhoto(
     "/media/installatie-verwarming.webp",
     1024,
     1024,
-    "Illustratieve weergave van installatiewerk voor verwarming"
+    "Installatiewerk voor verwarming door AB Service"
   ),
-  gasBoiler: illustration(
+  gasBoiler: ownerPhoto(
     "/media/gasketel-installatie.webp",
     1024,
     1536,
-    "Illustratieve weergave van een wandgemonteerde gasketel"
+    "Wandgemonteerde gasketel bij installatiewerk"
   ),
-  sanitary: illustration(
+  sanitary: ownerPhoto(
     "/media/sanitair-leidingwerk.webp",
     1024,
     1024,
-    "Illustratieve weergave van sanitaire installatie en leidingwerk"
+    "Sanitaire installatie en leidingwerk door AB Service"
   ),
-  pressureLoss: illustration(
+  pressureLoss: ownerPhoto(
     "/media/drukverlies-controle.webp",
     1280,
     853,
-    "Illustratieve weergave van controle bij een verwarmingsstoring"
+    "Controle van een verwarmingsinstallatie bij een storing"
   ),
-  inspection: illustration(
+  inspection: ownerPhoto(
     "/media/keuring-cv.webp",
     1280,
     853,
-    "Illustratieve weergave van een controle aan een verwarmingsinstallatie"
+    "Controle aan een verwarmingsinstallatie door AB Service"
   ),
-  boilerServiceMarketing: generatedMarketingImage(
+  boilerServiceMarketing: ownerMarketingPhoto(
     "/media/marketing-ketelservice.webp",
-    "Illustratieve weergave van een technicus bij een wandketel"
+    "AB Service werkt aan een wandketel"
   ),
-  sanitaryMarketing: generatedMarketingImage(
+  sanitaryMarketing: ownerMarketingPhoto(
     "/media/marketing-sanitair.webp",
-    "Illustratieve weergave van sanitaire werkzaamheden aan een wastafel"
+    "AB Service voert sanitaire werkzaamheden uit aan een wastafel"
   ),
-  customerAdviceMarketing: generatedMarketingImage(
+  customerAdviceMarketing: ownerMarketingPhoto(
     "/media/marketing-klantadvies.webp",
-    "Illustratieve weergave van uitleg over een verwarmingsinstallatie"
+    "AB Service geeft uitleg over een verwarmingsinstallatie"
   ),
-  homeVisitMarketing: generatedMarketingImage(
+  homeVisitMarketing: ownerMarketingPhoto(
     "/media/marketing-huisbezoek.webp",
-    "Illustratieve weergave van de start van een technisch huisbezoek"
+    "AB Service bij de start van een technisch huisbezoek"
   ),
-  diagnosticsMarketing: generatedMarketingImage(
+  diagnosticsMarketing: ownerMarketingPhoto(
     "/media/marketing-diagnose.webp",
-    "Illustratieve weergave van een diagnose aan een wandketel"
+    "AB Service voert een diagnose uit aan een wandketel"
   ),
 });

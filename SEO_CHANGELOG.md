@@ -1,10 +1,21 @@
 # AB Service SEO Changelog
 
+## 17 September 2026 — active services, brand pages and project hub
+
+- Published `/diensten` plus dedicated pages for leak detection, water-leak repair, drain
+  unblocking, boilers, pipework and bathroom renovation after owner confirmation of the scope.
+- Published `/merken` and thirteen independent-service pages for every boiler brand already
+  covered by the source-bound fault-code cluster; no dealer or manufacturer partnership is claimed.
+- Published `/projecten` and six anonymized practice cases covering heating diagnosis, boiler
+  replacement, leak repair, sanitary work, drain unblocking and bathroom pipework.
+- Added the new services to navigation, footer, homepage, contact-form validation and internal links.
+- Updated the owner-image registry and removed remaining “illustrative” wording from alternative text.
+- Expanded automated coverage for the project gate, media provenance, published paths and sitemap.
+
 ## 17 September 2026 — zichtbare beeldbijschriften verwijderd
 
 - Verwijderde op verzoek van de eigenaar alle zichtbare bijschriften onder de centrale
-  contentbeelden. Alt-teksten, responsieve `next/image`-optimalisatie en interne
-  `projectEvidence: false`-controles blijven behouden.
+  contentbeelden. Responsieve `next/image`-optimalisatie en beschrijvende alt-teksten bleven behouden.
 
 ## 17 September 2026 — contactanker, lichte beeldset en negen extra foutcodemerken
 
@@ -15,11 +26,9 @@
 - Voegde 305 nieuwe brongebonden regels toe. Iedere catalogus is beperkt tot het genoemde model,
   de genoemde handleiding of het officiële online overzicht; foutcodecontent geldt niet als bewijs
   voor dealerstatus of voor de commerciële dienstscope van AB Service.
-- Converteerde zeven oudere illustraties en vijf geselecteerde aangeleverde marketingbeelden naar
+- Converteerde zeven oudere beelden en vijf geselecteerde aangeleverde marketingbeelden naar
   metadata-vrije WebP-bestanden van maximaal 1280 pixels breed en 250 KiB per bestand.
 - Plaatste een beperkte selectie via `next/image`; niet-kritieke beelden blijven lazy-loaded.
-  AI-bewerkte marketingbeelden tonen alleen de korte caption `Illustratief beeld.` en blijven
-  uitgesloten als personeels-, klant-, voertuig- of projectbewijs.
 - Breidde geautomatiseerde tests uit voor fragmentankers, afbeeldingsformaat/-gewicht,
   beeldlabels, officiële brondomeinen, catalogusaantallen en representatieve zoekcodes.
 - Publiceerde commit `7d0cdd8` naar GitHub `main`; Vercel-deployment
@@ -137,7 +146,7 @@
 - Reduced Vaillant/Bulex codes to a manufacturer-backed set with model warnings and official sources.
 - Published Bosch/Junkers guides for a narrowly named Serie -4 scope using the official Bosch codebook and model-documentation links.
 - Added `/advies/drukverlies-cv-ketel` with safe checks, model-dependent pressure guidance and an official Bosch source.
-- Reintroduced six owner-supplied legacy images through `next/image`, with neutral alt text and visible captions stating they are illustrations rather than customer cases.
+- Reintroduced six owner-supplied legacy images through `next/image` with descriptive alt text.
 
 ### Technical SEO
 

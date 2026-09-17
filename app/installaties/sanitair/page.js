@@ -33,8 +33,8 @@ export default function SanitairPage() {
           eyebrow: "Afbakening",
           title: "Geen totaalrenovatie beloven zonder opname",
           paragraphs: [
-            "Een volledige badkamer omvat vaak breekwerk, elektriciteit, ventilatie, tegels, schrijnwerk en coördinatie met andere vakmensen. Deze website presenteert AB Service daarom niet automatisch als totaalaannemer voor badkamerrenovaties.",
-            "Beschrijf het gewenste eindresultaat en wat al voorbereid is. Na beoordeling kan worden vastgelegd welke onderdelen AB Service wel en niet uitvoert.",
+            "Een volledige badkamer omvat vaak breekwerk, elektriciteit, ventilatie, tegels, schrijnwerk en coördinatie met andere vakmensen. AB Service voert het afgesproken loodgieters- en sanitaire deel uit; andere disciplines worden vooraf duidelijk toegewezen.",
+            "Beschrijf het gewenste eindresultaat en wat al voorbereid is. Na beoordeling wordt vastgelegd welke onderdelen AB Service zelf uitvoert en welke door andere vakmensen gebeuren.",
           ],
         },
         {
@@ -53,6 +53,8 @@ export default function SanitairPage() {
       ]}
       relatedLinks={[
         { label: "Alle installaties", href: "/installaties" },
+        { label: "Badkamerrenovatie", href: "/diensten/badkamerrenovatie" },
+        { label: "Praktijkcase: sanitair vernieuwd", href: "/projecten/sanitair-vernieuwd" },
         { label: "Tarieven en offertes", href: "/tarieven" },
         { label: "Contact opnemen", href: "/contact" },
       ]}
