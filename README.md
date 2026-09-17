@@ -21,10 +21,12 @@ The contact form uses Mailgun. Configure these values in the deployment environm
 MAILGUN_API_KEY=
 MAILGUN_DOMAIN=
 MAILGUN_FROM=
+GOOGLE_PLACES_API_KEY=
+GOOGLE_PLACE_ID=ChIJ38_PKjPxw0cRMfEVYieHZDg
 CONTACT_FORM_TO=
 ```
 
-`CONTACT_FORM_TO` may contain a comma-separated recipient list. Never commit credentials. Vercel Analytics is rendered only in the Vercel environment.
+`CONTACT_FORM_TO` may contain a comma-separated recipient list. `GOOGLE_PLACES_API_KEY` must stay server-only and should be restricted to Places API (New); the public Place ID is the verified AB SERVICE profile. Never commit credentials. Vercel Analytics is rendered only in the Vercel environment.
 
 ## Verification
 

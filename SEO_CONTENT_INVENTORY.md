@@ -4,7 +4,7 @@
 
 | URL | Title | H1 | Primary intent | Indexability | Main internal links | Evidence basis |
 |---|---|---|---|---|---|---|
-| `/` | Loodgieter en verwarmingsservice in Antwerpen \| AB Service | Verwarming en sanitair, helder aangepakt | Local entity and service discovery | Index | Core services, tariffs, contact | Owner-confirmed Antwerp market and core scope |
+| `/` | Loodgieter en verwarmingsservice in Antwerpen \| AB Service | Verwarming en sanitair, helder aangepakt | Local entity, service discovery and official Google profile evidence | Index | Core services, tariffs, contact, Google Maps | Owner-confirmed Antwerp market/core scope plus request-time Places API data |
 | `/onderhoud` | Onderhoud van uw cv-ketel in Antwerpen \| AB Service | Onderhoud van uw cv-ketel in Antwerpen | Maintenance duty and request | Index | Inspection, repair, tariffs | Owner scope plus Vlaanderen guidance |
 | `/herstelling` | Herstelling van verwarming en cv-ketel \| AB Service | Herstelling van cv-ketel en verwarming | Repair and safe triage | Index | Fault codes, pressure loss, maintenance, tariffs | Owner scope; conservative safety guidance |
 | `/keuring` | Keuring van een cv-installatie in Antwerpen \| AB Service | Keuring van een nieuwe of gewijzigde cv-installatie | First-use inspection | Index | Maintenance, gas boilers, contact | Owner scope plus Vlaanderen guidance |
@@ -24,8 +24,8 @@
 | `/werkgebied` | Werkgebied AB Service \| Heel Vlaanderen en Brussel | AB Service in heel Vlaanderen en Brussel | Full service-area lookup | Index | Six hubs, ten Antwerp districts | Owner-confirmed coverage; official municipality counts |
 | `/werkgebied/{regio}` | Six unique regional titles | Loodgieter en verwarmingsservice in region/province | Geographic orientation | Index | Municipalities, services, Antwerp districts where applicable | Owner coverage plus official administrative lists |
 | `/loodgieter-{district}` | Eight unique published district titles | Loodgieter in district voor relevante diensten | Antwerp district intent | Index | Services, nearby districts, Antwerp hub | Owner coverage plus official district/wijk context; no project claims |
-| `/privacy-policy` | Privacybeleid \| AB Service | Hoe AB Service website- en contactgegevens verwerkt | Privacy information | Index | Contact/legal | Matches Mailgun, Vercel hosting and Vercel Analytics code |
-| `/algemene-voorwaarden` | Algemene voorwaarden \| AB Service | Afspraken horen bij de concrete offerte of opdracht | General commercial framework | Index | Contact/legal | Conservative framework; no invented price/warranty clauses |
+| `/privacy-policy` | Privacybeleid \| AB Service | Hoe AB Service website- en contactgegevens verwerkt | Privacy information | Index | Contact/legal | Matches Mailgun, Vercel hosting/Analytics and Google Places code |
+| `/algemene-voorwaarden` | Algemene voorwaarden \| AB Service | Afspraken horen bij de concrete offerte of opdracht | General commercial framework | Index | Contact/legal | Conservative framework plus Google Maps Platform terms; no invented price/warranty clauses |
 
 ## Routable but withheld from index
 
@@ -60,7 +60,7 @@ Leak detection, water-leak repair, drain unblocking, boiler work, pipework and b
 - No mass-generated municipality doorway pages or service × place matrix.
 - No commercial brand pages inferred from logos or fault-code content.
 - No FAQPage schema.
-- No review score/count or AggregateRating.
+- No stale hardcoded review count, copied fallback reviews, AggregateRating or Review schema.
 - No air-conditioning navigation or sitemap entry.
 - No synthetic staff, fleet or project imagery presented as proof.
 - Owner-supplied legacy images are labelled as illustrations and centrally marked `projectEvidence: false`.

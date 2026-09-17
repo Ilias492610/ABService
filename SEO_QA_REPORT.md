@@ -1,8 +1,31 @@
 # AB Service SEO QA Report
 
-**Audit date:** 16 September 2026  
+**Audit date:** 17 September 2026
 **Release:** pull request [#4](https://github.com/Ilias492610/ABService/pull/4), merge commit `73f468e`
 **Test targets:** local Next.js production server on port 3100 and `https://www.abservice24.be`
+
+## Officiële Google Places-beoordelingen
+
+- Places API (New) antwoordde voor Place ID `ChIJ38_PKjPxw0cRMfEVYieHZDg` met naam
+  `AB SERVICE`, telefoon 0484 90 69 66, Voorzorgstraat 12A, score 5,0 en 35
+  beoordelingen.
+- Dezelfde Place Details-response bevatte nul afzonderlijke reviewobjecten. De homepage toont
+  daarom de officiële live score en het officiële live aantal, plus een directe Google Maps-link,
+  maar geen overgenomen of verzonnen reviewteksten.
+- De API-key is beperkt tot Places API (New), blijft server-only en staat als Vercel Secret in
+  Production, Preview en Development van beide gekoppelde projecten. Een ingetrokken
+  aanmaaksleutel is nergens actief.
+- De fetch gebruikt `cache: "no-store"`, `connection()` en een time-out van vijf seconden. Zonder
+  geldige response blijft de profielkoppeling beschikbaar zonder score- of aantalclaim.
+- `npm test`: 39 geslaagd; `npm run lint`, `npm run build`, `git diff --check` en de secret-scan
+  slagen. De build markeert de homepage correct als dynamische route.
+- De lokale productie-crawl controleerde opnieuw 36 routes en 36 interne links zonder fout.
+- Chromium desktop (1280 px) en mobiel (390×844) tonen 5,0 en 35 beoordelingen, één H1, geen
+  horizontale overflow, geen Next.js-overlay en geen browserfouten. De Google-sectie en fallback
+  blijven leesbaar op beide breedtes.
+- Privacybeleid en voorwaarden verwijzen naar Google Privacy en Google Maps Platform Terms;
+  reviewdata wordt niet vooraf opgehaald, gecachet of opgeslagen.
+- `AggregateRating` en `Review` blijven afwezig uit JSON-LD.
 
 ## Contactformulier en zwevende contactelementen
 

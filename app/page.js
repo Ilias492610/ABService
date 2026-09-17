@@ -1,8 +1,7 @@
 import Link from "next/link";
 import ContactCta from "@/components/contact-cta";
 import PageHero from "@/components/page-hero";
-import TrackedLink from "@/components/tracked-link";
-import { business } from "@/content/business.mjs";
+import GoogleReviews from "@/components/sections/google-reviews";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 
@@ -122,35 +121,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="shell related-grid">
-          <div>
-            <p className="eyebrow">Transparant contact</p>
-            <h2>Geen score of belofte die we niet kunnen staven</h2>
-            <p className="section-lead">
-              Deze website toont geen vast reviewcijfer, gegarandeerde aankomsttijd, verzonnen
-              prijs of niet-bewezen erkenning. Voor actuele onafhankelijke informatie kunt u het
-              bedrijfsprofiel raadplegen zodra de profielkoppeling is geverifieerd.
-            </p>
-          </div>
-          <div className="card">
-            <h3>Rechtstreeks contact</h3>
-            <p>
-              Bel, mail of stuur een WhatsApp-bericht. Gevaarlijke situaties horen bij de
-              bevoegde nood- of distributiediensten, niet bij een normaal webformulier.
-            </p>
-            <TrackedLink
-              href={business.whatsappHref}
-              eventName="whatsapp_click"
-              eventProperties={{ location: "homepage_trust" }}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open WhatsApp →
-            </TrackedLink>
-          </div>
-        </div>
-      </section>
+      <GoogleReviews />
       <ContactCta />
     </>
   );

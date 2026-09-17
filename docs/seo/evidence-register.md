@@ -18,7 +18,8 @@
 | General pressure-loss guidance | Official Bosch Belgium user guidance | High for general triage; pressure remains model-dependent | Published with exact-model warning | Manufacturer guidance change |
 | Legacy image ownership | Owner confirmation in task | High for ownership; not evidence of depicted real-world event | Used only as labelled illustration; `projectEvidence: false` | Authentic project originals supplied |
 | 24/7, same-day or 60-minute response | No evidence | None | Removed | Written operational proof |
-| Review score/count | No verified live source | None | Removed | Verified profile URL and display policy |
+| Google profile, score and review count | Official Places API (New), Place ID `ChIJ38_PKjPxw0cRMfEVYieHZDg`, matched to 0484 90 69 66 and Voorzorgstraat 12A | High and live | Published through request-time server integration; no AggregateRating schema | API/profile/configuration change |
+| Individual Google review texts | Official Places API currently returns no review objects for this profile | High for current response | No copied fallback; cards appear only when Google supplies attributed review objects | Places response change |
 | Address/customer-facing office | No evidence | None | Not published | Owner + GBP evidence |
 | Opening hours | No evidence | None | Not published | Owner + GBP evidence |
 | Surrounding municipalities | No per-area evidence | Low | Draft | Coverage and local work proof |
