@@ -59,11 +59,10 @@ export default function WorkAreaPage() {
       <section className="section section-muted">
         <div className="shell">
           <p className="eyebrow">Stad Antwerpen</p>
-          <h2>Tien districten, zonder dubbele Antwerpen-pagina</h2>
+          <h2>Hulp in de tien Antwerpse districten</h2>
           <p className="section-lead">
-            De homepage blijft de hoofdlanding voor “loodgieter Antwerpen”. Acht andere
-            districten hebben een indexeerbare pagina met controleerbare lokale context;
-            Berendrecht-Zandvliet-Lillo blijft voorlopig een niet-geïndexeerde onderzoeksroute.
+            We bekijken vóór een afspraak welke dienst nodig is, waar de hulp nodig is en wat
+            past in de planning. Bekijk de gelinkte districten voor meer informatie.
           </p>
           <ul className="district-link-grid">
             {antwerpDistricts.map((district) => (
@@ -81,11 +80,10 @@ export default function WorkAreaPage() {
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Alle gemeenten</p>
-          <h2>Doorzoek de volledige lijst</h2>
+          <h2>Zoek uw gemeente of district</h2>
           <p className="section-lead">
-            Alle 304 gemeenten en tien Antwerpse districten staan in de pagina zelf en blijven
-            ook zonder JavaScript leesbaar. Alleen bestemmingen met voldoende eigen inhoud zijn
-            klikbaar.
+            Zoek in de lijst van 304 gemeenten en tien Antwerpse districten op uw woonplaats.
+            Via de regiopagina’s en gelinkte gemeenten leest u meer over de dienstverlening daar.
           </p>
           <MunicipalityFilter groups={directoryGroups} />
           <div className="source-note">
