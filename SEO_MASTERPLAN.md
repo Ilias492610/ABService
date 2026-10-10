@@ -1,5 +1,14 @@
 # AB Service SEO Masterplan
 
+## Complete source-based follow-up plan
+
+The current exhaustive follow-up is [Volledig SEO meesterplan voor AB Service](docs/superpowers/plans/2026-10-10-complete-source-seo-masterplan.md),
+with four integral detail appendices covering the original masterprompt, Phase E, all four pasted
+articles, the additional user message and the publicly readable Founder Guide previews. It separates
+existing implementation, verified release behaviour, open work, evidence/account conditions and
+explicitly rejected advice. This architecture overview is not a claim that every article detail has
+already been executed. Full paid chapters and missing endings were not read or reconstructed.
+
 ## Objective
 
 Build local search visibility and qualified enquiries through useful, verifiable pages rather than page volume. The primary entity is AB Service, an Antwerp-market plumbing, sanitary and heating service business with owner-confirmed coverage throughout Flanders and Brussels. The canonical website is `https://www.abservice24.be`.
