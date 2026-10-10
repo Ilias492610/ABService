@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import ReviewStars from "../components/review-stars.mjs";
 
 import {
   formatGoogleRating,
@@ -103,4 +106,13 @@ test("server integration is request-time only and keeps the API key server-side"
   assert.match(source, /await connection\(\)/);
   assert.doesNotMatch(component, /GOOGLE_PLACES_API_KEY/);
   assert.doesNotMatch(source, /AIza[0-9A-Za-z_-]{20,}/);
+});
+
+test("review stars expose their text alternative with a permitted image role", () => {
+  const markup = renderToStaticMarkup(createElement(ReviewStars, { rating: 4.2 }));
+  const stars = markup.match(/^<span\b[^>]*>/)?.[0];
+  assert.ok(stars, "The rendered star graphic must be present");
+  assert.match(stars, /\brole="img"/, "aria-label needs a nameable role, not a generic span");
+  assert.match(stars, /\baria-label="4,2 van 5 sterren"/);
+  assert.match(markup, /<span aria-hidden="true">★★★★☆<\/span>/);
 });

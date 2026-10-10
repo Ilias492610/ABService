@@ -1,23 +1,12 @@
 import Image from "next/image";
 import TrackedLink from "@/components/tracked-link";
+import Stars from "@/components/review-stars.mjs";
 import { business } from "@/content/business.mjs";
 import { formatGoogleRating } from "@/libs/google-reviews.mjs";
 import { getGoogleReviews } from "@/libs/google-reviews.server.js";
 
 const GOOGLE_REVIEW_POLICY_URL =
   "https://support.google.com/contributionpolicy/answer/7400114";
-
-function Stars({ rating }) {
-  const fullStars = Math.round(rating);
-
-  return (
-    <span className="review-stars" aria-label={`${formatGoogleRating(rating)} van 5 sterren`}>
-      <span aria-hidden="true">
-        {"★".repeat(fullStars)}{"☆".repeat(5 - fullStars)}
-      </span>
-    </span>
-  );
-}
 
 function Author({ review }) {
   const content = (
