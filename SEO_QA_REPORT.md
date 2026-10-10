@@ -31,6 +31,11 @@
   is Ready, effectiveNode24.x, matching ff3665b and canonicalwww. Live crawl81/92/110 and retained
   apex308 passed. This restores publication, not the underlying Git-provider integration.
   No further IndexNow notification was sent for the runtime-only release.
+- Subsequent documentation-only commit `7474d3cc806c7b7269b4c95d99fba8ed2751a811` passed
+  hostedCI38063829560 and both automatic Vercel checks. Primary Git deployment
+  `dpl_DFeyrc8q6f3o1qeoSoTHvQQv594y` is Ready/Node24.x/matching7474d3c/www. Live Remeha still
+  returns59cards/unique preview; project preview is200PNG/1200×630. The Git failure did not recur
+  in this publication; no account permission change or underlying-cause repair is inferred.
 - Existing daily09:00 chat follow-up was updated, not duplicated: actualNode24, declinedGSCWizard,
   correct-owner data, explicit deployment evidence, genuine-source candidates and no repeated
   unchanged IndexNow submissions. The computer/app must remain available; no continuous-run promise.
@@ -60,7 +65,9 @@
   array case was reproduced with a failing test, then repaired; the full suite now passes 113/113.
 - Publication, hosted CI, live proof/crawl and first notification for `a94b108` passed as recorded
   above. The separately identified runtime pin also passed its CI/manual-publication/live gates;
-  automated Git-provider failure remains an operational follow-up. No indexing or growth is claimed.
+  automated Git-provider failure remains a dated incident; the later7474d3c automatic publication
+  passed. Monitor future exact-commit checks rather than assume permanent failure or repair.
+  No indexing or growth is claimed.
 - Nine dev-tree dependency findings remain; no compatible complete patch was established. Removing
   Tailwind alone would change the active Preflight reset and would not eliminate all findings.
 - GSC Wizard is declined and excluded. Correct-owner exports may establish a search baseline later;

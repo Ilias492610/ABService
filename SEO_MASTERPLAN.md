@@ -191,9 +191,10 @@ finished SEO score. Advance independently on useful source-backed content/runtim
 correct-owner account work in `LOCAL_SEO_EXTERNAL_ACTIONS.md`. Next manufacturer candidate:
 Calenta Ace-Matic permanent E table, using the current Belgian product page/manual rather than
 merging the legacy or online overview; root source validation and fresh acceptance are still required.
-Investigate the primary Vercel Git-provider `git_info_fail` separately: the tested release is already
-live via CLI, but this does not repair the failed automatic Git check. Never spoof provider status
-or silently change account permissions. Verify current deployment/commit before any new publication.
+The primary Vercel Git-provider `git_info_fail` onff3665b is a recorded incident, not a current
+publication blocker: subsequent7474d3c passed both automatic Vercel checks and serveswww from a
+matching Git deployment. Its cause was not established. Monitor each future exact-commit result;
+never spoof status or silently change account permissions to hide an error.
 Use `PROJECT_CONTENT_GUIDE.md` for future cases and keep locality/air-conditioning candidates in
 `docs/seo/content-gap-backlog.md` until their evidence is available. No new campaign or all-site
 IndexNow notification is authorized merely by this backlog.

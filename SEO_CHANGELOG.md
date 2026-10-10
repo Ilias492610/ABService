@@ -16,8 +16,10 @@
   isReady/matchingcommit/Node24.x/www and passed livecrawl81/92/110/apex308.
   Lock dependency graph remains identical; README and runtime regression now match.
 - Updated the existing daily09:00 follow-up with actualNode24, excludedGSCWizard and strict no-repeat
-  notification rules. Correct-account/search/lead evidence and the underlying Git-provider issue
-  remain separate follow-ups; no full-masterprompt, indexed or growth result is claimed.
+  notification rules. Later documentation-only7474d3c passed CI38063829560 and both automatic
+  Vercel checks; primary Git deploymentdpl_DFeyrc8q6f3o1qeoSoTHvQQv594y isReady/Node24.x/www.
+  The earlier Git-provider error did not recur; no permission change or root-cause fix is claimed.
+  Correct-account/search/lead evidence remains gated; no full-masterprompt/indexed/growth result.
 
 - Added 78 page-specific, build-time 1200×630 social-preview PNGs, including all six project cases.
   Registry-only lookup rejects unknown/noindex paths; no new sitemap pages or page-load images.

@@ -15,7 +15,10 @@ not indexing. Live Remeha lab99/100/100/100, LCP2.149s and274454bytes is not a s
 Subsequent runtime pinff3665b passes114 tests/lint/build/crawl under actualNode24.19 and hosted
 CI38063158088 under24.21/npm11.19. Primary automatic Git retrieval failed (`git_info_fail`), while
 the matching manual productiondpl_ASnBYdZXpvfa7hk37hdTb5EhJxod isReady/Node24.x/www and passed
-livecrawl81/92/110/apex308. Underlying Git-provider repair remains open; no notification repeated.
+livecrawl81/92/110/apex308. Later documentation-only7474d3c passed CI38063829560 and both
+automatic Vercel checks; matching primary Git deploymentdpl_DFeyrc8q6f3o1qeoSoTHvQQv594y is
+Ready/Node24.x/www. The earlier error did not recur; root cause is unknown, not an ongoing blocker
+or a claimed permanent repair. No notification repeated.
 The dated baseline/release observations below remain historical.
 
 The initial source audit inspected clean `main` at `cb4d938` in the Documents checkout. Node
