@@ -104,6 +104,10 @@ test("repair exposes maintenance and assessed replacement choices while retainin
   assert.match(text, /zonder.*storing/); assert.match(text, /diagnose/); assert.match(text, /vervanging.*beoordeling/);
   const html = renderToStaticMarkup(element);
   for (const text of ["Veiligheid eerst", "Wat u veilig kunt noteren", "Vermijd herhaald resetten", "Waarom een herstelling", "Risicocheck"]) assert.ok(html.includes(text), text);
+  assert.match(html, /Ruikt u gas, vermoedt u koolstofmonoxide/);
+  assert.match(html, /Gebruik het toestel niet opnieuw tot de situatie veilig is verklaard/);
+  assert.match(html, /Een enkele reset volgens de gebruikershandleiding/);
+  assert.match(html, /Blijft de code terugkomen, stop dan/);
   assert.ok(html.includes('href="/merken"'));
 });
 
