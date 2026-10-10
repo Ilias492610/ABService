@@ -43,6 +43,17 @@ export default function HerstellingPage() {
             "Vraag vooraf hoe onderzoek, verplaatsing, onderdelen en vervolgwerk in de offerte of werkbon worden behandeld.",
           ],
         },
+        {
+          eyebrow: "Uw vraag",
+          title: "Onderhoud, herstelling of vervanging?",
+          paragraphs: [
+            "Voor een toestel zonder actieve storing kunt u onderhoud plannen. Bij een echte storing is eerst een diagnose nodig. Een mogelijke vervanging wordt pas na technische beoordeling besproken; leeftijd of een foutcode alleen bepaalt die keuze niet.",
+          ],
+          links: [
+            { label: "Onderhoud zonder actieve storing plannen", href: "/onderhoud" },
+            { label: "Plaatsing of vervanging van een gasketel laten beoordelen", href: "/installaties/gasketels" },
+          ],
+        },
       ]}
       steps={[
         { title: "Melding", text: "Deel toestelgegevens, symptomen en foto’s." },
@@ -51,6 +62,7 @@ export default function HerstellingPage() {
         { title: "Vervolg", text: "Werk en onderdelen worden afgestemd en vastgelegd." },
       ]}
       relatedLinks={[
+        { label: "Merk en exact model doorgeven voor onafhankelijke service", href: "/merken" },
         { label: "Zoek een foutcode op", href: "/foutcodes" },
         { label: "Veilige controle bij drukverlies", href: "/advies/drukverlies-cv-ketel" },
         { label: "Onderhoud van een cv-ketel", href: "/onderhoud" },

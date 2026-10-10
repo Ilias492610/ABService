@@ -1,4 +1,4 @@
-const service = ({ slug, title, description, intro, answer, warning, imageKey, sections, steps }) =>
+const service = ({ slug, title, description, intro, answer, warning, imageKey, sections, steps, relatedLinks = [] }) =>
   Object.freeze({
     slug,
     path: `/diensten/${slug}`,
@@ -11,11 +11,13 @@ const service = ({ slug, title, description, intro, answer, warning, imageKey, s
     imageKey,
     sections: Object.freeze(sections),
     steps: Object.freeze(steps),
+    relatedLinks: Object.freeze(relatedLinks),
   });
 
 export const additionalServices = Object.freeze([
   service({
     slug: "lekdetectie",
+    relatedLinks: [{ label: "Na lokalisatie een waterlek laten herstellen", href: "/diensten/waterlek-herstellen" }],
     title: "Lekdetectie in Antwerpen",
     description: "Laat een vermoedelijk waterlek gericht onderzoeken door AB Service. Deel zichtbare signalen, foto’s en de plaats van vocht of drukverlies.",
     intro: "Vochtplekken, drukverlies of onverwacht waterverbruik vragen eerst om een gerichte diagnose. AB Service onderzoekt bereikbare leidingen en aansluitingen en bespreekt welke vervolgstap technisch zinvol is.",
@@ -58,6 +60,7 @@ export const additionalServices = Object.freeze([
   }),
   service({
     slug: "waterlek-herstellen",
+    relatedLinks: [{ label: "Een onbekende lekbron eerst laten onderzoeken", href: "/diensten/lekdetectie" }],
     title: "Waterlek laten herstellen",
     description: "AB Service herstelt bereikbare waterlekken aan sanitaire leidingen en aansluitingen na beoordeling van bron, toegang en materiaal.",
     intro: "Een waterlek vraagt snelle maar veilige actie. AB Service beoordeelt de vermoedelijke bron, sluit het betrokken deel waar mogelijk af en bespreekt het herstel op basis van leidingmateriaal en bereikbaarheid.",

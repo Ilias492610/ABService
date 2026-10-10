@@ -34,6 +34,7 @@ export default async function AdditionalServicePage({ params }) {
       sections={service.sections}
       steps={service.steps}
       relatedLinks={[
+        ...service.relatedLinks,
         { label: "Alle diensten", href: "/diensten" },
         { label: "Bekijk uitgevoerde projecten", href: "/projecten" },
         { label: "Tarieven en offertes", href: "/tarieven" },

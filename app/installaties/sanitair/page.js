@@ -52,6 +52,8 @@ export default function SanitairPage() {
         { title: "Uitvoering", text: "Werk en controle volgen de overeengekomen scope." },
       ]}
       relatedLinks={[
+        { label: "Water- en verwarmingsleidingen plaatsen of aanpassen", href: "/diensten/leidingen" },
+        { label: "Een waterlek laten herstellen", href: "/diensten/waterlek-herstellen" },
         { label: "Alle installaties", href: "/installaties" },
         { label: "Badkamerrenovatie", href: "/diensten/badkamerrenovatie" },
         { label: "Praktijkcase: sanitair vernieuwd", href: "/projecten/sanitair-vernieuwd" },

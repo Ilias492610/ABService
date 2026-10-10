@@ -16,6 +16,7 @@ export default function ServicePage({
   steps,
   relatedLinks = [],
   sourceLinks = [],
+  faq = [],
   warning,
   image,
   contactService,
@@ -59,6 +60,15 @@ export default function ServicePage({
                 ))}
               </ul>
             )}
+            {section.links?.length > 0 && (
+              <ul className="link-list">
+                {section.links.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href}>{link.label} →</Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </section>
       ))}
@@ -76,6 +86,21 @@ export default function ServicePage({
                 </li>
               ))}
             </ol>
+          </div>
+        </section>
+      )}
+      {faq.length > 0 && (
+        <section className="section">
+          <div className="shell narrow">
+            <h2>Veelgestelde vragen</h2>
+            <div className="faq-list">
+              {faq.map(([question, answer]) => (
+                <details key={question}>
+                  <summary>{question}</summary>
+                  <p>{answer}</p>
+                </details>
+              ))}
+            </div>
           </div>
         </section>
       )}

@@ -67,12 +67,27 @@ export default function OnderhoudPage() {
         { title: "Documenten", text: "Bewaar het verslag of attest bij uw installatie." },
       ]}
       relatedLinks={[
+        { label: "Merk en exact model doorgeven voor onafhankelijke service", href: "/merken" },
         { label: "Gratis onderhoudscheck voor Vlaanderen en Brussel", href: "/tools/onderhoudscheck" },
         { label: "Welke onderhoudsdocumenten bewaart u?", href: "/advies/onderhoudsattest-cv-ketel" },
         { label: "Wanneer is een cv-keuring nodig?", href: "/keuring" },
         { label: "Probleem of foutcode laten beoordelen", href: "/herstelling" },
         { label: "Wat te doen bij terugkerend drukverlies", href: "/advies/drukverlies-cv-ketel" },
         { label: "Hoe worden tarieven bepaald?", href: "/tarieven" },
+      ]}
+      faq={[
+        [
+          "Hoe vaak moet een gasketel worden onderhouden?",
+          "In Vlaanderen geldt voor centrale gasketels vanaf 20 kW tweejaarlijks onderhoud; onder 20 kW is onderhoud aanbevolen. In Brussel krijgen gasketels en afzonderlijke gaswaterverwarmers om de twee jaar een EPB-periodieke controle, zonder dezelfde Vlaamse vermogensgrens.",
+        ],
+        [
+          "Is periodiek onderhoud hetzelfde als een controle bij ingebruikname of wijziging?",
+          "Nee. Ingebruikname of een wijziging kan een afzonderlijke controle vragen. In Brussel krijgt een nieuw of vervangen centraal verwarmingssysteem op gas een EPB-oplevering; bij plaatsing van een afzonderlijke gaswaterverwarmer geldt een eerste EPB-periodieke controle. De gewone onderhoudscyclus en die afzonderlijke controle hebben elk hun eigen aanleiding.",
+        ],
+        [
+          "Welke gegevens helpen om de afspraak voor te bereiden?",
+          "Bezorg het gewest, merk, exacte model, brandstof en nominaal vermogen, samen met de datum van het vorige onderhoud en een foto van het laatste attest. Meld ook foutcodes of afwijkend gedrag en toon de toegang rond het toestel.",
+        ],
       ]}
       sourceLinks={[
         {
