@@ -1,5 +1,21 @@
 # AB Service SEO Changelog
 
+## 10 October 2026 — page previews, Calenta coverage and bounded IndexNow integration
+
+- Added 78 page-specific, build-time 1200×630 social-preview PNGs, including all six project cases.
+  Registry-only lookup rejects unknown/noindex paths; no new sitemap pages or page-load images.
+- Added 42 source-bound historical Calenta entries (23 E faults, 19 Su blocking states), bringing
+  Remeha to 59 explanations and the thirteen guides to 964 displayed source rows. Model warnings,
+  different meanings, historical revision and consumer-safe boundaries remain explicit.
+- Fixed real fault-search punctuation: `E02`, `E:02` and `E.02` now find the relevant model records.
+- Added dependency-free IndexNow CLI with offline preview, public proof, exact published paths,
+  bounded transport and no retries. Notification receipt never means indexing.
+- Local acceptance: 113/113 tests, lint/build/crawl (81/92/110), production audit zero. Source audit
+  47 of 48 HTTP 200 with the documented Sibelga 403; Remeha mobile lab 97/100/100/100.
+- Independent reviews found no Critical/Important; minor sparse-array validator issue repaired
+  with RED→GREEN regression. Live deployment/notification response is recorded after release.
+- No paid campaign, fabricated business fact, blanket historical URL submission or new Google login.
+
 ## 10 October 2026 — release verification and final source corrections
 
 - Published growth release `95add97` and repair `6e161cb` to GitHub `main` and the correct Vercel
@@ -19,8 +35,8 @@
   development-tree advisories remain. No search, lead-growth or full-masterprompt completion claim.
 - Source refresh `06d8464` passed hosted CI `38057894793` and both Vercel checks; primary
   `dpl_73Tpn3AZ3d6VX1NWnxVGUZs79eQm` serves `www` and passed the live crawl/mobile source check.
-- GSC Wizard is now available but lists no registered properties; actual Abder-account access/data
-  remains unconfirmed. No fabricated search baseline or sitemap submission is recorded.
+- Actual Abder-account access/data remains unconfirmed; GSC Wizard was declined and is excluded.
+  No fabricated search baseline or current sitemap submission is recorded.
 
 ## 10 October 2026 — source-bound advice, maintenance tool and technical growth release
 

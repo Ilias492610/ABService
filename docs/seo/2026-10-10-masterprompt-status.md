@@ -2,6 +2,13 @@
 
 ## Scope and interpretation
 
+Latest refinement status: 113/113 tests, lint/build, local crawl 81/92/110 and production audit zero
+pass. Seventy-eight static social cards replace the generic preview on published non-home pages,
+including projects; no customer route count is added. Remeha has 59 separately model-scoped rows,
+and a guarded offline-default IndexNow CLI is ready for the actual released fault-guide changes.
+Independent review passed; live CI/deployment/proof/notification are separately recorded after release.
+These 113 tests are unrelated to the masterprompt's 113 numbered sections and are not a completion score.
+
 This ledger reconciles the owner’s original SEO masterprompt (sections **0–112**, 113 numbered
 sections) and Phase E (**E1–E34**, 34 numbered sections) with the repository inspected at
 `cb4d938` and the October growth implementation. The prompts contain overlapping principles,
@@ -90,7 +97,7 @@ remains visible, not an all-green source audit.
 | 65–69 | Performance, truthful image use, genuine project dataset and mobile conversion | Current live lab/browser checks passed; field/job evidence gated | Optimized owner-confirmed WebP variants retained; local/live asset crawls pass. Sticky offsets, form error focus and safe tool/contact handoff have logic tests and live browser checks. Current mobile Lighthouse results are recorded above and in the baseline; they do not establish field CWV. Job-specific photo evidence remains separate. |
 | 70–73 | Trust, consistent entity/contact facts and accurate hours | Implemented; current live review data observed | Owner-confirmed contact/24-hour availability retained, fixed score removed and no arrival promise added. Live score/count was 5.0/44; unavailable individual texts are not invented. Credentials, history, public-office eligibility and fixed pricing remain evidence-gated. |
 | 74–78 | Urgency, drain services, air-conditioning, pricing and useful FAQs | Implemented or conditional | Owner-confirmed plumbing/drain scope is published conservatively. Air-conditioning stays noindex. No invented prices, urgent arrival guarantees or unsupported FAQ rich-result promise. |
-| 79–84 | Social previews, accessibility, 404, redirects, security and working business features | Partial; stated local/live release checks passed | Canonical/404/asset checks pass; analytics strips query/hash/private values, form validation focuses errors, and maintenance handoff uses approved fragment choices. Live browser checks passed without a contact POST. Repaired homepage accessibility scored 100; review-star ARIA fix passes the actual SSR regression and live confirmation. Project OG metadata still uses the generic global image. Production dependency audit is zero; full dev-tree audit retains nine documented findings with no compatible published fix. |
+| 79–84 | Social previews, accessibility, 404, redirects, security and working business features | Current refinements locally verified; prior live checks passed | Canonical/404/asset checks pass; analytics strips private values, form errors focus correctly and maintenance handoff uses approved choices. No contact POST in browser QA. Homepage accessibility is 100 in the stated prior live lab. All 78 non-home published pages now have distinct, independently inspected static previews, including six cases; assets stay noindex/out of sitemap. Production audit zero; nine documented dev findings remain without a compatible complete fix. New preview release requires its separate live gate. |
 | 85–88 | Paid search/Bing/Apple/AI clarity and competitor lessons | Documented; account/evidence-gated | External plan exists. No paid campaign, spend, backlink, Bing/Apple configuration or AI visibility uplift is inferred. Official eligibility/current service/account context needed before action. |
 | 89–91 | Quality gate, phased execution and conditional publication cadence | Implemented as policy; ongoing | Publication policy and backlog exist. Service coverage does not imply a required indexed locality URL. Preserve evidence gates instead of publishing to meet weekly quotas. |
 | 92 | Repository documentation | Release observations reconciled; ongoing | Masterplan, inventory, QA, changelog, project guide and external/Phase E documents exist. This ledger and baseline distinguish initial release, successful repair and published source refresh. Dated historical evidence stays identifiable. |
@@ -121,9 +128,9 @@ remains visible, not an all-green source audit.
 The stale-rating fix, customer copy, contextual links, visible organizational authorship, source-check
 dates, regional tool, six guides and expanded automated checks are published and integrated.
 Hosted CI, live review-star follow-up and the newest source refresh passed their exact-release checks.
-The newly available GSC Wizard connection returned an empty registered-site list; no AB Service
-property or correct-owner Google account was established. Analyze genuine exports or connected
-property data when available; an empty plugin list is not evidence of zero search traffic.
+No current correct-owner Google property data was established. GSC Wizard was declined and is
+excluded from further work. Analyze genuine owner exports when available; missing account
+observations are not evidence of zero search traffic.
 Keep specialist review claims, new locality pages and project-specific facts gated by genuine evidence.
 The stated release checks passed; neither those nor local checks establish full masterprompt
 completion or commercial impact.

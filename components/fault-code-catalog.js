@@ -1,32 +1,14 @@
 "use client";
 
 import { useMemo, useState } from "react";
-
-const normalize = (value) =>
-  value
-    .toLocaleLowerCase("nl-BE")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[.\s/_-]+/g, "");
+import { filterFaultCatalogs } from "@/libs/fault-search.mjs";
 
 export default function FaultCodeCatalog({ brand, catalogs }) {
   const [query, setQuery] = useState("");
   const [catalogId, setCatalogId] = useState("all");
-  const normalizedQuery = normalize(query.trim());
-
   const filteredCatalogs = useMemo(
-    () =>
-      catalogs
-        .filter((item) => catalogId === "all" || item.id === catalogId)
-        .map((item) => ({
-          ...item,
-          codes: item.codes.filter((entry) => {
-            if (!normalizedQuery) return true;
-            return normalize(`${entry.searchTerms} ${entry.meaning}`).includes(normalizedQuery);
-          }),
-        }))
-        .filter((item) => item.codes.length > 0),
-    [catalogId, catalogs, normalizedQuery]
+    () => filterFaultCatalogs(catalogs, query, catalogId),
+    [catalogId, catalogs, query]
   );
 
   const resultCount = filteredCatalogs.reduce((total, item) => total + item.codes.length, 0);

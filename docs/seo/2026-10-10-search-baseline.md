@@ -2,6 +2,15 @@
 
 ## What is observed
 
+Latest refinement, locally verified: 113/113 tests, lint/build/crawl (81 customer routes, 92 internal
+destinations, 110 assets) and zero production advisories. The customer registry remains 79 published
+plus two noindex. The 78 page-specific previews are assets, not extra indexed pages. Remeha now has
+17 Avanta +23 historical Calenta E +19 Su rows: 59 total, with per-model meanings. All thirteen guides
+now display 964 source rows, including shared Bosch/Junkers content. Source audit is 47 HTTP 200
+of 48 unique URLs plus the documented Sibelga 403. No search/lead metric is derived from these counts.
+Live acceptance of this refinement and IndexNow notification receipt are recorded after publication;
+neither establishes indexing. The dated baseline/release observations below remain historical.
+
 The initial source audit inspected clean `main` at `cb4d938` in the Documents checkout. Node
 registry inspection returned **73 registered public routes: 71 published and 2 noindex**, six
 regional hubs, eight published district pages, 304 municipality records and six anonymized project
@@ -101,9 +110,9 @@ findings. No blind major upgrade or CI switch to `npm install` was used to hide 
 
 No matching GSC query/page export or SEO metric CSV/XLSX was found in the repository or relevant
 Downloads filenames during the read-only audit. No unrelated file contents were read. This audit
-did not access authenticated AB Service search data. Later tool discovery exposed GSC Wizard,
-but `list_sites` returned no registered sites. The exact Abder account/property remains unconfirmed;
-the empty plugin list does not imply an absent Google property or zero traffic.
+did not access authenticated AB Service search data. The exact Abder account/property remains
+unconfirmed. GSC Wizard was subsequently declined and is excluded from further work. Missing
+account observations do not imply an absent Google property or zero traffic.
 
 | Measure | Baseline value | Required evidence |
 |---|---|---|

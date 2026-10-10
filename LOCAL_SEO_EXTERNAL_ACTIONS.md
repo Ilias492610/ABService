@@ -2,6 +2,16 @@
 
 ## 10 October 2026 status boundary
 
+The new IndexNow integration is independent of owner-account authentication: a public root proof
+and `npm run seo:indexnow -- /foutcodes /foutcodes/remeha` provide an offline preview. After their
+meaningful content update is live and verified, `--send` sends one deduplicated two-URL notification
+to the official endpoint. Record its actual response below; 200 means received, 202 means key
+validation pending, neither means indexed. Do not send historical/all-site/cosmetic changes or
+automatically retry 429. This does not complete Bing Webmaster/Places, Google or Apple account work.
+References: https://www.indexnow.org/documentation, https://www.indexnow.org/faq,
+https://www.bing.com/indexnow/getstarted. Live proof and first notification are pending at this entry.
+GSC Wizard is declined and excluded; use genuine correct-owner exports when available.
+
 The September actions below are historical submissions, not proof of current approval, delivery,
 listing correction, ranking or account status. Current correct-owner GSC/GBP/Bing/Apple observations
 were not obtained during the October website release. The original website review integration and

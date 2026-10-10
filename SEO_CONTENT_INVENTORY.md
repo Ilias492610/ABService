@@ -6,6 +6,12 @@ October source inventory: 81 registered customer routes, 79 published and two no
 the eight new destinations below. This is not a count of Google-indexed pages. Dated local/live
 verification belongs in `SEO_QA_REPORT.md`.
 
+The refinement adds 78 static social-preview PNG assets, not indexable customer pages. All thirteen
+fault guides now display 964 source-bound rows, including the reused Bosch/Junkers tables; this is
+not 964 unique codes or universal model coverage. Remeha has 17 Avanta +23 historical Calenta E
+faults +19 historical Calenta Su blocking states. The IndexNow proof is a public ownership asset,
+not a sitemap entry or an account credential.
+
 | New destination | Intent / source basis |
 |---|---|
 | `/advies` | Discover seven practical advice articles and the maintenance checker |
@@ -45,7 +51,7 @@ Existing service/fault/brand/project links are strengthened without publishing n
 | `/foutcodes/bulex` | Bulex foutcodes: betekenis en veilig handelen \| AB Service | Bulex foutcodes: catalogus met officiële bronnen | Bulex fault guidance and code lookup | Index | Hub, contact, official documentation | Bulex Belgium overview plus complete THEMA Condens appendix; 43 source rows |
 | `/foutcodes/bosch` | Bosch foutcodes: officiële bron en veilige stappen \| AB Service | Bosch foutcodes: catalogus met officiële bronnen | Bosch fault guidance and model-filtered lookup | Index | Hub, contact, official documentation | Official Bosch/Junkers codebook, six boiler series; 242 source rows |
 | `/foutcodes/junkers` | Junkers foutcodes: officiële bron en veilige stappen \| AB Service | Junkers foutcodes: catalogus met officiële bronnen | Junkers fault guidance and model-filtered lookup | Index | Hub, contact, official documentation | Official Bosch/Junkers codebook, six boiler series; 242 source rows |
-| `/foutcodes/remeha` | Remeha Avanta foutcodes: betekenis en stappen \| AB Service | Remeha foutcodes: catalogus met officiële bronnen | Remeha Avanta code lookup | Index | Hub, contact, official Storingswijzer | Complete public Avanta overview; 17 source rows |
+| `/foutcodes/remeha` | Remeha foutcodes: Avanta en Calenta \| AB Service | Remeha foutcodes: catalogus met officiële bronnen | Avanta and historical Calenta lookup, separately model-filtered | Index | Hub, brand/service, contact, official Storingswijzer and Belgian archive | Avanta 17; Calenta 15s/25s/28c/35s/40c manual 117061-08: 23 E faults and 19 Su blocking states; excludes Ace/Ace-Matic |
 | `/foutcodes/buderus` | Buderus GB162 foutcodes: officiële bron \| AB Service | Buderus foutcodes: catalogus met officiële bronnen | Buderus GB162 V2 code lookup | Index | Hub, contact, official documentation | Complete named Logamax plus GB162 V2 table; 51 source rows |
 | `/foutcodes/viessmann` | Viessmann foutcodes: Vitodens en Vitotronic \| AB Service | Viessmann foutcodes: catalogus met officiële bronnen | Viessmann orientation lookup | Index | Hub, contact, official documentation | Official 200-W/300-W Vitotronic overview; 71 source rows; manufacturer non-universal warning retained |
 | `/foutcodes/acv` | ACV Prestige foutcodes: betekenis en stappen \| AB Service | ACV foutcodes: catalogus met officiële bronnen | ACV Prestige MKIII code lookup | Index | Hub, contact, official documentation | Complete named ESYS table; 24 source rows |

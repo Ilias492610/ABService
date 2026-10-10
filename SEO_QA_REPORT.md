@@ -1,5 +1,37 @@
 # AB Service SEO QA Report
 
+## 10 October 2026 — preview, Remeha and IndexNow refinement: local acceptance
+
+- The current feature branch passes 113/113 tests, lint and production dependency audit (zero).
+  Production build and local crawl pass: 81 customer routes, 92 internal destinations, 110 assets.
+  This leaves 79 published and two noindex customer pages; 78 new social cards are assets.
+- Each published non-home page uses its own 1200×630 Open Graph/Twitter PNG. All 78 built cards
+  were fetched and independently checked for dimensions/size; largest 86,705 bytes. Representative
+  project, advice and longest-title cards were visually inspected. Unknown/noindex card paths return
+  404; no supplied text is reflected. Cards are excluded from sitemap and normal page-load requests.
+- Remeha now has 59 explanations: 17 Avanta, 23 historical Calenta E faults and 19 Su blocking
+  subcodes. Root and independent review visually compared the six official table pages (printed
+  79–84, revision 117061-08). No coverage claim for Ace/Ace-Matic, Quinta or Tzerra is added.
+- Reproduced and repaired actual browser mismatch `E02` versus `E:02`. Desktop 1440×1000/mobile
+  390×844 tests confirm punctuation aliases, per-model E02 meanings, Su14, no-result status,
+  selected-model filtering, one H1, no overflow and no JavaScript errors. Bosch input is also checked.
+- Local mobile Remeha Lighthouse: 97/100/100/100 (performance/accessibility/best practices/SEO),
+  LCP 2.611 s, CLS 0, TBT 2 ms, transfer 280,627 bytes. This is a lab run, not field CWV or ranking proof.
+- Source audit covers 48 unique URLs: 47 HTTP 200 and the same documented Sibelga HTTP 403.
+  Its failing exit status remains visible; the new official Calenta archive returns 200.
+- IndexNow uses a public root proof, fixed destinations, published-path validation, deduplication,
+  offline-default CLI, bounded timeout and no automatic retry. Seven tests cover private/foreign/
+  unpublished inputs, sparse arrays, plaintext proof, 200/202, HTTP failures and transport timeouts.
+  Local proof returns direct HTTP 200, UTF-8 plaintext and the exact configured public key.
+- Two independent reviews found no Critical/Important issues. The IndexNow review's Minor sparse-
+  array case was reproduced with a failing test, then repaired; the full suite now passes 113/113.
+- Publication, hosted CI, live proof/crawl and the first exact two-URL notification remain separate
+  release checks until their observed results are recorded. No actual indexing or growth is claimed.
+- Nine dev-tree dependency findings remain; no compatible complete patch was established. Removing
+  Tailwind alone would change the active Preflight reset and would not eliminate all findings.
+- GSC Wizard is declined and excluded. Correct-owner exports may establish a search baseline later;
+  no account login, sitemap acceptance or qualified-lead outcome is inferred from these code checks.
+
 ## 10 October 2026 — verified live growth release and follow-up checks
 
 - Growth release `95add97` and clean-install/accessibility repair `6e161cb` are on GitHub `main`.
@@ -33,8 +65,8 @@
 - Source refresh `06d8464` is also published: hosted Linux run `38057894793` and both Vercel
   checks succeeded; primary `dpl_73Tpn3AZ3d6VX1NWnxVGUZs79eQm` was confirmed Ready with
   the `www` alias. Its live crawl passed 81/92/32, and live mobile gasketel copy/source links passed.
-- GSC Wizard subsequently became available, but its registered-site list was empty. No AB Service
-  property, correct-owner search data, indexing result or growth measurement was established.
+- No correct-owner search data, current indexing result or growth measurement was established.
+  The subsequently declined GSC Wizard is excluded from further work.
 
 ## 10 October 2026 — original growth release local checks (`95add97`)
 

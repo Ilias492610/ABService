@@ -36,7 +36,7 @@ test("all published fault guides use official sources and explicit model caveats
       assert.ok(catalog.sourceUrl.startsWith("https://"));
       assert.match(
         new URL(catalog.sourceUrl).hostname,
-        /(^|\.)(vaillant\.be|bulex\.be|bosch-homecomfort\.com|remeha\.be|boschtt-documents\.com|viessmann\.de|acv\.com|intergas-verwarming\.nl|nefit-bosch\.nl|atagwarmte\.nl|compano\.com|ferroli\.com)$/
+        /(^|\.)(vaillant\.be|bulex\.be|bosch-homecomfort\.com|remeha\.be|remehatools\.be|boschtt-documents\.com|viessmann\.de|acv\.com|intergas-verwarming\.nl|nefit-bosch\.nl|atagwarmte\.nl|compano\.com|ferroli\.com)$/
       );
       assert.ok(catalog.scope.length >= 60);
       assert.ok(catalog.sourcePages.length > 0);
@@ -50,7 +50,7 @@ test("catalog coverage matches every row in the cited manufacturer tables", () =
   assert.equal(bySlug("bulex").codeEntryCount, 43);
   assert.equal(bySlug("bosch").codeEntryCount, 242);
   assert.equal(bySlug("junkers").codeEntryCount, 242);
-  assert.equal(bySlug("remeha").codeEntryCount, 17);
+  assert.equal(bySlug("remeha").codeEntryCount, 59);
   assert.equal(bySlug("buderus").codeEntryCount, 51);
   assert.equal(bySlug("viessmann").codeEntryCount, 71);
   assert.equal(bySlug("acv").codeEntryCount, 24);
@@ -134,4 +134,17 @@ test("grouped manufacturer ranges expand into individually searchable aliases", 
   assert.match(internalFault.searchTerms, /F0 253/);
   assert.match(series3.codes.find((entry) => entry.code === "b2-b6").searchTerms, /b4/);
   assert.match(series2.codes.find((entry) => entry.code === "F1-F6").searchTerms, /F5/);
+});
+
+test("Calenta legacy keeps every cited locking and blocking code separate from Avanta meanings", () => {
+  const guide = bySlug("remeha");
+  const locking = guide.catalogs.find((catalog) => catalog.id === "remeha-calenta-legacy");
+  const blocking = guide.catalogs.find((catalog) => catalog.id === "remeha-calenta-legacy-blocking");
+  assert.deepEqual(locking?.codes.map((row) => row.code), ["E:00", "E:01", "E:02", "E:03", "E:04", "E:05", "E:06", "E:07", "E:08", "E:09", "E:10", "E:11", "E:12", "E:14", "E:16", "E:17", "E:34", "E:35", "E:36", "E:37", "E:38", "E:39", "E:40"]);
+  assert.deepEqual(blocking?.codes.map((row) => row.code), ["Su:0", "Su:1", "Su:2", "Su:7", "Su:8", "Su:9", "Su:10", "Su:11", "Su:13", "Su:14", "Su:15", "Su:16", "Su:17", "Su:18", "Su:19", "Su:20", "Su:21", "Su:22", "Su:25"]);
+  assert.match(locking.codes.find((row) => row.code === "E:02").meaning, /kortsluiting.*aanvoer/i);
+  assert.match(guide.catalogs.find((catalog) => catalog.id === "remeha-avanta").codes.find((row) => row.code === "E:02").meaning, /retourtemperatuur.*hoger/i);
+  assert.match(locking.scope, /Niet voor Calenta Ace/i);
+  assert.match(blocking.scope, /Su/);
+  assert.equal(guide.catalogs.find((catalog) => catalog.id === "remeha-avanta").codes.length, 17);
 });

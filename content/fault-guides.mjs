@@ -82,7 +82,7 @@ export const faultGuides = Object.freeze([
     slug: "remeha",
     brand: "Remeha",
     modelWarning:
-      "Deze catalogus bevat alle publiek vermelde codes voor de Remeha Avanta. Andere Remeha-toestellen, waaronder Calenta, Quinta en Tzerra, hebben een eigen modelgebonden overzicht in de officiële Storingswijzer.",
+      "Kies uw toestelreeks: Avanta volgt de officiële Belgische Storingswijzer; Calenta 15s/25s/28c/35s/40c volgt de E-storingscodes en Su-blokkeringssubcodes uit de Belgische handleiding 117061-08. De betekenis kan per model verschillen. Calenta Ace, Ace-Matic, Quinta en Tzerra vallen niet onder deze tabellen.",
     catalogs: remehaCatalogs,
     documentationLabel: "Officiële Remeha Storingswijzer",
     documentationUrl: "https://storingswijzer.remeha.be/",

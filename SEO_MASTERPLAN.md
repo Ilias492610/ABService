@@ -20,12 +20,17 @@ Build local search visibility and qualified enquiries through useful, verifiable
 - `content/core-sources.mjs` shares pressure, technician-recognition and current support citations with consumer pages.
 - `/tools/onderhoudscheck` gives an account-free regional maintenance planning result and optional contact handoff.
 - `libs/seo-data.mjs` builds metadata and sitemap entries.
+- `libs/social-preview.mjs` and `/social/[...slug]` produce page-specific, static 1200×630 previews
+  for the 78 published non-home routes; assets are noindex and excluded from the sitemap.
 - `libs/schema-data.mjs` builds verified global, breadcrumb and organizational-author Article schema.
 - `libs/contact-validation.mjs` validates form data on client and server.
 - `libs/analytics.mjs` limits event names and strips personal data.
 - `scripts/seo-audit.mjs` crawls rendered production output and fails on technical SEO regressions.
-- `scripts/source-audit.mjs` checks the shared 47-URL primary-source inventory; documented access exceptions remain visible.
+- `scripts/source-audit.mjs` checks the shared 48-URL primary-source inventory; documented access exceptions remain visible.
 - `scripts/gsc-analysis.mjs` analyzes actual local exports without manufacturing query/page joins.
+- `scripts/indexnow.mjs` previews explicit published URLs offline and sends only with `--send`,
+  after checking the public root proof. Use it for genuine released changes, not all-site historical
+  submissions, cosmetic edits or indexing promises. It does not configure a Google/Bing account.
 - `.github/workflows/seo-quality.yml` runs repeatable tests, lint, build, production dependency and rendered-crawl checks.
 
 ## Publication model
@@ -94,6 +99,9 @@ The policy is enforced in tests. A content idea does not become indexable merely
 - Publish the source-bound advice hub, six additional articles and region-aware maintenance check.
 - Replace the popup's stale hardcoded review score with request-time data or a neutral profile fallback.
 - Strip analytics URL query/fragment data and use only predefined event codes.
+- Expand the Remeha guide from Avanta to the separately scoped historical Calenta 15s/25s/28c/35s/40c
+  tables; preserve different meanings and distinguish E faults from Su blocking states.
+- Normalize fault-search punctuation without merging model meanings or removing code digits.
 
 ### Priority 2 — remaining owner facts required
 

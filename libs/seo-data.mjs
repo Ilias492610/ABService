@@ -1,4 +1,5 @@
 import { business } from "../content/business.mjs";
+import { getSocialPreviewPath, getSocialPreviewTitle } from "./social-preview.mjs";
 
 const canonicalFor = (path) =>
   new URL(path === "/" ? "/" : path, `${business.canonicalOrigin}/`).toString();
@@ -10,7 +11,7 @@ export const buildPageMetadata = (page) => {
 
   const canonical = canonicalFor(page.path);
   const indexable = page.status === "published";
-  const image = `${business.canonicalOrigin}/opengraph-image`;
+  const image = `${business.canonicalOrigin}${getSocialPreviewPath(page)}`;
 
   return {
     title: page.title,
@@ -38,7 +39,7 @@ export const buildPageMetadata = (page) => {
       locale: "nl_BE",
       type: page.kind === "article" ? "article" : "website",
       ...(page.kind === "article" && page.lastModified ? { modifiedTime: page.lastModified } : {}),
-      images: [{ url: image, width: 1200, height: 630, alt: business.name }],
+      images: [{ url: image, width: 1200, height: 630, alt: indexable && page.path !== "/" ? `${getSocialPreviewTitle(page)} — ${business.name}` : business.name }],
     },
     twitter: {
       card: "summary_large_image",

@@ -62,3 +62,18 @@ test("editorial metadata uses the checked article date without inventing a publi
   const plain = buildSitemapEntries([{ path: "/", status: "published" }]);
   assert.ok(!Object.hasOwn(plain[0], "lastModified"));
 });
+
+test("published pages have distinct topic previews without changing the homepage or noindex fallback", () => {
+  const project = pageRegistry.find((page) => page.path === "/projecten/gasketel-vervangen");
+  const metadata = buildPageMetadata(project);
+  assert.equal(metadata.openGraph.images[0].url, "https://www.abservice24.be/social/projecten/gasketel-vervangen");
+  assert.equal(metadata.twitter.images[0], metadata.openGraph.images[0].url);
+  assert.equal(metadata.openGraph.images[0].alt, "Verouderde gasketel vervangen en installatie ingeregeld — AB Service");
+  assert.equal(metadata.openGraph.images[0].width, 1200);
+  assert.equal(metadata.openGraph.images[0].height, 630);
+  const published = pageRegistry.filter((page) => page.status === "published");
+  assert.equal(new Set(published.map((page) => buildPageMetadata(page).openGraph.images[0].url)).size, published.length);
+  for (const path of ["/", "/installaties/airconditioning"]) {
+    assert.equal(buildPageMetadata(pageRegistry.find((page) => page.path === path)).openGraph.images[0].url, "https://www.abservice24.be/opengraph-image");
+  }
+});
