@@ -1,5 +1,62 @@
 # AB Service External Local SEO Actions
 
+## Latest follow-up — 11 October 2026, after local midnight
+
+- Owner confirms exclusively on-site service, no customer reception. Google address-display
+  switch disabled and saved; manager reads **Geen locatie. Alleen leveringen en diensten aan huis**.
+  Moderation remains pending; public Maps visibility is not yet confirmed. Legal/KBO/site address retained.
+- Explicit permission received and used only for Bing's basic Google name/photo/email sign-in,
+  using Abder. Canonical website added manually, **Not verified**; public XML proof prepared.
+  No DNS change, GSC import/data grant or GoDaddy login. Verification/sitemap/AI-report steps follow
+  tested publication and actual provider confirmation, not a fabricated completed checkbox.
+- Existing same-thread continuation updated successfully to every fifteen minutes, not duplicated.
+  Remaining packages are now authorized. Computer/Codex must remain available; no promise that
+  evidence, external moderation, missing Microsoft/Apple access or budget gates finish overnight.
+
+## Dated WP04–WP05 account snapshot — 10 October 2026, late evening
+
+The [dated account register](docs/seo/account-status-register.md),
+[Google audit/calendar](docs/seo/gbp-audit-and-calendar.md) and
+[public citation matrix](docs/seo/citation-audit.md) supersede September as current observations,
+without rewriting historical submissions as successful corrections.
+
+- Correct-owner Google manager: one verified AB SERVICE profile. Primary **Loodgieter** is
+  currently visible; the old category refusal is historical. Correct phone/site/WhatsApp,
+  seven-day 24-hour opening, Vlaanderen and Brussel are visible in the editor. Original
+  appeal/approval references were not independently read; no new appeal was submitted.
+- Six owner-confirmed plumbing services and their 220–240-character descriptions were saved
+  and re-read in the actual 300-character editor. Google explicitly says **under review**;
+  public service approval remains open. No invented prices or additional equipment scope.
+- Read all 44 current native Google reviews and replies; newest 30 response coverage: 30/30.
+  Actual review-writing link: **https://g.page/r/CTHxFWInh2Q4EBM/review**. No invitation or
+  review reply sent; no incentive/gating. Draft calendar, descriptions and replies are not live.
+- Removed only the unsupported **20 JAAR ERVARING** gallery badge after privately preserving
+  the displayed 960×2079 asset. Owner gallery now has cover/logo/eight ordinary slots and no
+  target image; other work images remain. Independent public Maps refresh remains open.
+- May–October performance totals 232 profile interactions: 11 call-button clicks, 0 profile
+  bookings, 198 directions, 23 website clicks. October incomplete; these are **not clients**.
+  Visible address plus “no services at business location” conflict awaits owner's customer-visit
+  confirmation; no address change, 20-area fill or false storefront assertion made.
+- Nine public citations compared against current legal seat/establishment/contact. Current
+  KBO unit differs from seat by legitimate role; September's “old establishment” phrasing is
+  not proof of an obsolete registered address. Old personal mailbox never copied to these audits.
+- Bing Webmaster Google sign-in reached a **new** name/photo/email consent, not accepted;
+  owner asked to complete or explicitly authorize. Current Bing Places requires a matching
+  Microsoft/work/Facebook login; Apple requires Apple Business login. No property, sitemap,
+  profile import, duplicate claim, account absence or new security grant inferred.
+- No new directory correction message, campaign, paid plan/trial, image upload, IndexNow batch
+  or recurring-post automation. WP04/WP05 remain partial until their actual open gates close.
+
+Monthly owner maintenance, not a new automation: revisit the same priority citation URLs and
+pending-request log; retain submitted/accepted/live-corrected distinctions, current address roles,
+contact policy and profile visibility. Do not create directory quotas or repeat pending Google
+service edits. Yandex remains deferred; no installation/account created.
+
+11 October, shortly after local midnight: the service editor again confirms the six saved
+texts and explicitly still says the edit is under review. The complete 100-row EcoStreamZ
+Google sample and the official-site-linked Tony Maps identity supplement are recorded separately
+in the GBP audit; unresolved locations, exact review dates and Posts visibility are not invented.
+
 ## Current WP02 account check — 10 October 2026, evening
 
 Abder's verified domain property was actually inspected, without GSC Wizard or another Google

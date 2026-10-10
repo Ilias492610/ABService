@@ -1,5 +1,63 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — WP04 evidence and verification supplement
+
+- Owner confirms exclusively on-site work. Google customer-address display disabled/saved;
+  native row confirms no location, only home services. Explicit review notice remains; public
+  Maps moderation unknown. Legal/KBO/website address retained.
+- Named Bing basic Google-identity connection explicitly authorized and completed with Abder.
+  Canonical website manually added once, not verified; native public XML proof obtained/prepared.
+  No DNS/GSC-import grant, GoDaddy account, extra paid service or claim of live acceptance.
+- Owner authorizes further packages in sequence. Existing same-thread heartbeat updated to
+  fifteen-minute continuation, no duplicate; requires local computer/app availability.
+- Added exact public Bing XML ownership artifact with RED→GREEN contract test, independently
+  reviewed; native verification follows actual live publication. No route, DNS or GSC-import change.
+- Replaced work-area SEO/process jargon with customer-facing appointment/search explanations,
+  preserving304municipalities, ten districts, six hubs, filter, sources and links. Independent review
+  approved; desktop/mobile/no-JavaScript directory/keyboard/CTA/layout checks pass locally.
+- Fresh post-code gate: **139/139 tests**, lint/build, zero production dependency vulnerabilities,
+  local81/92/110 crawl, and direct200/application/xml proof all pass. Whole-branch/live release gates
+  remain separate below; no new mail, paid service, outreach or IndexNow batch.
+
+- Re-read the six service descriptions in the authorized native editor; the explicit moderation
+  notice remains. No repeat submission or public approval claim.
+- Extended EcoStreamZ's native Google reading to its actual 100 rows, distinct from Solvari:
+  98 five-star, one four-star and one two-star; one visible owner reply. Exact day counts remain
+  unknown from relative labels. Tony's official contact embed identifies a business-associated
+  Maps profile, but its current location conflict remains unresolved; DP's profile still unknown.
+- Corrected an independently reviewed source-label mismatch: all 44 own reviews were read;
+  eleven required expansion, not eleven read in total. The scoped fix was approved.
+- Fresh local verification: 137/137 tests, lint, production build, production dependency audit
+  (zero vulnerabilities), 81-page / 92-link / 110-asset production crawl and local document-link
+  checks passed. No product-code change or extra contact email.
+- Integration and hosted verification will be recorded only after the whole-branch review.
+
+## 10 October 2026 — WP04–WP05 execution, account and documentary evidence
+
+- Audited actual authorized GBP profile: verified, primary Loodgieter, current 24-hour opening,
+  correct contact and saved Vlaanderen/Brussel. September rejection remains historical.
+- Added six confirmed primary plumbing services; saved and independently re-read scoped
+  descriptions of 220–240 characters within the actual 300-character limit, no prices. **Google review pending**,
+  not public approval. No unrelated category/service or service-area expansion.
+- Read the complete currently available 44-review corpus and all replies; newest 30 coverage: 30/30.
+  Review-write link verified directly. No review response/invitation published. Prepared twelve
+  response drafts, three description alternatives and optional eight-week post calendar.
+- Audited native media; preserved the exact 960×2079 copy then removed only the unsupported 20-year badge.
+  Manager-gallery absence confirmed; independent public Maps refresh still open. All other photos
+  retained. Native post tab currently empty; no old archived/deleted-history inference.
+- Added public nine-platform citation matrix and account-status register. Independent citation
+  review required clearer per-platform correction routes; those four entries repaired and approved.
+  KBO legal seat, current unit and unconfirmed customer reception remain distinct.
+- Native competitor supplement separates actual Google from Solvari scores and flags Tony's
+  ambiguous profiles/DP's unresolved match. No review corpus, rankings or volumes fabricated.
+- Read explicit May–Oct GBP performance: 232 interactions, mainly 198 routes; 11 phone-button
+  clicks / 23 site clicks / 0 profile bookings. Not lead/job/revenue growth; October incomplete.
+  The address gate remains important.
+- New Bing Google-identity consent, existing Bing Places Microsoft login and Apple login await owner.
+  No grant, account, listing, sitemap, campaign, directory message, spend or IndexNow repeat.
+- WP04/WP05 are **partial**. Website code untouched in this batch. Full task/release verification
+  and integration status will be recorded after independent final review; no new live-deploy claim.
+
 ## 10 October 2026 — first-batch feature publication confirmed
 
 - Pushed approved `09e96ba` to GitHub `main`; exact hosted CI 38075925607 passed every gate.

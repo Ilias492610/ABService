@@ -1,5 +1,30 @@
 # Google Business Profile Service Area Plan
 
+## Latest customer-location update — 11 October 2026
+
+Owner confirms **no customer reception, only work at customers**. Address-display switch turned
+off and saved at about 00:24 Europe/Brussels. Fresh manager row says **Geen locatie. Alleen
+leveringen en diensten aan huis**; explicit Google-review notice remains. This confirms the saved
+service-area-business setting, not yet public Maps moderation. Legal/KBO/website address remains.
+Actual operating base, regular travel pattern and any specific-area changes still need their own
+evidence; the candidate shortlist below has not been saved.
+
+## Historical profile snapshot — 10 October 2026
+
+The authorized owner session currently shows primary **Loodgieter**, verified identity, correct
+phone/website, 24-hour opening on seven days and **Brussel, België / Vlaanderen, België** in the
+area editor without a pending notice on these fields. This is a current editor observation,
+not a separately read original approval reference or evidence of local-pack ranking everywhere.
+See the [account register](docs/seo/account-status-register.md) and
+[GBP audit](docs/seo/gbp-audit-and-calendar.md).
+
+The public address is **Voorzorgstraat 12A, 2660 Antwerpen**, whereas the profile attribute says
+no services at the business location. Customer reception, staffing hours, signage, actual operating
+base and routine travel pattern are not confirmed. The owner has been asked; **no address or
+service-area change has been made**. KBO legal seat and establishment are different roles,
+not automatic customer destinations. The shortlist below remains a candidate set, not the current
+saved areas, twenty necessary targets or evidence of a false extra establishment.
+
 ## Purpose and boundary
 
 The website and Google Business Profile serve different purposes. The website records the

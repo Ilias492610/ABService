@@ -150,7 +150,7 @@ Dit is de eerste zelfstandig reviewbare eenheid binnen WP06. Andere werkpakkette
 
 **Interface:** geen wijziging aan `buildCoverageDirectoryGroups()`, `getDistrictPublicHref(district)`, registries of filterprops. Alleen klantzichtbare JSX-copy verandert. De 304 gemeenten, tien districten, zes hubs, gepubliceerde links en overige gewone tekst blijven behouden.
 
-- [ ] **Stap 1 — voeg deze falende bronregressie toe** in het nieuwe testbestand:
+- [x] **Stap 1 — voeg deze falende bronregressie toe** in het nieuwe testbestand:
 
 ```js
 import test from "node:test";
@@ -172,9 +172,9 @@ test("work-area customer copy explains coverage without editorial SEO jargon", (
 });
 ```
 
-- [ ] **Stap 2 — bewijs RED:** `node --test tests/work-area-copy.test.mjs` onder de gebundelde Node 24. Verwacht een assertion failure op de huidige klantcopy, niet een import- of runtimefout.
-- [ ] **Stap 3 — wijzig alleen uitleg/koppen:** “Hulp in de tien Antwerpse districten”; leg uit dat dienst, locatie en planning vóór een afspraak worden beoordeeld. De zoekuitleg zegt dat de klant zijn gemeente of district kan zoeken. Geen indexerings-/JS-uitleg, nieuwe beschikbaarheidsgarantie of wijziging van publicatiestatus.
-- [ ] **Stap 4 — bewijs GREEN:** `node --test tests/work-area-copy.test.mjs tests/service-areas.test.mjs tests/publishing.test.mjs`; alle tests moeten slagen. Daarna de volledige WP12-productgate en browsercontrole van filter, keyboard, links en CTA op desktop/mobiel.
+- [x] **Stap 2 — bewijs RED:** `node --test tests/work-area-copy.test.mjs` onder de gebundelde Node 24. Verwacht een assertion failure op de huidige klantcopy, niet een import- of runtimefout.
+- [x] **Stap 3 — wijzig alleen uitleg/koppen:** “Hulp in de tien Antwerpse districten”; leg uit dat dienst, locatie en planning vóór een afspraak worden beoordeeld. De zoekuitleg zegt dat de klant zijn gemeente of district kan zoeken. Geen indexerings-/JS-uitleg, nieuwe beschikbaarheidsgarantie of wijziging van publicatiestatus.
+- [x] **Stap 4 — bewijs GREEN:** `node --test tests/work-area-copy.test.mjs tests/service-areas.test.mjs tests/publishing.test.mjs`; alle tests moeten slagen. Daarna de volledige WP12-productgate en browsercontrole van filter, keyboard, links en CTA op desktop/mobiel.
 - [ ] **Stap 5 — onafhankelijke review en gerichte commit:** controleer de diff op verloren elementen/claims; voeg uitsluitend taakbestanden en de bijbehorende QA/changelog toe. Commit pas na groene verificatie, publiceer volgens de bestaande workflow en controleer de exacte live release. Een bronassertie vervangt deze browsercontrole niet.
 
 ### WP00 — Bronregister en actuele bedrijfsbrief
@@ -249,48 +249,65 @@ Afgevinkt 10 oktober: correcte geverifieerde Abder-property, echte huidige/verge
 **Files:** `LOCAL_SEO_EXTERNAL_ACTIONS.md`, `GOOGLE_BUSINESS_SERVICE_AREA_PLAN.md`; nieuw `docs/seo/gbp-audit-and-calendar.md`. Concepten zijn geen live profielwijzigingen.
 
 - [ ] Controleer primaire/relevante secundaire categorieën in de beschikbare Belgische lijst. Concurrentoverlap 3/3, 2/3 of 1/3 is onderzoek, geen verplicht bedrijfstype. Leg verificatie, appeal en approval apart vast.
-- [ ] Attributenmatrix voor eigen profiel/drie concurrenten: zichtbaar ja/nee/onbekend. Toets offerte, betaling, online afspraak, toegankelijkheid/bezoeklocatie, ownershipvoorbeelden en 24/7 op echte toepasbaarheid.
+- [x] Attributenmatrix voor eigen profiel/drie concurrenten: zichtbaar ja/nee/onbekend. Toets offerte, betaling, online afspraak, toegankelijkheid/bezoeklocatie, ownershipvoorbeelden en 24/7 op echte toepasbaarheid.
 - [ ] Reviewsample: laatste vijftig voor recency/diensten en laatste honderd voor sentiment, waar beschikbaar. Bekijk 30/60/90 dagen, score/totaal, top vijf diensten/gebieden en klachten. Onvolledige sample expliciet begrenzen.
-- [ ] Lever S-083–S-085 expliciet: eigen versus concurrenten, vijfsterren versus driesterren; maximaal twintig emotiewoorden, tien gewenste uitkomsten, vijf zorgen en drie proof-concepten. Alleen werkelijk waargenomen thema's, geen opvulling.
-- [ ] Audit laatste dertig reacties: aandeel, reactietijd indien bekend, toon, lengte, context en klachtenafhandeling. Twaalf menselijke conceptvarianten voor 5, 4, 3 en 1–2 sterren; 40–80 woorden is flexibel bronvoorbeeld. Geen reactie zonder echte context publiceren.
-- [ ] Gebruik officiële neutrale reviewlink/QR na echte opdrachten. Geen korting, vijfsterrenverzoek, ontevreden-klantfilter of private werkdetails.
+- [x] Lever S-083–S-085 expliciet: eigen versus concurrenten, vijfsterren versus driesterren; maximaal twintig emotiewoorden, tien gewenste uitkomsten, vijf zorgen en drie proof-concepten. Alleen werkelijk waargenomen thema's, geen opvulling.
+- [x] Audit laatste dertig reacties: aandeel, reactietijd indien bekend, toon, lengte, context en klachtenafhandeling. Twaalf menselijke conceptvarianten voor 5, 4, 3 en 1–2 sterren; 40–80 woorden is flexibel bronvoorbeeld. Geen reactie zonder echte context publiceren.
+- [x] Gebruik officiële neutrale reviewlink/QR na echte opdrachten. Geen korting, vijfsterrenverzoek, ontevreden-klantfilter of private werkdetails.
 - [ ] Vergelijk servicegroepen/beschrijvingen met website: alleen-site, alleen-profiel, ontbrekend en zwak. Alleen echte diensten; 2–3 zinnen/40–60 woorden is een voorbeeld, huidige UI-limiet gaat voor.
-- [ ] Beschrijving tot 750 tekens: conversie, vertrouwen en dienstfit; drie concepten, inclusief balanced/trust-verschil. Geen keywordstuffing; test alleen bij voldoende data.
+- [x] Beschrijving tot 750 tekens: conversie, vertrouwen en dienstfit; drie concepten, inclusief balanced/trust-verschil. Geen keywordstuffing; test alleen bij voldoende data.
 - [ ] Postaudit van negentig dagen en beschikbare historie: datum/tijd/weekdag/type/tekstlengte/beeld/CTA/onderwerp/plaats/aanbod/hashtag/engagement; onbekend blijft onbekend. Geen causaal “beste tijdstip” uit concurrentpatronen.
-- [ ] Achtweekse optionele kalender: weken 1–4 volledige concepten, 5–8 outlines. Bronritme 2–3 posts/week, 100–150 woorden is een capaciteitstest. Seizoen, echte cases/reviews/personen en educatie; bron/media/CTA per item.
+- [x] Achtweekse optionele kalender: weken 1–4 volledige concepten, 5–8 outlines. Bronritme 2–3 posts/week, 100–150 woorden is een capaciteitstest. Seizoen, echte cases/reviews/personen en educatie; bron/media/CTA per item.
 - [ ] Fotoaudit: type, kwaliteit, authenticiteit, rechten, aantallen en zichtbare recency 30/90 dagen. Shotlist voor echte werken; geen nep-GPS, staged storefront, +50%-quotum of onbewezen uplift.
-- [ ] Indien echte rankgridexport beschikbaar: top-3-aandeel = top-3-punten / geldige gemeten punten. Noteer ontbrekende punten, query, locaties en datum. 13×13 en 25–50%-leiderdrempel zijn geen vereisten.
+- [x] Indien echte rankgridexport beschikbaar: top-3-aandeel = top-3-punten / geldige gemeten punten. Noteer ontbrekende punten, query, locaties en datum. 13×13 en 25–50%-leiderdrempel zijn geen vereisten.
 - [ ] Controleer profielbestemming samen met WP06: title/H1-intentie, dienst-H2's, echte reviews, consistent contact en Maps-embed alleen bij nut/privacy/performance. Geen verborgen SAB-adres openbaar maken.
 
 **Done:** gedateerde audit van alle twintig promptrubrieken, concrete concepten met feiten/rechten en afzonderlijk bevestigde profielmutaties. Een website-deployment telt niet als GBP-update.
+
+**10 oktober, late avond — gedeeltelijk uitgevoerd.** Alle twintig bronprompts hebben een expliciete route in `docs/seo/gbp-audit-and-calendar.md`. Alle 44 eigen Google-reviewartikelen en reacties zijn gelezen; elf teksten vereisten uitklappen. Nieuwste dertig: 30/30 met antwoord. De drie beschrijvingen, twaalf antwoordconcepten en achtweekse kalender zijn geen live publicaties. De officiële reviewlink/QR en neutrale werkwijze zijn vastgesteld; er is geen uitnodiging verstuurd. Het afgevinkte rankgridpunt is een **conditioneel uitstel**, niet een uitgevoerde meting: er is geen echte export beschikbaar en geen betaald hulpmiddel gestart.
+
+Zes bevestigde loodgietersdiensten met beschrijvingen van 220–240 tekens zijn werkelijk opgeslagen en herlezen binnen de actuele 300-tekenlimiet; Google-beoordeling blijft pending. Alleen de ongefundeerde twintigjaarbadge is verwijderd nadat een exacte privé-kopie was bewaard; afwezigheid in beheer is bevestigd, publieke Maps-verversing nog niet. De actuele categorie Loodgieter, 24/7-uren en contact zijn gelezen; geen nieuwe appeal of gebiedswijziging. Op 11 oktober bevestigt de eigenaar uitsluitend diensten bij klanten: adresweergave uitgezet/opgeslagen; beheer zegt `Geen locatie. Alleen leveringen en diensten aan huis`, beoordeling nog open. Juridisch website-/KBO-adres blijft staan. Eco's volledige 100 Google-rows en Tony's 48 officieel gekoppelde rows zijn apart gelezen; DP's exacte profiel, Tony's huidige locatie, posthistorie en fotocontext blijven onbekend. De volledige WP06-landingspaginacontrole blijft open. Accountacties en prestatieperiode staan in `docs/seo/account-status-register.md`; profielklikken zijn geen klanten. **WP04 is niet integraal voltooid.**
 
 ### WP05 — Citations, bedrijfsentiteit, Bing en Apple
 
 **Files:** `LOCAL_SEO_EXTERNAL_ACTIONS.md`, `docs/seo/evidence-register.md`; nieuw `docs/seo/citation-audit.md` en accountstatusregister.
 
-- [ ] Controleer KBO/My Enterprise, juridische naam/contact en geregistreerd versus bezoekadres. Wettelijke footerinformatie staat los van SAB-adreshiding.
+- [x] Controleer KBO/My Enterprise, juridische naam/contact en geregistreerd versus bezoekadres. Wettelijke footerinformatie staat los van SAB-adreshiding.
 - [ ] Audit echte listings: GBP, Bing Places, Apple Maps/Business Connect, Trustlocal, Gouden Gids, Cylex, leveranciers/verenigingen/socials en vakdirectories. Amerikaanse bronvoorbeelden alleen bij aantoonbare Belgische waarde; niets automatisch aanmaken.
-- [ ] Per listing: exacte naam/adres/unit/telefoon/website/beschrijving, duplicaten, relevante reviews, bron-URL/datum, conflict, correctieprocedure, ingediende status en bevestigde uitkomst. Oude adresobservaties zijn geen huidige juridische waarheid.
-- [ ] Onderzoek merk-/ownersearch en echte company/suppliermentions; correct `sameAs`. Geen fictief Wikipedia-, Wikidata- of Crunchbaseprofiel; geen Knowledge Panel-garantie.
+- [x] Per listing: exacte naam/adres/unit/telefoon/website/beschrijving, duplicaten, relevante reviews, bron-URL/datum, conflict, correctieprocedure, ingediende status en bevestigde uitkomst. Oude adresobservaties zijn geen huidige juridische waarheid.
+- [x] Onderzoek merk-/ownersearch en echte company/suppliermentions; correct `sameAs`. Geen fictief Wikipedia-, Wikidata- of Crunchbaseprofiel; geen Knowledge Panel-garantie.
 - [ ] Verifieer juiste Bing Webmaster-property, sitemap/indexing en beschikbaar AI-rapport. Bing Places-claim apart. Controleer Apple's ondersteunde bedrijfsmodel zonder nepklantlocatie.
-- [ ] Yandex: uitgesteld wegens onbewezen Belgische doelgroepwaarde; geen account of product installeren. Maandelijkse citationcontrole bewaart open verzoeken en resultaten, geen directorybulk.
+- [x] Yandex: uitgesteld wegens onbewezen Belgische doelgroepwaarde; geen account of product installeren. Maandelijkse citationcontrole bewaart open verzoeken en resultaten, geen directorybulk.
 
 **Done:** concrete conflictmatrix en bevestigde resultaten per uitgevoerd kanaal. Publieke vergelijking hoeft niet op iedere login te wachten.
+
+**10 oktober, late avond — gedeeltelijk uitgevoerd.** Negen concrete publieke profielen zijn onderzocht en krijgen velden, bron, conflict, correctiepad en afzonderlijke ingediend/bevestigd-status in `docs/seo/citation-audit.md`. KBO-zetel en geregistreerde vestiging zijn verschillende huidige rollen; een oude profielobservatie bewijst geen verouderde wettelijke vestiging. Merk-/entiteitsonderzoek is begrensd en levert geen fictieve socialprofielen, nieuwe `sameAs`-claims of garantie op een Knowledge Panel. Yandex is expliciet uitgesteld; de maandelijkse controle is een handmatige werkwijze, geen aangemaakte automation.
+
+Op 11 oktober is de expliciet toegestane Bing-Googlekoppeling voor naam/foto/e-mail afgerond met Abder. Website handmatig toegevoegd als **Not verified**; native openbaar XML-bewijs voorbereid voor geteste publicatie, geen DNS/GSC-importmachtiging. Native verificatie, sitemap en AI-rapport zijn nog niet bevestigd. Bestaande Bing Places-/Microsoft- en Apple Business-aanmelding ontbreken; listingclaim en Apple Maps-geschiktheid blijven open. Geen accountafwezigheid uit een loginpagina afgeleid en geen nieuw directorycorrectiebericht verstuurd; historische septemberverzoeken hebben geen nieuw bevestigd resultaat. Zie `docs/seo/account-status-register.md`. **WP05 is niet integraal voltooid.**
 
 ### WP06 — Kernpagina's, klantcopy en interne links
 
 **Files:** bestaande kernroutes in `app/`, `content/service-intents.mjs`, `content/brand-services.mjs`, `content/site-content.mjs`, `components/service-page.js`, header/footer/CTA, `app/werkgebied/page.js`, `tests/publishing.test.mjs`, `tests/seo-data.test.mjs` en crawler.
 
-- [ ] Verwijder klantzichtbaar procesjargon op `/werkgebied`; geef gebieds-, afspraak- en contactinformatie. Schrijf eerst de regressietest.
-- [ ] Controleer dertig oorspronkelijke pagina-intenties tegen huidige URLs. Geen dubbele keywordroutes; home houdt Antwerp-intentie, onderhoud/herstelling/keuring/installatie/sanitair blijven onderscheiden.
+- [x] Verwijder klantzichtbaar procesjargon op `/werkgebied`; geef gebieds-, afspraak- en contactinformatie. Schrijf eerst de regressietest.
+- [x] Controleer dertig oorspronkelijke pagina-intenties tegen huidige URLs. Geen dubbele keywordroutes; home houdt Antwerp-intentie, onderhoud/herstelling/keuring/installatie/sanitair blijven onderscheiden.
 - [ ] Bovenaan: voor wie, welk probleem, scope, gebied en volgende actie. Daarna proces, inclusies/uitsluitingen, voorbereiding, modelinfo, relevante merken, echte proof, eigen FAQ en bekende tarieffactoren.
 - [ ] Vul contextuele links aan: home→dienst/merk/project/tarieven; dienst→merk/advies/regio/case; gebied→dienst/nabij gebied/proof; merk→onderhoud/herstel/fout/case; fout→merk/herstel/verwante code; case→dienst/merk/plaats/provincie; advies→dienst.
 - [ ] Geen vijf of 3–5 links als quota. Iedere belangrijke bestemming heeft een relevante ingang; mobiel menu/footer compact, geen sitewide exact-matchspam.
 - [ ] Controleer GBP-landingspagina volgens WP04 en C-101–C-106; Maps-embed is conditioneel, geen verplicht contact- of rankingelement.
-- [ ] Inventariseer vóór rewrite formulieren/quizzes/tabellen/media/embeds/bronnen/links/claims. Beoordeel ieder verlies; verwijder geen zakelijke functie om een labscore te verhogen.
+- [x] Inventariseer vóór rewrite formulieren/quizzes/tabellen/media/embeds/bronnen/links/claims. Beoordeel ieder verlies; verwijder geen zakelijke functie om een labscore te verhogen.
 - [ ] Prijsvragen: interventie, diagnose, verplaatsing, materialen, arbeid, overleg, onderhoudsprijs, avond/weekend en offerte. Alleen echte beleidsdata, geen bedragen of voordeel verzinnen.
 
 **Tests:** klantcopy, publicatie-/linkchecks, één H1/canonical, mobiele CTA/keyboard/focus en elementenbehoud. **Done:** beoordeelde kernpagina's en relevante linkstructuur. CTR-verbetering wordt later afzonderlijk gemeten.
+
+**11 oktober — eerste afgebakende eenheid:** regressie RED op oud jargon, GREEN11/11 gericht;
+139/139 volledige tests, lint/build/audit0 en localcrawl81/92/110. Onafhankelijke review akkoord;
+desktop/mobile/no-JavaScript bevestigen alle314 directoryentries, zoeken/keyboard/zero/reset,
+bronnen/draftlinkgrens en formulieranker zonder overflow. De dertig oorspronkelijke intenties
+zijn gemapt:27 gepubliceerde bestemmingen, Edegem/Mortsel/Kontich blijven data-only drafts.
+Voorafgaande elementeninventaris behoudt formulieren/tool/tabellen/media/bronnen/links. Verdere
+contextuele dienst-/merklinks, eigen FAQ en bewijsafhankelijke prijs/casevelden blijven open;
+deze checklist is **geen volledige WP06-voltooiing of live-publicatiebewijs**.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 

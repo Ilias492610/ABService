@@ -1,5 +1,27 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — WP04–WP05 and first WP06 local acceptance
+
+- Independent task reviews approve the dated GBP evidence supplements, the exact public Bing
+  XML proof and bounded work-area copy. Saved Google service/address edits still wait for public
+  moderation; a local proof file is not Bing verification. No fabricated completed account gate.
+- TDD: Bing test first failed on missing artifact, then passed; work-area test first failed on
+  the forbidden customer-copy phrase, then passed. Root's fresh Node24.19.0 suite **139/139**,
+  lint, production build and production dependency audit (**zero vulnerabilities**) all pass.
+- Fresh local production crawl: **81 pages / 92 internal destinations / 110 assets**, all published
+  pages reachable. `BingSiteAuth.xml` separately returns direct200, application/xml, exact provider
+  users/user payload; no sitemap/navigation entry. New provider verification grant not created.
+- Chromium desktop1440×1000/mobile390×844: all **314 directory entries** (304 municipalities plus
+  ten districts), six region cards, ten district names, source links and draft-link boundary retained.
+  Keyboard search/filter/zero/reset, header-clearing contact anchor and no horizontal overflow/pageerror
+  pass. Complete directory renders without JavaScript. No form submitted or extra email sent.
+- Full WP06 remains open: original-intent/source element audit identifies contextual brand/service
+  transitions and own service FAQs plus evidence-dependent pricing/case gaps. Whole-branch review,
+  GitHub/Vercel/live proof and native Bing verification are not yet claimed for this batch.
+- Worker report originally supplied a wrong full work-area SHA; review packaging rejected it.
+  Root read actual Git history, corrected the ignored report to **4b0db5fb1e88f3d68f74f72d2238fd359e5681f9**,
+  regenerated the exact diff, and independent review approved it. No production fix or lost change.
+
 ## 10 October 2026 — WP00–WP03 feature release verified
 
 - Reviewed feature `09e96baa21c393994b3ce58fbd098d12831edd45` is on GitHub `main`.

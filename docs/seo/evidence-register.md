@@ -1,5 +1,40 @@
 # Evidence Register
 
+## WP04–WP05 supplement — 10 October 2026, 21:14–21:44 UTC
+
+Fresh [account observations](account-status-register.md) and [citation audit](citation-audit.md)
+do not silently refresh every historical table row below. In particular, native Google review
+reading is not a new Places API response or permission to copy customer text into public cards.
+
+| Claim / action | Fresh evidence | Decision and remaining gate |
+| --- | --- | --- |
+| Current verified GBP and primary category | Correct-owner manager/public card: one AB SERVICE, Loodgieter; phone/site/CID match, 100% verified | Existing current category confirmed; historical appeal outcome reference not separately read; no new appeal |
+| Google hours and saved regions | Editor: seven days, 24 hours; Brussel/Vlaanderen, without pending notice on those fields | Current values observed; no immediate-intervention, physical branch or all-area-rank claim |
+| Six primary plumbing services and descriptions | Once submitted at 21:24:49 UTC; each description 220–240 characters in the actual max-300 UI; subsequently saved/re-read | **Pending Google review**, not publicly approved; no price/specialized method added |
+| Google profile review corpus | Native Alle/Nieuwste: 44/44 articles, all five stars and 44 owner replies; latest 30 have 30 replies | Aggregate audit only; relative ages: 9/9/10 within 30/60/90 days, no exact timestamps; 2021 rows not proof of current entity history |
+| Direct neutral review link | Actual Review vragen input https://g.page/r/CTHxFWInh2Q4EBM/review and QR observed | Link verified; no customer invitation sent, no gating or reward |
+| Unsupported twenty-year image | Exact badge visually matched, displayed 960×2079 copy privately saved; only target deleted; eight ordinary gallery slots remain | Manager removal confirmed, public Maps refresh open; other images retained; no new owner experience claim |
+| GBP performance: 232 interactions | Explicit May–Oct 2026 period, October partial; 11 call-button / 0 profile booking / 198 route / 23 site-click actions, sum 232 | Not completed calls/clients/jobs/revenue; no purely organic causal claim |
+| Public/customer address | Public Voorzorgstraat 12A without unit; editor says no services at business location | Owner customer-visit/base confirmation still needed before hiding/editing; legal seat and registered unit remain distinct |
+| Citations, Bing and Apple | Nine direct citation destinations and actual login screens; new Bing Google consent not accepted | Field conflicts/current login gates documented; no correction outcome, sitemap, account absence, import or Maps eligibility assumed |
+
+Original snapshots below retain their source/period. Recheck changed fields through the account
+register before any new publication or account save.
+
+**11 October, shortly after local midnight:** the native service editor still shows all six
+saved descriptions and the explicit notice `Je bewerking wordt beoordeeld.` No resubmission or
+public approval claim. The [GBP audit](gbp-audit-and-calendar.md) also separates the new complete
+EcoStreamZ Google corpus from its earlier ten-review sample and from Solvari, and distinguishes
+Tony's website-associated Maps profile from its unresolved current customer location.
+
+**11 October, circa 00:24–00:35 Europe/Brussels:** owner confirms no customer reception;
+native Google address-display switch disabled/saved and manager row states `Geen locatie.
+Alleen leveringen en diensten aan huis`. Explicit review notice remains: public Maps approval
+unknown. Legal/KBO/site address untouched. Owner also explicitly permits Bing's basic Google
+identity link; completed using Abder, website added manually as **Not verified**, exact public
+XML download obtained. No DNS or GSC-import grant. Native verification and sitemap acceptance
+remain separate from preparing/publishing the artifact; latest status is in the account register.
+
 | Claim | Source | Confidence | Publication decision | Review trigger |
 |---|---|---:|---|---|
 | Brand and registered name AB Service; active commanditaire vennootschap, normal legal status | Owner prompt and [official KBO entity record](https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=0792534639), checked 10 October 2026, database state 9 October 2026 | High within official record scope | Existing name remains published; legal form/status documented in the internal business brief, no new public claim | Legal-name/form/status change or before current legal reuse |
