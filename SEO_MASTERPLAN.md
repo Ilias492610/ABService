@@ -1,5 +1,20 @@
 # AB Service SEO Masterplan
 
+## Current authorized batch — WP00–WP03
+
+The owner-authorized first batch is being executed on `codex/seo-wp00-wp03`.
+WP00's source decisions/business brief and WP02's correct-owner Search Console baseline are
+verified. WP01's real inbox test and local contact hardening pass; dashboard event ingestion,
+commercial outcomes and actual business retention remain open. WP03's native-data gap table,
+four presets, five briefs/quick-win reviews, journey tables, actual top-ten research and combined
+audit are delivered; unavailable genuine customer-question data remain an explicit dependency.
+No other package or whole-masterprompt completion percentage is inferred.
+
+Evidence: [business brief](docs/seo/business-brief.md), [receipt report](docs/seo/wp01-contact-receipt-report.md),
+[current account baseline](docs/seo/2026-10-10-search-baseline.md),
+[research report](docs/seo/wp03-research-report.md) and [first-five briefs](docs/seo/briefs/wp03-first-five.md).
+Publication and exact live checks are recorded separately in the QA report/changelog.
+
 ## Complete source-based follow-up plan
 
 The current exhaustive follow-up is [Volledig SEO meesterplan voor AB Service](docs/superpowers/plans/2026-10-10-complete-source-seo-masterplan.md),

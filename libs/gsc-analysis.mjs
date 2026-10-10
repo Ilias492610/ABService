@@ -39,7 +39,7 @@ const normalizeHeader = (value) => value.trim().toLowerCase().normalize("NFD")
   .replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "");
 const headerAliases = {
   query: ["query", "queries", "topqueries", "zoekopdracht", "zoekopdrachten", "meestuitgevoerdezoekopdrachten"],
-  page: ["page", "pages", "toppages", "pagina", "paginas", "url"],
+  page: ["page", "pages", "toppages", "pagina", "paginas", "toppaginas", "url"],
   clicks: ["clicks", "click", "klikken", "aantalklikken"],
   impressions: ["impressions", "impression", "vertoningen", "aantalvertoningen"],
   ctr: ["ctr", "clickthroughrate", "klikfrequentie"],
@@ -140,6 +140,12 @@ const candidate = (row) => {
   };
 };
 const sortCandidates = (rows) => rows.sort((a, b) => b.priorityHeuristic - a.priorityHeuristic || b.impressions - a.impressions);
+const positionPresetDefinitions = [
+  { id: "positions-8-20", sourcePreset: "Observed striking distance 8–20", minPosition: 8, maxPosition: 20 },
+  { id: "positions-4-15", sourcePreset: "Source selection 4–15", minPosition: 4, maxPosition: 15 },
+  { id: "positions-11-20", sourcePreset: "Source selection 11–20", minPosition: 11, maxPosition: 20 },
+  { id: "phase-e-4-30", sourcePreset: "Phase E selection 4–30", minPosition: 4, maxPosition: 30 },
+];
 const tokens = (value) => value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
   .split(/[^a-z0-9]+/).filter((word) => word.length >= 3 && !["van", "een", "het", "voor", "met", "bij", "aan"].includes(word));
 
@@ -184,12 +190,23 @@ export const buildGscAnalysis = ({ queriesCsv, pagesCsv, pairsCsv, minImpression
     summary: { queryRows: queries.length, pageRows: pages.length, pairedRows: pairs.length, eligibleNonBrandQueries: queryCandidates.length },
     queryCandidates,
     highImpressionQueries: [...queryCandidates].sort((a, b) => b.impressions - a.impressions),
+    positionPresets: positionPresetDefinitions.map((preset) => {
+      const inRange = (row) => row.position >= preset.minPosition && row.position <= preset.maxPosition;
+      return {
+        ...preset,
+        inclusive: true,
+        minImpressions,
+        queryCandidates: queryCandidates.filter(inRange),
+        pairedCandidates: pairedCandidates.filter(inRange),
+      };
+    }),
     pageCandidates,
     pairedCandidates,
     inferredMatches,
     limitations: [
       "Only the supplied export observations are analyzed. Date range, search type, country, device and filters must be recorded externally and aligned before comparison.",
       "Exported impressions are not keyword search volume. No keyword difficulty, traffic forecast, expected CTR or ranking improvement is invented.",
+      "Aggregate impressions are not monthly demand. Monthly 100-demand and search-volume 20 filters are not applied without real source dimensions; position presets select each observation's own average position independently.",
       "GSC anonymization and row/export limits mean query and page totals need not reconcile; separate exports do not prove query-to-page linkage.",
       "Clicks and contact interactions do not establish qualified leads, accepted work, revenue, current indexing or field Core Web Vitals.",
     ],

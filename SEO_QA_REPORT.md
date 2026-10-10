@@ -1,5 +1,36 @@
 # AB Service SEO QA Report
 
+## 10 October 2026 — WP00–WP03 local/account acceptance
+
+- Root used actual bundled Node 24.19.0: 137/137 tests, lint, production build and production
+  dependency audit (0 findings) pass. The build generates 168 entries including 78 social assets;
+  these are not 168 indexable customer pages. Contact is now dynamic SSR for safe native-POST feedback.
+- The freshly built local production server passed the 81-page/92-destination/110-asset crawl.
+  Browser QA on that production build passed desktop 1440×1000/mobile 390×844: native POST,
+  allowlisted SSR feedback, validation/focus, one pending request, five transport-failure/retry
+  cases, privacy payload boundaries, real-calendar fragment handling and header-clearing anchor.
+  All browser QA submissions were intercepted and mocked or aborted, not real email sends.
+- One separate public contact test at 17:45:54.712 UTC used public business contacts and a clear
+  TEST marker. Old live `7a16cec` returned 200/oktrue; Mailgun EU recorded accepted/delivered,
+  recipient SMTP 250, and the owner confirmed receipt. The full chain is proven for that sample,
+  not a qualified lead or the not-yet-published hardening commit `126e9ab`.
+- The ten event definitions/privacy filters pass; real custom-event dashboard receipt remains
+  open because the current Hobby view requires Pro. No paid upgrade/trial. Mailgun log retention
+  was observed as 1 day; business inbox retention/DPA and real job/revenue data remain unknown.
+- Correct Abder Search Console property and native exports were inspected. Current 92 days:
+  68/3519; previous 91 days: 37/2696. Final native-picker/Dates cross-check caught and corrected
+  a draft off-by-one (extra 6 April: 0/15), before publication. Genuine exact-query/page export,
+  AI 154 property impressions versus page SUM 155, sitemap/index/canonical/rendering and controls are documented in the
+  [current baseline](docs/seo/2026-10-10-search-baseline.md). One unresolved maintenance live
+  resource failure and insufficient field CWV data remain explicit. One tool indexing request
+  was confirmed, not indexing; no bulk/repeated requests.
+- WP00 and contact-code independent reviews approved; WP03 independent recalculation confirmed
+  cohort/presets and found no Critical/Important. Its minor all-matches wording was clarified.
+  Latest native pair/previous-day/autocomplete/Trends supplements still require final release review.
+- GitHub/hostedCI/primaryVercel/live hardening gates for this batch are pending. Prior release
+  evidence below is historical, not a substitute. WP01 and the genuine-customer-question subcheck
+  in WP03 remain open; no whole-masterprompt completion or ranking/client-growth claim.
+
 ## 10 October 2026 — preview, Remeha and IndexNow refinement: release acceptance
 
 - Feature commit `a94b108e0a1ed2ae159ad17353622a8ffa5cc18c` is on GitHub `main`; hosted Linux

@@ -1,5 +1,30 @@
 # AB Service SEO Changelog
 
+## 10 October 2026 — WP00–WP03 first-batch execution, before publication
+
+- Preserved the approved830-row source masterplan and18-package contracts, verified current
+  business facts against KBO and distinguished registered seat from establishment/customer access.
+- Hardened contact fallback to nativePOST, clean status/anchor redirects and safe SSR feedback;
+  synchronous pending guard, explicit oktrue acceptance, safe failure/retry and null/malformed
+  input400 now have regressions. Impossible handoff calendar dates are rejected.
+- One real old-live technical contact sample was accepted/delivered by MailgunEU and explicitly
+  received by the owner. Separate local hardening QA passes desktop/mobile; technical tests are
+  excluded from commercial outcomes. Hobby custom-event ingestion and business outcomes remain open.
+- Obtained genuine correct-owner Search Console current/comparison/AI exports privately, exact
+  previous 91-day property totals via native daily selection and one exact Bulex query/page export.
+  Final picker/row cross-check corrected a draft's extra April 6 before publication: current
+  92 days 68/3519 versus previous 91 days 37/2696; comparison-row metrics unchanged.
+  Confirmed existing sitemap, dated index/canonical/live rendering, controls/manual/security and
+  insufficient fieldCWV. One new tool request confirmed; submission is not indexing.
+- Published research documents in the branch: five competitor providers, one actually read top
+  ten,22 relevant questions/683 impressions, four presets, five briefs/quick-win reviews, four
+  journey tables and one combined maintenance audit. Actual autocomplete/Trends are source-
+  bounded; no invented volumes, ranks, client questions, testimonials or achieved uplift.
+- Added native Dutch Toppagina's header support with a RED→GREEN regression. Root acceptance:
+ 137/137 tests, lint/build, production audit0, local production crawl81/92/110 and browserQA pass.
+- Exact hostedCI/GitHub/Vercel/live results are pending for this batch. No new paid plan, OAuth,
+  profile edit, outreach, mass indexing or WP04+ execution. Earlier entries retain their dates.
+
 ## 10 October 2026 — page previews, Calenta coverage and bounded IndexNow integration
 
 - Published `a94b108` to GitHub `main`; hosted CI38062088046 passed every gate. The primary

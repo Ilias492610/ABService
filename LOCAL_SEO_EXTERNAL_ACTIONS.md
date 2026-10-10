@@ -1,5 +1,24 @@
 # AB Service External Local SEO Actions
 
+## Current WP02 account check — 10 October 2026, evening
+
+Abder's verified domain property was actually inspected, without GSC Wizard or another Google
+account. The [current baseline](docs/seo/2026-10-10-search-baseline.md) now contains native current/
+comparison/AI exports, exact previous daily totals, an actual exact-query/page observation,
+sitemap/index/canonical/live-rendering checks and their dates/limitations. Raw exports stay private.
+
+- Existing sitemap: Success, last read 8 October, 71 discovered; no unnecessary resubmission.
+- Page Indexing snapshot, updated 4 October: 10 indexed /64 not; these are not current route counts.
+- Default generative-AI inclusion is already enabled; no approval switch or change was necessary.
+- No manual/security issues shown. Field CWV lacks sufficient data, not a verified pass.
+- Maintenance is indexed, with matching Google/declared canonical and a successful live test;
+  one unresolved live resource failure is documented in the baseline.
+- The new maintenance tool passed its live test. One indexing request was confirmed at about
+  19:51 Europe/Brussels; submission is not indexing. No mass requests or IndexNow repeat.
+- WP04 Google Business Profile changes, Bing/Apple, citations, paid campaigns and customer/job
+  measurement are not completed by these Search Console observations. Historical actions below
+  are retained with their original dates, not silently treated as current successes.
+
 ## 10 October 2026 status boundary
 
 The new IndexNow integration is independent of owner-account authentication: a public root proof

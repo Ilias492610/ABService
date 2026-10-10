@@ -1,6 +1,114 @@
 # Search and qualified-lead baseline — 10 October 2026
 
-## What is observed
+## Current WP02 account evidence — 10 October, evening check
+
+This section supersedes the missing-account observations below for Search Console only. The
+owner opened Abder's Chrome profile and enabled its page-reading option. The checked account is
+the verified owner of domain property `sc-domain:abservice24.be`; the property was added on
+8 February 2026. No other Google account, GSC Wizard, new OAuth grant, verification change or
+paid indexation service was used. Canonical production remains `https://www.abservice24.be`.
+
+### Native exports and comparable periods
+
+The owner-account native CSV downloads remain private, outside this repository and public assets.
+Current Web exports contain Queries, Pages, Dates, Countries, Devices, Search appearance and
+Filters. Native comparison exports contain separate current/previous columns for Queries,
+Pages, Countries and Devices; Search appearance is empty. Its Filters sheet uses the generic
+last-three-months label, so the actual comparison dates were separately checked in the UI.
+
+| Evidence | Period and derivation | Exact property clicks / impressions |
+| --- | --- | --- |
+| EX01 current | 7 July–6 October 2026, 92 consecutive daily rows | 68 / 3519 |
+| EX02 comparison | Current 7 July–6 October (92 days) versus previous 7 April–6 July (91 days), no overlap | UI clicks 68 / 37; UI impression values are rounded |
+| EX04 previous Dates | Inclusive 7 April–6 July selection from a native longer-window daily export | 37 / 2696 |
+| EX04 current cross-check | Inclusive 7 July–6 October selection from the same daily export | 68 / 3519, matching EX01 day by day |
+
+EX04's selected UI period is twelve months, but available data cover only 8 February–6 October
+2026: 241 unique consecutive days. The previous 91-day totals are derived from those native
+Dates, not a fabricated previous-only export. Other EX04 dimensions must not be relabelled as
+previous-period data. Previous Queries/Pages/Countries/Devices come from EX02's real period
+columns, not from that longer-window aggregate.
+
+The final cross-check caught an off-by-one error in the draft: 6 April was initially included.
+That day's 0 clicks/15 impressions explained the discrepancy with EX02. Reopening the native
+comparison picker confirmed previous **7 April–6 July**, and the corrected consecutive 91-day
+Dates sum is 37/2696 (CTR 1.3724%). The earlier 92-day 37/2711 selection is not EX02's period and
+must not be used as its total. Current dates/totals and actual comparison-row metrics are unchanged.
+
+Current query export: 159 rows, 38 clicks and 1318 impressions. Comparison: 232 combined query
+rows, with 159 current-positive and 133 previous-positive rows; previous query columns sum to
+22 clicks and 1212 impressions. These are query-table totals, not property totals. The current
+page table contains ten URLs. Independent table totals and average positions are not joined
+into guessed query-page metrics. The query analysis and eligibility decisions are in the
+[WP03 research report](wp03-research-report.md).
+
+Current country export has 43 rows, including Belgium 64 clicks/3290 impressions and Netherlands
+2/75; comparison has 53 combined country rows, with previous Belgium 36/2495 and Netherlands
+0/55. Current devices: mobile 45/2309, desktop 22/1152, tablet 1/58; previous: 29/1641, 7/1025,
+1/30 respectively. These are independently aggregated dimensions, not Belgian/mobile filters
+applied to all queries. An empty Search appearance table is not proof that no enhanced feature
+ever appeared.
+
+PA01 is a real exact-query-filtered native Pages export: `bulex f28 f54` →
+`https://www.abservice24.be/foutcodes/bulex`, 0 clicks, 47 impressions, 0% CTR, position **10.34**
+over 7 July–6 October. Filters and the native UI confirm the exact query selection. The earlier
+UI rounded this to 10.3; the precise value is now from the filtered page row, not borrowed from
+the standalone query row. No additional pair is established by topical similarity.
+
+All these Web views use no country/device filter, and the report was last updated about 45
+hours before the observation. No 24-hour preliminary view was used. Daily Search Console data
+use Pacific Time; extraction/check timestamps here use UTC or explicitly labelled Europe/Brussels.
+Native table exports have a 1000-row limit, and anonymized/internal limitations mean that a
+159-row export still does not contain all search queries. See Google's
+[data explanation](https://support.google.com/webmasters/answer/96568?hl=en) and
+[native export guidance](https://support.google.com/webmasters/answer/12919797?hl=en).
+
+The periods differ by one day and mix site versions and seasons. Changes made on 10 October fall after the current
+period's 6 October end. Differences in clicks, CTR or position are observed differences, not
+proof that this execution increased rankings, qualified customers or revenue.
+
+### Indexing, sitemap, controls and representative inspection
+
+| Account check | Observed state | Boundary |
+| --- | --- | --- |
+| Sitemap | `https://www.abservice24.be/sitemap.xml`: Success; submitted 17 September, last read 8 October, 71 discovered pages | Current site has 79 sitemap URLs; the dated account snapshot is not 79 indexed pages. No duplicate submission. |
+| Page Indexing | Updated 4 October: 10 indexed, 64 not indexed; 3 redirects, 61 discovered/currently not indexed, 0 crawled/currently not indexed | The report predates the newest routes/releases. No mass validation or indexing requests. |
+| Robots/crawl | Robots valid; 688 crawl requests in last 90 days | Requests do not equal unique indexed pages. |
+| Generative AI inclusion | Default “Include” is already enabled | No general “accept new SEO” switch; no setting changed. |
+| Manual actions / security | No issues shown for the correct property | Dated account observations, not a future guarantee. |
+| Field Core Web Vitals | Updated 9 October; insufficient recent data for desktop and mobile | Unknown, not a field pass or failure; lab Lighthouse remains separate. |
+
+`/onderhoud` is indexed. Its last recorded Google crawl was 19 September at 04:16:49 in the UI,
+using smartphone Googlebot; fetch/indexing allowed, fetch successful, declared canonical and
+Google canonical agree with the inspected `www` URL. The live test on 10 October at 19:37
+Europe/Brussels reported available/indexable and one valid breadcrumb item. Google's rendered
+HTML contained the expected H1, self-canonical, regional 20 kW distinction and phone link.
+Live resource detail reported one of sixteen resources not loaded; its identity was not resolved,
+so this is not an all-resources-pass claim. No indexing request was made for this already
+indexed, unchanged maintenance page.
+
+`/tools/onderhoudscheck` was unknown to Google's indexed-version view. Its live test at 19:49
+Europe/Brussels reported available/indexable and one valid breadcrumb item. One manual request
+around 19:51 was actually confirmed by the priority-crawl-queue message. This was a substantively
+new tool route, not a daily/all-site batch. The request is not proof of indexing. Prior IndexNow
+notifications were not repeated.
+
+The live public audit before this branch release passed 81 registered pages, 92 internal
+destinations and 110 assets. Local tests also distinguish canonical production from the local
+fetch origin and exclude noindex/draft pages from the sitemap. These checks verify public
+technical behaviour, not Google's page count or field experience.
+
+### Lead measurement remains separate
+
+The actual contact-test inbox receipt is now owner-confirmed; see
+[WP01 receipt and measurement report](wp01-contact-receipt-report.md). Its one technical test
+is excluded from commercial outcomes. Custom-event dashboard receipt remains unproved on the
+current Vercel Hobby plan. Real qualified enquiries, agreed jobs, revenue, GBP actions and
+business retention practices remain unknown; missing data are not zeros. A private outcome
+baseline records those unknowns without customer identities. No WP04 profile edit, outreach,
+advertising purchase or other work package is claimed by this account audit.
+
+## Historical release observations
 
 Latest refinement, locally verified: 113/113 tests, lint/build/crawl (81 customer routes, 92 internal
 destinations, 110 assets) and zero production advisories. The customer registry remains 79 published
@@ -116,7 +224,10 @@ Next 16.3.8, sharp 0.35.5 and source-map-js 1.2.2 remain unchanged. The producti
 audit returned zero vulnerabilities; the separate full development tree retains nine documented
 findings. No blind major upgrade or CI switch to `npm install` was used to hide the failure.
 
-## Missing measurement evidence
+## Historical missing measurement evidence — before correct-owner access
+
+The following describes the earlier audit, not the current WP02 Search Console state above.
+Unavailable commercial/GBP data still remain unavailable unless separately verified.
 
 No matching GSC query/page export or SEO metric CSV/XLSX was found in the repository or relevant
 Downloads filenames during the read-only audit. No unrelated file contents were read. This audit

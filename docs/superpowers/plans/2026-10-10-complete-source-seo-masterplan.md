@@ -183,12 +183,14 @@ test("work-area customer copy explains coverage without editorial SEO jargon", (
 
 **Interfaces:** iedere bronregel → actuele bedrijfsfeiten, klantdoel, onbekende gegevens, criteria en standaardtaskbrief.
 
-- [ ] Leg naam/contact/website/GBP, juridische versus bezoeklocatie, 24/7-scope, diensten/merken/talen, beste klanttype, echte opdrachtwaarde indien beschikbaar, vijf doelhypotheses en eerdere werkzaamheden vast.
-- [ ] Geef feiten bron, datum, openbare/interne status en verversvoorwaarde. Geen nieuwe prijzen of erkenningen afleiden uit artikelen.
-- [ ] Koppel iedere bronregel aan een specifieke taak of bestaande waarborg; uitgesteld krijgt een afhankelijkheid, afgewezen een reden en alternatief.
-- [ ] Scheid huidige van historische documentatie zonder eerdere tests of fouten te wissen. Geen gemengde “100%-SEO-score”.
+- [x] Leg naam/contact/website/GBP, juridische versus bezoeklocatie, 24/7-scope, diensten/merken/talen, beste klanttype, echte opdrachtwaarde indien beschikbaar, vijf doelhypotheses en eerdere werkzaamheden vast.
+- [x] Geef feiten bron, datum, openbare/interne status en verversvoorwaarde. Geen nieuwe prijzen of erkenningen afleiden uit artikelen.
+- [x] Koppel iedere bronregel aan een specifieke taak of bestaande waarborg; uitgesteld krijgt een afhankelijkheid, afgewezen een reden en alternatief.
+- [x] Scheid huidige van historische documentatie zonder eerdere tests of fouten te wissen. Geen gemengde “100%-SEO-score”.
 
 **Done:** alle bronfamilies zijn gekoppeld; geen lege beslissing, status of bewijsgrens; geen fictieve baseline.
+
+Afgevinkt op 10 oktober 2026 na onafhankelijke goedkeuring van bedrijfsbrief, bronbesluiten en KBO-onderscheid. Alle 830 bronregels, 18 werkpakketten en 25 lokale verwijzingen gecontroleerd. Onbekende opdrachtwaarden, prijsregels en uitvoerings-/bezoeklocatie blijven expliciet onbekend; zie `docs/seo/business-brief.md` en `docs/seo/wp00-source-decisions.md`.
 
 ### WP01 — Contact, echte ontvangst en passende aanvragen
 
@@ -196,26 +198,30 @@ test("work-area customer copy explains coverage without editorial SEO jargon", (
 
 **Interfaces:** bestaande `validateContactInput`, contactcontext en `buildAnalyticsEvent`; afzonderlijk ontvangst- en leadbewijs.
 
-- [ ] Gebruik huidige events: `phone_click`, `email_click`, `whatsapp_click`, `contact_form_start`, `contact_form_success`, `contact_form_failure`, `service_cta_click`, `google_profile_click`, `maintenance_check_complete`, `tool_enquiry_click`. Geen dubbele installatie voor andere tweetnamen.
-- [ ] Test browser→API→Mailgun→daadwerkelijke inbox met herkenbare testaanvraag. Controleer desktop/mobiel, pending/dubbelklik, validatie, foutfocus, transportfout, fragmentvoorinvulling en `#aanvraagformulier`-scrollmarge. Geen bestaande klantidentiteit.
+- [x] Gebruik huidige events: `phone_click`, `email_click`, `whatsapp_click`, `contact_form_start`, `contact_form_success`, `contact_form_failure`, `service_cta_click`, `google_profile_click`, `maintenance_check_complete`, `tool_enquiry_click`. Geen dubbele installatie voor andere tweetnamen.
+- [x] Test browser→API→Mailgun→daadwerkelijke inbox met herkenbare testaanvraag. Controleer desktop/mobiel, pending/dubbelklik, validatie, foutfocus, transportfout, fragmentvoorinvulling en `#aanvraagformulier`-scrollmarge. Geen bestaande klantidentiteit.
 - [ ] Bevestig een werkelijk ontvangen event in dashboard/export. Een onderschepte QA-POST of SDK 200 is geen ontvangstbewijs. Geen naam, e-mail, telefoon, adres, bericht, datum of ruwe query/hash in analytics.
 - [ ] Meet geaggregeerd dienst, gebied, bereikbaar contact, passend/niet-passend en afgesproken opdracht. Omzet alleen wanneer echt beschikbaar. Klik of API-succes is geen klant.
 - [ ] Onderzoek bookingfunctie vóór booking-start/complete-events. Een aanvraag is geen bevestigde afspraak. Toets consent, privacy en retentie aan wat werkelijk draait.
 
 **Tests:** echte eventspecificatie, failure ≠ success, geen vrije-tekstproperties; mailboxontvangst apart live controleren. **Done:** ontvangst en eventingestion bewezen; eerste outcome-baseline met periode/sample waar beschikbaar. Zonder ontvangst/toegang blijft die deeltaak open, ook als de auditnotitie gereed is.
 
+10 oktober: echte test op productie `7a16cec`, API200/oktrue, Mailgun EU delivered en door eigenaar bevestigd: “Ja, ontvangen”. Hardened `126e9ab` apart getest op desktop/mobiel en native POST. Alle tien events behouden; 137 unitchecks en lokale productie-build/crawl/browserchecks slagen. **WP01 blijft gedeeltelijk open:** Vercel Hobby vraagt Pro voor custom events; geen dashboardingestie bewezen en geen betaald abonnement gestart. Commerciële uitkomsten en echte inboxbewaarpraktijk ontbreken; onbekend is niet nul. Bookingfunctie ontbreekt, intake is geen afspraak. Privacy/consent/retentie zijn onderzocht maar niet volledig operationeel bevestigd. Zie `docs/seo/wp01-contact-receipt-report.md`.
+
 ### WP02 — Correcte Search Console en zoekmachineopname
 
 **Files:** `docs/seo/2026-10-10-search-baseline.md`, `LOCAL_SEO_EXTERNAL_ACTIONS.md`; bestaande verificatie in layout/DNS behouden. Exports privé.
 
-- [ ] Bevestig juiste Abder-account, property, canonical domein en rechten. Geen GSC Wizard.
-- [ ] Controleer sitemapontvangst, Pages/indexing, representatieve URLs, Google's versus opgegeven canonical, rendering, robots/noindex en manual/securityacties. Noteer datum en schermwaarde; indiening is geen opname.
-- [ ] Controleer huidige instelling voor Search generative AI inclusion. Er is geen aparte algemene knop die “nieuwe SEO accepteert”.
-- [ ] Bekijk [Generative AI performance](https://support.google.com/webmasters/answer/16984139?hl=en-GW), gewone Search Performance, CWV en relevante meldingen. Een ontbrekend rapport bewijst geen nulverkeer.
-- [ ] Exporteer drie maanden plus vergelijkbare vorige periode: Queries, Pages, Dates, country/device/search appearance en echte query-paginaparen indien mogelijk. Noteer timezone, filters, rijlimieten, voorlopige dagen en exportdatum.
-- [ ] URL Inspection alleen voor werkelijk gewijzigde belangrijke URLs; geen dagelijkse massa of betaald indexeringsproduct.
+- [x] Bevestig juiste Abder-account, property, canonical domein en rechten. Geen GSC Wizard.
+- [x] Controleer sitemapontvangst, Pages/indexing, representatieve URLs, Google's versus opgegeven canonical, rendering, robots/noindex en manual/securityacties. Noteer datum en schermwaarde; indiening is geen opname.
+- [x] Controleer huidige instelling voor Search generative AI inclusion. Er is geen aparte algemene knop die “nieuwe SEO accepteert”.
+- [x] Bekijk [Generative AI performance](https://support.google.com/webmasters/answer/16984139?hl=en-GW), gewone Search Performance, CWV en relevante meldingen. Een ontbrekend rapport bewijst geen nulverkeer.
+- [x] Exporteer drie maanden plus vergelijkbare vorige periode: Queries, Pages, Dates, country/device/search appearance en echte query-paginaparen indien mogelijk. Noteer timezone, filters, rijlimieten, voorlopige dagen en exportdatum.
+- [x] URL Inspection alleen voor werkelijk gewijzigde belangrijke URLs; geen dagelijkse massa of betaald indexeringsproduct.
 
 **Done:** actuele property-/indexing-/instellingswaarneming en echte exports. Ontbrekende toegang staat als afhankelijkheid; een beschreven accountgate is geen voltooide zoekbaseline.
+
+Afgevinkt 10 oktober: correcte geverifieerde Abder-property, echte huidige/vergelijkings-/AI-exports. Huidig 7 juli–6 oktober: 68/3519 over 92 dagen; vorig 7 april–6 juli: 37/2696 over 91 dagen. Native datepicker opnieuw gecontroleerd na één-dagverschil in de draft; periodeverschil en correctie zijn vastgelegd. Vorige dagtotalen zijn een herleidbare selectie uit native langere Dates, geen verzonnen previous-only-export. Eén exact-query-gefilterde native Pages-export bevestigt het Bulex-paar. Sitemap71 en index10/64 zijn gedateerde snapshots, CWV is onvoldoende data. Maintenance live render heeft één onopgeloste resource-uitzondering; geen all-green-claim. Eén nieuwe-tool-indexeringsaanvraag bevestigd, niet geïndexeerd verklaard. Zie `docs/seo/2026-10-10-search-baseline.md`.
 
 ### WP03 — Concurrenten, vraagclusters en volledige gaprapporten
 
@@ -223,18 +229,20 @@ test("work-area customer copy explains coverage without editorial SEO jargon", (
 
 **Interfaces:** CSV-analyzer levert echte kandidaten, waargenomen paren en expliciet vermoedelijke matches; geen verplichte betaalde API.
 
-- [ ] Kies 3–5 vergelijkbare Belgische concurrenten. Leg Maps versus organische SERP, datum, locatie, taal, apparaat en personalisatiegrens apart vast.
-- [ ] Lees echte top 3/top 5; top 10 voor een geselecteerde uitgebreide brief. Onderzoek format, vragen, proces, zichtbare prijzen, ontbrekende antwoorden, eigen toevoeging en links als alternatieve verklaring. Niet kopiëren of causaliteit uit positie afleiden.
+- [x] Kies 3–5 vergelijkbare Belgische concurrenten. Leg Maps versus organische SERP, datum, locatie, taal, apparaat en personalisatiegrens apart vast.
+- [x] Lees echte top 3/top 5; top 10 voor een geselecteerde uitgebreide brief. Onderzoek format, vragen, proces, zichtbare prijzen, ontbrekende antwoorden, eigen toevoeging en links als alternatieve verklaring. Niet kopiëren of causaliteit uit positie afleiden.
 - [ ] Vergelijk commerciële/nevenqueries, PAA, autocomplete, Trends en echte klantvragen. Volume/KD alleen met bron, land en periode; suggesties zijn geen volumes.
-- [ ] Bewaar afzonderlijke presets: posities 8–20, 4–15, 11–20 en Phase E 4–30; minimaal tien impressies. “100/maand” vereist echte maanddata. Bronvoorbeelden volume 100–2000/KD <40 en contentvolume 50–500 blijven losse hypotheses. Intentmapping gebruikt als bronpreset zoekvolume ≥20 per maand, uitsluitend met echte tooldata. Geen gecombineerde afvalfilter voor kleine Belgische vragen; impressies zijn geen zoekvolume.
-- [ ] Lever Mehrabs exacte tabel: cluster/query, echte totale impressies, geschikte gemiddelde positie, gaptype, actie, High/Med/Low en matchzekerheid. Daarna top vijf contentbriefs en top vijf quick wins.
-- [ ] Lever ook Sarveshs afzonderlijke volledige kandidaatoutputs (S-059/S-106/S-110): maximaal twintig keywordgaps, vier buyerjourney-tabellen en maximaal twintig contentbriefs. Bij onvoldoende echte kandidaten: minder rijen en de reden, nooit opvullen.
-- [ ] Onderscheid missing content, striking distance, lage CTR bij zichtbaarheid en vraag-/vergelijkingsintentie. Branded queries apart houden; onder tien impressies uit de gevraagde selectie. Geen fictieve expected-CTR-curve.
-- [ ] Briefcontract: bestaande/nieuwe URL; primaire/secundaire queries; gelezen SERP-bronnen; gedeelde relevante secties; eigen toevoeging; H1, title, meta, template, bodylinks, FAQ, CTA, bewijs- en veiligheidsgrenzen.
-- [ ] Buyerjourney: probleem herkennen→oorzaak begrijpen→herstellen/vervangen/aanbieder vergelijken→hulp aanvragen. Niet alle informatie of UGC-SERPs automatisch schrappen.
-- [ ] Maak Machina's **één gezamenlijk vierpassenauditrapport voor dezelfde URL en hoofdquery**: technische bereikbaarheid/snelheid, concurrentie/zoekintentie, observeerbare AI-bronnen en conversie/leadfit. Voeg bronbewijs, keep/conditional/drop-besluit, één eerste wijziging en evaluatiecriteria toe. Uitvoering loopt via WP01/WP06/WP12/WP14, experiment via WP17.
+- [x] Bewaar afzonderlijke presets: posities 8–20, 4–15, 11–20 en Phase E 4–30; minimaal tien impressies. “100/maand” vereist echte maanddata. Bronvoorbeelden volume 100–2000/KD <40 en contentvolume 50–500 blijven losse hypotheses. Intentmapping gebruikt als bronpreset zoekvolume ≥20 per maand, uitsluitend met echte tooldata. Geen gecombineerde afvalfilter voor kleine Belgische vragen; impressies zijn geen zoekvolume.
+- [x] Lever Mehrabs exacte tabel: cluster/query, echte totale impressies, geschikte gemiddelde positie, gaptype, actie, High/Med/Low en matchzekerheid. Daarna top vijf contentbriefs en top vijf quick wins.
+- [x] Lever ook Sarveshs afzonderlijke volledige kandidaatoutputs (S-059/S-106/S-110): maximaal twintig keywordgaps, vier buyerjourney-tabellen en maximaal twintig contentbriefs. Bij onvoldoende echte kandidaten: minder rijen en de reden, nooit opvullen.
+- [x] Onderscheid missing content, striking distance, lage CTR bij zichtbaarheid en vraag-/vergelijkingsintentie. Branded queries apart houden; onder tien impressies uit de gevraagde selectie. Geen fictieve expected-CTR-curve.
+- [x] Briefcontract: bestaande/nieuwe URL; primaire/secundaire queries; gelezen SERP-bronnen; gedeelde relevante secties; eigen toevoeging; H1, title, meta, template, bodylinks, FAQ, CTA, bewijs- en veiligheidsgrenzen.
+- [x] Buyerjourney: probleem herkennen→oorzaak begrijpen→herstellen/vervangen/aanbieder vergelijken→hulp aanvragen. Niet alle informatie of UGC-SERPs automatisch schrappen.
+- [x] Maak Machina's **één gezamenlijk vierpassenauditrapport voor dezelfde URL en hoofdquery**: technische bereikbaarheid/snelheid, concurrentie/zoekintentie, observeerbare AI-bronnen en conversie/leadfit. Voeg bronbewijs, keep/conditional/drop-besluit, één eerste wijziging en evaluatiecriteria toe. Uitvoering loopt via WP01/WP06/WP12/WP14, experiment via WP17.
 
 **Tests:** vermoedelijke match krijgt geen paarmetrics; branded/onder-tienfilters, grensposities 8/20, malformed CSV, duplicaten, negatieve/ontbrekende waarden en herleidbare presets. **Done:** echte data, alle gevraagde kandidaat-/briefoutputs en gecombineerd auditrapport; geen verzonnen volume, rank of opbrengst.
+
+10 oktober: vijf servicesample-aanbieders en één afzonderlijke echte top tien gelezen; native data geven 22 relevante ≥10-queries/683 impressies in acht clusters, vier aparte presets, vijf briefs/quick-winreviews en vier journey-tabellen. Eén echt Bulex-paar; overige matches blijven hypotheses. Autocomplete en Belgische Trends zijn daadwerkelijk bekeken, met sparse/ambiguïteitsgrenzen, geen volumes of bewezen seizoenspatroon. Onafhankelijke review verifieert rekenwerk en bronafbakening; geen Critical/Important. **De derde checkbox blijft deels open voor echte klantvragen:** die gegevens ontbreken, net als volume/KD-tooldata en commerciële uitkomsten. Die lege bronnen worden niet met fictieve rijen gevuld. Researchoutputs staan in `docs/seo/wp03-research-report.md`, `docs/seo/content-gap-backlog.md` en `docs/seo/briefs/wp03-first-five.md`; niet alle WP00–WP03-gates zijn gesloten.
 
 ### WP04 — Volledige Google Business Profile-audit
 

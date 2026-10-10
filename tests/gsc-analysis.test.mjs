@@ -34,6 +34,19 @@ test("Dutch headings and localized decimal percentages preserve observed metrics
   assert.equal(parseGscCsv('Zoekopdracht,Clicks,Impressions,CTR,Position\ncv,1,100,0.01,9\n', { kind: "queries" })[0].exportedCtr, 0.01);
 });
 
+test("native Dutch GSC Toppagina's heading identifies page rows", () => {
+  // Exact observed export header; the row metrics below are synthetic regression data.
+  const csv = "Toppagina's,Aantal klikken,Vertoningen,CTR,Positie\nhttps://www.abservice24.be/onderhoud,3,250,\"1,2%\",\"12,5\"\n";
+  assert.deepEqual(parseGscCsv(csv, { kind: "pages" }), [{
+    page: "https://www.abservice24.be/onderhoud",
+    clicks: 3,
+    impressions: 250,
+    exportedCtr: 0.012,
+    position: 12.5,
+    observedCtr: 0.012,
+  }]);
+});
+
 test("invalid schemas and impossible metrics cannot become opportunities", () => {
   for (const csv of [
     'Query,Clicks,CTR,Position\nx,1,1%,8\n',
@@ -90,6 +103,53 @@ test("valid paired dimensions retain exact metrics distinct from independent tot
   assert.equal(analysis.inferredMatches.some((row) => row.query === "loodgieter wilrijk" && row.page.includes("wilrijk")), false);
 });
 
+// Synthetic boundaries exercise selection, never represent AB account observations.
+// Catches merged presets, exclusive boundaries and loss of nonbrand/minimum filters.
+test("separate position presets select inclusive observed query boundaries after eligibility filters", () => {
+  const queriesCsv = 'Query,Clicks,Impressions,CTR,Position\n' + [
+    'below,0,10,0%,3.99', 'four,0,10,0%,4', 'eight,0,10,0%,8',
+    'eleven,0,10,0%,11', 'fifteen,0,10,0%,15', 'above fifteen,0,10,0%,15.01',
+    'twenty,0,10,0%,20', 'above twenty,0,10,0%,20.01', 'thirty,0,10,0%,30',
+    'above thirty,0,10,0%,30.01', 'AB Service,0,100,0%,12', 'too few,0,9,0%,12',
+  ].join('\n');
+  const analysis = buildGscAnalysis({ queriesCsv, pagesCsv: pages });
+  assert.ok(Array.isArray(analysis.positionPresets), "separate selection presets are exposed");
+  const observed = Object.fromEntries(analysis.positionPresets.map((preset) => [
+    preset.id, preset.queryCandidates.map((row) => row.query).sort(),
+  ]));
+  assert.deepEqual(observed, {
+    'positions-8-20': ['above fifteen', 'eight', 'eleven', 'fifteen', 'twenty'],
+    'positions-4-15': ['eight', 'eleven', 'fifteen', 'four'],
+    'positions-11-20': ['above fifteen', 'eleven', 'fifteen', 'twenty'],
+    'phase-e-4-30': ['above fifteen', 'above twenty', 'eight', 'eleven', 'fifteen', 'four', 'thirty', 'twenty'],
+  });
+  assert.equal(analysis.queryCandidates.length, 10, "legacy overall candidates retain out-of-range rows");
+});
+
+// Catches borrowing independent query/page metrics or selecting a pair from query position.
+test("presets retain only observed pairs using each pair's own position and impression count", () => {
+  const pairsCsv = 'Query,Page,Clicks,Impressions,CTR,Position\n' + [
+    'loodgieter wilrijk,https://www.abservice24.be/loodgieter-wilrijk,1,20,5%,25',
+    'ketel onderhoud,https://www.abservice24.be/onderhoud,1,15,6.67%,8',
+    'AB Service,https://www.abservice24.be/,1,50,2%,12',
+    'kleine vraag,https://www.abservice24.be/onderhoud,0,9,0%,12',
+  ].join('\n');
+  const analysis = buildGscAnalysis({ queriesCsv: queries, pagesCsv: pages, pairsCsv, minImpressions: 15 });
+  assert.ok(Array.isArray(analysis.positionPresets), "separate selection presets are exposed");
+  const preset = analysis.positionPresets.find((row) => row.id === 'positions-8-20');
+  assert.deepEqual(preset.pairedCandidates.map((row) => [row.query, row.impressions, row.position, row.certainty]), [
+    ['ketel onderhoud', 15, 8, 'observed-pair'],
+  ]);
+  assert.equal(preset.minImpressions, 15);
+  assert.equal(preset.pageCandidates, undefined);
+  assert.equal(analysis.pageCandidates[0].impressions, 1000);
+  assert.deepEqual(analysis.positionPresets.find((row) => row.id === 'phase-e-4-30').pairedCandidates.map((row) => row.query), [
+    'ketel onderhoud', 'loodgieter wilrijk',
+  ]);
+  const stricter = buildGscAnalysis({ queriesCsv: queries, pagesCsv: pages, pairsCsv, minImpressions: 21 });
+  assert.equal(stricter.positionPresets.find((row) => row.id === 'positions-8-20').pairedCandidates.length, 0);
+});
+
 test("paired data rejects invalid URLs and duplicated query/page dimensions", () => {
   assert.throws(() => parseGscCsv('Query,Page,Clicks,Impressions,CTR,Position\nx,javascript:alert(1),1,10,10%,8\n', { kind: "pairs" }), /url/i);
   assert.throws(() => parseGscCsv('Query,Page,Clicks,Impressions,CTR,Position\nx,https://www.abservice24.be/,1,10,10%,8\nx,https://www.abservice24.be/,1,10,10%,8\n', { kind: "pairs" }), /duplicate/i);
@@ -108,6 +168,8 @@ test("CLI imports real files, writes JSON and rejects missing flags without succ
     assert.equal(report.queryCandidates[0].impressions, 100);
     assert.equal(report.inputFiles.queries, queryFile);
     assert.match(report.limitations.join(" "), /search volume/i);
+    assert.ok(Array.isArray(report.positionPresets), "CLI exposes independent position selections");
+    assert.match(report.limitations.join(" "), /aggregate impressions.*monthly demand/i);
     assert.notEqual(spawnSync(process.execPath, ["scripts/gsc-analysis.mjs", "--queries", queryFile]).status, 0);
   } finally {
     rmSync(dir, { recursive: true, force: true });
