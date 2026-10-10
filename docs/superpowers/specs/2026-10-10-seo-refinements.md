@@ -30,3 +30,13 @@ Test metadata and real card rendering, including long titles, exclusion and PNG 
 inspect actual rendered head tags and image files after a production build. Run the complete
 suite, lint, dependency audit, local/live crawl and independent diff review before release.
 Keep lab, indexing and qualified-lead claims separate.
+
+## Observed runtime follow-up
+
+Production deployment of a94b108 reports Node24.x even though project settings and CI say22;
+the open-ended package engine overrides project settings and selects the newest supported major.
+Pin the already-running LTS major24.x in package/lock root, .nvmrc and CI; preserve all dependency
+resolutions and public behaviour. Verify the full suite/lint/build/crawl under actualNode24,
+then hosted clean install and production nodeVersion. Allow managed24patch updates, not newmajors.
+Primary references checked10October2026: https://nodejs.org/en/about/previous-releases and
+https://vercel.com/docs/functions/runtimes/node-js/node-js-versions.

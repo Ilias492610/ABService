@@ -32,6 +32,8 @@ Build local search visibility and qualified enquiries through useful, verifiable
   after checking the public root proof. Use it for genuine released changes, not all-site historical
   submissions, cosmetic edits or indexing promises. It does not configure a Google/Bing account.
 - `.github/workflows/seo-quality.yml` runs repeatable tests, lint, build, production dependency and rendered-crawl checks.
+- Node24.x LTS is pinned in package/lock root, CI and `.nvmrc`, avoiding implicit production
+  major upgrades. Actual bundled24.19 tests/build pass; each release's hosted/live gate is separate.
 
 ## Publication model
 
@@ -183,4 +185,11 @@ Local scheduled runs require the computer and app to remain available.
 
 ## Next actions
 
-The on-site expansion is complete. The next phase is the account-level work in `LOCAL_SEO_EXTERNAL_ACTIONS.md`. Use `PROJECT_CONTENT_GUIDE.md` when adding future cases and keep locality or air-conditioning candidates in `docs/seo/content-gap-backlog.md` until their evidence is available.
+The current source-bound releases are integrated; improvement remains ongoing rather than a
+finished SEO score. Advance independently on useful source-backed content/runtime quality and the
+correct-owner account work in `LOCAL_SEO_EXTERNAL_ACTIONS.md`. Next manufacturer candidate:
+Calenta Ace-Matic permanent E table, using the current Belgian product page/manual rather than
+merging the legacy or online overview; root source validation and fresh acceptance are still required.
+Use `PROJECT_CONTENT_GUIDE.md` for future cases and keep locality/air-conditioning candidates in
+`docs/seo/content-gap-backlog.md` until their evidence is available. No new campaign or all-site
+IndexNow notification is authorized merely by this backlog.

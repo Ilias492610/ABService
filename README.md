@@ -4,7 +4,8 @@ Production website for AB Service, built with Next.js App Router. The site uses 
 
 ## Local setup
 
-Use Node.js 20.9 or newer.
+Use Node.js 24.x LTS, matching CI and production. `.nvmrc` selects this major;
+run `nvm use` first if you use nvm. Managed minor/security patches remain allowed.
 
 ```bash
 npm ci
@@ -40,6 +41,15 @@ npm run seo:audit -- http://localhost:3100
 ```
 
 The SEO audit crawls the built site and checks the sitemap, robots rules, metadata, canonicals, H1s, JSON-LD, image alternatives, internal links, draft/noindex boundaries and 404 behaviour.
+
+For genuine changed published URLs, preview IndexNow locally first:
+
+```bash
+npm run seo:indexnow -- /foutcodes /foutcodes/remeha
+```
+
+Only add `--send` after verifying the live release and public proof. Do not resubmit the
+example paths unless their substantive content changed; receipt is not indexing confirmation.
 
 ## Content sources
 

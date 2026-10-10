@@ -2,6 +2,17 @@
 
 ## 10 October 2026 — page previews, Calenta coverage and bounded IndexNow integration
 
+- Published `a94b108` to GitHub `main`; hosted CI38062088046 passed every gate. The primary
+  Vercel Git-triggered build was not observed, so root deployed the exact clean commit via CLI
+  to the verified existing project. `dpl_8exsTLts6yYX6f16SvsLDwLJAafT` is Ready with `www`.
+  Live crawl81/92/110, source/preview metadata, mobile filtering and retained apex308 passed.
+- Live Remeha mobile lab99/100/100/100, LCP2.149s,274454bytes. This is not field/search proof.
+- One live IndexNow batch for the fault hub/Remeha returned202(key verification pending).
+  Notification receipt is not indexing; no retry or blanket submission was made.
+- Pinned already-deployed Node24LTS in source and aligned CI/developerhint after detecting22/24
+  mismatch. ActualNode24.19 suite114/lint/build pass; the separate pinned-release gate is pending.
+  Lock dependency graph remains identical; README and runtime regression now match.
+
 - Added 78 page-specific, build-time 1200×630 social-preview PNGs, including all six project cases.
   Registry-only lookup rejects unknown/noindex paths; no new sitemap pages or page-load images.
 - Added 42 source-bound historical Calenta entries (23 E faults, 19 Su blocking states), bringing
@@ -13,7 +24,7 @@
 - Local acceptance: 113/113 tests, lint/build/crawl (81/92/110), production audit zero. Source audit
   47 of 48 HTTP 200 with the documented Sibelga 403; Remeha mobile lab 97/100/100/100.
 - Independent reviews found no Critical/Important; minor sparse-array validator issue repaired
-  with RED→GREEN regression. Live deployment/notification response is recorded after release.
+  with RED→GREEN regression. Exact live deployment/notification response is recorded above.
 - No paid campaign, fabricated business fact, blanket historical URL submission or new Google login.
 
 ## 10 October 2026 — release verification and final source corrections

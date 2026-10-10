@@ -37,7 +37,7 @@ returns a React element; route awaits params and emits ImageResponse.
   advice, long title, unknown and noindex paths. Expected missing implementation first, then pass.
 - [x] Build static card handler; run `npm test`, `npm run lint`, `npm run build`.
   Expected all green; request actual card and built head, inspect PNG dimensions/appearance.
-- [ ] Independent review, update evidence/inventory/QA/changelog, commit and publish tested changes.
+- [x] Independent review, update evidence/inventory/QA/changelog, commit and publish tested changes.
   Verify exact GitHub/Vercel release and live crawl before claiming completion.
 
 ### Investigation follow-ups
@@ -63,8 +63,19 @@ non-empty groups while preserving each model's meaning.
   then use the tested helper in the actual component; keep all digits and prefixes intact.
 - [x] Run full tests/lint/build/crawl and desktop/mobile real filtering checks. Inspect SSR rows
   and source links. Expected green, visible59Remeha explanations, no horizontal overflow.
-- [ ] Include both tasks in final independent review and tested release documentation/publication.
+- [x] Include both tasks in final independent review and tested release documentation/publication.
 
 Dependency investigation: nine dev-tree findings confirmed, zero production findings. Removing
 Tailwind alone changes the applied Preflight reset; a full safe fix does not have a compatible
 published patch. Keep the styling pipeline this release; track unresolved developer-only risk.
+
+### Task 3: Pin the actual production LTS major and align CI
+
+**Files:** `package.json`, package-lock root engines, `.nvmrc`, `.github/workflows/seo-quality.yml`,
+`tests/runtime-config.test.mjs` and dated release records.
+**Observed defect:** Vercel effective24.x vs CI22 with loose >=20.9.0; do not change dependency graph.
+
+- [x] Add runtime contract regression and run under actual bundledNode24; expect loose-engine failure.
+- [x] Set engine/lock to24.x, CI/node-version hint to24; run actualNode24 suite/lint/build/localcrawl.
+- [ ] Independent scoped review, publish, verify hosted clean install and productionnodeVersion24.x.
+  Record a94b108's separate live crawl/202IndexNow receipt; no repeated notification for runtime-only edits.

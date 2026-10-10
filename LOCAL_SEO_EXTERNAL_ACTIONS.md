@@ -9,7 +9,14 @@ to the official endpoint. Record its actual response below; 200 means received, 
 validation pending, neither means indexed. Do not send historical/all-site/cosmetic changes or
 automatically retry 429. This does not complete Bing Webmaster/Places, Google or Apple account work.
 References: https://www.indexnow.org/documentation, https://www.indexnow.org/faq,
-https://www.bing.com/indexnow/getstarted. Live proof and first notification are pending at this entry.
+https://www.bing.com/indexnow/getstarted.
+
+Observed 10 October 2026 after `a94b108`: primary deployment
+`dpl_8exsTLts6yYX6f16SvsLDwLJAafT` Ready with `www`; live crawl81/92/110; both changed pages
+200/canonical/updated and public proof200/plain/exact. One two-URL POST returned **HTTP202,
+key-verification-pending**. URLs: `https://www.abservice24.be/foutcodes` and
+`https://www.abservice24.be/foutcodes/remeha`. No indexing/ranking proof, repeat or other submissions.
+Future runtime/documentation-only commits must not resend this batch.
 GSC Wizard is declined and excluded; use genuine correct-owner exports when available.
 
 The September actions below are historical submissions, not proof of current approval, delivery,

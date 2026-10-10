@@ -8,8 +8,12 @@ plus two noindex. The 78 page-specific previews are assets, not extra indexed pa
 17 Avanta +23 historical Calenta E +19 Su rows: 59 total, with per-model meanings. All thirteen guides
 now display 964 source rows, including shared Bosch/Junkers content. Source audit is 47 HTTP 200
 of 48 unique URLs plus the documented Sibelga 403. No search/lead metric is derived from these counts.
-Live acceptance of this refinement and IndexNow notification receipt are recorded after publication;
-neither establishes indexing. The dated baseline/release observations below remain historical.
+This refinement is live as `a94b108`, hosted CI38062088046 passed and primary CLI deployment
+`dpl_8exsTLts6yYX6f16SvsLDwLJAafT` is Ready with matching commit/www. Live crawl81/92/110 and
+mobile Remeha filtering passed. One IndexNow two-URL batch returned202(key verification pending),
+not indexing. Live Remeha lab99/100/100/100, LCP2.149s and274454bytes is not a search/lead metric.
+Subsequent runtime pin passes114 tests/lint/build under actualNode24.19; its hosted/live gate is
+separate. The dated baseline/release observations below remain historical.
 
 The initial source audit inspected clean `main` at `cb4d938` in the Documents checkout. Node
 registry inspection returned **73 registered public routes: 71 published and 2 noindex**, six

@@ -1,6 +1,28 @@
 # AB Service SEO QA Report
 
-## 10 October 2026 — preview, Remeha and IndexNow refinement: local acceptance
+## 10 October 2026 — preview, Remeha and IndexNow refinement: release acceptance
+
+- Feature commit `a94b108e0a1ed2ae159ad17353622a8ffa5cc18c` is on GitHub `main`; hosted Linux
+  [CI 38062088046](https://github.com/Ilias492610/ABService/actions/runs/38062088046) passed clean
+  installation, lint, tests, production audit, build and crawl. No new automatic Vercel build was
+  observed; root confirmed the existing project/repo/main, then deployed the clean commit by CLI.
+  Deployment `dpl_8exsTLts6yYX6f16SvsLDwLJAafT` is Ready, reports the matching commit, and serves
+  `www`. Live crawl passed 81 pages, 92 internal destinations and 110 assets. Apex still returns
+  permanent 308 with path/query preserved. No claim about a secondary-project deployment.
+- Live mobile Remeha shows 59 cards, one H1, unique preview metadata and no overflow/errors.
+  `E02` returns both distinct model meanings; Calenta selection returns only its sensor meaning;
+  Su14 returns the scoped pressure explanation. The canonical pages and new source are present.
+- Live mobile Lighthouse: 99/100/100/100, LCP 2.149 s, CLS 0.000852, TBT 12 ms, 274,454 bytes.
+  This is a single-run lab result, not field CWV or search/lead improvement.
+- Live root proof returns direct 200, UTF-8 plaintext and exact key. One explicit batch containing
+  `/foutcodes` and `/foutcodes/remeha` received HTTP 202: key verification pending. It is not an
+  indexing result. No retry, historical/all-site batch or notification for cosmetic previews.
+- Runtime follow-up: deployment API reports Node24.x although the old workflow tested22 and
+  project settings said22. The loose engine selects the newest supported major. Pinning24.x
+  (already deployed LTS), CI24 and `.nvmrc` now passes 114/114 tests, lint and build under actual
+  bundled Node24.19.0; hosted clean install and the pinned deployment remain a separate gate.
+  Dependency versions/resolutions are unchanged; a metadata regression protects alignment.
+  Independent scoped review found no Critical/Important; the Minor stale README version was fixed.
 
 - The current feature branch passes 113/113 tests, lint and production dependency audit (zero).
   Production build and local crawl pass: 81 customer routes, 92 internal destinations, 110 assets.
@@ -25,8 +47,8 @@
   Local proof returns direct HTTP 200, UTF-8 plaintext and the exact configured public key.
 - Two independent reviews found no Critical/Important issues. The IndexNow review's Minor sparse-
   array case was reproduced with a failing test, then repaired; the full suite now passes 113/113.
-- Publication, hosted CI, live proof/crawl and the first exact two-URL notification remain separate
-  release checks until their observed results are recorded. No actual indexing or growth is claimed.
+- Publication, hosted CI, live proof/crawl and first notification for `a94b108` passed as recorded
+  above. Runtime pin has its separate release gate. No actual indexing or growth is claimed.
 - Nine dev-tree dependency findings remain; no compatible complete patch was established. Removing
   Tailwind alone would change the active Preflight reset and would not eliminate all findings.
 - GSC Wizard is declined and excluded. Correct-owner exports may establish a search baseline later;
