@@ -33,7 +33,8 @@ Build local search visibility and qualified enquiries through useful, verifiable
   submissions, cosmetic edits or indexing promises. It does not configure a Google/Bing account.
 - `.github/workflows/seo-quality.yml` runs repeatable tests, lint, build, production dependency and rendered-crawl checks.
 - Node24.x LTS is pinned in package/lock root, CI and `.nvmrc`, avoiding implicit production
-  major upgrades. Actual bundled24.19 tests/build pass; each release's hosted/live gate is separate.
+  major upgrades. Actual bundled24.19 suite114/lint/build/crawl, hosted24.21 CI38063158088 and
+  matching manual productionNode24.x passed forff3665b. Exact-release evidence is in theQA report.
 
 ## Publication model
 
@@ -190,6 +191,9 @@ finished SEO score. Advance independently on useful source-backed content/runtim
 correct-owner account work in `LOCAL_SEO_EXTERNAL_ACTIONS.md`. Next manufacturer candidate:
 Calenta Ace-Matic permanent E table, using the current Belgian product page/manual rather than
 merging the legacy or online overview; root source validation and fresh acceptance are still required.
+Investigate the primary Vercel Git-provider `git_info_fail` separately: the tested release is already
+live via CLI, but this does not repair the failed automatic Git check. Never spoof provider status
+or silently change account permissions. Verify current deployment/commit before any new publication.
 Use `PROJECT_CONTENT_GUIDE.md` for future cases and keep locality/air-conditioning candidates in
 `docs/seo/content-gap-backlog.md` until their evidence is available. No new campaign or all-site
 IndexNow notification is authorized merely by this backlog.

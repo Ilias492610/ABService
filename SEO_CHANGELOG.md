@@ -10,8 +10,14 @@
 - One live IndexNow batch for the fault hub/Remeha returned202(key verification pending).
   Notification receipt is not indexing; no retry or blanket submission was made.
 - Pinned already-deployed Node24LTS in source and aligned CI/developerhint after detecting22/24
-  mismatch. ActualNode24.19 suite114/lint/build pass; the separate pinned-release gate is pending.
+  mismatch. ActualNode24.19 suite114/lint/build/crawl pass. Runtime commitff3665b passed hosted
+  CI38063158088 under24.21.0/npm11.19.0. Primary Git deployment failed beforebuild (`git_info_fail`);
+  failed provider status is not overwritten. Manual deploymentdpl_ASnBYdZXpvfa7hk37hdTb5EhJxod
+  isReady/matchingcommit/Node24.x/www and passed livecrawl81/92/110/apex308.
   Lock dependency graph remains identical; README and runtime regression now match.
+- Updated the existing daily09:00 follow-up with actualNode24, excludedGSCWizard and strict no-repeat
+  notification rules. Correct-account/search/lead evidence and the underlying Git-provider issue
+  remain separate follow-ups; no full-masterprompt, indexed or growth result is claimed.
 
 - Added 78 page-specific, build-time 1200×630 social-preview PNGs, including all six project cases.
   Registry-only lookup rejects unknown/noindex paths; no new sitemap pages or page-load images.

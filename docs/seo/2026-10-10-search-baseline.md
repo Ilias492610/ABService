@@ -12,8 +12,11 @@ This refinement is live as `a94b108`, hosted CI38062088046 passed and primary CL
 `dpl_8exsTLts6yYX6f16SvsLDwLJAafT` is Ready with matching commit/www. Live crawl81/92/110 and
 mobile Remeha filtering passed. One IndexNow two-URL batch returned202(key verification pending),
 not indexing. Live Remeha lab99/100/100/100, LCP2.149s and274454bytes is not a search/lead metric.
-Subsequent runtime pin passes114 tests/lint/build under actualNode24.19; its hosted/live gate is
-separate. The dated baseline/release observations below remain historical.
+Subsequent runtime pinff3665b passes114 tests/lint/build/crawl under actualNode24.19 and hosted
+CI38063158088 under24.21/npm11.19. Primary automatic Git retrieval failed (`git_info_fail`), while
+the matching manual productiondpl_ASnBYdZXpvfa7hk37hdTb5EhJxod isReady/Node24.x/www and passed
+livecrawl81/92/110/apex308. Underlying Git-provider repair remains open; no notification repeated.
+The dated baseline/release observations below remain historical.
 
 The initial source audit inspected clean `main` at `cb4d938` in the Documents checkout. Node
 registry inspection returned **73 registered public routes: 71 published and 2 noindex**, six
@@ -60,7 +63,7 @@ dates reflect checked source content; no historic first-publication date was fab
 distinguishes regional/device/fuel/power rules and supports a validated, privacy-preserving enquiry
 handoff. Fault guides now link brand/service help, and cases link their verified province hub.
 
-The newest **local** source inventory covers **47 unique URLs**, including core pressure and
+The `06d8464` source-refresh inventory covered **47 unique URLs**, including core pressure and
 recognition citations and two current premium/support sources replacing an outdated webinar
 reference. The audit returned **46 HTTP 200 and one Sibelga HTTP 403**. These source changes
 are published in `06d8464`, not attributed to the earlier repair. The previous
@@ -210,7 +213,7 @@ are its first three; update their order from observed search and genuine work ev
 
 The October live release, 81-route crawl and current browser/API/lab observations are recorded
 above. The review-star correction, source refresh and their hosted CI runs passed. The GitHub
-Actions workflow gates Node 22 install, lint, tests, production dependency audit, build and local
+Actions workflow now gates Node 24 install, lint, tests, production dependency audit, build and local
 crawl; the failed first run remains historical and the repair's success is not attributed to newer code.
 Once the correct-owner exports are available, save a dated baseline and compare
 equal, documented periods. Review indexing and failures first; assess query/page opportunities

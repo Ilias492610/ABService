@@ -77,5 +77,5 @@ published patch. Keep the styling pipeline this release; track unresolved develo
 
 - [x] Add runtime contract regression and run under actual bundledNode24; expect loose-engine failure.
 - [x] Set engine/lock to24.x, CI/node-version hint to24; run actualNode24 suite/lint/build/localcrawl.
-- [ ] Independent scoped review, publish, verify hosted clean install and productionnodeVersion24.x.
+- [x] Independent scoped review, publish, verify hosted clean install and productionnodeVersion24.x.
   Record a94b108's separate live crawl/202IndexNow receipt; no repeated notification for runtime-only edits.

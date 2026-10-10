@@ -20,9 +20,20 @@
 - Runtime follow-up: deployment API reports Node24.x although the old workflow tested22 and
   project settings said22. The loose engine selects the newest supported major. Pinning24.x
   (already deployed LTS), CI24 and `.nvmrc` now passes 114/114 tests, lint and build under actual
-  bundled Node24.19.0; hosted clean install and the pinned deployment remain a separate gate.
+  bundled Node24.19.0. Runtime commit `ff3665bc178d955786d0652cc8565310cf4d2af8` passed hosted
+  [CI38063158088](https://github.com/Ilias492610/ABService/actions/runs/38063158088), including
+  clean install with Node24.21.0/npm11.19.0, all114 tests, lint/audit/build/crawl.
   Dependency versions/resolutions are unchanged; a metadata regression protects alignment.
   Independent scoped review found no Critical/Important; the Minor stale README version was fixed.
+- The automatic primary deployment `dpl_GPYEemyBAsz9xaL1TWCsiovaMNQp` failed before build
+  with provider code `git_info_fail`; its failed GitHub Vercel status remains visible. No status
+  was overwritten. Root published the clean commit directly: `dpl_ASnBYdZXpvfa7hk37hdTb5EhJxod`
+  is Ready, effectiveNode24.x, matching ff3665b and canonicalwww. Live crawl81/92/110 and retained
+  apex308 passed. This restores publication, not the underlying Git-provider integration.
+  No further IndexNow notification was sent for the runtime-only release.
+- Existing daily09:00 chat follow-up was updated, not duplicated: actualNode24, declinedGSCWizard,
+  correct-owner data, explicit deployment evidence, genuine-source candidates and no repeated
+  unchanged IndexNow submissions. The computer/app must remain available; no continuous-run promise.
 
 - The current feature branch passes 113/113 tests, lint and production dependency audit (zero).
   Production build and local crawl pass: 81 customer routes, 92 internal destinations, 110 assets.
@@ -48,7 +59,8 @@
 - Two independent reviews found no Critical/Important issues. The IndexNow review's Minor sparse-
   array case was reproduced with a failing test, then repaired; the full suite now passes 113/113.
 - Publication, hosted CI, live proof/crawl and first notification for `a94b108` passed as recorded
-  above. Runtime pin has its separate release gate. No actual indexing or growth is claimed.
+  above. The separately identified runtime pin also passed its CI/manual-publication/live gates;
+  automated Git-provider failure remains an operational follow-up. No indexing or growth is claimed.
 - Nine dev-tree dependency findings remain; no compatible complete patch was established. Removing
   Tailwind alone would change the active Preflight reset and would not eliminate all findings.
 - GSC Wizard is declined and excluded. Correct-owner exports may establish a search baseline later;
