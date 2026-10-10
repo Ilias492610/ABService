@@ -5,6 +5,19 @@ import { once } from "node:events";
 
 import { auditExternalSources } from "../libs/external-source-audit.mjs";
 
+test("the source inventory includes the consumer pages' pressure, recognition and current support citations", async () => {
+  const inventory = await import("../libs/cited-sources.mjs").catch(() => ({}));
+  const sources = inventory.getCitedSources?.() || [];
+  const hrefs = new Set(sources.map((source) => source.href));
+  for (const href of [
+    "https://www.bosch-homecomfort.com/be/nl/residentieel/info-advies/je-bosch-oplossing-uitgelegd!/verwarming-op-gas/cv-ketel-bijvullen/",
+    "https://www.vlaanderen.be/natuur-milieu-en-klimaat/informatie-voor-de-technicus-vloeibare-en-technicus-gasvormige-brandstof-cv-ketel",
+    "https://www.vlaanderen.be/bouwen-wonen-en-energie/bouwen-en-verbouwen/premies-voor-renovatie/mijn-verbouwpremie",
+    "https://www.vlaanderen.be/bouwen-wonen-en-energie/lenen-voor-een-woning/mijn-verbouwlening/werken-die-in-aanmerking-komen-voor-mijn-verbouwlening",
+  ]) assert.ok(hrefs.has(href), `Unmonitored consumer citation: ${href}`);
+  assert.ok(sources.every((source) => source.label && source.href.startsWith("https://")));
+});
+
 test("external source audit reports non-success responses and deduplicates URLs", async () => {
   const requested = [];
   const results = await auditExternalSources(

@@ -61,6 +61,7 @@ export const pageRegistry = Object.freeze([
   },
   {
     path: "/installaties/gasketels",
+    lastModified: "2026-10-10",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Gasketel laten installeren in Antwerpen | AB Service",
     description:

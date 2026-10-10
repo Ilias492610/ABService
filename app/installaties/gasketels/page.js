@@ -1,5 +1,6 @@
 import ServicePage from "@/components/service-page";
 import { contentImages } from "@/content/media.mjs";
+import { coreSources } from "@/content/core-sources.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 
@@ -15,7 +16,7 @@ export default function GasketelsPage() {
       eyebrow="Gasketelinstallatie"
       title="Een gasketel laten plaatsen of vervangen in Antwerpen"
       intro="De juiste oplossing hangt af van de woning, warmte- en warmwaterbehoefte, bestaande leidingen, regeling en rookgasafvoer. Daarom volgt een betrouwbare prijs pas na voldoende technische informatie."
-      answer="AB Service werkt niet met een verzonnen online vanafprijs. Vraag een beoordeling aan met foto’s en toestelgegevens. Na controle kan een voorstel de gekozen oplossing, materialen, werk, uitsluitingen, btw en afspraken duidelijk omschrijven."
+      answer="Vraag een beoordeling aan met foto’s en toestelgegevens. Na controle ontvangt u een voorstel waarin de gekozen oplossing, materialen, werk, uitsluitingen, btw en afspraken duidelijk worden omschreven."
       image={contentImages.boilerServiceMarketing}
       sections={[
         {
@@ -40,7 +41,7 @@ export default function GasketelsPage() {
           eyebrow: "Premies",
           title: "Controleer actuele steun rechtstreeks bij de overheid",
           paragraphs: [
-            "Premies en financieringsmaatregelen veranderen. De vroegere renovatiepremie voor een gasketel is stopgezet; alleen beperkte uitzonderingen of financieringsregels kunnen nog relevant zijn. Neem geen investeringsbeslissing op basis van oude marketingteksten.",
+            "In Vlaanderen is Mijn VerbouwPremie voor gascondensatieketels stopgezet. Controleer vóór uw investering de actuele voorwaarden voor renovatiesteun en financiering bij de Vlaamse overheid en uw Energiehuis. Een offerte houdt geen toezegging van financiële steun in.",
           ],
         },
       ]}
@@ -57,12 +58,7 @@ export default function GasketelsPage() {
         { label: "Ondersteunde ketelmerken", href: "/merken" },
         { label: "Praktijkcase: gasketel vervangen", href: "/projecten/gasketel-vervangen" },
       ]}
-      sourceLinks={[
-        {
-          label: "Vlaanderen/VEKA: wijzigingen aan premies en leningen",
-          href: "https://www.vlaanderen.be/veka/webinar-over-premies-leningen-kortingen-en-warmtepompklaar-op-23-januari-2025",
-        },
-      ]}
+      sourceLinks={[coreSources.renovationSupport, coreSources.renovationLoan]}
     />
   );
 }

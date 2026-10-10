@@ -1,5 +1,6 @@
 import ServicePage from "@/components/service-page";
 import { contentImages } from "@/content/media.mjs";
+import { coreSources } from "@/content/core-sources.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 
@@ -78,10 +79,7 @@ export default function OnderhoudPage() {
           label: "Vlaanderen: verplicht onderhoud van uw cv-installatie",
           href: "https://www.vlaanderen.be/verplicht-onderhoud-van-uw-cv-installatie-centrale-verwarming",
         },
-        {
-          label: "Vlaanderen: informatie over erkende technici",
-          href: "https://www.vlaanderen.be/natuur-milieu-en-klimaat/informatie-voor-de-technicus-vloeibare-en-technicus-gasvormige-brandstof-cv-ketel",
-        },
+        coreSources.technicianRecognition,
         {
           label: "Leefmilieu Brussel: verplicht onderhoud en EPB-periodieke controle",
           href: "https://leefmilieu.brussels/verwarmingsketel",

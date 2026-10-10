@@ -1,5 +1,6 @@
 import ServicePage from "@/components/service-page";
 import { contentImages } from "@/content/media.mjs";
+import { coreSources } from "@/content/core-sources.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 
@@ -58,12 +59,7 @@ export default function DrukverliesCvKetelPage() {
         { label: "Foutcodes per merk", href: "/foutcodes" },
         { label: "Onderhoud van uw cv-ketel", href: "/onderhoud" },
       ]}
-      sourceLinks={[
-        {
-          label: "Bosch Home Comfort: cv-ketel bijvullen en druk controleren",
-          href: "https://www.bosch-homecomfort.com/be/nl/residentieel/info-advies/je-bosch-oplossing-uitgelegd!/verwarming-op-gas/cv-ketel-bijvullen/",
-        },
-      ]}
+      sourceLinks={[coreSources.boilerPressure]}
     />
   );
 }
