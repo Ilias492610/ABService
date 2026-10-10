@@ -1,3 +1,5 @@
+import { buildFaultCodeAliases } from "../libs/fault-code-aliases.mjs";
+
 const ACTIONS = Object.freeze({
   gas: "Stop onmiddellijk bij gasgeur: bedien geen schakelaars, ventileer indien dat veilig kan, sluit de gastoevoer alleen als u weet hoe en bel van buiten de gevarenzone de bevoegde hulp. Zonder gasgeur: noteer de volledige code en reset alleen wanneer de handleiding van uw exacte toestel dat toestaat.",
   pressure: "Controleer uitsluitend de zichtbare installatiedruk en volg alleen de vul- of ontluchtingsinstructie uit de gebruikershandleiding van uw exacte toestel. Open de mantel niet en laat een terugkerende melding onderzoeken.",
@@ -18,52 +20,6 @@ const actionFor = (meaning, explicitAction) => {
   return ACTIONS.general;
 };
 
-const expandCodeRange = (value) => {
-  const numeric = value.match(/^(\d+)-(\d+)$/);
-  if (numeric) {
-    const start = Number(numeric[1]);
-    const end = Number(numeric[2]);
-    if (end >= start && end - start <= 50) {
-      return Array.from({ length: end - start + 1 }, (_, index) => String(start + index));
-    }
-  }
-
-  const prefixed = value.match(/^([A-Za-z]+)(\d+)-(?:([A-Za-z]+))?(\d+)$/i);
-  if (prefixed && (!prefixed[3] || prefixed[1].toLowerCase() === prefixed[3].toLowerCase())) {
-    const [, prefix, startText, , endText] = prefixed;
-    const start = Number(startText);
-    const end = Number(endText);
-    if (end >= start && end - start <= 50) {
-      return Array.from({ length: end - start + 1 }, (_, index) => `${prefix}${start + index}`);
-    }
-  }
-
-  return [value];
-};
-
-const buildCodeSearchTerms = (code) => {
-  const aliases = new Set([code]);
-  let activePrefix = "";
-
-  for (const part of code.split("/").map((item) => item.trim())) {
-    const prefixed = part.match(/^([A-Za-z0-9]+)\s+(.+)$/);
-    if (prefixed) {
-      activePrefix = prefixed[1];
-      for (const value of expandCodeRange(prefixed[2])) aliases.add(`${activePrefix} ${value}`);
-      continue;
-    }
-
-    if (activePrefix && /^\d+(?:-\d+)?$/.test(part)) {
-      for (const value of expandCodeRange(part)) aliases.add(`${activePrefix} ${value}`);
-      continue;
-    }
-
-    for (const value of expandCodeRange(part)) aliases.add(value);
-  }
-
-  return [...aliases].join(" ");
-};
-
 const codeRows = (rows, sourcePage) =>
   Object.freeze(
     rows.map(([code, meaning, action]) =>
@@ -72,7 +28,7 @@ const codeRows = (rows, sourcePage) =>
         meaning,
         userAction: actionFor(meaning, action),
         sourcePage,
-        searchTerms: buildCodeSearchTerms(code),
+        searchTerms: buildFaultCodeAliases(code).join(" "),
       })
     )
   );
