@@ -175,7 +175,7 @@ test("work-area customer copy explains coverage without editorial SEO jargon", (
 - [x] **Stap 2 — bewijs RED:** `node --test tests/work-area-copy.test.mjs` onder de gebundelde Node 24. Verwacht een assertion failure op de huidige klantcopy, niet een import- of runtimefout.
 - [x] **Stap 3 — wijzig alleen uitleg/koppen:** “Hulp in de tien Antwerpse districten”; leg uit dat dienst, locatie en planning vóór een afspraak worden beoordeeld. De zoekuitleg zegt dat de klant zijn gemeente of district kan zoeken. Geen indexerings-/JS-uitleg, nieuwe beschikbaarheidsgarantie of wijziging van publicatiestatus.
 - [x] **Stap 4 — bewijs GREEN:** `node --test tests/work-area-copy.test.mjs tests/service-areas.test.mjs tests/publishing.test.mjs`; alle tests moeten slagen. Daarna de volledige WP12-productgate en browsercontrole van filter, keyboard, links en CTA op desktop/mobiel.
-- [ ] **Stap 5 — onafhankelijke review en gerichte commit:** controleer de diff op verloren elementen/claims; voeg uitsluitend taakbestanden en de bijbehorende QA/changelog toe. Commit pas na groene verificatie, publiceer volgens de bestaande workflow en controleer de exacte live release. Een bronassertie vervangt deze browsercontrole niet.
+- [x] **Stap 5 — onafhankelijke review en gerichte commit:** controleer de diff op verloren elementen/claims; voeg uitsluitend taakbestanden en de bijbehorende QA/changelog toe. Commit pas na groene verificatie, publiceer volgens de bestaande workflow en controleer de exacte live release. Een bronassertie vervangt deze browsercontrole niet. Afgesloten voor138674e: onafhankelijke whole-branchreview, exact CI38092940463/beide Vercelchecks, live81/92/110 en desktop/mobile/no-JavaScriptdirectoryQA; API403 blijft benoemd.
 
 ### WP00 — Bronregister en actuele bedrijfsbrief
 
@@ -283,7 +283,10 @@ Zes bevestigde loodgietersdiensten met beschrijvingen van 220–240 tekens zijn 
 
 **10 oktober, late avond — gedeeltelijk uitgevoerd.** Negen concrete publieke profielen zijn onderzocht en krijgen velden, bron, conflict, correctiepad en afzonderlijke ingediend/bevestigd-status in `docs/seo/citation-audit.md`. KBO-zetel en geregistreerde vestiging zijn verschillende huidige rollen; een oude profielobservatie bewijst geen verouderde wettelijke vestiging. Merk-/entiteitsonderzoek is begrensd en levert geen fictieve socialprofielen, nieuwe `sameAs`-claims of garantie op een Knowledge Panel. Yandex is expliciet uitgesteld; de maandelijkse controle is een handmatige werkwijze, geen aangemaakte automation.
 
-Op 11 oktober is de expliciet toegestane Bing-Googlekoppeling voor naam/foto/e-mail afgerond met Abder. Website handmatig toegevoegd als **Not verified**; native openbaar XML-bewijs voorbereid voor geteste publicatie, geen DNS/GSC-importmachtiging. Native verificatie, sitemap en AI-rapport zijn nog niet bevestigd. Bestaande Bing Places-/Microsoft- en Apple Business-aanmelding ontbreken; listingclaim en Apple Maps-geschiktheid blijven open. Geen accountafwezigheid uit een loginpagina afgeleid en geen nieuw directorycorrectiebericht verstuurd; historische septemberverzoeken hebben geen nieuw bevestigd resultaat. Zie `docs/seo/account-status-register.md`. **WP05 is niet integraal voltooid.**
+Op 11 oktober is de expliciet toegestane Bing-Googlekoppeling voor naam/foto/e-mail afgerond met Abder. Na geteste138674e-publicatie/liveXML200 bevestigt native User management **verified administrator**. Sitemap eenmaal ontvangen als **Processing**, nul fouten/waarschuwingen; homepage native geïndexeerd. AI-rapport gelezen maar zonder bruikbare rijen; de nieuwe property is geen volwassen nulmeting. Geen DNS/GSC-importmachtiging of nieuwe indexing request. Bestaande Bing Places-/Microsoft- en Apple Business-aanmelding ontbreken; listingclaim en Apple Maps-geschiktheid blijven open. Geen accountafwezigheid uit een loginpagina afgeleid en geen nieuw directorycorrectiebericht verstuurd; historische septemberverzoeken hebben geen nieuw bevestigd resultaat. Zie `docs/seo/account-status-register.md`. **WP05 is niet integraal voltooid.**
+
+- [x] Bing Webmaster: juiste eigenaar/property en providerverificatie, eenmalige sitemapontvangst, homepage-indexstatus en beschikbaar AI-rapport daadwerkelijk gelezen.
+- [ ] Bing Webmaster: latere sitemapverwerking/ontdekte URLs en bruikbare AI-baseline; Bing Places en Apple blijven afzonderlijke toegang-/geschiktheidsgates.
 
 ### WP06 — Kernpagina's, klantcopy en interne links
 
@@ -308,6 +311,13 @@ zijn gemapt:27 gepubliceerde bestemmingen, Edegem/Mortsel/Kontich blijven data-o
 Voorafgaande elementeninventaris behoudt formulieren/tool/tabellen/media/bronnen/links. Verdere
 contextuele dienst-/merklinks, eigen FAQ en bewijsafhankelijke prijs/casevelden blijven open;
 deze checklist is **geen volledige WP06-voltooiing of live-publicatiebewijs**.
+
+**11 oktober — volgende afgebakende eenheid:** optionele native SSR-FAQ en contextlinks,
+drie onderhoudsvragen, onderhoud/diagnose/vervangingskeuze, merkintake en wederzijdse
+lekonderzoek/herstellinks. Onafhankelijke taakreview akkoord; aanvullende safety-bodytest
+opgenomen. Fresh147/147/lint/build/audit0/local81/92/110 en vijf-route desktop/mobile/no-JavaScript
+QA slagen. Publicatie van d48aeae/02b497a volgt nog; brede kernpagina-/linkcheck en echte
+prijs-/casevelden blijven open. De eerdere werkgebied-eenheid138674e is nu live geverifieerd.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
@@ -393,6 +403,13 @@ deze checklist is **geen volledige WP06-voltooiing of live-publicatiebewijs**.
 **Fresh verification commands:** onder echte Node 24-PATH: `npm ci`, `npm run lint`, `npm test`, `npm audit --omit=dev`, `npm run build`, `npm run seo:audit -- <local-production-url>`, `npm run sources:audit`; live `node scripts/seo-audit.mjs https://www.abservice24.be`. Gebundelde Node: `/Users/hamda/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node`. Browser, Lighthouse en inhoudscontrole aanvullend. Een documentatiewijziging vraagt documentcontrole; een productrelease de volledige gate.
 
 **Done:** exacte releasechecks en benoemde/opgeloste issues. Een 100-score vervangt geen functionaliteit of velddata.
+
+**11 oktober — afgebakend CI-onderhoud:** huidige officiële checkout7.0.1 en setup-node7.1.0
+native Node24-manifests gelezen en release-SHAs onafhankelijk geverifieerd. Alleen twee
+workflowrefs vervangen; bestaande triggers/readpermissions/cache/gates behouden. RED→GREEN,
+taakreview akkoord en fresh148tests pass. Exact hostedrun en afwezigheid van oude
+Node20waarschuwingen volgen nog. Fresh bronaudit47HTTP200/één Sibelga403; fout blijft zichtbaar.
+Dit is geen volledige WP12-, veld-CWV- of securityvoltooiing.
 
 ### WP13 — Verdiende links en lokale partners
 

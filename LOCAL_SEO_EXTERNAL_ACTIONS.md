@@ -5,10 +5,13 @@
 - Owner confirms exclusively on-site service, no customer reception. Google address-display
   switch disabled and saved; manager reads **Geen locatie. Alleen leveringen en diensten aan huis**.
   Moderation remains pending; public Maps visibility is not yet confirmed. Legal/KBO/site address retained.
-- Explicit permission received and used only for Bing's basic Google name/photo/email sign-in,
-  using Abder. Canonical website added manually, **Not verified**; public XML proof prepared.
-  No DNS change, GSC import/data grant or GoDaddy login. Verification/sitemap/AI-report steps follow
-  tested publication and actual provider confirmation, not a fabricated completed checkbox.
+- Explicit permission used only for Bing's basic Google name/photo/email sign-in, using Abder.
+  After tested138674e publication, exact live XML200 and native verification: **verified
+  administrator** confirmed. Canonical sitemap submitted once; **Processing**, zero errors/warnings,
+  crawl/discovered row value not yet available. Homepage inspection reports **Indexed successfully**;
+  no indexing request. Accessible AI report has UI0 totals/no rows in its Copilot/Partners scope,
+  not a mature zero-visibility baseline. No DNS change, GSC import/data grant or GoDaddy login.
+  Bing Places and Apple login/eligibility remain separate; latest details in the account register.
 - Existing same-thread continuation updated successfully to every fifteen minutes, not duplicated.
   Remaining packages are now authorized. Computer/Codex must remain available; no promise that
   evidence, external moderation, missing Microsoft/Apple access or budget gates finish overnight.

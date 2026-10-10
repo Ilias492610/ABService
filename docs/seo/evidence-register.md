@@ -1,5 +1,20 @@
 # Evidence Register
 
+## 11 October 2026 — release and Bing native acceptance
+
+The [latest account register](account-status-register.md) supersedes the earlier Bing
+Not verified snapshot, not Google's still-pending moderation. Reviewed138674e is on main;
+exact hostedCI38092940463 and both Vercel checks succeed. Fresh live81/92/110 and responsive/
+no-JavaScript work-area QA pass. API403 remains a separate Vercel observation limitation.
+
+| Claim / action | Fresh evidence | Decision and remaining gate |
+| --- | --- | --- |
+| Bing property ownership | Live exact public XML direct200/application/xml; native User management says You are a verified administrator for Abder/canonical site | Provider ownership verified; no GSC/DNS import or extra grant |
+| Bing sitemap receipt | One canonical sitemap submitted and native row re-read: Processing, zero errors/warnings, last crawl/discovered row `-` | Receipt confirmed, successful crawl/all-page discovery not established |
+| Bing homepage indexing | Native homepage URL inspection says Indexed successfully / URL can appear on Bing | Homepage observation only; no new indexing request or all-site claim |
+| Bing AI report availability | Microsoft Copilots and Partners,10July–9October, UI0 totals and no query/page rows | Accessible report, immature new-property processing; not proven zero cross-platform visibility |
+| Core FAQ/context-link unit | Reviewed d48aeae/02b497a; fresh147tests/lint/build/audit0/localcrawl and actual Next desktop/mobile/no-JavaScript five-route QA | Local acceptance only until its own reviewed publication; no ranking/lead outcome |
+
 ## WP04–WP05 supplement — 10 October 2026, 21:14–21:44 UTC
 
 Fresh [account observations](account-status-register.md) and [citation audit](citation-audit.md)

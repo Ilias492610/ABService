@@ -1,6 +1,29 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — verified release, Bing acceptance and core-page continuation
+
+- Published reviewed138674e normally to main. Exact GitHub CI38092940463 and both Vercel
+  checks succeed; fresh live81/92/110 crawl, desktop/mobile/no-JavaScript work-area QA and
+  direct XML proof pass. Vercel API403 limitation remains explicit; no inferred API-ready state.
+- Bing native ownership confirms Abder verified administrator. Submitted canonical sitemap
+  once; Processing, no errors/warnings. Homepage inspection reports indexed; no indexing
+  request made. Read available AI report with no usable rows, not a mature zero-visibility baseline.
+- Added optional native SSR FAQ and contextual section links without new client code/schema.
+  Maintenance gains three region-specific FAQs; repair clarifies maintenance/diagnosis/assessed
+  replacement; both gain independent-brand intake links. Sanitary gains pipe/leak entrances;
+  leak detection and repair link reciprocally while preserving common/advice entrances.
+- Task review approved and its minor warning-body test gap fixed. Fresh147tests, lint/build,
+  audit0/localcrawl and five-route desktop/mobile/no-JavaScript QA pass. This next unit still
+  requires whole-branch release acceptance; no lost warning/media/source/CTA, extra mail,
+  invented pricing/project proof, paid service or repeated IndexNow batch.
+- Pins reviewed stable checkout7.0.1/setup-node7.1.0 full SHAs and protects the actual workflow
+  configuration with RED→GREEN assertions. Independent review approves, fresh148tests pass;
+  native Node24 action execution is pending hosted release, not implied by a source test.
+  Fresh source audit retains the known Sibelga403 beside47 reachable sources.
+
 ## 11 October 2026 — WP04 evidence and verification supplement
+
+Historical pre-release snapshot; newer release/account outcomes are recorded above.
 
 - Owner confirms exclusively on-site work. Google customer-address display disabled/saved;
   native row confirms no location, only home services. Explicit review notice remains; public

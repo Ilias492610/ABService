@@ -1,6 +1,48 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — released WP04–WP06 unit and next core-page acceptance
+
+- Reviewed `138674e6a6bd7fe22eb1947d3de8b1b23c3473ed` was fast-forwarded to `main` and
+  pushed normally. [Exact hosted CI 38092940463](https://github.com/Ilias492610/ABService/actions/runs/38092940463)
+  passed install, lint, 139 tests, production audit, build and crawl. Both exact-SHA Vercel
+  checks succeeded; primary GitHub production deployment **6987980602** reports success and
+  its production URL. The Vercel API credential returned403; this is not API-confirmed READY.
+- Fresh canonical-site crawl passed **81 pages / 92 internal destinations / 110 assets**.
+  Desktop/mobile/no-JavaScript work-area QA passed all314 entries, six hubs, ten districts,
+  filters, keyboard/zero/reset, source/draft-link boundaries and header-clearing contact anchor.
+  Live Bing XML separately returned direct200/application/xml and the exact public payload.
+- Native Bing User management now explicitly says **You are a verified administrator** for
+  Abder and the canonical site. One sitemap submission persisted: one known sitemap,
+  zero errors/warnings, **Processing**, last crawl and row discovered count still `-`.
+  Homepage URL inspection says **Indexed successfully / URL can appear on Bing**. No new
+  indexing request. AI Performance shows UI0 totals and no rows for10July–9October in its
+  Microsoft Copilots/Partners scope; a newly processed property is not proof of zero AI visibility.
+- CI retains Node20-action deprecation warnings for checkout/setup-node v4; the application
+  ran under24.21.0 and all quality gates passed. A bounded WP12 action update is next, not
+  silently labelled resolved by the successful run.
+- Next bounded core-page unit `d48aeae` plus test-only `02b497a`: real React-SSR tests cover
+  optional escaped native FAQ, section links, maintenance/repair choices, reciprocal leak links,
+  retained common/advice links, media/process/safety and service-prefilled CTA. Meaningful RED
+  preceded implementation; independent task review approved, including the safety-body test fix.
+  Root's fresh **147/147**, lint/build/audit0 and local81/92/110 crawl pass under24.19.0.
+- Actual local Next production Chromium desktop/mobile/no-JavaScript passes all five changed
+  routes: FAQ keyboard open/close, one H1/canonical, retained image/process/safety, context links,
+  header-clearing contact anchor/prefill, no overflow/pageerror. All non-GET and external traffic
+  blocked in this QA; no form/email sent. Whole-branch review and publication of this next unit
+  remain separate gates. Neither entire WP06 nor ranking/CTR/client growth is established.
+- The bounded WP12 workflow unit227559a pins independently verified official checkout7.0.1
+  and setup-node7.1.0 SHAs, both native Node24. Independent task review approves; root's
+  fresh **148/148** passes. All workflow triggers/read permissions/cache/quality gates remain.
+  Hosted execution and absence of the old action warnings still require exact-release inspection.
+- Fresh external-source audit returns exit1: **47 HTTP200 / one HTTP403**, the known Sibelga
+  contact source. This failure is retained, not allowlisted away; successful retrieval elsewhere
+  is not substantive source validation. Two representative local desktop/mobile screenshots
+  were visually inspected; layout/type/content match the retained design. The pre-existing
+  dismissible floating contact/review controls still warrant the wider WP12 interaction audit.
+
 ## 11 October 2026 — WP04–WP05 and first WP06 local acceptance
+
+Historical pre-release snapshot; the exact138674e release and native Bing outcomes are recorded above.
 
 - Independent task reviews approve the dated GBP evidence supplements, the exact public Bing
   XML proof and bounded work-area copy. Saved Google service/address edits still wait for public
