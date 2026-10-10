@@ -88,3 +88,11 @@ test("contact validation rejects an unrecognized service value", () => {
   assert.equal(result.ok, false);
   assert.equal(result.errors.service, "Kies een geldige dienst of laat het veld leeg.");
 });
+
+test("non-object payloads fail validation without throwing or returning personal data", () => {
+  for (const value of [null, true, 1, "hello", []]) {
+    const result = validateContactInput(value);
+    assert.equal(result.ok, false);
+    assert.ok(!("data" in result));
+  }
+});

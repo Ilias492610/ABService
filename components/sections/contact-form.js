@@ -17,13 +17,19 @@ const sendEvent = (name, props) => {
   track(event.name, event.props);
 };
 
-export default function ContactForm() {
+export default function ContactForm({ nativeStatus } = {}) {
   const [formData, setFormData] = useState(initialData);
   const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState({ type: "idle", message: "" });
+  const [status, setStatus] = useState(() => nativeStatus === "success"
+    ? { type: "success", message: "Uw aanvraag is verzonden. Een afspraak of timing is pas bevestigd na rechtstreeks contact." }
+    : nativeStatus === "error"
+      ? { type: "error", message: "De aanvraag kon niet worden verzonden. Controleer de ingevulde velden en uw privacyakkoord, of probeer het later opnieuw." }
+      : { type: "idle", message: "" });
   const [submitting, setSubmitting] = useState(false);
   const started = useRef(false);
   const formRef = useRef(null);
+  const pending = useRef(false);
+  const statusRef = useRef(null);
 
   useEffect(() => {
     let active = true;
@@ -58,6 +64,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (pending.current) return;
     setStatus({ type: "idle", message: "" });
     const validation = validateContactInput(formData);
 
@@ -69,7 +76,9 @@ export default function ContactForm() {
       return;
     }
 
+    pending.current = true;
     setSubmitting(true);
+    setStatus({ type: "pending", message: "Uw aanvraag wordt verzonden…" });
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -77,23 +86,25 @@ export default function ContactForm() {
         body: JSON.stringify(validation.data),
       });
       const result = await response.json();
-      if (!response.ok) throw new Error(result?.error || "De aanvraag kon niet worden verzonden.");
+      if (!response.ok || result?.ok !== true) throw new Error("De aanvraag kon niet worden verzonden.");
 
       sendEvent("contact_form_success", { location: "contact_page", service: validation.data.service });
       setStatus({ type: "success", message: "Uw aanvraag is verzonden. Een afspraak of timing is pas bevestigd na rechtstreeks contact." });
       setFormData(initialData);
       setErrors({});
       started.current = false;
-    } catch (error) {
+    } catch {
       sendEvent("contact_form_failure", { location: "contact_page", reason: "transport", service: validation.data.service });
-      setStatus({ type: "error", message: error.message || "De aanvraag kon niet worden verzonden." });
+      setStatus({ type: "error", message: "De aanvraag kon niet worden verzonden. Probeer het later opnieuw of neem rechtstreeks contact op." });
+      requestAnimationFrame(() => statusRef.current?.focus());
     } finally {
+      pending.current = false;
       setSubmitting(false);
     }
   };
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit} onFocus={noteStart} noValidate aria-describedby="form-note">
+    <form ref={formRef} method="post" action="/api/contact" onSubmit={handleSubmit} onFocus={noteStart} noValidate aria-describedby="form-note" aria-busy={submitting}>
       <p id="form-note" className="section-lead">Velden met een * zijn verplicht. Vermeld geen gevoelige medische of financiële gegevens.</p>
       <div className="form-grid">
         <div className="field">
@@ -157,7 +168,7 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
-      {status.type !== "idle" && <p className={`form-status ${status.type}`} role="status" aria-live="polite">{status.message}</p>}
+      {status.type !== "idle" && <p ref={statusRef} tabIndex={-1} className={`form-status ${status.type}`} role="status" aria-live="polite">{status.message}</p>}
       <button className="button" type="submit" disabled={submitting}>{submitting ? "Aanvraag verzenden…" : "Aanvraag verzenden"}</button>
     </form>
   );

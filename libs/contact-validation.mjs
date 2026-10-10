@@ -19,6 +19,7 @@ export const CONTACT_SERVICES = Object.freeze([
 const clean = (value) => (typeof value === "string" ? value.trim() : "");
 
 export const validateContactInput = (input = {}) => {
+  if (!input || typeof input !== "object" || Array.isArray(input)) input = {};
   const name = clean(input.name);
   const phone = clean(input.phone);
   const email = clean(input.email).toLowerCase();

@@ -13,25 +13,7 @@ const escapeHtml = (value) =>
 
 const isNavigationPost = (request) => request.headers.get('sec-fetch-mode') === 'navigate';
 
-const getRedirectUrl = (request) => {
-  const fallbackUrl = new URL('/contact', request.url);
-  const referer = request.headers.get('referer');
-
-  if (!referer) {
-    return fallbackUrl;
-  }
-
-  try {
-    const refererUrl = new URL(referer);
-    if (refererUrl.origin === fallbackUrl.origin) {
-      return refererUrl;
-    }
-  } catch {
-    return fallbackUrl;
-  }
-
-  return fallbackUrl;
-};
+const getRedirectUrl = (request) => new URL('/contact#aanvraagformulier', request.url);
 
 const buildErrorResponse = (request, message, status = 400) => {
   if (isNavigationPost(request)) {
@@ -65,8 +47,16 @@ const getRequestData = async (request) => {
 };
 
 export async function POST(request) {
+  let data;
   try {
-    const data = await getRequestData(request);
+    data = await getRequestData(request);
+  } catch {
+    return buildErrorResponse(
+      request,
+      'Controleer de ingevulde velden en uw akkoord met het privacybeleid.'
+    );
+  }
+  try {
     const validation = validateContactInput(data);
 
     if (!validation.ok) {

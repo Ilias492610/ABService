@@ -44,3 +44,18 @@ test("prototype property names are not valid planning choices", () => {
     assert.equal(context.message, undefined);
   }
 });
+
+test("handoff excludes impossible calendar dates but includes real leap dates", () => {
+  const choices = { region: "brussel", device: "central", fuel: "gas", power: "unknown", changed: "no" };
+  for (const date of ["2026-99-99", "2026-02-29", "2024-02-30", "2026-04-31", "0000-01-01"]) {
+    const href = buildContactHref({ service: "Onderhoud cv-ketel", toolInput: { ...choices, lastDate: date } });
+    assert.ok(!href.includes("lastDate="), date);
+    const context = readContactContext(new URL(`https://qa.example.invalid/contact#aanvraagformulier?dienst=Onderhoud+cv-ketel&context=onderhoudscheck&${new URLSearchParams(choices)}&lastDate=${date}`));
+    assert.doesNotMatch(context.message, new RegExp(date));
+    assert.match(context.message, /onderhoudsdatum onbekend/);
+  }
+  for (const date of ["2024-02-29", "2000-02-29", "2026-04-30"]) {
+    const context = readContactContext(new URL(buildContactHref({ service: "Onderhoud cv-ketel", toolInput: { ...choices, lastDate: date } }), "https://qa.example.invalid"));
+    assert.ok(context.message.includes(date));
+  }
+});
