@@ -3,7 +3,11 @@ import assert from "node:assert/strict";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 
-const catalogs = faultGuides.find((guide) => guide.slug === "remeha").catalogs;
+// These characterization tests retain their original 59-row legacy scope.
+// Full Ace-Matic code/component collision coverage belongs to the dependent search task.
+const legacyIds = ["remeha-avanta", "remeha-calenta-legacy", "remeha-calenta-legacy-blocking"];
+const catalogs = faultGuides.find((guide) => guide.slug === "remeha").catalogs
+  .filter(({ id }) => legacyIds.includes(id));
 
 test("code punctuation variants find both source-bound meanings without blending models", () => {
   for (const query of ["E02", " E:02 ", "e.02", "E 02"]) {

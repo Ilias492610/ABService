@@ -82,7 +82,7 @@ export const faultGuides = Object.freeze([
     slug: "remeha",
     brand: "Remeha",
     modelWarning:
-      "Kies uw toestelreeks: Avanta volgt de officiële Belgische Storingswijzer; Calenta 15s/25s/28c/35s/40c volgt de E-storingscodes en Su-blokkeringssubcodes uit de Belgische handleiding 117061-08. De betekenis kan per model verschillen. Calenta Ace, Ace-Matic, Quinta en Tzerra vallen niet onder deze tabellen.",
+      "Kies uw toestelreeks en generatie: Avanta volgt de officiële Belgische Storingswijzer; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025, met afzonderlijke CU-GH-21-tabellen en SCB-10-tabellen die alleen gelden als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace-Matic 25L, Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.",
     catalogs: remehaCatalogs,
     documentationLabel: "Officiële Remeha Storingswijzer",
     documentationUrl: "https://storingswijzer.remeha.be/",
