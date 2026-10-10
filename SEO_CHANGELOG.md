@@ -1,6 +1,25 @@
 # AB Service SEO Changelog
 
+## 10 October 2026 — first-batch feature publication confirmed
+
+- Pushed approved `09e96ba` to GitHub `main`; exact hosted CI 38075925607 passed every gate.
+  Both Vercel checks succeeded; API-confirmed primary `dpl_JDT1Gpj5uAFLbHALq7SJ7orGQf8E`
+  is READY, matching full feature SHA and `www`. Build logs confirm effective Node 24.x despite
+  legacy 22.x project-settings metadata; no additional account change.
+- Live crawl 81/92/110 and desktop/mobile contact hardening checks pass, including native-POST
+  feedback without JavaScript and asynchronous CTA navigation. Invalid JSON returns 400/safe error;
+  valid browser submissions were intercepted, so no extra mailbox test or customer is claimed.
+- Private QA assertions for method casing, navigation timing and error-field shape were corrected
+  after failed harness checks, then rerun; no product defect or code change was found there.
+- Final independent release review approved with no important/new minor issue. All source/date
+  distinctions remain: current 92 days 68/3519, native previous 91 days 37/2696, one real query/page pair.
+- WP00/WP02 complete; WP01 analytics/outcomes/retention and WP03 genuine-client questions remain
+  open. The owner was asked which measurement route to investigate, without a paid purchase.
+  No whole-masterprompt, ranking, field-CWV or client-growth result is claimed.
+
 ## 10 October 2026 — WP00–WP03 first-batch execution, before publication
+
+The release verification above closes this entry's publication gates, not its measurement dependencies.
 
 - Preserved the approved830-row source masterplan and18-package contracts, verified current
   business facts against KBO and distinguished registered seat from establishment/customer access.

@@ -4,12 +4,18 @@ Op 10 oktober 2026 is één herkenbare technische testaanvraag via de publieke w
 
 Dit is de actuele WP01-aanvulling op het [uitvoeringsplan](../superpowers/plans/2026-10-10-complete-source-seo-masterplan.md) en de [zoek- en leadbaseline van 10 oktober](2026-10-10-search-baseline.md). Eerdere releasewaarnemingen in de baseline behouden hun historische betekenis.
 
+## Publicatie en aparte livecontrole
+
+De geharde code is inmiddels gepubliceerd in `09e96ba`: exact [hosted CI 38075925607](https://github.com/Ilias492610/ABService/actions/runs/38075925607) geslaagd; primaire Vercel-deployment `dpl_JDT1Gpj5uAFLbHALq7SJ7orGQf8E` READY met overeenkomende volledige Git-SHA en `www`-alias. De live crawl slaagt voor 81 pagina's, 92 bestemmingen en 110 assets.
+
+Afzonderlijke live controles op desktop 1440×1000 en mobiel 390×844 bevestigen de formulierknop/ankerpositie, validatie/focus, één onderschepte pending-POST en veilige failure/unlock bij een gemockte HTTP 200 met `ok:false`, zonder overflow of pageerror. Zonder JavaScript werken de POST-attributen en toegestane statusfeedback. Directe lege-JSON-probes geven 400 met het veilige `error`-veld, zonder succes; geen mailverzending. De private testasserties voor hoofdletters, asynchrone navigatie en foutveld werden eerst gecorrigeerd naar het echte contract en daarna herhaald. Dit bevestigt live hardening, niet een tweede daadwerkelijke mailboxontvangst of dashboardevent.
+
 ## Status per bewijsvereiste
 
 | Vereiste | Waarneming op 10 oktober 2026 | Status |
 | --- | --- | --- |
 | Werkelijke e-mailontvangst | Eén productietest, providerbezorging en eigenaarbevestiging | Bewezen voor de beschreven test op `7a16cec` |
-| Geharde contactflow | Node 24 tests, onafhankelijke review en lokale desktop- en mobiele browsercontrole | Lokaal gecontroleerd op de wijzigingen van `126e9ab` |
+| Geharde contactflow | Node 24 tests, onafhankelijke review, lokale en afzonderlijke live desktop-/mobielcontrole | Gepubliceerd en live gecontroleerd in `09e96ba`; oude echte ontvangststeekproef afzonderlijk |
 | Werkelijk ontvangen custom event | Hobby-dashboard toont geen toegankelijk eventbewijs en vraagt Pro | Open |
 | Passende aanvragen, opdrachten en omzet | Geen historische klant- of opdrachtgegevens beschikbaar voor deze baseline | Open en onbekend, niet nul |
 
@@ -21,7 +27,7 @@ De aanvraag gebruikte uitsluitend publieke bedrijfsgegevens: naam `AB Service WP
 
 Het door de eigenaar geautoriseerde zakelijke Mailgun-dashboard, op het juiste EU-domein, toonde `accepted` om **17:45:54 UTC** en `delivered` om **17:45:55 UTC**. De ontvangende mailserver was `mx.zoho.eu`, met SMTP `250` en enhanced status `2.0.0`; TLS en certificaatcontrole stonden op true. De providerinterface toonde dezelfde gebeurtenissen als 13:45:54 en 13:45:55 in US/Eastern. Dit providerbewijs werd aangevuld met de meest recente expliciete eigenaarbevestiging van het gevraagde zakelijke bericht: **“Ja, ontvangen”**. Daarmee is inboxontvangst voor deze test bevestigd.
 
-Deze ene steekproef hoort uitsluitend bij de technische ontvangstcontrole en wordt uitgesloten van echte lead-, opdracht- en omzetcijfers. Het ontvangstbewijs van de oudere productieversie is geen live-bevestiging van de geharde versie; de publicatie en daaropvolgende livecontrole moeten aan hun eigen exacte release worden gekoppeld.
+Deze ene steekproef hoort uitsluitend bij de technische ontvangstcontrole en wordt uitgesloten van echte lead-, opdracht- en omzetcijfers. Het ontvangstbewijs van de oudere productieversie is geen live-bevestiging van de geharde versie; de afzonderlijke publicatie/livecontrole staat hierboven met haar eigen release, zonder tweede inboxsteekproef.
 
 ## Controle van de geharde contactcode
 

@@ -2,9 +2,11 @@
 
 ## Current authorized batch — WP00–WP03
 
-The owner-authorized first batch is being executed on `codex/seo-wp00-wp03`.
+The owner-authorized first batch was implemented on `codex/seo-wp00-wp03` and fast-forwarded
+to `main`. Reviewed feature `09e96ba` is published; exact hosted CI and primary Vercel READY/
+matching SHA/`www`, live crawl and desktop/mobile contact checks passed.
 WP00's source decisions/business brief and WP02's correct-owner Search Console baseline are
-verified. WP01's real inbox test and local contact hardening pass; dashboard event ingestion,
+verified. WP01's real inbox test and separate local/live contact hardening pass; dashboard event ingestion,
 commercial outcomes and actual business retention remain open. WP03's native-data gap table,
 four presets, five briefs/quick-win reviews, journey tables, actual top-ten research and combined
 audit are delivered; unavailable genuine customer-question data remain an explicit dependency.

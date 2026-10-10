@@ -1,6 +1,35 @@
 # AB Service SEO QA Report
 
+## 10 October 2026 — WP00–WP03 feature release verified
+
+- Reviewed feature `09e96baa21c393994b3ce58fbd098d12831edd45` is on GitHub `main`.
+  [Hosted CI 38075925607](https://github.com/Ilias492610/ABService/actions/runs/38075925607)
+  passed clean install, lint, 137 tests, production audit, build and production-output crawl.
+  Both Vercel project checks succeeded; primary `dpl_JDT1Gpj5uAFLbHALq7SJ7orGQf8E` is READY,
+  production, exact matching Git SHA and `www.abservice24.be` alias, verified through the API.
+- API project-settings metadata still says Node 22.x; matching build logs explicitly confirm
+  package `engines.node=24.x` overrides that legacy value and Node 24.x is selected. No account
+  setting or dependency was changed for this observation; local verification uses actual 24.19.0.
+- Fresh live crawl passed 81 registered pages, 92 destinations and 110 assets. Live Chromium
+  passed desktop 1440×1000/mobile 390×844: form-CTA hash/header clearance, validation/focus,
+  one intercepted pending request, explicit HTTP 200/okfalse failure, safe message, unlocked retry,
+  no horizontal overflow or pageerror. Native POST attributes and allowlisted status feedback
+  also passed without JavaScript. All valid test submissions were intercepted; no new mail sent.
+- Empty JSON probes returned HTTP 400 with the route's safe `error` field and no reported success;
+  the input guard is covered by no-send regressions. The private test helper initially asserted
+  uppercase method, immediate router completion and an incorrect error-response field. Those
+  assertions were corrected to the actual contract and rerun successfully; no product change
+  was needed, and those failed harness checks are not hidden as original all-green results.
+- Independent final review approved the exact batch with no Critical/Important/new Minor.
+  It also recomputed corrected previous 91-day 37/2696 and native PA01's own 0/47/10.34.
+- WP00/WP02 are checked. WP01's received technical email is still the earlier `7a16cec` sample;
+  latest live browser/API checks do not fabricate a second inbox receipt. Event ingestion,
+  actual commercial outcomes, retention/DPA and WP03 genuine customer questions remain open.
+  No mass indexing, repeated IndexNow notification, paid upgrade or WP04+ execution.
+
 ## 10 October 2026 — WP00–WP03 local/account acceptance
+
+Historical pre-publication acceptance below; the feature's release gates are closed above.
 
 - Root used actual bundled Node 24.19.0: 137/137 tests, lint, production build and production
   dependency audit (0 findings) pass. The build generates 168 entries including 78 social assets;
