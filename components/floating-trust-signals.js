@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TrackedLink from "@/components/tracked-link";
 import { business } from "@/content/business.mjs";
+import { formatGoogleRating } from "@/libs/google-reviews.mjs";
 
 function WhatsAppLogo() {
   return (
@@ -25,6 +26,44 @@ function GoogleLogo() {
 
 export default function FloatingTrustSignals() {
   const [showRating, setShowRating] = useState(true);
+  const [rating, setRating] = useState(null);
+
+  useEffect(() => {
+    const header = document.querySelector(".site-header");
+    const updateOffset = () => {
+      if (header) document.documentElement.style.setProperty("--header-offset", `${header.getBoundingClientRect().height}px`);
+    };
+    updateOffset();
+    const observer = new ResizeObserver(updateOffset);
+    if (header) observer.observe(header);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let timeout;
+    const load = async () => {
+      timeout = setTimeout(() => controller.abort(), 3_500);
+      try {
+        const response = await fetch("/api/google-rating", { cache: "no-store", signal: controller.signal });
+        const data = response.ok ? (await response.json()).rating : null;
+        if (!controller.signal.aborted && data && typeof data.rating === "number" && data.rating >= 1 && data.rating <= 5) setRating(data);
+      } catch {
+        // Keep the neutral Google-profile link when the live score cannot be obtained.
+      } finally {
+        clearTimeout(timeout);
+      }
+    };
+    const idle = "requestIdleCallback" in window
+      ? window.requestIdleCallback(load, { timeout: 2_000 })
+      : window.setTimeout(load, 1_000);
+    return () => {
+      controller.abort();
+      clearTimeout(timeout);
+      if ("cancelIdleCallback" in window) window.cancelIdleCallback(idle);
+      else window.clearTimeout(idle);
+    };
+  }, []);
 
   return (
     <>
@@ -43,22 +82,26 @@ export default function FloatingTrustSignals() {
       {showRating ? (
         <div className="google-rating-popup">
           <TrackedLink
-            href={business.googleReviewsHref}
+            href={rating?.googleMapsUri || business.googleReviewsHref}
             eventName="google_profile_click"
             eventProperties={{ location: "floating_rating" }}
             className="google-rating-link"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Bekijk AB Service ${business.googleRatingLabel}`}
           >
             <GoogleLogo />
             <span>
               <strong>AB Service</strong>
-              <span className="google-rating-row">
-                <b>{business.googleRating.toFixed(1).replace(".", ",")}</b>
-                <span className="google-stars" aria-hidden="true">★★★★★</span>
-              </span>
-              <small>Google-beoordeling</small>
+              {rating ? (
+                <span className="google-rating-row">
+                  <b>{formatGoogleRating(rating.rating)}</b>
+                  <span className="google-stars" aria-hidden="true">
+                    <span className="google-stars-empty">★★★★★</span>
+                    <span className="google-stars-filled" style={{ width: `${rating.rating * 20}%` }}>★★★★★</span>
+                  </span>
+                </span>
+              ) : <span className="google-profile-fallback">Bekijk ons profiel</span>}
+              <small className="google-maps-attribution" translate="no">Google Maps</small>
             </span>
           </TrackedLink>
           <button

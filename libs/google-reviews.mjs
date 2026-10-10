@@ -93,3 +93,11 @@ export const formatGoogleRating = (rating) =>
     minimumFractionDigits: 1,
     maximumFractionDigits: 1,
   }).format(rating);
+
+export const normalizeGoogleRating = (place, expectedPlaceId) => {
+  if (typeof place?.rating !== "number" || typeof place?.userRatingCount !== "number") return null;
+  const normalized = normalizeGooglePlace(place, expectedPlaceId);
+  if (!normalized) return null;
+  const { rating, userRatingCount, googleMapsUri } = normalized;
+  return { rating, userRatingCount, googleMapsUri };
+};

@@ -14,6 +14,7 @@
   --paper: #ffffff;
   --mist: #f4f8f9;
   --danger: #8a311f;
+  --header-offset: 8rem;
 }
 
 * { box-sizing: border-box; }
@@ -83,6 +84,28 @@ h3 { margin: 0 0 .7rem; font-size: 1.2rem; }
 .warning-box strong { display: block; margin-bottom: .3rem; }
 .warning-box p { margin: 0; }
 .content-visual { margin: 2rem 0 0; }
+.editorial-note { color: var(--muted); font-size: .9rem; margin: 1rem 0 0; }
+.maintenance-check-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+.maintenance-check-form, .maintenance-check-result { min-width: 0; border: 1px solid var(--line); border-radius: 1rem; padding: clamp(1.25rem, 3vw, 2rem); }
+.maintenance-check-result { background: var(--mist); }
+.maintenance-check-form h2, .maintenance-check-result h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.maintenance-check-form .button, .maintenance-check-result .button { margin-top: 1.5rem; }
+.maintenance-check-form small, .tool-note { display: block; color: var(--muted); font-size: .9rem; }
+.planning-date { display: grid; gap: .25rem; border-left: 4px solid var(--teal); background: white; padding: 1rem; margin-block: 1.25rem; }
+.planning-date strong { font-size: 1.3rem; }
+#onderhoudscheck, #onderhoudsresultaat, .field input, .field select, .field textarea, .checkbox-row input { scroll-margin-top: calc(var(--header-offset) + 1rem); }
+.table-scroll { max-width: 100%; overflow-x: auto; }
+.rule-table { width: 100%; border-collapse: collapse; font-size: .96rem; }
+.rule-table caption { text-align: left; margin-bottom: .7rem; color: var(--muted); }
+.rule-table th, .rule-table td { padding: .9rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.rule-table thead { background: var(--teal-light); }
+.advice-grid { margin-top: 2rem; }
+.advice-grid .info-card { border: 1px solid var(--line); border-radius: .9rem; padding: 1.5rem; background: white; }
+.advice-grid .info-card > p:not(.eyebrow) { color: var(--muted); }
+.advice-grid .info-card > a { color: var(--teal); font-weight: 800; text-underline-offset: .2em; }
+.advice-grid .info-card h3 a { text-decoration: none; }
+.advice-grid .info-card h3 a:hover { text-decoration: underline; }
+@media (max-width: 760px) { .maintenance-check-layout { grid-template-columns: minmax(0, 1fr); } }
 .content-visual img { display: block; width: 100%; max-height: 34rem; border-radius: 1rem; object-fit: cover; box-shadow: 0 18px 50px rgb(16 52 71 / 12%); }
 .check-list { display: grid; gap: .75rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
 .check-list li { position: relative; padding-left: 1.8rem; }
@@ -138,7 +161,10 @@ h3 { margin: 0 0 .7rem; font-size: 1.2rem; }
 .google-rating-link small { color: var(--muted); font-size: .7rem; }
 .google-rating-row { display: flex; align-items: center; gap: .42rem; line-height: 1; }
 .google-rating-row b { font-size: .85rem; }
-.google-stars { color: #f59e0b; font-size: .9rem; letter-spacing: .02em; }
+.google-stars { position: relative; display: inline-block; color: #f59e0b; font-size: .9rem; letter-spacing: .02em; line-height: 1; }
+.google-stars-empty { color: #cbd3d8; }
+.google-stars-filled { position: absolute; left: 0; top: 0; overflow: hidden; white-space: nowrap; }
+.google-profile-fallback { color: var(--muted); font-size: .8rem; }
 .google-rating-close { position: absolute; top: .25rem; right: .25rem; display: grid; width: 1.65rem; height: 1.65rem; place-items: center; border: 0; border-radius: 999px; background: transparent; color: #64727b; font: inherit; line-height: 1; cursor: pointer; }
 .google-rating-close:hover { background: var(--mist); color: var(--ink); }
 .reviews-heading { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(270px, .65fr); gap: 2rem; align-items: start; }
@@ -146,7 +172,8 @@ h3 { margin: 0 0 .7rem; font-size: 1.2rem; }
 .google-review-summary { display: grid; justify-items: start; gap: .45rem; border: 1px solid var(--line); border-radius: 1rem; background: white; padding: 1.4rem; box-shadow: 0 16px 45px rgb(16 52 71 / 7%); }
 .google-review-summary > strong { color: var(--navy-deep); font-size: 2.4rem; line-height: 1; }
 .google-review-summary > a { margin-top: .3rem; color: var(--teal); font-weight: 850; text-underline-offset: .2em; }
-.google-maps-attribution { color: #3c4043; font-size: .88rem; font-weight: 850; letter-spacing: -.01em; }
+.google-maps-attribution { color: #5e5e5e; font-size: .88rem; font-weight: 400; letter-spacing: normal; white-space: nowrap; }
+.google-rating-link small.google-maps-attribution { color: #5e5e5e; font-size: .75rem; font-weight: 400; }
 .review-stars { color: #f59e0b; letter-spacing: .06em; line-height: 1; }
 .google-reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
 .google-review-card { display: flex; min-height: 100%; flex-direction: column; border: 1px solid var(--line); border-radius: 1rem; background: white; padding: 1.35rem; box-shadow: 0 16px 45px rgb(16 52 71 / 7%); }
@@ -178,7 +205,7 @@ a.review-author:hover strong { text-decoration: underline; text-underline-offset
 .form-status.success { background: #e5f6eb; color: #185b30; }
 .form-status.error { background: #fff0ec; color: var(--danger); }
 .contact-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr); gap: 2.5rem; }
-.contact-form-panel { scroll-margin-top: 6.5rem; }
+.contact-form-panel { scroll-margin-top: calc(var(--header-offset) + 1rem); }
 .contact-aside { align-self: start; border-radius: 1rem; background: var(--mist); padding: 1.5rem; }
 .contact-aside dl { display: grid; gap: 1rem; }
 .contact-aside dt { color: var(--muted); font-size: .8rem; font-weight: 800; text-transform: uppercase; }
@@ -196,7 +223,7 @@ th { background: var(--mist); }
 .source-note a { color: var(--teal); font-weight: 750; }
 .fault-catalog-intro { max-width: 840px; }
 .fault-catalog { margin-top: 2rem; }
-.fault-search { position: sticky; top: 5.25rem; z-index: 15; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(15rem, .85fr); gap: .85rem 1rem; border: 1px solid var(--line); border-radius: 1rem; background: rgb(255 255 255 / 97%); padding: 1rem; box-shadow: 0 14px 40px rgb(16 52 71 / 10%); backdrop-filter: blur(12px); }
+.fault-search { position: sticky; top: calc(var(--header-offset) + .5rem); z-index: 15; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(15rem, .85fr); gap: .85rem 1rem; border: 1px solid var(--line); border-radius: 1rem; background: rgb(255 255 255 / 97%); padding: 1rem; box-shadow: 0 14px 40px rgb(16 52 71 / 10%); backdrop-filter: blur(12px); }
 .fault-search-field label { display: block; margin-bottom: .4rem; color: var(--ink); font-weight: 850; }
 .fault-search-field input, .fault-search-field select { width: 100%; min-height: 3rem; border: 1px solid #9fb4bf; border-radius: .65rem; background: white; padding: .75rem .85rem; color: var(--ink); font: inherit; }
 .fault-search-field input:focus, .fault-search-field select:focus { outline: 3px solid rgb(12 117 127 / 18%); outline-offset: 2px; border-color: var(--teal); }
@@ -231,7 +258,7 @@ th { background: var(--mist); }
 .inline-links span { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; background: var(--mist); padding: .55rem .85rem; color: var(--muted); font-weight: 700; }
 .district-link-grid a:hover, .inline-links a:hover { border-color: var(--teal); background: var(--teal-light); }
 .area-directory { margin-top: 2rem; }
-.area-search { position: sticky; top: 5.35rem; z-index: 20; border: 1px solid var(--line); border-radius: 1rem; background: rgb(255 255 255 / 97%); padding: 1rem; box-shadow: 0 14px 40px rgb(16 52 71 / 10%); }
+.area-search { position: sticky; top: calc(var(--header-offset) + .5rem); z-index: 20; border: 1px solid var(--line); border-radius: 1rem; background: rgb(255 255 255 / 97%); padding: 1rem; box-shadow: 0 14px 40px rgb(16 52 71 / 10%); }
 .area-search label { display: block; margin-bottom: .4rem; font-weight: 850; }
 .area-search input { width: 100%; border: 1px solid #9fb4bf; border-radius: .6rem; padding: .8rem .9rem; }
 .area-search p { margin: .4rem 0 0; color: var(--muted); font-size: .85rem; }

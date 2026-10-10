@@ -21,16 +21,16 @@ export default function TarievenPage() {
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Tarieven", path: "/tarieven" }]} />
       <PageHero
         eyebrow="Prijsinformatie"
-        title="Tarieven zonder lokprijs of verrassende belofte"
+        title="Prijs en offerte voor uw loodgieterswerk"
         intro="Een verantwoord bedrag volgt uit de werkelijke situatie. Deze pagina toont welke informatie nodig is om een aanvraag te beoordelen en welke onderdelen u in een offerte kunt laten verduidelijken."
         ctaLabel="Vraag een beoordeling aan"
       />
       <section className="section section-compact">
         <div className="shell narrow">
           <p className="answer-box">
-            AB Service publiceert geen vast tarief zolang verplaatsing, diagnose, materiaal,
-            toegang en scope niet als actuele prijslijst zijn bevestigd. Vraag vóór uitvoering
-            welke kostenbasis geldt en laat grotere werkzaamheden schriftelijk afbakenen.
+            De prijs hangt af van het werk, de verplaatsing, benodigde diagnose, materialen en
+            bereikbaarheid. Vraag vóór uitvoering welke kostenbasis geldt en laat grotere
+            werkzaamheden schriftelijk afbakenen. Op deze pagina staat geen vaste prijslijst.
           </p>
         </div>
       </section>

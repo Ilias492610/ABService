@@ -1,6 +1,6 @@
 import { pageRegistry } from "../content/site-content.mjs";
 import { business } from "../content/business.mjs";
-import { auditHtml } from "../libs/html-audit.mjs";
+import { auditHtml, findUnreachablePages } from "../libs/html-audit.mjs";
 import { buildAuditTargets } from "../libs/seo-audit-targets.mjs";
 
 const baseUrl = (process.argv[2] || process.env.AUDIT_BASE_URL || business.canonicalOrigin).replace(/\/$/, "");
@@ -15,7 +15,7 @@ const record = (condition, message) => {
 };
 
 const fetchPage = async (url) => {
-  const response = await fetch(url, { redirect: "follow" });
+  const response = await fetch(url, { redirect: "follow", signal: AbortSignal.timeout(15_000) });
   return { response, html: await response.text() };
 };
 
@@ -27,7 +27,13 @@ record(
   JSON.stringify([...sitemapUrls].sort()) === JSON.stringify([...expectedSitemapUrls].sort()),
   "sitemap wijkt af van de published-registry"
 );
-record(!/<lastmod>/i.test(sitemapResult.html), "sitemap bevat niet-onderbouwde lastmod-datums");
+for (const match of sitemapResult.html.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+  const loc = match[1].match(/<loc>(.*?)<\/loc>/)?.[1];
+  const lastmod = match[1].match(/<lastmod>(.*?)<\/lastmod>/)?.[1];
+  if (!lastmod) continue;
+  const page = expectedPublished.find((entry) => canonicalUrl(entry.path) === loc);
+  record(Boolean(page?.lastModified) && lastmod.slice(0, 10) === page.lastModified.slice(0, 10), `${loc}: lastmod wijkt af van de bijgehouden wijzigingsdatum`);
+}
 
 const robotsResult = await fetchPage(`${baseUrl}/robots.txt`);
 record(robotsResult.response.status === 200, `robots.txt geeft ${robotsResult.response.status}`);
@@ -40,6 +46,7 @@ for (const page of [...expectedPublished, ...expectedNoindex]) {
   const { response, html } = await fetchPage(targets.fetchUrl);
   record(response.status === 200, `${page.path} geeft ${response.status}`);
   record(response.url === targets.fetchUrl, `${page.path} redirect naar ${response.url}`);
+  record(page.status !== "published" || !/noindex/i.test(response.headers.get("x-robots-tag") || ""), `${page.path}: indexeerbare pagina heeft X-Robots-Tag noindex`);
 
   const audit = auditHtml({ html, url: targets.fetchUrl, indexable: page.status === "published" });
   for (const issue of audit.issues) failures.push(`${page.path}: ${issue}`);
@@ -62,9 +69,50 @@ for (const field of ["title", "description"]) {
 
 const internalLinks = new Set(auditedPages.flatMap((page) => page.internalLinks));
 for (const link of internalLinks) {
-  const response = await fetch(link, { redirect: "manual" });
+  const response = await fetch(link, { redirect: "manual", signal: AbortSignal.timeout(15_000) });
   record(response.status < 400, `interne link ${link} geeft ${response.status}`);
   record(response.status < 300, `interne link ${link} redirect met ${response.status}`);
+  await response.body?.cancel();
+}
+
+const publishedResults = auditedPages.filter((result) => result.page.status === "published");
+for (const url of findUnreachablePages(publishedResults, `${baseUrl}/`)) {
+  failures.push(`gepubliceerde pagina ${url} is niet bereikbaar vanuit de homepage`);
+}
+const pagesByPath = new Map(auditedPages.map((result) => [new URL(result.url).pathname, result]));
+for (const result of auditedPages) {
+  for (const link of result.fragmentLinks) {
+    const destination = pagesByPath.get(new URL(link.url).pathname);
+    if (destination) record(destination.documentIds.includes(link.fragment), `${result.page.path}: anker ${link.url}#${link.fragment} ontbreekt`);
+  }
+}
+
+const localAsset = (href) => {
+  const target = new URL(href);
+  if (target.origin === new URL(baseUrl).origin) return target.href;
+  if (target.origin === business.canonicalOrigin) return `${baseUrl}${target.pathname}${target.search}`;
+  return null;
+};
+const assets = new Set(auditedPages.flatMap((result) => result.assets).map(localAsset).filter(Boolean));
+for (const asset of assets) {
+  try {
+    const response = await fetch(asset, { redirect: "manual", signal: AbortSignal.timeout(15_000) });
+    record(response.status === 200, `asset ${asset} geeft ${response.status}`);
+    record(!/text\/html/i.test(response.headers.get("content-type") || ""), `asset ${asset} geeft HTML in plaats van een bestand`);
+    if (/\.webmanifest(?:\?|$)/.test(asset) && response.ok) {
+      const manifest = await response.json();
+      for (const icon of manifest.icons || []) {
+        if (icon.src) {
+          const href = localAsset(new URL(icon.src, asset).href);
+          if (href) assets.add(href);
+        }
+      }
+    } else {
+      await response.body?.cancel();
+    }
+  } catch (error) {
+    failures.push(`asset ${asset}: ${error.message}`);
+  }
 }
 
 const missing = await fetchPage(`${baseUrl}/seo-audit-niet-bestaand`);
@@ -78,5 +126,5 @@ if (failures.length > 0) {
   failures.forEach((failure) => console.error(`- ${failure}`));
   process.exitCode = 1;
 } else {
-  console.log(`SEO-audit geslaagd: ${auditedPages.length} pagina's en ${internalLinks.size} interne links gecontroleerd.`);
+  console.log(`SEO-audit geslaagd: ${auditedPages.length} pagina's, ${internalLinks.size} interne links en ${assets.size} assets gecontroleerd; alle gepubliceerde pagina's bereikbaar.`);
 }

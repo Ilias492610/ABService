@@ -7,6 +7,7 @@ import PageHero from "@/components/page-hero";
 import { getProject, getPublishedProjects } from "@/content/projects.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
+import { serviceRegionHubs } from "@/content/service-areas.mjs";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => getPublishedProjects().map(({ slug }) => ({ slug }));
@@ -21,6 +22,7 @@ export default async function ProjectPage({ params }) {
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) notFound();
+  const regionHub = serviceRegionHubs.find((hub) => hub.groupName === project.province);
 
   return (
     <>
@@ -71,6 +73,7 @@ export default async function ProjectPage({ params }) {
             toestelgegevens zijn bewust niet gepubliceerd.
           </p>
           <p><Link href={project.servicePath}>Bekijk de dienst {project.service.toLowerCase()} →</Link></p>
+          {regionHub && <p><Link href={regionHub.path}>Bekijk het werkgebied in {regionHub.name} →</Link></p>}
         </div>
       </section>
       <ContactCta title="Wilt u een vergelijkbare opdracht bespreken?" />

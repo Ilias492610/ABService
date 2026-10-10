@@ -1,5 +1,27 @@
 # AB Service SEO Changelog
 
+## 10 October 2026 — source-bound advice, maintenance tool and technical growth release
+
+- Added `/advies`, six original primary-source guides and `/tools/onderhoudscheck` with separate
+  Flemish/Brussels rules, unknown-input handling, model limits, actual source-check dates and
+  an optional account-free contact handoff. The full result is visible before contact.
+- Added accurate organizational Article authorship, canonical metadata and explicit reviewed
+  sitemap dates. Existing URLs, owner-confirmed optimized photos, 24/7 and publication gates remain.
+- Linked service/brand/fault/advice clusters and known project provinces; preselected valid services
+  in contact CTAs. Replaced customer-visible SEO/editorial workflow copy with practical explanations.
+- Fixed manifest icon, sticky header offsets and failed-form/date focus. Popup uses current
+  no-store rating data or neutral profile fallback; removed stale 5.0 and preserved WhatsApp.
+- Sanitized analytics URL parameters/fragments and predefined event properties; updated privacy.
+- Upgraded Next to 16.3.8 plus patched production transitive packages: production audit zero,
+  nine development-tree advisories remain without a compatible update; no forced major upgrade.
+- Broadened crawl/asset/source/fragment/orphan checks and added GitHub CI. Local tests 96/96,
+  lint/build/crawl passed; independent review found no remaining important code defect.
+- Corrected Vercel apex redirect from temporary 307 to permanent 308 and verified path/query retention.
+- Added offline actual-export GSC analysis, research/source-idea reports and an honest requirement
+  ledger. No traffic, ranking, lead increase or 90/100 completion claim is inferred.
+- Registered daily 09:00 SEO continuation in this chat. Hosted CI, new deployment and live checks
+  are release acceptance steps; record their observed results separately after publication.
+
 ## 17 September 2026 — owner-confirmed 24/7 availability restored
 
 - Recorded the owner's current confirmation that AB Service is open and reachable 24 hours per

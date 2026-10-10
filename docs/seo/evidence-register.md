@@ -35,7 +35,9 @@
 | Individual Google review texts | Official Places API currently returns no review objects for this profile | High for current response | No copied fallback; cards appear only when Google supplies attributed review objects | Places response change |
 | Address/customer-facing office | No evidence | None | Not published | Owner + GBP evidence |
 | Opening hours | Owner confirmation on 17 September 2026; 24/7 Google Business Profile edit submitted | High | Published as `Mo-Su 00:00-23:59` and visible 24/7 wording | Owner or GBP hours change |
-| Surrounding municipalities | No per-area evidence | Low | Draft | Coverage and local work proof |
+| Served territory: Flanders and Brussels, 304 municipality records | Owner confirmation in Phase E; official geographic registry | High for offered territory, not physical presence or local work | Published coverage directory and six regional hubs; municipality URL candidates stay draft | Operational coverage or administrative change; genuine local-value/search evidence for new URLs |
+| Regional maintenance checker and six advice guides | Current primary sources reviewed 10 October 2026; referenced on each page | High within stated informational scope, not an on-site diagnosis | Published organizational-author guidance and optional planning tool | Source/regulatory change, user errors or independently verified specialist review |
+| Current indexed count, search demand and qualified-lead growth | No current correct-account export or outcome dataset | Unavailable | No numerical growth, ranking, indexing or 100% SEO completion claim | Correct-owner GSC/GBP/analytics and privacy-preserving lead outcomes |
 | Manufacturer authorization/partners | No evidence | None | Not published | Current agreements/listings |
 | Certifications/recognition | No evidence | None | Not published | Recognition number and holder |
 | Air-conditioning/F-gas service | No evidence | None | Noindex; removed from nav | Current service and certificate proof |

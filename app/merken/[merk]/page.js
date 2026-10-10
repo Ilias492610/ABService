@@ -8,6 +8,7 @@ import { brandServices, getBrandService } from "@/content/brand-services.mjs";
 import { contentImages } from "@/content/media.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
+import { buildContactHref } from "@/libs/contact-context.mjs";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => brandServices.map(({ slug }) => ({ merk: slug }));
@@ -34,12 +35,15 @@ export default async function BrandServicePage({ params }) {
         eyebrow={`${entry.brand} cv-ketel`}
         title={`${entry.brand} onderhoud en herstelling`}
         intro={`AB Service voert onderhoud, diagnose en herstelling uit voor ${entry.productFocus}. Een gerichte aanvraag begint met het exacte toestelmodel, de productcode en de volledige foutmelding.`}
+        ctaLabel="Bespreek uw toestel"
+        ctaHref={buildContactHref({ service: "Herstelling verwarming" })}
       />
       <section className="section section-compact">
         <div className="shell narrow">
           <p className="answer-box">
-            Stuur een duidelijke foto van het typeplaatje en display. Beschrijf of verwarming,
-            warm water of beide uitvallen en of de fout na één toegestane reset terugkomt.
+            Beschrijf of verwarming, warm water of beide uitvallen en vermeld het exacte model
+            en de volledige code. Maak alleen foto’s van het typeplaatje en display wanneer
+            die veilig bereikbaar zijn, zonder iets te demonteren.
           </p>
           <ContentImage image={contentImages.boilerServiceMarketing} />
         </div>
@@ -81,16 +85,24 @@ export default async function BrandServicePage({ params }) {
       <section className="section">
         <div className="shell narrow prose-block">
           <p className="eyebrow">Onafhankelijke service</p>
-          <h2>Geen fabrikant- of dealerclaim</h2>
+          <h2>Onafhankelijke onderhouds- en herstellingsservice</h2>
           <p>
-            AB Service is een onafhankelijke dienstverlener. Deze pagina vermeldt het merk om
-            duidelijk te maken voor welke toestellen onderhoud en herstelling worden uitgevoerd;
-            ze suggereert geen officiële samenwerking of exclusieve erkenning door {entry.brand}.
+            AB Service werkt als onafhankelijke dienstverlener aan {entry.brand}-toestellen.
+            De werkzaamheden worden afgestemd op het model, de installatie en uw vraag.
+            Voor onderhoud helpen het laatste attest en de installatiegeschiedenis; voor een
+            storing helpen de code en een beschrijving van het moment waarop ze optreedt.
           </p>
-          <p><Link href="/merken">Bekijk alle ondersteunde ketelmerken →</Link></p>
+          <ul className="link-list">
+            <li><Link href="/onderhoud">Onderhoud van uw cv-ketel</Link></li>
+            <li><Link href="/herstelling">Herstelling van verwarming of warm water</Link></li>
+            <li><Link href="/tools/onderhoudscheck">Gratis onderhoudscheck voor uw toestel en gewest</Link></li>
+            <li><Link href="/advies/onderhoudsattest-cv-ketel">Welke onderhoudsdocumenten bewaart u?</Link></li>
+            <li><Link href="/advies/geen-warm-water">Welke gegevens helpen bij ontbrekend warm water?</Link></li>
+            <li><Link href="/merken">Alle ondersteunde ketelmerken</Link></li>
+          </ul>
         </div>
       </section>
-      <ContactCta title={`Hulp nodig voor uw ${entry.brand}-ketel?`} />
+      <ContactCta title={`Hulp nodig voor uw ${entry.brand}-ketel?`} service="Herstelling verwarming" />
     </>
   );
 }

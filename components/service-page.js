@@ -3,6 +3,8 @@ import Breadcrumbs from "@/components/breadcrumbs";
 import ContentImage from "@/components/content-image";
 import ContactCta from "@/components/contact-cta";
 import PageHero from "@/components/page-hero";
+import { serviceIntents } from "@/content/service-intents.mjs";
+import { buildContactHref } from "@/libs/contact-context.mjs";
 
 export default function ServicePage({
   breadcrumb,
@@ -16,14 +18,23 @@ export default function ServicePage({
   sourceLinks = [],
   warning,
   image,
+  contactService,
+  editorial,
 }) {
+  const intent = serviceIntents[breadcrumb.at(-1)?.path];
+  const service = contactService || intent?.service;
+  const links = [...relatedLinks];
+  for (const link of intent?.links || []) {
+    if (!links.some((entry) => entry.href === link.href)) links.push(link);
+  }
   return (
     <>
       <Breadcrumbs items={[{ name: "Home", path: "/" }, ...breadcrumb]} />
-      <PageHero eyebrow={eyebrow} title={title} intro={intro} />
+      <PageHero eyebrow={eyebrow} title={title} intro={intro} ctaHref={buildContactHref({ service })} />
       <section className="section section-compact">
         <div className="shell narrow">
           <p className="answer-box">{answer}</p>
+          {editorial?.checkedAt && <p className="editorial-note">Uitgegeven door <Link href="/over-ons">AB Service</Link>. Broninformatie nagekeken op <time dateTime={editorial.checkedAt}>{new Intl.DateTimeFormat("nl-BE", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${editorial.checkedAt}T00:00:00Z`))}</time>.</p>}
           {warning && (
             <aside className="warning-box">
               <strong>Veiligheid eerst</strong>
@@ -68,14 +79,14 @@ export default function ServicePage({
           </div>
         </section>
       )}
-      {(relatedLinks.length > 0 || sourceLinks.length > 0) && (
+      {(links.length > 0 || sourceLinks.length > 0) && (
         <section className="section">
           <div className="shell related-grid">
-            {relatedLinks.length > 0 && (
+            {links.length > 0 && (
               <div>
                 <h2>Lees ook</h2>
                 <ul className="link-list">
-                  {relatedLinks.map((link) => (
+                  {links.map((link) => (
                     <li key={link.href}>
                       <Link href={link.href}>{link.label} →</Link>
                     </li>
@@ -100,7 +111,7 @@ export default function ServicePage({
           </div>
         </section>
       )}
-      <ContactCta />
+      <ContactCta service={service} />
     </>
   );
 }

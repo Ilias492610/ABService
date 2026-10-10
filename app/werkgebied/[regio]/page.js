@@ -17,6 +17,33 @@ import {
 
 export const dynamicParams = false;
 
+const regionalCopy = {
+  antwerpen: {
+    intro: "AB Service behandelt verwarmings- en sanitaire aanvragen in provincie Antwerpen: van de stad en haar districten via de zuidrand en de Mechelse regio tot de Kempen. Bezorg uw gemeente, toestelgegevens en vraag om de afspraak voor te bereiden.",
+    details: "Kies hieronder de passende dienst voor cv-ketelonderhoud, een herstelling, keuring, gasketelinstallatie of sanitair werk. Bij een aanvraag in de stad Antwerpen helpt ook de vermelding van het district.",
+  },
+  limburg: {
+    intro: "AB Service neemt aanvragen aan uit de Limburgse gemeenten. Meld het soort werk en de toestand van uw installatie, zodat de benodigde aanpak en de verplaatsing vooraf kunnen worden afgestemd.",
+    details: "Van Hasselt en Genk tot Noord- en Zuid-Limburg: vermeld het exacte adres voor uw aanvraag en wie toegang tot het toestel kan geven. Planning volgt na beoordeling van de opdracht en de praktische bereikbaarheid.",
+  },
+  "oost-vlaanderen": {
+    intro: "Voor verwarming, sanitair en loodgieterswerk in Oost-Vlaanderen kunt u uw aanvraag aan AB Service voorleggen. Vermeld de gemeente, het probleem of gewenste werk en de toegang tot de installatie.",
+    details: "Het werkgebied loopt van Gent en het Waasland tot de Denderstreek en Vlaamse Ardennen. Geef bij herstellingen ook aan of de klacht voortdurend optreedt of alleen tijdens een bepaalde verwarmings- of gebruikscyclus.",
+  },
+  "vlaams-brabant": {
+    intro: "AB Service bedient Vlaams-Brabant, waaronder de Vlaamse Rand en de Leuvense regio. Bezorg bij uw aanvraag de toestelgegevens en vermeld of toegang, parking of een gemeenschappelijke technische ruimte vooraf moet worden geregeld.",
+    details: "Bij een appartementsgebouw helpen verdieping, gemeenschappelijke afsluiters en contact met de gebouwbeheerder om het werk voor te bereiden. De benodigde dienst en afspraak worden voor uw concrete situatie afgestemd.",
+  },
+  "west-vlaanderen": {
+    intro: "AB Service behandelt aanvragen in West-Vlaanderen, aan de kust en in het binnenland. Omschrijf uw installatie of loodgieterswerk en geef gemeente en gewenste afspraakcontext mee om de verplaatsing voor te bereiden.",
+    details: "Het werkgebied omvat onder meer Brugge, de Westhoek en de regio Kortrijk-Roeselare. Meld welke toestellen of leidingen betrokken zijn en wat al werd gecontroleerd, zodat de opdracht vóór de afspraak kan worden besproken.",
+  },
+  brussel: {
+    intro: "AB Service neemt aanvragen aan uit de 19 gemeenten van het Brussels Hoofdstedelijk Gewest. Vermeld bij appartementen de verdieping, toegang tot technische lokalen en eventuele contactpersoon van het gebouw.",
+    details: "Geef de Brusselse gemeente, parkeer- en toegangssituatie en toestelgegevens mee. Voor ketelonderhoud en controles gelden Brusselse EPB-regels; de juiste handeling hangt onder meer af van het toestel en de installatiegeschiedenis.",
+  },
+};
+
 export function generateStaticParams() {
   return serviceRegionHubs.map((hub) => ({ regio: hub.slug }));
 }
@@ -36,6 +63,12 @@ export default async function RegionPage({ params }) {
 
   const source = regio === "brussel" ? coverageSources[1] : coverageSources[0];
   const localProjects = getPublishedProjectsForHub(hub.groupName, projects);
+  const copy = regionalCopy[regio];
+  const practicalQuestions = [
+    [`Kan ik vanuit ${hub.name} een aanvraag doen?`, `Ja. AB Service behandelt aanvragen uit de ${group.areas.length} gemeenten in dit werkgebied. De werkzaamheden en afspraak worden afgestemd op uw concrete situatie.`],
+    ["Welke gegevens helpen bij de planning?", hub.planningTip],
+    ["Wanneer staat de afspraak vast?", "De afspraak en verwachte werkzaamheden worden na rechtstreeks contact bevestigd. Vermeld wie toegang kan geven en welke praktische afspraken nodig zijn."],
+  ];
 
   return (
     <>
@@ -49,7 +82,7 @@ export default async function RegionPage({ params }) {
       <PageHero
         eyebrow="Werkgebied"
         title={hub.heading}
-        intro={hub.summary}
+        intro={copy.intro}
         ctaLabel={`Aanvraag uit ${hub.name}`}
       />
       <section className="section section-compact">
@@ -59,16 +92,13 @@ export default async function RegionPage({ params }) {
         <div className="shell related-grid">
           <div>
             <p className="eyebrow">Belangrijke plaatsen</p>
-            <h2>Vroege onderzoekskandidaten</h2>
-            <p>
-              Deze plaatsen krijgen voorrang bij zoekdata- en evidenceonderzoek. Vermelding hier
-              betekent niet dat er al een afzonderlijke landingspagina of lokale vestiging is.
-            </p>
+            <h2>Plaatsen in dit werkgebied</h2>
+            <p>Onder meer deze plaatsen zijn opgenomen. Verderop vindt u de volledige gemeentelijst om uw woonplaats te controleren.</p>
             <p>{hub.majorCities.join(" · ")}</p>
           </div>
           <div>
-            <p className="eyebrow">Bewijsstatus</p>
-            <h2>Lokale ervaring wordt controleerbaar toegevoegd</h2>
+            <p className="eyebrow">{localProjects.length ? "Praktijk" : "Voorbereiding"}</p>
+            <h2>{localProjects.length ? "Uitgevoerde werkzaamheden in deze regio" : "Uw aanvraag gericht voorbereiden"}</h2>
             {localProjects.length ? (
               <ul className="link-list">
                 {localProjects.map((project) => (
@@ -76,10 +106,7 @@ export default async function RegionPage({ params }) {
                 ))}
               </ul>
             ) : (
-              <p>
-                Projectcases en lokale reviews verschijnen hier pas na controle van werkbewijs,
-                toestemming en authentieke foto’s. Zo blijft de informatie bruikbaar en betrouwbaar.
-              </p>
+              <p>Beschrijf wat u wilt laten uitvoeren of sinds wanneer het probleem optreedt. Merk, model en bestaande documenten helpen om de juiste vervolgstap te bespreken.</p>
             )}
           </div>
         </div>
@@ -89,11 +116,8 @@ export default async function RegionPage({ params }) {
           <div className="prose-block">
             <p className="eyebrow">Dekking en planning</p>
             <h2>{group.areas.length} gemeenten in dit werkgebied</h2>
-            <p>{hub.details}</p>
-            <p>
-              Een vermelding in deze lijst bevestigt het werkgebied, niet een vaste responstijd
-              of automatische aanvaarding. AB Service bevestigt iedere afspraak afzonderlijk.
-            </p>
+            <p>{copy.details}</p>
+            <p>De afspraak en benodigde werkzaamheden worden na rechtstreeks contact bevestigd.</p>
           </div>
           <aside className="card">
             <h3>Kies uw dienst</h3>
@@ -103,6 +127,9 @@ export default async function RegionPage({ params }) {
               <li><Link href="/keuring">Keuring cv-installatie</Link></li>
               <li><Link href="/installaties/sanitair">Sanitair en loodgieterswerk</Link></li>
               <li><Link href="/installaties/gasketels">Gasketelinstallatie</Link></li>
+              <li><Link href="/diensten/lekdetectie">Lekdetectie</Link></li>
+              <li><Link href="/diensten/ontstopping">Ontstopping</Link></li>
+              <li><Link href="/tools/onderhoudscheck">Gratis onderhoudscheck</Link></li>
             </ul>
           </aside>
         </div>
@@ -113,9 +140,8 @@ export default async function RegionPage({ params }) {
             <p className="eyebrow">Stad Antwerpen</p>
             <h2>De tien districten</h2>
             <p className="section-lead">
-              Antwerpen verwijst naar de homepage. Acht districten hebben een indexeerbare lokale
-              pagina; Berendrecht-Zandvliet-Lillo blijft noindex tot de zoekintentie is onderzocht.
-              Samen vormen ze geen tweede service×plaats-matrix.
+              Geef uw district mee wanneer u een aanvraag voor de stad Antwerpen doet. Via de
+              beschikbare links vindt u aanvullende informatie over uw omgeving.
             </p>
             <ul className="district-link-grid">
               {antwerpDistricts.map((district) => (
@@ -148,7 +174,7 @@ export default async function RegionPage({ params }) {
           <p className="eyebrow">Veelgestelde vragen</p>
           <h2>Praktisch over {hub.name}</h2>
           <div className="faq-list">
-            {hub.faq.map(([question, answer]) => (
+            {practicalQuestions.map(([question, answer]) => (
               <details key={question}><summary>{question}</summary><p>{answer}</p></details>
             ))}
           </div>

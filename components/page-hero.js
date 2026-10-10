@@ -7,7 +7,7 @@ export default function PageHero({
   title,
   intro,
   ctaLabel = "Bespreek uw aanvraag",
-  ctaHref = "/contact",
+  ctaHref = "/contact#aanvraagformulier",
 }) {
   return (
     <section className="page-hero">

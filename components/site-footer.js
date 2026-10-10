@@ -16,6 +16,8 @@ const serviceLinks = [
 ];
 
 const knowledgeLinks = [
+  ["Praktisch advies", "/advies"],
+  ["Onderhoudscheck", "/tools/onderhoudscheck"],
   ["Foutcodes", "/foutcodes"],
   ["Drukverlies cv-ketel", "/advies/drukverlies-cv-ketel"],
   ["Veelgestelde vragen", "/faq"],

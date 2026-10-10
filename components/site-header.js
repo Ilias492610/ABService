@@ -11,7 +11,7 @@ function NavigationItems({ mobile = false }) {
         <details className={mobile ? "mobile-submenu" : "nav-submenu"} key={item.label}>
           <summary>{item.label}</summary>
           <div className="submenu-panel">
-            <Link href={item.href}>Alle diensten</Link>
+            <Link href={item.href}>{item.overviewLabel || `Alle ${item.label.toLowerCase()}`}</Link>
             {item.children.map((child) => (
               <Link key={child.href} href={child.href}>
                 {child.label}

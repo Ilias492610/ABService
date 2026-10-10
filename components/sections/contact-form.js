@@ -1,10 +1,11 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { track } from "@vercel/analytics";
 import { buildAnalyticsEvent } from "@/libs/analytics.mjs";
 import { CONTACT_SERVICES, validateContactInput } from "@/libs/contact-validation.mjs";
+import { readContactContext } from "@/libs/contact-context.mjs";
 
 const initialData = {
   name: "", phone: "", email: "", address: "", city: "", postalCode: "",
@@ -22,6 +23,25 @@ export default function ContactForm() {
   const [status, setStatus] = useState({ type: "idle", message: "" });
   const [submitting, setSubmitting] = useState(false);
   const started = useRef(false);
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    let active = true;
+    const context = readContactContext(window.location);
+    if (!context.service) return;
+    queueMicrotask(() => {
+      if (!active) return;
+      setFormData((current) => ({ ...current, ...context }));
+      if (window.location.hash.startsWith("#aanvraagformulier?")) {
+        window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#aanvraagformulier`);
+      }
+      requestAnimationFrame(() => {
+        if (!active) return;
+        document.getElementById("aanvraagformulier")?.scrollIntoView({ behavior: "instant", block: "start" });
+      });
+    });
+    return () => { active = false; };
+  }, []);
 
   const noteStart = () => {
     if (!started.current) {
@@ -45,6 +65,7 @@ export default function ContactForm() {
       setErrors(validation.errors);
       setStatus({ type: "error", message: "Controleer de gemarkeerde velden en probeer opnieuw." });
       sendEvent("contact_form_failure", { location: "contact_page", reason: "validation", service: formData.service });
+      requestAnimationFrame(() => formRef.current?.querySelector('[aria-invalid="true"]')?.focus());
       return;
     }
 
@@ -72,7 +93,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} onFocus={noteStart} noValidate aria-describedby="form-note">
+    <form ref={formRef} onSubmit={handleSubmit} onFocus={noteStart} noValidate aria-describedby="form-note">
       <p id="form-note" className="section-lead">Velden met een * zijn verplicht. Vermeld geen gevoelige medische of financiële gegevens.</p>
       <div className="form-grid">
         <div className="field">

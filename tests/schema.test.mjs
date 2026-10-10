@@ -4,6 +4,7 @@ import assert from "node:assert/strict";
 import {
   buildBreadcrumbSchema,
   buildGlobalSchemaGraph,
+  buildArticleSchema,
 } from "../libs/schema-data.mjs";
 
 test("global schema contains only verified business facts", () => {
@@ -21,6 +22,19 @@ test("global schema contains only verified business facts", () => {
   assert.ok(!("address" in business));
   assert.ok(!("aggregateRating" in business));
   assert.ok(!("priceRange" in business));
+});
+
+test("article schema matches the visible organizational author, sources and checked date", () => {
+  const schema = buildArticleSchema({ path: "/advies/test", title: "Heldere uitleg", description: "Een antwoord", checkedAt: "2026-10-10", sourceLinks: [{ href: "https://www.vlaanderen.be/voorbeeld" }] });
+  assert.equal(schema["@type"], "Article");
+  assert.equal(schema.headline, "Heldere uitleg");
+  assert.equal(schema.mainEntityOfPage["@id"], "https://www.abservice24.be/advies/test");
+  assert.equal(schema.author["@id"], "https://www.abservice24.be/#organization");
+  assert.equal(schema.dateModified, "2026-10-10");
+  assert.deepEqual(schema.citation, ["https://www.vlaanderen.be/voorbeeld"]);
+  assert.ok(!schema.datePublished);
+  assert.ok(!schema.reviewedBy);
+  assert.ok(!schema.aggregateRating);
 });
 
 test("breadcrumb schema uses canonical URLs in visible order", () => {

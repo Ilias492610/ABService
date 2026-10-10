@@ -2,6 +2,7 @@ import { routableDistricts, serviceRegionHubs } from "./service-areas.mjs";
 import { additionalServices } from "./additional-services.mjs";
 import { brandServices } from "./brand-services.mjs";
 import { getPublishedProjects } from "./projects.mjs";
+import { adviceGuides } from "./advice-guides.mjs";
 
 export const CONTENT_STATUS = Object.freeze({
   PUBLISHED: "published",
@@ -290,6 +291,34 @@ export const pageRegistry = Object.freeze([
     priority: 0.6,
   },
   {
+    path: "/advies",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Advies over cv-ketels, warm water en loodgieterswerk | AB Service",
+    description: "Vind veilige eerste stappen bij drukverlies, koude radiatoren, waterlekken, boilerproblemen en verstopte afvoeren. Met officiële bronnen en gratis onderhoudscheck.",
+    changeFrequency: "monthly",
+    priority: 0.75,
+    lastModified: "2026-10-10",
+  },
+  {
+    path: "/tools/onderhoudscheck",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Gratis cv-ketel onderhoudscheck: Vlaanderen en Brussel | AB Service",
+    description: "Wanneer moet uw cv-ketel onderhouden worden? Controleer gratis de regel voor Vlaanderen of Brussel en bereken een richtdatum. Zonder account, met officiële bronnen.",
+    changeFrequency: "monthly",
+    priority: 0.75,
+    lastModified: "2026-10-10",
+  },
+  ...adviceGuides.map((guide) => ({
+    path: guide.path,
+    status: CONTENT_STATUS.PUBLISHED,
+    title: `${guide.title} | AB Service`,
+    description: guide.description,
+    kind: "article",
+    lastModified: guide.checkedAt,
+    changeFrequency: "monthly",
+    priority: 0.65,
+  })),
+  {
     path: "/advies/drukverlies-cv-ketel",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Drukverlies bij uw cv-ketel: oorzaken en veilige controle | AB Service",
@@ -378,7 +407,10 @@ export const navigation = Object.freeze([
   },
   { label: "Tarieven", href: "/tarieven" },
   { label: "Foutcodes", href: "/foutcodes" },
-  { label: "Advies", href: "/advies/drukverlies-cv-ketel" },
+  { label: "Advies", href: "/advies", overviewLabel: "Alle adviesartikelen", children: [
+    { label: "Gratis onderhoudscheck", href: "/tools/onderhoudscheck" },
+    { label: "Drukverlies cv-ketel", href: "/advies/drukverlies-cv-ketel" },
+  ] },
   { label: "Werkgebied", href: "/werkgebied" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },

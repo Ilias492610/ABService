@@ -1,5 +1,50 @@
 # AB Service SEO QA Report
 
+## 10 October 2026 — growth release candidate (local checks)
+
+These are fresh local checks, not proof of Google indexing or extra customers. Final live
+deployment observations will be recorded separately after publication.
+
+- Next.js/eslint-config-next 16.3.8, sharp 0.35.5 and source-map-js 1.2.2. Production audit:
+  zero advisories. Full audit: nine development-tree findings (seven high, two moderate),
+  propagated from two advisory roots; dry-run offers no compatible fix. No forced major upgrade.
+- `npm test`: 96/96 passed; `npm run lint`, `npm run build` and `git diff --check` passed.
+  Build generated 90 route outputs; registry has 81 customer routes (79 published, two noindex).
+- Local production crawl passed 81 pages, 92 internal destinations and 32 referenced assets,
+  including canonical/robots/sitemap, metadata, JSON-LD, manifest icons, fragments and reachable
+  published pages. Modification dates are explicit checked dates, never generated from build time.
+- Chromium checked 20 maintenance scenarios at desktop 1440×1000 and mobile 390×844 (40 cases):
+  regional/power thresholds, fuels, standalone gas water heater, changed/unknown/electric cases,
+  leap-year dates, future dates, result invalidation and optional contact handoff.
+- Handoff preselects the accepted service and coded Dutch summary, consumes the fragment to
+  `/contact#aanvraagformulier` and retains the canonical contact URL. Invalid submissions focus
+  the first invalid input; after smooth scrolling settles it is visible below the sticky header.
+  No horizontal overflow, JavaScript errors or contact POSTs were observed in these checks.
+- Review regression: mocked 4.2 produces a fractional star/4,2 score, failure shows only the
+  actual profile link, and client navigation performs one popup-rating request. No score cache,
+  fallback rating or invented count. The request cap is per instance, not a global API billing cap.
+- Analytics URL/event redaction passed unit tests. Local builds omit the production SDK;
+  an intercepted deployed-browser check remains necessary before claiming live redaction.
+- Official source audit: 42 of 43 unique URLs returned 200. Sibelga returned 403 to the automated
+  request; independent official web retrieval confirmed the page and gas number 0800 19 400.
+  The audit deliberately retains its failing exit status for this documented access exception.
+- Independent whole-change review found no remaining Critical/Important code issues. Prototype
+  choice validation, invalid-date field focus, dropdown wording and accessible popup label were fixed.
+- Final local mobile homepage Lighthouse: 95 performance, 100 accessibility, 100 best practices,
+  100 SEO, LCP 2.87 s, CLS 0, TBT 3.5 ms and 312,201 bytes (~305 KiB). Tool: 98/100/100/100,
+  LCP 2.47 s, CLS 0, TBT 5 ms and 277,840 bytes (~271 KiB). These lab results do not establish real-user p75 CWV.
+- Added GitHub CI for clean install, tests/lint, production dependency audit, build and rendered
+  production crawl. Its actual hosted run must be verified after push.
+- Vercel domain configuration was independently read and corrected from default 307 to explicit
+  308 for `abservice24.be` → `www.abservice24.be`; live HEAD confirmed path/query preservation.
+- Production environment-name inspection confirmed Mailgun and Google Places keys exist as
+  hidden secrets; values were not read. Invalid local contact POST returned 400 without sending mail.
+- Daily 09:00 continuation is registered as app heartbeat `ab-service-seo-verder-verbeteren`.
+  The local computer/app must remain available. No current GSC/GBP report, field-CWV, actual
+  qualified-lead outcome or project-specific permission evidence was obtained in this release.
+
+All September sections below are dated historical observations, not current verification.
+
 **Audit date:** 17 September 2026
 **Release:** feature commit `0a1da76`; primary Vercel production `dpl_FJvhkYU1F81gZewXEGMaetKwUS1M`
 **Test targets:** lokale Next.js-productieserver op poort 3100 en `https://www.abservice24.be`

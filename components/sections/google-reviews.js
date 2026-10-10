@@ -104,7 +104,7 @@ export default async function GoogleReviews() {
             </p>
           </div>
           <div className="google-review-summary" aria-live="polite">
-            <span className="google-maps-attribution">Google Maps</span>
+            <span className="google-maps-attribution" translate="no">Google Maps</span>
             {place ? (
               <>
                 <strong>{formatGoogleRating(place.rating)}</strong>
@@ -138,9 +138,10 @@ export default async function GoogleReviews() {
         ) : (
           <div className="review-api-note">
             <p>
-              Google geeft via deze koppeling momenteel geen afzonderlijke reviewteksten mee.
-              De actuele score en het aantal hierboven komen wel rechtstreeks van Google; alle
-              geschreven ervaringen staan op het Google-profiel.
+              {place
+                ? "Google geeft via deze koppeling momenteel geen afzonderlijke reviewteksten mee. De score en het aantal hierboven komen rechtstreeks van Google."
+                : "De Google-koppeling is momenteel niet beschikbaar."}{" "}
+              Bekijk de actuele score en geschreven ervaringen op het Google-profiel.
             </p>
           </div>
         )}

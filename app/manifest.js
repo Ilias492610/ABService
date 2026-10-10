@@ -22,11 +22,6 @@ export default function manifest() {
         sizes: "180x180",
         type: "image/png",
       },
-      {
-        src: "/favicon.png",
-        sizes: "48x48",
-        type: "image/png",
-      },
     ],
   };
 }

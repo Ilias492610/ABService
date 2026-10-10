@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
+import PrivacyAnalytics from "@/components/privacy-analytics";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import JsonLd from "@/components/json-ld";
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
         <main id="main-content">{children}</main>
         <SiteFooter />
         <FloatingTrustSignals />
-        {process.env.VERCEL ? <Analytics /> : null}
+        {process.env.VERCEL ? <PrivacyAnalytics /> : null}
       </body>
     </html>
   );

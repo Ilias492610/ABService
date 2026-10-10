@@ -43,5 +43,22 @@ test("sitemap entries contain only published pages and no fabricated dates", () 
   assert.ok(urls.includes("https://www.abservice24.be/foutcodes/bosch"));
   assert.ok(urls.includes("https://www.abservice24.be/foutcodes/junkers"));
   assert.ok(!urls.includes("https://www.abservice24.be/installaties/airconditioning"));
-  assert.ok(sitemap.every((entry) => !("lastModified" in entry)));
+  const tool = sitemap.find((entry) => entry.url.endsWith("/tools/onderhoudscheck"));
+  assert.equal(tool?.lastModified, "2026-10-10");
+  assert.ok(urls.includes("https://www.abservice24.be/advies"));
+  assert.ok(urls.includes("https://www.abservice24.be/advies/geen-warm-water"));
+  for (const entry of sitemap) {
+    const definition = pageRegistry.find((page) => `https://www.abservice24.be${page.path === "/" ? "/" : page.path}` === entry.url);
+    assert.equal(entry.lastModified, definition.lastModified);
+  }
+});
+
+test("editorial metadata uses the checked article date without inventing a publication date", () => {
+  const metadata = buildPageMetadata({ path: "/advies/voorbeeld", title: "Voorbeeld", description: "Uitleg", status: "published", kind: "article", lastModified: "2026-10-10" });
+  assert.equal(metadata.openGraph.type, "article");
+  assert.equal(metadata.openGraph.modifiedTime, "2026-10-10");
+  assert.ok(!metadata.openGraph.publishedTime);
+  assert.equal(metadata.authors[0].name, "AB Service");
+  const plain = buildSitemapEntries([{ path: "/", status: "published" }]);
+  assert.ok(!Object.hasOwn(plain[0], "lastModified"));
 });

@@ -16,11 +16,15 @@ Build local search visibility and qualified enquiries through useful, verifiable
 - `content/service-area-scoring.mjs` validates the bounded seven-factor priority score.
 - `content/service-areas.mjs` is the source of truth for 304 municipalities, ten Antwerp districts and six regional hubs.
 - `content/media.mjs` records the owner-confirmed image archive and optimized web variants.
+- `content/advice-guides.mjs` holds six source-bound customer guides; `/advies` links all seven advice articles.
+- `/tools/onderhoudscheck` gives an account-free regional maintenance planning result and optional contact handoff.
 - `libs/seo-data.mjs` builds metadata and sitemap entries.
-- `libs/schema-data.mjs` builds verified global and breadcrumb schema.
+- `libs/schema-data.mjs` builds verified global, breadcrumb and organizational-author Article schema.
 - `libs/contact-validation.mjs` validates form data on client and server.
 - `libs/analytics.mjs` limits event names and strips personal data.
 - `scripts/seo-audit.mjs` crawls rendered production output and fails on technical SEO regressions.
+- `scripts/gsc-analysis.mjs` analyzes actual local exports without manufacturing query/page joins.
+- `.github/workflows/seo-quality.yml` runs repeatable tests, lint, build, production dependency and rendered-crawl checks.
 
 ## Publication model
 
@@ -38,6 +42,8 @@ The policy is enforced in tests. A content idea does not become indexable merely
 | Maintenance | onderhoud cv-ketel; wettelijke frequentie | `/onderhoud` |
 | Repair | cv-ketel herstelling; geen warm water | `/herstelling` |
 | Pressure guidance | drukverlies cv-ketel; cv druk daalt | `/advies/drukverlies-cv-ketel` |
+| Problem advice | cold radiator, missing hot water, water meter, boiler discharge, blocked drain and maintenance attest | six additional `/advies/{slug}` articles |
+| Maintenance planning | when is maintenance needed in Flanders/Brussels | `/tools/onderhoudscheck` |
 | Inspection | keuring eerste ingebruikname; gewijzigde cv-installatie | `/keuring` |
 | Installation | verwarming en sanitair installeren | `/installaties` |
 | Gas boiler | gasketel plaatsen/vervangen Antwerpen | `/installaties/gasketels` |
@@ -69,28 +75,32 @@ The policy is enforced in tests. A content idea does not become indexable merely
 
 ## Priority and current status
 
-### Priority 1 — complete
+### Priority 1 — implemented architecture, ongoing verification
 
 - Rewrite core commercial pages in Belgian Dutch.
-- Remove unsupported availability, response-time, certification, price, premium, partnership, team and history claims.
+- Remove unsupported response-time, certification, price, premium, partnership, team and history claims; retain owner-confirmed 24/7 availability.
 - Separate maintenance, first-use inspection, repair and installation language.
 - Publish truthful `/tarieven` without invented prices.
 - Centralize metadata, canonicals, schema, sitemap, navigation and business facts.
 - Remove heavy review widget and unnecessary client animation code.
-- Upgrade to Next.js 16.3.5 and a zero-production-advisory dependency tree.
+- Upgrade to Next.js 16.3.8; 10 October audit reports zero production advisories and nine development-tree findings without a compatible patch (not a permanent zero-vulnerability promise).
 - Add automated content policy, validation, schema and crawl tests.
 - Publish source-bounded Bosch/Junkers guidance from official Bosch documentation.
 - Publish a technically conservative pressure-loss guide with a manufacturer source.
 - Reuse owner-confirmed images as lightweight WebP assets with descriptive alternative text.
 - Publish the owner-confirmed brand-service cluster, six additional service pages and six anonymized practice cases.
+- Publish the source-bound advice hub, six additional articles and region-aware maintenance check.
+- Replace the popup's stale hardcoded review score with request-time data or a neutral profile fallback.
+- Strip analytics URL query/fragment data and use only predefined event codes.
 
 ### Priority 2 — remaining owner facts required
 
 - Keep the verified Google Business Profile destination and request-time Places integration operational.
 - Confirm technician recognition numbers and scope before publishing them.
-- Confirm business hours, routine GBP service areas and whether customers are served at a physical address.
+- Owner confirmed 24/7 hours; verify the current GBP approval, routine GBP service areas and whether customers are served at a physical address.
 - Confirm air-conditioning/F-gas capability before indexing that service.
 - Confirm an actual pricing policy before publishing amounts.
+- Obtain job-specific private evidence/photo/permission references and current correct-account search/lead observations.
 
 ### Priority 3 — future expansion only after evidence gates pass
 
@@ -103,13 +113,15 @@ The policy is enforced in tests. A content idea does not become indexable merely
 - Maintenance links to inspection, repair and tariffs.
 - Inspection links to maintenance and installation.
 - Installation hub links to gas boilers, sanitary work and tariffs.
-- Fault-code hub links only to manufacturer-backed guides; detail guides link to repair/contact.
+- Fault-code hub links only to manufacturer-backed guides; detail guides link to corresponding independent brand service, repair, maintenance and useful advice.
 - Repair, maintenance and fault-code pages link to the pressure-loss decision guide.
 - FAQ links back to the relevant service explanation.
 - Footer provides compact service, project, brand and knowledge links on every page.
 - `/diensten` distributes authority to eleven active service pages.
 - `/merken` links to thirteen independent-service pages and each brand page links to its fault guide.
-- `/projecten` links to six cases and each case returns to contact.
+- `/projecten` links to six cases; detail pages return to relevant services, the known province and contact without inventing a locality.
+- Advice guides connect symptoms to relevant services; contextual CTAs preselect the service in the contact form.
+- Navigation and footer link the advice hub and maintenance checker; the checker transfers only an optional coded preparation summary through a consumed URL fragment.
 - Navigation, homepage and footer lead to `/werkgebied`; hubs lead to services and districts.
 - District pages lead to nearby districts, the Antwerp hub, tariffs and central service authorities.
 
@@ -148,6 +160,15 @@ Before publication, verify intent, unique value, factual accuracy, commercial re
 - Monthly: Search Console coverage, queries, broken links, form delivery and analytics events.
 - Quarterly: service facts, official legal guidance, privacy implementation, dependencies and content gaps.
 - After each release: tests, lint, build, production crawl, schema parse, desktop/mobile inspection and representative Lighthouse runs.
+
+## October evidence and continued work
+
+See `docs/seo/2026-10-10-masterprompt-status.md` for requirement-level partial/account-gated work,
+`docs/seo/2026-10-10-search-baseline.md` for missing metrics and export analysis, and the QA report
+for dated release observations. Do not represent the previous 90/100 estimate as a counted checklist
+or claim every requirement is complete. Published route count is not Google's indexed count.
+The owner requested ongoing improvement; a daily 09:00 thread follow-up is registered in the app.
+Local scheduled runs require the computer and app to remain available.
 - Before publishing a locality, additional project, brand or service: rerun the evidence and content quality gates.
 
 ## Next actions

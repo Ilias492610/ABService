@@ -17,7 +17,7 @@ const services = [
   },
   {
     title: "Herstelling van verwarming",
-    text: "Een gerichte aanvraag bij uitval, foutcodes, drukverlies of problemen met warm water, zonder een onhaalbare responstijd te beloven.",
+    text: "Hulp bij uitval, foutcodes, drukverlies of problemen met warm water. Geef uw toestelgegevens en symptomen door voor een gerichte beoordeling.",
     href: "/herstelling",
   },
   {
@@ -37,7 +37,7 @@ const services = [
   },
   {
     title: "Tarieven en offertes",
-    text: "Geen lokprijzen: bekijk welke factoren een onderhoud, herstelling of installatie bepalen en hoe een offerte tot stand komt.",
+    text: "Lees welke factoren de kosten van onderhoud, herstelling of installatie bepalen en welke informatie nodig is voor een offerte.",
     href: "/tarieven",
   },
   {
@@ -81,8 +81,8 @@ export default function HomePage() {
           <p className="eyebrow">Diensten</p>
           <h2>Waarmee kan AB Service helpen?</h2>
           <p className="section-lead">
-            Elke pagina behandelt één duidelijke zoek- en klantvraag. Zo vindt u sneller de
-            informatie die bij uw situatie past.
+            Kies de dienst die bij uw situatie past. U vindt er uitleg over de werkzaamheden
+            en welke gegevens helpen om uw aanvraag te beoordelen.
           </p>
           <div className="cards-grid" style={{ marginTop: "2rem" }}>
             {services.map((service) => (
@@ -92,6 +92,29 @@ export default function HomePage() {
                 <Link href={service.href}>Lees verder →</Link>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="section section-muted">
+        <div className="shell related-grid">
+          <div>
+            <p className="eyebrow">Onderhoud voorbereiden</p>
+            <h2>Wanneer laat u uw toestel onderhouden?</h2>
+            <p className="section-lead">
+              Regio, toesteltype, brandstof en vermogen bepalen welke onderhoudsregel van
+              toepassing is. De onderhoudscheck helpt u de juiste informatie te vinden en
+              een volgende onderhoudsbeurt te plannen.
+            </p>
+            <Link href="/tools/onderhoudscheck">Doe de onderhoudscheck →</Link>
+          </div>
+          <div>
+            <p className="eyebrow">Praktische hulp</p>
+            <h2>Wat kunt u veilig controleren?</h2>
+            <p className="section-lead">
+              Lees wat u kunt vastleggen bij drukverlies, een koude radiator, een waterlek
+              of problemen met warm water. U vindt ook wanneer verder onderzoek nodig is.
+            </p>
+            <Link href="/advies">Bekijk het praktische advies →</Link>
           </div>
         </div>
       </section>

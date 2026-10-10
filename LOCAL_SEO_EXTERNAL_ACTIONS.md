@@ -1,5 +1,20 @@
 # AB Service External Local SEO Actions
 
+## 10 October 2026 status boundary
+
+The September actions below are historical submissions, not proof of current approval, delivery,
+listing correction, ranking or account status. Current correct-owner GSC/GBP/Bing/Apple observations
+were not obtained during the October website release. The original website review integration and
+Mailgun secret remain configured; no new secret was printed or added to Git.
+
+October verified external change: the actual Vercel domain redirect for `abservice24.be` now returns
+permanent HTTP 308 to the canonical `www` host, retaining path/query. No directory outreach,
+profile post, campaign or paid purchase was made. Daily follow-up is scheduled in the current chat.
+Use current GSC exports to measure the new advice/tool routes after publication; the local CSV
+analyzer does not obtain account access or submit a sitemap by itself. For Google AI inclusion,
+check the current Generative AI report/inclusion setting if available in the owner property;
+no approval or setting was inferred from the website code.
+
 These actions occur outside the repository. Inspect account state first. Before saving a public/account change, verify the exact field and obtain action-time confirmation.
 
 ## Execution status — 17 September 2026

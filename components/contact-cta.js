@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { business } from "@/content/business.mjs";
 import TrackedLink from "@/components/tracked-link";
+import { buildContactHref } from "@/libs/contact-context.mjs";
 
-export default function ContactCta({ title = "Wilt u uw situatie bespreken?", text }) {
+export default function ContactCta({ title = "Wilt u uw situatie bespreken?", text, service, ctaLabel = "Naar het contactformulier" }) {
   return (
     <section className="contact-cta">
       <div className="shell cta-card">
@@ -15,8 +16,8 @@ export default function ContactCta({ title = "Wilt u uw situatie bespreken?", te
           </p>
         </div>
         <div className="button-row">
-          <Link href="/contact#aanvraagformulier" className="button">
-            Naar het contactformulier
+          <Link href={buildContactHref({ service })} className="button">
+            {ctaLabel}
           </Link>
           <TrackedLink
             href={business.whatsappHref}

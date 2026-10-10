@@ -1,6 +1,16 @@
+import { readContactContext } from "./contact-context.mjs";
+
+const fragmentFor = (target) => {
+  if (target.pathname === "/contact" && target.hash.startsWith("#aanvraagformulier?") && readContactContext({ hash: target.hash }).service) {
+    return "aanvraagformulier";
+  }
+  return decodeURIComponent(target.hash.slice(1));
+};
+
 const getAttribute = (tag, name) => {
   const match = tag.match(new RegExp(`\\s${name}=(?:"([^"]*)"|'([^']*)'|([^\\s>]+))`, "i"));
-  return match?.[1] ?? match?.[2] ?? match?.[3];
+  const value = match?.[1] ?? match?.[2] ?? match?.[3];
+  return value?.replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'");
 };
 
 const tags = (html, name) => html.match(new RegExp(`<${name}\\b[^>]*>`, "gi")) || [];
@@ -52,19 +62,26 @@ export const auditHtml = ({ html, url, indexable }) => {
       .filter(Boolean)
   );
   const missingFragments = new Set();
+  const fragmentLinks = [];
   for (const anchor of tags(html, "a")) {
     const href = getAttribute(anchor, "href");
     if (!href) continue;
 
     try {
       const target = new URL(href, url);
+      if (target.origin === currentUrl.origin && target.hash) {
+        const fragment = fragmentFor(target);
+        const fragmentUrl = new URL(target);
+        fragmentUrl.hash = "";
+        fragmentLinks.push({ url: fragmentUrl.toString(), fragment });
+      }
       if (
         target.origin === currentUrl.origin &&
         target.pathname === currentUrl.pathname &&
         target.search === currentUrl.search &&
         target.hash
       ) {
-        const fragment = decodeURIComponent(target.hash.slice(1));
+        const fragment = fragmentFor(target);
         if (!documentIds.has(fragment)) missingFragments.add(target.hash);
       }
     } catch {
@@ -112,5 +129,43 @@ export const auditHtml = ({ html, url, indexable }) => {
     ),
   ];
 
-  return { issues, internalLinks, title, description, canonical, robots };
+  const assetHrefs = [
+    ...tags(html, "link")
+      .filter((tag) => /(?:^|\s)(?:manifest|icon|apple-touch-icon|stylesheet|preload)(?:\s|$)/i.test(getAttribute(tag, "rel") || ""))
+      .map((tag) => getAttribute(tag, "href")),
+    ...tags(html, "meta")
+      .filter((tag) => ["og:image", "twitter:image"].includes(getAttribute(tag, "property") || getAttribute(tag, "name")))
+      .map((tag) => getAttribute(tag, "content")),
+    ...[...tags(html, "img"), ...tags(html, "script")].map((tag) => getAttribute(tag, "src")),
+  ];
+  const assets = [...new Set(assetHrefs.filter(Boolean).flatMap((href) => {
+    try {
+      const target = new URL(href, url);
+      return ["http:", "https:"].includes(target.protocol) ? [target.toString()] : [];
+    } catch {
+      return [];
+    }
+  }))];
+
+  return { issues, internalLinks, assets, fragmentLinks, documentIds: [...documentIds], title, description, canonical, robots };
+};
+
+export const findUnreachablePages = (pages, startUrl) => {
+  const key = (url) => {
+    const target = new URL(url);
+    return `${target.origin}${target.pathname.replace(/\/$/, "")}`;
+  };
+  const graph = new Map(pages.map((page) => [key(page.url), page.internalLinks]));
+  const reached = new Set([key(startUrl)]);
+  const queue = [key(startUrl)];
+  for (let index = 0; index < queue.length; index += 1) {
+    for (const link of graph.get(queue[index]) || []) {
+      const destination = key(link);
+      if (graph.has(destination) && !reached.has(destination)) {
+        reached.add(destination);
+        queue.push(destination);
+      }
+    }
+  }
+  return pages.filter((page) => !reached.has(key(page.url))).map((page) => page.url);
 };

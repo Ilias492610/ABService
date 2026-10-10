@@ -15,6 +15,7 @@ export const buildPageMetadata = (page) => {
   return {
     title: page.title,
     description: page.description,
+    ...(page.kind === "article" ? { authors: [{ name: business.name, url: `${business.canonicalOrigin}/over-ons` }] } : {}),
     alternates: { canonical },
     robots: indexable
       ? {
@@ -35,7 +36,8 @@ export const buildPageMetadata = (page) => {
       url: canonical,
       siteName: business.name,
       locale: "nl_BE",
-      type: "website",
+      type: page.kind === "article" ? "article" : "website",
+      ...(page.kind === "article" && page.lastModified ? { modifiedTime: page.lastModified } : {}),
       images: [{ url: image, width: 1200, height: 630, alt: business.name }],
     },
     twitter: {
@@ -54,4 +56,5 @@ export const buildSitemapEntries = (pages) =>
       url: canonicalFor(page.path),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
+      ...(page.lastModified ? { lastModified: page.lastModified } : {}),
     }));

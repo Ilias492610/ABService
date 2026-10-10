@@ -55,8 +55,8 @@ export const faultGuides = Object.freeze([
     modelWarning:
       "Deze catalogus bevat alle codes uit het officiële Belgische consumentenoverzicht en de volledige tabel voor het model THEMA Condens 0020124551_02. Controleer het typeplaatje en de handleiding voordat u een betekenis toepast.",
     catalogs: bulexCatalogs,
-    documentationLabel: "Officiële Bulex-handleidingen",
-    documentationUrl: "https://www.bulex.be/particulier/diensten/handleidingen/",
+    documentationLabel: "Officiële Bulex-gebruikshandleidingen",
+    documentationUrl: "https://www.bulex.be/particulier/documentatie/technische-documentaties/handleidingen/",
   }),
   createGuide({
     slug: "bosch",
@@ -111,8 +111,8 @@ export const faultGuides = Object.freeze([
     modelWarning:
       "Deze catalogus bevat de volledige ESYS-foutcodetabel van de genoemde ACV Prestige MKIII-handleiding. Gebruik de code niet voor een andere ACV-reeks zonder het toestelmodel en de bijbehorende handleiding te controleren.",
     catalogs: acvCatalogs,
-    documentationLabel: "Officiële ACV-ondersteuning",
-    documentationUrl: "https://www.acv.com/belgie/customer-support",
+    documentationLabel: "Officiële ACV-handleidingen en documentatie",
+    documentationUrl: "https://www.acv.com/belgie/documentation",
   }),
   createGuide({
     slug: "intergas",

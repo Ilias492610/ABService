@@ -2,6 +2,25 @@
 
 ## Published routes
 
+October source inventory: 81 registered customer routes, 79 published and two noindex after
+the eight new destinations below. This is not a count of Google-indexed pages. Dated local/live
+verification belongs in `SEO_QA_REPORT.md`.
+
+| New destination | Intent / source basis |
+|---|---|
+| `/advies` | Discover seven practical advice articles and the maintenance checker |
+| `/tools/onderhoudscheck` | Regional planning rules, official Vlaanderen/Brussels sources; full result before optional contact |
+| `/advies/watermeter-blijft-draaien` | Water use observations and leak intake; Pidpa |
+| `/advies/radiator-blijft-koud` | Cold radiator observations and model-bound user settings; Bosch/Vaillant |
+| `/advies/geen-warm-water` | Tappoint/device distinction and safe repair preparation; Vaillant/emergency authorities |
+| `/advies/boiler-veiligheidsgroep-druppelt` | Stock-boiler discharge vs uncontrolled loss; Atlantic |
+| `/advies/afvoer-verstopt-wat-doen` | Drain intake and corrosive-product safety; Belgian Antigifcentrum |
+| `/advies/onderhoudsattest-cv-ketel` | Regional maintenance documents vs commissioning; Vlaanderen/Brussels |
+
+New articles show AB Service as organizational author/publisher, official source links and an
+actual 10 October source-check date. No invented technician credential or publication history.
+Existing service/fault/brand/project links are strengthened without publishing new locality claims.
+
 | URL | Title | H1 | Primary intent | Indexability | Main internal links | Evidence basis |
 |---|---|---|---|---|---|---|
 | `/` | Loodgieter en verwarmingsservice in Antwerpen \| AB Service | Verwarming en sanitair, helder aangepakt | Local entity, service discovery and official Google profile evidence | Index | Core services, tariffs, contact, Google Maps | Owner-confirmed Antwerp market/core scope and 24/7 availability plus request-time Places API data |
@@ -17,7 +36,7 @@
 | `/merken/{merk}` | Thirteen unique brand titles | Brand-specific maintenance and repair H1 | Independent maintenance and repair per boiler brand | Index | Fault-code guide, brands, contact | Owner-confirmed scope; no dealer, partner or manufacturer affiliation claimed |
 | `/projecten` | Uitgevoerde projecten voor verwarming en sanitair \| AB Service | Uitgevoerd werk voor verwarming en sanitair | Project and proof hub | Index | Six anonymized cases, contact | Owner-confirmed work types and owner image archive |
 | `/projecten/{slug}` | Six unique case titles | Unique case H1 | Heating, boiler, leak, sanitary, drain and bathroom practice cases | Index | Project hub and contact | Owner-confirmed, anonymized work descriptions; no client identity or review claims |
-| `/tarieven` | Tarieven en offertes voor loodgieterswerk \| AB Service | Tarieven zonder lokprijs of verrassende belofte | Pricing and quote process | Index | Contact, services | No amounts claimed; process-only content |
+| `/tarieven` | Tarieven en offertes voor loodgieterswerk \| AB Service | Prijs en offerte voor uw loodgieterswerk | Pricing and quote process | Index | Contact, services | No amounts claimed; process-only content |
 | `/contact` | Contact opnemen met AB Service | Leg uw vraag voor aan AB Service | Contact and lead capture | Index | Privacy, tariffs | Verified phone, email and VAT plus owner-confirmed 24/7 availability |
 | `/faq` | Veelgestelde vragen over verwarming en sanitair \| AB Service | Heldere antwoorden over verwarming en sanitair | Cross-service questions | Index | Maintenance, inspection, repair, tariffs | Rewritten from verified page facts |
 | `/over-ons` | Over AB Service \| Loodgieter en verwarming Antwerpen | Eén duidelijk aanspreekpunt voor verwarming en sanitair | Entity explanation | Index | Contact | Legal/contact identity and owner-confirmed scope |

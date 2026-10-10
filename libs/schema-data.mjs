@@ -2,6 +2,20 @@ import { business } from "../content/business.mjs";
 
 const absoluteUrl = (origin, path) => new URL(path, `${origin}/`).toString();
 
+export const buildArticleSchema = (guide, origin = business.canonicalOrigin) => ({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": `${absoluteUrl(origin, guide.path)}#article`,
+  mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(origin, guide.path) },
+  headline: guide.title,
+  description: guide.description,
+  inLanguage: business.language,
+  author: { "@type": "Organization", "@id": `${origin}/#organization`, name: business.name, url: `${origin}/over-ons` },
+  publisher: { "@id": `${origin}/#organization` },
+  ...(guide.checkedAt ? { dateModified: guide.checkedAt } : {}),
+  citation: (guide.sourceLinks || []).map((source) => source.href),
+});
+
 export const buildGlobalSchemaGraph = (origin = business.canonicalOrigin) => ({
   "@context": "https://schema.org",
   "@graph": [

@@ -12,20 +12,21 @@
     "lint": "eslint .",
     "test": "node --test tests/*.test.mjs",
     "seo:audit": "node scripts/seo-audit.mjs",
-    "sources:audit": "node scripts/source-audit.mjs"
+    "sources:audit": "node scripts/source-audit.mjs",
+    "seo:gsc": "node scripts/gsc-analysis.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "2.0.1",
     "form-data": "4.0.6",
     "mailgun.js": "12.9.0",
-    "next": "16.3.5",
+    "next": "16.3.8",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
     "autoprefixer": "10.4.21",
     "eslint": "9.39.5",
-    "eslint-config-next": "16.3.5",
+    "eslint-config-next": "16.3.8",
     "postcss": "8.5.28",
     "tailwindcss": "3.4.19"
   }
