@@ -121,6 +121,25 @@ test("known no-digit aliases match codes without leaking into diagnosis text", (
   assert.deepEqual(matches(filterFaultCatalogs(guideCatalogs("bulex"), "con", "bulex-publiek-overzicht")), [["bulex-publiek-overzicht", ["F.29"]]]);
 });
 
+test("ACV numbered NTC sensor descriptions retain compact, spaced and normalized queries", () => {
+  const acv = guideCatalogs("acv");
+  for (const [queries, codes] of [
+    [["NTC 1", "ntc1", " NTC:1 "], ["E11", "E30", "E31"]],
+    [["NTC 2", "ntc2", " NTC.2 "], ["E11", "E43", "E44"]],
+    [["NTC 3", "NTC3"], ["E32", "E33"]],
+    [["NTC 5", "NTC5"], ["E45", "E46"]],
+  ]) {
+    for (const query of queries) {
+      assert.deepEqual(matches(filterFaultCatalogs(acv, query)), [["acv-prestige-mkiii", codes]], query);
+      assert.deepEqual(matches(filterFaultCatalogs(acv, query, "acv-prestige-mkiii")), [["acv-prestige-mkiii", codes]], query);
+    }
+  }
+  // The actual unnumbered NTC display code still takes the selected known-alias path.
+  assert.deepEqual(matches(filterFaultCatalogs(acv, "NTC")), [["acv-prestige-mkiii", ["NTC"]]]);
+  assert.deepEqual(filterFaultCatalogs(acv, "NTC 4"), []);
+  assert.deepEqual(filterFaultCatalogs(acv, "NTC 1", "geen-model"), []);
+});
+
 test("descriptions, accents, natural phrases and incomplete EA family browsing stay useful", () => {
   assert.equal(filterFaultCatalogs(remeha, "sensor", "remeha-calenta-legacy")[0].codes.length, 4);
   for (const [query, variant] of [["waterdruk", " WÁTÉR DRUK "], ["communicatie", " COMMUNICÁTIE "]]) {
