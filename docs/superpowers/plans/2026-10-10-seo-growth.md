@@ -65,6 +65,6 @@ boundaries, stale API data, client handoff, sticky navigation, source scope and 
 - [x] Run tests, lint, production build, source/crawl/asset/link checks and desktop/mobile browsing.
 - [x] Run mobile Lighthouse on homepage and new tool; investigate material regression.
 - [x] Independent whole-diff review; resolve important findings and repeat affected checks.
-- [ ] Commit, fast-forward main, push GitHub, verify Vercel checks and live pages.
+- [x] Commit, fast-forward main, push GitHub, verify Vercel checks and live pages.
 - [x] Set up requested continued SEO work with the thread automation; record exact account/data
       dependencies without claiming unperformed authentication or invented ranking improvement.

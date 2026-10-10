@@ -1,5 +1,27 @@
 # AB Service SEO Changelog
 
+## 10 October 2026 — release verification and final source corrections
+
+- Published growth release `95add97` and repair `6e161cb` to GitHub `main` and the correct Vercel
+  production. Both Vercel project checks succeeded; primary `www` deployment was confirmed Ready.
+- Reproduced and fixed the clean npm 10 installation failure without changing existing dependency
+  versions. Hosted Linux CI run `38057407278` passed every install/lint/test/audit/build/crawl gate.
+- Added a directly rendered review-star accessibility regression and valid image role. The live
+  homepage's accessibility score increased from the observed 96 to 100; latest lab performance is
+  99, with 100 best practices/SEO. The tool's live scores are 99/100/100/100.
+- Verified live 81-page/92-destination/32-asset crawl, mobile directory filtering and tool/contact
+  flow. Aborted analytics QA showed no personal URL parameters or entered dates; no email was sent.
+- Current Google score/count was retrieved as 5.0/44, without hardcoding or inventing review text.
+- Refreshed gasketel support guidance to current official government links and removed vague
+  exception wording. Shared pressure, recognition and support citations extend source monitoring
+  to 47 unique URLs; 46 returned 200 and Sibelga's documented automated 403 remains visible.
+- Latest local suite passes 98/98, with lint/build/crawl and production audit zero. Nine separate
+  development-tree advisories remain. No search, lead-growth or full-masterprompt completion claim.
+- Source refresh `06d8464` passed hosted CI `38057894793` and both Vercel checks; primary
+  `dpl_73Tpn3AZ3d6VX1NWnxVGUZs79eQm` serves `www` and passed the live crawl/mobile source check.
+- GSC Wizard is now available but lists no registered properties; actual Abder-account access/data
+  remains unconfirmed. No fabricated search baseline or sitemap submission is recorded.
+
 ## 10 October 2026 — source-bound advice, maintenance tool and technical growth release
 
 - Added `/advies`, six original primary-source guides and `/tools/onderhoudscheck` with separate

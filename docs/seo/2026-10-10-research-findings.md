@@ -40,8 +40,9 @@ Informatie over stookolie/vaste brandstof is geen bevestiging dat AB Service die
 
 ## Externe bronnen: uitvoerbare controle
 
-`npm run sources:audit` op 10 oktober 2026 controleerde **43 unieke URL's** uit gemeentegegevens,
-alle 13 merkcatalogi/documentatielinks, adviesbronnen en onderhoudsregels: **42 HTTP 200**, één
+`npm run sources:audit` op 10 oktober 2026 controleerde **47 unieke URL's** uit gemeentegegevens,
+alle 13 merkcatalogi/documentatielinks, adviesbronnen, onderhoudsregels en gedeelde kernbronnen:
+**46 HTTP 200**, één
 HTTP 403 voor [Sibelga contact](https://www.sibelga.be/nl/contact?_country=BE).
 Die 403 betekent dat dit automatische verzoek werd geweigerd; de precieze oorzaak is niet vastgesteld.
 De onafhankelijke reviewer kon dezelfde officiële pagina via webretrieval openen en bevestigde
@@ -54,6 +55,12 @@ en [ACV documentatie](https://www.acv.com/belgie/documentation).
 De audit verwerkt nu grotere antwoordheaders: eerder veroorzaakte Node-fetch bij sommige
 Vaillant/Bulex-bronnen een headerfout terwijl curl HTTP 200 bevestigde. Bereikbaarheid is geen
 inhoudelijke validatie van elke code, handleidingversie of toepasselijk toestel.
+
+De gasketelpagina verwijst niet meer naar het historische premiewebinar van januari 2025.
+De actuele Mijn VerbouwPremie- en Mijn VerbouwLening-overzichten zijn opgenomen in
+`content/core-sources.mjs`, naast druk- en erkenningsinformatie. De pagina belooft geen steun
+of financieringsrecht. Het stopzetten van de gascondensatiepremie is bevestigd in de actuele
+[officiële toolkit](https://www.vlaanderen.be/bouwen-wonen-en-energie/bouwen-en-verbouwen/premies-voor-renovatie/mijn-verbouwpremie/communicatietoolkit-voor-lokale-besturen-en-intermediairen).
 
 ## X/Twitter-ideeën: bruikbaar patroon versus onbewezen claim
 

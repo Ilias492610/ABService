@@ -15,7 +15,10 @@ analyzer does not obtain account access or submit a sitemap by itself. For Googl
 check the current Generative AI report/inclusion setting if available in the owner property;
 no approval or setting was inferred from the website code.
 
-These actions occur outside the repository. Inspect account state first. Before saving a public/account change, verify the exact field and obtain action-time confirmation.
+These actions occur outside the repository. Inspect current account state and the exact business,
+field and target before saving. The owner's standing authorization covers relevant verified SEO
+work; request new direction only for a material scope expansion, new spending or external messaging
+not already authorized. Never infer business facts from that authorization.
 
 ## Execution status — 17 September 2026
 

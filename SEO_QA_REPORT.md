@@ -1,9 +1,45 @@
 # AB Service SEO QA Report
 
-## 10 October 2026 — growth release candidate (local checks)
+## 10 October 2026 — verified live growth release and follow-up checks
 
-These are fresh local checks, not proof of Google indexing or extra customers. Final live
-deployment observations will be recorded separately after publication.
+- Growth release `95add97` and clean-install/accessibility repair `6e161cb` are on GitHub `main`.
+  Both Vercel checks succeeded; the repaired primary deployment
+  `dpl_GWMDovTHqDS8qbPzGGPZfkhMexq5` was independently confirmed Ready with the `www` alias.
+- Hosted Linux [CI run 38057407278](https://github.com/Ilias492610/ABService/actions/runs/38057407278)
+  passed clean `npm ci`, lint, tests, production audit, build and crawl. The first run failed because
+  npm 10 rejected two missing optional `@emnapi` lock entries that local npm 11 had accepted.
+  The repair preserved all existing package versions, tarball URLs and integrity hashes.
+- Live crawl passed 81 registered pages, 92 internal destinations and 32 assets. Live Chromium
+  verified mobile maintenance/date/error handling, leap-year result, contact prefill, fragment
+  cleanup and invalid-contact focus, without overflow or JavaScript errors. No contact POST was sent.
+- Ten analytics POSTs were intercepted and aborted across two browser runs. All URLs excluded
+  synthetic email/token/hash data and entered maintenance dates; properties contained only allowed
+  codes. The actual SDK returned HTTP 200. This verifies payloads, not analytics ingestion or email receipt.
+- Live Google API returned 5.0 from 44 ratings with private/no-store/noindex headers. One rating
+  fetch was observed across home → tool → contact. Individual review texts were not supplied;
+  the honest profile fallback remains. A simulated failure produced no fabricated score.
+- Current live mobile Lighthouse after the ARIA repair: homepage 99/100/100/100, LCP 1.816 s,
+  CLS 0.000880, TBT 27.5 ms and 307,881 bytes. Tool: 99/100/100/100, LCP 1.871 s, CLS 0.000852,
+  TBT 14 ms and 274,706 bytes. An earlier homepage run scored 100/96/100/100 and exposed the
+  review-star ARIA issue; a real SSR regression and live accessibility recheck confirmed the fix.
+  Results are single-run lab measurements, not field CWV or ranking evidence.
+- Live `/werkgebied` at 390 px showed 314 areas, one H1 and no overflow. Gent returned one
+  correct result; a nonexistent query returned zero with an accessible status and warning.
+- Newest source follow-up passes 98/98 tests, lint, production audit (zero), build (90 outputs),
+  local crawl (81/92/32) and independent review. Shared core citations now enter the source audit:
+  46 of 47 unique URLs returned 200, with the documented Sibelga 403 exception retained.
+  Gasketel copy links current government support/loan overviews rather than a 2025 webinar and
+  promises no financial entitlement. Local mobile rendering showed both current links without overflow.
+- Source refresh `06d8464` is also published: hosted Linux run `38057894793` and both Vercel
+  checks succeeded; primary `dpl_73Tpn3AZ3d6VX1NWnxVGUZs79eQm` was confirmed Ready with
+  the `www` alias. Its live crawl passed 81/92/32, and live mobile gasketel copy/source links passed.
+- GSC Wizard subsequently became available, but its registered-site list was empty. No AB Service
+  property, correct-owner search data, indexing result or growth measurement was established.
+
+## 10 October 2026 — original growth release local checks (`95add97`)
+
+These are the original local checks for `95add97`, not proof of Google indexing or extra customers.
+The live and subsequent follow-up observations are recorded separately above.
 
 - Next.js/eslint-config-next 16.3.8, sharp 0.35.5 and source-map-js 1.2.2. Production audit:
   zero advisories. Full audit: nine development-tree findings (seven high, two moderate),

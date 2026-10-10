@@ -17,12 +17,14 @@ Build local search visibility and qualified enquiries through useful, verifiable
 - `content/service-areas.mjs` is the source of truth for 304 municipalities, ten Antwerp districts and six regional hubs.
 - `content/media.mjs` records the owner-confirmed image archive and optimized web variants.
 - `content/advice-guides.mjs` holds six source-bound customer guides; `/advies` links all seven advice articles.
+- `content/core-sources.mjs` shares pressure, technician-recognition and current support citations with consumer pages.
 - `/tools/onderhoudscheck` gives an account-free regional maintenance planning result and optional contact handoff.
 - `libs/seo-data.mjs` builds metadata and sitemap entries.
 - `libs/schema-data.mjs` builds verified global, breadcrumb and organizational-author Article schema.
 - `libs/contact-validation.mjs` validates form data on client and server.
 - `libs/analytics.mjs` limits event names and strips personal data.
 - `scripts/seo-audit.mjs` crawls rendered production output and fails on technical SEO regressions.
+- `scripts/source-audit.mjs` checks the shared 47-URL primary-source inventory; documented access exceptions remain visible.
 - `scripts/gsc-analysis.mjs` analyzes actual local exports without manufacturing query/page joins.
 - `.github/workflows/seo-quality.yml` runs repeatable tests, lint, build, production dependency and rendered-crawl checks.
 
