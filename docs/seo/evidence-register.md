@@ -2,11 +2,11 @@
 
 | Claim | Source | Confidence | Publication decision | Review trigger |
 |---|---|---:|---|---|
-| Brand name AB Service | Repository and owner prompt | High | Published | Legal-name change |
+| Brand and registered name AB Service; active commanditaire vennootschap, normal legal status | Owner prompt and [official KBO entity record](https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=0792534639), checked 10 October 2026, database state 9 October 2026 | High within official record scope | Existing name remains published; legal form/status documented in the internal business brief, no new public claim | Legal-name/form/status change or before current legal reuse |
 | Canonical domain abservice24.be | Owner prompt and configuration | High | Published as `www` HTTPS | Domain/redirect change |
 | Phone 0484 90 69 66 | Repeated repository configuration | Medium | Published | Owner/GBP confirmation |
 | Email info@abservice24.be | Mail/contact configuration | High | Published | Mailbox change |
-| VAT BE0792.534.639 | Repeated repository content | Medium | Published | Owner/legal registry check |
+| Enterprise number 0792.534.639 / website VAT BE0792.534.639 | [Official KBO entity record](https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=0792534639), enterprise number and VAT-subject status checked 10 October 2026, database state 9 October 2026 | High for enterprise identity and recorded VAT status; not professional recognition | Existing number remains published | Legal/VAT-status change or before current legal reuse |
 | Antwerp primary market | Owner master prompt | High | Published | Service-area change |
 | Maintenance, repair, inspection, gas boilers, sanitary/plumbing scope | Owner master prompt | High | Published | Operational scope change |
 | Leak detection, water-leak repair, drain unblocking, boiler work, pipework and bathroom renovation | Owner confirmation on 17 September 2026 | High | Six service pages published with scoped wording | Operational scope change |
@@ -35,6 +35,9 @@
 | Google profile, score and review count | Official Places API (New), Place ID `ChIJ38_PKjPxw0cRMfEVYieHZDg`, matched to 0484 90 69 66 and Voorzorgstraat 12A | High and live | Published through request-time server integration; no AggregateRating schema | API/profile/configuration change |
 | Individual Google review texts | Official Places API currently returns no review objects for this profile | High for current response | No copied fallback; cards appear only when Google supplies attributed review objects | Places response change |
 | Address/customer-facing office | No evidence | None | Not published | Owner + GBP evidence |
+| Registered legal seat: Voorzorgstraat 12A bus 1, 2660 Antwerpen, since 1 October 2024 | [Official KBO entity record](https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=0792534639), checked 10 October 2026, database state 9 October 2026 | High for registered seat only; no customer-visit or operating-base proof | Internal [business brief](business-brief.md) distinction only; no storefront/schema/address publication change | Seat change; owner operating-base/visit confirmation; separate WP05 legal-information review |
+| Active establishment 2.336.711.390: Zwaantjesstraat 18 bus 101, 2660 Antwerpen, since 17 October 2022 | [Official KBO establishment record](https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?ondernemingsnummer=792534639), checked 10 October 2026, database state 9 October 2026 | High for registered establishment; not proof of current customer reception or a register error | Internal business brief only; owner/legal representative must assess the difference from the seat | Establishment change or verified owner correction through My Enterprise |
+| KBO contact fields differ from current operational phone/email; no web address recorded | Same official entity/establishment records versus `content/business.mjs`, checked 10 October 2026 | High for observed mismatch; no correction completed | Current website contact channels retained; only minimal discrepancy recorded, obsolete personal mailbox not copied | Owner/legal representative verifies intended fields; separately confirmed register/citation correction |
 | Opening hours | Owner confirmation on 17 September 2026; 24/7 Google Business Profile edit submitted | High | Published as `Mo-Su 00:00-23:59` and visible 24/7 wording | Owner or GBP hours change |
 | Served territory: Flanders and Brussels, 304 municipality records | Owner confirmation in Phase E; official geographic registry | High for offered territory, not physical presence or local work | Published coverage directory and six regional hubs; municipality URL candidates stay draft | Operational coverage or administrative change; genuine local-value/search evidence for new URLs |
 | Regional maintenance checker and six advice guides | Current primary sources reviewed 10 October 2026; referenced on each page | High within stated informational scope, not an on-site diagnosis | Published organizational-author guidance and optional planning tool | Source/regulatory change, user errors or independently verified specialist review |
@@ -43,7 +46,8 @@
 | Certifications/recognition | No evidence | None | Not published | Recognition number and holder |
 | Air-conditioning/F-gas service | No evidence | None | Noindex; removed from nav | Current service and certificate proof |
 | Prices/payment methods/warranties | No current written policy | None | Not published | Owner-approved maintained terms |
-| Team/history/years of experience | No evidence | None | Removed | Documentary owner evidence |
+| Legal entity and establishment start date: 17 October 2022 | Same official KBO entity and establishment records, checked 10 October 2026, database state 9 October 2026 | High for registered entity history only; not practitioner experience or predecessor history | Internal business brief only; no new website experience claim | Registry correction or documentary predecessor evidence |
+| Team/personal history/years of practitioner experience, including since-2004 or 20-year claims | No documentary evidence; legal entity start date does not establish these claims | None | Unsupported experience/team claims remain removed | Documentary owner/person evidence and relevant consent |
 | Customer testimonials attached to projects | No approved project-specific testimonial text | None | Not published | Approved testimonial and project match |
 
 Official sources are linked from the relevant public pages and the design specification.
