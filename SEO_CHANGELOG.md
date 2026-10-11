@@ -1,5 +1,46 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — existing project enquiry intent candidate
+
+- Task29 `2a512ea` derives the contact category from each project's existing
+  assigned servicePath, not its descriptive work label. Both original native
+  CTAs preserve that category and form anchor; unsupported mappings stay neutral.
+- Independent review and fresh345tests/lint/build170/crawl82/93/112 pass.
+  Actual24project plus fourwater desktop/mobile JS/no-JS profiles confirm real
+  clicks, editable category, private blanks and header-clear anchor with no
+  errors/overflow/writes. Whole-branch/hosted/canonical acceptance remains pending.
+- Existing project facts/images/metadata/publication state and route counts are
+  unchanged. No first fully traceable case, new photo/job evidence or WP09/growth
+  completion is claimed; source403/development9 remain open.
+
+## 11 October 2026 — bounded regional water-handoff candidate
+
+- Task28f3bb3c5 adds scoped Vlaanderen/Brussels water-provider routing and safe
+  descriptive intake to the existing water-repair page, not a new burst-pipe URL.
+  Unknown source remains unknown; text suffices, optional photos require safety,
+  and an active emergency does not wait for the online form or meter experiment.
+- Two central official citations enter the existing monitored/rendered pipeline.
+  Only genuinely changed water content receives checked/modified11October dates.
+  Other five services retain their existing complete data and undated registry.
+- Independent taskreview, fresh336tests/full local gate and four desktop/mobile/
+  JS/no-JS water profiles pass.543GET-onlybrowserrequests; source403/dev9 stay open.
+  Whole-branch/hosted/canonical publication is pending. No new case/price/credential,
+  technical repair instruction, mail/event or growth claim.
+
+## 11 October 2026 — intake continuity publication
+
+- Whole-branch approvedc4a59f9 is normally pushed to main. [CI38107909184](https://github.com/Ilias492610/ABService/actions/runs/38107909184)
+  passes328tests/lint/productionaudit0/build170/crawl82/93/112 onNode24.21.0;
+  both exact-SHA Vercel checks and Production statuses succeed.
+- Canonical crawl and61desktop/mobile/JS/no-JS checks confirm thirteen brands'
+  maintenance/repair/neutral actions, gas document/control handoff and initial
+  contact category/privacy/duplicate/native-status/tool compatibility.3325
+  requests, zero attempted writes; simulated rating remains explicit.
+- One previewed15changed-URL IndexNow notification receivesHTTP200 after live
+  content checks, not indexation or growth. Source403/dev9, actual event receipt,
+  field/commercial measurements and broader WP06/12/evidence remain open.
+- Candidate notes below retain their original pending-stage meaning.
+
 ## 11 October 2026 — reviewed brand/contact intent candidate
 
 - d5a3a59 adds explicit planned-maintenance and fault actions on all thirteen

@@ -1,6 +1,29 @@
 # AB Service SEO Masterplan
 
-## Current authorized batch — WP00–WP03
+## Current progress — ongoing WP00–WP17
+
+Local candidates f3bb3c5/2a512ea improve regional water-provider routing and
+safe intake, then carry all six existing project enquiries into their assigned
+editable contact service. Independent taskreviews, fresh345tests/full local gate
+and24project/fourwater responsive JS/no-JS profiles pass. No project facts or
+publication states change; full WP10 and the traceable-case gate remain open.
+Final whole-branch and exact hosted/canonical release checks are next.
+
+The owner permits sequential continuation through the complete follow-up plan
+without a new continuation message after each bounded task. Latest accepted
+releasec4a59f9 includes source-bound catalog corrections, the watermeter pilot,
+safe interactions, distinct brand maintenance/repair actions, gas-installation
+document/control preparation and initial contact-category HTML. [QA](SEO_QA_REPORT.md)
+records exact CI38107909184, both Vercel deployments,328tests and canonical
+82-route/61responsive-JS/no-JS checks; these are release tests, not growth scores.
+
+Remaining work is tracked in the [full WP00–WP17 plan](docs/superpowers/plans/2026-10-10-complete-source-seo-masterplan.md).
+Real person/project/price/language data, owner-authenticated accounts, confirmed
+custom-event ingestion and comparable commercial/field measurements are not
+invented or marked complete. Continuation needs the available app/computer;
+no overnight all-WP or ranking/customer guarantee is implied.
+
+## Earlier released batch — WP00–WP03
 
 The owner-authorized first batch was implemented on `codex/seo-wp00-wp03` and fast-forwarded
 to `main`. Reviewed feature `09e96ba` is published; exact hosted CI and primary Vercel READY/
@@ -45,14 +68,19 @@ Build local search visibility and qualified enquiries through useful, verifiable
 - `content/advice-guides.mjs` holds six source-bound customer guides; `/advies` links all seven advice articles.
 - `content/core-sources.mjs` shares pressure, technician-recognition and current support citations with consumer pages.
 - `/tools/onderhoudscheck` gives an account-free regional maintenance planning result and optional contact handoff.
+- `/tools/watermetercheck` gives a bounded local meter observation, not a leak
+  diagnosis, before an optional coded contact handoff; no signup or e-mail gate.
 - `libs/seo-data.mjs` builds metadata and sitemap entries.
 - `libs/social-preview.mjs` and `/social/[...slug]` produce page-specific, static 1200×630 previews
-  for the 78 published non-home routes; assets are noindex and excluded from the sitemap.
+  for79non-home routes in acceptedc4a59f9; earlier78 is historical. Assets are
+  noindex and excluded from the sitemap.
 - `libs/schema-data.mjs` builds verified global, breadcrumb and organizational-author Article schema.
 - `libs/contact-validation.mjs` validates form data on client and server.
 - `libs/analytics.mjs` limits event names and strips personal data.
 - `scripts/seo-audit.mjs` crawls rendered production output and fails on technical SEO regressions.
-- `scripts/source-audit.mjs` checks the shared 48-URL primary-source inventory; documented access exceptions remain visible.
+- `scripts/source-audit.mjs` checks the shared source inventory; c4a59f9's fresh
+  audit has56uniqueURLs,55HTTP200 and known Sibelga403. Earlier48 is historical;
+  documented access exceptions remain visible and HTTP success is not body proof.
 - `scripts/gsc-analysis.mjs` analyzes actual local exports without manufacturing query/page joins.
 - `scripts/indexnow.mjs` previews explicit published URLs offline and sends only with `--send`,
   after checking the public root proof. Use it for genuine released changes, not all-site historical
@@ -80,6 +108,7 @@ The policy is enforced in tests. A content idea does not become indexable merely
 | Pressure guidance | drukverlies cv-ketel; cv druk daalt | `/advies/drukverlies-cv-ketel` |
 | Problem advice | cold radiator, missing hot water, water meter, boiler discharge, blocked drain and maintenance attest | six additional `/advies/{slug}` articles |
 | Maintenance planning | when is maintenance needed in Flanders/Brussels | `/tools/onderhoudscheck` |
+| Watermeter observation | unexplained meter difference and safe intake preparation | `/tools/watermetercheck` |
 | Inspection | keuring eerste ingebruikname; gewijzigde cv-installatie | `/keuring` |
 | Installation | verwarming en sanitair installeren | `/installaties` |
 | Gas boiler | gasketel plaatsen/vervangen Antwerpen | `/installaties/gasketels` |
@@ -92,7 +121,7 @@ The policy is enforced in tests. A content idea does not become indexable merely
 | Contact | AB Service contacteren | `/contact` |
 | Questions | onderhoud, keuring, herstel, prijs | `/faq` |
 | Fault guidance | cv-ketel foutcodes | `/foutcodes` |
-| Manufacturer guidance | Vaillant/Bulex/Bosch/Junkers foutcode | `/foutcodes/vaillant`, `/foutcodes/bulex`, `/foutcodes/bosch`, `/foutcodes/junkers` |
+| Manufacturer guidance | thirteen owner-confirmed brands with limited model/source catalogs | thirteen `/foutcodes/{merk}` guides, not universal brand coverage |
 | Complete coverage | municipality lookup and service territory | `/werkgebied` |
 | Regional coverage | province/region orientation | six `/werkgebied/{regio}` hubs |
 | Antwerp districts | district-specific plumbing intent | `/` for Antwerpen; eight indexable district pages; Berendrecht-Zandvliet-Lillo noindex |

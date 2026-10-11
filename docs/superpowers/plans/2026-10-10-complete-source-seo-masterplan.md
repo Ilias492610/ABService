@@ -331,6 +331,12 @@ slagen met/zonder JavaScript op desktop/mobiel. Alleen inhoudelijk gewijzigde
 gasketelpagina krijgt11October lastmod. Hosted/live/whole-branch gate blijft apart;
 echte prijzen, caseproof en bredere WP06 blijven open.
 
+**Latere acceptatie c4a59f9:** whole-branch review en normale main-publicatie,
+exactCI38107909184/328tests/build170/82/93/112/beideVercelProduction en canonical
+crawl/61desktop-mobile-JS/no-JSchecks slagen.3325GET-onlybrowserrequests; één
+previewed15gewijzigde-URL IndexNowHTTP200melding na livecheck, geen indexatie/
+groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
+
 ### WP07 — Merken en modelgebonden foutcodegroei
 
 **Files:** `content/fault-guides.mjs`, `content/fault-catalogs.mjs`, `content/additional-fault-catalogs.mjs`, `content/brand-services.mjs`, `libs/fault-search.mjs`, `components/fault-code-catalog.js`, source-/fault-tests en publicatieregister.
@@ -397,6 +403,14 @@ is geen indexatiebewijs. Bron403/development9 en bredere WP07-dekking blijven op
 
 ### WP09 — Echte cases, media en expertise
 
+**Afgebakende lokale aanvulling11oktober:** Task29 `2a512ea` bewaart de toegewezen
+dienst van alle zes bestaande projectpagina's in beide originele formulierlinks.
+Onafhankelijke taakreview en fresh345tests/lint/build170/crawl82/93/112 pass;
+24desktop/mobile JS/no-JS projectprofielen bevestigen echte klikken, wijzigbare
+dienst, lege privévelden, formanker boven vasteheader en behoud van inhoud/media/
+metadata.1481GET-onlyrequests; geen nieuw geval, toestemming of fotomatch. Final
+whole-branch/hosted/live blijft apart en volledige herleidbare-casegate blijft open.
+
 **Files:** `content/projects.mjs`, projecthub/detailrenderer, `content/media.mjs`, `PROJECT_CONTENT_GUIDE.md`, bewijsregister, `tests/project-publication.test.mjs`, `tests/media.test.mjs`; Article-schema indien passend.
 
 - [ ] Leg private werk-, fotomatch-, toestemming- en reviewreferentie plus goedkeuringsdatum vast. Openbaar alleen ondoorzichtige minimale IDs. Eigen foto ≠ automatisch bewijs voor een specifieke beschreven klus.
@@ -409,6 +423,15 @@ is geen indexatiebewijs. Bron403/development9 en bredere WP07-dekking blijven op
 **Tests:** onvolledige/onbewezen cases niet publiceren; toestemming toetsen aan haar werkelijke beperkingen, niet een verzonnen vervaldatum; juiste foto-/jobmatch, geen private data en geldige conditionele links. **Done:** eerste volledig herleidbare case, daarna dezelfde norm per overige case.
 
 ### WP10 — Advies, officiële regels en contentbriefs
+
+**Latere lokale aanvulling11oktober:** Task28f3bb3c5 verbetert de bestaande
+waterherstelbestemming met afzonderlijke Vlaamse/Brusselse providerdoorverwijzing,
+veilig bekende observaties en twee daadwerkelijk gelezen officiële bronnen.
+Onafhankelijke taakreview, fresh336tests/fullproductgate en vier desktop/mobile/
+JS/no-JS profielen pass,543GET-onlyrequests; andere vijf dienstrecords behouden.
+Alleen gewijzigde watercontent krijgt11October lastmod. Whole-branch/hosted/live
+gate blijft apart; echte vraag/technicus-/oorzaak-/vorstbewijs en volledige WP10
+zijn hiermee niet afgerond. Geen nieuwe URL of technische DIY-/verzekeringsclaim.
 
 **Files:** `content/advice-guides.mjs`, `content/core-sources.mjs`, adviesrenderer, broninventaris, `tests/advice-guides.test.mjs`, `tests/external-sources.test.mjs`, gapbacklog en briefs.
 
@@ -521,6 +544,12 @@ Native POST blijft bruikbaar; aparte contactregressie onderschept verzendingen e
 bevestigt pendingmutex/validatie/foutfocus/retry/status/fragment. Geen nieuwe echte
 mail, eventontvangst, veldmeting of commerciële uitkomst. Whole-branch/hosted/live
 blijft een volgende gate; dev9/ESLint9 en bronaudit403 zijn niet opgelost.
+
+**Latere acceptatie c4a59f9:** exacteCI38107909184 en beideVercelProduction slagen;
+canonical82/93/112 en61responsive/JS/no-JSchecks bevestigen initiële categorieën,
+dubbel-queryafwijzing, privacy, statussen, clientfragment en header-clear anker.
+328tests/build170,3325GET-onlylivebrowserrequests, geen echte nieuwe verzending/
+event/rating/fieldmeting. Dit sluit de genoemde releasegate, niet geheel WP12.
 
 ### WP13 — Verdiende links en lokale partners
 

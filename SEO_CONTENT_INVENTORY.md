@@ -2,7 +2,21 @@
 
 ## Published routes
 
-Current accepted release `9e37327` has82 registered customer routes,80 published and two noindex after
+**Later local candidate2a512ea:** both original enquiry actions on all six project
+detail pages now use the service assigned by the existing route mapping, with a
+neutral unsupported fallback. No content/media/case proof/metadata/date/status or
+route count changes. Fresh345tests/82-route crawl and24project/fourwater built
+desktop/mobile JS/no-JS profiles pass; publication remains a separate exact gate.
+
+**Later local candidate f3bb3c5:** existing `/diensten/waterlek-herstellen` adds
+regional provider handoffs, safe known-observation intake and two official links.
+Only its actual modified content gains11October sitemap date; the other five
+additional services remain unchanged. No new route or faultcatalog row. Local
+336tests/82-route crawl/four responsive JS/no-JS profiles pass; exact production
+release acceptance is separate in QA. Broader burst-pipe technical/demand proof
+is not supplied by this bounded answer.
+
+Current accepted release `c4a59f9` has82 registered customer routes,80 published and two noindex after
 the eight original destinations and watermeter pilot below. The previous accepted release6557c45
 has81/79/2. Neither snapshot counts Google-indexed pages. Dated local/live
 verification belongs in `SEO_QA_REPORT.md`.
@@ -25,6 +39,12 @@ date advances to11October. The contact page seeds only a single public service
 category in initial HTML, with native fallback, rejected duplicates and private
 tool context preserved. Fresh local QA is recorded in the report; independent
 whole-branch/hosted/canonical live gates are not yet complete for this candidate.
+
+**Later acceptance c4a59f9:** that candidate is now independently whole-branch
+approved and published. Exact CI328tests/build170/82/93/112, both Vercelchecks/
+Productionstatuses, canonicalcrawl and61responsive/JS/no-JS profile checks pass.
+Route/faultcatalog counts are unchanged from9e37327; only the gas registrydate
+advances. A15changed-URL IndexNow receipt is not an indexed-page or growth count.
 
 | New destination | Intent / source basis |
 |---|---|

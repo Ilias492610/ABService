@@ -1,5 +1,68 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — water and project handoff, final local candidate
+
+Task29 `2a512ea` is independently task-reviewed Approved and preserves all six
+existing project pages while carrying their assigned service into both native
+contact links. No case facts/media/matches/publication/date/schema are changed.
+Fresh root345/345tests, lint, build170 and localcrawl82/93/112 pass onNode24.19.
+The earlier clean-install/production0/source57/56HTTP200/known403 checks apply to
+the unchanged dependency/source graph. Development9/ESLint9 remain disclosed.
+
+Actual final-built Chrome desktop1440×1000/mobile390×844 × JS/no-JS passes24
+project profiles, with both real CTA clicks, mapped editable native category,
+private blank/unchecked consent, fixed-header-clear anchor, original facts/image/
+body/region/service/canonical and no overflow.1481GET-onlyrequests. Four renewed
+water profiles pass with538GET-onlyrequests, including unchangedfive service
+records/date omissions. Both harnesses have zero attempted writes/pageerrors;
+Google503fixture and external firewall exclude provider receipt, actual analytics,
+physical-device/CWV or customer results. No functional failure found. Independent
+whole-branch/hosted/canonical publication remains pending for this exact candidate.
+
+## 11 October 2026 — regional water handoff, locally accepted candidate
+
+Task28 `f3bb3c5` is independently task-reviewed Approved. Fresh root verification
+on actual Node24.19.0: clean install410/411,336/336tests, lint, productionaudit0,
+build170 and localcrawl82pages/93destinations/112assets pass. Development9 and
+ESLint9 deprecation remain; source57unique/56HTTP200/knownSibelga403 exits1.
+Both new regional bodies were personally read in full before implementation;
+reachability is not substantive verification or a source publication date.
+
+Chrome1440×1000/390×844 with JavaScript enabled/disabled passes four water profiles,
+each also checking the five unchanged service pages. Both actual hero/final links
+select Waterlek herstellen in initial/native form HTML, clear the fixed header
+and leave private fields blank. Regional unknown/safety boundaries, original
+image/sections/foursteps, official citations and independent editorial dates hold.
+543 browser GETs, no attempted writes/errors/overflow; rating503/external-write
+guards remain. Mobile full-page screenshot was visually inspected. Only the
+changed additional-service entry has11October sitemap lastmod. Unit test parser
+first73/74 and335/336 failures are retained; its authorized source-heading boundary
+fix preserves every internal-link assertion. Final whole-branch, hosted and
+canonical release gates remain open; no mail/event/CWV/commercial proof inferred.
+
+## 11 October 2026 — intake continuity released and checked live
+
+Whole-branch approved `c4a59f9405d09db0fdc72e0d44d97fedbfe9bcb9` is normally
+published to main after fresh328premerge and328merged tests. [Exact CI38107909184](https://github.com/Ilias492610/ABService/actions/runs/38107909184)
+passes under Node24.21.0: install/lint/328tests/productionaudit0/build170 and
+hosted82-page/93-destination/112-asset crawl. Development9/ESLint9 remain.
+Both exact-SHA Vercel checks and Production statuses succeed: primary6990321199
+at03:18:28UTC, secondary6990317681 at03:18:02UTC. These are status timestamps,
+not exact canonical-alias activation times.
+
+Fresh canonical crawl82/93/112 and61live Chrome profile checks pass at1440×1000
+and390×844, JavaScript enabled/disabled: all13brandintent layouts, gas control/
+document/source links, initial contact categories/duplicates/private-field/status
+cases, tool-only client context and actual chosen-service/header-clear anchor.
+3325 inspected browser requests, zero attempted non-GET/errors/overflow. Rating503
+and explicit synthetic5expanded fixture/external-write firewall remain: no actual
+Google response, fresh mail/event receipt, physical-device/CWV or growth proof.
+
+After live content checks and offline preview, one explicit15URL IndexNow batch
+for the13changedbrandpages, gas installation and contact receivesHTTP200/received;
+no automatic retry or indexation/ranking claim. No unchanged source guides or
+historical full-site batch. The preceding candidate stage remains historical.
+
 ## 11 October 2026 — brand intent, installation handoff and initial contact category candidate
 
 Independently task-reviewed d5a3a59/9f20d50/e03983f separate maintenance from

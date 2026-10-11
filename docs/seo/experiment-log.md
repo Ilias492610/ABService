@@ -255,3 +255,64 @@ physical-device/field measurements and owner evidence gaps remain separate.
 Any factual, privacy, routing or lost-edit regression merits immediate scoped
 correction. Same-day releases/traffic mix confound growth attribution. Frozen
 WATER/REMEHA experiments retain their own KPIs, sample/inclusions and revert rules.
+
+## INTAKE-CONTINUITY-20261011 — release and live supplement
+
+Recorded11October2026,03:24UTC. Whole-branch approvedc4a59f9 is normally on
+main/origin after328premerge+328mergedtests. [CI38107909184](https://github.com/Ilias492610/ABService/actions/runs/38107909184)
+passes328/lint/productionaudit0/build170/crawl82/93/112 underNode24.21.0.
+Both Vercelchecks/Productionstatuses succeed; primary6990321199 at03:18:28UTC
+is provider status time, not exact canonical-alias activation time.
+
+Canonical82/93/112 and61live desktop/mobile/JS/no-JS brand/gas/contactchecks
+pass,3325requests0nonGET/errors/overflow. Actual initial category/duplicate/
+private/status/tool and native intentlink contracts hold; simulated rating and
+external-write guards preserve all evidence limitations. One explicit15changed-
+URL IndexNow batch receivesHTTP200 after preview/contentcheck, no retry/indexing.
+
+**RELEASED /LIVE CHECKED; NOT GROWTH-EVALUATED.** No new baseline, qualified
+enquiry sample or causal outcome. Earlier candidate/harness diagnostics remain,
+known403/dev9/field/provider/business gaps stay separate. WATER/REMEHA frozen
+contracts unchanged. Next regional waterprovider handoff is its own factual task.
+
+## WATER-HANDOFF-PROJECT-INTENT-20261011 — bounded functional preparation
+
+Recorded11October2026,03:40UTC against acceptedc4a59f9. Task28f3bb3c5 adds
+regional provider routing and safe descriptive observations on the existing water
+page; Task29 is a separate existing-project intent handoff using its assigned
+servicePath. Neither is a new customer/job/photo match or a growth experiment.
+Primary source IDs: original14-topic WP10 burst-pipe row and regional coreSources
+waterLeakFlanders/waterNetworkBrussels; projectservice scope BF-F08/BF-F09 and
+WP09's existing customer journey. Root brief/register records exact Task29 base.
+
+Immediate acceptance: actual regional/unknown/nonemergency boundaries, optional
+safe photos/text sufficiency, source dates/URLs/unchangedfive services; actual
+sixproject category/anchor/native form selection, generic unmapped fallback,
+private blank/editable controls and retained project content/meta/media. Wrong
+route/category, safety/private-context regression or lost pageelements warrants
+immediate scoped correction, not a ranking wait. Fulltraceable case evidence is
+still absent; project boolean flags are not that evidence.
+
+Task28 localroot336tests/lint/production0/build170/crawl82/93/112 and fourwater
+desktop/mobile JS/no-JS profiles pass,543GET-onlyrequests. Whole-branch/hosted/live
+and Task29 gates remain open at this timestamp. Source403/development9 are known.
+**CANDIDATE /NOT GROWTH-EVALUATED.** Qualified enquiries/equal-window page-query
+baseline/sample/denominator and actual custom-event receipt remain unknown, not
+zero. Same-day releases/season/querymix confound causality. No primary KPI/sample
+or inclusionwindow changed for frozen WATER/REMEHA parent experiments; later
+acceptance is appended, not backfilled into this preparation record.
+
+## WATER-HANDOFF-PROJECT-INTENT-20261011 — final local supplement
+
+Recorded11October2026 after independent Task29review.2a512ea preserves assigned
+project service in both native enquiry CTAs; existing content/evidence/meta/date
+unchanged. Rootfresh345tests/lint/build170/crawl82/93/112 pass.24builtproject
+profiles plus fourrenewedwater profiles pass desktop/mobile JS/no-JS,1481/538
+GET-onlyrequests,0attemptedwrites/errors/overflow. Actual native editable category,
+privateblanks/consent and fixedheaderclear anchor hold. EarlierTask28fourprofile
+543request snapshot remains a different legitimate run, not silently replaced.
+
+**LOCALLY CHECKED /NOT GROWTH-EVALUATED.** Wholebranch/hosted/canonical gate is
+still open here. No new baseline, qualified-enquiry denominator, customer result,
+case-photo match, provider/event/CWV receipt or causal improvement is supplied.
+Parent WATER/REMEHA measurement/freeze/inclusion/revert contracts remain unchanged.

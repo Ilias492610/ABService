@@ -1,5 +1,49 @@
 # Evidence Register
 
+## 11 October 2026 — existing project intent candidate evidence
+
+Task29 `2a512ea` uses only the existing servicePath→allowlisted service mapping
+on six current project routes. Independent taskreview and root345tests/lint/
+build170/crawl82/93/112 pass.24actualproject profiles and fourrenewedwater profiles
+pass desktop/mobile JS/no-JS;1481/538GET-onlyrequests, no attempted writes/errors/
+overflow. Actual category is editable; personal fields blank/consent unchecked.
+Original cases/media/meta/status/date/region links remain. Provider/rating/event/
+physical/CWV/commercial outcomes are excluded. Whole-branch/hosted/live pending.
+This supplies no new private work/photo/permission/date match; WP09 remains open.
+
+## 11 October 2026 — bounded water-handoff candidate evidence
+
+Task28f3bb3c5 uses personally read complete official
+[Vlaanderen water-leak guidance](https://www.vlaanderen.be/bouwen-wonen-en-energie/water/een-lek-in-de-waterleiding)
+and [Brussels drinking-water guidance](https://be.brussels/nl/milieu-afval/waterkwaliteit/leidingwater-brussel).
+Their street/main-tap/meter and Brussels network handoffs stay separately scoped;
+no legal ownership/insurance/price rule or AB network-repair promise is added.
+Check/access11October is not a source revision/publication claim. Private repair
+retains owner-confirmed scope and assessment; unknown/safety remain explicit.
+
+Independent taskreview and root336tests/full localgate/four real Chrome desktop/
+mobile JS/no-JS water profiles pass,543GET-onlyrequests. Otherfive services remain
+unchanged; exact visible citations join monitoring,57unique/56HTTP200/known403.
+Mobile screenshot inspected. No technician sign-off, actual burst-pipe question,
+cause/frost method, case match or customer outcome is established. Whole-branch/
+hosted/canonical gate still open; [QA](../../SEO_QA_REPORT.md) records boundaries.
+
+## 11 October 2026 — intake continuity release evidence
+
+Whole-branch reviewed c4a59f9405d09db0fdc72e0d44d97fedbfe9bcb9 is normally
+published. [CI38107909184](https://github.com/Ilias492610/ABService/actions/runs/38107909184)
+passes328tests/lint/productionaudit0/build170/crawl82/93/112 onNode24.21.0.
+Both exact-SHA Vercel checks/Production statuses succeed; primary6990321199 at
+03:18:28UTC and secondary6990317681 at03:18:02UTC. Canonical82/93/112 and61live
+desktop/mobile/JS/no-JS profile checks pass,3325GET-onlyrequests/noerrors/overflow.
+Actual initial HTML, safe intake selection and sourced gas handoff are confirmed.
+
+Only15substantively changedpublishedURLs receive one previewedIndexNowHTTP200
+notification afterlivechecks; no indexing outcome. Synthetic rating/intercepted
+submissions establish no real review/mail/event/physical/CWV/commercial result.
+Source403/dev9 and actual recognition/case/price/customer data remain separate.
+Earlier candidate details and primary-source boundaries below stay historical.
+
 ## 11 October 2026 — bounded brand/contact candidate evidence
 
 Reviewed d5a3a59 preserves owner-confirmed independent thirteen-brand scope while

@@ -1,5 +1,16 @@
 # WP10 dekking van veertien adviesintenties
 
+**Latere lokale aanvulling11oktober, Task28f3bb3c5:** de bestaande waterherstelpagina
+geeft nu afzonderlijke regionale providerdoorverwijzingen, onbekende bron/plaats,
+veilig al bekende intake en optionele foto's zonder noodkanaalclaim. Twee primaire
+bronnen zijn in full-body gecontroleerd en centraal gemonitord. Independentreview,
+fresh336tests/build170/crawl82/93/112 en vier echte desktop/mobile JS/no-JS profielen
+pass. [QA](../../SEO_QA_REPORT.md) houdt whole-branch/hosted/canonical gates apart.
+Dit vult alleen de doorverwijs-/intakegap van gesprongen waterleiding aan; oorzaak,
+vorstmethoden, echte vraag en technicusreview blijven onbekend. De oorspronkelijke
+dekkingstabel hieronder blijft de eerdere Task15-momentopname, geen nieuwe claim
+van volledige technische dekking of veertien nieuwe URLs.
+
 Stand 11 oktober 2026, na de lokale attestwijziging in commit `1cd1ed30b6cc60ce01bde79c797c54edd085a169`. De veertien oorspronkelijke intenties hebben hieronder een bestaande bestemming of een expliciete inhoudelijke gap. Dit is een redactiekader voor AB Service, geen opdracht om veertien nieuwe URLs te maken en geen volledige afsluiting van WP10. `published` beschrijft de huidige [routestatus](../../content/site-content.mjs); het bewijst niet dat de wijziging van 11 oktober al live staat.
 
 De [eerste cyclus](briefs/wp10-first-cycle.md) werkt de bestaande attestbestemming uit. De [WP03 meetbriefs M01–M05 en kwalitatieve briefs B01–B05](briefs/wp03-first-five.md) blijven afzonderlijke onderzoeksproducten. B04 blijft het kwalitatieve vertrekpunt voor documenten; M02 meet een onderhoudsquerygroep, geen attestvraag. [Backlog](content-gap-backlog.md), [bedrijfsbrief](business-brief.md) en [publicatiebeleid](content-publishing-policy.md) blijven de grenzen voor latere uitvoering.
