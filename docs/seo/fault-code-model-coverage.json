@@ -1,16 +1,17 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 read-only current WP07 coverage reporting aid; not source re-audit or complete13-brand/model certification",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading; not source re-audit of other catalogs or complete13-brand/model certification",
+  "incrementalUpdateDate": "2026-10-11",
   "counts": {
     "guides": 13,
-    "catalogAssignments": 37,
-    "distinctCatalogs": 31,
-    "displayedExplanationRows": 1565,
-    "distinctCatalogExplanationRows": 1323,
-    "distinctCatalogSourceURLs": 17
+    "catalogAssignments": 38,
+    "distinctCatalogs": 32,
+    "displayedExplanationRows": 1596,
+    "distinctCatalogExplanationRows": 1354,
+    "distinctCatalogSourceURLs": 18
   },
-  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Site-wide source-audit unique count58 is outside this catalog-only enumeration and not rechecked.",
-  "method": "Pure current module import for literal ids/scopes/counts/guide assignment; retained report inspection and targeted source-artifact existence/SHA checks. No new external request/download, code-row re-audit, build/test/browser/Git mutation or tracked edit.",
+  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources.",
+  "method": "Original Task47 literal enumeration/evidence inspection retained. Task48 adds only one newly read historical Bulex A/B source and31 numbered rows, with independent ruled-cell extraction and main primary-body/pixel reading. Other31 catalog entries and seven snapshots remain unchanged; no whole-source re-audit or newest-revision certification.",
   "guides": [
     {
       "slug": "vaillant",
@@ -27,11 +28,12 @@
     {
       "slug": "bulex",
       "brand": "Bulex",
-      "modelWarning": "Deze catalogus bevat alle codes uit het officiële Belgische consumentenoverzicht en de volledige tabel uit 0020124551_02 voor uitsluitend THEMA Condens FAS 65, artikelnummer 0010010389, BEnl. Andere THEMA-varianten en revisies zijn niet gedekt. Dezelfde code kan per bron een andere betekenis hebben. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel voordat u een betekenis toepast.",
-      "explanationRowCount": 43,
+      "modelWarning": "Deze catalogus bevat het officiële Belgische consumentenoverzicht, de aparte tabel uit 0020124551_02 voor uitsluitend THEMA Condens FAS 65, artikelnummer 0010010389, BEnl, en de 31 genummerde codes uit historische handleiding 0020109430_06 (06/13) voor de acht hieronder genoemde THEMA Condens A/B-varianten. Andere THEMA-varianten en revisies zijn niet gedekt. F54 staat alleen in het algemene consumentenoverzicht, niet in deze twee modeltabellen. Dezelfde code kan per bron een andere betekenis hebben. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel voordat u een betekenis toepast.",
+      "explanationRowCount": 74,
       "catalogIds": [
         "bulex-publiek-overzicht",
-        "bulex-thema-condens"
+        "bulex-thema-condens",
+        "bulex-thema-condens-ab"
       ],
       "documentationLabel": "Officiële Bulex-gebruikshandleidingen",
       "documentationURL": "https://www.bulex.be/particulier/documentatie/technische-documentaties/handleidingen/"
@@ -181,6 +183,14 @@
     }
   ],
   "snapshots": [
+    {
+      "id": "bulex-thema-ab-pdf",
+      "kind": "manufacturer-PDF; newly read Task48 historical source",
+      "sha256": "51d1fe0f4d8f352a456804e2acd8392e5140513ebfa407ae47ec95caec7dbd91",
+      "expectedSha256": "51d1fe0f4d8f352a456804e2acd8392e5140513ebfa407ae47ec95caec7dbd91",
+      "hashMatchesPriorRecord": true,
+      "priorRecordBoundary": "Matches the immediately preceding Task48 retained preflight and independent extraction, not a historical Task47 source audit."
+    },
     {
       "id": "vaillant-ecotec-pdf",
       "kind": "manufacturer-PDF",
@@ -379,6 +389,35 @@
       "verificationBasis": "Current scope corroborated by earlier scoped primary-PDF reading, cover/BEnl/p10 applicability/p37–38 Appendix D/footer; retained PDF matches prior SHA. No other THEMA variants verified.",
       "declaredScopePath": "content/fault-catalogs.mjs",
       "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "bulex-thema-condens-ab",
+      "usedBy": ["bulex"],
+      "title": "THEMA Condens A/B (06/13)",
+      "modelScope": "Historische installatiehandleiding 0020109430_06 (06/13), Nederlandse §13.3: alle 31 genummerde codes op p. 33-34. Alleen THEMA Condens F AS 12-A, F AS 25-A, F AS 30-A, F AS 30-B, F 25/30-A, F 30/35-A, F 25/30-B en F 30/35-B. De technische tabellen noemen BE/LU voor de aardgasvarianten en BE voor de propaanvarianten; controleer de bestemming en gasvariant van uw eigen toestel. Geen bewijs van de nieuwste revisie of firmwarecompatibiliteit; FAS 65 en andere varianten zijn niet inbegrepen. Vier regels met een streepje en één lege codecel krijgen hier geen verzonnen nummer. F54 en F67 staan niet in deze tabel; dat bewijst niet dat elke toestelvariant die codes nooit kan tonen. De technische behandeling is voor een bevoegde technicus; onderstaande eerste stappen zijn alleen veilige observaties. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel.",
+      "sourceLabel": "Bulex THEMA Condens A/B - installatiehandleiding 0020109430_06 (06/13)",
+      "sourceURL": "https://www.bulex.be/themacondens/0020109430-06-1746866.pdf",
+      "sourcePages": "§ 13.3, p. 33-34",
+      "explanationRowCount": 31,
+      "modelFamily": "THEMA Condens A/B",
+      "models": ["F AS 12-A", "F AS 25-A", "F AS 30-A", "F AS 30-B", "F 25/30-A", "F 30/35-A", "F 25/30-B", "F 30/35-B"],
+      "articleNumbers": null,
+      "documentNumber": "0020109430_06",
+      "revision": "0020109430_06",
+      "issueDate": "06/13",
+      "market": ["BE", "LU"],
+      "marketVariantBoundary": "BE/LU natural-gas variants; BE propane variants in technical tables printed40/42 (PDF42/44); actual device destination/gas variant remains authoritative.",
+      "language": "nl",
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": "bulex-thema-ab-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-48-bulex-source-preflight.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-48-bulex-literal-source.json"
+      ],
+      "verificationBasis": "New Task48 primary reading: main personally reads PDF1,5–6,11,34–36,42–45 and actual rendered tables35/36; independent ruled-cell extract preserves all36 physical rows,31 numbered codes/four hyphens/one blank and20 merged-cell relations. No F67 inferred from the blank cell, F54 absent; not FAS65 or2016-user-manual compatibility.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Only this historical eight-variant source newly read. Unknown article/firmware mapping remains null; not current-all-model applicability, newest revision, exact GSC model join or universal no-F54-device claim."
     },
     {
       "id": "bosch-serie-7000i",

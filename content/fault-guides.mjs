@@ -53,7 +53,7 @@ export const faultGuides = Object.freeze([
     slug: "bulex",
     brand: "Bulex",
     modelWarning:
-      "Deze catalogus bevat alle codes uit het officiële Belgische consumentenoverzicht en de volledige tabel uit 0020124551_02 voor uitsluitend THEMA Condens FAS 65, artikelnummer 0010010389, BEnl. Andere THEMA-varianten en revisies zijn niet gedekt. Dezelfde code kan per bron een andere betekenis hebben. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel voordat u een betekenis toepast.",
+      "Deze catalogus bevat het officiële Belgische consumentenoverzicht, de aparte tabel uit 0020124551_02 voor uitsluitend THEMA Condens FAS 65, artikelnummer 0010010389, BEnl, en de 31 genummerde codes uit historische handleiding 0020109430_06 (06/13) voor de acht hieronder genoemde THEMA Condens A/B-varianten. Andere THEMA-varianten en revisies zijn niet gedekt. F54 staat alleen in het algemene consumentenoverzicht, niet in deze twee modeltabellen. Dezelfde code kan per bron een andere betekenis hebben. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel voordat u een betekenis toepast.",
     catalogs: bulexCatalogs,
     documentationLabel: "Officiële Bulex-gebruikshandleidingen",
     documentationUrl: "https://www.bulex.be/particulier/documentatie/technische-documentaties/handleidingen/",

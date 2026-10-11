@@ -52,7 +52,7 @@ test("all published fault guides use official sources and explicit model caveats
 
 test("catalog coverage matches every row in the cited manufacturer tables", () => {
   assert.equal(bySlug("vaillant").codeEntryCount, 90);
-  assert.equal(bySlug("bulex").codeEntryCount, 43);
+  assert.equal(bySlug("bulex").codeEntryCount, 74);
   assert.equal(bySlug("bosch").codeEntryCount, 242);
   assert.equal(bySlug("junkers").codeEntryCount, 242);
   assert.equal(bySlug("remeha").codeEntryCount, 659);

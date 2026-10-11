@@ -1,5 +1,41 @@
 # Evidence Register
 
+## 11 October 2026 — one historical THEMA Condens A/B source
+
+[Official installation selection](https://www.bulex.be/particulier/documentatie/technische-documentaties/installatievoorschriften/?p=3)
+links the [actual A/B installation PDF](https://www.bulex.be/themacondens/0020109430-06-1746866.pdf),
+GET200/3462246bytes/56pages, SHA256
+`51d1fe0f4d8f352a456804e2acd8392e5140513ebfa407ae47ec95caec7dbd91`.
+Actual footer0020109430_06/06/13, not proof of newest revision. Cover names
+F AS12-A/25-A/30-A/30-B and F25/30-A,F30/35-A,F25/30-B,F30/35-B;
+technical tables BE/LU natural gas, BE propane. Typeplate/gas variant and
+exact user manual remain decisive; no article/firmware mapping established.
+Main primary-body/pixel reading plus independent cell extraction §13.3:
+printed33–34/PDF35–36,31 numbered rows (26+5), four '-' and one blank.
+All108 literal content cells/36 code cells match fresh independent extraction;
+twenty merged-cell relations recorded, no erroneous forward-fill. The blank
+flame row is not F67/F65; F54/F67 absence is only this table's boundary.
+
+Task48 uses separate source/scopes and safe observation/technical handoff,
+not installer solutions, model borrowing or a new demand claim. F73/F74
+electrical, F77 gasmechanism/optional condensatepump not FAS65flap.31 new rows
+plus unchanged43 Bulex; original31 inventory records/seven snapshots and
+other12 guide entries byte-meaningfully compare equal to b32084e5. Incremental
+32/38/1596/1354/18 counts are explanation assignments, not unique codes or
+customers. Six matched local labs are descriptive only;429localtests/lint/
+production0/build170/local82/93/112 and eight nativeprofiles426GETonly/
+16pointer+Enter/oneTabvisibleName pass; review/exact hosted/live gates remain.
+GSC M04 cluster is not an exact device-model join or proof of a ranking gain.
+
+Task46–47 acceptedb32084e5: sole review/noCriticalImportant/one deferred minor
+mobile widget overlap, all ten declined-boundary rulings/costs retained.
+ExactCI38145234247 success13:58:14UTC/423; actualProduction6996568173/
+6996572141 succeed13:57:50/13:58:10UTC; freshcanonical82/93/112 and eight
+nativeprofiles375GETonly/16pointer+Enter/oneTabname pass. No blocked/write/
+external/pageerrors/overflow; exact rating503 fixture only, not provider proof.
+No IndexNow for that copy slice; no owner/case/French/account gate is closed.
+Earlier entries below retain their historical stage.
+
 ## 11 October 2026 — bounded Bulex handoff and model inventory
 
 M04/G04/G05 in the retained WP03 analysis has93 impressions/0clicks/position10.41

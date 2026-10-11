@@ -6,6 +6,7 @@ import { getPageDefinition } from "../content/site-content.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { renderFaultGuide, faultGuideRoute, paramsFor, faultGuideRenderEvents } from "./helpers/fault-guide-runtime.mjs";
 import { guideBaseline, modelHelpHtml } from "./fixtures/bulex-model-help-baseline.mjs";
+import { beforeThemaABGuide, beforeThemaABHtml } from "./fixtures/bulex-thema-condens-ab.mjs";
 
 const sha = (value) => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
 const bulexHtml = await renderFaultGuide("bulex");
@@ -28,14 +29,14 @@ test("the model help has native official-document and context-preserving contact
 
 test("Bulex retains every real catalog row and the F54 general-overview versus FAS65 boundary", () => {
   const guide = getFaultGuide("bulex");
-  assert.equal(guide.codeEntryCount, 43);
-  assert.equal((bulexHtml.match(/class="fault-code-card"/g) || []).length, 43);
+  assert.equal(guide.codeEntryCount, 74);
+  assert.equal((bulexHtml.match(/class="fault-code-card"/g) || []).length, 74);
   const f54 = filterFaultCatalogs(guide.catalogs, "F54", "all");
   assert.equal(f54.length, 1);
   assert.equal(f54[0].id, "bulex-publiek-overzicht");
   assert.equal(guide.catalogs[1].id, "bulex-thema-condens");
   assert.equal(filterFaultCatalogs(guide.catalogs, "F54", "bulex-thema-condens").length, 0);
-  assert.equal((bulexHtml.match(/<option /g) || []).length, 3);
+  assert.equal((bulexHtml.match(/<option /g) || []).length, 4);
 });
 
 test("all thirteen complete metadata, registry and guide objects remain exactly the pre-edit captures", async () => {
@@ -43,7 +44,7 @@ test("all thirteen complete metadata, registry and guide objects remain exactly 
   for (const [slug, , metadata, registry, guide] of guideBaseline) {
     assert.equal(sha(await faultGuideRoute.generateMetadata(paramsFor(slug))), metadata, `${slug} metadata`);
     assert.equal(sha(getPageDefinition(`/foutcodes/${slug}`)), registry, `${slug} registry`);
-    assert.equal(sha(getFaultGuide(slug)), guide, `${slug} entire guide`);
+    assert.equal(sha(beforeThemaABGuide(getFaultGuide(slug))), guide, `${slug} entire guide before only the separately tested A/B addition`);
   }
 });
 
@@ -52,7 +53,7 @@ test("all thirteen actual page renders preserve their full original HTML except 
     const html = await renderFaultGuide(slug);
     if (slug === "bulex") {
       assert.equal(html.split(modelHelpHtml).length, 2, "exactly one complete new block");
-      assert.equal(sha(html.replace(modelHelpHtml, "")), htmlHash, "full Bulex HTML preservation");
+      assert.equal(sha(beforeThemaABHtml(html).replace(modelHelpHtml, "")), htmlHash, "full Bulex HTML before only the separately tested A/B addition");
     } else {
       assert.doesNotMatch(html, /bulex-model-help-title/);
       assert.equal(sha(html), htmlHash, `${slug} full HTML preservation`);

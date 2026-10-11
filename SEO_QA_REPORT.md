@@ -1,5 +1,73 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — Task48 A/B candidate and accepted handoff
+
+Actual historical Bulex installation PDF `0020109430_06` (06/13), 56 pages,
+SHA256 `51d1fe0f4d8f352a456804e2acd8392e5140513ebfa407ae47ec95caec7dbd91`.
+Main reads primary body/applicability/technical pages and actual table pixels.
+Independent ruled-cell extraction:36 physical rows,31 numbered codes, four
+dash cells/one blank,112 cell records/twenty merged relations; all108 literal
+content fields and36 code cells match a fresh independent crop. No invented
+F67 from the empty flame row or false F65 flame meaning. Eight exact A/B
+models only; market/gas variants and unknown firmware/article mapping explicit.
+Professional solutions are evidence, not copied consumer repair instructions.
+
+One data-only catalog/warning addition; Bulex74 rows/3groups/4 native options.
+Original43 row text/actions/scopes/source and other twelve guides are preserved.
+Historical captures are not regenerated: only the named new group/option/count/
+warning is projected out; separate literal/scope/semantic/SSR/search tests guard
+the addition. F00/F01 significant zeros; F54 public-only, F67 FAS65-only; F77
+different meanings retained. F73/F74 electrical diagnosis, F76 no closed-part
+work, pressure actions limited to exact user manual. Genuine RED0/6; initial
+GREEN4/6 reveals two test assumptions, not product bugs: scoped CON legitimately
+matches text without a CON alias; safe noun 'ontluchtingsinstructie' is not a
+repair imperative. Corrected GREEN6/6. The initial full421/429 failures are old
+intentional count/negative baselines, corrected only for the named addition;
+original hashes retained. Fresh429/429, lint0, production audit0, build170 and
+explicit-local82pages/93links/112assets pass. Native/review/release are separate.
+
+Incremental [coverage inventory](docs/seo/fault-code-model-coverage.md):32/38/
+1596/1354/18; prior31 records/seven snapshots/other12 guide entries compare
+exactly with b32084e5. Fourteen catalog entries tie to six PDFs, two to retained
+web views, sixteen declaration-only entries remain.59 unique site-wide cited
+URLs are an enumeration, not a new whole-source accessibility/content audit.
+
+Exactly three matched before and three after local mobile Bulex Lighthouse
+runs:13.5.0/Chrome156, full config equality,412×823/DPR1.75,CPU4/RTT150/
+throughput1638.4, storage reset, no blocked URLs or interception. Before P96/97/97,
+after99/100/97; A/BP/SEO100 and CLS0 throughout. Before LCP2775.38695/
+2616.750625/2618.130875ms; after2117.0826/1823.306/2616.066625ms.
+Median LCP2618.130875→2117.0826ms; TBT3.5→4.5ms; bytes274268→277739.
+All six have26 local requests and no runWarnings/runtimeError/console items.
+Only descriptive local variability; no causal, field, homepage or lead claim.
+One first browser harness fails on missing 'moederbord' synonym for F65; raw
+31GET diagnostic retained, no product patch. Corrected fresh eight-profile
+native desktop1440/mobile390×JS/no-JS×motion run passes,426 localGETonly,
+no blocked/write/external/pageerrors/overflow. All31 new literals/old43 full
+fields/source/scope and4options match. Four JS profiles each pass17 native
+search cases: significant zeros, public-only F54/FAS65-only F67, distinctF77,
+per-source F28, literal F 68, unknown0→74. All16 pointer/nativeEnter handoffs
+prefill Herstelling verwarming; form142.17–144.17≥126.59header, oneTab to fully
+visible name. Only exact intercepted rating503 console fixture, no-JS empty.
+Root reads full harness/every result and mobile scope/F77/no-JS contact images.
+Headless/native evidence is not physical, assistive, mail/provider or field proof.
+Sole independent review and exact hosted/canonical release remain gates.
+
+Task46–47 accepted SHA `b32084e5edbab0c1e4416072449dfb06faa5f474`:
+sole review ReadyYes/noCriticalImportant; one deferred mobile-widget overlap,
+normal scroll exposes the helper text and maintains usable native focus.
+Main records all ten declined-boundary rulings/costs, not dropped silently.
+Fresh423tests; [exact CI38145234247](https://github.com/Ilias492610/ABService/actions/runs/38145234247)
+success13:58:14UTC, Node24.21.0/install/lint/production0/build170/hosted82/93/112.
+Matching-SHA actual Productionprimary6996568173 success13:57:50UTC and
+secondary6996572141 success13:58:10UTC. Freshcanonical82/93/112 and eight
+native profiles pass:375GETonly/no blocked/write/external/pageerrors/overflow;
+43 old rows/2groups/3options exact,16pointer+Enter handoffs, oneTabname,
+form142.05–144.17≥126.59header. Strict JS console permits only exact intercepted
+rating503, no-JS empty. Root reads all results/live screenshots; no mail/event/
+provider/physical-assistive/field/growth proof. No IndexNow for this small slice.
+Earlier candidate entries below retain their original phase.
+
 ## 11 October 2026 — Bulex handoff candidate; accepted 25L release
 
 Task46 adds only a static Bulex model-unknown/unlisted handoff before the

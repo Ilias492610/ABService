@@ -353,6 +353,25 @@ groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
+**Task48 lokale kandidaat, 11 oktober:** één historische Bulex A/B-bron,
+werkelijke footer0020109430_06/06/13,31 genummerde regels p33–34 voor acht
+exacte modellen, BE/LU-aardgas/BE-propaanbeperking. Vier streepjes/één lege
+codecel blijven zonder verzonnen nummer; F54/F67-afwezigheid alleen deze tabel.
+Oorspronkelijke43regels/12andere gidsen/intakehulp behouden. Bulex74/3groepen/
+4opties; alledertien1596uitlegregels/38toewijzingen/32catalogi/1354zonderhergebruik.
+Echte RED0/6→GREEN6/6/fresh429/lint/productie0/build170/local82/93/112 slagen.
+Zes gelijke lokale labs: mediaanP97→99,LCP2618.131→2117.083ms,TBT3.5→4.5,
+bytes274268→277739,CLS0/A/BP/SEO100; geen causale/veld-/klantwinstclaim.
+Acht nativeprofielen426GETonly/16pointer+Enter/éénTabzichtbare naam slagen;
+sole review/exacte release blijven gates; bredere WP07 niet af.
+
+**Task46–47 werkelijk geaccepteerd:** `b32084e5` sole review/fresh423/
+exactCI38145234247 success13:58:14UTC; werkelijkeProduction6996568173/
+6996572141 success13:57:50/13:58:10UTC; canonical82/93/112/achtliveprofielen/
+375GET/16pointer+Enter/éénTabnaam, geen blocked/errors/overflow. Eén minor
+mobiele widgetoverlap blijft uitgesteld; gewoon scrollen toont volledige hulp.
+Geen IndexNow voor die copy/documentatieslice, geen bredere gate gesloten.
+
 **Task45 werkelijk geaccepteerd, Task46–47 lokale kandidaat, 11 oktober:**
 `5a8d7c0` heeft sole onafhankelijke review,415fresh/exactCI38127116203,
 beide werkelijke Productionstatuses6993368945/6993369322, canonical82/93/112
@@ -372,7 +391,7 @@ Final423/build170/local82/93/112/acht nativeprofielen/465GET/16pointer+Enter
 flows met vaste-header-clearance/éénTabzichtbare naam slagen. Alle eerste
 diagnostics blijven apart bewaard; wholecohortreview/exactepublicatie volgt.
 
-- [x] Bestaande dertien gidsen/31 afzonderlijke catalogi inventariseren met letterlijke scope, bewijstype en expliciet onbekende velden; geen volledige bron-/modeldekking afleiden.
+- [x] Bestaande dertien gidsen/32 afzonderlijke catalogi inventariseren met letterlijke scope, bewijstype en expliciet onbekende velden; één Task48-bron nieuw gelezen, geen volledige bron-/modeldekking afleiden.
 
 **Task45 — aparte 25L-kandidaat, 11 oktober:** echte Belgische handleiding
 7871254-04-04072025, NL tabellen224–228 p346–369 volledig gelezen; onafhankelijke

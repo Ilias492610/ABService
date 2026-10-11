@@ -9,6 +9,7 @@ import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { buildFaultCodeAliases } from "../libs/fault-code-aliases.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { sourceFacts as facts } from "./fixtures/buderus-gb162-v2-source-facts.mjs";
+import { beforeThemaABGuide } from "./fixtures/bulex-thema-condens-ab.mjs";
 
 const catalog = buderusCatalogs[0];
 const search = (query) => filterFaultCatalogs(buderusCatalogs, query, catalog.id).flatMap(c => c.codes);
@@ -156,11 +157,11 @@ test("non-Buderus fault guidance and fault-guide registry preserve the historica
   // Digests frozen before production edits at 906a0ea; intentional integrity
   // guard only, separate from independently transcribed manufacturer facts.
   const digest = value => createHash("sha256").update(JSON.stringify(value)).digest("hex");
-  // Only the subsequently approved 25L addition is removed from this historical
+  // Only the subsequently approved 25L and Bulex A/B additions are removed from this historical
   // projection. Its independent complete inventories and pre-edit eight-catalog
   // digest are enforced by calenta-ace-matic-25l.test.mjs. Never rebase this hash.
   const historicalGuides = faultGuides.filter(guide => guide.slug !== "buderus").map(guide => {
-    if (guide.slug !== "remeha") return guide;
+    if (guide.slug !== "remeha") return beforeThemaABGuide(guide);
     const oldWarning = "Kies uw toestelreeks en generatie: Avanta volgt de officiële Belgische Storingswijzer; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025, met afzonderlijke CU-GH-21-tabellen en SCB-10-tabellen die alleen gelden als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace-Matic 25L, Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.";
     const newWarning = "Kies uw toestelreeks en generatie: Avanta volgt de officiële Belgische Storingswijzer; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.";
     return { ...guide, modelWarning: guide.modelWarning.replace(newWarning, oldWarning),

@@ -1,5 +1,37 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — historical THEMA Condens A/B source candidate
+
+- Task48 adds one separately attributed catalog on the existing Bulex URL:
+  31 numbered rows from actual `0020109430_06` (06/13), §13.3 pp33–34,
+  eight named A/B variants; BE/LU natural gas and BE propane boundaries.
+  No newest/all-model/firmware claim. Four dash rows and one blank cell are
+  not invented codes; the blank flame row is neither F67 nor F65's meaning.
+- Preserves all original43 Bulex rows, twelve other guides and the accepted
+  unknown-model help. F00/F01 remain different from F0/F1; F54 stays public-
+  overview-only. F73/F74 use electrical diagnosis, F77 retains the optional
+  condensate-pump meaning, not FAS65's flap. No installer repair instructions.
+- Real RED0/6→GREEN6/6; two initial test assumptions corrected from actual
+  search/manual-bound actions, without product changes. Full429 tests, lint,
+  production audit0, build170 and local crawl82/93/112 pass. Eight native
+  browser profiles pass,426 localGETonly/16pointer+Enter/oneTabname. Sole
+  independent review and exact hosted/canonical release remain gates.
+- Six matched local mobile labs: median P97→99, LCP2618.131→2117.083ms,
+  TBT3.5→4.5ms, CLS0, bytes274268→277739. A/BP/SEO100 throughout. Descriptive
+  variability, not causal improvement, field/homepage measurement or lead proof.
+- Incremental inventory:32 catalogs/38 assignments/1596 displayed rows/1354
+  without shared reuse/18 catalog URLs. Only this source newly read; prior31
+  records/seven snapshots unchanged. Wider WP07 and owner-evidence gates open.
+
+Task46–47 is accepted as `b32084e5edbab0c1e4416072449dfb06faa5f474`:
+sole review/fresh423/exactCI38145234247 success13:58:14UTC; both actual
+Production6996568173/6996572141 succeed13:57:50/13:58:10UTC. Canonical82/93/112
+and eight native profiles pass,375GETonly/16pointer+Enter handoffs/oneTabname,
+no blocked requests/pageerrors/overflow. Deferred minor: bottom-aligned mobile
+help can partially overlap existing widgets; normal scrolling exposes it and
+links remain usable. No IndexNow for that small-copy/documentation release.
+Earlier candidate entries below retain their historical phase.
+
 ## 11 October 2026 — Bulex model handoff and bounded coverage inventory
 
 - Task46 local candidate adds one static Bulex-only block before the catalog:

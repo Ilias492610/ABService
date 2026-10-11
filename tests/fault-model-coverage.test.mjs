@@ -39,9 +39,9 @@ test("the bounded model inventory matches every real guide assignment, scope, so
 });
 
 test("the inventory keeps unknown fields and retained evidence distinct rather than declaring a fresh audit", () => {
-  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 13);
+  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 14);
   assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 16);
-  assert.equal(manifest.snapshots.filter(s => s.hashMatchesPriorRecord === true).length, 6);
+  assert.equal(manifest.snapshots.filter(s => s.hashMatchesPriorRecord === true).length, 7);
   assert.equal(manifest.snapshots.find(s => s.id === "vaillant-public-html").expectedSha256, null);
   for (const e of manifest.entries) {
     assert.match(e.sourceURL, /^https:\/\//);

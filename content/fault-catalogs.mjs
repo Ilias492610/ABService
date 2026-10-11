@@ -51,6 +51,7 @@ const VAILLANT_ECOTEC_URL =
   "https://support.vaillant.be/downloads/documenten/installatievoorschrift/0020282230-00-2764886.pdf";
 const BULEX_PUBLIC_URL = "https://www.bulex.be/particulier/diensten/foutcodes/";
 const BULEX_THEMA_URL = "https://www.bulex.be/themacondens/0020124551-02-1746869.pdf";
+const BULEX_THEMA_AB_URL = "https://www.bulex.be/themacondens/0020109430-06-1746866.pdf";
 const BOSCH_CODEBOOK_URL =
   "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf";
 
@@ -233,6 +234,48 @@ export const bulexCatalogs = Object.freeze([
       ["F.75", "Geen druksprong herkend bij het starten van de pomp.", "pressure"],
       ["F.77", "Fout van de rookgasklep of condenspomp.", "flue"],
       ["con", "Geen communicatie met de printplaat."],
+    ],
+  }),
+  catalog({
+    id: "bulex-thema-condens-ab",
+    title: "THEMA Condens A/B (06/13)",
+    scope:
+      "Historische installatiehandleiding 0020109430_06 (06/13), Nederlandse §13.3: alle 31 genummerde codes op p. 33-34. Alleen THEMA Condens F AS 12-A, F AS 25-A, F AS 30-A, F AS 30-B, F 25/30-A, F 30/35-A, F 25/30-B en F 30/35-B. De technische tabellen noemen BE/LU voor de aardgasvarianten en BE voor de propaanvarianten; controleer de bestemming en gasvariant van uw eigen toestel. Geen bewijs van de nieuwste revisie of firmwarecompatibiliteit; FAS 65 en andere varianten zijn niet inbegrepen. Vier regels met een streepje en één lege codecel krijgen hier geen verzonnen nummer. F54 en F67 staan niet in deze tabel; dat bewijst niet dat elke toestelvariant die codes nooit kan tonen. De technische behandeling is voor een bevoegde technicus; onderstaande eerste stappen zijn alleen veilige observaties. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel.",
+    sourceLabel: "Bulex THEMA Condens A/B - installatiehandleiding 0020109430_06 (06/13)",
+    sourceUrl: BULEX_THEMA_AB_URL,
+    sourcePages: "§ 13.3, p. 33-34",
+    rows: [
+      ["F22", "Watergebrek bij een gemeten druk onder 0,3 bar.", "pressure"],
+      ["F83", "De temperatuur stijgt niet terwijl de brander werkt; de bron beschrijft dit als watergebrek.", "pressure"],
+      ["F28", "De ketel meldt een mislukte ontsteking.", "gas"],
+      ["F29", "Het vlamsignaal valt weg tijdens het gebruik.", "gas"],
+      ["F 68", "Het gemeten vlamsignaal is niet stabiel.", "gas"],
+      ["F32", "De ventilatorsnelheid wijkt af, met een storing van luchttoevoer of rookgasafvoer.", "flue"],
+      ["F20", "De oververhittingsbeveiliging is aangesproken; deze bron noemt 97 °C.", "pressure"],
+      ["F00", "De aanvoertemperatuurvoeler is ontkoppeld.", "electrical"],
+      ["F10", "De aanvoertemperatuurvoeler meldt kortsluiting.", "electrical"],
+      ["F73", "De cv-drukvoeler is kortgesloten of ontkoppeld.", "electrical"],
+      ["F74", "De cv-drukvoeler wordt als defect gemeld.", "electrical"],
+      ["F01", "De retourtemperatuurvoeler is ontkoppeld.", "electrical"],
+      ["F11", "De retourtemperatuurvoeler meldt kortsluiting.", "electrical"],
+      ["F49", "Er is een storing op de eBUS-lijn of kortsluiting in de connector.", "electrical"],
+      ["F61", "Het moederbord meldt een fout in de gasklepaansturing.", "gas"],
+      ["F62", "Het moederbord meldt een probleem bij het sluiten van de gasklep.", "gas"],
+      ["F63", "Het geheugen van het moederbord meldt een fout.", "electrical"],
+      ["F64", "Het moederbord meldt snelle schommelingen van de temperatuurmeting in aanvoer of retour.", "electrical"],
+      ["F65", "De gemeten temperatuur van het moederbord is te hoog.", "electrical"],
+      ["F26", "De bekabeling van het gasmechanisme is ontkoppeld of defect.", "gas"],
+      ["F77", "De bron noemt een defect gasmechanisme of een defecte condensaatpomp, indien aanwezig.", "gas"],
+      ["F27", "De vlamdetectie meldt een abnormaal vlamsignaal.", "gas"],
+      ["F71", "De aanvoertemperatuur verandert niet: de voeler kan los uit zijn clips of defect zijn.", "electrical"],
+      ["F70", "De productcode past niet bij de combinatie van gebruikersinterface en moederbord.", "electrical"],
+      ["F24", "De watertemperatuur stijgt te snel bij een circulatiestoring; de bron noemt de pompwerking.", "pressure"],
+      ["F23", "Het verschil tussen aanvoer- en retourtemperatuur bereikt de grens bij een circulatieprobleem.", "pressure"],
+      ["F72", "De aanvoer- en retourvoelers geven blijvend niet-passende temperatuurmetingen.", "electrical"],
+      ["F84", "De aanvoer- en retourvoelers zijn omgewisseld, ontkoppeld of defect.", "electrical"],
+      ["F76", "De smeltzekering is ontkoppeld of defect.", "electrical"],
+      ["F85", "De bron meldt dat de aanvoer- en retourvoelers op dezelfde buis zijn aangesloten.", "electrical"],
+      ["F86", "Het vloerverwarmingscontact staat open of de betrokken voeler is ontkoppeld of defect.", "electrical"],
     ],
   }),
 ]);

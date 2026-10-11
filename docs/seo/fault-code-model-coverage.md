@@ -1,21 +1,25 @@
 # WP07 — actuele model- en brondekking
 
-Vastlegging 11 oktober 2026, gepubliceerd productbaseline `5a8d7c0`.
-Dit is een inventaris van de huidige begrensde catalogi, **geen nieuwe
-bronheraudit, bewijs van de nieuwste revisie of voltooiing van WP07**.
-De [machineleesbare inventaris](fault-code-model-coverage.json) bevat alle 31
+Vastlegging 11 oktober 2026; geaccepteerd productbaseline `b32084e5`,
+met de nog niet gepubliceerde Task48-uitbreiding hieronder apart benoemd.
+Task47 is een inventaris; Task48 leest één aanvullende historische bron.
+Dit is **geen bronheraudit van de overige catalogi, bewijs van de nieuwste
+revisie of voltooiing van WP07**.
+De [machineleesbare inventaris](fault-code-model-coverage.json) bevat alle 32
 letterlijke scopes, IDs, modellen/artikelnummers indien vastgesteld, markt/taal,
 revisie, component, tabellen/pagina’s, bronlabels/URLs, bewijsbasis en gaten.
-De hoofdonderzoeker heeft alle 31 records gelezen en de zeven bewaarde
-bronbestanden opnieuw gehasht. Alleen vijf PDF’s en de Bulex-bronweergave
+De hoofdonderzoeker heeft de oorspronkelijke 31 records gelezen en de zeven
+bewaarde bronbestanden opnieuw gehasht. Alleen vijf PDF’s en de Bulex-bronweergave
 hebben een eerdere vastgelegde SHA; Vaillant-HTML heeft hier een nieuw
-vastgelegde hash, geen eerder gepinde vergelijking.
+vastgelegde hash, geen eerder gepinde vergelijking. Task48 voegt één gelezen
+A/B-PDF, 31 genummerde regels en een achtste snapshot toe. De oorspronkelijke
+31 records, zeven snapshots en overige twaalf gidsen blijven exact behouden.
 
 ## Wat de aantallen betekenen
 
-Dertien gidsen; 37 catalogustoewijzingen; 31 afzonderlijke catalogi;
-1.565 weergegeven uitleg-/tabelregels. Zonder Bosch/Junkers-hergebruik zijn
-het 1.323 catalogusregels. Zes Bosch-catalogi worden op beide merkgidsen
+Dertien gidsen; 38 catalogustoewijzingen; 32 afzonderlijke catalogi;
+1.596 weergegeven uitleg-/tabelregels. Zonder Bosch/Junkers-hergebruik zijn
+het 1.354 catalogusregels. Zes Bosch-catalogi worden op beide merkgidsen
 gebruikt. Deze aantallen zijn niet unieke foutcodes, modellen, zoekvolume,
 Google-indexatie, klanten of resultaat. Buderus heeft 52 uitlegregels voor
 74 codecombinaties; dit zijn eveneens verschillende maten.
@@ -23,7 +27,7 @@ Google-indexatie, klanten of resultaat. Buderus heeft 52 uitlegregels voor
 | Gids | Weergegeven uitlegregels | Catalogustoewijzingen |
 |---|---:|---:|
 | Vaillant | 90 | 2 |
-| Bulex | 43 | 2 |
+| Bulex | 74 | 3 |
 | Bosch | 242 | 6 |
 | Junkers | 242 | 6 |
 | Remeha | 659 | 13 |
@@ -36,15 +40,16 @@ Google-indexatie, klanten of resultaat. Buderus heeft 52 uitlegregels voor
 | Itho Daalderop | 26 | 1 |
 | Ferroli | 37 | 1 |
 
-Er zijn 17 verschillende catalogusbron-URL’s. De websitebrede broninventaris
-heeft 58 unieke URLs; dat is een andere verzameling en wordt door deze
-inventarisatie niet opnieuw op toegankelijkheid of inhoud gecertificeerd.
+Er zijn 18 verschillende catalogusbron-URL’s. De websitebrede broninventaris
+was bij Task47 58 unieke URLs; de nieuwe bron voegt één URL toe. Dat is een
+andere verzameling en wordt door deze inventarisatie niet opnieuw op
+toegankelijkheid of inhoud gecertificeerd.
 
 ## Alle afzonderlijke catalogi
 
 Een bewaard bronbestand plus eerder afgebakend leesrapport is sterker bewijs
-dan uitsluitend een bestaande declaratie. Dertien catalogi zijn gekoppeld
-aan vijf bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
+dan uitsluitend een bestaande declaratie. Veertien catalogi zijn gekoppeld
+aan zes bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
 Zestien hebben binnen deze inventaris alleen de bestaande declaratie en
 historische bewijsregistratie (G). Bewaren/hashvergelijking is op zichzelf
 geen nieuwe inhoudelijke controle van alle foutcoderegels.
@@ -55,6 +60,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 | `vaillant-ecotec-plus-cs` | 78 | Bijlage D, p. 225-236 | [bron 2](https://support.vaillant.be/downloads/documenten/installatievoorschrift/0020282230-00-2764886.pdf) | vaillant-ecotec-pdf |
 | `bulex-publiek-overzicht` | 14 | Online overzicht | [bron 3](https://www.bulex.be/particulier/diensten/foutcodes/) | bulex-public-web-render |
 | `bulex-thema-condens` | 29 | Bijlage D, p. 37-38 | [bron 4](https://www.bulex.be/themacondens/0020124551-02-1746869.pdf) | bulex-thema-pdf |
+| `bulex-thema-condens-ab` | 31 | § 13.3, p. 33-34 | [A/B-bron](https://www.bulex.be/themacondens/0020109430-06-1746866.pdf) | bulex-thema-ab-pdf; nieuw gelezen Task48 |
 | `bosch-serie-7000i` | 31 | p. 27-30 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | G: declaratie/historisch register |
 | `bosch-serie-9000i` | 41 | p. 45-53 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | G: declaratie/historisch register |
 | `bosch-cerapur-maxx` | 47 | p. 64-75 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | G: declaratie/historisch register |
@@ -89,10 +95,22 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
   `0020282230_00`, 02.05.2023, België. De JSON koppelt alle negen exacte
   modellen aan hun artikelnummers uit p. 180; tabel Bijlage D pp. 225–236.
   Niet elke code verschijnt op elk product; andere varianten/revisies open.
-- Bulex: publiek overzicht naast uitsluitend THEMA Condens FAS 65,
+- Bulex: publiek overzicht naast afzonderlijk THEMA Condens FAS 65,
   artikel `0010010389`, `0020124551_02`, 27.02.2015, BEnl, p. 10 en
   Bijlage D pp. 37–38. F54 is een regel uit het publieke overzicht, niet
-  uit die FAS65-tabel. Geen dekking van andere THEMA-varianten afleiden.
+  uit die FAS65-tabel. Task48 leest daarnaast historische installatiehandleiding
+  `0020109430_06` (06/13), §13.3 p.33–34/PDF35–36, voor F AS 12-A,
+  F AS 25-A, F AS 30-A, F AS 30-B, F 25/30-A, F 30/35-A, F 25/30-B
+  en F 30/35-B. Aardgasvarianten BE/LU, propaanvarianten BE volgens de
+  technische tabellen; daadwerkelijke toestelbestemming/gasvariant blijft
+  bepalend. Alle 31 genummerde codes behouden, inclusief letterlijk `F 68`;
+  vier streepjes en één lege codecel zijn geen verzonnen schermcodes.
+  De lege vlamsignaalregel wordt niet F67 of een extra F65-betekenis. F54/F67
+  ontbreken in deze tabel, niet bewezen onmogelijk op ieder toestel.
+  F73/F74 krijgen elektrische diagnose, F77 gasmechanisme/optionele
+  condensaatpomp, niet de FAS65-rookgasklep. Geen mantel openen, installateur-
+  reparaties of veiligheidsbypass; onbekende artikel/firmwaremapping blijft
+  `null`. Geen dekking van andere THEMA-varianten/nieuwste revisies afleiden.
 - Bosch/Junkers: zes gedeclareerde codeboekselecties blijven afzonderlijk.
   Exacte model/productidentifiers, revisie, markt en taal zijn hier niet
   vanuit het primaire brondocument vastgesteld. Een Belgisch URL-pad of
@@ -137,17 +155,18 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
 JSON-`null` betekent: niet vastgesteld binnen deze afgebakende inventaris,
 niet dat een gegeven niet bestaat. De velddeclaratie en de bewijsbasis blijven
-onderscheiden. De vijf PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
+onderscheiden. De zes PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
 in `snapshots`; de eerdere leesrapporten blijven in de lokale recoveryledger.
 
 ## Vervolg binnen het bestaande meesterplan
 
 [M04](briefs/wp03-first-five.md): Bulex-bezoekers kunnen ook zonder bekende
-modelnaam veilig hulp vragen op de bestaande pagina. De lokale Task46-kandidaat
-voegt alleen die statische intakehulp toe, met officiële handleidingselectie,
+modelnaam veilig hulp vragen op de bestaande pagina. Task46–47 is geaccepteerd
+als `b32084e5`: statische intakehulp met officiële handleidingselectie,
 geen mantel openen/gevaarlijke foto’s, geen diagnose van een ander model en
-bestaande contactcontext. Alle 43 regels/scopes en overige twaalf gidsen blijven
-ongewijzigd; lokale test- en publicatieacceptatie staan apart in de QA-registratie.
+bestaande contactcontext. Alle oorspronkelijke 43 regels/scopes en overige
+twaalf gidsen blijven ongewijzigd. Task48 voegt uitsluitend de eigen 31 A/B-
+regels toe; lokale test- en publicatieacceptatie staan apart in de QA-registratie.
 
 Verdere modeluitbreiding pas na exacte primaire toepasbaarheid/revisie en
 consumentveilige uitleg; prioritair echte zoek-/intakevragen, niet verzonnen

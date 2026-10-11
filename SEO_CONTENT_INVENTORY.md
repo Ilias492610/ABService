@@ -2,6 +2,26 @@
 
 ## Published routes
 
+**Current accepted baseline `b32084e5`:** Task46–47 handoff/inventory has sole
+review/exactCI38145234247/423 tests, both actual Production statuses and
+canonical82/93/112/eight native profiles. Bulex43/Remeha659/thirteen guides1565
+displayed rows,37 assignments/31 distinct catalogs/1323 without shared reuse.
+The unknown-model intake help is live; deferred mobile widget overlap may need
+ordinary scrolling, not a blocked CTA. These are not indexed-page/lead counts.
+
+**Task48 local candidate:** one source-bound historical THEMA Condens A/B group,
+31 rows for eight exact variants from `0020109430_06` (06/13). Bulex74/3groups/
+4options; thirteen guides1596 displayed rows/38 assignments/32 distinct catalogs/
+1354 without shared reuse. No new route, registry, metadata, date or dependency.
+Original43 rows/scopes, unknown-model help and other12 guides remain unchanged;
+F54 public-only, blank/dash source cells do not become invented codes. Local429/
+build170/crawl82/93/112 and eight native profiles pass; sole-review/hosted/live
+remain gates.
+Same82/80/2 routes,304 municipalities/302drafts/10districts/6hubs. Latest bounded
+[coverage inventory](docs/seo/fault-code-model-coverage.md) distinguishes this
+one-source reading from unchanged declarations and owner-evidence gaps.
+Earlier entries below are dated snapshots, not current live acceptance.
+
 **Current accepted baseline `5a8d7c0`:** exact CI38127116203/415 tests, both
 actual Production statuses, canonical82/93/112 and eight live native profiles
 are verified. Remeha659; thirteen guides1565 displayed explanation rows,

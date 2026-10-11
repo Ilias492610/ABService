@@ -67,8 +67,8 @@ test("Bulex visible labels and warning limit the appendix to FAS 65 and its arti
 test("guide totals and shared Bulex F13 retain separate source-bound meanings", () => {
   assert.equal(getFaultGuide("vaillant").codeEntryCount, 90);
   const bulex = getFaultGuide("bulex");
-  assert.equal(bulex.codeEntryCount, 43);
-  assert.equal(new Set(bulex.codes.map((entry) => entry.code)).size, 34);
+  assert.equal(bulex.codeEntryCount, 74);
+  assert.equal(new Set(bulex.codes.map((entry) => entry.code)).size, 65);
   for (const query of ["F.13", "F13", " F 13 "]) {
     const result = filterFaultCatalogs(bulex.catalogs, query);
     assert.deepEqual(result.map((catalog) => catalog.id), ["bulex-publiek-overzicht", "bulex-thema-condens"]);
@@ -81,8 +81,14 @@ test("source padding remains significant and unknown padded variants never match
   assert.deepEqual(searchResult(vaillantCatalogs, "F13"), [["vaillant-publiek-overzicht", ["F.13"]]]);
   assert.deepEqual(searchResult(vaillantCatalogs, "F013"), [["vaillant-ecotec-plus-cs", ["F.013"]]]);
   assert.deepEqual(filterFaultCatalogs(vaillantCatalogs, "F13", ecoTEC.id), []);
-  for (const query of ["F.01", "F.001", "F.00", "F.013"]) {
+  // Newly sourced A/B has literal F00/F01; still absent from old source tables.
+  assert.deepEqual(searchResult(bulexCatalogs, "F.00"), [["bulex-thema-condens-ab", ["F00"]]]);
+  assert.deepEqual(searchResult(bulexCatalogs, "F.01"), [["bulex-thema-condens-ab", ["F01"]]]);
+  for (const query of ["F.001", "F.013"]) {
     assert.deepEqual(filterFaultCatalogs(bulexCatalogs, query), [], query);
+  }
+  for (const query of ["F.01", "F.00"]) for (const id of ["bulex-publiek-overzicht", "bulex-thema-condens"]) {
+    assert.deepEqual(filterFaultCatalogs(bulexCatalogs, query, id), [], `${id}/${query}`);
   }
   for (const query of ["F.0013", "F.280", "F.1050"]) {
     assert.deepEqual(filterFaultCatalogs(vaillantCatalogs, query), [], query);
