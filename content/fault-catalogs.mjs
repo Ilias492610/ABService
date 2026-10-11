@@ -82,7 +82,7 @@ export const vaillantCatalogs = Object.freeze([
     id: "vaillant-ecotec-plus-cs",
     title: "ecoTEC plus CS/1-5",
     scope:
-      "Volledige foutcodetabel uit installatie- en onderhoudshandleiding 0020282230_00 voor 15CS/1-5, 25CS/1-5, 35CS/1-5, 32CS/1-5, 36CS/1-5 en 40CS/1-5. Vaillant vermeldt dat niet elke code op elk product zichtbaar is.",
+      "Volledige foutcodetabel uit installatie- en onderhoudshandleiding 0020282230_00 van 02.05.2023, uitsluitend voor België. Geldigheid volgens p. 180, met model en artikelnummer: VC 15CS/1-5 (N-BE): 0010024567; VC 25CS/1-5 (N-BE): 0010024568; VC 35CS/1-5 (N-BE): 0010024569; VCW 32CS/1-5 (N-BE): 0010024570; VCW 36CS/1-5 (N-BE): 0010024571; VCW 40CS/1-5 (N-BE): 0010024572; VC 25CS/1-5 (P-BE): 0010039097; VCW 32CS/1-5 (P-BE): 0010039098; VCW 36CS/1-5 (P-BE): 0010039099. Niet elke code verschijnt op elk product. Andere varianten en revisies zijn niet gedekt. Controleer altijd het typeplaatje en de gebruikershandleiding van uw exacte toestel.",
     sourceLabel: "Vaillant ecoTEC plus - installatie- en onderhoudshandleiding 0020282230_00",
     sourceUrl: VAILLANT_ECOTEC_URL,
     sourcePages: "Bijlage D, p. 225-236",
@@ -139,7 +139,7 @@ export const vaillantCatalogs = Object.freeze([
       ["F.095", "De gasklepstappenmotor heeft het minimaal toegestane aantal stappen bereikt.", "gas"],
       ["F.096", "De gasklepstappenmotor heeft het maximaal toegestane aantal stappen bereikt.", "gas"],
       ["F.097", "De zelftest van de hoofdprintplaat is mislukt."],
-      ["F.105", "Na vervanging van gasklep, printplaat of productinterface moet de gasklep-offset opnieuw passend worden ingesteld.", "gas"],
+      ["F.105", "Melding over de gasblokconfiguratie (offset) na vervanging van de gasklep of van de printplaat en productinterface; professionele beoordeling door een bevoegde technicus is nodig.", "gas"],
       ["F.194", "De netadapter van de printplaat is defect."],
       ["F.195", "Het toestel heeft een significante onderspanning in de voedingsspanning gedetecteerd."],
       ["F.196", "Het toestel heeft een significante overspanning in de voedingsspanning gedetecteerd."],
@@ -197,10 +197,10 @@ export const bulexCatalogs = Object.freeze([
   }),
   catalog({
     id: "bulex-thema-condens",
-    title: "THEMA Condens",
+    title: "THEMA Condens FAS 65",
     scope:
-      "Volledige foutcodetabel uit installatie- en onderhoudshandleiding 0020124551_02. Gebruik deze tabel alleen voor een THEMA Condens waarop dit document van toepassing is.",
-    sourceLabel: "Bulex THEMA Condens - installatie- en onderhoudshandleiding 0020124551_02",
+      "Volledige foutcodetabel uit installatie- en onderhoudshandleiding 0020124551_02 van 27.02.2015, BEnl. Geldigheid volgens p. 10: uitsluitend THEMA Condens FAS 65, artikelnummer 0010010389. Andere THEMA-varianten en revisies zijn niet gedekt. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel.",
+    sourceLabel: "Bulex THEMA Condens FAS 65 - installatie- en onderhoudshandleiding 0020124551_02",
     sourceUrl: BULEX_THEMA_URL,
     sourcePages: "Bijlage D, p. 37-38",
     rows: [
@@ -228,8 +228,8 @@ export const bulexCatalogs = Object.freeze([
       ["F.70", "Ongeldige toestel-ID (DSN)."],
       ["F.71", "Fout van de aanvoertemperatuurvoeler."],
       ["F.72", "Fout van de aanvoer- en/of retourtemperatuurvoeler."],
-      ["F.73", "Signaal van de waterdruksensor is te laag.", "pressure"],
-      ["F.74", "Signaal van de waterdruksensor is te hoog.", "pressure"],
+      ["F.73", "Signaal van de waterdruksensor is te laag.", "electrical"],
+      ["F.74", "Signaal van de waterdruksensor is te hoog.", "electrical"],
       ["F.75", "Geen druksprong herkend bij het starten van de pomp.", "pressure"],
       ["F.77", "Fout van de rookgasklep of condenspomp.", "flue"],
       ["con", "Geen communicatie met de printplaat."],

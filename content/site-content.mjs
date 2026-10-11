@@ -179,18 +179,20 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Vaillant foutcodes: betekenis en veilig handelen | AB Service",
     description:
-      "Doorzoek alle codes uit het officiële Vaillant-overzicht en de volledige ecoTEC plus CS/1-5-tabel, met modelwaarschuwingen en veilige eerste stappen.",
+      "Vaillant-codes uit het Belgische consumentenoverzicht en ecoTEC plus CS/1-5-handleiding 0020282230_00 voor negen benoemde modellen. Controleer uw typeplaatje.",
     changeFrequency: "monthly",
     priority: 0.6,
+    lastModified: "2026-10-11",
   },
   {
     path: "/foutcodes/bulex",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Bulex foutcodes: betekenis en veilig handelen | AB Service",
     description:
-      "Doorzoek alle codes uit het officiële Bulex-overzicht en de volledige THEMA Condens-tabel, met bronvermelding en veilige eerste stappen.",
+      "Bulex-codes uit het Belgische consumentenoverzicht en de handleiding voor THEMA Condens FAS 65 (0010010389), met modelgrenzen en veilige eerste stappen.",
     changeFrequency: "monthly",
     priority: 0.6,
+    lastModified: "2026-10-11",
   },
   {
     path: "/foutcodes/bosch",

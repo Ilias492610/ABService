@@ -19,7 +19,7 @@ test("Remeha metadata includes the documented Ace-Matic family and no universal 
 test("Remeha sitemap records the actual substantive catalog change without dating unrelated guides", () => {
   const entries = buildSitemapEntries(pageRegistry);
   assert.equal(entries.find(e => e.url === "https://www.abservice24.be/foutcodes/remeha").lastModified, "2026-10-11");
-  for (const path of ["/foutcodes/vaillant", "/foutcodes/acv", "/foutcodes/bulex"]) {
+  for (const path of ["/foutcodes/acv"]) {
     assert.equal(getPageDefinition(path).lastModified, undefined);
   }
 });

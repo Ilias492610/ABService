@@ -44,7 +44,7 @@ export const faultGuides = Object.freeze([
     slug: "vaillant",
     brand: "Vaillant",
     modelWarning:
-      "Deze catalogus combineert het volledige officiële Belgische consumentenoverzicht met de volledige foutcodetabel voor de genoemde ecoTEC plus CS/1-5-modellen. Een code kan op een andere Vaillant-reeks iets anders betekenen of niet voorkomen.",
+      "Deze catalogus combineert het officiële Belgische consumentenoverzicht met de volledige foutcodetabel uit 0020282230_00 voor de negen hieronder genoemde Belgische ecoTEC plus CS/1-5-modellen en artikelnummers. Niet elke code komt op elk product voor; andere varianten en revisies zijn niet gedekt. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel voordat u een betekenis toepast.",
     catalogs: vaillantCatalogs,
     documentationLabel: "Alle officiële Vaillant-documentatie",
     documentationUrl: "https://support.vaillant.be/alle-documentatie/",
@@ -53,7 +53,7 @@ export const faultGuides = Object.freeze([
     slug: "bulex",
     brand: "Bulex",
     modelWarning:
-      "Deze catalogus bevat alle codes uit het officiële Belgische consumentenoverzicht en de volledige tabel voor het model THEMA Condens 0020124551_02. Controleer het typeplaatje en de handleiding voordat u een betekenis toepast.",
+      "Deze catalogus bevat alle codes uit het officiële Belgische consumentenoverzicht en de volledige tabel uit 0020124551_02 voor uitsluitend THEMA Condens FAS 65, artikelnummer 0010010389, BEnl. Andere THEMA-varianten en revisies zijn niet gedekt. Dezelfde code kan per bron een andere betekenis hebben. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel voordat u een betekenis toepast.",
     catalogs: bulexCatalogs,
     documentationLabel: "Officiële Bulex-gebruikshandleidingen",
     documentationUrl: "https://www.bulex.be/particulier/documentatie/technische-documentaties/handleidingen/",
