@@ -41,7 +41,11 @@ export default function WaterMeterCheck() {
     const next = getWaterMeterObservation(input);
     setResult(next);
     emit("water_meter_check_complete", { location: "water_meter_check", result: next.status });
-    requestAnimationFrame(() => resultPanel.current?.focus());
+    requestAnimationFrame(() => {
+      const panel = resultPanel.current;
+      panel?.focus({ preventScroll: true });
+      panel?.scrollIntoView({ block: "start", behavior: "instant" });
+    });
   };
   const reset = () => {
     setInput(initialInput);

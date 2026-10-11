@@ -32,7 +32,7 @@ const nodes = (element, predicate) => {
 };
 
 async function harness() {
-  const states = [], refs = [], events = [], frames = [], focuses = [];
+  const states = [], refs = [], events = [], frames = [], focuses = [], movements = [];
   let stateIndex = 0, refIndex = 0;
   const hooks = { ...React,
     useSyncExternalStore: () => true,
@@ -43,7 +43,13 @@ async function harness() {
   const render = () => {
     stateIndex = 0; refIndex = 0;
     const element = compiled.default();
-    for (const node of nodes(element, (node) => node.props?.ref)) node.props.ref.current = { focus: () => focuses.push(node.props.id) };
+    for (const node of nodes(element, (node) => node.props?.ref)) node.props.ref.current = {
+      focus: (options) => {
+        focuses.push(node.props.id);
+        movements.push({ action: "focus", id: node.props.id, preventScroll: options?.preventScroll });
+      },
+      scrollIntoView: ({ block, behavior }) => movements.push({ action: "scroll", id: node.props.id, block, behavior }),
+    };
     return element;
   };
   const update = (values) => {
@@ -54,17 +60,37 @@ async function harness() {
     }
     return render();
   };
-  const submit = () => {
+  const submit = (flushFrames = true) => {
     const form = nodes(render(), (node) => node.type === "form")[0];
     assert.ok(form, "Missing local calculator form");
     form.props.onSubmit({ preventDefault() {} });
     const element = render();
-    while (frames.length) frames.shift()();
+    if (flushFrames) while (frames.length) frames.shift()();
     return element;
   };
-  return { render, update, submit, events, focuses, frames };
+  return { render, update, submit, events, focuses, frames, movements };
 }
 const valid = { safeAccess: "yes", waterNearElectricity: "no", meterScope: "own", waterUse: "none", unit: "m3", firstReading: "123,456", secondReading: "123,457", minutes: "30" };
+
+for (const [label, input] of [
+  ["positive observation", valid],
+  ["zero observation", { ...valid, secondReading: "123,456" }],
+  ["unknown input", {}],
+  ["invalid input", { ...valid, firstReading: "1e3" }],
+  ["unsafe input", { ...valid, safeAccess: "no" }],
+]) {
+  test(`scheduled submit focus deliberately starts below the header for ${label}`, async () => {
+    const h = await harness(); h.update(input);
+    h.submit(false);
+    assert.deepEqual(h.movements, [], "Focus must wait for the committed result frame");
+    assert.equal(h.frames.length, 1);
+    h.frames.shift()();
+    assert.deepEqual(h.movements, [
+      { action: "focus", id: "watermeterresultaat", preventScroll: true },
+      { action: "scroll", id: "watermeterresultaat", block: "start", behavior: "instant" },
+    ]);
+  });
+}
 
 test("server page has one H1, useful safe preparation, real sources, issuer and separate dates", () => {
   const document = pageDom();
@@ -173,6 +199,7 @@ test("every changed input clears the stale result and reset clears inputs and re
   assert.ok(document.querySelectorAll("input").every((input) => input.getAttribute("value") === ""));
   assert.ok(document.querySelectorAll("select").every((select) => select.querySelector("option[selected]")?.getAttribute("value") === "unknown"));
   assert.equal(h.focuses.at(-1), "water-safeAccess");
+  assert.deepEqual(h.movements.at(-1), { action: "focus", id: "water-safeAccess", preventScroll: undefined });
   assert.equal(document.querySelectorAll('a[href^="/contact"]').length, 0);
 });
 
