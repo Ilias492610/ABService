@@ -1,5 +1,6 @@
 import { createFaultCatalog } from "./fault-catalogs.mjs";
 import { calentaAceMaticCatalogs } from "./remeha-calenta-ace-matic.mjs";
+import { calentaAceMatic25LCatalogs } from "./remeha-calenta-ace-matic-25l.mjs";
 
 const CALENTA_LEGACY_BE_URL = "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf";
 
@@ -95,6 +96,7 @@ export const remehaCatalogs = Object.freeze([
     ],
   }),
   ...calentaAceMaticCatalogs,
+  ...calentaAceMatic25LCatalogs,
 ]);
 
 export const buderusCatalogs = Object.freeze([

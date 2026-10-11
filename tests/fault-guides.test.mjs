@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 
 import { faultGuides } from "../content/fault-guides.mjs";
 import { sourceFacts } from "./fixtures/remeha-calenta-ace-matic.mjs";
+import { sourceFacts as source25L } from "./fixtures/remeha-calenta-ace-matic-25l.mjs";
 
 const bySlug = (slug) => faultGuides.find((guide) => guide.slug === slug);
 
@@ -37,7 +38,7 @@ test("all published fault guides use official sources and explicit model caveats
       assert.ok(catalog.sourceUrl.startsWith("https://"));
       const hostname = new URL(catalog.sourceUrl).hostname;
       if (hostname === "edge.sitecorecloud.io") {
-        assert.equal(catalog.sourceUrl, sourceFacts.sourceUrl);
+        assert.ok([sourceFacts.sourceUrl, source25L.sourceUrl].includes(catalog.sourceUrl));
       } else assert.match(
         hostname,
         /(^|\.)(vaillant\.be|bulex\.be|bosch-homecomfort\.com|remeha\.be|remehatools\.be|boschtt-documents\.com|viessmann\.de|acv\.com|intergas-verwarming\.nl|nefit-bosch\.nl|atagwarmte\.nl|compano\.com|ferroli\.com)$/
@@ -54,7 +55,7 @@ test("catalog coverage matches every row in the cited manufacturer tables", () =
   assert.equal(bySlug("bulex").codeEntryCount, 43);
   assert.equal(bySlug("bosch").codeEntryCount, 242);
   assert.equal(bySlug("junkers").codeEntryCount, 242);
-  assert.equal(bySlug("remeha").codeEntryCount, 359);
+  assert.equal(bySlug("remeha").codeEntryCount, 659);
   assert.equal(bySlug("buderus").codeEntryCount, 52);
   assert.equal(bySlug("viessmann").codeEntryCount, 71);
   assert.equal(bySlug("acv").codeEntryCount, 24);

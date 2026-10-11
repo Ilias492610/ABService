@@ -1,5 +1,28 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — separate Calenta Ace-Matic 25L candidate
+
+- Reads the genuine separate Belgian 25L manual, actual revision
+  `7871254-04-04072025`, NL tables 224–228. Independent source-column comparison
+  confirms 300 matching code/description/installer rows with the already-read
+  four-model tables; this does not establish configuration compatibility.
+- Adds five separately attributed 25L CU/SCB groups, with their own model scope,
+  revision, source URL and pages. Reuses only checked safe explanations/actions;
+  source contradictions and the unspecified H03.254 remain explicit. No DIY
+  gas adjustment, safety bypass, new route, dealer or all-model claim.
+- Remeha candidate: 659 explanation rows; all thirteen guides: 1565 displayed
+  rows, not unique codes. Original eight Remeha groups and other brand contracts
+  are preserved. Real RED 1/6→GREEN 6/6; full 415 tests, lint, production audit 0,
+  build 170 and local crawl 82/93/112 pass. Eight native browser profiles pass.
+- Three matched local mobile runs per build: median performance 97→96, LCP
+  2618.416→2698.9245 ms, TBT 5→6.5 ms, CLS 0, transfer 293509→311293 bytes.
+  Accessibility/best practices/SEO remain 100. Descriptive local lab evidence,
+  not a causal speed gain, homepage/field measurement or commercial result.
+- Sole final review and exact hosted/canonical publication remain next. The
+  preceding `d605b8b` is accepted: CI 38122061458 / 409 tests, both actual
+  Production statuses, canonical 82/93/112 and eight native profiles. Earlier
+  candidate entries below retain their original phase; wider WP gates stay open.
+
 ## 11 October 2026 — conditional local advice and contextual tool follow-up
 
 - Local candidate makes Borgerhout's actual hero building advice conditional

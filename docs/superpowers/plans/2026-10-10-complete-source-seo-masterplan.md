@@ -353,6 +353,20 @@ groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
+**Task45 — aparte 25L-kandidaat, 11 oktober:** echte Belgische handleiding
+7871254-04-04072025, NL tabellen224–228 p346–369 volledig gelezen; onafhankelijke
+vergelijking van alle300codes/volgorde/beschrijvings-/installateurkolommen is exact
+gelijk aan de bestaande viermodeltabellen. Geen configuratie-/generatiecompatibiliteit
+afgeleid. Vijf afzonderlijke25Lcatalogi met eigen IDs/revisie/bron/pagina's en CU/SCB-
+beperkingen hergebruiken alleen gecontroleerde veilige uitleg. Bronambiguïteiten en
+H03.254 blijven expliciet; oorspronkelijke acht groepen en overige merken behouden.
+Remeha659/dertienguides1565uitlegregels, niet unieke codes/allemodellen. Echte RED→GREEN,
+415tests/lint/productieaudit0/build170/local82/93/112 en acht native browserprofielen
+slagen. Zes gelijk ingestelde lokale Remeha-labruns: medianeLCP2618.416→2698.9245ms,
+performance97→96, CLS0, toegankelijkheid/BP/SEO100; beschrijvend, geen snelheidswinst
+of veld-/klantresultaat. Sole final review/exacte productieacceptatie volgen apart.
+Geen nieuwe route/datum/dependency/IndexNowmelding of geheleWP07-afvinking.
+
 **Files:** `content/fault-guides.mjs`, `content/fault-catalogs.mjs`, `content/additional-fault-catalogs.mjs`, `content/brand-services.mjs`, `libs/fault-search.mjs`, `components/fault-code-catalog.js`, source-/fault-tests en publicatieregister.
 
 - [ ] Dekking per Vaillant, Bulex, Bosch, Junkers, Remeha, Buderus, Viessmann, ACV, Intergas, Nefit Bosch, ATAG, Itho Daalderop en Ferroli: toestel/model/productcode, markttaal, revisie, pagina's, codefamilie en niet-gedekte modellen.
@@ -401,6 +415,14 @@ errors/overflow. Eén echte drie-guide IndexNow-meldingHTTP200 na preview/livech
 is geen indexatiebewijs. Bron403/development9 en bredere WP07-dekking blijven open.
 
 ### WP08 — Geografische groei met lokale klantwaarde
+
+**Latere begrensde acceptatie d605b8b:** sole onafhankelijke whole-cohortreview,
+fresh409premerge/merged, exactCI38122061458/Node24.21.0/lint/productie0/build170/
+hosted82/93/112 en beide daadwerkelijke Productionstatuses slagen. Canonical82/93/112
+en acht aangescherpte nativeprofielen bevestigen allevierBrusselsunderlines, native
+FAQ/tool/formulierdoorstap/focus;214browserGET+1sitemap en0writes/external/pageerrors/
+overflow. Geen nieuw Lighthouse/IndexNow of menselijke lokale-waarde-/caseacceptatie.
+Dit sluit uitsluitend de twee copy/linkvoorstellen hieronder, niet geheelWP08.
 
 **Verdere begrensde uitvoering 11 oktober:** Limburg is geaccepteerd in
 `eb0bf76`; de overige twee bestaande voorstellen zijn nu lokale kandidaten.

@@ -45,6 +45,11 @@ const cuBlocking = "remeha-calenta-ace-matic-cu-blocking";
 const scbBlocking = "remeha-calenta-ace-matic-scb-blocking";
 const cuWarnings = "remeha-calenta-ace-matic-cu-warnings";
 const scbWarnings = "remeha-calenta-ace-matic-scb-warnings";
+const cu25LLocking = "remeha-calenta-ace-matic-25l-cu-locking";
+const cu25LBlocking = "remeha-calenta-ace-matic-25l-cu-blocking";
+const scb25LBlocking = "remeha-calenta-ace-matic-25l-scb-blocking";
+const cu25LWarnings = "remeha-calenta-ace-matic-25l-cu-warnings";
+const scb25LWarnings = "remeha-calenta-ace-matic-25l-scb-warnings";
 
 test("actual Ace-Matic full subcodes never select longer subcodes", () => {
   for (const [code, queries] of [
@@ -54,7 +59,7 @@ test("actual Ace-Matic full subcodes never select longer subcodes", () => {
     ["E04.254", ["E04.254", "e04:254", "E 04 254"]],
   ]) {
     for (const query of queries) {
-      assert.deepEqual(matches(filterFaultCatalogs(remeha, query)), [[cuLocking, [code]]], query);
+      assert.deepEqual(matches(filterFaultCatalogs(remeha, query)), [[cuLocking, [code]], [cu25LLocking, [code]]], query);
     }
   }
 });
@@ -70,16 +75,16 @@ test("actual E02 preserves both legacy meanings without selecting Ace-Matic E02 
 });
 
 test("identical complete codes preserve distinct CU and SCB meanings and selected components", () => {
-  assert.deepEqual(matches(filterFaultCatalogs(remeha, "H03.54")), [[cuBlocking, ["H03.54"]]]);
+  assert.deepEqual(matches(filterFaultCatalogs(remeha, "H03.54")), [[cuBlocking, ["H03.54"]], [cu25LBlocking, ["H03.54"]]]);
   const h254 = filterFaultCatalogs(remeha, "H03.254");
-  assert.deepEqual(matches(h254), [[cuBlocking, ["H03.254"]], [scbBlocking, ["H.03.254"]]]);
+  assert.deepEqual(matches(h254), [[cuBlocking, ["H03.254"]], [scbBlocking, ["H.03.254"]], [cu25LBlocking, ["H03.254"]], [scb25LBlocking, ["H.03.254"]]]);
   assert.match(h254[0].codes[0].meaning, /geen specifieke diagnose/i);
   assert.notEqual(h254[0].codes[0].meaning, h254[1].codes[0].meaning);
   const a18 = filterFaultCatalogs(remeha, "a:02:18");
-  assert.deepEqual(matches(a18), [[cuWarnings, ["A02.18"]], [scbWarnings, ["A.02.18"]]]);
+  assert.deepEqual(matches(a18), [[cuWarnings, ["A02.18"]], [scbWarnings, ["A.02.18"]], [cu25LWarnings, ["A02.18"]], [scb25LWarnings, ["A.02.18"]]]);
   assert.match(a18[0].codes[0].meaning, /configuratie/i);
   assert.match(a18[1].codes[0].meaning, /woordenboekobject/i);
-  for (const [id, code] of [[cuWarnings, "A02.18"], [scbWarnings, "A.02.18"]]) {
+  for (const [id, code] of [[cuWarnings, "A02.18"], [scbWarnings, "A.02.18"], [cu25LWarnings, "A02.18"], [scb25LWarnings, "A.02.18"]]) {
     assert.deepEqual(matches(filterFaultCatalogs(remeha, "A02.18", id)), [[id, [code]]]);
   }
 });
@@ -194,11 +199,11 @@ test("descriptions, accents, natural phrases and incomplete EA family browsing s
   assert.deepEqual(matches(filterFaultCatalogs(guideCatalogs("bosch"), "EA", "bosch-serie-3")), [["bosch-serie-3", ["d3", "d5", "E2", "E9", "EA"]]]);
 });
 
-test("empty current-catalog queries restore 359 rows without changing metadata or source records", () => {
+test("empty current-catalog queries restore 659 rows without changing metadata or source records", () => {
   const snapshot = JSON.stringify(remeha);
   filterFaultCatalogs(remeha, "E04.25");
   const restored = filterFaultCatalogs(remeha, " \t ");
-  assert.equal(restored.reduce((total, catalog) => total + catalog.codes.length, 0), 359);
+  assert.equal(restored.reduce((total, catalog) => total + catalog.codes.length, 0), 659);
   assert.equal(JSON.stringify(remeha), snapshot);
   assert.deepEqual(restored, remeha);
   assert.notEqual(restored, remeha);

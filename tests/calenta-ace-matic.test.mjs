@@ -8,9 +8,9 @@ const guide = faultGuides.find(({ slug }) => slug === "remeha");
 const catalogById = (id) => guide.catalogs.find((catalog) => catalog.id === id);
 const row = (suffix, code) => catalogById(`remeha-calenta-ace-matic-${suffix}`)?.codes.find((entry) => entry.code === code);
 
-test("Remeha exposes exactly the five component-bound Ace-Matic source tables after unchanged legacy catalogs", async () => {
-  assert.deepEqual(guide.catalogs.slice(3).map(({ id }) => id), sourceTables.map(({ id }) => id));
-  assert.equal(guide.codeEntryCount, 359);
+test("Remeha retains the original five component-bound Ace-Matic source tables after unchanged legacy catalogs", async () => {
+  assert.deepEqual(guide.catalogs.slice(3, 8).map(({ id }) => id), sourceTables.map(({ id }) => id));
+  assert.equal(guide.catalogs.slice(0, 8).flatMap(({ codes }) => codes).length, 359);
   assert.deepEqual(guide.catalogs.slice(0, 3).map(({ id, codes }) => [id, codes.length]), [
     ["remeha-avanta", 17], ["remeha-calenta-legacy", 23], ["remeha-calenta-legacy-blocking", 19],
   ]);
@@ -22,7 +22,7 @@ test("Remeha exposes exactly the five component-bound Ace-Matic source tables af
   assert.ok(Object.isFrozen(calentaAceMaticSource));
   assert.ok(Object.isFrozen(calentaAceMaticSource.models));
   assert.ok(Object.isFrozen(calentaAceMaticCatalogs));
-  assert.deepEqual(calentaAceMaticCatalogs, guide.catalogs.slice(3));
+  assert.deepEqual(calentaAceMaticCatalogs, guide.catalogs.slice(3, 8));
 
   for (const expected of sourceTables) {
     const catalog = catalogById(expected.id);

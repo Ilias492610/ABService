@@ -1,5 +1,41 @@
 # Evidence Register
 
+## 11 October 2026 — separate 25L source and local candidate
+
+The actual [Belgian Calenta Ace-Matic product page](https://www.remeha.be/product/calenta-ace-matic)
+links a distinct [25L manual](https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/7871254-Calenta-Ace-Matic-25L-ISM-SCB10-BE-de-fr-nl.pdf).
+Genuine GET200, 372 pages, actual footer7871254-04-04072025, SHA256
+`415d7c7523048df22196e153c534008140f8c0eb378d6ce7c21fe929bd4490db`.
+Belgium/Luxembourg NL tables224–228: CU A18 p346, H41 pp347–350, E47 pp350–354;
+SCB A60 pp355–359 and H134 pp359–369. Root reads every extracted description,
+relevant original pages and eight rendered layouts. Independent source artifacts
+in the retained Task45 ledger compare all300 literal codes/order/description and
+installer columns with existing four-model revision7871265-05-04072025:
+all exact before normalization, no extra/missing rows. This is table equality,
+not universal model/configuration compatibility or a device inspection.
+
+Local candidate gives 25L five own catalogs with own IDs/revision/source/pages,
+reusing only verified consumer-safe meaning/action/search pairs. Independent
+inventories, semantic digests and original-eight hash guard unintended drift.
+Unspecified CUH03.254 and contradictory SCB descriptions remain explicit;
+installer bypasses and gas/closed-component work are not consumer instructions.
+Remeha659, thirteen-guide1565 displayed explanation rows, not unique codes or
+whole-brand coverage. Real RED→GREEN;415tests/lint/productionaudit0/build170/
+local82/93/112 and eight native browser profiles pass,264localGET/0write/external/
+pageerrors/overflow; only exact intercepted rating503 diagnostics allowed.
+Six matched local mobile lab runs retain CLS0 and 100 accessibility/BP/SEO;
+median performance97→96, LCP2618.416→2698.9245ms and bytes293509→311293.
+Descriptive evidence, not causal improvement/field/homepage/business proof.
+Sole final review/exact release remain next; no IndexNow submission yet.
+
+Preceding d605b8b is accepted: sole review, fresh409premerge/merged, exact
+CI38122061458 success07:39:37UTC/Node24.21.0/install411412/lint/production0/
+build170/hosted82/93/112. Actual Production primary6992556204 success07:39:08,
+secondary6992559749 success07:39:31. Fresh canonical82/93/112/eightnativeprofiles
+pass,214browserGET+1sitemap, allfourBrusselsunderlines and nativeFAQ/tool/contact
+clearance/focus;0writes/externalGET/pageerrors/overflow/exactfixture503only.
+No new Lighthouse, IndexNow or broader WP/private/account evidence inferred.
+
 ## 11 October 2026 — preparation acceptance and remaining local follow-ups
 
 Reviewed `eb0bf76101249a6ba9c793fbe9932a0ada628a30` is published normally on

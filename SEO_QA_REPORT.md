@@ -1,5 +1,72 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — independent 25L coverage candidate and preceding acceptance
+
+Task45 adds only the separately documented Calenta Ace-Matic 25L revision
+`7871254-04-04072025`, Belgium/Luxembourg, Dutch tables 224–228, pp. 346–369.
+Root reads all 300 extracted descriptions, relevant original pages and eight
+rendered layouts. The independent comparison checks literal codes/order,
+description and installer columns against the existing four-model manual:
+all 300 rows match before normalization. This permits reuse of checked consumer
+paraphrases, not a claim of firmware/configuration or cross-generation coverage.
+Five own IDs, source/page attributions and CU/SCB scope exclusions remain visible.
+Conflicting SCB descriptions and empty CU H03.254 are not invented diagnoses;
+installer bypass/reset/closed-component instructions are not consumer advice.
+
+Real RED 1/6 precedes implementation; all six new tests then pass. Independent
+literal inventories, all five semantic digests and the original eight-catalog
+digest protect prior/new scope. Older preservation hashes are unchanged: their
+normalization allows only these approved Remeha additions and exact warning.
+Fresh 415/415 tests, lint, production dependency audit 0, build 170 and local
+crawl 82 pages / 93 links / 112 assets pass. Candidate Remeha rows are 659;
+all thirteen guides display 1565 rows over 37 assignments / 31 distinct catalogs
+(1323 before shared-catalog reuse), not unique codes or universal coverage.
+The source graph now has 58 unique cited URLs; unchanged sources are not newly
+audited or inferred accessible from this one genuine PDF download.
+
+Eight actual desktop/mobile × JS/no-JS × motion profiles pass: initial 659 rows,
+13 groups / 14 options; five exact 25L source/revision/table/page inventories;
+all original row text/title/scope/source and other-brand contracts preserved.
+Native keyboard typeahead selects each new group. Full-code digits, CU/SCB
+H02.38 meanings, contradictory-source text, unknown/restore, pump and numbered
+LIN-pump searches pass. Native service CTA preserves Herstelling; after actual
+navigation settles, the form clears the fixed header and one native Tab reaches
+the name field. There are 264 local GET-only requests, zero blocked external or
+write requests, page errors or horizontal overflow. JS console permits only the
+exact deliberately intercepted rating-503 fixture; no-JS console is empty.
+Root reads the script/results and actual mobile CU, desktop SCB and contact-focus
+screenshots. Initial harness failures (blocking/locking substring, native select
+keys, automatic-focus expectation and fragment-navigation timing) remain separate
+diagnostics; no contact or select product fix was required.
+
+Exactly three matched local Remeha mobile Lighthouse runs per build use
+13.5.0 / Chrome 156, complete identical settings, simulated 412×823 / DPR 1.75,
+CPU ×4, RTT 150 and throughput 1638.4, with storage reset and unblocked providers.
+Before performance: 99/97/97; after: 96/96/99. Accessibility, best practices and
+SEO are 100 throughout. LCP before 2046.87475/2618.416/2620.083 ms; after
+2698.9245/2778.783625/2183.973 ms. TBT before 6/4/5 ms; after 6.5/7/6.5 ms.
+CLS is 0 throughout. Transfer before 294449/293509/293124 bytes; after
+312080/311293/310746 bytes. Medians: performance 97→96, LCP +80.5085 ms,
+TBT +1.5 ms and transfer +17784 bytes. All actual lab console/network failures,
+runtime errors and warnings are empty. This is descriptive one-route lab evidence,
+not causality, field CWV, INP, a homepage measurement or business improvement.
+
+Fresh sole whole-cohort review and exact hosted/provider/canonical acceptance
+remain next. No new model page, route, dependency, content date, service claim,
+case, local approval, account grant or IndexNow notification is established yet.
+
+The preceding `d605b8b22a31bb774ef7794b09fa44c62f19aa5f` is accepted after sole
+whole-cohort review and fresh 409 premerge/merged tests. Exact
+[CI 38122061458](https://github.com/Ilias492610/ABService/actions/runs/38122061458)
+succeeds at 07:39:37 UTC: Node 24.21.0, install 411/412, lint, production audit 0,
+build 170 and hosted 82/93/112. Actual Production statuses succeed: primary
+6992556204 at 07:39:08 UTC, secondary 6992559749 at 07:39:31 UTC. Fresh canonical
+82/93/112 and eight tightened native profiles pass, 214 browser GETs plus one
+sitemap GET, all four Brussels link underlines, native FAQ/tool/keyboard/form
+clearance and focus. No writes, external GETs, page errors or overflow; exact
+controlled rating503 only. No redundant Lighthouse or IndexNow for those small
+copy/link edits. Historical candidate sections below remain dated stages.
+
 ## 11 October 2026 — local follow-up candidate; preceding preparation release
 
 The two remaining bounded proposals in the local-value review are implemented

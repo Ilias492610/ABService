@@ -2,6 +2,18 @@
 
 ## Published routes
 
+**Current published baseline d605b8b; Task45 local candidate:** preceding local
+copy/tool changes are reviewed, exact CI 38122061458 / 409 tests and both actual
+Production statuses accepted, with canonical 82/93/112 and eight native profiles.
+The separate 25L candidate adds 300 source-bound rows on the existing Remeha URL:
+659 Remeha / 1565 displayed rows across thirteen guides, 37 assignments / 31
+distinct catalogs (1323 before shared reuse), not unique codes or all models.
+Own revision7871254-04-04072025 / NL tables224–228 pp346–369, CU106/SCB194;
+the original four-model revision/exclusions remain intact. Local415tests/build170/
+82/93/112 and eight browser profiles pass; fresh final review/production acceptance
+remain next. Same82/80/2 routes,304municipalities/302drafts/10districts/6hubs.
+Earlier dated inventory snapshots below are historical, not current coverage.
+
 **Latest acceptance6b1f5a6:** native FAQ clearance and strict static no-JS fallback
 are whole-branch reviewed, hosted and canonical verified.376tests/build170/
 82pages/93destinations/112assets, both VercelProduction statuses and24responsive
@@ -140,7 +152,7 @@ in the QA record, separate from a published registry value.
 | `/foutcodes/bulex` | Bulex foutcodes: betekenis en veilig handelen \| AB Service | Bulex foutcodes: catalogus met officiële bronnen | Bulex fault guidance and code lookup | Index | Hub, contact, official documentation | Bulex Belgium overview plus complete THEMA Condens appendix; 43 source rows |
 | `/foutcodes/bosch` | Bosch foutcodes: officiële bron en veilige stappen \| AB Service | Bosch foutcodes: catalogus met officiële bronnen | Bosch fault guidance and model-filtered lookup | Index | Hub, contact, official documentation | Official Bosch/Junkers codebook, six boiler series; 242 source rows |
 | `/foutcodes/junkers` | Junkers foutcodes: officiële bron en veilige stappen \| AB Service | Junkers foutcodes: catalogus met officiële bronnen | Junkers fault guidance and model-filtered lookup | Index | Hub, contact, official documentation | Official Bosch/Junkers codebook, six boiler series; 242 source rows |
-| `/foutcodes/remeha` | Remeha foutcodes: Avanta, Calenta en Ace-Matic \| AB Service | Remeha foutcodes: catalogus met officiële bronnen | Separate legacy and current model/component lookup, exact full-code search | Index | Existing hub, brand/service, contact, Storingswijzer, Belgian archive and genuine current PDF | Avanta17; historical Calenta manual117061-08 E23/Su19; Ace-Matic25s/35s/30c/40c revision7871265-05-04072025 CU106/SCB194;359 total;25L excluded; known source ambiguities visible |
+| `/foutcodes/remeha` | Remeha foutcodes: Avanta, Calenta en Ace-Matic \| AB Service | Remeha foutcodes: catalogus met officiële bronnen | Separate legacy and current model/component lookup, exact full-code search | Index | Existing hub, brand/service, contact, Storingswijzer, Belgian archive and separate genuine PDFs | Accepted baseline359: Avanta17; historical Calenta117061-08 E23/Su19; Ace-Matic25s/35s/30c/40c revision7871265-05-04072025 CU106/SCB194. Local candidate659 adds separate25L revision7871254-04-04072025 CU106/SCB194; own exclusions/sources and known ambiguities retained; review/release separate |
 | `/foutcodes/buderus` | Buderus GB162 foutcodes: officiële bron \| AB Service | Buderus foutcodes: catalogus met officiële bronnen | Buderus GB162 V2 code lookup | Index | Hub, contact, official documentation | Reviewed candidate: installation manual6720813438 (2021/07) BE;52 selected explanation groups/74combinations,14 operating/test/reset states excluded; exact component conditions |
 | `/foutcodes/viessmann` | Viessmann foutcodes: Vitodens en Vitotronic \| AB Service | Viessmann foutcodes: catalogus met officiële bronnen | Viessmann orientation lookup | Index | Hub, contact, official documentation | Official 200-W/300-W Vitotronic overview; 71 source rows; manufacturer non-universal warning retained |
 | `/foutcodes/acv` | ACV Prestige foutcodes: betekenis en stappen \| AB Service | ACV foutcodes: catalogus met officiële bronnen | ACV Prestige MKIII code lookup | Index | Hub, contact, official documentation | Complete named ESYS table; 24 source rows |
