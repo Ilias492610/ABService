@@ -1,9 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import TrackedLink from "@/components/tracked-link";
 import { business } from "@/content/business.mjs";
 import { formatGoogleRating } from "@/libs/google-reviews.mjs";
+
+const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result";
+
+function focusHeader() {
+  document.querySelector(".site-header .brand")?.focus({ preventScroll: true });
+}
 
 function WhatsAppLogo() {
   return (
@@ -27,6 +34,72 @@ function GoogleLogo() {
 export default function FloatingTrustSignals() {
   const [showRating, setShowRating] = useState(true);
   const [rating, setRating] = useState(null);
+  const [clearProtectedContent, setClearProtectedContent] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    let active = true;
+    const zones = new Map();
+    const updateClearance = () => {
+      if (!active) return;
+      const clear = [...zones.values()].some(Boolean);
+      if (clear && document.activeElement?.closest(".whatsapp-button, .google-rating-popup")) focusHeader();
+      setClearProtectedContent(clear);
+    };
+    const intersectsViewport = (node) => {
+      const rect = node.getBoundingClientRect();
+      return rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight && rect.right > 0 && rect.left < window.innerWidth;
+    };
+    const observer = new IntersectionObserver((entries) => {
+      if (!active) return;
+      for (const entry of entries) {
+        if (zones.has(entry.target)) zones.set(entry.target, entry.isIntersecting);
+      }
+      updateClearance();
+    });
+    const observe = (node) => {
+      if (zones.has(node)) return;
+      zones.set(node, intersectsViewport(node));
+      observer.observe(node);
+    };
+    const visitZones = (node, visit) => {
+      if (node.nodeType !== 1) return;
+      if (node.matches(protectedZones)) visit(node);
+      for (const zone of node.querySelectorAll(protectedZones)) visit(zone);
+    };
+    for (const zone of document.querySelectorAll(protectedZones)) observe(zone);
+    updateClearance();
+
+    // Route content and tool results can mount after the pathname effect.
+    // Watch only element insertion/removal inside the persistent main region.
+    const mutations = new MutationObserver((records) => {
+      if (!active) return;
+      for (const record of records) {
+        for (const node of record.removedNodes) visitZones(node, (zone) => {
+          observer.unobserve(zone);
+          zones.delete(zone);
+        });
+        for (const node of record.addedNodes) visitZones(node, observe);
+      }
+      updateClearance();
+    });
+    const main = document.querySelector("main");
+    if (main) mutations.observe(main, { childList: true, subtree: true });
+    return () => {
+      active = false;
+      observer.disconnect();
+      mutations.disconnect();
+    };
+  }, [pathname]);
+
+  const dismissRating = (event) => {
+    if (document.activeElement === event.currentTarget) {
+      const whatsapp = document.querySelector(".whatsapp-button");
+      if (whatsapp?.getClientRects().length) whatsapp.focus({ preventScroll: true });
+      else focusHeader();
+    }
+    setShowRating(false);
+  };
 
   useEffect(() => {
     const header = document.querySelector(".site-header");
@@ -67,7 +140,7 @@ export default function FloatingTrustSignals() {
 
   return (
     <>
-      <TrackedLink
+      {!clearProtectedContent ? <TrackedLink
         href={business.whatsappHref}
         eventName="whatsapp_click"
         eventProperties={{ location: "floating_button" }}
@@ -77,9 +150,9 @@ export default function FloatingTrustSignals() {
         aria-label="Contacteer AB Service via WhatsApp"
       >
         <WhatsAppLogo />
-      </TrackedLink>
+      </TrackedLink> : null}
 
-      {showRating ? (
+      {showRating && !clearProtectedContent ? (
         <div className="google-rating-popup">
           <TrackedLink
             href={rating?.googleMapsUri || business.googleReviewsHref}
@@ -107,7 +180,7 @@ export default function FloatingTrustSignals() {
           <button
             type="button"
             className="google-rating-close"
-            onClick={() => setShowRating(false)}
+            onClick={dismissRating}
             aria-label="Sluit Google-beoordeling"
           >
             ×

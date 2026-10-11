@@ -3,32 +3,7 @@ import Link from "next/link";
 import { navigation } from "@/content/site-content.mjs";
 import { business } from "@/content/business.mjs";
 import TrackedLink from "@/components/tracked-link";
-
-function NavigationItems({ mobile = false }) {
-  return navigation.map((item) => {
-    if (item.children) {
-      return (
-        <details className={mobile ? "mobile-submenu" : "nav-submenu"} key={item.label}>
-          <summary>{item.label}</summary>
-          <div className="submenu-panel">
-            <Link href={item.href}>{item.overviewLabel || `Alle ${item.label.toLowerCase()}`}</Link>
-            {item.children.map((child) => (
-              <Link key={child.href} href={child.href}>
-                {child.label}
-              </Link>
-            ))}
-          </div>
-        </details>
-      );
-    }
-
-    return (
-      <Link key={item.href} href={item.href}>
-        {item.label}
-      </Link>
-    );
-  });
-}
+import HeaderNavigation from "@/components/header-navigation";
 
 export default function SiteHeader() {
   return (
@@ -62,9 +37,7 @@ export default function SiteHeader() {
             <small>Verwarming &amp; sanitair</small>
           </span>
         </Link>
-        <nav className="desktop-nav" aria-label="Hoofdnavigatie">
-          <NavigationItems />
-        </nav>
+        <HeaderNavigation navigation={navigation} />
         <TrackedLink
           href={business.phoneHref}
           eventName="phone_click"
@@ -73,12 +46,7 @@ export default function SiteHeader() {
         >
           Bel AB Service
         </TrackedLink>
-        <details className="mobile-menu">
-          <summary aria-label="Menu openen">Menu</summary>
-          <nav aria-label="Mobiele navigatie">
-            <NavigationItems mobile />
-          </nav>
-        </details>
+        <HeaderNavigation navigation={navigation} mobile />
       </div>
     </header>
   );
