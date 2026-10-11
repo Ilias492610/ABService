@@ -155,4 +155,3 @@ modelvraag of een onbegrensde “alle modellen”-belofte. Onbekende productcode
 bronbeschikbaarheid en technische controle blijven gates. Ook casebewijs,
 plaatselijk klantbewijs, Franse tekstcontrole en accounttoegang worden hierdoor
 niet opgelost. [Publicatiebeleid](content-publishing-policy.md) blijft gelden.
-
