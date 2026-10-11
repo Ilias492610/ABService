@@ -54,6 +54,7 @@ export default function TarievenPage() {
           <h2>Welke vragen maken een voorstel duidelijker?</h2>
           <ul className="check-list">
             <li>Zijn verplaatsing, diagnose en werkuren afzonderlijk of samen opgenomen?</li>
+            <li>Geldt voor het gewenste tijdstip, bijvoorbeeld ’s avonds of in het weekend, een ander tarief of een toeslag? Laat dit vooraf verduidelijken.</li>
             <li>Welke materialen en hoeveelheden zijn inbegrepen?</li>
             <li>Is het toepasselijke btw-tarief vermeld en onder welke voorwaarden?</li>
             <li>Welke werken, afwerking en documenten vallen buiten de scope?</li>

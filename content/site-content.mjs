@@ -132,6 +132,7 @@ export const pageRegistry = Object.freeze([
   })),
   {
     path: "/tarieven",
+    lastModified: "2026-10-11",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Tarieven en offertes voor loodgieterswerk | AB Service",
     description:

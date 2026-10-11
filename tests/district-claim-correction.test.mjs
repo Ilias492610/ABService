@@ -181,10 +181,10 @@ test("only the six genuinely modified districts have dates and only Borsbeek has
   assert.equal(registry.pageRegistry.length, 82);
   assert.deepEqual(Object.fromEntries(entries.filter((entry) => entry.url.includes("/loodgieter-") && Object.hasOwn(entry, "lastModified")).map((entry) => [entry.url.split("/loodgieter-")[1], entry.lastModified])), expected);
   const retained = entries.map((entry) => {
-    // Task40 permits only this genuinely edited hub's new modification date.
+    // Tasks40/41 permit only these genuinely edited pages' new dates.
     // Preserve the original independently captured whole-sitemap hash.
-    const correctedHub = entry.url === "https://www.abservice24.be/werkgebied/limburg";
-    if (!correctedHub && !corrections.some(({ slug }) => entry.url.endsWith(`/loodgieter-${slug}`))) return entry;
+    const correctedPage = ["https://www.abservice24.be/werkgebied/limburg", "https://www.abservice24.be/tarieven"].includes(entry.url);
+    if (!correctedPage && !corrections.some(({ slug }) => entry.url.endsWith(`/loodgieter-${slug}`))) return entry;
     const { lastModified, ...rest } = entry;
     return rest;
   });
