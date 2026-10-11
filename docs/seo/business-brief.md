@@ -4,6 +4,12 @@ Versie 10 oktober 2026; interne werkbrief voor WP00–WP17, geen nieuwe websitep
 
 **Aanvulling 11 oktober 2026:** eigenaar bevestigt uitsluitend werk bij klanten, **geen klantontvangst**. Google-adresweergave daarop uitgezet/opgeslagen; beoordeling/publieke Maps-uitkomst blijft apart. Juridische adressen zijn niet gewijzigd. De gedateerde [accountstatus](account-status-register.md), [zoekbaseline](2026-10-10-search-baseline.md) en [ontvangst-QA](../../SEO_QA_REPORT.md) verversen hieronder genoemde oude account-/testgaten zonder nieuwe lead-, erkennings- of locatieclaims.
 
+**Latere eigenaarantwoorden 11 oktober 2026:** Franse dienstverlening is bevestigd,
+maar er is nog geen Franse tekstcontroleur. Er bestaat geen samenwerking of
+lidmaatschap bij Syncura, Techlink/Embuild of Vaillant. Dit zijn operationele
+eigenaarantwoorden, geen geteste Franse contactflow, taalreview of nieuwe openbare
+directorycontrole; zie het [bewijsregister](evidence-register.md).
+
 ## Bronnen en verversing
 
 | Bron-ID | Bron, datum en status | Bewijsbereik | Verversvoorwaarde |
@@ -14,6 +20,7 @@ Versie 10 oktober 2026; interne werkbrief voor WP00–WP17, geen nieuwe websitep
 | BF-04 | [Changelog 17-09-2026](../../SEO_CHANGELOG.md), [bewijsregister](evidence-register.md), [dienstenregister](../../content/additional-services.mjs) en [merkenregister](../../content/brand-services.mjs); interne eigenaarbevestiging, nagelezen 10-10-2026 | Operationele bevestiging van zes aanvullende diensten, dertien merken en 24/7-bereikbaarheid | Scope, modellen, onderdelen, personeel of planning wijzigt; geen nieuwe toestemming vragen voor bestaande bevestiging |
 | BF-05 | [Projectguide](../../PROJECT_CONTENT_GUIDE.md), [projectregister](../../content/projects.mjs), [mediaregister](../../content/media.mjs) en bewijsregister; interne eigenaarbevestiging, nagelezen 10-10-2026 | Eigen beeldarchief en zes geanonimiseerde werktypen; geen specifieke foto/job/gemeente/merkmatch afleiden | Nieuwe case, correctie, rechten-/toestemmingswijziging of specifieke bewijsclaim |
 | BF-06 | [Zoekbaseline](2026-10-10-search-baseline.md), [externe acties](../../LOCAL_SEO_EXTERNAL_ACTIONS.md) en changelog; interne gedateerde verslagen, nagelezen 10-10-2026 | Historische releases/tests/accountsubmissions en expliciete huidige datagaten; geen actuele commerciële baseline | Nieuwe juiste-accountexport, ontvangst-/uitkomstbewijs, release of nieuwe waarneming |
+| BF-07 | Rechtstreekse eigenaarantwoorden in deze taak, 11-10-2026: “Wel Franse dienstverlening, nog geen tekstcontroleur” en “Geen van deze relaties”; [vastlegging](evidence-register.md) | Franse operationele dienstverlening; ontbreken van de drie genoemde relaties/lidmaatschappen. Geen Franse webtekstgoedkeuring of bewijs van afwezigheid in externe listings | Wijziging van taalcapaciteit, reviewer/beheerworkflow of echte relatie; aparte contactflow-/publicatiecontrole |
 
 ## Identiteit, contact en locaties
 
@@ -38,7 +45,8 @@ Voor BF-F01/F04/F05 geldt de verversregel van BF-01/BF-02; voor BF-F02/F03/F06/F
 | BF-F10 | Dertien merken voor onafhankelijke onderhouds-/herstellingsservice: **Vaillant, Bulex, Bosch, Junkers, Remeha, Buderus, Viessmann, ACV, Intergas, Nefit Bosch, ATAG, Itho Daalderop, Ferroli** | BF-04, eigenaarbevestiging 17-09-2026, register 10-10-2026 | Geen dealer/partnerstatus, universele modeldekking of installatie van ieder merkmodel. Foutgidsdekking is beperkter dan merkscope; exacte toestel/revisie verifiëren. Ververs bij scope/onderdelen/afspraken |
 | BF-F11 | **24 uur per dag, 7 dagen per week bereikbaar**; centrale urenwaarde `Mo-Su 00:00-23:59` | BF-04, eigenaarbevestiging 17-09-2026; BF-03 10-10-2026 | Geen vaste aankomsttijd, same-day-garantie, permanent beschikbare interventieploeg, feestdagtarief/regeling of officiële gasnooddienst. Ververs bij bereikbaarheid/uitzonderingen; GBP-approval apart |
 | BF-F12 | Primaire markt **Antwerpen**; eigenaarbevestigd dienstgebied **Vlaanderen en Brussels Hoofdstedelijk Gewest**. Geografisch register: **304 gemeenten**, **10 Antwerpse districten**, **6 regiohubs** | BF-03; Phase E-eigenaarbevestiging in [master/Phase E-matrix](2026-10-10-source-coverage-master-phase-e.md); bronregister 10-10-2026 | Geen 304 vestigingen/routes/lokale cases. Vraag, haalbare planning en lokale klantwaarde apart; ververs bij dekking/administratieve wijziging |
-| BF-F13 | Onderhouden publieke website: **Nederlands, nl-BE**. Franstalige operationele dienstverlening en onderhouden vertaalworkflow: **niet bevestigd** | BF-03 en [matrix E12/M49](2026-10-10-source-coverage-master-phase-e.md), 10-10-2026 | Brusselse dekking bewijst geen taalvaardigheid. Andere gesproken talen onbekend; WP15 wacht op operationeel bewijs plus vertaal-/taal-QA |
+| BF-F13 | Onderhouden publieke website: **Nederlands, nl-BE**. **Franse operationele dienstverlening bevestigd; Franse tekstcontroleur nog niet beschikbaar** | BF-07, eigenaar 11-10-2026; eerdere [matrix E12/M49](2026-10-10-source-coverage-master-phase-e.md) behoudt haar peildatum | Vertaal-/beheerworkflow, deskundige tekstreview en echte Franse telefoon-/mail-/nazorgflow nog niet getest. Geen Franse routes/hreflang of kwaliteitspromesse uit capaciteit alleen; overige talen onbekend |
+| BF-F14 | **Geen bestaande samenwerking/lidmaatschap** bij Syncura, Techlink/Embuild of Vaillant | BF-07, eigenaar 11-10-2026 | Onafhankelijke merkservice blijft bevestigd. Geen partnerbadge, lidmaatschap, fabrikantrelatie of `sameAs` toevoegen; publieke directory-/linkstatus is afzonderlijk en hiermee niet opnieuw onderzocht |
 
 Gas-, CO-, elektriciteits-, verbrandings-, reset- en lekveiligheid gaan vóór bereik. Informatiemodellen en officiële gewest-/fabrikantbronnen bewijzen geen individuele technicusbevoegdheid. Airconditioning/F-gas-service blijft onbevestigd en de bestaande route blijft `noindex`; een KBO-nevenactiviteit verandert dat niet.
 

@@ -1,5 +1,37 @@
 # Evidence Register
 
+## 11 October 2026 — owner language and relationship confirmation
+
+Direct owner answers in this task: “Wel Franse dienstverlening, nog geen
+tekstcontroleur” to the question about French applications, technical explanation,
+aftercare and text checking; “Geen van deze relaties” to existing Syncura,
+Techlink/Embuild or Vaillant collaboration/membership. French operations are
+confirmed, reviewer absent; no current named relationship. No tested French
+phone/mail/aftercare flow, published translations or new directory/link audit.
+The [business brief](business-brief.md), [earned-link readiness](earned-link-opportunities.md)
+and WP13/WP15 retain those distinct limits. No duplicate request for proof of
+a relationship the owner says does not exist; no partner/dealer badge or `sameAs`.
+
+## 11 October 2026 — bounded preparation candidate and prior QA release
+
+Limburg planningTip and tariffs offer question are locally implemented in
+`c506f47` / `9789422` under existing WP08/WP06 scope. Only genuine page
+modification dates are transferred; no public state or source verification
+date changes. Pre-edit preservation fixtures and real-renderer RED→GREEN,
+401 tests/lint/production audit 0/build 170/local 82/93/112 and eight native
+desktop/mobile JS/no-JS profiles pass (158 browser GETs plus one sitemap GET).
+Initial harness top/y error is retained and corrected; no production bug claim.
+Original sitemap hash and all other rendered content/metadata are preserved.
+Independent cohort review and exact public acceptance remain next, not all-WP
+completion, owner local-value approval, actual price policy or customer proof.
+
+QA-only `ae417d38b72a860bc790ebf6929f2359bafc93df` has sole-review approval,
+fresh 392 root/reviewer/merged tests and exact CI 38118015699 success
+06:26:18 UTC (Node 24.21.0, install 411/412, lint, production audit 0, build 170,
+hosted 82/93/112). Both actual Production statuses succeed: 6991899241 primary
+06:26:04 UTC and 6991897875 secondary 06:25:55 UTC. Runtime unchanged;
+prior accepted 1eb measurements are not relabeled as new QA-only lab runs.
+
 ## 11 October 2026 — prehydration public acceptance and stricter QA candidate
 
 Accepted `1eb074d9ba24f11f6c03f3cc383ade0bf5cb8522` follows independent whole-

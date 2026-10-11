@@ -1,5 +1,19 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — local and price preparation candidate; owner evidence
+
+- Limburg's actual answer-box/FAQ tip now requests address, problem/device/access
+  and safely obtained photos. No assumed longer travel or prevention guarantee.
+- Tariffs adds one question about possible time-of-day/weekend costs, retaining
+  six original questions/cards. No amount or surcharge policy is asserted.
+- Actual modification dates only on these two pages. Genuine RED→GREEN,
+  401 tests/lint/production audit 0/build 170/local 82/93/112 and eight desktop/
+  mobile JS/no-JS profiles pass. Review and hosted/live release remain next.
+- Records French operations confirmed without a text reviewer, and no current
+  named partnerships/membership. No French route, partnership or outreach.
+- Prior QA-only `ae417d3` passed sole review, CI 38118015699 and both actual
+  Production statuses. Historical candidate evidence is retained, not backfilled.
+
 ## 11 October 2026 — prehydration release and console-gate maintenance
 
 - Reviewed `1eb074d` is on GitHub main and both Vercel Production projects.

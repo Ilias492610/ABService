@@ -15,6 +15,13 @@ onafhankelijke merkservice bewijst geen dealer-, fabrikant- of verenigingsrelati
 24/7-bereikbaarheid bewijst geen aankomsttijd of beschikbare interventieploeg.
 Dit document publiceert geen nieuwe zakelijke claim op de website.
 
+**Latere eigenaarbevestiging 11 oktober:** er zijn geen bestaande relaties met
+Syncura, Techlink/Embuild of Vaillant. P13-01, P13-03 en P13-04 hebben daardoor
+geen huidige relatiebasis; geen herhaalde vraag naar een document voor een
+niet-bestaande relatie. Dit antwoord vervangt geen publieke listing-/linkcheck
+en wist de onderstaande eerdere bronwaarnemingen niet. P13-02 blijft alleen een
+mogelijke originele vakbijdrage, afhankelijk van echte expertise en review.
+
 ## Bewijssoorten en bestaande AB-vermeldingen
 
 Een **vermelding** identificeert het bedrijf; een **gelezen uitgaande hyperlink**
@@ -54,10 +61,10 @@ effort is een voorbereidingsoordeel, geen uren-, budget- of resultaatbelofte.
 
 | Prospect | Verdiende route en reden | Effort, ontbrekend bewijs en status |
 | --- | --- | --- |
-| P13-01 | Een feitelijke intakechecklist of bruikbare onderhoudstool kan na vrijwillig gebruik een verwijzing verdienen. De lokale technische beheervraag geeft onderwerpfit; geen leveranciersdeal of redactionele belangstelling vastgesteld. | **Medium; conditional — relatie onbewezen.** Eigenaar bevestigt eerst bestaande relatie, capaciteit en scope voor individuele/gemeenschappelijke installaties. Geen Syncura-gebouw als AB-case gebruiken. |
+| P13-01 | Een feitelijke intakechecklist of bruikbare onderhoudstool kan na vrijwillig gebruik een verwijzing verdienen. De lokale technische beheervraag geeft onderwerpfit; geen leveranciersdeal of redactionele belangstelling vastgesteld. | **Deferred — geen bestaande relatie**, eigenaar 11-10-2026. Geen huidige partnerroute of Syncura-gebouw als AB-case gebruiken. Nieuwe zakelijke samenwerking is een afzonderlijke keuze, geen SEO-uitvoering in dit dossier. |
 | P13-02 | Vrijwillige redactionele beoordeling van één originele, geanonimiseerde vakobservatie met officiële bronnen en deskundigenreview. Een link blijft een keuze van de redactie. | **Medium/hoog; conditional — originele expertise/observatie en toestemming ontbreken.** Geen concept goedgekeurd, geen gratis bijdrage of acceptatie bewezen. Betaalde advertentie-/sponsoropties vallen buiten deze earned-route. |
-| P13-03 | Bestaande leverancier-/opleidings-/erkenningsdocumentatie privé matchen; daarna actuele directoryvoorwaarden en een eventuele bestaande fiche controleren. | **Medium; conditional — eligibility en listing onbekend.** Onafhankelijke Vaillant-service bewijst geen partnerschap/erkenning. Geen partnerlogo, officiële-partnerclaim of `sameAs` toevoegen. |
-| P13-04 | Eerst bewijs van echte bestaande aansluiting; dan juiste bestaande fiche controleren. Een eventuele nieuwe aansluiting moet zakelijke waarde hebben en een eigen budgetbesluit krijgen. | **Laag voor bestaande bewijscheck; conditional — lidmaatschap onbekend.** Nieuwe aankoop is een afzonderlijke keuze. Geen betaling voor dofollow-, DR- of rankingdoel; geen AB-schulden-/kwaliteitsclaim. |
+| P13-03 | Alleen een later werkelijk ontstane leverancier-/opleidings-/erkenningsrelatie kan een nieuwe relatiecheck dragen; directoryvoorwaarden en een eventuele fiche blijven apart. | **Deferred — geen bestaande Vaillant-relatie**, eigenaar 11-10-2026; eligibility en publieke listing blijven onbekend. Onafhankelijke Vaillant-service bewijst geen partnerschap/erkenning. Geen partnerlogo, officiële-partnerclaim of `sameAs` toevoegen. |
+| P13-04 | Een eventuele nieuwe aansluiting moet echte zakelijke waarde hebben en een afzonderlijk keuze-/budgetbesluit krijgen; geen fictieve bestaande fiche aanvragen. | **Deferred — geen bestaand Techlink/Embuild-lidmaatschap**, eigenaar 11-10-2026. Publieke listing-/linkstatus is niet opnieuw gecontroleerd. Geen betaling voor dofollow-, DR- of rankingdoel; geen AB-schulden-/kwaliteitsclaim. |
 
 Geen van de vier is klaar voor verzending, goedgekeurd, verzonden of live. Een
 nuttige nofollowvermelding kan klanten helpen; SEO-gewicht wordt niet toegekend.
@@ -137,11 +144,11 @@ vormen deze beperkte readinessset.
 
 ## Kleinste volgende bewijsstap en open gates
 
-**Next evidence:** laat privé bij de eigenaar **één bestaande relatie** met Syncura,
-Techlink/Embuild of Vaillant matchen aan een werkelijk gedateerd document. Wanneer
-geen relatie bestaat, is een originele geanonimiseerde technisch nagekeken
-onderhouds-/herstelobservatie de mogelijke basis voor P13-02. Dit is een bewijsstap,
-geen verzendklaar bericht of vraag om gegarandeerde linkplaatsing.
+**Relatievraag beantwoord:** de eigenaar bevestigt dat geen van de drie relaties
+bestaat. Een originele geanonimiseerde, technisch nagekeken onderhouds-/
+herstelobservatie is daarom de mogelijke volgende bewijsbasis voor P13-02.
+Zo'n observatie en reviewer ontbreken nog. Dit is een bewijsstap, geen
+verzendklaar bericht of vraag om gegarandeerde linkplaatsing.
 
 De bestaande [onderhoudscheck](https://www.abservice24.be/tools/onderhoudscheck)
 kan alleen na bevestiging van actuele live inhoud, beperkingen en bruikbare uitslag

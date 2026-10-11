@@ -290,6 +290,14 @@ Op 11 oktober is de expliciet toegestane Bing-Googlekoppeling voor naam/foto/e-m
 
 ### WP06 — Kernpagina's, klantcopy en interne links
 
+**11 oktober — lokale kandidaatvoorbereiding:** `9789422` voegt binnen de bestaande
+offertecheck op `/tarieven` één vraag toe over mogelijke tijdstip-/weekendkosten.
+Geen toeslag, bedrag, gratis dienst of interventietijd wordt beweerd. Vier echte
+render-/metadata-/sitemaptests slagen; alle zes oude vragen/cards/contacten en
+overige output blijven behouden. De daadwerkelijke datum geldt alleen deze
+pagina. Samen met Limburg: 401 volledige tests; cohortreview/liveacceptatie
+blijven apart. Echte prijsregels en volledige WP06 blijven open.
+
 **Files:** bestaande kernroutes in `app/`, `content/service-intents.mjs`, `content/brand-services.mjs`, `content/site-content.mjs`, `components/service-page.js`, header/footer/CTA, `app/werkgebied/page.js`, `tests/publishing.test.mjs`, `tests/seo-data.test.mjs` en crawler.
 
 - [x] Verwijder klantzichtbaar procesjargon op `/werkgebied`; geef gebieds-, afspraak- en contactinformatie. Schrijf eerst de regressietest.
@@ -394,7 +402,9 @@ is geen indexatiebewijs. Bron403/development9 en bredere WP07-dekking blijven op
 op concrete leeswaarde/volgende stap en resterende overlap. Zes hubs hebben
 coverage-/navigatienut, Borsbeek een eigen overgangsvraag; de overige district-
 voorbereiding blijft grotendeels overdraagbaar. Drie beperkte voorstellen zijn
-vastgelegd, niet geïmplementeerd. Geen eigenaar-/menselijke eindgoedkeuring,
+vastgelegd; alleen Limburg is later lokaal uitgevoerd in `c506f47`, met eigen
+tests en nog open cohortreview/liveacceptatie. Borgerhout en Brussel blijven
+voorstellen. Geen eigenaar-/menselijke eindgoedkeuring,
 nieuwe lokale vraag/case/review of automatisch noindex-besluit afgeleid.
 
 - [ ] Behoud volledige namenlijst: 67/38/55/63/62/19 = 304; actuele fusies en tien districten inclusief Borsbeek. Antwerpen→home; Brussel één intentie-eigenaar. Onderzoek eerst URL-/querykeuze voor Berendrecht-Zandvliet-Lillo.
@@ -620,6 +630,13 @@ IndexNow. Echte bedrijf-/veld-/accountvoorwaarden blijven open.
 
 ### WP13 — Verdiende links en lokale partners
 
+**Eigenaarantwoord 11 oktober:** geen bestaande samenwerking/lidmaatschap bij
+Syncura, Techlink/Embuild of Vaillant. De drie relatie-afhankelijke routes zijn
+daarom deferred; geen partnerclaim, nieuwe aansluiting of herhaalde vraag naar
+een niet-bestaand document. Publieke listing-/linkstatus is niet opnieuw
+gecontroleerd. Een originele technisch nagekeken vakobservatie voor P13-02
+blijft een mogelijke afzonderlijke bewijsstap, geen outreach of verdiende link.
+
 **Files:** `LOCAL_SEO_EXTERNAL_ACTIONS.md`; nieuw `docs/seo/earned-link-opportunities.md`. Contactgegevens privé; alleen concepten in repo.
 
 - [ ] Onderzoek unlinked mentions, nuttige vervanging van kapotte bronnen, leveranciers/vakverenigingen, echte aannemers/syndici/vastgoed/architecten/tegels/keukens/vaklui, lokale sponsoring/events/pers en vakbijdragen.
@@ -663,6 +680,12 @@ uitgevoerd. Moderatie, capaciteit, media/deskundigheid, concrete publicatieopdra
 en daadwerkelijke capture blijven nodig; dit is geen volledige WP14-afronding.
 
 ### WP15 — Franse Belgische lokalisatie
+
+**Eigenaarantwoord 11 oktober:** “Wel Franse dienstverlening, nog geen
+tekstcontroleur”. De operationele taalvoorwaarde is bevestigd, niet de
+technische tekstreview, onderhouden vertaalworkflow of geteste contactflow.
+Geen Franse route, hreflang of hele-siteclone gepubliceerd. WP15 is daardoor
+niet afgesloten; deze actuele aanvulling vervangt geen historische bronmatrix.
 
 **Files:** pas na operationele bevestiging: Franse routes/content/switcher/metadata/hreflang/tests. Bestaande nl-BE-URLs behouden.
 

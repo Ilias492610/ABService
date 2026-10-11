@@ -482,3 +482,32 @@ exact deliberately intercepted rating 503. Thirteen RED→GREEN guard tests,
 browser console-only injection is intentionally rejected. Whole-cohort review
 and publication of that optional-gate/documentation slice remain next; no product
 or baseline/KPI/denominator change, and no new business result.
+
+## LOCAL-OFFER-PREPARATION-20261011 — bounded candidate, not growth-evaluated
+
+`c506f47` removes the unsupported Limburg travel/prevention implication and
+keeps practical address/problem/device/access and safe-photo preparation in
+the actual answer box and FAQ. `9789422` asks whether the requested time could
+affect costs, without asserting a surcharge or amount. Hypothesis: visitors can
+prepare those questions more clearly; no improved conversion/ranking is measured.
+Only the actual two page edits receive modification dates. No new locality,
+case, review, price policy, schema type, source-check date or dependency.
+
+Pre-edit retained fixtures and real consumer RED→GREEN, 401 full tests/lint,
+production audit 0/build 170/local 82/93/112 and eight desktop/mobile JS/no-JS
+profiles pass: 158 browser GETs plus one sitemap GET, no attempted writes,
+page errors or overflow. Original questions/cards/links/contact/metadata and
+native FAQ remain. Controlled 503 diagnostics are not provider observations;
+an ignored harness top/y error and its corrected rerun remain separate.
+Independent cohort review and exact hosted/canonical release are still next.
+
+**CANDIDATE / NOT GROWTH-EVALUATED.** Parent instruction freeze, measurement,
+equal-window/qualification and revert contracts remain. No KPI, baseline,
+denominator or success threshold changed. Revert/correct immediately for lost
+intake information, native access or unsupported cost/visit claims; otherwise
+evaluate only against genuine comparable customer observations when available.
+
+Owner replies confirm French operations without a text reviewer and no current
+named partnerships/membership. They improve prerequisite knowledge, not language
+review, contactflow acceptance, earned links or customer results. Prior QA-only
+`ae417d3` publication is accepted, not a new business experiment outcome.

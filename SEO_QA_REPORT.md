@@ -1,5 +1,50 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — local and offer preparation candidate; owner replies
+
+Two bounded customer-copy changes are prepared on `codex/seo-limburg-planning`:
+`c506f47` replaces the actual Limburg answer-box/FAQ tip with concrete address,
+problem, optional device/access details and safe photos without opening panels.
+It no longer assumes longer travel or promises to prevent an incomplete visit.
+`9789422` adds one conditional time-of-day/weekend cost question to the tariffs
+offer checklist. It does not establish a surcharge or any price policy.
+Only these two genuinely changed pages receive 2026-10-11 modification dates.
+No new route, index status, source-check timestamp, case, price or dependency.
+
+Real-renderer RED: Limburg 2/5 pass with missing copy/date and retained-render
+assertions; tariffs 2/4 pass with missing question/date. GREEN 27/27 combined,
+401/401 full tests, lint, production audit 0, build 170 and local crawl
+82 pages / 93 links / 112 assets pass. Independently captured pre-edit full
+record/render/metadata/registry fixtures protect retained content; the original
+whole-sitemap hash is preserved, removing only the two allowed new dates.
+
+Eight actual desktop/mobile JS/no-JS local profiles pass: initial server copy,
+canonical/dates, 38 unlinked Limburg municipalities, native FAQ pointer/keyboard,
+six tariff factor cards and all seven offer questions, actual hero-to-form
+navigation and textarea focus. Form anchor tops are 142.17–144.17 px; no overflow,
+page errors or attempted writes. 158 browser GETs plus one separate sitemap GET.
+Strict console capture permits only the deliberately intercepted rating-503
+source diagnostic; disabled-script captures are empty. Root inspected both
+mobile screenshots. An initial ignored QA-script failure used `boundingBox.top`
+instead of Playwright's `y`; its failed log is retained, corrected rerun passes.
+No product fix was inferred from that test-harness defect.
+
+The owner now confirms French service but no French text reviewer, and no
+existing Syncura, Techlink/Embuild or Vaillant relationship/membership. Current
+brief/readiness records are updated; prior public-source observations remain
+dated. No French route/hreflang, partner claim, contactflow test or outreach.
+Fresh independent whole-cohort review and exact hosted/live acceptance of this
+product/documentation candidate remain next. No new Lighthouse, field CWV,
+local job/review, actual provider/mail/event, price policy or growth claim.
+
+The prior QA-only `ae417d38b72a860bc790ebf6929f2359bafc93df` is accepted:
+sole review approved; fresh root/reviewer/merged 392 tests passed. Exact
+[CI 38118015699](https://github.com/Ilias492610/ABService/actions/runs/38118015699)
+succeeds 06:26:18 UTC on Node 24.21.0, install 411/412, lint, 392 tests,
+production audit 0, build 170 and hosted 82/93/112. Both actual exact-SHA Vercel
+Production statuses succeed: primary 6991899241 at 06:26:04 UTC, secondary
+6991897875 at 06:25:55 UTC. No redundant runtime lab or IndexNow claim.
+
 ## 11 October 2026 — delayed-hydration fix released and verified live
 
 Independently whole-branch reviewed `1eb074d9ba24f11f6c03f3cc383ade0bf5cb8522`

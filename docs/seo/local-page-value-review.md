@@ -67,6 +67,17 @@ Dit zijn voorstellen, niet reeds geïmplementeerde productwijzigingen. Ze vragen
 hun eigen bounded tests/review/release en echte wijzigingsdatums. Een tekstverbetering
 maakt generiek advies niet tot bewijs van lokale opdrachten of unieke expertise.
 
+**Latere implementatiestand 11 oktober:** alleen voorstel 2 is lokaal uitgevoerd
+in kandidaat `c506f47`. De daadwerkelijke gedeelde Limburg-planningtip vraagt nu
+adres, probleem, eventuele toestelgegevens, veilige foto's zonder panelen te
+openen en toegang; werk/verplaatsing worden vóór afspraakbevestiging besproken.
+Geen langere reistijd of gegarandeerd voorbereidingseffect. Alleen Limburg
+krijgt de werkelijke inhoudsdatum; de registry geeft die conditioneel door.
+Vijf echte record-/renderer-/metadata-/sitemaptests en behoud van alle zes hubs
+slagen; oorspronkelijke sitemapbehoudhash is niet vernieuwd. Onafhankelijke
+cohortreview en exacte productieacceptatie zijn nog volgende gates. Voorstellen
+1 en 3 blijven open. Dit wijzigt geen lokale publicatiestatus of bewijsacceptatie.
+
 ## Betekenis voor de open lokale acceptatie
 
 De zes hubs hebben een concreet coverage-/navigatiedoel met verschillende lijsten;
