@@ -351,6 +351,17 @@ slaagt172 tests/auditproduction0/build/crawl, beide Vercelchecks/deployments suc
 Fresh live81/92/110 en desktop/mobile/noJS13guides1264rows slagen. Alleen deze
 model-/zoekuitbreiding is geaccepteerd; andere modellen en bredere WP07-gates open.
 
+**11 oktober — verdere WP07-bronprecisie lokaal geaccepteerd:** Vaillant/Bulex
+906a0ea behoudt90/43regels met negen exacte Belgische model/articleparen en
+FAS65/0010010389/BEnl/revisieafbakening; F105 neutraal en F73/F74 elektrisch.
+Buderus5d62836 voegt ontbrekende vergrendelende5C226 toe:52 uitlegregels/74
+exacte combinaties uit88bronrijen,14gewone/test/resetstatussen uitgesloten,
+Swiss-componentvoorwaarde en twaalf specifieke electronicadiagnoseacties.
+Beide taakreviews akkoord; fresh284tests/lint/productionaudit0/build170/local
+82/93/112 en12desktop/mobiel/JS/no-JSchecks slagen.224browserrequests/0nonGET/
+errors/overflow. Bron55HTTP200/403 en development9/ESLint9 blijven; wholebranch/
+hosted/live gate nog open. Dit voltooit niet alle dertienmerken/modeluitbreidingen.
+
 ### WP08 — Geografische groei met lokale klantwaarde
 
 **Files:** `content/service-areas.mjs`, `content/service-area-scoring.mjs`, `content/content-backlog.mjs`, `components/district-page.js`, `components/municipality-filter.js`, gebiedshubs, `tests/service-areas.test.mjs`, `PHASE_E_SERVICE_AREA_REPORT.md`, `SERVICE_AREA_REGISTRY.md`, `SEO_CONTENT_INVENTORY.md`, bewijsregister en changelog.
@@ -469,6 +480,18 @@ productionaudit0/build170/crawl82/93/112 en desktop/mobiele causalchecks slagen;
 exact193.71875/765.203125 ontvangt nu tel, controls herstellen op veilige plekken.
 Water/privacy/no-JS regressiegates slagen eveneens. Dit is lokale acceptatie,
 niet de nog uit te voeren hosted/live/whole-branch gate of volledige WP12/CWV.
+
+**11 oktober — voorgaande WP10/11/12-release geaccepteerd:** onafhankelijk
+whole-branch gereviewd d77bed4 staat op main/origin; exacteCI38103751546 slaagt
+258tests/lint/productionaudit0/build170/crawl82/93/112 onderNode24.21.0. Beide
+Vercelchecks/Productionstatuses en freshcanonical82/93/112 slagen. Waterdesktop/
+mobiel/no-JS en beide responsiveinteractiongates bevestigen echte focus, hero
+tel/tool/footerdoelen, nativehistory/keys en veiligepopuprestoration.184waterGET-
+requests/0nonGET; rating503fixture/noactualanalytics/mail/physicaldevice/CWVproof.
+Drie inhoudelijk gewijzigde liveURLs eenmaal IndexNowHTTP200 na preview; geen
+indexering/ranking. Oudere kandidatuur/geometryfailures blijven geschiedenis.
+Dit sluit de genoemde releasegates, niet alle WP10/11/12- of externe/commerciële
+metingen. WP07 exact Vaillant/Bulex-modelbronprecisie is de volgende producttaak.
 
 ### WP13 — Verdiende links en lokale partners
 

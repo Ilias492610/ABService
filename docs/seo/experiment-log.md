@@ -157,3 +157,54 @@ receives tel. Both controls restore at safe positions. This is a functional
 correction and concurrent conversion confounder, not measured commercial lift.
 No experimental KPI, baseline, inclusion window or instruction freeze changed.
 Hosted/provider/live acceptance and actual commercial capture remain pending.
+
+### EXP-20261011-WATER — release and canonical live supplement
+
+Recorded **11 October 2026,02:14 UTC**. Production release
+`d77bed4d3970ebee47223377369211a4451a2662` follows independent whole-branch
+review and normal main push. [CI38103751546](https://github.com/Ilias492610/ABService/actions/runs/38103751546)
+passes258tests/lint/productionaudit0/build170/crawl82/93/112 on Node24.21.0.
+Both exact-SHA Vercel checks/Production deployments succeed; primary6989683907
+status **2026-10-11T02:03:13Z**, not an exact canonical-alias activation time.
+
+Canonical live82/93/112 and waterdesktop/mobile/no-JS gates pass.184 inspected
+requests, zero attemptednonGET, rawinput stays local; result/contact focus and
+optional coded handoff pass. Floating hero/tool/footer protection, restoration,
+native menus/keys/history and close/focus also pass. Rating was mocked503 and
+external analytics/nonGET blocked, so no actual review/event/mail receipt proven.
+Direct200 canonical checks confirm newtool, actual waterguide link and attest
+revision. One explicit three-URL IndexNow notification receivesHTTP200 after
+preview/contentchecks; indexation/ranking not confirmed. No automatic retry.
+
+**RELEASED /LIVE CHECKED; NOT EVALUATED.** Primary KPI, missing baseline/sample,
+frozen instruction blobs, confounders, exclusions and revert criteria remain as
+prespecified above. No fully post-release28/28 or30/30data, captured qualified
+tool-origin enquiry or commercial result has been supplied. Release day is
+partial and cannot count as a full post-release day. Older preparation/failure
+records remain history, not retroactively relabelled as successful release.
+
+## SOURCE-PRECISION-20261011 — functional/source candidate, no growth evaluation
+
+Recorded11October2026 before publication, accepted baseline `d77bed4` and reviewed
+candidate906a0ea/5d62836. WP07 scope/source/safety gates trigger immediate factual
+correction, not a growth experiment waiting28days. Actual manufacturer issues:
+Vaillant0020282230_00/02.05.2023; Bulex0020124551_02/27.02.2015;
+Buderus6720813438(2021/07)BE. Current retrieval/sourcecheck does not imply newest
+revision or fit to an individual installed device.
+
+Exact source/model metadata, neutral F105, electrical BulexF73/F74, Buderuslocking
+5C226/selection/sensorconditions/electronicguidance correct present information.
+No new commercial hypothesis, baseline, inferred keyword demand or claimed
+customers. Native equal-window exact-page metrics and qualified enquiry capture
+remain unavailable; functional QA is the actual immediate acceptance criterion.
+Wrong scope/unsafe action/search/CTA/privacy regressions require immediate scoped
+correction, not a measurement window. Same-day other releases and source/season/
+model traffic mix preclude causal before/after interpretation.
+
+Fresh actualNode24.19.0/284tests/lint/productionaudit0/build170/local82/93/112,
+12desktop/mobile/JS/no-JS source-guide checks pass;224GET-only browser requests.
+Both independent task reviews approve. Whole-branch/hosted/live gate pending;
+**CANDIDATE /NOT EVALUATED**. Known source403/development9, unconfirmed review/
+custom-event/physical-device/field-CWV and commercial capture remain separate.
+No IndexNow candidate submission or paid/account change. Frozen parent WATER and
+REMEHA experiments retain their own original contracts and release supplements.

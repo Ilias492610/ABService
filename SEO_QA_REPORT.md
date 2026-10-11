@@ -1,5 +1,83 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — three manufacturer-source corrections, local candidate
+
+Reviewed906a0ea/5d62836 refine existing Vaillant/Bulex/Buderus catalogs, not new
+models or universal coverage. Primary applicability/revision and relevant fault
+pages were actually read; manufacturer repair procedures are not public DIY.
+Vaillant retains90 explanations and nine exact Belgian model/article pairs;
+Bulex retains43/34distinct, exact FAS65/article/BEnl, F73/F74 technical-diagnosis
+actions. Buderus adds locking5C226, selects52 explanations/74 literal combinations
+from88 table rows, explicitly excluding14 ordinary/test/reset states. Twelve
+electronic/KIM groups use closed-casing technical diagnosis; real gas actions stay.
+
+Fresh actualNode24.19.0 clean install, **284/284 tests**, lint, production audit0,
+build170 and local82pages/93destinations/112assets pass. Known development9 and
+ESLint9 warning remain. Fresh source audit56 unique URLs:55 HTTP200, Sibelga403,
+exit1; reachable source and source-content verification remain separate.
+
+Actual local Chrome1440×1000/390×844, each with JavaScript and no-JS, yields12
+route/profile checks:90/43/52 server-rendered rows, exact model/article/source
+scope, actual literal/padded/shared/model-filter/no-result search, F105 neutral
+wording, Bulex electrical actions, Buderus5C/EL/E1/Swiss-component constraints,
+repair-prefilled contact anchor.224 browser requests, zero attemptednonGET,
+pageerrors or overflow. Root views mobile scope screenshots for wrapping; an
+element screenshot's sticky-header crop is not a device-fit or reading guarantee.
+Rating503/external/nonGET firewall remains; no actual mail/review/event/CWV proof.
+
+Earlier Task23 harness expected `sensor`, while source uses `voeler`; root read
+the actual source-paraphrase and corrected only that synonym assertion. Original
+failedlog retained, complete corrected two-guide140request gate and subsequent
+three-guide gate pass. Buderus test initially matched reset letters in unrelated
+prose; actual reset aliases remain excluded and shared search unchanged.
+Both scoped independent reviews approve; final whole-branch/hosted/canonical
+live acceptance for this candidate remains pending.
+
+Fresh independent development compatibility research still finds no supported
+minimal patch: braces3.0.3 unpatched; parser7.1.6 exceeds both Tailwind3 parser6
+constraints; React/import/a11y peers exclude ESLint10 despite Next's broad peer.
+No forced major, advisory suppression or rule removal performed. This is dated
+research, not a complete production exploit audit or applied migration.
+
+## 11 October 2026 — released and canonical live acceptance
+
+Released SHA `d77bed4d3970ebee47223377369211a4451a2662` is on `main` and
+`origin/main`, following independent whole-branch review (Ready, no blocking
+findings). [Exact GitHub CI38103751546](https://github.com/Ilias492610/ABService/actions/runs/38103751546)
+passes under Node24.21.0:258 tests, lint, production audit0,170 build outputs and
+crawl82 pages/93 internal destinations/112 assets. The known development9 and
+ESLint9 warning remain, not production findings or erased history.
+
+Both exact-SHA Vercel checks and Production deployment statuses succeed;
+primary6989683907 records success **2026-10-11T02:03:13Z**, secondary6989675133
+02:02:11Z. Those are provider status times, not exact canonical-alias activation
+times. Fresh canonical crawl at `https://www.abservice24.be` passes82/93/112.
+An earlier water-route404 while the primary deployment was pending is preserved
+as a pre-release observation; subsequent canonical GET/browser acceptance is200.
+
+Canonical live Chrome1440×1000/390×844 confirms water positive/zero/unknown/
+invalid/descending/shared/possible-use/unsafe/reset, result and contact focus,
+private coded handoff, no-JS disabled inputs and four useful sources.184 inspected
+browser requests, zero attempted non-GET, no raw-input leak or pageerrors.
+Live interaction checks repeat hero telephone hit-testing, tool/footer controls,
+44×44 close, native menu selection/keys/back/forward, dismissal/suppression focus
+and safe floating-control clearance/restoration on both viewports.
+
+All three live processes exit0. Their reused harness summaries still label the
+boundary as local; the actual invocation used `AB_QA_ORIGIN=https://www.abservice24.be`.
+Only navigation/usability is live: Google-rating responses were deliberately
+mocked503, external analytics and non-GET requests blocked. No real Google score,
+new mail, custom-event receipt, physical-device test, Lighthouse or field-CWV
+result is inferred. Separate canonical GETs confirm attest's11October content
+date and the water guide's actual tool link,200/self-canonical for all three URLs.
+
+After preview and live content checks, one explicit IndexNow batch for
+`/tools/watermetercheck`, `/advies/onderhoudsattest-cv-ketel` and
+`/advies/watermeter-blijft-draaien` receives HTTP200, three URLs. No automatic
+retry, historic-site batch, account grant or indexation/ranking confirmation.
+The preceding candidate/local sections remain historical snapshots; WP13/14/16
+document preparation and commercial/field/source/development gaps stay distinct.
+
 ## 11 October 2026 — final local interaction correction accepted
 
 Fresh product build `2164026ebc626418c48c73d98a959126ee97166c` passes

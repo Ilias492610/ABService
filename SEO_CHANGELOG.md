@@ -1,5 +1,38 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — reviewed existing-source precision candidate
+
+- `906a0ea` records nine exact Belgian Vaillant model/article variants and the
+  original manual issue; F105 uses neutral professional wording. Bulex scope is
+  specifically THEMA Condens FAS65/article0010010389/BEnl/0020124551_02, and F73/F74
+  choose technical electrical diagnosis rather than pressure/filling guidance.
+- `5d62836` adds omitted Buderus locking5C226, clarifies installation-manual
+  issue2021/07/BE/threeGB162V2models, selected52 explanations/74 combinations,
+  ordinary/test/reset exclusions and Swiss-component caveat. Twelve electronic/
+  KIM groups get explicit electrical actions; gas/emergency rules remain.
+- Both independent task reviews approve. Fresh284tests/lint/productionaudit0/
+  build170/local82/93/112 and12desktop/mobile/JS/no-JS catalog checks pass;
+  source55HTTP200/known403 remains exit1. Whole-branch/hosted/live gates pending.
+- No new routes, models, credentials, source repair tables, private inputs or
+  invented business facts. Development9/ESLint9 have no supported minimal patch
+  today; incompatible major upgrades were not forced or declared resolved.
+
+## 11 October 2026 — watermeter, attest and interaction release
+
+- Independently reviewed `d77bed4` is normally pushed to main. [Exact CI38103751546](https://github.com/Ilias492610/ABService/actions/runs/38103751546)
+  passes258 tests/lint/production audit0/build170/crawl82/93/112 under Node24.21.0;
+  both exact-SHA Vercel checks and Production deployment statuses succeed.
+- Canonical live crawl82/93/112, responsive/no-JS watermeter and desktop/mobile
+  hero/form/tool/footer/menu/focus acceptance pass. Original WhatsApp/Google logos
+  and rating fetch retained;503 rating fixture does not prove actual review data.
+- Attest handoff/date correction, optional watermeter tool and useful water-guide
+  link are live. One explicit three-URL IndexNow notification receives HTTP200;
+  neither indexation nor organic/commercial improvement is confirmed.
+- Older candidate/failed geometry observations below remain dated history.
+  Current inventory82registered/80published/2noindex is not a Google index count;
+  known Sibelga403, development9/ESLint9 and missing commercial/field measurements
+  remain open. WP13/14/16 deliverables are preparation, not external execution.
+
 ## 11 October 2026 — reviewed final local corrections and preparation
 
 - `2164026` extends temporary floating clearance to existing hero action rows

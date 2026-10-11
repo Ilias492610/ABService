@@ -85,6 +85,19 @@ Ververs broninformatie bij wijziging van regionale regels, handeling of document
 
 De gerichte regressies dekken Vlaamse overdrachtrichtingen, Brussels PDF/e-mailadres en organisator versus kosten, onbekende datum zonder automatische controle, precieze bronnen in zichtbare citations/monitoring, schema/OG/sitemap uitsluitend uit contentdatum en echte paginarendering met bestaande warning/steps/issuer/CTA. Het lokale werkdossier `task-15-wp10-attest-report.md` bewaart het RED/GREEN-verloop: eerst 24/35 met elf verwachte ontbrekende gedragingen; bij de eerste GREEN 34/35 door een te strenge recipient-assertie, daarna 35/35 na verruiming binnen dezelfde zin. Het productionantwoord of datumcontract is daarvoor niet afgezwakt. `task-15-review.md` beoordeelt de slice als Approved en houdt browser/live/source-response en release buiten zijn reviewbereik. Die lokale dossierstukken zijn niet meegepubliceerd; de gedeelde release/evidence-records blijven verantwoordelijkheid van de hoofdtaak. Een later testresultaat wist de eerdere correctie niet.
 
+## 11 oktober — publicatieaanvulling
+
+De eerdere releasegate is vervuld door exact gereviewd `d77bed4` op main,
+[CI38103751546](https://github.com/Ilias492610/ABService/actions/runs/38103751546),
+beide geslaagde Vercelchecks/Productionstatuses en canonical liveacceptatie.
+Een afzonderlijke GET bevestigt attest200/self-canonical/11October-inhoudsdatum;
+de lokale detail-/CTA-/bronchecks hierboven behouden hun eigen leesbereik.
+[QA](../../../SEO_QA_REPORT.md) bewaart complete gates en beperkingen. Eén
+begrensde IndexNowbatch omvat deze substantief gewijzigde gids; ontvangstHTTP200
+is geen indexering. Geen juridische/technicusreview of commerciële evaluatie
+toegevoegd. De eerdere datumparagraaf is Task15's snapshot; de latere echte
+watergids-toollink heeft zijn eigen11October-modificatie en10October-broncheck.
+
 ## Beslissing voor de volgende cyclus
 
 Na browser/livebewijs kan de documentcyclus eindigen in behoud van de huidige attestgids. Nieuwe echte dossier- of begripvragen kunnen een beperkte vervolgaanpassing rechtvaardigen; ontbrekende zoekvolumes worden niet ingevuld. Voor gesprongen waterleiding, lekkende kraan en rioolgeur volgen de primaire bron-, echte vraag- en technicusgates uit de [dekkingstabel](../wp10-topic-coverage.md), met voorgestelde bestaande diensten als eigenaar. Circa twee goede artikelen per maand blijft een capaciteitsplafond bij aanvang, geen kalenderbelofte of nieuw-URL-quotum. WP10 blijft open voor de resterende evidence-, publicatie- en evaluatievragen.

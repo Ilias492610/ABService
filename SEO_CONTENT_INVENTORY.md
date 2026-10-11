@@ -2,12 +2,12 @@
 
 ## Published routes
 
-Current candidate inventory: 82 registered customer routes, 80 published and two noindex after
+Current accepted release `d77bed4` has82 registered customer routes,80 published and two noindex after
 the eight original destinations and watermeter pilot below. The previous accepted release6557c45
 has81/79/2. Neither snapshot counts Google-indexed pages. Dated local/live
 verification belongs in `SEO_QA_REPORT.md`.
 
-The earlier release adds78 static social-preview PNG assets; the new tool candidate
+The earlier release adds78 static social-preview PNG assets; the released new tool
 has79 corresponding non-home assets, not indexable customer pages. All thirteen
 fault guides in the accepted 11 October release6557c45 display 1264 source-bound rows across 32 assignments
 and 26 distinct catalogs (1022 rows before shared-catalog reuse); none is a count of unique codes
@@ -30,14 +30,23 @@ not a sitemap entry or an account credential.
 | `/advies/onderhoudsattest-cv-ketel` | Regional maintenance documents vs commissioning; Vlaanderen/Brussels |
 
 Published articles show AB Service as organizational author/publisher, official source links
-and their actual source-check date. The locally accepted attest candidate1cd1ed3 separates
+and their actual source-check date. The released attest correction1cd1ed3 separates
 checkedAt from modifiedAt; five unchanged guides retain10October and the substantive attest
-revision alone uses11October. Its publication/live gate is still pending. No invented technician
+revision alone uses11October in that historical Task15 snapshot. Publication/live
+acceptance is recorded for release d77bed4 in QA. No invented technician
 credential or publication history. The [fourteen-intent coverage map](docs/seo/wp10-topic-coverage.md)
 and [first-cycle brief](docs/seo/briefs/wp10-first-cycle.md) distinguish current answers from gaps.
 Existing service/fault/brand/project links are strengthened without publishing new locality claims.
 
-Later candidate `def4efe` adds the watermeter pilot link to the existing water guide:
+**Reviewed source-precision candidate906a0ea/5d62836, not yet live acceptance:**
+the same thirteen guides display1265 explanation rows/32assignments/26distinct
+catalogs (1023 before shared reuse); only Buderus adds one explanation. Its52
+groups represent74 literal source combinations, not88 full operating-table rows.
+Vaillant90 and Bulex43 remain unchanged counts with exact revised scope/safe
+actions. `lastModified` advances only for these three substantive corrections to
+11October. This supplements the accepted1264-row snapshot above; QA keeps gates.
+
+Later released change `def4efe` adds the watermeter pilot link to the existing water guide:
 its genuine `modifiedAt` is11October while `checkedAt` stays10October. Attest retains
 both11October and the other four original guides both10October. The new tool, advice
 hub and privacy page use their actual11October modification dates. No new source
@@ -69,7 +78,7 @@ in the QA record, separate from a published registry value.
 | `/foutcodes/bosch` | Bosch foutcodes: officiële bron en veilige stappen \| AB Service | Bosch foutcodes: catalogus met officiële bronnen | Bosch fault guidance and model-filtered lookup | Index | Hub, contact, official documentation | Official Bosch/Junkers codebook, six boiler series; 242 source rows |
 | `/foutcodes/junkers` | Junkers foutcodes: officiële bron en veilige stappen \| AB Service | Junkers foutcodes: catalogus met officiële bronnen | Junkers fault guidance and model-filtered lookup | Index | Hub, contact, official documentation | Official Bosch/Junkers codebook, six boiler series; 242 source rows |
 | `/foutcodes/remeha` | Remeha foutcodes: Avanta, Calenta en Ace-Matic \| AB Service | Remeha foutcodes: catalogus met officiële bronnen | Separate legacy and current model/component lookup, exact full-code search | Index | Existing hub, brand/service, contact, Storingswijzer, Belgian archive and genuine current PDF | Avanta17; historical Calenta manual117061-08 E23/Su19; Ace-Matic25s/35s/30c/40c revision7871265-05-04072025 CU106/SCB194;359 total;25L excluded; known source ambiguities visible |
-| `/foutcodes/buderus` | Buderus GB162 foutcodes: officiële bron \| AB Service | Buderus foutcodes: catalogus met officiële bronnen | Buderus GB162 V2 code lookup | Index | Hub, contact, official documentation | Complete named Logamax plus GB162 V2 table; 51 source rows |
+| `/foutcodes/buderus` | Buderus GB162 foutcodes: officiële bron \| AB Service | Buderus foutcodes: catalogus met officiële bronnen | Buderus GB162 V2 code lookup | Index | Hub, contact, official documentation | Reviewed candidate: installation manual6720813438 (2021/07) BE;52 selected explanation groups/74combinations,14 operating/test/reset states excluded; exact component conditions |
 | `/foutcodes/viessmann` | Viessmann foutcodes: Vitodens en Vitotronic \| AB Service | Viessmann foutcodes: catalogus met officiële bronnen | Viessmann orientation lookup | Index | Hub, contact, official documentation | Official 200-W/300-W Vitotronic overview; 71 source rows; manufacturer non-universal warning retained |
 | `/foutcodes/acv` | ACV Prestige foutcodes: betekenis en stappen \| AB Service | ACV foutcodes: catalogus met officiële bronnen | ACV Prestige MKIII code lookup | Index | Hub, contact, official documentation | Complete named ESYS table; 24 source rows |
 | `/foutcodes/intergas` | Intergas Prestige foutcodes: officiële bron \| AB Service | Intergas foutcodes: catalogus met officiële bronnen | Intergas Prestige code lookup | Index | Hub, contact, official documentation | Complete named Prestige table; 11 grouped source rows |

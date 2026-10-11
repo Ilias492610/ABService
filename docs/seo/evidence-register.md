@@ -1,5 +1,42 @@
 # Evidence Register
 
+## 11 October 2026 — existing manufacturer-scope candidate
+
+Actual primary scope/revision/fault pages support reviewed906a0ea/5d62836:
+Vaillant0020282230_00/02.05.2023/Belgium/nine article pairs; Bulex0020124551_02/
+27.02.2015/BEnl/FAS65/0010010389. Existing inventories90/43 preserved, neutral
+F105 configuration wording and explicit electrical F73/F74 action corrected.
+Buderus6720813438 (2021/07) BE installation manual, three GB162V2models and
+source88 rows independently read; new locking5C226 yields52 groups/74 literal
+combinations,14 normal/test/reset excluded, Swiss flue-sensor condition explicit.
+Twelve electronic/KIM groups use existing electrical/no-casing/no-wiring action.
+
+Independent scoped reviews approve. FreshNode24.19.0 cleaninstall/284tests/lint/
+productionaudit0/build170/local82/93/112 and12responsive/JS/no-JS catalog checks
+pass;224browserrequests/0nonGET/errors/overflow. Known source403/development9
+remain. See [QA](../../SEO_QA_REPORT.md) for scope and harness diagnostics. Final
+whole-branch/hosted/live gate pending, no universal/latest/model-device diagnosis,
+technician recognition or AB partner/commercial proof from manufacturer manuals.
+
+## 11 October 2026 — exact release and live supplement
+
+Whole-branch reviewed `d77bed4d3970ebee47223377369211a4451a2662` is on main/origin.
+[CI38103751546](https://github.com/Ilias492610/ABService/actions/runs/38103751546)
+passes258 tests/lint/production audit0/build170/crawl82/93/112 under Node24.21.0.
+Both Vercel checks/Production statuses succeed; primary6989683907 success timestamp
+02:03:13 UTC. Fresh canonical crawl82/93/112 and desktop/mobile/no-JS water plus
+desktop/mobile interaction acceptance pass.184 waterbrowserrequests/no non-GET,
+actual hero tel/tool/footer targets and safe focus/clearance/restoration verified.
+Detailed scope and historical failures remain in [QA](../../SEO_QA_REPORT.md).
+
+Three substantive live URLs receive one IndexNow notification HTTP200 after
+preview/direct content checks; no indexation/ranking proof. Google-rating503
+fixture, blocked external/non-GET browser requests, no new mail/analytics receipt,
+no physical-device/Lighthouse/field-CWV proof. No new operational facts, case,
+credential, price, local proof, partner or French-service confirmation added.
+Prepared WP13/14/16 artifacts remain preparation, not outreach/ads execution;
+known source403/development9 and absent commercial baselines remain explicit.
+
 ## 11 October 2026 — fresh final local gate and documentary boundaries
 
 Reviewed2164026 protects the existing hero CTA row and clears detached tracked
