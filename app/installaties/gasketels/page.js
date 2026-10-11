@@ -38,6 +38,22 @@ export default function GasketelsPage() {
           ],
         },
         {
+          eyebrow: "Controle en overdracht",
+          title: "Controle en documenten afspreken",
+          paragraphs: [
+            "Leg vóór uw akkoord vast welke controle bij de installatie hoort. De controle is een afzonderlijke handeling naast de plaatsing en het latere periodiek onderhoud; de vereisten verschillen tussen Vlaanderen en Brussel.",
+            "Vraag welke individuele professional de vereiste erkenning voor het gewest en de handeling bezit. Dat AB Service verwarmingswerk uitvoert, bewijst geen persoonlijke erkenning. Een afspraak over documenten is geen toezegging van goedkeuring.",
+          ],
+          items: [
+            "Welke controle bij deze installatie en dit gewest hoort, en wie de controle organiseert",
+            "Welke rapporten, attesten en overige documenten inbegrepen zijn, en wie de documenten ontvangt en bewaart",
+          ],
+          links: [
+            { label: "Controle bij plaatsing of wijziging verduidelijken", href: "/keuring" },
+            { label: "Attesten en installatiedocumenten bewaren en doorgeven", href: "/advies/onderhoudsattest-cv-ketel" },
+          ],
+        },
+        {
           eyebrow: "Premies",
           title: "Controleer actuele steun rechtstreeks bij de overheid",
           paragraphs: [
@@ -58,7 +74,18 @@ export default function GasketelsPage() {
         { label: "Ondersteunde ketelmerken", href: "/merken" },
         { label: "Praktijkcase: gasketel vervangen", href: "/projecten/gasketel-vervangen" },
       ]}
-      sourceLinks={[coreSources.renovationSupport, coreSources.renovationLoan]}
+      sourceLinks={[
+        coreSources.renovationSupport,
+        coreSources.renovationLoan,
+        {
+          label: "Vlaanderen: keuring van een nieuwe of gewijzigde cv-installatie",
+          href: "https://www.vlaanderen.be/verplichte-keuring-van-een-nieuwe-of-gewijzigde-cv-installatie",
+        },
+        {
+          label: "Leefmilieu Brussel: controles bij plaatsing, wijziging en gebruik",
+          href: "https://leefmilieu.brussels/pro/regelgeving-en-inspectie/verplichtingen-en-vergunningen/technische-installaties-epb-controles-en-onderhoud",
+        },
+      ]}
     />
   );
 }
