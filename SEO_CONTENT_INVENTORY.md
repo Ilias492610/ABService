@@ -2,6 +2,15 @@
 
 ## Published routes
 
+**Latest acceptance6015224:** six district corrections are independently whole-
+branch approved and normally published. Exact370-test CI/build170/82/93/112,
+both VercelProduction statuses, canonical crawl and32desktop/mobile JS/no-JS
+profiles pass. Same82/80/2 routes,304 municipalities/302drafts/10districts;
+only six actual content dates advance. Six comparable Borsbeek lab runs are
+reported in QA, not a new homepage or ranking score. One6URLIndexNow receipt
+is not indexing; local case/value and the existing FAQ-edge correction remain
+open. Earlier local/release snapshots below retain their original stage meaning.
+
 **Later district candidate80a6fa9/3cda5da:** same82 customer routes/80published/
 2noindex,304 municipalities/302 non-routable drafts and ten districts/eight
 indexable district pages. Borsbeek receives separately sourced district context;
@@ -32,7 +41,7 @@ additional services remain unchanged. No new route or faultcatalog row. Local
 release acceptance is separate in QA. Broader burst-pipe technical/demand proof
 is not supplied by this bounded answer.
 
-Current accepted release `869ee4f` has82 registered customer routes,80 published and two noindex after
+Current accepted release `6015224` has82 registered customer routes,80 published and two noindex after
 the eight original destinations and watermeter pilot below. The previous accepted release6557c45
 has81/79/2. Neither snapshot counts Google-indexed pages. Dated local/live
 verification belongs in `SEO_QA_REPORT.md`.

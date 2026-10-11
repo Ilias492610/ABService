@@ -1,5 +1,82 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — bounded FAQ clearance candidate, not yet released
+
+Independently task-reviewed045d515 adds only the existing FAQ container to the
+shared observer policy and one literal noscript-only flow fallback. Original
+WhatsApp/Google SVGs, destinations/events/rating effect/focus/dismissal and all
+older protected zones are preserved. Portable RED is21/27 with six genuine
+AssertionErrors before product edits; GREEN27/27. Narrow helper tag construction
+is not a CSS/accessibility engine. Fresh root Node24.19.0:376/376tests, lint,
+productionaudit0, build170 and localcrawl82/93/112 pass. Previous same-lock clean
+install/source403/development9 observations remain distinct. A second root gate
+after fresh npmci410/411 passes376tests/lint/production0/build170; development9
+and ESLint9 deprecation remain. Hosted/canonical release is still required.
+
+Shipped optional [browser regression](scripts/qa-floating-faq.mjs) passes24actual
+built Chrome1440×1000/390×844 profiles: four routes × hydrated neutral503/
+synthetic4.7/no-JS. Actual edge hit testing and ordinary pointer/Enter/Space
+operate native FAQs; unrelated FAQ focus remains, answers open and no overflow
+or pageerrors. Hydrated controls restore as fixed links; native close focus and
+internal navigation retain dismissal. No-JS links are static in document flow
+and the inert close is hidden.636GET-only browser requests, no attempted writes.
+Root visually inspected four actual mobile FAQ/link screenshots: protected
+summaries are clear in both modes, original links/logos remain, and no-JS links
+sit after the footer. Fixed widgets still occupy their ordinary viewport area
+outside protected zones; this is not a universal no-overlay claim.
+Synthetic score and external/nonGET firewall exclude actual provider/event/mail,
+physical-device/assistive/fieldCWV or customer proof. JS-enabled prehydration
+is explicitly not solved by noscript; no universal initial-frame claim.
+
+Root first real baseline RED timed out on missing FAQ clearance. An initial
+postfix harness stalled because no-JS pages do not deliver animation frames;
+an isolated JS/no-JS probe proved that cause. The harness now awaits frames only
+with scripting enabled, retaining actual geometry/CSS/native keys in both modes.
+An independent existing-WhatsApp URL check corrected the test literal before
+restoration checks; no product destination changed. Raw diagnostics remain.
+
+Run manually with installed Playwright in PLAYWRIGHT_MODULE, browser executable
+in CHROME_PATH and a built loopback/canonical AB_QA_ORIGIN, then
+`node scripts/qa-floating-faq.mjs` under Node24. No new product dependency or claim
+this optional gate is already automated in CI. Whole-branch/publication remains
+separate. This is a correction slice, not full WP12 completion.
+
+## 11 October 2026 — district release and comparable live lab acceptance
+
+Whole-branch approved `601522497595304992808732638f6e0d44cc30e5` was normally
+fast-forwarded and pushed to main after fresh 370-test premerge and merged gates.
+[Exact CI38111748226](https://github.com/Ilias492610/ABService/actions/runs/38111748226)
+succeeds at 04:30:34 UTC under Node24.21.0: install411/412, lint, 370 tests,
+production audit0, build170 and hosted crawl82/93/112. Both exact-SHA Vercel
+checks and Production statuses succeed: primary6990919898 at04:30:32 UTC and
+secondary6990915723 at04:30:05 UTC. Provider times are not exact canonical-alias
+activation times. Development9/ESLint9 and source57/56HTTP200/knownSibelga403
+remain distinct open conditions, not an all-green source/security statement.
+
+Fresh canonical crawl82pages/93destinations/112assets and 32 actual Chrome
+desktop1440×1000/mobile390×844 JS/no-JS district profiles pass, with1851GET-only
+requests and no writes/errors/overflow. Both native neutral anchors, editable
+blank intake, unchecked consent, retained page elements and six date-only
+sitemap changes hold. Controlled rating503/external firewall exclude actual
+provider/event/mail/physical-device/assistive/focus-placement/field/customer proof.
+Ordinary centred FAQ clicks pass; the real viewport-edge card interception is
+still a separate WP12 correction, not hidden by this release acceptance.
+
+Three sequential canonical Borsbeek mobile Lighthouse13.5.0 runs before and
+three after publication use the same Chrome156, machine, simulated throttling,
+412×823 viewport and fresh browser storage. No blocked URLs, runtime errors or
+run warnings; ordinary provider traffic remains unblocked. All six runs score
+99performance/100accessibility/100best practices/100SEO. Median before→after:
+LCP2025.68→2022.4545ms, TBT16.5→16ms, CLS0→0 and277039→277227 transferred bytes.
+This is a descriptive lab comparison, not meaningful causal improvement, INP,
+field CWV, a new homepage measurement or a customer outcome. Exact logs/settings
+are retained in ignored batch6 evidence; no product package was added for this.
+
+One previewed six-changed-published-URL IndexNow notification receivedHTTP200;
+receipt is not indexing. No duplicate/full-site notification was sent. Earlier
+candidate records below keep their stage meaning. Human distinct-local-value,
+traceable case and comparable commercial measurement gates remain open.
+
 ## 11 October 2026 — district factual-clarity candidate, local gates
 
 Task30 `80a6fa9` and Task31 `3cda5da` are independently task-reviewed Approved.

@@ -2,16 +2,25 @@
 
 ## Current progress — ongoing WP00–WP17
 
-Next reviewed local candidate80a6fa9/3cda5da completes a bounded WP08 factual
-correction on six existing districts, without publication-state or route changes.
-Root370tests/lint/production0/build170/crawl82/93/112 and32 built responsive
-JS/no-JS district profiles pass. [QA](SEO_QA_REPORT.md) preserves the source
-fallback, harness corrections and profile-card viewport-edge observation.
-Whole-branch/hosted/canonical/Lighthouse acceptance is separate and still pending.
+Next task-reviewed045d515 protects native FAQs from the existing floating controls
+and preserves no-JS links in document flow. Root376tests/full local gate and24
+actual responsive browser profiles pass. Original features stay intact; final
+whole-branch/hosted/canonical gate is separate. Noscript is not JS-enabled
+prehydration clearance. The complete interim A–K/E34 report below is independently
+document-reviewed; unknown business/account/growth conditions remain explicit.
+
+Latest accepted6015224 contains a bounded WP08 factual correction on six existing
+districts, without publication-state or route changes. Independent task/whole-
+branch reviews, root370tests/full local gate, exact CI38111748226, both Vercel
+Production statuses, canonical82/93/112 and32responsive JS/no-JS district profiles
+pass. Six comparable mobile Borsbeek Lighthouse runs score99/100/100/100 with
+median LCP2.026→2.022s; lab results are not causal growth or fieldCWV. [QA](SEO_QA_REPORT.md)
+preserves source fallback, harness corrections and the real viewport-edge FAQ
+interference being corrected next. One six-URL IndexNow receipt is not indexing.
 Specific local evidence and human distinct-value assessment remain open; none of
 the editorial audit's proposed seven noindex decisions is silently adopted.
 
-Latest accepted869ee4f includes f3bb3c5/2a512ea regional water-provider routing,
+Earlier accepted869ee4f includes f3bb3c5/2a512ea regional water-provider routing,
 safe intake and both assigned-service enquiry links on all six existing projects.
 Independent task/whole-branch reviews, fresh345tests/full local gate, [exact
 CI38109950339](https://github.com/Ilias492610/ABService/actions/runs/38109950339),
@@ -24,13 +33,17 @@ by the AI editorial audit alone.
 
 The owner permits sequential continuation through the complete follow-up plan
 without a new continuation message after each bounded task. Latest accepted
-release869ee4f also retains source-bound catalog corrections, the watermeter pilot,
+release6015224 also retains source-bound catalog corrections, the watermeter pilot,
 safe interactions, distinct brand maintenance/repair actions, gas-installation
 document/control preparation and initial contact-category HTML. [QA](SEO_QA_REPORT.md)
 records both the latest release and earlierc4a59f9/CI38107909184/328tests/61profile
 snapshot separately; these are release tests, not growth scores.
 
 Remaining work is tracked in the [full WP00–WP17 plan](docs/superpowers/plans/2026-10-10-complete-source-seo-masterplan.md).
+The independently reviewed [current A–K and Phase E report](docs/seo/2026-10-11-masterprompt-a-k-report.md)
+lists all 18 retained and 64 new URLs, all302 municipality drafts, evidence,
+release/lab results and specific next actions. It is an interim deliverable,
+not an all-WP or all34acceptance-points completion claim.
 Real person/project/price/language data, owner-authenticated accounts, confirmed
 custom-event ingestion and comparable commercial/field measurements are not
 invented or marked complete. Continuation needs the available app/computer;

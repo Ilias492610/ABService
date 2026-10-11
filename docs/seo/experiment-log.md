@@ -366,3 +366,44 @@ releases and short copy confound causal attribution; lower specificity is a
 distinct-value concern, not presumed ranking benefit. Sourcefallback/403/dev9/
 case evidence remain disclosed. Wrong facts/dates/state/links/intake merit a scoped
 immediate correction; no blanket noindex or local-evidence approval inferred.
+
+## DISTRICT-CLARITY-20261011 — hosted, canonical and comparable lab supplement
+
+Accepted601522497595304992808732638f6e0d44cc30e5 after independent whole-branch
+review and370premerge/merged tests. CI38111748226 succeeds04:30:34UTC onNode24.21:
+370tests/lint/production0/build170/hosted82/93/112. Both exact-SHA Vercelchecks/
+Productionstatuses and canonical82/93/112/32responsive JS/no-JS profiles1851GETs
+pass; no writes/errors/overflow. Original neutral anchors/intake/date boundaries
+hold. Real FAQ-edge interference remains next WP12 work despite centred success.
+One previewed6changed-URL IndexNow notificationHTTP200 is receipt, not indexing.
+
+Three sequential fresh canonical Borsbeek mobile lab runs per release, same
+Lighthouse13.5.0/Chrome156/machine/simulatedthrottling412×823/storage reset, all
+99/100/100/100/no errors/no warnings/unblocked provider traffic. Median before
+869ee4f→after6015224: LCP2025.68→2022.4545ms/TBT16.5→16ms/CLS0/bytes277039→277227.
+No randomized attribution or meaningful improvement claim; TBT is not INP,
+lab is not fieldCWV and this is not a fresh homepage test.
+
+**RELEASE ACCEPTED /NOT GROWTH-EVALUATED.** No equal-window page/query baseline,
+qualified-enquiry denominator, genuine local case/value approval, event receipt
+or causal uplift. Earlier candidate stage, sourcefallback/403/development9 and
+parent experiment freeze/measurement/revert contracts remain unchanged.
+
+## FAQ-CLEARANCE-20261011 — bounded interaction correction candidate
+
+Against accepted6015224, independently task-reviewed045d515 fixes a real FAQ
+edge-pointer obstruction using existing container clearance and no-JS-only flow.
+No content/date/state/route/provider-claim change. Hypothesis is limited: ordinary
+FAQ pointer/keyboard access is restored while original channels and explicit
+dismissal remain available. PortableRED21/27→GREEN27/27, root376tests/lint/
+production0/build170/crawl82/93/112 and24built responsive profiles636GETs pass.
+Native edge hit/Enter/Space/focus/answers, computed static no-JS vs fixed hydrated
+links, original href/SVG and native dismissal/navigation/restoration checked.
+First no-JS frame-wait harness is diagnosed/corrected; no forced clicks/hiding.
+
+**CANDIDATE /NOT GROWTH-EVALUATED.** Final whole-branch/hosted/canonical gate
+is separate. Fixtures/firewall exclude actual providers/events/mail/customers;
+noscript excludes JS-enabled prehydration, headless excludes physical/assistive/
+fieldCWV. No new search-window/KPI/denominator or ranking/customer attribution.
+Parent experimental freeze/measurement/revert contracts are unchanged. This
+shared-shell/runtime and reporting change does not justify whole-site IndexNow.

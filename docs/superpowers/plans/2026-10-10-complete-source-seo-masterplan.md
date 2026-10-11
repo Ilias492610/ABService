@@ -563,6 +563,16 @@ dubbel-queryafwijzing, privacy, statussen, clientfragment en header-clear anker.
 328tests/build170,3325GET-onlylivebrowserrequests, geen echte nieuwe verzending/
 event/rating/fieldmeting. Dit sluit de genoemde releasegate, niet geheel WP12.
 
+**11 oktober — FAQ-clearance lokale kandidaat045d515:** bestaande containerobserver
+beschermt nu ook nativeFAQ; alleen no-JS gebruikt gewone flowlinks en verbergt de
+inerte close. Originele kanalen/logos/idlefetch/events/dismissal blijven. Onafhankelijke
+taakreview Approved, portableRED21/27→GREEN27/27, root376tests/lint/production0/
+build170/local82/93/112 en24echte desktop/mobielprofielen slagen: normale
+rand-pointer/Enter/Space/focus, no-JScomputedCSS, native dismissal/navigation en
+herstel. [QA](../../../SEO_QA_REPORT.md) bewaart harnessdiagnose en grenzen.
+Whole-branch/hosted/live is nog apart; noscript lost scripting-enabled
+prehydration niet op, en dit sluit geen volledige WP12/veld-CWV/assistive af.
+
 ### WP13 — Verdiende links en lokale partners
 
 **Files:** `LOCAL_SEO_EXTERNAL_ACTIONS.md`; nieuw `docs/seo/earned-link-opportunities.md`. Contactgegevens privé; alleen concepten in repo.
@@ -678,6 +688,16 @@ De oorspronkelijke veertienweekse pagina-roadmap, Sarveshs twaalfweekse ritme, M
 
 ## 8. Acceptance en voortgang zonder misleidend percentage
 
+**11 oktober — WP08-release6015224 geaccepteerd:** onafhankelijke whole-branch
+review,370premerge/merged tests, exacteCI38111748226, beide VercelProduction
+statuses, canonical82/93/112 en32desktop/mobiel JS/no-JS profielen slagen.
+Zes vergelijkbare Borsbeek-mobiele labruns scoren99/100/100/100; medianeLCP
+2.026→2.022s is beschrijvend, geen causale winst/veldCWV. Eén6URLIndexNow200
+is ontvangst, niet indexatie. [QA](../../../SEO_QA_REPORT.md) bewaart details;
+de FAQ-overlap aan de viewportkant is de volgende begrensde WP12-correctie.
+Menselijke lokale-waardecheck, echte districtcase/review en302concepten blijven
+open; oudere kandidaatnotities hieronder zijn historische fasen.
+
 **11 oktober — begrensde WP08-kandidaat80a6fa9/3cda5da:** Borsbeek heeft
 afzonderlijke officiële districtscontext; vijf andere paragrafen vragen bekende
 individuele gegevens zonder geografische technische gevolgtrekking. Zes echte
@@ -691,8 +711,8 @@ niet WP08, echte gemeente-/districtbewijzen of menselijke unieke-waardecheck af;
 Een taak is alleen **afgerond** als deliverable én vereiste test/account/broncontrole bewezen zijn. Gebruik bron-ID, beslissing, status, verantwoordelijke, afhankelijkheid, bewijsplaats, laatste check, release-SHA indien code en volgende stap. Houd implementatie, live verificatie, externe bevestiging en zakelijk effect apart.
 
 - [ ] Controleer alle 34 M110-acceptatiebullets afzonderlijk. De masterbijlage bevat ieder punt, huidig bewijs en resterende grens.
-- [ ] Lever M111 A–K: bevindingen, wijzigingen, exacte gewijzigde URLs, nieuwe URLs met intentie/status/bewijs, drafts, techniek, linkstructuur, vergelijkbare performance, concrete tests, externe stappen en volgende inhoudskansen.
-- [ ] Lever E34: volledige 304-registry/tien districten/zes hubs; published/draft/niet-gegenereerde lokale URLs; bewijs, indexability, links, GSC-onbekenden en volgende twintig onderzoekskandidaten.
+- [x] Lever M111 A–K: [actuele tussenrapportage](../../seo/2026-10-11-masterprompt-a-k-report.md), onafhankelijk documentreview Approved; alle A–K-onderdelen met18behouden/64nieuwe URLs, bewijs, grenzen, echte release/labresultaten en volgende acties. Dit is rapportageacceptatie, niet alle34M110-bullets of alle18WPs.
+- [x] Lever E34: hetzelfde rapport bevat304gemeenten/tien districten/zes hubs, alle302niet-routable concepten,80published/tweenoindex, bewijs/indexability/links/GSC-onbekenden en twintig onderzoekskandidaten. Nul complete gemeten prioriteitsscores of matching lokale cases blijven onbekend/ontbrekend; geen publicatiebesluit afgeleid.
 - [ ] Geen verweesd bronvereiste: C-twintig modules, S-twintig prompts, M-vier passes, J-thema's, G-publieke previews en U58 gekoppeld. Benoem ongelezen/betaald/afgebroken materiaal precies.
 - [ ] Productrelease: RED→GREEN, passende onafhankelijke bron-/kwaliteit-/code-/elementenreview, echte Node 24, lokale/hosted QA, juiste GitHub/Vercel-SHA/www, kritieke live flows en QA/changelog. Geen gefaalde gate wegpoetsen.
 - [ ] Alleen een apart gedefinieerde deliverabletelling mag als voortgangsteller dienen. Nooit 114 tests/113 secties, 79 URLs/304 gemeenten of Lighthouse 100 als SEO-percentage. Brondekking en afgewezen adviezen zijn geen nieuwe klanten.

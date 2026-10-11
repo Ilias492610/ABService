@@ -1,5 +1,34 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — FAQ clearance and complete interim reporting candidate
+
+- Task-reviewed045d515 protects native FAQ content from both existing fixed
+  widgets and uses static-flow links only in no-JS sessions; original channels,
+  SVGs/live effect/events/dismissal remain.376tests/lint/production0/build170/
+  crawl82/93/112 and24real responsive browser profiles pass locally.
+- Adds optional portable browser regression without a product dependency;
+  raw no-JS animation-frame harness diagnosis is retained, not a product failure.
+- Independently document-reviewed [A–K/E34 interim report](docs/seo/2026-10-11-masterprompt-a-k-report.md)
+  lists18retained/64new URLs and all302data-only municipality drafts with exact
+  scope/evidence/statuses. Reporting is complete, not all34criteria/all18WPs.
+- No route/metadata/schema/sitemap/contentdate/state or business claim change.
+  Final whole-branch, exact hosted/canonical publication remain separate gates.
+
+## 11 October 2026 — district correction publication and lab comparison
+
+- Whole-branch reviewed6015224 normally merged/pushed. [Exact CI38111748226](https://github.com/Ilias492610/ABService/actions/runs/38111748226)
+  passes370tests/lint/production0/build170/hosted82/93/112 onNode24.21.0;
+  both exact-SHA Vercel checks and Production statuses succeed.
+- Canonical82/93/112 crawl and32desktop/mobile JS/no-JS profiles pass with1851
+  GET-onlyrequests, original neutral links/intake/date boundaries preserved.
+  Existing FAQ viewport-edge interference remains an explicit next WP12 task.
+- Six comparable mobile Borsbeek Lighthouse runs all score99/100/100/100;
+  median LCP2.026→2.022s, TBT16.5→16ms, CLS0 and transfer277039→277227bytes.
+  Lab comparison is not causal growth or fieldCWV proof. No dependency added.
+- One six-changed-URL IndexNow notification receivesHTTP200, not indexing.
+  No new route/publication decision or private local evidence. Historical
+  candidate snapshots and source403/development9 disclosures remain intact.
+
 ## 11 October 2026 — reviewed district factual-clarity candidate
 
 - Task30 `80a6fa9` replaces unsupported Borsbeek pipe/density inferences with

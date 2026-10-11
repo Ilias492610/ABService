@@ -1,5 +1,40 @@
 # Evidence Register
 
+## 11 October 2026 — FAQ interaction and interim reporting candidate evidence
+
+Task-reviewed045d515 is limited to FAQ suppression and literal noscript fallback.
+Independent portable RED21/27→GREEN27/27; fresh root376tests/lint/production0/
+build170/crawl82/93/112. Actual built24responsive native edge/Enter/Space/focus/
+restoration/dismissal/JS-no-JS profiles636GETs pass without writes/errors/overflow.
+Existing destinations/logos/rating effect remain; score4.7 and503 are fixtures,
+not new real provider facts. Source403/dev9 and actual events/physical/assistive/
+field/client evidence remain. Noscript does not handle JS-enabled prehydration.
+First hanging frame-wait harness was diagnosed by a bounded JS/no-JS probe;
+corrected conditional wait preserves actual CSS/hit/native-key assertions.
+
+Document task review and root65local-link/A–K/C18/D64/E302 checks approve the
+complete interim report. Local code/route evidence and current6015224 release
+snapshot are not human case/local approval, future release or all-WP completion.
+Full whole-branch/hosted/canonical acceptance remains a separate gate.
+## 11 October 2026 — district canonical and lab release evidence
+
+Accepted601522497595304992808732638f6e0d44cc30e5 follows the independent whole-
+branch review and fresh370premerge/merged tests. [CI38111748226](https://github.com/Ilias492610/ABService/actions/runs/38111748226)
+succeeds04:30:34UTC Node24.21.0,370tests/lint/production0/build170/82/93/112.
+Both exact-SHA Vercelchecks/Productionstatuses succeed: primary6990919898
+04:30:32UTC, secondary6990915723 04:30:05UTC; alias activation time not inferred.
+Canonical82/93/112 and32native desktop/mobile JS/no-JS district profiles1851GETs
+pass. Centred FAQ behavior is narrower than the retained edge-interception bug.
+
+Actual same-config Lighthouse13.5.0/Chrome156 mobile lab has three fresh runs per
+release, all99/100/100/100, no errors/warnings or blocked URLs. Median before
+869ee4f→after6015224: LCP2025.68→2022.4545ms, TBT16.5→16ms, CLS0→0 and bytes
+277039→277227. Six JSON results and batch6-lighthouse-comparison.json retain
+settings/times/raw values; normal provider/CDN variability excludes causality,
+INP/fieldCWV and customer inference. One six-URL IndexNowHTTP200 receipt is not
+indexing. Sourcefallback/403, development9, actual provider/event and case/local
+evidence boundaries remain. Earlier candidate records are not backfilled.
+
 ## 11 October 2026 — bounded district candidate evidence
 
 Task-reviewed80a6fa9/3cda5da supplies official Borsbeek administrative context
