@@ -88,12 +88,14 @@ h3 { margin: 0 0 .7rem; font-size: 1.2rem; }
 .maintenance-check-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 .maintenance-check-form, .maintenance-check-result { min-width: 0; border: 1px solid var(--line); border-radius: 1rem; padding: clamp(1.25rem, 3vw, 2rem); }
 .maintenance-check-result { background: var(--mist); }
+.maintenance-check-form fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.maintenance-check-form .button:disabled { opacity: .6; cursor: not-allowed; transform: none; }
 .maintenance-check-form h2, .maintenance-check-result h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .maintenance-check-form .button, .maintenance-check-result .button { margin-top: 1.5rem; }
 .maintenance-check-form small, .tool-note { display: block; color: var(--muted); font-size: .9rem; }
 .planning-date { display: grid; gap: .25rem; border-left: 4px solid var(--teal); background: white; padding: 1rem; margin-block: 1.25rem; }
 .planning-date strong { font-size: 1.3rem; }
-#onderhoudscheck, #onderhoudsresultaat, .field input, .field select, .field textarea, .checkbox-row input { scroll-margin-top: calc(var(--header-offset) + 1rem); }
+#onderhoudscheck, #onderhoudsresultaat, #watermetercheck, #watermeterresultaat, .field input, .field select, .field textarea, .checkbox-row input { scroll-margin-top: calc(var(--header-offset) + 1rem); }
 .table-scroll { max-width: 100%; overflow-x: auto; }
 .rule-table { width: 100%; border-collapse: collapse; font-size: .96rem; }
 .rule-table caption { text-align: left; margin-bottom: .7rem; color: var(--muted); }

@@ -59,3 +59,39 @@ test("handoff excludes impossible calendar dates but includes real leap dates", 
     assert.ok(context.message.includes(date));
   }
 });
+
+test("water observations hand off only a consistent coded result and service in a fragment", () => {
+  for (const [waterMeterContext, service, expected] of [
+    ["positive", "Lekdetectie", "/contact#aanvraagformulier?dienst=Lekdetectie&context=watermetercheck&result=positive"],
+    ["zero", "Andere vraag", "/contact#aanvraagformulier?dienst=Andere+vraag&context=watermetercheck&result=zero"],
+  ]) {
+    const href = buildContactHref({ service, waterMeterContext, firstReading: "private-reading", minutes: "private-period", unit: "m3", email: "private@example.invalid" });
+    assert.equal(href, expected);
+    const url = new URL(href, "https://qa.example.invalid");
+    assert.equal(url.search, "");
+    const context = readContactContext(url);
+    assert.equal(context.service, service);
+    assert.match(context.message || "", /watermeter.*beoordel/i);
+    assert.doesNotMatch(context.message || "", /private|m³|liter|minuten/i);
+    assert.match(context.message || "", waterMeterContext === "positive" ? /verandering.*geregistreerd/i : /geen verschil.*niet.*(?:elk|ieder).*lek/i);
+  }
+});
+
+test("untrusted or inconsistent water contexts cannot create a tool message", () => {
+  for (const [waterMeterContext, service] of [["positive", "Andere vraag"], ["zero", "Lekdetectie"], ["constructor", "Lekdetectie"], ["__proto__", "Lekdetectie"], ["toString", "Lekdetectie"], ["positive&email=private", "Lekdetectie"], [null, "Lekdetectie"], [{ result: "positive" }, "Lekdetectie"]]) {
+    assert.equal(buildContactHref({ waterMeterContext, service }), `/contact?${new URLSearchParams({ dienst: service })}#aanvraagformulier`);
+  }
+  const base = "#aanvraagformulier?dienst=Lekdetectie&context=watermetercheck&result=positive";
+  for (const hash of [
+    base.replace("Lekdetectie", "Andere+vraag"), base.replace("positive", "constructor"), base.replace("positive", "__proto__"), base.replace("positive", "toString"), base.replace("positive", "%E0%A4%A"),
+    `${base}&result=zero`, `${base}&context=onderhoudscheck`, `${base}&firstReading=123`, `${base}&email=private%40example.invalid`, `${base}&__proto__=positive`, `${base}&extra=${"a".repeat(1600)}`,
+  ]) assert.equal(readContactContext({ hash }).message, undefined, hash);
+  assert.equal(readContactContext({ search: "?dienst=Lekdetectie&context=watermetercheck&result=positive" }).message, undefined);
+});
+
+test("maintenance context takes precedence when both tools are supplied", () => {
+  const href = buildContactHref({ service: "Onderhoud cv-ketel", waterMeterContext: "positive", toolInput: { region: "brussel", device: "central", fuel: "gas", power: "unknown", changed: "no", lastDate: "2024-02-29" } });
+  assert.match(href, /context=onderhoudscheck/);
+  assert.doesNotMatch(href, /watermetercheck|result=/);
+  assert.match(readContactContext(new URL(href, "https://qa.example.invalid")).message, /2024-02-29/);
+});

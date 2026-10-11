@@ -296,10 +296,10 @@ export const pageRegistry = Object.freeze([
     path: "/advies",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Advies over cv-ketels, warm water en loodgieterswerk | AB Service",
-    description: "Vind veilige eerste stappen bij drukverlies, koude radiatoren, waterlekken, boilerproblemen en verstopte afvoeren. Met officiële bronnen en gratis onderhoudscheck.",
+    description: "Vind veilige eerste stappen bij drukverlies, koude radiatoren, waterlekken en verstopte afvoeren. Met officiële bronnen, onderhoudscheck en watermetercheck.",
     changeFrequency: "monthly",
     priority: 0.75,
-    lastModified: "2026-10-10",
+    lastModified: "2026-10-11",
   },
   {
     path: "/tools/onderhoudscheck",
@@ -309,6 +309,15 @@ export const pageRegistry = Object.freeze([
     changeFrequency: "monthly",
     priority: 0.75,
     lastModified: "2026-10-10",
+  },
+  {
+    path: "/tools/watermetercheck",
+    status: CONTENT_STATUS.PUBLISHED,
+    title: "Watermetercheck: vergelijk uw totale meterstanden | AB Service",
+    description: "Vergelijk twee totale meterstanden en een bekende meetduur. Bekijk de geregistreerde hoeveelheid en beperkingen, zonder lekdiagnose of account.",
+    changeFrequency: "monthly",
+    priority: 0.65,
+    lastModified: "2026-10-11",
   },
   ...adviceGuides.map((guide) => ({
     path: guide.path,
@@ -356,6 +365,7 @@ export const pageRegistry = Object.freeze([
   })),
   {
     path: "/privacy-policy",
+    lastModified: "2026-10-11",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Privacybeleid | AB Service",
     description:

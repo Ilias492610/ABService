@@ -60,10 +60,11 @@ test("guides cite primary sources and expose useful internal links", () => {
   }
 });
 
-test("only the substantively revised attest guide advances its explicit editorial dates", () => {
+test("water tool link and attest revisions advance modification independently from source checks", () => {
   for (const guide of adviceGuides) {
     const expected = guide.slug === "onderhoudsattest-cv-ketel" ? "2026-10-11" : "2026-10-10";
-    assert.equal(guide.modifiedAt, expected, `${guide.slug}: content modification`);
+    const modified = guide.slug === "watermeter-blijft-draaien" ? "2026-10-11" : expected;
+    assert.equal(guide.modifiedAt, modified, `${guide.slug}: content modification`);
     assert.equal(guide.checkedAt, expected, `${guide.slug}: source check`);
   }
 });

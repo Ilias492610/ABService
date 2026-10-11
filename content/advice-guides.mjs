@@ -67,7 +67,7 @@ export const adviceGuides = Object.freeze([
   guide({
     slug: "watermeter-blijft-draaien",
     checkedAt: "2026-10-10",
-    modifiedAt: "2026-10-10",
+    modifiedAt: "2026-10-11",
     title: "Watermeter blijft draaien zonder watergebruik: wat controleren?",
     description: "Lees hoe u onverwacht waterverbruik veilig vastlegt, automatische verbruikers herkent en een vermoedelijk waterlek gericht laat onderzoeken.",
     eyebrow: "Onverwacht waterverbruik",
@@ -131,6 +131,7 @@ export const adviceGuides = Object.freeze([
       { title: "Onderzoek", text: "Laat onverklaard verbruik gericht beoordelen." },
     ],
     relatedLinks: [
+      { label: "Vergelijk twee totale standen met de lokale watermetercheck", href: "/tools/watermetercheck" },
       { label: "Vermoedelijk waterlek laten lokaliseren", href: "/diensten/lekdetectie" },
       { label: "Bereikbaar waterlek laten herstellen", href: "/diensten/waterlek-herstellen" },
       { label: "Terugkerend drukverlies van de cv-ketel", href: "/advies/drukverlies-cv-ketel" },

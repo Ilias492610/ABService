@@ -93,15 +93,26 @@ test("registry, OG and sitemap derive article modification only from modifiedAt"
   }
 });
 
-test("actual guide registry, OG and sitemap retain five dates and advance the attest revision", () => {
+test("guide modification follows the water link and attest revisions while source checks remain independent", () => {
   const sitemap = buildSitemapEntries(pageRegistry);
   for (const guide of adviceGuides) {
-    const expected = guide.slug === "onderhoudsattest-cv-ketel" ? "2026-10-11" : "2026-10-10";
+    const expected = ["onderhoudsattest-cv-ketel", "watermeter-blijft-draaien"].includes(guide.slug) ? "2026-10-11" : "2026-10-10";
     const page = pageRegistry.find(({ path }) => path === guide.path);
     assert.equal(page.lastModified, expected, guide.path);
     assert.equal(buildPageMetadata(page).openGraph.modifiedTime, expected, guide.path);
     assert.equal(sitemap.find(({ url }) => url.endsWith(guide.path)).lastModified, expected, guide.path);
+    assert.equal(guide.checkedAt, guide.slug === "onderhoudsattest-cv-ketel" ? "2026-10-11" : "2026-10-10");
   }
+});
+
+test("water meter pilot is published with its own canonical and actual content dates", () => {
+  const page = pageRegistry.find(({ path }) => path === "/tools/watermetercheck");
+  assert.equal(page?.status, "published");
+  const metadata = buildPageMetadata(page);
+  assert.equal(metadata.alternates.canonical, "https://www.abservice24.be/tools/watermetercheck");
+  assert.match(metadata.description, /(?:geregistreerd|meterstanden)/i);
+  assert.equal(buildSitemapEntries(pageRegistry).find(({ url }) => url.endsWith("/tools/watermetercheck"))?.lastModified, "2026-10-11");
+  for (const path of ["/advies", "/privacy-policy"]) assert.equal(pageRegistry.find((entry) => entry.path === path).lastModified, "2026-10-11");
 });
 
 test("published pages have distinct topic previews without changing the homepage or noindex fallback", () => {

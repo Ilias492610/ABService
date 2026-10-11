@@ -7,6 +7,16 @@ import { auditExternalSources } from "../libs/external-source-audit.mjs";
 import { getCitedSources } from "../libs/cited-sources.mjs";
 import { getAdviceGuide } from "../content/advice-guides.mjs";
 
+test("water meter display and period-test citations enter the monitored inventory with useful labels", () => {
+  const sources = getCitedSources();
+  for (const [href, label] of [
+    ["https://www.farys.be/nl/hoe-spoor-ik-zelf-lekken-op-de-lektest", "Farys: vergelijken tijdens een periode zonder watergebruik"],
+    ["https://www.farys.be/nl/hoe-lees-ik-de-meterstand", "Farys: de totale meterstand aflezen"],
+    ["https://www.farys.be/nl/welke-gegevens-kan-ik-aflezen-van-de-digitale-watermeter", "Farys: totale stand en debiet op een digitale meter"],
+    ["https://www.vlaanderen.be/bouwen-wonen-en-energie/water/een-lek-in-de-waterleiding", "Vlaanderen: waterlekken en de rol van uw waterbedrijf"],
+  ]) assert.ok(sources.some((source) => source.href === href && source.label === label), href);
+});
+
 test("attest handoff cites the exact regional heating and housing pages and monitors them", () => {
   const guideHrefs = new Set(getAdviceGuide("onderhoudsattest-cv-ketel").sourceLinks.map(({ href }) => href));
   const monitoredHrefs = new Set(getCitedSources().map(({ href }) => href));

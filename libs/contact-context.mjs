@@ -14,10 +14,20 @@ const isCalendarDate = (value) => {
   return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
 };
 
-export function buildContactHref({ service, toolInput } = {}) {
+const isWaterContext = (result, service) =>
+  (result === "positive" && service === "Lekdetectie") || (result === "zero" && service === "Andere vraag");
+
+export function buildContactHref({ service, toolInput, waterMeterContext } = {}) {
   if (!CONTACT_SERVICES.includes(service)) return "/contact#aanvraagformulier";
   const params = new URLSearchParams({ dienst: service });
-  if (!toolInput) return `/contact?${params}#aanvraagformulier`;
+  if (!toolInput) {
+    if (isWaterContext(waterMeterContext, service)) {
+      params.set("context", "watermetercheck");
+      params.set("result", waterMeterContext);
+      return `/contact#aanvraagformulier?${params}`;
+    }
+    return `/contact?${params}#aanvraagformulier`;
+  }
   params.set("context", "onderhoudscheck");
   for (const [key, values] of Object.entries(labels)) {
     if (Object.hasOwn(values, toolInput[key])) params.set(key, toolInput[key]);
@@ -33,6 +43,18 @@ export function readContactContext({ search = "", hash = "" } = {}) {
   const service = params.get("dienst");
   if (!CONTACT_SERVICES.includes(service)) return {};
   const context = { service };
+  if (fromTool && params.get("context") === "watermetercheck") {
+    const keys = [...params.keys()];
+    // Exact, unique keys prevent duplicate, malformed or private additions from
+    // becoming trusted tool context. The ordinary service allowlist still applies.
+    if (keys.length === 3 && new Set(keys).size === 3
+      && keys.every((key) => ["dienst", "context", "result"].includes(key))
+      && isWaterContext(params.get("result"), service)) {
+      context.message = params.get("result") === "positive"
+        ? "Watermetercheck: tijdens mijn gekozen periode is een verandering geregistreerd. Dit is een meterobservatie, geen bevestigd lek. Ik wil mogelijke verbruikers en een onverklaard verschil laten beoordelen."
+        : "Watermetercheck: tijdens mijn gekozen periode was er geen verschil. Dit sluit niet elk lek uit, bijvoorbeeld een tijdelijk lek of een lek in een ander circuit. Ik wil deze meterobservatie laten beoordelen.";
+    }
+  }
   if (fromTool && params.get("context") === "onderhoudscheck") {
     const choices = Object.entries(labels).map(([key, values]) => Object.hasOwn(values, params.get(key)) ? values[params.get(key)] : null).filter(Boolean);
     const date = params.get("lastDate");

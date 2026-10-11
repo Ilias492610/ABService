@@ -49,3 +49,14 @@ test("analytics accepts known tool codes while rejecting personal data in permit
   }).props, {});
   assert.deepEqual(buildAnalyticsEvent("contact_form_start", JSON.parse('{"constructor":"jan@example.be","__proto__":"secret"}')).props, {});
 });
+
+test("water analytics permits only coded statuses and never quantities or private inputs", () => {
+  for (const result of ["observation", "unknown", "unsafe", "invalid"]) {
+    assert.ok(analytics.ANALYTICS_EVENTS.includes("water_meter_check_complete"));
+    assert.deepEqual(buildAnalyticsEvent("water_meter_check_complete", {
+      location: "water_meter_check", result, firstReading: "123.456", secondReading: "123.457", minutes: "60", unit: "m3", differenceLitres: 1, litresPerHour: 1, service: "Lekdetectie", region: "vlaanderen",
+    }), { name: "water_meter_check_complete", props: { location: "water_meter_check", result } });
+  }
+  assert.deepEqual(buildAnalyticsEvent("water_meter_check_complete", { location: "private@example.invalid", result: "periodic", email: "private@example.invalid" }).props, {});
+  assert.deepEqual(buildAnalyticsEvent("service_cta_click", { location: "water_meter_check", service: "Lekdetectie", result: "observation", minutes: "60" }).props, { location: "water_meter_check", service: "Lekdetectie", result: "observation" });
+});
