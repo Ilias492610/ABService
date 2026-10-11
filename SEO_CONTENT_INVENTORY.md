@@ -2,6 +2,24 @@
 
 ## Published routes
 
+**Current accepted baseline `5a8d7c0`:** exact CI38127116203/415 tests, both
+actual Production statuses, canonical82/93/112 and eight live native profiles
+are verified. Remeha659; thirteen guides1565 displayed explanation rows,
+37 assignments /31 distinct catalogs /1323 rows without Bosch/Junkers reuse.
+No count is universal model coverage, unique codes or Google indexation.
+The [complete bounded inventory](docs/seo/fault-code-model-coverage.md) separates
+literal scope/revision/model/product/component/source/pages from unverified nulls.
+Same82/80/2 routes,304municipalities/302drafts/10districts/6hubs.
+
+**Task46 local candidate:** one Bulex-only model-unknown/unlisted help block,
+official-manual link and native existing-service contact handoff. All43code rows,
+guides/scopes/metadata/registry remain exact; no route/date/dependency change.
+Task47 is a documentation inventory, not new source or commercial coverage.
+Local423tests/build170/82/93/112 and eight native profiles pass after a scoped
+two-link underline correction. Final review/hosted/live acceptance remain separate.
+Entries below are dated
+earlier acceptance/candidate snapshots, not the current coverage baseline.
+
 **Current published baseline d605b8b; Task45 local candidate:** preceding local
 copy/tool changes are reviewed, exact CI 38122061458 / 409 tests and both actual
 Production statuses accepted, with canonical 82/93/112 and eight native profiles.

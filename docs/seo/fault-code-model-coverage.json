@@ -1,0 +1,1333 @@
+{
+  "capturedAt": "2026-10-11T13:13:40.886Z",
+  "purpose": "Task47 read-only current WP07 coverage reporting aid; not source re-audit or complete13-brand/model certification",
+  "counts": {
+    "guides": 13,
+    "catalogAssignments": 37,
+    "distinctCatalogs": 31,
+    "displayedExplanationRows": 1565,
+    "distinctCatalogExplanationRows": 1323,
+    "distinctCatalogSourceURLs": 17
+  },
+  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Site-wide source-audit unique count58 is outside this catalog-only enumeration and not rechecked.",
+  "method": "Pure current module import for literal ids/scopes/counts/guide assignment; retained report inspection and targeted source-artifact existence/SHA checks. No new external request/download, code-row re-audit, build/test/browser/Git mutation or tracked edit.",
+  "guides": [
+    {
+      "slug": "vaillant",
+      "brand": "Vaillant",
+      "modelWarning": "Deze catalogus combineert het officiële Belgische consumentenoverzicht met de volledige foutcodetabel uit 0020282230_00 voor de negen hieronder genoemde Belgische ecoTEC plus CS/1-5-modellen en artikelnummers. Niet elke code komt op elk product voor; andere varianten en revisies zijn niet gedekt. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel voordat u een betekenis toepast.",
+      "explanationRowCount": 90,
+      "catalogIds": [
+        "vaillant-publiek-overzicht",
+        "vaillant-ecotec-plus-cs"
+      ],
+      "documentationLabel": "Alle officiële Vaillant-documentatie",
+      "documentationURL": "https://support.vaillant.be/alle-documentatie/"
+    },
+    {
+      "slug": "bulex",
+      "brand": "Bulex",
+      "modelWarning": "Deze catalogus bevat alle codes uit het officiële Belgische consumentenoverzicht en de volledige tabel uit 0020124551_02 voor uitsluitend THEMA Condens FAS 65, artikelnummer 0010010389, BEnl. Andere THEMA-varianten en revisies zijn niet gedekt. Dezelfde code kan per bron een andere betekenis hebben. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel voordat u een betekenis toepast.",
+      "explanationRowCount": 43,
+      "catalogIds": [
+        "bulex-publiek-overzicht",
+        "bulex-thema-condens"
+      ],
+      "documentationLabel": "Officiële Bulex-gebruikshandleidingen",
+      "documentationURL": "https://www.bulex.be/particulier/documentatie/technische-documentaties/handleidingen/"
+    },
+    {
+      "slug": "bosch",
+      "brand": "Bosch",
+      "modelWarning": "De catalogus volgt alle ketelcodes uit het officiële Bosch-codeboek voor Serie 7000i, Serie 9000i, Cerapur Maxx en de generaties -4, -3 en -2. Kies altijd eerst de toestelreeks: dezelfde code kan per generatie een andere betekenis hebben.",
+      "explanationRowCount": 242,
+      "catalogIds": [
+        "bosch-serie-7000i",
+        "bosch-serie-9000i",
+        "bosch-cerapur-maxx",
+        "bosch-serie-4",
+        "bosch-serie-3",
+        "bosch-serie-2"
+      ],
+      "documentationLabel": "Bosch handleidingen en modeldocumentatie",
+      "documentationURL": "https://www.bosch-homecomfort.com/be/nl/residentieel/service-ondersteuning/bedieningshandleidingen/"
+    },
+    {
+      "slug": "junkers",
+      "brand": "Junkers",
+      "modelWarning": "Het officiële Bosch-codeboek behandelt Junkers- en Bosch-condensatieketels samen. Deze catalogus neemt alle ketelcodes uit de zes gedocumenteerde generaties over; controleer daarom altijd toestelreeks, bouwjaar en eventuele subcode.",
+      "explanationRowCount": 242,
+      "catalogIds": [
+        "bosch-serie-7000i",
+        "bosch-serie-9000i",
+        "bosch-cerapur-maxx",
+        "bosch-serie-4",
+        "bosch-serie-3",
+        "bosch-serie-2"
+      ],
+      "documentationLabel": "Officiële documentatie voor oudere Bosch/Junkers-toestellen",
+      "documentationURL": "https://www.bosch-homecomfort.com/be/nl/residentieel/professionals/voor-de-installateurs/technische-documentatie/documentatie-oude-bosch-toestellen/"
+    },
+    {
+      "slug": "remeha",
+      "brand": "Remeha",
+      "modelWarning": "Kies uw toestelreeks en generatie: Avanta volgt de officiële Belgische Storingswijzer; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.",
+      "explanationRowCount": 659,
+      "catalogIds": [
+        "remeha-avanta",
+        "remeha-calenta-legacy",
+        "remeha-calenta-legacy-blocking",
+        "remeha-calenta-ace-matic-cu-warnings",
+        "remeha-calenta-ace-matic-cu-blocking",
+        "remeha-calenta-ace-matic-cu-locking",
+        "remeha-calenta-ace-matic-scb-warnings",
+        "remeha-calenta-ace-matic-scb-blocking",
+        "remeha-calenta-ace-matic-25l-cu-warnings",
+        "remeha-calenta-ace-matic-25l-cu-blocking",
+        "remeha-calenta-ace-matic-25l-cu-locking",
+        "remeha-calenta-ace-matic-25l-scb-warnings",
+        "remeha-calenta-ace-matic-25l-scb-blocking"
+      ],
+      "documentationLabel": "Officiële Remeha Storingswijzer",
+      "documentationURL": "https://storingswijzer.remeha.be/"
+    },
+    {
+      "slug": "buderus",
+      "brand": "Buderus",
+      "modelWarning": "Deze selectie uit tabel 17, §12.3, p. 33-37 van installatiehandleiding 6720813438 (2021/07), BE Nederlands, geldt uitsluitend voor Logamax plus GB162-70/85/100 V2: 52 uitlegregels voor 74 codecombinaties. Gewone bedrijfs-, componenttest- en resetcodes zijn weggelaten; ontbrekende bronsymbolen krijgen geen storingsclassificatie. De rookgastemperatuursensor is in het schema alleen voor Zwitserland genoemd; controleer bij 1U 317 en 1Y 318 of deze aanwezig is. Controleer het typeplaatje, de configuratie en de gebruikershandleiding van uw exacte toestel. Andere Buderus-reeksen en revisies zijn niet gedekt.",
+      "explanationRowCount": 52,
+      "catalogIds": [
+        "buderus-logamax-gb162-v2"
+      ],
+      "documentationLabel": "Officiële Buderus-handleidingen",
+      "documentationURL": "https://www.buderus.com/be/nl/partners/informatie-documentatie/handleidingen/"
+    },
+    {
+      "slug": "viessmann",
+      "brand": "Viessmann",
+      "modelWarning": "De officiële tabel is een oriëntatieoverzicht voor Vitodens 200-W en 300-W met Vitotronic-regeling en is volgens Viessmann niet universeel of volledig voor nieuwere toestelgeneraties. Controleer daarom altijd model en productcode.",
+      "explanationRowCount": 71,
+      "catalogIds": [
+        "viessmann-vitodens-200-300-vitotronic"
+      ],
+      "documentationLabel": "Officiële Viessmann-productdocumentatie",
+      "documentationURL": "https://www.viessmann.be/nl/services/downloads/gegevens-product-viessmann.html"
+    },
+    {
+      "slug": "acv",
+      "brand": "ACV",
+      "modelWarning": "Deze catalogus bevat de volledige ESYS-foutcodetabel van de genoemde ACV Prestige MKIII-handleiding. Gebruik de code niet voor een andere ACV-reeks zonder het toestelmodel en de bijbehorende handleiding te controleren.",
+      "explanationRowCount": 24,
+      "catalogIds": [
+        "acv-prestige-mkiii"
+      ],
+      "documentationLabel": "Officiële ACV-handleidingen en documentatie",
+      "documentationURL": "https://www.acv.com/belgie/documentation"
+    },
+    {
+      "slug": "intergas",
+      "brand": "Intergas",
+      "modelWarning": "Deze catalogus volgt de volledige storingstabel van de genoemde Intergas Prestige-handleiding. Andere Intergas-toestelreeksen kunnen andere codes, knipperpatronen en modelgebonden controles gebruiken.",
+      "explanationRowCount": 11,
+      "catalogIds": [
+        "intergas-prestige"
+      ],
+      "documentationLabel": "Officiële Intergas-storingshulp",
+      "documentationURL": "https://www.intergas-verwarming.nl/consument/klantenservice/cv-ketel/"
+    },
+    {
+      "slug": "nefit-bosch",
+      "brand": "Nefit Bosch",
+      "modelWarning": "Deze catalogus bevat alle blokkerende en vergrendelende codes uit de genoemde Nefit ProLine HRC-handleiding. Codes voor andere Nefit Bosch-toestellen en generaties moeten in hun eigen modeldocumentatie worden opgezocht.",
+      "explanationRowCount": 54,
+      "catalogIds": [
+        "nefit-proline-hrc"
+      ],
+      "documentationLabel": "Officiële Nefit Bosch-storingshulp",
+      "documentationURL": "https://www.nefit-bosch.nl/service-consument/service-en-onderhoud/storing-oplossen/"
+    },
+    {
+      "slug": "atag",
+      "brand": "ATAG",
+      "modelWarning": "Deze catalogus bevat alle meldingen uit het officiële online ATAG-overzicht, dat meerdere genoemde toestelreeksen combineert. Controleer toestelmodel, schermtekst en eventuele subcode voordat u een verklaring toepast.",
+      "explanationRowCount": 14,
+      "catalogIds": [
+        "atag-officieel-overzicht"
+      ],
+      "documentationLabel": "Officiële ATAG-downloads",
+      "documentationURL": "https://www.atagwarmte.nl/downloads"
+    },
+    {
+      "slug": "itho-daalderop",
+      "brand": "Itho Daalderop",
+      "modelWarning": "Deze catalogus bevat de volledige waarschuwing-, blokkering- en foutcodetabel voor de Itho Daalderop Base Cube. Een code van een ander toestelmodel kan een andere betekenis of procedure hebben.",
+      "explanationRowCount": 26,
+      "catalogIds": [
+        "itho-base-cube"
+      ],
+      "documentationLabel": "Officiële Itho Daalderop-handleidingen",
+      "documentationURL": "https://www.ithodaalderop.nl/nl-NL/consument/handleiding-vinden"
+    },
+    {
+      "slug": "ferroli",
+      "brand": "Ferroli",
+      "modelWarning": "Deze catalogus volgt de volledige A- en F-foutcodetabel uit de genoemde Ferroli BlueSense-servicehandleiding. Raadpleeg voor andere Ferroli-toestelreeksen altijd de modelgebonden documentatie.",
+      "explanationRowCount": 37,
+      "catalogIds": [
+        "ferroli-bluesense"
+      ],
+      "documentationLabel": "Officiële Ferroli-documentatie",
+      "documentationURL": "https://www.ferroli.com/nl/installateurs/toolbox/documentatie"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "vaillant-ecotec-pdf",
+      "kind": "manufacturer-PDF",
+      "sha256": "9bdff233945a99dec524689293699382381814c02694e10fb9d8cb770325d938",
+      "expectedSha256": "9bdff233945a99dec524689293699382381814c02694e10fb9d8cb770325d938",
+      "hashMatchesPriorRecord": true
+    },
+    {
+      "id": "bulex-thema-pdf",
+      "kind": "manufacturer-PDF",
+      "sha256": "bf04e261d24021cd9cb61431a8dce60d5728b236f9e70a3ac2b4663829977c1b",
+      "expectedSha256": "bf04e261d24021cd9cb61431a8dce60d5728b236f9e70a3ac2b4663829977c1b",
+      "hashMatchesPriorRecord": true
+    },
+    {
+      "id": "buderus-gb162-pdf",
+      "kind": "manufacturer-PDF",
+      "sha256": "0228d277c1f0794a0f4ee895d85448d1cdf1d7a155008b28f4f5431ee02bc60d",
+      "expectedSha256": "0228d277c1f0794a0f4ee895d85448d1cdf1d7a155008b28f4f5431ee02bc60d",
+      "hashMatchesPriorRecord": true
+    },
+    {
+      "id": "remeha-four-model-pdf",
+      "kind": "manufacturer-PDF",
+      "sha256": "c58f444fde56791dfecf1676417fe165277f9a46ed4a09f751218e3abc8b59be",
+      "expectedSha256": "c58f444fde56791dfecf1676417fe165277f9a46ed4a09f751218e3abc8b59be",
+      "hashMatchesPriorRecord": true
+    },
+    {
+      "id": "remeha-25l-pdf",
+      "kind": "manufacturer-PDF",
+      "sha256": "415d7c7523048df22196e153c534008140f8c0eb378d6ce7c21fe929bd4490db",
+      "expectedSha256": "415d7c7523048df22196e153c534008140f8c0eb378d6ce7c21fe929bd4490db",
+      "hashMatchesPriorRecord": true
+    },
+    {
+      "id": "vaillant-public-html",
+      "kind": "retained-primary-HTML; hash newly recorded, not prior-pinned",
+      "sha256": "e0a10b05b96ad2af31bf866a2880cbc442ae7b9e2c4b5526d03a92b512fa6d72",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null
+    },
+    {
+      "id": "bulex-public-web-render",
+      "kind": "retained-primary-web-rendered-text; not original HTML bytes",
+      "sha256": "d8dbca33ac1a0e7d3549118f2321419ac2dd4c306ddcfadb28bffc16b2b2d1e7",
+      "expectedSha256": "d8dbca33ac1a0e7d3549118f2321419ac2dd4c306ddcfadb28bffc16b2b2d1e7",
+      "hashMatchesPriorRecord": true
+    }
+  ],
+  "entries": [
+    {
+      "id": "vaillant-publiek-overzicht",
+      "usedBy": [
+        "vaillant"
+      ],
+      "title": "Officieel Vaillant-overzicht",
+      "modelScope": "Alle foutcodes die Vaillant op de Belgische consumentenpagina publiceert. De precieze oorzaak blijft model- en bouwjaarafhankelijk.",
+      "sourceLabel": "Vaillant België - overzicht foutcodes ketels",
+      "sourceURL": "https://www.vaillant.be/nl/advies/helpcentrum/foutcodes-ketel/",
+      "sourcePages": "Online overzicht",
+      "explanationRowCount": 12,
+      "modelFamily": null,
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": "vaillant-public-html",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-vaillant-source-revalidation.md"
+      ],
+      "verificationBasis": "Retained dated primary HTML plus earlier scoped source-body reading report; snapshot exists/hash recorded, no fresh web/body review here.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "vaillant-ecotec-plus-cs",
+      "usedBy": [
+        "vaillant"
+      ],
+      "title": "ecoTEC plus CS/1-5",
+      "modelScope": "Volledige foutcodetabel uit installatie- en onderhoudshandleiding 0020282230_00 van 02.05.2023, uitsluitend voor België. Geldigheid volgens p. 180, met model en artikelnummer: VC 15CS/1-5 (N-BE): 0010024567; VC 25CS/1-5 (N-BE): 0010024568; VC 35CS/1-5 (N-BE): 0010024569; VCW 32CS/1-5 (N-BE): 0010024570; VCW 36CS/1-5 (N-BE): 0010024571; VCW 40CS/1-5 (N-BE): 0010024572; VC 25CS/1-5 (P-BE): 0010039097; VCW 32CS/1-5 (P-BE): 0010039098; VCW 36CS/1-5 (P-BE): 0010039099. Niet elke code verschijnt op elk product. Andere varianten en revisies zijn niet gedekt. Controleer altijd het typeplaatje en de gebruikershandleiding van uw exacte toestel.",
+      "sourceLabel": "Vaillant ecoTEC plus - installatie- en onderhoudshandleiding 0020282230_00",
+      "sourceURL": "https://support.vaillant.be/downloads/documenten/installatievoorschrift/0020282230-00-2764886.pdf",
+      "sourcePages": "Bijlage D, p. 225-236",
+      "explanationRowCount": 78,
+      "modelFamily": "ecoTEC plus CS/1-5",
+      "models": [
+        "VC 15CS/1-5 (N-BE)",
+        "VC 25CS/1-5 (N-BE)",
+        "VC 35CS/1-5 (N-BE)",
+        "VCW 32CS/1-5 (N-BE)",
+        "VCW 36CS/1-5 (N-BE)",
+        "VCW 40CS/1-5 (N-BE)",
+        "VC 25CS/1-5 (P-BE)",
+        "VCW 32CS/1-5 (P-BE)",
+        "VCW 36CS/1-5 (P-BE)"
+      ],
+      "articleNumbers": [
+        "0010024567",
+        "0010024568",
+        "0010024569",
+        "0010024570",
+        "0010024571",
+        "0010024572",
+        "0010039097",
+        "0010039098",
+        "0010039099"
+      ],
+      "documentNumber": "0020282230_00",
+      "revision": "0020282230_00",
+      "issueDate": "02.05.2023",
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": "vaillant-ecotec-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-vaillant-source-revalidation.md"
+      ],
+      "verificationBasis": "Current scope is corroborated by earlier complete scoped manufacturer-PDF reading, p180 applicability/Appendix D pp225–236; retained PDF exists and matches prior SHA. No rereading of all rows in Task47.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "bulex-publiek-overzicht",
+      "usedBy": [
+        "bulex"
+      ],
+      "title": "Officieel Bulex-overzicht",
+      "modelScope": "Alle foutcodes die Bulex op de Belgische consumentenpagina publiceert. De precieze betekenis en herstelprocedure blijven toestelafhankelijk.",
+      "sourceLabel": "Bulex België - meest voorkomende foutcodes",
+      "sourceURL": "https://www.bulex.be/particulier/diensten/foutcodes/",
+      "sourcePages": "Online overzicht",
+      "explanationRowCount": 14,
+      "modelFamily": null,
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": "bulex-public-web-render",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-bulex-source-revalidation.md"
+      ],
+      "verificationBasis": "Retained successful primary web-rendered body/hash matching earlier scoped source reading. The separate Request Rejected public.html is NOT content evidence.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "bulex-thema-condens",
+      "usedBy": [
+        "bulex"
+      ],
+      "title": "THEMA Condens FAS 65",
+      "modelScope": "Volledige foutcodetabel uit installatie- en onderhoudshandleiding 0020124551_02 van 27.02.2015, BEnl. Geldigheid volgens p. 10: uitsluitend THEMA Condens FAS 65, artikelnummer 0010010389. Andere THEMA-varianten en revisies zijn niet gedekt. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel.",
+      "sourceLabel": "Bulex THEMA Condens FAS 65 - installatie- en onderhoudshandleiding 0020124551_02",
+      "sourceURL": "https://www.bulex.be/themacondens/0020124551-02-1746869.pdf",
+      "sourcePages": "Bijlage D, p. 37-38",
+      "explanationRowCount": 29,
+      "modelFamily": "THEMA Condens",
+      "models": [
+        "THEMA Condens FAS 65"
+      ],
+      "articleNumbers": [
+        "0010010389"
+      ],
+      "documentNumber": "0020124551_02",
+      "revision": "0020124551_02",
+      "issueDate": "27.02.2015",
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": "bulex-thema-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-bulex-source-revalidation.md"
+      ],
+      "verificationBasis": "Current scope corroborated by earlier scoped primary-PDF reading, cover/BEnl/p10 applicability/p37–38 Appendix D/footer; retained PDF matches prior SHA. No other THEMA variants verified.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "bosch-serie-7000i",
+      "usedBy": [
+        "bosch",
+        "junkers"
+      ],
+      "title": "Serie 7000i vanaf bouwjaar 2017",
+      "modelScope": "Alle blokkerende, vergrendelende en niet-blokkerende storingsregels uit het officiële codeboek. Hoofdcode en subcode horen samen.",
+      "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
+      "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
+      "sourcePages": "p. 27-30",
+      "explanationRowCount": 31,
+      "modelFamily": "Serie 7000i",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "bosch-serie-9000i",
+      "usedBy": [
+        "bosch",
+        "junkers"
+      ],
+      "title": "Serie 9000i vanaf bouwjaar 2015",
+      "modelScope": "Alle fout- en servicemeldingen uit de officiële tabel; normale bedrijfscodes met storingsklasse O zijn niet als fout opgenomen.",
+      "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
+      "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
+      "sourcePages": "p. 45-53",
+      "explanationRowCount": 41,
+      "modelFamily": "Serie 9000i",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "bosch-cerapur-maxx",
+      "usedBy": [
+        "bosch",
+        "junkers"
+      ],
+      "title": "Cerapur Maxx",
+      "modelScope": "Alle fout- en waarschuwingscodes uit de Cerapur Maxx-tabellen; gewone bedrijfscodes zijn weggelaten.",
+      "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
+      "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
+      "sourcePages": "p. 64-75",
+      "explanationRowCount": 47,
+      "modelFamily": "Cerapur Maxx",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "bosch-serie-4",
+      "usedBy": [
+        "bosch",
+        "junkers"
+      ],
+      "title": "Serie -4 vanaf bouwjaar 2013",
+      "modelScope": "Alle storingscodes en H-meldingen uit de officiële Serie -4-tabellen. Codes voor CerapurAero zijn als zodanig benoemd.",
+      "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
+      "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
+      "sourcePages": "p. 103-109",
+      "explanationRowCount": 37,
+      "modelFamily": "Serie -4",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "bosch-serie-3",
+      "usedBy": [
+        "bosch",
+        "junkers"
+      ],
+      "title": "Serie -3 vanaf bouwjaar 2007",
+      "modelScope": "De volledige storingscodelijst voor Serie -3 in het officiële Bosch/Junkers-codeboek.",
+      "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
+      "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
+      "sourcePages": "p. 132-133",
+      "explanationRowCount": 29,
+      "modelFamily": "Serie -3",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "bosch-serie-2",
+      "usedBy": [
+        "bosch",
+        "junkers"
+      ],
+      "title": "Serie -2, bouwjaar 1997-2006",
+      "modelScope": "Alle benoemde foutcodes uit de historische Serie -2-tabel. Sommige codes hebben meerdere betekenissen naargelang het concrete toestel; die varianten staan samen bij dezelfde code.",
+      "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
+      "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
+      "sourcePages": "p. 160-163",
+      "explanationRowCount": 57,
+      "modelFamily": "Serie -2",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "declaredScopePath": "content/fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-avanta",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Avanta",
+      "modelScope": "Alle 17 foutcoderegels die de officiële Belgische Remeha Storingswijzer op 17 september 2026 voor de Avanta publiceerde.",
+      "sourceLabel": "Remeha België Storingswijzer - Avanta",
+      "sourceURL": "https://storingswijzer.remeha.be/error-codes-products/avanta/",
+      "sourcePages": "Online productoverzicht, 17 codes",
+      "explanationRowCount": 17,
+      "modelFamily": "Avanta",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": [
+        "België"
+      ],
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "scopeSnapshotDate": "17 september 2026",
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared online scope and historical evidence-register record; no retained primary Avanta body reviewed or fresh external verification in Task47.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-legacy",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta 15s/25s/28c/35s/40c — E-storingscodes",
+      "modelScope": "Alle 23 afzonderlijke E-codes uit §11.1 van de Belgische Calenta-handleiding, revisie 080715–117061-08. Niet voor Calenta Ace of Ace-Matic. Dit is een historische modelrevisie; de Su-blokkeringssubcodes staan in een aparte tabel hieronder.",
+      "sourceLabel": "Remeha Calenta België — installatie- en servicehandleiding 117061-08",
+      "sourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf",
+      "sourcePages": "§11.1, gedrukte p. 79–82 (PDF-pagina 80–83)",
+      "explanationRowCount": 23,
+      "modelFamily": "Calenta (legacy)",
+      "models": [
+        "Calenta 15s",
+        "Calenta 25s",
+        "Calenta 28c",
+        "Calenta 35s",
+        "Calenta 40c"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "117061-08",
+      "revision": "080715–117061-08",
+      "issueDate": null,
+      "market": [
+        "België"
+      ],
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current explicit declared scope/title plus historical source-reading record; no retained original legacy PDF existence/hash verified in this bounded Task47.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-legacy-blocking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta 15s/25s/28c/35s/40c — Su-blokkeringssubcodes",
+      "modelScope": "Alle 19 Su-blokkeringssubcodes uit §11.2.2 van dezelfde Belgische handleiding 117061-08. Su is een subcode bij de blokkeringsstatus, niet dezelfde melding als een E-vergrendeling. Niet voor Calenta Ace of Ace-Matic; Su:20 kan kort bij het inschakelen verschijnen zonder defect.",
+      "sourceLabel": "Remeha Calenta België — installatie- en servicehandleiding 117061-08",
+      "sourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf",
+      "sourcePages": "§11.2.2, gedrukte p. 83–84 (PDF-pagina 84–85)",
+      "explanationRowCount": 19,
+      "modelFamily": "Calenta (legacy)",
+      "models": [
+        "Calenta 15s",
+        "Calenta 25s",
+        "Calenta 28c",
+        "Calenta 35s",
+        "Calenta 40c"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "117061-08",
+      "revision": "080715–117061-08",
+      "issueDate": null,
+      "market": [
+        "België"
+      ],
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Same explicitly linked legacy document/current scope and historical source record; actual legacy footer/date not independently reread here. Su subcodes remain separate from E faults.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-cu-warnings",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic — CU-GH-21 — waarschuwingen",
+      "modelScope": "Calenta Ace-Matic 25s/35s/30c/40c voor België en Luxemburg, revisie 7871265-05-04072025, uitsluitend CU-GH-21, NL tabel 227. Codes van de SCB-10-uitbreiding staan afzonderlijk. Niet voor 25L, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. De betekenis hangt af van generatie en configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic installatie- en servicehandleiding 7871265-05-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/ML-ISM-7871265-04-Calenta-Ace-Matic.pdf",
+      "sourcePages": "NL tabel 227, p. 369",
+      "explanationRowCount": 18,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25s",
+        "35s",
+        "30c",
+        "40c"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871265",
+      "revision": "7871265-05-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "CU-GH-21",
+      "tableIds": [
+        227
+      ],
+      "primarySnapshot": "remeha-four-model-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-calenta-source-inventory.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Component-specific CU codes remain separate from SCB. Blank CU H03.254 description does not authorize specific diagnosis.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-cu-blocking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic — CU-GH-21 — tijdelijke blokkeringen",
+      "modelScope": "Calenta Ace-Matic 25s/35s/30c/40c voor België en Luxemburg, revisie 7871265-05-04072025, uitsluitend CU-GH-21, NL tabel 228. Codes van de SCB-10-uitbreiding staan afzonderlijk. Niet voor 25L, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. De betekenis hangt af van generatie en configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic installatie- en servicehandleiding 7871265-05-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/ML-ISM-7871265-04-Calenta-Ace-Matic.pdf",
+      "sourcePages": "NL tabel 228, p. 370–373",
+      "explanationRowCount": 41,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25s",
+        "35s",
+        "30c",
+        "40c"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871265",
+      "revision": "7871265-05-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "CU-GH-21",
+      "tableIds": [
+        228
+      ],
+      "primarySnapshot": "remeha-four-model-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-calenta-source-inventory.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Component-specific CU codes remain separate from SCB. Blank CU H03.254 description does not authorize specific diagnosis.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-cu-locking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic — CU-GH-21 — permanente storingen",
+      "modelScope": "Calenta Ace-Matic 25s/35s/30c/40c voor België en Luxemburg, revisie 7871265-05-04072025, uitsluitend CU-GH-21, NL tabel 229. Codes van de SCB-10-uitbreiding staan afzonderlijk. Niet voor 25L, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. De betekenis hangt af van generatie en configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic installatie- en servicehandleiding 7871265-05-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/ML-ISM-7871265-04-Calenta-Ace-Matic.pdf",
+      "sourcePages": "NL tabel 229, p. 373–377",
+      "explanationRowCount": 47,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25s",
+        "35s",
+        "30c",
+        "40c"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871265",
+      "revision": "7871265-05-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "CU-GH-21",
+      "tableIds": [
+        229
+      ],
+      "primarySnapshot": "remeha-four-model-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-calenta-source-inventory.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Component-specific CU codes remain separate from SCB. Blank CU H03.254 description does not authorize specific diagnosis.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-scb-warnings",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic — SCB-10 — waarschuwingen",
+      "modelScope": "Calenta Ace-Matic 25s/35s/30c/40c voor België en Luxemburg, revisie 7871265-05-04072025, uitsluitend SCB-10, NL tabel 230. Alleen voor een aanwezige SCB-10-uitbreiding met de betrokken aangesloten componenten. Niet voor 25L, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. De betekenis hangt af van generatie en configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic installatie- en servicehandleiding 7871265-05-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/ML-ISM-7871265-04-Calenta-Ace-Matic.pdf",
+      "sourcePages": "NL tabel 230, p. 378–382",
+      "explanationRowCount": 60,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25s",
+        "35s",
+        "30c",
+        "40c"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871265",
+      "revision": "7871265-05-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "SCB-10",
+      "tableIds": [
+        230
+      ],
+      "primarySnapshot": "remeha-four-model-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-calenta-source-inventory.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Only with actual SCB-10 extension and relevant connected components. Source-column contradictions remain; no SCB E table in this declared chapter.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-scb-blocking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic — SCB-10 — tijdelijke blokkeringen",
+      "modelScope": "Calenta Ace-Matic 25s/35s/30c/40c voor België en Luxemburg, revisie 7871265-05-04072025, uitsluitend SCB-10, NL tabel 231. Alleen voor een aanwezige SCB-10-uitbreiding met de betrokken aangesloten componenten. Niet voor 25L, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. De betekenis hangt af van generatie en configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic installatie- en servicehandleiding 7871265-05-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/ML-ISM-7871265-04-Calenta-Ace-Matic.pdf",
+      "sourcePages": "NL tabel 231, p. 382–392",
+      "explanationRowCount": 134,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25s",
+        "35s",
+        "30c",
+        "40c"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871265",
+      "revision": "7871265-05-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "SCB-10",
+      "tableIds": [
+        231
+      ],
+      "primarySnapshot": "remeha-four-model-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-calenta-source-inventory.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Only with actual SCB-10 extension and relevant connected components. Source-column contradictions remain; no SCB E table in this declared chapter.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-25l-cu-warnings",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic 25L — CU-GH-21 — waarschuwingen",
+      "modelScope": "Deze tabel geldt uitsluitend voor Calenta Ace-Matic 25L voor België en Luxemburg, revisie 7871254-04-04072025, component CU-GH-21, NL tabel 224. Codes van de SCB-10-uitbreiding staan afzonderlijk. Niet voor 25s/35s/30c/40c, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. Controleer het typeplaatje en de configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic 25L installatie- en servicehandleiding 7871254-04-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/7871254-Calenta-Ace-Matic-25L-ISM-SCB10-BE-de-fr-nl.pdf",
+      "sourcePages": "NL tabel 224, p. 346",
+      "explanationRowCount": 18,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25L"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871254",
+      "revision": "7871254-04-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "CU-GH-21",
+      "tableIds": [
+        224
+      ],
+      "primarySnapshot": "remeha-25l-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Component-specific CU codes remain separate from SCB. Blank CU H03.254 description does not authorize specific diagnosis.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic-25l.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-25l-cu-blocking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic 25L — CU-GH-21 — tijdelijke blokkeringen",
+      "modelScope": "Deze tabel geldt uitsluitend voor Calenta Ace-Matic 25L voor België en Luxemburg, revisie 7871254-04-04072025, component CU-GH-21, NL tabel 225. Codes van de SCB-10-uitbreiding staan afzonderlijk. Niet voor 25s/35s/30c/40c, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. Controleer het typeplaatje en de configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic 25L installatie- en servicehandleiding 7871254-04-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/7871254-Calenta-Ace-Matic-25L-ISM-SCB10-BE-de-fr-nl.pdf",
+      "sourcePages": "NL tabel 225, p. 347–350",
+      "explanationRowCount": 41,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25L"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871254",
+      "revision": "7871254-04-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "CU-GH-21",
+      "tableIds": [
+        225
+      ],
+      "primarySnapshot": "remeha-25l-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Component-specific CU codes remain separate from SCB. Blank CU H03.254 description does not authorize specific diagnosis.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic-25l.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-25l-cu-locking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic 25L — CU-GH-21 — permanente storingen",
+      "modelScope": "Deze tabel geldt uitsluitend voor Calenta Ace-Matic 25L voor België en Luxemburg, revisie 7871254-04-04072025, component CU-GH-21, NL tabel 226. Codes van de SCB-10-uitbreiding staan afzonderlijk. Niet voor 25s/35s/30c/40c, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. Controleer het typeplaatje en de configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic 25L installatie- en servicehandleiding 7871254-04-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/7871254-Calenta-Ace-Matic-25L-ISM-SCB10-BE-de-fr-nl.pdf",
+      "sourcePages": "NL tabel 226, p. 350–354",
+      "explanationRowCount": 47,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25L"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871254",
+      "revision": "7871254-04-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "CU-GH-21",
+      "tableIds": [
+        226
+      ],
+      "primarySnapshot": "remeha-25l-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Component-specific CU codes remain separate from SCB. Blank CU H03.254 description does not authorize specific diagnosis.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic-25l.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-25l-scb-warnings",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic 25L — SCB-10 — waarschuwingen",
+      "modelScope": "Deze tabel geldt uitsluitend voor Calenta Ace-Matic 25L voor België en Luxemburg, revisie 7871254-04-04072025, component SCB-10, NL tabel 227. Alleen voor een aanwezige SCB-10-uitbreiding met de betrokken aangesloten componenten. Niet voor 25s/35s/30c/40c, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. Controleer het typeplaatje en de configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic 25L installatie- en servicehandleiding 7871254-04-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/7871254-Calenta-Ace-Matic-25L-ISM-SCB10-BE-de-fr-nl.pdf",
+      "sourcePages": "NL tabel 227, p. 355–359",
+      "explanationRowCount": 60,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25L"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871254",
+      "revision": "7871254-04-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "SCB-10",
+      "tableIds": [
+        227
+      ],
+      "primarySnapshot": "remeha-25l-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Only with actual SCB-10 extension and relevant connected components. Source-column contradictions remain; no SCB E table in this declared chapter.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic-25l.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-calenta-ace-matic-25l-scb-blocking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace-Matic 25L — SCB-10 — tijdelijke blokkeringen",
+      "modelScope": "Deze tabel geldt uitsluitend voor Calenta Ace-Matic 25L voor België en Luxemburg, revisie 7871254-04-04072025, component SCB-10, NL tabel 228. Alleen voor een aanwezige SCB-10-uitbreiding met de betrokken aangesloten componenten. Niet voor 25s/35s/30c/40c, Calenta Ace, legacy Calenta, Avanta, Tzerra, Quinta of andere revisies. Controleer het typeplaatje en de configuratie; dit is geen overzicht van alle Remeha-codes.",
+      "sourceLabel": "Remeha België — Calenta Ace-Matic 25L installatie- en servicehandleiding 7871254-04-04072025",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/7871254-Calenta-Ace-Matic-25L-ISM-SCB10-BE-de-fr-nl.pdf",
+      "sourcePages": "NL tabel 228, p. 359–369",
+      "explanationRowCount": 134,
+      "modelFamily": "Calenta Ace-Matic",
+      "models": [
+        "25L"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "7871254",
+      "revision": "7871254-04-04072025",
+      "issueDate": null,
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "SCB-10",
+      "tableIds": [
+        228
+      ],
+      "primarySnapshot": "remeha-25l-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-45-independent-source-comparison.json"
+      ],
+      "verificationBasis": "Pinned actual manufacturer PDF and earlier full scoped source reading; source-column comparison covers all300 rows per manual. Retained PDF hash matches. Identical chapter tables do not establish firmware/configuration/cross-generation compatibility.",
+      "conditions": "Only with actual SCB-10 extension and relevant connected components. Source-column contradictions remain; no SCB E table in this declared chapter.",
+      "declaredScopePath": "content/remeha-calenta-ace-matic-25l.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "buderus-logamax-gb162-v2",
+      "usedBy": [
+        "buderus"
+      ],
+      "title": "Logamax plus GB162-70/85/100 V2",
+      "modelScope": "Selectie uit tabel 17, §12.3, p. 33-37 van installatiehandleiding 6720813438 (2021/07), BE Nederlands, uitsluitend voor Logamax plus GB162-70 V2, Logamax plus GB162-85 V2 en Logamax plus GB162-100 V2. De 52 uitlegregels vertegenwoordigen 74 codecombinaties: alle blokkerende en vergrendelende storingsregels, plus 2F 260, 2P 212, 2U 213, 8Y 232 en H07 zonder toegevoegde classificatie waar de bron geen symbool geeft. Gewone bedrijfs-, componenttest- en resetcodes zijn weggelaten. Het schema op p. 8 noemt de rookgastemperatuursensor alleen voor Zwitserland; 1U 317 en 1Y 318 gelden alleen als dit component aanwezig is. Controleer het typeplaatje, de werkelijke configuratie en de gebruikershandleiding van uw exacte toestel. Andere modellen en revisies zijn niet gedekt.",
+      "sourceLabel": "Buderus Logamax plus GB162-70/85/100 V2 - installatiehandleiding 6720813438 (2021/07), BE Nederlands",
+      "sourceURL": "https://buderus-be-fl.boschtt-documents.com/download/pdf/file/6720813438.pdf",
+      "sourcePages": "Tabel 17, p. 33-37",
+      "explanationRowCount": 52,
+      "modelFamily": "Logamax plus GB162 V2",
+      "models": [
+        "Logamax plus GB162-70 V2",
+        "Logamax plus GB162-85 V2",
+        "Logamax plus GB162-100 V2"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "6720813438",
+      "revision": "2021/07",
+      "issueDate": null,
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "component": null,
+      "tableIds": [
+        17
+      ],
+      "primarySnapshot": "buderus-gb162-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/wp07-buderus-source-revalidation.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-24-wp07-buderus-precision-report.md"
+      ],
+      "verificationBasis": "Earlier scoped actual PDF reading and current precision implementation record; retained PDF matches prior SHA. 52 explanation groups represent 74 combinations, not full88 status rows.",
+      "literalCombinationCount": 74,
+      "conditions": "Flue-temperature sensor is noted only for Switzerland in p8 wiring diagram;1U317/1Y318 conditional.14 ordinary/component-test/reset rows excluded; missing source-kind symbols not inferred.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "viessmann-vitodens-200-300-vitotronic",
+      "usedBy": [
+        "viessmann"
+      ],
+      "title": "Vitodens 200-W en 300-W met Vitotronic",
+      "modelScope": "Alle codes uit het officiële Viessmann-overzicht voor gascondensatietoestellen uit de 200- en 300-serie met Vitotronic-regeling. Viessmann vermeldt zelf dat dit overzicht niet modeloverstijgend of volledig voor nieuwere modellen is.",
+      "sourceLabel": "Viessmann - foutcodes Vitodens 200-W en 300-W",
+      "sourceURL": "https://www.viessmann.de/de/wissen/wartung-und-reparatur/fehlercodes.html",
+      "sourcePages": "Officiële online tabel",
+      "explanationRowCount": 71,
+      "modelFamily": "Vitodens 200-W / 300-W",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "controller": "Vitotronic",
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared orientation-table scope plus historical evidence summary only; exact device variants/product codes/revision/market not verified here. Manufacturer non-universal/new-generation limit retained.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "acv-prestige-mkiii",
+      "usedBy": [
+        "acv"
+      ],
+      "title": "Prestige MKIII met ESYS-regeling",
+      "modelScope": "Alle foutcodes uit het officiële ACV-overzicht voor Prestige MKIII met ESYS-regeling, inclusief de NTC-debietmelding zonder nummer.",
+      "sourceLabel": "ACV Prestige MKIII - installatie-, gebruiks- en onderhoudsvoorschriften",
+      "sourceURL": "https://downloads.acv.com/NT_664Y4200_H_Prestige_MkIII_NL.pdf",
+      "sourcePages": "p. 42-43",
+      "explanationRowCount": 24,
+      "modelFamily": "Prestige MKIII",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "controller": "ESYS",
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared model/controller and historical evidence summary; actual document footer/revision/articlenumbers/market not established here. Do not treat NT_664Y4200_H filename as observed footer revision.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "intergas-prestige",
+      "usedBy": [
+        "intergas"
+      ],
+      "title": "Prestige",
+      "modelScope": "Alle storingscoderegels uit hoofdstuk 8.1 van het officiële installatievoorschrift voor Intergas Prestige; gegroepeerde sensorcodes blijven als één bronregel staan en zijn afzonderlijk doorzoekbaar.",
+      "sourceLabel": "Intergas Prestige - installatievoorschrift",
+      "sourceURL": "https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf",
+      "sourcePages": "§ 8.1, p. 42",
+      "explanationRowCount": 11,
+      "modelFamily": "Intergas Prestige",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current declared family/chapter8.1/page42 and historical source summary; filename88136803 is not an observed document/footer revision or boiler SKU.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "nefit-proline-hrc",
+      "usedBy": [
+        "nefit-bosch"
+      ],
+      "title": "Nefit ProLine HRC",
+      "modelScope": "Alle blokkerende en vergrendelende codes plus de H07-drukmelding uit tabel 25 voor ProLine HRC 24/CW3, HRC 24/CW4 en HRC 30/CW5; normale bedrijfscodes zijn weggelaten.",
+      "sourceLabel": "Nefit ProLine - installatie-instructie",
+      "sourceURL": "https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf",
+      "sourcePages": "Tabel 25, p. 31-34",
+      "explanationRowCount": 54,
+      "modelFamily": "Nefit ProLine HRC",
+      "models": [
+        "ProLine HRC 24/CW3",
+        "ProLine HRC 24/CW4",
+        "ProLine HRC 30/CW5"
+      ],
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": [
+        25
+      ],
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current explicit three-model/table25 scope and historical summary only; actual manual footer/revision/SKU/market/language not independently established here.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "atag-officieel-overzicht",
+      "usedBy": [
+        "atag"
+      ],
+      "title": "Officieel ATAG-overzicht voor meerdere ketelreeksen",
+      "modelScope": "Alle afzonderlijke storings- en statuscodes die ATAGwarmte op de officiële Nederlandse overzichtspagina publiceert; controleer de genoemde toestelreeks bij iedere code.",
+      "sourceLabel": "ATAGwarmte - cv-ketel storingscodes",
+      "sourceURL": "https://www.atagwarmte.nl/atag-cv-ketel-storingscodes",
+      "sourcePages": "Online merkoverzicht",
+      "explanationRowCount": 14,
+      "modelFamily": "Multiple named series in source overview",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": null,
+      "revision": null,
+      "issueDate": null,
+      "market": [
+        "Nederland"
+      ],
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "namedFamiliesInCurrentRowText": [
+        "Q-serie",
+        "ECZ"
+      ],
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current scope explicitly says official Dutch overview; Q-series/ECZ appear in current row text only. No exact model applicability/articlenumbers/revision or fresh body reading here.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "itho-base-cube",
+      "usedBy": [
+        "itho-daalderop"
+      ],
+      "title": "Base Cube",
+      "modelScope": "Alle waarschuwingen, blokkeringen en storingen uit de overzichtstabel van de officiële Base Cube-handleiding 01-04199-001; varianten met dezelfde code zijn in één doorzoekbare regel samengevoegd.",
+      "sourceLabel": "Itho Daalderop Base Cube - officiële handleiding",
+      "sourceURL": "https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf",
+      "sourcePages": "§ 7.2-7.4, p. 79-95",
+      "explanationRowCount": 26,
+      "modelFamily": "Base Cube",
+      "models": null,
+      "articleNumbers": null,
+      "documentNumber": "01-04199-001",
+      "revision": null,
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current scope explicitly declares manual identifier01-04199-001 and sections7.2–7.4; identifier is not assumed to be a footer revision or boiler SKU. Exact models/market/language/revision unverified here.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "ferroli-bluesense",
+      "usedBy": [
+        "ferroli"
+      ],
+      "title": "BlueSense 3, 4 en 5",
+      "modelScope": "Alle alarm- en foutcodes uit de officiële BlueSense-servicehandleiding DRS9100 versie 9; FH en d1-d3 zijn normale programma- of wachttijdmeldingen en staan daarom niet in deze foutlijst.",
+      "sourceLabel": "Ferroli BlueSense - servicehandleiding",
+      "sourceURL": "https://www.ferroli.com/media/1547640352.pdf",
+      "sourcePages": "§ 9, p. S12-S13",
+      "explanationRowCount": 37,
+      "modelFamily": "BlueSense",
+      "models": [
+        "BlueSense 3",
+        "BlueSense 4",
+        "BlueSense 5"
+      ],
+      "articleNumbers": null,
+      "documentNumber": "DRS9100",
+      "revision": "versie 9",
+      "issueDate": null,
+      "market": null,
+      "language": null,
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": null,
+      "sourceEvidencePath": [
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Current title/scope explicitly declare variants3/4/5, DRS9100 version9 and S12–S13; historical evidence summary only, no retained source/footer verification in Task47.",
+      "declaredScopePath": "content/additional-fault-catalogs.mjs",
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    }
+  ],
+  "limits": [
+    "Current source availability/latest revision not reverified; historical report date remains11October2026.",
+    "Primary body/pinned source evidence is different from current declared scope or a historical evidence-register summary.",
+    "No exact market/language/revision derived only from manufacturer domain, URL filename, document identifier or model title.",
+    "No unknown field filled by invention; no original code/safety/source-column ambiguity removed.",
+    "No full WP07/commercial model demand/all13 brands completed claim."
+  ]
+}

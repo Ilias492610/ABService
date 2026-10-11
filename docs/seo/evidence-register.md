@@ -1,5 +1,42 @@
 # Evidence Register
 
+## 11 October 2026 — bounded Bulex handoff and model inventory
+
+M04/G04/G05 in the retained WP03 analysis has93 impressions/0clicks/position10.41
+over four queries. Only actual PA01 associates `bulex f28 f54` with the existing
+Bulex URL (47 impressions/0clicks/position10.34). No exact device-model join;
+the new safe handoff is a usability hypothesis, not a measured ranking gain.
+Current [Bulex public overview](https://www.bulex.be/particulier/diensten/foutcodes/)
+is read in full; its F54 is not in the specific FAS65 catalog.
+[Official manual selection](https://www.bulex.be/particulier/documentatie/technische-documentaties/handleidingen/)
+and the separate [Thema Condens user manual](https://www.bulex.be/downloads/documentatie/documenten/gebruikshandleiding/gebruiksaanwijzing-thema-condens-0020203418-01-1165761.pdf)
+are read for model/document boundaries, user-display observations and professional
+handoff, not added codes. Actual0020203418_01/04.10.2016/p7 applicability and p11
+display are not the FAS65 installation table. No universal typeplate location,
+installer reset/repair or extra model applicability is copied. The new block
+does not require known identity to contact; casing/unsafe-photo precautions stay.
+
+[Coverage register](fault-code-model-coverage.md) inventories13guides/31distinct
+catalogs/37assignments/1565displayrows/1323before reuse/17catalogsourceURLs.
+Every record is read; all seven retained primary artifacts are freshly hashed.
+Five PDFs and one Bulex web-rendered text match earlier SHAs; Vaillant HTML hash
+is newly recorded, not earlier-pinned proof. Thirteen catalog entries tie to
+five PDFs, two to retained web renderings, sixteen only current declarations/
+historical evidence summaries in this task. Fields unknown remain null; no new
+manufacturer-row revalidation or full-WP checkbox follows from enumeration.
+
+Task45 accepted5a8d7c0: sole independent review/fresh415/exactCI38127116203
+success09:06:11UTC; actualProduction6993368945/6993369322 success09:05:38/09:05:40.
+Canonical82/93/112/eightnativeprofiles/197GETonly pass,0blocked/pageerrors/overflow,
+strictfixture503only. One substantively changed RemehaURLIndexNow200received
+after live checks/proof is not indexing. Local-stage records below are historical.
+Task46–47 candidate passes423tests/build170/explicit-local82/93/112 and eight
+nativeprofiles/465localGETs/16pointer+Enter contact flows after actual CSS underline
+RED→GREEN; root reads fullscript/results and responsive screenshots. Preserved
+failure/midscroll/default-origin crawl diagnostics are not silently accepted.
+Sole finalreview/exactrelease gates remain; no account,
+case/model/field/business result is invented.
+
 ## 11 October 2026 — separate 25L source and local candidate
 
 The actual [Belgian Calenta Ace-Matic product page](https://www.remeha.be/product/calenta-ace-matic)

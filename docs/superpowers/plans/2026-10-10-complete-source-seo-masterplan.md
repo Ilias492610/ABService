@@ -353,6 +353,27 @@ groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
+**Task45 werkelijk geaccepteerd, Task46–47 lokale kandidaat, 11 oktober:**
+`5a8d7c0` heeft sole onafhankelijke review,415fresh/exactCI38127116203,
+beide werkelijke Productionstatuses6993368945/6993369322, canonical82/93/112
+en acht liveprofielen/197GET/0blocked/errors/overflow. Eén gewijzigdeRemehaURL
+IndexNow200 ontvangen na live/proof; geen indexatiebewijs of herhaalde batch.
+Task46 voegt alleen Bulex-model-onbekend/niet-genoemd-hulp toe vóór de catalogus,
+met veilige identiteit/klacht en bestaande native contact/handleidinglinks.
+Alle43code/scopes/metadata/registry en overige12volledige renders behouden;
+genuinecorrectedRED3/6→GREEN6/6, initial421tests/lint/productie0/build170 slagen.
+Task47 [inventariseert alle31catalogi](../../seo/fault-code-model-coverage.md)
+met bron/revisie/model/product/component/pagina/count/bewijsbasis en expliciete
+onbekende nulls; hoofdonderzoeker leest elke record en hasht zeven bronbestanden.
+Dit is geen nieuwe inhoudelijke bronheraudit/nieuwsterevisie of geheleWP07-gate.
+Werkelijke browser-RED voor onzichtbare linkonderscheid wordt vóór productfix
+ook renderer-RED; uitsluitend beide nieuwe links krijgen bestaande underline.
+Final423/build170/local82/93/112/acht nativeprofielen/465GET/16pointer+Enter
+flows met vaste-header-clearance/éénTabzichtbare naam slagen. Alle eerste
+diagnostics blijven apart bewaard; wholecohortreview/exactepublicatie volgt.
+
+- [x] Bestaande dertien gidsen/31 afzonderlijke catalogi inventariseren met letterlijke scope, bewijstype en expliciet onbekende velden; geen volledige bron-/modeldekking afleiden.
+
 **Task45 — aparte 25L-kandidaat, 11 oktober:** echte Belgische handleiding
 7871254-04-04072025, NL tabellen224–228 p346–369 volledig gelezen; onafhankelijke
 vergelijking van alle300codes/volgorde/beschrijvings-/installateurkolommen is exact

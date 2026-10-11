@@ -35,6 +35,14 @@ export default async function FaultGuidePage({ params }) {
             <h2>Zoek eerst uw code, controleer daarna de toestelreeks</h2>
             <p className="section-lead">De catalogus neemt alle foutcoderegels over binnen de hierboven afgebakende toestelreeks of het genoemde officiële merkoverzicht. Gecombineerde regels tonen alle bijbehorende subcodes of bereiken. Een code die niet in de bron voor uw toestelreeks staat, mag u niet op basis van een andere reeks interpreteren.</p>
           </div>
+          {guide.slug === "bulex" && (
+            <section className="answer-box" aria-labelledby="bulex-model-help-title">
+              <h2 id="bulex-model-help-title">Bulex-model onbekend of niet in deze catalogus?</h2>
+              <p>U kunt ook hulp vragen wanneer u de modelnaam niet kent of uw toestel hier niet terugvindt. Noteer de volledige code en wat er uitvalt. Zoek de modelnaam in uw handleiding of onderhoudsattest, of op een identificatie die u zonder iets te openen veilig kunt aflezen.</p>
+              <p>Open de mantel niet om een model te zoeken en ga niet terug naar een onveilige ruimte voor foto’s. Kies geen ander model op goed geluk: de uitleg van een andere toestelreeks is geen diagnose voor uw ketel.</p>
+              <p><a href={guide.documentationUrl} className="underline" target="_blank" rel="noreferrer">Zoek uw Bulex-gebruikshandleiding ↗</a> of <Link href={buildContactHref({ service: "Herstelling verwarming" })} className="underline">vraag hulp bij uw Bulex-storing</Link>. Vermeld gerust dat het model nog onbekend is.</p>
+            </section>
+          )}
           <FaultCodeCatalog brand={guide.brand} catalogs={guide.catalogs} />
           <div className="source-note">
             {guide.documentationUrl && <p>Handleiding zoeken: <a href={guide.documentationUrl} target="_blank" rel="noreferrer">{guide.documentationLabel} ↗</a>.</p>}

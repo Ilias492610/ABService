@@ -1,5 +1,37 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — Bulex model handoff and bounded coverage inventory
+
+- Task46 local candidate adds one static Bulex-only block before the catalog:
+  unknown/unlisted models can still request help; complete code/symptom and
+  safely available identity, no casing opening or another model's diagnosis.
+  Native official-manual and context-preserving contact links; no new code,
+  model, route, dependency, claim, content date or required form field.
+- Complete pre-edit renderer/data/metadata/registry hashes cover all thirteen
+  guides. Genuine corrected RED 3/6→GREEN 6/6 protects the exact new block;
+  all 43 Bulex rows, F54 public-only boundary and other twelve renders preserved.
+  The first RED had a test catalog-ID typo, retained separately and corrected
+  before product edits; no missing-filter false positive is accepted.
+- Task47 inventories all 31 current distinct catalogs, 37 assignments / 1565
+  displayed rows (1323 without shared reuse), with declared scopes, sources and
+  explicit nulls. Five retained PDFs plus two primary source renderings are
+  rehashed; that is not a new all-row source audit or all-model completion.
+  See [coverage register](docs/seo/fault-code-model-coverage.md).
+- Browser QA catches missing visual distinction under Tailwind Preflight;
+  separate real-renderer RED→GREEN precedes adding underline to only those two
+  anchors. Final423 tests/rebuild170/explicit-origin82/93/112 and eight native
+  profiles pass,465localGETs/16pointer+Enter flows/oneTabvisible name. First
+  failure and mid-scroll diagnostics retained. One final cohort review and
+  exact hosted/canonical acceptance remain gates; no new IndexNow/account action.
+
+Task45 is now accepted as `5a8d7c0d3acc047c9da04a19ce56d3fed7a2d911`:
+sole independent review, fresh 415 tests, exact CI 38127116203 success
+09:06:11 UTC, actual Production primary 6993368945 / secondary 6993369322
+success 09:05:38 / 09:05:40 UTC. Canonical 82/93/112 and eight live native
+profiles pass (197 GETs, no blocked requests/errors/overflow). One changed
+Remeha-URL IndexNow HTTP200 receipt follows valid proof/live checks, not indexing.
+Earlier candidate records retain their original phase; wider gates stay open.
+
 ## 11 October 2026 — separate Calenta Ace-Matic 25L candidate
 
 - Reads the genuine separate Belgian 25L manual, actual revision

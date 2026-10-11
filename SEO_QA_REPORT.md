@@ -1,5 +1,74 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — Bulex handoff candidate; accepted 25L release
+
+Task46 adds only a static Bulex model-unknown/unlisted handoff before the
+existing catalog. The full code, symptoms and safely available identity can
+be supplied without opening casing or reentering danger; no other model's
+diagnosis is applied. Existing official manual selection and native GET contact
+context are used. No code/model/metadata/registry/date/schema/route/dependency
+change. F54 remains in the public overview only, not THEMA Condens FAS65.
+
+Six tests compile and render complete actual production modules: only framework
+navigation/analytics dependencies are inert. Fixed pre-edit hashes cover all
+thirteen full renders and entire guides/metadata/registry objects. Corrected
+genuine RED 3/6→GREEN 6/6; the initial RED's public catalog-ID typo was corrected
+before product edits, and the real specific filter ID is explicitly asserted.
+The new block is removed literally for full original Bulex-render comparison;
+all other twelve HTML outputs and all 43 Bulex rows remain exact. Runtime static
+render sends no events. Native navigation/style/focus need separate browser QA.
+
+Task47 adds [31-catalog coverage](docs/seo/fault-code-model-coverage.md) and its
+machine-readable inventory, protected by two full current-assignment/scope/source/
+count tests. Main reads every manifest record and freshly hashes all seven
+retained source artifacts; five PDFs and the Bulex web rendering match earlier
+SHAs, while Vaillant HTML has a newly recorded hash, no earlier pinned comparison.
+Thirteen catalog entries have retained PDF evidence, two retained source renderings,
+sixteen only declarations/historical summaries here. Null fields remain unknown.
+Inventory is not a fresh manufacturer-row audit or whole WP07 completion.
+
+Initial full 421 tests, lint, production audit 0 and build 170 pass before adding
+the two inventory tests. Browser QA finds both new anchors computing no underline
+under Tailwind Preflight, in JS and no-JS. Separate real-renderer RED 3/6 precedes
+the fix: only both new links receive the existing underline utility. All original
+pre-edit hashes stay unchanged. Final 423/423 tests, rebuild 170 and explicit-origin
+local crawl82/93/112, fresh final lint and production audit0 pass; sole review
+remains next.
+An initial crawl invoked an unrecognised environment variable, so it used the
+canonical default and failed fetch checks; output is retained as a diagnostic,
+not local-crawl or current production proof. The corrected local run passes an
+explicit origin argument. No redundant
+Lighthouse for static copy or new IndexNow/account action is inferred.
+
+Eight actual desktop/mobile×JS/no-JS×motion profiles pass the rebuilt candidate:
+both new links compute underline;43rows/14+29scopes/3realoptions exact; native
+keyboard source selection,F54public1/THEMA0,F28per-source1/all2,unknown0→43 restore.
+All16 new-helper pointer/native Enter GET flows preserve service/prefill; form
+settles142.17–144.17px below126.59header, one Tab reaches fully visible name.
+465 localGETs, no blocked/write/external requests/pageerrors/overflow. Only exact
+intercepted rating503 allowed in JS console; no-JS empty. Root reads entire
+harness/all results and mobile help/top-bottom/contact and desktop screenshots.
+First failure diagnostics and a first passing run whose default-motion captures
+were mid-scroll remain separate; the final gate waits real scroll-margin geometry
+and visible focus, not a longer timeout or relaxed assertion. Native browser QA
+is not physical/assistive/field or provider availability proof. Exact hosted/
+canonical acceptance remains separate after sole whole-cohort review.
+
+Task45 accepted SHA `5a8d7c0d3acc047c9da04a19ce56d3fed7a2d911`:
+sole whole-cohort review has no critical/important/minor findings; root records
+all nine declined-boundary rulings and costs. Fresh premerge/merged 415 tests
+pass. [Exact CI 38127116203](https://github.com/Ilias492610/ABService/actions/runs/38127116203)
+succeeds 09:06:11 UTC, Node24.21.0/install411412/415/lint/production audit0/
+build170/hosted82/93/112. Actual Production primary6993368945 success09:05:38,
+secondary6993369322 success09:05:40; both match this SHA. Canonical crawl82/93/112
+and eight responsive JS/no-JS×motion profiles pass:659 rows/13groups/14options,
+exact scopes, native filter/search/contact/header clearance/one Tab to name.
+197 canonical GETs, no blocked requests/pageerrors/overflow; JS allows only the
+exact intercepted rating503 fixture, no-JS console empty. Root reads all results
+and live CU/SCB/contact screenshots. One substantively changed Remeha URL receives
+IndexNow200 after valid public proof/live checks; receipt is not indexing.
+No new account, customer, field-speed or wider WP evidence follows from release.
+
 ## 11 October 2026 — independent 25L coverage candidate and preceding acceptance
 
 Task45 adds only the separately documented Calenta Ace-Matic 25L revision
