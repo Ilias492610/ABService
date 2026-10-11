@@ -55,7 +55,7 @@ test("catalog coverage matches every row in the cited manufacturer tables", () =
   assert.equal(bySlug("bosch").codeEntryCount, 242);
   assert.equal(bySlug("junkers").codeEntryCount, 242);
   assert.equal(bySlug("remeha").codeEntryCount, 359);
-  assert.equal(bySlug("buderus").codeEntryCount, 51);
+  assert.equal(bySlug("buderus").codeEntryCount, 52);
   assert.equal(bySlug("viessmann").codeEntryCount, 71);
   assert.equal(bySlug("acv").codeEntryCount, 24);
   assert.equal(bySlug("intergas").codeEntryCount, 11);

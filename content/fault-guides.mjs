@@ -91,7 +91,7 @@ export const faultGuides = Object.freeze([
     slug: "buderus",
     brand: "Buderus",
     modelWarning:
-      "Deze catalogus volgt de volledige foutcodetabel voor de genoemde Logamax plus GB162-70/85/100 V2-toestellen. Codes van andere Buderus-reeksen kunnen een andere betekenis, subcode of diagnosevolgorde hebben.",
+      "Deze selectie uit tabel 17, §12.3, p. 33-37 van installatiehandleiding 6720813438 (2021/07), BE Nederlands, geldt uitsluitend voor Logamax plus GB162-70/85/100 V2: 52 uitlegregels voor 74 codecombinaties. Gewone bedrijfs-, componenttest- en resetcodes zijn weggelaten; ontbrekende bronsymbolen krijgen geen storingsclassificatie. De rookgastemperatuursensor is in het schema alleen voor Zwitserland genoemd; controleer bij 1U 317 en 1Y 318 of deze aanwezig is. Controleer het typeplaatje, de configuratie en de gebruikershandleiding van uw exacte toestel. Andere Buderus-reeksen en revisies zijn niet gedekt.",
     catalogs: buderusCatalogs,
     documentationLabel: "Officiële Buderus-handleidingen",
     documentationUrl: "https://www.buderus.com/be/nl/partners/informatie-documentatie/handleidingen/",
