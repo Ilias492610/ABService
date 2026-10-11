@@ -109,7 +109,7 @@ export const faultGuides = Object.freeze([
     slug: "acv",
     brand: "ACV",
     modelWarning:
-      "Deze catalogus bevat de volledige ESYS-foutcodetabel van de genoemde ACV Prestige MKIII-handleiding. Gebruik de code niet voor een andere ACV-reeks zonder het toestelmodel en de bijbehorende handleiding te controleren.",
+      "Deze gids gebruikt de 24 codegroepen op p. 42-43 van ACV-handleiding 664Y4200, revisie H (03/2011), voor Prestige Solo 18/32 MkIII en Excellence 18/32 MkIII met ESYS. Dit is een historische handleiding voor meerdere landen, geen lijst voor alle ACV-ketels of iedere ESYS-schermmelding. Nieuwere revisies, HeatMaster en andere reeksen zijn niet gedekt. Controleer typeplaatje, gasvariant en de gebruikershandleiding van uw exacte toestel; artikelnummers en firmwarecompatibiliteit zijn hier niet vastgesteld. Werkzaamheden aan gesloten onderdelen horen bij een bevoegde technicus.",
     catalogs: acvCatalogs,
     documentationLabel: "Officiële ACV-handleidingen en documentatie",
     documentationUrl: "https://www.acv.com/belgie/documentation",

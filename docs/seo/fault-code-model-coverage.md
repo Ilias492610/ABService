@@ -1,10 +1,9 @@
 # WP07 — actuele model- en brondekking
 
-Vastlegging 11 oktober 2026; geaccepteerd productbaseline `e71fbf69`.
-Task48's historische Bulex A/B-uitbreiding is onafhankelijk gereviewd,
-op de exacte SHA door CI/beide Vercel Production-projecten geaccepteerd en
-op de canonical website gecontroleerd. Task49's Bosch/Junkers-scopecorrectie
-is nog een lokaal geverifieerde kandidaat; review/hosted/live blijven gates.
+Vastlegging 11 oktober 2026; geaccepteerd productbaseline `64e93669`.
+Task49's Bosch/Junkers-scopecorrectie is onafhankelijk gereviewd en exact door
+CI/beide Production-projecten/live geaccepteerd. Task50's historischeACVscope/
+vier eersteacties zijn lokaal geverifieerd; review/hosted/live blijven gates.
 Task47 inventariseert, Task48 leest één extra historische tabelbron en
 Task49 leest afgebakend de context van één professioneel codeboek.
 Dit is **geen bronheraudit van de overige catalogi, bewijs van de nieuwste
@@ -21,6 +20,9 @@ de oorspronkelijke31 records/zeven snapshots/overige twaalf gidsen exact behoude
 Task49 voegt een negende snapshot toe en corrigeert alleen zes gedeelde scopes
 en twee waarschuwingen; andere26 records/acht snapshots/elf gidsrecords blijven
 exact. Nieuw Nederlands/hoofdstukjaar/context is geen nieuwe 242-regelheraudit.
+Task50 voegt de tiende snapshot toe, leest daadwerkelijk de ACV-identiteit en
+geselecteerde24groepen en corrigeert vier eersteacties. Andere31records/negen
+snapshots/twaalfgidsrecords blijven exact. Dag/SKU/firmware/currentfit onbekend.
 
 ## Wat de aantallen betekenen
 
@@ -55,9 +57,9 @@ toegankelijkheid of inhoud gecertificeerd.
 ## Alle afzonderlijke catalogi
 
 Een bewaard bronbestand plus eerder afgebakend leesrapport is sterker bewijs
-dan uitsluitend een bestaande declaratie. Twintig catalogi zijn gekoppeld
-aan zeven bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
-Tien hebben binnen deze inventaris alleen de bestaande declaratie en
+dan uitsluitend een bestaande declaratie. Eenentwintig catalogi zijn gekoppeld
+aan acht bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
+Negen hebben binnen deze inventaris alleen de bestaande declaratie en
 historische bewijsregistratie (G). Bewaren/hashvergelijking is op zichzelf
 geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
@@ -89,7 +91,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 | `remeha-calenta-ace-matic-25l-scb-blocking` | 134 | NL tabel 228, p. 359–369 | [bron 9](https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Calenta-Ace-Matic/NL/7871254-Calenta-Ace-Matic-25L-ISM-SCB10-BE-de-fr-nl.pdf) | remeha-25l-pdf |
 | `buderus-logamax-gb162-v2` | 52 | Tabel 17, p. 33-37 | [bron 10](https://buderus-be-fl.boschtt-documents.com/download/pdf/file/6720813438.pdf) | buderus-gb162-pdf |
 | `viessmann-vitodens-200-300-vitotronic` | 71 | Officiële online tabel | [bron 11](https://www.viessmann.de/de/wissen/wartung-und-reparatur/fehlercodes.html) | G: declaratie/historisch register |
-| `acv-prestige-mkiii` | 24 | p. 42-43 | [bron 12](https://downloads.acv.com/NT_664Y4200_H_Prestige_MkIII_NL.pdf) | G: declaratie/historisch register |
+| `acv-prestige-mkiii` | 24 | p. 42-43; 664Y4200 H/03-2011 | [bron 12](https://downloads.acv.com/NT_664Y4200_H_Prestige_MkIII_NL.pdf) | acv-prestige-mkiii-pdf; geselecteerde tabel |
 | `intergas-prestige` | 11 | § 8.1, p. 42 | [bron 13](https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf) | G: declaratie/historisch register |
 | `nefit-proline-hrc` | 54 | Tabel 25, p. 31-34 | [bron 14](https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf) | G: declaratie/historisch register |
 | `atag-officieel-overzicht` | 14 | Online merkoverzicht | [bron 15](https://www.atagwarmte.nl/atag-cv-ketel-storingscodes) | G: declaratie/historisch register |
@@ -155,8 +157,10 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 - Viessmann: gedeclareerd Vitodens 200-W/300-W met Vitotronic;
   oriëntatie, niet universeel/volledig voor nieuwere generaties. Exacte
   modellen/productcodes/revisie/markt niet nieuw vastgesteld.
-- ACV: gedeclareerd Prestige MKIII met ESYS, pp. 42–43. Geen document-
-  revisie, SKU of markt uit de PDF-bestandsnaam afleiden.
+- ACV: werkelijk664Y4200 H/03-2011, Solo/Excellence18/32MkIII/ESYS.
+  Geselecteerde42–43:23E+NTC/24groepen/25beschrijvingssubregels, E03samengevoegd.
+  NTC temperatuurverschil, E37 geen drukrichting/grens; vier acties nietbijvullen.
+  Historisch multi-country, geen BE-only/SKU/firmware/nieuwste compatibiliteit.
 - Intergas: gedeclareerd Prestige §8.1 p. 42; `88136803` in een
   bestandsnaam is hier geen waargenomen footerrevisie of ketelartikel.
 - Nefit: declaratie ProLine HRC 24/CW3, 24/CW4, 30/CW5, tabel 25
@@ -170,7 +174,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
 JSON-`null` betekent: niet vastgesteld binnen deze afgebakende inventaris,
 niet dat een gegeven niet bestaat. De velddeclaratie en de bewijsbasis blijven
-onderscheiden. De zeven PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
+onderscheiden. De acht PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
 in `snapshots`; de eerdere leesrapporten blijven in de lokale recoveryledger.
 
 ## Vervolg binnen het bestaande meesterplan

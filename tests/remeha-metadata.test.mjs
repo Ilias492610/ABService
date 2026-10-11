@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { getPageDefinition, pageRegistry } from "../content/site-content.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
+import { beforeAcvRegistry } from "./fixtures/acv-prestige-source-safety.mjs";
 
 test("Remeha metadata includes the documented Ace-Matic family and no universal scope", () => {
   const entry = getPageDefinition("/foutcodes/remeha");
@@ -20,6 +21,8 @@ test("Remeha sitemap records the actual substantive catalog change without datin
   const entries = buildSitemapEntries(pageRegistry);
   assert.equal(entries.find(e => e.url === "https://www.abservice24.be/foutcodes/remeha").lastModified, "2026-10-11");
   for (const path of ["/foutcodes/acv"]) {
-    assert.equal(getPageDefinition(path).lastModified, undefined);
+    // Only independently tested Task50's real ACV modification is projected;
+    // the original unrelated-page capture remains unchanged.
+    assert.equal(beforeAcvRegistry(getPageDefinition(path)).lastModified, undefined);
   }
 });

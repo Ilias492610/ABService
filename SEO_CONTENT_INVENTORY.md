@@ -2,7 +2,22 @@
 
 ## Published routes
 
-**Current accepted baseline `e71fbf69`:** Task48's historical Bulex A/B catalog
+**Current accepted baseline `64e93669`:** Task49 Bosch/Junkers source-boundary
+correction has sole review/exactCI38154824053/435 and both actual matching-SHA
+Production statuses; canonical82/93/112/eight native live profiles416GET pass.
+Two-URL IndexNowHTTP200 received, not indexing. Same82/80/2 customer routes,
+32catalogs/38assignments/1596displayed explanations/1354before shared reuse.
+
+**Task50 local candidate:** existingACV24groups now tied to historical664Y4200
+H/03/2011 and four Solo/Excellence18/32MkIII combinations. OneE37meaning and
+four firstactions avoid unsupported refill diagnosis. Other12guides preserved;
+only ACV actualdate added. Fresh441/lint/production0/build170/local82/93/112/
+four native profiles269GET/48queries/eightcontacts pass; sole review/hosted/live
+pending. Inventory21PDF-linked across8PDFs,2web,nine declarations; no new
+route/model-universal claim. [Coverage](docs/seo/fault-code-model-coverage.md).
+Existing mobilewidgetMinor and source/owner/account gates remain open.
+
+**Earlier accepted baseline `e71fbf69`:** Task48's historical Bulex A/B catalog
 has sole review, exactCI38149952837/429 tests, both matching-SHA actual Production
 successes and canonical82/93/112/eight native live profiles. Bulex74/Remeha659;
 thirteen guides1596 displayed explanations,38 assignments/32 distinct catalogs/

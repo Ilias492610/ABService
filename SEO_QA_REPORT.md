@@ -1,5 +1,68 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — Task50 ACV local acceptance, release pending
+
+Actual original primary664Y4200 H,03/2011; HTTP200/7294940bytes/44pages,
+SHA`eda557c6086ab17148973eafea4127ce4fda38147ac9569f0b3b188dbf9b61b3`.
+Main reads text1/2/4/5/8/9/10/42/43/44 and actual pixels1/9/10/42/43.
+Four model/power combinations are established by cover/technical9; multiple
+country/gas context10 is not BE-only or an exact SKU/firmware crosswalk.
+Selected42–43:24 codegroups/25description subrows; E03 merged,23E+NTC;
+E37 says only Waterdruk, NTC maximumT1-T2 difference. SeparateLOP8 is not
+invented into this table. Professional solution/reset/settings are not DIY.
+
+Bounded correction: scope/warning/sourceLabel/meta/realACVdate, oneE37meaning,
+four explicit firstactions. Other23 meanings/24identifiers/aliases/sourcePages/
+order and12 full guides preserved. Complete genuine64 pre-edit13guides/SSR/
+metadata/all82registry/35sourcehashes verified by root. RED4fail/2pass→GREEN6/6;
+seven historical/mirror failures named/raw retained, exact approved projections
+without changing old digests. Fresh441/441, lint0, productionaudit0, build170,
+local82pages93links112assets pass. Inventory onlyACV/new10thsnapshot; previous
+31records/nine snapshots/twelve guide records/counts preserved. Exact issue
+month known, day/SKU/firmware/current market unknown. No fresh entire44page or
+all-brand completeness/performance/outcome certification.
+
+Four actual native profiles1440×1000/390×844, JS/noJS:269 localGETonly/no
+external/nonGET/blocked/pageerrors/overflow. All24rowfields/source/scopes/two
+options/meta exact. Two JS profiles each test24 searches across both native
+p/a model choices: E01/E 01 one, E1 none, fourcorrectedcode searches one each,
+NTC1 E11/E30/E31, T1 E03/NTC, LOP/unknownnone→24 restoration. Eight pointer/
+nativeEnter contacts retainHerstelling context; oneTabfullyvisibleName;
+form142.17–144.17 clears126.59header. StrictJS console onlyexact intercepted
+rating503fixture/noJSempty, not actualprovider/mail/events/physicalAT proof.
+Root reads entire harness/actual results and mobile noJS-warning/NTC/Enter
+pixels. First overwriteguard collision before browser launch correctly refused
+an existing crawl log; unchanged harness succeeds under unique evidence stem.
+Sole review/exact hosted/canonical gates pending. Existing widgetMinor deferred.
+
+## 11 October 2026 — Task49 exact release acceptance
+
+SHA`64e936692b9da64b3ad3c453d77d3755b36ec08f`, sole review noCritical/
+Important/newMinor, all13declined-boundary rulings/costs retained. Exact
+[CI38154824053](https://github.com/Ilias492610/ABService/actions/runs/38154824053)
+success16:18:12UTC:Node24.21.0/cleaninstall/lint/435/production0/build170/
+hosted82/93/112. Actual matching-SHA namedProduction6998266147/6998271150
+success16:17:37/16:18:01UTC. Canonicalcrawl82/93/112 and unchanged8native
+profiles416canonicalGETonly/64searchcases/16contactflows pass, exact242rows.
+Root reads raw provider/CI/live artifacts and actual mobile screenshots.
+One two-URL IndexNowHTTP200/received after proof/live, indexationnotconfirmed.
+Initial root name-height diagnostic had a ternary-precedence flaw; corrected
+explicit8viewport/16rectangles passes, original browser checkedinnerHeight;
+vacuous diagnostic not accepted as evidence. Task46 minor remains deferred.
+
+## 11 October 2026 — Task51 development findings investigated, not fixed
+
+One full audit9affectedpackage/ancestor records, not9productionexploits;
+7high/2moderate from twoadvisories. All10 installed paths dev:true, inspected
+application imports and existing51build traces do not expose those paths.
+This is not a fresh trace/vendor-internals/exploit-resistance certification.
+Primary advisory/registry/installed consumers show no compatible minimal
+braces/parser whole-tree patch; Tailwind4 and Next-config14 audit suggestions
+are not tested compatible fixes. ESLint9 EOL6August is separate lifecycle debt;
+React/import/a11y peers do not declare10 support. No lock/config/dependency
+change, auditfix/force/removal of checks or extra runtime claim. WP12 remains
+open; [primary references and boundaries](docs/seo/evidence-register.md).
+
 ## 11 October 2026 — Task49 Bosch/Junkers local acceptance
 
 Original official Dutch installer codebook: HTTP200, 4,883,395 bytes, 268 pages,

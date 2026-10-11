@@ -353,6 +353,22 @@ groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
+**Task50 lokaal geverifieerd, release pending:** officiëleACV664Y4200 H/03/2011,
+44pagina's/SHAeda557c6086ab17148973eafea4127ce4fda38147ac9569f0b3b188dbf9b61b3.
+Solo/Excellence18/32MkIII/ESYS;23E+NTC op42–43, E03samengevoegd; geen universele/
+nieuwste/SKU/firmware/BE-only claim. Scope/waarschuwing/bronlabel/meta/echteACVdatum,
+éénE37betekenis en vier eersteacties gecorrigeerd, geen bijvuldiagnose bijsensor/
+temperatuurverschil. Andere23betekenissen/24IDs/twaalfgidsen exact. Echte435baseline/
+RED4fail→GREEN6/fresh441/lint/productie0/build170/local82/93/112/viernative269GET/
+48zoekcases/achtcontactflows slagen; sole review/hosted/live blijven gates.
+Inventaris21PDF-gelinkte catalogi/8PDFs/2web/9declaraties,32/38/1596/1354/18 gelijk.
+
+**Task49 werkelijk geaccepteerd:**64e93669/sole review/fresh435/exactCI38154824053
+success16:18:12UTC; werkelijkematchingProduction6998266147/6998271150
+success16:17:37/16:18:01UTC, canonical82/93/112/achtnative416GET/64zoekcases/
+16contactflows. Eén twee-URLIndexNowHTTP200ontvangen na proof/live, geenindexatie.
+Task46widgetMinor uitgesteld; bredereWP07/eigenaar/accountgates blijven open.
+
 **Task49 lokale kandidaat, 11 oktober:** oorspronkelijke Nederlandse professionele
 Bosch/Junkers-codeboekbron werkelijk gelezen op hoofdstuk-/contextniveau,
 268pagina's/SHA442ccaafddd34a27a6e2a26e37a5c062414140cc19c20e19fb83c7b4776278c3.
@@ -620,6 +636,15 @@ opgeschoond. Geen account/e-mailgate of lekdiagnose. Release/live gate blijft op
 daadwerkelijke eventontvangst, passende aanvragen en evaluatie zijn niet gemeten.
 
 ### WP12 — Technische SEO, CWV, toegankelijkheid en security
+
+**Task51 onderzoek afgerond, bevindingen niet opgelost:** één freshfullaudit
+9geraaktepackage/ancestorrecords(7high/2moderate),twee advisories,alle10paden dev.
+Primaireadvisories/registry/installedconsumers tonen geen compatibleminimale
+braces/parserwhole-treepatch; geenforcefix/Tailwindmajor/Nextdowngrade/config-
+oflockwijziging. ESLint9EOL6augustus is afzonderlijke lifecycleachterstand;
+React/import/a11ypeers sluiten10uit. Productieaudit0 is geen algeheleveiligheid.
+Reachability-/vendored-/veld-/accountgrenzen blijven, securitycriterium niet afgevinkt.
+Bronnen en exacte grenzen: [bewijsregister](../../seo/evidence-register.md).
 
 **Files:** `libs/seo-data.mjs`, `libs/schema-data.mjs`, `libs/html-audit.mjs`, `libs/seo-audit-targets.mjs`, `scripts/seo-audit.mjs`, `scripts/source-audit.mjs`, robots/sitemap/not-found/social routes, Next-config/fonts/images, package/lock/CI en relevante tests.
 

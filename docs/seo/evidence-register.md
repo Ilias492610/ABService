@@ -1,5 +1,52 @@
 # Evidence Register
 
+## 11 October 2026 — actual historical ACV identity and selected table
+
+[Official original](https://downloads.acv.com/NT_664Y4200_H_Prestige_MkIII_NL.pdf)
+retained unchangedHTTP200/7294940bytes/44pages/SHA
+`eda557c6086ab17148973eafea4127ce4fda38147ac9569f0b3b188dbf9b61b3`.
+Visible cover/footer03/2011—664Y4200 H, not PDFmetadataJuly2014. Technical9
+separates Solo/Excellence×18/32MkIII; ESYS5/8. Multi-countrygas10 includes
+BE/NL, not BE-onlyedition or established model-country-gas/SKU/firmware fit.
+Main personally reads primaryidentity/control/model/safety/table texts and
+actual cover/9/10/42/43pixels; no whole44page/latest/currentfit certification.
+Selected42–43 has23Eidentifiers+literalNTC,24groups/25description subrows;
+E03mergedonecode/twomeanings, no missingrange invented. E37 onlyWaterdruk,
+NTC maxT1-T2 difference; LOP8 separate. Professional repair/settings/reset
+columns are not consumersteps. Task50 onlyoneE37meaning/four firstactions plus
+scope/warning/source/meta/date corrected;23othermeanings/24IDs/12guides exact.
+New source snapshot fields exclude unknown exactday/SKU/currentmarket/firmware.
+Fresh441/lint/production0/build170/local82/93/112/four native269GET checks pass;
+sole review/hosted/live gates pending, no provider/lead/indexing claims.
+
+Task49 actuallyaccepted64e93669: sole review/435/exactCI38154824053/
+actualProduction6998266147/6998271150/canonical82/93/112/eight native416GET.
+One two-URL IndexNowHTTP200 received after validproof/live, indexingunknown.
+Task46mobilewidgetMinor, owner/case/local/French/account/source gates unchanged.
+
+## 11 October 2026 — development dependency and lifecycle investigation
+
+One fresh fullaudit16:13–16:16UTC:9affectedpackage/ancestor records
+(7high/2moderate), twoactualadvisories, all10installedpathsdev:true. Retained
+productionaudit0 distinct; currentTask50productionaudit0 also notsecurityproof.
+Installed consumers are Nextlintrootglobs and Tailwindbuild/watch/selector
+processing; current fixedtrustedrepository inputs do not establish publicly
+supplied malicious pattern/selector reachability. Existing51NFTtraces omit
+those10paths; not a fresh deployed/vendor-internals or exploit-resistance audit.
+
+[Braces advisory](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm)
+lists no patched release; checked latest3.0.3 remains affected. Both Nextplugin
+and Tailwindchains still depend on it. [Selector-parser advisory](https://github.com/advisories/GHSA-rj75-hqrm-r3gf)
+is fixed7.1.6, but Tailwind3direct^6.1.2 and nested6^6.1.1 exclude that patch.
+Both parserpaths matter; npm's majorTailwind4/downgradeNextconfig14 suggestions
+are not compatiblefixproof. Primaryregistry manifests and actual installed
+peer/consumer snapshots retained in localTask51preflight, no install/forcefix.
+[Official ESLint support](https://eslint.org/version-support/) places9EOL
+on6August2026; latest10's top-levelNextpeer is insufficient because installed
+React/import/a11y declarations exclude10. Lifecycledebt separate from advisories.
+No rulesremoved/config/lock/dependencymutation, no tested safe minimal migration
+established. These WP12 findings remain open; investigation≠remediation.
+
 ## 11 October 2026 — Bosch/Junkers professional codebook context
 
 The [official original codebook](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf)

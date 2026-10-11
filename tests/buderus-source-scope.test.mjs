@@ -11,6 +11,7 @@ import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { sourceFacts as facts } from "./fixtures/buderus-gb162-v2-source-facts.mjs";
 import { beforeThemaABGuide } from "./fixtures/bulex-thema-condens-ab.mjs";
 import { beforeBoschScopeGuide, beforeBoschScopeRegistry } from "./fixtures/bosch-junkers-source-boundaries.mjs";
+import { beforeAcvGuide, beforeAcvRegistry } from "./fixtures/acv-prestige-source-safety.mjs";
 
 const catalog = buderusCatalogs[0];
 const search = (query) => filterFaultCatalogs(buderusCatalogs, query, catalog.id).flatMap(c => c.codes);
@@ -163,7 +164,7 @@ test("non-Buderus fault guidance and fault-guide registry preserve the historica
   // projection. Its independent complete inventories and pre-edit eight-catalog
   // digest are enforced by calenta-ace-matic-25l.test.mjs. Never rebase this hash.
   const historicalGuides = faultGuides.filter(guide => guide.slug !== "buderus").map(guide => {
-    if (guide.slug !== "remeha") return beforeThemaABGuide(beforeBoschScopeGuide(guide));
+    if (guide.slug !== "remeha") return beforeThemaABGuide(beforeBoschScopeGuide(beforeAcvGuide(guide)));
     const oldWarning = "Kies uw toestelreeks en generatie: Avanta volgt de officiële Belgische Storingswijzer; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025, met afzonderlijke CU-GH-21-tabellen en SCB-10-tabellen die alleen gelden als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace-Matic 25L, Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.";
     const newWarning = "Kies uw toestelreeks en generatie: Avanta volgt de officiële Belgische Storingswijzer; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.";
     return { ...guide, modelWarning: guide.modelWarning.replace(newWarning, oldWarning),
@@ -173,5 +174,5 @@ test("non-Buderus fault guidance and fault-guide registry preserve the historica
   assert.equal(digest(historicalGuides), "5b20e74a82abe8770b7772b18915a1ac0a38cc25c6eb1b55329717a5659e18e1");
   // Historical fault-guide integrity only: unrelated website content may receive
   // intentional substantive updates without changing manufacturer source facts.
-  assert.equal(digest(pageRegistry.filter(page => page.path.startsWith("/foutcodes/") && page.path !== "/foutcodes/buderus").map(beforeBoschScopeRegistry)), "f548cbddfc9b3e17ea9a732e71d0bae5aa5a95fe6e7b08dad518ae8edfc17537");
+  assert.equal(digest(pageRegistry.filter(page => page.path.startsWith("/foutcodes/") && page.path !== "/foutcodes/buderus").map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), "f548cbddfc9b3e17ea9a732e71d0bae5aa5a95fe6e7b08dad518ae8edfc17537");
 });

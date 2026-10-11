@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { boschBoundaryFacts } from "./fixtures/bosch-junkers-source-boundaries.mjs";
+import { acvFacts } from "./fixtures/acv-prestige-source-safety.mjs";
 
 const manifest = JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json", import.meta.url), "utf8"));
 const catalogs = [...new Map(faultGuides.flatMap(g => g.catalogs.map(c => [c.id, c]))).values()];
@@ -40,8 +41,8 @@ test("the bounded model inventory matches every real guide assignment, scope, so
 });
 
 test("the inventory keeps unknown fields and retained evidence distinct rather than declaring a fresh audit", () => {
-  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 20);
-  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 10);
+  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 21);
+  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 9);
   assert.equal(manifest.snapshots.filter(s => s.hashMatchesPriorRecord === true).length, 7);
   assert.equal(manifest.snapshots.find(s => s.id === "vaillant-public-html").expectedSha256, null);
   for (const e of manifest.entries) {
@@ -66,4 +67,20 @@ test("the inventory keeps unknown fields and retained evidence distinct rather t
   assert.equal(snapshot.expectedSha256, null);
   assert.equal(snapshot.hashMatchesPriorRecord, null);
   assert.equal(snapshot.pageCount, boschBoundaryFacts.pageCount);
+  const acv = manifest.entries.find(e => e.id === acvFacts.id);
+  assert.deepEqual(acv.models, acvFacts.models);
+  assert.equal(acv.documentNumber, acvFacts.document);
+  assert.equal(acv.revision, acvFacts.revision);
+  assert.equal(acv.issueDate, acvFacts.issueMonth);
+  assert.equal(acv.issueDatePrecision, "month");
+  assert.equal(acv.language, "nl");
+  assert.equal(acv.controller, "ESYS");
+  assert.equal(acv.literalCodeGroupCount, 24);
+  assert.equal(acv.literalDescriptionSubrowCount, 25);
+  for (const field of ["articleNumbers", "market", "component", "tableIds"]) assert.equal(acv[field], null);
+  const acvSnapshot = manifest.snapshots.find(s => s.id === "acv-prestige-mkiii-pdf");
+  assert.equal(acvSnapshot.sha256, acvFacts.sha256);
+  assert.equal(acvSnapshot.expectedSha256, null);
+  assert.equal(acvSnapshot.hashMatchesPriorRecord, null);
+  assert.equal(acvSnapshot.pageCount, acvFacts.pageCount);
 });

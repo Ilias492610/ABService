@@ -250,7 +250,8 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "ACV Prestige foutcodes: betekenis en stappen | AB Service",
     description:
-      "Doorzoek de volledige ESYS-foutcodetabel voor ACV Prestige MKIII, met officiële handleiding en veilige eerste stappen.",
+      "Zoek 24 ACV-codegroepen voor Prestige Solo en Excellence 18/32 MkIII met ESYS, bron 664Y4200 H (03/2011). Lees betekenis en veilige eerste stappen.",
+    lastModified: "2026-10-11",
     changeFrequency: "monthly",
     priority: 0.6,
   },

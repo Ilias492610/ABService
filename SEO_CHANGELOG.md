@@ -1,5 +1,43 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — ACV historical source and safe actions; local candidate
+
+- Task50 ties the existing24 groups to actual ACV664Y4200 H (03/2011),
+  Prestige Solo/Excellence18/32 MkIII with ESYS. Official retained PDF44pages,
+  SHA`eda557c6086ab17148973eafea4127ce4fda38147ac9569f0b3b188dbf9b61b3`.
+  Main reads identity/control/model/safety/table pages and actual pixels;
+  selected table42–43 has23 E identifiers+NTC, E03 two meanings/one code.
+- Narrows scope/warning/source label/meta. E37 no longer invents a pressure
+  range; E37/NTC use manual-bound general guidance, E41/E47 sensor diagnosis,
+  not filling advice. Other23 meanings/all IDs/aliases/source pages/order and
+  twelve other guides remain exact. Only ACV's real modification date is added.
+- Genuine435baseline, RED4fail/2pass→GREEN6/6. Seven historical/mirror failures
+  diagnosed; only named approved projections, no digest rebasing. Fresh441,
+  lint0/productionaudit0/build170/localcrawl82/93/112 pass. Four native profiles
+  pass269 localGETs,48 search cases/eight pointer+Enter handoffs/oneTabname;
+  root reads harness/results and actual mobile screenshots. Initial filename
+  collision safely stopped before browserlaunch; distinct stem retained.
+- Inventory21PDF-linked catalogs/eightPDFs/two web/nine declarations; same
+  32/38/1596/1354/18 counts. ACV four observed models/identifier/revision/month,
+  not individual SKU/firmware/latest or BE-only fit. Other31records/nine prior
+  snapshots/twelve guide records unchanged. Sole review/exact hosted/live gates
+  pending; Task46 mobile widget minor and broader WP07 remain open.
+
+Task49 is actually accepted as `64e936692b9da64b3ad3c453d77d3755b36ec08f`:
+sole review/fresh435/[CI38154824053](https://github.com/Ilias492610/ABService/actions/runs/38154824053)
+success16:18:12UTC; matching-SHA actualProduction6998266147/6998271150
+success16:17:37/16:18:01UTC. Canonical82/93/112/eight unchanged native live
+profiles416GET/64searchcases/16contactflows pass. One two-URL IndexNowHTTP200
+receipt after validproof/live, not indexing. Earlier candidate notes are history.
+
+Task51 fresh read-only development investigation: nine affected package records
+(7high/2moderate) from two advisories, all ten installed paths dev-only. No
+compatible minimal upstream fix established; parser7.1.6 conflicts with current
+v6 ranges and braces has no published fixed release. ESLint9 EOL is separate
+lifecycle debt; current peers exclude drop-in10. No install/forcefix/downgrade/
+styling migration; production audit0 does not certify overall security. See
+[evidence](docs/seo/evidence-register.md). These findings remain open in WP12.
+
 ## 11 October 2026 — Bosch/Junkers scope correction; local candidate
 
 - Task49 reads the original Dutch professional codebook: 268 pages, SHA256
