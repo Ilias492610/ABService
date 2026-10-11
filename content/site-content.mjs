@@ -201,18 +201,20 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Bosch foutcodes: officiële bron en veilige stappen | AB Service",
     description:
-      "Doorzoek alle ketelcodes uit het officiële Bosch-codeboek voor 7000i, 9000i, Cerapur Maxx en de generaties -4, -3 en -2.",
+      "Zoek Bosch-foutcodes binnen zes gedocumenteerde ketelreeksen. Lees model- en bouwjaargrenzen, officiële bronnen en veilige eerste stappen.",
     changeFrequency: "monthly",
     priority: 0.6,
+    lastModified: "2026-10-11",
   },
   {
     path: "/foutcodes/junkers",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Junkers foutcodes: officiële bron en veilige stappen | AB Service",
     description:
-      "Doorzoek alle Junkers-ketelcodes uit het officiële Bosch/Junkers-codeboek per toestelreeks, bouwjaar en subcode.",
+      "Zoek Junkers-foutcodes binnen zes hoofdstukken van het Bosch/Junkers-codeboek. Controleer toestelreeks, bouwjaar en subcode vóór toepassing.",
     changeFrequency: "monthly",
     priority: 0.6,
+    lastModified: "2026-10-11",
   },
   {
     path: "/foutcodes/remeha",

@@ -1,6 +1,6 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading; not source re-audit of other catalogs or complete13-brand/model certification",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification",
   "incrementalUpdateDate": "2026-10-11",
   "counts": {
     "guides": 13,
@@ -11,7 +11,7 @@
     "distinctCatalogSourceURLs": 18
   },
   "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources.",
-  "method": "Original Task47 literal enumeration/evidence inspection retained. Task48 adds only one newly read historical Bulex A/B source and31 numbered rows, with independent ruled-cell extraction and main primary-body/pixel reading. Other31 catalog entries and seven snapshots remain unchanged; no whole-source re-audit or newest-revision certification.",
+  "method": "Original Task47 record history retained. Task48 added one historical Bulex A/B table. Task49 updates only six shared Bosch/Junkers scopes, two warnings and directly observed NL chapter/source context, adding one original PDF snapshot. Other26 entries/eight snapshots/eleven guide entries remain unchanged; no 242-row re-audit or newest/full-model certification.",
   "guides": [
     {
       "slug": "vaillant",
@@ -41,7 +41,7 @@
     {
       "slug": "bosch",
       "brand": "Bosch",
-      "modelWarning": "De catalogus volgt alle ketelcodes uit het officiële Bosch-codeboek voor Serie 7000i, Serie 9000i, Cerapur Maxx en de generaties -4, -3 en -2. Kies altijd eerst de toestelreeks: dezelfde code kan per generatie een andere betekenis hebben.",
+      "modelWarning": "Deze pagina gebruikt zes geselecteerde hoofdstukken uit de Nederlandstalige Bosch/Junkers Gids voor de installateur, niet alle codes of toestelvarianten van het merk. Publicatiedatum en revisie van dit codeboek zijn hier niet vastgesteld; de genoemde bouwjaren zijn hoofdstukgrenzen, geen garantie van geldigheid voor ieder toestel. Kies de juiste reeks en controleer typeplaatje, bouwjaar, volledige code en eventuele subcode in de gebruikershandleiding van uw exacte toestel. Het professionele codeboek vervangt die handleiding niet; werkzaamheden aan gesloten onderdelen horen bij een bevoegde technicus.",
       "explanationRowCount": 242,
       "catalogIds": [
         "bosch-serie-7000i",
@@ -57,7 +57,7 @@
     {
       "slug": "junkers",
       "brand": "Junkers",
-      "modelWarning": "Het officiële Bosch-codeboek behandelt Junkers- en Bosch-condensatieketels samen. Deze catalogus neemt alle ketelcodes uit de zes gedocumenteerde generaties over; controleer daarom altijd toestelreeks, bouwjaar en eventuele subcode.",
+      "modelWarning": "Deze pagina gebruikt zes geselecteerde hoofdstukken uit de Nederlandstalige Bosch/Junkers Gids voor de installateur, niet alle codes of toestelvarianten van het merk. Publicatiedatum en revisie van dit codeboek zijn hier niet vastgesteld; de genoemde bouwjaren zijn hoofdstukgrenzen, geen garantie van geldigheid voor ieder toestel. Kies de juiste reeks en controleer typeplaatje, bouwjaar, volledige code en eventuele subcode in de gebruikershandleiding van uw exacte toestel. Het professionele codeboek vervangt die handleiding niet; werkzaamheden aan gesloten onderdelen horen bij een bevoegde technicus.",
       "explanationRowCount": 242,
       "catalogIds": [
         "bosch-serie-7000i",
@@ -183,6 +183,15 @@
     }
   ],
   "snapshots": [
+    {
+      "id": "bosch-junkers-codebook-pdf",
+      "kind": "manufacturer-PDF; newly retained source-context reading, not full row audit",
+      "sha256": "442ccaafddd34a27a6e2a26e37a5c062414140cc19c20e19fb83c7b4776278c3",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 268,
+      "byteLength": 4883395
+    },
     {
       "id": "bulex-thema-ab-pdf",
       "kind": "manufacturer-PDF; newly read Task48 historical source",
@@ -426,7 +435,7 @@
         "junkers"
       ],
       "title": "Serie 7000i vanaf bouwjaar 2017",
-      "modelScope": "Alle blokkerende, vergrendelende en niet-blokkerende storingsregels uit het officiële codeboek. Hoofdcode en subcode horen samen.",
+      "modelScope": "Selectie van 31 bestaande codeverklaringen uit p. 27-30 van het hoofdstuk Serie 7000i vanaf bouwjaar 2017. Hoofdcode en subcode horen samen. Dit is geen volledige lijst van bedrijfs-, service- en storingsmeldingen of bewijs van geldigheid voor iedere 7000i-variant.",
       "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
       "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
       "sourcePages": "p. 27-30",
@@ -438,16 +447,20 @@
       "revision": null,
       "issueDate": null,
       "market": null,
-      "language": null,
+      "language": "nl",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "bosch-junkers-codebook-pdf",
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        "docs/seo/evidence-register.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-49-bosch-source-preflight.json"
       ],
-      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "verificationBasis": "Task49 actual retained professional PDF, visible NL chapter headers/pages and bounded selection/graphic/conditional-family reading; not a fresh 242-row meaning/action/completeness audit. Exact product/market/firmware validity and printed revision/date remain unknown.",
       "declaredScopePath": "content/fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "sourceChapterPage": 10,
+      "sourceChapterGeneration": "vanaf bouwjaar 2017",
+      "sourceAudience": "professional-installer-guide"
     },
     {
       "id": "bosch-serie-9000i",
@@ -456,7 +469,7 @@
         "junkers"
       ],
       "title": "Serie 9000i vanaf bouwjaar 2015",
-      "modelScope": "Alle fout- en servicemeldingen uit de officiële tabel; normale bedrijfscodes met storingsklasse O zijn niet als fout opgenomen.",
+      "modelScope": "Selectie van 41 bestaande codeverklaringen uit p. 45-53 van het hoofdstuk Serie 9000i vanaf bouwjaar 2015. De bron bevat ook bedrijfs- en servicemeldingen; dit is geen volledige weergave van die tabel of bewijs van geldigheid voor iedere 9000i-variant.",
       "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
       "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
       "sourcePages": "p. 45-53",
@@ -468,16 +481,20 @@
       "revision": null,
       "issueDate": null,
       "market": null,
-      "language": null,
+      "language": "nl",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "bosch-junkers-codebook-pdf",
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        "docs/seo/evidence-register.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-49-bosch-source-preflight.json"
       ],
-      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "verificationBasis": "Task49 actual retained professional PDF, visible NL chapter headers/pages and bounded selection/graphic/conditional-family reading; not a fresh 242-row meaning/action/completeness audit. Exact product/market/firmware validity and printed revision/date remain unknown.",
       "declaredScopePath": "content/fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "sourceChapterPage": 32,
+      "sourceChapterGeneration": "vanaf bouwjaar 2015",
+      "sourceAudience": "professional-installer-guide"
     },
     {
       "id": "bosch-cerapur-maxx",
@@ -486,7 +503,7 @@
         "junkers"
       ],
       "title": "Cerapur Maxx",
-      "modelScope": "Alle fout- en waarschuwingscodes uit de Cerapur Maxx-tabellen; gewone bedrijfscodes zijn weggelaten.",
+      "modelScope": "Selectie van 47 bestaande codeverklaringen uit de Cerapur Maxx-tabellen op p. 64-75. Dit is geen volledige bedrijfs- of servicelijst. De exacte vermogens-, gas- en toestelvarianten waarvoor iedere regel geldt, zijn hier niet vastgesteld; controleer de handleiding van uw eigen toestel.",
       "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
       "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
       "sourcePages": "p. 64-75",
@@ -498,16 +515,20 @@
       "revision": null,
       "issueDate": null,
       "market": null,
-      "language": null,
+      "language": "nl",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "bosch-junkers-codebook-pdf",
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        "docs/seo/evidence-register.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-49-bosch-source-preflight.json"
       ],
-      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "verificationBasis": "Task49 actual retained professional PDF, visible NL chapter headers/pages and bounded selection/graphic/conditional-family reading; not a fresh 242-row meaning/action/completeness audit. Exact product/market/firmware validity and printed revision/date remain unknown.",
       "declaredScopePath": "content/fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "sourceChapterPage": 56,
+      "sourceChapterGeneration": null,
+      "sourceAudience": "professional-installer-guide"
     },
     {
       "id": "bosch-serie-4",
@@ -516,7 +537,7 @@
         "junkers"
       ],
       "title": "Serie -4 vanaf bouwjaar 2013",
-      "modelScope": "Alle storingscodes en H-meldingen uit de officiële Serie -4-tabellen. Codes voor CerapurAero zijn als zodanig benoemd.",
+      "modelScope": "Selectie van 37 bestaande codeverklaringen uit p. 103-109 voor Serie -4 vanaf bouwjaar 2013. Het afzonderlijke HMI-hoofdstuk vanaf bouwjaar 2015 op p. 76 bewijst geen uitwisselbaarheid. Meldingen die specifiek CerapurAero noemen, gelden alleen binnen die modelvoorwaarde. De numerieke meldingen 276 en 370 krijgen geen verzonnen hoofdcode.",
       "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
       "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
       "sourcePages": "p. 103-109",
@@ -528,16 +549,20 @@
       "revision": null,
       "issueDate": null,
       "market": null,
-      "language": null,
+      "language": "nl",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "bosch-junkers-codebook-pdf",
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        "docs/seo/evidence-register.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-49-bosch-source-preflight.json"
       ],
-      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "verificationBasis": "Task49 actual retained professional PDF, visible NL chapter headers/pages and bounded selection/graphic/conditional-family reading; not a fresh 242-row meaning/action/completeness audit. Exact product/market/firmware validity and printed revision/date remain unknown.",
       "declaredScopePath": "content/fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "sourceChapterPage": 84,
+      "sourceChapterGeneration": "vanaf bouwjaar 2013",
+      "sourceAudience": "professional-installer-guide"
     },
     {
       "id": "bosch-serie-3",
@@ -546,7 +571,7 @@
         "junkers"
       ],
       "title": "Serie -3 vanaf bouwjaar 2007",
-      "modelScope": "De volledige storingscodelijst voor Serie -3 in het officiële Bosch/Junkers-codeboek.",
+      "modelScope": "De 29 benoemde codegroepen uit de storingscodelijst op p. 132-133 voor Serie -3 vanaf bouwjaar 2007. Twee grafische displaymeldingen na H5 zijn hier niet als alfanumerieke code opgenomen; dit is dus niet de volledige brontabel. A9 noemt specifiek CerapurModul en CerapurModul-Smart, niet iedere Serie -3-variant.",
       "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
       "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
       "sourcePages": "p. 132-133",
@@ -558,16 +583,20 @@
       "revision": null,
       "issueDate": null,
       "market": null,
-      "language": null,
+      "language": "nl",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "bosch-junkers-codebook-pdf",
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        "docs/seo/evidence-register.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-49-bosch-source-preflight.json"
       ],
-      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "verificationBasis": "Task49 actual retained professional PDF, visible NL chapter headers/pages and bounded selection/graphic/conditional-family reading; not a fresh 242-row meaning/action/completeness audit. Exact product/market/firmware validity and printed revision/date remain unknown.",
       "declaredScopePath": "content/fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "sourceChapterPage": 111,
+      "sourceChapterGeneration": "vanaf bouwjaar 2007",
+      "sourceAudience": "professional-installer-guide"
     },
     {
       "id": "bosch-serie-2",
@@ -576,7 +605,7 @@
         "junkers"
       ],
       "title": "Serie -2, bouwjaar 1997-2006",
-      "modelScope": "Alle benoemde foutcodes uit de historische Serie -2-tabel. Sommige codes hebben meerdere betekenissen naargelang het concrete toestel; die varianten staan samen bij dezelfde code.",
+      "modelScope": "Selectie van 57 bestaande codeverklaringen uit de historische tabel op p. 160-163 voor bouwjaar 1997-2006. Sommige codes hebben meerdere betekenissen naargelang het concrete toestel; die varianten blijven samen bij dezelfde code. Dit is geen bewijs dat één betekenis voor iedere Serie -2-variant geldt.",
       "sourceLabel": "Bosch gids voor de installateur - foutcodeboek",
       "sourceURL": "https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf",
       "sourcePages": "p. 160-163",
@@ -588,16 +617,20 @@
       "revision": null,
       "issueDate": null,
       "market": null,
-      "language": null,
+      "language": "nl",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "bosch-junkers-codebook-pdf",
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        "docs/seo/evidence-register.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-49-bosch-source-preflight.json"
       ],
-      "verificationBasis": "Current declared codebook series/page selection and historical evidence summary only; exact model/product identifiers, document revision/market/language not independently established from primary body here. Belgian URL/nl filename are not field proof.",
+      "verificationBasis": "Task49 actual retained professional PDF, visible NL chapter headers/pages and bounded selection/graphic/conditional-family reading; not a fresh 242-row meaning/action/completeness audit. Exact product/market/firmware validity and printed revision/date remain unknown.",
       "declaredScopePath": "content/fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "sourceChapterPage": 134,
+      "sourceChapterGeneration": "bouwjaar 1997-2006",
+      "sourceAudience": "professional-installer-guide"
     },
     {
       "id": "remeha-avanta",

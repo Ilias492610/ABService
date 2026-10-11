@@ -62,7 +62,7 @@ export const faultGuides = Object.freeze([
     slug: "bosch",
     brand: "Bosch",
     modelWarning:
-      "De catalogus volgt alle ketelcodes uit het officiële Bosch-codeboek voor Serie 7000i, Serie 9000i, Cerapur Maxx en de generaties -4, -3 en -2. Kies altijd eerst de toestelreeks: dezelfde code kan per generatie een andere betekenis hebben.",
+      "Deze pagina gebruikt zes geselecteerde hoofdstukken uit de Nederlandstalige Bosch/Junkers Gids voor de installateur, niet alle codes of toestelvarianten van het merk. Publicatiedatum en revisie van dit codeboek zijn hier niet vastgesteld; de genoemde bouwjaren zijn hoofdstukgrenzen, geen garantie van geldigheid voor ieder toestel. Kies de juiste reeks en controleer typeplaatje, bouwjaar, volledige code en eventuele subcode in de gebruikershandleiding van uw exacte toestel. Het professionele codeboek vervangt die handleiding niet; werkzaamheden aan gesloten onderdelen horen bij een bevoegde technicus.",
     catalogs: boschCatalogs,
     documentationLabel: "Bosch handleidingen en modeldocumentatie",
     documentationUrl:
@@ -72,7 +72,7 @@ export const faultGuides = Object.freeze([
     slug: "junkers",
     brand: "Junkers",
     modelWarning:
-      "Het officiële Bosch-codeboek behandelt Junkers- en Bosch-condensatieketels samen. Deze catalogus neemt alle ketelcodes uit de zes gedocumenteerde generaties over; controleer daarom altijd toestelreeks, bouwjaar en eventuele subcode.",
+      "Deze pagina gebruikt zes geselecteerde hoofdstukken uit de Nederlandstalige Bosch/Junkers Gids voor de installateur, niet alle codes of toestelvarianten van het merk. Publicatiedatum en revisie van dit codeboek zijn hier niet vastgesteld; de genoemde bouwjaren zijn hoofdstukgrenzen, geen garantie van geldigheid voor ieder toestel. Kies de juiste reeks en controleer typeplaatje, bouwjaar, volledige code en eventuele subcode in de gebruikershandleiding van uw exacte toestel. Het professionele codeboek vervangt die handleiding niet; werkzaamheden aan gesloten onderdelen horen bij een bevoegde technicus.",
     catalogs: junkersCatalogs,
     documentationLabel: "Officiële documentatie voor oudere Bosch/Junkers-toestellen",
     documentationUrl:

@@ -1,5 +1,44 @@
 # Evidence Register
 
+## 11 October 2026 — Bosch/Junkers professional codebook context
+
+The [official original codebook](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf)
+is retained unchanged: GET200/4,883,395bytes/268pages/SHA256
+`442ccaafddd34a27a6e2a26e37a5c062414140cc19c20e19fb83c7b4776278c3`.
+Main reads the whole bounded preflight and23 original page images, not all268
+pages or a new independent242-row explanation/action audit. Cover/foreword p2:
+Dutch professional installer guide, no substitute for product instructions.
+Visible chapter headings:7000i from2017 p10;9000i from2015 p32;Maxx p56;
+-4 from2013 p84 versus distinct2015 HMI p76;-3 from2007 p111;
+-2 1997–2006 p134. Existing selected page ranges remain27–30/45–53/64–75/
+103–109/132–133/160–163. Hidden residual text is not a model heading.
+
+Printed formal identifier/revision/issue is not established; metadata2018 is
+not a publication/revision claim. Exact SKUs/firmware/country/gas mapping to
+each row remains unknown; a Belgian host or Mechelen imprint is not BE-only
+toestelvalidity. P132 has29 named groups plus two graphical display rows, not
+extra invented codes. P103's276/370 blank main-code cells stay blank; Aero and
+CerapurModul/Modul-Smart conditions remain specific. Current selector chain is
+observed, but its exact link to this codebook is not established; no latest claim.
+
+Task49 corrects six scopes/two warnings/two descriptions on the existing URLs,
+not existing meanings/actions/aliases or all-source completeness. Only those two
+actual content dates advance. Independent pre-edit complete guides/renders/
+registry and fixed digests preserve all242 code objects/other11 guides/80 entries.
+Six inventory records gain bounded context and Dutch language; old26 records/
+eight snapshots/eleven guide entries stay exact. Same32/38/1596/1354/18 counts;
+nine snapshots,20 PDF-linked catalogs/seven PDFs,two web-linked,ten declaration-only.
+Fresh435tests/lint/production0/build170/local82/93/112/eight native profiles536GET
+pass. Sole review/exact hosted/live remain gates; no GSC device-model join,
+provider/field/business effect or broader WP07 completion inferred.
+
+Task48 is actually accepted as `e71fbf69`: sole review/fresh429/
+exactCI38149952837 success15:08:04UTC; actualProduction6997413426/6997421316
+success15:07:57/15:08:39UTC. Canonical82/93/112/eight native live profiles376GET/
+16contact handoffs/oneTabname pass. One changedBulexURL IndexNowHTTP200 receipt
+follows valid proof/live checks, not indexing. ExistingTask46 mobile minor and
+owner/case/local/French/account gates remain. Earlier stages below are historical.
+
 ## 11 October 2026 — one historical THEMA Condens A/B source
 
 [Official installation selection](https://www.bulex.be/particulier/documentatie/technische-documentaties/installatievoorschriften/?p=3)

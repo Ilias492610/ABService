@@ -353,6 +353,29 @@ groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
+**Task49 lokale kandidaat, 11 oktober:** oorspronkelijke Nederlandse professionele
+Bosch/Junkers-codeboekbron werkelijk gelezen op hoofdstuk-/contextniveau,
+268pagina's/SHA442ccaafddd34a27a6e2a26e37a5c062414140cc19c20e19fb83c7b4776278c3.
+Hoofdonderzoeker leest gehele afgebakende preflight en23 relevante paginabeelden;
+geen nieuwe volledige242regel-/268pagina-audit. Zes scopes/twee waarschuwingen/
+twee zoekbeschrijvingen begrenzen geselecteerde hoofdstukken; -4/2013 blijft
+onderscheiden van2015HMI, grafische -3-regels niet verzonnen, Aero/Modul conditioneel.
+Editie/revisie/SKU/firmware/precieze markt blijven onbekend. Alle242codeobjecten
+per merk/11andere gidsen/80overige registryrecords exact; alleen beide gewijzigde
+URLs krijgen11October lastmod. EchteRED5/5→GREEN6/6/fresh435/lint/productie0/
+build170/local82/93/112/acht native desktop-mobile-JS/noJS-profielen536GET/
+24modelkeuzes/64zoekcases/16pointer+Enter/éénTabnaam slagen. Inventariscontext
+20PDF-gelinkte catalogi/7PDFs/2web/10declaraties, tellingen32/38/1596/1354/18
+ongewijzigd. Sole review/exact hosted/live blijven gates; WP07 niet volledig af.
+
+**Task48 werkelijk geaccepteerd:** `e71fbf69`, sole review/fresh429/
+exactCI38149952837 success15:08:04UTC; werkelijke matching-SHAProduction
+6997413426/6997421316 success15:07:57/15:08:39UTC; canonical82/93/112/
+acht nativeprofielen376GET/16contactflows/éénTabnaam slagen. Eén gewijzigde
+BulexURL IndexNowHTTP200 ontvangen na geldige proof/live, geen indexatiebewijs.
+Task46minor mobiele widgetoverlap blijft uitgesteld; overige bron-/eigenaar-
+en accountgates blijven open. Oudere kandidaatnotities hieronder zijn historie.
+
 **Task48 lokale kandidaat, 11 oktober:** één historische Bulex A/B-bron,
 werkelijke footer0020109430_06/06/13,31 genummerde regels p33–34 voor acht
 exacte modellen, BE/LU-aardgas/BE-propaanbeperking. Vier streepjes/één lege

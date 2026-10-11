@@ -1,5 +1,39 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — Bosch/Junkers scope correction; local candidate
+
+- Task49 reads the original Dutch professional codebook: 268 pages, SHA256
+  `442ccaafddd34a27a6e2a26e37a5c062414140cc19c20e19fb83c7b4776278c3`.
+  Cover, foreword, chapter boundaries and 23 selected page images are checked;
+  this is not a fresh audit of all 242 existing explanations or all PDF rows.
+- Narrows six shared scopes and two warnings/descriptions to the selected
+  chapters. Distinguishes -4/2013 from the separate 2015 HMI chapter, -3's
+  graphical displays and conditional Aero/Modul equipment. Formal edition,
+  SKU, firmware and exact country/gas applicability remain unknown.
+- All existing code objects, meanings, actions, aliases, source pages and
+  order are preserved. Only the two genuinely edited URLs gain 11 October
+  modification dates; other eleven guides and 80 registry entries stay exact.
+  Counts remain 32 catalogs / 38 assignments / 1,596 displayed explanations,
+  1,354 before shared reuse, not universal model coverage or unique codes.
+- Genuine RED 5/5 failures precede GREEN 6/6. Five historical/mirror failures
+  are resolved with exact named projections, retaining all original digests.
+  Fresh 435/435, lint, production audit 0, build 170 and local crawl 82/93/112
+  pass. Eight native desktop/mobile JS/no-JS profiles pass: 536 local GETs,
+  24 model-filter checks, 64 search cases and 16 pointer/Enter contact flows.
+  Root reads the results and actual screenshots; no new field-speed claim.
+- Inventory adds one pinned source-context snapshot. Twenty catalogs now tie
+  to seven retained PDFs, two to retained web views; ten are declaration-only.
+  Independent final review, exact hosted deployments and live checks remain
+  gates. Existing mobile widget-overlap minor and wider WP07 gates stay open.
+
+Task48 is actually accepted as `e71fbf69aeebc1d4f628d807504210688b5d2d17`:
+sole review, fresh 429 tests and [CI38149952837](https://github.com/Ilias492610/ABService/actions/runs/38149952837)
+success 15:08:04 UTC; matching-SHA actual Production 6997413426 / 6997421316
+success 15:07:57 / 15:08:39 UTC. Canonical crawl 82/93/112 and eight live native
+profiles pass, 376 GET-only requests, 16 contact flows and visible name focus.
+One changed Bulex URL IndexNow HTTP200 receipt follows valid proof/live checks;
+that is receipt, not indexing. Earlier candidate entries retain their phase.
+
 ## 11 October 2026 — historical THEMA Condens A/B source candidate
 
 - Task48 adds one separately attributed catalog on the existing Bulex URL:

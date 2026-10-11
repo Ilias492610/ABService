@@ -1,5 +1,71 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — Task49 Bosch/Junkers local acceptance
+
+Original official Dutch installer codebook: HTTP200, 4,883,395 bytes, 268 pages,
+SHA256 `442ccaafddd34a27a6e2a26e37a5c062414140cc19c20e19fb83c7b4776278c3`.
+Main reads the complete bounded preflight and 23 actual page images. Visible
+chapter headings override residual hidden template text: 7000i/2017 p10,
+9000i/2015 p32, Maxx p56, -4/2013 p84, -3/2007 p111, -2/1997–2006 p134.
+The separate 2015 HMI chapter starts p76. Foreword p2 says this installer guide
+does not replace product instructions. Formal revision/issue, exact SKUs,
+country/gas and firmware remain unknown; PDF metadata is not an issue date.
+Two graphical rows on p132 are not invented identifiers; blank main-code cells
+for 276/370 are not filled with 0Y. Aero/Modul conditions stay model-specific.
+This context reading is not an independent 242-row meaning/action audit.
+
+Only six scopes, two warnings, two descriptions and their genuine content dates
+change. Fixed independent pre-edit captures cover all thirteen guides, actual
+SSR/metadata and 82 registry entries. New separate literal/semantic tests plus
+exact named historical projections preserve all old hashes; all 242 full code
+objects per brand, eleven other guides and 80 other registry entries stay exact.
+Genuine RED5/5 precedes GREEN6/6. Initial full-suite five historical/mirror
+failures are retained and diagnosed, not accepted or hidden by rebasing hashes.
+Corrected fresh435/435, lint0, production audit0, build170 and explicit-local
+crawl82pages/93links/112assets pass. No runtime/dependency/media change; no
+repeated Lighthouse campaign or field performance claim for this copy correction.
+
+Eight fresh native profiles: both brands × desktop1440/mobile390 × JS/no-JS.
+All242 rows, six scopes, seven real options, oneH1 and source URLs are exact.
+Four JS profiles each exercise six model choices and sixteen searches, including
+EA227 model distinctions, 0Y/OY, blank-prefix 276, grouped historic aliases,
+unknown0 and restoration to242. Sixteen pointer/nativeEnter contact handoffs
+prefill Herstelling verwarming; one native Tab focuses fully visible name.
+Form tops142.17–144.17px clear the126.59px header. All536 browser requests are
+localGET-only; no external/nonGET/blocked/pageerrors/overflow. Strict JS console
+allows only the exact intercepted rating503 fixture; no-JS console is empty.
+Root reads every result/request and actual mobile scope/no-JS/contact images.
+This is headless evidence, not mail/provider, assistive, physical or field proof.
+Sole final review and exact hosted/canonical acceptance remain gates. Task46's
+bottom-aligned mobile widget-overlap minor is still deferred, not claimed fixed.
+
+Incremental inventory: same32/38/1596/1354/18 counts; six context records and
+two warning mirrors change, other26 records/eight prior snapshots/eleven guide
+records stay exact. Nine snapshots now include seven PDFs/two web views;
+20 PDF-linked catalogs, two web-linked and ten declaration-only. Newly observed
+Dutch language/header years are not inferred device applicability or row coverage.
+
+## 11 October 2026 — Task48 exact release acceptance
+
+Task48 SHA `e71fbf69aeebc1d4f628d807504210688b5d2d17` passes the sole independent
+review with no Critical/Important/new Minor. Complete raw report and all ten
+declined-boundary rulings/costs are retained. Fresh429 tests and
+[CI38149952837](https://github.com/Ilias492610/ABService/actions/runs/38149952837)
+success15:08:04UTC confirm Node24.21.0/install/lint/productionaudit0/build170/
+hosted82/93/112. Matching-SHA actual Production primary6997413426 succeeds
+15:07:57UTC; secondary6997421316 succeeds15:08:39UTC. Actual named environments
+and provider status records, not a push or boolean guess, establish deployment.
+
+Fresh canonical crawl82/93/112 and eight unchanged native live profiles pass:
+376 canonicalGET-only requests, no blocked/external/nonGET/pageerrors/overflow.
+Original43 plus new31 Bulex rows/scopes/source pages/options match local contracts;
+all16 pointer/Enter handoffs retain service context, header clearance and oneTab
+visible name focus. Root reads all results and actual live screenshots. One
+changed Bulex URL IndexNowHTTP200 receipt follows valid public proof/live checks;
+no indexing/ranking/lead/provider result inferred. Existing mobile minor and
+wider source/model/private/account gates stay open. Older candidate notes below
+are historical stages, not the current accepted release.
+
 ## 11 October 2026 — Task48 A/B candidate and accepted handoff
 
 Actual historical Bulex installation PDF `0020109430_06` (06/13), 56 pages,

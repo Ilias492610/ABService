@@ -7,6 +7,7 @@ import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { renderFaultGuide, faultGuideRoute, paramsFor, faultGuideRenderEvents } from "./helpers/fault-guide-runtime.mjs";
 import { guideBaseline, modelHelpHtml } from "./fixtures/bulex-model-help-baseline.mjs";
 import { beforeThemaABGuide, beforeThemaABHtml } from "./fixtures/bulex-thema-condens-ab.mjs";
+import { beforeBoschScopeGuide, beforeBoschScopeRegistry, beforeBoschScopeMetadata, beforeBoschScopeHtml } from "./fixtures/bosch-junkers-source-boundaries.mjs";
 
 const sha = (value) => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
 const bulexHtml = await renderFaultGuide("bulex");
@@ -42,9 +43,9 @@ test("Bulex retains every real catalog row and the F54 general-overview versus F
 test("all thirteen complete metadata, registry and guide objects remain exactly the pre-edit captures", async () => {
   assert.deepEqual(faultGuides.map(({ slug }) => slug), guideBaseline.map(([slug]) => slug));
   for (const [slug, , metadata, registry, guide] of guideBaseline) {
-    assert.equal(sha(await faultGuideRoute.generateMetadata(paramsFor(slug))), metadata, `${slug} metadata`);
-    assert.equal(sha(getPageDefinition(`/foutcodes/${slug}`)), registry, `${slug} registry`);
-    assert.equal(sha(beforeThemaABGuide(getFaultGuide(slug))), guide, `${slug} entire guide before only the separately tested A/B addition`);
+    assert.equal(sha(beforeBoschScopeMetadata(await faultGuideRoute.generateMetadata(paramsFor(slug)), slug)), metadata, `${slug} metadata before only separately tested Task49 descriptions`);
+    assert.equal(sha(beforeBoschScopeRegistry(getPageDefinition(`/foutcodes/${slug}`))), registry, `${slug} registry before only Task49 descriptions/date`);
+    assert.equal(sha(beforeThemaABGuide(beforeBoschScopeGuide(getFaultGuide(slug)))), guide, `${slug} entire guide before only separately tested Task48/49 changes`);
   }
 });
 
@@ -56,7 +57,7 @@ test("all thirteen actual page renders preserve their full original HTML except 
       assert.equal(sha(beforeThemaABHtml(html).replace(modelHelpHtml, "")), htmlHash, "full Bulex HTML before only the separately tested A/B addition");
     } else {
       assert.doesNotMatch(html, /bulex-model-help-title/);
-      assert.equal(sha(html), htmlHash, `${slug} full HTML preservation`);
+      assert.equal(sha(beforeBoschScopeHtml(html, slug)), htmlHash, `${slug} full HTML preservation before only Task49 scope/warning paragraphs`);
     }
   }
 });

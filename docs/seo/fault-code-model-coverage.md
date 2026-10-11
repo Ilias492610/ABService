@@ -1,8 +1,12 @@
 # WP07 — actuele model- en brondekking
 
-Vastlegging 11 oktober 2026; geaccepteerd productbaseline `b32084e5`,
-met de nog niet gepubliceerde Task48-uitbreiding hieronder apart benoemd.
-Task47 is een inventaris; Task48 leest één aanvullende historische bron.
+Vastlegging 11 oktober 2026; geaccepteerd productbaseline `e71fbf69`.
+Task48's historische Bulex A/B-uitbreiding is onafhankelijk gereviewd,
+op de exacte SHA door CI/beide Vercel Production-projecten geaccepteerd en
+op de canonical website gecontroleerd. Task49's Bosch/Junkers-scopecorrectie
+is nog een lokaal geverifieerde kandidaat; review/hosted/live blijven gates.
+Task47 inventariseert, Task48 leest één extra historische tabelbron en
+Task49 leest afgebakend de context van één professioneel codeboek.
 Dit is **geen bronheraudit van de overige catalogi, bewijs van de nieuwste
 revisie of voltooiing van WP07**.
 De [machineleesbare inventaris](fault-code-model-coverage.json) bevat alle 32
@@ -12,8 +16,11 @@ De hoofdonderzoeker heeft de oorspronkelijke 31 records gelezen en de zeven
 bewaarde bronbestanden opnieuw gehasht. Alleen vijf PDF’s en de Bulex-bronweergave
 hebben een eerdere vastgelegde SHA; Vaillant-HTML heeft hier een nieuw
 vastgelegde hash, geen eerder gepinde vergelijking. Task48 voegt één gelezen
-A/B-PDF, 31 genummerde regels en een achtste snapshot toe. De oorspronkelijke
-31 records, zeven snapshots en overige twaalf gidsen blijven exact behouden.
+A/B-PDF, 31 genummerde regels en een achtste snapshot toe. Bij die release bleven
+de oorspronkelijke31 records/zeven snapshots/overige twaalf gidsen exact behouden.
+Task49 voegt een negende snapshot toe en corrigeert alleen zes gedeelde scopes
+en twee waarschuwingen; andere26 records/acht snapshots/elf gidsrecords blijven
+exact. Nieuw Nederlands/hoofdstukjaar/context is geen nieuwe 242-regelheraudit.
 
 ## Wat de aantallen betekenen
 
@@ -48,9 +55,9 @@ toegankelijkheid of inhoud gecertificeerd.
 ## Alle afzonderlijke catalogi
 
 Een bewaard bronbestand plus eerder afgebakend leesrapport is sterker bewijs
-dan uitsluitend een bestaande declaratie. Veertien catalogi zijn gekoppeld
-aan zes bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
-Zestien hebben binnen deze inventaris alleen de bestaande declaratie en
+dan uitsluitend een bestaande declaratie. Twintig catalogi zijn gekoppeld
+aan zeven bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
+Tien hebben binnen deze inventaris alleen de bestaande declaratie en
 historische bewijsregistratie (G). Bewaren/hashvergelijking is op zichzelf
 geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
@@ -61,12 +68,12 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 | `bulex-publiek-overzicht` | 14 | Online overzicht | [bron 3](https://www.bulex.be/particulier/diensten/foutcodes/) | bulex-public-web-render |
 | `bulex-thema-condens` | 29 | Bijlage D, p. 37-38 | [bron 4](https://www.bulex.be/themacondens/0020124551-02-1746869.pdf) | bulex-thema-pdf |
 | `bulex-thema-condens-ab` | 31 | § 13.3, p. 33-34 | [A/B-bron](https://www.bulex.be/themacondens/0020109430-06-1746866.pdf) | bulex-thema-ab-pdf; nieuw gelezen Task48 |
-| `bosch-serie-7000i` | 31 | p. 27-30 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | G: declaratie/historisch register |
-| `bosch-serie-9000i` | 41 | p. 45-53 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | G: declaratie/historisch register |
-| `bosch-cerapur-maxx` | 47 | p. 64-75 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | G: declaratie/historisch register |
-| `bosch-serie-4` | 37 | p. 103-109 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | G: declaratie/historisch register |
-| `bosch-serie-3` | 29 | p. 132-133 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | G: declaratie/historisch register |
-| `bosch-serie-2` | 57 | p. 160-163 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | G: declaratie/historisch register |
+| `bosch-serie-7000i` | 31 | p. 27-30; hoofdstuk p10/from2017 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | bosch-junkers-codebook-pdf; context, geen regelheraudit |
+| `bosch-serie-9000i` | 41 | p. 45-53; hoofdstuk p32/from2015 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | bosch-junkers-codebook-pdf; context, geen regelheraudit |
+| `bosch-cerapur-maxx` | 47 | p. 64-75; hoofdstuk p56 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | bosch-junkers-codebook-pdf; context, geen regelheraudit |
+| `bosch-serie-4` | 37 | p. 103-109; hoofdstuk p84/from2013 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | bosch-junkers-codebook-pdf; context, geen regelheraudit |
+| `bosch-serie-3` | 29 | p. 132-133; hoofdstuk p111/from2007 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | bosch-junkers-codebook-pdf; context, geen regelheraudit |
+| `bosch-serie-2` | 57 | p. 160-163; hoofdstuk p134/1997–2006 | [bron 5](https://www.bosch-homecomfort.com/be/media/country_pool/professionals/toolbox/bosch_codeboek_nl_lr.pdf) | bosch-junkers-codebook-pdf; context, geen regelheraudit |
 | `remeha-avanta` | 17 | Online productoverzicht, 17 codes | [bron 6](https://storingswijzer.remeha.be/error-codes-products/avanta/) | G: declaratie/historisch register |
 | `remeha-calenta-legacy` | 23 | §11.1, gedrukte p. 79–82 (PDF-pagina 80–83) | [bron 7](https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf) | G: declaratie/historisch register |
 | `remeha-calenta-legacy-blocking` | 19 | §11.2.2, gedrukte p. 83–84 (PDF-pagina 84–85) | [bron 7](https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf) | G: declaratie/historisch register |
@@ -111,10 +118,18 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
   condensaatpomp, niet de FAS65-rookgasklep. Geen mantel openen, installateur-
   reparaties of veiligheidsbypass; onbekende artikel/firmwaremapping blijft
   `null`. Geen dekking van andere THEMA-varianten/nieuwste revisies afleiden.
-- Bosch/Junkers: zes gedeclareerde codeboekselecties blijven afzonderlijk.
-  Exacte model/productidentifiers, revisie, markt en taal zijn hier niet
-  vanuit het primaire brondocument vastgesteld. Een Belgisch URL-pad of
-  bestandsnaam met ‘nl’ vult die gaten niet.
+- Bosch/Junkers: zes bestaande codeboekselecties blijven afzonderlijk, met
+  begrensde scopes van de werkelijke hoofdstukken. Task49 leest het Nederlandse
+  professionele codeboek, cover/voorwoord/inhoudsopgave/hoofdstukken/imprint en23
+  relevante paginabeelden, niet opnieuw alle242 betekenissen/acties of alle268
+  PDF-pagina's. Hoofdstukjaren/headers staan hierboven; -4/2013 is niet het
+  afzonderlijke2015HMI-hoofdstuk p76. P132 bevat29 benoemde groepen plus twee
+  grafische displayregels, niet verzonnen alfanumerieke codes. P103 laat het
+  hoofdcodedeel van276/370 leeg; Aero/Modul-voorwaarden blijven modelgebonden.
+  Voorwoord p2: de installatiegids vervangt geen productinstructies. Formele
+  documentidentifier/editie/revisiedatum, exacte model/productidentifiers,
+  artikel/firmware/markt blijven onbekend. Metadata2018 is geen uitgiftedatum;
+  Belgische hosting/Mechelen-imprint is geen BE-only toesteltoepasbaarheid.
 - Remeha Avanta: 17 gedeclareerde regels uit het online overzicht met
   historische scopedatum 17 september; geen nieuwe primaire lezing hier.
   Legacy Calenta 15s/25s/28c/35s/40c, `080715–117061-08`: E23 en Su19
@@ -155,7 +170,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
 JSON-`null` betekent: niet vastgesteld binnen deze afgebakende inventaris,
 niet dat een gegeven niet bestaat. De velddeclaratie en de bewijsbasis blijven
-onderscheiden. De zes PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
+onderscheiden. De zeven PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
 in `snapshots`; de eerdere leesrapporten blijven in de lokale recoveryledger.
 
 ## Vervolg binnen het bestaande meesterplan
@@ -166,7 +181,10 @@ als `b32084e5`: statische intakehulp met officiële handleidingselectie,
 geen mantel openen/gevaarlijke foto’s, geen diagnose van een ander model en
 bestaande contactcontext. Alle oorspronkelijke 43 regels/scopes en overige
 twaalf gidsen blijven ongewijzigd. Task48 voegt uitsluitend de eigen 31 A/B-
-regels toe; lokale test- en publicatieacceptatie staan apart in de QA-registratie.
+regels toe en is inmiddels geaccepteerd als `e71fbf69`; de exacte CI, beide
+werkelijke Productionstatuses, canonical tests en één IndexNow-ontvangstbewijs
+staan apart in de QA-registratie. Task49's lokale contextcorrectie bewaart alle
+242codeobjecten/elf andere gidsen; sole review en exacte release staan nog open.
 
 Verdere modeluitbreiding pas na exacte primaire toepasbaarheid/revisie en
 consumentveilige uitleg; prioritair echte zoek-/intakevragen, niet verzonnen

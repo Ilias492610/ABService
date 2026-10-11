@@ -285,7 +285,7 @@ const boschJunkersRows = Object.freeze([
     id: "bosch-serie-7000i",
     title: "Serie 7000i vanaf bouwjaar 2017",
     scope:
-      "Alle blokkerende, vergrendelende en niet-blokkerende storingsregels uit het officiële codeboek. Hoofdcode en subcode horen samen.",
+      "Selectie van 31 bestaande codeverklaringen uit p. 27-30 van het hoofdstuk Serie 7000i vanaf bouwjaar 2017. Hoofdcode en subcode horen samen. Dit is geen volledige lijst van bedrijfs-, service- en storingsmeldingen of bewijs van geldigheid voor iedere 7000i-variant.",
     sourceLabel: "Bosch gids voor de installateur - foutcodeboek",
     sourceUrl: BOSCH_CODEBOOK_URL,
     sourcePages: "p. 27-30",
@@ -327,7 +327,7 @@ const boschJunkersRows = Object.freeze([
     id: "bosch-serie-9000i",
     title: "Serie 9000i vanaf bouwjaar 2015",
     scope:
-      "Alle fout- en servicemeldingen uit de officiële tabel; normale bedrijfscodes met storingsklasse O zijn niet als fout opgenomen.",
+      "Selectie van 41 bestaande codeverklaringen uit p. 45-53 van het hoofdstuk Serie 9000i vanaf bouwjaar 2015. De bron bevat ook bedrijfs- en servicemeldingen; dit is geen volledige weergave van die tabel of bewijs van geldigheid voor iedere 9000i-variant.",
     sourceLabel: "Bosch gids voor de installateur - foutcodeboek",
     sourceUrl: BOSCH_CODEBOOK_URL,
     sourcePages: "p. 45-53",
@@ -379,7 +379,7 @@ const boschJunkersRows = Object.freeze([
     id: "bosch-cerapur-maxx",
     title: "Cerapur Maxx",
     scope:
-      "Alle fout- en waarschuwingscodes uit de Cerapur Maxx-tabellen; gewone bedrijfscodes zijn weggelaten.",
+      "Selectie van 47 bestaande codeverklaringen uit de Cerapur Maxx-tabellen op p. 64-75. Dit is geen volledige bedrijfs- of servicelijst. De exacte vermogens-, gas- en toestelvarianten waarvoor iedere regel geldt, zijn hier niet vastgesteld; controleer de handleiding van uw eigen toestel.",
     sourceLabel: "Bosch gids voor de installateur - foutcodeboek",
     sourceUrl: BOSCH_CODEBOOK_URL,
     sourcePages: "p. 64-75",
@@ -437,7 +437,7 @@ const boschJunkersRows = Object.freeze([
     id: "bosch-serie-4",
     title: "Serie -4 vanaf bouwjaar 2013",
     scope:
-      "Alle storingscodes en H-meldingen uit de officiële Serie -4-tabellen. Codes voor CerapurAero zijn als zodanig benoemd.",
+      "Selectie van 37 bestaande codeverklaringen uit p. 103-109 voor Serie -4 vanaf bouwjaar 2013. Het afzonderlijke HMI-hoofdstuk vanaf bouwjaar 2015 op p. 76 bewijst geen uitwisselbaarheid. Meldingen die specifiek CerapurAero noemen, gelden alleen binnen die modelvoorwaarde. De numerieke meldingen 276 en 370 krijgen geen verzonnen hoofdcode.",
     sourceLabel: "Bosch gids voor de installateur - foutcodeboek",
     sourceUrl: BOSCH_CODEBOOK_URL,
     sourcePages: "p. 103-109",
@@ -484,7 +484,7 @@ const boschJunkersRows = Object.freeze([
   catalog({
     id: "bosch-serie-3",
     title: "Serie -3 vanaf bouwjaar 2007",
-    scope: "De volledige storingscodelijst voor Serie -3 in het officiële Bosch/Junkers-codeboek.",
+    scope: "De 29 benoemde codegroepen uit de storingscodelijst op p. 132-133 voor Serie -3 vanaf bouwjaar 2007. Twee grafische displaymeldingen na H5 zijn hier niet als alfanumerieke code opgenomen; dit is dus niet de volledige brontabel. A9 noemt specifiek CerapurModul en CerapurModul-Smart, niet iedere Serie -3-variant.",
     sourceLabel: "Bosch gids voor de installateur - foutcodeboek",
     sourceUrl: BOSCH_CODEBOOK_URL,
     sourcePages: "p. 132-133",
@@ -524,7 +524,7 @@ const boschJunkersRows = Object.freeze([
     id: "bosch-serie-2",
     title: "Serie -2, bouwjaar 1997-2006",
     scope:
-      "Alle benoemde foutcodes uit de historische Serie -2-tabel. Sommige codes hebben meerdere betekenissen naargelang het concrete toestel; die varianten staan samen bij dezelfde code.",
+      "Selectie van 57 bestaande codeverklaringen uit de historische tabel op p. 160-163 voor bouwjaar 1997-2006. Sommige codes hebben meerdere betekenissen naargelang het concrete toestel; die varianten blijven samen bij dezelfde code. Dit is geen bewijs dat één betekenis voor iedere Serie -2-variant geldt.",
     sourceLabel: "Bosch gids voor de installateur - foutcodeboek",
     sourceUrl: BOSCH_CODEBOOK_URL,
     sourcePages: "p. 160-163",

@@ -2,7 +2,28 @@
 
 ## Published routes
 
-**Current accepted baseline `b32084e5`:** Task46–47 handoff/inventory has sole
+**Current accepted baseline `e71fbf69`:** Task48's historical Bulex A/B catalog
+has sole review, exactCI38149952837/429 tests, both matching-SHA actual Production
+successes and canonical82/93/112/eight native live profiles. Bulex74/Remeha659;
+thirteen guides1596 displayed explanations,38 assignments/32 distinct catalogs/
+1354 before shared reuse/18 catalog-source URLs. Same82/80/2 customer routes,
+304 municipalities/302 non-routable drafts/10 districts/6 hubs. One changed Bulex
+IndexNowHTTP200 receipt is not indexation, unique codes or commercial results.
+
+**Task49 local candidate:** six shared Bosch/Junkers scopes, two warnings and
+two descriptions now respect actual Dutch professional codebook chapters. Both
+guides retain242 entire code objects/six groups/seven options; no new model or
+code. Only those two actually changed URLs gain11October content dates. Other
+eleven guides/80 registry entries remain exact. Fresh435tests/lint/production0/
+build170/local82/93/112/eight native profiles pass; sole review/hosted/live remain
+gates. Latest [coverage inventory](docs/seo/fault-code-model-coverage.md) adds
+one context PDF snapshot:20 PDF-linked catalogs across7 PDFs,2 web-linked and
+10 declaration-only, without re-certifying all existing rows. Existing mobile
+widget-overlap minor and owner/model/source gates remain open.
+
+Earlier entries below are dated snapshots, not current live acceptance.
+
+**Earlier accepted baseline `b32084e5`:** Task46–47 handoff/inventory has sole
 review/exactCI38145234247/423 tests, both actual Production statuses and
 canonical82/93/112/eight native profiles. Bulex43/Remeha659/thirteen guides1565
 displayed rows,37 assignments/31 distinct catalogs/1323 without shared reuse.

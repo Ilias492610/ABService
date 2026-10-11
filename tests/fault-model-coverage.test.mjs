@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { faultGuides } from "../content/fault-guides.mjs";
+import { boschBoundaryFacts } from "./fixtures/bosch-junkers-source-boundaries.mjs";
 
 const manifest = JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json", import.meta.url), "utf8"));
 const catalogs = [...new Map(faultGuides.flatMap(g => g.catalogs.map(c => [c.id, c]))).values()];
@@ -39,18 +40,30 @@ test("the bounded model inventory matches every real guide assignment, scope, so
 });
 
 test("the inventory keeps unknown fields and retained evidence distinct rather than declaring a fresh audit", () => {
-  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 14);
-  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 16);
+  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 20);
+  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 10);
   assert.equal(manifest.snapshots.filter(s => s.hashMatchesPriorRecord === true).length, 7);
   assert.equal(manifest.snapshots.find(s => s.id === "vaillant-public-html").expectedSha256, null);
   for (const e of manifest.entries) {
     assert.match(e.sourceURL, /^https:\/\//);
     assert.ok(e.verificationBasis && e.fieldBoundary && e.sourceEvidencePath.length);
     if (e.id.startsWith("bosch-")) {
-      for (const field of ["models", "articleNumbers", "revision", "market", "language"]) assert.equal(e[field], null);
+      for (const field of ["models", "articleNumbers", "documentNumber", "revision", "issueDate", "market"]) assert.equal(e[field], null);
+      assert.equal(e.language, "nl");
+      assert.equal(e.primarySnapshot, "bosch-junkers-codebook-pdf");
+      const facts = boschBoundaryFacts.entries.find(f => f.id === e.id);
+      assert.equal(e.sourceChapterPage, facts.chapterPage);
+      assert.equal(e.sourceChapterGeneration, facts.chapterGeneration);
+      assert.equal(e.sourceAudience, "professional-installer-guide");
+      assert.match(e.verificationBasis, /not.*242.*row.*audit/i);
     }
   }
   assert.match(manifest.purpose, /not source re-audit/);
   assert.equal(manifest.entries.find(e => e.id === "bulex-thema-condens").articleNumbers[0], "0010010389");
   assert.equal(manifest.entries.find(e => e.id === "buderus-logamax-gb162-v2").literalCombinationCount, 74);
+  const snapshot = manifest.snapshots.find(s => s.id === "bosch-junkers-codebook-pdf");
+  assert.equal(snapshot.sha256, boschBoundaryFacts.sha256);
+  assert.equal(snapshot.expectedSha256, null);
+  assert.equal(snapshot.hashMatchesPriorRecord, null);
+  assert.equal(snapshot.pageCount, boschBoundaryFacts.pageCount);
 });
