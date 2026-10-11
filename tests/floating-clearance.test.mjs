@@ -4,7 +4,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { createHarness } from "./helpers/wp12-runtime.mjs";
 
 const visible = (h) => [h.all(".whatsapp-button").length, h.all(".google-rating-popup").length];
-for (const selector of ["form", ".warning-box", ".site-footer", ".maintenance-check-result", ".page-hero .button-row"]) {
+for (const selector of ["form", ".warning-box", ".site-footer", ".maintenance-check-result", ".page-hero .button-row", ".faq-list"]) {
   test(`initial visible ${selector} clears both widgets and viewport leave restores them`, async () => {
     const h = await createHarness("floating", { zones: [{ selector, visible: true }] });
     try {
@@ -89,6 +89,101 @@ test("ordinary button rows outside PageHero do not permanently suppress controls
   try {
     assert.deepEqual(visible(h), [1, 1]);
     assert.equal(h.observers.at(-1).targets.has(h.zoneNodes[0]), false);
+  } finally { h.dispose(); }
+});
+
+// Catches missing FAQ protection, lost owned-focus handoff, or restoring the
+// overlays when only one of several protected content regions has left.
+test("FAQ entry hands off Google focus and leaves overlays cleared while a form remains", async () => {
+  const h = await createHarness("floating", { zones: [{ selector: ".faq-list", visible: false }, { selector: "form", visible: false }] });
+  try {
+    const [faq, form] = h.zoneNodes;
+    assert.deepEqual(visible(h), [1, 1]);
+    h.query(".google-rating-link").focus();
+    h.observers.at(-1).emit(faq, true); h.render();
+    assert.deepEqual(visible(h), [0, 0]);
+    assert.equal(h.document.activeElement, h.brand);
+    assert.equal(h.brand.focusOptions.preventScroll, true);
+    h.observers.at(-1).emit(form, true); h.render();
+    h.observers.at(-1).emit(faq, false); h.render();
+    assert.deepEqual(visible(h), [0, 0]);
+    h.observers.at(-1).emit(form, false); h.render();
+    assert.deepEqual(visible(h), [1, 1]);
+  } finally { h.dispose(); }
+});
+
+// Catches FAQ content arriving after a persistent-layout route transition,
+// detached content continuing to suppress overlays, or stale callbacks.
+test("wrapped FAQ insertion clears overlays and removal releases them", async () => {
+  const h = await createHarness("floating");
+  try {
+    h.navigate("/loodgieter-borsbeek");
+    const wrapper = h.addZone(".route-wrapper");
+    const faq = h.addZone(".faq-list", true, wrapper);
+    h.mutations.at(-1).emit([wrapper]); h.render();
+    assert.deepEqual(visible(h), [0, 0]);
+    h.main.children = h.main.children.filter((node) => node !== wrapper);
+    h.mutations.at(-1).emit([], [wrapper]); h.render();
+    assert.deepEqual(visible(h), [1, 1]);
+    h.observers.at(-1).emit(faq, true); h.render();
+    assert.deepEqual(visible(h), [1, 1]);
+  } finally { h.dispose(); }
+});
+
+// Catches an explicit Google dismissal being reset by FAQ entry/leave or a
+// pathname effect, and callbacks from disconnected route observers winning.
+test("FAQ navigation refresh preserves dismissal and ignores the old observer", async () => {
+  const h = await createHarness("floating", { zones: [{ selector: ".faq-list", visible: false }] });
+  try {
+    h.brand.focus(); h.click(h.query(".google-rating-close"));
+    assert.deepEqual(visible(h), [1, 0]);
+    const faq = h.zoneNodes[0], observer = h.observers.at(-1), mutation = h.mutations.at(-1);
+    observer.emit(faq, true); h.render();
+    assert.deepEqual(visible(h), [0, 0]);
+    h.navigate("/faq");
+    assert.equal(observer.disconnected, true);
+    assert.equal(mutation.disconnected, true);
+    assert.deepEqual(visible(h), [1, 0]);
+    observer.emit(faq, true); h.render();
+    assert.deepEqual(visible(h), [1, 0]);
+    h.observers.at(-1).emit(faq, true); h.render();
+    assert.deepEqual(visible(h), [0, 0]);
+    h.observers.at(-1).emit(faq, false); h.render();
+    assert.deepEqual(visible(h), [1, 0]);
+  } finally { h.dispose(); }
+  assert.ok(h.observers.every((observer) => observer.disconnected));
+  assert.ok(h.mutations.every((observer) => observer.disconnected));
+});
+
+// Catches clearance stealing focus from the FAQ control being used rather
+// than limiting its handoff to one of the removed floating controls.
+test("FAQ clearance retains focus on its native summary", async () => {
+  const h = await createHarness("floating", { zones: [{ selector: ".faq-list", visible: false }] });
+  try {
+    const faq = h.zoneNodes[0], summary = h.addZone("summary", false, faq);
+    summary.focus();
+    h.observers.at(-1).emit(faq, true); h.render();
+    assert.deepEqual(visible(h), [0, 0]);
+    assert.equal(h.document.activeElement, summary);
+    h.observers.at(-1).emit(faq, false); h.render();
+    assert.deepEqual(visible(h), [1, 1]);
+    assert.equal(h.document.activeElement, summary);
+  } finally { h.dispose(); }
+});
+
+// Catches a fallback accidentally missing or emitted as a globally active
+// stylesheet. This checks serialized component structure, NOT CSS layout:
+// actual no-JavaScript positions and native FAQ clicks are browser-owned.
+test("the rendered fallback stylesheet is conditional on disabled JavaScript", async () => {
+  const h = await createHarness("floating");
+  try {
+    const conditional = h.all("noscript");
+    assert.equal(conditional.length, 1);
+    assert.equal(conditional[0].querySelectorAll("style").length, 1);
+    assert.equal(h.all("style").length, 1);
+    assert.deepEqual(visible(h), [1, 1]);
+    const html = renderToStaticMarkup(h.render());
+    assert.match(html, /<noscript><style>[\s\S]*<\/style><\/noscript>/);
   } finally { h.dispose(); }
 });
 

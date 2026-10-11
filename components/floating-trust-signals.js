@@ -6,7 +6,7 @@ import TrackedLink from "@/components/tracked-link";
 import { business } from "@/content/business.mjs";
 import { formatGoogleRating } from "@/libs/google-reviews.mjs";
 
-const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row";
+const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row, .faq-list";
 
 function focusHeader() {
   document.querySelector(".site-header .brand")?.focus({ preventScroll: true });
@@ -193,6 +193,13 @@ export default function FloatingTrustSignals() {
           </button>
         </div>
       ) : null}
+      <noscript>
+        <style>{`
+          .whatsapp-button { position: static; display: inline-grid; margin: 1rem; vertical-align: middle; }
+          .google-rating-popup { position: static; display: inline-flex; min-width: 0; max-width: calc(100% - 2rem); margin: 1rem; vertical-align: middle; }
+          .google-rating-close { display: none; }
+        `}</style>
+      </noscript>
     </>
   );
 }

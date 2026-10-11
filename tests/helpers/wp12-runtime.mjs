@@ -127,7 +127,7 @@ export async function createHarness(kind, { mobile = false, zones = [], fetchRes
     if (descendantStart !== -1) {
       return addZone(selector.slice(descendantStart + 1), visible, addZone(selector.slice(0, descendantStart), false, parent));
     }
-    const node = new Element(selector === "form" ? "form" : "div", { className: selector.startsWith(".") ? selector.slice(1) : undefined }, document);
+    const node = new Element(selector.startsWith(".") ? "div" : selector, { className: selector.startsWith(".") ? selector.slice(1) : undefined }, document);
     if (visible) node.rect = { top: 500, bottom: 700, left: 16, right: 374, width: 358, height: 200 };
     parent.append(node); return node;
   };
