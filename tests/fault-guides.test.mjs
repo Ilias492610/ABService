@@ -1,3 +1,4 @@
+import { viessmannFacts } from "./fixtures/viessmann-overview-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 
@@ -96,7 +97,9 @@ test("every code row is complete, safely worded and unique within its model tabl
           ? ithoFacts.rowChanges.find(row => row.beforeCode === entry.code)?.after.sourcePage
           : catalog.id === atagFacts.id
             ? atagFacts.rowChanges.find(row => row.beforeCode === entry.code)?.after.sourcePage
-            : catalog.sourcePages;
+            : catalog.id === viessmannFacts.id
+              ? viessmannFacts.rowChanges.find(row => row.beforeCode === entry.code)?.after.sourcePage
+              : catalog.sourcePages;
         assert.equal(entry.sourcePage, sourcePage);
         assert.ok(entry.searchTerms.includes(entry.code));
         assert.doesNotMatch(entry.userAction, /vervang de printplaat|demonteer|open de mantel(?! niet)/i);

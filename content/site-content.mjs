@@ -241,7 +241,8 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Viessmann foutcodes: Vitodens en Vitotronic | AB Service",
     description:
-      "Zoek in de officiële Viessmann-tabel voor Vitodens 200-W en 300-W met Vitotronic, inclusief duidelijke modelafbakening.",
+      "Zoek 71 Viessmann-meldingen uit de officiële Vitodens-overzichtstabel. Controleer toestelgegevens, bron en veilige eerste stappen zonder vakmanprocedures.",
+    lastModified: "2026-10-12",
     changeFrequency: "monthly",
     priority: 0.6,
   },

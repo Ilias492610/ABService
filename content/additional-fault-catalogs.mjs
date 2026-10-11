@@ -165,43 +165,53 @@ export const buderusCatalogs = Object.freeze([
   }),
 ]);
 
+// The overview reserves every table measure for authorized professionals.
+// Keep these controls local; no shared action/search generator changes.
+const viessmannLiteralCodes = ["10","18","19","20","28","30","38","40","44","48","50","58","90","91","92","93","94","98","99","1A","1b","1F","4C","9A","9b","9C","9E","9F","A3","A4","A7","b0","b1","b5","b7","b8","bA","bb","bC","bd","bE","bF","C1","C2","C3","C4","C5","Cd","CF","d6","d7","d8","dA","db","dC","dd","dE","dF","E0","E3","E4","E5","Eb","EC","Ed","F0","F1","F2","F6","F8","FF"];
+const viessmannObserveAction = "Noteer code, model en het artikel- of fabricagenummer op een zonder openen bereikbaar typeplaatje. Laat de melding door een bevoegde vakman beoordelen; deze tabel geeft geen gebruikersinstructies voor resetten, instellingen, onderdelen of leidingwerk.";
+const withViessmannSourceControls = catalog => Object.freeze({ ...catalog, codes: Object.freeze(catalog.codes.map((row,index) => {
+  const action = row.code === "A4" ? "Bij deze melding niet bijvullen of aftappen op basis van het overzicht. Lees alleen de zichtbare drukweergave en noteer code, waarde, model en veilig bereikbaar artikel- of fabricagenummer. Laat de druk en oorzaak professioneel beoordelen; open geen gesloten onderdelen."
+    : row.code === "C5" ? "Deze pompcommunicatiemelding bewijst geen te lage waterdruk. Noteer code, model en veilig bereikbaar artikel- of fabricagenummer; vul niet bij op basis van C5. Laat de pompcommunicatie door een bevoegde vakman beoordelen en verander geen bedrading of codering." : viessmannObserveAction;
+  return Object.freeze({ ...row, userAction: action, sourcePage: `Online tabelregel ${index+1}: ${viessmannLiteralCodes[index]}` });
+})) });
+
 export const viessmannCatalogs = Object.freeze([
-  createFaultCatalog({
+  withViessmannSourceControls(createFaultCatalog({
     id: "viessmann-vitodens-200-300-vitotronic",
     title: "Vitodens 200-W en 300-W met Vitotronic",
     scope:
-      "Alle codes uit het officiële Viessmann-overzicht voor gascondensatietoestellen uit de 200- en 300-serie met Vitotronic-regeling. Viessmann vermeldt zelf dat dit overzicht niet modeloverstijgend of volledig voor nieuwere modellen is.",
+      "De 71 regels uit de officiële Duitse Viessmann-overzichtstabel, gelezen op 12 oktober 2026, geven globale uitleg bij gascondensatieketels met Vitotronic. De tekst noemt Vitodens 200-W, 300-W, 222-W, 222-F en 333-F, maar verdeelt de regels niet per toestel of artikelnummer. Nieuwere modellen en andere systemen kunnen andere codes hebben; de bron claimt geen volledigheid. Alle maatregelen in deze tabel zijn voor bevoegde vakmensen. Duitse website, artikeldata en hoofdletterzoekhulp bewijzen geen toestelbestemming, Belgische compatibiliteit, firmware of nieuwste revisie.",
     sourceLabel: "Viessmann - foutcodes Vitodens 200-W en 300-W",
     sourceUrl: "https://www.viessmann.de/de/wissen/wartung-und-reparatur/fehlercodes.html",
-    sourcePages: "Officiële online tabel",
+    sourcePages: "Online tabel, regels 1-71 (gelezen 12 oktober 2026)",
     rows: [
       ["10", "De buitentemperatuursensor is kortgesloten."],
       ["18", "De verbinding met de buitentemperatuursensor is onderbroken."],
-      ["19", "De communicatie met de draadloze buitentemperatuursensor is onderbroken."],
-      ["20", "De installatiesensor voor de aanvoertemperatuur is kortgesloten."],
-      ["28", "De installatiesensor voor de aanvoertemperatuur is onderbroken."],
+      ["19", "De communicatie met de buitentemperatuursensor RF is onderbroken."],
+      ["20", "De installatiesensor voor de aanvoertemperatuur bij de hydraulische scheiding is kortgesloten."],
+      ["28", "De installatiesensor voor de aanvoertemperatuur bij de hydraulische scheiding is onderbroken."],
       ["30", "De keteltemperatuursensor is kortgesloten."],
       ["38", "De verbinding met de keteltemperatuursensor is onderbroken."],
-      ["40", "De aanvoertemperatuursensor van verwarmingscircuit 2 is kortgesloten."],
-      ["44", "De aanvoertemperatuursensor van verwarmingscircuit 3 is kortgesloten."],
-      ["48", "De aanvoertemperatuursensor van verwarmingscircuit 2 is kortgesloten."],
+      ["40", "De aanvoertemperatuursensor van verwarmingscircuit 2 met mengklep is kortgesloten."],
+      ["44", "De aanvoertemperatuursensor van verwarmingscircuit 3 met mengklep is kortgesloten."],
+      ["48", "De brontabel noemt kortsluiting van de aanvoertemperatuursensor van verwarmingscircuit 2 met mengklep, net als bij 40; zij noemt hier geen onderbreking."],
       ["50", "De boilertemperatuursensor is kortgesloten."],
-      ["58", "De warmwaterbereiding is uitgevallen door de boilertemperatuursensor."],
+      ["58", "De ketel bereidt volgens de tabel geen warm water. Sensorcontrole staat alleen bij de vakmanmaatregelen; de oorzaakcel stelt geen sensordefect vast."],
       ["90", "Een temperatuursensor op de zonneregelmodule is kortgesloten."],
       ["91", "Een temperatuursensor op de zonneregelmodule is kortgesloten."],
       ["92", "De collectortemperatuursensor is kortgesloten."],
-      ["93", "De retourtemperatuursensor van het zonnecircuit is kortgesloten."],
+      ["93", "De retourtemperatuursensor van de zonnecollector is kortgesloten."],
       ["94", "De boilertemperatuursensor van het zonnecircuit is kortgesloten."],
       ["98", "Een temperatuursensor op de zonneregelmodule is onderbroken."],
       ["99", "Een temperatuursensor op de zonneregelmodule is onderbroken."],
       ["1A", "Volumestroomsensor 1 aan de linkerzijde is defect."],
       ["1B", "Volumestroomsensor 2 aan de rechterzijde is defect."],
       ["1F", "Het verschil tussen de gemeten volumestromen is te groot."],
-      ["4C", "De aanvoertemperatuursensor van verwarmingscircuit 3 is onderbroken."],
+      ["4C", "De aanvoertemperatuursensor van verwarmingscircuit 3 met mengklep is onderbroken."],
       ["9A", "De collectortemperatuursensor is onderbroken."],
-      ["9B", "De retourtemperatuursensor van het zonnecircuit is onderbroken."],
+      ["9B", "De retourtemperatuursensor van de zonnecollector is onderbroken."],
       ["9C", "De boilertemperatuursensor van het zonnecircuit is onderbroken."],
-      ["9E", "De volumestroom in het zonnecircuit is te laag of de temperatuurbeveiliging is actief."],
+      ["9E", "De volumestroom in het zonnecircuit is te laag of afwezig, of de temperatuurbeveiliging is aangesproken."],
       ["9F", "De zonneregelmodule of Vitosolic-regeling meldt een fout."],
       ["A3", "De rookgastemperatuursensor is niet correct gepositioneerd.", "flue"],
       ["A4", "De maximale installatiedruk is overschreden.", "pressure"],
@@ -209,13 +219,13 @@ export const viessmannCatalogs = Object.freeze([
       ["B0", "De rookgastemperatuursensor is kortgesloten.", "flue"],
       ["B1", "Er is een communicatiefout met de bedieningseenheid."],
       ["B5", "De regeling meldt een interne fout."],
-      ["B7", "De ketelcodeerstekker ontbreekt of is defect."],
+      ["B7", "De ketelcodeerstekker meldt een fout; de oorzaakcel stelt niet vast of hij ontbreekt of defect is."],
       ["B8", "De rookgastemperatuursensor is onderbroken.", "flue"],
-      ["BA", "Communicatiefout met de uitbreidingsset voor verwarmingscircuit 2."],
-      ["BB", "Communicatiefout met de uitbreidingsset voor verwarmingscircuit 3."],
-      ["BC", "Communicatiefout met de Vitotrol-afstandsbediening van circuit 1."],
-      ["BD", "Communicatiefout met de Vitotrol-afstandsbediening van circuit 2."],
-      ["BE", "Communicatiefout met de Vitotrol-afstandsbediening van circuit 3."],
+      ["BA", "Communicatiefout met de uitbreidingsset voor verwarmingscircuit 2 met mengklep."],
+      ["BB", "Communicatiefout met de uitbreidingsset voor verwarmingscircuit 3 met mengklep."],
+      ["BC", "Communicatiefout met de Vitotrol-afstandsbediening van verwarmingscircuit 1 zonder mengklep."],
+      ["BD", "Communicatiefout met de Vitotrol-afstandsbediening van verwarmingscircuit 2 met mengklep."],
+      ["BE", "Communicatiefout met de Vitotrol-afstandsbediening van verwarmingscircuit 3 met mengklep."],
       ["BF", "De aangesloten LON-communicatiemodule is niet geschikt."],
       ["C1", "Communicatiefout met uitbreiding EA1."],
       ["C2", "Communicatiefout met de zonneregelmodule of Vitosolic."],
@@ -227,12 +237,12 @@ export const viessmannCatalogs = Object.freeze([
       ["D6", "Ingang DE1 van uitbreiding EA1 meldt een storing."],
       ["D7", "Ingang DE2 van uitbreiding EA1 meldt een storing."],
       ["D8", "Ingang DE3 van uitbreiding EA1 meldt een storing."],
-      ["DA", "De ruimtetemperatuursensor van verwarmingscircuit 1 is kortgesloten."],
-      ["DB", "De ruimtetemperatuursensor van verwarmingscircuit 2 is kortgesloten."],
-      ["DC", "De ruimtetemperatuursensor van verwarmingscircuit 3 is kortgesloten."],
-      ["DD", "De ruimtetemperatuursensor van verwarmingscircuit 1 is onderbroken."],
-      ["DE", "De ruimtetemperatuursensor van verwarmingscircuit 2 is onderbroken."],
-      ["DF", "De ruimtetemperatuursensor van verwarmingscircuit 3 is onderbroken."],
+      ["DA", "De ruimtetemperatuursensor van verwarmingscircuit 1 zonder mengklep is kortgesloten."],
+      ["DB", "De ruimtetemperatuursensor van verwarmingscircuit 2 met mengklep is kortgesloten."],
+      ["DC", "De ruimtetemperatuursensor van verwarmingscircuit 3 met mengklep is kortgesloten."],
+      ["DD", "De ruimtetemperatuursensor van verwarmingscircuit 1 zonder mengklep is onderbroken."],
+      ["DE", "De ruimtetemperatuursensor van verwarmingscircuit 2 met mengklep is onderbroken."],
+      ["DF", "De ruimtetemperatuursensor van verwarmingscircuit 3 met mengklep is onderbroken."],
       ["E0", "Een externe LON-deelnemer meldt een fout."],
       ["E3", "Tijdens kalibratie was de warmteafname te laag en schakelde de temperatuurbeveiliging uit."],
       ["E4", "De 24V-voedingsspanning van de regeling is fout."],
@@ -242,12 +252,12 @@ export const viessmannCatalogs = Object.freeze([
       ["ED", "De regeling meldt een interne fout."],
       ["F0", "De regeling meldt een interne fout."],
       ["F1", "De rookgastemperatuur heeft de grenswaarde overschreden.", "flue"],
-      ["F2", "De keteltemperatuurbeveiliging is geactiveerd."],
+      ["F2", "Volgens de brontabel heeft de keteltemperatuursensor aangesproken."],
       ["F6", "De waarden van de keteltemperatuursensoren wijken te sterk af."],
       ["F8", "De brandstofklep sluit vertraagd.", "gas"],
       ["FF", "Er is een interne fout of de ontgrendelingstoets is geblokkeerd."],
     ],
-  }),
+  })),
 ]);
 
 export const acvCatalogs = Object.freeze([

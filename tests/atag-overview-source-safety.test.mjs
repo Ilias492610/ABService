@@ -1,3 +1,4 @@
+import { beforeViessmannGuide, beforeViessmannRegistry, beforeViessmannManifestEntry, beforeViessmannManifestMirror } from "./fixtures/viessmann-overview-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
@@ -55,13 +56,13 @@ test("ATAG metadata uses substantive realdate and restores exact genuine prior l
   assert.equal(meta.description,f.description);assert.equal(meta.openGraph.description,f.description);assert.equal(meta.twitter.description,f.description);
   assert.equal(page.lastModified,"2026-10-11");assert.equal(meta.alternates.canonical,"https://www.abservice24.be/foutcodes/atag");assert.equal(meta.robots.index,true);
   assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url===meta.alternates.canonical).lastModified,"2026-10-11");
-  assert.equal(hash(beforeAtagMetadata(meta,"atag")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeAtagRegistry)),f.preservation.allRegistry);
+  assert.equal(hash(beforeAtagMetadata(meta,"atag")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeViessmannRegistry).map(beforeAtagRegistry)),f.preservation.allRegistry);
 });
 test("all14 SSR cards and entire13-guide preservation restore genuine64c1302 capture",async()=>{
   const html=await renderFaultGuide("atag");assert.equal((html.match(/class="fault-code-card"/g)||[]).length,14);
   assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);
-  assert.equal(hash(beforeAtagHtml(html,"atag")),f.preservation.html);assert.equal(hash(beforeAtagGuide(guide)),f.preservation.guide);assert.equal(hash(beforeAtagGuide(guide).codes),f.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="atag")),f.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeAtagGuide)),f.preservation.allGuides);
+  assert.equal(hash(beforeAtagHtml(html,"atag")),f.preservation.html);assert.equal(hash(beforeAtagGuide(beforeViessmannGuide(guide))),f.preservation.guide);assert.equal(hash(beforeAtagGuide(beforeViessmannGuide(guide)).codes),f.preservation.codes);
+  assert.equal(hash(faultGuides.filter(g=>g.slug!=="atag").map(beforeViessmannGuide)),f.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeViessmannGuide).map(beforeAtagGuide)),f.preservation.allGuides);
 });
 test("ATAG manifest records one originalHTML and107 literal nonexclusive model associations",async()=>{
   const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));
@@ -71,5 +72,5 @@ test("ATAG manifest records one originalHTML and107 literal nonexclusive model a
   assert.deepEqual(e.sections,f.rowChanges.map((r,i)=>({code:r.beforeCode,heading:r.heading,ordinal:i+1,models:r.models,classification:[0,5,10].includes(i)?"automatic-program-observation":null})));
   for(const k of ["revision","issueDate","articleNumbers","firmwareCompatibility","currentBelgianVariantCompatibility","newestEdition","boilerDestinationMarket"])assert.equal(e[k],null,k);
   assert.equal(s?.sha256,f.sha256);assert.equal(s?.bytes,f.bytes);assert.equal(s?.pageCount,null);assert.equal(s?.expectedSha256,null);assert.equal(s?.hashMatchesPriorRecord,null);
-  assert.equal(hash(m.entries.filter(e=>e.id!==f.id)),f.preservation.otherEntries);assert.equal(hash(m.guides.filter(g=>g.slug!=="atag")),f.preservation.otherMirrors);assert.equal(hash(m.snapshots.filter(s=>s.id!=="atag-overview-html")),f.preservation.oldSnapshots);
+  assert.equal(hash(m.entries.filter(e=>e.id!==f.id).map(beforeViessmannManifestEntry)),f.preservation.otherEntries);assert.equal(hash(m.guides.filter(g=>g.slug!=="atag").map(beforeViessmannManifestMirror)),f.preservation.otherMirrors);assert.equal(hash(m.snapshots.filter(s=>!["atag-overview-html","viessmann-overview-html"].includes(s.id))),f.preservation.oldSnapshots);
 });

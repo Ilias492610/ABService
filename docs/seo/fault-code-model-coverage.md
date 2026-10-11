@@ -1,5 +1,51 @@
 # WP07 — actuele model- en brondekking
 
+## 12 October 2026 — Task60 Viessmann local candidate; Task59 released
+
+Task60 reads one original official German HTML (180309B,
+SHAfbd676962107177fdbb14a801e0b672448ff81444bbace49cf646d6847daebf2).
+All71 literal rows/284data cells and complete source context/controls read.
+Exactly24 meanings,71 local professional-only actions and71 row locators
+corrected; source48 repetition/58 ambiguous cause/F2 sensor wording retained.
+A4 is high pressure, C5 pump communication, not a generic filling instruction.
+Five Vitodens family mentions are overview context, not device assignments;
+article timestamps are not manual/device revision or latest/BE/SKU/firmware proof.
+No shared search/alias change or new catalog. Genuine modification date12October.
+Independent nine tests RED7fail2pass→GREEN9; fresh full517/lint0/productionaudit0/
+standardTurbopack170/localcrawl82pages93links112assets pass. Historical guards
+use named independently tested Viessmann inverses; old hashes are not rebased.
+Manifest only Viessmann entry/mirror/new16th originalHTML:25PDF-linked catalogs,
+12PDF originals/fourWeb/three declarations; all15 old snapshots/31other entries/
+12mirrors and32/38/1596/1354/18 counts preserved. ONE native008e5562 fourprofiles
+1440/390 JS/noJS:205GET/604queries/1420queryrows/8contacts/72hashedPNG pass.
+Root independently checks all actual SSR/query/source/meta/keyboard/contact/
+20phase snapshots/final raw transport records and representative A4/C5/F2,
+warning/scope/noJS focusedName pixels. Eight final known200RSC ERR_ABORTED
+remain UNCONFIRMED bodies/unknown cause; two early pending snapshots later
+have headers. Controlled rating503/homeRSC204 are not provider evidence.
+Original offlinechecker BODY-only expectation failed for actual noJS DIV
+fragment focus; exact JS/body versus noJS/form correction passes without any
+native rerun or product change. Original checker/failure retained. Dedicated
+download-anchor raw fields are not retained; pinned harness assertions are
+not relabeled independent raw observations. All137 checkbox lines/four source
+appendices/original acceptance and76local links preserved. Review/exactrelease/
+live remain Task60 gates; no new ViessmannIndexNow yet.
+
+Task59 is actually RELEASEACCEPTED6b128bcd6e265bd516f4d3b023ca70794975db83:
+one fresh review/no findings, merged508,
+[CI38179594979](https://github.com/Ilias492610/ABService/actions/runs/38179594979)
+success22:14:57UTC/Node24.21/508/lint0/production0/standard170/hosted82/93/112.
+Actual sameSHA Production7002572161+7002575869 success22:14:26/22:14:48UTC;
+canonical82/93/112 and native-v5 fourprofiles194GET/308queries/8contacts/60PNG pass.
+Root checks all actual records and mobile C105/1P4/noJS focusedName pixels.
+Three live known200RSC ERR_ABORTED remain unconfirmed bodies/unknown cause;
+phase snapshots and final events separately checked. Exact4 analyticsGETs and
+rating503/homeRSC204 fixtures do not prove event/rating/mail ingestion. All
+failedv1-v4 runs retained; v5 launcher-prefix/checker-expectation errors retained,
+no product patch or native rerun. One ATAGIndexNowHTTP200 means received, not
+indexed. Earlier candidate phases below are history. WiderWP/Task51/owner/
+account/French/field/case-consent/indexing/results gates remain open.
+
 Actueel geaccepteerd64c1302: Tasks57–58/solefreshreview/exactCI38176150821/
 499/actualmatchingProduction7001987990+7001993689/canonical82/93/112/native
 Nefit en Itho live. EénIthoIndexNowHTTP200 is ontvangst, geen indexeringsbewijs.

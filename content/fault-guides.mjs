@@ -100,7 +100,7 @@ export const faultGuides = Object.freeze([
     slug: "viessmann",
     brand: "Viessmann",
     modelWarning:
-      "De officiële tabel is een oriëntatieoverzicht voor Vitodens 200-W en 300-W met Vitotronic-regeling en is volgens Viessmann niet universeel of volledig voor nieuwere toestelgeneraties. Controleer daarom altijd model en productcode.",
+      "Deze gids volgt één officiële Duitse overzichtstabel met 71 regels, gelezen op 12 oktober 2026, niet alle Viessmann-modellen of revisies. Controleer de volledige schermcode, het exacte model en het artikel- of fabricagenummer op een zonder openen bereikbaar typeplaatje; laat de toepasselijke handleiding professioneel bepalen. De tekst noemt Vitodens 200-W, 300-W, 222-W, 222-F en 333-F met Vitotronic, zonder regels per toestel vast te leggen. Reset-, ontluchtings-, coderings-, gas-, rookgas- en elektrische maatregelen in de tabel zijn uitsluitend voor bevoegde vakmensen. Artikeldata zijn geen toestelrevisie; actuele Belgische compatibiliteit, firmware en nieuwste uitgave zijn onbekend.",
     catalogs: viessmannCatalogs,
     documentationLabel: "Officiële Viessmann-productdocumentatie",
     documentationUrl: "https://www.viessmann.be/nl/services/downloads/gegevens-product-viessmann.html",
