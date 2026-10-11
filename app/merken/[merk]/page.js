@@ -34,17 +34,30 @@ export default async function BrandServicePage({ params }) {
       <PageHero
         eyebrow={`${entry.brand} cv-ketel`}
         title={`${entry.brand} onderhoud en herstelling`}
-        intro={`AB Service voert onderhoud, diagnose en herstelling uit voor ${entry.productFocus}. Een gerichte aanvraag begint met het exacte toestelmodel, de productcode en de volledige foutmelding.`}
+        intro={`AB Service voert onderhoud, diagnose en herstelling uit voor ${entry.productFocus}. Een gerichte aanvraag begint met het exacte toestelmodel, de productcode en uw onderhoudsvraag of de volledige foutmelding.`}
         ctaLabel="Bespreek uw toestel"
-        ctaHref={buildContactHref({ service: "Herstelling verwarming" })}
+        ctaHref={buildContactHref()}
       />
       <section className="section section-compact">
         <div className="shell narrow">
           <p className="answer-box">
-            Beschrijf of verwarming, warm water of beide uitvallen en vermeld het exacte model
-            en de volledige code. Maak alleen foto’s van het typeplaatje en display wanneer
+            Vermeld voor onderhoud of een storing het exacte toestelmodel en de productcode.
+            Maak alleen foto’s van het typeplaatje en display wanneer
             die veilig bereikbaar zijn, zonder iets te demonteren.
           </p>
+          <h2>Waarvoor wilt u hulp aanvragen?</h2>
+          <div className="related-grid">
+            <article className="card">
+              <h3>Gepland onderhoud</h3>
+              <p>Bezorg het laatste attest, indien beschikbaar, en de installatiegeschiedenis om uw onderhoudsvraag voor te bereiden.</p>
+              <Link href={buildContactHref({ service: "Onderhoud cv-ketel" })}>Onderhoud aanvragen</Link>
+            </article>
+            <article className="card">
+              <h3>Storing of afwijkend gedrag</h3>
+              <p>Noteer de volledige foutcode en de symptomen. Beschrijf of verwarming, warm water of beide uitvallen en wanneer het probleem optreedt.</p>
+              <Link href={buildContactHref({ service: "Herstelling verwarming" })}>Storing laten beoordelen</Link>
+            </article>
+          </div>
           <ContentImage image={contentImages.boilerServiceMarketing} />
         </div>
       </section>
@@ -102,7 +115,7 @@ export default async function BrandServicePage({ params }) {
           </ul>
         </div>
       </section>
-      <ContactCta title={`Hulp nodig voor uw ${entry.brand}-ketel?`} service="Herstelling verwarming" />
+      <ContactCta title={`Hulp nodig voor uw ${entry.brand}-ketel?`} />
     </>
   );
 }
