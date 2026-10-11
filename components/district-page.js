@@ -46,6 +46,12 @@ export default function DistrictPage({ slug }) {
             <h2>Wat bij een aanvraag in {district.name} telt</h2>
             <p>{district.localContext}</p>
             <p>{district.preparation}</p>
+            {district.contextSource && (
+              <p className="source-note">
+                Districtsindeling: <a href={district.contextSource.href} target="_blank" rel="noreferrer">{district.contextSource.label} ↗</a>.
+                {" "}Bron geraadpleegd op <time dateTime={district.contextSource.checkedAt}>{district.contextSource.checkedAt}</time>.
+              </p>
+            )}
           </div>
           <aside className="card">
             <h3>Beschikbare diensten</h3>

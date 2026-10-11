@@ -364,6 +364,7 @@ export const pageRegistry = Object.freeze([
     status: districtEntry.indexable ? CONTENT_STATUS.PUBLISHED : CONTENT_STATUS.NOINDEX,
     title: districtEntry.title,
     description: districtEntry.description,
+    ...(districtEntry.modifiedAt ? { lastModified: districtEntry.modifiedAt } : {}),
     changeFrequency: "monthly",
     priority: districtEntry.priority === 1 ? 0.7 : 0.6,
   })),
