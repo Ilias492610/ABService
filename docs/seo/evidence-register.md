@@ -1,5 +1,79 @@
 # Evidence Register
 
+## 11 October 2026 — fresh final local gate and documentary boundaries
+
+Reviewed2164026 protects the existing hero CTA row and clears detached tracked
+zones. Root fresh258tests/lint/auditproduction0/build170/crawl82/93/112 and actual
+Chrome desktop/mobile pass. Original phonepoint193.71875/765.203125 now reaches
+tel; both retained controls restore at safe views. Water193GET-only requests,
+result/contact focus and no-JS/privacy checks pass. The earlier independent
+45-route structural sweep belongs to05589ad; its reproduced hero P2 remains
+recorded historically, not erased by the correction. Hosted/live and final
+whole-branch acceptance are not yet proven by these local checks.
+
+Reviewedf3021a0/dca0ff6/d276709 provide conditional earned-mention prospects,
+distribution/AI observation protocol and paid decision brief. These documentary
+deliverables do not prove outreach, publication, AI citation measurement,
+membership, AB ad eligibility, budget or qualified business outcomes.
+Official Google Belgium plumber-category support is distinct from company
+approval. No paid account flow, new permission, campaign or vendor installation.
+Source56/55HTTP200/403, development9 and commercial/field gaps remain explicit.
+
+## 11 October 2026 — observation tool and interaction candidate
+
+Reviewed566e4eb uses bounded decimal fixed-point arithmetic, unknown-first fields
+and explicit unsafe/shared/possible-use limitations. Revieweddef4efe exposes the
+local observation through one SSR tool route and only coded optional contact
+context; input readings/duration are neither analytics nor prefilled message data.
+Official Farys test/meter/digital-meter and Vlaanderen leak guidance are visible.
+No tool observation proves a leak, conforming installation or professional method.
+
+Task19ac40af1 review approves native menu closure, temporary floating-control
+clearance and focus handoff with unchanged original logos/live rating request.
+Root browser found water-result focus behind header;05589ad corrects scheduled
+alignment after five genuine RED assertions. Full252 source tests pass, but fresh
+physical-browser/release/live gates are separate. Source56/55HTTP200/known403,
+development9 and absent commercial/field evidence remain explicit.
+
+The earlier five-unchanged-guides dates below are Task15's snapshot: subsequent
+useful water-guide tool link changes its modification date to11October, preserving
+its10October source-check date. No case/credential/region/price/partner proof added.
+
+## 11 October 2026 — bounded attest candidate and coverage
+
+`1cd1ed3`: practical Flemish document transfer, Brussels PDF recipients,
+housing-law referral and explicit unknown-document boundaries, using actual
+official citations. Source checking and real content modification are separate;
+five unchanged guides retain10October, substantive attest revision11October.
+Independent task review approves. `5ee88a6` independently reviewed documentation
+maps fourteen original intents without asserting fourteen complete articles.
+
+Root fresh local182tests/lint/auditproduction0/build168/crawl81/92/110 and
+six-guide desktop/mobile/no-JavaScript/content/date/contact checks pass, zero
+POST/mail. Sourceaudit51 HTTP200 plus known Sibelga403 remains exit1. Primary
+source reading is distinct from HTTP response and independent qualified legal/
+technical review. [First-cycle brief](briefs/wp10-first-cycle.md) records exact
+citations, source matrix M47/M48, existing page ownership and remaining gates.
+No publication, ranking, customer or revenue result claimed for this candidate.
+
+Independent browser audit additionally reproduces floating-control occlusion,
+footer interception, persistent navigation menus and dismissal focus loss.
+These remain WP12 product fixes; earlier acceptance of code/search behavior is
+not a universal accessibility certificate.
+
+## 11 October 2026 — accepted source/search release
+
+Release `6557c45fb8997940eb70c26c3202cc7c3f4af42a` is normally pushed to main.
+[Exact CI38098059114](https://github.com/Ilias492610/ABService/actions/runs/38098059114)
+succeeds172 tests/auditproduction0/build/crawl. Both exact-SHA Vercel checks and
+production deployments succeed; primary6988792191 success at00:20:47 UTC.
+Fresh live81/92/110 and desktop/mobile/no-JavaScript acceptance pass, including
+restored complete descriptive identifiers and unchanged full-code boundaries.
+Remeha359 source rows are live, not universal brand/model coverage. The
+[QA record](../../SEO_QA_REPORT.md) retains the native-popup/floating-control,
+Sibelga403, development9 and measurement limits. No extra POST/email, account
+mutation or commercial result inferred. Earlier candidate records are historical.
+
 ## 11 October 2026 — source-bound Calenta Ace-Matic candidate
 
 Source reading above/below is implemented in1d4da96:300rows/five component-family tables,

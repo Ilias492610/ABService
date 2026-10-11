@@ -344,6 +344,13 @@ nullen, verschillende subcodes/componenten, EA-familie en NTC-beschrijvingen get
 vond NTC-regressie, actual RED→GREEN herstelt die.165tests/lint/build/auditproduction0/localcrawl
 pass; browser/live/wholebranchrelease blijft gate. Niet de gehele dertienmerken-WP07 voltooid.
 
+**Latere acceptatie11oktober:** final review vond ook TS3/TA210/EA1/T1/S1-regressies.
+Algemene volledige beschrijvingsidentifiers hersteld, aliasvoorrang en negatieve tests
+behouden; één scoped herreview akkoord. Release6557c45 is op main, exactCI38098059114
+slaagt172 tests/auditproduction0/build/crawl, beide Vercelchecks/deployments succes.
+Fresh live81/92/110 en desktop/mobile/noJS13guides1264rows slagen. Alleen deze
+model-/zoekuitbreiding is geaccepteerd; andere modellen en bredere WP07-gates open.
+
 ### WP08 — Geografische groei met lokale klantwaarde
 
 **Files:** `content/service-areas.mjs`, `content/service-area-scoring.mjs`, `content/content-backlog.mjs`, `components/district-page.js`, `components/municipality-filter.js`, gebiedshubs, `tests/service-areas.test.mjs`, `PHASE_E_SERVICE_AREA_REPORT.md`, `SERVICE_AREA_REGISTRY.md`, `SEO_CONTENT_INVENTORY.md`, bewijsregister en changelog.
@@ -385,6 +392,16 @@ pass; browser/live/wholebranchrelease blijft gate. Niet de gehele dertienmerken-
 
 **Tests:** bronnen/datum/scope, eigen intentie, veiligheid, werkelijke wijzigingsdatum en elementenbehoud. **Done:** geprioriteerde volledige briefs en inhoudelijk gecontroleerde publicatie per cyclus, geen blogquotum.
 
+**11 oktober — WP10 afgebakende voortzetting:**1cd1ed3 voegt praktische attestoverdracht
+toe met officiële regionale bronnen en scheidt broncontrole van inhoudswijziging.
+Onafhankelijke taakreview akkoord; fresh182tests/lint/auditproduction0/build168/
+localcrawl81/92/110 en desktop/mobile/no-JS gids-/formulierchecks slagen.
+5ee88a6 levert de [veertien-intentiekaart](../../seo/wp10-topic-coverage.md) en
+[eerste bestaande-attestbrief](../../seo/briefs/wp10-first-cycle.md), afzonderlijk
+goedgekeurd. Dit zijn lokale implementatie-/documentchecks: volledige release/live
+en commerciële evaluatie staan apart. Sanitairvragen/technicusreview blijven
+benoemde grenzen; geen volledige WP10-afvinking of veertien nieuwe URLs.
+
 ### WP11 — Gratis hulpmiddelen met direct klantnut
 
 **Files:** bestaande onderhoudscheck; na ontwerpgate mogelijk nieuw `libs/water-meter-check.mjs`, `components/water-meter-check.js`, `app/tools/watermetercheck/page.js`, `tests/water-meter-check.test.mjs`; register/metadata/analytics/contactcontext.
@@ -398,6 +415,15 @@ pass; browser/live/wholebranchrelease blijft gate. Niet de gehele dertienmerken-
 - [ ] Meet gebruik, passende doorstap/aanvraag en misinterpretaties. Andere tools alleen bij extra klantnut, niet als productkopie voor linkbait.
 
 **Tests:** gelijk/dalend/leeg/extreem, decimalen/eenheden/tijd/nul, gedeelde meter, onveilig/onvolledig, privacy/voorinvulling en server-HTML. **Done:** bronbegrensde pilot plus usability- en releasecontrole; commerciële opbrengst apart meten.
+
+**11 oktober — watermeterpilot lokaal geaccepteerd:** kernel566e4eb en interface
+def4efe zijn onafhankelijk gereviewd;05589ad corrigeert de werkelijk gevonden
+oversized-resultfocus achter de vaste header. Fresh252tests/lint/productionaudit0/
+build170/crawl82/93/112 en echte Chrome desktop/mobiel/no-JS gates pass. Positieve,
+nul-, onvolledige, gedeelde, automatische-verbruiks-, dalende en onveilige invoer
+behouden grenzen; privéstanden blijven lokaal en gecodeerde contactcontext wordt
+opgeschoond. Geen account/e-mailgate of lekdiagnose. Release/live gate blijft open;
+daadwerkelijke eventontvangst, passende aanvragen en evaluatie zijn niet gemeten.
 
 ### WP12 — Technische SEO, CWV, toegankelijkheid en security
 
@@ -426,6 +452,24 @@ Bracespatch ontbreekt; parsermajorfix vraagt aparte compatibilityQA. Fresh brona
 één Sibelga403; fout blijft zichtbaar.
 Dit is geen volledige WP12-, veld-CWV- of securityvoltooiing.
 
+**11 oktober — interacties lokaal geaccepteerd:** gereviewdac40af1 sluit bestaande
+native disclosuremenu's na bestemming/padwijziging. Beide originele trustcontrols
+maken tijdelijk ruimte voor form/warning/footer/toolresult, herstellen daarna en
+behouden logos/livefetch/neutralefallback. Echte desktop/mobiele causalChromechecks
+bevestigen44×44 close, focusoverdracht en dat de eerdere tool-/footertaps niet langer
+Google/WhatsApp openen. Headless lokaal, geen certificaat voor fysieke apparaten of
+veldCWV; hosted/livepublicatie en bredere representatieve controle blijven apart.
+Huidige kandidaat heeft79 non-home socialcards naast de historische78snapshot.
+
+**11 oktober — aanvullende echte hero-overlap gecorrigeerd:** onafhankelijke
+45-route/profile audit van05589ad bewaart structurele45/45checks en een herhaalde
+mobiele telefoon→Google-interceptie als aparte P2. Gereviewd2164026 beschermt ook
+de bestaande hero-actierij en ruimt detached zones op. Root fresh258tests/lint/
+productionaudit0/build170/crawl82/93/112 en desktop/mobiele causalchecks slagen;
+exact193.71875/765.203125 ontvangt nu tel, controls herstellen op veilige plekken.
+Water/privacy/no-JS regressiegates slagen eveneens. Dit is lokale acceptatie,
+niet de nog uit te voeren hosted/live/whole-branch gate of volledige WP12/CWV.
+
 ### WP13 — Verdiende links en lokale partners
 
 **Files:** `LOCAL_SEO_EXTERNAL_ACTIONS.md`; nieuw `docs/seo/earned-link-opportunities.md`. Contactgegevens privé; alleen concepten in repo.
@@ -438,6 +482,14 @@ Dit is geen volledige WP12-, veld-CWV- of securityvoltooiing.
 - [ ] Concrete verzending, sponsoring/deal of externe publicatie vraagt eigen opdracht. Concept ≠ verzonden; plaatsing ≠ geïndexeerd of ranked; geen massaspam.
 
 **Done:** concrete nuttige prospects en goedgekeurde drafts; verdiende live mention/link pas met plaatsingsbewijs. Koop-/PBNroutes blijven afgewezen.
+
+**11 oktober — register voorbereid en taakreview akkoord:**
+[vier voorwaardelijke prospects en dertien aparte linkroutes](../../seo/earned-link-opportunities.md)
+uitf3021a0 onderscheiden bestaande mention/link, bronextractonzekerheid en beperkte
+drie-concurrentenplatformoverlap. Dat is geen volledige backlinkgap, goedgekeurde
+pitch, partnership, verstuurde outreach of verdiende nieuwe plaatsing. Bestaande
+relatie/lidmaatschap, originele deskundige bijdrage, actuele broncheck, volledige
+URL-leveldataset en concrete externe-publicatieopdracht blijven eigen gates.
 
 ### WP14 — Distributie, video en observeerbare AI-zichtbaarheid
 
@@ -453,6 +505,14 @@ Dit is geen volledige WP12-, veld-CWV- of securityvoltooiing.
 - [ ] De bronquota van twintig DMs en drie subreddits/tien threads/één verhaal zijn afgewezen, conform G-050/G-054. Eventuele toekomstige outreach vraagt een afzonderlijke concrete opdracht en echte relevantie, zonder bronquotum. Dagelijks posten of iedere reactie beantwoorden is geen verplichting; capaciteit en kanaalregels gaan voor. Wekelijkse AI-check kan tijdelijk bij een experiment; maandelijks is standaard.
 
 **Done:** herhaalbare kleine observatiedataset en brongebonden content; externe publicatie alleen met opdracht/bewijs. Geen gegarandeerd sociaal linkgewicht of AI-citatie.
+
+**11 oktober — documentair contract gereviewd:**dca0ff6 bewaart
+[drie voorwaardelijke kanalen, één voorgestelde GBP-pilot en tien vaste vragen](../../seo/distribution-and-ai-observations.md).
+Acht gelezen primaire beleidsbronnen, twee afzonderlijke workerobservaties en
+Q4's echte native Bulex-queryfamilie blijven onderscheiden. Het private context-/
+citatieschema is leeg: geen post, video, AI-antwoordmeting of commerciële uitkomst
+uitgevoerd. Moderatie, capaciteit, media/deskundigheid, concrete publicatieopdracht
+en daadwerkelijke capture blijven nodig; dit is geen volledige WP14-afronding.
 
 ### WP15 — Franse Belgische lokalisatie
 
@@ -477,6 +537,15 @@ Dit is geen volledige WP12-, veld-CWV- of securityvoltooiing.
 - [ ] Standaard native code/officiële exports. Sandboxfixtures nooit echte volumes noemen. Nieuwe OAuth met minimale rechten, private keys en spendcap alleen bij concrete noodzaak/goedkeuring; een free trial kan billing vragen.
 
 **Done:** gedateerde eligibility-, budget- en toolkeuzebesluiten. Geen euro uitgegeven of campagne gestart zonder expliciet budget.
+
+**11 oktober — voorbereidingsbesluiten gereviewd:**d276709 levert de
+[gedateerde betaalde-acquisitiebrief](../../seo/paid-acquisition-brief.md).
+Officiële Belgische loodgieterscategorie is bevestigd; bedrijf/postcodeapproval,
+private verificatiebewijzen, echte budgetten/billing/capaciteit/privacy en
+gekwalificeerde capture blijven onbekend. Alle vendor-/G-004–G-016-besluiten
+blijven traceerbaar, native exports eerst, GSC Wizard uitgesloten.
+**RESEARCH_PREPARED / EXECUTION_DEFERRED**: geen campagne, spend, badge,
+accountgrant of volledige WP16-afronding.
 
 ### WP17 — Meetritme, experimenten en blijvende opvolging
 

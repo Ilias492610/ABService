@@ -2,12 +2,14 @@
 
 ## Published routes
 
-October source inventory: 81 registered customer routes, 79 published and two noindex after
-the eight new destinations below. This is not a count of Google-indexed pages. Dated local/live
+Current candidate inventory: 82 registered customer routes, 80 published and two noindex after
+the eight original destinations and watermeter pilot below. The previous accepted release6557c45
+has81/79/2. Neither snapshot counts Google-indexed pages. Dated local/live
 verification belongs in `SEO_QA_REPORT.md`.
 
-The refinement adds 78 static social-preview PNG assets, not indexable customer pages. All thirteen
-fault guides in the 11 October candidate display 1264 source-bound rows across 32 assignments
+The earlier release adds78 static social-preview PNG assets; the new tool candidate
+has79 corresponding non-home assets, not indexable customer pages. All thirteen
+fault guides in the accepted 11 October release6557c45 display 1264 source-bound rows across 32 assignments
 and 26 distinct catalogs (1022 rows before shared-catalog reuse); none is a count of unique codes
 or universal model coverage. Remeha has 17 Avanta +23 historical Calenta E +19 historical Su
 states and 300 Calenta Ace-Matic rows: CU A18/H41/E47 and SCB A60/H134. The exact four models
@@ -17,8 +19,9 @@ not a sitemap entry or an account credential.
 
 | New destination | Intent / source basis |
 |---|---|
-| `/advies` | Discover seven practical advice articles and the maintenance checker |
+| `/advies` | Discover seven practical advice articles, maintenance checker and watermeter pilot |
 | `/tools/onderhoudscheck` | Regional planning rules, official Vlaanderen/Brussels sources; full result before optional contact |
+| `/tools/watermetercheck` | Own/shared meter, possible automatic use, safe access, fixed-point observations and limitations before optional coded contact; Farys/Vlaanderen |
 | `/advies/watermeter-blijft-draaien` | Water use observations and leak intake; Pidpa |
 | `/advies/radiator-blijft-koud` | Cold radiator observations and model-bound user settings; Bosch/Vaillant |
 | `/advies/geen-warm-water` | Tappoint/device distinction and safe repair preparation; Vaillant/emergency authorities |
@@ -26,9 +29,20 @@ not a sitemap entry or an account credential.
 | `/advies/afvoer-verstopt-wat-doen` | Drain intake and corrosive-product safety; Belgian Antigifcentrum |
 | `/advies/onderhoudsattest-cv-ketel` | Regional maintenance documents vs commissioning; Vlaanderen/Brussels |
 
-New articles show AB Service as organizational author/publisher, official source links and an
-actual 10 October source-check date. No invented technician credential or publication history.
+Published articles show AB Service as organizational author/publisher, official source links
+and their actual source-check date. The locally accepted attest candidate1cd1ed3 separates
+checkedAt from modifiedAt; five unchanged guides retain10October and the substantive attest
+revision alone uses11October. Its publication/live gate is still pending. No invented technician
+credential or publication history. The [fourteen-intent coverage map](docs/seo/wp10-topic-coverage.md)
+and [first-cycle brief](docs/seo/briefs/wp10-first-cycle.md) distinguish current answers from gaps.
 Existing service/fault/brand/project links are strengthened without publishing new locality claims.
+
+Later candidate `def4efe` adds the watermeter pilot link to the existing water guide:
+its genuine `modifiedAt` is11October while `checkedAt` stays10October. Attest retains
+both11October and the other four original guides both10October. The new tool, advice
+hub and privacy page use their actual11October modification dates. No new source
+reading is inferred from an added internal link; publication/live acceptance remains
+in the QA record, separate from a published registry value.
 
 | URL | Title | H1 | Primary intent | Indexability | Main internal links | Evidence basis |
 |---|---|---|---|---|---|---|
@@ -64,6 +78,7 @@ Existing service/fault/brand/project links are strengthened without publishing n
 | `/foutcodes/itho-daalderop` | Itho Daalderop Base Cube foutcodes \| AB Service | Itho Daalderop foutcodes: catalogus met officiële bronnen | Base Cube code lookup | Index | Hub, contact, official documentation | Complete warning/blocking/fault table; 26 source rows |
 | `/foutcodes/ferroli` | Ferroli BlueSense foutcodes: officiële bron \| AB Service | Ferroli foutcodes: catalogus met officiële bronnen | Ferroli BlueSense code lookup | Index | Hub, contact, official documentation | Complete A/F table in named service manual; 37 source rows |
 | `/advies/drukverlies-cv-ketel` | Drukverlies bij uw cv-ketel: oorzaken en veilige controle \| AB Service | Drukverlies bij uw cv-ketel: wat kunt u veilig controleren? | Pressure-loss information and safe triage | Index | Repair, fault codes, maintenance | Official Bosch user guidance; model-dependent pressure warning |
+| `/tools/watermetercheck` | Watermetercheck: vergelijk uw totale meterstanden \| AB Service | Wat registreerde uw watermeter tijdens uw meetperiode? | Safe optional local meter comparison, not leak diagnosis | Index (candidate, release gate separate) | Water guide, optional coded contact | Farys meter/test/digital-meter guidance and Vlaanderen leak guidance; unsafe/shared/automatic-use/unknown boundaries |
 | `/werkgebied` | Werkgebied AB Service \| Heel Vlaanderen en Brussel | AB Service in heel Vlaanderen en Brussel | Full service-area lookup | Index | Six hubs, ten Antwerp districts | Owner-confirmed coverage; official municipality counts |
 | `/werkgebied/{regio}` | Six unique regional titles | Loodgieter en verwarmingsservice in region/province | Geographic orientation | Index | Municipalities, services, Antwerp districts where applicable | Owner coverage plus official administrative lists |
 | `/loodgieter-{district}` | Eight unique published district titles | Loodgieter in district voor relevante diensten | Antwerp district intent | Index | Services, nearby districts, Antwerp hub | Owner coverage plus official district/wijk context; no project claims |

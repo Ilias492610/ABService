@@ -4,6 +4,13 @@ Stand 11 oktober 2026. De bestaande gids `/advies/onderhoudsattest-cv-ketel` hel
 
 Dit is één complete cyclusbrief voor een bestaande URL. De [veertien-intentkaart](../wp10-topic-coverage.md) en [backlog](../content-gap-backlog.md) bewaren de overige vragen. [WP03 B04](wp03-first-five.md) blijft de kwalitatieve documentenbrief; M01–M05 en B01–B05 worden niet vervangen of tot nieuwe artikelen hernoemd.
 
+**Latere aanvulling 11 oktober:** de datumtabel hieronder beschrijft Task15/16.
+Task18def4efe voegt daarna een nuttige watermeter-toollink toe aan de watergids:
+alleen die gids krijgt hierdoor `modifiedAt=2026-10-11`, terwijl
+`checkedAt=2026-10-10` blijft. Attest behoudt beide11October; de andere vier
+gidsen blijven beide10October. Dit is geen collectieve brondatumverversing en
+verandert deze attestbrief of zijn historische test-/releasegrenzen niet.
+
 ## Gebruikersvraag en eigenaar
 
 De vraag is: welke onderhoudsattesten, EPB-documenten en ingebruiknamerapporten bewaar en deel ik in Vlaanderen of Brussel, en hoe vul ik een onvolledig dossier aan zonder een datum of controle te veronderstellen? Het antwoord hoort bij `https://www.abservice24.be/advies/onderhoudsattest-cv-ketel`, met de huidige [adviesdata](../../../content/advice-guides.mjs), [AdviceGuidePage](../../../app/advies/[slug]/page.js) en [published registratie](../../../content/site-content.mjs). De gids verduidelijkt documenten; `/onderhoud` en `/keuring` blijven de eigenaars voor de verschillende diensten.

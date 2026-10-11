@@ -1,5 +1,171 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — final local interaction correction accepted
+
+Fresh product build `2164026ebc626418c48c73d98a959126ee97166c` passes
+**258/258 tests**, lint, production dependency audit0, build170 outputs and
+local crawl **82 pages /93 destinations /112 assets** under Node24.19.0.
+Subsequent `d276709` is documentation only. Clean install was run for this
+unchanged dependency graph; its known ESLint9 warning/dev9 remain recorded.
+
+Root Chrome1440×1000/390×844 repeats the original mobile telephone point
+**193.71875/765.203125**: it now receives the `tel:` link, not Google.
+Both floating controls temporarily clear while existing hero actions are visible
+and restore in safe positions. This intentionally also clears nonoverlapping
+home hero actions; neither original logo nor live rating fetch was removed.
+Native keyboard/menu/back/forward, 44×44 separate close, dismissal/suppression
+focus, form/warning/footer/tool clearance and original tool/footer hit tests pass.
+No unexpected pageerrors, overflow, external request or real contact POST.
+
+Water browser rerun passes positive/zero/unknown/invalid/descending/shared/
+possible-use/unsafe/change/reset/private handoff and no-JS safeguards. Result
+tops142.45/142.23px and contact142.17/143.05px remain below126.59px header;
+193 inspected requests, zero attempted non-GET, no input network/storage leak.
+
+The earlier independent 45-route/profile structural sweep (15 URLs × desktop,
+mobile and no-JS) belongs to product05589ad: 54 linked destinations200,
+80 sitemap locations exactly match published registry, unique sampled metadata,
+one H1, loaded images and zero unexpected console/page errors. Its P2 hero
+failure is retained below; the fresh correction is not retroactively assigned
+to that older sweep. Independent scoped reproduction and whole-branch review,
+hosted CI/Vercel and canonical live acceptance remain separate release gates.
+Source audit56/55HTTP200/known Sibelga403 remains exit1; no new Lighthouse,
+field-CWV, qualified leads, analytics ingestion or commercial evaluation claim.
+
+Independent scoped followup on built2164026 repeats the exact mobile failure
+fixture twice: unchanged phone geometry741.203125px, original hit point receives
+`tel:+32484906966`, zero overlays while hero actions are visible. Desktop control
+also passes. Safe same-page home views restore both widgets (scroll1985 mobile,
+1773 desktop), then top suppresses them again; neutral rating fallback retained.
+Five locally mocked rating503 responses, zero external/write requests/pageerrors.
+Auditor visually inspected fresh phone/restoration screenshots and closed all
+contexts. This closes the original P2 locally, not its hosted/live release gates.
+
+## 11 October 2026 — watermeter and navigation candidate gates
+
+**Broader acceptance hold,01:42 UTC:** independent15-route representative Chrome
+audit additionally repeats2/2 mobile maintenance hero telephone-CTA interception:
+phone rect16/741.20/185.72×48 and Google rect166.61/741.91/211.39×90.09 overlap
+35.11×47.30px; sampled193.72/765.20 hits Google, not tel. Same home-control card
+does not overlap its currently shorter hero. Root views actual screenshot and
+shared PageHero `.button-row` markup. The earlier targeted form/footer gates
+below remain true within their scope, but do not close this broader release gate.
+Original worker is implementing a reviewed regression-first CTA-zone correction;
+no public release until its actual geometry/restoration checks pass.
+
+**Fresh local supplement,01:34 UTC:** product05589ad cleaninstall/full252tests/
+lint/production audit0/build170/crawl82/93/112 all pass. Root actual reduced-motion
+Chrome desktop1440×1000/mobile390×844 passes positive/zero/unknown/invalid/descending/
+shared/possible-use/unsafe/change/reset/private handoff. Positive resulttop142.45/
+142.23px and contacttop142.17/143.05px stay below126.59px header; no horizontal
+overflow/pageerrors or raw-input network/storage leak. No-JS disabled fieldset,
+input/submit and useful sources remain;193 requests checked, zero attemptednonGET.
+
+Actual WP12 causal rerun passes both viewports:44×44 close has a separate column,
+native Enter/Space and destination/back/forward disclosure closure, temporary
+forms/warnings/footer/result clearance and restoration, focused Google dismissal
+to WhatsApp, suppression focus to visible brand, unrelated pointer-focus preserved.
+Former mobile intercepted toolpoint244.43/754.97 now runs calculation; footerpoint
+40/811.31 now opens Foutcodes in the same tab. No external popup, pageerror or real
+contact POST. Root personally views mobile tool/footer screenshots. These are
+headless Chrome local checks, not physical devices, actual Google data or fieldCWV.
+
+Harness history remains in ignored logs: initial zero-message regex omitted the
+correct synonym `geen verschil`; reset/contact focus checks initially sampled before
+their existing scheduled frame; fieldset `.isDisabled()` did not reflect its native
+disabled property, while childinput/button did. Initial widget expectation ignored
+visible protected zones and unknown maintenance wording was too narrow. Root
+inspected the actual native DOM/handlers/copy and corrected test boundaries only;
+unchanged failed geometry assertion is now satisfied by the reviewed product fix.
+These diagnostics do not claim extra production fixes or erase earlier failures.
+
+Source56/55HTTP200/known403 remains exit1. Hosted release and canonical live checks
+are still pending. Representative broader browser acceptance is separately running.
+
+### Earlier candidate snapshot — superseded locally by the supplement above
+
+Reviewed kernel566e4eb and integrationdef4efe add one tool route, not a location
+matrix. Independent task reviews approve the kernel, interface and navigation/
+floating-clearanceac40af1 source scopes. Reset, coded handoff and original live
+rating/logo behavior are retained. This section is a pre-release snapshot.
+
+- On def4efe, fresh Node24.19.0 clean install,226tests/lint/production audit0,
+  build170outputs and localcrawl82 pages/93destinations/112assets pass. Source audit
+  is56unique URLs/55HTTP200/one known Sibelga403, exit1, not all-source pass.
+- Root actual Chrome1440×1000 reproduced a long positive water-result focus bug:
+  result top−51.55px behind headerbottom126.59px despite correct142.59px scrollmargin.
+  A diagnostic startscroll gives142.45px, but does not change the failed production
+  verdict. Existing maintenance result checks remain142.97px desktop/142.17px mobile.
+- Corrective05589ad changes only scheduled water submit focus/startscroll; meaningful
+  RED5/5 failed assertions precede the fix, scoped15/15/full252/252 and lint pass.
+  Actual complete water/browser handoff, fresh navigation causal checks and all
+  publication/live gates remain open until the next dated verification supplement.
+- Public Belgian Plumbers Local Services Ads support is verified from official
+  country/category selectors. AB Service approval, insurance/credentials, real
+  budget, billing and qualified capture remain unknown; no campaign or grant made.
+- No extra email, real tool input, external posts/outreach, AI-observation dataset,
+  paid tool or IndexNow notification is claimed. Production0 does not clear dev9,
+  ESLint9 lifecycle debt, absent field-CWV or unproven custom-event ingestion.
+
+## 11 October 2026 — attest content locally accepted
+
+Candidate implementation `1cd1ed30b6cc60ce01bde79c797c54edd085a169` and
+documentary follow-up `5ee88a65d31b7eb1bceaebb7e8933c76163034a7` each have an
+independent compliant/Approved task review. These are not yet the published SHA.
+
+- Fresh Node24.19.0:182 tests pass, lint clean, production audit0, build168
+  static/prerender outputs, local crawl81 pages/92 destinations/110 assets.
+- Actual Chrome1440×1000 and390×844 verifies all six advice guides' separate
+  source-check/content-modification times, Article/OG dates, citations, one H1,
+  no overflow/page errors. Five unchanged guides retain10October; attest alone
+  advances both dates to11October. Source checking alone cannot produce lastmod.
+- Attest maintenance-prefill CTA places the form142.17px/143.05px below the
+  viewport top. Existing maintenance calculation and private fragment handoff
+  remain functional; contact consumes and removes coded fragment context.
+  No-JavaScript attest content/dates and no-editorial maintenance remain useful.
+  Zero contact submissions or emails.
+- Source audit52 unique URLs:51 HTTP200; known Sibelga403 remains exit1.
+  Main personally reviewed regional duties; linked legislation/PDFs are not
+  represented as read or an individual technical/legal reviewer as certified.
+- Separate four-route/two-viewport interaction audit reproduces fixed Google
+  panel overlap with controls/safety text, WhatsApp footer interception, menus
+  staying open after navigation and lost focus after Google dismissal. These
+  are open WP12 corrections, not concealed by passing date/content checks.
+
+Publication, live acceptance and commercial evaluation remain separate gates.
+
+## 11 October 2026 — model catalog and search release accepted
+
+Reviewed release `6557c45fb8997940eb70c26c3202cc7c3f4af42a` is on GitHub `main`.
+The final review identified a broader numbered-component search regression after
+the earlier NTC correction. Complete selected-catalog identifiers now work, while
+actual complete code aliases take precedence. The scoped re-review approved both
+that correction and the documentation-status correction.
+
+- Fresh local lint, **172 tests**, production audit0, build and crawl pass.
+  [CI38098059114](https://github.com/Ilias492610/ABService/actions/runs/38098059114)
+  independently passes install/lint/172 tests/audit0/build/crawl and cleanups under
+  application Node24.21.0. Development audit9 and ESLint9 EOL remain unresolved.
+- Both exact-SHA Vercel checks and production deployments report success. Primary
+  deployment6988792191 succeeded at **2026-10-11 00:20:47 UTC**:
+  [production deployment](https://ab-service-19d84xrdx-ilias492610s-projects.vercel.app).
+  No new Vercel API READY confirmation is claimed.
+- Fresh canonical-site crawl passes **81 pages /92 destinations /110 assets**.
+  Live desktop/mobile checks cover complete Remeha subcodes, separate components,
+  descriptive TS3/TA210/EA1/T1/S1 and NTC1/2, selected catalogs, unknown/partial
+  queries, leading zeros, reset/status, contact anchor/prefill and no overflow or
+  page errors. All13 guides expose1264 rows without JavaScript. No POST/email sent.
+- Same-origin, cache-disabled CDP transfer samples at load+300ms: before261689
+  desktop/243451 mobile bytes; after247325/253625. Single transfer observations,
+  not controlled Lighthouse, LCP/INP/CLS, ranking or customer-effect measurements.
+- Source audit remains48 HTTP200 plus known Sibelga403 (exit1). Native-popup
+  keyboard selection, wider floating-control interaction, other complete model
+  source revalidation, equal-window reports and commercial capture remain open.
+  The owned local QA server was stopped; no IndexNow POST or account mutation.
+
+This accepts the bounded released source/search/measurement-preparation batch,
+not all WP07, WP12 or WP17. Earlier candidate entries below are dated snapshots.
+
 ## 11 October 2026 — Calenta Ace-Matic candidate acceptance
 
 - Source-specific implementation1d4da96, full-code filter9564e86 plus review correctionc5b8eca,

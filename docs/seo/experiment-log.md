@@ -86,3 +86,74 @@ en private kwalificatiecapture; voeg de gemeten hypothese-evaluatie pas onderaan
 haar bewijs bestaat. Het [reviewrecord van 11 oktober](reviews/2026-10-11.md) bewaart de huidige
 beschikbaarheid en lege rapporttemplates. WP17 en overige werkpakketten zijn hiermee niet
 integraal afgerond.
+
+## EXP-20261011-REMEHA — release and live acceptance
+
+Recorded on **11 October 2026, 00:24:59 UTC /02:24:59 Europe/Brussels**. This
+supplements the earlier preparation snapshot without changing its KPI, sample
+rules, missing commercial baseline or frozen instructions.
+
+| Field | Observed release evidence |
+| --- | --- |
+| Production SHA | `6557c45fb8997940eb70c26c3202cc7c3f4af42a`, normally pushed to main after independent whole-branch review and one approved scoped fix review |
+| Final filter correction | Actual complete selected aliases take precedence; complete numbered meaning identifiers restore TS3/TA210/EA1/T1/S1 as well as NTC. Producer and legacy digests unchanged |
+| Hosted verification | [CI38098059114](https://github.com/Ilias492610/ABService/actions/runs/38098059114):172 tests, lint, production audit0, build and81/92/110 crawl succeed; development9 remains |
+| Provider acceptance | Both exact-SHA Vercel checks and production deployments succeed; primary6988792191 status timestamp **2026-10-11T00:20:47Z**, [deployment](https://ab-service-19d84xrdx-ilias492610s-projects.vercel.app). This is not an exact canonical-alias activation timestamp |
+| Canonical live acceptance | `https://www.abservice24.be/foutcodes/remeha`:359 rows, exact subcodes/components/metadata and contact handoff observed. Site crawl81/92/110 and desktop/mobile/no-JS13 guides1264 rows pass before this record time; no POST/email |
+| Transfer observation | Same-origin CDP load+300ms samples: before261689 desktop/243451 mobile bytes, after247325/253625. Not Lighthouse/CWV, causal speed or business outcome |
+| Evaluation eligibility | Release occurred during11October; use complete post-release days only when actual native data and capture exist. No partly released day as a full before/after day, guaranteed evaluation date or fabricated sample |
+| Outcome status | **RELEASED /LIVE CHECKED; NOT EVALUATED.** Commercial baseline, qualified enquiries, exact diagnostic page baseline and equal-window observations remain unavailable, not zero |
+
+Native-popup keyboard selection, wider floating controls, other complete-model
+source validation, Sibelga403 and development maintenance remain separate. The
+original hypothesis/revert criteria still apply; a passing technical gate is not
+evidence of ranking, customers or revenue. No IndexNow batch was sent for this
+record. Next record requires actual equal-window and qualification evidence.
+
+## EXP-20261011-WATER — preparation before release
+
+Recorded **11 October 2026, 01:23 UTC**. **CANDIDATE / NOT RELEASED OR EVALUATED**.
+This is a second useful tool, not an email gate, diagnosis, savings calculator or
+claim of commercial gain. Current instruction freeze uses base
+`ac40af154724f9d79e52791661c54adfe93e7945`: plan blob
+`ef454672c941cb42ef81c17a731109206b371fd7`, AGENTS blob
+`ab441ba0ed31957d9f412f3c033935566f803f08`, business-brief blob
+`9b37b72212d601ff4c68df065a494d28230688b2`. Subsequent instruction or release
+changes require supplements, not replacement of this record.
+
+| Field | Prespecified contract and current evidence |
+| --- | --- |
+| URL / variant | New `https://www.abservice24.be/tools/watermetercheck`; candidate kernel566e4eb/interfacedef4efe/focus05589ad. Existing water-guide link is a genuine related content change. No deployment time inferred |
+| Source IDs / scope | WP11, BF-H04; master/Phase E M21 safety, M46 direct answers, M58 optional contact and original course C-133 useful tool link route. Official Farys test/meter/digital-meter and Vlaanderen leak guidance; no universal safety or leak diagnosis |
+| Hypothesis | An optional safe local observation and clear limitations help visitors distinguish observed consumption from a suspected leak and provide a more appropriate enquiry |
+| Primary commercial KPI | Actually received, qualified water/lekdetectie enquiries with evidenced tool origin over equal windows, once private intake qualification and actual origin capture exist; exclude QA and uncertain origin |
+| Baseline / denominator / sample | **Unavailable, not zero**. New route has no previous tool cohort. Prior service enquiries cannot be assigned tool origin. Window length and all genuinely captured tool-origin enquiries will be denominators; no invented target or conversion rate |
+| Secondary observations | Only coded completion status and optional contact event in current analytics contract; raw readings/time/units stay local. Actual provider ingestion unproven; a browser handler is not an analytics receipt or completed job |
+| Diagnostic search | Native exact-page GSC metrics with real equal filters/fully available days once indexed and data exist; no invented query-page joins, keyword volume or position |
+| Safety and privacy | Unsafe access/electricity stops; shared/possible-use/descending/incomplete observations do not show rates or contact pressure. Equal readings do not exclude all leaks. Fragment uses service/context/result only and is consumed/cleaned by contact |
+| Minimum window / inclusion | First28 fully available post-release days is proposed observation window, not guaranteed evaluation date or sufficient statistical sample. Without actual capture/filter/sample adequacy record insufficient data. Monthly30-versus30 stays separate |
+| Confounders | New-page discovery, season, concurrent attest/advice/privacy/navigation changes, popup clearance, traffic/service mix and missing event ingestion; before/after alone is not causality |
+| Immediate stop / correction | Unsafe/reassuring misinterpretation, arithmetic/input/privacy leak, broken handoff/result focus or contact regression: fix or revert the scoped change immediately; do not wait for a measurement window |
+| Current failure and correction | Root actual long-result focus hid its title behind sticky header;05589ad fixes deliberate alignment after real RED. Fresh physical-browser acceptance remains pending at registration |
+| Final release / outcome | Pending exact reviewed SHA, hosted provider and canonical live checks. **NOT EVALUATED**; no ranking, customer, revenue or continuous-run guarantee |
+
+Standing exclusions remain: GSC Wizard, private exports in Git, new OAuth, paid
+APIs/trials, advertisements without budget, outreach/public posts without concrete
+instruction, fabricated cases and cosmetic IndexNow submissions. Existing approved
+heartbeat may continue when app/computer are available; this record creates none.
+
+### EXP-20261011-WATER — local corrective acceptance supplement
+
+Recorded **11 October 2026, 01:54 UTC**; still **NOT RELEASED / NOT EVALUATED**.
+Fresh product2164026 has258tests/lint/auditproduction0/build170/localcrawl82/93/112
+and root desktop/mobile/no-JS water acceptance. Result tops142.45/142.23px and
+contact142.17/143.05px clear the126.59px sticky header;193 inspected requests,
+zero attempted non-GET and no raw-input storage/network leak.
+
+The broader original05589ad audit reproduced a second real problem: Google
+intercepted part of a mobile hero telephone CTA. Reviewed2164026 adds hero-action
+clearance and detached-zone cleanup; the exact193.71875/765.203125 phonepoint now
+receives tel. Both controls restore at safe positions. This is a functional
+correction and concurrent conversion confounder, not measured commercial lift.
+No experimental KPI, baseline, inclusion window or instruction freeze changed.
+Hosted/provider/live acceptance and actual commercial capture remain pending.

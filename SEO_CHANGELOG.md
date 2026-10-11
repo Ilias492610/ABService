@@ -1,5 +1,81 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — reviewed final local corrections and preparation
+
+- `2164026` extends temporary floating clearance to existing hero action rows
+  and removes stale detached-zone references. Original logos/live rating fetch
+  remain unchanged; independent task review approves. The actual formerly
+  intercepted mobile telephone point now hits `tel:`; safe restoration, keyboard,
+  focus, forms, footer and both tools pass fresh desktop/mobile acceptance.
+- Fresh258tests/lint/productionaudit0/build170/localcrawl82/93/112 pass. The
+  independent earlier45-route structural audit and its real hero-overlap failure
+  remain dated separately; final hosted/live release acceptance is still pending.
+- Reviewed `d276709` prepares [paid acquisition decisions](docs/seo/paid-acquisition-brief.md):
+  Belgian plumber category support is verified, AB eligibility/budget/capacity/
+  privacy/commercial capture are unknown. No campaign, spend, badge or WP16-done claim.
+- WP13/14 remain prepared but operationally partial: no outreach, publication,
+  video or AI-observation dataset. Dev9/ESLint9, Sibelga403, project-proof and
+  field/commercial-data gaps remain visible.
+
+## 11 October 2026 — watermeter pilot and interaction candidate
+
+- Documentaryf3021a0/dca0ff6 provide four conditional earned-mention prospects,
+  all13 course link-route decisions, three distribution candidates, one proposed
+  GBP pilot and ten future AI-observation questions with a blank private protocol.
+  Both task reviews approve; no outreach/post/video/AI measurement or new placement.
+- `566e4eb` adds the reviewed fixed-point observation kernel; `def4efe` integrates
+  `/tools/watermetercheck`, official water-company preparation, SSR/no-JS safeguards,
+  optional coded contact handoff and data-minimal analytics. Meter readings remain
+  local; an observation is not a leak diagnosis or safety clearance.
+- `ac40af1` closes native navigation after destination/path changes and temporarily
+  clears both retained floating controls around forms, warnings, footer and tool
+  results. Original WhatsApp/Google logos and live rating fetch remain unchanged.
+  Independent task review approves; actual browser acceptance remains separate.
+- Root browser QA found an oversized result focused behind the sticky header.
+  `05589ad` adds deliberate start alignment with prevented native focus scrolling;
+  five behavioral RED tests and full252-test GREEN are recorded. Fresh browser and
+  entire release gates are still pending in this candidate snapshot.
+- The water-observation guide receives a useful tool link and genuine11October
+  modification date, while its source-check date remains10October. This supplements
+  the earlier five-unchanged-guides snapshot below, not a cosmetic date refresh.
+- Registry82 routes/80published/2noindex is code state, not search-engine indexation.
+  Production0, development9/ESLint9 debt and the known Sibelga403 remain distinct.
+
+## 11 October 2026 — attest and advice coverage candidate
+
+- `1cd1ed3` improves the existing attest guide's Flemish document handoff and
+  Brussels digital recipients, while separating organizer from repair costs.
+  Shared actual citations enter visible content and source monitoring.
+- Source-check and content-modification dates now have independent fields and
+  labels. Only actual modification feeds Article/OG/sitemap dates. Five unchanged
+  guides retain10October; attest's substantive revision is11October.
+- `5ee88a6` maps all fourteen original advice intents to useful existing owners
+  or explicit gaps and supplies the first complete existing-attest brief. No
+  fourteen-page quota, fabricated rates, reviewer or demand sample.
+- Independent task reviews and fresh182tests/lint/auditproduction0/build/local
+  crawl/desktop/mobile/no-JS content gates pass. Source403 remains visible.
+  Full branch/publication/live gates are pending; no customer-growth inference.
+- Bounded interaction audit identifies floating-control interception and
+  persistent menus. WP11 watermeter pilot and WP12 corrections are next,
+  not already completed or published by this entry.
+
+## 11 October 2026 — source catalog and search published
+
+- Released independently reviewed6557c45 normally to `main`; exact
+  [CI38098059114](https://github.com/Ilias492610/ABService/actions/runs/38098059114)
+  passes172 tests, lint, auditproduction0, build and crawl. Both exact-SHA Vercel
+  checks and production deployments succeed; live81/92/110 and responsive/no-JS
+  acceptance pass. The earlier candidate snapshots below remain historical.
+- General complete numbered identifiers replace the NTC-only exception; real
+  TS3, TA210, EA1, T1 and S1 searches work without admitting partial identifiers.
+  Complete displayed aliases retain priority, source meanings/digests unchanged.
+- Remeha359 source rows and truthful Ace-Matic metadata are live. WP17 records
+  release acceptance separately from unavailable commercial/equal-window results.
+  No extra email, account changes, paid tool, IndexNow retry or growth claim.
+- Next WP10 slice improves the existing attest handoff and separates source-check
+  from content-modification dates. Other model, native-popup, source403 and
+  development-security gates remain open.
+
 ## 11 October 2026 — reviewed model/source and search candidate
 
 - Adds300 source-bound Calenta Ace-Matic rows to unchanged Remeha59, covering25s/35s/30c/40c
