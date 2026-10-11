@@ -12,7 +12,7 @@ export const buildArticleSchema = (guide, origin = business.canonicalOrigin) => 
   inLanguage: business.language,
   author: { "@type": "Organization", "@id": `${origin}/#organization`, name: business.name, url: `${origin}/over-ons` },
   publisher: { "@id": `${origin}/#organization` },
-  ...(guide.checkedAt ? { dateModified: guide.checkedAt } : {}),
+  ...(guide.modifiedAt ? { dateModified: guide.modifiedAt } : {}),
   citation: (guide.sourceLinks || []).map((source) => source.href),
 });
 

@@ -3,6 +3,12 @@ import assert from "node:assert/strict";
 
 import { pageRegistry } from "../content/site-content.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
+import { adviceGuides } from "../content/advice-guides.mjs";
+import { loadContactModule } from "./helpers/contact-runtime.mjs";
+import * as areas from "../content/service-areas.mjs";
+import * as services from "../content/additional-services.mjs";
+import * as brands from "../content/brand-services.mjs";
+import * as projects from "../content/projects.mjs";
 
 test("published page metadata is unique and uses the canonical host", () => {
   const published = pageRegistry.filter((page) => page.status === "published");
@@ -53,7 +59,7 @@ test("sitemap entries contain only published pages and no fabricated dates", () 
   }
 });
 
-test("editorial metadata uses the checked article date without inventing a publication date", () => {
+test("editorial metadata uses the explicit registry modification date without inventing a publication date", () => {
   const metadata = buildPageMetadata({ path: "/advies/voorbeeld", title: "Voorbeeld", description: "Uitleg", status: "published", kind: "article", lastModified: "2026-10-10" });
   assert.equal(metadata.openGraph.type, "article");
   assert.equal(metadata.openGraph.modifiedTime, "2026-10-10");
@@ -61,6 +67,41 @@ test("editorial metadata uses the checked article date without inventing a publi
   assert.equal(metadata.authors[0].name, "AB Service");
   const plain = buildSitemapEntries([{ path: "/", status: "published" }]);
   assert.ok(!Object.hasOwn(plain[0], "lastModified"));
+});
+
+test("registry, OG and sitemap derive article modification only from modifiedAt", async () => {
+  const original = adviceGuides[0];
+  // Only input data changes: the complete production registry and SEO builders run.
+  for (const modifiedAt of [undefined, "2026-10-10", "2026-10-11"]) {
+    const { pageRegistry: isolated } = await loadContactModule("content/site-content.mjs", {
+      "./service-areas.mjs": areas,
+      "./additional-services.mjs": services,
+      "./brand-services.mjs": brands,
+      "./projects.mjs": projects,
+      "./advice-guides.mjs": { adviceGuides: [{ ...original, checkedAt: "2026-10-12", modifiedAt }] },
+    });
+    const page = isolated.find(({ path }) => path === original.path);
+    const metadata = buildPageMetadata(page);
+    const sitemap = buildSitemapEntries(isolated).find(({ url }) => url.endsWith(original.path));
+    assert.equal(page.lastModified, modifiedAt);
+    assert.equal(metadata.openGraph.modifiedTime, modifiedAt);
+    assert.equal(sitemap.lastModified, modifiedAt);
+    if (!modifiedAt) {
+      assert.ok(!Object.hasOwn(metadata.openGraph, "modifiedTime"));
+      assert.ok(!Object.hasOwn(sitemap, "lastModified"));
+    }
+  }
+});
+
+test("actual guide registry, OG and sitemap retain five dates and advance the attest revision", () => {
+  const sitemap = buildSitemapEntries(pageRegistry);
+  for (const guide of adviceGuides) {
+    const expected = guide.slug === "onderhoudsattest-cv-ketel" ? "2026-10-11" : "2026-10-10";
+    const page = pageRegistry.find(({ path }) => path === guide.path);
+    assert.equal(page.lastModified, expected, guide.path);
+    assert.equal(buildPageMetadata(page).openGraph.modifiedTime, expected, guide.path);
+    assert.equal(sitemap.find(({ url }) => url.endsWith(guide.path)).lastModified, expected, guide.path);
+  }
 });
 
 test("published pages have distinct topic previews without changing the homepage or noindex fallback", () => {

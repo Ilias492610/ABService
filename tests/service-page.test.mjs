@@ -10,6 +10,8 @@ import * as sources from "../content/core-sources.mjs";
 import * as seo from "../libs/seo-data.mjs";
 import * as registry from "../content/site-content.mjs";
 import * as business from "../content/business.mjs";
+import * as advice from "../content/advice-guides.mjs";
+import * as schema from "../libs/schema-data.mjs";
 
 // Only tracking and framework image boundaries are replaced; production hero/CTA
 // and the complete ServicePage, data and contact context are rendered unchanged.
@@ -26,11 +28,14 @@ const { default: ServicePage } = await loadContactModule("components/service-pag
   "@/components/breadcrumbs": () => null,
   "@/content/service-intents.mjs": intents,
 });
+const jsonLd = await loadContactModule("components/json-ld.js");
 const pageDependencies = {
   "@/components/service-page": ServicePage,
   "@/content/media.mjs": media, "@/content/core-sources.mjs": sources,
   "@/libs/seo-data.mjs": seo, "@/content/site-content.mjs": registry,
   "@/content/additional-services.mjs": services,
+  "@/content/advice-guides.mjs": advice, "@/libs/schema-data.mjs": schema,
+  "@/components/json-ld": jsonLd,
 };
 const page = async (path, props) => (await loadContactModule(path, pageDependencies)).default(props);
 const render = (props) => renderToStaticMarkup(React.createElement(ServicePage, props));
@@ -43,6 +48,78 @@ const fixture = {
   relatedLinks: [{ label: "Existing related", href: "/tarieven" }],
   sourceLinks: [{ label: "Existing official source", href: "https://example.invalid/source" }],
 };
+
+const attestHtml = async () => renderToStaticMarkup(await page("app/advies/[slug]/page.js", {
+  params: Promise.resolve({ slug: "onderhoudsattest-cv-ketel" }),
+}));
+const visibleText = (html) => html.replace(/<script[\s\S]*?<\/script>/g, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+
+test("rendered attest guide explains the Flemish new-tenant document handoff", async () => {
+  const text = visibleText(await attestHtml());
+  assert.match(text, /eigenaar[^.]*kopie[^.]*laatste twee onderhoudsattesten[^.]*nieuwe huurder/i);
+  assert.match(text, /eigenaar[^.]*kopie[^.]*keuringsrapport[^.]*huurder/i);
+  assert.match(text, /huurder bezorgt een kopie aan de eigenaar/i);
+  assert.match(text, /bewaar minstens de laatste twee attesten/i);
+});
+
+test("rendered Brussels handoff identifies digital recipients and separates organizing from repair costs", async () => {
+  const text = visibleText(await attestHtml());
+  assert.match(text, /digitale[^.]*PDF/i);
+  assert.match(text, /eigenaar[^.]*contactpersoon[^.]*e-mailadres[^.]*technicus/i);
+  assert.match(text, /wie[^.]*attest[^.]*ontvangt/i);
+  assert.match(text, /huurcontract iemand anders aanwijst/i);
+  assert.match(text, /niet automatisch wie iedere herstelling betaalt/i);
+  assert.match(text, /afspraak[^.]*organisatie[^.]*geen[^.]*wettelijke[^.]*herstellingen/i);
+  assert.match(text, /officiële wooninformatie[^.]*Vlaanderen[^.]*Brussel/i);
+});
+
+test("rendered attest guide preserves unknown dates, safety limits, useful links and maintenance CTA", async () => {
+  const html = await attestHtml();
+  const text = visibleText(html);
+  assert.match(text, /eerdere uitvoerder, eigenaar of gebouwbeheerder[^.]*kopie/i);
+  assert.match(text, /geen onbekende onderhoudsdatum/i);
+  assert.match(text, /onbekend[^.]*niet automatisch[^.]*controle/i);
+  assert.match(text, /factuur alleen vervangt[^.]*niet/i);
+  assert.match(text, /geen beoordeling van de huidige veiligheid/i);
+  assert.match(text, /erkenning is persoonsgebonden/i);
+  assert.doesNotMatch(text, /AB Service is (?:een )?erkend/i);
+  assert.equal((html.match(/<h1>/g) || []).length, 1);
+  for (const title of ["Reinigings- en verbrandingsattesten bij onderhoud", "EPB-periodieke controle en het bijbehorende attest", "Een onderhoudsattest is geen rapport bij ingebruikname", "Welke gegevens maken een document bruikbaar?", "Vraag eerst het bestaande verslag op", "Van aanvraag tot duidelijke afspraak"]) assert.ok(html.includes(title), title);
+  for (const href of ["/tools/onderhoudscheck", "/onderhoud", "/keuring", "/installaties/gasketels"]) assert.ok(html.includes(`href="${href}"`), href);
+  assert.match(html, /href="\/contact\?dienst=Onderhoud\+cv-ketel#aanvraagformulier"/);
+  for (const { href } of advice.getAdviceGuide("onderhoudsattest-cv-ketel").sourceLinks) assert.ok(html.includes(`href="${href}"`), href);
+});
+
+test("advice caller supplies separately labeled source checking and content modification with organizational issuer", async () => {
+  const html = await attestHtml();
+  assert.match(html, /Uitgegeven door <a[^>]*href="\/over-ons"[^>]*>AB Service<\/a>/);
+  assert.match(html, /Broninformatie nagekeken op <time dateTime="2026-10-11">11 oktober 2026<\/time>/);
+  assert.match(html, /Inhoud gewijzigd op <time dateTime="2026-10-11">11 oktober 2026<\/time>/);
+  assert.equal((html.match(/<time /g) || []).length, 2);
+  const article = JSON.parse(html.match(/<script[^>]*id="article-schema"[^>]*>(.*?)<\/script>/)[1]);
+  assert.equal(article.dateModified, "2026-10-11");
+  assert.equal(article.author["@type"], "Organization");
+  assert.ok(!Object.hasOwn(article, "datePublished"));
+});
+
+test("editorial fields render independently, while callers with no editorial data retain existing rendering", () => {
+  const both = render({ ...fixture, editorial: { checkedAt: "2026-10-11", modifiedAt: "2026-10-10" } });
+  assert.match(both, /Broninformatie nagekeken op <time dateTime="2026-10-11">11 oktober 2026<\/time>/);
+  assert.match(both, /Inhoud gewijzigd op <time dateTime="2026-10-10">10 oktober 2026<\/time>/);
+  const checked = render({ ...fixture, editorial: { checkedAt: "2026-10-11" } });
+  assert.match(checked, /Broninformatie nagekeken op/);
+  assert.doesNotMatch(checked, /Inhoud gewijzigd op/);
+  const modified = render({ ...fixture, editorial: { modifiedAt: "2026-10-10" } });
+  assert.match(modified, /Inhoud gewijzigd op <time dateTime="2026-10-10">10 oktober 2026<\/time>/);
+  assert.doesNotMatch(modified, /Broninformatie nagekeken op/);
+  for (const editorial of [undefined, {}]) {
+    const html = render({ ...fixture, editorial });
+    assert.doesNotMatch(html, /editorial-note|Uitgegeven door|Broninformatie nagekeken|Inhoud gewijzigd|<time/);
+    for (const text of ["Answer", "Keep safe", "Existing section", "Existing paragraph", "Existing item", "Existing step", "Existing related", "Existing official source"]) assert.ok(html.includes(text), text);
+    assert.equal((html.match(/<h1>/g) || []).length, 1);
+    assert.match(html, /href="\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier"/);
+  }
+});
 
 // Catches a missing FAQ branch, unsafe HTML insertion or misplaced FAQ section.
 test("supplied FAQ renders native escaped disclosure before related links and CTA", () => {

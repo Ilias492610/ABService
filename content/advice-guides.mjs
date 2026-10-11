@@ -1,3 +1,6 @@
+import { coreSources } from "./core-sources.mjs";
+import { maintenanceSources } from "../libs/maintenance-check.mjs";
+
 const sources = Object.freeze({
   meter: {
     label: "Pidpa: waterverbruik en vermoedelijke lekken",
@@ -31,6 +34,10 @@ const sources = Object.freeze({
     label: "Vlaanderen: keuring van een nieuwe of gewijzigde cv-installatie",
     href: "https://www.vlaanderen.be/verplichte-keuring-van-een-nieuwe-of-gewijzigde-cv-installatie",
   },
+  brusselsInspection: {
+    label: "Leefmilieu Brussel: EPB-oplevering en controle bij plaatsing",
+    href: maintenanceSources.brusselsInspection,
+  },
   gasFlanders: {
     label: "Fluvius: gasgeur of gaslek melden",
     href: "https://www.fluvius.be/nl/storingen-en-werken/storing-aardgas",
@@ -50,7 +57,6 @@ const combustionWarning = "Bij gasgeur verlaat u het gebouw en belt u van buiten
 const guide = (entry) => Object.freeze({
   ...entry,
   path: `/advies/${entry.slug}`,
-  checkedAt: "2026-10-10",
   sections: Object.freeze(entry.sections),
   steps: Object.freeze(entry.steps),
   relatedLinks: Object.freeze(entry.relatedLinks),
@@ -60,6 +66,8 @@ const guide = (entry) => Object.freeze({
 export const adviceGuides = Object.freeze([
   guide({
     slug: "watermeter-blijft-draaien",
+    checkedAt: "2026-10-10",
+    modifiedAt: "2026-10-10",
     title: "Watermeter blijft draaien zonder watergebruik: wat controleren?",
     description: "Lees hoe u onverwacht waterverbruik veilig vastlegt, automatische verbruikers herkent en een vermoedelijk waterlek gericht laat onderzoeken.",
     eyebrow: "Onverwacht waterverbruik",
@@ -132,6 +140,8 @@ export const adviceGuides = Object.freeze([
   }),
   guide({
     slug: "radiator-blijft-koud",
+    checkedAt: "2026-10-10",
+    modifiedAt: "2026-10-10",
     title: "Radiator blijft koud terwijl andere radiatoren warm worden",
     description: "Eén koude radiator of helemaal geen verwarming? Noteer de verschillen, controleer gewone gebruikersinstellingen en lees wanneer onderzoek nodig is.",
     eyebrow: "Ongelijkmatige verwarming",
@@ -201,6 +211,8 @@ export const adviceGuides = Object.freeze([
   }),
   guide({
     slug: "geen-warm-water",
+    checkedAt: "2026-10-10",
+    modifiedAt: "2026-10-10",
     title: "Geen warm water: welke gegevens helpen bij de diagnose?",
     description: "Geen warm water aan één kraan of in de hele woning? Vergelijk tappunten, herken het toesteltype en bereid een gerichte herstellingsaanvraag voor.",
     eyebrow: "Warm water valt uit",
@@ -271,6 +283,8 @@ export const adviceGuides = Object.freeze([
   }),
   guide({
     slug: "boiler-veiligheidsgroep-druppelt",
+    checkedAt: "2026-10-10",
+    modifiedAt: "2026-10-10",
     title: "Veiligheidsgroep van uw boiler druppelt: wanneer controleren?",
     description: "Water bij een voorraadboiler? Noteer waar en wanneer het vrijkomt, onderscheid afvoer van lekkage en laat aanhoudend waterverlies beoordelen.",
     eyebrow: "Water bij de voorraadboiler",
@@ -340,6 +354,8 @@ export const adviceGuides = Object.freeze([
   }),
   guide({
     slug: "afvoer-verstopt-wat-doen",
+    checkedAt: "2026-10-10",
+    modifiedAt: "2026-10-10",
     title: "Afvoer verstopt: wat geeft u door vóór een ontstopping?",
     description: "Bereid een veilige ontstopping voor: vermeld getroffen afvoeren, terugkerende klachten, bereikbaarheid en eerder gebruikte chemische producten.",
     eyebrow: "Afvoer en doorstroming",
@@ -412,6 +428,8 @@ export const adviceGuides = Object.freeze([
   }),
   guide({
     slug: "onderhoudsattest-cv-ketel",
+    checkedAt: "2026-10-11",
+    modifiedAt: "2026-10-11",
     title: "Onderhoudsattest cv-ketel: wat bewaren en doorgeven?",
     description: "Welke cv-documenten bewaart u in Vlaanderen of Brussel? Lees het verschil tussen onderhoudsattesten, EPB-controle en een rapport bij ingebruikname.",
     eyebrow: "Documenten bij uw installatie",
@@ -430,11 +448,20 @@ export const adviceGuides = Object.freeze([
         ],
       },
       {
+        eyebrow: "Nieuwe huurder",
+        title: "Welke documenten geeft de eigenaar door in Vlaanderen?",
+        paragraphs: [
+          "In Vlaanderen bezorgt de eigenaar kopieën van de laatste twee onderhoudsattesten aan de nieuwe huurder. Leg bij de overdracht vast bij welk toestel die horen en welke documenten nog ontbreken.",
+          "De eigenaar bezorgt ook een kopie van het keuringsrapport bij ingebruikname aan de huurder. De huurder geeft op zijn beurt kopieën van de onderhoudsattesten aan de eigenaar, zodat beiden het dossier kunnen bijhouden.",
+        ],
+      },
+      {
         eyebrow: "Brussel",
         title: "EPB-periodieke controle en het bijbehorende attest",
         paragraphs: [
           "Bij de Brusselse EPB-periodieke controle controleert een erkende EPB-verwarmingsketeltechnicus de installatie en ontvangt u het bijbehorende attest. Bewaar het bij de installatiedocumenten en kijk welke uitkomst of vervolgstappen zijn vermeld.",
           "Leefmilieu Brussel legt de periodieke controle bij een huurpand in beginsel bij de huurder, tenzij het huurcontract iemand anders aanwijst. Dat zegt niet automatisch wie iedere herstelling betaalt. Laat de concrete afspraken verduidelijken bij twijfel.",
+          "Spreek vooraf af wie het digitale attest als PDF ontvangt en bewaart. Wilt u dat de eigenaar of een contactpersoon het ook ontvangt, geef dan diens e-mailadres aan de technicus voor de digitale bezorging.",
         ],
       },
       {
@@ -442,6 +469,7 @@ export const adviceGuides = Object.freeze([
         title: "Een onderhoudsattest is geen rapport bij ingebruikname",
         paragraphs: [
           "In Vlaanderen hoort bij een nieuw of gewijzigd centraal stooktoestel in de toepasselijke situaties een keuring vóór ingebruikname. In Brussel bestaat bij plaatsing of vervanging van een verwarmingsketel de afzonderlijke EPB-oplevering.",
+          "Een afzonderlijke gaswaterverwarmer krijgt bij plaatsing in Brussel een eerste EPB-periodieke controle. Verwar die handeling niet met de EPB-oplevering van een centrale verwarmingsketel.",
           "Vermeld bij een aanvraag of u een onderhoud, een controle na wijziging of ontbrekende ingebruiknamedocumenten bedoelt. De term ‘keuring’ alleen kan voor verschillende vragen worden gebruikt.",
         ],
       },
@@ -458,10 +486,19 @@ export const adviceGuides = Object.freeze([
         paragraphs: ["Gebruik de onderhoudscheck als hulp bij uw planning. Een volgende datum of oorspronkelijke onderhoudscyclus op het bestaande attest blijft relevante informatie; een berekening met alleen de laatste bezoekdatum kan daarvan afwijken."],
       },
       {
+        eyebrow: "Huurwoning",
+        title: "Houd documentoverdracht en herstellingskosten uit elkaar",
+        paragraphs: [
+          "Voor de verdeling van onderhoud en herstellingen raadpleegt u de officiële wooninformatie voor Vlaanderen of Brussel. Welke verplichting geldt, hangt af van het gewest en de concrete situatie; documentoverdracht bepaalt op zichzelf niet wie een herstelling betaalt.",
+          "Een afspraak over de organisatie van de controle geeft geen vrijstelling van de wettelijke regels voor herstellingen aan huurwoningen. In Brussel kunnen de partijen niet van de wettelijke verdeling van herstellingen afwijken.",
+        ],
+      },
+      {
         eyebrow: "Ontbrekend document",
         title: "Vraag eerst het bestaande verslag op",
         paragraphs: [
           "Vraag de eerdere uitvoerder, eigenaar of gebouwbeheerder of een kopie beschikbaar is. Meld welke documenten ontbreken en vul geen onbekende onderhoudsdatum in om een aanvraag compleet te maken.",
+          "Blijft een document of datum onbekend, kies dan niet automatisch een controle op basis van een vermoeden. Laat eerst verduidelijken welk toestel, welke handeling en welke bestaande documenten van toepassing zijn.",
           "Een foto of factuur kan het toestel en eerdere opdracht helpen identificeren, maar bewijst niet zelfstandig dat alle vereiste controles uitgevoerd zijn. Bespreek wat moet worden nagekeken voordat een nieuwe afspraak wordt vastgelegd.",
         ],
       },
@@ -478,7 +515,11 @@ export const adviceGuides = Object.freeze([
       { label: "Keuring bij plaatsing of wijziging", href: "/keuring" },
       { label: "Gasketelinstallatie en oplevering", href: "/installaties/gasketels" },
     ],
-    sourceLinks: [sources.flemishMaintenance, sources.brusselsMaintenance, sources.flemishInspection],
+    sourceLinks: [
+      sources.flemishMaintenance, sources.brusselsMaintenance, sources.flemishInspection,
+      coreSources.rentalHeatingFlanders, coreSources.rentalRepairsFlanders,
+      coreSources.rentalRepairsBrussels, sources.brusselsInspection,
+    ],
   }),
 ]);
 

@@ -24,8 +24,8 @@ test("global schema contains only verified business facts", () => {
   assert.ok(!("priceRange" in business));
 });
 
-test("article schema matches the visible organizational author, sources and checked date", () => {
-  const schema = buildArticleSchema({ path: "/advies/test", title: "Heldere uitleg", description: "Een antwoord", checkedAt: "2026-10-10", sourceLinks: [{ href: "https://www.vlaanderen.be/voorbeeld" }] });
+test("article schema uses content modification independently of source checking", () => {
+  const schema = buildArticleSchema({ path: "/advies/test", title: "Heldere uitleg", description: "Een antwoord", checkedAt: "2026-10-11", modifiedAt: "2026-10-10", sourceLinks: [{ href: "https://www.vlaanderen.be/voorbeeld" }] });
   assert.equal(schema["@type"], "Article");
   assert.equal(schema.headline, "Heldere uitleg");
   assert.equal(schema.mainEntityOfPage["@id"], "https://www.abservice24.be/advies/test");
@@ -35,6 +35,16 @@ test("article schema matches the visible organizational author, sources and chec
   assert.ok(!schema.datePublished);
   assert.ok(!schema.reviewedBy);
   assert.ok(!schema.aggregateRating);
+});
+
+test("source checking alone never creates an article modification or publication date", () => {
+  for (const checkedAt of [undefined, "2026-10-11"]) {
+    const schema = buildArticleSchema({ path: "/advies/test", title: "Heldere uitleg", description: "Een antwoord", checkedAt });
+    assert.ok(!Object.hasOwn(schema, "dateModified"));
+    assert.ok(!Object.hasOwn(schema, "datePublished"));
+  }
+  const schema = buildArticleSchema({ path: "/advies/test", title: "Heldere uitleg", description: "Een antwoord", modifiedAt: "2026-10-11" });
+  assert.equal(schema.dateModified, "2026-10-11");
 });
 
 test("breadcrumb schema uses canonical URLs in visible order", () => {

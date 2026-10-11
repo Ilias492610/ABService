@@ -20,6 +20,6 @@ export default async function AdviceGuidePage({ params }) {
   if (!guide) notFound();
   return <>
     <JsonLd id="article-schema" data={buildArticleSchema(guide)} />
-    <ServicePage {...guide} breadcrumb={[{ name: "Advies", path: "/advies" }, { name: guide.title, path: guide.path }]} editorial={{ checkedAt: guide.checkedAt }} />
+    <ServicePage {...guide} breadcrumb={[{ name: "Advies", path: "/advies" }, { name: guide.title, path: guide.path }]} editorial={{ checkedAt: guide.checkedAt, modifiedAt: guide.modifiedAt }} />
   </>;
 }

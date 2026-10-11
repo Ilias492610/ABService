@@ -26,7 +26,7 @@ test("published guide data can render sections and hand off to an accepted conta
     for (const field of ["title", "description", "eyebrow", "intro", "answer", "warning"]) {
       assert.ok(typeof guide[field] === "string" && guide[field].trim(), `${guide.slug}: ${field}`);
     }
-    assert.equal(guide.checkedAt, "2026-10-10");
+    assert.match(guide.checkedAt, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(categories.includes(guide.category));
     assert.ok(CONTACT_SERVICES.includes(guide.contactService));
     assert.ok(guide.sections.length >= 4);
@@ -44,7 +44,7 @@ test("guides cite primary sources and expose useful internal links", () => {
   const officialHosts = new Set([
     "www.pidpa.be", "www.dewatergroep.be", "www.bosch-homecomfort.com",
     "www.vaillant.be", "www.atlantic.fr", "www.antigifcentrum.be",
-    "www.vlaanderen.be", "leefmilieu.brussels", "www.fluvius.be", "www.sibelga.be",
+    "www.vlaanderen.be", "leefmilieu.brussels", "be.brussels", "www.fluvius.be", "www.sibelga.be",
   ]);
   for (const guide of adviceGuides) {
     assert.ok(guide.sourceLinks.length > 0, guide.slug);
@@ -57,6 +57,14 @@ test("guides cite primary sources and expose useful internal links", () => {
     assert.ok(guide.relatedLinks.length >= 3, guide.slug);
     assert.ok(guide.relatedLinks.every((link) => link.label && /^\/(?!\/)/.test(link.href)));
     assert.ok(guide.relatedLinks.every((link) => link.href !== guide.path));
+  }
+});
+
+test("only the substantively revised attest guide advances its explicit editorial dates", () => {
+  for (const guide of adviceGuides) {
+    const expected = guide.slug === "onderhoudsattest-cv-ketel" ? "2026-10-11" : "2026-10-10";
+    assert.equal(guide.modifiedAt, expected, `${guide.slug}: content modification`);
+    assert.equal(guide.checkedAt, expected, `${guide.slug}: source check`);
   }
 });
 

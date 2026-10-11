@@ -6,6 +6,8 @@ import PageHero from "@/components/page-hero";
 import { serviceIntents } from "@/content/service-intents.mjs";
 import { buildContactHref } from "@/libs/contact-context.mjs";
 
+const editorialDate = (date) => new Intl.DateTimeFormat("nl-BE", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
+
 export default function ServicePage({
   breadcrumb,
   eyebrow,
@@ -35,7 +37,13 @@ export default function ServicePage({
       <section className="section section-compact">
         <div className="shell narrow">
           <p className="answer-box">{answer}</p>
-          {editorial?.checkedAt && <p className="editorial-note">Uitgegeven door <Link href="/over-ons">AB Service</Link>. Broninformatie nagekeken op <time dateTime={editorial.checkedAt}>{new Intl.DateTimeFormat("nl-BE", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${editorial.checkedAt}T00:00:00Z`))}</time>.</p>}
+          {(editorial?.checkedAt || editorial?.modifiedAt) && (
+            <p className="editorial-note">
+              Uitgegeven door <Link href="/over-ons">AB Service</Link>.
+              {editorial.checkedAt && <> Broninformatie nagekeken op <time dateTime={editorial.checkedAt}>{editorialDate(editorial.checkedAt)}</time>.</>}
+              {editorial.modifiedAt && <> Inhoud gewijzigd op <time dateTime={editorial.modifiedAt}>{editorialDate(editorial.modifiedAt)}</time>.</>}
+            </p>
+          )}
           {warning && (
             <aside className="warning-box">
               <strong>Veiligheid eerst</strong>

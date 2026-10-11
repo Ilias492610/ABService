@@ -316,7 +316,7 @@ export const pageRegistry = Object.freeze([
     title: `${guide.title} | AB Service`,
     description: guide.description,
     kind: "article",
-    lastModified: guide.checkedAt,
+    lastModified: guide.modifiedAt,
     changeFrequency: "monthly",
     priority: 0.65,
   })),

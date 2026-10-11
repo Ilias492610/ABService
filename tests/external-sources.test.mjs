@@ -4,6 +4,22 @@ import { createServer } from "node:http";
 import { once } from "node:events";
 
 import { auditExternalSources } from "../libs/external-source-audit.mjs";
+import { getCitedSources } from "../libs/cited-sources.mjs";
+import { getAdviceGuide } from "../content/advice-guides.mjs";
+
+test("attest handoff cites the exact regional heating and housing pages and monitors them", () => {
+  const guideHrefs = new Set(getAdviceGuide("onderhoudsattest-cv-ketel").sourceLinks.map(({ href }) => href));
+  const monitoredHrefs = new Set(getCitedSources().map(({ href }) => href));
+  for (const href of [
+    "https://www.vlaanderen.be/bouwen-wonen-en-energie/verwarming-koeling-en-ventilatie/keuring-en-onderhoud-van-uw-verwarming/verplichtingen-voor-centrale-verwarming-en-stookolietank-voor-verhuurder-en-huurder",
+    "https://www.vlaanderen.be/bouwen-wonen-en-energie/huren-en-verhuren/onderhoud-en-herstellingen-aan-huurwoningen",
+    "https://be.brussels/nl/huisvesting/huren-en-verhuren/huurovereenkomst/verdeling-van-de-herstellingen-tussen-de-huurder-en-de-verhuurder",
+    "https://leefmilieu.brussels/pro/regelgeving-en-inspectie/verplichtingen-en-vergunningen/technische-installaties-epb-controles-en-onderhoud",
+  ]) {
+    assert.ok(guideHrefs.has(href), `Missing guide citation: ${href}`);
+    assert.ok(monitoredHrefs.has(href), `Unmonitored citation: ${href}`);
+  }
+});
 
 test("the source inventory includes the consumer pages' pressure, recognition and current support citations", async () => {
   const inventory = await import("../libs/cited-sources.mjs").catch(() => ({}));
