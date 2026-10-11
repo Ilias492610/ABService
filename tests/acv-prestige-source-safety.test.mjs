@@ -7,6 +7,8 @@ import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { renderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
 import { acvFacts as facts, beforeAcvGuide, beforeAcvRegistry, beforeAcvMetadata, beforeAcvHtml } from "./fixtures/acv-prestige-source-safety.mjs";
+import { beforeIntergasGuide, beforeIntergasRegistry } from "./fixtures/intergas-prestige-source-context.mjs";
+import { beforeFaultReadingHtml } from "./fixtures/fault-reading-clearance.mjs";
 
 const guide = getFaultGuide("acv"), catalog = guide.catalogs[0];
 const hash = value => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
@@ -77,13 +79,13 @@ test("ACV real SSR exposes every selected row, safe action, source scope and nat
     assert.ok(article?.includes(action), code);
   }
   assert.match(html, /\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);
-  assert.equal(hash(beforeAcvHtml(html, "acv")), facts.preservation.html);
+  assert.equal(hash(beforeAcvHtml(beforeFaultReadingHtml(html), "acv")), facts.preservation.html);
 });
 
 // Integrity only: full genuine baseline, no source completeness certification.
 test("all other12 full guides and all registry fields preserve the genuine64 captures", () => {
-  assert.equal(hash(faultGuides.filter(g => g.slug !== "acv")), facts.preservation.otherTwelveGuides);
-  assert.equal(hash(pageRegistry.map(beforeAcvRegistry)), facts.preservation.allRegistry);
+  assert.equal(hash(faultGuides.filter(g => g.slug !== "acv").map(beforeIntergasGuide)), facts.preservation.otherTwelveGuides);
+  assert.equal(hash(pageRegistry.map(beforeIntergasRegistry).map(beforeAcvRegistry)), facts.preservation.allRegistry);
   assert.equal(hash(beforeAcvGuide(guide)), facts.preservation.guide);
   assert.equal(hash(beforeAcvGuide(guide).codes), facts.preservation.codes);
   assert.equal(faultGuides.reduce((n,g) => n + g.codeEntryCount, 0), 1596);

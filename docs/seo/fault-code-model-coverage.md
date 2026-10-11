@@ -1,9 +1,10 @@
 # WP07 — actuele model- en brondekking
 
-Vastlegging 11 oktober 2026; geaccepteerd productbaseline `64e93669`.
-Task49's Bosch/Junkers-scopecorrectie is onafhankelijk gereviewd en exact door
-CI/beide Production-projecten/live geaccepteerd. Task50's historischeACVscope/
-vier eersteacties zijn lokaal geverifieerd; review/hosted/live blijven gates.
+Vastlegging 11 oktober 2026; geaccepteerd productbaseline `64d7f56e`.
+Task50's historische ACVscope/vier eersteacties zijn onafhankelijk gereviewd en
+exact door CI/beide werkelijke Production-projecten/live geaccepteerd.
+Task52's Intergas-bron-/displaycontext is lokaal/native geverifieerd; review/
+hosted/live blijven aparte gates. Task53's leesmarker is geen extra brondekking.
 Task47 inventariseert, Task48 leest één extra historische tabelbron en
 Task49 leest afgebakend de context van één professioneel codeboek.
 Dit is **geen bronheraudit van de overige catalogi, bewijs van de nieuwste
@@ -23,6 +24,12 @@ exact. Nieuw Nederlands/hoofdstukjaar/context is geen nieuwe 242-regelheraudit.
 Task50 voegt de tiende snapshot toe, leest daadwerkelijk de ACV-identiteit en
 geselecteerde24groepen en corrigeert vier eersteacties. Andere31records/negen
 snapshots/twaalfgidsrecords blijven exact. Dag/SKU/firmware/currentfit onbekend.
+Task52 voegt een elfde snapshot toe: werkelijk gelezen Prestige A CW6/
+88136803,11groepen/20nummers/drie gegroepeerde broncellen. Knipperende storingsled
+en temperatuurdisplay onderscheiden deze tabel van normale servicedisplaystates.
+Alle11acties/andere10betekenissen behouden; andere31records/10snapshots/12mirrors
+exact. NL-context is geen actuele Belgische toestel-/firmware-/SKU-bevestiging;
+editie/revisie blijven onbekend. Geen nieuwe ontbrekende/bedrijfscodes verzonnen.
 
 ## Wat de aantallen betekenen
 
@@ -57,9 +64,9 @@ toegankelijkheid of inhoud gecertificeerd.
 ## Alle afzonderlijke catalogi
 
 Een bewaard bronbestand plus eerder afgebakend leesrapport is sterker bewijs
-dan uitsluitend een bestaande declaratie. Eenentwintig catalogi zijn gekoppeld
-aan acht bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
-Negen hebben binnen deze inventaris alleen de bestaande declaratie en
+dan uitsluitend een bestaande declaratie. Tweeëntwintig catalogi zijn gekoppeld
+aan negen bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
+Acht hebben binnen deze inventaris alleen de bestaande declaratie en
 historische bewijsregistratie (G). Bewaren/hashvergelijking is op zichzelf
 geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
@@ -92,7 +99,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 | `buderus-logamax-gb162-v2` | 52 | Tabel 17, p. 33-37 | [bron 10](https://buderus-be-fl.boschtt-documents.com/download/pdf/file/6720813438.pdf) | buderus-gb162-pdf |
 | `viessmann-vitodens-200-300-vitotronic` | 71 | Officiële online tabel | [bron 11](https://www.viessmann.de/de/wissen/wartung-und-reparatur/fehlercodes.html) | G: declaratie/historisch register |
 | `acv-prestige-mkiii` | 24 | p. 42-43; 664Y4200 H/03-2011 | [bron 12](https://downloads.acv.com/NT_664Y4200_H_Prestige_MkIII_NL.pdf) | acv-prestige-mkiii-pdf; geselecteerde tabel |
-| `intergas-prestige` | 11 | § 8.1, p. 42 | [bron 13](https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf) | G: declaratie/historisch register |
+| `intergas-prestige` | 11 | § 8.1, p. 42; Prestige A CW6/NL/88136803 | [bron 13](https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf) | intergas-prestige-pdf; geselecteerde tabel-/displaycontext |
 | `nefit-proline-hrc` | 54 | Tabel 25, p. 31-34 | [bron 14](https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf) | G: declaratie/historisch register |
 | `atag-officieel-overzicht` | 14 | Online merkoverzicht | [bron 15](https://www.atagwarmte.nl/atag-cv-ketel-storingscodes) | G: declaratie/historisch register |
 | `itho-base-cube` | 26 | § 7.2-7.4, p. 79-95 | [bron 16](https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf) | G: declaratie/historisch register |
@@ -161,8 +168,10 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
   Geselecteerde42–43:23E+NTC/24groepen/25beschrijvingssubregels, E03samengevoegd.
   NTC temperatuurverschil, E37 geen drukrichting/grens; vier acties nietbijvullen.
   Historisch multi-country, geen BE-only/SKU/firmware/nieuwste compatibiliteit.
-- Intergas: gedeclareerd Prestige §8.1 p. 42; `88136803` in een
-  bestandsnaam is hier geen waargenomen footerrevisie of ketelartikel.
+- Intergas: werkelijk Prestige A CW6/§8.1p42/88136803 op footer56.
+  Elf bronregels/twintig nummers; knipperende storingsled met temperatuurdisplay,
+  niet normale servicedisplaystates. NL-context, editie/revisie/ketelartikel/
+  firmware/actuele Belgische toepasbaarheid onbekend; geen nieuwsteclaim.
 - Nefit: declaratie ProLine HRC 24/CW3, 24/CW4, 30/CW5, tabel 25
   pp. 31–34. Exacte artikel/markt/taal/handboekrevisie nog niet herlezen.
 - ATAG: gedeclareerd Nederlands online overzicht, Q-serie/ECZ in bestaande
@@ -174,7 +183,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
 JSON-`null` betekent: niet vastgesteld binnen deze afgebakende inventaris,
 niet dat een gegeven niet bestaat. De velddeclaratie en de bewijsbasis blijven
-onderscheiden. De acht PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
+onderscheiden. De negen PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
 in `snapshots`; de eerdere leesrapporten blijven in de lokale recoveryledger.
 
 ## Vervolg binnen het bestaande meesterplan
@@ -187,8 +196,10 @@ bestaande contactcontext. Alle oorspronkelijke 43 regels/scopes en overige
 twaalf gidsen blijven ongewijzigd. Task48 voegt uitsluitend de eigen 31 A/B-
 regels toe en is inmiddels geaccepteerd als `e71fbf69`; de exacte CI, beide
 werkelijke Productionstatuses, canonical tests en één IndexNow-ontvangstbewijs
-staan apart in de QA-registratie. Task49's lokale contextcorrectie bewaart alle
-242codeobjecten/elf andere gidsen; sole review en exacte release staan nog open.
+staan apart in de QA-registratie. Task49's contextcorrectie bewaart alle
+242codeobjecten/elf andere gidsen en is exact geaccepteerd als `64e93669`.
+Task50's ACVcorrectie is exact geaccepteerd als `64d7f56e`; Task52's Intergas-
+context en Task53's leesmarker zijn de huidige lokale kandidaten, nog niet live.
 
 Verdere modeluitbreiding pas na exacte primaire toepasbaarheid/revisie en
 consumentveilige uitleg; prioritair echte zoek-/intakevragen, niet verzonnen

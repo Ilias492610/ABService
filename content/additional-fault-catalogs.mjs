@@ -293,8 +293,8 @@ export const intergasCatalogs = Object.freeze([
     id: "intergas-prestige",
     title: "Prestige",
     scope:
-      "Alle storingscoderegels uit hoofdstuk 8.1 van het officiële installatievoorschrift voor Intergas Prestige; gegroepeerde sensorcodes blijven als één bronregel staan en zijn afzonderlijk doorzoekbaar.",
-    sourceLabel: "Intergas Prestige - installatievoorschrift",
+      "De 11 bronregels uit § 8.1, p. 42 van installatievoorschrift 88136803 voor Prestige A CW6, met Nederlandse toestelcontext. De tabel geldt bij een knipperende storingsled en een code op het temperatuurdisplay. Cijfers op het servicedisplay kunnen normale bedrijfstoestanden zijn en zijn geen bewijs van deze storing. De drie gegroepeerde bronregels blijven samen en hun 20 genummerde meldingen zijn afzonderlijk doorzoekbaar. Andere modellen en revisies zijn niet gedekt; controleer uw exacte toestel en gebruikershandleiding.",
+    sourceLabel: "Intergas Prestige A CW6 - installatievoorschrift 88136803 (NL-toestelcontext)",
     sourceUrl: "https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf",
     sourcePages: "§ 8.1, p. 42",
     rows: [
@@ -302,7 +302,7 @@ export const intergasCatalogs = Object.freeze([
       ["20 / 21 / 22 / 23 / 24", "Temperatuursensor S2 meldt een fout."],
       ["0", "Na de automatische zelfcontrole is een sensorfout vastgesteld."],
       ["1", "De gemeten temperatuur is te hoog."],
-      ["2", "Temperatuursensor S1 en S2 zijn verwisseld of leveren onlogische waarden."],
+      ["2", "Temperatuursensor S1 en S2 zijn verwisseld."],
       ["4", "Na de ontstekingspoging is geen vlamsignaal gemeten.", "gas"],
       ["5", "Het gemeten vlamsignaal is onvoldoende.", "gas"],
       ["6", "De vlamdetectie meldt een fout.", "gas"],

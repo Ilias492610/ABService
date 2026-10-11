@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { boschBoundaryFacts } from "./fixtures/bosch-junkers-source-boundaries.mjs";
 import { acvFacts } from "./fixtures/acv-prestige-source-safety.mjs";
+import { intergasFacts } from "./fixtures/intergas-prestige-source-context.mjs";
 
 const manifest = JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json", import.meta.url), "utf8"));
 const catalogs = [...new Map(faultGuides.flatMap(g => g.catalogs.map(c => [c.id, c]))).values()];
@@ -41,8 +42,8 @@ test("the bounded model inventory matches every real guide assignment, scope, so
 });
 
 test("the inventory keeps unknown fields and retained evidence distinct rather than declaring a fresh audit", () => {
-  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 21);
-  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 9);
+  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 22);
+  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 8);
   assert.equal(manifest.snapshots.filter(s => s.hashMatchesPriorRecord === true).length, 7);
   assert.equal(manifest.snapshots.find(s => s.id === "vaillant-public-html").expectedSha256, null);
   for (const e of manifest.entries) {
@@ -83,4 +84,19 @@ test("the inventory keeps unknown fields and retained evidence distinct rather t
   assert.equal(acvSnapshot.expectedSha256, null);
   assert.equal(acvSnapshot.hashMatchesPriorRecord, null);
   assert.equal(acvSnapshot.pageCount, acvFacts.pageCount);
+  const intergas = manifest.entries.find(e => e.id === intergasFacts.id);
+  assert.deepEqual(intergas.models, intergasFacts.models);
+  assert.equal(intergas.documentNumber, intergasFacts.document);
+  assert.equal(intergas.language, "nl");
+  assert.equal(intergas.literalCodeGroupCount, 11);
+  assert.equal(intergas.literalNumericIdentifierCount, 20);
+  assert.equal(intergas.literalGroupedCellCount, 3);
+  assert.match(intergas.displayContext, /Blinking fault LED.*temperature display.*service-display/);
+  for (const field of ["revision", "issueDate", "articleNumbers", "market", "component", "tableIds"]) assert.equal(intergas[field], null);
+  const intergasSnapshot = manifest.snapshots.find(s => s.id === "intergas-prestige-pdf");
+  assert.equal(intergasSnapshot.sha256, intergasFacts.sha256);
+  assert.equal(intergasSnapshot.expectedSha256, null);
+  assert.equal(intergasSnapshot.hashMatchesPriorRecord, null);
+  assert.equal(intergasSnapshot.pageCount, intergasFacts.pageCount);
+  assert.equal(manifest.snapshots.length, 11);
 });

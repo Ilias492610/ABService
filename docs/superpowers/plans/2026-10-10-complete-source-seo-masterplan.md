@@ -353,6 +353,25 @@ groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
+**Task52 lokaal kandidaat, 11 oktober:** Intergas Prestige A CW6 uit werkelijke
+56pagina-PDF88136803/SHA28996b1b8237b8dd778d860321b1fea2b08a106b2712a9176594f000eaf66d7a.
+§8.1p42:11groepen/20nummers/drie gegroepeerde cellen; knipperende storingsled en
+temperatuurdisplay onderscheiden van normale servicedisplaystates. Alleen scope/
+waarschuwing/bronlabel/code2betekenis/meta/echteIntergasdatum wijzigen; alle11acties/
+andere10betekenissen/aliases/IDs/volgorde/12gidsen behouden. NL-context is geen
+actueleBelgischeSKU/firmware/nieuwste-editieclaim; revisie/datum onbekend.
+Echte441baseline/RED13fail1pass→GREEN14/fresh455/lint/productie0/build170 slagen;
+localcrawl82/93/112/vierIntergasnative189GET/112zoekchecks/achtcontactflows slagen;
+review/hosted/live nog aparte gates. Inventaris22PDF-gelinkt/9PDF/
+2web/8declaraties; andere31records/10snapshots/12mirrors/tellingen exact.
+
+**Task50 werkelijk geaccepteerd:**64d7f56e/solefreshreview/fresh441/exact
+CI38158155937success17:05:55UTC; werkelijkematching namedProduction6998848792/
+6998848254success17:05:31/17:05:28UTC, canonical82/93/112/viernative185GET/
+48zoekcases/achtcontactflows. EénACVIndexNowHTTP200ontvangen na proof/live,
+geenindexatie. Onderstaande Task50kandidaatnotitie is historische voorbereiding;
+Task46readingMinor/WP07eigenaar/model/accountgates niet daarmee gesloten.
+
 **Task50 lokaal geverifieerd, release pending:** officiëleACV664Y4200 H/03/2011,
 44pagina's/SHAeda557c6086ab17148973eafea4127ce4fda38147ac9569f0b3b188dbf9b61b3.
 Solo/Excellence18/32MkIII/ESYS;23E+NTC op42–43, E03samengevoegd; geen universele/
@@ -636,6 +655,21 @@ opgeschoond. Geen account/e-mailgate of lekdiagnose. Release/live gate blijft op
 daadwerkelijke eventontvangst, passende aanvragen en evaluatie zijn niet gemeten.
 
 ### WP12 — Technische SEO, CWV, toegankelijkheid en security
+
+**Task53 lokaal kandidaat:** één marker op bestaande foutcodeleessection en
+één extra protectedZonesselector. Beide floatingcontrols verdwijnen zolang
+enig deel zichtbaar is, ook desktop; stickytelefoon/nativeCTA/bronnen/originele
+logo/reviewfuncties blijven. Kosten: geen floatingcontrols tijdens langecatalogs.
+Generieke eindCTA blijft buiten deze marker. Pending/focus/meerderezones/dynamische
+route/dismissal/stale-callbackunitchecks en13volledigeSSRpreservation slagen;
+455/lint/productie0/build170/local82/93/112. Zes echte390/320/1440-browserprofielen
+slagen243GET/108cases/18ownedfocus/72beelden: reading bottomalignedvrij/restoration/
+nativefocus/dismissal exact. Hoofdonderzoeker leest volledigeharness/results en
+werkelijkepixels. ReadingMinor lokaal begrensd opgelost; review/exactlive nog gate.
+Rating503/synthetische2004.7/123/18homepageRSC204 zijn fixtures, geenproviderbewijs;
+Intergas12homepageprefetches sluiten serverPlacescalls niet uit. Hero intro overlap
+bijrestoration blijft uitgesteldMinor; generieke eindCTA/onmarkeerdeprose buiten
+deze reparatie. Geen algehele leesbaarheids-/AT-/field-/performanceclaim.
 
 **Task51 onderzoek afgerond, bevindingen niet opgelost:** één freshfullaudit
 9geraaktepackage/ancestorrecords(7high/2moderate),twee advisories,alle10paden dev.

@@ -1,5 +1,51 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — Tasks52–53 Intergas context and fault-reading clearance; local candidate
+
+Task52 corrects the existing Intergas guide using the retained official56-page
+installation manual88136803, Prestige A CW6. Its11 sourcegroups/20 literal
+numbers require a blinking faultLED and a code on the temperature display;
+ordinary service-display states are different. Code2 now says only S1/S2 swap,
+not an unsupported alternative diagnosis. Scope/warning/source label/meta and
+the genuinely changed Intergas date are narrowed; all11 actions/aliases/order/
+pages, other10 meanings and twelve other guides remain exact. NL source context
+is not proof of current Belgian SKU/firmware compatibility or newest edition.
+
+Task53 adds one explicit marker to the existing reading section and one selector
+to the existing visibility observer. While any of that section is visible,
+floating WhatsApp/Google controls clear it on all viewports; elsewhere they
+return unless another protected zone is visible or Google was dismissed.
+Sticky phone/native contacts/source links and original logos/reviews stay.
+The cost is reduced floating-control availability during long reading sections.
+Final generic contact CTA stays outside this bounded repair. No whole-site
+readability, physical assistive, provider-health or performance claim.
+
+Genuine441 baseline, new RED13fail/1pass before product edits, GREEN14/14 and
+fresh455/455 pass. A new test's overly broad `stel.*gas` expression matched
+`toestel`/`rookgas`; word boundaries correct only that assertion, not actions.
+Eight historical/mirror failures retain fixed digests through exact named
+Intergas/reading-marker projections. Lint0/productionaudit0/build170 pass;
+localcrawl82/93/112 and four Intergasnative189GET/112queries/eightcontacts pass.
+Six widgetprofiles243GET/108cases/18ownedfocus/72screenshots pass, including
+bottomalignedreading clear/restoration/dismissal/nativefocus. Root reads entire
+harnesses/results and actual screenshots. Exact review/hosted/live gates pending.
+Rating503/synthetic2004.7/123 are test-only, not business/provider evidence;
+Task53 additionally isolates18homepageRSCprefetches with exact204fixtures.
+Task52's12homepageprefetches cannot exclude serverPlacesfetches. Reading-overlap
+minor closed locally only for tested regions; hero intro overlap on restoration
+and generic finalCTA/unmarked text remain an explicit deferred minor/boundary.
+Inventory now22 PDF-linked catalogs/nine PDFs/two web/eight declarations;
+other31 records/ten snapshots/twelve guide mirrors and32/38/1596/1354/18 counts
+compare exactly to real pre-edit captures. No new URLs or invented code gaps.
+
+Task50 actually accepted as `64d7f56e8b65b3139253a19070824d1dabcd47fb`:
+sole fresh review/fresh441/[CI38158155937](https://github.com/Ilias492610/ABService/actions/runs/38158155937)
+success17:05:55UTC; matching-SHA actual namedProduction6998848792/6998848254
+success17:05:31/17:05:28UTC. Canonical82/93/112 and four unchanged native live
+profiles185GET/48querycases/eightcontacts pass. One ACV IndexNowHTTP200 receipt
+after proof/live is receipt, not indexing. Previous candidate entries are history.
+Task51 development/lifecycle findings, broaderWP07/WP12 and owner gates stay open.
+
 ## 11 October 2026 — ACV historical source and safe actions; local candidate
 
 - Task50 ties the existing24 groups to actual ACV664Y4200 H (03/2011),

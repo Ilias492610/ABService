@@ -9,6 +9,8 @@ import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { renderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
 import { boschBoundaryFacts as facts, beforeBoschScopeGuide, beforeBoschScopeRegistry, beforeBoschScopeHtml } from "./fixtures/bosch-junkers-source-boundaries.mjs";
 import { beforeAcvGuide, beforeAcvRegistry } from "./fixtures/acv-prestige-source-safety.mjs";
+import { beforeIntergasGuide, beforeIntergasRegistry } from "./fixtures/intergas-prestige-source-context.mjs";
+import { beforeFaultReadingHtml } from "./fixtures/fault-reading-clearance.mjs";
 
 test("six shared scopes identify actual chapter selections rather than all brand or table coverage", () => {
   assert.strictEqual(boschCatalogs, junkersCatalogs);
@@ -85,10 +87,10 @@ test("real SSR exposes all existing rows/scopes/options/source/contact without s
 test("complete242 code objects, other eleven guides and all registry fields preserve genuine e71 captures", async () => {
   const digest = value => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
   assert.equal(digest(boschCatalogs.map(c => c.codes)), facts.preservation.catalogCodeArrays);
-  assert.equal(digest(faultGuides.filter(g => !["bosch", "junkers"].includes(g.slug)).map(beforeAcvGuide)), facts.preservation.otherElevenGuides);
-  assert.equal(digest(pageRegistry.map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), facts.preservation.allRegistry);
+  assert.equal(digest(faultGuides.filter(g => !["bosch", "junkers"].includes(g.slug)).map(beforeIntergasGuide).map(beforeAcvGuide)), facts.preservation.otherElevenGuides);
+  assert.equal(digest(pageRegistry.map(beforeIntergasRegistry).map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), facts.preservation.allRegistry);
   for (const slug of ["bosch", "junkers"]) {
     assert.equal(digest(beforeBoschScopeGuide(getFaultGuide(slug))), facts.preservation[slug].guide);
-    assert.equal(digest(beforeBoschScopeHtml(await renderFaultGuide(slug), slug)), facts.preservation[slug].html);
+    assert.equal(digest(beforeBoschScopeHtml(beforeFaultReadingHtml(await renderFaultGuide(slug)), slug)), facts.preservation[slug].html);
   }
 });

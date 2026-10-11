@@ -2,6 +2,26 @@
 
 ## Published routes
 
+**Current accepted baseline `64d7f56e`:** Task50 ACV has sole review/exact
+CI38158155937/441, actual matching-SHA namedProduction6998848792/6998848254,
+canonical82/93/112/four native live profiles185GET. One ACV IndexNowHTTP200
+receipt is not indexing. Same82/80/2 routes and32/38/1596/1354/18 catalog counts.
+
+**Tasks52–53 local candidate:** existing Intergas11groups/20literal numbers
+bound to Prestige A CW6/88136803/NL source context and faultLED/temperature
+display. Only code2's unsupported alternative diagnosis removed; no new row,
+model route or universal-fit claim. Twenty-two catalogs link to nine PDFs,
+two to web views/eight declaration-only; old31records/10snapshots/12mirrors exact.
+All13 existing reading sections receive one marker to clear floating controls
+while visible, on all viewports; generic final CTA unchanged. New14/full455/
+lint0/production0/build170/local82/93/112/fourIntergasnative189GET/112queries/
+eightcontacts/sixwidgetnative243GET/108cases pass; review/hosted/live pending.
+Reading clearance verified locally at selected positions, not hero intro,
+generic finalCTA or all prose; hero intro overlap remains deferred minor.
+Broader WP07/WP12, Task51 development/lifecycle and owner gates remain open.
+
+Entries below are earlier dated phases; they do not supersede this baseline.
+
 **Current accepted baseline `64e93669`:** Task49 Bosch/Junkers source-boundary
 correction has sole review/exactCI38154824053/435 and both actual matching-SHA
 Production statuses; canonical82/93/112/eight native live profiles416GET pass.

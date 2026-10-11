@@ -1,5 +1,79 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — Tasks52–53 local acceptance; review/release gates pending
+
+Primary Intergas original: HTTP200/3739268bytes/56pages,
+SHA`28996b1b8237b8dd778d860321b1fea2b08a106b2712a9176594f000eaf66d7a`.
+Main reads selected texts1–7/41–43/49–52/56 and actualpixels1/3/6/42/49/52/56.
+Cover/typeplate/technical data identify Prestige A CW6; footer88136803 is a
+publication identifier, not boilerSKU or a separately established03 revision.
+NL source context is observed; actual issue/revision/currentBEfit/SKU/firmware
+remain unknown. Copyright2017/CEJune2017/metadata/upload2018 are not issue dates.
+§8.1p42 has11 groups/20literalnumbers/three grouped cells. FaultLED+temperature
+display differs from normal service-display states5–7. No normal/gap/padded
+codes added; no installer solution/reset/settings become consumer steps.
+
+Task52 changes only named Intergas source/context leaves, code2 meaning and
+description/date. Task53 only the existing section marker/observer selector;
+all13 complete SSR trees compare exact after those named projections.
+Genuine pre-edit13guides/SSR/meta/82registry/41sourcehashes verified. Other12
+guides/81registry/31inventory records/10snapshots/12mirrors remain exact.
+New RED13/14fail before edits→GREEN14/14; fresh455/lint0/productionaudit0/
+build170 pass. Broad test regex corrected after a false match on unchanged safe
+`toestel`/`rookgas`; eight historical/mirror failures resolved without digest
+rebasing. Freshlocalcrawl82pages93links112assets passes. Finalreview/exact
+hosted/live remain gates; no released52/53 commit claimed at this local phase.
+
+Task52 unchanged native harness SHA51589e771cdb969066d96e743536f1e09c71eb54c9f49f9fc674973431249459:
+four1440×1000/390×844 JS/noJS profiles,189localGETonly/112querychecks/8pointer+
+Entercontacts/4nativep-a choices/36screenshots. All11actualrowfields/scopes/
+source/twooptions/meta compared;20literalaliases/S1/S2/unknown0/restore passed.
+OneTab fullyvisibleName/form142.17–144.17≥126.59header; nooverflow/pageerrors/
+external/nonGET/blocked requests. Root reads all results and actual mobile
+code2/noJSwarning/contact pixels. Exact intercepted503/noJSempty, not provider
+health. Twelve homepageRSCprefetchGETs mean serverPlacescalls are not excluded
+by the client log; no zero-server-provider claim or additional isolated rerun.
+
+Task53 unchanged harness SHAf395dc483a5e3a250fbbe4d1967d32ae997e3dffdba5e103d10012b6ebf77380:
+sixJSprofiles390×844/320×844/1440×720, each neutral503 and synthetic2004.7/123.
+243localGETs/sixratingfixtures/18exact non-navigation homepageRSC204fixtures
+before server forwarding; no actual provider evidence from these fake fixtures.
+108cases/18owned-focus transitions/72screenshots. All actual bottomalignedACV
+NTC/E37/E41/E47/unknownstatus/Bulexhelper/source-note regions intersected with
+both widgets absent. All six found genuine same-guide clear positions, widgets
+restored, unrelatedsource focus retained, threeownedcontrols handed to visible
+header with zero scroll delta. NativeTab/ShiftTab/Space/Enter/dismissal/navigation
+pass;24ACVrows exactafter emptysearch. No limitationsfallback needed, pageerrors/
+overflow/blocked/external/nonGET none; only three exact neutral503 consoleerrors.
+Root reads entire310lineharness/all243requests/all108cases and actual390NTC/
+320helper/390syntheticrestoration/1440NTC pixels. This closes the old reading-
+region overlap minor locally at these positions; exact live gate is separate.
+Deferred minor: restoration at a mobile hero viewport can overlap its long
+intro text; only hero buttons are currently protected. Generic finalCTA and
+other unmarked prose also stay outside this repair. No universal clarity claim.
+
+The all-viewport reading marker clears floating controls throughout the marked
+section, not only geometrically colliding lines. This consciously limits widget
+availability during long catalogs. Unitchecks cover pending/focused/unrelated
+focus, multiple zones, inserted/removed route sections, stale callbacks and
+Google dismissal. Generic final CTA remains outside this marker. Closing the
+old reading overlap minor is bounded by the actual checks above; no universal claim.
+
+## 11 October 2026 — Task50 exact release acceptance
+
+SHA`64d7f56e8b65b3139253a19070824d1dabcd47fb`; sole fresh Astra/high review,
+no Critical/Important/newMinor; all19 declined boundaries and costs retained.
+Freshpremerge/merged441; exact[CI38158155937](https://github.com/Ilias492610/ABService/actions/runs/38158155937)
+success17:05:55UTC, Node24.21.0/cleaninstall/lint/441/production0/build170/
+hosted82/93/112. Actual namedProduction6998848792/6998848254 success17:05:31/
+17:05:28UTC match exact SHA. Canonicalcrawl82/93/112 and unchanged four native
+profiles185GETonly pass: all24rowfields,48searchcases/eightpointer+Entercontacts,
+oneTabfullyvisibleName/form142.17–144.17 above126.59header. Root reads raw
+CI/provider/live results and actual mobile noJS/NTC/contact pixels. Exact503
+testfixture/noJSempty is not provider/mail/events proof. One ACV IndexNowHTTP200
+received after proof/live; indexing unknown. Earlier local candidate is history;
+bottom-aligned reading overlap was still present in those Task50 pixels.
+
 ## 11 October 2026 — Task50 ACV local acceptance, release pending
 
 Actual original primary664Y4200 H,03/2011; HTTP200/7294940bytes/44pages,

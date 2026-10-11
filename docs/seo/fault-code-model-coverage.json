@@ -1,6 +1,6 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit",
   "incrementalUpdateDate": "2026-10-11",
   "counts": {
     "guides": 13,
@@ -129,7 +129,7 @@
     {
       "slug": "intergas",
       "brand": "Intergas",
-      "modelWarning": "Deze catalogus volgt de volledige storingstabel van de genoemde Intergas Prestige-handleiding. Andere Intergas-toestelreeksen kunnen andere codes, knipperpatronen en modelgebonden controles gebruiken.",
+      "modelWarning": "Deze gids gebruikt de 11 codegroepen uit § 8.1, p. 42 van Intergas-installatievoorschrift 88136803 voor Prestige A CW6, met Nederlandse toestelcontext. Er moet een knipperende storingsled zijn met een code op het temperatuurdisplay; dezelfde cijfers op het servicedisplay kunnen een normale bedrijfstoestand aanduiden. Controleer dus het display én uw exacte model. Publicatiedatum, revisie, artikelnummer en firmwarecompatibiliteit zijn hier niet vastgesteld; dit is geen bevestiging van Belgische toestelcompatibiliteit. Andere Intergas-reeksen zijn niet gedekt en gesloten onderdelen horen bij een bevoegde technicus.",
       "explanationRowCount": 11,
       "catalogIds": [
         "intergas-prestige"
@@ -261,6 +261,20 @@
       "revision": "H",
       "issueMonth": "2011-03",
       "sourceEvidencePath": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-50-acv-official.pdf"
+    },
+    {
+      "id": "intergas-prestige-pdf",
+      "kind": "retained-original-primary-pdf; selected11-group fault table and source/display context",
+      "url": "https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf",
+      "sha256": "28996b1b8237b8dd778d860321b1fea2b08a106b2712a9176594f000eaf66d7a",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 56,
+      "byteLength": 3739268,
+      "documentNumber": "88136803",
+      "revision": null,
+      "issueDate": null,
+      "sourceEvidencePath": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-52-intergas-official.pdf"
     }
   ],
   "entries": [
@@ -1263,28 +1277,38 @@
         "intergas"
       ],
       "title": "Prestige",
-      "modelScope": "Alle storingscoderegels uit hoofdstuk 8.1 van het officiële installatievoorschrift voor Intergas Prestige; gegroepeerde sensorcodes blijven als één bronregel staan en zijn afzonderlijk doorzoekbaar.",
-      "sourceLabel": "Intergas Prestige - installatievoorschrift",
+      "modelScope": "De 11 bronregels uit § 8.1, p. 42 van installatievoorschrift 88136803 voor Prestige A CW6, met Nederlandse toestelcontext. De tabel geldt bij een knipperende storingsled en een code op het temperatuurdisplay. Cijfers op het servicedisplay kunnen normale bedrijfstoestanden zijn en zijn geen bewijs van deze storing. De drie gegroepeerde bronregels blijven samen en hun 20 genummerde meldingen zijn afzonderlijk doorzoekbaar. Andere modellen en revisies zijn niet gedekt; controleer uw exacte toestel en gebruikershandleiding.",
+      "sourceLabel": "Intergas Prestige A CW6 - installatievoorschrift 88136803 (NL-toestelcontext)",
       "sourceURL": "https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf",
       "sourcePages": "§ 8.1, p. 42",
       "explanationRowCount": 11,
       "modelFamily": "Intergas Prestige",
-      "models": null,
+      "models": [
+        "Prestige A CW6"
+      ],
       "articleNumbers": null,
-      "documentNumber": null,
+      "documentNumber": "88136803",
       "revision": null,
       "issueDate": null,
       "market": null,
-      "language": null,
+      "language": "nl",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "intergas-prestige-pdf",
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        "docs/seo/evidence-register.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-52-intergas-source-preflight.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-52-intergas-literal-source.json"
       ],
-      "verificationBasis": "Current declared family/chapter8.1/page42 and historical source summary; filename88136803 is not an observed document/footer revision or boiler SKU.",
+      "verificationBasis": "Main read selected actual primary identity/model/control/safety/table text and pixels: cover Prestige A CW6, footer88136803 on56;11 sourcegroups/20 literal numeric identifiers/three grouped cells on42. Fault LED blinking with temperature-display code is distinct from normal service-display states5-7. Code2 is S1/S2 swap only. Other10 meanings/all11 actions preserved; not whole56-page/current revision/Belgian SKU/firmware fit certification.",
       "declaredScopePath": "content/additional-fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "sourceCountryContext": "NL illustrated typeplate and Dutch installation context; current Belgian variants/market exclusivity not established.",
+      "sourceAudience": "professional-installer-guide",
+      "literalCodeGroupCount": 11,
+      "literalNumericIdentifierCount": 20,
+      "literalGroupedCellCount": 3,
+      "displayContext": "Blinking fault LED with code on temperature display; normal service-display states are excluded."
     },
     {
       "id": "nefit-proline-hrc",

@@ -1,5 +1,48 @@
 # Evidence Register
 
+## 11 October 2026 — Intergas selected source/display context; Task52
+
+[Original manufacturer installation manual](https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf)
+retained HTTP200/3739268bytes/56pages/SHA
+`28996b1b8237b8dd778d860321b1fea2b08a106b2712a9176594f000eaf66d7a`.
+Main reads selected texts1–7/41–43/49–52/56 and actualpixels1/3/6/42/49/52/56.
+Graphic cover Prestige A CW6, typeplateNL3/technical49/CE52; footer88136803
+on56 is publication identifier, not boilerSKU or independently split revision.
+Actual issue/revision/latest/SKU/firmware/current Belgian compatibility remain
+unknown. Copyright2017/CEJune2017/PDFmetadata/upload2018 are not manual issue
+evidence. Generic Kombi Kompakt paragraph4 does not broaden selected model fit.
+
+§8.1p42:11 groups/20numeric identifiers/three grouped cells, blinking faultLED
+with temperature-display code. Normal service-display states5–7 have different
+meanings; no gap/normal/padded codes inferred. Literal2 is S1/S2 swapped only.
+Installer repair/reset/settings/history columns are not consumer instructions.
+Task52 narrows scope/warning/label/meta, one meaning and actual Intergas date;
+other10 meanings/all11actions/IDs/aliases/order/pages/12otherguides preserved.
+New snapshot has no fabricated expected/prior hash match, issue or revision.
+Same32/38/1596/1354/18 counts,22PDF-linked/ninePDF/twoWeb/eightdeclarations.
+Fresh455/lint0/production0/build170/local82/93/112/four nativeIntergas189GET/
+112querychecks/eightcontacts pass; review/exacthosted/live gates pending.
+
+Task53's actual marked reading section and existing observer are the bounded
+widget repair candidate, not source/controller/provider proof. It clears both
+floating controls while any reading part is visible, allviewports; generic
+final CTA unchanged. Unitfocus/dismissal/route tests and real selected positions
+pass locally; exact live gate remains, no universal performance/assistive claim.
+
+Six widgetnativeprofiles243GET/108cases/18ownedfocus transitions prove bounded
+reading clearance/restoration/dismissal locally;72screenshots retained, selected
+actual pixels mainread. Exactrating503/synthetic2004.7/123 test-only;18exact
+homepageRSC204fixtures avoid forwarding thoseprefetches to server. Task52's
+12actualhomepageprefetches do not exclude serverPlacescalls. No provider-health
+or overallperformance/physicalAT claim. Hero intro overlap on restoration is
+a deferred minor; generic finalCTA and unmarkedprose outside this repair.
+
+Task50 actually accepted64d7f56e: sole review/441/exactCI38158155937,
+actual matchingSHA namedProduction6998848792/6998848254/canonical82/93/112/
+four native live profiles185GET. One ACV IndexNowHTTP200 received after valid
+proof/live, indexing unknown. Earlier ACV candidate paragraphs retain history.
+BroaderWP07/WP12/Task51development and owner/case/local/French/account gates open.
+
 ## 11 October 2026 — actual historical ACV identity and selected table
 
 [Official original](https://downloads.acv.com/NT_664Y4200_H_Prestige_MkIII_NL.pdf)

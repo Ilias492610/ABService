@@ -28,7 +28,7 @@ export default async function FaultGuidePage({ params }) {
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Foutcodes", path: "/foutcodes" }, { name: guide.brand, path: `/foutcodes/${guide.slug}` }]} />
       <PageHero eyebrow={`${guide.brand} foutcodes`} title={`${guide.brand} foutcodes: catalogus met officiële bronnen`} intro={guide.modelWarning} ctaLabel="Bespreek uw storing" ctaHref={buildContactHref({ service: "Herstelling verwarming" })} />
       <section className="section section-compact"><div className="shell narrow"><div className="warning-box"><strong>Veiligheid en modelcontrole</strong><p>Een code is geen diagnose. Controleer eerst merk, exacte modelaanduiding, bouwjaar en de volledige hoofd- en subcode. Reset niet herhaaldelijk en open geen verbrandings-, gas- of elektrische onderdelen. Bij gasgeur of een CO-melding verlaat u de onveilige ruimte en neemt u vanuit een veilige plaats contact op met de bevoegde hulpdienst; bij vermoeden van CO-vergiftiging of direct gevaar belt u 112. Bedien in een ruimte met gasgeur geen elektrische schakelaars of toestellen. Blijf uit een natte zone met elektrische delen en ga niet terug naar binnen voor foto’s.</p></div></div></section>
-      <section className="section">
+      <section className="section fault-guide-reading">
         <div className="shell">
           <div className="fault-catalog-intro">
             <p className="eyebrow">{guide.codeEntryCount} brongebonden codeverklaringen</p>

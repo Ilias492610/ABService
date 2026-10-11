@@ -187,9 +187,9 @@ test("only the six genuinely modified districts have dates and only Borsbeek has
   assert.equal(registry.pageRegistry.length, 82);
   assert.deepEqual(Object.fromEntries(entries.filter((entry) => entry.url.includes("/loodgieter-") && Object.hasOwn(entry, "lastModified")).map((entry) => [entry.url.split("/loodgieter-")[1], entry.lastModified])), expected);
   const retained = entries.map((entry) => {
-    // Tasks40/41/44/49/50 permit only these genuinely edited pages' new dates.
+    // Tasks40/41/44/49/50/52 permit only these genuinely edited pages' new dates.
     // Preserve the original independently captured whole-sitemap hash.
-    const correctedPage = ["https://www.abservice24.be/werkgebied/limburg", "https://www.abservice24.be/tarieven", "https://www.abservice24.be/werkgebied/brussel", "https://www.abservice24.be/foutcodes/bosch", "https://www.abservice24.be/foutcodes/junkers", "https://www.abservice24.be/foutcodes/acv"].includes(entry.url);
+    const correctedPage = ["https://www.abservice24.be/werkgebied/limburg", "https://www.abservice24.be/tarieven", "https://www.abservice24.be/werkgebied/brussel", "https://www.abservice24.be/foutcodes/bosch", "https://www.abservice24.be/foutcodes/junkers", "https://www.abservice24.be/foutcodes/acv", "https://www.abservice24.be/foutcodes/intergas"].includes(entry.url);
     if (!correctedPage && !corrections.some(({ slug }) => entry.url.endsWith(`/loodgieter-${slug}`))) return entry;
     const { lastModified, ...rest } = entry;
     return rest;

@@ -260,7 +260,8 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Intergas Prestige foutcodes: officiële bron | AB Service",
     description:
-      "Doorzoek de volledige Intergas Prestige-storingstabel, met modelwaarschuwing, officiële bron en veilige eerste stappen.",
+      "Zoek 11 Intergas Prestige A CW6-codegroepen uit 88136803. Controleer storingsled en temperatuurdisplay; lees de bron en veilige eerste stappen.",
+    lastModified: "2026-10-11",
     changeFrequency: "monthly",
     priority: 0.6,
   },

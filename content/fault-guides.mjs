@@ -118,7 +118,7 @@ export const faultGuides = Object.freeze([
     slug: "intergas",
     brand: "Intergas",
     modelWarning:
-      "Deze catalogus volgt de volledige storingstabel van de genoemde Intergas Prestige-handleiding. Andere Intergas-toestelreeksen kunnen andere codes, knipperpatronen en modelgebonden controles gebruiken.",
+      "Deze gids gebruikt de 11 codegroepen uit § 8.1, p. 42 van Intergas-installatievoorschrift 88136803 voor Prestige A CW6, met Nederlandse toestelcontext. Er moet een knipperende storingsled zijn met een code op het temperatuurdisplay; dezelfde cijfers op het servicedisplay kunnen een normale bedrijfstoestand aanduiden. Controleer dus het display én uw exacte model. Publicatiedatum, revisie, artikelnummer en firmwarecompatibiliteit zijn hier niet vastgesteld; dit is geen bevestiging van Belgische toestelcompatibiliteit. Andere Intergas-reeksen zijn niet gedekt en gesloten onderdelen horen bij een bevoegde technicus.",
     catalogs: intergasCatalogs,
     documentationLabel: "Officiële Intergas-storingshulp",
     documentationUrl: "https://www.intergas-verwarming.nl/consument/klantenservice/cv-ketel/",
