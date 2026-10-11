@@ -9,9 +9,12 @@
   Independent review identified NTC1/2 regression; real-catalog RED→GREEN closes it.
 - Remeha title/description include Ace-Matic; only its actual substantive change date advances
   to11October. Source meanings/legacy data, existing routes/CTA/media remain unchanged.
-- Independent task reviews approve; fresh165tests/lint/production audit0/build/localcrawl pass.
-  Responsive/browser/live/whole-branch release acceptance still pending; toolingdev9 and
-  Sibelga403 retained. No extra mail, account changes, IndexNow retry or fabricated lead result.
+- Earlier task reviews and local165tests/lint/production audit0/build/localcrawl passed before
+  this final search fix. Local desktop/mobile/no-JavaScript checks also passed before this fix;
+  native-popup keyboard selection and wider floating-control interaction remain unconfirmed.
+  This fix still requires fresh local browser acceptance and hosted/live/whole-branch release
+  gates; toolingdev9 and Sibelga403 retained. No extra mail, account changes, IndexNow retry
+  or fabricated lead result.
 
 ## 11 October 2026 — published core FAQ/context links and native Node24 CI
 

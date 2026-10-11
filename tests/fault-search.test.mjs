@@ -140,6 +140,43 @@ test("ACV numbered NTC sensor descriptions retain compact, spaced and normalized
   assert.deepEqual(filterFaultCatalogs(acv, "NTC 1", "geen-model"), []);
 });
 
+for (const [slug, id, queries, codes] of [
+  ["bosch", "bosch-serie-3", ["TS3", " ts 3 ", "TS:3"], ["H4"]],
+  ["bosch", "bosch-serie-2", ["TA 210", "ta210", "TA.210"], ["AC", "C9", "Cb", "d2"]],
+  ["viessmann", "viessmann-vitodens-200-300-vitotronic", ["EA1", "ea 1", "EA:1"], ["C1", "D6", "D7", "D8"]],
+  ["acv", "acv-prestige-mkiii", ["T1", "t 1", "T.1"], ["E03", "NTC"]],
+  ["intergas", "intergas-prestige", ["S1", "s 1", "S:1"], ["10 / 11 / 12 / 13 / 14", "2"]],
+]) {
+  test(`${slug} complete descriptive identifier ${queries[0]} preserves real meanings and selected scope`, () => {
+    const brand = guideCatalogs(slug);
+    for (const query of queries) {
+      assert.deepEqual(matches(filterFaultCatalogs(brand, query)), [[id, codes]], query);
+      assert.deepEqual(matches(filterFaultCatalogs(brand, query, id)), [[id, codes]], query);
+      assert.deepEqual(filterFaultCatalogs(brand, query, "geen-model"), []);
+    }
+  });
+}
+
+test("numbered descriptive identifiers never admit partial or longer identifiers or unselected meanings", () => {
+  for (const [slug, queries] of [
+    ["bosch", ["TS30", "TS03", "TA21", "TA2100", "TA0210"]],
+    ["viessmann", ["EA10", "EA01"]],
+    ["acv", ["T10", "T01", "NTC10", "NTC01"]],
+    ["intergas", ["S10", "S01"]],
+  ]) {
+    for (const query of queries) assert.deepEqual(filterFaultCatalogs(guideCatalogs(slug), query), [], query);
+  }
+  assert.deepEqual(filterFaultCatalogs(guideCatalogs("bosch"), "TS3", "bosch-serie-2"), []);
+  assert.deepEqual(filterFaultCatalogs(guideCatalogs("bosch"), "TA 210", "bosch-serie-3"), []);
+});
+
+test("complete displayed aliases take precedence over real numbered meaning identifiers in selected catalogs", () => {
+  const bosch = guideCatalogs("bosch");
+  // Series4 mentions E9 in Fd231's meaning; Series2/3 actually display the complete code E9.
+  assert.deepEqual(matches(filterFaultCatalogs(bosch, "E9")), [["bosch-serie-3", ["E9"]], ["bosch-serie-2", ["E9"]]]);
+  assert.deepEqual(matches(filterFaultCatalogs(bosch, "E9", "bosch-serie-4")), [["bosch-serie-4", ["Fd 231"]]]);
+});
+
 test("descriptions, accents, natural phrases and incomplete EA family browsing stay useful", () => {
   assert.equal(filterFaultCatalogs(remeha, "sensor", "remeha-calenta-legacy")[0].codes.length, 4);
   for (const [query, variant] of [["waterdruk", " WÁTÉR DRUK "], ["communicatie", " COMMUNICÁTIE "]]) {

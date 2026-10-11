@@ -7,8 +7,11 @@ actualrevision7871265-05-04072025,25s/35s/30c/40c only;359Remeha explanations in
 legacy59. Source-column ambiguities/unspecified CUH03.254 remain visible, not invented diagnoses.
 Independent task review approves. Full-code search9564e86/c5b8eca protects distinct digits,
 zeros/components and restores actual numberedNTC descriptive search after an independent finding.
-Metadata/dateb8c8e6c reflects genuine substantive change. Fresh165tests/lint/auditproduction0/
-build/localcrawl pass; final browser/release/live acceptance remains separate and pending.
+Metadata/dateb8c8e6c reflects genuine substantive change. Prior local165tests/lint/auditproduction0/
+build/localcrawl and desktop/mobile/no-JavaScript checks passed before the final search fix.
+Native-popup keyboard selection and wider floating-control interaction remain unconfirmed.
+This fix still requires fresh local browser acceptance; hosted/live/whole-branch release gates
+remain separate and pending.
 Sourceaudit48HTTP200/oneknownSibelga403, not a silent all-source pass. No dealer certification,
 allbrandmodels, location/project proof, new client or organic-growth claim inferred.
 
