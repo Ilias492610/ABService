@@ -17,8 +17,11 @@ const sendEvent = (name, props) => {
   track(event.name, event.props);
 };
 
-export default function ContactForm({ nativeStatus } = {}) {
-  const [formData, setFormData] = useState(initialData);
+export default function ContactForm({ nativeStatus, initialService } = {}) {
+  const [formData, setFormData] = useState(() => ({
+    ...initialData,
+    service: typeof initialService === "string" && CONTACT_SERVICES.includes(initialService) ? initialService : "",
+  }));
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState(() => nativeStatus === "success"
     ? { type: "success", message: "Uw aanvraag is verzonden. Een afspraak of timing is pas bevestigd na rechtstreeks contact." }
@@ -30,14 +33,20 @@ export default function ContactForm({ nativeStatus } = {}) {
   const formRef = useRef(null);
   const pending = useRef(false);
   const statusRef = useRef(null);
+  const editedPrefillFields = useRef({ service: false, message: false });
 
   useEffect(() => {
+    if (!window.location.hash.startsWith("#aanvraagformulier?")) return;
     let active = true;
     const context = readContactContext(window.location);
     if (!context.service) return;
     queueMicrotask(() => {
       if (!active) return;
-      setFormData((current) => ({ ...current, ...context }));
+      setFormData((current) => ({
+        ...current,
+        service: editedPrefillFields.current.service ? current.service : context.service,
+        message: editedPrefillFields.current.message ? current.message : (context.message ?? current.message),
+      }));
       if (window.location.hash.startsWith("#aanvraagformulier?")) {
         window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#aanvraagformulier`);
       }
@@ -58,6 +67,7 @@ export default function ContactForm({ nativeStatus } = {}) {
 
   const updateField = (event) => {
     const { name, type, checked, value } = event.target;
+    if (name === "service" || name === "message") editedPrefillFields.current[name] = true;
     setFormData((current) => ({ ...current, [name]: type === "checkbox" ? checked : value }));
     setErrors((current) => ({ ...current, [name]: undefined }));
   };
