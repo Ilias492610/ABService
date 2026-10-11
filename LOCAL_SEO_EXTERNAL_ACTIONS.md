@@ -233,3 +233,20 @@ Avoid paid link packages, reciprocal-link networks, fake guest posts and locatio
 ## Social and video
 
 Repurpose real work evidence into short before/process/after posts only after privacy review. Blur house numbers, faces, documents, screens and identifiable interiors unless explicit permission covers publication. Link back to the relevant service or genuine project page.
+
+## WP13 documentary readiness — 11 October 2026
+
+The [earned-mention opportunities register](docs/seo/earned-link-opportunities.md)
+records four conditional routes: Syncura Antwerpen, TechlinkMagazine editorial,
+Vaillant directory eligibility and existing Techlink/Embuild Build Your Home membership.
+The dated public sample is 11 October; reused AB citation evidence remains 10 October.
+Mention, read outgoing hyperlink, Website button without verified target, dynamic unknown
+and absence in one extract stay separate. The three-competitor sample supports platform
+overlap only; a full link gap requires real dated URL-level exports and link fields.
+
+WP13 remains partial. No prospect is approved, ready to send, contacted or newly live;
+no outreach, application, sponsorship, purchase or external publication occurred in this
+documentary task. All thirteen course routes retain their individual decisions, with paid
+ranking-link purchase separately rejected. The next evidence step is one private check of
+an actual owner relationship; eligibility, original expertise/consent, source refresh and
+specific external-send/publication instructions or budget remain open where needed.
