@@ -8,6 +8,8 @@ import { getProject, getPublishedProjects } from "@/content/projects.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 import { serviceRegionHubs } from "@/content/service-areas.mjs";
+import { serviceIntents } from "@/content/service-intents.mjs";
+import { buildContactHref } from "@/libs/contact-context.mjs";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => getPublishedProjects().map(({ slug }) => ({ slug }));
@@ -23,6 +25,7 @@ export default async function ProjectPage({ params }) {
   const project = getProject(slug);
   if (!project) notFound();
   const regionHub = serviceRegionHubs.find((hub) => hub.groupName === project.province);
+  const service = serviceIntents[project.servicePath]?.service;
 
   return (
     <>
@@ -35,6 +38,7 @@ export default async function ProjectPage({ params }) {
         eyebrow={project.service}
         title={project.title}
         intro={project.situation}
+        ctaHref={buildContactHref({ service })}
       />
       <section className="section section-compact">
         <div className="shell narrow">
@@ -76,7 +80,7 @@ export default async function ProjectPage({ params }) {
           {regionHub && <p><Link href={regionHub.path}>Bekijk het werkgebied in {regionHub.name} →</Link></p>}
         </div>
       </section>
-      <ContactCta title="Wilt u een vergelijkbare opdracht bespreken?" />
+      <ContactCta title="Wilt u een vergelijkbare opdracht bespreken?" service={service} />
     </>
   );
 }
