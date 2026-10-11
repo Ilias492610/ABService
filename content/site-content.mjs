@@ -356,6 +356,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: hub.title,
     description: hub.description,
+    ...(hub.modifiedAt ? { lastModified: hub.modifiedAt } : {}),
     changeFrequency: "monthly",
     priority: hub.slug === "antwerpen" ? 0.75 : 0.65,
   })),

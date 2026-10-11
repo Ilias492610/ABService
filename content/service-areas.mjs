@@ -394,6 +394,7 @@ export const serviceRegionHubs = Object.freeze([
     ],
   }),
   hub("limburg", {
+    modifiedAt: "2026-10-11",
     name: "Limburg",
     heading: "Loodgieter en verwarmingsservice in Limburg",
     groupName: "Limburg",
@@ -401,7 +402,7 @@ export const serviceRegionHubs = Object.freeze([
     description: "AB Service bedient alle 38 Limburgse gemeenten voor passende verwarmings-, sanitaire en loodgietersaanvragen na beoordeling.",
     summary: "AB Service neemt aanvragen aan uit alle 38 Limburgse gemeenten. Omdat afstanden en installaties uiteenlopen, wordt vóór bevestiging nagegaan welke dienst nodig is, welke technische informatie beschikbaar is en hoe de afspraak praktisch kan worden gepland.",
     details: "Van stedelijke omgevingen rond Hasselt en Genk tot verspreide gemeenten in Noord- en Zuid-Limburg: de pagina belooft geen vaste aankomsttijd, maar maakt de volledige dekking controleerbaar.",
-    planningTip: "Stuur merk, model, probleemomschrijving en foto’s meteen mee. Dat is bij een langere verplaatsing extra belangrijk om onvolledige afspraken te vermijden.",
+    planningTip: "Vermeld uw exacte adres, probleemomschrijving, eventuele toestelgegevens en wie toegang kan geven. Voeg alleen foto’s toe die u veilig kunt nemen zonder panelen te openen. Werkzaamheden en verplaatsing worden besproken voordat de afspraak wordt bevestigd.",
     majorCities: ["Hasselt", "Genk", "Beringen", "Sint-Truiden", "Lommel", "Maasmechelen", "Tongeren-Borgloon"],
     faq: [
       ["Komt AB Service naar alle Limburgse gemeenten?", "Ja. Alle 38 Limburgse gemeenten behoren tot het werkgebied, na beoordeling van dienst, afstand en planning."],
