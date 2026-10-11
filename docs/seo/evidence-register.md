@@ -1,5 +1,31 @@
 # Evidence Register
 
+## 11 October 2026 — prehydration public acceptance and stricter QA candidate
+
+Accepted `1eb074d9ba24f11f6c03f3cc383ade0bf5cb8522` follows independent whole-
+branch review and fresh 379 premerge/merged tests. Exact CI 38116829497 succeeds
+06:04:27 UTC on Node 24.21.0: 379 tests, lint, production audit 0, build 170,
+hosted 82/93/112. Both exact-SHA Vercel Production statuses succeed: primary
+6991713929 at 06:04:53 UTC and secondary 6991709311 at 06:04:22 UTC. Fresh
+canonical 82/93/112 crawl, four held-script profiles / 159 GETs and 24 FAQ
+profiles / 495 GETs pass, no attempted writes, page errors or overflow.
+
+Three fresh sequential canonical Borsbeek mobile runs match all complete
+settings of three accepted `6b1f5a6` baseline runs: Lighthouse 13.5 / Chrome 156,
+same machine, storage reset, simulated 412×823 and unblocked provider traffic.
+All six 99/100/100/100, no runtime errors/warnings; median LCP 2022.9405→
+2007.4155 ms, TBT 5.5→16 ms, CLS 0 and transfer 277516→277737 bytes. Actual
+after TBT 5/18/16 ms is retained. Descriptive lab stability, not INP, field,
+homepage, causality or commercial proof. No IndexNow notification.
+
+Separate QA/documentation candidate addresses the nonblocking console finding.
+Real guard RED 0/13→GREEN 13/13; full 392 tests/lint pass. Four stricter native
+profiles / 157 GETs pass with exact fixture source diagnostics. A real Chromium
+console-only fault injection correctly fails the guard, not a product/pageerror
+failure. The optional script checks after context close; runtime is unchanged.
+Whole-cohort review/publication remain next, while actual provider/mail/event,
+physical/assistive/field, private/local and complete-WP evidence remain separate.
+
 ## 11 October 2026 — delayed-script diagnostic and local correction
 
 Four real JavaScript-enabled profiles on the accepted runtime held actual app

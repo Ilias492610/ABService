@@ -106,3 +106,21 @@ met passende aanvragen/opdrachten zijn nodig voor zakelijke conclusies.
 Geen nieuwe uitgaven, outreach, account-/securitykoppeling of registerwijziging
 is op grond van deze beoordelingsmatrix uitgevoerd. GSC Wizard blijft uitgesloten;
 Google-accountwerk blijft uitsluitend op Abders account.
+
+## 11 oktober — latere technische uitvoering, geen extra percentage
+
+De tabel hierboven behoudt haar oorspronkelijke `6b1f5a6`-peildatum en cijfers.
+Daarna is de genoemde prehydration-diagnose uitgevoerd en de afgebakende fix
+`1eb074d` onafhankelijk gereviewd, gepubliceerd en live gecontroleerd. Exacte
+CI 38116829497, beide Vercel Production-statussen, canonical 82/93/112, vier
+uitgesteld-script- en 24 bestaande FAQ-profielen slagen. Zes matched mobiele
+Borsbeek-labruns blijven 99/100/100/100 met mediane LCP ongeveer 2,01 s.
+[QA](../../SEO_QA_REPORT.md) bewaart exacte versies, waarden en begrenzingen.
+
+Bij punten 16/29 is de gecontroleerde initiële-scripttoestand nu aanvullend
+geverifieerd; fysieke/assistieve/zoom- en echte gebruikersvoorwaarden blijven.
+Bij punt 31 is een strengere optional-console-gate voorbereid: 13 guardtests,
+392 volledige tests/lint en vier strikte browserprofielen slagen; een bewust
+geïnjecteerde consolefout wordt afgekeurd. Eigen review/publicatie daarvan is
+nog apart. Dit bewijst geen universeel foutvrije console, veld-CWV, echte
+provideruitkomst, toestemming, klantgroei of voltooiing van alle 34 voorwaarden.

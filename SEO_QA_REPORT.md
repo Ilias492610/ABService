@@ -1,5 +1,59 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — delayed-hydration fix released and verified live
+
+Independently whole-branch reviewed `1eb074d9ba24f11f6c03f3cc383ade0bf5cb8522`
+was normally merged and pushed after fresh 379 premerge and merged tests.
+[CI 38116829497](https://github.com/Ilias492610/ABService/actions/runs/38116829497)
+succeeds at 06:04:27 UTC: Node 24.21.0, install 411/412, 379 tests, lint,
+production audit 0, build 170 and hosted crawl 82/93/112. Both exact-SHA Vercel
+checks and Production statuses succeed: primary 6991713929 at 06:04:53 UTC and
+secondary 6991709311 at 06:04:22 UTC. These are provider timestamps, not an
+inferred precise canonical-alias activation time.
+
+Fresh canonical crawl 82 pages / 93 links / 112 assets and the four held-script
+profiles pass, with 159 GET-only browser requests. The existing 24 hydrated/no-JS
+FAQ profiles also pass, with 495 GET-only requests. Neither gate attempts a write,
+reports a page error or finds horizontal overflow. Original channels and focus
+remain available as designed. Fixture 503 resource-console errors are recorded;
+this release does not claim a universally clean console or actual provider result.
+
+Three sequential fresh Borsbeek mobile Lighthouse runs at 06:08:01.104,
+06:08:52.300 and 06:09:30.878 UTC match every complete settings object of the
+three accepted `6b1f5a6` runs. Lighthouse 13.5.0 / Chrome 156, same machine,
+simulated throttling, 412×823 viewport, storage reset and unblocked providers.
+All six score 99 performance / 100 accessibility / 100 best practices / 100 SEO,
+without runtime errors or run warnings. Median before→after: LCP 2022.9405→
+2007.4155 ms, TBT 5.5→16 ms, CLS 0→0, transfer 277516→277737 bytes. After-run
+TBT is 5/18/16 ms. This describes one-route lab stability, not causal speed gain,
+INP, field CWV, a new homepage measurement or customer outcomes.
+
+The bounded prehydration fix is accepted. Physical/assistive/zoom, genuine
+provider/event/case/local evidence, source 403 and development 9/ESLint 9 remain
+separate. No IndexNow notification, account grant or business-state change.
+Earlier candidate sections below retain their historical stage.
+
+## 11 October 2026 — optional console-gate hardening candidate
+
+The prior independent review's nonblocking finding is addressed in the optional
+held-script gate: capture the diagnostic source URL and reject warnings/errors
+unless type, URL and complete text match the deliberately intercepted rating-503
+fixture. Check after context close to include late diagnostics. No product bundle,
+provider behavior, dependency, source, route, state or content date changes.
+
+Actual missing-feature assertion RED 0/13 precedes the new guard; 13/13 focused
+and 392/392 full tests plus lint pass. All four actual canonical held-script
+profiles pass under the stricter capture, with 157 GET-only requests and only
+the expected intercepted source diagnostics. A separate real-Chromium fault
+injection adds a console error without throwing a page error: the gate correctly
+exits 1 at its console assertion. That intentional negative test is not a website
+failure or real production diagnostic. Raw positive/negative logs remain separate.
+
+Whole-cohort review and exact publication of this QA/documentation-only candidate
+remain next. The product runtime is identical to the accepted `1eb074d`; no
+redundant local build, full source audit or Lighthouse comparison is claimed.
+Optional browser scripts remain manual gates, not newly automated CI checks.
+
 ## 11 October 2026 — delayed-hydration contact clearance candidate
 
 The JavaScript-enabled diagnostic on the accepted runtime held real application

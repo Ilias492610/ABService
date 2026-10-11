@@ -606,6 +606,18 @@ plus 24 bestaande JS/no-JS-profielen slagen lokaal. Whole-branch, hosted/live en
 matched lab blijven apart. Geen route/status/datum/bronwijziging of IndexNow;
 geen volledige WP12-, fysieke/assistieve/veld-CWV- of zakelijke acceptatie.
 
+**Latere acceptatie `1eb074d`:** onafhankelijke whole-branch review, 379 tests,
+exacte CI 38116829497 en beide Vercel Production-statussen slagen. Canonical
+82/93/112, vier uitgesteld-script- en 24 bestaande FAQ-profielen slagen; de
+afgebakende prehydration-correctie is live bevestigd. Zes matched Borsbeek-labruns
+blijven 99/100/100/100, mediane LCP ongeveer 2,01 s; geen causale of veldclaim.
+De volgende QA-only kandidaat bewaart bron-URLs en keurt onverwachte console-
+diagnostiek af. Dertien guardtests en 392 volledige tests/lint slagen; vier
+strikte browserprofielen slagen, één doelbewuste consolefout wordt afgekeurd.
+Review/publicatie van die QA-only slice blijven apart. Product runtime, routes,
+states, datums, bronnen en afhankelijkheden veranderen daardoor niet; geen
+IndexNow. Echte bedrijf-/veld-/accountvoorwaarden blijven open.
+
 ### WP13 — Verdiende links en lokale partners
 
 **Files:** `LOCAL_SEO_EXTERNAL_ACTIONS.md`; nieuw `docs/seo/earned-link-opportunities.md`. Contactgegevens privé; alleen concepten in repo.

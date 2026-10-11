@@ -2,6 +2,7 @@
 // Hold actual application script requests while CSS and initial HTML load.
 import assert from "node:assert/strict";
 import { pathToFileURL } from "node:url";
+import { assertRatingFixtureConsole } from "./lib/browser-console-fixtures.mjs";
 
 const modulePath = process.env.PLAYWRIGHT_MODULE;
 assert.ok(modulePath, "Provide PLAYWRIGHT_MODULE for this optional browser gate");
@@ -37,7 +38,7 @@ try {
       page.setDefaultTimeout(12_000);
       page.on("pageerror", error => pageerrors.push(error.message));
       page.on("console", message => {
-        if (["warning", "error"].includes(message.type())) consoleMessages.push({ type: message.type(), text: message.text().slice(0, 400) });
+        if (["warning", "error"].includes(message.type())) consoleMessages.push({ type: message.type(), source: message.location().url, text: message.text() });
       });
       try {
         const response = await page.goto(origin + profile.path, { waitUntil: "commit" });
@@ -103,6 +104,9 @@ try {
         assert.deepEqual(pageerrors, []);
         rows.push({ ...profile, viewport, heldScripts, pendingFlow: true, edgePointer: true, nativeFocus: true, hydratedClearance: true, floatingRestoration: true, consoleMessages });
       } finally { release(); await context.close(); }
+      // Check after context close so late diagnostics are included as well.
+      assert.deepEqual(pageerrors, []);
+      assertRatingFixtureConsole(consoleMessages, `${origin}/api/google-rating`);
     }
   }
   assert.equal(rows.length, 4);

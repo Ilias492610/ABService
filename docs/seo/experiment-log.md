@@ -455,3 +455,30 @@ controlled browser checks. No new KPI, search-window metric or denominator;
 parent experiment instructions, measurement/revert contracts and evidence gates
 are unchanged. Immediate regression in access, focus, clearance, dismissal or
 destinations merits correction rather than waiting for a commercial window.
+
+## TRUST-PREHYDRATION-20261011 — public acceptance and QA-only follow-up
+
+Independently reviewed `1eb074d9ba24f11f6c03f3cc383ade0bf5cb8522` is normally
+published. CI 38116829497 succeeds 06:04:27 UTC on Node 24.21.0: 379 tests,
+lint, production audit 0, build 170 and hosted 82/93/112. Both exact-SHA Vercel
+checks/Production statuses succeed; fresh canonical crawl 82/93/112 and four
+held-script / 24 FAQ profiles pass, 159/495 GET-only requests respectively.
+
+Three fresh canonical Borsbeek mobile after runs and three accepted `6b1f5a6`
+before runs match every complete settings object, Lighthouse 13.5 / Chrome 156,
+same machine, simulated 412×823, storage reset and unblocked providers. All six
+99/100/100/100 without errors/warnings. Median LCP 2022.9405→2007.4155 ms,
+TBT 5.5→16 ms, CLS 0, transfer 277516→277737 bytes; after TBT 5/18/16 ms.
+No randomized causality, field INP/CWV, homepage or growth outcome is inferred.
+
+**RELEASE ACCEPTED / NOT GROWTH-EVALUATED.** The root-held source/physical/
+assistive/private/provider/customer gates remain, as do parent measurement,
+instruction freeze and revert contracts. No IndexNow send.
+
+The separately prepared QA-only follow-up closes the review's minor capture
+gap: keep source URLs, reject unexpected warnings/errors and allow only the
+exact deliberately intercepted rating 503. Thirteen RED→GREEN guard tests,
+392 full tests/lint and four strict canonical profiles / 157 GETs pass. A real
+browser console-only injection is intentionally rejected. Whole-cohort review
+and publication of that optional-gate/documentation slice remain next; no product
+or baseline/KPI/denominator change, and no new business result.

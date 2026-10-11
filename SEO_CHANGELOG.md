@@ -1,5 +1,20 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — prehydration release and console-gate maintenance
+
+- Reviewed `1eb074d` is on GitHub main and both Vercel Production projects.
+  Exact CI 38116829497 passes 379 tests, lint, production audit 0, build 170
+  and hosted crawl 82/93/112; fresh canonical crawl and 28 browser profiles pass.
+- Six matched Borsbeek mobile lab runs retain 99/100/100/100. Median LCP
+  2022.9405→2007.4155 ms, TBT 5.5→16 ms, CLS 0, transfer 277516→277737 bytes.
+  Descriptive lab evidence only; no field, causal or customer improvement claim.
+- Candidate QA-only maintenance now captures source URLs and rejects unexpected
+  console warnings/errors, allowing only the exact intercepted rating-503 fixture.
+  Thirteen real guard tests go RED→GREEN, all 392 tests/lint pass, four strict
+  canonical profiles pass, and an intentional console-only browser injection is
+  rejected. Fresh whole-cohort review/publication remain next; product unchanged.
+- No source, route, state, content date, dependency, account or IndexNow change.
+
 ## 11 October 2026 — pending-script contact links candidate
 
 - Keeps the two original contact channels in normal document flow until the
