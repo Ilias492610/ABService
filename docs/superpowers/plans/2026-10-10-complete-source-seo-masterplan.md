@@ -390,6 +390,13 @@ is geen indexatiebewijs. Bron403/development9 en bredere WP07-dekking blijven op
 
 **Files:** `content/service-areas.mjs`, `content/service-area-scoring.mjs`, `content/content-backlog.mjs`, `components/district-page.js`, `components/municipality-filter.js`, gebiedshubs, `tests/service-areas.test.mjs`, `PHASE_E_SERVICE_AREA_REPORT.md`, `SERVICE_AREA_REGISTRY.md`, `SEO_CONTENT_INVENTORY.md`, bewijsregister en changelog.
 
+**Redactionele tussenstand11oktober:** [14bestaande pagina's beoordeeld](../../seo/local-page-value-review.md)
+op concrete leeswaarde/volgende stap en resterende overlap. Zes hubs hebben
+coverage-/navigatienut, Borsbeek een eigen overgangsvraag; de overige district-
+voorbereiding blijft grotendeels overdraagbaar. Drie beperkte voorstellen zijn
+vastgelegd, niet geïmplementeerd. Geen eigenaar-/menselijke eindgoedkeuring,
+nieuwe lokale vraag/case/review of automatisch noindex-besluit afgeleid.
+
 - [ ] Behoud volledige namenlijst: 67/38/55/63/62/19 = 304; actuele fusies en tien districten inclusief Borsbeek. Antwerpen→home; Brussel één intentie-eigenaar. Onderzoek eerst URL-/querykeuze voor Berendrecht-Zandvliet-Lillo.
 - [ ] Namen staan in initiële HTML/filter met labels, toetsenbord en nulresultaatfeedback. Niet-gepubliceerde bestemmingen gewone tekst; 302 drafts blijven data-only, niet routable en zonder nav/schema/hublink/sitemap. Geen 304 lege anchors of schema-gebieden.
 - [ ] Beoordeel acht bestaande districten op echte klantwaarde. Bij ontbrekende lokale case/review is een onderbouwde alternatieve unieke waarde plus menselijke beoordeling nodig; herhaalde intakecopy is geen lokale autoriteit.
@@ -418,6 +425,13 @@ metadata.1481GET-onlyrequests; geen nieuw geval, toestemming of fotomatch. Final
 whole-branch/hosted/live blijft apart en volledige herleidbare-casegate blijft open.
 
 **Files:** `content/projects.mjs`, projecthub/detailrenderer, `content/media.mjs`, `PROJECT_CONTENT_GUIDE.md`, bewijsregister, `tests/project-publication.test.mjs`, `tests/media.test.mjs`; Article-schema indien passend.
+
+**Documentaire aanvulling11oktober:** de [lege private intake](../../seo/project-case-intake-template.md)
+maakt model/generatie/diagnose en afzonderlijke werk/foto/plaats/datum/toestemming/
+reviewreferenties expliciet, met unknown/not_applicable en pending/draft als
+beginstaat. De guide bevat geen ingevulde voorbeeldgemeente/datum meer. Dit is
+intake-infrastructuur, geen nieuwe runtimevelden, werkmatch of publicatiebesluit;
+alle echte-casevoorwaarden hieronder blijven open tot de bronrecords bestaan.
 
 - [ ] Leg private werk-, fotomatch-, toestemming- en reviewreferentie plus goedkeuringsdatum vast. Openbaar alleen ondoorzichtige minimale IDs. Eigen foto ≠ automatisch bewijs voor een specifieke beschreven klus.
 - [ ] Input: titel, gemeente/district/provincie, dienst/merk/model, aanleiding/probleem, diagnose, werken/oplossing/resultaat, goedgekeurde maand/jaar, 1–3 matching originele foto's/alt, toestemming/anoniem en gerelateerde dienst/gebied/merk/review.
@@ -573,6 +587,14 @@ herstel. [QA](../../../SEO_QA_REPORT.md) bewaart harnessdiagnose en grenzen.
 Whole-branch/hosted/live is nog apart; noscript lost scripting-enabled
 prehydration niet op, en dit sluit geen volledige WP12/veld-CWV/assistive af.
 
+**Latere acceptatie6b1f5a6:** onafhankelijke whole-branch review,376lokale en
+hosted tests, exactCI38114067540, beide VercelProduction en canonical82/93/112
+slagen.24echte liveFAQ-rand/Enter/Space/strictstatic/close/herstel/routeprofielen
+slagen,496GET-onlyrequests/geen writes/pageerrors/overflow. Zes matched Borsbeek
+mobiele labruns99/100/100/100, medianeLCP ongeveer2.023s; geen causale winst of
+veld-CWV. Geen route/status/date/bronwijziging ofIndexNow. JS-enabledprehydration,
+physical/assistive/field en echte provider/event/casevoorwaarden blijven open.
+
 ### WP13 — Verdiende links en lokale partners
 
 **Files:** `LOCAL_SEO_EXTERNAL_ACTIONS.md`; nieuw `docs/seo/earned-link-opportunities.md`. Contactgegevens privé; alleen concepten in repo.
@@ -688,6 +710,12 @@ De oorspronkelijke veertienweekse pagina-roadmap, Sarveshs twaalfweekse ritme, M
 
 ## 8. Acceptance en voortgang zonder misleidend percentage
 
+**11 oktober — FAQ-release6b1f5a6 geaccepteerd:** whole-branch review, exacte
+CI38114067540/376tests, beide VercelProduction, canonical82/93/112 en24native
+livebrowserprofielen slagen. Borsbeek-lab blijft99/100/100/100 en ongeveer2.023s
+LCP onder dezelfde instellingen. Dit sluit de FAQ-randcorrectie hieronder af,
+niet scripting-enabledprehydration, alle34acceptatiepunten of alle18WPs.
+
 **11 oktober — WP08-release6015224 geaccepteerd:** onafhankelijke whole-branch
 review,370premerge/merged tests, exacteCI38111748226, beide VercelProduction
 statuses, canonical82/93/112 en32desktop/mobiel JS/no-JS profielen slagen.
@@ -710,7 +738,7 @@ niet WP08, echte gemeente-/districtbewijzen of menselijke unieke-waardecheck af;
 
 Een taak is alleen **afgerond** als deliverable én vereiste test/account/broncontrole bewezen zijn. Gebruik bron-ID, beslissing, status, verantwoordelijke, afhankelijkheid, bewijsplaats, laatste check, release-SHA indien code en volgende stap. Houd implementatie, live verificatie, externe bevestiging en zakelijk effect apart.
 
-- [ ] Controleer alle 34 M110-acceptatiebullets afzonderlijk. De masterbijlage bevat ieder punt, huidig bewijs en resterende grens.
+- [x] Controleer alle 34 M110-acceptatiebullets afzonderlijk: [beoordelingsmatrix](../../seo/2026-10-11-masterprompt-acceptance-34.md) bewaart de exacte volgorde, geleverd bewijs en resterende inhoudelijke/externe grens.34beoordeeld is niet34afgerond of alle18WPs; onderliggende onvoltooide voorwaarden blijven open.
 - [x] Lever M111 A–K: [actuele tussenrapportage](../../seo/2026-10-11-masterprompt-a-k-report.md), onafhankelijk documentreview Approved; alle A–K-onderdelen met18behouden/64nieuwe URLs, bewijs, grenzen, echte release/labresultaten en volgende acties. Dit is rapportageacceptatie, niet alle34M110-bullets of alle18WPs.
 - [x] Lever E34: hetzelfde rapport bevat304gemeenten/tien districten/zes hubs, alle302niet-routable concepten,80published/tweenoindex, bewijs/indexability/links/GSC-onbekenden en twintig onderzoekskandidaten. Nul complete gemeten prioriteitsscores of matching lokale cases blijven onbekend/ontbrekend; geen publicatiebesluit afgeleid.
 - [ ] Geen verweesd bronvereiste: C-twintig modules, S-twintig prompts, M-vier passes, J-thema's, G-publieke previews en U58 gekoppeld. Benoem ongelezen/betaald/afgebroken materiaal precies.

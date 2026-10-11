@@ -1,32 +1,46 @@
 # AB Service Project Content Guide
 
-Project pages are proof, not filler. The first six owner-confirmed, anonymized practice cases are now published. New case-study URLs must still pass the publication gate in `content/projects.mjs`.
+The first six owner-confirmed, anonymized work-type cases are published with
+broad regional scope. Their current generic evidence fields do not establish
+specific job/photo/date/place/model/consent matches. New case-study URLs need an
+individual evidence review as well as the structural gate in `content/projects.mjs`.
+
+Start with the [blank private case intake](docs/seo/project-case-intake-template.md)
+in a private copy outside Git. It records model/generation, diagnosis and separate
+work/photo/place/date/permission references, including unknown and not-applicable
+states. The empty template is documentation, not a new validator or a verified case.
 
 ## Required record
 
+This deliberately incomplete draft illustrates existing runtime fields only.
+It is not performed work and must not be copied as a published case. Add a path,
+slug, factual text and matching media only after approval; keep private evidence
+in the separate dossier. Model/generation/diagnosis from the intake do not become
+new renderer fields through this example.
+
 ```js
 {
-  path: "/projecten/gasketel-vervangen-hoboken",
-  title: "Gasketel vervangen in Hoboken",
-  status: "published",
-  service: "Gasketelinstallatie",
-  province: "Antwerpen",
-  city: "Antwerpen",
-  district: "Hoboken",
-  brand: "Niet van toepassing",
-  approximateDate: "2026-08",
-  problem: "Feitelijk technisch probleem.",
-  solution: "Feitelijke oplossing.",
-  situation: "Feitelijke beginsituatie zonder klantidentificatie.",
-  workPerformed: ["Concrete stap 1", "Concrete stap 2"],
-  outcome: "Feitelijk resultaat zonder prestatiegarantie.",
-  authenticPhotos: [
-    { src: "/projecten/bestandsnaam.webp", verified: true }
-  ],
-  customerApproval: true,
+  path: "",
+  slug: "",
+  title: "",
+  status: "draft",
+  service: "",
+  servicePath: "",
+  province: "",
+  city: "",
+  district: "",
+  brand: "",
+  approximateDate: "",
+  problem: "",
+  solution: "",
+  situation: "",
+  workPerformed: [],
+  outcome: "",
+  authenticPhotos: [],
+  customerApproval: false,
   reviewApproved: false,
   reviewText: "",
-  workEvidence: "Interne verwijzing naar werkbon/factuur, niet publiek tonen."
+  workEvidence: ""
 }
 ```
 
@@ -41,6 +55,12 @@ Project pages are proof, not filler. The first six owner-confirmed, anonymized p
 - Faces, number plates, house numbers, documents, screens and identifying interiors are removed or explicitly approved.
 - Brand/product references are visible or documented; no partnership is implied.
 - Recognition or compliance claims are backed by the required document and person.
+
+Keep an explicit private reference and review date for each work, place, date,
+model/diagnosis, photo and permission assertion. Record what is approved for public
+use separately. Permission for text does not automatically cover images, customer
+identity, an exact date, a review or every channel. Existing `verified` and
+`customerApproval` booleans remain structural assertions, not authentication.
 
 ## Photo capture
 
@@ -90,7 +110,7 @@ permanent local presence or guaranteed availability.
 
 ## Editorial workflow
 
-1. Technician/content editor completes the record and evidence checklist.
+1. Technician/content editor completes the private intake and evidence checklist.
 2. Owner verifies operational facts and permission.
 3. Developer adds optimized media and a `draft` record.
 4. Reviewer runs `validateProjectForPublication` and checks privacy.

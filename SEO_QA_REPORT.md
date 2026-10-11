@@ -1,5 +1,45 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — FAQ clearance released and verified live
+
+Whole-branch reviewed `6b1f5a6f6756b01f89d932a79bb2ec148a2b0fbe` is on GitHub
+main and both Vercel Production projects. [Exact CI38114067540](https://github.com/Ilias492610/ABService/actions/runs/38114067540)
+succeeds at05:13:47UTC under Node24.21.0: install411/412, lint,376tests,
+productionaudit0, build170 and hostedcrawl82pages/93destinations/112assets.
+Both exact-SHA Vercel checks and Production statuses succeed: primary6991276144
+at05:13:36UTC and secondary6991273676 at05:13:17UTC. Provider timestamps are not
+exact canonical-alias activation times.
+
+Fresh canonical crawl82/93/112 and all24 real Chrome desktop1440×1000/mobile
+390×844 FAQ profiles pass: ordinary edge clicks, native Enter/Space, answer
+visibility, unchanged unrelated focus, restored original links/logos, native
+close/navigation/dismissal and strictly static no-JS links.496GET-only requests,
+zero attempted writes/pageerrors/overflow. The stricter static assertion was
+reviewed and locally passed24profiles/635requests before release; the earlier
+636-request comprehensive and later623-request post-install runs remain distinct.
+Fixtures/firewall exclude actual Google, mail, analytics and customer outcomes.
+Noscript does not solve JavaScript-enabled prehydration; physical/assistive/zoom
+and field checks remain separate.
+
+Three fresh canonical Borsbeek mobile Lighthouse13.5.0/Chrome156 runs at
+05:19:56.887/05:20:09.465/05:20:20.940UTC match all complete settings of the three
+accepted6015224 runs at04:34:41.394/04:35:50.681/04:36:24.398UTC. Same machine,
+simulated throttling,412×823 viewport, storage reset and unblocked provider traffic;
+no runtime errors or run warnings. All six score99performance/100accessibility/
+100best practices/100SEO. Median before→after: LCP2022.4545→2022.9405ms,
+TBT16→5.5ms, CLS0→0, transfer277227→277516bytes. One after-run TBT was76ms;
+the other two were3.5/5.5ms. Preserve this variability rather than claiming causal
+speed gains. This is one-route lab evidence, not INP, field CWV, a fresh homepage
+test or commercial results. Raw JSON/settings are retained in ignored Task32 evidence.
+
+No IndexNow send for this shared runtime/reporting release. Route states, content
+dates and source graph are unchanged; knownSibelga403, development9/ESLint9 and
+external/private evidence gates remain open. The original normal push stalled
+in the task-owned macOS keychain helper; its exact processes were stopped and a
+per-command existing GitHub credential helper completed the normal fast-forward
+push. No credential, permission or persistent Git setting changed. Earlier
+candidate sections below preserve their historical stage, not current blockers.
+
 ## 11 October 2026 — bounded FAQ clearance candidate, not yet released
 
 Independently task-reviewed045d515 adds only the existing FAQ container to the

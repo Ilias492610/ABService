@@ -2,21 +2,23 @@
 
 ## Current progress — ongoing WP00–WP17
 
-Next task-reviewed045d515 protects native FAQs from the existing floating controls
-and preserves no-JS links in document flow. Root376tests/full local gate and24
-actual responsive browser profiles pass. Original features stay intact; final
-whole-branch/hosted/canonical gate is separate. Noscript is not JS-enabled
-prehydration clearance. The complete interim A–K/E34 report below is independently
-document-reviewed; unknown business/account/growth conditions remain explicit.
+Latest accepted6b1f5a6 protects native FAQs from the existing floating controls
+and preserves no-JS links in document flow. Independent whole-branch review,
+fresh376local/hosted tests, exactCI38114067540, both VercelProduction statuses,
+canonical82/93/112 and24responsive native browser profiles pass. Six matched
+Borsbeek mobile lab runs score99/100/100/100; median LCP stays about2.023s.
+Original features stay intact. Noscript is not JS-enabled prehydration clearance.
+The complete interim A–K/E34 report remains a6015224 historical snapshot with a
+dated release supplement; unknown business/account/growth conditions stay explicit.
 
-Latest accepted6015224 contains a bounded WP08 factual correction on six existing
+Earlier accepted6015224 contains a bounded WP08 factual correction on six existing
 districts, without publication-state or route changes. Independent task/whole-
 branch reviews, root370tests/full local gate, exact CI38111748226, both Vercel
 Production statuses, canonical82/93/112 and32responsive JS/no-JS district profiles
 pass. Six comparable mobile Borsbeek Lighthouse runs score99/100/100/100 with
 median LCP2.026→2.022s; lab results are not causal growth or fieldCWV. [QA](SEO_QA_REPORT.md)
-preserves source fallback, harness corrections and the real viewport-edge FAQ
-interference being corrected next. One six-URL IndexNow receipt is not indexing.
+preserves source fallback, harness corrections and the then-open viewport-edge
+FAQ interference, now corrected by6b1f5a6. One six-URL IndexNow receipt is not indexing.
 Specific local evidence and human distinct-value assessment remain open; none of
 the editorial audit's proposed seven noindex decisions is silently adopted.
 
@@ -33,7 +35,7 @@ by the AI editorial audit alone.
 
 The owner permits sequential continuation through the complete follow-up plan
 without a new continuation message after each bounded task. Latest accepted
-release6015224 also retains source-bound catalog corrections, the watermeter pilot,
+release6b1f5a6 also retains source-bound catalog corrections, the watermeter pilot,
 safe interactions, distinct brand maintenance/repair actions, gas-installation
 document/control preparation and initial contact-category HTML. [QA](SEO_QA_REPORT.md)
 records both the latest release and earlierc4a59f9/CI38107909184/328tests/61profile
@@ -44,6 +46,10 @@ The independently reviewed [current A–K and Phase E report](docs/seo/2026-10-1
 lists all 18 retained and 64 new URLs, all302 municipality drafts, evidence,
 release/lab results and specific next actions. It is an interim deliverable,
 not an all-WP or all34acceptance-points completion claim.
+The [34-point acceptance matrix](docs/seo/2026-10-11-masterprompt-acceptance-34.md)
+separately records delivered and remaining dimensions. The
+[blank private case intake](docs/seo/project-case-intake-template.md) improves
+WP09 input clarity without adding a real case or runtime publication fields.
 Real person/project/price/language data, owner-authenticated accounts, confirmed
 custom-event ingestion and comparable commercial/field measurements are not
 invented or marked complete. Continuation needs the available app/computer;
@@ -261,7 +267,7 @@ See `docs/seo/2026-10-10-masterprompt-status.md` for requirement-level partial/a
 `docs/seo/2026-10-10-search-baseline.md` for missing metrics and export analysis, and the QA report
 for dated release observations. Do not represent the previous 90/100 estimate as a counted checklist
 or claim every requirement is complete. Published route count is not Google's indexed count.
-The owner requested ongoing improvement; a daily 09:00 thread follow-up is registered in the app.
+The owner requested ongoing improvement; the existing15-minute thread follow-up is active in the app.
 Local scheduled runs require the computer and app to remain available.
 - Before publishing a locality, additional project, brand or service: rerun the evidence and content quality gates.
 

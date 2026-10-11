@@ -1,5 +1,34 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — acceptance evidence and blank case intake
+
+- Reconciles all34original M110 bullets individually, preserving delivered,
+  conditional and external dimensions rather than a completion percentage.
+- Adds a blank private project-intake template for model/generation/diagnosis
+  and separate job/photo/place/date/permission/review references. Guide example
+  now defaults to an incomplete draft, without invented Hoboken/date/approval.
+- Updates current release records and adds a dated A–K6015224 snapshot supplement.
+  Docs only: no runtime fields, project/area publication or new evidence inferred.
+  The existing15-minute continuation is documented, not recreated.
+- Records existing eight-district/six-hub customer-value distinctions and three
+  limited proposals. This is editorial research, not owner acceptance or an
+  automatic indexation/publication decision.
+
+## 11 October 2026 — FAQ clearance publication and live acceptance
+
+- Whole-branch reviewed6b1f5a6 normally published to GitHub main and both Vercel
+  Production projects. [CI38114067540](https://github.com/Ilias492610/ABService/actions/runs/38114067540)
+  passes376tests/lint/production0/build170/hosted82/93/112 underNode24.21.0.
+- Canonical82/93/112 crawl and24responsive native FAQ/keyboard/dismissal/no-JS
+  profiles pass,496GET-onlyrequests and no attempted writes/pageerrors/overflow.
+  Strict static regression assertion is included; original channels remain.
+- Six matched mobile Borsbeek lab runs score99/100/100/100. Median LCP remains
+  about2.023s; TBT16→5.5ms with a76ms after-run, CLS0 and277227→277516bytes.
+  Descriptive lab comparison only; no causal, field or customer improvement claim.
+- No route/state/date/schema/source change or IndexNow send. Known source403,
+  development9/ESLint9, prehydration and external/private evidence stay open.
+  Historical candidate entries remain dated stages, not current release blockers.
+
 ## 11 October 2026 — FAQ clearance and complete interim reporting candidate
 
 - Task-reviewed045d515 protects native FAQ content from both existing fixed

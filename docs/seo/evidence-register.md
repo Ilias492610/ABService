@@ -1,5 +1,43 @@
 # Evidence Register
 
+## 11 October 2026 — individual acceptance and case intake documentation
+
+The [34-point matrix](2026-10-11-masterprompt-acceptance-34.md) records each exact
+original M110 item in order, referencing accepted6b1f5a6 and dated account/source/
+receipt boundaries.34checked is not34satisfied. The [blank private intake](project-case-intake-template.md)
+separates work/photo/place/date/model/diagnosis/permission/review references and
+unknown/not-applicable states. It contains no real private identifiers and changes
+no runtime validator, publication state, matching local evidence or case fact.
+The guide's previous filled hypothetical Hoboken/date example is replaced by an
+explicitly incomplete draft. Actual job and permission references remain absent
+until genuine records are supplied; broad owner confirmations are not withdrawn.
+The [14-page local review](local-page-value-review.md) records current visible
+templates, coverage-list purpose, Borsbeek's transition answer and transferable
+district preparation. Zero specific local case/review matches remain. Three
+bounded proposals are not implemented; no owner approval/state decision inferred.
+
+## 11 October 2026 — FAQ canonical and lab release evidence
+
+Accepted6b1f5a6f6756b01f89d932a79bb2ec148a2b0fbe follows independent whole-branch
+review and fresh376premerge/merged tests. [CI38114067540](https://github.com/Ilias492610/ABService/actions/runs/38114067540)
+succeeds05:13:47UTC Node24.21.0/376tests/lint/production0/build170/82/93/112;
+both exact-SHA Vercelchecks/Productionstatuses succeed: primary6991276144 at
+05:13:36UTC, secondary6991273676 at05:13:17UTC. Canonical82/93/112 and24native
+FAQ/keyboard/dismissal/restoration/JS-no-JS profiles496GETs pass, no writes/
+pageerrors/overflow. Original links/logos/provider effect preserved. Synthetic
+4.7/503fixtures establish no new Google/mail/event/customer facts.
+
+Three actual post-release Borsbeek mobile Lighthouse13.5.0/Chrome156 runs match
+all complete settings of three accepted6015224 baseline runs. All six99/100/100/100,
+unblocked provider traffic/no runtime error/no warnings. Median before→after
+LCP2022.4545→2022.9405ms, TBT16→5.5ms, CLS0, bytes277227→277516; after TBT range
+3.5–76ms. Task32 raw JSON and comparison preserve settings/times/variability.
+This is descriptive one-route lab evidence, not causal gain/INP/field/homepage/
+commercial proof. No IndexNow, source/state/contentdate/accountpermission change.
+Noscript excludes JS-enabled prehydration; known403/dev9/ESLint9 and genuine
+case/local/physical/assistive/external conditions remain. Earlier records stay
+historical; the strict static assertion follow-up does not expand product scope.
+
 ## 11 October 2026 — FAQ interaction and interim reporting candidate evidence
 
 Task-reviewed045d515 is limited to FAQ suppression and literal noscript fallback.

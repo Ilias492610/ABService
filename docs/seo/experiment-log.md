@@ -407,3 +407,25 @@ noscript excludes JS-enabled prehydration, headless excludes physical/assistive/
 fieldCWV. No new search-window/KPI/denominator or ranking/customer attribution.
 Parent experimental freeze/measurement/revert contracts are unchanged. This
 shared-shell/runtime and reporting change does not justify whole-site IndexNow.
+
+## FAQ-CLEARANCE-20261011 — later public release acceptance
+
+Whole-branch reviewed6b1f5a6 is normally on main. ExactCI38114067540 succeeds
+05:13:47UTC Node24.21.0/376tests/lint/production0/build170/hosted82/93/112;
+both exact Vercelchecks/Productionstatuses succeed primary6991276144 at05:13:36
+and secondary6991273676 at05:13:17UTC. Fresh canonical82/93/112 and24real native
+FAQ edge/Enter/Space/strictstatic/no-JS/close/restoration/navigation profiles
+pass,496GET-onlyrequests/no attempted writes/pageerrors/overflow. Earlier local
+636 comprehensive,623post-install and635strict-static follow-up runs retain
+their chronology. No IndexNow send for shared runtime or reporting.
+
+Matched three6015224 baseline and three6b1f5a6 after Borsbeek mobile lab runs,
+Lighthouse13.5.0/Chrome156, exact complete settings/machine/storage reset/unblocked
+providers, all99/100/100/100/no runtime errors/warnings. Median LCP2022.4545→
+2022.9405ms/TBT16→5.5ms/CLS0/bytes277227→277516, after TBT range3.5–76ms.
+This is descriptive lab stability, not a randomized causal gain or field INP.
+
+**RELEASE ACCEPTED /NOT GROWTH-EVALUATED.** No equal-window lead/job denominator,
+event-ingestion proof, physical/assistive/field result or new local case/value
+approval. Noscript does not handle JS-enabled prehydration; source403/dev9 and
+the parent experiment's freeze/measurement/revert contract remain unchanged.

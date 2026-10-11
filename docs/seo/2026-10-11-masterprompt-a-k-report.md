@@ -6,6 +6,18 @@ Vercel-projecten, met geslaagde hosted controles en controles op
 `https://www.abservice24.be`. Deze tussenstand beantwoordt de A–K-vragen uit
 de oorspronkelijke masterprompt; zij verklaart niet alle WP00–WP17 afgerond.
 
+**Latere aanvulling 11 oktober 2026:** de hoofdtekst hieronder bewaart die
+historische6015224-peildatum. Inmiddels is6b1f5a6 whole-branch reviewed en
+gepubliceerd: exactCI38114067540/376tests, beideVercelProduction, canonicalcrawl
+82/93/112 en24native liveFAQ-profielen slagen. Zes matched mobiele Borsbeek-labruns
+blijven99/100/100/100, medianeLCP ongeveer2.023s. De hieronder toen-open FAQ-randfix
+is daarmee afgeleverd; JS-enabledprehydration en bredere voorwaarden blijven open.
+[QA](../../SEO_QA_REPORT.md) bewaart de exacte release-/labgegevens, de
+[34-puntenmatrix](2026-10-11-masterprompt-acceptance-34.md) beoordeelt elk M110-punt
+afzonderlijk en de [lege private intake](project-case-intake-template.md) maakt
+de volgende echte-case-invoer concreter. Dit voegt geen casebewijs, lokale
+goedkeuring, zoekindexatie, klantresultaat of afgeronde18WPs toe.
+
 De technische basis en verschillende inhoudelijke verbeteringen zijn geleverd.
 De volgende grens ligt vooral bij traceerbare echte projecten, onderscheidende
 lokale waarde, publieke accountgoedkeuringen en meetbare passende aanvragen.
