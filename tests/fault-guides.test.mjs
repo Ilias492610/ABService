@@ -4,6 +4,7 @@ import assert from "node:assert/strict";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { sourceFacts } from "./fixtures/remeha-calenta-ace-matic.mjs";
 import { sourceFacts as source25L } from "./fixtures/remeha-calenta-ace-matic-25l.mjs";
+import { ithoFacts } from "./fixtures/itho-base-cube-source-safety.mjs";
 
 const bySlug = (slug) => faultGuides.find((guide) => guide.slug === slug);
 
@@ -88,7 +89,12 @@ test("every code row is complete, safely worded and unique within its model tabl
         assert.ok(entry.code.trim().length > 0);
         assert.ok(entry.meaning.trim().length >= 10);
         assert.ok(entry.userAction.trim().length >= 80);
-        assert.equal(entry.sourcePage, catalog.sourcePages);
+        // Itho's independently read diagnostic pages are narrower than its
+        // whole display/control chapter; the other catalogs keep their contract.
+        const sourcePage = catalog.id === ithoFacts.id
+          ? ithoFacts.rowChanges.find(row => row.beforeCode === entry.code)?.after.sourcePage
+          : catalog.sourcePages;
+        assert.equal(entry.sourcePage, sourcePage);
         assert.ok(entry.searchTerms.includes(entry.code));
         assert.doesNotMatch(entry.userAction, /vervang de printplaat|demonteer|open de mantel(?! niet)/i);
       }

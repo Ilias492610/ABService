@@ -2,7 +2,18 @@
 
 ## Current progress — ongoing WP00–WP17
 
-Latest accepted6b1f5a6 protects native FAQs from the existing floating controls
+Latest accepted c7b44be is Task56's source-bound Ferroli correction: sole review,
+481tests/exactCI38171335058/both actual matching Production7001160742 and
+7001155894/canonical82pages93links112assets/native four profiles209GET pass.
+One FerroliIndexNowHTTP200 is receipt, not indexing. Tasks57–58 are the current
+locally verified cohort: Nefit reset-state search and three-model NL Itho
+BaseCube diagnostic/state context. Fresh499tests/lint0/production0/build170/
+localcrawl82/93/112 and ten native profiles pass; independent review, exact
+publication and canonical live remain gates. No further all-WP completion,
+universal manufacturer fit or ranking/field/commercial guarantee is implied.
+Detailed evidence and crop limitations remain in [QA](SEO_QA_REPORT.md).
+
+Earlier accepted6b1f5a6 protects native FAQs from the existing floating controls
 and preserves no-JS links in document flow. Independent whole-branch review,
 fresh376local/hosted tests, exactCI38114067540, both VercelProduction statuses,
 canonical82/93/112 and24responsive native browser profiles pass. Six matched
@@ -34,7 +45,7 @@ unsupported district copy; no blanket noindex/publication change is authorized
 by the AI editorial audit alone.
 
 The owner permits sequential continuation through the complete follow-up plan
-without a new continuation message after each bounded task. Latest accepted
+without a new continuation message after each bounded task. Earlier accepted
 release6b1f5a6 also retains source-bound catalog corrections, the watermeter pilot,
 safe interactions, distinct brand maintenance/repair actions, gas-installation
 document/control preparation and initial contact-category HTML. [QA](SEO_QA_REPORT.md)

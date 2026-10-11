@@ -1,3 +1,4 @@
+import { beforeIthoGuide, beforeIthoRegistry } from "./fixtures/itho-base-cube-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
@@ -56,7 +57,7 @@ test("complete actual37-card SSR and every untouched element restore exact genui
   const html=await renderFaultGuide("ferroli");assert.equal((html.match(/class="fault-code-card"/g)||[]).length,37);assert.equal((html.match(/<option /g)||[]).length,2);for(const value of [facts.scope,facts.warning,facts.label])assert.ok(html.includes(value));assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);assert.equal(hash(beforeFerroliHtml(html,"ferroli")),facts.preservation.html);
 });
 test("all13 complete guides and82 registry entries preserve every leaf outside exact declared Ferroli changes",()=>{
-  assert.equal(hash(beforeFerroliGuide(guide)),facts.preservation.guide);assert.equal(hash(beforeFerroliGuide(guide).codes),facts.preservation.codes);assert.equal(hash(faultGuides.filter(g=>g.slug!=="ferroli")),facts.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeFerroliGuide)),facts.preservation.allGuides);assert.equal(hash(pageRegistry.map(beforeFerroliRegistry)),facts.preservation.allRegistry);assert.equal(faultGuides.reduce((n,g)=>n+g.codeEntryCount,0),1596);
+  assert.equal(hash(beforeFerroliGuide(guide)),facts.preservation.guide);assert.equal(hash(beforeFerroliGuide(guide).codes),facts.preservation.codes);assert.equal(hash(faultGuides.filter(g=>g.slug!=="ferroli").map(beforeIthoGuide)),facts.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeIthoGuide).map(beforeFerroliGuide)),facts.preservation.allGuides);assert.equal(hash(pageRegistry.map(beforeIthoRegistry).map(beforeFerroliRegistry)),facts.preservation.allRegistry);assert.equal(faultGuides.reduce((n,g)=>n+g.codeEntryCount,0),1596);
 });
 test("Ferroli manifest ties only verified historical fields to retained original PDF and leaves device-fit unknown",async()=>{
   const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")),e=m.entries.find(e=>e.id===facts.id),s=m.snapshots.find(s=>s.id==="ferroli-bluesense-pdf");

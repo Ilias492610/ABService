@@ -1,3 +1,4 @@
+import { beforeIthoGuide, beforeIthoRegistry } from "./fixtures/itho-base-cube-source-safety.mjs";
 import { beforeFerroliGuide, beforeFerroliRegistry } from "./fixtures/ferroli-bluesense-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -31,10 +32,10 @@ test("Nefit source glyph is not a subcode: exactly78 literal identifiers retain5
   for (const code of facts.sourceIdentifiers) assert.equal(search(code).length, 1, code);
   assert.deepEqual(search("9Y"), ["9Y"]);
   for (const q of ["9Y3", "9Y03", ...facts.excluded.filter(c => c !== "rE"), "UNKNOWN54"]) assert.deepEqual(search(q), [], q);
-  // rE is absent as a code, but the shared code-or-meaning search legitimately
-  // matches this two-letter substring in Dutch prose. Do not change that policy.
+  // Task57 now handles this source's reset-in-progress display state explicitly;
+  // it remains absent as a fault card, rather than matching unrelated prose.
   assert.ok(!catalog.codes.some(r => r.code === "rE"));
-  assert.deepEqual(search("rE"), ["0Y 285", "1C 210", "2U 213", "2U 349", "3C 217", "3F 273", "4C 224", "4E 347", "7C 231", "7H 328", "9L 234", "CA 286", "CU 240", "CY 241"]);
+  assert.deepEqual(search("rE"), []);
   assert.equal(search("").length, 54);
 });
 test("all19 exact source-bound row changes, including alias correction, are independently asserted", () => {
@@ -84,8 +85,8 @@ test("full54-row SSR, unchanged cards and each source/contact element preserve g
 test("full genuine13guides/82registry preserve every leaf except declared Nefit changes and Intergas count clarity", () => {
   assert.equal(hash(beforeNefitGuide(guide)), facts.preservation.guide);
   assert.equal(hash(beforeNefitGuide(guide).codes), facts.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g => g.slug !== "nefit-bosch").map(beforeIntergasCountGuide).map(beforeFerroliGuide)), facts.preservation.otherTwelveGuides);
-  assert.equal(hash(faultGuides.map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasCountGuide)), facts.preservation.allGuides);
-  assert.equal(hash(pageRegistry.map(beforeFerroliRegistry).map(beforeNefitRegistry)), facts.preservation.allRegistry);
+  assert.equal(hash(faultGuides.filter(g => g.slug !== "nefit-bosch").map(beforeIntergasCountGuide).map(beforeIthoGuide).map(beforeFerroliGuide)), facts.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasCountGuide)), facts.preservation.allGuides);
+  assert.equal(hash(pageRegistry.map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry)), facts.preservation.allRegistry);
   assert.equal(faultGuides.reduce((n, g) => n + g.codeEntryCount, 0), 1596);
 });

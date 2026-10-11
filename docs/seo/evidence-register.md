@@ -1,5 +1,43 @@
 # Evidence Register
 
+## 11 October 2026 — Itho primary and sourced display states; Tasks57–58 candidate
+
+[Original Base Cube manual](https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf)
+ONEHTTP200/no redirect/4061075bytes/114pages/SHA
+`ad5b3378ba0d35df03d58e3ce66a3c04df702c87f604bc7b1b8e77b7717b0bba`.
+Root reads required identity/model/safety/control passages and all30diagnostic
+blocks/all26comparisons, critical pixels3/12/80/85/86/88/93/114; not all114
+chapters. Printed01-04199-001, observed imprintID2020-07-20-1100 is not a
+separately labelled issue/revision. p12:BaseCube24/30 13L,24/35 16L,30/35 16L,
+destinationNL; p3explicitly excludes HP(COOL)Cube combinations. CubeOne in
+declaration, PDFmetadata and Belgian electrical exceptions do not broaden fit.
+CurrentBelgian/SKU/firmware/latest/revision/issue remain unknown/null.
+
+§7.4 pp83–95:26distinct W/B/E groups/30diagnostic blocks (3W/10B/13E), B00/B01
+eachthree sensor variants within one unchanged key. Literal B01 flue10°C lacks
+minus in source; do not silently repair to-10. Eight meanings and26local actions
+separate Wcontinued/Bauto-resume/Elockout; W10 no fill/drain, B25 confirmedlow
+pressure only, E16 flow not diagnosedlowpressure, B12 waits/no extraRESET or
+powercycle. Sensor/electrical/plug-reversal/component solutions are professional.
+Ordinary code and actual gas/flue/COdanger differ; solarafterheater avoids
+blanketoff. p80about15s andp82five-minute reset contexts not combined.
+Nine ordinary p79statuses plusECO/ECOCOMFORT/WARMWATERUIT are not W/B/E codes;
+catalog-only exact-state queries return official source context, no faultcards.
+Nefit original6720646227/04-2013/table25p34r39 says rE reset underway, not proof
+cause fixed; blank classification not inferred. Only Nefit normalizedrE uses
+this context; Bosch/Junkers genuineHrE/rE remains its own source-bound alias.
+
+Independent RED→GREEN/fresh499/lint0/production0/standard170/local82/93/112/
+native57sixprofiles and58fourprofiles pass; root records/pixels checked.
+Locatorcrop overlap remains a capture limitation, not full visibility/AT/
+provider/fieldproof. Review/exact hosted/live are open.25PDF-linked/12PDF/twoWeb/
+five declarations;31other entries/13old snapshots/12other mirrors exact.
+[Coverage](fault-code-model-coverage.md) keeps source identity and fit separate.
+
+Task56 accepted c7b44be/solefreshreview/exactCI38171335058/481/actualmatching
+Production7001160742+7001155894/canonical82/93/112/liveFerroli209GET pass.
+One FerroliIndexNowHTTP200 is receipt only; older candidate phases are history.
+
 ## 11 October 2026 — Ferroli historical primary; Task56 candidate
 
 [Original manufacturer PDF](https://www.ferroli.com/media/1547640352.pdf)

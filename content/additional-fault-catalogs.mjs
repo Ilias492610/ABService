@@ -418,44 +418,67 @@ export const atagCatalogs = Object.freeze([
   }),
 ]);
 
+// Original Base Cube 01-04199-001: local W/B/E controls and exact printed
+// diagnostic locators. Do not infer these actions from other brands' keywords.
+const ithoDiagnosticPages = { W10:83,W20:83,W31:84,B00:85,B01:86,B05:87,B06:87,B09:87,B10:88,B12:88,B14:88,B22:89,B25:89,E00:90,E06:90,E07:91,E08:91,E10:92,E14:92,E15:92,E16:93,E21:93,E22:94,E30:94,E33:95,E35:95 };
+const withIthoSourceControls = catalog => Object.freeze({
+  ...catalog,
+  codes: Object.freeze(catalog.codes.map(row => {
+    const control = row.code[0] === "W"
+      ? "Volgens deze handleiding blijft het toestel bij een W-waarschuwing in bedrijf; de betrokken functie wordt tijdelijk uitgeschakeld of genegeerd. Laat een blijvende of terugkerende melding door uw installateur beoordelen."
+      : row.code[0] === "B"
+        ? "Volgens deze handleiding wacht het toestel bij een B-blokkering en hervat het bedrijf wanneer de blokkering verdwijnt. Reset niet herhaaldelijk; een blijvende melding vraagt professionele beoordeling."
+        : "Volgens deze handleiding is een E-storing vergrendelend. Ontgrendeling verloopt met de RESET-toets vanuit het statusscherm, niet met een spanningsonderbreking. Volg alleen de toepasselijke gebruikersinstructie; combineer de verschillende resetpassages niet tot extra pogingen. Laat een blijvende of terugkerende storing professioneel onderzoeken.";
+    let action = "Noteer de volledige code en het exacte model. Volg alleen handelingen die in de gebruikershandleiding voor de gebruiker zijn beschreven, reset niet herhaaldelijk en open geen gas-, rookgas- of elektrische onderdelen.";
+    if (["W20","B00","B01","B05","B06","B10","B22","E30","E33"].includes(row.code)) action = "Noteer de volledige code en het exacte toestelmodel. Open de mantel niet en werk niet aan sensoren, bekabeling, printplaat of netspanning; deze melding vraagt technische diagnose.";
+    if (["B09","E06","E07","E08","E10"].includes(row.code)) action = "Stop onmiddellijk bij gasgeur: bedien geen schakelaars, ventileer indien dat veilig kan, sluit de gastoevoer alleen als u weet hoe en bel van buiten de gevarenzone de bevoegde hulp. Zonder gasgeur: noteer de volledige code en laat de oorzaak professioneel beoordelen.";
+    if (["W31","E00","E22"].includes(row.code)) action = "Bij rookgasgeur, zichtbare rookgaslekkage of een CO-melding: verlaat de onveilige ruimte en neem van buitenaf contact op met de bevoegde hulpdienst; bij direct gevaar belt u 112. Bedien bij gasgeur geen schakelaars. Zonder zulke gevaarsignalen: noteer code en model en laat luchttoevoer, rookgasafvoer en verbranding professioneel beoordelen. Schakel een toestel dat als zonneboiler-naverwarmer werkt niet zomaar uit.";
+    if (row.code === "W10") action = "Lees alleen de zichtbare drukweergave en noteer de waarde en het exacte model. Vul het toestel niet bij en tap niet zelf water af om W10 te wissen. Laat de druk en oorzaak professioneel beoordelen; open geen gesloten onderdelen.";
+    if (row.code === "B25") action = "Lees de zichtbare drukweergave en noteer de waarde. Een lage displaywaarde alleen bewijst niet dat bijvullen nodig is. Volg een vulinstructie uitsluitend bij een bevestigde lage druk en als de gebruikershandleiding van uw exacte toestel die handeling toestaat. De vulprocedure op p. 76 schrijft voor het toestel niet uit te schakelen. Open geen gesloten onderdelen en laat een terugkerende melding onderzoeken.";
+    if (row.code === "E16") action = "Deze doorstromingsmelding bewijst geen lage waterdruk. Controleer alleen de zichtbare drukweergave en of de radiatorkranen geopend zijn; noteer de waarden en het model. Vul niet bij uitsluitend op basis van E16 en werk niet aan pomp, drukverschilregelaar, sensoren of thermische beveiligingen. Laat een blijvende melding technisch beoordelen.";
+    if (row.code === "B12") action = "Wacht bij B12 enige minuten zonder opnieuw op RESET te drukken; de handleiding noemt hiervoor geen verdere gebruikershandeling. Onderbreek niet de netspanning om deze blokkering te omzeilen. Blijft de melding staan of keert ze terug, neem contact op met uw installateur.";
+    return Object.freeze({ ...row, userAction: `${control} ${action}`, sourcePage: `§ 7.4.${row.code[0] === "W" ? 1 : row.code[0] === "B" ? 2 : 3}, p. ${ithoDiagnosticPages[row.code]}` });
+  })),
+});
+
 export const ithoDaalderopCatalogs = Object.freeze([
-  createFaultCatalog({
+  withIthoSourceControls(createFaultCatalog({
     id: "itho-base-cube",
     title: "Base Cube",
     scope:
-      "Alle waarschuwingen, blokkeringen en storingen uit de overzichtstabel van de officiële Base Cube-handleiding 01-04199-001; varianten met dezelfde code zijn in één doorzoekbare regel samengevoegd.",
-    sourceLabel: "Itho Daalderop Base Cube - officiële handleiding",
+      "De 26 W/B/E-codegroepen volgen 30 diagnostische vermeldingen uit § 7.4, p. 83-95 van handleiding 01-04199-001, met imprint ID 2020-07-20-1100. De bron noemt Base Cube 24/30 13L, 24/35 16L en 30/35 16L, met land van bestemming NL. B00 en B01 hebben elk drie sensorvarianten binnen één codegroep. Deze handleiding is uitdrukkelijk niet voor een combinatie met HP (COOL) Cube. Gewone statusmeldingen en pomp-ledmeldingen zijn geen extra W/B/E-codes. Andere modellen, actuele Belgische compatibiliteit, artikelnummers, firmware en nieuwste revisie zijn niet vastgesteld.",
+    sourceLabel: "Itho Daalderop Base Cube - handleiding 01-04199-001 (imprint ID 2020-07-20-1100, NL)",
     sourceUrl: "https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf",
-    sourcePages: "§ 7.2-7.4, p. 79-95",
+    sourcePages: "§ 7.2-7.4, p. 78-95",
     rows: [
       ["W10", "De waterdruk van de cv-installatie is te hoog.", "pressure"],
-      ["W20", "De buitentemperatuursensor meldt een fout."],
+      ["W20", "Het systeem detecteert geen buitenvoeler; aansluiting, sensor en configuratie zijn mogelijke controlepunten, geen vastgestelde oorzaak."],
       ["W31", "De rookgastemperatuur is te hoog.", "flue"],
-      ["B00", "Een sensor voor cv-aanvoer, rookgas of warm water meet een te hoge temperatuur."],
-      ["B01", "Een sensor voor cv-aanvoer, rookgas of warm water is kortgesloten."],
-      ["B05", "De gemeten netfrequentie is onjuist."],
+      ["B00", "De handleiding noemt drie sensorvarianten met de aanduiding Sensor open: cv-aanvoer of warm water hoger dan 118 °C, of rookgas hoger dan 138 °C. Noteer ook de sensoromschrijving op het display; dit bewijst geen defect aan één specifiek onderdeel."],
+      ["B01", "De handleiding noemt drie varianten met de aanduiding Sensor kortgesloten: cv-aanvoer of warm water lager dan -10 °C, of rookgas lager dan 10 °C. Die rookgaswaarde staat zonder minteken in de bron. Noteer ook de sensoromschrijving; de oorzaak vraagt technische controle."],
+      ["B05", "Er is een fout in het elektrische systeem gedetecteerd; de overzichtstabel noemt dit een netfrequentiefout, zonder gemeten frequentiewaarde."],
       ["B06", "De cv-regelunit meldt een interne fout."],
       ["B09", "De regeling meldt een fout in het vlamsignaal.", "gas"],
       ["B10", "De fase-aansluiting is onjuist; laat de elektrische aansluiting controleren."],
       ["B12", "De resettoets is te snel of te vaak achter elkaar ingedrukt."],
       ["B14", "De warmwatertemperatuur stijgt niet tijdens de toestelbewaking."],
       ["B22", "Het ingestelde toesteltype is onjuist of wordt niet herkend."],
-      ["B25", "De waterdruk van de cv-installatie is te laag.", "pressure"],
+      ["B25", "De waterdruk is volgens deze handleiding tijdens bedrijf 0,5 bar of lager, of bij het opstarten 1 bar of lager; het toestel wordt geblokkeerd en brandt niet. Een lage weergave stelt de oorzaak niet vast.", "pressure"],
       ["E00", "De ventilator van het cv-toestel meldt een fout.", "flue"],
       ["E06", "Tijdens de start is geen ionisatiesignaal gemeten.", "gas"],
       ["E07", "Het ionisatiesignaal is tijdens warmtelevering weggevallen.", "gas"],
-      ["E08", "Na de warmtelevering blijft ten onrechte ionisatie aanwezig.", "gas"],
+      ["E08", "Na de warmtelevering blijft het ionisatiesignaal te lang aanwezig.", "gas"],
       ["E10", "De aansturing van de gasklep krijgt ten onrechte spanning.", "gas"],
       ["E14", "De warmwatertemperatuur stijgt na drie pogingen niet."],
       ["E15", "Bij warmwatervraag is onvoldoende doorstroming."],
-      ["E16", "Bij cv-vraag is onvoldoende doorstroming.", "pressure"],
-      ["E21", "De maximumthermostaat meldt dat het cv-water te warm is."],
+      ["E16", "Bij cv-vraag is onvoldoende doorstroming; lage waterdruk is één mogelijke oorzaak, niet de vastgestelde diagnose.", "pressure"],
+      ["E21", "De maximaalthermostaat schakelt het toestel uit nadat de cv-temperatuursensor meer dan 105 °C aangaf."],
       ["E22", "De rookgastemperatuur is te hoog geworden.", "flue"],
       ["E30", "De cv-regelunit meldt een veiligheidsstoring."],
       ["E33", "De cv-regelunit meldt een interne storing."],
       ["E35", "Een blokkerende melding blijft langer dan twintig uur actief."],
     ],
-  }),
+  })),
 ]);
 
 // DRS9100 v9 restart constraints are local, not a shared classifier change.

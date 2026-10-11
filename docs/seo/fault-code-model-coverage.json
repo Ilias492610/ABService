@@ -1,6 +1,6 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit",
   "incrementalUpdateDate": "2026-10-11",
   "counts": {
     "guides": 13,
@@ -162,7 +162,7 @@
     {
       "slug": "itho-daalderop",
       "brand": "Itho Daalderop",
-      "modelWarning": "Deze catalogus bevat de volledige waarschuwing-, blokkering- en foutcodetabel voor de Itho Daalderop Base Cube. Een code van een ander toestelmodel kan een andere betekenis of procedure hebben.",
+      "modelWarning": "Deze gids gebruikt uitsluitend de 26 W/B/E-codegroepen voor Base Cube 24/30 13L, 24/35 16L en 30/35 16L uit handleiding 01-04199-001 (imprint ID 2020-07-20-1100), met Nederlandse toestelbestemming. Niet voor HP (COOL) Cube-combinaties of alle Itho Daalderop-ketels. De imprintdatum is geen afzonderlijk vastgestelde revisie of uitgiftedatum; actuele Belgische toestelcompatibiliteit, artikelnummers, firmware en nieuwste revisie zijn onbekend. W is een waarschuwing, B een automatisch herstellende blokkering en E een vergrendelende storing. De resetpassage op p. 80 noemt circa 15 seconden; p. 82 noemt vijf minuten in een ander diagnoseverloop. Combineer deze niet tot extra resetpogingen. Noteer ook de sensoromschrijving bij B00/B01 en volg de gebruikershandleiding van uw exacte toestel; open de mantel niet.",
       "explanationRowCount": 26,
       "catalogIds": [
         "itho-base-cube"
@@ -297,6 +297,17 @@
       "pageCount": 16,
       "bytes": 1021443,
       "sourceBoundary": "One original manufacturer301 to officialmedia200 PDF; printed DRS9100 version9 augustus2015, historical Dutch service context. No prior independently recorded hash, exactSKU/currentfirmware/Belgian-fit/latest proof."
+    },
+    {
+      "id": "itho-base-cube-pdf",
+      "url": "https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-58-itho-primary-preflight-20261011T201715Z/original-base-cube.pdf",
+      "sha256": "ad5b3378ba0d35df03d58e3ce66a3c04df702c87f604bc7b1b8e77b7717b0bba",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 114,
+      "bytes": 4061075,
+      "sourceBoundary": "One original HTTP200 manufacturer PDF without redirect. Printed01-04199-001 and observed imprint ID2020-07-20-1100; p12 names three Base Cube models with NL destination. The imprint date is not a separately labelled issue/revision. HP COOL Cube combinations excluded; exactSKU/currentfirmware/Belgian-fit/latest remain unestablished."
     }
   ],
   "entries": [
@@ -1422,26 +1433,46 @@
         "itho-daalderop"
       ],
       "title": "Base Cube",
-      "modelScope": "Alle waarschuwingen, blokkeringen en storingen uit de overzichtstabel van de officiële Base Cube-handleiding 01-04199-001; varianten met dezelfde code zijn in één doorzoekbare regel samengevoegd.",
-      "sourceLabel": "Itho Daalderop Base Cube - officiële handleiding",
+      "modelScope": "De 26 W/B/E-codegroepen volgen 30 diagnostische vermeldingen uit § 7.4, p. 83-95 van handleiding 01-04199-001, met imprint ID 2020-07-20-1100. De bron noemt Base Cube 24/30 13L, 24/35 16L en 30/35 16L, met land van bestemming NL. B00 en B01 hebben elk drie sensorvarianten binnen één codegroep. Deze handleiding is uitdrukkelijk niet voor een combinatie met HP (COOL) Cube. Gewone statusmeldingen en pomp-ledmeldingen zijn geen extra W/B/E-codes. Andere modellen, actuele Belgische compatibiliteit, artikelnummers, firmware en nieuwste revisie zijn niet vastgesteld.",
+      "sourceLabel": "Itho Daalderop Base Cube - handleiding 01-04199-001 (imprint ID 2020-07-20-1100, NL)",
       "sourceURL": "https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf",
-      "sourcePages": "§ 7.2-7.4, p. 79-95",
+      "sourcePages": "§ 7.2-7.4, p. 78-95",
       "explanationRowCount": 26,
       "modelFamily": "Base Cube",
-      "models": null,
+      "models": [
+        "Base Cube 24/30 13L",
+        "Base Cube 24/35 16L",
+        "Base Cube 30/35 16L"
+      ],
       "articleNumbers": null,
       "documentNumber": "01-04199-001",
       "revision": null,
       "issueDate": null,
-      "market": null,
-      "language": null,
-      "component": null,
+      "imprintLiteral": "01-04199-001 | ID 2020-07-20-1100",
+      "imprintDateObserved": "2020-07-20",
+      "market": "NL",
+      "language": "nl",
+      "component": "Base Cube CV controller W/B/E diagnostic display",
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "itho-base-cube-pdf",
+      "literalDistinctCodeCount": 26,
+      "literalDiagnosticEntryCount": 30,
+      "literalWarningCodeCount": 3,
+      "literalBlockingCodeCount": 10,
+      "literalFaultCodeCount": 13,
+      "sensorVariantCounts": {
+        "B00": 3,
+        "B01": 3
+      },
+      "normalStateRowCount": 9,
+      "firmwareCompatibility": null,
+      "currentBelgianVariantCompatibility": null,
+      "newestEdition": null,
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-58-itho-primary-preflight-20261011T201715Z/preflight.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-58-itho-primary-preflight-20261011T201715Z/literal-primary-inputs.json"
       ],
-      "verificationBasis": "Current scope explicitly declares manual identifier01-04199-001 and sections7.2–7.4; identifier is not assumed to be a footer revision or boiler SKU. Exact models/market/language/revision unverified here.",
+      "verificationBasis": "Task58 personally read original source identity/model destination p12, explicit HP COOL Cube exclusion p3, control passages pp76–82 and all30 diagnostic blocks pp83–95;26 distinct W/B/E keys, with three B00 and three B01 sensor variants kept within their existing groups. Ordinary status rows and pump LED states are not additional diagnostic codes. Observed imprint IDdate is not inferred issue/revision, PDF metadata and Belgian electrical branches do not extend model or market fit.",
       "declaredScopePath": "content/additional-fault-catalogs.mjs",
       "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
     },

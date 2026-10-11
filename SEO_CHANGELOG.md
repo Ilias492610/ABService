@@ -1,5 +1,37 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — Tasks57–58 local acceptance; review and release pending
+
+Nefit ProLine rE now returns historical reset-underway context instead of
+14 unrelated prose matches; Bosch/Junkers HrE/rE, Bulex con, EA and ordinary
+word searches remain. No new Nefit row, metadata or content date.
+Itho Base Cube original01-04199-001/imprintID2020-07-20-1100 establishes three
+NL models, not HP(COOL)Cube:26 W/B/E groups/30 diagnostic entries, B00/B01 each
+three sensor variants. Eight meanings/26 local actions distinguish warning,
+automatic blockage, lockout, high/low pressure and flow; printed row pages
+83–95, scope/source/meta and genuine Itho content date corrected. Twelve p79
+normal indications return sourced context, not incidental prose faults.
+Imprint date is not an inferred issue/revision; currentBE/SKU/firmware/latest
+remain unknown. Only Itho manifest entry/mirror/new14th snapshot changed:
+25PDF-linked/12PDF/twoWeb/five declarations;31other entries/13old snapshots/
+12other mirrors and32/38/1596/1354/18 counts exactly preserved.
+
+Independent RED→GREEN; fresh499/lint0/productionaudit0/standardTurbopack170/
+localcrawl82pages93links112assets pass. Native57:6profiles483GET108queries/
+20notices12contacts42PNGs; native58:4profiles267GET336queries96notices8contacts/
+84PNGs. Root independently checks all records and representative actual pixels.
+Some locator crops put headings/badges under the sticky header; desktop ECO
+crop shows filter, not notice. DOM/source/wrapping checks are not universal
+complete-visibility/unscripted-focus/AT/provider/field proof. Review/exact hosted/
+bothProduction/canonical live remain gates; no new IndexNow submission yet.
+
+Task56 actually accepted c7b44be7303f4f11bd1b17aece2cefd6c2e0a451:
+[CI38171335058](https://github.com/Ilias492610/ABService/actions/runs/38171335058)
+success20:15:02UTC/481; actualmatching Production7001160742/7001155894 successful;
+canonical82/93/112; unchanged native4profiles209GET364queries8contacts66PNGs.
+One FerroliIndexNowHTTP200 means received, not indexed. Earlier candidate
+entries remain dated history. BroaderWP/Task51/owner/account/field/results open.
+
 ## 11 October 2026 — Task56 Ferroli source/safety; local candidate
 
 Read original DRS9100 version9 (augustus2015): historical BlueSense3/4/5, no

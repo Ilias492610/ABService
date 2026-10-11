@@ -353,6 +353,29 @@ groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
+**Tasks57–58 lokaal geverifieerd, review/release nog open:** Nefit rE krijgt
+historische resetcontext in plaats van14prosematches, geen nieuwe foutregel/
+Nefitdatum. Bosch/JunkersrE/Bulexcon/EA/natuurlijke woorden behouden. Itho
+01-04199-001/imprintID2020-07-20-1100: drieNLBaseCube modellen, geenHP(COOL)Cube;
+26 W/B/E-groepen30diagnostische vermeldingen/B00B01 elk3sensorvarianten.
+Acht betekenissen/26lokale acties/gedrukte rijpagina's83–95/context78–95/
+scope/warning/bron/meta/echteIthodatum gecorrigeerd. Twaalf normale p79meldingen
+krijgen broncontext, geen foutkaarten. Imprintdatum is geen vastgestelde editie/
+revisie; actueleBEfit/SKU/firmware/latest onbekend.25PDFcatalogi/12PDF/tweeWeb/
+vijf declaraties,31andere entries/13oldsnapshots/12mirrors/tellingen exact.
+Fresh499/lint0/productie0/standaard170/local82/93/112; native57zesprofielen483GET
+108queries12contacts en58vierprofielen267GET336queries8contacts pass. Alle
+records en geselecteerde echte pixels gelezen; sommige locatorcrops hebben
+stickyheader-overlap en desktopECO toont filter, niet notice. Geen volledige
+zichtbaarheids-/AT/provider/fieldclaim. Review/exacthosted/live blijven gates;
+geen nieuwe IndexNowmelding. BredereWP07 en eigenaar/accountgates blijven open.
+
+**Task56 werkelijk geaccepteerd:** c7b44be/solefreshreview/481/exactCI38171335058
+success20:15:02UTC, actualmatchingProduction7001160742/7001155894 success,
+canonical82/93/112/livevierprofielen209GET364queries8contacts66beelden. Eén
+FerroliIndexNowHTTP200 na publicproof/live, geen indexatiebewijs. Onderstaande
+kandidaatfases zijn geschiedenis; Task57rE is nu alleen lokaal geverifieerd.
+
 **Task56 lokaal kandidaat:** Ferroli DRS9100v9 augustus2015/S12S13 persoonlijk
 gelezen,37groepen38codes/16A22F voor historischeBlueSense3/4/5 en toevoegingen
 12/22/32.15bronbetekenissen/37lokale A/F/druk/sensor-acties; geen nieuw codegat/

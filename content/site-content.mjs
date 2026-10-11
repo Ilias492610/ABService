@@ -289,7 +289,8 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Itho Daalderop Base Cube foutcodes | AB Service",
     description:
-      "Doorzoek de volledige codetabel voor de Itho Daalderop Base Cube, met officiële handleiding en veilig advies.",
+      "Zoek 26 Itho Daalderop Base Cube W/B/E-codegroepen uit handleiding 01-04199-001. Lees de drie modelvarianten, bron en veilige eerste stappen.",
+    lastModified: "2026-10-11",
     changeFrequency: "monthly",
     priority: 0.6,
   },

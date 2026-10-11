@@ -2,6 +2,24 @@
 
 ## Published routes
 
+**Latest accepted baseline c7b44be:** Task56 solefreshreview/exactCI38171335058/
+481/actualmatchingProduction7001160742/7001155894/canonical82/93/112 and native
+Ferroli209GET364queries8contacts66PNGs. One FerroliIndexNowHTTP200 is receipt,
+not indexing. Earlier candidate and baseline notes below remain dated history.
+
+**Tasks57–58 local candidate:** Nefit rE sourced reset context only; no Nefit
+faultrow/defaultSSR/meta/date change. Itho01-04199-001/imprintID2020-07-20-1100
+three NL BaseCube models/noHP(COOL)Cube:26groups30entries/B00B01 each3variants.
+Eight meanings/26local actions/rowpages83–95/context78–95/scope/warning/source/
+meta/realItho date corrected. Twelve ordinary p79 indications get sourced
+context, not faultcards.25PDF-linked/12PDF/twoWeb/five declarations;31other
+entries/13old snapshots/12other mirrors/counts exactly retained. Fresh499/lint0/
+production0/standard170/local82/93/112/native57sixprofiles483GET108queries/
+12contacts/native58fourprofiles267GET336queries8contacts pass. Review/exact
+hosted/live remain gates; no added route, currentBE-fit or wholeWP claim.
+Same82registry/80published/2noindex,32catalogs38assignments1596displayed1354
+nonduplicate18sourceURLs. Account/evidence/language/field/results gates stay open.
+
 **Current accepted baseline ab6ecdda:** Tasks54–55 solefreshreview/471/
 CI38167406373/actual Production7000493190/7000482531/canonical82/93/112/native
 Nefit193GET392queries8contacts/hero339GET174cases18ownedfocus accepted. One

@@ -1,5 +1,20 @@
 # WP07 — actuele model- en brondekking
 
+Actueel geaccepteerd c7b44be: Task56/solefreshreview/exactCI38171335058/481/
+actualmatchingProduction7001160742+7001155894/canonical82/93/112/nativeFerroli
+209GET364queries8contacts66beelden. EénFerroliIndexNowHTTP200 is ontvangstbewijs.
+Tasks57–58 lokaal geverifieerd: Nefit rE sourcedcontext zonder foutregel/datum;
+Itho01-04199-001/imprintID2020-07-20-1100/threeNLmodels/noHP(COOL)Cube,26groepen/
+30diagnostische vermeldingen, B00B01 elk3sensorvarianten. Acht betekenissen/
+26lokale acties/rijpagina's/warning/scope/meta/echteIthodatum gecorrigeerd;
+twaalf normale p79meldingen krijgen broncontext.25PDFcatalogi/12PDF/tweeWeb/
+vijf declaraties;31andere records/13oldsnapshots/12mirrors/counts exact.
+499/lint0/productie0/standaard170/local82/93/112/native57zes en58vierprofielen
+pass; review/exactrelease/live blijven gates. Crops kunnen stickyheader-overlap
+hebben; geen universele zichtbaarheid/AT/provider/field- of volledigeWPclaim.
+Onderstaande fases blijven geschiedenis en sluiten geen actueleBEfit/SKU/
+firmware/nieuwsteeditie of eigenaarbewijs af.
+
 Actueel geaccepteerd baselineab6ecdda: Tasks54–55 solefreshreview/CI38167406373/
 471/actualProduction7000493190/7000482531/canonical82/93/112/native live.
 Eén NefitIndexNowHTTP200 is ontvangstbewijs, geen indexeringsbewijs.
@@ -90,9 +105,9 @@ toegankelijkheid of inhoud gecertificeerd.
 ## Alle afzonderlijke catalogi
 
 Een bewaard bronbestand plus eerder afgebakend leesrapport is sterker bewijs
-dan uitsluitend een bestaande declaratie. Vierentwintig catalogi zijn gekoppeld
-aan elf bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
-Zes hebben binnen deze inventaris alleen de bestaande declaratie en
+dan uitsluitend een bestaande declaratie. Vijfentwintig catalogi zijn gekoppeld
+aan twaalf bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
+Vijf hebben binnen deze inventaris alleen de bestaande declaratie en
 historische bewijsregistratie (G). Bewaren/hashvergelijking is op zichzelf
 geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
@@ -128,7 +143,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 | `intergas-prestige` | 11 | § 8.1, p. 42; Prestige A CW6/NL/88136803 | [bron 13](https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf) | intergas-prestige-pdf; geselecteerde tabel-/displaycontext |
 | `nefit-proline-hrc` | 54 | Tabel 25, p. 31-34; 6720646227 (04/2013, NL) | [bron 14](https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf) | nefit-proline-pdf; geselecteerde historische tabel gelezen Task54 |
 | `atag-officieel-overzicht` | 14 | Online merkoverzicht | [bron 15](https://www.atagwarmte.nl/atag-cv-ketel-storingscodes) | G: declaratie/historisch register |
-| `itho-base-cube` | 26 | § 7.2-7.4, p. 79-95 | [bron 16](https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf) | G: declaratie/historisch register |
+| `itho-base-cube` | 26 | § 7.2-7.4, p. 78-95; diagnostiek pp83–95 | [bron 16](https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf) | itho-base-cube-pdf; drie NL-modellen/30diagnostische vermeldingen gelezen Task58 |
 | `ferroli-bluesense` | 37 | § 9, p. S12-S13 | [bron 17](https://www.ferroli.com/media/1547640352.pdf) | ferroli-bluesense-pdf; historische v9/S12–S13 gelezen Task56 |
 
 ## Exacte scope en niet ingevulde gaten
@@ -204,8 +219,14 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
   nieuwsteeditie blijven onbekend.
 - ATAG: gedeclareerd Nederlands online overzicht, Q-serie/ECZ in bestaande
   regeltekst. Geen exacte modeltoepasbaarheid op basis daarvan certificeren.
-- Itho: gedeclareerd Base Cube, documentidentifier `01-04199-001`,
-  §7.2–7.4 pp. 79–95; identifier is niet automatisch een footerrevisie/SKU.
+- Itho: oorspronkelijk `01-04199-001`, geobserveerde imprint
+  `ID 2020-07-20-1100`; drie BaseCube24/30 13L,24/35 16L,30/35 16L met
+  Nederlandse bestemming. HP(COOL)Cube-combinaties uitdrukkelijk uitgesloten.
+  §7.4 pp83–95:26groepen30vermeldingen (3W/10B/13E), B00/B01 elk3sensorvarianten.
+  Negen gewone statusrijen plusECO/ECOCOMFORT/WARMWATERUIT geen W/B/E-foutcodes.
+  Imprintdatum niet afgeleid als issue/revisie; SKU/firmware/actueleBE/nieuwste
+  onbekend. p80circa15s/p82vijfminuten resetcontexten blijven apart; geen extra
+  pogingen, netspanningsomkering of installateurreparatie als klantstap.
 - Ferroli: Task56 leest DRS9100versie9 augustus2015, historische BlueSense3/4/5,
   zonder toevoeging of12/22/32. §9 S12–S13:37uitlegblokken/38codes (16A22F),
   vier normale states uitgesloten. A vereist opgeloste oorzaak vóór reset;
@@ -214,7 +235,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
 JSON-`null` betekent: niet vastgesteld binnen deze afgebakende inventaris,
 niet dat een gegeven niet bestaat. De velddeclaratie en de bewijsbasis blijven
-onderscheiden. De negen PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
+onderscheiden. De twaalf PDF-SHA’s en twee bronweergave-SHA’s staan afzonderlijk
 in `snapshots`; de eerdere leesrapporten blijven in de lokale recoveryledger.
 
 ## Vervolg binnen het bestaande meesterplan
@@ -229,8 +250,9 @@ regels toe en is inmiddels geaccepteerd als `e71fbf69`; de exacte CI, beide
 werkelijke Productionstatuses, canonical tests en één IndexNow-ontvangstbewijs
 staan apart in de QA-registratie. Task49's contextcorrectie bewaart alle
 242codeobjecten/elf andere gidsen en is exact geaccepteerd als `64e93669`.
-Task50's ACVcorrectie is exact geaccepteerd als `64d7f56e`; Task52's Intergas-
-context en Task53's leesmarker zijn de huidige lokale kandidaten, nog niet live.
+Task50's ACVcorrectie is exact geaccepteerd als `64d7f56e`; Task52/53 zijn
+geaccepteerd als `1f10e883`,54/55 als `ab6ecdda` en56 als `c7b44be`. Alleen
+Tasks57–58 blijven de huidige lokale cohort met aparte review/livegates.
 
 Verdere modeluitbreiding pas na exacte primaire toepasbaarheid/revisie en
 consumentveilige uitleg; prioritair echte zoek-/intakevragen, niet verzonnen

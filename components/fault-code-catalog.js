@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { filterFaultCatalogs } from "@/libs/fault-search.mjs";
+import { filterFaultCatalogs, getFaultDisplayStateNotice } from "@/libs/fault-search.mjs";
 
 export default function FaultCodeCatalog({ brand, catalogs }) {
   const [query, setQuery] = useState("");
@@ -12,6 +12,7 @@ export default function FaultCodeCatalog({ brand, catalogs }) {
   );
 
   const resultCount = filteredCatalogs.reduce((total, item) => total + item.codes.length, 0);
+  const stateNotice = getFaultDisplayStateNotice(catalogs, query, catalogId);
 
   return (
     <div className="fault-catalog">
@@ -87,7 +88,15 @@ export default function FaultCodeCatalog({ brand, catalogs }) {
         </div>
       ) : (
         <div className="answer-box" role="status">
-          Geen overeenkomst gevonden. Controleer de schrijfwijze op het display, probeer ook zonder punt of spatie en kies de juiste toestelreeks.
+          {stateNotice ? (
+            <>
+              <h2>{stateNotice.title}</h2>
+              <p>{stateNotice.text}</p>
+              <p>
+                Bron: <a href={stateNotice.sourceUrl} target="_blank" rel="noreferrer">{stateNotice.sourceLabel} ↗</a>, {stateNotice.sourcePage}.
+              </p>
+            </>
+          ) : "Geen overeenkomst gevonden. Controleer de schrijfwijze op het display, probeer ook zonder punt of spatie en kies de juiste toestelreeks."}
         </div>
       )}
     </div>

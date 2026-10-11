@@ -145,7 +145,7 @@ export const faultGuides = Object.freeze([
     slug: "itho-daalderop",
     brand: "Itho Daalderop",
     modelWarning:
-      "Deze catalogus bevat de volledige waarschuwing-, blokkering- en foutcodetabel voor de Itho Daalderop Base Cube. Een code van een ander toestelmodel kan een andere betekenis of procedure hebben.",
+      "Deze gids gebruikt uitsluitend de 26 W/B/E-codegroepen voor Base Cube 24/30 13L, 24/35 16L en 30/35 16L uit handleiding 01-04199-001 (imprint ID 2020-07-20-1100), met Nederlandse toestelbestemming. Niet voor HP (COOL) Cube-combinaties of alle Itho Daalderop-ketels. De imprintdatum is geen afzonderlijk vastgestelde revisie of uitgiftedatum; actuele Belgische toestelcompatibiliteit, artikelnummers, firmware en nieuwste revisie zijn onbekend. W is een waarschuwing, B een automatisch herstellende blokkering en E een vergrendelende storing. De resetpassage op p. 80 noemt circa 15 seconden; p. 82 noemt vijf minuten in een ander diagnoseverloop. Combineer deze niet tot extra resetpogingen. Noteer ook de sensoromschrijving bij B00/B01 en volg de gebruikershandleiding van uw exacte toestel; open de mantel niet.",
     catalogs: ithoDaalderopCatalogs,
     documentationLabel: "Officiële Itho Daalderop-handleidingen",
     documentationUrl: "https://www.ithodaalderop.nl/nl-NL/consument/handleiding-vinden",

@@ -1,3 +1,4 @@
+import { beforeIthoGuide, beforeIthoRegistry } from "./fixtures/itho-base-cube-source-safety.mjs";
 import { beforeFerroliGuide, beforeFerroliRegistry } from "./fixtures/ferroli-bluesense-source-safety.mjs";
 import { beforeNefitGuide, beforeNefitRegistry } from "./fixtures/nefit-proline-source-safety.mjs";
 import test from "node:test";
@@ -86,8 +87,8 @@ test("ACV real SSR exposes every selected row, safe action, source scope and nat
 
 // Integrity only: full genuine baseline, no source completeness certification.
 test("all other12 full guides and all registry fields preserve the genuine64 captures", () => {
-  assert.equal(hash(faultGuides.filter(g => g.slug !== "acv").map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide)), facts.preservation.otherTwelveGuides);
-  assert.equal(hash(pageRegistry.map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry)), facts.preservation.allRegistry);
+  assert.equal(hash(faultGuides.filter(g => g.slug !== "acv").map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide)), facts.preservation.otherTwelveGuides);
+  assert.equal(hash(pageRegistry.map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry)), facts.preservation.allRegistry);
   assert.equal(hash(beforeAcvGuide(guide)), facts.preservation.guide);
   assert.equal(hash(beforeAcvGuide(guide).codes), facts.preservation.codes);
   assert.equal(faultGuides.reduce((n,g) => n + g.codeEntryCount, 0), 1596);
