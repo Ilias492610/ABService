@@ -2,20 +2,29 @@
 
 ## Published routes
 
-Current accepted release `d77bed4` has82 registered customer routes,80 published and two noindex after
+Current accepted release `9e37327` has82 registered customer routes,80 published and two noindex after
 the eight original destinations and watermeter pilot below. The previous accepted release6557c45
 has81/79/2. Neither snapshot counts Google-indexed pages. Dated local/live
 verification belongs in `SEO_QA_REPORT.md`.
 
 The earlier release adds78 static social-preview PNG assets; the released new tool
 has79 corresponding non-home assets, not indexable customer pages. All thirteen
-fault guides in the accepted 11 October release6557c45 display 1264 source-bound rows across 32 assignments
-and 26 distinct catalogs (1022 rows before shared-catalog reuse); none is a count of unique codes
+fault guides in accepted release9e37327 display1265 source-bound explanation rows across32 assignments
+and26 distinct catalogs (1023 before shared-catalog reuse); prior6557c45 displays1264/1022. None is a count of unique codes
 or universal model coverage. Remeha has 17 Avanta +23 historical Calenta E +19 historical Su
 states and 300 Calenta Ace-Matic rows: CU A18/H41/E47 and SCB A60/H134. The exact four models
 25s/35s/30c/40c, revision7871265-05-04072025 and component limits remain explicit;25L excluded.
 Publication and live acceptance are separately recorded in QA. The IndexNow proof is a public ownership asset,
 not a sitemap entry or an account credential.
+
+**Later local candidate d5a3a59/9f20d50/e03983f:** no route/count change.
+All thirteen commercial brand pages now distinguish maintenance and repair
+intake with neutral general actions. Gas installation adds regional control/
+document questions and scoped official references; only its substantive registry
+date advances to11October. The contact page seeds only a single public service
+category in initial HTML, with native fallback, rejected duplicates and private
+tool context preserved. Fresh local QA is recorded in the report; independent
+whole-branch/hosted/canonical live gates are not yet complete for this candidate.
 
 | New destination | Intent / source basis |
 |---|---|
@@ -38,13 +47,14 @@ credential or publication history. The [fourteen-intent coverage map](docs/seo/w
 and [first-cycle brief](docs/seo/briefs/wp10-first-cycle.md) distinguish current answers from gaps.
 Existing service/fault/brand/project links are strengthened without publishing new locality claims.
 
-**Reviewed source-precision candidate906a0ea/5d62836, not yet live acceptance:**
+**Source-precision changes906a0ea/5d62836, live accepted in release9e37327:**
 the same thirteen guides display1265 explanation rows/32assignments/26distinct
 catalogs (1023 before shared reuse); only Buderus adds one explanation. Its52
 groups represent74 literal source combinations, not88 full operating-table rows.
 Vaillant90 and Bulex43 remain unchanged counts with exact revised scope/safe
 actions. `lastModified` advances only for these three substantive corrections to
-11October. This supplements the accepted1264-row snapshot above; QA keeps gates.
+11October. Exact hosted and canonical live gates are recorded in QA; the previous
+1264-row snapshot remains historical, not an all-model coverage claim.
 
 Later released change `def4efe` adds the watermeter pilot link to the existing water guide:
 its genuine `modifiedAt` is11October while `checkedAt` stays10October. Attest retains
@@ -60,7 +70,7 @@ in the QA record, separate from a published registry value.
 | `/herstelling` | Herstelling van verwarming en cv-ketel \| AB Service | Herstelling van cv-ketel en verwarming | Repair and safe triage | Index | Fault codes, pressure loss, maintenance, tariffs | Owner scope; conservative safety guidance |
 | `/keuring` | Keuring van een cv-installatie in Antwerpen \| AB Service | Keuring van een nieuwe of gewijzigde cv-installatie | First-use inspection | Index | Maintenance, gas boilers, contact | Owner scope plus Vlaanderen guidance |
 | `/installaties` | Installaties voor verwarming en sanitair \| AB Service | Verwarming en sanitair installeren met een duidelijke scope | Installation overview | Index | Gas boilers, sanitary, contact | Owner-confirmed core scope |
-| `/installaties/gasketels` | Gasketel laten installeren in Antwerpen \| AB Service | Een gasketel laten plaatsen of vervangen in Antwerpen | Gas-boiler installation | Index | Installation, inspection, tariffs | Owner scope; current premium caution |
+| `/installaties/gasketels` | Gasketel laten installeren in Antwerpen \| AB Service | Een gasketel laten plaatsen of vervangen in Antwerpen | Gas-boiler installation | Index | Installation, inspection, document handoff, tariffs | Owner scope; scoped regional control sources and premium caution |
 | `/installaties/sanitair` | Sanitaire installatie en loodgieterswerk \| AB Service | Sanitaire installatie en loodgieterswerk in Antwerpen | Sanitary/plumbing installation | Index | Installation, tariffs, contact | Owner-confirmed plumbing/sanitary scope |
 | `/diensten` | Loodgieter- en verwarmingsdiensten \| AB Service | Loodgieterswerk, verwarming en sanitair | Active service directory | Index | Eleven services, brands, projects | Owner-confirmed active scope |
 | `/diensten/{slug}` | Six unique service titles | Unique service-specific H1 | Leak detection, water-leak repair, unblocking, boilers, pipework and bathroom renovation | Index | Services, projects, tariffs, contact | Owner-confirmed active services with explicit safety and scope boundaries |

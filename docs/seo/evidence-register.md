@@ -1,5 +1,46 @@
 # Evidence Register
 
+## 11 October 2026 — bounded brand/contact candidate evidence
+
+Reviewed d5a3a59 preserves owner-confirmed independent thirteen-brand scope while
+separating maintenance/fault intake and retaining exact model/product preparation.
+Reviewed9f20d50 asks who organizes the applicable installation control, which
+individual recognition fits and which documents/recipients are agreed. Current
+Vlaanderen and Brussels bodies were actually read11October; no new deadline,
+company recognition, automatic approval or price claim. Only gas lastmod changes.
+
+Reviewed e03983f passes a single exact allowlisted public category from the page;
+all private fields remain blank and duplicate category queries cannot revive
+after hydration. Existing tool context stays client-only and deliberate edits
+survive queued prefill. Native mail/API/provider identity is unchanged. Fresh
+328tests/lint/production0/build170/local82/93/112 and61desktop/mobile/JS/no-JS
+checks pass, including actual initial-document selection and actionable links.
+Separate native/desktop/mobile contact regression intercepts every submission.
+
+3257 inspected main-browser requests, zero attempted writes/errors/overflow;
+rating503 and explicit synthetic5actionability fixture are not actual reviews.
+No fresh receipt, ingestion, client, physical-device or field-CWV evidence.
+Source403/development9 remain visible. Final whole-branch/hosted/canonical live
+gates are pending; [QA](../../SEO_QA_REPORT.md) retains exact stage and diagnostics.
+
+## 11 October 2026 — manufacturer correction release evidence
+
+Independently whole-branch reviewed `9e373274f74030a96b4b6b53c40ac7cd7ff55996`
+is normally published. [CI38105783234](https://github.com/Ilias492610/ABService/actions/runs/38105783234)
+passes284tests/lint/productionaudit0/build170/crawl82/93/112 onNode24.21.0.
+Both exact-SHA Vercel checks/Production statuses succeed; primary6989989293 and
+secondary6989989303 record02:38:39UTC, not exact canonical-alias activation time.
+Fresh canonical82/93/112 and twelve three-guide desktop/mobile/JS/no-JS checks
+pass:90/43/52 explanations, source/model bounds, actual search/actions/contact
+selection.209 inspected requests, zero non-GET/errors/overflow. [QA](../../SEO_QA_REPORT.md)
+retains all limits. One substantive three-guide IndexNow batch receivesHTTP200
+after preview/live checking; no retry, indexation or ranking proof.
+
+Source revision/applicability evidence below is distinct from live reachability.
+No individual-device/latest-model/AB credential, dealer, fixed price or case
+proof is supplied by this release. Rating fixture/external-write firewall means
+no fresh provider or commercial receipt; source403/development9 remain open.
+
 ## 11 October 2026 — existing manufacturer-scope candidate
 
 Actual primary scope/revision/fault pages support reviewed906a0ea/5d62836:

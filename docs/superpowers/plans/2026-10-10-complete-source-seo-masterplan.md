@@ -321,6 +321,16 @@ QA slagen. De eenheid zit inmiddels in gepubliceerd1b42030: exacte CI38094780958
 primarydeployment6988269870 slagen. Fresh live81/92/110 en vijfroute desktop/mobile/noJS
 QA slagen. Brede kernpagina-/linkcheck en echte prijs-/casevelden blijven open; geen rankingclaim.
 
+**11 oktober — merkintake en installatieoverdracht, lokale kandidaat:** onafhankelijk
+gereviewd d5a3a59 onderscheidt onderhoud/storing op alle dertien merkpagina's en
+houdt algemene acties neutraal.9f20d50 vraagt wie controle organiseert, welke
+persoonlijke erkenning past en welke documenten/ontvangers worden afgesproken;
+twee gelezen officiële gewestbronnen en contextlinks, geen goedkeuringsbelofte.
+Fresh328tests/lint/production0/build170/crawl82/93/112 en52merk/viergasprofielchecks
+slagen met/zonder JavaScript op desktop/mobiel. Alleen inhoudelijk gewijzigde
+gasketelpagina krijgt11October lastmod. Hosted/live/whole-branch gate blijft apart;
+echte prijzen, caseproof en bredere WP06 blijven open.
+
 ### WP07 — Merken en modelgebonden foutcodegroei
 
 **Files:** `content/fault-guides.mjs`, `content/fault-catalogs.mjs`, `content/additional-fault-catalogs.mjs`, `content/brand-services.mjs`, `libs/fault-search.mjs`, `components/fault-code-catalog.js`, source-/fault-tests en publicatieregister.
@@ -361,6 +371,14 @@ Beide taakreviews akkoord; fresh284tests/lint/productionaudit0/build170/local
 82/93/112 en12desktop/mobiel/JS/no-JSchecks slagen.224browserrequests/0nonGET/
 errors/overflow. Bron55HTTP200/403 en development9/ESLint9 blijven; wholebranch/
 hosted/live gate nog open. Dit voltooit niet alle dertienmerken/modeluitbreidingen.
+
+**Latere bronprecisieacceptatie11oktober:** whole-branch review keurt9e37327 goed;
+normale main-publicatie, exacteCI38105783234 met284tests/productionaudit0/build170/
+crawl82/93/112 en beide Vercelchecks/Production statuses slagen. Canonical live
+82/93/112 en12desktop/mobiel/JS/no-JSchecks bevestigen90/43/52uitlegregels,
+bronafbakening/zoekfunctie/veiligheid/contactselectie.209browserrequests/0nonGET/
+errors/overflow. Eén echte drie-guide IndexNow-meldingHTTP200 na preview/livecheck
+is geen indexatiebewijs. Bron403/development9 en bredere WP07-dekking blijven open.
 
 ### WP08 — Geografische groei met lokale klantwaarde
 
@@ -492,6 +510,17 @@ Drie inhoudelijk gewijzigde liveURLs eenmaal IndexNowHTTP200 na preview; geen
 indexering/ranking. Oudere kandidatuur/geometryfailures blijven geschiedenis.
 Dit sluit de genoemde releasegates, niet alle WP10/11/12- of externe/commerciële
 metingen. WP07 exact Vaillant/Bulex-modelbronprecisie is de volgende producttaak.
+
+**11 oktober — initiële contactcategorie, lokale kandidaat:** e03983f seedt één
+exact toegelaten dienst in echte server-HTML. Dubbele/onbekende querywaarden blijven
+leeg; persoonsvelden krijgen geen querydata, toolcontext blijft client-only en
+gequeueëde voorinvulling behoudt bewuste dienst/berichtwijzigingen. Onafhankelijke
+taakreview akkoord; fresh328tests/fullproductgate en61desktop/mobile/JS/no-JS
+profielchecks slagen, waaronder vier groepen initiëledocument-/formulierchecks.
+Native POST blijft bruikbaar; aparte contactregressie onderschept verzendingen en
+bevestigt pendingmutex/validatie/foutfocus/retry/status/fragment. Geen nieuwe echte
+mail, eventontvangst, veldmeting of commerciële uitkomst. Whole-branch/hosted/live
+blijft een volgende gate; dev9/ESLint9 en bronaudit403 zijn niet opgelost.
 
 ### WP13 — Verdiende links en lokale partners
 

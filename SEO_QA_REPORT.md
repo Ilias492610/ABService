@@ -1,5 +1,69 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — brand intent, installation handoff and initial contact category candidate
+
+Independently task-reviewed d5a3a59/9f20d50/e03983f separate maintenance from
+repair on all thirteen commercial brand pages, add the gas-installation control/
+document agreement, and seed only a public allowlisted service in contact HTML.
+Ordinary duplicate queries remain blank; tool fragments stay client-only and
+queued prefill preserves deliberate service/message edits. No new routes,
+personal server props, credentials, prices or provider changes. Only the genuinely
+changed gas explanation advances its existing sitemap date to11October.
+
+Fresh actual Node24.19.0 clean install,328/328 tests, lint, production audit0,
+build170 and local82-page/93-destination/112-asset crawl pass. Development9 and
+ESLint9 deprecation remain. Source audit56 unique URLs gives55HTTP200 and the
+known Sibelga403, exit1; HTTP reachability is not source-content verification.
+
+Actual local Chrome1440×1000/390×844, with and without JavaScript, passes61
+profile checks:52 brand checks, four gas handoff checks, four contact groups and
+one expanded synthetic-rating check. Every category appears in the initial
+document; absent/hostile/duplicate categories stay blank, personal query fields
+do not seed intake, native statuses remain bounded, special tool context is
+consumed only client-side. Real sampled maintenance/repair/neutral links and gas
+installation links reach the selected service and header-clear anchor.3257
+inspected requests, zero attempted non-GET/pageerrors/overflow. Rating503 plus
+one explicit synthetic5 fixture test actionability, not actual Google data.
+
+Separate fresh contact browser regression passes native POST interception and
+desktop/mobile validation/focus, one-request pending mutex, explicit success
+caveat, five transport failures with deliberate retries, safe analytics payload
+and leap-date fragment consumption. All submissions are intercepted; no new
+mail receipt, actual event ingestion or customers are claimed. The main browser
+harness first incorrectly required a value attribute on selected options; real
+HTML uses the standard option-text fallback. Only that test parser was corrected,
+original failed log retained and the complete corrected run passes.
+
+Final whole-branch review, exact hosted and canonical live gates remain pending
+for this candidate. No fresh Lighthouse, physical-device or field-CWV result;
+existing functional mail evidence and account moderation remain separate.
+
+## 11 October 2026 — manufacturer corrections published and checked live
+
+Release `9e373274f74030a96b4b6b53c40ac7cd7ff55996` follows independent whole-branch
+approval and normal main publication. Fresh premerge and merged tests both pass
+284/284. [Exact CI38105783234](https://github.com/Ilias492610/ABService/actions/runs/38105783234)
+passes on Node24.21.0: install, lint, 284 tests, production audit0, 170 build outputs
+and82-page/93-destination/112-asset crawl. Development9/ESLint9 remain unresolved.
+
+Both exact-SHA Vercel checks and Production deployment statuses succeed at
+02:38:39 UTC: primary6989989293, secondary6989989303. These are status times,
+not exact canonical-alias activation times. The primary deployment is
+[ab-service-a9tysz6hd](https://ab-service-a9tysz6hd-ilias492610s-projects.vercel.app).
+Canonical crawl on `https://www.abservice24.be` passes82/93/112. Twelve live
+Chrome checks cover all three guides at1440×1000 and390×844, each with JavaScript
+and without:90/43/52 SSR explanations, exact scopes, search/aliases/filter/zero
+results, corrected safe actions and actual repair-select/contact-anchor handoff.
+209 browser requests, zero attempted non-GET, pageerrors or horizontal overflow.
+
+Rating503 remains a fixture; external analytics/non-GET requests are blocked.
+This proves no fresh Google rating, mail receipt, event ingestion, physical-device,
+Lighthouse, field-CWV or commercial improvement. The source55HTTP200/knownSibelga403
+result below is unchanged, not an all-green source review. After live content
+checks and preview, one explicit Vaillant/Bulex/Buderus IndexNow notification
+receives HTTP200 for three URLs; no retry or confirmed indexation/ranking.
+The local-candidate sections below remain historical acceptance snapshots.
+
 ## 11 October 2026 — three manufacturer-source corrections, local candidate
 
 Reviewed906a0ea/5d62836 refine existing Vaillant/Bulex/Buderus catalogs, not new

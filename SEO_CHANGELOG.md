@@ -1,5 +1,39 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — reviewed brand/contact intent candidate
+
+- d5a3a59 adds explicit planned-maintenance and fault actions on all thirteen
+  brand pages; general actions remain neutral. Existing brand/model/media and
+  meaningful service/advice/catalog links are retained.
+- 9f20d50 adds gas-installation control organizer, appropriate individual
+  recognition and report/recipient questions with two scoped official sources
+  and contextual inspection/document links. Only this substantive gas content
+  receives11October lastmod; the historical Buderus guard now protects other
+  fault-guide records rather than freezing unrelated page metadata forever.
+- e03983f makes a single exact allowlisted category available in initial contact
+  HTML without JavaScript; duplicate/private query input cannot seed intake.
+  Client-only tool context and native submission/reset contracts remain, with
+  queued prefill protecting deliberate service/message changes.
+- All three independent task reviews approve. Fresh328tests/lint/production0/
+  build170/crawl82/93/112 and61responsive/JS/no-JS profile checks pass, alongside
+  native/desktop/mobile contact regressions. Source55HTTP200/known403 and dev9
+  remain distinct. Final whole-branch/hosted/live publication is still pending.
+- No new routes, projects, prices, credentials, paid tools, real submissions,
+  event-receipt or growth claims. Original failed browser-parser log is retained.
+
+## 11 October 2026 — manufacturer correction release
+
+- Whole-branch approved `9e37327` is normally published to main. [Exact CI38105783234](https://github.com/Ilias492610/ABService/actions/runs/38105783234)
+  passes284tests/lint/production audit0/build170/crawl82/93/112; both Vercel
+  checks and Production deployment statuses succeed.
+- Canonical live crawl and twelve Vaillant/Bulex/Buderus desktop/mobile/JS/no-JS
+  checks pass: exact90/43/52 explanations, scopes, safe actions, aliases and
+  repair-select/form-anchor handoff.209 inspected requests, zero attempted writes.
+- One previewed substantive three-guide IndexNow notification receivesHTTP200,
+  not proof of indexation or growth. Broader brand/model coverage, development9,
+  Sibelga403, field measurements and qualified commercial outcomes remain open.
+- The candidate notes below record the earlier stage, not a new release claim.
+
 ## 11 October 2026 — reviewed existing-source precision candidate
 
 - `906a0ea` records nine exact Belgian Vaillant model/article variants and the

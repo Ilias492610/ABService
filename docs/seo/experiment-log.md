@@ -208,3 +208,50 @@ Both independent task reviews approve. Whole-branch/hosted/live gate pending;
 custom-event/physical-device/field-CWV and commercial capture remain separate.
 No IndexNow candidate submission or paid/account change. Frozen parent WATER and
 REMEHA experiments retain their own original contracts and release supplements.
+
+## SOURCE-PRECISION-20261011 — release and live supplement
+
+Recorded **11 October 2026,02:48 UTC**. Release
+`9e373274f74030a96b4b6b53c40ac7cd7ff55996` follows independent whole-branch
+approval and normal main push. [CI38105783234](https://github.com/Ilias492610/ABService/actions/runs/38105783234)
+passes284tests/lint/productionaudit0/build170/crawl82/93/112 onNode24.21.0.
+Both exact-SHA Vercel checks/Production statuses succeed; primary6989989293
+status02:38:39UTC is not an exact canonical-alias activation timestamp.
+
+Canonical crawl82/93/112 and twelve Vaillant/Bulex/Buderus desktop/mobile/JS/no-JS
+checks pass.209 inspected requests, zero attempted non-GET/errors/overflow;
+actual90/43/52 explanations, scopes, alias/search/safe-action and repair handoff
+confirmed. Rating503 fixture/external-write firewall excludes actual review,
+mail/event receipt, physical-device/field-CWV and commercial conclusions.
+One previewed substantive three-guide IndexNow batch receivesHTTP200 after live
+content checking; no retry or indexation/ranking proof.
+
+**RELEASED /LIVE CHECKED; NOT GROWTH-EVALUATED.** Earlier candidate and source
+limits remain history; no new baseline, sample or causality is supplied. Parent
+WATER/REMEHA KPI/inclusion/freeze/revert contracts are unchanged. The actual
+next brand-intent correction is a separate functional task, not a measured lift.
+
+## INTAKE-CONTINUITY-20261011 — functional candidate, no growth evaluation
+
+Recorded11October2026 against accepted9e37327 and reviewed d5a3a59/9f20d50/
+e03983f. Wrong default repair category on brand maintenance enquiries and delayed
+query-category initialization are functional defects/opportunities, not an SEO
+growth experiment requiring a waiting window. The gas control/document addition
+provides bounded preparation, not recognized-technician or approval evidence.
+
+Immediate criteria: actual public category in initial HTML with/without JavaScript,
+maintenance/repair/neutral intent preservation, duplicate/private input exclusion,
+queued manual-edit protection, native/API/mutex/status/tool compatibility and
+source-bound control handoff. Root fresh328tests/lint/productionaudit0/build170/
+local82/93/112,61browser profile checks and contact regressions pass;3257
+main-browser requests are GET-only. Original harness option-parser failure stays
+recorded separately from actual native option behavior and corrected full pass.
+
+**CANDIDATE /NOT GROWTH-EVALUATED.** Whole-branch/hosted/live gates remain open.
+No equal-window page/query baseline, qualified-enquiry sample, real custom-event
+receipt or causal improvement is supplied. Rating fixtures and intercepted form
+submissions prove neither actual reviews nor delivery. Source403/development9,
+physical-device/field measurements and owner evidence gaps remain separate.
+Any factual, privacy, routing or lost-edit regression merits immediate scoped
+correction. Same-day releases/traffic mix confound growth attribution. Frozen
+WATER/REMEHA experiments retain their own KPIs, sample/inclusions and revert rules.
