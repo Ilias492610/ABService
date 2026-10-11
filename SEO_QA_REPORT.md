@@ -1,5 +1,67 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — Calenta Ace-Matic candidate acceptance
+
+- Source-specific implementation1d4da96, full-code filter9564e86 plus review correctionc5b8eca,
+  metadata/dateb8c8e6c. Independent source/task reviews approve; initial filter review found
+  numbered NTC sensor search regression. Actual ACV reproduction, meaningful RED and corrected
+  real-catalog tests close it. No changed manufacturer meaning/legacy serialized data.
+- Genuine official PDF revision7871265-05-04072025, four named models, five tables/300rows:
+  Remeha59→359. CU/SCB meanings and contradictory sensor columns remain separate.
+  Other brands' whole-source/revision revalidation and25L remain open, not universal coverage.
+- Clean install succeeded under Node24.19.0; lint,165tests, production audit0 and optimized
+  production build pass after correction/metadata. Install still reports dev9 and unsupported
+  ESLint9; no unsupported forced upgrade or advisory suppression.
+- Fresh source audit:48HTTP200/known Sibelga403, exit1. Current manufacturer PDF is reachable;
+  HTTP reachability does not prove source interpretation. No failure masked.
+- Fresh local production crawl passes81pages/92internaldestinations/110assets. Chromium desktop/
+  mobile passes exact subcodes, two distinct component results, E02 legacy-only, NTC1/2, model
+  selection, Tab focus, zero/reset/status, contact anchor/service-prefill, canonical/H1 and no
+  overflow/pageerror. All13 guides render their1264 rows without JavaScript. No POST/email.
+  Mobile screenshot inspected; pre-existing floating controls still need wider interaction QA.
+- Private QA harness initially had a wrong relative import, then assumed native select Home/
+  arrow behavior in macOS headless Chrome. Focus/key events were observed, native popup value
+  selection was not confirmed. Harness now tests real Tab focus and functional model selection
+  separately; this does not certify all native keyboard interactions. Harness also corrected
+  its assumed `service` query key to the existing real `dienst` handoff. No product workaround.
+- Before publication, same read-only harness measured current live59-row Remeha at261689bytes
+  desktop and243451bytes mobile (CDP load+300ms, external/nonGET blocked). These are transfer
+  samples, not new Lighthouse/LCP/CWV or search/client results. Local359-row candidate samples
+  are287577desktop/269124mobile bytes under the same harness, but local versus Vercel is not a
+  controlled performance comparison. After-live same-origin comparison remains pending.
+- WP17 documentary slice adds append-only experiment preparation and dated review with five
+  empty NOT COLLECTED reporttemplates plus4GSC/7GBP/4analytics availability outputs. Commercial
+  baseline, equal-window data and hypothesis evaluation remain unavailable, not zero/completed.
+
+Candidate only: no all-WP07, all-security, completed-client or published-release claim.
+
+## 11 October 2026 — core-page and CI unit released
+
+- Reviewed `1b420303d74b194817d7cfa8d5e626a3d7f3386c` is on GitHub `main`.
+  [Exact CI38094780958](https://github.com/Ilias492610/ABService/actions/runs/38094780958)
+  passes install/lint/**148 tests**/production audit0/build/crawl and both action cleanups.
+  Actual application runtime24.21.0; native Node24 action SHAs executed, cache hit and
+  temporary Git credentials removed. Old Node20-action warnings are absent.
+- Both exact-SHA Vercel checks succeed; production deployment6988269870 identifies
+  [the primary deployment](https://ab-service-8vmezfpxr-ilias492610s-projects.vercel.app).
+  This is provider/GitHub evidence, not new Vercel API READY confirmation.
+- Fresh live crawl passes **81 pages /92 destinations /110 assets**. Desktop/mobile/no-JavaScript
+  five-route QA passes FAQ keyboard/SSR, retained media/process/safety, contextual links,
+  H1/canonical, contact anchor/prefill and no overflow/pageerror. Non-GET/external traffic
+  blocked; no extra email. Local3185 QA server stopped explicitly.
+- Full development audit remains **9 findings (7 high/2 moderate)**, unlike production0.
+  Two underlying advisories affect development parent chains: braces stack exhaustion
+  (no published patch) and selector parsing (fixed in7.1.6). Existing plugins do not offer a
+  proven drop-in ESLint10 upgrade; ESLint9 is EOL. No forced major/downgraded config applied.
+  [Braces advisory](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm),
+  [parser advisory](https://github.com/advisories/GHSA-rj75-hqrm-r3gf),
+  [ESLint support](https://eslint.org/version-support/). WP12 maintenance remains open.
+- WP07 source preparation reads actual Belgian Calenta Ace-Matic revision7871265-05-04072025,
+  models25s/35s/30c/40c, five tables/300 rows. Ambiguities/CU/SCB stay separate;25L excluded.
+  Catalogue/search implementation is in progress, **not published or WP07 completed**.
+
+Earlier entries are dated snapshots; this closes their named core/CI release gates only.
+
 ## 11 October 2026 — released WP04–WP06 unit and next core-page acceptance
 
 - Reviewed `138674e6a6bd7fe22eb1947d3de8b1b23c3473ed` was fast-forwarded to `main` and

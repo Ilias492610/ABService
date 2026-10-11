@@ -1,5 +1,33 @@
 # Evidence Register
 
+## 11 October 2026 — source-bound Calenta Ace-Matic candidate
+
+Source reading above/below is implemented in1d4da96:300rows/five component-family tables,
+actualrevision7871265-05-04072025,25s/35s/30c/40c only;359Remeha explanations including unchanged
+legacy59. Source-column ambiguities/unspecified CUH03.254 remain visible, not invented diagnoses.
+Independent task review approves. Full-code search9564e86/c5b8eca protects distinct digits,
+zeros/components and restores actual numberedNTC descriptive search after an independent finding.
+Metadata/dateb8c8e6c reflects genuine substantive change. Fresh165tests/lint/auditproduction0/
+build/localcrawl pass; final browser/release/live acceptance remains separate and pending.
+Sourceaudit48HTTP200/oneknownSibelga403, not a silent all-source pass. No dealer certification,
+allbrandmodels, location/project proof, new client or organic-growth claim inferred.
+
+## 11 October 2026 — released core/CI unit and manufacturer preparation
+
+`1b420303d74b194817d7cfa8d5e626a3d7f3386c`: independently reviewed, normally pushed main;
+[CI38094780958](https://github.com/Ilias492610/ABService/actions/runs/38094780958) success,
+148tests/production audit0/build/crawl/native Node24 actions and cleanups. Both Vercel checks
+and primary production deployment6988269870 succeed; API403 limitation remains. Fresh live
+81/92/110 crawl and five-route desktop/mobile/no-JavaScript QA pass, no valid email sent.
+Full dev9/ESLint9 EOL is separate unresolved tooling debt, not hidden by production0.
+
+[Belgian Remeha product](https://www.remeha.be/product/calenta-ace-matic) links the genuine
+installation/service PDF. Root/independent auditor read cover/NL model/market pages and complete
+relevant fault chapter. Footer7871265-05-04072025 differs from -04 filename; covers25s/35s/30c/40c,
+not25L. Two code-column extractors agree: CU A18/H41/E47 +SCB A60/H134 =300 component/table rows.
+Some source columns conflict; no confident technical condition inferred there. This is source
+reading, not completed/published WP07 or dealer certification.
+
 ## 11 October 2026 — release and Bing native acceptance
 
 The [latest account register](account-status-register.md) supersedes the earlier Bing

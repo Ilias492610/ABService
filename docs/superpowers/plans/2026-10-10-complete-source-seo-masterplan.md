@@ -316,21 +316,33 @@ deze checklist is **geen volledige WP06-voltooiing of live-publicatiebewijs**.
 drie onderhoudsvragen, onderhoud/diagnose/vervangingskeuze, merkintake en wederzijdse
 lekonderzoek/herstellinks. Onafhankelijke taakreview akkoord; aanvullende safety-bodytest
 opgenomen. Fresh147/147/lint/build/audit0/local81/92/110 en vijf-route desktop/mobile/no-JavaScript
-QA slagen. Publicatie van d48aeae/02b497a volgt nog; brede kernpagina-/linkcheck en echte
-prijs-/casevelden blijven open. De eerdere werkgebied-eenheid138674e is nu live geverifieerd.
+QA slagen. De eenheid zit inmiddels in gepubliceerd1b42030: exacte CI38094780958
+148tests/productionaudit0/build/crawl/nativeNode24actions, beide Vercelchecks en
+primarydeployment6988269870 slagen. Fresh live81/92/110 en vijfroute desktop/mobile/noJS
+QA slagen. Brede kernpagina-/linkcheck en echte prijs-/casevelden blijven open; geen rankingclaim.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
 **Files:** `content/fault-guides.mjs`, `content/fault-catalogs.mjs`, `content/additional-fault-catalogs.mjs`, `content/brand-services.mjs`, `libs/fault-search.mjs`, `components/fault-code-catalog.js`, source-/fault-tests en publicatieregister.
 
 - [ ] Dekking per Vaillant, Bulex, Bosch, Junkers, Remeha, Buderus, Viessmann, ACV, Intergas, Nefit Bosch, ATAG, Itho Daalderop en Ferroli: toestel/model/productcode, markttaal, revisie, pagina's, codefamilie en niet-gedekte modellen.
-- [ ] Eerst actuele Belgische Calenta Ace-Matic-productpagina/handleiding lezen en revisie vaststellen. Historische Calenta/Su apart; permanente E, tijdelijke H, waarschuwing A en uitbreidingsprint niet tot één diagnose samenvoegen.
+- [x] Eerst actuele Belgische Calenta Ace-Matic-productpagina/handleiding lezen en revisie vaststellen. Historische Calenta/Su apart; permanente E, tijdelijke H, waarschuwing A en uitbreidingsprint niet tot één diagnose samenvoegen.
 - [ ] Iedere gelezen relevante tabelregel zorgvuldig verwerken. Geen “alle codes van het merk” zonder modelscope. Behoud prefixes/nullen/subcodes; E04.50 ≠ E04.250; dezelfde code kan per model iets anders betekenen.
 - [ ] Betekenis, scope, veilige observatie, wat niet zelf te doen, wanneer hulp en relevante servicedoorstap. Geen gasafstelling, gesloten-componentwerk, veiligheidsbypass of eindeloze resets.
 - [ ] Afzonderlijke Vaillant F22/F28/F29/F75, Bulex F24/F28/F29/F72/F75 en Bosch/Junkers EA-pagina alleen bij echte vraag en extra waarde. Eerst het bestaande antwoord verbeteren.
 - [ ] Test zoeknotaties, filterwissel, onbekende code, nulresultaat en toegankelijke status tegen fabrikantfixtures. Normalisatie mag betekenissen niet samenvoegen.
 
 **Tests:** exacte model/revisie/code-inventaris, verwachte families, verschillende betekenissen, veiligheid, bronhandtekeningen, desktop/mobiel en performance. **Done:** gelezen fabrikantbron per uitbreiding, inhoudsreview en eerlijke dekking; geen dealerstatus afleiden.
+
+**11 oktober — brongebonden implementatie en zoektest af, releasecontrole loopt:** productpagina koppelt het echte PDF;
+werkelijke footerrevisie7871265-05-04072025, niet -04 URL-naam. Alleen25s/35s/30c/40c en
+Belgische/Luxemburgse toepassing gelezen. Twee extractors bevestigen CU A18/H41/E47 en
+SCB A60/H134 =300.25L heeft een aparte ongelezen handleiding. Tegenstrijdige SCB-kolommen
+blijven expliciet; geen doe-het-zelf herstel uit technische instructies.300regels geïmplementeerd
+in vijf CU/SCB-tabellen; Remeha359 inclusief ongewijzigde legacy59. Exacte volledige codes,
+nullen, verschillende subcodes/componenten, EA-familie en NTC-beschrijvingen getest. Review
+vond NTC-regressie, actual RED→GREEN herstelt die.165tests/lint/build/auditproduction0/localcrawl
+pass; browser/live/wholebranchrelease blijft gate. Niet de gehele dertienmerken-WP07 voltooid.
 
 ### WP08 — Geografische groei met lokale klantwaarde
 
@@ -407,8 +419,11 @@ prijs-/casevelden blijven open. De eerdere werkgebied-eenheid138674e is nu live 
 **11 oktober — afgebakend CI-onderhoud:** huidige officiële checkout7.0.1 en setup-node7.1.0
 native Node24-manifests gelezen en release-SHAs onafhankelijk geverifieerd. Alleen twee
 workflowrefs vervangen; bestaande triggers/readpermissions/cache/gates behouden. RED→GREEN,
-taakreview akkoord en fresh148tests pass. Exact hostedrun en afwezigheid van oude
-Node20waarschuwingen volgen nog. Fresh bronaudit47HTTP200/één Sibelga403; fout blijft zichtbaar.
+taakreview akkoord en fresh148tests pass. Publicatie1b42030/exacthostedrun38094780958 bevestigt
+nieuwe nativeNode24actions/cache/cleanups en afwezigheid van oude Node20-actionwaarschuwingen.
+ESLint9-deprecation blijft; full dev9 onderzocht, twee advisories/geen bewezen drop-inESLint10.
+Bracespatch ontbreekt; parsermajorfix vraagt aparte compatibilityQA. Fresh bronaudit47HTTP200/
+één Sibelga403; fout blijft zichtbaar.
 Dit is geen volledige WP12-, veld-CWV- of securityvoltooiing.
 
 ### WP13 — Verdiende links en lokale partners
@@ -475,6 +490,13 @@ Dit is geen volledige WP12-, veld-CWV- of securityvoltooiing.
 - [ ] Maandrapport op één pagina: drie echte wins, drie problemen, één hoofdactie, gemeten GBP-calls, nonbrand/lokaal, commerciële landingen, reviews/citations, ontvangst en AI-check. Geen data betekent geen verzonnen wins.
 - [ ] Per kwartaal feiten/uren/scope/erkenning/bronnen/regels/CWV/dependencies/privacy. Volledige QA per productrelease; geen irrelevant verbruik om budget op te maken.
 - [ ] IndexNow alleen voor expliciet substantieel gewijzigde published URLs na live inhoudscontrole; dry run standaard. Geen automatische retry, hele historische site, runtime- of documentcosmetica. Ontvangst, indexering en ranking blijven apart.
+
+**11 oktober — documentair meetcontract voorbereid:** [append-only experimentlog](../../seo/experiment-log.md)
+legt echte kandidaatcommits, bevroren instructies, hypothese en herstelcriteria vast. Het
+[gedateerde reviewrecord](../../seo/reviews/2026-10-11.md) bevat vijf lege NOT COLLECTED-tabellen
+en beschikbaarheidsregisters voor4GSC/7GBP/4analytics outputs. Geen nieuwe gelijke/monthly
+exports, gekwalificeerde leads of gemeten evaluatie; release/live blijft aparte gate.
+Dit voltooit deze documentaireslice, niet de volledige rapportage- of WP17-uitkomst.
 
 **Done:** controleerbaar ritme en een echte hypothese-evaluatie zodra voldoende data bestaan. Labscore of citatietrend is geen leadresultaat.
 

@@ -1,5 +1,30 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — reviewed model/source and search candidate
+
+- Adds300 source-bound Calenta Ace-Matic rows to unchanged Remeha59, covering25s/35s/30c/40c
+  and CU/SCB only. Actual footer revision, unknown25L and source-column contradictions explicit.
+- Full codes now match complete aliases, preserving prefixes/zeros/subcodes and selected models;
+  E04.25 no longer selects E04.250/E04.254. EA family and descriptive sensor search remain.
+  Independent review identified NTC1/2 regression; real-catalog RED→GREEN closes it.
+- Remeha title/description include Ace-Matic; only its actual substantive change date advances
+  to11October. Source meanings/legacy data, existing routes/CTA/media remain unchanged.
+- Independent task reviews approve; fresh165tests/lint/production audit0/build/localcrawl pass.
+  Responsive/browser/live/whole-branch release acceptance still pending; toolingdev9 and
+  Sibelga403 retained. No extra mail, account changes, IndexNow retry or fabricated lead result.
+
+## 11 October 2026 — published core FAQ/context links and native Node24 CI
+
+- Independently approved batch1b42030 fast-forwarded/pushed normally to main.
+  Exact CI38094780958 succeeds148tests/production audit0/build/crawl; both Vercel checks
+  and primary production deployment6988269870 succeed. No force push/account workaround.
+- Live81/92/110 crawl and desktop/mobile/no-JavaScript five-route QA pass, including
+  retained media/process/safety, native FAQ and contact links. No extra mail.
+- Native Node24 actions executed; old Node20-action warnings absent. Development audit9
+  and ESLint9 maintenance debt remain explicit; production0 does not erase tooling exposure.
+- Began Calenta Ace-Matic expansion after reading actual revision, four covered models
+  and separate CU/SCB tables. Contradictions documented; implementation/release pending.
+
 ## 11 October 2026 — verified release, Bing acceptance and core-page continuation
 
 - Published reviewed138674e normally to main. Exact GitHub CI38092940463 and both Vercel
