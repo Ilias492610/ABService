@@ -280,7 +280,8 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "ATAG cv-ketel foutcodes: betekenis en stappen | AB Service",
     description:
-      "Doorzoek alle meldingen uit het officiële ATAG-foutcodeoverzicht, met modelcontrole en veilige eerste stappen.",
+      "Zoek 14 ATAG-meldingen uit het officiële overzicht. Vergelijk de genoemde modellen, automatische programma's, bron en veilige eerste stappen.",
+    lastModified: "2026-10-11",
     changeFrequency: "monthly",
     priority: 0.6,
   },

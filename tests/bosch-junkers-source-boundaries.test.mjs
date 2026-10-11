@@ -1,3 +1,4 @@
+import { beforeAtagGuide, beforeAtagRegistry } from "./fixtures/atag-overview-source-safety.mjs";
 import { beforeIthoGuide, beforeIthoRegistry } from "./fixtures/itho-base-cube-source-safety.mjs";
 import { beforeFerroliGuide, beforeFerroliRegistry } from "./fixtures/ferroli-bluesense-source-safety.mjs";
 import { beforeNefitGuide, beforeNefitRegistry } from "./fixtures/nefit-proline-source-safety.mjs";
@@ -90,8 +91,8 @@ test("real SSR exposes all existing rows/scopes/options/source/contact without s
 test("complete242 code objects, other eleven guides and all registry fields preserve genuine e71 captures", async () => {
   const digest = value => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
   assert.equal(digest(boschCatalogs.map(c => c.codes)), facts.preservation.catalogCodeArrays);
-  assert.equal(digest(faultGuides.filter(g => !["bosch", "junkers"].includes(g.slug)).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide).map(beforeAcvGuide)), facts.preservation.otherElevenGuides);
-  assert.equal(digest(pageRegistry.map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), facts.preservation.allRegistry);
+  assert.equal(digest(faultGuides.filter(g => !["bosch", "junkers"].includes(g.slug)).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide).map(beforeAcvGuide)), facts.preservation.otherElevenGuides);
+  assert.equal(digest(pageRegistry.map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), facts.preservation.allRegistry);
   for (const slug of ["bosch", "junkers"]) {
     assert.equal(digest(beforeBoschScopeGuide(getFaultGuide(slug))), facts.preservation[slug].guide);
     assert.equal(digest(beforeBoschScopeHtml(beforeFaultReadingHtml(await renderFaultGuide(slug)), slug)), facts.preservation[slug].html);

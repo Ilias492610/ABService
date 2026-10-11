@@ -151,7 +151,7 @@
     {
       "slug": "atag",
       "brand": "ATAG",
-      "modelWarning": "Deze catalogus bevat alle meldingen uit het officiële online ATAG-overzicht, dat meerdere genoemde toestelreeksen combineert. Controleer toestelmodel, schermtekst en eventuele subcode voordat u een verklaring toepast.",
+      "modelWarning": "Deze gids volgt de 14 rubrieken van één ATAGwarmte-overzicht, gelezen op 11 oktober 2026; niet alle ATAG-modellen of revisies zijn gedekt. Controleer het exacte toestelmodel, de volledige schermtekst en de toepasselijke gebruikershandleiding. De bron noemt overlappende modelgroepen en schrijft i28 en A2442EC; die spelling bewijst geen exacte toestelcompatibiliteit. C105 is een automatisch programma en is niet dezelfde melding als 105. Bij 1P4 zijn de drukinstructies tegenstrijdig; kies niet zelf tussen bijvullen en aftappen. Herhaald resetten, spanningsonderbreking en gas- of leidingwerk zijn geen algemeen gebruikersadvies. Actuele Belgische compatibiliteit, artikelnummers, firmware en nieuwste revisie zijn onbekend.",
       "explanationRowCount": 14,
       "catalogIds": [
         "atag-officieel-overzicht"
@@ -308,6 +308,17 @@
       "pageCount": 114,
       "bytes": 4061075,
       "sourceBoundary": "One original HTTP200 manufacturer PDF without redirect. Printed01-04199-001 and observed imprint ID2020-07-20-1100; p12 names three Base Cube models with NL destination. The imprint date is not a separately labelled issue/revision. HP COOL Cube combinations excluded; exactSKU/currentfirmware/Belgian-fit/latest remain unestablished."
+    },
+    {
+      "id": "atag-overview-html",
+      "url": "https://www.atagwarmte.nl/atag-cv-ketel-storingscodes",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-59-atag-primary-preflight-20261011T212246Z/original-atag-overview.html",
+      "sha256": "0ea5ca93e27f9ba8146b2fe30409b2efaa0613ce8c50de8361284bbc6730fc1c",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": null,
+      "bytes": 35515,
+      "sourceBoundary": "One original HTTP200 HTML without redirect/retry. Title/H1 ATAG cv-ketel storingscodes,lang nl,canonical exact,body pageID3635. Website service marketNederland is not boiler destination or currentBelgian-fit evidence.14common-occurrence sections and20literal names/107associations,not all-brand coverage.2026copyright/HTTPDate not issue/revision.1P4pressure instructions conflict; modelspellings and overlap preserved."
     }
   ],
   "entries": [
@@ -1398,34 +1409,281 @@
         "atag"
       ],
       "title": "Officieel ATAG-overzicht voor meerdere ketelreeksen",
-      "modelScope": "Alle afzonderlijke storings- en statuscodes die ATAGwarmte op de officiële Nederlandse overzichtspagina publiceert; controleer de genoemde toestelreeks bij iedere code.",
+      "modelScope": "De 14 meldingsrubrieken uit het officiële ATAGwarmte-overzicht, gelezen op 11 oktober 2026, bevatten drie automatische ontluchtingsprogramma's en elf andere meldingen. De modelnamen per rubriek zijn letterlijk overgenomen uit de lijsten met veelvoorkomende meldingen, niet als exclusieve toestelcompatibiliteit. ECZ-modellen staan ook bij C-codes; i28 en A2442EC blijven gespeld zoals in de bron. Het Nederlandse servicebereik van de website bewijst geen toestelbestemming of Belgische compatibiliteit. Revisie, artikelnummers, firmware en volledigheid voor alle ATAG-ketels zijn niet vastgesteld.",
       "sourceLabel": "ATAGwarmte - cv-ketel storingscodes",
       "sourceURL": "https://www.atagwarmte.nl/atag-cv-ketel-storingscodes",
-      "sourcePages": "Online merkoverzicht",
+      "sourcePages": "Online overzicht, rubrieken 1-14 (gelezen 11 oktober 2026)",
       "explanationRowCount": 14,
-      "modelFamily": "Multiple named series in source overview",
-      "models": null,
+      "modelFamily": "Literal nonexclusive common-occurrence lists per online section",
+      "models": [
+        "i28",
+        "i28EC",
+        "i28ECZ",
+        "i36C",
+        "i36EC",
+        "i36ECZ",
+        "E325",
+        "E325ECZ",
+        "A203C",
+        "A203EC",
+        "A244C",
+        "A2442EC",
+        "Q25C",
+        "Q25CR",
+        "Q38C",
+        "Q38CR",
+        "Q42C",
+        "Q42CR",
+        "Q51C",
+        "Q51CR"
+      ],
       "articleNumbers": null,
       "documentNumber": null,
       "revision": null,
       "issueDate": null,
-      "market": [
-        "Nederland"
-      ],
-      "language": null,
+      "market": null,
+      "language": "nl",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
-      "namedFamiliesInCurrentRowText": [
-        "Q-serie",
-        "ECZ"
-      ],
+      "primarySnapshot": "atag-overview-html",
+      "namedFamiliesInCurrentRowText": null,
       "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-59-atag-primary-preflight-20261011T212246Z/preflight.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-59-atag-primary-preflight-20261011T212246Z/literal-primary-inputs.json",
         "docs/seo/evidence-register.md"
       ],
-      "verificationBasis": "Current scope explicitly says official Dutch overview; Q-series/ECZ appear in current row text only. No exact model applicability/articlenumbers/revision or fresh body reading here.",
+      "verificationBasis": "Task59 original HTTP200 HTML body personally read:14 sections,3automatic program observations,20 literal common-occurrence names and107 model associations. Overlapping ECZ/C lists and i28/A2442EC spellings retained. C133/E02/105 gas advice and C151/612 radiator advice do not establish physical diagnoses;1P4 pressure contradiction unresolved. No device destination/SKU/firmware/latest fit.",
       "declaredScopePath": "content/additional-fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "sourceServiceMarket": "Nederland",
+      "boilerDestinationMarket": null,
+      "firmwareCompatibility": null,
+      "currentBelgianVariantCompatibility": null,
+      "newestEdition": null,
+      "literalSectionCount": 14,
+      "automaticProgramSectionCount": 3,
+      "literalModelAssociationCount": 107,
+      "sections": [
+        {
+          "code": "C105",
+          "heading": "ATAG storingscode c105",
+          "ordinal": 1,
+          "models": [
+            "i28",
+            "i28EC",
+            "i28ECZ",
+            "i36C",
+            "i36EC",
+            "i36ECZ",
+            "E325",
+            "E325ECZ",
+            "A203C",
+            "A203EC",
+            "A244C",
+            "A2442EC"
+          ],
+          "classification": "automatic-program-observation"
+        },
+        {
+          "code": "C117",
+          "heading": "ATAG storingscode c117",
+          "ordinal": 2,
+          "models": [
+            "i28",
+            "i28EC",
+            "i28ECZ",
+            "i36C",
+            "i36EC",
+            "i36ECZ",
+            "E325",
+            "E325ECZ",
+            "A203C",
+            "A203EC",
+            "A244C",
+            "A2442EC"
+          ],
+          "classification": null
+        },
+        {
+          "code": "C118",
+          "heading": "ATAG storingscode c118",
+          "ordinal": 3,
+          "models": [
+            "i28",
+            "i28EC",
+            "i28ECZ",
+            "i36C",
+            "i36EC",
+            "i36ECZ",
+            "E325",
+            "E325ECZ",
+            "A203C",
+            "A203EC",
+            "A244C",
+            "A2442EC"
+          ],
+          "classification": null
+        },
+        {
+          "code": "C133",
+          "heading": "ATAG storingscode c133",
+          "ordinal": 4,
+          "models": [
+            "i28",
+            "i28EC",
+            "i28ECZ",
+            "i36C",
+            "i36EC",
+            "i36ECZ",
+            "E325",
+            "E325ECZ",
+            "A203C",
+            "A203EC",
+            "A244C",
+            "A2442EC"
+          ],
+          "classification": null
+        },
+        {
+          "code": "C151",
+          "heading": "ATAG Storingscode c151",
+          "ordinal": 5,
+          "models": [
+            "i28",
+            "i28EC",
+            "i28ECZ",
+            "i36C",
+            "i36EC",
+            "i36ECZ",
+            "E325",
+            "E325ECZ",
+            "A203C",
+            "A203EC",
+            "A244C",
+            "A2442EC"
+          ],
+          "classification": null
+        },
+        {
+          "code": "BL67",
+          "heading": "ATAG Storingscode BL67",
+          "ordinal": 6,
+          "models": [
+            "Q25C",
+            "Q25CR",
+            "Q38C",
+            "Q38CR",
+            "Q42C",
+            "Q42CR",
+            "Q51C",
+            "Q51CR"
+          ],
+          "classification": "automatic-program-observation"
+        },
+        {
+          "code": "BL85",
+          "heading": "ATAG storingscode BL85",
+          "ordinal": 7,
+          "models": [
+            "Q25C",
+            "Q25CR",
+            "Q38C",
+            "Q38CR",
+            "Q42C",
+            "Q42CR",
+            "Q51C",
+            "Q51CR"
+          ],
+          "classification": null
+        },
+        {
+          "code": "FILL",
+          "heading": "ATAG storingscode FILL",
+          "ordinal": 8,
+          "models": [
+            "Q25C",
+            "Q25CR",
+            "Q38C",
+            "Q38CR",
+            "Q42C",
+            "Q42CR",
+            "Q51C",
+            "Q51CR"
+          ],
+          "classification": null
+        },
+        {
+          "code": "612",
+          "heading": "ATAG storingscode 612",
+          "ordinal": 9,
+          "models": [
+            "i28ECZ",
+            "i36ECZ",
+            "E325ECZ"
+          ],
+          "classification": null
+        },
+        {
+          "code": "E02",
+          "heading": "ATAG storingscode E02",
+          "ordinal": 10,
+          "models": [
+            "Q25C",
+            "Q25CR",
+            "Q38C",
+            "Q38CR",
+            "Q42C",
+            "Q42CR",
+            "Q51C",
+            "Q51CR"
+          ],
+          "classification": null
+        },
+        {
+          "code": "Systeem ontluchten actief",
+          "heading": "ATAG storingscode Systeem ontluchten actief",
+          "ordinal": 11,
+          "models": [
+            "i28ECZ",
+            "i36ECZ",
+            "E325ECZ"
+          ],
+          "classification": "automatic-program-observation"
+        },
+        {
+          "code": "1P4",
+          "heading": "ATAG storingscode 1p4",
+          "ordinal": 12,
+          "models": [
+            "i28ECZ",
+            "i36ECZ",
+            "E325ECZ"
+          ],
+          "classification": null
+        },
+        {
+          "code": "108",
+          "heading": "ATAG storingscode 108",
+          "ordinal": 13,
+          "models": [
+            "i28ECZ",
+            "i36ECZ",
+            "E325ECZ"
+          ],
+          "classification": null
+        },
+        {
+          "code": "105",
+          "heading": "ATAG storingscode 105",
+          "ordinal": 14,
+          "models": [
+            "i28ECZ",
+            "i36ECZ",
+            "E325ECZ"
+          ],
+          "classification": null
+        }
+      ]
     },
     {
       "id": "itho-base-cube",

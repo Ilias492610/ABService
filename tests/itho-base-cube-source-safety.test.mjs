@@ -1,3 +1,4 @@
+import { beforeAtagGuide, beforeAtagRegistry } from "./fixtures/atag-overview-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
@@ -100,7 +101,7 @@ test("substantive Itho metadata uses realdate and preserves exact genuine regist
   assert.equal(page.lastModified, "2026-10-11"); assert.equal(meta.alternates.canonical, "https://www.abservice24.be/foutcodes/itho-daalderop");
   assert.equal(meta.robots.index, true); assert.equal(buildSitemapEntries(pageRegistry).find(e => e.url === meta.alternates.canonical).lastModified,"2026-10-11");
   assert.equal(hash(beforeIthoMetadata(meta,"itho-daalderop")),f.preservation.metadata);
-  assert.equal(hash(pageRegistry.map(beforeIthoRegistry)),f.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeAtagRegistry).map(beforeIthoRegistry)),f.preservation.allRegistry);
 });
 
 test("all26 SSR cards and all13 guide leaves restore exact genuine c7b44be capture", async () => {
@@ -109,9 +110,9 @@ test("all26 SSR cards and all13 guide leaves restore exact genuine c7b44be captu
   for (const v of [f.scope,f.warning,f.label]) assert.ok(html.includes(v));
   assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);
   assert.equal(hash(beforeIthoHtml(html,"itho-daalderop")),f.preservation.html);
-  assert.equal(hash(beforeIthoGuide(guide)),f.preservation.guide); assert.equal(hash(beforeIthoGuide(guide).codes),f.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="itho-daalderop")),f.preservation.otherTwelveGuides);
-  assert.equal(hash(faultGuides.map(beforeIthoGuide)),f.preservation.allGuides);
+  assert.equal(hash(beforeIthoGuide(beforeAtagGuide(guide))),f.preservation.guide); assert.equal(hash(beforeIthoGuide(beforeAtagGuide(guide)).codes),f.preservation.codes);
+  assert.equal(hash(faultGuides.filter(g=>g.slug!=="itho-daalderop").map(beforeAtagGuide)),f.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeAtagGuide).map(beforeIthoGuide)),f.preservation.allGuides);
 });
 
 test("Itho manifest records original document ID,26keys30entries and explicit devicefit unknowns", async () => {

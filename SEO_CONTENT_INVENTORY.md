@@ -2,6 +2,25 @@
 
 ## Published routes
 
+**Latest accepted64c1302 — Tasks57–58:** solefreshreview/merged499/exact
+CI38176150821/actual matchingProduction7001987990+7001993689/canonical82/93/112.
+Native57live443GET108queries12contacts;58live200GET336queries8contacts accepted.
+One IthoIndexNowHTTP200 is received, not indexed; no runtimeNefit repeat.
+
+**12 October — Task59 local candidate:** existing14 ATAG rubric rows now show
+20literal nonexclusive model names/107associations and exact section headings.
+Three programs distinct from diagnosis;105/C105 separate,1P4 contradiction
+unresolved;14source-bound meanings/actions/scope/warning/meta/real11Oct date.
+Source-model searches are ATAG-only; original keys/order/searchTerms/catalog/
+sourceURL and other12guides retained.25PDF-linked/12PDF/threeWeb/four declared;
+31other records/14old snapshots/12mirrors/counts preserved. Fresh508/lint0/
+production0/standard170/local82/93/112/native v2 fourprofiles228GET308queries/
+8contacts60PNGs pass. Original eight-prefetch cancellation failure retained;
+v2 separately counts13 exactHTTP200/ERR_ABORTED, not response-body completion.
+Review/exact hosted/live pending. Still82registry/80published/2noindex and
+32catalogs38assignments1596displayed1354nonduplicate18sourceURLs, not customers,
+universal brand-fit or wholeWP completion. Entries below are historical phases.
+
 **Latest accepted baseline c7b44be:** Task56 solefreshreview/exactCI38171335058/
 481/actualmatchingProduction7001160742/7001155894/canonical82/93/112 and native
 Ferroli209GET364queries8contacts66PNGs. One FerroliIndexNowHTTP200 is receipt,

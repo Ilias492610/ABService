@@ -1,5 +1,42 @@
 # AB Service SEO Changelog
 
+## 12 October 2026 — Task59 ATAG locally verified; review/release still open
+
+The existing14 ATAG sections now retain the publisher's20 literal model names
+and107 nonexclusive associations, including i28/A2442EC and ECZ/C overlap.
+Three automatic programs are distinguished from defect diagnosis;105 is not
+C105. Gas/radiator advice no longer invents no-flame/flow diagnoses. High,
+confirmed-low and unresolved1P4 pressure receive separate safe actions, not
+universal numbers/filling/draining/repeated resets. Each row has its exact
+online heading/ordinal; source scope/warning/meta and substantive11October
+content date are corrected. Exact source-model token searches are ATAG-only;
+shared normalization/aliases and all other12 guides remain unchanged.
+One original35515B HTML snapshot added:25PDF-linked/12PDF/threeWeb/four
+declarations, all14 prior snapshots/31other entries/12mirrors/counts preserved.
+
+Nine independent tests RED8fail1pass→GREEN9; full508/lint0/productionaudit0/
+standardTurbopack170/localcrawl82pages93links112assets pass. Original native
+run retained:154desktop queries/two contacts passed, then its guard rejected
+eight HTTP200 contact-prefetch ERR_ABORTED events. Eleven negative controls
+bound the correction; no product/network patch. One new v2 run passes four
+profiles/308queries/8contacts/228GET/60PNGs;13 exact cancellations remain
+separately counted, not completed response bodies. Four rating503/eight home
+RSC204 fixtures are not provider/mail/event/AT/field proof. Root checks every
+actual record and representative mobile program/1P4/noJSName pixels. Sole
+review/exact hosted/twoProduction/canonical live/eligibleATAGnotification pending.
+
+Tasks57–58 are actually accepted64c1302b784306beb169b946b6edac5abf43a80c:
+solefreshreview/no findings, merged499,
+[CI38176150821](https://github.com/Ilias492610/ABService/actions/runs/38176150821)
+success21:24:05UTC/Node24.21/production0/standard170/hosted82/93/112; actual
+matching Production7001987990/7001993689 success21:24:05/21:24:33UTC.
+First canonical asset-fetch failure retained; targeted200 plus separate full
+82/93/112 confirmation passed, exact original cause unknown/no guessed patch.
+Unchanged native57live443GET108queries20notices12contacts42PNGs and58live
+200GET336queries96notices8contacts84PNGs pass. One IthoIndexNowHTTP200 is
+received, not indexed; runtime-only Nefit not resubmitted. Earlier candidate
+entries below are dated history; broaderWP/Task51/owner/account/results open.
+
 ## 11 October 2026 — Tasks57–58 local acceptance; review and release pending
 
 Nefit ProLine rE now returns historical reset-underway context instead of

@@ -47,6 +47,12 @@ const matchesNumberedIdentifier = (meaning, query) => {
   return identifiers.some((identifier) => normalize(identifier) === query);
 };
 
+// ATAG's literal common-occurrence names include suffixes (e.g. A2442EC)
+// that are not fault identifiers. Match only complete tokens in its bounded
+// source-model sentence; never broaden code aliases or other brands' prose.
+const matchesAtagObservedModel = (catalog, entry, query) => catalog.id === "atag-officieel-overzicht" &&
+  (entry.meaning.match(/ De bron noemt bij deze rubriek: ([^.]+)\.$/)?.[1].split(", ").some(model => normalize(model) === query) || false);
+
 export const filterFaultCatalogs = (catalogs, query, catalogId = "all") => {
   const normalizedQuery = normalize(query.trim());
   const selectedCatalogs = catalogs.filter((catalog) => catalogId === "all" || catalog.id === catalogId);
@@ -63,7 +69,7 @@ export const filterFaultCatalogs = (catalogs, query, catalogId = "all") => {
       codes: isNefitResetState(catalog, normalizedQuery) || isIthoNormalState(catalog, normalizedQuery) ? [] : catalog.codes.filter((entry) => !normalizedQuery || (isKnownAlias
         ? buildFaultCodeAliases(entry.code).some((alias) => normalize(alias) === normalizedQuery)
         : isCodeShaped
-          ? matchesNumberedIdentifier(entry.meaning, normalizedQuery)
+          ? matchesAtagObservedModel(catalog, entry, normalizedQuery) || matchesNumberedIdentifier(entry.meaning, normalizedQuery)
           : normalize(`${entry.searchTerms} ${entry.meaning}`).includes(normalizedQuery))),
     }))
     .filter((catalog) => catalog.codes.length > 0);

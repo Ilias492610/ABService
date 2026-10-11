@@ -1,5 +1,25 @@
 # WP07 — actuele model- en brondekking
 
+Actueel geaccepteerd64c1302: Tasks57–58/solefreshreview/exactCI38176150821/
+499/actualmatchingProduction7001987990+7001993689/canonical82/93/112/native
+Nefit en Itho live. EénIthoIndexNowHTTP200 is ontvangst, geen indexeringsbewijs.
+
+12oktober — Task59 lokaal geverifieerd, review/release open: één ATAG-overzicht
+gelezen11oktober/35515B/origineleHTMLhash;14rubrieken, drie automatische
+programma's en elf andere meldingen.20letterlijke namen/107overlappende
+common-occurrence-relaties zijn geen exclusieve toestelcertificatie. i28 en
+A2442EC behouden; ECZ ook bij Ccodes;105 nietC105. Gas/radiatoradvies bewijst
+geen vlam/doorstromingsdiagnose;1P4druktekst blijft tegenstrijdig.14lokale acties/
+exacte kopordinal/scope/warning/meta/echte11Octdatum; alleenATAGmodeltokenzoek.
+Nieuw15de bronbestand:25PDF-gelinkte catalogi/12PDF/drieWeb/vier declaraties.
+Alle14oude snapshots/31andere records/12mirrors/32-38-1596-1354-18 exact.
+508/lint0/productie0/standaard170/local82/93/112/native v2 vierprofielen228GET/
+308queries8contacts60beelden pass. Originele achtHTTP200prefetchafbrekingen
+blijven; v2telt13exacte afbrekingen apart, geen volledige responsbodyclaim.
+Nederlandse websitedienstscope niettoestelbestemming; BE/SKU/firmware/nieuwste/
+revisie/uitgiftedatum onbekend. Onderstaande fases zijn geschiedenis, geen
+volledigeWP07/merkmodellen/vraag/klantenclaim.
+
 Actueel geaccepteerd c7b44be: Task56/solefreshreview/exactCI38171335058/481/
 actualmatchingProduction7001160742+7001155894/canonical82/93/112/nativeFerroli
 209GET364queries8contacts66beelden. EénFerroliIndexNowHTTP200 is ontvangstbewijs.

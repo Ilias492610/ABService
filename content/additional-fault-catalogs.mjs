@@ -390,32 +390,53 @@ export const nefitBoschCatalogs = Object.freeze([
   })),
 ]);
 
+// One online common-occurrence overview, not an exclusive model partition.
+// Preserve the publisher's literal spellings and overlapping ECZ/C lists.
+const atagCModels = ["i28","i28EC","i28ECZ","i36C","i36EC","i36ECZ","E325","E325ECZ","A203C","A203EC","A244C","A2442EC"];
+const atagQModels = ["Q25C","Q25CR","Q38C","Q38CR","Q42C","Q42CR","Q51C","Q51CR"];
+const atagEczModels = ["i28ECZ","i36ECZ","E325ECZ"];
+const atagHeadings = ["ATAG storingscode c105","ATAG storingscode c117","ATAG storingscode c118","ATAG storingscode c133","ATAG Storingscode c151","ATAG Storingscode BL67","ATAG storingscode BL85","ATAG storingscode FILL","ATAG storingscode 612","ATAG storingscode E02","ATAG storingscode Systeem ontluchten actief","ATAG storingscode 1p4","ATAG storingscode 108","ATAG storingscode 105"];
+const withAtagSourceControls = catalog => Object.freeze({
+  ...catalog,
+  codes: Object.freeze(catalog.codes.map((row,index) => {
+    const models = index < 5 ? atagCModels : ["BL67","BL85","FILL","E02"].includes(row.code) ? atagQModels : atagEczModels;
+    let action;
+    if (["C105","BL67","Systeem ontluchten actief"].includes(row.code)) action = "Wacht het automatische programma af; het overzicht noemt normaal maximaal zeven minuten. Forceer geen reset of spanningsonderbreking om dit programma te omzeilen. Noteer de volledige schermtekst en het model; vraag professionele hulp als de melding blijft staan of terugkeert. Open de mantel niet.";
+    else if (["C117","BL85"].includes(row.code)) action = "Lees alleen de zichtbare drukweergave en noteer de waarde, de volledige code en het model. Vul niet bij en tap niet zelf water af om deze melding te wissen. Laat de druk en oorzaak professioneel beoordelen; open geen gesloten onderdelen.";
+    else if (["C118","FILL","108"].includes(row.code)) action = "Lees de zichtbare drukweergave en noteer de waarde, de volledige code en het model. Vul niet bij uitsluitend op basis van deze melding. Volg een vulinstructie alleen bij bevestigde lage druk en wanneer de gebruikershandleiding van uw exacte toestel die handeling toestaat; gebruik geen universele drukwaarde of slangprocedure uit een merkoverzicht. Open de mantel niet en laat een terugkerende melding onderzoeken.";
+    else if (["C133","E02","105"].includes(row.code)) action = "Bij gasgeur: bedien geen schakelaars, verlaat de onveilige ruimte en bel van buitenaf de bevoegde hulpdienst; bij direct gevaar belt u 112. Zonder gasgeur: noteer de volledige code en het model en volg alleen een reset die de toepasselijke gebruikershandleiding toestaat. Reset niet herhaaldelijk, onderbreek niet zomaar de netspanning en werk niet aan gaskraan, gasleiding, brander of rookgasafvoer. Laat een blijvende melding professioneel beoordelen.";
+    else if (row.code === "1P4") action = "Lees alleen de zichtbare drukweergave en noteer de waarde, de volledige code en het exacte model. Kies geen vul- of aftaphandeling op basis van de tegenstrijdige 1P4-passage en gebruik geen universele drukwaarde. Laat eerst professioneel vaststellen wat de melding voor uw toestel betekent. Open de mantel niet en reset niet herhaaldelijk.";
+    else action = "Controleer alleen of de zichtbare radiatorkranen geopend zijn en noteer de volledige code en het model. Deze melding bewijst geen lage waterdruk: vul niet bij uitsluitend op basis van de code. Volg alleen de toepasselijke gebruikershandleiding; reset niet herhaaldelijk en werk niet aan pomp, sensoren of gesloten onderdelen. Vraag professionele hulp als de melding blijft staan of terugkeert.";
+    return Object.freeze({ ...row, meaning: `${row.meaning} De bron noemt bij deze rubriek: ${models.join(", ")}.`, userAction: action, sourcePage: `Online rubriek ${index+1}: ${atagHeadings[index]}` });
+  })),
+});
+
 export const atagCatalogs = Object.freeze([
-  createFaultCatalog({
+  withAtagSourceControls(createFaultCatalog({
     id: "atag-officieel-overzicht",
     title: "Officieel ATAG-overzicht voor meerdere ketelreeksen",
     scope:
-      "Alle afzonderlijke storings- en statuscodes die ATAGwarmte op de officiële Nederlandse overzichtspagina publiceert; controleer de genoemde toestelreeks bij iedere code.",
+      "De 14 meldingsrubrieken uit het officiële ATAGwarmte-overzicht, gelezen op 11 oktober 2026, bevatten drie automatische ontluchtingsprogramma's en elf andere meldingen. De modelnamen per rubriek zijn letterlijk overgenomen uit de lijsten met veelvoorkomende meldingen, niet als exclusieve toestelcompatibiliteit. ECZ-modellen staan ook bij C-codes; i28 en A2442EC blijven gespeld zoals in de bron. Het Nederlandse servicebereik van de website bewijst geen toestelbestemming of Belgische compatibiliteit. Revisie, artikelnummers, firmware en volledigheid voor alle ATAG-ketels zijn niet vastgesteld.",
     sourceLabel: "ATAGwarmte - cv-ketel storingscodes",
     sourceUrl: "https://www.atagwarmte.nl/atag-cv-ketel-storingscodes",
-    sourcePages: "Online merkoverzicht",
+    sourcePages: "Online overzicht, rubrieken 1-14 (gelezen 11 oktober 2026)",
     rows: [
-      ["C105", "Het automatische ontluchtingsprogramma is actief; dit is normaal maximaal zeven minuten."],
-      ["C117", "De waterdruk is in koude toestand te hoog.", "pressure"],
-      ["C118", "De waterdruk van de cv-installatie is te laag.", "pressure"],
-      ["C133", "De brander vormt geen vlam; controleer uitsluitend of de gaskraan open staat.", "gas"],
-      ["C151", "De warmteafgifte of doorstroming is onvoldoende."],
-      ["BL67", "Bij Q-serie toestellen is het automatische ontluchtingsprogramma actief."],
-      ["BL85", "Bij Q-serie toestellen is de waterdruk te hoog.", "pressure"],
-      ["FILL", "Bij Q-serie toestellen is de waterdruk te laag.", "pressure"],
-      ["612", "Bij ECZ-toestellen is de warmteafgifte of doorstroming onvoldoende."],
-      ["E02", "Bij Q-serie toestellen is geen correcte vlamvorming vastgesteld.", "gas"],
-      ["Systeem ontluchten actief", "Bij ECZ-toestellen is het automatische ontluchtingsprogramma actief."],
-      ["1P4", "Bij ECZ-toestellen meldt de ketel een afwijkende waterdruk.", "pressure"],
-      ["108", "Bij ECZ-toestellen is de waterdruk te laag.", "pressure"],
-      ["105", "Bij ECZ-toestellen is geen correcte vlamvorming vastgesteld.", "gas"],
+      ["C105", "Het automatische ontluchtingsprogramma is actief en duurt volgens het overzicht normaal maximaal zeven minuten; dit is een programmawaarneming, geen vastgestelde defectdiagnose."],
+      ["C117", "De overzichtspagina beschrijft een te hoge waterdruk in koude toestand; de oorzaak is daarmee niet vastgesteld.", "pressure"],
+      ["C118", "De overzichtspagina beschrijft een te lage waterdruk; de melding alleen bewijst niet dat bijvullen de juiste oplossing is.", "pressure"],
+      ["C133", "De overzichtspagina geeft gas- en resetadvies, maar stelt voor deze code geen specifieke oorzaak of vlamdiagnose vast.", "gas"],
+      ["C151", "De overzichtspagina adviseert de radiatorkranen te controleren en bij een blijvende melding hulp te vragen; zij stelt geen specifieke warmteafgifte- of doorstromingsdiagnose vast."],
+      ["BL67", "Het automatische ontluchtingsprogramma is actief en duurt volgens het overzicht normaal maximaal zeven minuten; dit is een programmawaarneming, geen vastgestelde defectdiagnose."],
+      ["BL85", "De overzichtspagina beschrijft een te hoge waterdruk in koude toestand; de oorzaak is daarmee niet vastgesteld.", "pressure"],
+      ["FILL", "De overzichtspagina beschrijft een te lage waterdruk; de melding alleen bewijst niet dat bijvullen de juiste oplossing is.", "pressure"],
+      ["612", "De overzichtspagina adviseert de radiatorkranen te controleren en bij een blijvende melding hulp te vragen; zij stelt geen specifieke warmteafgifte- of doorstromingsdiagnose vast."],
+      ["E02", "De overzichtspagina geeft gas- en resetadvies, maar stelt voor deze code geen specifieke oorzaak of vlamdiagnose vast.", "gas"],
+      ["Systeem ontluchten actief", "Het automatische ontluchtingsprogramma is actief en duurt volgens het overzicht normaal maximaal zeven minuten; dit is een programmawaarneming, geen vastgestelde defectdiagnose."],
+      ["1P4", "De overzichtspagina noemt eerst een te lage waterdruk, maar vervolgt met aftapadvies bij een te hoge druk. Deze tegenstrijdige passage stelt niet vast welke drukafwijking bij dit toestel aanwezig is.", "pressure"],
+      ["108", "De overzichtspagina beschrijft een te lage waterdruk; de melding alleen bewijst niet dat bijvullen de juiste oplossing is.", "pressure"],
+      ["105", "De overzichtspagina geeft gas- en resetadvies, maar stelt voor deze code geen specifieke oorzaak of vlamdiagnose vast.", "gas"],
     ],
-  }),
+  })),
 ]);
 
 // Original Base Cube 01-04199-001: local W/B/E controls and exact printed

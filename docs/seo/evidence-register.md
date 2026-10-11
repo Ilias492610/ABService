@@ -1,5 +1,41 @@
 # Evidence Register
 
+## 12 October 2026 — ATAG selected original overview; Task59 local candidate
+
+[Original ATAG overview](https://www.atagwarmte.nl/atag-cv-ketel-storingscodes)
+ONEHTTP200/no redirect/retry/35515B/SHA
+`0ea5ca93e27f9ba8146b2fe30409b2efaa0613ce8c50de8361284bbc6730fc1c`.
+Read11October: title/H1 ATAG cv-ketel storingscodes/langnl/canonical exact/
+bodypageID3635; full selected main14literal sections/controls/models/locators
+and footer personally read. Website service marketNederland is not boiler
+destination/currentBE/SKU/firmware/revision/issue/latest proof;2026copyright
+and HTTPDate are not publication/revision dates. No linked-document retrieval,
+source-rendered pixels or all-ATAG completeness claim.
+
+Fourteen sections: three seven-minute automatic programs and eleven other
+entries;20literal common-occurrence names/107associations. Cparagraphs also
+include ECZnames, no exclusive partition. i28 and A2442EC retained without
+silent correction; C105 and105 distinct. C133/E02/105 gas/reset advice does
+not establish no-flame diagnosis; C151/612 radiator advice does not establish
+flow failure. C117/BL85 target ranges conflict;1P4 starts low then gives high
+pressure drain advice. Preserve ambiguity, no universal pressure/hose/drain,
+repeatedreset/gas intervention/powercycle advice.14meanings/actions/exact
+headingordinal/scope/warning/meta/realdate tested independently; precise literal
+model tokens are searchable only in the ATAG catalog, no globalalias change.
+
+508/lint0/production0/standard170/local82/93/112/native v2 fourprofiles/308queries/
+8contacts pass. Original test failure retains eight contact-prefetchHTTP200/
+ERR_ABORTED events;11negative controls bound v2 classification,13cancellations
+separately logged in228GET. Fixtures/pixels/DOM/provider/AT/field limits distinct.
+Review/exact hosted/live pending. [Coverage](fault-code-model-coverage.md):
+new15thHTMLsnapshot, all14old snapshots/31other entries/12mirrors/counts exact.
+
+Tasks57–58 actually accepted64c1302/solefreshreview/CI38176150821/499/
+sameSHAProduction7001987990+7001993689/canonical82/93/112/native live pass.
+Initial canonical asset failure and targeted200/fullconfirmation retained;
+cause unknown. ONEIthoIndexNowHTTP200 is receipt only; older candidates below
+remain history, not current acceptance/wholeWP/realgrowth claims.
+
 ## 11 October 2026 — Itho primary and sourced display states; Tasks57–58 candidate
 
 [Original Base Cube manual](https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf)

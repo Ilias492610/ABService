@@ -1,5 +1,51 @@
 # AB Service SEO QA Report
 
+## 12 October 2026 — Task59 ATAG locally verified; release gates remain
+
+Accepted64c1302 genuine BEFORE:53 BASEblobs,13 complete guides/SSR/meta,
+82 registry and whole manifest; fresh499 baseline precedes edits. Original
+ATAG35515B HTML SHA0ea5ca93e27f9ba8146b2fe30409b2efaa0613ce8c50de8361284bbc6730fc1c;
+root reads entire selected169-line main/all14literal explanations/model lists/
+raw fragments/locators/intro/tail controls and footer, not linked manuals or
+rendered remote pixels. Duplicate large JSON lines truncated in tool output
+were reread as bounded individual records; full duplicate-main equality checked.
+Nine independent tests RED8fail1pass→GREEN9. Initial full508 had14 intentional
+historical/scope-count failures; named beforeAtag inverses retain every old
+digest. One missed direct Itho other12 guard corrected; fresh508/0fail.
+No source/hash rebase. All31other manifest entries/14old snapshots/12mirrors,
+13whole SSR/meta/guides and82registry restore genuine BASE leaf-for-leaf.
+
+Pinned Node24.19 lint0/productionaudit0/standardTurbopack170 and local technical
+crawl82pages93links112assets pass. Original native17c17a67 run failed only its
+new network guard after154queries/two contacts: eight observed contact-RSC
+HTTP200 headers followed by browser ERR_ABORTED, not body-completion/server
+failure evidence. Original files remain; eleven negative mutations reject
+other errors/routes/statuses. No guessed product/network change. Root reads
+entire original and exact v2 delta before ONE v2 local execution.
+V2 SHAeba68c32cff47bf095470d2e9da8b66cf27003682b7fb093bd743736e3704b5f:
+four1440/390 JS/noJS profiles,228 actualGET/308searchcases/1136actualqueryrows/
+56initial rows/eight pointer/nativeEnter contacts/60pinnedPNG files pass.
+Thirteen exact contact-prefetch200 cancellations separately recorded; no other
+network failures forgiven. All actual records/progress/source/options/native
+o/a and clear keys/oneTab empty visibleName/serviceURL/geometry checked.
+Four isolated rating503/eight homeRSC204 fixtures precede server, not actual
+rating/provider/mail/events. Root views mobile full C105/1P4 and noJSEnterName
+viewport pixels with badges/body below header. Target-only crops remain limited
+pixel evidence; no physicalAT/fieldCWV/appliance-fit/global-quality claim.
+Review/exact publication/twoProduction/canonical live remain separate gates.
+
+Tasks57–58 RELEASEACCEPTED64c1302: solefreshreview/0findings/merged499,
+[CI38176150821](https://github.com/Ilias492610/ABService/actions/runs/38176150821)
+success21:24:05UTC/Node24.21/499/lint/production0/standard170/hosted82/93/112.
+Actual sameSHA namedProduction7001987990 and7001993689 success21:24:05/
+21:24:33UTC. First canonical single /social/merken/vaillant fetch failure is
+retained; directed GET200image/png70766B and separate full82/93/112 crawl pass,
+exact underlying cause unknown. Unchanged native57live443GET/108queries/20notices/
+12contacts42PNGs and58live200GET/336queries/96notices/8contacts84PNGs checked.
+Earlier crop limits retained. ONEIthoIndexNowHTTP200 received/urlCount1senttrue
+is not indexing; runtimeNefit/unchangedURLs not repeated. Older local phases
+below are history; Task51/owner/account/French/field/case/results gates remain.
+
 ## 11 October 2026 — Tasks57–58 locally verified; review/release gates open
 
 Genuine clean acceptedc7b44be captures:50BASE blobs/13fullguides+SSR+meta/

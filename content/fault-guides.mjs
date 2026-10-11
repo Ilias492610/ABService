@@ -136,7 +136,7 @@ export const faultGuides = Object.freeze([
     slug: "atag",
     brand: "ATAG",
     modelWarning:
-      "Deze catalogus bevat alle meldingen uit het officiële online ATAG-overzicht, dat meerdere genoemde toestelreeksen combineert. Controleer toestelmodel, schermtekst en eventuele subcode voordat u een verklaring toepast.",
+      "Deze gids volgt de 14 rubrieken van één ATAGwarmte-overzicht, gelezen op 11 oktober 2026; niet alle ATAG-modellen of revisies zijn gedekt. Controleer het exacte toestelmodel, de volledige schermtekst en de toepasselijke gebruikershandleiding. De bron noemt overlappende modelgroepen en schrijft i28 en A2442EC; die spelling bewijst geen exacte toestelcompatibiliteit. C105 is een automatisch programma en is niet dezelfde melding als 105. Bij 1P4 zijn de drukinstructies tegenstrijdig; kies niet zelf tussen bijvullen en aftappen. Herhaald resetten, spanningsonderbreking en gas- of leidingwerk zijn geen algemeen gebruikersadvies. Actuele Belgische compatibiliteit, artikelnummers, firmware en nieuwste revisie zijn onbekend.",
     catalogs: atagCatalogs,
     documentationLabel: "Officiële ATAG-downloads",
     documentationUrl: "https://www.atagwarmte.nl/downloads",

@@ -2,6 +2,18 @@
 
 ## Current progress — ongoing WP00–WP17
 
+Latest accepted64c1302 is Tasks57–58: solefreshreview/merged499/exact
+CI38176150821/both actual matchingProduction7001987990+7001993689/canonical
+82pages93links112assets/unchanged native Nefit and Itho live accepted.
+One IthoIndexNowHTTP200 is receipt, not indexing; runtime-only Nefit not repeated.
+Current bounded WP07/WP12 Task59 ATAG is locally verified, not released:
+14preserved rubric rows/20literal common-occurrence names/107associations,
+three automatic programs, safe model-bound advice and source-model search.
+508tests/lint0/production0/build170/local82/93/112/four native v2 profiles pass;
+original cancellation diagnostic retained. Review/exact publication/live remain
+gates. Wider account/evidence/French/field/Task51/results gates stay open.
+The following earlier baseline/candidate descriptions are dated history.
+
 Latest accepted c7b44be is Task56's source-bound Ferroli correction: sole review,
 481tests/exactCI38171335058/both actual matching Production7001160742 and
 7001155894/canonical82pages93links112assets/native four profiles209GET pass.
