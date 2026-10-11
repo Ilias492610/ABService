@@ -1,6 +1,6 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit",
   "incrementalUpdateDate": "2026-10-11",
   "counts": {
     "guides": 13,
@@ -173,7 +173,7 @@
     {
       "slug": "ferroli",
       "brand": "Ferroli",
-      "modelWarning": "Deze catalogus volgt de volledige A- en F-foutcodetabel uit de genoemde Ferroli BlueSense-servicehandleiding. Raadpleeg voor andere Ferroli-toestelreeksen altijd de modelgebonden documentatie.",
+      "modelWarning": "Deze gids gebruikt uitsluitend de 37 A/F-codegroepen uit § 9, S12-S13 van Ferroli BlueSense-servicehandleiding DRS9100, versie 9 (augustus 2015). De bron noemt BlueSense 3/4/5 zonder toevoeging en met toevoeging 12/22/32. Dit is historische Nederlandse servicedocumentatie, geen overzicht voor alle Ferroli-ketels of bevestiging van Belgische toestelcompatibiliteit. Artikelnummers, actuele firmware en de nieuwste revisie zijn hier niet vastgesteld. Noteer het exacte type, de toevoeging en volledige code en controleer de gebruikershandleiding van uw toestel. Bij A moet de oorzaak vóór een reset zijn verholpen; bij F heeft de resettoets geen effect. F20/F21 zijn de genoemde uitzonderingen waarbij het toestel blijft functioneren. Gesloten onderdelen en terugkerende meldingen vragen een bevoegde technicus.",
       "explanationRowCount": 37,
       "catalogIds": [
         "ferroli-bluesense"
@@ -286,6 +286,17 @@
       "pageCount": 36,
       "bytes": 4821341,
       "sourceBoundary": "One original HTTP200 manufacturer PDF, historical6720646227 (04/2013) NL. No prior independently recorded hash or latest/SKU/firmware/Belgian-fit proof."
+    },
+    {
+      "id": "ferroli-bluesense-pdf",
+      "url": "https://www.ferroli.com/media/1547640352.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-56-ferroli-primary-preflight-20261011T191143Z/original-1547640352.pdf",
+      "sha256": "6d18f84f4061f9126e5df5a5d505a4732dedb4c7fa7662239ba59d10a73c1224",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 16,
+      "bytes": 1021443,
+      "sourceBoundary": "One original manufacturer301 to officialmedia200 PDF; printed DRS9100 version9 augustus2015, historical Dutch service context. No prior independently recorded hash, exactSKU/currentfirmware/Belgian-fit/latest proof."
     }
   ],
   "entries": [
@@ -1440,8 +1451,8 @@
         "ferroli"
       ],
       "title": "BlueSense 3, 4 en 5",
-      "modelScope": "Alle alarm- en foutcodes uit de officiële BlueSense-servicehandleiding DRS9100 versie 9; FH en d1-d3 zijn normale programma- of wachttijdmeldingen en staan daarom niet in deze foutlijst.",
-      "sourceLabel": "Ferroli BlueSense - servicehandleiding",
+      "modelScope": "De 37 uitlegblokken uit § 9, S12-S13 van servicehandleiding DRS9100, versie 9 (augustus 2015), volgen 38 afzonderlijke A- en F-codes. De handleiding noemt BlueSense 3, 4 en 5 zonder toevoeging en met toevoeging 12, 22 of 32; controleer de aanduiding op uw toestel. A23/A24 delen één uitleg; A63 en A65 blijven afzonderlijk. FH en d1/d2/d3 zijn normale programma- of wachttijdmeldingen, geen foutcodes. Andere modellen, latere software en revisies zijn niet gedekt.",
+      "sourceLabel": "Ferroli BlueSense - servicehandleiding DRS9100, versie 9 (augustus 2015)",
       "sourceURL": "https://www.ferroli.com/media/1547640352.pdf",
       "sourcePages": "§ 9, p. S12-S13",
       "explanationRowCount": 37,
@@ -1449,23 +1460,45 @@
       "models": [
         "BlueSense 3",
         "BlueSense 4",
-        "BlueSense 5"
+        "BlueSense 5",
+        "BlueSense 3 (toevoeging 12)",
+        "BlueSense 4 (toevoeging 12)",
+        "BlueSense 5 (toevoeging 12)",
+        "BlueSense 3 (toevoeging 22)",
+        "BlueSense 4 (toevoeging 22)",
+        "BlueSense 5 (toevoeging 22)",
+        "BlueSense 3 (toevoeging 32)",
+        "BlueSense 4 (toevoeging 32)",
+        "BlueSense 5 (toevoeging 32)"
       ],
       "articleNumbers": null,
       "documentNumber": "DRS9100",
       "revision": "versie 9",
-      "issueDate": null,
+      "issueDate": "2015-08",
       "market": null,
-      "language": null,
+      "language": "nl",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "ferroli-bluesense-pdf",
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        "docs/seo/evidence-register.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-56-ferroli-primary-preflight-20261011T191143Z/primary-preflight.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-56-ferroli-primary-preflight-20261011T191143Z/literal-primary-inputs.json"
       ],
-      "verificationBasis": "Current title/scope explicitly declare variants3/4/5, DRS9100 version9 and S12–S13; historical evidence summary only, no retained source/footer verification in Task47.",
+      "verificationBasis": "Original cover/control/model-history/safety and complete illustrated section9 S12–S13 read:37 A/F explanatoryblocks/38 individualcodes (16A22F), A23/A24 shared, A63/A65 separate. Four normal states excluded. Local A cause-resolved-first and F ineffective reset; F20/F21 still-operating exceptions, F40 shutdown, source-specific pressure/sensor boundaries. Historic .nl service context, no explicit Belgian validity or current device fit.",
       "declaredScopePath": "content/additional-fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "issueDatePrecision": "month",
+      "sourceAudience": "professional-service-manual",
+      "literalCodeGroupCount": 37,
+      "literalIndividualCodeCount": 38,
+      "literalAlarmCodeCount": 16,
+      "literalFaultCodeCount": 22,
+      "normalStateCodeCount": 4,
+      "displayContext": "A or F alternates with two-digit number on the display. A requires cause resolved before reset; F reset key ineffective, with still-operating F20/F21 exceptions. FH/d1/d2/d3 are normal programs/waits.",
+      "firmwareCompatibility": null,
+      "currentBelgianVariantCompatibility": null,
+      "newestEdition": null
     }
   ],
   "limits": [

@@ -1,5 +1,24 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — Task56 Ferroli source/safety; local candidate
+
+Read original DRS9100 version9 (augustus2015): historical BlueSense3/4/5, no
+addition or12/22/32.37blocks/38codes stay;15meanings/37local actions now separate
+A/F reset rules, high/low pressure, flow monitoring and sensor diagnosis.
+No shared engine, route, alias or other12-guide change; real Ferroli meta/date.
+Independent RED9fail1pass→GREEN10;481/lint0/production0/standardTurbopack170;
+fresh local technical crawl82pages/93internal links/112assets passes.
+Single native4profiles269GET/364queries8contacts66shots pass; review/exactlive
+remain gates. Inventory24PDF-linked/11PDF/twoWeb/six declarations;12old snapshots
+preserved. No currentBelgian/SKU/firmware/latest or wholeWP07 promise.
+
+Tasks54–55 actually accepted ab6ecdda7d4cb9d0344097f43e223262999d30c6:
+[CI38167406373](https://github.com/Ilias492610/ABService/actions/runs/38167406373)
+success19:18:43UTC/471; actual matching Production7000493190/7000482531 success;
+canonical82/93/112; native Nefit193GET392queries8contacts and hero339GET174cases
+18ownedfocus. One NefitIndexNowHTTP200 receipt, not indexing. Candidate notes
+below are history; Task57rE/Task51development/widerWP/owner/results gates remain.
+
 ## 11 October 2026 — Tasks54–55 local candidate, not released
 
 Nefit ProLine now follows historical installation instruction6720646227

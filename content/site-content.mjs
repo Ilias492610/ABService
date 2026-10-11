@@ -298,7 +298,8 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Ferroli BlueSense foutcodes: officiële bron | AB Service",
     description:
-      "Doorzoek de volledige A- en F-foutcodetabel voor Ferroli BlueSense, met modelwaarschuwing en veilige stappen.",
+      "Zoek 37 Ferroli BlueSense-codegroepen uit DRS9100 versie 9 (augustus 2015). Lees de modelgrenzen, A/F-resetregels en veilige eerste stappen.",
+    lastModified: "2026-10-11",
     changeFrequency: "monthly",
     priority: 0.6,
   },

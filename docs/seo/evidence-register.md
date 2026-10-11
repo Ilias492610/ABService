@@ -1,5 +1,25 @@
 # Evidence Register
 
+## 11 October 2026 — Ferroli historical primary; Task56 candidate
+
+[Original manufacturer PDF](https://www.ferroli.com/media/1547640352.pdf)
+HTTP301→officialmedia200,1021443bytes/16pages/SHA
+`6d18f84f4061f9126e5df5a5d505a4732dedb4c7fa7662239ba59d10a73c1224`.
+Main reads cover/control/modelhistory/safety and entire illustrated S12/S13,
+plus literal inputs. Printed DRS9100version9 augustus2015, Dutch service context;
+base3/4/5 plus lowered12/22/32. Historic software02/03/05/08 is not current fit.
+Market/SKU/firmware/currentBelgianfit/newest unknowns remain null.
+Section9:37blocks38codes/16A22F; A23/A24 shared,A63/A65 separate; FH/d1/d2/d3
+normal. A requires cause resolved before reset; F key ineffective; F20/F21
+still function/F40shutdown. Source component/check/power-removal solutions are
+not consumer instructions.15meanings/37local safeactions independently tested;
+481/lint0/production0/standard170/localcrawl82/93/112/native269GET364queries8contacts locally pass.
+Review/exactlive gates distinct. [Coverage](fault-code-model-coverage.md).
+
+Tasks54–55 accepted ab6ecdda/CI38167406373/471/two matching actualProduction
+7000493190/7000482531/canonical82/93/112/native live. One NefitHTTP200 receipt
+does not prove indexing. Earlier candidate observations below are history.
+
 ## 11 October 2026 — Nefit historical primary table and bounded safety; Task54
 
 [Original manufacturer PDF](https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf)

@@ -154,7 +154,7 @@ export const faultGuides = Object.freeze([
     slug: "ferroli",
     brand: "Ferroli",
     modelWarning:
-      "Deze catalogus volgt de volledige A- en F-foutcodetabel uit de genoemde Ferroli BlueSense-servicehandleiding. Raadpleeg voor andere Ferroli-toestelreeksen altijd de modelgebonden documentatie.",
+      "Deze gids gebruikt uitsluitend de 37 A/F-codegroepen uit § 9, S12-S13 van Ferroli BlueSense-servicehandleiding DRS9100, versie 9 (augustus 2015). De bron noemt BlueSense 3/4/5 zonder toevoeging en met toevoeging 12/22/32. Dit is historische Nederlandse servicedocumentatie, geen overzicht voor alle Ferroli-ketels of bevestiging van Belgische toestelcompatibiliteit. Artikelnummers, actuele firmware en de nieuwste revisie zijn hier niet vastgesteld. Noteer het exacte type, de toevoeging en volledige code en controleer de gebruikershandleiding van uw toestel. Bij A moet de oorzaak vóór een reset zijn verholpen; bij F heeft de resettoets geen effect. F20/F21 zijn de genoemde uitzonderingen waarbij het toestel blijft functioneren. Gesloten onderdelen en terugkerende meldingen vragen een bevoegde technicus.",
     catalogs: ferroliCatalogs,
     documentationLabel: "Officiële Ferroli-documentatie",
     documentationUrl: "https://www.ferroli.com/nl/installateurs/toolbox/documentatie",

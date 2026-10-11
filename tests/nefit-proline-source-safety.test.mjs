@@ -1,3 +1,4 @@
+import { beforeFerroliGuide, beforeFerroliRegistry } from "./fixtures/ferroli-bluesense-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
@@ -83,8 +84,8 @@ test("full54-row SSR, unchanged cards and each source/contact element preserve g
 test("full genuine13guides/82registry preserve every leaf except declared Nefit changes and Intergas count clarity", () => {
   assert.equal(hash(beforeNefitGuide(guide)), facts.preservation.guide);
   assert.equal(hash(beforeNefitGuide(guide).codes), facts.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g => g.slug !== "nefit-bosch").map(beforeIntergasCountGuide)), facts.preservation.otherTwelveGuides);
-  assert.equal(hash(faultGuides.map(beforeNefitGuide).map(beforeIntergasCountGuide)), facts.preservation.allGuides);
-  assert.equal(hash(pageRegistry.map(beforeNefitRegistry)), facts.preservation.allRegistry);
+  assert.equal(hash(faultGuides.filter(g => g.slug !== "nefit-bosch").map(beforeIntergasCountGuide).map(beforeFerroliGuide)), facts.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasCountGuide)), facts.preservation.allGuides);
+  assert.equal(hash(pageRegistry.map(beforeFerroliRegistry).map(beforeNefitRegistry)), facts.preservation.allRegistry);
   assert.equal(faultGuides.reduce((n, g) => n + g.codeEntryCount, 0), 1596);
 });

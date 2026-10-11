@@ -1,5 +1,15 @@
 # WP07 — actuele model- en brondekking
 
+Actueel geaccepteerd baselineab6ecdda: Tasks54–55 solefreshreview/CI38167406373/
+471/actualProduction7000493190/7000482531/canonical82/93/112/native live.
+Eén NefitIndexNowHTTP200 is ontvangstbewijs, geen indexeringsbewijs.
+Task56 lokaal kandidaat: DRS9100versie9 augustus2015, BlueSense3/4/5/noaddition
+or12/22/32. S12/S13:37blocks/38codes/16A22F; vier normale states buiten foutlijst.
+Vijftien betekenissen/37lokale A/F/druk/sensor-acties; actueleBEfit/SKU/firmware/
+latest onbekend.24PDFcatalogi/11PDF/tweeWeb/zes declaraties;31andere records/
+12old snapshots/12mirrors exact.481/lint0/productie0/standaard170/local82/93/112/native269GET/
+364queries8contacts pass; review/exactlive aparte gates. Oudere fasen zijn history.
+
 Actueel geaccepteerd baseline1f10e883: Task52/53 onafhankelijke review/exact
 CI38161989180/455tests/beidewerkelijke namedProduction/livecontrole geslaagd.
 Eén IntergasIndexNowHTTP200 is ontvangstbewijs, geen indexeringsbewijs.
@@ -80,9 +90,9 @@ toegankelijkheid of inhoud gecertificeerd.
 ## Alle afzonderlijke catalogi
 
 Een bewaard bronbestand plus eerder afgebakend leesrapport is sterker bewijs
-dan uitsluitend een bestaande declaratie. Drieëntwintig catalogi zijn gekoppeld
-aan tien bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
-Zeven hebben binnen deze inventaris alleen de bestaande declaratie en
+dan uitsluitend een bestaande declaratie. Vierentwintig catalogi zijn gekoppeld
+aan elf bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
+Zes hebben binnen deze inventaris alleen de bestaande declaratie en
 historische bewijsregistratie (G). Bewaren/hashvergelijking is op zichzelf
 geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
@@ -119,7 +129,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 | `nefit-proline-hrc` | 54 | Tabel 25, p. 31-34; 6720646227 (04/2013, NL) | [bron 14](https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf) | nefit-proline-pdf; geselecteerde historische tabel gelezen Task54 |
 | `atag-officieel-overzicht` | 14 | Online merkoverzicht | [bron 15](https://www.atagwarmte.nl/atag-cv-ketel-storingscodes) | G: declaratie/historisch register |
 | `itho-base-cube` | 26 | § 7.2-7.4, p. 79-95 | [bron 16](https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf) | G: declaratie/historisch register |
-| `ferroli-bluesense` | 37 | § 9, p. S12-S13 | [bron 17](https://www.ferroli.com/media/1547640352.pdf) | G: declaratie/historisch register |
+| `ferroli-bluesense` | 37 | § 9, p. S12-S13 | [bron 17](https://www.ferroli.com/media/1547640352.pdf) | ferroli-bluesense-pdf; historische v9/S12–S13 gelezen Task56 |
 
 ## Exacte scope en niet ingevulde gaten
 
@@ -188,14 +198,19 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
   Elf bronregels/twintig nummers; knipperende storingsled met temperatuurdisplay,
   niet normale servicedisplaystates. NL-context, editie/revisie/ketelartikel/
   firmware/actuele Belgische toepasbaarheid onbekend; geen nieuwsteclaim.
-- Nefit: declaratie ProLine HRC 24/CW3, 24/CW4, 30/CW5, tabel 25
-  pp. 31–34. Exacte artikel/markt/taal/handboekrevisie nog niet herlezen.
+- Nefit: Task54 leest historische6720646227 (04/2013, NL), uitsluitend
+  ProLine HRC24/CW3,24/CW4,30/CW5; tabel25 pp31–34.78 geselecteerde combinaties
+  in54uitleggroepen;9Y heeft geen subcode. Exacte SKU/firmware/actueleBelgischefit/
+  nieuwsteeditie blijven onbekend.
 - ATAG: gedeclareerd Nederlands online overzicht, Q-serie/ECZ in bestaande
   regeltekst. Geen exacte modeltoepasbaarheid op basis daarvan certificeren.
 - Itho: gedeclareerd Base Cube, documentidentifier `01-04199-001`,
   §7.2–7.4 pp. 79–95; identifier is niet automatisch een footerrevisie/SKU.
-- Ferroli: declaratie BlueSense 3/4/5, DRS9100 versie 9, §9 S12–S13.
-  Nog geen nieuwe controle van werkelijke footer/markt/SKU in dit register.
+- Ferroli: Task56 leest DRS9100versie9 augustus2015, historische BlueSense3/4/5,
+  zonder toevoeging of12/22/32. §9 S12–S13:37uitlegblokken/38codes (16A22F),
+  vier normale states uitgesloten. A vereist opgeloste oorzaak vóór reset;
+  F-resettoets heeft geen effect, F20/F21 blijven functionerende uitzonderingen.
+  Nederlands servicehandboek; actueleBelgischefit/SKU/firmware/nieuwste onbekend.
 
 JSON-`null` betekent: niet vastgesteld binnen deze afgebakende inventaris,
 niet dat een gegeven niet bestaat. De velddeclaratie en de bewijsbasis blijven

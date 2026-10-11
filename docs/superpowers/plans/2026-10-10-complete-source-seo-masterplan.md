@@ -353,6 +353,20 @@ groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
+**Task56 lokaal kandidaat:** Ferroli DRS9100v9 augustus2015/S12S13 persoonlijk
+gelezen,37groepen38codes/16A22F voor historischeBlueSense3/4/5 en toevoegingen
+12/22/32.15bronbetekenissen/37lokale A/F/druk/sensor-acties; geen nieuw codegat/
+route/alias/sharedengine/Belgischefirmwarefit.24PDFcatalogi/11PDF/tweeWeb/zes
+declaraties;31andere records/12old snapshots/12mirrors exact. RED9fail1pass→10/
+481/lint0/productie0/standaard170/localcrawl82/93/112/native4profielen269GET364queries8contacts.
+Review/exactrelease blijven gates; bredereWP07 en eigenaarbewijs niet gesloten.
+
+**Tasks54–55 werkelijk geaccepteerd:**ab6ecdda/solefreshreview/471/exactCI38167406373
+success19:18:43UTC; actualmatchingProduction7000493190/7000482531/canonical82/93/112.
+Nefitnative193GET392queries8contacts52beelden; éénNefitIndexNowHTTP200 receipt,
+geenindexatie. Onderstaande kandidaatfases zijn geschiedenis. rEzoekambiguïteit
+blijft afzonderlijk Task57, geen nieuwe reset-foutregel of globale zoekbeperking.
+
 **Task54 lokaal kandidaat:** gelezen historischeNefit6720646227/04-2013/NL,
 HRC24/CW3,24/CW4,30/CW5;95fysieke tabelregels/78geselecteerde meldingen in54
 bestaande uitleggruppen. Padlock is geen3-subcode:9Y gecorrigeerd. Negentien
@@ -672,6 +686,13 @@ opgeschoond. Geen account/e-mailgate of lekdiagnose. Release/live gate blijft op
 daadwerkelijke eventontvangst, passende aanvragen en evaluatie zijn niet gemeten.
 
 ### WP12 — Technische SEO, CWV, toegankelijkheid en security
+
+**Task55 werkelijk geaccepteerd:**ab6ecdda/solefreshreview/471/CI38167406373/
+beideactualProduction7000493190/7000482531/canonical82/93/112. Ongewijzigde
+nativev2 achtprofielen339GET174cases18ownedfocus126beelden; echte same-guide
+clearance/restoration/default/noJS. Originelefout/diagnose bewaard; controlled
+center geen automatischoutline-/allsite-/AT-/provider-/veldclaim. Kandidaten
+hieronder zijn historische voorbereiding; Task51development/lifecycle blijft open.
 
 **Task55 lokaal kandidaat:** false-default PageHeroflag/marker uitsluitend voor
 13foutcodeheroes plus één bestaande observatorselector. Heelhero beschermd,

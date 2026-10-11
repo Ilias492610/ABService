@@ -2,6 +2,20 @@
 
 ## Published routes
 
+**Current accepted baseline ab6ecdda:** Tasks54–55 solefreshreview/471/
+CI38167406373/actual Production7000493190/7000482531/canonical82/93/112/native
+Nefit193GET392queries8contacts/hero339GET174cases18ownedfocus accepted. One
+NefitIndexNowHTTP200 is receipt, not indexing. Below are dated prior phases.
+
+**Task56 local candidate:** existing37 Ferroli blocks/38codes tied to DRS9100v9
+augustus2015 and historical BlueSense3/4/5/no addition or12/22/32.15meanings/
+37local safeactions/source warning/scope/label/meta/date; no new route/alias/
+model-fit guarantee. Inventory24PDF-linked/11PDF/twoWeb/six declarations;
+31other entries/12old snapshots/12other mirrors exact.481/lint0/production0/
+standardbuild170/localcrawl82/93/112/native269GET364queries8contacts pass;
+review/live are gates.
+Same82registry/80published/2noindex and32/38/1596/1354/18 catalog counts.
+
 **Current accepted baseline1f10e883:** Tasks52–53 sole review/exactCI38161989180/
 455tests/both namedProduction6999521558/6999522369/canonical82/93/112/native
 live accepted. One IntergasIndexNowHTTP200 receipt is not indexing. Same82/80/2

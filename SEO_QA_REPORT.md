@@ -1,5 +1,24 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — Task56 Ferroli; local candidate
+
+Genuine ab6ecdd48BASEblob/13guide+SSRmeta/82registry/fullmanifest captures before
+tracked edits. Main reads original identity/control/history/safety/illustrated
+S12/S13 and literal inputs;37blocks38codes, four normal states excluded.
+Independent10tests RED9fail1pass→GREEN10; full481/0fail; lint0/productionaudit0/
+standardTurbopack170/localcrawl82pages93links112assets. Exact named inverses retain original historical hashes;
+31other entries/12mirrors/12old snapshots/counts compare to real before. One
+native4profile run269sameoriginGET/364queries8contacts66PNGs pass; controlled
+rating503/RSC204 are test-only. Review/hosted/live/IndexNow remain separate gates.
+
+Tasks54–55 exact accepted ab6ecdda: solefreshreview/471/
+[CI38167406373](https://github.com/Ilias492610/ABService/actions/runs/38167406373)
+success19:18:43UTC; actual Production7000493190/7000482531 matchSHA/canonical82/93/112.
+Unchanged Nefitnative193GET392queries8contacts52PNGs and hero339GET174cases18owned
+126PNGs independently checked. Controlledcenter not automaticoutline proof;
+fixtures not provider/realrating/mail/AT. One NefitIndexNowHTTP200 is receipt only.
+Older notes below are history; Task51 and widerWP/field/account/results stay open.
+
 ## 11 October 2026 — Tasks54–55 local acceptance; review/release gates pending
 
 Fixed actual1f10 beforecaptures:48sourcepaths/all13real guides+SSR+metadata/

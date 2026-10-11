@@ -1,3 +1,4 @@
+import { beforeFerroliGuide, beforeFerroliRegistry } from "./fixtures/ferroli-bluesense-source-safety.mjs";
 import { beforeNefitGuide, beforeNefitRegistry } from "./fixtures/nefit-proline-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -62,8 +63,8 @@ test("actual Intergas SSR retains all11 groups and source/contact while exposing
   assert.equal(hash(beforeIntergasHtml(beforeFaultReadingHtml(html),"intergas")),facts.preservation.html);
 });
 test("allother12 complete guides and82registry preserve genuine64d7 captures outside the exact Intergas leaves", () => {
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="intergas").map(beforeNefitGuide)),facts.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.filter(g=>g.slug!=="intergas").map(beforeFerroliGuide).map(beforeNefitGuide)),facts.preservation.otherTwelveGuides);
   assert.equal(hash(beforeIntergasGuide(guide)),facts.preservation.guide);
-  assert.equal(hash(pageRegistry.map(beforeNefitRegistry).map(beforeIntergasRegistry)),facts.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry)),facts.preservation.allRegistry);
   assert.equal(faultGuides.reduce((n,g)=>n+g.codeEntryCount,0),1596);
 });

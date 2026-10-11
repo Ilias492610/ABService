@@ -458,53 +458,73 @@ export const ithoDaalderopCatalogs = Object.freeze([
   }),
 ]);
 
+// DRS9100 v9 restart constraints are local, not a shared classifier change.
+const withFerroliSourceControls = catalog => Object.freeze({
+  ...catalog,
+  codes: Object.freeze(catalog.codes.map(row => {
+    let action = row.userAction;
+    if (["A26", "F21", "F40"].includes(row.code)) {
+      action = "Lees alleen de zichtbare manometer of drukweergave en noteer de waarde en het exacte model. Vul het toestel niet bij en tap niet zelf water af om deze hogedrukmelding te wissen. Laat de druk en oorzaak door een bevoegde technicus beoordelen; open geen gesloten onderdelen.";
+    }
+    if (["F20", "F37"].includes(row.code)) action += " Een lage displaywaarde alleen bewijst niet dat bijvullen nodig is; een verschil met de zichtbare manometer kan technische beoordeling vragen.";
+    if (row.code === "F64") action += " Onderbreek niet zelf de netspanning om deze melding te wissen.";
+    if (row.code.startsWith("A")) {
+      action = action.replace("Zonder gasgeur: noteer de volledige code en reset alleen wanneer de handleiding van uw exacte toestel dat toestaat.", "Zonder gasgeur: noteer de volledige code en laat de oorzaak professioneel beoordelen.");
+      action = "Bij een A-code moet de oorzaak zijn verholpen vóór een reset. Keert de melding terug, neem contact op met uw installateur; omzeil de resetbegrenzing niet. " + action;
+    } else {
+      action = "Bij deze F-code heeft de resettoets geen effect. Laat een terugkerende melding door uw installateur onderzoeken; noteer het exacte toesteltype en de code. " + action;
+    }
+    return Object.freeze({ ...row, userAction: action });
+  })),
+});
+
 export const ferroliCatalogs = Object.freeze([
-  createFaultCatalog({
+  withFerroliSourceControls(createFaultCatalog({
     id: "ferroli-bluesense",
     title: "BlueSense 3, 4 en 5",
     scope:
-      "Alle alarm- en foutcodes uit de officiële BlueSense-servicehandleiding DRS9100 versie 9; FH en d1-d3 zijn normale programma- of wachttijdmeldingen en staan daarom niet in deze foutlijst.",
-    sourceLabel: "Ferroli BlueSense - servicehandleiding",
+      "De 37 uitlegblokken uit § 9, S12-S13 van servicehandleiding DRS9100, versie 9 (augustus 2015), volgen 38 afzonderlijke A- en F-codes. De handleiding noemt BlueSense 3, 4 en 5 zonder toevoeging en met toevoeging 12, 22 of 32; controleer de aanduiding op uw toestel. A23/A24 delen één uitleg; A63 en A65 blijven afzonderlijk. FH en d1/d2/d3 zijn normale programma- of wachttijdmeldingen, geen foutcodes. Andere modellen, latere software en revisies zijn niet gedekt.",
+    sourceLabel: "Ferroli BlueSense - servicehandleiding DRS9100, versie 9 (augustus 2015)",
     sourceUrl: "https://www.ferroli.com/media/1547640352.pdf",
     sourcePages: "§ 9, p. S12-S13",
     rows: [
       ["A01", "Tijdens de ontsteking is geen ionisatiesignaal gemeten.", "gas"],
       ["A02", "De regeling detecteert een vlamsignaal terwijl de gasklep gesloten is.", "gas"],
       ["A03", "De cv-aanvoertemperatuur is te hoog geworden."],
-      ["A04", "De temperatuur van de rookgassen is te hoog geworden.", "flue"],
+      ["A04", "De rookgastemperatuurmelding F07 is drie keer voorgekomen in de laatste 24 uur.", "flue"],
       ["A05", "De ventilator geeft niet tijdig een frequentiesignaal terug.", "flue"],
       ["A06", "Binnen vier minuten is vijf keer het vlamsignaal weggevallen.", "gas"],
-      ["A23 / A24", "Een parameterinstelling is ongeldig of de regelprint meldt een probleem."],
-      ["A26", "Binnen één uur is drie keer een te hoge waterdruk gemeten.", "pressure"],
-      ["A41", "Na ontsteking is onvoldoende watercirculatie in het cv-circuit gemeten.", "pressure"],
+      ["A23 / A24", "Er is een instelprobleem; de handleiding noemt parametercontrole en een mogelijk printprobleem, geen vastgestelde oorzaak.", "electrical"],
+      ["A26", "Binnen één uur is drie keer de hogedrukmelding F40 opgetreden.", "general"],
+      ["A41", "Na ontsteking is drie keer geen stijging van de cv-aanvoertemperatuur van minstens 1 °C na 15 seconden gemeten; dit wijst op onvoldoende watercirculatie, niet automatisch op lage waterdruk.", "general"],
       ["A42", "Het temperatuurverschil tussen de twee aanvoersensoren is te groot."],
       ["A44", "De meting van de tapwatertemperatuur is onjuist."],
       ["A61", "De regeling meldt een fout in het vlamsignaal.", "gas"],
       ["A62", "De gasklep of de aansturing ervan meldt een fout.", "gas"],
-      ["A63", "De regelprint meldt een intern probleem."],
-      ["A65", "De regelprint meldt een intern probleem."],
+      ["A63", "De regelprint meldt een probleem.", "electrical"],
+      ["A65", "De regelprint meldt een probleem.", "electrical"],
       ["F07", "De warmtewisselaarsensor meet langer dan twee minuten een te hoge rookgastemperatuur.", "flue"],
-      ["F08", "De cv-aanvoertemperatuur is hoger dan 99 °C."],
-      ["F09", "De cv-retourtemperatuur is hoger dan 99 °C."],
+      ["F08", "De cv-aanvoertemperatuur is hoger dan 99 °C. Volgens deze handleiding ontsteekt het toestel weer onder 89 °C, alleen als er warmtevraag is."],
+      ["F09", "De cv-retourtemperatuur is hoger dan 99 °C. Volgens deze handleiding ontsteekt het toestel weer onder 89 °C, alleen als er warmtevraag is."],
       ["F10", "Aanvoersensor 1 van de dubbelsensor is niet aangesloten of defect."],
       ["F11", "De cv-retourtemperatuursensor is niet aangesloten of defect."],
-      ["F12", "De tapwatertemperatuursensor is niet aangesloten of defect."],
-      ["F13", "De rookgastemperatuursensor is niet aangesloten of kortgesloten.", "flue"],
+      ["F12", "De tapwatertemperatuursensor meldt een fout; de precieze oorzaak vraagt technische controle."],
+      ["F13", "De rookgastemperatuursensor meldt een fout; aansluiting, kortsluiting en printverbinding zijn controlepunten, geen vastgestelde oorzaak.", "flue"],
       ["F14", "Aanvoersensor 2 van de dubbelsensor is niet aangesloten of defect."],
       ["F15", "De ventilator meldt een fout.", "flue"],
-      ["F20", "De waterdruk ligt tussen 0,4 en 0,7 bar.", "pressure"],
-      ["F21", "De waterdruk ligt tussen 2,5 en 2,8 bar.", "pressure"],
-      ["F34", "De voedingsspanning is te laag."],
-      ["F35", "De gemeten netfrequentie is onjuist."],
+      ["F20", "De waterdruk ligt tussen 0,4 en 0,7 bar. Volgens deze handleiding blijft het toestel bij deze melding functioneren.", "pressure"],
+      ["F21", "De waterdruk ligt tussen 2,5 en 2,8 bar. Volgens deze handleiding blijft het toestel bij deze melding functioneren.", "general"],
+      ["F34", "De voedingsspanning is te laag.", "electrical"],
+      ["F35", "Er is een frequentiefout gemeld; de handleiding noemt een mogelijk printprobleem.", "electrical"],
       ["F37", "De waterdruk is lager dan 0,4 bar.", "pressure"],
       ["F39", "De buitentemperatuursensor meldt een fout."],
-      ["F40", "De waterdruk is hoger dan 2,8 bar.", "pressure"],
+      ["F40", "De waterdruk is hoger dan 2,8 bar; volgens deze handleiding schakelt het toestel uit.", "general"],
       ["F43", "De cv-aanvoertemperatuur stijgt te snel."],
-      ["F47", "De cv-waterdruksensor is niet aangesloten of defect.", "pressure"],
-      ["F50", "De regelprint meldt een fout."],
+      ["F47", "De cv-waterdruksensor is niet aangesloten of defect.", "electrical"],
+      ["F50", "De regelprint meldt een fout.", "electrical"],
       ["F52", "Het temperatuurverschil tussen de twee aanvoersensoren is te groot."],
-      ["F64", "De resetfunctie meldt een fout."],
-      ["F66", "De programmering van de regelprint is ongeldig."],
+      ["F64", "De resetfunctie meldt een fout.", "electrical"],
+      ["F66", "De regelprint meldt een programmeerfout.", "electrical"],
     ],
-  }),
+  })),
 ]);
