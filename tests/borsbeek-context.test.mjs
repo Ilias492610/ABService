@@ -90,7 +90,7 @@ test("Borsbeek displays separate administrative and original wijk citations", ()
 });
 
 // Catches factory/registry dates being lost or a global clock/date being added.
-test("only Borsbeek carries the genuine district modification into the sitemap", () => {
+test("the six genuinely modified districts carry their dates into the sitemap", () => {
   const district = areas.getDistrict("borsbeek");
   assert.equal(district.modifiedAt, "2026-10-11");
   const derived = projects.deriveAreaEvidence(district, projects.projects);
@@ -100,7 +100,17 @@ test("only Borsbeek carries the genuine district modification into the sitemap",
   const entries = sitemap.default().filter(({ url }) => url.includes("/loodgieter-"));
   assert.equal(entries.length, 8);
   assert.deepEqual(entries.filter((entry) => Object.hasOwn(entry, "lastModified")), [{
+    url: "https://www.abservice24.be/loodgieter-berchem", changeFrequency: "monthly", priority: 0.7, lastModified: "2026-10-11",
+  }, {
+    url: "https://www.abservice24.be/loodgieter-borgerhout", changeFrequency: "monthly", priority: 0.7, lastModified: "2026-10-11",
+  }, {
     url: "https://www.abservice24.be/loodgieter-borsbeek", changeFrequency: "monthly", priority: 0.7, lastModified: "2026-10-11",
+  }, {
+    url: "https://www.abservice24.be/loodgieter-deurne", changeFrequency: "monthly", priority: 0.7, lastModified: "2026-10-11",
+  }, {
+    url: "https://www.abservice24.be/loodgieter-ekeren", changeFrequency: "monthly", priority: 0.7, lastModified: "2026-10-11",
+  }, {
+    url: "https://www.abservice24.be/loodgieter-wilrijk", changeFrequency: "monthly", priority: 0.7, lastModified: "2026-10-11",
   }]);
 });
 
@@ -163,7 +173,8 @@ test("Borsbeek retains published metadata without article or reviewer claims", (
 
 // Catches optional source/date leakage or accidental adoption of the seven
 // separate noindex recommendations. Expectations are explicit prior states.
-test("all other nine districts retain source, date omission and public status", async () => {
+test("all other nine districts retain source and public status with five genuine corrections dated", async () => {
+  const modified = { berchem: "2026-10-11", borgerhout: "2026-10-11", deurne: "2026-10-11", ekeren: "2026-10-11", wilrijk: "2026-10-11" };
   for (const [slug, publicHref, status] of [
     ["antwerpen", "/", "published"], ["berchem", "/loodgieter-berchem", "published"],
     ["berendrecht-zandvliet-lillo", null, "noindex"], ["borgerhout", "/loodgieter-borgerhout", "published"],
@@ -174,13 +185,15 @@ test("all other nine districts retain source, date omission and public status", 
     const district = areas.getDistrict(slug);
     for (const record of [district, projects.deriveAreaEvidence(district)]) {
       assert.equal(Object.hasOwn(record, "contextSource"), false, slug);
-      assert.equal(Object.hasOwn(record, "modifiedAt"), false, slug);
+      assert.equal(Object.hasOwn(record, "modifiedAt"), Object.hasOwn(modified, slug), slug);
+      assert.equal(record.modifiedAt, modified[slug], slug);
       assert.deepEqual(record.localSource, { label: "Stad Antwerpen: officiële wijkgegevens en clusterindeling 2026", href: wijkUrl, verifiedStatus: 200, verifiedAt: "2026-09-16" });
     }
     assert.equal(areas.getDistrictPublicHref(district), publicHref);
     const definition = registry.getPageDefinition(district.canonicalPath);
     assert.equal(definition.status, status);
-    assert.equal(Object.hasOwn(definition, "lastModified"), false, slug);
+    assert.equal(Object.hasOwn(definition, "lastModified"), Object.hasOwn(modified, slug), slug);
+    assert.equal(definition.lastModified, modified[slug], slug);
     const html = renderToStaticMarkup(districtPage.default({ slug }));
     assert.doesNotMatch(html, /Districtsindeling:|Bron geraadpleegd op|<time\b/);
     if (slug !== "antwerpen") {

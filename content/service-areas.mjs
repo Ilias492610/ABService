@@ -204,7 +204,8 @@ export const antwerpDistricts = Object.freeze([
     heading: "Loodgieter in Berchem voor verwarming en sanitair",
     description: "AB Service helpt klanten in Berchem met verwarming, cv-ketels, sanitair en gerichte loodgieterswerken. Leg uw situatie voor.",
     intro: "Van Oud-Berchem en Groenenhoek tot de Nieuw-Kwartier-wijken: vermeld bij uw aanvraag het gebouwtype, de verdieping en de bereikbaarheid van toestel en leidingen.",
-    localContext: "Berchem combineert compacte stadswijken met appartementsgebouwen en residentiële buurten. Daardoor verschillen leidingtracés, gemeenschappelijke installaties en toegang sterk per adres.",
+    localContext: "Vermeld bij een aanvraag in Berchem wat u weet over het leidingverloop en de toegang tot het toestel. Gaat het om een gemeenschappelijke installatie, meld dit dan vooraf.",
+    modifiedAt: "2026-10-11",
     preparation: "Geef aan of het om een individuele installatie of een gedeelde gebouwinstallatie gaat en wie toegang kan geven tot technische lokalen.",
     faq: [
       ["Werkt AB Service in alle wijken van Berchem?", "Ja. Oud-Berchem, Groenenhoek, Nieuw Kwartier en de andere Berchemse buurten behoren tot het bevestigde werkgebied. Een afspraak volgt na beoordeling van de concrete aanvraag."],
@@ -236,7 +237,8 @@ export const antwerpDistricts = Object.freeze([
     heading: "Loodgieter in Borgerhout voor cv-ketel en sanitair",
     description: "AB Service behandelt aanvragen voor cv-ketels, verwarming en sanitair in Borgerhout. Deel foutcode, toestelgegevens en toegangssituatie.",
     intro: "Borgerhout omvat zowel intra-muroswijken als Extra Muros. In compacte gebouwen is het belangrijk om vooraf te weten waar afsluiters, ketel en gemeenschappelijke leidingen bereikbaar zijn.",
-    localContext: "De officiële wijkindeling onderscheidt Borgerhout Extra Muros en twee intra-muroszones. De technische situatie kan daardoor variëren van individuele woningen tot gestapelde installaties.",
+    localContext: "De officiële wijkindeling onderscheidt Borgerhout Extra Muros en twee intra-muroszones. Vermeld bij uw aanvraag of de installatie individueel of gemeenschappelijk is, als u dit weet.",
+    modifiedAt: "2026-10-11",
     preparation: "Stuur foto’s van het toestel, de aansluiting en de zichtbare schade zonder kasten of toestelpanelen te openen.",
     faq: [
       ["Kan ik een storing in Borgerhout met foto’s aanmelden?", "Ja. Stuur een overzicht van het toestel, het typeplaatje, de zichtbare foutcode en de aansluiting. Open geen toestelpanelen en voer geen onveilige controles uit."],
@@ -274,7 +276,8 @@ export const antwerpDistricts = Object.freeze([
     heading: "Loodgieter in Deurne voor herstelling en onderhoud",
     description: "AB Service helpt in Deurne met cv-ketelonderhoud, verwarmingsproblemen, sanitair en installaties. Vraag een beoordeling aan.",
     intro: "Deurne is een groot district met onder meer Deurne-Noord, Dorp-Gallifort, Oost en verschillende zuidelijke wijken. Geef daarom altijd de exacte locatie en installatiesituatie door.",
-    localContext: "De omvang en uiteenlopende wijkstructuur maken een gerichte technische intake belangrijk: een appartement, rijwoning of vrijstaande woning vraagt vaak een andere voorbereiding.",
+    localContext: "Omschrijf bij uw aanvraag het gebouwtype, bijvoorbeeld een appartement, rijwoning of vrijstaande woning, en de bereikbaarheid van de installatie.",
+    modifiedAt: "2026-10-11",
     preparation: "Noteer merk, model, foutcode, zichtbare druk en of verwarming, warm water of sanitair het probleem vormt.",
     faq: [
       ["In welke delen van Deurne komt AB Service?", "Deurne-Noord, Dorp-Gallifort, Deurne-Oost en de zuidelijke buurten behoren tot het werkgebied. De exacte locatie helpt om de verplaatsing praktisch te plannen."],
@@ -290,7 +293,8 @@ export const antwerpDistricts = Object.freeze([
     heading: "Loodgieter in Ekeren voor verwarming en sanitair",
     description: "Voor verwarming, gasketels en sanitaire werken in Ekeren kunt u uw aanvraag met foto’s en toestelgegevens aan AB Service bezorgen.",
     intro: "Ekeren omvat onder meer Ekeren-Centrum, Donk, Leugenberg, Mariaburg en Schoonbroek-Rozemaai. Vermeld uw buurt en bereikbaarheid voor een gerichte planning.",
-    localContext: "De verschillende woonkernen liggen niet allemaal rond hetzelfde centrum. Een precieze aanvraag voorkomt dat locatie, toegang of het benodigde materiaal pas bij aankomst duidelijk wordt.",
+    localContext: "Vermeld bij uw aanvraag de exacte locatie, de toegangssituatie en eventuele toestel- of materiaalgegevens die u al kent.",
+    modifiedAt: "2026-10-11",
     preparation: "Deel de zichtbare aansluiting, het toestelplaatje en informatie over eventuele gemeenschappelijke delen van het gebouw.",
     faq: [
       ["Is heel Ekeren onderdeel van het werkgebied?", "Ja. Ekeren-Centrum, Donk, Leugenberg, Mariaburg, Schoonbroek-Rozemaai en de overige buurten vallen binnen het bevestigde werkgebied."],
@@ -338,7 +342,8 @@ export const antwerpDistricts = Object.freeze([
     heading: "Loodgieter in Wilrijk voor sanitair en gasketels",
     description: "AB Service helpt klanten in Wilrijk met sanitair, cv-ketelonderhoud, herstellingen en installaties. Bespreek uw concrete situatie.",
     intro: "Wilrijk telt uiteenlopende wijken zoals Centrum, Valaar, Neerland, Koornbloem en Oosterveld-Elsdonk. Woningtype en bereikbaarheid bepalen welke voorbereiding nodig is.",
-    localContext: "De mix van appartementen, rijwoningen en residentiële buurten maakt het onverstandig om op basis van alleen een postcode een vaste werkomvang te beloven.",
+    localContext: "Vermeld naast uw postcode welke werkzaamheden u aanvraagt en wat u weet over de bestaande aansluiting.",
+    modifiedAt: "2026-10-11",
     preparation: "Deel productgegevens, maten en foto’s van de bestaande aansluitingen en benoem duidelijk welk resultaat u verwacht.",
     faq: [
       ["Welke aanvragen behandelt AB Service in Wilrijk?", "AB Service beoordeelt in Wilrijk aanvragen voor sanitair, cv-ketelonderhoud, verwarmingsherstellingen en gasketelinstallaties op basis van de concrete technische situatie."],
