@@ -50,7 +50,7 @@ try {
           await page.waitForFunction(() => !document.querySelector(".google-rating-popup,.whatsapp-button"), null, { timeout: 2000 });
         } else {
           for (const selector of [".google-rating-popup", ".whatsapp-button"]) {
-            assert.notEqual(await page.locator(selector).evaluate(node => getComputedStyle(node).position), "fixed", "static-session link must not overlay page content");
+            assert.equal(await page.locator(selector).evaluate(node => getComputedStyle(node).position), "static", "static-session link stays in normal document flow");
           }
           assert.equal(await page.locator(".google-rating-close").isVisible(), false, "no inert static-session close control");
         }
