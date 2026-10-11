@@ -2,20 +2,33 @@
 
 ## Current progress — ongoing WP00–WP17
 
-Local candidates f3bb3c5/2a512ea improve regional water-provider routing and
-safe intake, then carry all six existing project enquiries into their assigned
-editable contact service. Independent taskreviews, fresh345tests/full local gate
-and24project/fourwater responsive JS/no-JS profiles pass. No project facts or
-publication states change; full WP10 and the traceable-case gate remain open.
-Final whole-branch and exact hosted/canonical release checks are next.
+Next reviewed local candidate80a6fa9/3cda5da completes a bounded WP08 factual
+correction on six existing districts, without publication-state or route changes.
+Root370tests/lint/production0/build170/crawl82/93/112 and32 built responsive
+JS/no-JS district profiles pass. [QA](SEO_QA_REPORT.md) preserves the source
+fallback, harness corrections and profile-card viewport-edge observation.
+Whole-branch/hosted/canonical/Lighthouse acceptance is separate and still pending.
+Specific local evidence and human distinct-value assessment remain open; none of
+the editorial audit's proposed seven noindex decisions is silently adopted.
+
+Latest accepted869ee4f includes f3bb3c5/2a512ea regional water-provider routing,
+safe intake and both assigned-service enquiry links on all six existing projects.
+Independent task/whole-branch reviews, fresh345tests/full local gate, [exact
+CI38109950339](https://github.com/Ilias492610/ABService/actions/runs/38109950339),
+both VercelProduction statuses and canonical82/93/112 crawl pass. Fourwater/
+24project desktop/mobile JS/no-JS live profiles pass. One7changed-URL IndexNow
+receipt is not indexing. No project facts or publication states change; full
+WP10 and the traceable-case gate remain open. Next bounded WP08 work corrects
+unsupported district copy; no blanket noindex/publication change is authorized
+by the AI editorial audit alone.
 
 The owner permits sequential continuation through the complete follow-up plan
 without a new continuation message after each bounded task. Latest accepted
-releasec4a59f9 includes source-bound catalog corrections, the watermeter pilot,
+release869ee4f also retains source-bound catalog corrections, the watermeter pilot,
 safe interactions, distinct brand maintenance/repair actions, gas-installation
 document/control preparation and initial contact-category HTML. [QA](SEO_QA_REPORT.md)
-records exact CI38107909184, both Vercel deployments,328tests and canonical
-82-route/61responsive-JS/no-JS checks; these are release tests, not growth scores.
+records both the latest release and earlierc4a59f9/CI38107909184/328tests/61profile
+snapshot separately; these are release tests, not growth scores.
 
 Remaining work is tracked in the [full WP00–WP17 plan](docs/superpowers/plans/2026-10-10-complete-source-seo-masterplan.md).
 Real person/project/price/language data, owner-authenticated accounts, confirmed

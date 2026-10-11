@@ -1,5 +1,39 @@
 # Evidence Register
 
+## 11 October 2026 — bounded district candidate evidence
+
+Task-reviewed80a6fa9/3cda5da supplies official Borsbeek administrative context
+and conditional individual intake on five other records, not local work/housing/
+pipe/capacity proof. Root personally read the complete wijk PDF; the full indexed
+city body after direct500 is disclosed fallback, not fresh direct-body evidence.
+Only six actual modifications advance; unchanged source-check dates, four omitted
+content dates, Borsbeek-only contextual provenance, all routes/statuses and302
+non-routable drafts hold in independent preservation/rendering tests.
+
+Fresh root370tests/lint/production0/build170/local82/93/112 pass;32 responsive
+JS/no-JS browser profiles2152GETs pass with actual neutral anchors/editable blank
+intake/unchecked consent and no overflow/errors/writes. Diagnostic bad CLI/date
+expectation corrected without product edits. Native centred FAQ clicks pass;
+existing profile-card edge interception remains WP12 follow-up. External/rating
+fixtures, source403/dev9 and real local/provider/field/commercial evidence remain
+separate. Whole-branch/hosted/canonical release acceptance is pending.
+
+## 11 October 2026 — water/project release acceptance
+
+Whole-branch reviewed869ee4f56d601894f4d057f200ce80dc755449db is normally on main.
+[CI38109950339](https://github.com/Ilias492610/ABService/actions/runs/38109950339)
+succeeds03:56:38UTC Node24.21.0/345tests/lint/production0/build170/82/93/112;
+both exact-SHA Vercelchecks/Productionstatuses succeed: primary6990638632 at
+03:57:05UTC, secondary6990633714 at03:56:28UTC. Canonical82/93/112 crawl and
+fourwater/24project desktop/mobile JS/no-JS profiles pass,487/1339GET-onlyrequests,
+zero writes/errors/overflow. Native assigned-service links and editable project
+intake, original facts/media and regional source/safety/date boundaries hold.
+One previewed7changed-URL IndexNow notification receivesHTTP200/received,
+not-indexed-confirmed. Simulated rating/external firewall and these technical
+checks supply no case-job/photo/permission/date match, new provider/mail/event,
+physical/assistive/focus-placement/fieldCWV/customer or causal growth proof.
+Source403/dev9 and broader WP09/WP10 remain open; earlier stages stay historical.
+
 ## 11 October 2026 — existing project intent candidate evidence
 
 Task29 `2a512ea` uses only the existing servicePath→allowlisted service mapping

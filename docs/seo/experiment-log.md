@@ -316,3 +316,53 @@ privateblanks/consent and fixedheaderclear anchor hold. EarlierTask28fourprofile
 still open here. No new baseline, qualified-enquiry denominator, customer result,
 case-photo match, provider/event/CWV receipt or causal improvement is supplied.
 Parent WATER/REMEHA measurement/freeze/inclusion/revert contracts remain unchanged.
+
+## WATER-HANDOFF-PROJECT-INTENT-20261011 — hosted/live acceptance supplement
+
+Recorded11October2026,04:00UTC. Whole-branch reviewed869ee4f normally onmain;
+fresh345premerge/345mergedtests. Exact CI38109950339 success03:56:38UTC under
+Node24.21.0: install411/412,345tests/lint/production0/build170/82/93/112. Both
+exactVercelchecks/Productionstatuses succeed, primary6990638632 at03:57:05UTC,
+secondary6990633714 at03:56:28UTC. These are providerstatus times, not alias timing.
+
+Freshcanonical82/93/112 crawl and fourwater/24project desktop/mobile JS/no-JS
+profiles pass,487/1339GET-onlyrequests,0writes/pageerrors/overflow. Actualregional
+handoffs/unknown/safety/source/date boundaries, both assigned-service project
+links, editable project category/private blank/consent and retained pageelements
+hold. One previewed7changed-URL IndexNow notification receivesHTTP200/received,
+not indexing. Fixture/firewall exclude provider/mail/event/physical/assistive/
+focus-placement/fieldCWV or commercial proof. Source403/development9 stay open.
+
+**RELEASE ACCEPTED /NOT GROWTH-EVALUATED.** No new project work/photo/permission/
+date reference, genuine burst-pipe demand/technician review, comparable baseline,
+qualified-enquiry denominator, KPI/sample/window or causal uplift. Parent WATER/
+REMEHA freeze/measurement/revert contracts unchanged. Earlier local stages are
+historical; acceptance is appended, not backfilled into those records.
+# DISTRICT-CLARITY-20261011 — factual correction, not growth evaluation
+
+Recorded11October2026 against accepted869ee4f, task-approved80a6fa9/3cda5da.
+WP08/master factual-source boundaries require immediate correction of unsupported
+housing/pipe/outcome bridges; no ranking-wait experiment is needed. Root brief
+Task30/31 freezes exact literals, untouched record/output/metadata hashes, source
+provenance and publication decisions. Six substantive content dates are not new
+source-check dates; only Borsbeek has separate contextual provenance.
+
+Hypothesis: individual known-information intake and explicit official Borsbeek
+administrative context remove misleading inference while preserving existing
+customer journeys. Immediate criteria: correct initial HTML, retained page/FAQ/
+links/schema, six actual dates/four omissions, unchanged states/302 drafts, native
+neutral anchors and editable blank/unchecked intake. Freshroot370tests/lint/
+production0/build170/local82/93/112 and32 built profiles2152GETs pass.
+
+Original harness diagnostics remain in ignored logs: invalid crawl argument,
+incorrect ISO-time expectation and viewport-edge profile-card FAQ interception.
+Correct positional/date-only checks and ordinary centred native clicks pass.
+The edge-overlap risk remains a separate WP12 follow-up; no forced clicks/hiding.
+Whole-branch/hosted/canonical/live Lighthouse gates are pending at this snapshot.
+
+**CANDIDATE /NOT GROWTH-EVALUATED.** No equal-window page/query baseline,
+qualified enquiries, sample/denominator, actual events or fieldCWV. Same-day
+releases and short copy confound causal attribution; lower specificity is a
+distinct-value concern, not presumed ranking benefit. Sourcefallback/403/dev9/
+case evidence remain disclosed. Wrong facts/dates/state/links/intake merit a scoped
+immediate correction; no blanket noindex or local-evidence approval inferred.

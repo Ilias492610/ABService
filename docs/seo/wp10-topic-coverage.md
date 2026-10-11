@@ -1,5 +1,12 @@
 # WP10 dekking van veertien adviesintenties
 
+**Latere releaseacceptatie869ee4f:** de beperkte Task28-doorverwijs-/intakeaanvulling
+is onafhankelijk whole-branch reviewed, normaal gepubliceerd en live gecontroleerd.
+Exact CI345tests/build170/82/93/112, beide VercelProduction en canonicalcrawl plus
+vierwater/24project desktop/mobile JS/no-JS profielen slagen. [QA](../../SEO_QA_REPORT.md)
+houdt dit apart van de eerdere kandidaatfase en van volledige technische
+gesprongen-leidingdekking, echte vraag, technicusreview of zakelijke resultaten.
+
 **Latere lokale aanvulling11oktober, Task28f3bb3c5:** de bestaande waterherstelpagina
 geeft nu afzonderlijke regionale providerdoorverwijzingen, onbekende bron/plaats,
 veilig al bekende intake en optionele foto's zonder noodkanaalclaim. Twee primaire

@@ -1,5 +1,33 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — reviewed district factual-clarity candidate
+
+- Task30 `80a6fa9` replaces unsupported Borsbeek pipe/density inferences with
+  official district history, confirmed unchanged coverage and individual intake.
+  Its optional separate city citation/read date appears only on this district.
+- Task31 `3cda5da` corrects only Berchem, Borgerhout, Deurne, Ekeren and Wilrijk
+  context paragraphs. Six genuinely modified district records carry11October
+  sitemap dates; old source-check dates and four untouched date omissions remain.
+- No route, index state, office, case, review, price, nearby/service link or CTA
+  changed.302 locality drafts remain non-routable. Independent task reviews and
+  root370tests/lint/production0/build170/local82/93/112 pass;32 actual responsive
+  JS/no-JS district profiles pass after disclosed harness corrections.
+- Viewport-edge profile-card/FAQ interception is retained as WP12 follow-up.
+  Exact final release/live/Lighthouse gates remain pending; no full WP08 claim.
+
+## 11 October 2026 — water and project handoff publication
+
+- Whole-branch approved869ee4f normally merged/pushed. [Exact CI38109950339](https://github.com/Ilias492610/ABService/actions/runs/38109950339)
+  passes345tests/lint/production0/build170/hosted82/93/112 underNode24.21.0;
+  both exact-SHA Vercel checks and Production statuses succeed.
+- Fresh canonical82/93/112 crawl plus four water and24project desktop/mobile
+  JS/no-JS profiles pass,487/1339GET-onlyrequests and zero writes/errors/overflow.
+  Regional safe handoff and both project enquiry links are confirmed live.
+- One previewed7substantively changed published-URL IndexNow notification
+  receivesHTTP200; no indexing/growth claim. No project proof or scope expansion.
+  Source403/dev9 and fullWP09/WP10 remain open; candidate records below retain
+  their original stage meaning.
+
 ## 11 October 2026 — existing project enquiry intent candidate
 
 - Task29 `2a512ea` derives the contact category from each project's existing

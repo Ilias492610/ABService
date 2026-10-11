@@ -2,6 +2,22 @@
 
 ## Published routes
 
+**Later district candidate80a6fa9/3cda5da:** same82 customer routes/80published/
+2noindex,304 municipalities/302 non-routable drafts and ten districts/eight
+indexable district pages. Borsbeek receives separately sourced district context;
+five other contexts become individual intake guidance. Only six actual content
+modification dates advance; source dates/publication states do not. Root370tests,
+local82/93/112 and32 responsive JS/no-JS profiles pass. No new local case/review/
+demand evidence or exact production acceptance is supplied at this stage.
+
+**Latest acceptance869ee4f:** the water/project candidates below are now
+whole-branch reviewed, normally published and checked on the canonical website.
+Exact CI345tests/build170/82/93/112, both VercelProduction statuses, canonical
+crawl and fourwater/24project JS/no-JS profiles pass. No route/count/case/media/
+publication-state change; only the water entry's actual content date advances.
+One7changed-URL IndexNow receipt is not indexing. Source403/dev9 and private
+case evidence remain open; original local-stage notes stay historical.
+
 **Later local candidate2a512ea:** both original enquiry actions on all six project
 detail pages now use the service assigned by the existing route mapping, with a
 neutral unsupported fallback. No content/media/case proof/metadata/date/status or
@@ -16,7 +32,7 @@ additional services remain unchanged. No new route or faultcatalog row. Local
 release acceptance is separate in QA. Broader burst-pipe technical/demand proof
 is not supplied by this bounded answer.
 
-Current accepted release `c4a59f9` has82 registered customer routes,80 published and two noindex after
+Current accepted release `869ee4f` has82 registered customer routes,80 published and two noindex after
 the eight original destinations and watermeter pilot below. The previous accepted release6557c45
 has81/79/2. Neither snapshot counts Google-indexed pages. Dated local/live
 verification belongs in `SEO_QA_REPORT.md`.

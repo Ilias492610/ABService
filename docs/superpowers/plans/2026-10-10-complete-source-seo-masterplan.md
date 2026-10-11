@@ -403,6 +403,12 @@ is geen indexatiebewijs. Bron403/development9 en bredere WP07-dekking blijven op
 
 ### WP09 — Echte cases, media en expertise
 
+**Latere afgebakende releaseacceptatie869ee4f:** whole-branch review, normale
+main-publicatie, exact CI345tests/build170/82/93/112 en beide VercelProduction
+slagen. Canonicalcrawl en24project plus vierwater JS/no-JS profielen bevestigen
+beide toegewezen-dienstknoppen en behoud van bestaande inhoud. Dit sluit alleen
+de Task29-intakedoorstap, niet de private case-/foto-/toestemmings-/datumgate.
+
 **Afgebakende lokale aanvulling11oktober:** Task29 `2a512ea` bewaart de toegewezen
 dienst van alle zes bestaande projectpagina's in beide originele formulierlinks.
 Onafhankelijke taakreview en fresh345tests/lint/build170/crawl82/93/112 pass;
@@ -423,6 +429,12 @@ whole-branch/hosted/live blijft apart en volledige herleidbare-casegate blijft o
 **Tests:** onvolledige/onbewezen cases niet publiceren; toestemming toetsen aan haar werkelijke beperkingen, niet een verzonnen vervaldatum; juiste foto-/jobmatch, geen private data en geldige conditionele links. **Done:** eerste volledig herleidbare case, daarna dezelfde norm per overige case.
 
 ### WP10 — Advies, officiële regels en contentbriefs
+
+**Latere releaseacceptatie869ee4f:** Task28-doorverwijs-/intakeaanvulling is
+whole-branch reviewed, normaal gepubliceerd en exact hosted/canonical getest;
+CI345tests/build170/crawl82/93/112, beide VercelProduction en vierwater/24project
+profielen slagen. [QA](../../../SEO_QA_REPORT.md) bewaart bron-/meetgrenzen.
+Geen volledige technische gesprongen-leidingdekking of WP10-afsluiting.
 
 **Latere lokale aanvulling11oktober:** Task28f3bb3c5 verbetert de bestaande
 waterherstelbestemming met afzonderlijke Vlaamse/Brusselse providerdoorverwijzing,
@@ -665,6 +677,16 @@ Dit voltooit deze documentaireslice, niet de volledige rapportage- of WP17-uitko
 De oorspronkelijke veertienweekse pagina-roadmap, Sarveshs twaalfweekse ritme, Machina's vierweekse ritme en cursus-/gidsritmes blijven volledig traceerbaar in de bijlagen. Vertaal ze naar de bestaande site: geen gemaakte pagina opnieuw bouwen, geen deadline boven waarheid of kwaliteit.
 
 ## 8. Acceptance en voortgang zonder misleidend percentage
+
+**11 oktober — begrensde WP08-kandidaat80a6fa9/3cda5da:** Borsbeek heeft
+afzonderlijke officiële districtscontext; vijf andere paragrafen vragen bekende
+individuele gegevens zonder geografische technische gevolgtrekking. Zes echte
+wijzigingsdatums, overige feiten/brondata/routes/states behouden. Beide taskreviews
+Approved, root370tests/lint/production0/build170/local82/93/112 en32 responsive
+JS/no-JS districtprofielen slagen. [QA](../../../SEO_QA_REPORT.md) houdt exacte
+release/live/Lighthouse, bronfallback en popup-overlapobservatie apart. Dit sluit
+niet WP08, echte gemeente-/districtbewijzen of menselijke unieke-waardecheck af;
+302 gemeenteconcepten blijven niet-routable. M111/E34-overzicht volgt afzonderlijk.
 
 Een taak is alleen **afgerond** als deliverable én vereiste test/account/broncontrole bewezen zijn. Gebruik bron-ID, beslissing, status, verantwoordelijke, afhankelijkheid, bewijsplaats, laatste check, release-SHA indien code en volgende stap. Houd implementatie, live verificatie, externe bevestiging en zakelijk effect apart.
 

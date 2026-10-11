@@ -1,5 +1,66 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — district factual-clarity candidate, local gates
+
+Task30 `80a6fa9` and Task31 `3cda5da` are independently task-reviewed Approved.
+Borsbeek now explains its official district transition and unchanged service
+coverage, with a separate city source/read date. Five other district contexts
+request known individual details instead of inferring pipes, housing or outcomes
+from geography. Only those six genuine changes receive11October modification
+dates; original wijk-source dates, four unchanged omissions, all route/status/
+metadata/CTA/publication boundaries and302 non-routable drafts remain intact.
+
+Fresh root Node24.19.0 verification:370/370tests, lint, productionaudit0,
+build170 and localcrawl82pages/93destinations/112assets pass. Clean installation
+410/411 and development9/ESLint9 deprecation remain distinct. Source monitoring
+is57unique/56HTTP200/knownSibelga403, exit1—not an all-green substantive audit.
+The complete official wijk PDF was personally read. Borsbeek's complete indexed
+city body is a disclosed fallback after direct500, not freshly fetched body proof.
+
+Built Chrome1440×1000/390×844 × JS/no-JS passes32 district profiles and2152
+GET-only requests: initial HTML/context, retained content/citations, native FAQ,
+both actual neutral contact anchors, editable blank category/private fields,
+unchecked consent, header clearance, actual sitemap dates and no overflow or
+pageerrors. Root visually inspected the mobile full-page capture. No writes were
+attempted. External firewall/rating503fixture exclude actual provider/event/mail,
+physical/assistive/focus-placement/fieldCWV/client or ranking proof.
+
+Diagnostic history is retained: the first crawl used an invalid named argument;
+the corrected positional invocation passes. The first browser expectation wrongly
+required an ISO time; actual valid date-only XML and production date contract
+justify the correction. A second run found the existing floating profile card
+intercepting a FAQ summary at the viewport edge. Ordinary centred scrolling then
+native clicking passes—no force-click, overlay hiding or product change. That
+edge-overlap observation remains a separate WP12 follow-up, not “no obstruction”.
+
+Whole-branch review, exact hosted/canonical release and fresh comparable live
+Lighthouse remain pending at this candidate snapshot. Accuracy correction is not
+human local-value approval, blanket indexation change or full WP08 completion.
+
+## 11 October 2026 — water and project handoff released and checked live
+
+Whole-branch reviewed `869ee4f56d601894f4d057f200ce80dc755449db` is normally
+fast-forwarded/pushed to main after fresh345premerge and345merged tests. [Exact
+CI38109950339](https://github.com/Ilias492610/ABService/actions/runs/38109950339)
+succeeds03:56:38UTC under Node24.21.0: install411/412, lint,345tests,
+productionaudit0, build170 and hosted82-page/93-destination/112-asset crawl.
+Local410/411 install is a separate platform observation; development9/ESLint9
+remain disclosed. Both exact-SHA Vercel checks and Production statuses succeed:
+primary6990638632 at03:57:05UTC, secondary6990633714 at03:56:28UTC. Status times
+are not exact canonical-alias activation times.
+
+Fresh canonical82/93/112 crawl and actual Chrome desktop1440×1000/mobile390×844
+JS/no-JS checks pass: four water profiles487GETs and24project profiles1339GETs.
+Both real enquiry links carry the assigned service and clear the fixed header;
+project categories remain editable, private fields blank and consent unchecked.
+Regional routing/safety/unknowns/citations/dates and original page elements hold;
+the five unchanged services retain their omitted dates. Zero attempted writes,
+pageerrors or overflow. Rating503fixture/external firewall exclude real provider,
+mail/event receipt, physical-device/assistive/focus-placement/fieldCWV and customer
+proof. One previewed7changed-URL IndexNow notification receivesHTTP200/received,
+not indexing. Earlier candidate notes below are historical stages. Source403,
+development9, full WP09 case evidence and broader WP10 remain separate gates.
+
 ## 11 October 2026 — water and project handoff, final local candidate
 
 Task29 `2a512ea` is independently task-reviewed Approved and preserves all six
