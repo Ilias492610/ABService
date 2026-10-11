@@ -270,7 +270,8 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Nefit Bosch ProLine foutcodes | AB Service",
     description:
-      "Doorzoek de blokkerende en vergrendelende codes voor Nefit Bosch ProLine HRC, met officiële bron en veilig advies.",
+      "Zoek 54 Nefit ProLine HRC-codegroepen voor 24/CW3, 24/CW4 en 30/CW5 uit 6720646227 (04/2013, NL). Lees de bron en veilige eerste stappen.",
+    lastModified: "2026-10-11",
     changeFrequency: "monthly",
     priority: 0.6,
   },

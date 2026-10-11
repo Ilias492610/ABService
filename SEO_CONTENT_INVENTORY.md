@@ -2,6 +2,27 @@
 
 ## Published routes
 
+**Current accepted baseline1f10e883:** Tasks52–53 sole review/exactCI38161989180/
+455tests/both namedProduction6999521558/6999522369/canonical82/93/112/native
+live accepted. One IntergasIndexNowHTTP200 receipt is not indexing. Same82/80/2
+routes and32/38/1596/1354/18 catalog counts.
+
+**Tasks54–55 local candidate:** Nefit historical6720646227/04-2013/NL/three
+models,78literal combinations in54explanationgroups;19bounded source/safety
+changes include genuine9Y/no invented3. One extra originalPDFsnapshot:
+23PDF-linked/10PDF/twoWeb/seven declaration-only. Other30entry records unchanged,
+Intergas scope only now distinguishes full20 from threegroupcells12;11older
+snapshots and12other guide mirrors exact. All13fault-guidehero markers limit
+floatingcontrols while visible; default PageHero/otherpages preserved.
+Fresh471/lint/production0/standardbuild170/localcrawl82/93/112/Nefitfour native
+profiles266GET/392queries/8contacts pass. Hero v2 standardrun passes8profiles/
+349GET/174cases/18ownedfocus/126shots. Original failure and narrow diagnosis
+remain history; controlled native center positioning is not automatic full
+focus-outline proof. Review/hosted/live remain separate gates. No new routes/
+model-fit/ranking/result claim or submission.
+
+Entries below are earlier dated phases, not the current acceptance status.
+
 **Current accepted baseline `64d7f56e`:** Task50 ACV has sole review/exact
 CI38158155937/441, actual matching-SHA namedProduction6998848792/6998848254,
 canonical82/93/112/four native live profiles185GET. One ACV IndexNowHTTP200

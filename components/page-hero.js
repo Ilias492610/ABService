@@ -8,9 +8,10 @@ export default function PageHero({
   intro,
   ctaLabel = "Bespreek uw aanvraag",
   ctaHref = "/contact#aanvraagformulier",
+  protectReading = false,
 }) {
   return (
-    <section className="page-hero">
+    <section className={protectReading ? "page-hero fault-guide-hero" : "page-hero"}>
       <div className="shell hero-grid">
         <div>
           {eyebrow && <p className="eyebrow">{eyebrow}</p>}

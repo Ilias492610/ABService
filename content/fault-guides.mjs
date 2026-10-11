@@ -127,7 +127,7 @@ export const faultGuides = Object.freeze([
     slug: "nefit-bosch",
     brand: "Nefit Bosch",
     modelWarning:
-      "Deze catalogus bevat alle blokkerende en vergrendelende codes uit de genoemde Nefit ProLine HRC-handleiding. Codes voor andere Nefit Bosch-toestellen en generaties moeten in hun eigen modeldocumentatie worden opgezocht.",
+      "Deze gids gebruikt 54 codegroepen uit tabel 25, p. 31-34 van Nefit-installatie-instructie 6720646227 (04/2013, NL) voor ProLine HRC 24/CW3, HRC 24/CW4 en HRC 30/CW5. Dit is een historische Nederlandse handleiding, geen overzicht voor alle Nefit Bosch-ketels of bevestiging van Belgische toestelcompatibiliteit. Een afzonderlijke revisie, artikelnummers en firmwarecompatibiliteit zijn hier niet vastgesteld. Noteer de volledige hoofd- en subcode: een classificatiesymbool is geen subcode. Bij 8C 373/374 is een gebruikersreset niet toegestaan; ontgrendeling door de fabrikant is nodig. Andere reeksen en revisies vallen buiten deze gids; gesloten onderdelen horen bij een bevoegde technicus.",
     catalogs: nefitBoschCatalogs,
     documentationLabel: "Officiële Nefit Bosch-storingshulp",
     documentationUrl: "https://www.nefit-bosch.nl/service-consument/service-en-onderhoud/storing-oplossen/",

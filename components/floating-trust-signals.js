@@ -6,7 +6,7 @@ import TrackedLink from "@/components/tracked-link";
 import { business } from "@/content/business.mjs";
 import { formatGoogleRating } from "@/libs/google-reviews.mjs";
 
-const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row, .faq-list, .fault-guide-reading";
+const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row, .faq-list, .fault-guide-reading, .fault-guide-hero";
 
 function focusHeader() {
   document.querySelector(".site-header .brand")?.focus({ preventScroll: true });

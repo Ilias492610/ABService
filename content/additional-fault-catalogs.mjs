@@ -293,7 +293,7 @@ export const intergasCatalogs = Object.freeze([
     id: "intergas-prestige",
     title: "Prestige",
     scope:
-      "De 11 bronregels uit § 8.1, p. 42 van installatievoorschrift 88136803 voor Prestige A CW6, met Nederlandse toestelcontext. De tabel geldt bij een knipperende storingsled en een code op het temperatuurdisplay. Cijfers op het servicedisplay kunnen normale bedrijfstoestanden zijn en zijn geen bewijs van deze storing. De drie gegroepeerde bronregels blijven samen en hun 20 genummerde meldingen zijn afzonderlijk doorzoekbaar. Andere modellen en revisies zijn niet gedekt; controleer uw exacte toestel en gebruikershandleiding.",
+      "De 11 bronregels uit § 8.1, p. 42 van installatievoorschrift 88136803 voor Prestige A CW6, met Nederlandse toestelcontext. De tabel geldt bij een knipperende storingsled en een code op het temperatuurdisplay. Cijfers op het servicedisplay kunnen normale bedrijfstoestanden zijn en zijn geen bewijs van deze storing. De 11 bronregels bevatten samen 20 afzonderlijk doorzoekbare genummerde meldingen. De drie gegroepeerde bronregels blijven samen; die bevatten samen 12 van deze meldingen. Andere modellen en revisies zijn niet gedekt; controleer uw exacte toestel en gebruikershandleiding.",
     sourceLabel: "Intergas Prestige A CW6 - installatievoorschrift 88136803 (NL-toestelcontext)",
     sourceUrl: "https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf",
     sourcePages: "§ 8.1, p. 42",
@@ -313,13 +313,22 @@ export const intergasCatalogs = Object.freeze([
   }),
 ]);
 
+// Only these historical states require manufacturer unlocking, not a reset.
+// Keep this override local; the shared action generator is unchanged.
+const withNefitManufacturerUnlock = catalog => Object.freeze({
+  ...catalog,
+  codes: Object.freeze(catalog.codes.map(row => ["8C 373", "8C 374"].includes(row.code)
+    ? Object.freeze({ ...row, userAction: "Deze melding kan volgens deze handleiding niet door de gebruiker worden herstart: ontgrendeling door de fabrikant is nodig. Reset het toestel niet en laat een bevoegde technicus contact opnemen met de fabrikant. Open geen gesloten onderdelen. Bij gasgeur of een CO-melding verlaat u de onveilige ruimte en neemt u vanuit een veilige plaats contact op met de bevoegde hulpdienst; bij direct gevaar of vermoeden van CO-vergiftiging belt u 112. Bedien bij gasgeur geen elektrische schakelaars of toestellen." })
+    : row)),
+});
+
 export const nefitBoschCatalogs = Object.freeze([
-  createFaultCatalog({
+  withNefitManufacturerUnlock(createFaultCatalog({
     id: "nefit-proline-hrc",
     title: "Nefit ProLine HRC",
     scope:
-      "Alle blokkerende en vergrendelende codes plus de H07-drukmelding uit tabel 25 voor ProLine HRC 24/CW3, HRC 24/CW4 en HRC 30/CW5; normale bedrijfscodes zijn weggelaten.",
-    sourceLabel: "Nefit ProLine - installatie-instructie",
+      "De 54 codeverklaringen volgen 78 afzonderlijke meldingen uit tabel 25, p. 31-34 van installatie-instructie 6720646227 (04/2013, NL), uitsluitend voor ProLine HRC 24/CW3, HRC 24/CW4 en HRC 30/CW5. Gegroepeerde subcodes blijven samen. Normale bedrijfstoestanden, servicetoolmeldingen en reset-in-uitvoering zijn weggelaten. 3F 273 is een geplande veiligheidscontrole, niet automatisch een defect; 8C 373/374 vereisen ontgrendeling door de fabrikant. Andere modellen en revisies zijn niet gedekt; controleer de gebruikershandleiding van uw exacte toestel.",
+    sourceLabel: "Nefit ProLine HRC - installatie-instructie 6720646227 (04/2013, NL)",
     sourceUrl: "https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf",
     sourcePages: "Tabel 25, p. 31-34",
     rows: [
@@ -335,20 +344,20 @@ export const nefitBoschCatalogs = Object.freeze([
       ["2C 348", "Tijdens warmwaterbedrijf is de aanvoertemperatuur hoger dan 85 °C."],
       ["2E 207", "De cv-waterdruk is lager dan 0,2 bar.", "pressure"],
       ["2F 345", "De aanvoersensor meet na de branderstart geen temperatuurstijging."],
-      ["2L 266", "De druksensor meet na vier pogingen onvoldoende drukverhoging.", "pressure"],
-      ["2L 329", "De druksensor meet onvoldoende drukverhoging.", "pressure"],
+      ["2L 266","De druksensor meet na vier pogingen onvoldoende drukverhoging aan de cv-zijde (waterstroming); de controle wordt na circa vijf minuten herhaald.","general"],
+      ["2L 329","De druksensor meet onvoldoende drukverhoging aan de cv-zijde (waterstroming).","general"],
       ["2P 341", "De aanvoertemperatuur stijgt te snel."],
       ["2P 342", "De aanvoertemperatuur stijgt te snel."],
       ["2U 213", "De aanvoer- of retourtemperatuur stijgt te snel."],
       ["2U 349", "Het temperatuurverschil tussen aanvoer en retour is bij laaglast te groot."],
       ["3A 264", "Het stuursignaal of de ventilatorspanning viel tijdens bedrijf weg.", "flue"],
       ["3C 217", "De ventilator draait onregelmatig tijdens het opstarten.", "flue"],
-      ["3F 273", "Het toestel voert na 24 uur continu bedrijf een veiligheidscontrole uit."],
+      ["3F 273","Na 24 uur continu bedrijf onderbreekt het toestel de brander maximaal twee minuten voor een geplande veiligheidscontrole; dit is niet automatisch een defect.","general"],
       ["3L 214", "De ventilator draait niet tijdens de opstartfase.", "flue"],
       ["3P 216", "De ventilator draait te langzaam.", "flue"],
       ["3Y 215", "De ventilator draait te snel.", "flue"],
       ["4C 224", "De maximaal- of branderthermostaat meet een te hoge temperatuur en staat open."],
-      ["4E 347", "De retoursensor meet een hogere temperatuur dan de aanvoersensor."],
+      ["4E 347","De retoursensor meet een hogere temperatuur dan de aanvoersensor; deze handleiding vermeldt een automatische herstart na tien minuten."],
       ["4U 222 / 350", "De contacten van de aanvoersensor zijn kortgesloten."],
       ["4Y 223 / 351", "De contacten van de aanvoersensor zijn onderbroken."],
       ["6A 227", "Na ontsteking is onvoldoende ionisatiestroom gemeten.", "gas"],
@@ -357,28 +366,28 @@ export const nefitBoschCatalogs = Object.freeze([
       ["6L 229", "Tijdens het branden is onvoldoende ionisatiestroom gemeten.", "gas"],
       ["7C 231", "De netspanning is tijdens een vergrendelende storing onderbroken."],
       ["7H 328", "Er was een kortstondige onderbreking van de netspanning."],
-      ["7L 261 / 280", "De branderautomaat is defect."],
-      ["8C 373", "De branderthermostaat heeft te vaak een te hoge temperatuur gemeten."],
-      ["8C 374", "Tijdens het branden is te vaak onvoldoende ionisatiestroom gemeten.", "gas"],
+      ["7L 261 / 280","De branderautomaat is defect.","electrical"],
+      ["8C 373","De branderthermostaat heeft te vaak een te hoge temperatuur gemeten."],
+      ["8C 374","Tijdens het branden is te vaak onvoldoende ionisatiestroom gemeten.","gas"],
       ["8Y 232", "Het externe schakelcontact is geopend."],
-      ["9A 235", "De KIM is te nieuw voor de branderautomaat."],
-      ["9H 237 / 272", "De branderautomaat of KIM is defect."],
+      ["9A 235","De KIM is te nieuw voor de branderautomaat.","electrical"],
+      ["9H 237 / 272","De branderautomaat of KIM is defect.","electrical"],
       ["9L 234", "De contacten van het gasregelblok zijn onderbroken.", "gas"],
-      ["9L 238 / 9P 239 / 9U 233", "De branderautomaat of KIM is defect."],
-      ["9Y 3", "Er is een communicatiefout tussen bedieningspaneel en branderautomaat."],
-      ["C0 288", "De waterdruk is te hoog of de druksensor is onderbroken.", "pressure"],
-      ["C0 289", "De contacten van de druksensor zijn kortgesloten.", "pressure"],
+      ["9L 238 / 9P 239 / 9U 233","De branderautomaat of KIM is defect.","electrical"],
+      ["9Y","Er is een communicatiefout tussen bedieningspaneel BC10 en branderautomaat.","electrical"],
+      ["C0 288","De waterdruk is te hoog (meer dan 5,7 bar) of de contacten van de druksensor zijn onderbroken.","general"],
+      ["C0 289","De contacten van de druksensor zijn kortgesloten.","electrical"],
       ["CA 286", "De retoursensor meet een retourtemperatuur hoger dan 105 °C."],
       ["CU 240", "De contacten van de retoursensor zijn kortgesloten."],
       ["CY 241", "De contacten van de retoursensor zijn onderbroken."],
-      ["E1 242-245 / 247-249 / 255 / 257", "De branderautomaat of KIM is defect."],
-      ["EA 246 / 252 / 253", "De branderautomaat of KIM is defect."],
-      ["EC 251 / 256 / EF 254", "De branderautomaat of KIM is defect."],
-      ["EH 250 / 258 / 262", "De branderautomaat of KIM is defect."],
-      ["EL 259 / 279 / 290 / EP 287 / EY 263", "De branderautomaat of KIM is defect."],
-      ["H07", "De cv-waterdruk is laag en het toestelvermogen wordt beperkt.", "pressure"],
+      ["E1 242-245 / 247-249 / 255 / 257","De branderautomaat of KIM is defect.","electrical"],
+      ["EA 246 / 252 / 253","De branderautomaat of KIM is defect.","electrical"],
+      ["EC 251 / 256 / EF 254","De branderautomaat of KIM is defect.","electrical"],
+      ["EH 250 / 258 / 262","De branderautomaat of KIM is defect.","electrical"],
+      ["EL 259 / 279 / 290 / EP 287 / EY 263","De branderautomaat of KIM is defect.","electrical"],
+      ["H07","De cv-waterdruk is laag en het toestelvermogen voor cv en warm water wordt beperkt.","pressure"],
     ],
-  }),
+  })),
 ]);
 
 export const atagCatalogs = Object.freeze([

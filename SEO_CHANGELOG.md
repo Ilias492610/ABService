@@ -1,5 +1,39 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — Tasks54–55 local candidate, not released
+
+Nefit ProLine now follows historical installation instruction6720646227
+(04/2013, NL), exactly HRC24/CW3,24/CW4,30/CW5. Original36page manufacturer
+PDF/table25 read;95 physicalrows include78 selected combinations in54 preserved
+explanationgroups. The adjacent padlock is not a subcode:9Y replaces9Y3.
+Nineteen bounded row changes correct manufacturer-only8C unlocking/no reset,
+pressure-increase vs low-pressure advice, high-pressure/sensor C0 advice and
+controller/KIM electrical diagnosis. Scope/source/warning/meta/realdate only;
+other12 guides preserved except Intergas's total20 vs threegroupcells12 clarity.
+No current Belgian SKU/firmware/latest/all-model claim. Coverage23 PDF-linked
+catalogs/10PDFs/twoWeb/seven declaration-only; all11old snapshots retained.
+
+Task55 marks only fault-guide heroes for existing widget clearance. Cost:
+floating controls absent while any hero part is visible on any viewport;
+sticky/native phone/contact links remain. False-default PageHero preserves
+other pages. Fresh471/lint0/production0/standardTurbopackbuild170 and fresh
+standardlocalcrawl82/93/112 pass; Nefit4nativeprofiles266GET/392queries/8contacts.
+Hero original failure retained; bounded diagnostic confirms its own end-aligned
+phone bottom0.421875px beyondviewport while focused/hittable. Controlled v2
+native center positioning retains strict visibility checks, not automatic
+full-focus-outline proof. One v2 standardrun passes8profiles349GET/174cases/
+18ownedfocus/126shots, real same-guide restoration and noJS/default flow.
+Earlier webpack diagnostic crawl144assets remains separate evidence.
+Review/exact hosted/live gates remain. No new IndexNow submission.
+
+Tasks52–53 actually accepted as1f10e8838cdd75041a70fd9cd41e1e2044c390fb:
+sole fresh review, merged455, [CI38161989180](https://github.com/Ilias492610/ABService/actions/runs/38161989180)
+success18:01:21UTC; matching namedProduction6999521558/6999522369 successful.
+Canonical82/93/112; nativeIntergas4profiles185GET/112queries/8contacts and
+reading6profiles231GET/108cases/18ownedfocus pass. One Intergas IndexNowHTTP200
+receipt, not indexing. Their earlier candidate notes below are history.
+Task51 development/lifecycle, broaderWP and owner/account/results gates remain.
+
 ## 11 October 2026 — Tasks52–53 Intergas context and fault-reading clearance; local candidate
 
 Task52 corrects the existing Intergas guide using the retained official56-page

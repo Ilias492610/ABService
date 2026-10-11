@@ -1,6 +1,6 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit",
   "incrementalUpdateDate": "2026-10-11",
   "counts": {
     "guides": 13,
@@ -140,7 +140,7 @@
     {
       "slug": "nefit-bosch",
       "brand": "Nefit Bosch",
-      "modelWarning": "Deze catalogus bevat alle blokkerende en vergrendelende codes uit de genoemde Nefit ProLine HRC-handleiding. Codes voor andere Nefit Bosch-toestellen en generaties moeten in hun eigen modeldocumentatie worden opgezocht.",
+      "modelWarning": "Deze gids gebruikt 54 codegroepen uit tabel 25, p. 31-34 van Nefit-installatie-instructie 6720646227 (04/2013, NL) voor ProLine HRC 24/CW3, HRC 24/CW4 en HRC 30/CW5. Dit is een historische Nederlandse handleiding, geen overzicht voor alle Nefit Bosch-ketels of bevestiging van Belgische toestelcompatibiliteit. Een afzonderlijke revisie, artikelnummers en firmwarecompatibiliteit zijn hier niet vastgesteld. Noteer de volledige hoofd- en subcode: een classificatiesymbool is geen subcode. Bij 8C 373/374 is een gebruikersreset niet toegestaan; ontgrendeling door de fabrikant is nodig. Andere reeksen en revisies vallen buiten deze gids; gesloten onderdelen horen bij een bevoegde technicus.",
       "explanationRowCount": 54,
       "catalogIds": [
         "nefit-proline-hrc"
@@ -275,6 +275,17 @@
       "revision": null,
       "issueDate": null,
       "sourceEvidencePath": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-52-intergas-official.pdf"
+    },
+    {
+      "id": "nefit-proline-pdf",
+      "url": "https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-54-nefit-official.pdf",
+      "sha256": "c1ddc9a7a93c4823f72d9f720f9a1e115b0df9140c89efd0b02c2484302cd81a",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 36,
+      "bytes": 4821341,
+      "sourceBoundary": "One original HTTP200 manufacturer PDF, historical6720646227 (04/2013) NL. No prior independently recorded hash or latest/SKU/firmware/Belgian-fit proof."
     }
   ],
   "entries": [
@@ -1277,7 +1288,7 @@
         "intergas"
       ],
       "title": "Prestige",
-      "modelScope": "De 11 bronregels uit § 8.1, p. 42 van installatievoorschrift 88136803 voor Prestige A CW6, met Nederlandse toestelcontext. De tabel geldt bij een knipperende storingsled en een code op het temperatuurdisplay. Cijfers op het servicedisplay kunnen normale bedrijfstoestanden zijn en zijn geen bewijs van deze storing. De drie gegroepeerde bronregels blijven samen en hun 20 genummerde meldingen zijn afzonderlijk doorzoekbaar. Andere modellen en revisies zijn niet gedekt; controleer uw exacte toestel en gebruikershandleiding.",
+      "modelScope": "De 11 bronregels uit § 8.1, p. 42 van installatievoorschrift 88136803 voor Prestige A CW6, met Nederlandse toestelcontext. De tabel geldt bij een knipperende storingsled en een code op het temperatuurdisplay. Cijfers op het servicedisplay kunnen normale bedrijfstoestanden zijn en zijn geen bewijs van deze storing. De 11 bronregels bevatten samen 20 afzonderlijk doorzoekbare genummerde meldingen. De drie gegroepeerde bronregels blijven samen; die bevatten samen 12 van deze meldingen. Andere modellen en revisies zijn niet gedekt; controleer uw exacte toestel en gebruikershandleiding.",
       "sourceLabel": "Intergas Prestige A CW6 - installatievoorschrift 88136803 (NL-toestelcontext)",
       "sourceURL": "https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf",
       "sourcePages": "§ 8.1, p. 42",
@@ -1316,8 +1327,8 @@
         "nefit-bosch"
       ],
       "title": "Nefit ProLine HRC",
-      "modelScope": "Alle blokkerende en vergrendelende codes plus de H07-drukmelding uit tabel 25 voor ProLine HRC 24/CW3, HRC 24/CW4 en HRC 30/CW5; normale bedrijfscodes zijn weggelaten.",
-      "sourceLabel": "Nefit ProLine - installatie-instructie",
+      "modelScope": "De 54 codeverklaringen volgen 78 afzonderlijke meldingen uit tabel 25, p. 31-34 van installatie-instructie 6720646227 (04/2013, NL), uitsluitend voor ProLine HRC 24/CW3, HRC 24/CW4 en HRC 30/CW5. Gegroepeerde subcodes blijven samen. Normale bedrijfstoestanden, servicetoolmeldingen en reset-in-uitvoering zijn weggelaten. 3F 273 is een geplande veiligheidscontrole, niet automatisch een defect; 8C 373/374 vereisen ontgrendeling door de fabrikant. Andere modellen en revisies zijn niet gedekt; controleer de gebruikershandleiding van uw exacte toestel.",
+      "sourceLabel": "Nefit ProLine HRC - installatie-instructie 6720646227 (04/2013, NL)",
       "sourceURL": "https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf",
       "sourcePages": "Tabel 25, p. 31-34",
       "explanationRowCount": 54,
@@ -1328,22 +1339,36 @@
         "ProLine HRC 30/CW5"
       ],
       "articleNumbers": null,
-      "documentNumber": null,
+      "documentNumber": "6720646227",
       "revision": null,
-      "issueDate": null,
-      "market": null,
-      "language": null,
+      "issueDate": "2013-04",
+      "market": [
+        "Nederland"
+      ],
+      "language": "nl",
       "component": null,
       "tableIds": [
         25
       ],
-      "primarySnapshot": null,
+      "primarySnapshot": "nefit-proline-pdf",
       "sourceEvidencePath": [
-        "docs/seo/evidence-register.md"
+        "docs/seo/evidence-register.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-54-nefit-source-preflight.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-54-nefit-literal-source.json"
       ],
-      "verificationBasis": "Current explicit three-model/table25 scope and historical summary only; actual manual footer/revision/SKU/market/language not independently established here.",
+      "verificationBasis": "Original manufacturer PDF cover, identity/safety/control pages and complete table25 pp31–34 read:95 physical rows,78 selected combinations in54 existing explanationgroups/52 meaningcells;17 normal/service/reset rows excluded. Source9Y has blank subcode; adjacent padlock glyph is not numeric3. Selected historical NL context, not currentBelgian/device/latest fit.",
       "declaredScopePath": "content/additional-fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "issueDatePrecision": "month",
+      "literalPhysicalRowCount": 95,
+      "literalCombinationCount": 78,
+      "selectedMeaningCellCount": 52,
+      "excludedStateRowCount": 17,
+      "displayContext": "Full main+subcode per actual display:9Y has blank subcode; the adjacent padlock classification glyph is not numeric3. Scheduled3F273 and manufacturer-only8C373/374 are not generic user-reset instructions.",
+      "controllerSku": null,
+      "firmwareCompatibility": null,
+      "currentBelgianVariantCompatibility": null,
+      "newestEdition": null
     },
     {
       "id": "atag-officieel-overzicht",

@@ -1,5 +1,21 @@
 # WP07 — actuele model- en brondekking
 
+Actueel geaccepteerd baseline1f10e883: Task52/53 onafhankelijke review/exact
+CI38161989180/455tests/beidewerkelijke namedProduction/livecontrole geslaagd.
+Eén IntergasIndexNowHTTP200 is ontvangstbewijs, geen indexeringsbewijs.
+Task54 is een lokale kandidaat: originele6720646227 (04/2013) NL voor precies
+drie ProLineHRC-modellen, tabel25/95fysiek/78geselecteerd/54uitleggroepen.
+Correcte9Y zonder padlock-subcode;19begrensde veiligheids-/betekeniswijzigingen.
+Revisie/SKU/firmware/actueleBelgischefit/nieuwsteeditie niet vastgesteld.
+Inventaris nu23PDF-gelinkte catalogi/10PDFs/tweeWeb/zeven declaraties;
+11oude snapshots/12andere gidsmirrors exact, Intergas alleen scopeverduidelijking
+20totaal versus12in drie groepen. NieuwePDF-hash heeft geen verzonnen prior-match.
+471/lint/productie0/standaardbuild170/local82/93/112/Nefitnative266GET en
+hero v2 achtprofielen349GET/174cases lokaal geslaagd; review/live blijven gates.
+Gecontroleerde native center-uitlijning is geen automatisch focusoutlinebewijs.
+Task55 hero-marker is geen extra brondekking. Oudere snapshots
+hieronder blijven geschiedenis en bewijzen geen algemene voltooiing vanWP07.
+
 Vastlegging 11 oktober 2026; geaccepteerd productbaseline `64d7f56e`.
 Task50's historische ACVscope/vier eersteacties zijn onafhankelijk gereviewd en
 exact door CI/beide werkelijke Production-projecten/live geaccepteerd.
@@ -64,9 +80,9 @@ toegankelijkheid of inhoud gecertificeerd.
 ## Alle afzonderlijke catalogi
 
 Een bewaard bronbestand plus eerder afgebakend leesrapport is sterker bewijs
-dan uitsluitend een bestaande declaratie. Tweeëntwintig catalogi zijn gekoppeld
-aan negen bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
-Acht hebben binnen deze inventaris alleen de bestaande declaratie en
+dan uitsluitend een bestaande declaratie. Drieëntwintig catalogi zijn gekoppeld
+aan tien bewaarde PDF’s; twee aan bewaarde publieke bronweergaven.
+Zeven hebben binnen deze inventaris alleen de bestaande declaratie en
 historische bewijsregistratie (G). Bewaren/hashvergelijking is op zichzelf
 geen nieuwe inhoudelijke controle van alle foutcoderegels.
 
@@ -100,7 +116,7 @@ geen nieuwe inhoudelijke controle van alle foutcoderegels.
 | `viessmann-vitodens-200-300-vitotronic` | 71 | Officiële online tabel | [bron 11](https://www.viessmann.de/de/wissen/wartung-und-reparatur/fehlercodes.html) | G: declaratie/historisch register |
 | `acv-prestige-mkiii` | 24 | p. 42-43; 664Y4200 H/03-2011 | [bron 12](https://downloads.acv.com/NT_664Y4200_H_Prestige_MkIII_NL.pdf) | acv-prestige-mkiii-pdf; geselecteerde tabel |
 | `intergas-prestige` | 11 | § 8.1, p. 42; Prestige A CW6/NL/88136803 | [bron 13](https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf) | intergas-prestige-pdf; geselecteerde tabel-/displaycontext |
-| `nefit-proline-hrc` | 54 | Tabel 25, p. 31-34 | [bron 14](https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf) | G: declaratie/historisch register |
+| `nefit-proline-hrc` | 54 | Tabel 25, p. 31-34; 6720646227 (04/2013, NL) | [bron 14](https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf) | nefit-proline-pdf; geselecteerde historische tabel gelezen Task54 |
 | `atag-officieel-overzicht` | 14 | Online merkoverzicht | [bron 15](https://www.atagwarmte.nl/atag-cv-ketel-storingscodes) | G: declaratie/historisch register |
 | `itho-base-cube` | 26 | § 7.2-7.4, p. 79-95 | [bron 16](https://ithodaalderop.compano.com/Data/Environments/000001/Attachment/Bijlage/A01_CV-Ketels/A01_01_Doorstroom/A01_01_01_Cube%20Solo/B01_05_MAN/01-04199-001%20%20Handleiding%20Base%20Cube%20NL.pdf) | G: declaratie/historisch register |
 | `ferroli-bluesense` | 37 | § 9, p. S12-S13 | [bron 17](https://www.ferroli.com/media/1547640352.pdf) | G: declaratie/historisch register |

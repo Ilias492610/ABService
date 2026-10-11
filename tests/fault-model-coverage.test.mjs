@@ -5,6 +5,7 @@ import { faultGuides } from "../content/fault-guides.mjs";
 import { boschBoundaryFacts } from "./fixtures/bosch-junkers-source-boundaries.mjs";
 import { acvFacts } from "./fixtures/acv-prestige-source-safety.mjs";
 import { intergasFacts } from "./fixtures/intergas-prestige-source-context.mjs";
+import { nefitFacts } from "./fixtures/nefit-proline-source-safety.mjs";
 
 const manifest = JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json", import.meta.url), "utf8"));
 const catalogs = [...new Map(faultGuides.flatMap(g => g.catalogs.map(c => [c.id, c]))).values()];
@@ -42,8 +43,8 @@ test("the bounded model inventory matches every real guide assignment, scope, so
 });
 
 test("the inventory keeps unknown fields and retained evidence distinct rather than declaring a fresh audit", () => {
-  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 22);
-  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 8);
+  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 23);
+  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 7);
   assert.equal(manifest.snapshots.filter(s => s.hashMatchesPriorRecord === true).length, 7);
   assert.equal(manifest.snapshots.find(s => s.id === "vaillant-public-html").expectedSha256, null);
   for (const e of manifest.entries) {
@@ -98,5 +99,23 @@ test("the inventory keeps unknown fields and retained evidence distinct rather t
   assert.equal(intergasSnapshot.expectedSha256, null);
   assert.equal(intergasSnapshot.hashMatchesPriorRecord, null);
   assert.equal(intergasSnapshot.pageCount, intergasFacts.pageCount);
-  assert.equal(manifest.snapshots.length, 11);
+  const nefit = manifest.entries.find(e => e.id === nefitFacts.id);
+  assert.deepEqual(nefit.models, nefitFacts.models);
+  assert.equal(nefit.documentNumber, nefitFacts.document);
+  assert.equal(nefit.issueDate, nefitFacts.issueMonth);
+  assert.equal(nefit.issueDatePrecision, "month");
+  assert.equal(nefit.language, "nl");
+  assert.deepEqual(nefit.market, ["Nederland"]);
+  assert.equal(nefit.literalPhysicalRowCount, 95);
+  assert.equal(nefit.literalCombinationCount, 78);
+  assert.equal(nefit.selectedMeaningCellCount, 52);
+  assert.equal(nefit.excludedStateRowCount, 17);
+  assert.match(nefit.displayContext, /9Y.*blank subcode.*padlock/);
+  for (const field of ["revision", "articleNumbers", "controllerSku", "firmwareCompatibility", "currentBelgianVariantCompatibility", "newestEdition"]) assert.equal(nefit[field], null);
+  const nefitSnapshot = manifest.snapshots.find(s => s.id === "nefit-proline-pdf");
+  assert.equal(nefitSnapshot.sha256, nefitFacts.sha256);
+  assert.equal(nefitSnapshot.pageCount, nefitFacts.pageCount);
+  assert.equal(nefitSnapshot.expectedSha256, null);
+  assert.equal(nefitSnapshot.hashMatchesPriorRecord, null);
+  assert.equal(manifest.snapshots.length, 12);
 });

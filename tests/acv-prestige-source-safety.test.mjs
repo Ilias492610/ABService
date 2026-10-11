@@ -1,3 +1,4 @@
+import { beforeNefitGuide, beforeNefitRegistry } from "./fixtures/nefit-proline-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
@@ -84,8 +85,8 @@ test("ACV real SSR exposes every selected row, safe action, source scope and nat
 
 // Integrity only: full genuine baseline, no source completeness certification.
 test("all other12 full guides and all registry fields preserve the genuine64 captures", () => {
-  assert.equal(hash(faultGuides.filter(g => g.slug !== "acv").map(beforeIntergasGuide)), facts.preservation.otherTwelveGuides);
-  assert.equal(hash(pageRegistry.map(beforeIntergasRegistry).map(beforeAcvRegistry)), facts.preservation.allRegistry);
+  assert.equal(hash(faultGuides.filter(g => g.slug !== "acv").map(beforeNefitGuide).map(beforeIntergasGuide)), facts.preservation.otherTwelveGuides);
+  assert.equal(hash(pageRegistry.map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry)), facts.preservation.allRegistry);
   assert.equal(hash(beforeAcvGuide(guide)), facts.preservation.guide);
   assert.equal(hash(beforeAcvGuide(guide).codes), facts.preservation.codes);
   assert.equal(faultGuides.reduce((n,g) => n + g.codeEntryCount, 0), 1596);

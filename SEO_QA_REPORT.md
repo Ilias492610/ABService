@@ -1,5 +1,52 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — Tasks54–55 local acceptance; review/release gates pending
+
+Fixed actual1f10 beforecaptures:48sourcepaths/all13real guides+SSR+metadata/
+82registry/80published sitemap checked before test/product edits. Independent
+RED15fail1pass→471fullpass. Shared meaning search legitimately matches rE in
+prose: it is not a published reset code or a promised zero-result query.
+All prior digests retained through exact named source/hero projections.
+PinnedNode24 lint0/productionaudit0/standardTurbopackbuild170 and fresh standard
+localcrawl82/93/112 pass. Earlier explicitwebpack170/82/93/144 is a separate
+diagnostic build, not the standard release artifact.
+Manifest30otherentries exact, one Intergasscope leaf,11oldsnapshots/12other
+guide mirrors exact. Nefit genuine PDFSHA and78literal identities verified.
+
+Task54 unchanged harnessaf67187483815fa70e46a59cbbbb5f1e7893a79e480eb580b534fd2c817eb32f:
+four1440/390JS/noJS profiles,266sameoriginGET,392querychecks/8pointer+Enter
+contactflows/52screenshots. All54actualrowfields/source/scope/meta/options
+match independent changes plus genuine untouched captures; oneTab visibleName,
+form142.17–144.17≥126.59header. No overflow/pageerrors/blocked/write/external
+requests. Four isolated503 and8exactRSC204prefetch fixtures are not providerproof.
+
+Task55 original652a0b7fc26fa8dd750ab6ca64689c2a7ebcc8f1e59a5ea9f530754b3498a642
+failed phone viewport conjunction after14checks;40GET and original failure are
+retained. One bounded diagnostic exactly reproduces original failure pixels:
+phone focused/hit/belowheader, bottom844.421875 at height844 after the harness's
+own end alignment. A measured1px scroll clears it. No product fix or tolerance
+weakening: retained v2 uses explicitly controlled native center alignment after
+Tab. This is not unscripted automatic full-focus-outline proof.
+
+V2 SHA614dfbe921abe282e2ed2d9eade4751c5226fdd38ccb6610fad1df0e8807fd53
+passes one standardbuild run: eightprofiles (six320/390/1440 JS, two noJS),
+349GET/174checkpoints/18owned-focus transitions/126screenshots. Each JS profile
+finds genuine same-guide clearance; both controls restore, all protected hero/
+reading/helper/source zones stay clear, unrelatedfocus retained and ownedfocus
+goes to visibleheader with zero scroll delta. NativeTab/Space/Enter/dismissal,
+all24ACV/all74Bulex semantic rows/defaultHubHero/noJSflow preserved; no overflow,
+blocked/external/nonGET/pageerrors or fallback. Six ratingfixtures and18exact
+homepageRSC204fixtures are test-only. Root verifies full results/requests/files
+and actual320hero/aside/ownedfocus,390restoration,1440noJS and Nefit9Y/8C/contact
+pixels. No review/54–55 release/IndexNow/fieldCWV/business-result claim yet.
+
+Tasks52–53 exact release accepted1f10e883: solefreshreview/merged455/
+[CI38161989180](https://github.com/Ilias492610/ABService/actions/runs/38161989180)
+success18:01:21UTC; actual namedProduction6999521558/6999522369 matchSHA.
+Canonical82/93/112; unchanged liveIntergas185GET/112queries/8contacts and
+widget231GET/108cases/18ownedfocus/72shots passed. One IntergasIndexNowHTTP200
+after validproof/live means receipt only. Prior local snapshots below stay history.
+
 ## 11 October 2026 — Tasks52–53 local acceptance; review/release gates pending
 
 Primary Intergas original: HTTP200/3739268bytes/56pages,

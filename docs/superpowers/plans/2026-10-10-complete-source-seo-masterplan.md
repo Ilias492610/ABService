@@ -353,6 +353,23 @@ groei. De lokale kandidaatnotitie is geschiedenis; bredere WP06 blijft open.
 
 ### WP07 — Merken en modelgebonden foutcodegroei
 
+**Task54 lokaal kandidaat:** gelezen historischeNefit6720646227/04-2013/NL,
+HRC24/CW3,24/CW4,30/CW5;95fysieke tabelregels/78geselecteerde meldingen in54
+bestaande uitleggruppen. Padlock is geen3-subcode:9Y gecorrigeerd. Negentien
+begrensde betekenissen/acties beschermen8Cmanufacturer-unlock en C0/2L/sensor/
+controllergrenzen. Scope/label/warning/meta/echteNefitdatum; geen universele/
+actueleBelgischefit. Inventaris23PDFcatalogi/10PDF/tweeWeb/zeven declaraties;
+11oudesnapshots/12andere gidsmirrors/tellingen exact, Intergas scopeverduidelijking
+alleen20totaal versus12in drie groepen. Fresh471/lint/productie0/build170/
+standardlocal82/93/112/Nefit4native266GET/392queries/achtcontacts pass;
+hero v2 lokalecontrole geslaagd, onafhankelijke review/exactrelease blijven gates.
+
+**Task52 werkelijk geaccepteerd:**1f10e883/solefreshreview/455/exactCI38161989180
+success18:01:21UTC; actual matching namedProduction6999521558/6999522369/
+canonical82/93/112/Intergasnative4profielen185GET112queries8contacts.
+EénIntergasIndexNowHTTP200 na validproof/live, geenindexatie. Onderstaande
+kandidaatnotities zijn historische voorbereiding, bredereWP07 blijft open.
+
 **Task52 lokaal kandidaat, 11 oktober:** Intergas Prestige A CW6 uit werkelijke
 56pagina-PDF88136803/SHA28996b1b8237b8dd778d860321b1fea2b08a106b2712a9176594f000eaf66d7a.
 §8.1p42:11groepen/20nummers/drie gegroepeerde cellen; knipperende storingsled en
@@ -655,6 +672,23 @@ opgeschoond. Geen account/e-mailgate of lekdiagnose. Release/live gate blijft op
 daadwerkelijke eventontvangst, passende aanvragen en evaluatie zijn niet gemeten.
 
 ### WP12 — Technische SEO, CWV, toegankelijkheid en security
+
+**Task55 lokaal kandidaat:** false-default PageHeroflag/marker uitsluitend voor
+13foutcodeheroes plus één bestaande observatorselector. Heelhero beschermd,
+sticky/native telefoon/contact behouden; floatingcontrols minder beschikbaar
+ook desktop. Defaultanderepagina's exact. Unit/13SSR/full471/lint/productie0/
+standaardbuild/localcrawl slagen. Originele390fout bewaard: één diagnose
+reproduceert0.421875px end-uitlijningsoverloop terwijl telefoon focused/hittable
+blijft. V2 gebruikt gecontroleerde native center-uitlijning zonder tolerantie
+te versoepelen; geen automatische volledige focusoutlineclaim. Eén standaardrun
+achtprofielen349GET/174cases/18ownedfocus/126beelden geslaagd, echte same-guide
+restoration/protectedhero/default/noJSflow. Review/exactrelease blijven gates.
+Geen algemene site-/AT-/veld-/providerclaim.
+
+**Task53 werkelijk geaccepteerd:**1f10e883/solefreshreview/455/exactCI38161989180/
+beideactualnamedProduction/canonical82/93/112/sixnative231GET108cases18ownedfocus
+72beelden. Bounded readingclearance, geenalgemenehero-/allsiteclaim. Task55
+behandelt apart de uitgesteldeheroMinor; Task51security/lifecyclegates open.
 
 **Task53 lokaal kandidaat:** één marker op bestaande foutcodeleessection en
 één extra protectedZonesselector. Beide floatingcontrols verdwijnen zolang

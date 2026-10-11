@@ -1,7 +1,9 @@
 // Task53 adds only this class to the existing section, not a new wrapper,
 // reader-visible copy, link, source row, or blanket answer-box/CTA policy.
+import { beforeFaultHeroHtml } from "./fault-hero-clearance.mjs";
 export const readingMarker = '<section class="section fault-guide-reading">';
-export const beforeFaultReadingHtml = html => html.replace(readingMarker, '<section class="section">');
+// Task55 separately tests its only new hero class; preserve fixed older captures.
+export const beforeFaultReadingHtml = html => beforeFaultHeroHtml(html).replace(readingMarker, '<section class="section">');
 export const acceptedReadingHtmlHashes = [
   ["vaillant", "36c8c452813840464e79d7411ffe3439506675ba786c7c1dab7f23e788679767"],
   ["bulex", "514fc6d48b46234c12364b824cf03cc48a777cc23566905299317c1af36674c5"],

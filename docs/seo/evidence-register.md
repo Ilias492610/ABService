@@ -1,5 +1,41 @@
 # Evidence Register
 
+## 11 October 2026 — Nefit historical primary table and bounded safety; Task54
+
+[Original manufacturer PDF](https://www.nefit-bosch.nl/media/country_pool/professioneel/installateurs/installatie-instructie_proline.pdf)
+HTTP200/4821341bytes/36pages/SHA
+`c1ddc9a7a93c4823f72d9f720f9a1e115b0df9140c89efd0b02c2484302cd81a`.
+Main read complete selected identity/safety/control text and cover/table pixels:
+6720646227 (04/2013) NL, HRC24/CW3,24/CW4,30/CW5. Metadata suffix-05 is not a
+printed revision. G25/II2L3P and historical Dutch law are not current Belgian
+approval/ABcredentials. Separate revision/day/SKU/controllerfirmware/latest/
+Belgian variant fit unknown. BC10 occurs only in the9Y communication row.
+
+Table25 pp31–34:95physicalrows/90numeric-subcodes/14blank-main continuations/
+fiveblank-subcodes/69meaningcells;78selected combinations/52meaningcells map to
+existing54groups. Seventeen normal/service/reset rows excluded. Soort has
+padlock glyphs, not numeric2/3/subcodes; source9Y has blank subcode. Blank Soort
+does not prove a normal state;8C373/374 require manufacturer-only unlocking.
+3F273 is a scheduled≤2minute check after24h. Installer solutions are evidence,
+not customer repair instructions. Source/safety19rowchanges are locally tested;
+all other identifiers/aliases/sourcePages/order unchanged, no sharedaction change.
+One new snapshot has no invented prior hashmatch. [Coverage](fault-code-model-coverage.md).
+
+Fresh471/lint0/production0/standardbuild170/local82/93/112/Nefit4nativeprofiles266GET/
+392queries/8contacts pass; source-specific proof is not universal device fit.
+Task55 original native-phone failure retained; one diagnostic reproduces
+0.421875px end-alignment overflow while focused/hittable. Controlled v2 native
+center alignment passes8profiles349GET/174cases/18ownedfocus/126shots on the
+standardbuild; no weakened tolerance or product fix. Same-guide restoration,
+protectedhero/default/noJS flow verified; not automatic full-focus-outline,
+provider or all-site proof. No review/release/IndexNow acceptance for54–55 yet.
+
+Tasks52–53 actually accepted1f10e883: sole review/455/exactCI38161989180/
+actual matching namedProduction6999521558/6999522369/canonical82/93/112/
+unchanged native liveIntergas185GET andwidget231GET. One IntergasHTTP200
+IndexNowreceipt after proof/live, not indexation. Earlier candidate entries are
+history. Task51development/lifecycle, owner/case/local/French/account gates open.
+
 ## 11 October 2026 — Intergas selected source/display context; Task52
 
 [Original manufacturer installation manual](https://www.intergas-verwarming.nl/app/uploads/2018/01/Installatievoorschrift-Prestige-88136803.pdf)
