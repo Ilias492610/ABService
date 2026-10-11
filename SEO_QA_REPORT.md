@@ -1,5 +1,55 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — delayed-hydration contact clearance candidate
+
+The JavaScript-enabled diagnostic on the accepted runtime held real application
+scripts while initial HTML and CSS loaded. Both mobile FAQ/contact edge targets
+were intercepted by the Google close button; both desktop targets remained
+reachable. Native FAQ Enter worked, and all four profiles cleared the widgets
+after scripts resumed. This demonstrates an artificial delayed-script condition,
+not its frequency in real visits.
+
+The candidate keeps the existing links in static document flow until the initial
+protected-zone geometry check completes. The pending close control is hidden and
+disabled. Original SVGs, destinations, events, rating effect, noscript fallback,
+focus handoff and explicit dismissal remain. No route, content date, state,
+business claim, source, dependency or account setting changes.
+
+Actual portable RED: 27/30 pass, with three missing-pending-state assertions.
+The new [optional browser gate](scripts/qa-trust-prehydration.mjs) also fails
+against the old canonical runtime because its pending links are fixed, not static.
+After the product fix: 30/30 focused and 379/379 full tests, lint, production
+dependency audit 0, build 170 and local crawl 82 pages / 93 links / 112 assets pass.
+Four held-script profiles pass with 187 GET-only requests: real edge pointer,
+native FAQ Enter/Space or textarea focus, focus retained after hydration,
+restored floating channels outside protected content and keyboard dismissal.
+The existing 24 hydrated/no-JS FAQ profiles pass with 632 GET-only requests.
+Neither gate attempts a write, reports an application page error or finds overflow.
+Root visually inspected three current-built mobile screenshots: unobstructed
+pending FAQ, original static links after the footer, and restored fixed channels.
+
+Run the new gate with the same PLAYWRIGHT_MODULE, CHROME_PATH and AB_QA_ORIGIN
+environment contract as the existing FAQ gate. Both are optional manual browser
+gates, not currently automated in CI and not new product dependencies. Controlled
+rating 503 produces expected resource-console errors; synthetic ratings and the
+external/nonGET firewall exclude actual provider, mail, event or customer proof.
+Physical devices, assistive/zoom checks and field CWV remain separate. Whole-branch
+review, exact hosted/provider publication and fresh canonical checks are next.
+No IndexNow notification is justified by this shared-runtime correction.
+
+## 11 October 2026 — documentation cohort publication
+
+The independently reviewed documentation-only cohort
+`e83195de5ec8467ebcafc22d9c4c6e89d30befc1` is normally on GitHub main.
+[CI 38115572725](https://github.com/Ilias492610/ABService/actions/runs/38115572725)
+succeeds at 05:41:47 UTC under Node 24.21.0: install 411/412, 376 tests, lint,
+production audit 0, build 170 and hosted crawl 82/93/112. Exact-SHA Vercel
+Production statuses succeed: primary 6991512168 at 05:41:38 UTC and secondary
+6991509108 at 05:41:18 UTC. No fresh canonical browser, source or Lighthouse
+run is claimed for unchanged runtime, and no IndexNow notification was sent.
+The blank intake and individual 34-point assessment are documentation, not new
+project evidence, human local-value approval or all-work-package completion.
+
 ## 11 October 2026 — FAQ clearance released and verified live
 
 Whole-branch reviewed `6b1f5a6f6756b01f89d932a79bb2ec148a2b0fbe` is on GitHub

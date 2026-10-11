@@ -595,6 +595,17 @@ mobiele labruns99/100/100/100, medianeLCP ongeveer2.023s; geen causale winst of
 veld-CWV. Geen route/status/date/bronwijziging ofIndexNow. JS-enabledprehydration,
 physical/assistive/field en echte provider/event/casevoorwaarden blijven open.
 
+**11 oktober — aanvullende WP12-kandidaat voor uitgestelde scripts:** een echte
+JavaScript-enabled browserdiagnose toont mobiele FAQ-/formulierinterceptie vóór
+hydration, niet de frequentie in echte bezoeken. De bestaande contactlinks staan
+nu eerst in normale flow; pas na de initiële geometriecontrole mogen ze zweven.
+De inerte close is vooraf verborgen/disabled. Originele kanalen, logos, hrefs,
+events, ratingeffect, noscript, focus en dismissal blijven. Echte RED→GREEN,
+379 tests/lint/productieaudit 0/build 170/local 82/93/112 en vier uitgesteld-script-
+plus 24 bestaande JS/no-JS-profielen slagen lokaal. Whole-branch, hosted/live en
+matched lab blijven apart. Geen route/status/datum/bronwijziging of IndexNow;
+geen volledige WP12-, fysieke/assistieve/veld-CWV- of zakelijke acceptatie.
+
 ### WP13 — Verdiende links en lokale partners
 
 **Files:** `LOCAL_SEO_EXTERNAL_ACTIONS.md`; nieuw `docs/seo/earned-link-opportunities.md`. Contactgegevens privé; alleen concepten in repo.

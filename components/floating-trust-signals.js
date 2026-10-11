@@ -35,6 +35,7 @@ export default function FloatingTrustSignals() {
   const [showRating, setShowRating] = useState(true);
   const [rating, setRating] = useState(null);
   const [clearProtectedContent, setClearProtectedContent] = useState(false);
+  const [clearanceReady, setClearanceReady] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -45,6 +46,8 @@ export default function FloatingTrustSignals() {
       const clear = [...zones.values()].some(Boolean);
       if (clear && document.activeElement?.closest(".whatsapp-button, .google-rating-popup")) focusHeader();
       setClearProtectedContent(clear);
+      // Initial HTML stays in normal flow until protected-zone geometry is known.
+      setClearanceReady(true);
     };
     const intersectsViewport = (node) => {
       const rect = node.getBoundingClientRect();
@@ -150,7 +153,7 @@ export default function FloatingTrustSignals() {
         href={business.whatsappHref}
         eventName="whatsapp_click"
         eventProperties={{ location: "floating_button" }}
-        className="whatsapp-button"
+        className={clearanceReady ? "whatsapp-button" : "whatsapp-button floating-trust-pending"}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contacteer AB Service via WhatsApp"
@@ -159,7 +162,7 @@ export default function FloatingTrustSignals() {
       </TrackedLink> : null}
 
       {showRating && !clearProtectedContent ? (
-        <div className="google-rating-popup">
+        <div className={clearanceReady ? "google-rating-popup" : "google-rating-popup floating-trust-pending"}>
           <TrackedLink
             href={rating?.googleMapsUri || business.googleReviewsHref}
             eventName="google_profile_click"
@@ -186,6 +189,7 @@ export default function FloatingTrustSignals() {
           <button
             type="button"
             className="google-rating-close"
+            disabled={!clearanceReady}
             onClick={dismissRating}
             aria-label="Sluit Google-beoordeling"
           >

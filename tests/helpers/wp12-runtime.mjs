@@ -38,7 +38,7 @@ class Element {
   append(node) { this.children.push(node); node.parentElement = this; node.isConnected = true; }
 }
 
-export async function createHarness(kind, { mobile = false, zones = [], fetchResponse } = {}) {
+export async function createHarness(kind, { mobile = false, zones = [], fetchResponse, deferEffects = false } = {}) {
   const document = { activeElement: null, documentElement: { clientWidth: 390, clientHeight: 844, style: { setProperty() {} } } };
   const body = new Element("body", {}, document);
   document.body = body; document.activeElement = body;
@@ -110,6 +110,7 @@ export async function createHarness(kind, { mobile = false, zones = [], fetchRes
     if (value.props.ref) value.props.ref.current = node;
     return [node];
   };
+  let flushEffects = !deferEffects;
   const render = () => {
     let turns = 0;
     do {
@@ -117,7 +118,7 @@ export async function createHarness(kind, { mobile = false, zones = [], fetchRes
       tree = Component({ navigation, mobile });
       for (const node of elements.values()) node.isConnected = false;
       host.children = mount(tree); host.children.forEach((node) => { node.parentElement = host; });
-      while (pending.length) pending.shift()();
+      if (flushEffects) while (pending.length) pending.shift()();
       if (++turns > 10) throw new Error("Effect render loop");
     } while (dirty);
     return tree;
@@ -138,6 +139,9 @@ export async function createHarness(kind, { mobile = false, zones = [], fetchRes
   });
   render();
   return { document, body, main, footer, brand, observers, mutations, resizeObservers, requests, events, zoneNodes, addZone, render,
+    // Inspect the actual initial tree before mount effects, then execute the
+    // queued effects once before rendering their resulting state.
+    flushEffects() { flushEffects = true; while (pending.length) pending.shift()(); return render(); },
     query: (selector) => host.querySelector(selector), all: (selector) => host.querySelectorAll(selector),
     navigate: (path) => { pathname = path; return render(); },
     click(node, target = node) { const event = { target, currentTarget: node, defaultPrevented: false, preventDefault() { this.defaultPrevented = true; } }; let parent = target; while (parent && parent !== host) { event.currentTarget = parent; parent.props.onClick?.(event); parent = parent.parentElement; } render(); return event; },

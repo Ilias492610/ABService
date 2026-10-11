@@ -429,3 +429,29 @@ This is descriptive lab stability, not a randomized causal gain or field INP.
 event-ingestion proof, physical/assistive/field result or new local case/value
 approval. Noscript does not handle JS-enabled prehydration; source403/dev9 and
 the parent experiment's freeze/measurement/revert contract remain unchanged.
+
+## TRUST-PREHYDRATION-20261011 — bounded local correction candidate
+
+The accepted runtime's held-script diagnostic shows a mobile FAQ/textarea edge
+interception before hydration; desktop hits and subsequent hydrated clearance
+work. The intervention is deliberately artificial, not a measured field rate.
+Candidate hypothesis: native controls remain reachable while app scripts are
+pending, without losing the original contact channels or explicit dismissal.
+Links begin in normal flow, then the existing initial geometry check enables
+floating mode only where its current protected-zone policy allows it.
+
+Genuine unit RED 27/30 and native-browser fixed-not-static RED precede the fix.
+Local GREEN: 30 focused / 379 full tests, lint, production audit 0, build 170,
+crawl 82/93/112, four held-script profiles / 187 GETs and the existing 24 FAQ
+profiles / 632 GETs. Native pointer, keyboard/focus, normal-flow/fixed positions
+and restored/dismissed links are checked; no writes, page errors or overflow.
+Expected 503 resource-console errors are fixture observations. Whole-branch
+review, exact hosted/provider publication, canonical gates and matched lab remain
+separate next steps. This shared-runtime change does not justify IndexNow.
+
+**CANDIDATE / NOT GROWTH-EVALUATED.** No real provider, analytics receipt,
+qualified customer, field CWV or physical/assistive outcome follows from the
+controlled browser checks. No new KPI, search-window metric or denominator;
+parent experiment instructions, measurement/revert contracts and evidence gates
+are unchanged. Immediate regression in access, focus, clearance, dismissal or
+destinations merits correction rather than waiting for a commercial window.

@@ -1,5 +1,32 @@
 # Evidence Register
 
+## 11 October 2026 — delayed-script diagnostic and local correction
+
+Four real JavaScript-enabled profiles on the accepted runtime held actual app
+scripts. Mobile FAQ and textarea edge hits reached the Google close; desktop
+hits reached their intended native targets. Hydration cleared all four, with
+75 GET-only diagnostic requests and no page errors/overflow. This is controlled
+delay evidence, not field timing, frequency or a universal desktop failure.
+
+The bounded candidate makes the existing channels static until initial geometry
+is checked, hides/disables the inert close and preserves original links/SVGs,
+events, provider effect and protected-zone/dismissal policies. Unit RED 27/30,
+browser RED fixed-not-static, then 30 focused / 379 full GREEN tests; lint,
+production audit 0, build 170 and local crawl 82/93/112 pass. Four held-script
+profiles / 187 GETs and 24 existing FAQ profiles / 632 GETs pass, no attempted
+writes, page errors or overflow. Three root-inspected mobile screenshots show
+pending FAQ clearance, normal-flow original links and hydrated restoration.
+503 resource-console errors are expected fixtures, not actual provider failures.
+Whole-branch, hosted and canonical release gates remain next. No new private,
+physical/assistive/field, business or customer proof, and no IndexNow send.
+
+The earlier docs-only `e83195de5ec8467ebcafc22d9c4c6e89d30befc1` was independently
+reviewed and normally published. Exact CI 38115572725 succeeds 05:41:47 UTC:
+Node 24.21.0, 376 tests, lint, production audit 0, build 170, hosted 82/93/112;
+both Vercel Production statuses succeed, primary 6991512168 at 05:41:38 UTC /
+secondary 6991509108 at 05:41:18 UTC. Runtime unchanged; no fresh browser/lab
+acceptance or new case/local permission is inferred from that documentation run.
+
 ## 11 October 2026 — individual acceptance and case intake documentation
 
 The [34-point matrix](2026-10-11-masterprompt-acceptance-34.md) records each exact

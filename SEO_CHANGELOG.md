@@ -1,5 +1,20 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — pending-script contact links candidate
+
+- Keeps the two original contact channels in normal document flow until the
+  initial protected-zone check completes; the pending close is hidden/disabled.
+  Hydrated floating appearance, native focus/dismissal, logos, hrefs and rating
+  loading remain. No content, route, state, date, source or dependency change.
+- Genuine unit and browser RED observations precede implementation. Local
+  379 tests, lint, production audit 0, build 170 and crawl 82/93/112 pass.
+  Four delayed-script and 24 existing hydrated/no-JS browser profiles pass;
+  synthetic providers/firewall do not establish mail, events, field or growth.
+  Independent whole-branch and hosted/live acceptance remain next gates.
+- Records actual publication of the earlier documentation-only `e83195d`:
+  exact CI 38115572725 succeeds with 376 tests, and both exact-SHA Vercel
+  Production statuses succeed. No redundant runtime lab/source audit claimed.
+
 ## 11 October 2026 — acceptance evidence and blank case intake
 
 - Reconciles all34original M110 bullets individually, preserving delivered,

@@ -4,6 +4,45 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { createHarness } from "./helpers/wp12-runtime.mjs";
 
 const visible = (h) => [h.all(".whatsapp-button").length, h.all(".google-rating-popup").length];
+
+test("initial HTML retains both contact channels in pending flow before effects run", async () => {
+  const h = await createHarness("floating", { deferEffects: true });
+  try {
+    assert.equal(h.observers.length, 0);
+    assert.equal(h.requests.length, 0);
+    assert.deepEqual(visible(h), [1, 1]);
+    assert.match(h.query(".whatsapp-button").props.className, /\bfloating-trust-pending\b/);
+    assert.match(h.query(".google-rating-popup").props.className, /\bfloating-trust-pending\b/);
+    assert.equal(h.query(".google-rating-close").props.disabled, true);
+    assert.equal(h.query(".whatsapp-button").props.href, "https://wa.me/32484906966?text=Hallo%2C%20ik%20heb%20een%20vraag.");
+    assert.equal(h.query(".google-rating-link").props.href, "https://maps.google.com/?cid=4063521367014109489");
+    h.flushEffects();
+    assert.deepEqual(visible(h), [1, 1]);
+    assert.doesNotMatch(h.query(".whatsapp-button").props.className, /\bfloating-trust-pending\b/);
+    assert.doesNotMatch(h.query(".google-rating-popup").props.className, /\bfloating-trust-pending\b/);
+    assert.equal(h.query(".google-rating-close").props.disabled, false);
+  } finally { h.dispose(); }
+});
+
+for (const selector of [".faq-list", "form"]) {
+  test(`initial ${selector} geometry clears pending links before floating mode is enabled`, async () => {
+    const h = await createHarness("floating", { deferEffects: true, zones: [{ selector, visible: true }] });
+    try {
+      assert.deepEqual(visible(h), [1, 1]);
+      assert.match(h.query(".google-rating-popup").props.className, /\bfloating-trust-pending\b/);
+      const focused = h.addZone(selector === "form" ? "textarea" : "summary", true, h.zoneNodes[0]);
+      focused.focus();
+      h.flushEffects();
+      assert.deepEqual(visible(h), [0, 0]);
+      assert.equal(h.document.activeElement, focused);
+      h.observers.at(-1).emit(h.zoneNodes[0], false); h.render();
+      assert.deepEqual(visible(h), [1, 1]);
+      assert.doesNotMatch(h.query(".google-rating-popup").props.className, /\bfloating-trust-pending\b/);
+      assert.equal(h.query(".google-rating-close").props.disabled, false);
+    } finally { h.dispose(); }
+  });
+}
+
 for (const selector of ["form", ".warning-box", ".site-footer", ".maintenance-check-result", ".page-hero .button-row", ".faq-list"]) {
   test(`initial visible ${selector} clears both widgets and viewport leave restores them`, async () => {
     const h = await createHarness("floating", { zones: [{ selector, visible: true }] });

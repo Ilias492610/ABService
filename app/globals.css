@@ -169,6 +169,9 @@ h3 { margin: 0 0 .7rem; font-size: 1.2rem; }
 .google-profile-fallback { color: var(--muted); font-size: .8rem; }
 .google-rating-close { display: grid; flex: 0 0 44px; width: 44px; height: 44px; margin: .25rem .25rem 0 0; place-items: center; border: 0; border-radius: 999px; background: transparent; color: #64727b; font: inherit; line-height: 1; cursor: pointer; }
 .google-rating-close:hover { background: var(--mist); color: var(--ink); }
+.whatsapp-button.floating-trust-pending { position: static; display: inline-grid; margin: 1rem; vertical-align: middle; }
+.google-rating-popup.floating-trust-pending { position: static; display: inline-flex; min-width: 0; max-width: calc(100% - 2rem); margin: 1rem; vertical-align: middle; }
+.floating-trust-pending .google-rating-close { display: none; }
 .reviews-heading { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(270px, .65fr); gap: 2rem; align-items: start; }
 .reviews-heading .section-lead { max-width: 720px; }
 .google-review-summary { display: grid; justify-items: start; gap: .45rem; border: 1px solid var(--line); border-radius: 1rem; background: white; padding: 1.4rem; box-shadow: 0 16px 45px rgb(16 52 71 / 7%); }
