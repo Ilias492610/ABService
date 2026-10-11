@@ -6,7 +6,7 @@ import TrackedLink from "@/components/tracked-link";
 import { business } from "@/content/business.mjs";
 import { formatGoogleRating } from "@/libs/google-reviews.mjs";
 
-const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result";
+const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row";
 
 function focusHeader() {
   document.querySelector(".site-header .brand")?.focus({ preventScroll: true });
@@ -75,10 +75,16 @@ export default function FloatingTrustSignals() {
     const mutations = new MutationObserver((records) => {
       if (!active) return;
       for (const record of records) {
-        for (const node of record.removedNodes) visitZones(node, (zone) => {
-          observer.unobserve(zone);
-          zones.delete(zone);
-        });
+        for (const node of record.removedNodes) {
+          if (node.nodeType !== 1) continue;
+          // Detached descendants can no longer match an ancestor selector.
+          for (const zone of zones.keys()) {
+            if (node.contains(zone)) {
+              observer.unobserve(zone);
+              zones.delete(zone);
+            }
+          }
+        }
         for (const node of record.addedNodes) visitZones(node, observe);
       }
       updateClearance();

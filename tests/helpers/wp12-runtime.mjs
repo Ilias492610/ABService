@@ -17,6 +17,10 @@ class Element {
   matches(selector) {
     return selector.split(",").some((part) => {
       const s = part.trim();
+      const ancestorEnd = s.lastIndexOf(" ");
+      if (ancestorEnd !== -1) {
+        return this.matches(s.slice(ancestorEnd + 1)) && !!this.parentElement?.closest(s.slice(0, ancestorEnd));
+      }
       if (s === "a[href]") return this.tagName === "A" && !!this.props.href;
       if (s === "details[open]") return this.tagName === "DETAILS" && this.open;
       if (s.startsWith(".")) return (this.props.className || "").split(" ").includes(s.slice(1));
@@ -119,6 +123,10 @@ export async function createHarness(kind, { mobile = false, zones = [], fetchRes
     return tree;
   };
   const addZone = (selector, visible = false, parent = main) => {
+    const descendantStart = selector.indexOf(" ");
+    if (descendantStart !== -1) {
+      return addZone(selector.slice(descendantStart + 1), visible, addZone(selector.slice(0, descendantStart), false, parent));
+    }
     const node = new Element(selector === "form" ? "form" : "div", { className: selector.startsWith(".") ? selector.slice(1) : undefined }, document);
     if (visible) node.rect = { top: 500, bottom: 700, left: 16, right: 374, width: 358, height: 200 };
     parent.append(node); return node;
