@@ -72,6 +72,7 @@ const decode = (html) => html.replace(/&(?:amp|lt|gt|quot|apos|#\d+|#x[\da-f]+);
 const visible = (html) => decode(html.replace(/<script[\s\S]*?<\/script>/g, "").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
 const linksOf = (html) => Array.from(html.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g), ([, href, label]) => ({ href: decode(href), label: visible(label) }));
 const contextPattern = /(<div class="prose-block">[\s\S]*?<\/h2><p>)([\s\S]*?)(<\/p>)/;
+const originalBorgerhoutIntro = "Borgerhout omvat zowel intra-muroswijken als Extra Muros. In compacte gebouwen is het belangrijk om vooraf te weten waar afsluiters, ketel en gemeenschappelijke leidingen bereikbaar zijn.";
 
 // Complete production modules, real React/Next links and navigation. Only
 // analytics transport is adapted, so rendering causes no provider write.
@@ -110,9 +111,14 @@ for (const fixture of corrections) {
   // Catch incidental record or rendered-content loss outside the correction.
   test(`${name} retains every other record property and rendered intake element`, () => {
     const { localContext, modifiedAt, ...retained } = areas.getDistrict(slug);
+    // Task43 changes only this hero intro, separately asserted in its real-route
+    // tests. Restore the exact original value; never regenerate approved hashes.
+    if (slug === "borgerhout") retained.intro = originalBorgerhoutIntro;
     assert.equal(hash(retained), fixture.record);
     const html = renderToStaticMarkup(route.default());
-    assert.equal(hash(html.replace(contextPattern, "$1__LOCAL_CONTEXT__$3")), fixture.rendered);
+    let preservedHtml = html.replace(contextPattern, "$1__LOCAL_CONTEXT__$3");
+    if (slug === "borgerhout") preservedHtml = preservedHtml.replace(`<p class="hero-intro">${areas.getDistrict(slug).intro}</p>`, `<p class="hero-intro">${originalBorgerhoutIntro}</p>`);
+    assert.equal(hash(preservedHtml), fixture.rendered);
     assert.deepEqual([...html.matchAll(/<h1[^>]*>([\s\S]*?)<\/h1>/g)].map(([, value]) => visible(value)), [fixture.heading]);
     const links = linksOf(html);
     for (const [label, href] of [
@@ -181,9 +187,9 @@ test("only the six genuinely modified districts have dates and only Borsbeek has
   assert.equal(registry.pageRegistry.length, 82);
   assert.deepEqual(Object.fromEntries(entries.filter((entry) => entry.url.includes("/loodgieter-") && Object.hasOwn(entry, "lastModified")).map((entry) => [entry.url.split("/loodgieter-")[1], entry.lastModified])), expected);
   const retained = entries.map((entry) => {
-    // Tasks40/41 permit only these genuinely edited pages' new dates.
+    // Tasks40/41/44 permit only these genuinely edited pages' new dates.
     // Preserve the original independently captured whole-sitemap hash.
-    const correctedPage = ["https://www.abservice24.be/werkgebied/limburg", "https://www.abservice24.be/tarieven"].includes(entry.url);
+    const correctedPage = ["https://www.abservice24.be/werkgebied/limburg", "https://www.abservice24.be/tarieven", "https://www.abservice24.be/werkgebied/brussel"].includes(entry.url);
     if (!correctedPage && !corrections.some(({ slug }) => entry.url.endsWith(`/loodgieter-${slug}`))) return entry;
     const { lastModified, ...rest } = entry;
     return rest;

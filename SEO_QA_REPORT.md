@@ -1,5 +1,51 @@
 # AB Service SEO QA Report
 
+## 11 October 2026 — local follow-up candidate; preceding preparation release
+
+The two remaining bounded proposals in the local-value review are implemented
+locally: Borgerhout's actual hero asks conditionally about a compact building,
+and Brussels' actual EPB planning paragraph links directly to the existing
+maintenance check. Original context, safety/intake, service-card tool link,
+municipalities, sources, contact and metadata remain. Brussels alone adds a
+genuine modification date; Borgerhout already carries today's actual date.
+No new rule, interval, recognition, French claim, local case or published route.
+
+Literal complete pre-edit fixtures on `eb0bf76` and actual production-renderer
+tests show RED 3/7 pass, then GREEN 30/30 combined and full 408/408. Lint,
+production audit 0 and build 170 pass. Older district/region/sitemap hashes are
+not regenerated: normalization permits only the exact changed intro, new inline
+fragment and Brussels date. Initial eight browser profiles passed navigation,
+but root visual inspection found the new inline link indistinguishable from
+body text. Separate real-renderer RED 7/8 and computed-style browser RED observed
+`textDecorationLine: none`, with inherited paragraph color/weight. Only this
+link receives the existing `underline` utility; no global styling change.
+
+Fresh final GREEN 31/31 combined, 409/409 tests, lint, production audit 0,
+rebuild 170 and local crawl 82/93/112 pass. The tightened eight desktop/mobile
+JS/no-JS profiles pass with 250 browser GETs plus one sitemap GET; all four
+Brussels profiles measure underline while their paragraph remains unadorned.
+All native FAQs, pointer/Enter tool navigation without result generation,
+form tops 142.17–144.17 px and textarea focus pass. No attempted writes, external
+GETs, pageerrors or overflow; exact intercepted rating503 diagnostics only,
+no-JS capture empty. Root read the actual script/log and viewed before/after
+mobile screenshots. First navigation evidence, visual RED and rebuilt GREEN
+remain distinct. Fresh sole final review and exact hosted/canonical acceptance
+are next; no professional local-value, physical/assistive, actual provider/mail/
+events, new lab/field or commercial improvement is asserted.
+
+The preceding `eb0bf76101249a6ba9c793fbe9932a0ada628a30` preparation/owner-evidence
+cohort is now accepted after sole whole-cohort approval, fresh 401 premerge/
+merged tests and normal main publication. Exact [CI 38119528024](https://github.com/Ilias492610/ABService/actions/runs/38119528024)
+succeeds at 06:54:21 UTC on Node 24.21.0, install 411/412, 401 tests, lint,
+production audit 0, build 170 and hosted 82/93/112. Actual Production statuses
+succeed: primary 6992157223 at 06:55:27 UTC and secondary 6992149982 at
+06:54:39 UTC. Fresh canonical crawl 82/93/112 and eight desktop/mobile JS/no-JS
+profiles pass, 150 browser GETs plus one sitemap GET, form tops 142.17–144.17 px,
+no attempted writes/pageerrors/overflow. Strict console output contains only
+the exact intercepted rating503 fixture; it is not actual provider/mail/event
+evidence. No redundant Lighthouse or IndexNow for these small preparation edits.
+Historical candidate notes below remain their dated phase, not current blockers.
+
 ## 11 October 2026 — local and offer preparation candidate; owner replies
 
 Two bounded customer-copy changes are prepared on `codex/seo-limburg-planning`:

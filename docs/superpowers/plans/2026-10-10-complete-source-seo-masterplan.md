@@ -290,6 +290,12 @@ Op 11 oktober is de expliciet toegestane Bing-Googlekoppeling voor naam/foto/e-m
 
 ### WP06 — Kernpagina's, klantcopy en interne links
 
+**Latere acceptatie 11 oktober:** de onderstaande tarieven-/Limburgkandidaten
+zijn geaccepteerd in `eb0bf76` na onafhankelijke cohortreview, exacte CI
+38119528024 / 401 tests, beide werkelijke Production-statussen, canonical
+82/93/112 en acht browserprofielen. Echte prijzen en brede WP06 blijven open;
+dit vervangt geen eerdere kandidaatfase of commerciële uitkomstmeting.
+
 **11 oktober — lokale kandidaatvoorbereiding:** `9789422` voegt binnen de bestaande
 offertecheck op `/tarieven` één vraag toe over mogelijke tijdstip-/weekendkosten.
 Geen toeslag, bedrag, gratis dienst of interventietijd wordt beweerd. Vier echte
@@ -395,6 +401,21 @@ errors/overflow. Eén echte drie-guide IndexNow-meldingHTTP200 na preview/livech
 is geen indexatiebewijs. Bron403/development9 en bredere WP07-dekking blijven open.
 
 ### WP08 — Geografische groei met lokale klantwaarde
+
+**Verdere begrensde uitvoering 11 oktober:** Limburg is geaccepteerd in
+`eb0bf76`; de overige twee bestaande voorstellen zijn nu lokale kandidaten.
+Borgerhout krijgt een expliciet voorwaardelijke hero-intro; Brussel een directe
+native onderhoudschecklink vanuit de actuele EPB-planningsparagraaf. Geen nieuwe
+regels, Franse belofte, lokale bewijsclaim of route. Pre-edit volledige
+behoudfixtures, RED 3/7→GREEN 30/30 gecombineerd, volledige 408 tests/lint/
+productieaudit 0/build 170 slagen; oorspronkelijke hashes blijven behouden met
+alleen exacte toegestane normalisatie. Visuele QA vond de nieuwe link niet
+herkenbaar: afzonderlijke echte renderer/computed-style RED, één underline-
+utility, definitieve GREEN 31/31/volledige 409 tests/lint/audit 0/rebuild 170/
+local 82/93/112 en acht native browserprofielen slagen. Bestaande paragraafstijl,
+toolnavigatie en formulierfocus blijven; sole review/exacte release volgen apart.
+Alle drie kleine voorstellen zijn aangepakt, niet de menselijke unieke-waarde-
+beoordeling, echte lokale vraag/case/review of 302 draft-publicatiegates.
 
 **Files:** `content/service-areas.mjs`, `content/service-area-scoring.mjs`, `content/content-backlog.mjs`, `components/district-page.js`, `components/municipality-filter.js`, gebiedshubs, `tests/service-areas.test.mjs`, `PHASE_E_SERVICE_AREA_REPORT.md`, `SERVICE_AREA_REGISTRY.md`, `SEO_CONTENT_INVENTORY.md`, bewijsregister en changelog.
 

@@ -12,6 +12,7 @@ import * as schema from "../libs/schema-data.mjs";
 
 const tip = "Vermeld uw exacte adres, probleemomschrijving, eventuele toestelgegevens en wie toegang kan geven. Voeg alleen foto’s toe die u veilig kunt nemen zonder panelen te openen. Werkzaamheden en verplaatsing worden besproken voordat de afspraak wordt bevestigd.";
 const old = "Stuur merk, model, probleemomschrijving en foto’s meteen mee. Dat is bij een langere verplaatsing extra belangrijk om onvolledige afspraken te vermijden.";
+const brusselsFollowup = ' Bekijk de <a class="underline" href="/tools/onderhoudscheck">regionale onderhoudscheck</a> voor uw onderhoudsvraag.';
 const hash = value => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
 // Literal preservation fixtures captured on ae417d3 before product edits.
 // Only Limburg planningTip/modifiedAt and its two rendered tip occurrences
@@ -65,26 +66,34 @@ test("the planning correction retains all other hub records and real rendered co
       // Both allowed occurrences are normalized, not arbitrary page sections.
       html = html.split(tip).join("__PLANNING_TIP__");
     }
+    // Task44's exact new inline link/date has its own real-route tests. Remove
+    // only these allowances, retaining every original independently captured hash.
+    if (slug === "brussel") {
+      const { modifiedAt, ...retained } = hub;
+      void modifiedAt;
+      record = retained;
+      html = html.replace(brusselsFollowup, "");
+    }
     assert.equal(hash(record), recordHash, `${slug}: retained record`);
     assert.equal(hash(html), renderedHash, `${slug}: retained rendered route`);
   }
 });
 
 // Missing transfer to the sitemap or globally refreshed dates fails here.
-test("only the genuinely changed regional hub transfers its actual date to sitemap output", () => {
-  assert.deepEqual(Object.fromEntries(areas.serviceRegionHubs.filter(hub => Object.hasOwn(hub, "modifiedAt")).map(hub => [hub.slug, hub.modifiedAt])), { limburg: "2026-10-11" });
+test("only genuinely changed regional hubs transfer their actual dates to sitemap output", () => {
+  assert.deepEqual(Object.fromEntries(areas.serviceRegionHubs.filter(hub => Object.hasOwn(hub, "modifiedAt")).map(hub => [hub.slug, hub.modifiedAt])), { limburg: "2026-10-11", brussel: "2026-10-11" });
   const definitions = registry.pageRegistry.filter(page => page.path.startsWith("/werkgebied/"));
-  assert.deepEqual(Object.fromEntries(definitions.filter(page => Object.hasOwn(page, "lastModified")).map(page => [page.path, page.lastModified])), { "/werkgebied/limburg": "2026-10-11" });
-  assert.deepEqual(Object.fromEntries(sitemap.default().filter(entry => entry.url.includes("/werkgebied/") && Object.hasOwn(entry, "lastModified")).map(entry => [entry.url, entry.lastModified])), { "https://www.abservice24.be/werkgebied/limburg": "2026-10-11" });
+  assert.deepEqual(Object.fromEntries(definitions.filter(page => Object.hasOwn(page, "lastModified")).map(page => [page.path, page.lastModified])), { "/werkgebied/limburg": "2026-10-11", "/werkgebied/brussel": "2026-10-11" });
+  assert.deepEqual(Object.fromEntries(sitemap.default().filter(entry => entry.url.includes("/werkgebied/") && Object.hasOwn(entry, "lastModified")).map(entry => [entry.url, entry.lastModified])), { "https://www.abservice24.be/werkgebied/limburg": "2026-10-11", "https://www.abservice24.be/werkgebied/brussel": "2026-10-11" });
   assert.equal(Object.hasOwn(registry.getPageDefinition("/werkgebied"), "lastModified"), false);
 });
 
-test("all hub metadata and registry fields remain unchanged outside the allowed Limburg date", async () => {
+test("all hub metadata and registry fields remain unchanged outside the allowed Limburg/Brussels dates", async () => {
   for (const [slug, , , metadataHash, definitionHash] of fixtures) {
     const metadata = await route.generateMetadata(paramsFor(slug));
     assert.equal(hash(metadata), metadataHash, `${slug}: full metadata`);
     let definition = registry.getPageDefinition(`/werkgebied/${slug}`);
-    if (slug === "limburg") {
+    if (slug === "limburg" || slug === "brussel") {
       const { lastModified, ...retained } = definition;
       void lastModified;
       definition = retained;

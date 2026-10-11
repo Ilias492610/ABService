@@ -236,7 +236,7 @@ export const antwerpDistricts = Object.freeze([
     title: "Loodgieter Borgerhout | Cv-ketel en sanitair | AB Service",
     heading: "Loodgieter in Borgerhout voor cv-ketel en sanitair",
     description: "AB Service behandelt aanvragen voor cv-ketels, verwarming en sanitair in Borgerhout. Deel foutcode, toestelgegevens en toegangssituatie.",
-    intro: "Borgerhout omvat zowel intra-muroswijken als Extra Muros. In compacte gebouwen is het belangrijk om vooraf te weten waar afsluiters, ketel en gemeenschappelijke leidingen bereikbaar zijn.",
+    intro: "Borgerhout omvat zowel intra-muroswijken als Extra Muros. Heeft uw gebouw een compacte indeling? Vermeld dan wat u weet over de bereikbaarheid van afsluiters, ketel en eventuele gemeenschappelijke leidingen.",
     localContext: "De officiële wijkindeling onderscheidt Borgerhout Extra Muros en twee intra-muroszones. Vermeld bij uw aanvraag of de installatie individueel of gemeenschappelijk is, als u dit weet.",
     modifiedAt: "2026-10-11",
     preparation: "Stuur foto’s van het toestel, de aansluiting en de zichtbare schade zonder kasten of toestelpanelen te openen.",
@@ -456,6 +456,7 @@ export const serviceRegionHubs = Object.freeze([
   }),
   hub("brussel", {
     name: "Brussels Hoofdstedelijk Gewest",
+    modifiedAt: "2026-10-11",
     heading: "Loodgieter en verwarmingsservice in Brussel",
     groupName: "Brussels Hoofdstedelijk Gewest",
     title: "Loodgieter en verwarmingsservice in Brussel | AB Service",

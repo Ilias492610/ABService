@@ -1,5 +1,20 @@
 # AB Service SEO Changelog
 
+## 11 October 2026 — conditional local advice and contextual tool follow-up
+
+- Local candidate makes Borgerhout's actual hero building advice conditional
+  and adds a native tool link directly after Brussels' unchanged EPB signal.
+  No new technical/legal/language/case claim or route; only Brussels adds a date.
+- Genuine real-renderer RED 3/7→GREEN 30/30 combined. Root visual QA then caught
+  the new link inheriting plain-text styling: separate renderer/browser RED,
+  one-link underline utility, final GREEN 31/31 and full 409 tests/lint/audit 0/
+  rebuild 170/local 82/93/112. Tightened eight native browser profiles pass;
+  original full preservation hashes retained. Sole review/release still next.
+- Prior `eb0bf76` preparation/owner-evidence cohort is accepted: sole review,
+  exact CI 38119528024 / 401 tests, both actual Production statuses, canonical
+  82/93/112 and eight desktop/mobile JS/no-JS profiles. No new growth/lab/IndexNow
+  claim. Earlier candidate records retain their historical phase.
+
 ## 11 October 2026 — local and price preparation candidate; owner evidence
 
 - Limburg's actual answer-box/FAQ tip now requests address, problem/device/access

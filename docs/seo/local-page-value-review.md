@@ -78,6 +78,27 @@ slagen; oorspronkelijke sitemapbehoudhash is niet vernieuwd. Onafhankelijke
 cohortreview en exacte productieacceptatie zijn nog volgende gates. Voorstellen
 1 en 3 blijven open. Dit wijzigt geen lokale publicatiestatus of bewijsacceptatie.
 
+**Nog latere uitvoeringsstand 11 oktober:** voorstel 2 is geaccepteerd in
+`eb0bf76`: onafhankelijke cohortreview, exacte CI 38119528024, beide werkelijke
+Production-statussen en canonical crawl 82/93/112 plus acht browserprofielen
+slagen. Voorstellen 1 en 3 zijn daarna lokaal uitgevoerd: Borgerhout vraagt nu
+voorwaardelijk naar een compacte gebouwindeling; Brussel linkt in de echte
+EPB-planningsparagraaf naar de bestaande onderhoudscheck. Veiligheidsinformatie,
+toegangscheck, bestaande toolkaart, gemeenten, bronnen en metadata blijven.
+Echte pre-edit behoudfixtures en RED 3/7→GREEN 30/30 gecombineerd, volledige
+408 tests/lint/productieaudit 0/build 170 slagen. Alleen Brussel voegt een
+wijzigingsdatum toe; Borgerhout had de huidige echte datum al. De eerste
+browserronde werkte, maar visuele controle vond de nieuwe link onvoldoende
+herkenbaar. Echte renderer-/computed-style-RED gevolgd door één bestaande
+underline-utility: definitieve GREEN 31/31 en volledige 409 tests/lint/audit 0/
+build 170/crawl 82/93/112 plus acht aangescherpte browserprofielen slagen.
+De link is in alle vier Brusselse profielen blijvend onderstreept; native
+toolnavigatie en formulierfocus blijven werken. Review/productieacceptatie
+van die twee kandidaten volgen nog. Alle drie
+beperkte voorstellen zijn inhoudelijk aangepakt, niet alle lokale bewijs- of
+menselijke-waardegates afgesloten. De peildatumbeschrijving bovenaan blijft
+historisch; geen nieuwe vraag-, case-, review- of geografische technische claim.
+
 ## Betekenis voor de open lokale acceptatie
 
 De zes hubs hebben een concreet coverage-/navigatiedoel met verschillende lijsten;

@@ -116,7 +116,12 @@ export default async function RegionPage({ params }) {
           <div className="prose-block">
             <p className="eyebrow">Dekking en planning</p>
             <h2>{group.areas.length} gemeenten in dit werkgebied</h2>
-            <p>{copy.details}</p>
+            <p>
+              {copy.details}
+              {regio === "brussel" && (
+                <> Bekijk de <Link href="/tools/onderhoudscheck" className="underline">regionale onderhoudscheck</Link> voor uw onderhoudsvraag.</>
+              )}
+            </p>
             <p>De afspraak en benodigde werkzaamheden worden na rechtstreeks contact bevestigd.</p>
           </div>
           <aside className="card">

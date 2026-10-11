@@ -1,5 +1,33 @@
 # Evidence Register
 
+## 11 October 2026 — preparation acceptance and remaining local follow-ups
+
+Reviewed `eb0bf76101249a6ba9c793fbe9932a0ada628a30` is published normally on
+main. Fresh 401 premerge/merged tests, exact CI 38119528024 success at
+06:54:21 UTC (Node 24.21.0, install 411/412, lint, production audit 0, build 170,
+hosted 82/93/112) and both actual Production statuses pass: primary 6992157223
+06:55:27 UTC, secondary 6992149982 06:54:39 UTC. Canonical 82/93/112 and eight
+desktop/mobile JS/no-JS profiles pass, 150 browser GETs plus one sitemap GET,
+form tops 142.17–144.17 px; no writes/pageerrors/overflow, exact fixture503 only.
+This accepts those scoped changes, not all WPs or new provider/customer results.
+
+The two remaining [local-value proposals](local-page-value-review.md) are now
+local candidates: conditional Borgerhout intro, direct Brussels planning-to-tool
+link and genuine Brussels modification date. Real pre-edit fixtures protect
+complete retained output/metadata; RED 3/7→GREEN 30/30 combined, full 408 tests,
+lint, production audit 0 and build 170 pass. Original hashes remain unchanged;
+only exact approved intro/inline/date allowances are normalized. Root visual
+inspection of the first passing eight-profile run found no link distinction.
+Separate actual renderer RED 7/8 and computed-style browser RED confirm inherited
+decoration/color/weight. Only the new link gets the existing underline utility;
+final GREEN 31/31/full 409/lint/audit 0/rebuild 170/local 82/93/112 pass. Eight
+tightened profiles pass (250 browser GETs plus one sitemap GET); underline in
+all four Brussels profiles, native FAQs/tool pointer+Enter/form clearance/focus,
+no writes/external GETs/pageerrors/overflow, exact controlled503 only. Root reads
+actual script/log and before/after screenshots; prior evidence stays separate.
+Sole fresh review and exact release remain next. No geographic technical inference,
+extra law/interval, French promise, local evidence or IndexNow action.
+
 ## 11 October 2026 — owner language and relationship confirmation
 
 Direct owner answers in this task: “Wel Franse dienstverlening, nog geen

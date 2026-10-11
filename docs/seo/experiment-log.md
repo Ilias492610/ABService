@@ -511,3 +511,49 @@ Owner replies confirm French operations without a text reviewer and no current
 named partnerships/membership. They improve prerequisite knowledge, not language
 review, contactflow acceptance, earned links or customer results. Prior QA-only
 `ae417d3` publication is accepted, not a new business experiment outcome.
+
+## LOCAL-OFFER-PREPARATION-20261011 — public acceptance
+
+Sole reviewed `eb0bf76101249a6ba9c793fbe9932a0ada628a30` follows normal main
+publication, 401 fresh premerge/merged tests and exact CI 38119528024 success
+06:54:21 UTC. Node 24.21.0, install 411/412, lint, production audit 0, build 170
+and hosted 82/93/112 pass. Both actual Production statuses succeed: primary
+6992157223 06:55:27 UTC, secondary 6992149982 06:54:39 UTC. Canonical
+82/93/112 and eight desktop/mobile JS/no-JS profiles pass, 150 browser GETs plus
+one sitemap GET, no attempted writes/pageerrors/overflow. Exact intercepted
+rating503 only; no actual provider/mail/event or customer result inferred.
+
+**RELEASE ACCEPTED / NOT GROWTH-EVALUATED.** No fresh Lighthouse/field outcome
+or IndexNow; small preparation copy edits do not justify substantive notification.
+Parent measurement, instruction freeze, KPI, comparable-window, qualification and
+revert contracts remain unchanged. Earlier candidate phase is preserved.
+
+## LOCAL-FOLLOWUP-20261011 — bounded candidate, not growth-evaluated
+
+Sources: existing local-value proposals 1 and 3, WP06/WP08. Hypothesis: conditional
+Borgerhout building advice avoids an unsupported geographic inference; a direct
+Brussels EPB-to-maintenance-tool link makes the existing next step easier to find.
+No more clicks, enquiries, jobs or rankings measured. Original context/safety/
+access/services/municipalities/source dates/contact/metadata remain. Only Brussels
+adds a genuine date; Borgerhout retains today's already genuine date.
+
+Pre-edit full preservation fixtures on `eb0bf76`, actual-renderer RED 3/7→GREEN
+30/30 combined, full 408 tests/lint/production audit 0/build 170 pass. Approved
+original hashes are not regenerated; only exact intro/inline/date normalizations.
+Initial eight navigation profiles passed, but root before/after screenshot QA
+exposed the new link inheriting plain body styling. Separate renderer RED 7/8
+and actual computed-style browser RED confirm no underline and identical text
+color/weight. One-link existing underline utility fixes that distinction without
+global styles; final GREEN 31/31/full 409/lint/audit 0/rebuild 170/local 82/93/112
+and eight tightened profiles pass (250 browser GETs plus one sitemap GET).
+All four Brussels profiles measure underline, while paragraph decoration remains
+none. Native FAQs/tool pointer+Enter/form clearance/focus retained; no writes,
+external GETs/pageerrors/overflow, exact rating503 fixture only. First successful
+navigation capture, later visual RED and rebuilt GREEN remain separate. No
+effect-size/utility result is inferred from this functional visual correction.
+One fresh whole-cohort review and exact live acceptance remain next.
+No new legal interval, language capacity claim, locality route, project/review,
+price, partnership or IndexNow action. Customer/physical/field evidence remains
+separate. Parent instruction/measurement/KPI/window/qualification contracts remain.
+Correct immediately for content/access loss, unsupported inference, wrong link
+or false date; assess customer utility only with genuine observations later.
