@@ -92,6 +92,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: `${service.title} | AB Service`,
     description: service.description,
+    ...(service.editorial?.modifiedAt ? { lastModified: service.editorial.modifiedAt } : {}),
     changeFrequency: "monthly",
     priority: 0.75,
   })),

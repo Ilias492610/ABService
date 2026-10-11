@@ -1,4 +1,6 @@
-const service = ({ slug, title, description, intro, answer, warning, imageKey, sections, steps, relatedLinks = [] }) =>
+import { coreSources } from "./core-sources.mjs";
+
+const service = ({ slug, title, description, intro, answer, warning, imageKey, sections, steps, relatedLinks = [], sourceLinks, editorial }) =>
   Object.freeze({
     slug,
     path: `/diensten/${slug}`,
@@ -12,6 +14,8 @@ const service = ({ slug, title, description, intro, answer, warning, imageKey, s
     sections: Object.freeze(sections),
     steps: Object.freeze(steps),
     relatedLinks: Object.freeze(relatedLinks),
+    ...(sourceLinks ? { sourceLinks: Object.freeze(sourceLinks) } : {}),
+    ...(editorial ? { editorial: Object.freeze(editorial) } : {}),
   });
 
 export const additionalServices = Object.freeze([
@@ -64,10 +68,29 @@ export const additionalServices = Object.freeze([
     title: "Waterlek laten herstellen",
     description: "AB Service herstelt bereikbare waterlekken aan sanitaire leidingen en aansluitingen na beoordeling van bron, toegang en materiaal.",
     intro: "Een waterlek vraagt snelle maar veilige actie. AB Service beoordeelt de vermoedelijke bron, sluit het betrokken deel waar mogelijk af en bespreekt het herstel op basis van leidingmateriaal en bereikbaarheid.",
-    answer: "Sluit bij een actief lek de watertoevoer af als dat veilig kan, vang water op zonder elektrische risico’s te nemen en stuur foto’s van de bron en de omliggende ruimte.",
+    answer: "Sluit bij een actief lek de watertoevoer af als dat veilig kan en vang water op zonder elektrische risico’s te nemen. Beschrijf wat u al veilig kunt zien; foto’s zijn optioneel.",
     warning: "Bij overstromingsgevaar of water rond elektriciteit gebruikt u het online formulier niet als noodkanaal. Verlaat een onveilige zone en contacteer de bevoegde hulpdienst.",
     imageKey: "sanitary",
+    sourceLinks: [coreSources.waterLeakFlanders, coreSources.waterNetworkBrussels],
+    editorial: { checkedAt: "2026-10-11", modifiedAt: "2026-10-11" },
     sections: [
+      {
+        eyebrow: "Contact en voorbereiding",
+        title: "Gesprongen leiding: wie contacteren en wat doorgeven?",
+        paragraphs: [
+          "Vlaanderen: ziet u een lek op straat, aan de hoofdkraan of aan de watermeter, meld het aan uw waterbedrijf. De officiële Vlaamse bron hieronder licht deze doorverwijzing toe.",
+          "Brussel: een opgemerkt lek op het drinkwaternet of een dringend technisch probleem met dat net meldt u aan VIVAQUA’s technische wachtdienst. Gebruik de contactgegevens in de officiële Brusselse bron hieronder.",
+          "Bij een zichtbare, veilig bereikbare privéleiding kunt u AB Service om beoordeling van het herstel vragen. Is de bron of plaats onbekend, vermeld dan onbekend; een waterstroom of vochtplek geeft op zichzelf geen diagnose.",
+          "Bij een actief lek wacht u niet op een formulierantwoord of een lange meterproef. Deel alleen wat u al weet of wat veilig zichtbaar is. Heropen de toevoer niet om te testen en onderzoek een onveilige plek niet.",
+          "Een beschrijving is voldoende. Foto’s zijn optioneel, alleen als ze veilig te maken zijn en via een afgesproken contactkanaal; deel geen huisgegevens, privédocumenten of klantidentiteit. Het formulier heeft geen uploadmogelijkheid.",
+        ],
+        items: [
+          "Waar ziet u water en sinds wanneer? Is een leiding of bron werkelijk zichtbaar, of is dat onbekend?",
+          "Is de toevoer al veilig afgesloten, niet afgesloten of onbekend? Vermeld alleen als u het al weet of het waterverlies daarna doorging.",
+          "Is er een bekende gebouwbeheerder bij een gedeelde leiding en wat weet u over toegang?",
+          "Welk leidingmateriaal is al zichtbaar? Niet gokken; onbekend is een bruikbaar antwoord.",
+        ],
+      },
       {
         eyebrow: "Herstel",
         title: "Welke waterlekken kunnen worden aangepakt?",

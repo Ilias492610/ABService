@@ -1,5 +1,13 @@
 // Shared by consumer pages and the source audit: changed citations cannot escape monitoring.
 export const coreSources = {
+  waterLeakFlanders: {
+    label: "Vlaanderen: zichtbare waterlekken en doorverwijzing naar uw waterbedrijf",
+    href: "https://www.vlaanderen.be/bouwen-wonen-en-energie/water/een-lek-in-de-waterleiding",
+  },
+  waterNetworkBrussels: {
+    label: "Brussels Hoofdstedelijk Gewest: drinkwaternet en technische wachtdienst van VIVAQUA",
+    href: "https://be.brussels/nl/milieu-afval/waterkwaliteit/leidingwater-brussel",
+  },
   rentalHeatingFlanders: {
     label: "Vlaanderen: cv-documenten voor verhuurder en huurder",
     href: "https://www.vlaanderen.be/bouwen-wonen-en-energie/verwarming-koeling-en-ventilatie/keuring-en-onderhoud-van-uw-verwarming/verplichtingen-voor-centrale-verwarming-en-stookolietank-voor-verhuurder-en-huurder",

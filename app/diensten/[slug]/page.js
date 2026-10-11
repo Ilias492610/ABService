@@ -30,6 +30,8 @@ export default async function AdditionalServicePage({ params }) {
       intro={service.intro}
       answer={service.answer}
       warning={service.warning}
+      sourceLinks={service.sourceLinks}
+      editorial={service.editorial}
       image={contentImages[service.imageKey]}
       sections={service.sections}
       steps={service.steps}

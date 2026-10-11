@@ -200,7 +200,8 @@ test("additional-service consumer retains reciprocal, common and advice links on
     assert.ok(Object.isFrozen(service.relatedLinks));
     const element = await page("app/diensten/[slug]/page.js", { params: Promise.resolve({ slug }) });
     const html = renderToStaticMarkup(element);
-    const related = html.slice(html.indexOf("<h2>Lees ook</h2>"), html.indexOf('class="contact-cta"'));
+    const officialStart = html.indexOf("<h2>Officiële informatie</h2>");
+    const related = html.slice(html.indexOf("<h2>Lees ook</h2>"), officialStart >= 0 ? officialStart : html.indexOf('class="contact-cta"'));
     const hrefs = Array.from(related.matchAll(/href="([^"]+)"/g), ([, href]) => href);
     for (const href of [reciprocal, "/diensten", "/projecten", "/tarieven", "/contact", "/advies/watermeter-blijft-draaien", advice]) assert.ok(hrefs.includes(href), href);
     assert.equal(new Set(hrefs).size, hrefs.length);
