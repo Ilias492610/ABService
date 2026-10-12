@@ -44,7 +44,7 @@ test("the bounded model inventory matches every real guide assignment, scope, so
 
 test("the inventory keeps unknown fields and retained evidence distinct rather than declaring a fresh audit", () => {
   assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 25);
-  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 3);
+  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 2);
   assert.equal(manifest.snapshots.filter(s => s.hashMatchesPriorRecord === true).length, 7);
   assert.equal(manifest.snapshots.find(s => s.id === "vaillant-public-html").expectedSha256, null);
   for (const e of manifest.entries) {
@@ -117,6 +117,6 @@ test("the inventory keeps unknown fields and retained evidence distinct rather t
   assert.equal(nefitSnapshot.pageCount, nefitFacts.pageCount);
   assert.equal(nefitSnapshot.expectedSha256, null);
   assert.equal(nefitSnapshot.hashMatchesPriorRecord, null);
-  // Task60 adds one original Viessmann HTML; its fixed test preserves all15 prior snapshots.
-  assert.equal(manifest.snapshots.length, 16);
+  // Task61 adds two original Avanta HTML responses, preserving all16 prior snapshots.
+  assert.equal(manifest.snapshots.length, 18);
 });

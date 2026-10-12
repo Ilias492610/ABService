@@ -4,35 +4,45 @@ import { calentaAceMatic25LCatalogs } from "./remeha-calenta-ace-matic-25l.mjs";
 
 const CALENTA_LEGACY_BE_URL = "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf";
 
+const AVANTA_OBSERVATION_ACTION = "Noteer de volledige code, het exacte model en een zonder openen veilig bereikbaar artikel- of serienummer. Dit overzicht geeft geen herstelhandeling; controleer de toepasselijke gebruikershandleiding en laat een blijvende of terugkerende melding professioneel beoordelen. Open geen gesloten onderdelen en wijzig geen instellingen.";
+const withAvantaSourceControls = (catalog) => Object.freeze({
+  ...catalog,
+  codes: Object.freeze(catalog.codes.map((row, index) => Object.freeze({
+    ...row,
+    userAction: AVANTA_OBSERVATION_ACTION,
+    sourcePage: `Online lijstregel ${index + 1}: ${row.code}`,
+  }))),
+});
+
 export const remehaCatalogs = Object.freeze([
-  createFaultCatalog({
+  withAvantaSourceControls(createFaultCatalog({
     id: "remeha-avanta",
     title: "Avanta",
     scope:
-      "Alle 17 foutcoderegels die de officiële Belgische Remeha Storingswijzer op 17 september 2026 voor de Avanta publiceerde.",
+      "De 17 codeverwijzingen uit het officiële Belgische Avanta-overzicht, gelezen op 12 oktober 2026. De aangekondigde tweede archiefpagina herhaalt dezelfde 17 codes. De bron geeft korte meldingen, geen herstelhandelingen of modelvarianten; dit is geen volledige merkcatalogus of toestelhandleiding. Generatie, artikelnummers, toestelbestemming, Belgische compatibiliteit, firmware en nieuwste revisie zijn hier niet vastgesteld.",
     sourceLabel: "Remeha België Storingswijzer - Avanta",
     sourceUrl: "https://storingswijzer.remeha.be/error-codes-products/avanta/",
-    sourcePages: "Online productoverzicht, 17 codes",
+    sourcePages: "Online productoverzicht: 17 codeverwijzingen",
     rows: [
       ["E:0", "Storing van de aanvoer- of retoursensor."],
       ["E:01", "De aanvoertemperatuur ligt boven de maximale werktemperatuur."],
       ["E:02", "De retourtemperatuur is hoger dan de aanvoertemperatuur."],
       ["E:03", "Er is een storing van het bedieningspaneel."],
       ["E:04", "Na maximaal vijf startpogingen is geen vlam gevormd.", "gas"],
-      ["E:05", "Er is een fout in de ionisatiemeting.", "gas"],
+      ["E:05", "Er is een fout in de ionisatie.", "gas"],
       ["E:06", "Het toestel detecteert ongewenste vlamvorming.", "gas"],
       ["E:07", "Er is geen water in de ketel of de pomp draait niet.", "pressure"],
-      ["E:08", "De ventilator is defect of geeft geen correct signaal.", "flue"],
+      ["E:08", "De ventilator is defect.", "flue"],
       ["E:09", "Het toestel detecteert geen water in de ketel.", "pressure"],
       ["E:10", "Er is geen water in de ketel of de pomp draait niet.", "pressure"],
       ["E:11", "De temperatuur in de luchtkast is te hoog.", "flue"],
       ["E:12", "Er is een melding van de warmteterugwinunit."],
-      ["E:13", "De storingsdetectie meldt een interne fout."],
-      ["E:43", "Een ingestelde parameter bevindt zich buiten de toegestane grenzen."],
-      ["E:44", "Een ingestelde parameter bevindt zich buiten de toegestane grenzen."],
-      ["E:45", "Een ingestelde parameter bevindt zich buiten de toegestane grenzen."],
+      ["E:13", "De storingsdetectie meldt een fout."],
+      ["E:43", "Melding over de grenzen van de parameters; dit overzicht specificeert de afwijking niet."],
+      ["E:44", "Melding over de grenzen van de parameters; dit overzicht specificeert de afwijking niet."],
+      ["E:45", "Melding over de grenzen van de parameters; dit overzicht specificeert de afwijking niet."],
     ],
-  }),
+  })),
   createFaultCatalog({
     id: "remeha-calenta-legacy",
     title: "Calenta 15s/25s/28c/35s/40c — E-storingscodes",

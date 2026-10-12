@@ -1,5 +1,56 @@
 # Evidence Register
 
+## 12 October 2026 — Task61 Avanta candidate; Task60 released
+
+The existing Avanta overview now preserves all17 literal codes (E:0 is not E:00)
+and removes six unsupported meaning qualifiers. All17 actions are observation-only
+rather than an overview-invented reset/filling/shutdown procedure. Exact list
+ordinals, source scope, Remeha warning/description and genuine12October lastmod
+are corrected. Other12 Remeha catalogs/642 rows and other12 guides remain intact.
+[Official Avanta overview](https://storingswijzer.remeha.be/error-codes-products/avanta/)
+and its [advertised second page](https://storingswijzer.remeha.be/error-codes-products/avanta/page/2/)
+each contain the same17 literal links/messages, not34 distinct codes. Belgian
+website context is not appliance-model/market/firmware/revision/latest proof;
+the overview has no remedies or audience restriction. Two originals retained:
+30059B/30221B;18 physical snapshots now include12PDFs and6HTML responses for
+five web-original source entries;25PDF-linked catalogs and two declared-only
+legacy Calenta entries remain. Global32catalogs/38assignments/1596display rows/
+1354distinct catalog rows/18source URLs are unchanged.
+
+Genuine accepted51BASE/57 Git-equal files and fresh517 captured before editing.
+Seven source/preservation tests actualRED6fail1pass→GREEN7; adjusted full524,
+lint, productionaudit0, standardTurbopack170 and local82pages/93links/112assets pass.
+Earlier syntax/patch failures and24 historical-guard failures remain recorded;
+named exact inverses preserve original hashes. Native v1 stopped at the
+closed select Home/ArrowDown expectation, with zero completed profiles.
+Adding Enter did not select Avanta. A separate trusted native a/a diagnostic
+selected Avanta then all; v2 changes only the test recipe and unique evidence
+stems, not the website. ONE v2 local native3a6c0b2d four1440/390 JS/noJS profiles
+passes204actualGET/176queries4242query rows/2636SSR rows/eight contacts/66PNGs.
+Independent checker0601102b verifies all retained fields and20 immutable phase
+observations/final events;62transport+27content negative controls pass.
+Eleven final known200RSC aborts remain UNCONFIRMED bodies/unknown cause;
+rating503/homeRSC204 fixtures are not provider proof. Root reads mobile E08/E43
+context and noJS focusedName viewport pixels plus desktop scope. The mobile
+warning crop has sticky-header interference at its top: it does not prove
+whole-warning visibility. No field/physical-AT/provider claim. Sole fresh
+review/exactrelease/live remain Task61 gates.
+
+Task60 is actually released51c9581ea109d50b56654f1e96a9c074a3443e0c:
+[exact CI38184108214](https://github.com/Ilias492610/ABService/actions/runs/38184108214)
+passed517 tests/lint/productionaudit0/standard170/hosted82/93/112; actual matching
+Production7003303958 and7003304437 succeeded23:24:19/23:24:22UTC11October.
+Canonical crawl82/93/112 and unchanged four-profile JS/noJS native604queries/
+eight contacts passed. First60s whole-crawl timeout is retained; the separately
+instrumented unchanged crawl passed in58.116s, without establishing why the
+first timed out. Two pending and two canceled known live RSC requests remain
+UNCONFIRMED bodies/unknown cause. Controlled fixtures are not provider proof.
+One ViessmannIndexNowHTTP200 is receipt, not indexing; no resubmission.
+
+Earlier dated candidate/accepted sections below are history, not current release
+status. Wider WP07/WP12/WP17, Task51 development/lifecycle, owner/account,
+case-consent, French review, field metrics, indexing and business outcomes remain open.
+
 ## 12 October 2026 — Task60 Viessmann local candidate; Task59 released
 
 Task60 reads one original official German HTML (180309B,

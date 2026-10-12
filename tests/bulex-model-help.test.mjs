@@ -1,3 +1,4 @@
+import { beforeAvantaGuide, beforeAvantaRegistry, beforeAvantaMetadata, beforeAvantaHtml } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry, beforeViessmannMetadata, beforeViessmannHtml } from "./fixtures/viessmann-overview-source-safety.mjs";
 import { beforeAtagGuide, beforeAtagRegistry, beforeAtagMetadata, beforeAtagHtml } from "./fixtures/atag-overview-source-safety.mjs";
 import { beforeIthoGuide, beforeIthoRegistry, beforeIthoMetadata, beforeIthoHtml } from "./fixtures/itho-base-cube-source-safety.mjs";
@@ -51,9 +52,9 @@ test("Bulex retains every real catalog row and the F54 general-overview versus F
 test("all thirteen complete metadata, registry and guide objects remain exactly the pre-edit captures", async () => {
   assert.deepEqual(faultGuides.map(({ slug }) => slug), guideBaseline.map(([slug]) => slug));
   for (const [slug, , metadata, registry, guide] of guideBaseline) {
-    assert.equal(sha(beforeBoschScopeMetadata(beforeAcvMetadata(beforeIntergasMetadata(beforeNefitMetadata(beforeFerroliMetadata(beforeIthoMetadata(beforeAtagMetadata(beforeViessmannMetadata(await faultGuideRoute.generateMetadata(paramsFor(slug)), slug), slug), slug), slug), slug), slug), slug), slug)), metadata, `${slug} metadata before only separately tested Task49/50/52/59 descriptions`);
-    assert.equal(sha(beforeBoschScopeRegistry(beforeAcvRegistry(beforeIntergasRegistry(beforeNefitRegistry(beforeFerroliRegistry(beforeIthoRegistry(beforeAtagRegistry(beforeViessmannRegistry(getPageDefinition(`/foutcodes/${slug}`)))))))))), registry, `${slug} registry before only Task49/50/52/59 descriptions/date`);
-    assert.equal(sha(beforeThemaABGuide(beforeBoschScopeGuide(beforeAcvGuide(beforeIntergasGuide(beforeNefitGuide(beforeFerroliGuide(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(getFaultGuide(slug))))))))))), guide, `${slug} entire guide before only separately tested Task48/49/50/52/59 changes`);
+    assert.equal(sha(beforeBoschScopeMetadata(beforeAcvMetadata(beforeIntergasMetadata(beforeNefitMetadata(beforeFerroliMetadata(beforeIthoMetadata(beforeAtagMetadata(beforeViessmannMetadata(beforeAvantaMetadata(await faultGuideRoute.generateMetadata(paramsFor(slug)), slug), slug), slug), slug), slug), slug), slug), slug), slug)), metadata, `${slug} metadata before only separately tested Task49/50/52/59 descriptions`);
+    assert.equal(sha(beforeBoschScopeRegistry(beforeAcvRegistry(beforeIntergasRegistry(beforeNefitRegistry(beforeFerroliRegistry(beforeIthoRegistry(beforeAtagRegistry(beforeViessmannRegistry(beforeAvantaRegistry(getPageDefinition(`/foutcodes/${slug}`))))))))))), registry, `${slug} registry before only Task49/50/52/59 descriptions/date`);
+    assert.equal(sha(beforeThemaABGuide(beforeBoschScopeGuide(beforeAcvGuide(beforeIntergasGuide(beforeNefitGuide(beforeFerroliGuide(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(beforeAvantaGuide(getFaultGuide(slug)))))))))))), guide, `${slug} entire guide before only separately tested Task48/49/50/52/59 changes`);
   }
 });
 
@@ -65,7 +66,7 @@ test("all thirteen actual page renders preserve their full original HTML except 
       assert.equal(sha(beforeThemaABHtml(html).replace(modelHelpHtml, "")), htmlHash, "full Bulex HTML before only the separately tested A/B addition");
     } else {
       assert.doesNotMatch(html, /bulex-model-help-title/);
-      assert.equal(sha(beforeBoschScopeHtml(beforeAcvHtml(beforeIntergasHtml(beforeNefitHtml(beforeFerroliHtml(beforeIthoHtml(beforeAtagHtml(beforeViessmannHtml(html, slug), slug), slug), slug), slug), slug), slug), slug)), htmlHash, `${slug} full HTML preservation before only Task49/50/52/59 source-bound leaves and Task53 marker`);
+      assert.equal(sha(beforeBoschScopeHtml(beforeAcvHtml(beforeIntergasHtml(beforeNefitHtml(beforeFerroliHtml(beforeIthoHtml(beforeAtagHtml(beforeViessmannHtml(beforeAvantaHtml(html, slug), slug), slug), slug), slug), slug), slug), slug), slug)), htmlHash, `${slug} full HTML preservation before only Task49/50/52/59 source-bound leaves and Task53 marker`);
     }
   }
 });

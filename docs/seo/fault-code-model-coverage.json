@@ -73,7 +73,7 @@
     {
       "slug": "remeha",
       "brand": "Remeha",
-      "modelWarning": "Kies uw toestelreeks en generatie: Avanta volgt de officiële Belgische Storingswijzer; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.",
+      "modelWarning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.",
       "explanationRowCount": 659,
       "catalogIds": [
         "remeha-avanta",
@@ -330,6 +330,28 @@
       "pageCount": null,
       "bytes": 180309,
       "sourceBoundary": "One original HTTP200 German HTML without redirect/retry;71 literal table rows/284data cells. Root reads complete context/rows/controls/comparisons. Source service market is not appliance destination; five series mentions are not per-model assignments. Article publication/modification timestamps are not manual/device revision or latest evidence. Table measures professional-only; source48 repetition and58 cause ambiguity preserved."
+    },
+    {
+      "id": "remeha-avanta-overview-html",
+      "url": "https://storingswijzer.remeha.be/error-codes-products/avanta/",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-61-avanta-primary-preflight-20261011T231007Z/original-source.html",
+      "sha256": "7ee9f8efca9f4111ae4705d34b5002c630ef728a5a84819b1d8b5d02212e81c9",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": null,
+      "bytes": 30059,
+      "sourceBoundary": "Original GET200 without redirects/retries; complete Avanta header/breadcrumb/list/footer,17 literal code/message links and24 anchors. Belgian website context, not device fit; no measures or revision. Linked details not fetched."
+    },
+    {
+      "id": "remeha-avanta-pagination-html",
+      "url": "https://storingswijzer.remeha.be/error-codes-products/avanta/page/2/",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-61-avanta-primary-preflight-20261011T231007Z/page2-original-source.html",
+      "sha256": "d025a8faed9685c2e270f40f114ebdd2561c61b4e7f24d57001410e8fcba1989",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": null,
+      "bytes": 30221,
+      "sourceBoundary": "One original advertised page2 GET200 without redirects/retries; same17 codes/messages/detail links/order,25 anchors,title2of2/no next. Observed duplicate response, not cause or universal complete archive proof."
     }
   ],
   "entries": [
@@ -720,10 +742,10 @@
         "remeha"
       ],
       "title": "Avanta",
-      "modelScope": "Alle 17 foutcoderegels die de officiële Belgische Remeha Storingswijzer op 17 september 2026 voor de Avanta publiceerde.",
+      "modelScope": "De 17 codeverwijzingen uit het officiële Belgische Avanta-overzicht, gelezen op 12 oktober 2026. De aangekondigde tweede archiefpagina herhaalt dezelfde 17 codes. De bron geeft korte meldingen, geen herstelhandelingen of modelvarianten; dit is geen volledige merkcatalogus of toestelhandleiding. Generatie, artikelnummers, toestelbestemming, Belgische compatibiliteit, firmware en nieuwste revisie zijn hier niet vastgesteld.",
       "sourceLabel": "Remeha België Storingswijzer - Avanta",
       "sourceURL": "https://storingswijzer.remeha.be/error-codes-products/avanta/",
-      "sourcePages": "Online productoverzicht, 17 codes",
+      "sourcePages": "Online productoverzicht: 17 codeverwijzingen",
       "explanationRowCount": 17,
       "modelFamily": "Avanta",
       "models": null,
@@ -731,20 +753,53 @@
       "documentNumber": null,
       "revision": null,
       "issueDate": null,
-      "market": [
-        "België"
-      ],
-      "language": null,
+      "market": null,
+      "language": "nl-BE",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
-      "scopeSnapshotDate": "17 september 2026",
+      "primarySnapshot": "remeha-avanta-overview-html",
+      "scopeSnapshotDate": "12 oktober 2026",
       "sourceEvidencePath": [
         "docs/seo/evidence-register.md"
       ],
-      "verificationBasis": "Current declared online scope and historical evidence-register record; no retained primary Avanta body reviewed or fresh external verification in Task47.",
+      "verificationBasis": "Task61 two original manufacturer HTML responses. Complete context and17 literal code/message links read on each; page2 repeats the first list. Six meaning qualifiers removed,17 local observation actions/ordinal locators added. No measures/audience/status/reset classification or device-model/revision/market/firmware/latest fit established.",
       "declaredScopePath": "content/additional-fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim.",
+      "sourceServiceMarket": "België",
+      "paginationSnapshot": "remeha-avanta-pagination-html",
+      "literalListEntryCount": 17,
+      "literalCodes": [
+        "E:0",
+        "E:01",
+        "E:02",
+        "E:03",
+        "E:04",
+        "E:05",
+        "E:06",
+        "E:07",
+        "E:08",
+        "E:09",
+        "E:10",
+        "E:11",
+        "E:12",
+        "E:13",
+        "E:43",
+        "E:44",
+        "E:45"
+      ],
+      "documentAnchorCount": 24,
+      "paginationDocumentAnchorCount": 25,
+      "codeLinkControlCount": 17,
+      "visiblePaginationControlCount": 0,
+      "paginationDuplicateObserved": true,
+      "literalHtmlTableCount": 0,
+      "controller": null,
+      "firmwareCompatibility": null,
+      "currentBelgianVariantCompatibility": null,
+      "newestEdition": null,
+      "audienceRestriction": null,
+      "resetRule": null,
+      "boilerDestinationMarket": null
     },
     {
       "id": "remeha-calenta-legacy",

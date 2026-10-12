@@ -1,4 +1,5 @@
 import test from "node:test";
+import { beforeAvantaCatalog } from "./fixtures/avanta-overview-source-safety.mjs";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { faultGuides } from "../content/fault-guides.mjs";
@@ -14,7 +15,7 @@ test("Remeha retains the original five component-bound Ace-Matic source tables a
   assert.deepEqual(guide.catalogs.slice(0, 3).map(({ id, codes }) => [id, codes.length]), [
     ["remeha-avanta", 17], ["remeha-calenta-legacy", 23], ["remeha-calenta-legacy-blocking", 19],
   ]);
-  assert.equal(createHash("sha256").update(JSON.stringify(guide.catalogs.slice(0, 3))).digest("hex"), legacyCatalogDigest);
+  assert.equal(createHash("sha256").update(JSON.stringify(guide.catalogs.slice(0, 3).map(beforeAvantaCatalog))).digest("hex"), legacyCatalogDigest);
 
   // Import only after the public guide assertion so RED proves missing behavior.
   const { calentaAceMaticSource, calentaAceMaticCatalogs } = await import("../content/remeha-calenta-ace-matic.mjs");

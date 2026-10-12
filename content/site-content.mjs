@@ -218,11 +218,11 @@ export const pageRegistry = Object.freeze([
   },
   {
     path: "/foutcodes/remeha",
-    lastModified: "2026-10-11",
+    lastModified: "2026-10-12",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Remeha foutcodes: Avanta, Calenta en Ace-Matic | AB Service",
     description:
-      "Zoek Remeha Avanta-, Calenta- en Calenta Ace-Matic-codes. Kies toestelreeks en component, controleer de officiële bron en lees veilige eerste stappen.",
+      "Remeha foutcodes voor Avanta, Calenta en Ace-Matic. Vergelijk de volledige code met de juiste bron, toestelreeks en component; lees veilige eerste stappen.",
     changeFrequency: "monthly",
     priority: 0.6,
   },

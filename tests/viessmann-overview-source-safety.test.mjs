@@ -1,3 +1,4 @@
+import { beforeAvantaRegistry, beforeAvantaGuide, beforeAvantaManifestEntry, beforeAvantaManifestMirror } from "./fixtures/avanta-overview-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
@@ -51,12 +52,12 @@ test("Viessmann metadata uses genuine12October date and only restores its accept
   assert.equal(p.lastModified,"2026-10-12");assert.equal(m.description,f.description);assert.equal(m.openGraph.description,f.description);assert.equal(m.twitter.description,f.description);
   assert.equal(m.alternates.canonical,"https://www.abservice24.be/foutcodes/viessmann");assert.equal(m.robots.index,true);
   assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-12");
-  assert.equal(hash(beforeViessmannMetadata(m,"viessmann")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeViessmannRegistry)),f.preservation.allRegistry);
+  assert.equal(hash(beforeViessmannMetadata(m,"viessmann")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeAvantaRegistry).map(beforeViessmannRegistry)),f.preservation.allRegistry);
 });
 test("all71 SSR cards plus whole13 guides restore the genuine accepted6b128bc leaves",async()=>{
   const html=await renderFaultGuide("viessmann");assert.equal((html.match(/class="fault-code-card"/g)||[]).length,71);assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);
   assert.equal(hash(beforeViessmannHtml(html,"viessmann")),f.preservation.html);assert.equal(hash(beforeViessmannGuide(guide)),f.preservation.guide);assert.equal(hash(beforeViessmannGuide(guide).codes),f.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="viessmann")),f.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeViessmannGuide)),f.preservation.allGuides);
+  assert.equal(hash(faultGuides.filter(g=>g.slug!=="viessmann").map(beforeAvantaGuide)),f.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeAvantaGuide).map(beforeViessmannGuide)),f.preservation.allGuides);
 });
 test("Viessmann manifest pins one originalHTML71literalrows without appliance or revision inventions",async()=>{
   const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));const e=m.entries.find(e=>e.id===f.id),s=m.snapshots.find(s=>s.id==="viessmann-overview-html");
@@ -65,5 +66,5 @@ test("Viessmann manifest pins one originalHTML71literalrows without appliance or
   assert.equal(e.articlePublishedAt,"2024-05-30T14:21:20.867Z");assert.equal(e.articleModifiedAt,"2026-09-14T08:57:39.675Z");
   for(const k of ["models","revision","issueDate","market","articleNumbers","firmwareCompatibility","currentBelgianVariantCompatibility","newestEdition","boilerDestinationMarket"])assert.equal(e[k],null,k);
   assert.equal(s?.sha256,f.sha256);assert.equal(s?.bytes,f.bytes);for(const k of ["pageCount","expectedSha256","hashMatchesPriorRecord"])assert.equal(s?.[k],null);
-  assert.equal(hash(m.entries.filter(e=>e.id!==f.id)),f.preservation.otherEntries);assert.equal(hash(m.guides.filter(g=>g.slug!=="viessmann")),f.preservation.otherMirrors);assert.equal(hash(m.snapshots.filter(s=>s.id!=="viessmann-overview-html")),f.preservation.oldSnapshots);
+  assert.equal(hash(m.entries.filter(e=>e.id!==f.id).map(beforeAvantaManifestEntry)),f.preservation.otherEntries);assert.equal(hash(m.guides.filter(g=>g.slug!=="viessmann").map(beforeAvantaManifestMirror)),f.preservation.otherMirrors);assert.equal(hash(m.snapshots.filter(s=>!["viessmann-overview-html","remeha-avanta-overview-html","remeha-avanta-pagination-html"].includes(s.id))),f.preservation.oldSnapshots);
 });

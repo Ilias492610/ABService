@@ -1,4 +1,5 @@
 import test from "node:test";
+import { beforeAvantaCatalog } from "./fixtures/avanta-overview-source-safety.mjs";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { faultGuides } from "../content/fault-guides.mjs";
@@ -12,7 +13,7 @@ const row = (suffix, code) => bySuffix(suffix)?.codes.find((entry) => entry.code
 const digest = (value) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
 
 test("25L addition preserves all eight original catalogs completely", () => {
-  assert.equal(digest(guide.catalogs.slice(0, 8)), previousCatalogDigest);
+  assert.equal(digest(guide.catalogs.slice(0, 8).map(beforeAvantaCatalog)), previousCatalogDigest);
 });
 
 test("25L public guide exposes its five independently inventoried tables with own source attribution", async () => {

@@ -1,4 +1,5 @@
 import test from "node:test";
+import { avantaFacts } from "./fixtures/avanta-overview-source-safety.mjs";
 import assert from "node:assert/strict";
 import { getPageDefinition, pageRegistry } from "../content/site-content.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
@@ -7,7 +8,7 @@ import { beforeAcvRegistry } from "./fixtures/acv-prestige-source-safety.mjs";
 test("Remeha metadata includes the documented Ace-Matic family and no universal scope", () => {
   const entry = getPageDefinition("/foutcodes/remeha");
   assert.equal(entry.title, "Remeha foutcodes: Avanta, Calenta en Ace-Matic | AB Service");
-  assert.equal(entry.description, "Zoek Remeha Avanta-, Calenta- en Calenta Ace-Matic-codes. Kies toestelreeks en component, controleer de officiële bron en lees veilige eerste stappen.");
+  assert.equal(entry.description, avantaFacts.description);
   assert.equal(entry.status, "published");
   const metadata = buildPageMetadata(entry);
   assert.equal(metadata.alternates.canonical, "https://www.abservice24.be/foutcodes/remeha");
@@ -19,7 +20,7 @@ test("Remeha metadata includes the documented Ace-Matic family and no universal 
 
 test("Remeha sitemap records the actual substantive catalog change without dating unrelated guides", () => {
   const entries = buildSitemapEntries(pageRegistry);
-  assert.equal(entries.find(e => e.url === "https://www.abservice24.be/foutcodes/remeha").lastModified, "2026-10-11");
+  assert.equal(entries.find(e => e.url === "https://www.abservice24.be/foutcodes/remeha").lastModified, "2026-10-12");
   for (const path of ["/foutcodes/acv"]) {
     // Only independently tested Task50's real ACV modification is projected;
     // the original unrelated-page capture remains unchanged.
