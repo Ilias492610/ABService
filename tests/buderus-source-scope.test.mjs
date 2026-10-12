@@ -1,3 +1,9 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Historical contracts subtract only the independently tested Task77 addition.
@@ -14,8 +20,8 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { buderusCatalogs } from "../content/additional-fault-catalogs.mjs";
 import { bulexCatalogs } from "../content/fault-catalogs.mjs";
-import { faultGuides, getFaultGuide } from "../content/fault-guides.mjs";
-import { pageRegistry, getPageDefinition } from "../content/site-content.mjs";
+import { faultGuides as liveFaultGuides, getFaultGuide as liveGetFaultGuide } from "../content/fault-guides.mjs";
+import { pageRegistry as livePageRegistry, getPageDefinition as liveGetPageDefinition } from "../content/site-content.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { buildFaultCodeAliases } from "../libs/fault-code-aliases.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";

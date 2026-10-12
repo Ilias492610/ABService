@@ -44,7 +44,7 @@ test("the bounded model inventory matches every real guide assignment, scope, so
 
 test("the inventory keeps unknown fields and retained evidence distinct rather than declaring a fresh audit", () => {
   // One actual Task62 PDF now supports both previously declared legacy tables.
-  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 30);
+  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 33);
   assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 0);
   assert.equal(manifest.snapshots.filter(s => s.hashMatchesPriorRecord === true).length, 7);
   assert.equal(manifest.snapshots.find(s => s.id === "vaillant-public-html").expectedSha256, null);
@@ -118,6 +118,6 @@ test("the inventory keeps unknown fields and retained evidence distinct rather t
   assert.equal(nefitSnapshot.pageCount, nefitFacts.pageCount);
   assert.equal(nefitSnapshot.expectedSha256, null);
   assert.equal(nefitSnapshot.hashMatchesPriorRecord, null);
-  // Task80 adds two original ATAG manuals, preserving all20 prior originals.
-  assert.equal(manifest.snapshots.length, 22);
+  // Task83 adds two paired Tzerra originals, preserving all22 prior originals.
+  assert.equal(manifest.snapshots.length, 24);
 });

@@ -14,6 +14,7 @@ import { atagFacts } from "./fixtures/atag-overview-source-safety.mjs";
 const bySlug = (slug) => faultGuides.find((guide) => guide.slug === slug);
 const gb172 = JSON.parse(readFileSync(new URL("./fixtures/buderus-gb172i2-source-facts.json", import.meta.url), "utf8"));
 const atagManuals = JSON.parse(readFileSync(new URL("./fixtures/atag-manuals-source-facts.json", import.meta.url), "utf8"));
+const tzerra = JSON.parse(readFileSync(new URL("./fixtures/tzerra-ace-matic-source-facts.json", import.meta.url), "utf8"));
 
 test("all published fault guides use official sources and explicit model caveats", () => {
   assert.deepEqual(
@@ -46,7 +47,7 @@ test("all published fault guides use official sources and explicit model caveats
       assert.ok(catalog.sourceUrl.startsWith("https://"));
       const hostname = new URL(catalog.sourceUrl).hostname;
       if (hostname === "edge.sitecorecloud.io") {
-        assert.ok([sourceFacts.sourceUrl, source25L.sourceUrl].includes(catalog.sourceUrl));
+        assert.ok([sourceFacts.sourceUrl, source25L.sourceUrl, tzerra.sources.installer.URL].includes(catalog.sourceUrl));
       } else assert.match(
         hostname,
         /(^|\.)(vaillant\.be|bulex\.be|bosch-homecomfort\.com|remeha\.be|remehatools\.be|boschtt-documents\.com|boschhc-documents\.com|viessmann\.de|acv\.com|intergas-verwarming\.nl|nefit-bosch\.nl|atagwarmte\.nl|compano\.com|ferroli\.com)$/
@@ -63,7 +64,7 @@ test("catalog coverage matches every row in the cited manufacturer tables", () =
   assert.equal(bySlug("bulex").codeEntryCount, 74);
   assert.equal(bySlug("bosch").codeEntryCount, 242);
   assert.equal(bySlug("junkers").codeEntryCount, 242);
-  assert.equal(bySlug("remeha").codeEntryCount, 659);
+  assert.equal(bySlug("remeha").codeEntryCount, 756);
   assert.equal(bySlug("buderus").codeEntryCount, 121);
   assert.equal(bySlug("viessmann").codeEntryCount, 71);
   assert.equal(bySlug("acv").codeEntryCount, 24);
@@ -98,7 +99,9 @@ test("every code row is complete, safely worded and unique within its model tabl
         assert.ok(entry.userAction.trim().length >= 80);
         // Itho/ATAG's independently read diagnostic locators are narrower than the
         // whole display/control chapter; the other catalogs keep their contract.
-        const sourcePage = catalog.id === ithoFacts.id
+        const sourcePage = tzerra.catalogs.some(c => c.id === catalog.id)
+          ? tzerra.catalogs.find(c => c.id === catalog.id).rows.find(r => r.code === entry.code)?.sourcePage
+          : catalog.id === ithoFacts.id
           ? ithoFacts.rowChanges.find(row => row.beforeCode === entry.code)?.after.sourcePage
           : atagManuals.catalogs.some(c => c.id === catalog.id)
             ? atagManuals.catalogs.find(c => c.id === catalog.id).rows.find(row => row.code === entry.code)?.sourcePage

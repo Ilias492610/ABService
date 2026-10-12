@@ -1,5 +1,61 @@
 # WP04–WP05: accountstatus en uitgevoerde acties
 
+## 12 oktober 2026 — Task81/82: accountgrenzen en Tzerra-bronvoorbereiding
+
+Abders bestaande native Chrome-venster is gebruikt; geen ander Google-account.
+De eerste Bing-Sitemaps-uitlezing om14:13:39Z toont één bekende sitemap,
+nul fouten/waarschuwingen, `Succes` en79 gevonden URLs; zowel indiening als crawl
+staan op10/10/2026. Dit is uitsluitend de daadwerkelijke AX-weergave vóór één
+refresh. Het native beeld was leeg; na verversing was de tabel niet meer
+uitleesbaar. Geen verse admin-, duurzame refresh- of volledige indexatieclaim.
+De huidige publieke sitemap telt afzonderlijk80 unieke URLs (HTTP200,14:33:44Z);
+die webmeting is geen Bing-ontvangstbewijs of reden voor een duplicaatinzending.
+
+De bestaande Google-diensteditor bleef leeg, ook na één geobserveerde
+vensteractivering. Geen veldsave, login, nieuwe rechten, herindiening of
+herhaalde ontgrendelvraag. Een oorzaak zoals vergrendeling is niet vastgesteld.
+Anonieme Maps-controle14:22:56Z, inclusief pixels: Voorzorgstraat12A blijft
+publiek zichtbaar, met24uur, correct nummer/site en5,0/44. Dat bewijst geen
+afwijzing van de eerdere adresverberging. Moderatie, nieuwe dienstteksten,
+badge-afwezigheid en de volledige fotogalerij blijven ongeverifieerd.
+Tijdelijke publieke tab gesloten; wettelijke website-/KBO-gegevens behouden.
+
+Parallel zijn de twee werkelijk door de [Belgische Tzerra Ace-Matic-productpagina](https://www.remeha.be/nl-BE/product/tzerra-ace-matic)
+gekoppelde NL-originalen bewaard: installatieboek96 pagina's/9.243.069bytes en
+gebruikersboek32 pagina's/706.155bytes, beideHTTP200. Hoofdagent heeft38 volledige
+relevante pagina's persoonlijk visueel gelezen, inclusief alle diagnosetabellen.
+Gedrukte identiteiten7875188 en7875187, elk `01 - 20062024`; covers noemen
+België/Luxemburg,28c/28cG31/35c/25s. Controllerkop is letterlijk `CU-GH16`.
+Installateurstabellen59–61 en gebruikerstabellen16–18 bevatten dezelfde97
+letterlijke codes in dezelfde volgorde:18A,33H,46E. Dit zijn bronrijen,
+niet97 nieuwe websitecodes, unieke storingen, zoekvolume of alle Tzerra-generaties.
+
+Bronchecker14:45:03Z geslaagd: oorspronkelijke bytes/SHA/paginatelling, echte
+productlinks, elke code/pagina en bronpaarvolgorde gecontroleerd. Eerste private
+checkerfout kwam door Python-dictionaryheaders versus HTTP-headerregels;
+veilig als literal gelezen, geen originele data of codeverwachtingen aangepast.
+De capturehelper vereiste voor oude grote PNGs een buffer op gemeten Git-blobgrootte;
+die infrastructuurfout is geen afbeelding-/websitebug. Volledige originele
+artefacten, fouten en38 paginaweergaven blijven in het recoveryledger behouden.
+
+Professionele remedies in een gebruikersboek worden geen doe-het-zelfadvies.
+A/H-terminologie verschilt tussen gebruiksp19 en installatiep81; H02.00 is een
+resettoestand. OpenTherm254 is generiek. LetterlijkeH03.254/H03.54 en
+E04.250/E04.50/E04.254/E04.54 worden niet stilzwijgend samengevoegd.
+Resetknop/-tijden en drukdoelen verschillen per bronpassage; geen universele
+handeling afgeleid. E04.29-maximale resets, kalibratie, gas, elektrische delen,
+veiligheidscontacten en configuratie blijven professioneel. Typeplaatje is
+een voorbeeld, geen concrete artikelparen; newest/serial/firmwarefit onbekend.
+
+Websitecode, manifest, metadata/datums, publicatiestaten en137 afvinkregels
+ongewijzigd. Geen nieuwe producttests/build/crawl/release of IndexNow uitgevoerd:
+Task80-resultaten blijven gedateerd bewijs voor dat onveranderde product.
+Dit is beperkte accountuitlezing en bronvoorbereiding, geen geheleWP04/WP05/WP07.
+Eerstvolgende zelfstandige producttaak:97 bronbetekenissen en expliciete veilige
+acties vastleggen, daarna de drie CU-GH16-tabellen afzonderlijk testen/integreren
+binnen de bestaande Remeha-gids, met behoud van alle eerdere modellen.
+Account-/eigenaar-/Franse review-/field-/AT-/focus-/resultaatgates blijven open.
+
 ## Actuele Bing-beheerbevestiging en Maps-controle — 12 oktober
 
 De gerichte hersteltoestemming is ontvangen. Na één agent-toevoegpoging heeft

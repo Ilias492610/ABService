@@ -1,3 +1,6 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraHtml} from "./fixtures/tzerra-ace-matic-history.mjs";
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsHtml } from "./fixtures/atag-manuals-history.mjs";
 // Historical contracts subtract only the independently tested Task77 addition.
@@ -13,7 +16,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { createHarness } from "./helpers/wp12-runtime.mjs";
-import { renderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
+import { renderFaultGuide as liveRenderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
 import { beforeIntergasHtml } from "./fixtures/intergas-prestige-source-context.mjs";
 import { readingMarker, beforeFaultReadingHtml, acceptedReadingHtmlHashes } from "./fixtures/fault-reading-clearance.mjs";
 const visible=h=>[h.all(".whatsapp-button").length,h.all(".google-rating-popup").length];

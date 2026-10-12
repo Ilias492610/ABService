@@ -1,3 +1,10 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide, beforeAtagManualsManifest, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Reconstruct only the separately verified Task77 addition for historical hashes.
@@ -10,11 +17,11 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
-import { faultGuides, getFaultGuide } from "../content/fault-guides.mjs";
-import { pageRegistry, getPageDefinition } from "../content/site-content.mjs";
+import { faultGuides as liveFaultGuides, getFaultGuide as liveGetFaultGuide } from "../content/fault-guides.mjs";
+import { pageRegistry as livePageRegistry, getPageDefinition as liveGetPageDefinition } from "../content/site-content.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { filterFaultCatalogs, getFaultDisplayStateNotice } from "../libs/fault-search.mjs";
-import { renderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
+import { renderFaultGuide as liveRenderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
 import { ithoFacts as f, beforeIthoGuide, beforeIthoRegistry, beforeIthoMetadata, beforeIthoHtml } from "./fixtures/itho-base-cube-source-safety.mjs";
 
 const guide = getFaultGuide("itho-daalderop"), catalog = guide.catalogs[0];
@@ -123,7 +130,7 @@ test("all26 SSR cards and all13 guide leaves restore exact genuine c7b44be captu
 });
 
 test("Itho manifest records original document ID,26keys30entries and explicit devicefit unknowns", async () => {
-  const m = beforeGb172Manifest(beforeAtagManualsManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"))));
+  const m = beforeGb172Manifest(beforeAtagManualsManifest(beforeTzerraManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")))));
   const e = m.entries.find(e=>e.id===f.id), s=m.snapshots.find(s=>s.id==="itho-base-cube-pdf");
   assert.equal(e.modelScope,f.scope); assert.equal(e.sourceLabel,f.label); assert.equal(e.sourcePages,f.pages);
   assert.deepEqual(e.models,f.models); assert.equal(e.market,"NL"); assert.equal(e.language,"nl");

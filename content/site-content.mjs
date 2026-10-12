@@ -220,9 +220,9 @@ export const pageRegistry = Object.freeze([
     path: "/foutcodes/remeha",
     lastModified: "2026-10-12",
     status: CONTENT_STATUS.PUBLISHED,
-    title: "Remeha foutcodes: Avanta, Calenta en Ace-Matic | AB Service",
+    title: "Remeha foutcodes: Avanta, Calenta en Tzerra | AB Service",
     description:
-      "Remeha foutcodes voor Avanta, Calenta en Ace-Matic. Vergelijk de volledige code met de juiste bron, toestelreeks en component; lees veilige eerste stappen.",
+      "Zoek Remeha foutcodes per Avanta-, Calenta- of Tzerra Ace-Matic-bron. Bekijk model, revisie, volledige melding en veilige vervolgstap; geen universele diagnose.",
     changeFrequency: "monthly",
     priority: 0.6,
   },

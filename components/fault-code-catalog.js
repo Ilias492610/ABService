@@ -82,6 +82,13 @@ export default function FaultCodeCatalog({ brand, catalogs }) {
               <p className="fault-source-line">
                 Bron: <a href={item.sourceUrl} target="_blank" rel="noreferrer">{item.sourceLabel} ↗</a>
                 {item.sourcePages ? `, ${item.sourcePages}` : ""}.
+                {item.companionSource ? (
+                  <>
+                    <br />
+                    Gebruikersbron: <a href={item.companionSource.sourceUrl} target="_blank" rel="noreferrer">{item.companionSource.sourceLabel} ↗</a>
+                    {item.companionSource.sourcePages ? `, ${item.companionSource.sourcePages}` : ""}.
+                  </>
+                ) : null}
               </p>
             </section>
           ))}

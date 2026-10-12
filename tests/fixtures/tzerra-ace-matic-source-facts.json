@@ -1,0 +1,1415 @@
+{
+  "kind": "independent root source-paraphrase and safe-action expectation, authored before product",
+  "sources": {
+    "installer": {
+      "directory": "task-82-tzerra-installer",
+      "URL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Installatie--en-servicehandleiding-NL.pdf",
+      "byteLength": 9243069,
+      "sha256": "5527f0e4a6ff599cd4339fe8ee8845231de53d1f88b3004200bf26ccbda8eb91",
+      "physicalPageCount": 96,
+      "printedIdentifier": "7875188 - 01 - 20062024",
+      "observedPrintedDate": "2024-06-20",
+      "serverLastModifiedNotManualEdition": "2025-09-24",
+      "rootViewedPages": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        10,
+        19,
+        20,
+        24,
+        73,
+        74,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        96
+      ],
+      "audiencePage": 7,
+      "technicalModelsPage": 9,
+      "genericTypeplateNotArticlePairsPage": 24,
+      "statusTablesNotFaults": [
+        56,
+        57,
+        58
+      ],
+      "statusPages": [
+        73,
+        74
+      ],
+      "faultClassificationPage": 81,
+      "controllerAndOpenTherm254Page": 82,
+      "tables": {
+        "A": {
+          "number": 59,
+          "pages": [
+            82,
+            83
+          ]
+        },
+        "H": {
+          "number": 60,
+          "pages": [
+            83,
+            84,
+            85,
+            86
+          ]
+        },
+        "E": {
+          "number": 61,
+          "pages": [
+            86,
+            87,
+            88,
+            89,
+            90
+          ]
+        }
+      },
+      "codesByPage": {
+        "82": [
+          "A00.34",
+          "A02.06",
+          "A02.18",
+          "A02.33",
+          "A02.34",
+          "A02.36",
+          "A02.37",
+          "A02.45",
+          "A02.46",
+          "A02.48",
+          "A02.49",
+          "A02.55",
+          "A02.76",
+          "A02.80",
+          "A05.29",
+          "A05.30"
+        ],
+        "83": [
+          "A05.95",
+          "A08.02",
+          "H00.42",
+          "H00.81",
+          "H01.00",
+          "H01.05",
+          "H01.08",
+          "H01.14",
+          "H01.18",
+          "H01.21",
+          "H02.00"
+        ],
+        "84": [
+          "H02.02",
+          "H02.03",
+          "H02.04",
+          "H02.05",
+          "H02.07",
+          "H02.12",
+          "H02.31",
+          "H02.38",
+          "H02.70",
+          "H03.00",
+          "H03.01",
+          "H03.02"
+        ],
+        "85": [
+          "H03.05",
+          "H03.08",
+          "H03.09",
+          "H03.17",
+          "H03.26",
+          "H03.28",
+          "H03.31",
+          "H03.254",
+          "H03.54",
+          "H20.36"
+        ],
+        "86": [
+          "H20.39",
+          "H20.40",
+          "E00.04",
+          "E00.05",
+          "E00.06",
+          "E00.07",
+          "E00.16",
+          "E00.17",
+          "E00.40",
+          "E00.41",
+          "E00.44",
+          "E00.45"
+        ],
+        "87": [
+          "E01.12",
+          "E01.17",
+          "E01.20",
+          "E02.15",
+          "E02.17",
+          "E02.32",
+          "E02.35",
+          "E02.39",
+          "E02.47",
+          "E04.00",
+          "E04.01",
+          "E04.02",
+          "E04.03",
+          "E04.04",
+          "E04.05"
+        ],
+        "88": [
+          "E04.06",
+          "E04.07",
+          "E04.10",
+          "E04.11",
+          "E04.12",
+          "E04.13",
+          "E04.14",
+          "E04.15",
+          "E04.17",
+          "E04.18"
+        ],
+        "89": [
+          "E04.23",
+          "E04.24",
+          "E04.25",
+          "E04.26",
+          "E04.27",
+          "E04.28"
+        ],
+        "90": [
+          "E04.29",
+          "E04.50",
+          "E04.54",
+          "E04.250",
+          "E04.254"
+        ]
+      }
+    },
+    "user": {
+      "directory": "task-82-tzerra-user",
+      "URL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Gebruikershandleiding-NL.pdf",
+      "byteLength": 706155,
+      "sha256": "6e04692b8531db3b9a0fad012a29c9d496cbc41c057bc745458b7691a595e4a6",
+      "physicalPageCount": 32,
+      "printedIdentifier": "7875187 - 01 - 20062024",
+      "observedPrintedDate": "2024-06-20",
+      "rootViewedPages": [
+        1,
+        5,
+        6,
+        7,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        32
+      ],
+      "audiencePage": 6,
+      "professionalMaintenancePages": [
+        5,
+        6,
+        18
+      ],
+      "tables": {
+        "A": {
+          "number": 16,
+          "pages": [
+            20
+          ]
+        },
+        "H": {
+          "number": 17,
+          "pages": [
+            21,
+            22,
+            23
+          ]
+        },
+        "E": {
+          "number": 18,
+          "pages": [
+            24,
+            25,
+            26,
+            27,
+            28
+          ]
+        }
+      },
+      "codesByPage": {
+        "20": [
+          "A00.34",
+          "A02.06",
+          "A02.18",
+          "A02.33",
+          "A02.34",
+          "A02.36",
+          "A02.37",
+          "A02.45",
+          "A02.46",
+          "A02.48",
+          "A02.49",
+          "A02.55",
+          "A02.76",
+          "A02.80",
+          "A05.29",
+          "A05.30",
+          "A05.95",
+          "A08.02"
+        ],
+        "21": [
+          "H00.42",
+          "H00.81",
+          "H01.00",
+          "H01.05",
+          "H01.08",
+          "H01.14",
+          "H01.18",
+          "H01.21",
+          "H02.00",
+          "H02.02",
+          "H02.03"
+        ],
+        "22": [
+          "H02.04",
+          "H02.05",
+          "H02.07",
+          "H02.12",
+          "H02.31",
+          "H02.38",
+          "H02.70",
+          "H03.00",
+          "H03.01",
+          "H03.02",
+          "H03.05"
+        ],
+        "23": [
+          "H03.08",
+          "H03.09",
+          "H03.17",
+          "H03.26",
+          "H03.28",
+          "H03.31",
+          "H03.254",
+          "H03.54",
+          "H20.36",
+          "H20.39",
+          "H20.40"
+        ],
+        "24": [
+          "E00.04",
+          "E00.05",
+          "E00.06",
+          "E00.07",
+          "E00.16",
+          "E00.17",
+          "E00.40",
+          "E00.41",
+          "E00.44",
+          "E00.45",
+          "E01.12"
+        ],
+        "25": [
+          "E01.17",
+          "E01.20",
+          "E02.15",
+          "E02.17",
+          "E02.32",
+          "E02.35",
+          "E02.39",
+          "E02.47",
+          "E04.00",
+          "E04.01",
+          "E04.02",
+          "E04.03",
+          "E04.04",
+          "E04.05",
+          "E04.06"
+        ],
+        "26": [
+          "E04.07",
+          "E04.10",
+          "E04.11",
+          "E04.12",
+          "E04.13",
+          "E04.14",
+          "E04.15",
+          "E04.17",
+          "E04.18",
+          "E04.23"
+        ],
+        "27": [
+          "E04.24",
+          "E04.25",
+          "E04.26",
+          "E04.27",
+          "E04.28",
+          "E04.29",
+          "E04.50",
+          "E04.54"
+        ],
+        "28": [
+          "E04.250",
+          "E04.254"
+        ]
+      }
+    }
+  },
+  "models": [
+    "28c",
+    "28c G31",
+    "35c",
+    "25s"
+  ],
+  "market": [
+    "België",
+    "Luxemburg"
+  ],
+  "language": "nl",
+  "controller": "CU-GH16",
+  "catalogs": [
+    {
+      "id": "remeha-tzerra-ace-matic-cu-warnings",
+      "title": "Tzerra Ace-Matic — CU-GH16 — waarschuwingen",
+      "sourceLabel": "Remeha België — Tzerra Ace-Matic installatie- en servicehandleiding 7875188-01-20062024",
+      "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Installatie--en-servicehandleiding-NL.pdf",
+      "scope": "Uitsluitend Tzerra Ace-Matic 28c, 28c G31, 35c en 25s voor België en Luxemburg, CU-GH16, installatieboek 7875188-01-20062024 tabel 59, gecontroleerd tegen gebruikersboek 7875187-01-20062024 tabel 16. De installatiebron noemt A een waarschuwing; volgens de gebruikersbron kan het toestel daarbij blijven werken. Deze editie bevat 18 letterlijke bronrijen, niet alle merkcodes. De aanwezige opties en aansluitingen moeten worden vastgesteld, waaronder bij H02.70 het SCB-09-accessoire; dit is geen SCB-09-, SCB-10- of CU-GH-21-catalogus. Niet voor legacy Tzerra, Tzerra Ace, Calenta, Avanta, Quinta of andere revisies. Artikelnummers, serials, firmware, actuele toestelcompatibiliteit en nieuwste editie zijn niet vastgesteld. Lees de volledige toestelcode: generiek OpenTherm 254 is geen alias. Geen universele druk-, vul- of resethandeling afgeleid uit verschillende bronpassages.",
+      "sourcePages": "installatie tabel 59, p. 82–83; gebruiker tabel 16, p. 20",
+      "installerTable": 59,
+      "userTable": 16,
+      "rows": [
+        {
+          "code": "A00.34",
+          "meaning": "De regeling vindt de buitentemperatuursensor niet.",
+          "action": "observe",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.06",
+          "meaning": "Het verwarmingscircuit meldt een lage waterdruk.",
+          "action": "pressure",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.18",
+          "meaning": "De toestelconfiguratie is niet juist ingesteld; de professionele controle betreft CN1/CN2.",
+          "action": "configuration",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.33",
+          "meaning": "De toegestane duur voor het bijvullen is overschreden.",
+          "action": "pressure",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.34",
+          "meaning": "Het minimale interval tussen twee aanvragen voor automatisch vullen is nog niet verstreken.",
+          "action": "pressure",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.36",
+          "meaning": "Een functioneel apparaat is niet meer verbonden.",
+          "action": "configuration",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.37",
+          "meaning": "Een passief functioneel apparaat is niet meer verbonden.",
+          "action": "configuration",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.45",
+          "meaning": "De regeling meldt een verbindingsfout.",
+          "action": "configuration",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.46",
+          "meaning": "De regeling meldt een fout in de prioriteit van een apparaat.",
+          "action": "configuration",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.48",
+          "meaning": "De functie van een unit is niet correct geconfigureerd; de professionele controle omvat externe elektrische aansluitingen.",
+          "action": "configuration",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.49",
+          "meaning": "Een knooppunt kon niet worden geïnitialiseerd; de professionele controle omvat externe elektrische aansluitingen.",
+          "action": "configuration",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.55",
+          "meaning": "Het serienummer ontbreekt of wordt niet als correct herkend.",
+          "action": "observe",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.76",
+          "meaning": "Het interne geheugen is gereserveerd voor volledige aanpassing van instellingen; verdere wijzigingen zijn niet mogelijk. De bron noemt dit niet een vastgesteld geheugendefect.",
+          "action": "configuration",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A02.80",
+          "meaning": "De communicatiebus mist de vereiste afsluitweerstand.",
+          "action": "configuration",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A05.29",
+          "meaning": "De gasdruk ligt onder de toegestane grens; deze rij noemt geen numerieke gasdrukwaarde.",
+          "action": "combustion",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A05.30",
+          "meaning": "De controle van de gasdruk is niet geslaagd.",
+          "action": "combustion",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 82,
+          "sourcePage": "installatie tabel 59, p. 82; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A05.95",
+          "meaning": "Het vlamsignaal is kort onderbroken. De oplossingscel van deze bronrij is leeg; daaruit volgt geen herstelhandeling.",
+          "action": "combustion",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 59, p. 83; gebruiker tabel 16, p. 20"
+        },
+        {
+          "code": "A08.02",
+          "meaning": "De regeling meldt dat de douchetijd voorbij is; deze rij geeft geen diagnose van oververhitting of een defecte flowsensor.",
+          "action": "observe",
+          "sourceClass": "A",
+          "userPage": 20,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 59, p. 83; gebruiker tabel 16, p. 20"
+        }
+      ]
+    },
+    {
+      "id": "remeha-tzerra-ace-matic-cu-temporary",
+      "title": "Tzerra Ace-Matic — CU-GH16 — tijdelijke stops",
+      "sourceLabel": "Remeha België — Tzerra Ace-Matic installatie- en servicehandleiding 7875188-01-20062024",
+      "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Installatie--en-servicehandleiding-NL.pdf",
+      "scope": "Uitsluitend Tzerra Ace-Matic 28c, 28c G31, 35c en 25s voor België en Luxemburg, CU-GH16, installatieboek 7875188-01-20062024 tabel 60, gecontroleerd tegen gebruikersboek 7875187-01-20062024 tabel 17. De installatiebron noemt H een tijdelijke stop; automatische hervatting of een procedurestatus is geen bewijs dat de installatie probleemloos werkt. Deze editie bevat 33 letterlijke bronrijen, niet alle merkcodes. De aanwezige opties en aansluitingen moeten worden vastgesteld, waaronder bij H02.70 het SCB-09-accessoire; dit is geen SCB-09-, SCB-10- of CU-GH-21-catalogus. Niet voor legacy Tzerra, Tzerra Ace, Calenta, Avanta, Quinta of andere revisies. Artikelnummers, serials, firmware, actuele toestelcompatibiliteit en nieuwste editie zijn niet vastgesteld. Lees de volledige toestelcode: generiek OpenTherm 254 is geen alias. Geen universele druk-, vul- of resethandeling afgeleid uit verschillende bronpassages.",
+      "sourcePages": "installatie tabel 60, p. 83–86; gebruiker tabel 17, p. 21–23",
+      "installerTable": 60,
+      "userTable": 17,
+      "rows": [
+        {
+          "code": "H00.42",
+          "meaning": "De waterdruksensor is onderbroken of defect, of de waterdruk is te hoog. De code alleen onderscheidt deze mogelijkheden niet.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 60, p. 83; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H00.81",
+          "meaning": "De sensor voor de omgevingstemperatuur wordt niet gevonden.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 60, p. 83; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H01.00",
+          "meaning": "De printplaat meldt een tijdelijke communicatiefout die volgens de bron automatisch wordt opgelost.",
+          "action": "recovery",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 60, p. 83; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H01.05",
+          "meaning": "Het verschil tussen aanvoer- en retourtemperatuur heeft de toegestane grens bereikt.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 60, p. 83; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H01.08",
+          "meaning": "De aanvoertemperatuur in het verwarmingscircuit stijgt sneller dan toegestaan.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 60, p. 83; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H01.14",
+          "meaning": "Aanvoer of retour heeft de maximale temperatuur bereikt.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 60, p. 83; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H01.18",
+          "meaning": "De regeling meldt tijdelijk ontbrekende waterdoorstroming; de code bevestigt op zichzelf geen pompdefect.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 60, p. 83; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H01.21",
+          "meaning": "Tijdens sanitair-warmwaterbedrijf stijgt de aanvoertemperatuur te snel.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 60, p. 83; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H02.00",
+          "meaning": "Er loopt een resetprocedure; dit is een procedurestatus die volgens de bron zichzelf afhandelt, geen instructie om opnieuw te resetten.",
+          "action": "resetState",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 83,
+          "sourcePage": "installatie tabel 60, p. 83; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H02.02",
+          "meaning": "De regeling wacht op invoer van de configuratiegegevens CN1/CN2.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H02.03",
+          "meaning": "De configuratiegegevens CN1/CN2 zijn niet correct ingevoerd.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 21,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 21"
+        },
+        {
+          "code": "H02.04",
+          "meaning": "De instellingen van de printplaat zijn niet leesbaar; de professionele controle noemt ook CSU, het externe configuratiegeheugen.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H02.05",
+          "meaning": "Het instelgeheugen past niet bij het printplaattype van de ketel.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H02.07",
+          "meaning": "De waterdruk in het verwarmingscircuit is laag; deze rij geeft geen numeriek bijvuldoel.",
+          "action": "pressure",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H02.12",
+          "meaning": "Een ingang blokkeert de vrijgave van de ketel; de professionele controle betreft het RL-vrijgavecontact en het externe sturende apparaat.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H02.31",
+          "meaning": "Door lage druk vraagt het toestel om automatisch vullen van het systeem. Dat bewijst niet dat elke installatie automatisch vullen ondersteunt.",
+          "action": "pressure",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H02.38",
+          "meaning": "Het toegestane aantal automatische vulcycli is bereikt; dit verschilt van de maximale vultijd en het minimale vulinterval.",
+          "action": "pressure",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H02.70",
+          "meaning": "De test van de externe warmteterugwinunit is niet geslaagd; de professionele controle noemt het SCB-09-accessoire en het apparaat op X9.",
+          "action": "external",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H03.00",
+          "meaning": "Identificatiegegevens voor het veiligheidsapparaat van de ketel ontbreken.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H03.01",
+          "meaning": "De comfortsoftware meldt een interne communicatiefout op de besturingsprint.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H03.02",
+          "meaning": "De vlam is tijdelijk weggevallen.",
+          "action": "combustion",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 84,
+          "sourcePage": "installatie tabel 60, p. 84; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H03.05",
+          "meaning": "De regeling meldt een interne stop.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 22,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 22"
+        },
+        {
+          "code": "H03.08",
+          "meaning": "De regeling detecteert een vlamsignaal dat op dat moment niet hoort op te treden.",
+          "action": "combustion",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H03.09",
+          "meaning": "De voedingsspanning is te laag.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H03.17",
+          "meaning": "Het gasregelsysteem meldt een storing.",
+          "action": "combustion",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H03.26",
+          "meaning": "De ketel vraagt om kalibratie; dit is een professionele instellingshandeling.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H03.28",
+          "meaning": "De regeling meldt een synchronisatiefout; de professionele controle betreft de voedingsfrequentie.",
+          "action": "observe",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H03.31",
+          "meaning": "De regeling meldt een storing bij een geblokkeerde schoorsteen; de code alleen bevestigt geen fysieke obstructie.",
+          "action": "combustion",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H03.254",
+          "meaning": "De bron omschrijft deze volledige code als een niet nader bepaalde fout. H03.54 staat als afzonderlijke bronrij vermeld, niet als bewezen alias.",
+          "action": "unknown",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H03.54",
+          "meaning": "De bron omschrijft deze volledige code als een niet nader bepaalde fout. H03.254 staat als afzonderlijke bronrij vermeld, niet als bewezen alias.",
+          "action": "unknown",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H20.36",
+          "meaning": "De handmatige kalibratie is niet geslaagd; de rij geeft geen gebruikersprocedure om die opnieuw te starten.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 85,
+          "sourcePage": "installatie tabel 60, p. 85; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H20.39",
+          "meaning": "De primaire kalibratie ontbreekt of is niet voltooid; verdere kalibratie is voor de installateur.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 60, p. 86; gebruiker tabel 17, p. 23"
+        },
+        {
+          "code": "H20.40",
+          "meaning": "De gasconfiguratie ontbreekt. Dit bewijst niet dat het toestel met een verkeerd gastype wordt gevoed.",
+          "action": "configuration",
+          "sourceClass": "H",
+          "userPage": 23,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 60, p. 86; gebruiker tabel 17, p. 23"
+        }
+      ]
+    },
+    {
+      "id": "remeha-tzerra-ace-matic-cu-locking",
+      "title": "Tzerra Ace-Matic — CU-GH16 — vergrendelingen",
+      "sourceLabel": "Remeha België — Tzerra Ace-Matic installatie- en servicehandleiding 7875188-01-20062024",
+      "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Installatie--en-servicehandleiding-NL.pdf",
+      "scope": "Uitsluitend Tzerra Ace-Matic 28c, 28c G31, 35c en 25s voor België en Luxemburg, CU-GH16, installatieboek 7875188-01-20062024 tabel 61, gecontroleerd tegen gebruikersboek 7875187-01-20062024 tabel 18. De installatiebron noemt E een vergrendeling; de professionele reset- en herstelkolommen zijn geen gebruikersprocedure. Deze editie bevat 46 letterlijke bronrijen, niet alle merkcodes. De aanwezige opties en aansluitingen moeten worden vastgesteld, waaronder bij H02.70 het SCB-09-accessoire; dit is geen SCB-09-, SCB-10- of CU-GH-21-catalogus. Niet voor legacy Tzerra, Tzerra Ace, Calenta, Avanta, Quinta of andere revisies. Artikelnummers, serials, firmware, actuele toestelcompatibiliteit en nieuwste editie zijn niet vastgesteld. Lees de volledige toestelcode: generiek OpenTherm 254 is geen alias. Geen universele druk-, vul- of resethandeling afgeleid uit verschillende bronpassages.",
+      "sourcePages": "installatie tabel 61, p. 86–90; gebruiker tabel 18, p. 24–28",
+      "installerTable": 61,
+      "userTable": 18,
+      "rows": [
+        {
+          "code": "E00.04",
+          "meaning": "De retourtemperatuursensor wordt bij inschakeling of ontsteking niet als aangesloten herkend; dit is de opstartcontrole, niet de melding tijdens bedrijf.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E00.05",
+          "meaning": "De ketel meldt kortsluiting in de retourtemperatuursensor.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E00.06",
+          "meaning": "De retoursensor wordt tijdens ketelbedrijf niet als aangesloten herkend; dit verschilt van de opstartcontrole E00.04.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E00.07",
+          "meaning": "De door de retoursensor gemeten temperatuur is te hoog.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E00.16",
+          "meaning": "De temperatuursensor van de sanitair-warmwaterboiler is niet aangesloten; de toepasselijkheid hangt af van de werkelijke boilerconfiguratie.",
+          "action": "configuration",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E00.17",
+          "meaning": "De temperatuursensor van de sanitair-warmwaterboiler is kortgesloten; de toepasselijkheid hangt af van de werkelijke boilerconfiguratie.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E00.40",
+          "meaning": "De ingang van de waterdruksensor is open; dit is geen zelfstandige melding van te lage waterdruk.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E00.41",
+          "meaning": "De ingang van de waterdruksensor is gesloten; dit is geen zelfstandige melding van te hoge waterdruk.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E00.44",
+          "meaning": "Het circuit van de sanitair-warmwatertemperatuursensor is open; de rij is niet gelijkgesteld aan de afzonderlijke boilersensorcode E00.16.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E00.45",
+          "meaning": "De sanitair-warmwatertemperatuursensor is kortgesloten; de rij is niet gelijkgesteld aan de afzonderlijke boilersensorcode E00.17.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 86,
+          "sourcePage": "installatie tabel 61, p. 86; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E01.12",
+          "meaning": "De retourtemperatuur wordt hoger gemeten dan de aanvoertemperatuur.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 24,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 24"
+        },
+        {
+          "code": "E01.17",
+          "meaning": "De regeling meldt ontbrekende waterdoorstroming als permanente storing; dit verschilt van de tijdelijke melding H01.18.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E01.20",
+          "meaning": "De rookgastemperatuur heeft de maximale grens bereikt.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E02.15",
+          "meaning": "De bron meldt overschrijding van de minimumtijd voor herkenning van de CSU-sleutel en noemt een time-out of niet-herkende sleutel; dit is niet als maximumtijd herschreven.",
+          "action": "configuration",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E02.17",
+          "meaning": "De printplaat meldt een permanente communicatiefout.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E02.32",
+          "meaning": "De tijd voor automatisch vullen is verstreken; dit bewijst op zichzelf geen printplaatdefect.",
+          "action": "pressure",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E02.35",
+          "meaning": "Een kritiek veiligheidsapparaat is niet meer verbonden.",
+          "action": "configuration",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E02.39",
+          "meaning": "Na automatisch vullen is de druk onvoldoende toegenomen; de code bevestigt op zichzelf geen lekkage of defect onderdeel.",
+          "action": "pressure",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E02.47",
+          "meaning": "De verbinding met een extern apparaat is niet geslaagd; de daadwerkelijke aansluiting en configuratie moeten worden vastgesteld.",
+          "action": "configuration",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E04.00",
+          "meaning": "De veiligheidsinstellingen zijn niet geldig.",
+          "action": "configuration",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E04.01",
+          "meaning": "De aanvoertemperatuursensor is kortgesloten.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E04.02",
+          "meaning": "De aanvoertemperatuursensor wordt niet als aangesloten herkend.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E04.03",
+          "meaning": "De aanvoertemperatuur heeft de maximale grens overschreden.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E04.04",
+          "meaning": "De rookgastemperatuursensor is kortgesloten.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E04.05",
+          "meaning": "De rookgastemperatuursensor wordt niet als aangesloten herkend.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 87,
+          "sourcePage": "installatie tabel 61, p. 87; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E04.06",
+          "meaning": "De rookgastemperatuur heeft een kritische grens bereikt; schoorsteenblokkade en sensorcontrole zijn onderzoekspunten, geen bewezen oorzaak.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 25,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 25"
+        },
+        {
+          "code": "E04.07",
+          "meaning": "Het maximale verschil tussen aanvoertemperaturen is bereikt. De bron zegt hier niet dat dit het verschil tussen aanvoer en retour is.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.10",
+          "meaning": "Na vijf pogingen is de branderontsteking niet geslaagd.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.11",
+          "meaning": "De VPS-test van de gasklep is niet geslaagd.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.12",
+          "meaning": "De regeling meldt een ontstekingsfout bij detectie van een ongewenst vlamsignaal.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.13",
+          "meaning": "De regeling meldt een geblokkeerd ventilatorblad.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.14",
+          "meaning": "De ketel meldt een verbrandingsstoring.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.15",
+          "meaning": "De ketel meldt een storing bij geblokkeerde rookgasafvoer; de code alleen bevestigt geen fysieke blokkade.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.17",
+          "meaning": "Het regelcircuit van de gasklep meldt een fout.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.18",
+          "meaning": "De aanvoertemperatuur ligt onder de minimale grens.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 88,
+          "sourcePage": "installatie tabel 61, p. 88; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.23",
+          "meaning": "De bron noemt een interne stop bij communicatie; zij specificeert in deze beschrijving geen protocol of bewezen defect onderdeel.",
+          "action": "observe",
+          "sourceClass": "E",
+          "userPage": 26,
+          "installerPage": 89,
+          "sourcePage": "installatie tabel 61, p. 89; gebruiker tabel 18, p. 26"
+        },
+        {
+          "code": "E04.24",
+          "meaning": "De regeling kan het gastype niet vaststellen; dit is niet gelijkgesteld aan ontbrekende gastoevoer.",
+          "action": "configuration",
+          "sourceClass": "E",
+          "userPage": 27,
+          "installerPage": 89,
+          "sourcePage": "installatie tabel 61, p. 89; gebruiker tabel 18, p. 27"
+        },
+        {
+          "code": "E04.25",
+          "meaning": "Tijdens de veiligheidstijd is de vlam weggevallen.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 27,
+          "installerPage": 89,
+          "sourcePage": "installatie tabel 61, p. 89; gebruiker tabel 18, p. 27"
+        },
+        {
+          "code": "E04.26",
+          "meaning": "De regeling meldt een ontstekingsfout.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 27,
+          "installerPage": 89,
+          "sourcePage": "installatie tabel 61, p. 89; gebruiker tabel 18, p. 27"
+        },
+        {
+          "code": "E04.27",
+          "meaning": "De regeling meldt een fout waarbij de gasklep open staat bij vlamdetectie.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 27,
+          "installerPage": 89,
+          "sourcePage": "installatie tabel 61, p. 89; gebruiker tabel 18, p. 27"
+        },
+        {
+          "code": "E04.28",
+          "meaning": "De terugmelding van de gasklep is niet correct.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 27,
+          "installerPage": 89,
+          "sourcePage": "installatie tabel 61, p. 89; gebruiker tabel 18, p. 27"
+        },
+        {
+          "code": "E04.29",
+          "meaning": "Het maximaal toegestane aantal resets is bereikt; dit is geen verzoek om een volgende reset.",
+          "action": "resetLimit",
+          "sourceClass": "E",
+          "userPage": 27,
+          "installerPage": 90,
+          "sourcePage": "installatie tabel 61, p. 90; gebruiker tabel 18, p. 27"
+        },
+        {
+          "code": "E04.50",
+          "meaning": "De regeling meldt een gasklepstoring. E04.250 is een aparte letterlijke bronrij; gelijkwaardige actuele codes zijn niet vastgesteld.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 27,
+          "installerPage": 90,
+          "sourcePage": "installatie tabel 61, p. 90; gebruiker tabel 18, p. 27"
+        },
+        {
+          "code": "E04.54",
+          "meaning": "De regeling meldt een niet nader bepaalde fout. E04.254 is een aparte letterlijke bronrij, niet als bewezen alias samengevoegd.",
+          "action": "unknown",
+          "sourceClass": "E",
+          "userPage": 27,
+          "installerPage": 90,
+          "sourcePage": "installatie tabel 61, p. 90; gebruiker tabel 18, p. 27"
+        },
+        {
+          "code": "E04.250",
+          "meaning": "De regeling meldt een gasklepstoring. E04.50 is een aparte letterlijke bronrij; gelijkwaardige actuele codes zijn niet vastgesteld.",
+          "action": "combustion",
+          "sourceClass": "E",
+          "userPage": 28,
+          "installerPage": 90,
+          "sourcePage": "installatie tabel 61, p. 90; gebruiker tabel 18, p. 28"
+        },
+        {
+          "code": "E04.254",
+          "meaning": "De regeling meldt een niet nader bepaalde fout. E04.54 is een aparte letterlijke bronrij, niet als bewezen alias samengevoegd.",
+          "action": "unknown",
+          "sourceClass": "E",
+          "userPage": 28,
+          "installerPage": 90,
+          "sourcePage": "installatie tabel 61, p. 90; gebruiker tabel 18, p. 28"
+        }
+      ]
+    }
+  ],
+  "actions": {
+    "observe": "Noteer de volledige displaycode, het exacte model en de omstandigheden. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen gesloten onderdelen, werk niet aan sensoren, bedrading of printplaten en gebruik de professionele tabel niet als reset- of herstelprocedure.",
+    "pressure": "Lees alleen de veilig zichtbare installatiedruk af en noteer de volledige code en het exacte model. Deze rij geeft geen universeel vuldoel: vul niet bij, tap niet af en activeer geen vul- of ontluchtingsprogramma op basis van deze servicetabel. Laat drukverlies, herhaalde vulmeldingen of lekkage professioneel beoordelen.",
+    "configuration": "Noteer de volledige code en het exacte model. Configuratie, CN1/CN2, CSU, busverbindingen en kalibratie zijn voor de installateur; open geen onderdelen en wijzig geen instellingen. Laat een blijvende of terugkerende melding professioneel beoordelen.",
+    "combustion": "Bij gasgeur, rookgasgeur, een CO-alarm of zichtbare roetvorming: blijf uit de gevarenzone en volg de veiligheidsmelding boven deze tabel; gebruik het toestel niet verder. Zonder zulke signalen: noteer de volledige code en laat verbranding, gastoevoer en rookgasafvoer professioneel beoordelen. Open geen onderdelen, verander geen gasinstellingen en gebruik deze tabel niet voor resets of spanningsonderbreking.",
+    "recovery": "Deze tijdelijke communicatiemelding wordt volgens de bron automatisch opgelost. Dat bewijst niet dat de installatie probleemloos werkt. Noteer bij aanhouden, herhaling of klachten de volledige code en het exacte model; laat die beoordelen. Start geen extra reset en open geen onderdelen.",
+    "resetState": "Volgens de bron loopt al een resetprocedure die zichzelf afhandelt; dit is geen verzoek om een nieuwe reset. Een procedurestatus bewijst niet dat de oorzaak verholpen is. Laat een aanhoudende of terugkerende melding beoordelen; wijzig geen instellingen en onderbreek de netspanning niet als herstelpoging.",
+    "external": "Noteer de volledige code, het exacte model en de bekende configuratie. De bron noemt het SCB-09-accessoire en het apparaat op X9, maar bewijst niet dat die aanwezig zijn. Laat de installateur de werkelijke uitbreiding en aansluitingen beoordelen; open geen onderdelen en wijzig geen configuratie of veiligheidscontacten.",
+    "unknown": "Noteer de volledige code met alle cijfers en het exacte model. De bron specificeert hier geen nadere diagnose; kort de code niet in en verwissel geen twee- en driecijferige suffixen. Laat de melding professioneel beoordelen; open geen onderdelen en start geen reset of spanningsonderbreking op basis van deze tabel.",
+    "resetLimit": "Het toegestane aantal resets is bereikt: voer geen verdere resets of spanningsonderbreking uit als herstelpoging. Noteer de volledige code en het exacte model en laat de onderliggende oorzaak professioneel onderzoeken. De professionele oplossingskolom is geen gebruikersinstructie."
+  },
+  "warning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace, Quinta en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld.",
+  "before": {
+    "warning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.",
+    "page": {
+      "path": "/foutcodes/remeha",
+      "lastModified": "2026-10-12",
+      "status": "published",
+      "title": "Remeha foutcodes: Avanta, Calenta en Ace-Matic | AB Service",
+      "description": "Remeha foutcodes voor Avanta, Calenta en Ace-Matic. Vergelijk de volledige code met de juiste bron, toestelreeks en component; lees veilige eerste stappen.",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    "metadata": {
+      "title": "Remeha foutcodes: Avanta, Calenta en Ace-Matic | AB Service",
+      "description": "Remeha foutcodes voor Avanta, Calenta en Ace-Matic. Vergelijk de volledige code met de juiste bron, toestelreeks en component; lees veilige eerste stappen.",
+      "alternates": {
+        "canonical": "https://www.abservice24.be/foutcodes/remeha"
+      },
+      "robots": {
+        "index": true,
+        "follow": true,
+        "googleBot": {
+          "index": true,
+          "follow": true,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+          "max-video-preview": -1
+        }
+      },
+      "openGraph": {
+        "title": "Remeha foutcodes: Avanta, Calenta en Ace-Matic | AB Service",
+        "description": "Remeha foutcodes voor Avanta, Calenta en Ace-Matic. Vergelijk de volledige code met de juiste bron, toestelreeks en component; lees veilige eerste stappen.",
+        "url": "https://www.abservice24.be/foutcodes/remeha",
+        "siteName": "AB Service",
+        "locale": "nl_BE",
+        "type": "website",
+        "images": [
+          {
+            "url": "https://www.abservice24.be/social/foutcodes/remeha",
+            "width": 1200,
+            "height": 630,
+            "alt": "Remeha foutcodes: Avanta, Calenta en Ace-Matic — AB Service"
+          }
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Remeha foutcodes: Avanta, Calenta en Ace-Matic | AB Service",
+        "description": "Remeha foutcodes voor Avanta, Calenta en Ace-Matic. Vergelijk de volledige code met de juiste bron, toestelreeks en component; lees veilige eerste stappen.",
+        "images": [
+          "https://www.abservice24.be/social/foutcodes/remeha"
+        ]
+      }
+    },
+    "guideCount": 13,
+    "explanationRows": 659,
+    "manifestCounts": {
+      "guides": 13,
+      "catalogAssignments": 41,
+      "distinctCatalogs": 35,
+      "displayedExplanationRows": 1701,
+      "distinctCatalogExplanationRows": 1459,
+      "distinctCatalogSourceURLs": 21
+    },
+    "preservation": {
+      "remehaCatalogs": "0cbb3e4a757fef89d46e6510ec0a7304f95b4fb8abbaee8bbd06ac2385aadd10",
+      "otherGuides": "50de5d8beb2929eb5cb2c719bd61dd38706107b4c3cdfa4411f5fc5e73324f4f",
+      "allGuides": "4ad89b6cd54dd63e1078b45169e98acbc27fa24e44f5bf3b6e176868649bcea9",
+      "otherRegistry": "f44a4496ae8cbb7babb34940a372a7faddbf6935c53bf995dbcee949490adb18",
+      "allRegistry": "396369361c7bc6271b0358b0eaf8740f6dcba3171d3e070dcbb126d90a675ba0",
+      "remehaHtml": "7dc78cb9d0f9361c2a7a465b798bbeb2a11736f90da5e0bf51f26e97dc539320",
+      "allManifest": "e6df5460daf75059c2c1c2113a81df64f4bea893510f01d74ea9c93c7f35157c",
+      "allSnapshots": "24acbd6f4d9734adca30d362ad174f9b827c6b0a0df53cffde7c8cb9e5cc4593",
+      "allManifestEntries": "bc7dc129483d883e9288811a12b743a43a127f3d2496f51f12b8d915bc1d535e"
+    }
+  },
+  "page": {
+    "path": "/foutcodes/remeha",
+    "lastModified": "2026-10-12",
+    "status": "published",
+    "title": "Remeha foutcodes: Avanta, Calenta en Tzerra | AB Service",
+    "description": "Zoek Remeha foutcodes per Avanta-, Calenta- of Tzerra Ace-Matic-bron. Bekijk model, revisie, volledige melding en veilige vervolgstap; geen universele diagnose.",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  "expectedManifestCounts": {
+    "guides": 13,
+    "catalogAssignments": 44,
+    "distinctCatalogs": 38,
+    "displayedExplanationRows": 1798,
+    "distinctCatalogExplanationRows": 1556,
+    "distinctCatalogSourceURLs": 22
+  },
+  "manifestPurposeSuffix": " Task83 adds only three paired-source Tzerra Ace-Matic CU-GH16 catalogs from the June2024 BE/Lux books; no other source re-audit or newest/firmware claim.",
+  "manifestCountSuffix": " The97 Tzerra Ace-Matic source rows are explanation rows, not97 new fault diagnoses, search demand or complete Tzerra/brand coverage.",
+  "mainReadAgainFullUserDiagnosticPages": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "preliminaryOfMisreadingWithdrawn": true
+}

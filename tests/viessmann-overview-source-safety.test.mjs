@@ -1,3 +1,10 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide, beforeAtagManualsManifest, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Reconstruct only the separately verified Task77 addition for historical hashes.
@@ -8,11 +15,11 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
 import {readFile} from "node:fs/promises";
-import {faultGuides,getFaultGuide} from "../content/fault-guides.mjs";
-import {pageRegistry,getPageDefinition} from "../content/site-content.mjs";
+import {faultGuides as liveFaultGuides,getFaultGuide as liveGetFaultGuide} from "../content/fault-guides.mjs";
+import {pageRegistry as livePageRegistry,getPageDefinition as liveGetPageDefinition} from "../content/site-content.mjs";
 import {buildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
 import {filterFaultCatalogs,getFaultDisplayStateNotice} from "../libs/fault-search.mjs";
-import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {renderFaultGuide as liveRenderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
 import {viessmannFacts as f,beforeViessmannGuide,beforeViessmannRegistry,beforeViessmannMetadata,beforeViessmannHtml} from "./fixtures/viessmann-overview-source-safety.mjs";
 const guide=getFaultGuide("viessmann"),catalog=guide.catalogs[0];
 const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v)).digest("hex");
@@ -65,7 +72,7 @@ test("all71 SSR cards plus whole13 guides restore the genuine accepted6b128bc le
   assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).filter(g=>g.slug!=="viessmann").map(beforeCalentaGuide).map(beforeAvantaGuide)),f.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide)),f.preservation.allGuides);
 });
 test("Viessmann manifest pins one originalHTML71literalrows without appliance or revision inventions",async()=>{
-  const m=beforeGb172Manifest(beforeAtagManualsManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"))));const e=m.entries.find(e=>e.id===f.id),s=m.snapshots.find(s=>s.id==="viessmann-overview-html");
+  const m=beforeGb172Manifest(beforeAtagManualsManifest(beforeTzerraManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")))));const e=m.entries.find(e=>e.id===f.id),s=m.snapshots.find(s=>s.id==="viessmann-overview-html");
   assert.equal(e.modelScope,f.scope);assert.equal(e.sourcePages,f.pages);assert.equal(e.language,"de-DE");assert.equal(e.sourceServiceMarket,"Duitsland");assert.equal(e.literalTableRowCount,71);assert.deepEqual(e.literalCodes,f.literalCodes);
   assert.deepEqual(e.mentionedModels,["Vitodens 200-W","Vitodens 300-W","Vitodens 222-W","Vitodens 222-F","Vitodens 333-F"]);assert.equal(e.mainControlCount,22);assert.equal(e.documentControlCount,357);
   assert.equal(e.articlePublishedAt,"2024-05-30T14:21:20.867Z");assert.equal(e.articleModifiedAt,"2026-09-14T08:57:39.675Z");

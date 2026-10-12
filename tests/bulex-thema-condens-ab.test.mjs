@@ -1,12 +1,17 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraHtml} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide } from "./fixtures/atag-manuals-history.mjs";
 // Reconstruct only the separately verified Task77 addition for historical hashes.
 import { beforeGb172Guide } from "./fixtures/buderus-gb172i2-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
-import { faultGuides, getFaultGuide } from "../content/fault-guides.mjs";
+import { faultGuides as liveFaultGuides, getFaultGuide as liveGetFaultGuide } from "../content/fault-guides.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
-import { renderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
+import { renderFaultGuide as liveRenderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
 import { modelHelpHtml } from "./fixtures/bulex-model-help-baseline.mjs";
 import { themaABFacts as facts, themaABScope, themaABWarning } from "./fixtures/bulex-thema-condens-ab.mjs";
 

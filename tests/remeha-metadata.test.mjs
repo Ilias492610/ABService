@@ -1,7 +1,11 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraRegistry} from "./fixtures/tzerra-ace-matic-history.mjs";
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
 import test from "node:test";
 import { avantaFacts } from "./fixtures/avanta-overview-source-safety.mjs";
 import assert from "node:assert/strict";
-import { getPageDefinition, pageRegistry } from "../content/site-content.mjs";
+import { getPageDefinition as liveGetPageDefinition, pageRegistry as livePageRegistry } from "../content/site-content.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { beforeAcvRegistry } from "./fixtures/acv-prestige-source-safety.mjs";
 

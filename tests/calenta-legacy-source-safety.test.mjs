@@ -1,3 +1,9 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide, beforeAtagManualsManifest, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Reconstruct only the separately verified Task77 addition for historical hashes.
@@ -6,11 +12,11 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
 import {readFile} from "node:fs/promises";
-import {faultGuides,getFaultGuide} from "../content/fault-guides.mjs";
-import {pageRegistry} from "../content/site-content.mjs";
+import {faultGuides as liveFaultGuides,getFaultGuide as liveGetFaultGuide} from "../content/fault-guides.mjs";
+import {pageRegistry as livePageRegistry} from "../content/site-content.mjs";
 import {buildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
 import {filterFaultCatalogs} from "../libs/fault-search.mjs";
-import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {renderFaultGuide as liveRenderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
 import {calentaFacts as f,expectedCalentaCatalogs,beforeCalentaGuide,beforeCalentaHtml,beforeCalentaManifestEntry,beforeCalentaManifestMirror} from "./fixtures/calenta-legacy-source-safety.mjs";
 const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v)).digest("hex");
 const guide=getFaultGuide("remeha"),selected=guide.catalogs.filter(c=>f.ids.includes(c.id));
@@ -87,7 +93,7 @@ test("real SSR exposes source-bounded Calenta cards while all other leaves and m
 });
 
 test("legacy manifest joins both tables to one actual PDF without inventing issue or device fit",async()=>{
-  const m=beforeGb172Manifest(beforeAtagManualsManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"))));
+  const m=beforeGb172Manifest(beforeAtagManualsManifest(beforeTzerraManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")))));
   const snapshot=m.snapshots.find(s=>s.id===f.snapshotId);
   assert.equal(snapshot?.sha256,f.sha256);assert.equal(snapshot?.byteLength,f.bytes);assert.equal(snapshot?.pageCount,f.pages);
   for(const [index,id]of f.ids.entries()){
@@ -118,7 +124,7 @@ test("SCU communication messages remain applicable when the expected board is ab
 });
 
 test("manifest inverse preserves untouched and unknown leaves so drift fails the original hash",async()=>{
-  const m=beforeGb172Manifest(beforeAtagManualsManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"))));
+  const m=beforeGb172Manifest(beforeAtagManualsManifest(beforeTzerraManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")))));
   for(const id of f.ids){
     const original=m.entries.find(e=>e.id===id);
     for(const [key,value]of Object.entries({models:["UNSUPPORTED"],documentNumber:"UNSUPPORTED",market:["UNSUPPORTED"],component:"UNSUPPORTED",tableIds:["UNSUPPORTED"],unexpectedLeaf:{unsupported:true}})){

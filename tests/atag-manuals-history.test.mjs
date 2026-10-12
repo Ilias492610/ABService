@@ -1,14 +1,21 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
 import {createHash} from "node:crypto";
-import {faultGuides,getFaultGuide} from "../content/fault-guides.mjs";
-import {pageRegistry,getPageDefinition} from "../content/site-content.mjs";
+import {faultGuides as liveFaultGuides,getFaultGuide as liveGetFaultGuide} from "../content/fault-guides.mjs";
+import {pageRegistry as livePageRegistry,getPageDefinition as liveGetPageDefinition} from "../content/site-content.mjs";
 import {buildPageMetadata} from "../libs/seo-data.mjs";
-import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {renderFaultGuide as liveRenderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
 import {beforeAtagManualsGuide,beforeAtagManualsRegistry,beforeAtagManualsMetadata,beforeAtagManualsHtml,beforeAtagManualsManifest} from "./fixtures/atag-manuals-history.mjs";
 const f=JSON.parse(await readFile(new URL("./fixtures/atag-manuals-source-facts.json",import.meta.url),"utf8"));
-const manifest=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));
+const manifest=beforeTzerraManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")));
 const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v)).digest("hex");
 
 test("named ATAG addition restores actual pre-edit guides registry metadata and SSR without hash rebasing",async()=>{

@@ -1,15 +1,22 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide, beforeAtagManualsManifest, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { faultGuides, getFaultGuide } from "../content/fault-guides.mjs";
-import { pageRegistry, getPageDefinition } from "../content/site-content.mjs";
+import { faultGuides as liveFaultGuides, getFaultGuide as liveGetFaultGuide } from "../content/fault-guides.mjs";
+import { pageRegistry as livePageRegistry, getPageDefinition as liveGetPageDefinition } from "../content/site-content.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { buildFaultCodeAliases } from "../libs/fault-code-aliases.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
-import { renderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
+import { renderFaultGuide as liveRenderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
 const f=JSON.parse(await readFile(new URL("./fixtures/buderus-gb172i2-source-facts.json",import.meta.url),"utf8"));
 const guide=getFaultGuide("buderus"), candidate=()=>{const c=guide.catalogs.find(c=>c.id===f.id);assert.ok(c,"missing exact GB172i.2 catalog, not an alias for GB162");return c;};
 const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v)).digest("hex");
@@ -70,7 +77,7 @@ test("real Buderus SSR exposes121 cards with visible source classes scopes and u
 });
 
 test("GB172i.2 model manifest binds actual source identity without invented revision or firmware",async()=>{
- const m=beforeAtagManualsManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"))),e=m.entries.find(e=>e.id===f.id),s=m.snapshots.find(s=>s.id===f.snapshotId);assert.ok(e,"missing source manifest entry");assert.ok(s,"missing pinned manufacturer original");
+ const m=beforeAtagManualsManifest(beforeTzerraManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")))),e=m.entries.find(e=>e.id===f.id),s=m.snapshots.find(s=>s.id===f.snapshotId);assert.ok(e,"missing source manifest entry");assert.ok(s,"missing pinned manufacturer original");
  assert.equal(e.explanationRowCount,69);assert.equal(e.literalNumericIdentifierCount,97);assert.deepEqual(e.modelArticlePairs,f.source.modelArticlePairs);assert.equal(e.documentNumber,"6721852651");assert.equal(e.observedIssue,"2026/06");assert.equal(e.issueDate,"2026-06");assert.equal(e.issueDatePrecision,"month");assert.equal(e.language,"nl");assert.deepEqual(e.market,["België"]);assert.deepEqual(e.tableIds,[69]);assert.equal(e.primarySnapshot,f.snapshotId);
  for(const field of ["revision","firmwareCompatibility","controllerVariantCoverage","customerDeviceCompatibility","newestEdition"])assert.equal(e[field],null,field);
  assert.equal(s.sha256,f.source.sha256);assert.equal(s.byteLength,11483647);assert.equal(s.pageCount,68);assert.equal(s.expectedSha256,null);assert.equal(s.hashMatchesPriorRecord,null);

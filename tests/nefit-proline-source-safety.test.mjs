@@ -1,3 +1,10 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Reconstruct only the separately verified Task77 addition for historical hashes.
@@ -11,12 +18,12 @@ import { beforeFerroliGuide, beforeFerroliRegistry } from "./fixtures/ferroli-bl
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { faultGuides, getFaultGuide } from "../content/fault-guides.mjs";
-import { pageRegistry, getPageDefinition } from "../content/site-content.mjs";
+import { faultGuides as liveFaultGuides, getFaultGuide as liveGetFaultGuide } from "../content/fault-guides.mjs";
+import { pageRegistry as livePageRegistry, getPageDefinition as liveGetPageDefinition } from "../content/site-content.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { buildFaultCodeAliases } from "../libs/fault-code-aliases.mjs";
-import { renderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
+import { renderFaultGuide as liveRenderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
 import { nefitFacts as facts, beforeNefitGuide, beforeNefitRegistry, beforeNefitMetadata, beforeNefitHtml } from "./fixtures/nefit-proline-source-safety.mjs";
 import { beforeFaultHeroHtml, beforeIntergasCountGuide } from "./fixtures/fault-hero-clearance.mjs";
 const guide = getFaultGuide("nefit-bosch"), catalog = guide.catalogs[0];

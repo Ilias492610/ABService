@@ -1,9 +1,12 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
 import { beforeCalentaCatalog } from "./fixtures/calenta-legacy-source-safety.mjs";
 import test from "node:test";
 import { beforeAvantaCatalog } from "./fixtures/avanta-overview-source-safety.mjs";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { faultGuides } from "../content/fault-guides.mjs";
+import { faultGuides as liveFaultGuides } from "../content/fault-guides.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { sourceFacts, sourceTables, previousCatalogDigest } from "./fixtures/remeha-calenta-ace-matic-25l.mjs";
 

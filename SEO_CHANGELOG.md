@@ -1,5 +1,205 @@
 # AB Service SEO Changelog
 
+## 12 oktober 2026 — Task83 eindreview: companionbron hersteld, release nog open
+
+De enige onafhankelijke whole-cohortreview heeft alle97 Tzerra-betekenissen,
+bronklassen, paginaparen en veilige acties aan volledige bronpagina's getoetst.
+583 tests onafhankelijk geslaagd; één Important bevinding: de gebruikersbron
+was wel geciteerd maar niet klikbaar vanuit de drie broncontexten. Geen Critical
+of Minor bevindingen. Die link is in één rootcorrectiepass toegevoegd, met een
+eigen label en exacte gebruikershandleidingURL naast de installatiebron.
+
+Werkelijke SSR-regressie1RED→1GREEN; nieuwe zichtbare companioncitatie ook
+in bronmonitoring gebracht met een afzonderlijke1RED→1GREEN. Volledige suite
+nu585pass/0fouten/0skipped. Lint0, herbouw170 en opnieuw lokale crawl82/93/112
+geslaagd. Beide Tzerra-PDFs nu versHTTP200; onveranderde Sibelga403 blijft open,
+geen sitebrede bronpass. Zes aanvullende native desktop/mobiele code-/bronchecks
+slagen, beide afzonderlijke links/paginalocators in alle drie contexten zichtbaar;
+geen overflow. Geen tweede reviewer of tweede fixronde.
+
+De renderer kreeg uitsluitend een optionele companionbron; andere catalogi/
+oude SSR blijven via echte positieve en negatieve behoudtests exact. De eerdere
+kandidaatbeschrijving hieronder blijft gedateerde geschiedenis. Oude hashes,
+bronfixture,97 betekenissen/acties en alle voorgaande bronnen ongewijzigd.
+Veertig releasebestanden: de38 beoordeelde bestanden plus twee smalle
+bronweergave-/monitoringcorrecties. Eerst gecontroleerde commit/hostedCI/
+bestaandeprovider/canonical live; tot dat bewijs geen publicatie-/indexatieclaim.
+Account-/eigenaar-/Franse/field-/AT-/focus-/uitkomstgates en volledigeWP07 open.
+Quinta Ace heeft intussen een afzonderlijk verkregen officieel gecombineerd
+bronboek; dat is private voorbereiding, nog geen door root geaccepteerde tabel.
+
+## 12 oktober 2026 — Task83: Tzerra Ace-Matic lokaal getest, review/release open
+
+De bestaande Remeha-gids heeft lokaal drie aparte CU-GH16-tabellen voor
+Tzerra Ace-Matic 28c/28c G31/35c/25s:18 waarschuwingen,33 tijdelijke stops en
+46 vergrendelingen. Deze97 letterlijke bronrijen komen uit de werkelijk gekoppelde
+[installatiebron](https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Installatie--en-servicehandleiding-NL.pdf)
+en [gebruikersbron](https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Gebruikershandleiding-NL.pdf),
+7875188/7875187-01-20062024, België/Luxemburg. Niet voor legacy Tzerra,
+Tzerra Ace of alle revisies. De13 eerdere Remeha-tabellen/659 uitlegregels blijven
+behouden; totaal756 Remeha-verklaringen, geen756 unieke storingen of vraagvolume.
+
+Pre-editcapture15:10:35Z:315 tracked bestanden; productbytes Git-HEAD-gelijk,
+zes lokale Task80–82-documentaire backfills behouden, lege index. Onafhankelijke
+97-betekenis-/actie-/paginafixture vóór productiecode; volledige gebruikstabellen
+20–28 opnieuw zelf visueel gelezen, naast eerdere38 scope-/diagnosepage-reads.
+Twee read-only onderzoekers vergelijken A/H en E afzonderlijk; geen tweede
+tracked schrijver. De aanvankelijke onderzoeksmislezing van het Nederlandse
+“of” bij E00.04 is ingetrokken na pixels/text; geen brontegenstrijdigheid beweerd.
+
+Bron-TDD9:8 bedoelde RED/1behoudpass→9GREEN. Named vóór-Tzerra-behoud7RED→7GREEN,
+met positieve exacte captures en negatieve oude-row-/count-/unknown-leafcontrole.
+Eerste volledige suite576:532pass/44 historische scope-/countmismatches;
+na expliciete named inverse vóór eerdere adapters en actuele tellingen583pass,
+0fouten/0skipped. Geen oude hashes herberekend, fixtures/snapshots vervangen,
+tests verwijderd of onbekende velden weggeschreven. Exacte97 broncodes en
+primaire/companion-paginalocators opnieuw aan beide oorspronkelijke PDFs
+bevestigd15:39:18Z; dit is broncontrole, geen individuele toestelcompatibiliteit.
+
+A02.76 is geen vastgesteld geheugendefect; E02.15 behoudt minimumtijd/time-out.
+E00.04-opstart/E00.06-bedrijf, boilersensor/SWW-sensor, drukingang versus
+lage waterdruk, E04.07-meervoudige aanvoertemperaturen en optioneleSCB-09/X9
+blijven onderscheiden. H01.00/H02.00 zijn herstel-/procedurecontext, geen
+nieuwe reset. Letterlijke twee-/driecijferige suffixen blijven aparte rijen;
+generiek OpenTherm254 is geen alias. Alle acties zijn expliciete observatie/
+professionele opvolging, zonder gas-, elektrische, kalibratie-, powercycle-,
+bijvul-, ontluchtings- of resetprocedure voor gebruikers.
+
+Lint0, productieaudit0, standaardbuild170, lokale crawl82pagina's/93links/
+112assets pass. Externe broncheck: nieuwe installatie-PDF200; één onveranderde
+Sibelga403 blijft open. De companionbron heeft het afzonderlijk bewaarde
+verkrijgingsbewijs200, geen nieuwe sitebrede bereikbaarheidsclaim.
+Native desktop1280×720/mobiel390×844:40 zoekchecks,6 bronkeuzeresets,
+2 toetsenbordchecks en2 lege aanvraagdoorstappen correct; geen overflow.
+Formulier na scrollsettling142,7px, Herstelling verwarming en lege naam.
+Geen aanvraag verzonden of focusoverdracht/physicalAT/field/nieuweLighthouse
+bewezen. Eén consolemelding heeft een expliciete adblock-extensiebron,
+geen websiteoorzaak afgeleid. Mobiele E04.250-kaart/paginawrap zelf visueel
+bekeken; screenshots zijn hier niet als onafhankelijke archiefbestanden bewaard.
+
+Manifest44toewijzingen/38catalogi/1798weergaverijen/1556distincte rijgroepen/
+22primairebronURLs/24originelen. Alleen bestaande Remeha-metadata verbreed;
+lastmod blijft de echte12oktoberdatum. Zoekruntime, renderer, CSS/deps,
+publicatiestaten, vier integrale bronbijlagen en137 afvinkregels intact.
+Volgende: één onafhankelijke whole-cohortreview en rootacceptatie, daarna exact
+main/hostedCI/bestaande productie-integraties/canonical live. Nog geen nieuwe
+publicatie of IndexNow. Task80–82-backfills blijven onderdeel van deze cohort.
+HeleWP07, account/moderatie, eigenaarcases/toestemming/prijzen/erkenningen,
+Franse controle, field/AT/focus en zakelijke uitkomsten blijven open.
+
+## 12 oktober 2026 — Task81/82: accountgrenzen en Tzerra-bronvoorbereiding
+
+Abders bestaande native Chrome-venster is gebruikt; geen ander Google-account.
+De eerste Bing-Sitemaps-uitlezing om14:13:39Z toont één bekende sitemap,
+nul fouten/waarschuwingen, `Succes` en79 gevonden URLs; zowel indiening als crawl
+staan op10/10/2026. Dit is uitsluitend de daadwerkelijke AX-weergave vóór één
+refresh. Het native beeld was leeg; na verversing was de tabel niet meer
+uitleesbaar. Geen verse admin-, duurzame refresh- of volledige indexatieclaim.
+De huidige publieke sitemap telt afzonderlijk80 unieke URLs (HTTP200,14:33:44Z);
+die webmeting is geen Bing-ontvangstbewijs of reden voor een duplicaatinzending.
+
+De bestaande Google-diensteditor bleef leeg, ook na één geobserveerde
+vensteractivering. Geen veldsave, login, nieuwe rechten, herindiening of
+herhaalde ontgrendelvraag. Een oorzaak zoals vergrendeling is niet vastgesteld.
+Anonieme Maps-controle14:22:56Z, inclusief pixels: Voorzorgstraat12A blijft
+publiek zichtbaar, met24uur, correct nummer/site en5,0/44. Dat bewijst geen
+afwijzing van de eerdere adresverberging. Moderatie, nieuwe dienstteksten,
+badge-afwezigheid en de volledige fotogalerij blijven ongeverifieerd.
+Tijdelijke publieke tab gesloten; wettelijke website-/KBO-gegevens behouden.
+
+Parallel zijn de twee werkelijk door de [Belgische Tzerra Ace-Matic-productpagina](https://www.remeha.be/nl-BE/product/tzerra-ace-matic)
+gekoppelde NL-originalen bewaard: installatieboek96 pagina's/9.243.069bytes en
+gebruikersboek32 pagina's/706.155bytes, beideHTTP200. Hoofdagent heeft38 volledige
+relevante pagina's persoonlijk visueel gelezen, inclusief alle diagnosetabellen.
+Gedrukte identiteiten7875188 en7875187, elk `01 - 20062024`; covers noemen
+België/Luxemburg,28c/28cG31/35c/25s. Controllerkop is letterlijk `CU-GH16`.
+Installateurstabellen59–61 en gebruikerstabellen16–18 bevatten dezelfde97
+letterlijke codes in dezelfde volgorde:18A,33H,46E. Dit zijn bronrijen,
+niet97 nieuwe websitecodes, unieke storingen, zoekvolume of alle Tzerra-generaties.
+
+Bronchecker14:45:03Z geslaagd: oorspronkelijke bytes/SHA/paginatelling, echte
+productlinks, elke code/pagina en bronpaarvolgorde gecontroleerd. Eerste private
+checkerfout kwam door Python-dictionaryheaders versus HTTP-headerregels;
+veilig als literal gelezen, geen originele data of codeverwachtingen aangepast.
+De capturehelper vereiste voor oude grote PNGs een buffer op gemeten Git-blobgrootte;
+die infrastructuurfout is geen afbeelding-/websitebug. Volledige originele
+artefacten, fouten en38 paginaweergaven blijven in het recoveryledger behouden.
+
+Professionele remedies in een gebruikersboek worden geen doe-het-zelfadvies.
+A/H-terminologie verschilt tussen gebruiksp19 en installatiep81; H02.00 is een
+resettoestand. OpenTherm254 is generiek. LetterlijkeH03.254/H03.54 en
+E04.250/E04.50/E04.254/E04.54 worden niet stilzwijgend samengevoegd.
+Resetknop/-tijden en drukdoelen verschillen per bronpassage; geen universele
+handeling afgeleid. E04.29-maximale resets, kalibratie, gas, elektrische delen,
+veiligheidscontacten en configuratie blijven professioneel. Typeplaatje is
+een voorbeeld, geen concrete artikelparen; newest/serial/firmwarefit onbekend.
+
+Websitecode, manifest, metadata/datums, publicatiestaten en137 afvinkregels
+ongewijzigd. Geen nieuwe producttests/build/crawl/release of IndexNow uitgevoerd:
+Task80-resultaten blijven gedateerd bewijs voor dat onveranderde product.
+Dit is beperkte accountuitlezing en bronvoorbereiding, geen geheleWP04/WP05/WP07.
+Eerstvolgende zelfstandige producttaak:97 bronbetekenissen en expliciete veilige
+acties vastleggen, daarna de drie CU-GH16-tabellen afzonderlijk testen/integreren
+binnen de bestaande Remeha-gids, met behoud van alle eerdere modellen.
+Account-/eigenaar-/Franse review-/field-/AT-/focus-/resultaatgates blijven open.
+
+## 12 oktober 2026 — Task80 gepubliceerd: ATAG i Zone en i32EC
+
+De twee afzonderlijke historische ATAG-modeltabellen staan live op
+[de bestaande ATAG-pagina](https://www.abservice24.be/foutcodes/atag):
+17 i Zone-rijen en19 i32EC-rijen, naast het behouden14-rijoverzicht.
+Dat zijn50 brongebonden verklaringen, niet50 unieke storingen of alle ATAG-codes.
+De exacte bron-, model- en editiegrenzen, niet-storingen, drukdrempelverschillen
+en uitsluitend professionele ingrepen blijven zichtbaar onderscheiden.
+
+Enige onafhankelijke whole-cohortreview: geen correctiebevindingen.
+Root-staging ving één extra lege EOF-regel in een nieuw bestand op; uitsluitend
+die newline verwijderd, alle overige31 reviewhashes gelijk. Daarna opnieuw
+567 tests /0 fouten /0 skipped en cached whitespacecheck geslaagd. Geen oude
+hashes herberekend of tweede reviewronde. Exact main/origin/remote-commit
+`ed50f8b62992a402e358be0ac13cb2a4acf64063` bevat uitsluitend de32 gecontroleerde
+cohortbestanden, inclusief behoud van Task77–79-documentatie.
+
+[Hosted CI38256988407](https://github.com/Ilias492610/ABService/actions/runs/38256988407)
+success op Node24.21.0:567 tests, lint, productieaudit0, build170 en crawl
+82 pagina's /93 links /112 assets. Development9 blijft apart open.
+Beide bestaande productie-integraties success voor exact SHA:
+deployments7015525058 /7015535228, statuses19646196731 /19646221706.
+Ook de bestaande Vercel-dashboardpagina is rechtstreeks gelezen:
+deployment `dpl_8YFrkqACV2krM7uzfJ4PV1hEaPrw`, Ready /Latest /Production Current,
+exact commit en huidig domein www.abservice24.be zichtbaar. De oude raw-API403
+is niet opnieuw geprobeerd; browser-Ready is afzonderlijk positief bewijs.
+De eerdere integratievertraging is niet verklaard; geen handmatige redeploy,
+project-, domein-, rechten- of configuratiewijziging uitgevoerd.
+
+Canonical livecontrole13:48:49Z: alle50 kaarten,36 exacte nieuwe betekenissen,
+bronpagina's en veilige acties; alle drie secties bytegelijk aan de geteste
+lokale build. Metadata/canonical/schema, echte12oktoberlastmod en contactanker
+correct. Livecrawl82/93/112 geslaagd. Live desktop1280×720/mobiel390×844:
+12 zoekchecks,6 bronresets,2 toetsenbordchecks en2 lege formulierhandoffs correct;
+geen overflow. Formulier na scrollsettling op142,7px, juiste dienst en lege naam.
+De eerste directe URL-ready-meting854,2px was vóór de smooth-scroll-eindpositie;
+latere pixels/DOM bevestigen de bestemming, zonder productwijziging.
+Focusoverdracht niet bewezen; geen aanvraag verzonden. Vier consolemeldingen
+hebben expliciete extensiebronnen/stacks; geen websiteoorzaak daaruit afgeleid.
+Tijdelijke browsertab gesloten, viewport hersteld, eigen lokale server gestopt.
+
+Eenmalige IndexNow-melding alleen voor /foutcodes/atag, na livecontrole en geldige
+openbare bewijsfile: HTTP200 `received`. Geen indexerings-, ranking- of leadbewijs.
+Dit checkpoint vervangt de onderstaande historische release-pendingstatus
+zonder voorcontroles te herschrijven; releasebackfill blijft lokaal voor de
+volgende productcohort, geen extra documentatie-only deploy of nieuwe afvinking.
+
+Native Chrome-uitlezing werkt nu voor het bestaande ABDER-venster; dat venster
+is teruggezet. Geen Google-accountactie uitgevoerd; Vercels bestaande
+eigenaarproject bleef in zijn oorspronkelijke account en tab terug op Analytics.
+Eerstvolgende taak: bestaande WP04/WP05 pending-accountstatus via Abders venster
+gericht controleren, zonder identieke saves/submissions of nieuwe rechten.
+Daarna de daadwerkelijk gekoppelde Tzerra Ace-Matic-bronnen verkrijgen en zelf
+lezen; alleen read-only bronontdekking voorbereid, nog geen nieuwe modeldekking.
+HeleWP07, account/moderatie, eigenaarcases/toestemming/prijzen/erkenningen,
+Franse controle, field/AT/focus en zakelijke resultaten blijven open.
+
 ## 12 oktober 2026 — Task80: ATAG-modelcatalogi lokaal getest; review/release open
 
 De bestaande ATAG-gids heeft lokaal twee aparte historische modeltabellen:

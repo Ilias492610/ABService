@@ -1,3 +1,10 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide, beforeAtagManualsManifest, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Reconstruct only the separately verified Task77 addition for historical hashes.
@@ -11,12 +18,12 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
 import {readFile} from "node:fs/promises";
-import {faultGuides,getFaultGuide} from "../content/fault-guides.mjs";
-import {pageRegistry,getPageDefinition} from "../content/site-content.mjs";
+import {faultGuides as liveFaultGuides,getFaultGuide as liveGetFaultGuide} from "../content/fault-guides.mjs";
+import {pageRegistry as livePageRegistry,getPageDefinition as liveGetPageDefinition} from "../content/site-content.mjs";
 import {buildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
 import {filterFaultCatalogs} from "../libs/fault-search.mjs";
 import {buildFaultCodeAliases} from "../libs/fault-code-aliases.mjs";
-import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {renderFaultGuide as liveRenderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
 import {ferroliFacts as facts,beforeFerroliGuide,beforeFerroliRegistry,beforeFerroliMetadata,beforeFerroliHtml} from "./fixtures/ferroli-bluesense-source-safety.mjs";
 const guide=getFaultGuide("ferroli"),catalog=guide.catalogs[0];
 const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v)).digest("hex");
@@ -68,6 +75,6 @@ test("all13 complete guides and82 registry entries preserve every leaf outside e
   assert.equal(hash(beforeFerroliGuide(guide)),facts.preservation.guide);assert.equal(hash(beforeFerroliGuide(guide).codes),facts.preservation.codes);assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).filter(g=>g.slug!=="ferroli").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide)),facts.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide)),facts.preservation.allGuides);assert.equal(hash(pageRegistry.map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry)),facts.preservation.allRegistry);assert.equal(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).reduce((n,g)=>n+g.codeEntryCount,0),1596);
 });
 test("Ferroli manifest ties only verified historical fields to retained original PDF and leaves device-fit unknown",async()=>{
-  const m=beforeGb172Manifest(beforeAtagManualsManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")))),e=m.entries.find(e=>e.id===facts.id),s=m.snapshots.find(s=>s.id==="ferroli-bluesense-pdf");
+  const m=beforeGb172Manifest(beforeAtagManualsManifest(beforeTzerraManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"))))),e=m.entries.find(e=>e.id===facts.id),s=m.snapshots.find(s=>s.id==="ferroli-bluesense-pdf");
   assert.equal(e.modelScope,facts.scope);assert.equal(e.sourceLabel,facts.label);assert.deepEqual(e.models,facts.models);assert.equal(e.issueDate,facts.issueMonth);assert.equal(e.issueDatePrecision,"month");assert.equal(e.language,"nl");assert.equal(e.documentNumber,facts.document);assert.equal(e.revision,facts.revision);assert.equal(e.literalCodeGroupCount,37);assert.equal(e.literalIndividualCodeCount,38);assert.equal(e.literalAlarmCodeCount,16);assert.equal(e.literalFaultCodeCount,22);assert.equal(e.normalStateCodeCount,4);for(const k of ["articleNumbers","market","firmwareCompatibility","currentBelgianVariantCompatibility","newestEdition"])assert.equal(e[k],null);assert.equal(s.sha256,facts.sha256);assert.equal(s.pageCount,facts.pageCount);assert.equal(s.expectedSha256,null);assert.equal(s.hashMatchesPriorRecord,null);
 });

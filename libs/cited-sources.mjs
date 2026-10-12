@@ -16,7 +16,10 @@ export function getCitedSources() {
   return [
     ...coverageSources,
     ...faultGuides.flatMap((guide) => [
-      ...guide.catalogs.map((catalog) => ({ label: `${guide.brand}: ${catalog.title}`, href: catalog.sourceUrl })),
+      ...guide.catalogs.flatMap((catalog) => [
+        { label: `${guide.brand}: ${catalog.title}`, href: catalog.sourceUrl },
+        ...(catalog.companionSource ? [{ label: `${guide.brand}: ${catalog.title} — gebruikersbron`, href: catalog.companionSource.sourceUrl }] : []),
+      ]),
       ...(guide.documentationUrl ? [{ label: `${guide.brand}: documentatie`, href: guide.documentationUrl }] : []),
     ]),
     ...adviceGuides.flatMap((guide) => guide.sourceLinks),

@@ -1,16 +1,16 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage; Task80 adds only historical i Zone06.19 six technicalB models and i32EC09.17 one technicalB model, with17/19 source rows; not every ATAG model, current fit or full fault coverage",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage; Task80 adds only historical i Zone06.19 six technicalB models and i32EC09.17 one technicalB model, with17/19 source rows; not every ATAG model, current fit or full fault coverage Task83 adds only three paired-source Tzerra Ace-Matic CU-GH16 catalogs from the June2024 BE/Lux books; no other source re-audit or newest/firmware claim.",
   "incrementalUpdateDate": "2026-10-12",
   "counts": {
     "guides": 13,
-    "catalogAssignments": 41,
-    "distinctCatalogs": 35,
-    "displayedExplanationRows": 1701,
-    "distinctCatalogExplanationRows": 1459,
-    "distinctCatalogSourceURLs": 21
+    "catalogAssignments": 44,
+    "distinctCatalogs": 38,
+    "displayedExplanationRows": 1798,
+    "distinctCatalogExplanationRows": 1556,
+    "distinctCatalogSourceURLs": 22
   },
-  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources. Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses. Task80 adds36 source-row assignments: iZone17 most-common messages, i32EC19 including105program and180/181nonfault;50 ATAG rows are not50 unique fault diagnoses.",
+  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources. Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses. Task80 adds36 source-row assignments: iZone17 most-common messages, i32EC19 including105program and180/181nonfault;50 ATAG rows are not50 unique fault diagnoses. The97 Tzerra Ace-Matic source rows are explanation rows, not97 new fault diagnoses, search demand or complete Tzerra/brand coverage.",
   "method": "Original Task47 record history retained. Task48 added one historical Bulex A/B table. Task49 updates only six shared Bosch/Junkers scopes, two warnings and directly observed NL chapter/source context, adding one original PDF snapshot. Other26 entries/eight snapshots/eleven guide entries remain unchanged; no 242-row re-audit or newest/full-model certification.",
   "guides": [
     {
@@ -73,8 +73,8 @@
     {
       "slug": "remeha",
       "brand": "Remeha",
-      "modelWarning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.",
-      "explanationRowCount": 659,
+      "modelWarning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace, Quinta en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld.",
+      "explanationRowCount": 756,
       "catalogIds": [
         "remeha-avanta",
         "remeha-calenta-legacy",
@@ -88,7 +88,10 @@
         "remeha-calenta-ace-matic-25l-cu-blocking",
         "remeha-calenta-ace-matic-25l-cu-locking",
         "remeha-calenta-ace-matic-25l-scb-warnings",
-        "remeha-calenta-ace-matic-25l-scb-blocking"
+        "remeha-calenta-ace-matic-25l-scb-blocking",
+        "remeha-tzerra-ace-matic-cu-warnings",
+        "remeha-tzerra-ace-matic-cu-temporary",
+        "remeha-tzerra-ace-matic-cu-locking"
       ],
       "documentationLabel": "Officiële Remeha Storingswijzer",
       "documentationURL": "https://storingswijzer.remeha.be/"
@@ -404,6 +407,30 @@
       "pageCount": 124,
       "byteLength": 14419588,
       "sourceBoundary": "Actual public Belgian documentation hyperlink; retained HTTP200 application/pdf, no redirects. Root/independent source researcher read complete relevant pages; source-specific historical scope, not all-brand/current serial/firmware/latest fit. No embedded PDF JavaScript executed."
+    },
+    {
+      "id": "remeha-tzerra-ace-matic-installer-pdf",
+      "kind": "manufacturer-PDF",
+      "url": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Installatie--en-servicehandleiding-NL.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-82-tzerra-installer/original.pdf",
+      "sha256": "5527f0e4a6ff599cd4339fe8ee8845231de53d1f88b3004200bf26ccbda8eb91",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 96,
+      "byteLength": 9243069,
+      "sourceBoundary": "Actual linked original HTTP200 application/pdf, printed7875188 - 01 - 20062024, BE/Lux Dutch four cover variants. Full relevant pages read; literal97codes paired, professional remedies not DIY. No newest/article/serial/firmware or other-generation coverage."
+    },
+    {
+      "id": "remeha-tzerra-ace-matic-user-pdf",
+      "kind": "manufacturer-PDF",
+      "url": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Gebruikershandleiding-NL.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-82-tzerra-user/original.pdf",
+      "sha256": "6e04692b8531db3b9a0fad012a29c9d496cbc41c057bc745458b7691a595e4a6",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 32,
+      "byteLength": 706155,
+      "sourceBoundary": "Actual linked original HTTP200 application/pdf, printed7875187 - 01 - 20062024, BE/Lux Dutch four cover variants. Full relevant pages read; literal97codes paired, professional remedies not DIY. No newest/article/serial/firmware or other-generation coverage."
     }
   ],
   "entries": [
@@ -1391,6 +1418,186 @@
       "conditions": "Only with actual SCB-10 extension and relevant connected components. Source-column contradictions remain; no SCB E table in this declared chapter.",
       "declaredScopePath": "content/remeha-calenta-ace-matic-25l.mjs",
       "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "remeha-tzerra-ace-matic-cu-warnings",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Tzerra Ace-Matic — CU-GH16 — waarschuwingen",
+      "modelScope": "Uitsluitend Tzerra Ace-Matic 28c, 28c G31, 35c en 25s voor België en Luxemburg, CU-GH16, installatieboek 7875188-01-20062024 tabel 59, gecontroleerd tegen gebruikersboek 7875187-01-20062024 tabel 16. De installatiebron noemt A een waarschuwing; volgens de gebruikersbron kan het toestel daarbij blijven werken. Deze editie bevat 18 letterlijke bronrijen, niet alle merkcodes. De aanwezige opties en aansluitingen moeten worden vastgesteld, waaronder bij H02.70 het SCB-09-accessoire; dit is geen SCB-09-, SCB-10- of CU-GH-21-catalogus. Niet voor legacy Tzerra, Tzerra Ace, Calenta, Avanta, Quinta of andere revisies. Artikelnummers, serials, firmware, actuele toestelcompatibiliteit en nieuwste editie zijn niet vastgesteld. Lees de volledige toestelcode: generiek OpenTherm 254 is geen alias. Geen universele druk-, vul- of resethandeling afgeleid uit verschillende bronpassages.",
+      "sourceLabel": "Remeha België — Tzerra Ace-Matic installatie- en servicehandleiding 7875188-01-20062024",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Installatie--en-servicehandleiding-NL.pdf",
+      "sourcePages": "installatie tabel 59, p. 82–83; gebruiker tabel 16, p. 20",
+      "explanationRowCount": 18,
+      "modelFamily": "Tzerra Ace-Matic",
+      "models": [
+        "28c",
+        "28c G31",
+        "35c",
+        "25s"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "documentNumber": "7875188",
+      "revision": "01",
+      "issueDate": "2024-06-20",
+      "issueDatePrecision": "day",
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "CU-GH16",
+      "controller": "CU-GH16",
+      "tableIds": [
+        59
+      ],
+      "companionDocumentNumber": "7875187",
+      "companionRevision": "01",
+      "companionTableIds": [
+        16
+      ],
+      "additionalSourceURLs": [
+        "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Gebruikershandleiding-NL.pdf"
+      ],
+      "primarySnapshot": "remeha-tzerra-ace-matic-installer-pdf",
+      "companionSnapshot": "remeha-tzerra-ace-matic-user-pdf",
+      "literalCodeGroupCount": 18,
+      "sourceAudience": "installer and user; professional remedy columns remain professional",
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-82-root-source-facts.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-82-root-source-verification.json",
+        "tests/fixtures/tzerra-ace-matic-source-facts.json"
+      ],
+      "verificationBasis": "Actual linked BE/Lux originals measured and relevant full pages visually read; both97literal-code arrays/order match, meanings/safe actions independently paraphrased before product. Not a latest/current-device/all-brand claim.",
+      "conditions": "Only four printed cover variants and actualCU-GH16 tables. Optional tank/autofill/SCB-09/external devices require real configuration; generic254 and three-digit suffixes are not aliases. Status/reset/filling/calibration requests are not automatic defect diagnoses.",
+      "declaredScopePath": "content/remeha-tzerra-ace-matic.mjs",
+      "fieldBoundary": "Printed June2024 edition, full primary/companion source locators. Null means unknown, not absent or incompatible. No article/serial/firmware/newest/current-device inference."
+    },
+    {
+      "id": "remeha-tzerra-ace-matic-cu-temporary",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Tzerra Ace-Matic — CU-GH16 — tijdelijke stops",
+      "modelScope": "Uitsluitend Tzerra Ace-Matic 28c, 28c G31, 35c en 25s voor België en Luxemburg, CU-GH16, installatieboek 7875188-01-20062024 tabel 60, gecontroleerd tegen gebruikersboek 7875187-01-20062024 tabel 17. De installatiebron noemt H een tijdelijke stop; automatische hervatting of een procedurestatus is geen bewijs dat de installatie probleemloos werkt. Deze editie bevat 33 letterlijke bronrijen, niet alle merkcodes. De aanwezige opties en aansluitingen moeten worden vastgesteld, waaronder bij H02.70 het SCB-09-accessoire; dit is geen SCB-09-, SCB-10- of CU-GH-21-catalogus. Niet voor legacy Tzerra, Tzerra Ace, Calenta, Avanta, Quinta of andere revisies. Artikelnummers, serials, firmware, actuele toestelcompatibiliteit en nieuwste editie zijn niet vastgesteld. Lees de volledige toestelcode: generiek OpenTherm 254 is geen alias. Geen universele druk-, vul- of resethandeling afgeleid uit verschillende bronpassages.",
+      "sourceLabel": "Remeha België — Tzerra Ace-Matic installatie- en servicehandleiding 7875188-01-20062024",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Installatie--en-servicehandleiding-NL.pdf",
+      "sourcePages": "installatie tabel 60, p. 83–86; gebruiker tabel 17, p. 21–23",
+      "explanationRowCount": 33,
+      "modelFamily": "Tzerra Ace-Matic",
+      "models": [
+        "28c",
+        "28c G31",
+        "35c",
+        "25s"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "documentNumber": "7875188",
+      "revision": "01",
+      "issueDate": "2024-06-20",
+      "issueDatePrecision": "day",
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "CU-GH16",
+      "controller": "CU-GH16",
+      "tableIds": [
+        60
+      ],
+      "companionDocumentNumber": "7875187",
+      "companionRevision": "01",
+      "companionTableIds": [
+        17
+      ],
+      "additionalSourceURLs": [
+        "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Gebruikershandleiding-NL.pdf"
+      ],
+      "primarySnapshot": "remeha-tzerra-ace-matic-installer-pdf",
+      "companionSnapshot": "remeha-tzerra-ace-matic-user-pdf",
+      "literalCodeGroupCount": 33,
+      "sourceAudience": "installer and user; professional remedy columns remain professional",
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-82-root-source-facts.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-82-root-source-verification.json",
+        "tests/fixtures/tzerra-ace-matic-source-facts.json"
+      ],
+      "verificationBasis": "Actual linked BE/Lux originals measured and relevant full pages visually read; both97literal-code arrays/order match, meanings/safe actions independently paraphrased before product. Not a latest/current-device/all-brand claim.",
+      "conditions": "Only four printed cover variants and actualCU-GH16 tables. Optional tank/autofill/SCB-09/external devices require real configuration; generic254 and three-digit suffixes are not aliases. Status/reset/filling/calibration requests are not automatic defect diagnoses.",
+      "declaredScopePath": "content/remeha-tzerra-ace-matic.mjs",
+      "fieldBoundary": "Printed June2024 edition, full primary/companion source locators. Null means unknown, not absent or incompatible. No article/serial/firmware/newest/current-device inference."
+    },
+    {
+      "id": "remeha-tzerra-ace-matic-cu-locking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Tzerra Ace-Matic — CU-GH16 — vergrendelingen",
+      "modelScope": "Uitsluitend Tzerra Ace-Matic 28c, 28c G31, 35c en 25s voor België en Luxemburg, CU-GH16, installatieboek 7875188-01-20062024 tabel 61, gecontroleerd tegen gebruikersboek 7875187-01-20062024 tabel 18. De installatiebron noemt E een vergrendeling; de professionele reset- en herstelkolommen zijn geen gebruikersprocedure. Deze editie bevat 46 letterlijke bronrijen, niet alle merkcodes. De aanwezige opties en aansluitingen moeten worden vastgesteld, waaronder bij H02.70 het SCB-09-accessoire; dit is geen SCB-09-, SCB-10- of CU-GH-21-catalogus. Niet voor legacy Tzerra, Tzerra Ace, Calenta, Avanta, Quinta of andere revisies. Artikelnummers, serials, firmware, actuele toestelcompatibiliteit en nieuwste editie zijn niet vastgesteld. Lees de volledige toestelcode: generiek OpenTherm 254 is geen alias. Geen universele druk-, vul- of resethandeling afgeleid uit verschillende bronpassages.",
+      "sourceLabel": "Remeha België — Tzerra Ace-Matic installatie- en servicehandleiding 7875188-01-20062024",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Installatie--en-servicehandleiding-NL.pdf",
+      "sourcePages": "installatie tabel 61, p. 86–90; gebruiker tabel 18, p. 24–28",
+      "explanationRowCount": 46,
+      "modelFamily": "Tzerra Ace-Matic",
+      "models": [
+        "28c",
+        "28c G31",
+        "35c",
+        "25s"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "documentNumber": "7875188",
+      "revision": "01",
+      "issueDate": "2024-06-20",
+      "issueDatePrecision": "day",
+      "market": [
+        "België",
+        "Luxemburg"
+      ],
+      "language": "nl",
+      "component": "CU-GH16",
+      "controller": "CU-GH16",
+      "tableIds": [
+        61
+      ],
+      "companionDocumentNumber": "7875187",
+      "companionRevision": "01",
+      "companionTableIds": [
+        18
+      ],
+      "additionalSourceURLs": [
+        "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Tzerra-Ace-Matic/NL/Tzerra-Ace-Matic-Gebruikershandleiding-NL.pdf"
+      ],
+      "primarySnapshot": "remeha-tzerra-ace-matic-installer-pdf",
+      "companionSnapshot": "remeha-tzerra-ace-matic-user-pdf",
+      "literalCodeGroupCount": 46,
+      "sourceAudience": "installer and user; professional remedy columns remain professional",
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-82-root-source-facts.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-82-root-source-verification.json",
+        "tests/fixtures/tzerra-ace-matic-source-facts.json"
+      ],
+      "verificationBasis": "Actual linked BE/Lux originals measured and relevant full pages visually read; both97literal-code arrays/order match, meanings/safe actions independently paraphrased before product. Not a latest/current-device/all-brand claim.",
+      "conditions": "Only four printed cover variants and actualCU-GH16 tables. Optional tank/autofill/SCB-09/external devices require real configuration; generic254 and three-digit suffixes are not aliases. Status/reset/filling/calibration requests are not automatic defect diagnoses.",
+      "declaredScopePath": "content/remeha-tzerra-ace-matic.mjs",
+      "fieldBoundary": "Printed June2024 edition, full primary/companion source locators. Null means unknown, not absent or incompatible. No article/serial/firmware/newest/current-device inference."
     },
     {
       "id": "buderus-logamax-gb162-v2",

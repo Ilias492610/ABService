@@ -1,3 +1,9 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraMetadata} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide, beforeAtagManualsHtml, beforeAtagManualsMetadata, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Historical contracts subtract only the independently tested Task77 addition.
@@ -12,10 +18,10 @@ import { beforeNefitGuide, beforeNefitRegistry, beforeNefitMetadata, beforeNefit
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { faultGuides, getFaultGuide } from "../content/fault-guides.mjs";
-import { getPageDefinition } from "../content/site-content.mjs";
+import { faultGuides as liveFaultGuides, getFaultGuide as liveGetFaultGuide } from "../content/fault-guides.mjs";
+import { getPageDefinition as liveGetPageDefinition } from "../content/site-content.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
-import { renderFaultGuide, faultGuideRoute, paramsFor, faultGuideRenderEvents } from "./helpers/fault-guide-runtime.mjs";
+import { renderFaultGuide as liveRenderFaultGuide, faultGuideRoute, paramsFor, faultGuideRenderEvents } from "./helpers/fault-guide-runtime.mjs";
 import { guideBaseline, modelHelpHtml } from "./fixtures/bulex-model-help-baseline.mjs";
 import { beforeThemaABGuide, beforeThemaABHtml } from "./fixtures/bulex-thema-condens-ab.mjs";
 import { beforeBoschScopeGuide, beforeBoschScopeRegistry, beforeBoschScopeMetadata, beforeBoschScopeHtml } from "./fixtures/bosch-junkers-source-boundaries.mjs";
@@ -57,7 +63,7 @@ test("Bulex retains every real catalog row and the F54 general-overview versus F
 test("all thirteen complete metadata, registry and guide objects remain exactly the pre-edit captures", async () => {
   assert.deepEqual(faultGuides.map(({ slug }) => slug), guideBaseline.map(([slug]) => slug));
   for (const [slug, , metadata, registry, guide] of guideBaseline) {
-    assert.equal(sha(beforeBoschScopeMetadata(beforeAcvMetadata(beforeIntergasMetadata(beforeNefitMetadata(beforeFerroliMetadata(beforeIthoMetadata(beforeAtagMetadata(beforeViessmannMetadata(beforeAvantaMetadata(beforeGb172Metadata(beforeAtagManualsMetadata(await faultGuideRoute.generateMetadata(paramsFor(slug)), slug), slug), slug), slug), slug), slug), slug), slug), slug), slug), slug)), metadata, `${slug} metadata before only separately tested Task49/50/52/59 descriptions`);
+    assert.equal(sha(beforeBoschScopeMetadata(beforeAcvMetadata(beforeIntergasMetadata(beforeNefitMetadata(beforeFerroliMetadata(beforeIthoMetadata(beforeAtagMetadata(beforeViessmannMetadata(beforeAvantaMetadata(beforeGb172Metadata(beforeAtagManualsMetadata(beforeTzerraMetadata(await faultGuideRoute.generateMetadata(paramsFor(slug)), slug), slug), slug), slug), slug), slug), slug), slug), slug), slug), slug), slug)), metadata, `${slug} metadata before only separately tested Task49/50/52/59 descriptions`);
     assert.equal(sha(beforeBoschScopeRegistry(beforeAcvRegistry(beforeIntergasRegistry(beforeNefitRegistry(beforeFerroliRegistry(beforeIthoRegistry(beforeAtagRegistry(beforeViessmannRegistry(beforeAvantaRegistry(beforeGb172Registry(beforeAtagManualsRegistry(getPageDefinition(`/foutcodes/${slug}`))))))))))))), registry, `${slug} registry before only Task49/50/52/59 descriptions/date`);
     assert.equal(sha(beforeThemaABGuide(beforeBoschScopeGuide(beforeAcvGuide(beforeIntergasGuide(beforeNefitGuide(beforeFerroliGuide(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(beforeAvantaGuide(beforeCalentaGuide(beforeGb172Guide(beforeAtagManualsGuide(getFaultGuide(slug))))))))))))))), guide, `${slug} entire guide before only separately tested Task48/49/50/52/59 changes`);
   }

@@ -1,12 +1,19 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
 import {createHash} from "node:crypto";
-import {faultGuides,getFaultGuide} from "../content/fault-guides.mjs";
-import {pageRegistry,getPageDefinition} from "../content/site-content.mjs";
+import {faultGuides as liveFaultGuides,getFaultGuide as liveGetFaultGuide} from "../content/fault-guides.mjs";
+import {pageRegistry as livePageRegistry,getPageDefinition as liveGetPageDefinition} from "../content/site-content.mjs";
 import {buildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
 import {filterFaultCatalogs} from "../libs/fault-search.mjs";
-import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {renderFaultGuide as liveRenderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
 const f=JSON.parse(await readFile(new URL("./fixtures/atag-manuals-source-facts.json",import.meta.url),"utf8"));
 const guide=getFaultGuide("atag");
 const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v)).digest("hex");
@@ -83,7 +90,7 @@ test("real ATAG SSR exposes50 cards separate source sections operating states an
 });
 
 test("ATAG model manifest pins two actual originals and explicitly unknown current compatibility",async()=>{
- const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));assert.deepEqual(m.counts,f.expectedManifestCounts);assert.equal(m.snapshots.length,22);
+ const m=beforeTzerraManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")));assert.deepEqual(m.counts,f.expectedManifestCounts);assert.equal(m.snapshots.length,22);
  for(const c of f.catalogs){const e=m.entries.find(e=>e.id===c.id),s=m.snapshots.find(s=>s.id===c.snapshotId);assert.ok(e,c.id);assert.ok(s,c.snapshotId);assert.equal(e.modelScope,c.scope);assert.equal(e.sourcePages,c.sourcePages);assert.deepEqual(e.models,c.source.technicalModels);assert.deepEqual(e.market,["België"]);assert.equal(e.boilerDestinationMarket,"B");assert.equal(e.primarySnapshot,c.snapshotId);assert.equal(e.explanationRowCount,c.rows.length);assert.equal(e.observedIssue,c.source.printedIdentifierAndIssue.split(" / ")[1]);for(const field of ["revision","articleNumbers","modelArticlePairs","firmwareCompatibility","controllerVariantCoverage","customerDeviceCompatibility","newestEdition"])assert.equal(e[field],null,field);assert.equal(s.sha256,c.source.sha256);assert.equal(s.byteLength,c.source.byteLength);assert.equal(s.pageCount,c.source.physicalPageCount);assert.equal(s.expectedSha256,null);assert.equal(s.hashMatchesPriorRecord,null);}
 });
 

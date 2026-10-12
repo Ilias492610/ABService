@@ -1,3 +1,10 @@
+// Reconstruct only independently tested Task83 before earlier named history inverses.
+import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml} from "./fixtures/tzerra-ace-matic-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
+const getFaultGuide=slug=>beforeTzerraGuide(liveGetFaultGuide(slug));
+const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
+const pageRegistry=livePageRegistry.map(beforeTzerraRegistry);
+const renderFaultGuide=async slug=>beforeTzerraHtml(await liveRenderFaultGuide(slug),slug);
 // Historical captures remove only the independently tested named Task80 addition.
 import { beforeAtagManualsGuide, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Reconstruct only the separately verified Task77 addition for historical hashes.
@@ -13,11 +20,11 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { boschCatalogs, junkersCatalogs } from "../content/fault-catalogs.mjs";
-import { faultGuides, getFaultGuide } from "../content/fault-guides.mjs";
-import { getPageDefinition, pageRegistry } from "../content/site-content.mjs";
+import { faultGuides as liveFaultGuides, getFaultGuide as liveGetFaultGuide } from "../content/fault-guides.mjs";
+import { getPageDefinition as liveGetPageDefinition, pageRegistry as livePageRegistry } from "../content/site-content.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
-import { renderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
+import { renderFaultGuide as liveRenderFaultGuide } from "./helpers/fault-guide-runtime.mjs";
 import { boschBoundaryFacts as facts, beforeBoschScopeGuide, beforeBoschScopeRegistry, beforeBoschScopeHtml } from "./fixtures/bosch-junkers-source-boundaries.mjs";
 import { beforeAcvGuide, beforeAcvRegistry } from "./fixtures/acv-prestige-source-safety.mjs";
 import { beforeIntergasGuide, beforeIntergasRegistry } from "./fixtures/intergas-prestige-source-context.mjs";
