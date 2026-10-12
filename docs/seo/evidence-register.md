@@ -1,5 +1,48 @@
 # Evidence Register
 
+## 12 October 2026 — Task66 Article issuer URL locally verified
+
+Bounded WP12 correction: Article.author.url now uses the same canonical
+homepage URL as the global #organization entity. The visible organizational
+issuer link still goes to /over-ons; identity/type/name/publisher, citations,
+content and dates remain unchanged. This targets the actual optional duplicate
+URL observation in Task64, not a new business fact or inferred review.
+
+Scope is6 dynamic advice articles. Initial brief/commentary incorrectly said13;
+13 belongs to the faultcode-brand cluster. The seventh, separate static
+pressure-loss advice page is unchanged and does not call this Article builder.
+Complete six built Article payloads match BASE after undoing only author.url;
+global graph and source/registry/metadata/caller files remain unchanged.
+24 negative preservation controls detect unrelated headline/date/citation/
+publisher drift. This does not claim the entire HTML equals an old build.
+
+Fresh real Node24: baseline534pass; RED focused19/16pass/3expected failures;
+minimal one-field patch gives GREEN19/0fail and full536/0fail. Lint passes,
+production dependency audit0, ordinary build170, local crawl82pages/93links/
+112assets passes. Task51 development/lifecycle findings remain unresolved.
+CUA local browser1280×720 and390×844 confirms actual canonical author URL,
+unchanged visible issuer link, service-prefilled contact CTA/anchor, empty name,
+form top about142.7px and no horizontal overflow. No submission, owner account,
+provider-mail/events, physical AT or field-CWV validation; activeId was empty,
+not a proven field-focus transfer. Mobile pixels viewed, no persisted screenshot
+bundle. Temporary local tab closed and viewport override reset.
+
+Keep true date-only modification fields. [Schema.org dateModified](https://schema.org/dateModified)
+allows Date or DateTime, while [Google's byline-date guide](https://developers.google.com/search/docs/appearance/publication-dates)
+makes time optional. The [Article guide](https://developers.google.com/search/docs/appearance/structured-data/article)
+allows an organization's homepage for author identity. Actual date-precision,
+missing-image and local-business warnings remain recorded; no invented time,
+date refresh, address, price, reviewer or image evidence to silence warnings.
+
+Sole fresh whole-cohort review approves (0 Critical / 0 Important / 0 Minor),
+with an independent fresh536-pass suite. Exact main/CI/Vercel/live gates pending.
+Local success is not current live correction or removal of Google's warning.
+Only after release, retest the changed representative article externally.
+Metadata-only change does not justify IndexNow for unchanged customer content.
+Previous Task63–65 documentation is included alongside this product cohort,
+not a separate docs-only deployment. Wider WP12/account/field/indexing gates
+and single-hop redirect optimization remain open.
+
 ## 12 October 2026 — Task62 Calenta locally verified; Task61 released
 
 ### Current post-review correction phase

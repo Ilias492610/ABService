@@ -1,5 +1,165 @@
 # AB Service SEO QA Report
 
+## 12 October 2026 — Task66 Article issuer URL locally verified
+
+Bounded WP12 correction: Article.author.url now uses the same canonical
+homepage URL as the global #organization entity. The visible organizational
+issuer link still goes to /over-ons; identity/type/name/publisher, citations,
+content and dates remain unchanged. This targets the actual optional duplicate
+URL observation in Task64, not a new business fact or inferred review.
+
+Scope is6 dynamic advice articles. Initial brief/commentary incorrectly said13;
+13 belongs to the faultcode-brand cluster. The seventh, separate static
+pressure-loss advice page is unchanged and does not call this Article builder.
+Complete six built Article payloads match BASE after undoing only author.url;
+global graph and source/registry/metadata/caller files remain unchanged.
+24 negative preservation controls detect unrelated headline/date/citation/
+publisher drift. This does not claim the entire HTML equals an old build.
+
+Fresh real Node24: baseline534pass; RED focused19/16pass/3expected failures;
+minimal one-field patch gives GREEN19/0fail and full536/0fail. Lint passes,
+production dependency audit0, ordinary build170, local crawl82pages/93links/
+112assets passes. Task51 development/lifecycle findings remain unresolved.
+CUA local browser1280×720 and390×844 confirms actual canonical author URL,
+unchanged visible issuer link, service-prefilled contact CTA/anchor, empty name,
+form top about142.7px and no horizontal overflow. No submission, owner account,
+provider-mail/events, physical AT or field-CWV validation; activeId was empty,
+not a proven field-focus transfer. Mobile pixels viewed, no persisted screenshot
+bundle. Temporary local tab closed and viewport override reset.
+
+Keep true date-only modification fields. [Schema.org dateModified](https://schema.org/dateModified)
+allows Date or DateTime, while [Google's byline-date guide](https://developers.google.com/search/docs/appearance/publication-dates)
+makes time optional. The [Article guide](https://developers.google.com/search/docs/appearance/structured-data/article)
+allows an organization's homepage for author identity. Actual date-precision,
+missing-image and local-business warnings remain recorded; no invented time,
+date refresh, address, price, reviewer or image evidence to silence warnings.
+
+Sole fresh whole-cohort review approves (0 Critical / 0 Important / 0 Minor),
+with an independent fresh536-pass suite. Exact main/CI/Vercel/live gates pending.
+Local success is not current live correction or removal of Google's warning.
+Only after release, retest the changed representative article externally.
+Metadata-only change does not justify IndexNow for unchanged customer content.
+Previous Task63–65 documentation is included alongside this product cohort,
+not a separate docs-only deployment. Wider WP12/account/field/indexing gates
+and single-hop redirect optimization remain open.
+
+## 12 October 2026 — WP12 known-host URL-variant matrix
+
+Task65 checks only HTTP/HTTPS, apex/www, bare/slash and one innocuous query
+for /, /onderhoud and /seo-audit-niet-bestaand:40 start URLs,96 actual GETs.
+All56 redirects are308; final24 published responses are200 and16 deliberate
+missing-page responses are404 with noindex and “Deze pagina bestaat niet”.
+All final URLs use HTTPS/www, preserve path/query, and normalize interior
+trailing slash. Published canonicals omit the harmless query; query200 is not
+treated as a defect or as a separate customer page.
+
+Redirect-hop counts:6 chains with0 redirects,16 with1,14 with2,4 with3.
+No observed loop, downgrade, off-host redirect, lost query/path, published
+noindex or wrong canonical. This is NOT a claim of single-hop redirects:
+HTTP apex plus trailing slash still takes3 redirects. Unknown aliases,
+provider previews and Google's selected canonical remain outside this matrix.
+[Google's canonical guide](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+and [redirect guide](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
+were read; these server signals do not establish indexing or selected canonical.
+
+Original diagnostic exit1 had16 false-positive heading assertions, expecting
+“niet gevonden” instead of the actual explicit missing-page heading. Original
+script/results/all96 response bodies are retained unchanged. Fresh offline
+re-extraction/hash/hop/final checks pass, with6 rejecting controls and no
+refetch/product change. Original metadata said12 controls; actual11 rejecting
+fixtures are explicitly reconciled. The 404's missing canonical is intentional,
+not a reason to redirect it home or claim a successful generic HTML audit.
+All24 published bodies separately pass the existing HTML audit.
+
+Only this bounded matrix execution is verified; wider WP12, unknown aliases,
+single-hop optimization, account/field/security/indexing gates remain open.
+Sole independent documentary review approves this bounded record (0 Critical /
+0 Important / 0 Minor). No product/date/state/account changes,
+docs-only production release or IndexNow. Next bounded work remains the
+Article date-precision/entity-URL findings from Task64.
+
+## 12 October 2026 — WP12 representative external schema validation
+
+Task64 tests the accepted product at 9b9af1aa9f08c7f18405d4b4f3684cbabb52b893,
+without changing product, content dates, publication states or accounts.
+Actual anonymous URL-mode results, not JSON unit tests or pasted-code tests:
+
+| Canonical page | Google Rich Results Test | Schema.org validator |
+| --- | --- | --- |
+| Home | [4 valid feature items](https://search.google.com/test/rich-results/result?id=qjh-HifrdeUTxEdj2fTCXA), noncritical local-business warnings | [0 errors / 0 warnings / 2 root items](https://validator.schema.org/#url=https%3A%2F%2Fwww.abservice24.be%2F) |
+| /onderhoud | [5 valid feature items](https://search.google.com/test/rich-results/result?id=TCmAVqyci7K8ukstwW2lEQ), noncritical local-business warnings | [0 errors / 0 warnings / 3 root items](https://validator.schema.org/#url=https%3A%2F%2Fwww.abservice24.be%2Fonderhoud) |
+| /advies/onderhoudsattest-cv-ketel | [6 valid feature items](https://search.google.com/test/rich-results/result?id=aDbwz4Rynb5RrvSn41B2wg), noncritical Article/business/Organization warnings | [0 errors / 0 warnings / 4 root items](https://validator.schema.org/#url=https%3A%2F%2Fwww.abservice24.be%2Fadvies%2Fonderhoudsattest-cv-ketel) |
+
+Google crawl displays 12October 04:14:56, 04:29:03 and 04:40:18 Brussels.
+Expanded maintenance/article panels show successful smartphone Inspection Tool
+fetch, crawling allowed and indexing allowed; these are not actual indexing.
+Google feature counts and Schema.org root counts are different quantities.
+Homepage/maintenance local entries report optional address/image for Organization
+and address/priceRange for Plumber+HVACBusiness. Article additionally reports
+missing image, date-only `dateModified` invalid time/missing timezone, and a
+duplicate Organization `url` from home plus /over-ons. Article local-business
+warning details were not separately expanded; do not infer their total.
+
+The current [LocalBusiness guide](https://developers.google.com/search/docs/appearance/structured-data/local-business)
+requires a physical address although this tool labels omission optional.
+No invented customer premises, prices, image proof or blanket eligibility claim.
+The [Article guide](https://developers.google.com/search/docs/appearance/structured-data/article)
+recommends applicable precise dates/identity/images. Its observed date/URL
+warnings are candidates for a separately tested correction, not silently fixed
+or masked with an invented timestamp. [Current Search updates](https://developers.google.com/search/updates)
+record FAQ rich-result retirement; visible useful FAQs remain useful.
+
+Separate retained public SSR payloads all return200 with expected canonicals
+and unchanged global graph. They are not claimed to be either validator's
+rendered bytes. Three successful capture GETs plus one failed harness assertion
+GET: initial root slash string mismatch diagnosed offline as URL serialization;
+harness only corrected, original failure preserved. Actual UI observations are
+transcribed in recovery; no persisted raw AX/screenshot bundle is claimed.
+Google links are temporary; Schema.org fragments are test targets, not archives.
+
+This closes the representative external-test execution slice, not all-page
+semantic correctness, business facts, field CWV, security, eligibility,
+indexing, accounts or WP12 as a whole. Sole independent documentary review
+approves the retained record (0 Critical / 0 Important / 0 Minor); it does not
+independently reproduce external UI tests or authorize a product release.
+Next: bounded host/HTTP/slash/query/404 matrix, then source-guided Article
+date-precision/entity-URL correction. No docs-only production cycle or IndexNow.
+
+## 12 October 2026 — Task62 released; WP10 source gate verified locally
+
+Task62 is released at 9b9af1aa9f08c7f18405d4b4f3684cbabb52b893.
+[Exact CI 38192056124](https://github.com/Ilias492610/ABService/actions/runs/38192056124)
+passes 534 tests, lint, production audit zero, build 170 and hosted crawl.
+Both Vercel-created named Production records 7004576625 and 7004570187 report
+success for that SHA. Canonical crawl passes 82 pages/93 links/112 assets;
+unchanged-hash four-profile native LIVE checks pass 234 queries and eight
+empty-form contacts. Two pending and two canceled RSC bodies remain unconfirmed;
+raw provider READY is separately unverified. One substantive Remeha IndexNow
+HTTP 200 receipt confirms notification, not indexing. Earlier candidate phases
+below are history, not current release status.
+
+Task63 resolves one WP10 source-identity question, not a customer-copy bug.
+The [linked Vaillant user manual](https://www.vaillant.be/downloads/documenten/gebruikshandleiding/0020282232-04-2763671.pdf)
+redirects HTTP 308 to a same-origin manufacturer PDF. Its actual identity is
+0020282232_06, matching the existing label despite the older URL filename.
+One retained PDF response is 306,122 bytes/60 pages, SHA256
+720974b20c0200dcc618d9af49479f974da1b3ff3d883495b66b9ac1a116ecb6.
+Root reads nine complete rendered relevant pages and verifies both live advice
+pages. Product code, source URL, copy, checkedAt, modifiedAt and sitemap dates
+remain unchanged. No newest-edition or individual-device compatibility claim.
+
+This is a local documentary update, not a new website publication or
+IndexNow submission. Independent documentary review approves this update with
+zero Critical, Important or Minor findings; it remains local for the next
+substantive cohort, not a documentation-only production release.
+The Mac is still locked and the correct Abder profile unavailable; no
+account substitution or repeated owner prompt. WP06/WP10/WP11 inventory finds
+no further demonstrated independent customer bug in its bounded scope.
+Actual owner questions, technical review, case consent, French review, account
+access, Task51 lifecycle findings, field metrics and business outcomes stay open.
+No original checkbox or acceptance criterion is closed by this audit.
+
+
 ## 12 October 2026 — Task62 Calenta locally verified; Task61 released
 
 ### Current post-review correction phase

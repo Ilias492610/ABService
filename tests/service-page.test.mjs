@@ -99,6 +99,7 @@ test("advice caller supplies separately labeled source checking and content modi
   const article = JSON.parse(html.match(/<script[^>]*id="article-schema"[^>]*>(.*?)<\/script>/)[1]);
   assert.equal(article.dateModified, "2026-10-11");
   assert.equal(article.author["@type"], "Organization");
+  assert.equal(article.author.url, "https://www.abservice24.be");
   assert.ok(!Object.hasOwn(article, "datePublished"));
 });
 
