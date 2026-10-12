@@ -1,3 +1,4 @@
+import { beforeCalentaGuide, beforeCalentaCatalog, beforeCalentaHtml, beforeCalentaManifestEntry, beforeCalentaManifestMirror } from "./fixtures/calenta-legacy-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
@@ -38,8 +39,8 @@ test("every Avanta card gives observation rather than unsourced reset filling or
 test("Avanta scope distinguishes an observed overview from device fit and instructions", () => {
   assert.equal(catalog.scope, f.scope); assert.equal(catalog.sourcePages, f.pages);
   assert.equal(catalog.sourceUrl, f.url); assert.equal(catalog.sourceLabel, f.label);
-  assert.equal(guide.modelWarning, f.warning); assert.equal(catalog.title, "Avanta");
-  assert.equal(hash(guide.catalogs.filter(c => c.id !== f.id)), f.preservation.remeha.otherTwelveCatalogs);
+  assert.equal(beforeCalentaGuide(guide).modelWarning, f.warning); assert.equal(catalog.title, "Avanta");
+  assert.equal(hash(guide.catalogs.filter(c => c.id !== f.id).map(beforeCalentaCatalog)), f.preservation.remeha.otherTwelveCatalogs);
   assert.equal(hash(faultGuides.filter(g => g.slug !== "remeha")), f.preservation.remeha.otherTwelveGuides);
 });
 
@@ -70,10 +71,10 @@ test("all659 Remeha SSR cards preserve original leaves outside exact Avanta chan
   assert.equal((html.match(/class="fault-code-card"/g) || []).length, 659);
   assert.match(html, /\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);
   assert.match(html, /gasgeur/i);
-  assert.equal(hash(beforeAvantaHtml(html, "remeha")), f.preservation.remeha.html);
-  assert.equal(hash(beforeAvantaGuide(guide)), f.preservation.remeha.guide);
-  assert.equal(hash(beforeAvantaGuide(guide).codes), f.preservation.remeha.codes);
-  assert.equal(hash(faultGuides.map(beforeAvantaGuide)), f.preservation.allGuides);
+  assert.equal(hash(beforeAvantaHtml(beforeCalentaHtml(html, "remeha"), "remeha")), f.preservation.remeha.html);
+  assert.equal(hash(beforeAvantaGuide(beforeCalentaGuide(guide))), f.preservation.remeha.guide);
+  assert.equal(hash(beforeAvantaGuide(beforeCalentaGuide(guide)).codes), f.preservation.remeha.codes);
+  assert.equal(hash(faultGuides.map(beforeCalentaGuide).map(beforeAvantaGuide)), f.preservation.allGuides);
 });
 
 test("Avanta manifest retains two original responses but only17 distinct codes", async () => {
@@ -91,7 +92,7 @@ test("Avanta manifest retains two original responses but only17 distinct codes",
     const s = m.snapshots.find(s => s.id === id); assert.equal(s?.sha256, sha256); assert.equal(s?.bytes, bytes);
     for (const k of ["pageCount", "expectedSha256", "hashMatchesPriorRecord"]) assert.equal(s?.[k], null, k);
   }
-  assert.equal(hash(m.entries.filter(e => e.id !== f.id)), f.preservation.remeha.otherEntries);
-  assert.equal(hash(m.guides.filter(g => g.slug !== "remeha")), f.preservation.remeha.otherMirrors);
-  assert.equal(hash(m.snapshots.filter(s => !["remeha-avanta-overview-html", "remeha-avanta-pagination-html"].includes(s.id))), f.preservation.oldSnapshots);
+  assert.equal(hash(m.entries.filter(e => e.id !== f.id).map(beforeCalentaManifestEntry)), f.preservation.remeha.otherEntries);
+  assert.equal(hash(m.guides.filter(g => g.slug !== "remeha").map(beforeCalentaManifestMirror)), f.preservation.remeha.otherMirrors);
+  assert.equal(hash(m.snapshots.filter(s => !["remeha-calenta-legacy-pdf","remeha-avanta-overview-html", "remeha-avanta-pagination-html"].includes(s.id))), f.preservation.oldSnapshots);
 });

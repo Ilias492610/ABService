@@ -43,8 +43,9 @@ test("the bounded model inventory matches every real guide assignment, scope, so
 });
 
 test("the inventory keeps unknown fields and retained evidence distinct rather than declaring a fresh audit", () => {
-  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 25);
-  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 2);
+  // One actual Task62 PDF now supports both previously declared legacy tables.
+  assert.equal(manifest.entries.filter(e => e.primarySnapshot?.endsWith("-pdf")).length, 27);
+  assert.equal(manifest.entries.filter(e => !e.primarySnapshot).length, 0);
   assert.equal(manifest.snapshots.filter(s => s.hashMatchesPriorRecord === true).length, 7);
   assert.equal(manifest.snapshots.find(s => s.id === "vaillant-public-html").expectedSha256, null);
   for (const e of manifest.entries) {
@@ -117,6 +118,6 @@ test("the inventory keeps unknown fields and retained evidence distinct rather t
   assert.equal(nefitSnapshot.pageCount, nefitFacts.pageCount);
   assert.equal(nefitSnapshot.expectedSha256, null);
   assert.equal(nefitSnapshot.hashMatchesPriorRecord, null);
-  // Task61 adds two original Avanta HTML responses, preserving all16 prior snapshots.
-  assert.equal(manifest.snapshots.length, 18);
+  // Task62 adds one shared legacy PDF, preserving all18 prior originals.
+  assert.equal(manifest.snapshots.length, 19);
 });

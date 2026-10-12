@@ -1,3 +1,4 @@
+import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaGuide, beforeAvantaRegistry } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry } from "./fixtures/viessmann-overview-source-safety.mjs";
 import { beforeAtagGuide, beforeAtagRegistry } from "./fixtures/atag-overview-source-safety.mjs";
@@ -90,7 +91,7 @@ test("ACV real SSR exposes every selected row, safe action, source scope and nat
 
 // Integrity only: full genuine baseline, no source completeness certification.
 test("all other12 full guides and all registry fields preserve the genuine64 captures", () => {
-  assert.equal(hash(faultGuides.filter(g => g.slug !== "acv").map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide)), facts.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.filter(g => g.slug !== "acv").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide)), facts.preservation.otherTwelveGuides);
   assert.equal(hash(pageRegistry.map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry)), facts.preservation.allRegistry);
   assert.equal(hash(beforeAcvGuide(guide)), facts.preservation.guide);
   assert.equal(hash(beforeAcvGuide(guide).codes), facts.preservation.codes);

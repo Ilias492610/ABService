@@ -1,3 +1,4 @@
+import { beforeCalentaGuide, beforeCalentaManifestEntry, beforeCalentaManifestMirror } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaRegistry, beforeAvantaGuide, beforeAvantaManifestEntry, beforeAvantaManifestMirror } from "./fixtures/avanta-overview-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -57,7 +58,7 @@ test("Viessmann metadata uses genuine12October date and only restores its accept
 test("all71 SSR cards plus whole13 guides restore the genuine accepted6b128bc leaves",async()=>{
   const html=await renderFaultGuide("viessmann");assert.equal((html.match(/class="fault-code-card"/g)||[]).length,71);assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);
   assert.equal(hash(beforeViessmannHtml(html,"viessmann")),f.preservation.html);assert.equal(hash(beforeViessmannGuide(guide)),f.preservation.guide);assert.equal(hash(beforeViessmannGuide(guide).codes),f.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="viessmann").map(beforeAvantaGuide)),f.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeAvantaGuide).map(beforeViessmannGuide)),f.preservation.allGuides);
+  assert.equal(hash(faultGuides.filter(g=>g.slug!=="viessmann").map(beforeCalentaGuide).map(beforeAvantaGuide)),f.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide)),f.preservation.allGuides);
 });
 test("Viessmann manifest pins one originalHTML71literalrows without appliance or revision inventions",async()=>{
   const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));const e=m.entries.find(e=>e.id===f.id),s=m.snapshots.find(s=>s.id==="viessmann-overview-html");
@@ -66,5 +67,5 @@ test("Viessmann manifest pins one originalHTML71literalrows without appliance or
   assert.equal(e.articlePublishedAt,"2024-05-30T14:21:20.867Z");assert.equal(e.articleModifiedAt,"2026-09-14T08:57:39.675Z");
   for(const k of ["models","revision","issueDate","market","articleNumbers","firmwareCompatibility","currentBelgianVariantCompatibility","newestEdition","boilerDestinationMarket"])assert.equal(e[k],null,k);
   assert.equal(s?.sha256,f.sha256);assert.equal(s?.bytes,f.bytes);for(const k of ["pageCount","expectedSha256","hashMatchesPriorRecord"])assert.equal(s?.[k],null);
-  assert.equal(hash(m.entries.filter(e=>e.id!==f.id).map(beforeAvantaManifestEntry)),f.preservation.otherEntries);assert.equal(hash(m.guides.filter(g=>g.slug!=="viessmann").map(beforeAvantaManifestMirror)),f.preservation.otherMirrors);assert.equal(hash(m.snapshots.filter(s=>!["viessmann-overview-html","remeha-avanta-overview-html","remeha-avanta-pagination-html"].includes(s.id))),f.preservation.oldSnapshots);
+  assert.equal(hash(m.entries.filter(e=>e.id!==f.id).map(beforeCalentaManifestEntry).map(beforeAvantaManifestEntry)),f.preservation.otherEntries);assert.equal(hash(m.guides.filter(g=>g.slug!=="viessmann").map(beforeCalentaManifestMirror).map(beforeAvantaManifestMirror)),f.preservation.otherMirrors);assert.equal(hash(m.snapshots.filter(s=>!["remeha-calenta-legacy-pdf","viessmann-overview-html","remeha-avanta-overview-html","remeha-avanta-pagination-html"].includes(s.id))),f.preservation.oldSnapshots);
 });

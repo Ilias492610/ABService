@@ -14,6 +14,31 @@ const withAvantaSourceControls = (catalog) => Object.freeze({
   }))),
 });
 
+
+const CALENTA_E_OBSERVATION = "Noteer de volledige E-code, het exacte model en een zonder openen veilig bereikbaar artikel- of serienummer. De controle- en oplossingstabel is voor de installateur; laat een blijvende of terugkerende melding professioneel beoordelen. Open geen gesloten onderdelen, wijzig geen instellingen en gebruik deze servicetabel niet als reset- of herstelprocedure.";
+const CALENTA_SU_OBSERVATION = "Noteer de volledige St-status, Su-subcode en het exacte model. Dit is een tijdelijke blokkering; de bron beschrijft hervatten nadat de oorzaak verdwijnt, geen gebruikersherstelprocedure. Laat een blijvende of terugkerende melding professioneel beoordelen. Open geen gesloten onderdelen en wijzig geen instellingen.";
+const CALENTA_MEMORY_NOTE = "Deze blokkering wordt volgens de handleiding niet in het storingsgeheugen opgeslagen.";
+const CALENTA_OPTIONAL_NOTE = "Deze melding geldt alleen bij aanwezigheid van de betrokken uitbreiding of component.";
+const CALENTA_SCU_NOTE = "Deze melding kan ook optreden als een verwachte SCU-print ontbreekt. De code bewijst niet dat de uitbreiding aanwezig is.";
+const withCalentaSourceControls = (catalog) => Object.freeze({
+  ...catalog,
+  codes: Object.freeze(catalog.codes.map((row) => {
+    const isBlocking = catalog.id === "remeha-calenta-legacy-blocking";
+    const number = Number(row.code.split(":")[1]);
+    const printedPage = isBlocking ? (number <= 17 ? 83 : 84) : (number <= 3 ? 79 : number <= 12 ? 80 : number <= 37 ? 81 : 82);
+    let userAction = isBlocking ? CALENTA_SU_OBSERVATION : CALENTA_E_OBSERVATION;
+    if (["E:40", "Su:15"].includes(row.code)) userAction += " " + CALENTA_OPTIONAL_NOTE;
+    if (["E:38", "Su:13"].includes(row.code)) userAction += " " + CALENTA_SCU_NOTE;
+    if (["Su:16", "Su:17", "Su:18", "Su:19", "Su:20"].includes(row.code)) userAction += " " + CALENTA_MEMORY_NOTE;
+    if (row.code === "Su:20") userAction = "Verschijnt Su:20 kort na inschakelen, dan loopt de configuratieprocedure: volgens deze bron is geen actie nodig. Dit is op zichzelf geen defect; wijzig geen instellingen. Laat alleen een aanhoudende of onverwachte melding professioneel beoordelen. Deze blokkering wordt volgens de handleiding niet in het storingsgeheugen opgeslagen.";
+    return Object.freeze({
+      ...row,
+      userAction,
+      sourcePage: `${isBlocking ? "§11.2.2" : "§11.1"}, ${row.code}, gedrukte p. ${printedPage} (PDF-pagina ${printedPage + 1})`,
+    });
+  })),
+});
+
 export const remehaCatalogs = Object.freeze([
   withAvantaSourceControls(createFaultCatalog({
     id: "remeha-avanta",
@@ -43,10 +68,10 @@ export const remehaCatalogs = Object.freeze([
       ["E:45", "Melding over de grenzen van de parameters; dit overzicht specificeert de afwijking niet."],
     ],
   })),
-  createFaultCatalog({
+  withCalentaSourceControls(createFaultCatalog({
     id: "remeha-calenta-legacy",
     title: "Calenta 15s/25s/28c/35s/40c — E-storingscodes",
-    scope: "Alle 23 afzonderlijke E-codes uit §11.1 van de Belgische Calenta-handleiding, revisie 080715–117061-08. Niet voor Calenta Ace of Ace-Matic. Dit is een historische modelrevisie; de Su-blokkeringssubcodes staan in een aparte tabel hieronder.",
+    scope: "Historische Belgische Calenta 15s/25s/28c/35s/40c: alle 23 E-codes uit §11.1 van installatie- en servicehandleiding 117061-08, met gedrukte voettekst 080715 - 117061-08. Een E-code is een vergrendeling, niet de St:9/Su-blokkeringsstatus. De controle- en oplossingstabel is voor de installateur; dit is geen gebruikersherstelprocedure. SCU- en WTW-meldingen gelden alleen bij de betrokken configuratie. Niet voor Calenta Ace, Ace-Matic of andere revisies; artikelnummers, firmware, huidige toestelcompatibiliteit en nieuwste editie zijn niet vastgesteld.",
     sourceLabel: "Remeha Calenta België — installatie- en servicehandleiding 117061-08",
     sourceUrl: CALENTA_LEGACY_BE_URL,
     sourcePages: "§11.1, gedrukte p. 79–82 (PDF-pagina 80–83)",
@@ -63,7 +88,7 @@ export const remehaCatalogs = Object.freeze([
       ["E:09", "De gemeten retourtemperatuur ligt te hoog."],
       ["E:10", "Aanvoer en retour vertonen een te groot temperatuurverschil."],
       ["E:11", "Aanvoer en retour vertonen een te groot temperatuurverschil."],
-      ["E:12", "De warmtewisselaar heeft de beveiligde temperatuurgrens overschreden."],
+      ["E:12", "De warmtewisselaartemperatuur ligt boven het normale bereik (maximaalthermostaat STB)."],
       ["E:14", "De brander kon bij vijf opeenvolgende pogingen niet starten.", "gas"],
       ["E:16", "De regeling ontvangt een vlamsignaal terwijl dat niet verwacht wordt.", "gas"],
       ["E:17", "De SU-print meldt een storing bij de gasklep.", "gas"],
@@ -75,17 +100,17 @@ export const remehaCatalogs = Object.freeze([
       ["E:39", "De externe blokkeeringang heeft een vergrendeling veroorzaakt."],
       ["E:40", "De controle van de aangesloten warmteterugwinunit is mislukt."],
     ],
-  }),
-  createFaultCatalog({
+  })),
+  withCalentaSourceControls(createFaultCatalog({
     id: "remeha-calenta-legacy-blocking",
     title: "Calenta 15s/25s/28c/35s/40c — Su-blokkeringssubcodes",
-    scope: "Alle 19 Su-blokkeringssubcodes uit §11.2.2 van dezelfde Belgische handleiding 117061-08. Su is een subcode bij de blokkeringsstatus, niet dezelfde melding als een E-vergrendeling. Niet voor Calenta Ace of Ace-Matic; Su:20 kan kort bij het inschakelen verschijnen zonder defect.",
+    scope: "Historische Belgische Calenta 15s/25s/28c/35s/40c: alle 19 Su-subcodes uit §11.2.2 van installatie- en servicehandleiding 117061-08. Su is de substatus bij tijdelijke blokkering St:9, niet een E-vergrendeling; na het verdwijnen van de oorzaak hervat het toestel volgens deze bron zelf. Su:16–20 worden niet in het storingsgeheugen opgeslagen. Su:20 kort na inschakelen vraagt geen actie. De professionele tabel is geen gebruikersherstelprocedure. Niet voor Calenta Ace, Ace-Matic of andere revisies; nieuwste editie en uw exacte toestelcompatibiliteit zijn niet vastgesteld.",
     sourceLabel: "Remeha Calenta België — installatie- en servicehandleiding 117061-08",
     sourceUrl: CALENTA_LEGACY_BE_URL,
     sourcePages: "§11.2.2, gedrukte p. 83–84 (PDF-pagina 84–85)",
     rows: [
       ["Su:0", "De regeling meldt een onjuiste parameter."],
-      ["Su:1", "De aanvoertemperatuur heeft de ingestelde bovengrens overschreden."],
+      ["Su:1", "De maximale aanvoertemperatuur is overschreden."],
       ["Su:2", "De aanvoertemperatuur loopt sneller op dan toegestaan."],
       ["Su:7", "Aanvoer en retour vertonen een te groot temperatuurverschil."],
       ["Su:8", "Het toestel ontvangt geen vrijgavesignaal."],
@@ -97,14 +122,14 @@ export const remehaCatalogs = Object.freeze([
       ["Su:15", "De ketel meldt onvoldoende gasdruk.", "gas"],
       ["Su:16", "De configuratie is niet correct of de SU-print wordt niet herkend.", "electrical"],
       ["Su:17", "De configuratie of de standaardtabel met parameters is niet geldig."],
-      ["Su:18", "De configuratie is niet correct of de PSU-print wordt niet herkend.", "electrical"],
+      ["Su:18", "De omschrijving noemt een configuratiefout of een niet-herkende PSU-print. Dezelfde bron noemt PCU in de oorzaak- en oplossingkolom; daarmee is geen eenduidige printdiagnose vastgesteld.", "electrical"],
       ["Su:19", "De configuratie of de dF/dU-toestelparameters zijn niet bekend."],
       ["Su:20", "De configuratieprocedure loopt; dit kan kort na het inschakelen een normale status zijn."],
       ["Su:21", "De communicatie met de SU-print werkt niet correct.", "electrical"],
       ["Su:22", "De vlam is tijdens de werking weggevallen.", "gas"],
       ["Su:25", "De SU-print meldt een interne fout.", "electrical"],
     ],
-  }),
+  })),
   ...calentaAceMaticCatalogs,
   ...calentaAceMatic25LCatalogs,
 ]);

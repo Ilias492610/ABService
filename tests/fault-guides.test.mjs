@@ -1,5 +1,6 @@
 import { viessmannFacts } from "./fixtures/viessmann-overview-source-safety.mjs";
 import { avantaFacts } from "./fixtures/avanta-overview-source-safety.mjs";
+import {calentaFacts,expectedCalentaCatalogs} from "./fixtures/calenta-legacy-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 
@@ -102,6 +103,8 @@ test("every code row is complete, safely worded and unique within its model tabl
               ? viessmannFacts.rowChanges.find(row => row.beforeCode === entry.code)?.after.sourcePage
               : catalog.id === avantaFacts.id
                 ? `Online lijstregel ${avantaFacts.literalCodes.indexOf(entry.code) + 1}: ${entry.code}`
+              : calentaFacts.ids.includes(catalog.id)
+                ? expectedCalentaCatalogs.find(c=>c.id===catalog.id).codes.find(r=>r.code===entry.code)?.sourcePage
               : catalog.sourcePages;
         assert.equal(entry.sourcePage, sourcePage);
         assert.ok(entry.searchTerms.includes(entry.code));

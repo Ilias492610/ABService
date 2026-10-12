@@ -1,5 +1,107 @@
 # AB Service SEO Masterplan
 
+## 12 October 2026 — Task62 Calenta locally verified; Task61 released
+
+### Current post-review correction phase
+
+One fresh whole-cohort review inspected all 28 staged files and independently
+passed 532 tests. It found no Critical issues, two Important issues and one
+EOF-whitespace Minor. Root verified both Important findings, including complete
+PDF pages 84 and 101. Two added regressions were observed RED (8 pass/2 fail)
+then GREEN (10 pass). E:38/Su:13 now explicitly include an expected but missing
+SCU; the other two component-presence qualifiers remain unchanged.
+The manifest inverse restores only six changed leaves and deletes only six
+introduced fields, preserving unrelated and unknown drift. Twelve deliberate
+model/document/market/component/table/unknown mutations now fail preservation;
+old hashes are unchanged. The EOF Minor is removed. This is one bounded
+correction wave, not a second review or new source expansion.
+
+Fresh full 534 tests, lint and a standard 170-output build pass after correction.
+Fixture 16b17510 and native v2 6e972a02 replace the earlier fixture/harness for
+the current acceptance gate; original v1 evidence and fixture bytes are retained.
+One post-correction v2 LOCAL run completes four desktop/mobile JS/no-JS
+profiles, 234 queries, 2,950 query rows, 2,636 SSR rows, eight empty-form
+contact handoffs, 40 PNGs and 24 immutable transport phases. Independent
+checker 4684db67 passes all retained fields and PNG byte/dimension pins;
+69 transport and 34 content negative controls pass. Final actual GET categories
+are 215 headers and 11 known-200 canceled RSC records (226 unique GETs), with
+no pending or late transition. Phase 968 headers/48 aborts are observations,
+not unique GET counts. Canceled bodies and their cause remain unconfirmed.
+The 12 controlled review/analytics/home-RSC fixtures are not provider, mail
+or event evidence. Root personally inspects mobile E:38, Su:13 and no-JS
+focused-empty-name viewport pixels; this is not an all-40-pixel or physical
+assistive-technology inspection. Post-correction local crawl passes
+82 pages/93 links/112 assets. Exact hosted/live release gates remain pending.
+No Task62 publication yet.
+
+### Retained pre-review local evidence (not the current fixture/release)
+
+Current bounded WP07/WP12 candidate: the two historical Calenta tables retain
+all 23 E codes and 19 Su subcodes, their order, aliases, source URLs and titles.
+Exactly three meanings are corrected; all 42 actions now explain safe observation
+rather than an installer reset, filling, shutdown or replacement procedure.
+Su:20 shortly after switch-on is ordinary no-action context. Su:16–20 are not
+stored in fault memory. Su:18 retains the source's PSU-description/PCU-cause
+ambiguity instead of inventing a single board diagnosis. Optional components
+remain configuration-qualified; St:9/Su is not an E lockout.
+
+The [original Belgian Calenta manual](https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf)
+was retained once: 5,989,822 bytes, 108 pages,
+SHA256 56d0dd28673e87f02263fa9886b2f3f1a556b36a58ec1819e5cca73fe2ec332d.
+Root personally read all 42 full table rows and 34 relevant rendered context
+pages. The 117061-08 document identity and 080715 - 117061-08 footer are
+historical source facts, not independently established issue date, newest
+edition, firmware, article number or current-device compatibility.
+All 169 annotation types/internal destinations were checked; no PDF controls
+or forms were executed. Every card has its exact printed and PDF page.
+One physical PDF joins both tables. The manifest now has 19 physical originals
+(13 PDF, 6 HTML), 27 PDF-linked catalogs, five web-original entries and no
+declared-only catalog. Overall 13 guides, 32 catalogs, 38 assignments, 1,596
+displayed rows, 1,354 distinct catalog rows and 18 source URLs are unchanged.
+
+Genuine f24be65 BEFORE capture covers 59 Git-equal files and complete consumer,
+metadata, registry, sitemap, manifest and search evidence; fresh baseline 524.
+Eight new tests were observed RED (seven expected failures) then GREEN.
+Historical guards use exact named Calenta inverses, not rebased old hashes.
+Fresh full 532 tests, lint, production audit with zero advisories, standard
+Turbopack build with 170 static outputs and local crawl 82 pages/93 links/
+112 assets pass. Failed patch attempts and intermediate guard failures are
+retained. One pinned native harness 51d84d62 completes four 1440/390 JS/no-JS
+profiles, 234 queries, eight empty-form contact handoffs and 32 hashed PNGs.
+The 257 actual GET requests have headers; nine known RSC ERR_ABORTED records
+remain unconfirmed bodies with unknown cause. Twenty-four immutable transport
+phases are retained. Controlled review/analytics/home-RSC fixtures are not
+provider, mail, event, physical accessibility or field-performance evidence.
+Root inspected representative E:12, Su:1, Su:18, Su:20, source-scope and focused
+empty-name pixels. The mobile warning crop has sticky-header interference;
+it does not establish whole-warning visibility. Independent checker 912c8d25
+passes all retained source/control/heading/metadata fields, 2,636 SSR rows,
+2,950 query rows, eight contacts, 24 immutable phases and final raw events,
+and all 32 PNG byte/dimension pins. Its 69 transport and 34 content negative
+controls pass. Final categories are 248 headers and nine canceled known-200
+RSC records; no pending or late transition was observed. These are transport
+observations, not body completion or benign-cause proof. Whole-cohort review,
+exact hosted release and live gates are still pending.
+
+Task61 is actually released at f24be6509cc1cd7aeebf18ac3bcf1e79e7f15054.
+Its sole whole-cohort review had zero Critical/Important findings; one
+documentary Minor was corrected. [Exact CI 38186997643](https://github.com/Ilias492610/ABService/actions/runs/38186997643)
+passed 524 tests, lint, production audit zero, standard build 170 and hosted
+crawl 82/93/112. Both Vercel-created named Production records 7003766635 and
+7003767238 report success for that SHA. Canonical crawl and unchanged-hash
+four-profile native LIVE checks passed; two pending and two canceled live
+RSC bodies remain unconfirmed. Raw Vercel readyState READY is separately
+unverified, not silently inferred from GitHub integration success.
+One Remeha IndexNow HTTP 200 receipt confirms submission, not indexing;
+unchanged Task61 content is not resubmitted.
+
+Earlier sections below are dated history, not the current release phase.
+All 137 original checkbox lines, four integral source appendices and original
+acceptance criteria remain unchanged. Wider WP07/WP12/WP17 acceptance,
+Task51 development/lifecycle advisories, owner/account access, case consent,
+French text review, official credentials/prices, field metrics, indexing and
+business outcomes remain open. Task62 is not yet published.
+
 ## 12 October 2026 — Task61 Avanta candidate; Task60 released
 
 The existing Avanta overview now preserves all17 literal codes (E:0 is not E:00)

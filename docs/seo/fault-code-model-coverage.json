@@ -73,7 +73,7 @@
     {
       "slug": "remeha",
       "brand": "Remeha",
-      "modelWarning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.",
+      "modelWarning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.",
       "explanationRowCount": 659,
       "catalogIds": [
         "remeha-avanta",
@@ -183,6 +183,19 @@
     }
   ],
   "snapshots": [
+    {
+      "id": "remeha-calenta-legacy-pdf",
+      "kind": "manufacturer-PDF; Task62 historical Calenta selected E/Su tables and source context",
+      "sha256": "56d0dd28673e87f02263fa9886b2f3f1a556b36a58ec1819e5cca73fe2ec332d",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 108,
+      "byteLength": 5989822,
+      "observedAt": "2026-10-12T00:08:40.159Z",
+      "sourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf",
+      "originalEvidencePath": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-62-calenta-primary-preflight-20261012T000758Z/original-117061-08.pdf",
+      "boundary": "One physical original for two tables; issue/latest/current-device fit unknown. No source controls executed."
+    },
     {
       "id": "bosch-junkers-codebook-pdf",
       "kind": "manufacturer-PDF; newly retained source-context reading, not full row audit",
@@ -807,7 +820,7 @@
         "remeha"
       ],
       "title": "Calenta 15s/25s/28c/35s/40c — E-storingscodes",
-      "modelScope": "Alle 23 afzonderlijke E-codes uit §11.1 van de Belgische Calenta-handleiding, revisie 080715–117061-08. Niet voor Calenta Ace of Ace-Matic. Dit is een historische modelrevisie; de Su-blokkeringssubcodes staan in een aparte tabel hieronder.",
+      "modelScope": "Historische Belgische Calenta 15s/25s/28c/35s/40c: alle 23 E-codes uit §11.1 van installatie- en servicehandleiding 117061-08, met gedrukte voettekst 080715 - 117061-08. Een E-code is een vergrendeling, niet de St:9/Su-blokkeringsstatus. De controle- en oplossingstabel is voor de installateur; dit is geen gebruikersherstelprocedure. SCU- en WTW-meldingen gelden alleen bij de betrokken configuratie. Niet voor Calenta Ace, Ace-Matic of andere revisies; artikelnummers, firmware, huidige toestelcompatibiliteit en nieuwste editie zijn niet vastgesteld.",
       "sourceLabel": "Remeha Calenta België — installatie- en servicehandleiding 117061-08",
       "sourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf",
       "sourcePages": "§11.1, gedrukte p. 79–82 (PDF-pagina 80–83)",
@@ -822,21 +835,51 @@
       ],
       "articleNumbers": null,
       "documentNumber": "117061-08",
-      "revision": "080715–117061-08",
+      "revision": "117061-08",
       "issueDate": null,
       "market": [
         "België"
       ],
-      "language": null,
+      "language": "nl-BE",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "remeha-calenta-legacy-pdf",
       "sourceEvidencePath": [
         "docs/seo/evidence-register.md"
       ],
-      "verificationBasis": "Current explicit declared scope/title plus historical source-reading record; no retained original legacy PDF existence/hash verified in this bounded Task47.",
+      "verificationBasis": "Task62 retained actual historical108page original, full42 literal table rows/cause variants/professional measures and34 relevant rendered context pages personally read. Historical cover models/Belgium/NL and running footer are actual source facts, not latest or real-device fit.",
       "declaredScopePath": "content/additional-fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Historical document/model/market identity and literal table evidence only; null means not established. Footer080715 is observed imprint, not independently established issueDate. Source professional controls are not consumer repair permission; no article/firmware/current-device/newest proof.",
+      "observedFooter": "080715 - 117061-08",
+      "audienceRestriction": "installation and service by recognized installers",
+      "literalCodes": [
+        "E:00",
+        "E:01",
+        "E:02",
+        "E:03",
+        "E:04",
+        "E:05",
+        "E:06",
+        "E:07",
+        "E:08",
+        "E:09",
+        "E:10",
+        "E:11",
+        "E:12",
+        "E:14",
+        "E:16",
+        "E:17",
+        "E:34",
+        "E:35",
+        "E:36",
+        "E:37",
+        "E:38",
+        "E:39",
+        "E:40"
+      ],
+      "firmwareCompatibility": null,
+      "currentBelgianVariantCompatibility": null,
+      "newestEdition": null
     },
     {
       "id": "remeha-calenta-legacy-blocking",
@@ -844,7 +887,7 @@
         "remeha"
       ],
       "title": "Calenta 15s/25s/28c/35s/40c — Su-blokkeringssubcodes",
-      "modelScope": "Alle 19 Su-blokkeringssubcodes uit §11.2.2 van dezelfde Belgische handleiding 117061-08. Su is een subcode bij de blokkeringsstatus, niet dezelfde melding als een E-vergrendeling. Niet voor Calenta Ace of Ace-Matic; Su:20 kan kort bij het inschakelen verschijnen zonder defect.",
+      "modelScope": "Historische Belgische Calenta 15s/25s/28c/35s/40c: alle 19 Su-subcodes uit §11.2.2 van installatie- en servicehandleiding 117061-08. Su is de substatus bij tijdelijke blokkering St:9, niet een E-vergrendeling; na het verdwijnen van de oorzaak hervat het toestel volgens deze bron zelf. Su:16–20 worden niet in het storingsgeheugen opgeslagen. Su:20 kort na inschakelen vraagt geen actie. De professionele tabel is geen gebruikersherstelprocedure. Niet voor Calenta Ace, Ace-Matic of andere revisies; nieuwste editie en uw exacte toestelcompatibiliteit zijn niet vastgesteld.",
       "sourceLabel": "Remeha Calenta België — installatie- en servicehandleiding 117061-08",
       "sourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf",
       "sourcePages": "§11.2.2, gedrukte p. 83–84 (PDF-pagina 84–85)",
@@ -859,21 +902,47 @@
       ],
       "articleNumbers": null,
       "documentNumber": "117061-08",
-      "revision": "080715–117061-08",
+      "revision": "117061-08",
       "issueDate": null,
       "market": [
         "België"
       ],
-      "language": null,
+      "language": "nl-BE",
       "component": null,
       "tableIds": null,
-      "primarySnapshot": null,
+      "primarySnapshot": "remeha-calenta-legacy-pdf",
       "sourceEvidencePath": [
         "docs/seo/evidence-register.md"
       ],
-      "verificationBasis": "Same explicitly linked legacy document/current scope and historical source record; actual legacy footer/date not independently reread here. Su subcodes remain separate from E faults.",
+      "verificationBasis": "Task62 retained actual historical108page original, full42 literal table rows/cause variants/professional measures and34 relevant rendered context pages personally read. Historical cover models/Belgium/NL and running footer are actual source facts, not latest or real-device fit.",
       "declaredScopePath": "content/additional-fault-catalogs.mjs",
-      "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+      "fieldBoundary": "Historical document/model/market identity and literal table evidence only; null means not established. Footer080715 is observed imprint, not independently established issueDate. Source professional controls are not consumer repair permission; no article/firmware/current-device/newest proof.",
+      "observedFooter": "080715 - 117061-08",
+      "audienceRestriction": "installation and service by recognized installers",
+      "literalCodes": [
+        "Su:0",
+        "Su:1",
+        "Su:2",
+        "Su:7",
+        "Su:8",
+        "Su:9",
+        "Su:10",
+        "Su:11",
+        "Su:13",
+        "Su:14",
+        "Su:15",
+        "Su:16",
+        "Su:17",
+        "Su:18",
+        "Su:19",
+        "Su:20",
+        "Su:21",
+        "Su:22",
+        "Su:25"
+      ],
+      "firmwareCompatibility": null,
+      "currentBelgianVariantCompatibility": null,
+      "newestEdition": null
     },
     {
       "id": "remeha-calenta-ace-matic-cu-warnings",

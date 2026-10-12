@@ -1,3 +1,4 @@
+import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaGuide, beforeAvantaRegistry } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry } from "./fixtures/viessmann-overview-source-safety.mjs";
 import { beforeAtagGuide, beforeAtagRegistry } from "./fixtures/atag-overview-source-safety.mjs";
@@ -88,8 +89,8 @@ test("full54-row SSR, unchanged cards and each source/contact element preserve g
 test("full genuine13guides/82registry preserve every leaf except declared Nefit changes and Intergas count clarity", () => {
   assert.equal(hash(beforeNefitGuide(guide)), facts.preservation.guide);
   assert.equal(hash(beforeNefitGuide(guide).codes), facts.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g => g.slug !== "nefit-bosch").map(beforeIntergasCountGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide)), facts.preservation.otherTwelveGuides);
-  assert.equal(hash(faultGuides.map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasCountGuide)), facts.preservation.allGuides);
+  assert.equal(hash(faultGuides.filter(g => g.slug !== "nefit-bosch").map(beforeIntergasCountGuide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide)), facts.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasCountGuide)), facts.preservation.allGuides);
   assert.equal(hash(pageRegistry.map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry)), facts.preservation.allRegistry);
   assert.equal(faultGuides.reduce((n, g) => n + g.codeEntryCount, 0), 1596);
 });

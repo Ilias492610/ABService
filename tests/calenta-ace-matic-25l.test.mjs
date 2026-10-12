@@ -1,3 +1,4 @@
+import { beforeCalentaCatalog } from "./fixtures/calenta-legacy-source-safety.mjs";
 import test from "node:test";
 import { beforeAvantaCatalog } from "./fixtures/avanta-overview-source-safety.mjs";
 import assert from "node:assert/strict";
@@ -13,7 +14,7 @@ const row = (suffix, code) => bySuffix(suffix)?.codes.find((entry) => entry.code
 const digest = (value) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
 
 test("25L addition preserves all eight original catalogs completely", () => {
-  assert.equal(digest(guide.catalogs.slice(0, 8).map(beforeAvantaCatalog)), previousCatalogDigest);
+  assert.equal(digest(guide.catalogs.slice(0, 8).map(beforeCalentaCatalog).map(beforeAvantaCatalog)), previousCatalogDigest);
 });
 
 test("25L public guide exposes its five independently inventoried tables with own source attribution", async () => {

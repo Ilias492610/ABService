@@ -1,3 +1,4 @@
+import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaGuide, beforeAvantaRegistry } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry } from "./fixtures/viessmann-overview-source-safety.mjs";
 import { beforeAtagGuide, beforeAtagRegistry } from "./fixtures/atag-overview-source-safety.mjs";
@@ -93,7 +94,7 @@ test("real SSR exposes all existing rows/scopes/options/source/contact without s
 test("complete242 code objects, other eleven guides and all registry fields preserve genuine e71 captures", async () => {
   const digest = value => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
   assert.equal(digest(boschCatalogs.map(c => c.codes)), facts.preservation.catalogCodeArrays);
-  assert.equal(digest(faultGuides.filter(g => !["bosch", "junkers"].includes(g.slug)).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide).map(beforeAcvGuide)), facts.preservation.otherElevenGuides);
+  assert.equal(digest(faultGuides.filter(g => !["bosch", "junkers"].includes(g.slug)).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide).map(beforeAcvGuide)), facts.preservation.otherElevenGuides);
   assert.equal(digest(pageRegistry.map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), facts.preservation.allRegistry);
   for (const slug of ["bosch", "junkers"]) {
     assert.equal(digest(beforeBoschScopeGuide(getFaultGuide(slug))), facts.preservation[slug].guide);

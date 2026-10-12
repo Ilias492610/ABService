@@ -1,3 +1,4 @@
+import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaRegistry, beforeAvantaGuide } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry } from "./fixtures/viessmann-overview-source-safety.mjs";
 import { beforeAtagGuide, beforeAtagRegistry } from "./fixtures/atag-overview-source-safety.mjs";
@@ -113,8 +114,8 @@ test("all26 SSR cards and all13 guide leaves restore exact genuine c7b44be captu
   assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);
   assert.equal(hash(beforeIthoHtml(html,"itho-daalderop")),f.preservation.html);
   assert.equal(hash(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(guide)))),f.preservation.guide); assert.equal(hash(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(guide))).codes),f.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="itho-daalderop").map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide)),f.preservation.otherTwelveGuides);
-  assert.equal(hash(faultGuides.map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide)),f.preservation.allGuides);
+  assert.equal(hash(faultGuides.filter(g=>g.slug!=="itho-daalderop").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide)),f.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide)),f.preservation.allGuides);
 });
 
 test("Itho manifest records original document ID,26keys30entries and explicit devicefit unknowns", async () => {
