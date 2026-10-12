@@ -1,3 +1,5 @@
+// Historical captures remove only the independently tested named Task80 addition.
+import { beforeAtagManualsGuide, beforeAtagManualsManifest, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -68,7 +70,7 @@ test("real Buderus SSR exposes121 cards with visible source classes scopes and u
 });
 
 test("GB172i.2 model manifest binds actual source identity without invented revision or firmware",async()=>{
- const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")),e=m.entries.find(e=>e.id===f.id),s=m.snapshots.find(s=>s.id===f.snapshotId);assert.ok(e,"missing source manifest entry");assert.ok(s,"missing pinned manufacturer original");
+ const m=beforeAtagManualsManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"))),e=m.entries.find(e=>e.id===f.id),s=m.snapshots.find(s=>s.id===f.snapshotId);assert.ok(e,"missing source manifest entry");assert.ok(s,"missing pinned manufacturer original");
  assert.equal(e.explanationRowCount,69);assert.equal(e.literalNumericIdentifierCount,97);assert.deepEqual(e.modelArticlePairs,f.source.modelArticlePairs);assert.equal(e.documentNumber,"6721852651");assert.equal(e.observedIssue,"2026/06");assert.equal(e.issueDate,"2026-06");assert.equal(e.issueDatePrecision,"month");assert.equal(e.language,"nl");assert.deepEqual(e.market,["België"]);assert.deepEqual(e.tableIds,[69]);assert.equal(e.primarySnapshot,f.snapshotId);
  for(const field of ["revision","firmwareCompatibility","controllerVariantCoverage","customerDeviceCompatibility","newestEdition"])assert.equal(e[field],null,field);
  assert.equal(s.sha256,f.source.sha256);assert.equal(s.byteLength,11483647);assert.equal(s.pageCount,68);assert.equal(s.expectedSha256,null);assert.equal(s.hashMatchesPriorRecord,null);
@@ -77,5 +79,5 @@ test("GB172i.2 model manifest binds actual source identity without invented revi
 
 // A named addition must not change any existing model, source table or other URL.
 test("original GB162 catalog other12guides and other registry retain genuine pre-edit captures",()=>{
- assert.equal(hash(guide.catalogs[0]),f.before.preservation.gb162Catalog);assert.equal(hash(faultGuides.filter(g=>g.slug!=="buderus")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.filter(p=>p.path!=="/foutcodes/buderus")),f.before.preservation.otherRegistry);
+ assert.equal(hash(guide.catalogs[0]),f.before.preservation.gb162Catalog);assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).filter(g=>g.slug!=="buderus")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.map(beforeAtagManualsRegistry).filter(p=>p.path!=="/foutcodes/buderus")),f.before.preservation.otherRegistry);
 });

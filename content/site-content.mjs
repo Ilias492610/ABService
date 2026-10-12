@@ -279,10 +279,10 @@ export const pageRegistry = Object.freeze([
   {
     path: "/foutcodes/atag",
     status: CONTENT_STATUS.PUBLISHED,
-    title: "ATAG cv-ketel foutcodes: betekenis en stappen | AB Service",
+    title: "ATAG i Zone en i32EC foutcodes | AB Service",
     description:
-      "Zoek 14 ATAG-meldingen uit het officiële overzicht. Vergelijk de genoemde modellen, automatische programma's, bron en veilige eerste stappen.",
-    lastModified: "2026-10-11",
+      "ATAG i Zone en i32EC-meldingen uit aparte Belgische handleidingen, naast het algemene overzicht. Kies uw model en bron; lees veilige eerste stappen.",
+    lastModified: "2026-10-12",
     changeFrequency: "monthly",
     priority: 0.6,
   },

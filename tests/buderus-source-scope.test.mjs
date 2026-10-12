@@ -1,3 +1,5 @@
+// Historical captures remove only the independently tested named Task80 addition.
+import { beforeAtagManualsGuide, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Historical contracts subtract only the independently tested Task77 addition.
 import { beforeGb172Registry } from "./fixtures/buderus-gb172i2-history.mjs";
 import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
@@ -153,7 +155,7 @@ test("true ignition and gas-valve faults retain gas guidance; pressure remains m
 });
 
 test("real metadata and sitemap expose the selected Buderus model scope and substantive date", () => {
-  const page = beforeGb172Registry(getPageDefinition("/foutcodes/buderus"));
+  const page = beforeGb172Registry(beforeAtagManualsRegistry(getPageDefinition("/foutcodes/buderus")));
   const metadata = buildPageMetadata(page);
   assert.match(metadata.description, /GB162-70\/85\/100 V2.*selectie.*2021\/07/i);
   assert.doesNotMatch(metadata.description, /volledige|alle.*Buderus|nieuwste/i);
@@ -162,7 +164,7 @@ test("real metadata and sitemap expose the selected Buderus model scope and subs
   assert.equal(metadata.alternates.canonical, "https://www.abservice24.be/foutcodes/buderus");
   assert.equal(metadata.robots.index, true);
   assert.equal(page.lastModified, "2026-10-11");
-  assert.equal(buildSitemapEntries(pageRegistry.map(beforeGb172Registry)).find(entry => entry.url === metadata.alternates.canonical).lastModified, "2026-10-11");
+  assert.equal(buildSitemapEntries(pageRegistry.map(beforeAtagManualsRegistry).map(beforeGb172Registry)).find(entry => entry.url === metadata.alternates.canonical).lastModified, "2026-10-11");
 });
 
 test("non-Buderus fault guidance and fault-guide registry preserve the historical baseline", () => {
@@ -173,7 +175,7 @@ test("non-Buderus fault guidance and fault-guide registry preserve the historica
   // scopes/warnings are removed; all immutable historical captures stay fixed.
   // projection. Its independent complete inventories and pre-edit eight-catalog
   // digest are enforced by calenta-ace-matic-25l.test.mjs. Never rebase this hash.
-  const historicalGuides = faultGuides.filter(guide => guide.slug !== "buderus").map(currentGuide => {
+  const historicalGuides = faultGuides.map(beforeAtagManualsGuide).filter(guide => guide.slug !== "buderus").map(currentGuide => {
     const guide = beforeAvantaGuide(beforeCalentaGuide(currentGuide));
     if (guide.slug !== "remeha") return beforeThemaABGuide(beforeBoschScopeGuide(beforeAcvGuide(beforeIntergasGuide(beforeNefitGuide(beforeFerroliGuide(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(guide)))))))));
     const oldWarning = "Kies uw toestelreeks en generatie: Avanta volgt de officiële Belgische Storingswijzer; legacy Calenta 15s/25s/28c/35s/40c volgt de E- en Su-tabellen van handleiding 117061-08. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025, met afzonderlijke CU-GH-21-tabellen en SCB-10-tabellen die alleen gelden als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Calenta Ace-Matic 25L, Calenta Ace, Tzerra, Quinta en andere revisies vallen niet onder deze dekking.";
@@ -185,5 +187,5 @@ test("non-Buderus fault guidance and fault-guide registry preserve the historica
   assert.equal(digest(historicalGuides), "5b20e74a82abe8770b7772b18915a1ac0a38cc25c6eb1b55329717a5659e18e1");
   // Historical fault-guide integrity only: unrelated website content may receive
   // intentional substantive updates without changing manufacturer source facts.
-  assert.equal(digest(pageRegistry.filter(page => page.path.startsWith("/foutcodes/") && page.path !== "/foutcodes/buderus").map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), "f548cbddfc9b3e17ea9a732e71d0bae5aa5a95fe6e7b08dad518ae8edfc17537");
+  assert.equal(digest(pageRegistry.map(beforeAtagManualsRegistry).filter(page => page.path.startsWith("/foutcodes/") && page.path !== "/foutcodes/buderus").map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), "f548cbddfc9b3e17ea9a732e71d0bae5aa5a95fe6e7b08dad518ae8edfc17537");
 });

@@ -1,3 +1,5 @@
+// Historical captures remove only the independently tested named Task80 addition.
+import { beforeAtagManualsGuide } from "./fixtures/atag-manuals-history.mjs";
 // Reconstruct only the separately verified Task77 addition for historical hashes.
 import { beforeGb172Guide } from "./fixtures/buderus-gb172i2-history.mjs";
 import test from "node:test";
@@ -90,7 +92,7 @@ test("real SSR shows all74 rows three sources and unchanged unknown-model/contac
   findAB();
   const html = await renderFaultGuide("bulex");
   assert.equal(bulex.codeEntryCount, 74);
-  assert.equal(faultGuides.map(beforeGb172Guide).reduce((n,g) => n+g.codeEntryCount,0), 1596);
+  assert.equal(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).reduce((n,g) => n+g.codeEntryCount,0), 1596);
   assert.equal((html.match(/class="fault-code-card"/g)||[]).length, 74);
   assert.equal((html.match(/class="fault-group"/g)||[]).length, 3);
   assert.equal((html.match(/<option /g)||[]).length, 4);

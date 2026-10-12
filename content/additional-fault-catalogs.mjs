@@ -2,6 +2,7 @@ import { createFaultCatalog } from "./fault-catalogs.mjs";
 import { calentaAceMaticCatalogs } from "./remeha-calenta-ace-matic.mjs";
 import { calentaAceMatic25LCatalogs } from "./remeha-calenta-ace-matic-25l.mjs";
 import { gb172i2Catalogs } from "./buderus-gb172i2.mjs";
+import { atagManualCatalogs } from "./atag-historical-manuals.mjs";
 
 const CALENTA_LEGACY_BE_URL = "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf";
 
@@ -484,6 +485,7 @@ export const atagCatalogs = Object.freeze([
       ["105", "De overzichtspagina geeft gas- en resetadvies, maar stelt voor deze code geen specifieke oorzaak of vlamdiagnose vast.", "gas"],
     ],
   })),
+  ...atagManualCatalogs,
 ]);
 
 // Original Base Cube 01-04199-001: local W/B/E controls and exact printed

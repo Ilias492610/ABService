@@ -1,16 +1,16 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage; Task80 adds only historical i Zone06.19 six technicalB models and i32EC09.17 one technicalB model, with17/19 source rows; not every ATAG model, current fit or full fault coverage",
   "incrementalUpdateDate": "2026-10-12",
   "counts": {
     "guides": 13,
-    "catalogAssignments": 39,
-    "distinctCatalogs": 33,
-    "displayedExplanationRows": 1665,
-    "distinctCatalogExplanationRows": 1423,
-    "distinctCatalogSourceURLs": 19
+    "catalogAssignments": 41,
+    "distinctCatalogs": 35,
+    "displayedExplanationRows": 1701,
+    "distinctCatalogExplanationRows": 1459,
+    "distinctCatalogSourceURLs": 21
   },
-  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources. Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses.",
+  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources. Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses. Task80 adds36 source-row assignments: iZone17 most-common messages, i32EC19 including105program and180/181nonfault;50 ATAG rows are not50 unique fault diagnoses.",
   "method": "Original Task47 record history retained. Task48 added one historical Bulex A/B table. Task49 updates only six shared Bosch/Junkers scopes, two warnings and directly observed NL chapter/source context, adding one original PDF snapshot. Other26 entries/eight snapshots/eleven guide entries remain unchanged; no 242-row re-audit or newest/full-model certification.",
   "guides": [
     {
@@ -152,10 +152,12 @@
     {
       "slug": "atag",
       "brand": "ATAG",
-      "modelWarning": "Deze gids volgt de 14 rubrieken van één ATAGwarmte-overzicht, gelezen op 11 oktober 2026; niet alle ATAG-modellen of revisies zijn gedekt. Controleer het exacte toestelmodel, de volledige schermtekst en de toepasselijke gebruikershandleiding. De bron noemt overlappende modelgroepen en schrijft i28 en A2442EC; die spelling bewijst geen exacte toestelcompatibiliteit. C105 is een automatisch programma en is niet dezelfde melding als 105. Bij 1P4 zijn de drukinstructies tegenstrijdig; kies niet zelf tussen bijvullen en aftappen. Herhaald resetten, spanningsonderbreking en gas- of leidingwerk zijn geen algemeen gebruikersadvies. Actuele Belgische compatibiliteit, artikelnummers, firmware en nieuwste revisie zijn onbekend.",
-      "explanationRowCount": 14,
+      "modelWarning": "Kies de juiste bron en historische editie: het aparte ATAGwarmte-overzicht, i Zone-Serie 06.19 voor de zes genoemde Belgische varianten, of i-Serie 09.17 uitsluitend voor i32EC met gelezen technische bestemming B. Niet alle ATAG-modellen zijn gedekt. Dezelfde code kan per bron iets anders betekenen: 110 is niet in beide modeltabellen dezelfde temperatuur- of sensormelding, en C105 is niet 105. De oude 1P4-overzichtstekst blijft tegenstrijdig; de nieuwe modelbron maakt die niet universeel geldig. Bij i32EC vermeldt 118 twee verschillende paginadrempels; kies geen vul- of aftapremedie op basis van deze gids. Automatische programma's en niet-storingen blijven apart. Controleer het exacte model, de volledige schermtekst en de toepasselijke gebruikershandleiding. Actuele toestel-/gasvariant-/serialfit, individuele artikelnummers, firmware, controllerdekking en nieuwste editie zijn onbekend. Open geen gesloten onderdelen en voer geen herhaalde resets of spanningsonderbreking uit.",
+      "explanationRowCount": 50,
       "catalogIds": [
-        "atag-officieel-overzicht"
+        "atag-officieel-overzicht",
+        "atag-izone-2019-be",
+        "atag-i32ec-2017-be"
       ],
       "documentationLabel": "Officiële ATAG-downloads",
       "documentationURL": "https://www.atagwarmte.nl/downloads"
@@ -378,6 +380,30 @@
       "pageCount": 68,
       "byteLength": 11483647,
       "sourceBoundary": "One retained original HTTP200 application/pdf, no redirect; issue6721852651(2026/06), BE Dutch, four exact table1 model/article pairs. No PDF JavaScript executed. Complete table69, not allBuderus/model/revision coverage."
+    },
+    {
+      "id": "atag-izone-2019-be-pdf",
+      "kind": "manufacturer-PDF",
+      "url": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/ATAG%20Belgie/installatievoorschriften/8H514700%20INST%20MANUAL%20i%20Zone-SERIE%20NL-%20light.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-79-atag-izone-installer-be/original.pdf",
+      "sha256": "630b25f06ccc717ee64e5424e2cac6d3aa721c88b3174ffae27eaf6dad38f1a6",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 89,
+      "byteLength": 8827243,
+      "sourceBoundary": "Actual public Belgian documentation hyperlink; retained HTTP200 application/pdf, no redirects. Root/independent source researcher read complete relevant pages; source-specific historical scope, not all-brand/current serial/firmware/latest fit. No embedded PDF JavaScript executed."
+    },
+    {
+      "id": "atag-i32ec-2017-be-pdf",
+      "kind": "manufacturer-PDF",
+      "url": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/Pictures/Overzicht%20Productgroepen/8H519200%20INST%20MANUAL%20i-%20SERIE%20COMFORT%20NL-F%20A5%20V0917.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-79-atag-iserie-be/original.pdf",
+      "sha256": "09d419e164f1c1499d26435d7e407785fc5713cba31f3ab4820c44c39f632038",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 124,
+      "byteLength": 14419588,
+      "sourceBoundary": "Actual public Belgian documentation hyperlink; retained HTTP200 application/pdf, no redirects. Root/independent source researcher read complete relevant pages; source-specific historical scope, not all-brand/current serial/firmware/latest fit. No embedded PDF JavaScript executed."
     }
   ],
   "entries": [
@@ -2008,6 +2034,109 @@
           "classification": null
         }
       ]
+    },
+    {
+      "id": "atag-izone-2019-be",
+      "usedBy": [
+        "atag"
+      ],
+      "title": "i Zone-Serie — zes Belgische varianten (06.19)",
+      "modelScope": "Alle 17 veelvoorkomende meldingsrijen uit §13, p. 86 van historische handleiding 8H.51.47.00 / 06.19. De technische tabel op p. 151 noemt i24SZ, i35SZ, i20CZ, i22ECZ, i30CZ en i32ECZ met bestemming B; niet andere i Zone-generaties. Dit is geen volledige merk- of foutcodetabel. De algemene blokkering/foutbeschrijving wijst geen individuele klasse aan iedere rij toe. Combi bij 201 en Solo bij 203 blijven van belang. De ster bij 140 verwijst naar een professionele pomp-ingreep, niet een extra code. De CE-PIN is geen individueel artikelnummer. Actuele toestel- en gasvariantfit, artikelnummers, serials, firmware, controllerdekking en nieuwste editie zijn niet vastgesteld. Werkzaamheden uit deze installateurstabel zijn geen gebruikersprocedure.",
+      "sourceLabel": "ATAG i Zone-Serie — installatie- en servicemanual 8H.51.47.00 / 06.19",
+      "sourceURL": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/ATAG%20Belgie/installatievoorschriften/8H514700%20INST%20MANUAL%20i%20Zone-SERIE%20NL-%20light.pdf",
+      "sourcePages": "§13, gedrukte p. 86 (PDF-pagina 71); modelscope p. 151 (PDF-pagina 76)",
+      "explanationRowCount": 17,
+      "modelFamily": "i Zone-Serie historical06.19",
+      "models": [
+        "i24SZ",
+        "i35SZ",
+        "i20CZ",
+        "i22ECZ",
+        "i30CZ",
+        "i32ECZ"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "documentNumber": "8H.51.47.00",
+      "observedIssue": "06.19",
+      "issueDate": "2019-06",
+      "issueDatePrecision": "month",
+      "revision": null,
+      "market": [
+        "België"
+      ],
+      "boilerDestinationMarket": "B",
+      "language": "nl",
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": "atag-izone-2019-be-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-79-source-facts.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-79-atag-izone-installer-be/original.pdf",
+        "tests/fixtures/atag-manuals-source-facts.json",
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Root read full original diagnostic p86/PDF71, model technical p151/PDF76, cover06.19 and professional footnote; source researcher independently matches17 most-common rows/sixBmodels. No all-brand/current-device/firmware/latest-fit claim. No per-code B/V inferred.",
+      "declaredScopePath": "content/atag-historical-manuals.mjs",
+      "fieldBoundary": "Historical issue month and technical destination/model observed directly; null is unestablished, not absent or zero. PIN is not individual articles. Scope does not establish current customer-device applicability.",
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "literalPhysicalRowCount": 17,
+      "operatingStateCodes": [],
+      "perCodeClassesAssigned": false
+    },
+    {
+      "id": "atag-i32ec-2017-be",
+      "usedBy": [
+        "atag"
+      ],
+      "title": "i32EC — Belgische i-Serie (09.17)",
+      "modelScope": "Alle 19 meldingsrijen uit §14, p. 68 van historische handleiding 8H.51.92.00 / 09.17, hier uitsluitend voor i32EC: alleen dit model heeft in de gelezen technische tabel op p. 112 bestemming B. Andere namen in de conformiteitsverklaring bewijzen geen aanvullende Belgische modeldekking. 105 is een ontluchtingsprogramma; 180 en 181 zijn expliciet geen storing. Dit is geen volledige merkcatalogus. Sleutel-/belsymbolen worden algemeen verklaard, niet per rij toegewezen. Bij 118 noemt gebruikersp. 13 minder dan 1 bar en installateursp. 68 minder dan 0,7 bar; geen universeel vuldoel of gekozen herstelhandeling. De CE-PIN is geen individueel artikelnummer. Actuele toestel- en gasvariantfit, artikelnummers, serials, firmware, controllerdekking en nieuwste editie zijn niet vastgesteld. Pomp-/zekering-/jumper- en resetpassages zijn geen gebruikersprocedure.",
+      "sourceLabel": "ATAG i-Serie i32EC — installatie- en servicemanual 8H.51.92.00 / 09.17",
+      "sourceURL": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/Pictures/Overzicht%20Productgroepen/8H519200%20INST%20MANUAL%20i-%20SERIE%20COMFORT%20NL-F%20A5%20V0917.pdf",
+      "sourcePages": "§14, p. 68 (PDF-pagina 68); modelscope p. 112; afwijkende gebruikersdrempel p. 13",
+      "explanationRowCount": 19,
+      "modelFamily": "i-Serie historical09.17, selectedi32EC technical variant",
+      "models": [
+        "i32EC"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "documentNumber": "8H.51.92.00",
+      "observedIssue": "09.17",
+      "issueDate": "2017-09",
+      "issueDatePrecision": "month",
+      "revision": null,
+      "market": [
+        "België"
+      ],
+      "boilerDestinationMarket": "B",
+      "language": "nl",
+      "component": null,
+      "tableIds": null,
+      "primarySnapshot": "atag-i32ec-2017-be-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-79-source-facts.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-79-atag-iserie-be/original.pdf",
+        "tests/fixtures/atag-manuals-source-facts.json",
+        "docs/seo/evidence-register.md"
+      ],
+      "verificationBasis": "Root read full original diagnostic p68, consumerp13, technicalp112, cover09.17 and DoCp120; source researcher independently matches19rows,105program/180+181nonfault, onlyi32EC technicalB. Consumer118<1bar versus installer<0.7bar retained, no universal filling procedure. No per-code symbol class or DoC-based five-modelBE claim.",
+      "declaredScopePath": "content/atag-historical-manuals.mjs",
+      "fieldBoundary": "Historical issue month and technical destination/model observed directly; null is unestablished, not absent or zero. PIN is not individual articles. Scope does not establish current customer-device applicability.",
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "literalPhysicalRowCount": 19,
+      "operatingStateCodes": [
+        "105",
+        "180",
+        "181"
+      ],
+      "perCodeClassesAssigned": false
     },
     {
       "id": "itho-base-cube",

@@ -1,5 +1,122 @@
 # AB Service SEO Changelog
 
+## 12 oktober 2026 — Task80: ATAG-modelcatalogi lokaal getest; review/release open
+
+De bestaande ATAG-gids heeft lokaal twee aparte historische modeltabellen:
+17 veelvoorkomende i Zone-rijen uit06.19 voor zes technisch genoemde Belgische
+varianten en19 i32EC-rijen uit09.17 met directe technische bestemmingB. Het oude
+14-rijoverzicht blijft bytegelijk; totaal50 brongebonden verklaringen, niet50
+unieke storingen. Programma105, niet-storingen180/181, verschillende110-betekenissen,
+Combi/Solo,118-paginadrempels en professionele voetnoten blijven onderscheiden.
+Geen pomp-/gas-/zekering-/jumper-/reset- of power-cycleprocedure voor consumenten;
+individuele klasse, artikel/serial/firmware/controller/currentfit/nieuwste onbekend.
+
+Echte pre-editcapture12:55:00Z:206 geselecteerde bestanden Git-HEAD-gelijk vóór edits.
+Bron-TDD9:8 verwachte assertions RED/1behoudpass→9GREEN; history7:2RED→7GREEN.
+Volledige eerste suite560:524pass/36historische mismatchs; na expliciete named
+Task80-inverses en actuele countchecks567pass/0fouten. Geen oude hash herberekend,
+tests verwijderd, snapshots gereset of onverwachte velden weggeprojecteerd.
+HTML-inverse moest echte apostrofescaping behouden; private bulkhelper had eerst
+een ontbrekend quote en werd vóór uitvoering gecorrigeerd. Geen productbug daaruit.
+Lint0, productieaudit0, standaardbuild170, lokale crawl82pagina's/93links/112assets pass.
+Externe audit: Avanta status0 en de eerdere Sibelga403; beide nieuwe ATAG-PDFs200.
+Afzonderlijke Avanta-GET200 is beschikbaarheidsbewijs, geen all-source-auditpass.
+
+Native desktop1280×720/mobiel390×844:36 zoekchecks/6bronresets, toetsenbord-Tab naar
+selector en twee lege formulierhandoffs correct; geen overflow. Mobiele118-pixels
+gelezen. Formtops248,7/393,2px, leegnaam/Herstelling verwarming/fragment behouden;
+geen verzending of bewezen formfocusoverdracht. Eén adblock-extensie-JSONmelding,
+geen websiteoorzaak afgeleid. Geen nieuwe JS-off/physicalAT/fieldmeting geclaimd.
+Manifest41toewijzingen/35catalogi/1701weergaverijen/1459distincte rijgroepen/
+21bronURLs/22originelen; nieuwe36rijen zijn bron-/modeldekking, geen vraagvolume.
+ATAG-only metadata/echte12oktoberlastmod aangepast; search/renderer/deps intact.
+
+Volgende: één onafhankelijke whole-cohortreview, dan gecontroleerde main/hostedCI/
+bestaande integraties/canonical live. Tot dan geen publicatie/IndexNow/volledigWP07.
+Tasks77–79-documentaire backfills blijven behouden in deze productcohort.
+Account/moderatie, eigenaarcases/toestemming/prijzen/erkenningen, Franse controle,
+field/AT/focus, indexering/rankings en gekwalificeerde aanvragen blijven open.
+
+## 12 oktober 2026 — Task79: Belgische ATAG-modelbronnen gecontroleerd
+
+Drie daadwerkelijk gelinkte originelen behouden (HTTP200): i Zone-gebruiksexcerpt
+14 pagina's, i Zone-installatiebron89 en i-Serie-handleiding124. Volledige relevante
+diagnose-/scopepagina's zelf visueel gelezen en onafhankelijk als brondata vergeleken.
+Gedrukte edities zijn `8H.51.47.00 / 06.19` en `8H.51.92.00 / 09.17`.
+i Zone:17 veelvoorkomende regels, zes technische modellen met bestemmingB.
+i-Serie:19 meldingen;105 is een programma en180/181 expliciet geen storing.
+De technische bestemmingB is in die tweede bron alleen voor i32EC vastgesteld;
+vijf namen in een conformiteitsverklaring zijn geen extra Belgische modeldekking.
+De CE-PIN is geen individueel artikelnummer. Geen bron claimt alle merkcodes.
+
+Bronchecker12:46:32Z pass; extractie-only spaties binnen woorden verklaarden de
+eerste private checkerfout, zonder onjuiste betekenis of productbug. Drempel118
+blijft pagina-afhankelijk (<1bar op gebruikersp13; <0,7bar op installateursp68);
+1P9/140*, Combi/Solo en professionele voetnoten blijven onderscheiden. Geen DIY
+voor pomp, zekering, jumper, gas, veiligheidscontact, servicemenu of power-cycling.
+Actuele toestel-/serial-/controller-/firmwarefit en nieuwste editie blijven onbekend.
+
+Geen klantcode, manifest, datum, checklist, deploy of nieuwe inzending gewijzigd.
+Volgende Task80: twee afzonderlijke brongebonden catalogi binnen de bestaande ATAG-
+gids ontwerpen/testen; oud overzicht behouden, daarna volledige review/releasegate.
+De [Belgische consumerroute](https://www.atagverwarming.be/ondersteuning/service-support/documentatie/)
+en [installateursroute](https://www.atagverwarming.be/installateurs/ondersteuning/service-support/documentatie/)
+leveren de echte links; retained hashes/rijen/paginabeelden staan in het recoveryledger.
+Account/moderatie, eigenaarbewijs, Franse review, fieldmetingen en zakelijke
+uitkomsten blijven open. Dit is bronvoorbereiding, geen volledige WP07-acceptatie.
+
+## 12 oktober 2026 — Task78: ATAG-bron voorbereid, modelgate nog open
+
+Eén officieel gelinkte [ATAG-gebruikshandleiding](https://atagwarmte.nl/Files/Images/ATAG/Downloads/Gebruikershandleiding-ATAG-I-serie.pdf)
+behouden: HTTP200, 1.959.150 bytes, SHA256 `e3d177d038672681b459337ab076c0dc08a4fd1f862c17e41cf4823933fcb7c1`.
+Alle 14 volledige pagina's visueel gelezen; gedrukte identiteit
+`8A.51.81.01 / 06.22`, i Zone-Serie. Pagina12 bevat17 veelvoorkomende
+meldingen, geen volledige installateurstabel en geen individuele B/V-klassen.
+Exacte model/artikelparen, Belgische toestelbestemming, firmware en nieuwste
+editie zijn niet vastgesteld. De inhoudsopgave verwijst naar diagnosepagina84,
+maar die body staat niet in deze14pagina's. Combi/Solo-qualifiers blijven apart;
+1P4/612 worden niet universeel op de bestaande overzichtsgids toegepast.
+
+Broncontrole12:22:36Z geslaagd; geen klantcode, catalogus, manifest, lastmod,
+checklist of publicatie gewijzigd. De gedateerde Task77-release/551testresultaten
+blijven bewijs voor die release, geen nieuwe ATAG-productacceptatie.
+Volgende Task79: de [Belgische officiële documentatieroute](https://www.atagverwarming.be/ondersteuning/service-support/documentatie/)
+biedt afzonderlijke i-Zone-/i-Serie-gebruikshandleidingen; verkrijg daaruit
+exacte bronlinks en model/markt/installateurscope zonder menu's of energielabels
+als compatibiliteitsbewijs te gebruiken. Alle eerdere account-, bewijs-,
+Franse review-, field- en resultaatgates blijven open. Alleen bronvoorbereiding
+en lokale documentatie; geen extra deploy, inzending of tweede eindreview.
+
+## 12 oktober 2026 — Task77 release bevestigd; WP07 blijft gedeeltelijk open
+
+Buderus GB172i.2 staat live op [de bestaande Buderus-pagina](https://www.abservice24.be/foutcodes/buderus):
+69 bronrijgroepen / 97 numerieke meldingen voor de vier gedocumenteerde Belgische
+model/artikelparen; GB162 blijft apart. Enige onafhankelijke eindreview: geen
+correcties. Exact main/origin/remote-commit `4ef3ce0a398943432c4ef4d7402c3d0b10fb1826`;
+[hosted CI 38246357865](https://github.com/Ilias492610/ABService/actions/runs/38246357865)
+success, 551 tests / 0 fouten, lint, productieaudit 0, build 170 en outputcrawl pass.
+Beide bestaande productie-integraties success voor exact dit SHA: deployments
+7013589238 / 7013598612, status 19641667812 / 19641689585. Dit is geen raw
+provider-READY-bewijs: eerder HTTP403 blijft afzonderlijk onbevestigd.
+
+Canonical livecontrole 12:07:29Z: alle 121 kaarten, exacte 69 nieuwe betekenissen,
+klassen, bronpagina's en veilige acties; oude/nieuwe secties bytegelijk aan de
+geteste lokale build, metadata/canonical/schema en echte 12-oktober-lastmod correct.
+Livecrawl 82 pagina's / 93 links / 112 assets pass. Extra live desktop/mobiel:
+12 representatieve zoekchecks en twee lege formulierhandoffs correct, geen
+horizontale overflow; geen verzending, focusoverdracht niet bewezen. Vier
+consolemeldingen tonen extensiebronnen; geen websitefout daaruit afgeleid.
+Eenmalige IndexNow-melding uitsluitend voor deze gewijzigde URL: HTTP200
+`received`; geen indexerings-, ranking- of klantresultaatbewijs.
+
+Dit latere checkpoint vervangt de onderstaande historische release-pendingstatus,
+zonder die voorcontrole te herschrijven. Releasebackfill blijft lokaal voor de
+volgende productcohort; geen extra documentatie-only deploy. Volgende begrensde
+WP07-taak: officiële ATAG I-serie-gebruikshandleiding verwerven en model/markt/
+editie/meldingen controleren; Belgische toepasbaarheid en vraagvolume nog onbekend.
+Account/moderatie, eigenaarbewijs, Franse tekstcontrole, fieldmetingen en zakelijke
+uitkomsten blijven open; geen volledig WP07 of nieuwe checklistacceptatie.
+
 ## 12 October 2026 — Task77: GB172i.2 integrated, local QA; release gates pending
 
 The existing Buderus route now includes one separate Belgian GB172i.2 catalog:

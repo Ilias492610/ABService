@@ -13,6 +13,7 @@ import { atagFacts } from "./fixtures/atag-overview-source-safety.mjs";
 
 const bySlug = (slug) => faultGuides.find((guide) => guide.slug === slug);
 const gb172 = JSON.parse(readFileSync(new URL("./fixtures/buderus-gb172i2-source-facts.json", import.meta.url), "utf8"));
+const atagManuals = JSON.parse(readFileSync(new URL("./fixtures/atag-manuals-source-facts.json", import.meta.url), "utf8"));
 
 test("all published fault guides use official sources and explicit model caveats", () => {
   assert.deepEqual(
@@ -68,7 +69,7 @@ test("catalog coverage matches every row in the cited manufacturer tables", () =
   assert.equal(bySlug("acv").codeEntryCount, 24);
   assert.equal(bySlug("intergas").codeEntryCount, 11);
   assert.equal(bySlug("nefit-bosch").codeEntryCount, 54);
-  assert.equal(bySlug("atag").codeEntryCount, 14);
+  assert.equal(bySlug("atag").codeEntryCount, 50);
   assert.equal(bySlug("itho-daalderop").codeEntryCount, 26);
   assert.equal(bySlug("ferroli").codeEntryCount, 37);
 
@@ -99,6 +100,8 @@ test("every code row is complete, safely worded and unique within its model tabl
         // whole display/control chapter; the other catalogs keep their contract.
         const sourcePage = catalog.id === ithoFacts.id
           ? ithoFacts.rowChanges.find(row => row.beforeCode === entry.code)?.after.sourcePage
+          : atagManuals.catalogs.some(c => c.id === catalog.id)
+            ? atagManuals.catalogs.find(c => c.id === catalog.id).rows.find(row => row.code === entry.code)?.sourcePage
           : catalog.id === atagFacts.id
             ? atagFacts.rowChanges.find(row => row.beforeCode === entry.code)?.after.sourcePage
             : catalog.id === viessmannFacts.id

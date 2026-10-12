@@ -1,3 +1,5 @@
+// Historical captures remove only the independently tested named Task80 addition.
+import { beforeAtagManualsGuide, beforeAtagManualsRegistry } from "./fixtures/atag-manuals-history.mjs";
 // Reconstruct only the separately verified Task77 addition for historical hashes.
 import { beforeGb172Guide, beforeGb172Registry } from "./fixtures/buderus-gb172i2-history.mjs";
 import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
@@ -91,8 +93,8 @@ test("full54-row SSR, unchanged cards and each source/contact element preserve g
 test("full genuine13guides/82registry preserve every leaf except declared Nefit changes and Intergas count clarity", () => {
   assert.equal(hash(beforeNefitGuide(guide)), facts.preservation.guide);
   assert.equal(hash(beforeNefitGuide(guide).codes), facts.preservation.codes);
-  assert.equal(hash(faultGuides.map(beforeGb172Guide).filter(g => g.slug !== "nefit-bosch").map(beforeIntergasCountGuide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide)), facts.preservation.otherTwelveGuides);
-  assert.equal(hash(faultGuides.map(beforeGb172Guide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasCountGuide)), facts.preservation.allGuides);
-  assert.equal(hash(pageRegistry.map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry)), facts.preservation.allRegistry);
-  assert.equal(faultGuides.map(beforeGb172Guide).reduce((n, g) => n + g.codeEntryCount, 0), 1596);
+  assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).filter(g => g.slug !== "nefit-bosch").map(beforeIntergasCountGuide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide)), facts.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasCountGuide)), facts.preservation.allGuides);
+  assert.equal(hash(pageRegistry.map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry)), facts.preservation.allRegistry);
+  assert.equal(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).reduce((n, g) => n + g.codeEntryCount, 0), 1596);
 });

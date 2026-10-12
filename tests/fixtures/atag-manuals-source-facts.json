@@ -1,0 +1,449 @@
+{
+  "sourceInventory": "Root-transcribed Task79 pixels, not production-derived expectations",
+  "catalogs": [
+    {
+      "id": "atag-izone-2019-be",
+      "snapshotId": "atag-izone-2019-be-pdf",
+      "title": "i Zone-Serie — zes Belgische varianten (06.19)",
+      "scope": "Alle 17 veelvoorkomende meldingsrijen uit §13, p. 86 van historische handleiding 8H.51.47.00 / 06.19. De technische tabel op p. 151 noemt i24SZ, i35SZ, i20CZ, i22ECZ, i30CZ en i32ECZ met bestemming B; niet andere i Zone-generaties. Dit is geen volledige merk- of foutcodetabel. De algemene blokkering/foutbeschrijving wijst geen individuele klasse aan iedere rij toe. Combi bij 201 en Solo bij 203 blijven van belang. De ster bij 140 verwijst naar een professionele pomp-ingreep, niet een extra code. De CE-PIN is geen individueel artikelnummer. Actuele toestel- en gasvariantfit, artikelnummers, serials, firmware, controllerdekking en nieuwste editie zijn niet vastgesteld. Werkzaamheden uit deze installateurstabel zijn geen gebruikersprocedure.",
+      "sourceLabel": "ATAG i Zone-Serie — installatie- en servicemanual 8H.51.47.00 / 06.19",
+      "sourcePages": "§13, gedrukte p. 86 (PDF-pagina 71); modelscope p. 151 (PDF-pagina 76)",
+      "source": {
+        "key": "izone-installer-2019",
+        "directory": "task-79-atag-izone-installer-be",
+        "sourceURL": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/ATAG%20Belgie/installatievoorschriften/8H514700%20INST%20MANUAL%20i%20Zone-SERIE%20NL-%20light.pdf",
+        "byteLength": 8827243,
+        "sha256": "630b25f06ccc717ee64e5424e2cac6d3aa721c88b3174ffae27eaf6dad38f1a6",
+        "physicalPageCount": 89,
+        "rootViewedPages": [
+          1,
+          15,
+          16,
+          38,
+          39,
+          70,
+          71,
+          72,
+          73,
+          76,
+          77,
+          84
+        ],
+        "printedIdentifierAndIssue": "8H.51.47.00 / 06.19",
+        "role": "Installer manual with §13 most-common overview, not complete fault inventory",
+        "diagnosticPhysicalPage": 71,
+        "diagnosticPrintedPage": 86,
+        "technicalPhysicalPage": 76,
+        "technicalPrintedPage": 151,
+        "technicalDestination": "B",
+        "technicalModels": [
+          "i24SZ",
+          "i35SZ",
+          "i20CZ",
+          "i22ECZ",
+          "i30CZ",
+          "i32ECZ"
+        ],
+        "productIdentificationPIN": "0063CQ3634",
+        "PINIsIndividualArticlePair": false,
+        "rowCount": 17
+      },
+      "rows": [
+        {
+          "code": "101",
+          "meaning": "De ketel meldt oververhitting.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 101"
+        },
+        {
+          "code": "102",
+          "meaning": "De drukmeting meldt een druksensorfout.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 102"
+        },
+        {
+          "code": "104",
+          "meaning": "Het gemelde debiet is onvoldoende.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 104"
+        },
+        {
+          "code": "108",
+          "meaning": "De druk ligt volgens deze bron onder Pmin: minder dan 0,7 bar. De bron noemt bijvullen vereist; dit is geen bijvulinstructie.",
+          "action": "pressure",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 108"
+        },
+        {
+          "code": "1P4",
+          "meaning": "De druk ligt volgens deze bron onder Pmin: tussen 0,7 en 1,0 bar. De bron noemt bijvullen vereist; dit is geen bijvulinstructie.",
+          "action": "pressure",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 1P4"
+        },
+        {
+          "code": "109",
+          "meaning": "De druk ligt volgens deze bron boven Pmax; de rij noemt geen numerieke bovengrens.",
+          "action": "pressure",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 109"
+        },
+        {
+          "code": "110",
+          "meaning": "De aanvoersensor meldt een fout, bijvoorbeeld een onderbreking, kortsluiting of waarde buiten bereik.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 110"
+        },
+        {
+          "code": "112",
+          "meaning": "De retoursensor meldt een fout, bijvoorbeeld een onderbreking, kortsluiting of waarde buiten bereik.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 112"
+        },
+        {
+          "code": "114",
+          "meaning": "De buitenvoeler meldt een fout, bijvoorbeeld een onderbreking, kortsluiting of waarde buiten bereik.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 114"
+        },
+        {
+          "code": "1P9",
+          "meaning": "De dynamische drukverhoging is eenmaal mislukt.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 1P9"
+        },
+        {
+          "code": "140",
+          "meaning": "De dynamische drukverhoging is tweemaal mislukt; de bron noemt geen pompdetectie. De ster bij 140 is een professionele voetnoot, geen extra displaycode.",
+          "action": "pump",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 140* — professionele voetnoot"
+        },
+        {
+          "code": "201",
+          "meaning": "De warmwatersensor is volgens deze rij defect; de bron beperkt deze melding tot Combi.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 201"
+        },
+        {
+          "code": "203",
+          "meaning": "Het circuit van de boilersensor is onderbroken; de bron beperkt deze melding tot Solo.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 203"
+        },
+        {
+          "code": "303",
+          "meaning": "De printplaat meldt een PCB-kaartfout.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 303"
+        },
+        {
+          "code": "304",
+          "meaning": "De bron meldt te veel resets.",
+          "action": "resets",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 304"
+        },
+        {
+          "code": "501",
+          "meaning": "Er is geen vlam gedetecteerd.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 501"
+        },
+        {
+          "code": "612",
+          "meaning": "De ventilator meldt een fout en start volgens deze rij niet op.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§13, gedrukte p. 86 (PDF-pagina 71); 612"
+        }
+      ]
+    },
+    {
+      "id": "atag-i32ec-2017-be",
+      "snapshotId": "atag-i32ec-2017-be-pdf",
+      "title": "i32EC — Belgische i-Serie (09.17)",
+      "scope": "Alle 19 meldingsrijen uit §14, p. 68 van historische handleiding 8H.51.92.00 / 09.17, hier uitsluitend voor i32EC: alleen dit model heeft in de gelezen technische tabel op p. 112 bestemming B. Andere namen in de conformiteitsverklaring bewijzen geen aanvullende Belgische modeldekking. 105 is een ontluchtingsprogramma; 180 en 181 zijn expliciet geen storing. Dit is geen volledige merkcatalogus. Sleutel-/belsymbolen worden algemeen verklaard, niet per rij toegewezen. Bij 118 noemt gebruikersp. 13 minder dan 1 bar en installateursp. 68 minder dan 0,7 bar; geen universeel vuldoel of gekozen herstelhandeling. De CE-PIN is geen individueel artikelnummer. Actuele toestel- en gasvariantfit, artikelnummers, serials, firmware, controllerdekking en nieuwste editie zijn niet vastgesteld. Pomp-/zekering-/jumper- en resetpassages zijn geen gebruikersprocedure.",
+      "sourceLabel": "ATAG i-Serie i32EC — installatie- en servicemanual 8H.51.92.00 / 09.17",
+      "sourcePages": "§14, p. 68 (PDF-pagina 68); modelscope p. 112; afwijkende gebruikersdrempel p. 13",
+      "source": {
+        "key": "iserie-installer-2017",
+        "directory": "task-79-atag-iserie-be",
+        "sourceURL": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/Pictures/Overzicht%20Productgroepen/8H519200%20INST%20MANUAL%20i-%20SERIE%20COMFORT%20NL-F%20A5%20V0917.pdf",
+        "byteLength": 14419588,
+        "sha256": "09d419e164f1c1499d26435d7e407785fc5713cba31f3ab4820c44c39f632038",
+        "physicalPageCount": 124,
+        "rootViewedPages": [
+          1,
+          13,
+          30,
+          31,
+          68,
+          69,
+          112,
+          113,
+          120
+        ],
+        "printedIdentifierAndIssue": "8H.51.92.00 / 09.17",
+        "role": "Actual full installation/user bilingual manual from consumer download link; selected Dutch §14 source",
+        "diagnosticPhysicalPage": 68,
+        "diagnosticPrintedPage": 68,
+        "technicalPhysicalPage": 112,
+        "technicalPrintedPage": 112,
+        "technicalDestination": "B",
+        "technicalModels": [
+          "i32EC"
+        ],
+        "conformityOnlyModels": [
+          "i24S",
+          "i20C",
+          "i30C",
+          "i22EC",
+          "i32EC"
+        ],
+        "productIdentificationPIN": "0063CQ3634",
+        "PINIsIndividualArticlePair": false,
+        "rowCount": 19
+      },
+      "rows": [
+        {
+          "code": "10",
+          "meaning": "De buitenvoeler meldt een fout, bijvoorbeeld een onderbreking, kortsluiting of waarde buiten bereik.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 10"
+        },
+        {
+          "code": "20",
+          "meaning": "De aanvoersensor meldt een fout, bijvoorbeeld een onderbreking, kortsluiting of waarde buiten bereik.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 20"
+        },
+        {
+          "code": "40",
+          "meaning": "De retoursensor meldt een fout, bijvoorbeeld een onderbreking, kortsluiting of waarde buiten bereik.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 40"
+        },
+        {
+          "code": "50",
+          "meaning": "De warmwatersensor meldt een fout, bijvoorbeeld een onderbreking, kortsluiting of waarde buiten bereik.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 50"
+        },
+        {
+          "code": "61",
+          "meaning": "Er is geen communicatie via de Z-bus. De resetpassage in de installateursbron is geen gebruikersinstructie.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 61"
+        },
+        {
+          "code": "78",
+          "meaning": "De waterdruksensorwaarde ligt buiten bereik of de sensor is niet aangesloten; bij correcte waterdruk noemt de bron een pompdefect. Dit is geen vaststelling van lage waterdruk.",
+          "action": "pressure",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 78"
+        },
+        {
+          "code": "105",
+          "meaning": "Het ontluchtingsprogramma is actief. Deze editie noemt ongeveer zeven minuten; dit is een bedrijfstoestand, geen vastgestelde storing.",
+          "action": "program",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 105"
+        },
+        {
+          "code": "110",
+          "meaning": "De veiligheidstemperatuur is overschreden.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 110"
+        },
+        {
+          "code": "111",
+          "meaning": "De maximale temperatuur is overschreden.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 111"
+        },
+        {
+          "code": "117",
+          "meaning": "De druk is volgens deze bron hoger dan 3 bar, of de pompdrukverhoging is te hoog.",
+          "action": "pressure",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 117"
+        },
+        {
+          "code": "118",
+          "meaning": "De installateurspagina noemt druk lager dan 0,7 bar of te lage pompdrukverhoging zonder pompdetectie. Gebruikerspagina 13 noemt bij dezelfde code minder dan 1 bar; die drempels worden hier niet tot een vuldoel samengevoegd. De ster is een professionele voetnoot, geen extra displaycode.",
+          "action": "pump",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 118* — professionele voetnoot; afwijkende gebruikersdrempel p. 13"
+        },
+        {
+          "code": "119",
+          "meaning": "De doorverbinding op X2, posities 4 en 5, ontbreekt of is onderbroken.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 119"
+        },
+        {
+          "code": "129",
+          "meaning": "De ventilator meldt een fout en start volgens deze rij niet op.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 129"
+        },
+        {
+          "code": "133",
+          "meaning": "Na vijf ontstekingspogingen is geen vlam gevormd.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 133"
+        },
+        {
+          "code": "151",
+          "meaning": "De ventilatorregeling bereikt het toerental niet of het toerental ligt buiten bereik, of de stuurautomaat is defect.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 151"
+        },
+        {
+          "code": "154",
+          "meaning": "De bron noemt bij deze melding een te snelle stijging van de aanvoertemperatuur, een te groot temperatuurverschil en retour hoger dan aanvoer.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 154"
+        },
+        {
+          "code": "180",
+          "meaning": "Geen storing volgens deze bron: kort zichtbaar bij het verlaten van de schoorsteenvegerfunctie.",
+          "action": "ordinary",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 180"
+        },
+        {
+          "code": "181",
+          "meaning": "Geen storing volgens deze bron: kort zichtbaar bij het verlaten van de gaspedaalfunctie.",
+          "action": "ordinary",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 181"
+        },
+        {
+          "code": "197",
+          "meaning": "De doorverbinding op het externe beveiligingscontact ontbreekt of is onderbroken.",
+          "action": "general",
+          "sourceClass": null,
+          "sourcePage": "§14, p. 68 (PDF-pagina 68); 197"
+        }
+      ]
+    }
+  ],
+  "actions": {
+    "general": "Noteer de volledige code, schermtekst, het exacte model en een zonder openen veilig bereikbaar artikel- of serienummer. Deze installateurstabel is geen gebruikersherstelprocedure. Laat een blijvende of terugkerende melding professioneel beoordelen. Open de mantel niet, wijzig geen instellingen, voer geen herhaalde resets of spanningsonderbreking uit en werk niet aan gas-, rookgas- of elektrische onderdelen.",
+    "pressure": "Lees alleen de zichtbare drukwaarde en noteer die met de volledige code en het exacte model. De bronwaarden zijn geen universele vuldoelen: vul niet bij en tap niet af uitsluitend op basis van deze tabel. Laat druk en oorzaak professioneel beoordelen; open geen gesloten onderdelen, forceer geen reset of spanningsonderbreking en werk niet aan pomp of sensoren.",
+    "program": "Laat het automatische programma verlopen volgens de toepasselijke gebruikershandleiding van uw exacte toestel. Forceer geen reset of spanningsonderbreking om het programma te omzeilen. Deze bedrijfstoestand bewijst niet dat het toestel probleemloos werkt. Noteer bij klachten de volledige schermtekst en het model en vraag professionele hulp als de melding blijft staan of terugkeert.",
+    "ordinary": "Deze melding wordt in deze handleiding als geen storing beschreven, maar bewijst niet dat het toestel probleemloos werkt. Noteer bij klachten de volledige schermtekst en het exacte model en laat een onverwachte of aanhoudende melding professioneel beoordelen. Start zelf geen servicetest of instellingenprocedure en open de mantel niet.",
+    "pump": "Noteer de volledige code, schermtekst en het exacte model. De gemarkeerde pomp-ingreep in de bron is alleen voor de erkende installateur, geen gebruikershandeling. Open de mantel niet en werk niet aan pomp, zekeringen, bedrading of veiligheidscontacten. Laat de oorzaak professioneel beoordelen; voer geen herhaalde resets of spanningsonderbreking uit.",
+    "resets": "Deze bron noemt te veel resets. Probeer niet opnieuw te resetten of de netspanning te onderbreken om de melding te wissen. Noteer de volledige code, schermtekst en het exacte model en laat de onderliggende oorzaak professioneel onderzoeken. Open de mantel niet en wijzig geen instellingen."
+  },
+  "warning": "Kies de juiste bron en historische editie: het aparte ATAGwarmte-overzicht, i Zone-Serie 06.19 voor de zes genoemde Belgische varianten, of i-Serie 09.17 uitsluitend voor i32EC met gelezen technische bestemming B. Niet alle ATAG-modellen zijn gedekt. Dezelfde code kan per bron iets anders betekenen: 110 is niet in beide modeltabellen dezelfde temperatuur- of sensormelding, en C105 is niet 105. De oude 1P4-overzichtstekst blijft tegenstrijdig; de nieuwe modelbron maakt die niet universeel geldig. Bij i32EC vermeldt 118 twee verschillende paginadrempels; kies geen vul- of aftapremedie op basis van deze gids. Automatische programma's en niet-storingen blijven apart. Controleer het exacte model, de volledige schermtekst en de toepasselijke gebruikershandleiding. Actuele toestel-/gasvariant-/serialfit, individuele artikelnummers, firmware, controllerdekking en nieuwste editie zijn onbekend. Open geen gesloten onderdelen en voer geen herhaalde resets of spanningsonderbreking uit.",
+  "page": {
+    "path": "/foutcodes/atag",
+    "status": "published",
+    "title": "ATAG i Zone en i32EC foutcodes | AB Service",
+    "description": "ATAG i Zone en i32EC-meldingen uit aparte Belgische handleidingen, naast het algemene overzicht. Kies uw model en bron; lees veilige eerste stappen.",
+    "lastModified": "2026-10-12",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  "before": {
+    "warning": "Deze gids volgt de 14 rubrieken van één ATAGwarmte-overzicht, gelezen op 11 oktober 2026; niet alle ATAG-modellen of revisies zijn gedekt. Controleer het exacte toestelmodel, de volledige schermtekst en de toepasselijke gebruikershandleiding. De bron noemt overlappende modelgroepen en schrijft i28 en A2442EC; die spelling bewijst geen exacte toestelcompatibiliteit. C105 is een automatisch programma en is niet dezelfde melding als 105. Bij 1P4 zijn de drukinstructies tegenstrijdig; kies niet zelf tussen bijvullen en aftappen. Herhaald resetten, spanningsonderbreking en gas- of leidingwerk zijn geen algemeen gebruikersadvies. Actuele Belgische compatibiliteit, artikelnummers, firmware en nieuwste revisie zijn onbekend.",
+    "page": {
+      "path": "/foutcodes/atag",
+      "status": "published",
+      "title": "ATAG cv-ketel foutcodes: betekenis en stappen | AB Service",
+      "description": "Zoek 14 ATAG-meldingen uit het officiële overzicht. Vergelijk de genoemde modellen, automatische programma's, bron en veilige eerste stappen.",
+      "lastModified": "2026-10-11",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    "metadata": {
+      "title": "ATAG cv-ketel foutcodes: betekenis en stappen | AB Service",
+      "description": "Zoek 14 ATAG-meldingen uit het officiële overzicht. Vergelijk de genoemde modellen, automatische programma's, bron en veilige eerste stappen.",
+      "alternates": {
+        "canonical": "https://www.abservice24.be/foutcodes/atag"
+      },
+      "robots": {
+        "index": true,
+        "follow": true,
+        "googleBot": {
+          "index": true,
+          "follow": true,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+          "max-video-preview": -1
+        }
+      },
+      "openGraph": {
+        "title": "ATAG cv-ketel foutcodes: betekenis en stappen | AB Service",
+        "description": "Zoek 14 ATAG-meldingen uit het officiële overzicht. Vergelijk de genoemde modellen, automatische programma's, bron en veilige eerste stappen.",
+        "url": "https://www.abservice24.be/foutcodes/atag",
+        "siteName": "AB Service",
+        "locale": "nl_BE",
+        "type": "website",
+        "images": [
+          {
+            "url": "https://www.abservice24.be/social/foutcodes/atag",
+            "width": 1200,
+            "height": 630,
+            "alt": "ATAG cv-ketel foutcodes: betekenis en stappen — AB Service"
+          }
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "ATAG cv-ketel foutcodes: betekenis en stappen | AB Service",
+        "description": "Zoek 14 ATAG-meldingen uit het officiële overzicht. Vergelijk de genoemde modellen, automatische programma's, bron en veilige eerste stappen.",
+        "images": [
+          "https://www.abservice24.be/social/foutcodes/atag"
+        ]
+      }
+    },
+    "preservation": {
+      "allGuides": "f14e7cfad9cc67f5957e96e8338ea9fb4fd8c81bbb4201ae6614dbff3991a7a0",
+      "allRegistry": "c0e581be79f89649cef9d1d4f820e572635d175e14242eefa852ed2d5352cf8a",
+      "allManifest": "0d3483ed1d9def4265e451230f695309a4eef3c89dcb7c9023de653ab68d6079",
+      "atagHtml": "245ebbc9d7d7e344922a183d69da742f27c9ba66f19d138006c7d28e52f7b649",
+      "atagCatalog": "b3b518426c841bc417927dc3a580b13f1654f131954b45b53f0cdf6a7f018ff5",
+      "otherGuides": "0bab8b9984202889305768746510da45464f1156e03a4e420e352e01b245e283",
+      "otherRegistry": "a343494a76a0337b5401e395b5a06e8b6a9a8b4c9e4357cf35eaf473d60078be",
+      "otherManifestEntries": "f311cffdd208b124aabdca7e306a6c77cecdeee39db86230594698305dccd390",
+      "allSnapshots": "9fbf47e4f524b151548bea18aa85e0fc226e77a114709778c4b6152fc680394d"
+    }
+  },
+  "expectedManifestCounts": {
+    "guides": 13,
+    "catalogAssignments": 41,
+    "distinctCatalogs": 35,
+    "displayedExplanationRows": 1701,
+    "distinctCatalogExplanationRows": 1459,
+    "distinctCatalogSourceURLs": 21
+  },
+  "manifestPurposeSuffix": "; Task80 adds only historical i Zone06.19 six technicalB models and i32EC09.17 one technicalB model, with17/19 source rows; not every ATAG model, current fit or full fault coverage",
+  "manifestCountSuffix": " Task80 adds36 source-row assignments: iZone17 most-common messages, i32EC19 including105program and180/181nonfault;50 ATAG rows are not50 unique fault diagnoses."
+}
