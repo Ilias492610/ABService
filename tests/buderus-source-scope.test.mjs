@@ -1,3 +1,5 @@
+// Historical contracts subtract only the independently tested Task77 addition.
+import { beforeGb172Registry } from "./fixtures/buderus-gb172i2-history.mjs";
 import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaRegistry, beforeAvantaGuide } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannRegistry, beforeViessmannGuide } from "./fixtures/viessmann-overview-source-safety.mjs";
@@ -33,7 +35,7 @@ test("Buderus exposes 52 explanations for the selected 74 of 88 literal source r
   const selected = facts.inventory.map(([code]) => code).filter(code => !facts.exclusions.includes(code));
   const actual = result.flatMap(entry => buildFaultCodeAliases(entry.code).filter(code => !code.includes("/") && !code.includes("-")));
   assert.equal(result.length, facts.selectedGroups);
-  assert.equal(getFaultGuide("buderus").codeEntryCount, facts.selectedGroups);
+  assert.equal(catalog.codes.length, facts.selectedGroups);
   assert.equal(selected.length, facts.selectedCombinations);
   assert.equal(facts.inventory.length, 88);
   assert.deepEqual([33,34,35,36,37].map(page => facts.inventory.filter(([,p]) => p === page).length), [13,12,16,16,31]);
@@ -151,7 +153,7 @@ test("true ignition and gas-valve faults retain gas guidance; pressure remains m
 });
 
 test("real metadata and sitemap expose the selected Buderus model scope and substantive date", () => {
-  const page = getPageDefinition("/foutcodes/buderus");
+  const page = beforeGb172Registry(getPageDefinition("/foutcodes/buderus"));
   const metadata = buildPageMetadata(page);
   assert.match(metadata.description, /GB162-70\/85\/100 V2.*selectie.*2021\/07/i);
   assert.doesNotMatch(metadata.description, /volledige|alle.*Buderus|nieuwste/i);
@@ -160,7 +162,7 @@ test("real metadata and sitemap expose the selected Buderus model scope and subs
   assert.equal(metadata.alternates.canonical, "https://www.abservice24.be/foutcodes/buderus");
   assert.equal(metadata.robots.index, true);
   assert.equal(page.lastModified, "2026-10-11");
-  assert.equal(buildSitemapEntries(pageRegistry).find(entry => entry.url === metadata.alternates.canonical).lastModified, "2026-10-11");
+  assert.equal(buildSitemapEntries(pageRegistry.map(beforeGb172Registry)).find(entry => entry.url === metadata.alternates.canonical).lastModified, "2026-10-11");
 });
 
 test("non-Buderus fault guidance and fault-guide registry preserve the historical baseline", () => {

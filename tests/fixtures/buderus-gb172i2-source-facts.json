@@ -1,0 +1,704 @@
+{
+  "source": {
+    "boundary": "Root transcription of source facts after a read-only research inventory; not a verbatim archive of the agent report or a published catalog. Meanings paraphrase the description column only. Professional remedy columns are intentionally not consumer instructions.",
+    "sourceURL": "https://buderus-be-fl.boschhc-documents.com/download/pdf/file/6721852651",
+    "sha256": "6d85e3cfc372d4d24e74eba653552926671f7f35e2ba00be173a05fc33a2cabc",
+    "documentNumber": "6721852651",
+    "visibleIssue": "2026/06",
+    "market": "BE",
+    "language": "nl",
+    "sourceAudience": "professional-installation-maintenance",
+    "pageCount": 68,
+    "table": 69,
+    "section": "10.1.2",
+    "printedPages": [
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "pdfPageOffset": 0,
+    "rowShape": [
+      "printedPage",
+      "codeCellNormalizedWhitespaceDash",
+      "sourceClassOrNull",
+      "descriptionParaphrase"
+    ],
+    "modelArticlePairs": [
+      [
+        "GB172i.2-24 W H",
+        "7736902473"
+      ],
+      [
+        "GB172i.2-20 KDW H",
+        "7736902472"
+      ],
+      [
+        "GB172i.2-20 KDW P",
+        "7736902479"
+      ],
+      [
+        "GB172i.2-24 W P",
+        "7736902480"
+      ]
+    ],
+    "groups": [
+      [
+        46,
+        "200",
+        "O",
+        "De warmtebron werkt voor de centrale verwarming."
+      ],
+      [
+        46,
+        "201",
+        "O",
+        "De warmtebron werkt voor warmwaterbereiding."
+      ],
+      [
+        46,
+        "202",
+        "O",
+        "Het schakeloptimalisatieprogramma is actief."
+      ],
+      [
+        46,
+        "203",
+        "O",
+        "Het toestel is gereed; er is geen warmtevraag."
+      ],
+      [
+        46,
+        "204",
+        "O",
+        "De actuele cv-watertemperatuur ligt boven de gewenste waarde."
+      ],
+      [
+        46,
+        "208",
+        "O",
+        "Er is warmtevraag door een rookgastest."
+      ],
+      [
+        46,
+        "214",
+        "V",
+        "De ventilator wordt tijdens de veiligheidstijd uitgeschakeld."
+      ],
+      [
+        46,
+        "224",
+        "V",
+        "De veiligheidstemperatuurbegrenzer is geactiveerd."
+      ],
+      [
+        47,
+        "227",
+        "V",
+        "Na ontsteking wordt geen vlamsignaal waargenomen."
+      ],
+      [
+        47,
+        "228",
+        "V",
+        "Er is een vlamsignaal terwijl geen vlam aanwezig is."
+      ],
+      [
+        47,
+        "229",
+        "B",
+        "De vlam is tijdens het branderbedrijf uitgevallen."
+      ],
+      [
+        47,
+        "232",
+        "B",
+        "Een extern schakelcontact blokkeert de warmtebron."
+      ],
+      [
+        47,
+        "233",
+        "V",
+        "Er is een storing van de toestelidentificatiemodule of toestelelektronica."
+      ],
+      [
+        47,
+        "234",
+        "V",
+        "Het gasregelblok heeft een elektrische storing."
+      ],
+      [
+        47,
+        "235",
+        "V",
+        "Er is een versieconflict tussen toestelelektronica en toestelidentificatiemodule."
+      ],
+      [
+        47,
+        "237",
+        "V",
+        "Er is een installatiestoring; de beschrijving specificeert die niet verder."
+      ],
+      [
+        47,
+        "238",
+        "V",
+        "De toestelelektronica wordt als defect gemeld."
+      ],
+      [
+        48,
+        "242-263",
+        "V",
+        "Er is een installatiestoring van toestelelektronica of bedieningspaneel."
+      ],
+      [
+        48,
+        "265",
+        "B",
+        "De warmtevraag is kleiner dan de geleverde energie."
+      ],
+      [
+        48,
+        "268",
+        "O",
+        "De relaistest is geactiveerd."
+      ],
+      [
+        48,
+        "269",
+        "V",
+        "De beschrijving noemt alleen vlambewaking; zij geeft geen preciezere storingsoorzaak."
+      ],
+      [
+        48,
+        "273",
+        "B",
+        "Het bedrijf van brander en ventilator is onderbroken."
+      ],
+      [
+        48,
+        "281",
+        "B",
+        "De cv-pomp is geblokkeerd of er bevindt zich lucht in de cv-pomp."
+      ],
+      [
+        48,
+        "306",
+        "V",
+        "Er is een vlamsignaal na het sluiten van de brandstoftoevoer."
+      ],
+      [
+        48,
+        "358",
+        "O",
+        "Het pomptestprogramma is actief."
+      ],
+      [
+        48,
+        "360",
+        "V",
+        "Er is een installatiestoring van toestelelektronica of bedieningspaneel."
+      ],
+      [
+        48,
+        "362",
+        "V",
+        "Er is een storing van de toestelidentificatiemodule of toestelelektronica."
+      ],
+      [
+        48,
+        "363",
+        "V",
+        "Er is een installatiestoring van toestelelektronica of bedieningspaneel."
+      ],
+      [
+        48,
+        "815",
+        "W",
+        "De temperatuursensor van de open verdeler is defect."
+      ],
+      [
+        48,
+        "1010",
+        "O",
+        "Er is geen communicatie via de EMS-BUS-verbinding."
+      ],
+      [
+        48,
+        "1013",
+        "W",
+        "Het maximale aantal branduren is bereikt."
+      ],
+      [
+        48,
+        "1017",
+        "W",
+        "De waterdruk is te laag."
+      ],
+      [
+        48,
+        "1018",
+        "W",
+        "Het onderhoudsinterval is verstreken."
+      ],
+      [
+        48,
+        "1019",
+        "W",
+        "Het toestel herkent een verkeerd pomptype."
+      ],
+      [
+        48,
+        "1021",
+        "W",
+        "De boilerlaad- of warmwatertemperatuursensor is defect."
+      ],
+      [
+        48,
+        "1023",
+        null,
+        "De maximale bedrijfsduur inclusief stand-bytijd is bereikt."
+      ],
+      [
+        48,
+        "1037",
+        "W",
+        "De buitentemperatuursensor is defect; vervangend cv-bedrijf is actief."
+      ],
+      [
+        48,
+        "1065",
+        "W",
+        "De waterdruksensor is defect of niet aangesloten."
+      ],
+      [
+        49,
+        "1068",
+        "W",
+        "De buitentemperatuursensor of lambdasonde is defect."
+      ],
+      [
+        49,
+        "1075",
+        "W",
+        "Er is kortsluiting in de ketelbloktemperatuursensor."
+      ],
+      [
+        49,
+        "1076",
+        "W",
+        "De regeling ontvangt geen signaal van de ketelbloktemperatuursensor."
+      ],
+      [
+        49,
+        "2085",
+        "V",
+        "Het toestel meldt een interne storing."
+      ],
+      [
+        49,
+        "2908",
+        "V",
+        "Er is een installatiestoring van toestelelektronica of bedieningspaneel."
+      ],
+      [
+        49,
+        "2910",
+        "V",
+        "Het rookgasafvoersysteem heeft een storing."
+      ],
+      [
+        49,
+        "2914-2916",
+        "V",
+        "Er is een installatiestoring van de toestelelektronica."
+      ],
+      [
+        49,
+        "2920",
+        "V",
+        "De vlambewaking heeft een storing."
+      ],
+      [
+        49,
+        "2923-2927",
+        "V",
+        "Er is een installatiestoring van de toestelelektronica."
+      ],
+      [
+        49,
+        "2928",
+        "V",
+        "Het toestel meldt een interne storing."
+      ],
+      [
+        49,
+        "2931",
+        "V",
+        "Er is een installatiestoring van toestelelektronica of bedieningspaneel."
+      ],
+      [
+        49,
+        "2940",
+        "V",
+        "De branderautomaat heeft een installatiestoring."
+      ],
+      [
+        49,
+        "2946",
+        "V",
+        "Het toestel herkent een verkeerde codeerstekker."
+      ],
+      [
+        49,
+        "2948",
+        "B",
+        "Bij klein vermogen wordt geen vlamsignaal waargenomen."
+      ],
+      [
+        49,
+        "2950",
+        "B",
+        "Na de startprocedure wordt geen vlamsignaal waargenomen."
+      ],
+      [
+        49,
+        "2951",
+        "V",
+        "Er zijn te veel vlamonderbrekingen."
+      ],
+      [
+        49,
+        "2952",
+        "V",
+        "Er is een interne storing bij het testen van het ionisatiesignaal."
+      ],
+      [
+        50,
+        "2955",
+        "B",
+        "De warmtebron ondersteunt de ingestelde hydraulische configuratieparameters niet."
+      ],
+      [
+        50,
+        "2956",
+        "O",
+        "De hydraulische configuratie op de warmtebron is geactiveerd."
+      ],
+      [
+        50,
+        "2957",
+        "V",
+        "Er is een installatiestoring van de toestelelektronica."
+      ],
+      [
+        50,
+        "2961 / 2962",
+        "V",
+        "Er is geen ventilatorsignaal."
+      ],
+      [
+        50,
+        "2963",
+        "B",
+        "Het signaal van de aanvoer- en ketelbloktemperatuursensor ligt buiten het toegestane bereik."
+      ],
+      [
+        50,
+        "2965",
+        "B",
+        "De aanvoertemperatuur is te hoog."
+      ],
+      [
+        50,
+        "2966",
+        "B",
+        "De aanvoertemperatuur in het ketelblok stijgt te snel."
+      ],
+      [
+        50,
+        "2968",
+        "O",
+        "Cv-water wordt bijgevuld; dit is een statusbeschrijving, geen bijvulinstructie."
+      ],
+      [
+        50,
+        "2969",
+        null,
+        "Het maximale aantal keren bijvullen is bereikt."
+      ],
+      [
+        50,
+        "2970",
+        "B",
+        "De druk in de cv-installatie daalt te snel."
+      ],
+      [
+        50,
+        "2971",
+        "B",
+        "De bedrijfsdruk is te laag."
+      ],
+      [
+        50,
+        "2972",
+        null,
+        "De netspanning is te laag."
+      ],
+      [
+        50,
+        "2980",
+        "V",
+        "Na minimaal vijf vergrendelende storingen binnen vijftien minuten is het toestel om veiligheidsredenen geblokkeerd."
+      ],
+      [
+        50,
+        "2981",
+        "V",
+        "Het toestel is uit- en weer ingeschakeld terwijl veiligheidsblokkering 2980 al bestond."
+      ]
+    ],
+    "expectedPhysicalGroupCount": 69,
+    "expectedExpandedNumericCount": 97,
+    "expectedPageGroupCounts": [
+      8,
+      9,
+      21,
+      17,
+      14
+    ],
+    "expectedGroupClassCounts": {
+      "O": 11,
+      "B": 13,
+      "V": 31,
+      "W": 11,
+      "null": 3
+    },
+    "expectedExpandedClassCounts": {
+      "O": 11,
+      "B": 13,
+      "V": 59,
+      "W": 11,
+      "null": 3
+    },
+    "blankClassCodes": [
+      "1023",
+      "2969",
+      "2972"
+    ],
+    "expandedNumericIdentifiers": [
+      "200",
+      "201",
+      "202",
+      "203",
+      "204",
+      "208",
+      "214",
+      "224",
+      "227",
+      "228",
+      "229",
+      "232",
+      "233",
+      "234",
+      "235",
+      "237",
+      "238",
+      "242",
+      "243",
+      "244",
+      "245",
+      "246",
+      "247",
+      "248",
+      "249",
+      "250",
+      "251",
+      "252",
+      "253",
+      "254",
+      "255",
+      "256",
+      "257",
+      "258",
+      "259",
+      "260",
+      "261",
+      "262",
+      "263",
+      "265",
+      "268",
+      "269",
+      "273",
+      "281",
+      "306",
+      "358",
+      "360",
+      "362",
+      "363",
+      "815",
+      "1010",
+      "1013",
+      "1017",
+      "1018",
+      "1019",
+      "1021",
+      "1023",
+      "1037",
+      "1065",
+      "1068",
+      "1075",
+      "1076",
+      "2085",
+      "2908",
+      "2910",
+      "2914",
+      "2915",
+      "2916",
+      "2920",
+      "2923",
+      "2924",
+      "2925",
+      "2926",
+      "2927",
+      "2928",
+      "2931",
+      "2940",
+      "2946",
+      "2948",
+      "2950",
+      "2951",
+      "2952",
+      "2955",
+      "2956",
+      "2957",
+      "2961",
+      "2962",
+      "2963",
+      "2965",
+      "2966",
+      "2968",
+      "2969",
+      "2970",
+      "2971",
+      "2972",
+      "2980",
+      "2981"
+    ],
+    "excludedTable70SymptomLabel": "LoPr",
+    "unknowns": [
+      "firmwareCompatibility",
+      "controllerVariantCoverage",
+      "newestEdition",
+      "customerDeviceCompatibility",
+      "ABJobFrequency",
+      "searchVolume",
+      "ranking",
+      "businessOutcome"
+    ]
+  },
+  "before": {
+    "warning": "Deze selectie uit tabel 17, §12.3, p. 33-37 van installatiehandleiding 6720813438 (2021/07), BE Nederlands, geldt uitsluitend voor Logamax plus GB162-70/85/100 V2: 52 uitlegregels voor 74 codecombinaties. Gewone bedrijfs-, componenttest- en resetcodes zijn weggelaten; ontbrekende bronsymbolen krijgen geen storingsclassificatie. De rookgastemperatuursensor is in het schema alleen voor Zwitserland genoemd; controleer bij 1U 317 en 1Y 318 of deze aanwezig is. Controleer het typeplaatje, de configuratie en de gebruikershandleiding van uw exacte toestel. Andere Buderus-reeksen en revisies zijn niet gedekt.",
+    "page": {
+      "path": "/foutcodes/buderus",
+      "status": "published",
+      "title": "Buderus GB162 foutcodes: officiële bron | AB Service",
+      "description": "Zoek Buderus Logamax plus GB162-70/85/100 V2-codes: selectie uit de BE Nederlandse installatiehandleiding 2021/07, met modelscope en veilige eerste stappen.",
+      "lastModified": "2026-10-11",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    "metadata": {
+      "title": "Buderus GB162 foutcodes: officiële bron | AB Service",
+      "description": "Zoek Buderus Logamax plus GB162-70/85/100 V2-codes: selectie uit de BE Nederlandse installatiehandleiding 2021/07, met modelscope en veilige eerste stappen.",
+      "alternates": {
+        "canonical": "https://www.abservice24.be/foutcodes/buderus"
+      },
+      "robots": {
+        "index": true,
+        "follow": true,
+        "googleBot": {
+          "index": true,
+          "follow": true,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+          "max-video-preview": -1
+        }
+      },
+      "openGraph": {
+        "title": "Buderus GB162 foutcodes: officiële bron | AB Service",
+        "description": "Zoek Buderus Logamax plus GB162-70/85/100 V2-codes: selectie uit de BE Nederlandse installatiehandleiding 2021/07, met modelscope en veilige eerste stappen.",
+        "url": "https://www.abservice24.be/foutcodes/buderus",
+        "siteName": "AB Service",
+        "locale": "nl_BE",
+        "type": "website",
+        "images": [
+          {
+            "url": "https://www.abservice24.be/social/foutcodes/buderus",
+            "width": 1200,
+            "height": 630,
+            "alt": "Buderus GB162 foutcodes: officiële bron — AB Service"
+          }
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Buderus GB162 foutcodes: officiële bron | AB Service",
+        "description": "Zoek Buderus Logamax plus GB162-70/85/100 V2-codes: selectie uit de BE Nederlandse installatiehandleiding 2021/07, met modelscope en veilige eerste stappen.",
+        "images": [
+          "https://www.abservice24.be/social/foutcodes/buderus"
+        ]
+      }
+    },
+    "counts": {
+      "guides": 13,
+      "catalogAssignments": 38,
+      "distinctCatalogs": 32,
+      "displayedExplanationRows": 1596,
+      "distinctCatalogExplanationRows": 1354,
+      "distinctCatalogSourceURLs": 18
+    },
+    "incrementalUpdateDate": "2026-10-11",
+    "preservation": {
+      "gb162Catalog": "513d37aad5e412a92ff8ff2989aa5bffc3e43a80052630cbe0c72ba307821d59",
+      "otherGuides": "548e180932ceb6e02e08373bbf18f77064a35dfa3101c91982f180a8394c3306",
+      "otherRegistry": "0233ba0eb3104389de0fe73a1cca00d0e2b005bc366f9f17cefbab01b99156eb",
+      "allGuides": "5a073d7de70af435051b6707c32e2d17169f05e3091928d53318bbd06ccee410",
+      "allRegistry": "05ccbde33e6a65de06dcadf13472f01fd68584c33d92986fdcfb503b2b6a5c85",
+      "buderusHtml": "e8f1f2d5a50d2874f3cbd1f551825864d4793c7355c59938dd30921c84fbd9ac",
+      "otherManifestEntries": "55dcae37d8bd03b18fb9a215a243780056b9c05153a7512d2d5e984852bd74fd",
+      "allManifest": "86063a03a413ae8fd084f753b5a4fc6aa3f8fc407ef88249c5e42666aa6aca11"
+    }
+  },
+  "id": "buderus-logamax-gb172i2",
+  "snapshotId": "buderus-gb172i2-pdf",
+  "title": "Logamax plus GB172i.2 — BE (2026/06)",
+  "label": "Buderus Logamax plus GB172i.2 — installatie- en onderhoudshandleiding 6721852651 (2026/06), BE Nederlands",
+  "scope": "Alle 69 bedrijfs-, service- en storingsgroepen uit tabel 69, §10.1.2, p. 46–50 van installatie- en onderhoudshandleiding 6721852651 (2026/06), BE Nederlands: 97 numerieke meldingen. Uitsluitend de Belgische model/artikelparen uit tabel 1: GB172i.2-24 W H — 7736902473; GB172i.2-20 KDW H — 7736902472; GB172i.2-20 KDW P — 7736902479; GB172i.2-24 W P — 7736902480. O is bedrijfsstatus, B blokkering, V vergrendeling en W servicedisplay; de bron laat de klasse bij 1023, 2969 en 2972 leeg. 1010 is O maar meldt ontbrekende EMS-communicatie. Niet voor GB172i zonder .2, GB162, andere modellen of revisies. De professionele herstelkolom is geen gebruikersinstructie; 2980/2981 vereist een vakman of servicedienst na oorzaakherstel en een installatietest ter plaatse. Controleer typeplaatje, configuratie en gebruikershandleiding; firmware, controllerdekking en nieuwste editie zijn niet vastgesteld.",
+  "warning": "Kies de exacte toestelreeks. GB162-70/85/100 V2 volgt de selectie van 52 uitlegregels voor 74 codecombinaties uit installatiehandleiding 6720813438 (2021/07), BE Nederlands; gewone bedrijfs-, componenttest- en resetcodes zijn daar weggelaten. GB172i.2 gebruikt alle 69 bedrijfs-, service- en storingsgroepen (97 numerieke meldingen) uit installatie- en onderhoudshandleiding 6721852651 (2026/06), BE Nederlands, uitsluitend voor de vier hieronder genoemde model/artikelparen. O/B/V/W zijn bronklassen, geen subcodes; bij 1023, 2969 en 2972 is de klasse niet ingevuld. 2980/2981 mag alleen een vakman of servicedienst oplossen na oorzaakherstel en een installatietest ter plaatse. Controleer het typeplaatje, de configuratie en de gebruikershandleiding van uw exacte toestel; andere modellen, revisies en firmware vallen buiten deze dekking.",
+  "page": {
+    "path": "/foutcodes/buderus",
+    "status": "published",
+    "title": "Buderus GB162 en GB172i.2 foutcodes | AB Service",
+    "description": "Buderus GB162 V2 en GB172i.2-meldingen uit aparte Belgische handleidingen. Kies uw exacte model, vergelijk de volledige code en lees veilige eerste stappen.",
+    "lastModified": "2026-10-12",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  "manifestPurposeSuffix": "; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage",
+  "manifestCountSuffix": " Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses.",
+  "actions": {
+    "general": "Noteer de volledige code, het exacte model en een zonder openen veilig bereikbaar artikel- of serienummer. Laat een blijvende of terugkerende melding professioneel beoordelen. Open geen gesloten onderdelen, wijzig geen instellingen en voer geen reset- of herstelprocedure uit op basis van deze installateurstabel.",
+    "ordinary": "Aan deze bedrijfsstatus alleen is geen defect of herstelhandeling te verbinden. Noteer bij klachten de volledige melding en het exacte model. Open geen gesloten onderdelen, wijzig geen instellingen en raadpleeg de toepasselijke gebruikershandleiding; laat aanhoudende klachten professioneel beoordelen.",
+    "service": "Noteer de volledige melding, het exacte model en een zonder openen veilig bereikbaar artikel- of serienummer. Plan professioneel onderhoud of beoordeling wanneer de melding blijft staan of terugkomt. Open geen gesloten onderdelen, vul niet bij op basis van deze tabel en wis de melding niet zonder de bijbehorende controle.",
+    "lock": "Laat deze veiligheidsblokkering alleen door een vakman of servicedienst beoordelen en opheffen na het verhelpen van de oorzaak en een aansluitende installatietest ter plaatse. Noteer de volledige code en het exacte model. Gebruik geen herhaalde resets, spanningsonderbreking of overbrugging om de blokkering te wissen; open geen gesloten onderdelen."
+  },
+  "classLabels": {
+    "O": "O (bedrijfsstatus)",
+    "B": "B (blokkering)",
+    "V": "V (vergrendeling)",
+    "W": "W (servicedisplay)",
+    "null": "niet vermeld in de bron"
+  }
+}

@@ -1,6 +1,7 @@
 import { createFaultCatalog } from "./fault-catalogs.mjs";
 import { calentaAceMaticCatalogs } from "./remeha-calenta-ace-matic.mjs";
 import { calentaAceMatic25LCatalogs } from "./remeha-calenta-ace-matic-25l.mjs";
+import { gb172i2Catalogs } from "./buderus-gb172i2.mjs";
 
 const CALENTA_LEGACY_BE_URL = "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta/150708%20IM%20SM%20Calenta%2015s%2025s%2028c%2035s%2040c%20NL.pdf";
 
@@ -198,6 +199,7 @@ export const buderusCatalogs = Object.freeze([
       ["H07", "De gemeten waterdruk is laag; het vermogen voor zowel verwarming als warmwaterbedrijf wordt beperkt.", "pressure"],
     ],
   }),
+  ...gb172i2Catalogs,
 ]);
 
 // The overview reserves every table measure for authorized professionals.

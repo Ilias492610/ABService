@@ -1,3 +1,5 @@
+// Reconstruct only the separately verified Task77 addition for historical hashes.
+import { beforeGb172Guide, beforeGb172Registry } from "./fixtures/buderus-gb172i2-history.mjs";
 import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaGuide, beforeAvantaRegistry } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry } from "./fixtures/viessmann-overview-source-safety.mjs";
@@ -68,8 +70,8 @@ test("actual Intergas SSR retains all11 groups and source/contact while exposing
   assert.equal(hash(beforeIntergasHtml(beforeFaultReadingHtml(html),"intergas")),facts.preservation.html);
 });
 test("allother12 complete guides and82registry preserve genuine64d7 captures outside the exact Intergas leaves", () => {
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="intergas").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide)),facts.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeGb172Guide).filter(g=>g.slug!=="intergas").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide)),facts.preservation.otherTwelveGuides);
   assert.equal(hash(beforeIntergasGuide(guide)),facts.preservation.guide);
-  assert.equal(hash(pageRegistry.map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry)),facts.preservation.allRegistry);
-  assert.equal(faultGuides.reduce((n,g)=>n+g.codeEntryCount,0),1596);
+  assert.equal(hash(pageRegistry.map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry)),facts.preservation.allRegistry);
+  assert.equal(faultGuides.map(beforeGb172Guide).reduce((n,g)=>n+g.codeEntryCount,0),1596);
 });

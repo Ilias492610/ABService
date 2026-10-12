@@ -1,3 +1,5 @@
+// Reconstruct only the separately verified Task77 addition for historical hashes.
+import { beforeGb172Guide, beforeGb172Registry, beforeGb172Manifest } from "./fixtures/buderus-gb172i2-history.mjs";
 import { beforeCalentaGuide, beforeCalentaManifestEntry, beforeCalentaManifestMirror } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaRegistry, beforeAvantaGuide, beforeAvantaManifestEntry, beforeAvantaManifestMirror } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry, beforeViessmannManifestEntry, beforeViessmannManifestMirror } from "./fixtures/viessmann-overview-source-safety.mjs";
@@ -58,16 +60,16 @@ test("ATAG metadata uses substantive realdate and restores exact genuine prior l
   assert.equal(meta.description,f.description);assert.equal(meta.openGraph.description,f.description);assert.equal(meta.twitter.description,f.description);
   assert.equal(page.lastModified,"2026-10-11");assert.equal(meta.alternates.canonical,"https://www.abservice24.be/foutcodes/atag");assert.equal(meta.robots.index,true);
   assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url===meta.alternates.canonical).lastModified,"2026-10-11");
-  assert.equal(hash(beforeAtagMetadata(meta,"atag")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry)),f.preservation.allRegistry);
+  assert.equal(hash(beforeAtagMetadata(meta,"atag")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry)),f.preservation.allRegistry);
 });
 test("all14 SSR cards and entire13-guide preservation restore genuine64c1302 capture",async()=>{
   const html=await renderFaultGuide("atag");assert.equal((html.match(/class="fault-code-card"/g)||[]).length,14);
   assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);
   assert.equal(hash(beforeAtagHtml(html,"atag")),f.preservation.html);assert.equal(hash(beforeAtagGuide(beforeViessmannGuide(guide))),f.preservation.guide);assert.equal(hash(beforeAtagGuide(beforeViessmannGuide(guide)).codes),f.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="atag").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide)),f.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide)),f.preservation.allGuides);
+  assert.equal(hash(faultGuides.map(beforeGb172Guide).filter(g=>g.slug!=="atag").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide)),f.preservation.otherTwelveGuides);assert.equal(hash(faultGuides.map(beforeGb172Guide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide)),f.preservation.allGuides);
 });
 test("ATAG manifest records one originalHTML and107 literal nonexclusive model associations",async()=>{
-  const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));
+  const m=beforeGb172Manifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")));
   const e=m.entries.find(e=>e.id===f.id),s=m.snapshots.find(s=>s.id==="atag-overview-html");
   assert.equal(e.modelScope,f.scope);assert.equal(e.sourcePages,f.pages);assert.equal(e.language,"nl");assert.equal(e.sourceServiceMarket,"Nederland");assert.equal(e.market,null);
   assert.deepEqual(e.models,f.allModels);assert.equal(e.literalSectionCount,14);assert.equal(e.automaticProgramSectionCount,3);assert.equal(e.literalModelAssociationCount,107);

@@ -1,5 +1,75 @@
 # Google Bedrijfsprofiel — audit en conceptkalender
 
+## Task70 — anonieme publieke hercontrole op12oktober
+
+Exact bekende CID4063521367014109489 in root-IAB, zichtbare Inloggen-CTA:
+**publiek adres Voorzorgstraat12A,2660 Antwerpen nog aanwezig**, beeldbewijs
+op09:09:46 UTC. About zegt geen services op bedrijfslocatie; dit is geen bewijs
+van publieke adresverberging of een Google-weigering. Geen eigenaarlogin/save.
+
+De nieuwe drie cv-gasketelbeschrijvingen zijn niet blootgelegd in de gecontroleerde
+Overview/About-weergaven. Hun zes vernieuwde beheerweergaven blijven afzonderlijk
+Task68-bewijs, niet publieke goedkeuring. Van eigenaar toont9 fotoposities; alleen
+thumbnails1/2/3 en full2/9 visueel bekeken, sommige mainbeelden nog leeg.
+Daarmee is afwezigheid van de verwijderde20-jaar-badge NIET bewezen. Geen recency,
+rechten, huidige partners of bedrijfsgeschiedenis uit fotodatums/logo's afgeleid.
+Tijdelijke anonieme tab7 gesloten; originele tab1 behouden. WP04 blijft gedeeltelijk.
+
+## Task68 actuele vervolgstatus — zes beheerweergaven gecontroleerd
+
+De1-save/5-open-tabel hieronder is het eerdere07:53 UTC-checkpoint. Na herstel
+in een schone tijdelijke tab van hetzelfde Abder-profiel zijn onderhoud en
+reparatie elk eenmaal opgeslagen. De tweede categorie toont al dezelfde teksten,
+zonder aanvullende save. Na een volledige pagina-refresh alle drie diensten in
+beide categorieën afzonderlijk exact gelezen op12oktober08:13–08:15 UTC:
+installatie227, onderhoud226, reparatie227 tekens, telkens Geen prijs. **Drie
+expliciete saves; zes gecontroleerde beheerweergaven.** Geen bewering over
+backendopslag of publieke/moderatiegoedkeuring; eerdere onafhankelijke
+exact-copycontrole blijft geldig zonder tekstwijziging. Nieuw JPEG-beeldbewijs
+bewaard; tijdelijke Google-tab gesloten. Geen dienst/categorie/prijs/andere
+profielveldwijziging. Latere thermostaat-refreshcheck onleesbaar, dus geen nieuw
+bewijs voor dat veld; eerder gelezen blanco velden zijn niet bewerkt.
+WP04-dienstcopy in beheer bijgewerkt; volledige WP04 blijft gedeeltelijk.
+
+## Task68 — verwarmingsbeschrijvingen, gedeeltelijk uitgevoerd
+
+Na de effectieve eigenaarontgrendeling Abders bestaande beheerprofiel bevestigd.
+Zes loodgietersbeschrijvingen actueel gelezen met Geen prijs, acht bestaande
+verwarmingsbeschrijvingen aanvankelijk leeg. BF-F08/BF-03/BF-04 bevestigen de
+cv-gasketeldienstscope; geen thermostaatcapaciteit uit een bestaande preset afgeleid.
+De drie teksten voldoen aan300 tekens en zijn onafhankelijk vooraf beoordeeld.
+
+| Bestaande categorie | Dienst | Exacte beschrijving / status |
+| --- | --- | --- |
+| Verwarming | Installatie van verwarmingssystemen | Eenmaal opgeslagen en opnieuw exact227/300/Geen prijs gelezen: Plaatsing of vervanging van een cv-gasketel na beoordeling van toestel, vermogen, aansluitingen en beschikbare ruimte. Bezorg foto's en modelgegevens. Toestelkeuze, bijkomende werken, planning en kosten worden vooraf besproken. |
+| Verwarming | Onderhoud verwarmingssysteem | Niet opgeslagen;226 tekens voorbereid. |
+| Verwarming | Reparatie van verwarmingssystemen | Niet opgeslagen;227 tekens voorbereid. |
+| Reparatie van verwarmingsinstallaties | Installatie van verwarmingssystemen | Niet opgeslagen;227 tekens voorbereid. |
+| Reparatie van verwarmingsinstallaties | Onderhoud verwarmingssysteem | Niet opgeslagen;226 tekens voorbereid. |
+| Reparatie van verwarmingsinstallaties | Reparatie van verwarmingssystemen | Niet opgeslagen;227 tekens voorbereid. |
+
+Onderhoudstekst: Onderhoud van een cv-gasketel op afspraak. Deel merk, model, datum
+van het laatste onderhoud en eventuele klachten. Bezorg foto's van toestel en
+typeplaatje. Werkzaamheden, planning en kosten worden na beoordeling afgesproken.
+
+Reparatietekst: Vraag hulp bij een storing aan uw cv-gasketel, geen verwarming of
+geen warm water. Deel merk, model, foutcode en foto's van het toestel. Diagnose,
+herstelbaarheid, onderdelen, planning en kosten worden na beoordeling besproken.
+
+De [officiële dienstenuitleg](https://support.google.com/business/answer/9455399)
+is op12oktober gelezen; beschrijvingen bij bestaande categorieën zijn toegestaan,
+zonder rankingbelofte. Geen prijzen, nieuwe presets/categorieën of andere velden
+gewijzigd. Eén lokaal beeldbewijs van herlezing bewaard. Geen huidige
+beoordelingsmelding in de leescope bewijst geen formele/publieke goedkeuring.
+Browserbediening werd onbruikbaar vóór de vijf andere saves; eerst herstel en
+exacte herlezing, geen duplicaatsave. WP04 blijft gedeeltelijk.
+
+## Publieke adresopvolging — 12 oktober 2026
+
+Eén anonieme hercontrole van [AB SERVICE, CID 4063521367014109489](https://maps.google.com/?cid=4063521367014109489), tijdens de 06:18 UTC-ronde met gerichte bevestiging vóór 06:23:30 UTC, toont nog **Adres: Voorzorgstraat 12A, 2660 Antwerpen**. Daarmee is het verbergen van het adres niet publiek bevestigd in deze weergave. De historische eigenaarssave blijft afzonderlijk bewijs; Googles actuele moderatie-/verificatiebesluit of oorzaak van deze publieke weergave is onbekend. Zie het [accountstatusregister](account-status-register.md).
+
+Geen profielbewerking, suggestie, login, herhaalde save of website-/KBO-wijziging gedaan. De dienstgoedkeuring, badgeverwijdering, volledige weekuren en andere publieke profielvelden zijn hiermee niet opnieuw geverifieerd. Volgende stap blijft de bestaande bewerking in Abders sessie herlezen zodra toegang beschikbaar is, zonder duplicaatsubmission.
+
 **Werkdocument, begonnen 10 oktober 2026; concurrentaanvullingen 11 oktober 2026. Antwoorden, alternatieve profielbeschrijvingen en posts hieronder zijn CONCEPTEN; de zes vermelde servicebeschrijvingen zijn wél ingediend en nog in beoordeling, niet bewezen publiek.** Eigen profiel: [AB Service op Maps](https://maps.google.com/?cid=4063521367014109489), CID `4063521367014109489`. De audit gebruikt velden die op 10 oktober in de gemachtigde eigenaarssessie zijn gecontroleerd, het [accountstatusregister](account-status-register.md), [de actuele bedrijfsbrief](business-brief.md) en apart gedocumenteerde publieke concurrentwaarnemingen met directe bronlinks hieronder. Een zoek- of Solvari-pagina is geen Google-profiel. `Onbekend` betekent niet `nee`; een opgeslagen bewerking betekent niet goedkeuring of publieke zichtbaarheid.
 
 ## 1. Stand van zaken en beslisgrenzen

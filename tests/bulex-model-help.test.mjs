@@ -1,3 +1,5 @@
+// Historical contracts subtract only the independently tested Task77 addition.
+import { beforeGb172Guide, beforeGb172Registry, beforeGb172Metadata, beforeGb172Html } from "./fixtures/buderus-gb172i2-history.mjs";
 import { beforeCalentaGuide, beforeCalentaHtml } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaGuide, beforeAvantaRegistry, beforeAvantaMetadata, beforeAvantaHtml } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry, beforeViessmannMetadata, beforeViessmannHtml } from "./fixtures/viessmann-overview-source-safety.mjs";
@@ -53,15 +55,15 @@ test("Bulex retains every real catalog row and the F54 general-overview versus F
 test("all thirteen complete metadata, registry and guide objects remain exactly the pre-edit captures", async () => {
   assert.deepEqual(faultGuides.map(({ slug }) => slug), guideBaseline.map(([slug]) => slug));
   for (const [slug, , metadata, registry, guide] of guideBaseline) {
-    assert.equal(sha(beforeBoschScopeMetadata(beforeAcvMetadata(beforeIntergasMetadata(beforeNefitMetadata(beforeFerroliMetadata(beforeIthoMetadata(beforeAtagMetadata(beforeViessmannMetadata(beforeAvantaMetadata(await faultGuideRoute.generateMetadata(paramsFor(slug)), slug), slug), slug), slug), slug), slug), slug), slug), slug)), metadata, `${slug} metadata before only separately tested Task49/50/52/59 descriptions`);
-    assert.equal(sha(beforeBoschScopeRegistry(beforeAcvRegistry(beforeIntergasRegistry(beforeNefitRegistry(beforeFerroliRegistry(beforeIthoRegistry(beforeAtagRegistry(beforeViessmannRegistry(beforeAvantaRegistry(getPageDefinition(`/foutcodes/${slug}`))))))))))), registry, `${slug} registry before only Task49/50/52/59 descriptions/date`);
-    assert.equal(sha(beforeThemaABGuide(beforeBoschScopeGuide(beforeAcvGuide(beforeIntergasGuide(beforeNefitGuide(beforeFerroliGuide(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(beforeAvantaGuide(beforeCalentaGuide(getFaultGuide(slug))))))))))))), guide, `${slug} entire guide before only separately tested Task48/49/50/52/59 changes`);
+    assert.equal(sha(beforeBoschScopeMetadata(beforeAcvMetadata(beforeIntergasMetadata(beforeNefitMetadata(beforeFerroliMetadata(beforeIthoMetadata(beforeAtagMetadata(beforeViessmannMetadata(beforeAvantaMetadata(beforeGb172Metadata(await faultGuideRoute.generateMetadata(paramsFor(slug)), slug), slug), slug), slug), slug), slug), slug), slug), slug), slug)), metadata, `${slug} metadata before only separately tested Task49/50/52/59 descriptions`);
+    assert.equal(sha(beforeBoschScopeRegistry(beforeAcvRegistry(beforeIntergasRegistry(beforeNefitRegistry(beforeFerroliRegistry(beforeIthoRegistry(beforeAtagRegistry(beforeViessmannRegistry(beforeAvantaRegistry(beforeGb172Registry(getPageDefinition(`/foutcodes/${slug}`)))))))))))), registry, `${slug} registry before only Task49/50/52/59 descriptions/date`);
+    assert.equal(sha(beforeThemaABGuide(beforeBoschScopeGuide(beforeAcvGuide(beforeIntergasGuide(beforeNefitGuide(beforeFerroliGuide(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(beforeAvantaGuide(beforeCalentaGuide(beforeGb172Guide(getFaultGuide(slug)))))))))))))), guide, `${slug} entire guide before only separately tested Task48/49/50/52/59 changes`);
   }
 });
 
 test("all thirteen actual page renders preserve their full original HTML except only the exact Bulex help block", async () => {
   for (const [slug, htmlHash] of guideBaseline) {
-    const html = beforeFaultReadingHtml(await renderFaultGuide(slug));
+    const html = beforeGb172Html(beforeFaultReadingHtml(await renderFaultGuide(slug)), slug);
     if (slug === "bulex") {
       assert.equal(html.split(modelHelpHtml).length, 2, "exactly one complete new block");
       assert.equal(sha(beforeThemaABHtml(html).replace(modelHelpHtml, "")), htmlHash, "full Bulex HTML before only the separately tested A/B addition");

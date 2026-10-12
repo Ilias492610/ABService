@@ -229,10 +229,10 @@ export const pageRegistry = Object.freeze([
   {
     path: "/foutcodes/buderus",
     status: CONTENT_STATUS.PUBLISHED,
-    title: "Buderus GB162 foutcodes: officiële bron | AB Service",
+    title: "Buderus GB162 en GB172i.2 foutcodes | AB Service",
     description:
-      "Zoek Buderus Logamax plus GB162-70/85/100 V2-codes: selectie uit de BE Nederlandse installatiehandleiding 2021/07, met modelscope en veilige eerste stappen.",
-    lastModified: "2026-10-11",
+      "Buderus GB162 V2 en GB172i.2-meldingen uit aparte Belgische handleidingen. Kies uw exacte model, vergelijk de volledige code en lees veilige eerste stappen.",
+    lastModified: "2026-10-12",
     changeFrequency: "monthly",
     priority: 0.6,
   },

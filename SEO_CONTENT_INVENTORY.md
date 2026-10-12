@@ -1,5 +1,44 @@
 # AB Service SEO Content Inventory
 
+## 12 October 2026 — Task77: GB172i.2 integrated, local QA; release gates pending
+
+The existing Buderus route now includes one separate Belgian GB172i.2 catalog:
+all69 table69 groups/97 numeric identifiers from [the exact manufacturer manual](https://buderus-be-fl.boschhc-documents.com/download/pdf/file/6721852651),
+6721852651 (2026/06), BE Dutch, four exact model/article pairs. This is an
+observed issue month, not an independently established revision, firmware or
+newest-edition guarantee. GB16252groups/74combinations remain unchanged.
+Visible per-row page/class, three blank classes,1010 O/EMS communication and
+professional-only2980/2981 preserved; no installer remedy becomes a DIY step.
+
+Real TDD8 tests:7 expected assertion failures/1 preservation pass before
+implementation, then8 pass. Named historical inverse7 tests:2 expected failures,
+then7 pass including unrelated/unknown-leaf negative controls; no old hash
+rebased. Full Node24 suite551 pass/0 fail; lint clean, standard build170 outputs,
+production dependency audit0, local crawl82pages/93links/112assets passes.
+Global external-source audit has one unchanged Sibelga403; new Buderus source
+returns200. This is not an all-source pass or reason to remove a valid citation.
+
+Native IAB desktop1280×720/mobile390×844:28 representative range/class/blank/
+lock/negative searches correct, legacy6A227 intact, no horizontal overflow.
+Two empty-form CTA handoffs preserve Herstelling verwarming and#aanvraagformulier;
+observed form tops244.7/394.7px, empty name and no proven field-focus transfer.
+Mobile lock card pixels read; no saved screenshot bundle. Two ad-block extension
+JSON errors observed, not attributed to site code. No form send/account action.
+Complete121-card real SSR/source tests cover unhydrated delivery; native JS-off
+execution and physical assistive technology not claimed. No new renderer,
+shared search heuristic, dependency, URL or business claim.
+
+Manifest39assignments/33distinct catalogs/1665display rows/1423distinct rows/
+19sourceURLs/20originals is bounded model coverage, not1665 unique faults or
+all-model/WP07 completion. Only existing Buderus metadata and true12October
+lastmod broadened. Original213 selected files were HEAD-equal before edits;
+other12guide/registry/GB162 genuine captures and four appendices/137 checkbox
+lines retained. Tasks67–76 documentary history joins this product cohort.
+Next: sole fresh whole-cohort review, one correction wave if needed, exact
+GitHub/CI/integration/live publication. Raw providerREADY403, account/moderation,
+owner proof, field measurements and qualified leads remain separate open gates.
+No release, IndexNow or whole-WP acceptance yet.
+
 ## 12 October 2026 — Task62 Calenta locally verified; Task61 released
 
 ### Current post-review correction phase

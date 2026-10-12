@@ -1,5 +1,81 @@
 # WP04–WP05: accountstatus en uitgevoerde acties
 
+## Actuele Bing-beheerbevestiging en Maps-controle — 12 oktober
+
+De gerichte hersteltoestemming is ontvangen. Na één agent-toevoegpoging heeft
+**de eigenaar zelf GoDaddy Domain Connect afgerond**; de succesmelding is echt
+gelezen op08:52:50 UTC. Alleen de teruglink naar Bing gevolgd, zonder eigen
+GoDaddy-, DNS-, XML-, accountrechten- of betaalactie. Native **User management**
+bevestigt op09:13:08 UTC **You are a verified administrator**, **ABDER MADI (You)**
+en de exacte **https://www.abservice24.be/**-scope. Eerdere unauthorized/Welcome-
+waarnemingen blijven historisch; oorzaak en oude stabiele accountkoppeling onbekend.
+Het opgeslagen Bing-beeld toont Home, niet deze rol; AX is de rolbron. Huidige
+sitemapinhoud loopt achter op route/title, dus nog geen nieuwe receipt/status
+of herindiening bevestigd. Eerst bestaande ontvangst daadwerkelijk lezen.
+
+De anonieme Maps-controle bevestigt op09:09:46 UTC nog **Voorzorgstraat12A,
+2660 Antwerpen** als publiek adres; About toont geen services op bedrijfslocatie.
+Specifieke nieuwe verwarmingsbeschrijvingen zijn in de gecontroleerde Overview/
+About-weergaven niet uitleesbaar, geen conclusie over hun publieke goedkeuring.
+De eigenaarfotogalerij toont9 posities, slechts gedeeltelijk bekeken; afwezigheid
+van de verwijderde ervaringsbadge niet bewezen. Root-IAB-tab7 gesloten, originele
+tab1 behouden. WP04/WP05 zijn nog niet volledig afgerond.
+
+## Nieuwste Task68-status — herlezing 12 oktober, 08:13–08:15 UTC
+
+De onderstaande1-save/5-open-momentopname is het eerdere07:53 UTC-checkpoint.
+Een schone tijdelijke tab in hetzelfde Abder-profiel herstelde de Google-editor.
+**Installatie, onderhoud en reparatie** zijn elk **eenmaal opgeslagen** onder
+Verwarming. De tweede bestaande categorie toont reeds dezelfde teksten, zonder
+extra saves. Na volledige pagina-refresh zijn alle **zes categorie/dienstweergaven
+exact teruggelezen**,227/226/227 tekens en Geen prijs. Drie saves, zes gecontroleerde
+weergaven; geen uitspraak over Googles interne gegevensmodel. Geen andere
+profielvelden gewijzigd; Google-hersteltab gesloten. Publieke zichtbaarheid/
+moderatie blijft afzonderlijk open. Een latere thermostaat-refreshcheck bleef
+zonder veilige detailvelden en telt niet als nieuwe verificatie.
+
+Bing toont ook in een schone tab met de juiste bestaande Abder-identiteit
+Welcome/add-site, zonder website. Een gewone heraanmelding via dezelfde eerder
+goedgekeurde Google-identiteit verandert dit niet; geen nieuwe consentprompt.
+Oorzaak/huidige adminrechten onbekend. Geen duplicaat toegevoegd, import, DNS of
+XML-herverificatie gedaan. Gerichte toestemming gevraagd voor uitsluitend de
+bestaande https://www.abservice24.be/-website en haar bestaande XML-bewijs,
+omdat herverificatie opnieuw beheerrechten kan geven. WP04/WP05 blijven gedeeltelijk.
+
+## Eigenaarssessie herbereikbaar — 12 oktober 2026, Task68
+
+De ontgrendelingsbevestiging werkte: native Chrome toont Abders juiste bestaande
+profiel en beheer van AB SERVICE. Na verversing: **Geen locatie. Alleen leveringen
+en diensten aan huis**; de adresweergaveschakelaar staat uit. Geannuleerd zonder
+nieuwe save. Geen beoordelingsmelding in die afgebakende leescope; dit is geen
+formele goedkeuring of publieke verberging. De eerdere anonieme adreswaarneming
+hieronder blijft afzonderlijk gedateerd.
+
+Zes loodgietersteksten gelezen (232/220/230/240/232/221 tekens), steeds Geen prijs.
+Alle acht bestaande verwarmingsvelden waren leeg. Drie cv-gasketelbeschrijvingen
+vooraf onafhankelijk gecontroleerd. Alleen **Verwarming → Installatie van
+verwarmingssystemen** eenmaal opgeslagen en exact teruggelezen: **227/300,
+Geen prijs**. **Vijf andere beoogde velden nog niet opgeslagen**: onderhoud en
+reparatie onder Verwarming; installatie, onderhoud en reparatie onder Reparatie
+van verwarmingsinstallaties. Twee thermostaatvelden en overige profielvelden
+niet gewijzigd. Native bediening viel daarna weg; geen oorzaak of nieuwe
+vergrendeling vastgesteld. Eerst bruikbare veldweergave herstellen en opgeslagen
+installatie herlezen, dan de vijf overige uitvoeren zonder duplicaatsave.
+Publieke zichtbaarheid/moderatie van de diensten blijft ongeverifieerd.
+
+Bing toont in deze juiste sessie bij de bestaande exacte property op Sitemaps
+en User management **unauthorized**, ook na één reload. De eerder aanwezige
+homepage-inspectie is behouden oude paneeldata, geen nieuwe indexcontrole.
+Geen logout/login, extra OAuth/rechten, verificatie of sitemapherindiening.
+Oorzaak en huidige beheerdersrechten onbekend; historische verificatie hieronder
+blijft historisch. WP04/WP05 zijn niet volledig afgerond.
+
+## Publieke adreshercontrole — 12 oktober 2026
+
+In de anonieme publieke [Maps-weergave van het bekende profiel](https://maps.google.com/?cid=4063521367014109489), gecontroleerd tijdens de ronde van 06:18 UTC (08:18 Europe/Brussels; gerichte bevestiging vóór 06:23:30 UTC), staat **Voorzorgstraat 12A, 2660 Antwerpen nog zichtbaar als adres**. De eerder opgeslagen adresverberging is dus niet publiek bevestigd in deze weergave. Dit bewijst niet dat Google de wijziging heeft geweigerd: het actuele moderatie-, verificatie- of verversingsbesluit is zonder Abders eigenaarssessie onbekend.
+
+Geen accountlogin, bewerking voorstellen, nieuwe save, review-, foto- of dienstwijziging uitgevoerd. De zes diensten en verwijderde badge zijn in deze afgebakende hercontrole niet opnieuw onderzocht. Het juridische website-/KBO-adres blijft behouden. Eerst de bestaande adresbewerking en eventuele melding in het juiste beheerprofiel herlezen; niet opnieuw indienen op basis van alleen deze publieke kaart. WP04/WP05 blijven gedeeltelijk/open.
+
 Waarnemingen **10 oktober 2026, 21:14–21:44 UTC** (23:14–23:44 Europe/Brussels). De gemachtigde Google-eigenaarssessie werd gebruikt, niet het uitgesloten GSC Wizard of het andere persoonlijke Google-account. Dit register bevat geen geheimen, mailboxinhoud, klantnamen of ruwe reviewteksten. September blijft een historisch dossier; een websitecommit is geen accountwijziging. Zie de [GBP-audit](gbp-audit-and-calendar.md), [citationaudit](citation-audit.md) en [bewijsregister](evidence-register.md).
 
 **Hercontrole 11 oktober, kort na middernacht Europe/Brussels:** alle zes opgeslagen diensten en hun beschrijvingen opnieuw zichtbaar in de native editor; de afzonderlijke melding luidt nog `Je bewerking wordt beoordeeld.` Geen herhaalde save en geen bewijs van publieke goedkeuring. De aanvullende concurrentiecontrole valt op 11 oktober lokaal; de oorspronkelijke accountacties vonden op 10 oktober plaats.

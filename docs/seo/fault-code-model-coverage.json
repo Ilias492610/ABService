@@ -1,16 +1,16 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit",
-  "incrementalUpdateDate": "2026-10-11",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage",
+  "incrementalUpdateDate": "2026-10-12",
   "counts": {
     "guides": 13,
-    "catalogAssignments": 38,
-    "distinctCatalogs": 32,
-    "displayedExplanationRows": 1596,
-    "distinctCatalogExplanationRows": 1354,
-    "distinctCatalogSourceURLs": 18
+    "catalogAssignments": 39,
+    "distinctCatalogs": 33,
+    "displayedExplanationRows": 1665,
+    "distinctCatalogExplanationRows": 1423,
+    "distinctCatalogSourceURLs": 19
   },
-  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources.",
+  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources. Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses.",
   "method": "Original Task47 record history retained. Task48 added one historical Bulex A/B table. Task49 updates only six shared Bosch/Junkers scopes, two warnings and directly observed NL chapter/source context, adding one original PDF snapshot. Other26 entries/eight snapshots/eleven guide entries remain unchanged; no 242-row re-audit or newest/full-model certification.",
   "guides": [
     {
@@ -96,10 +96,11 @@
     {
       "slug": "buderus",
       "brand": "Buderus",
-      "modelWarning": "Deze selectie uit tabel 17, §12.3, p. 33-37 van installatiehandleiding 6720813438 (2021/07), BE Nederlands, geldt uitsluitend voor Logamax plus GB162-70/85/100 V2: 52 uitlegregels voor 74 codecombinaties. Gewone bedrijfs-, componenttest- en resetcodes zijn weggelaten; ontbrekende bronsymbolen krijgen geen storingsclassificatie. De rookgastemperatuursensor is in het schema alleen voor Zwitserland genoemd; controleer bij 1U 317 en 1Y 318 of deze aanwezig is. Controleer het typeplaatje, de configuratie en de gebruikershandleiding van uw exacte toestel. Andere Buderus-reeksen en revisies zijn niet gedekt.",
-      "explanationRowCount": 52,
+      "modelWarning": "Kies de exacte toestelreeks. GB162-70/85/100 V2 volgt de selectie van 52 uitlegregels voor 74 codecombinaties uit installatiehandleiding 6720813438 (2021/07), BE Nederlands; gewone bedrijfs-, componenttest- en resetcodes zijn daar weggelaten. GB172i.2 gebruikt alle 69 bedrijfs-, service- en storingsgroepen (97 numerieke meldingen) uit installatie- en onderhoudshandleiding 6721852651 (2026/06), BE Nederlands, uitsluitend voor de vier hieronder genoemde model/artikelparen. O/B/V/W zijn bronklassen, geen subcodes; bij 1023, 2969 en 2972 is de klasse niet ingevuld. 2980/2981 mag alleen een vakman of servicedienst oplossen na oorzaakherstel en een installatietest ter plaatse. Controleer het typeplaatje, de configuratie en de gebruikershandleiding van uw exacte toestel; andere modellen, revisies en firmware vallen buiten deze dekking.",
+      "explanationRowCount": 121,
       "catalogIds": [
-        "buderus-logamax-gb162-v2"
+        "buderus-logamax-gb162-v2",
+        "buderus-logamax-gb172i2"
       ],
       "documentationLabel": "Officiële Buderus-handleidingen",
       "documentationURL": "https://www.buderus.com/be/nl/partners/informatie-documentatie/handleidingen/"
@@ -365,6 +366,18 @@
       "pageCount": null,
       "bytes": 30221,
       "sourceBoundary": "One original advertised page2 GET200 without redirects/retries; same17 codes/messages/detail links/order,25 anchors,title2of2/no next. Observed duplicate response, not cause or universal complete archive proof."
+    },
+    {
+      "id": "buderus-gb172i2-pdf",
+      "kind": "manufacturer-PDF",
+      "url": "https://buderus-be-fl.boschhc-documents.com/download/pdf/file/6721852651",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-75-gb172i2-source/6721852651.pdf",
+      "sha256": "6d85e3cfc372d4d24e74eba653552926671f7f35e2ba00be173a05fc33a2cabc",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 68,
+      "byteLength": 11483647,
+      "sourceBoundary": "One retained original HTTP200 application/pdf, no redirect; issue6721852651(2026/06), BE Dutch, four exact table1 model/article pairs. No PDF JavaScript executed. Complete table69, not allBuderus/model/revision coverage."
     }
   ],
   "entries": [
@@ -518,7 +531,9 @@
     },
     {
       "id": "bulex-thema-condens-ab",
-      "usedBy": ["bulex"],
+      "usedBy": [
+        "bulex"
+      ],
       "title": "THEMA Condens A/B (06/13)",
       "modelScope": "Historische installatiehandleiding 0020109430_06 (06/13), Nederlandse §13.3: alle 31 genummerde codes op p. 33-34. Alleen THEMA Condens F AS 12-A, F AS 25-A, F AS 30-A, F AS 30-B, F 25/30-A, F 30/35-A, F 25/30-B en F 30/35-B. De technische tabellen noemen BE/LU voor de aardgasvarianten en BE voor de propaanvarianten; controleer de bestemming en gasvariant van uw eigen toestel. Geen bewijs van de nieuwste revisie of firmwarecompatibiliteit; FAS 65 en andere varianten zijn niet inbegrepen. Vier regels met een streepje en één lege codecel krijgen hier geen verzonnen nummer. F54 en F67 staan niet in deze tabel; dat bewijst niet dat elke toestelvariant die codes nooit kan tonen. De technische behandeling is voor een bevoegde technicus; onderstaande eerste stappen zijn alleen veilige observaties. Controleer het typeplaatje en de gebruikershandleiding van uw exacte toestel.",
       "sourceLabel": "Bulex THEMA Condens A/B - installatiehandleiding 0020109430_06 (06/13)",
@@ -526,12 +541,24 @@
       "sourcePages": "§ 13.3, p. 33-34",
       "explanationRowCount": 31,
       "modelFamily": "THEMA Condens A/B",
-      "models": ["F AS 12-A", "F AS 25-A", "F AS 30-A", "F AS 30-B", "F 25/30-A", "F 30/35-A", "F 25/30-B", "F 30/35-B"],
+      "models": [
+        "F AS 12-A",
+        "F AS 25-A",
+        "F AS 30-A",
+        "F AS 30-B",
+        "F 25/30-A",
+        "F 30/35-A",
+        "F 25/30-B",
+        "F 30/35-B"
+      ],
       "articleNumbers": null,
       "documentNumber": "0020109430_06",
       "revision": "0020109430_06",
       "issueDate": "06/13",
-      "market": ["BE", "LU"],
+      "market": [
+        "BE",
+        "LU"
+      ],
       "marketVariantBoundary": "BE/LU natural-gas variants; BE propane variants in technical tables printed40/42 (PDF42/44); actual device destination/gas variant remains authoritative.",
       "language": "nl",
       "component": null,
@@ -1378,6 +1405,78 @@
       "conditions": "Flue-temperature sensor is noted only for Switzerland in p8 wiring diagram;1U317/1Y318 conditional.14 ordinary/component-test/reset rows excluded; missing source-kind symbols not inferred.",
       "declaredScopePath": "content/additional-fault-catalogs.mjs",
       "fieldBoundary": "Structured fields are explicit current declarations or cited prior source observations; null means not established in this bounded manifest, not absence or failure. No newest-revision/universal/device-specific fit claim."
+    },
+    {
+      "id": "buderus-logamax-gb172i2",
+      "usedBy": [
+        "buderus"
+      ],
+      "title": "Logamax plus GB172i.2 — BE (2026/06)",
+      "modelScope": "Alle 69 bedrijfs-, service- en storingsgroepen uit tabel 69, §10.1.2, p. 46–50 van installatie- en onderhoudshandleiding 6721852651 (2026/06), BE Nederlands: 97 numerieke meldingen. Uitsluitend de Belgische model/artikelparen uit tabel 1: GB172i.2-24 W H — 7736902473; GB172i.2-20 KDW H — 7736902472; GB172i.2-20 KDW P — 7736902479; GB172i.2-24 W P — 7736902480. O is bedrijfsstatus, B blokkering, V vergrendeling en W servicedisplay; de bron laat de klasse bij 1023, 2969 en 2972 leeg. 1010 is O maar meldt ontbrekende EMS-communicatie. Niet voor GB172i zonder .2, GB162, andere modellen of revisies. De professionele herstelkolom is geen gebruikersinstructie; 2980/2981 vereist een vakman of servicedienst na oorzaakherstel en een installatietest ter plaatse. Controleer typeplaatje, configuratie en gebruikershandleiding; firmware, controllerdekking en nieuwste editie zijn niet vastgesteld.",
+      "sourceLabel": "Buderus Logamax plus GB172i.2 — installatie- en onderhoudshandleiding 6721852651 (2026/06), BE Nederlands",
+      "sourceURL": "https://buderus-be-fl.boschhc-documents.com/download/pdf/file/6721852651",
+      "sourcePages": "Tabel 69, §10.1.2, p. 46–50",
+      "explanationRowCount": 69,
+      "modelFamily": "Logamax plus GB172i.2",
+      "models": [
+        "GB172i.2-24 W H",
+        "GB172i.2-20 KDW H",
+        "GB172i.2-20 KDW P",
+        "GB172i.2-24 W P"
+      ],
+      "articleNumbers": [
+        "7736902473",
+        "7736902472",
+        "7736902479",
+        "7736902480"
+      ],
+      "modelArticlePairs": [
+        [
+          "GB172i.2-24 W H",
+          "7736902473"
+        ],
+        [
+          "GB172i.2-20 KDW H",
+          "7736902472"
+        ],
+        [
+          "GB172i.2-20 KDW P",
+          "7736902479"
+        ],
+        [
+          "GB172i.2-24 W P",
+          "7736902480"
+        ]
+      ],
+      "documentNumber": "6721852651",
+      "revision": null,
+      "observedIssue": "2026/06",
+      "issueDate": "2026-06",
+      "issueDatePrecision": "month",
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "component": null,
+      "tableIds": [
+        69
+      ],
+      "primarySnapshot": "buderus-gb172i2-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-75-gb172i2-source/6721852651.pdf",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-76-source-facts.json",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-76-inventory-and-design.md"
+      ],
+      "verificationBasis": "Original manufacturer PDF: root inspected cover, safety, model table1, display/control context, complete table69 p46–50 and separate symptoms table70 p51. All69 physical groups/97 numeric identifiers and explicit O/B/V/W cells transcribed; blank1023/2969/2972 not inferred. Four BE model/article pairs only; installer remedy columns not consumer instructions.",
+      "literalNumericIdentifierCount": 97,
+      "sourceAudience": "professional-installation-maintenance",
+      "conditions": "Table69 includes11 O operating,13 B blocking,31 V locking,11 W service and3 blank-class groups;1010 is O but reports EMS communication loss. 2980/2981 recovery is professional-only after cause resolution and on-site installation test. LoPr and nonnumeric table70 symptoms excluded.",
+      "declaredScopePath": "content/buderus-gb172i2.mjs",
+      "fieldBoundary": "Observed issue month is not a separately established revision, firmware or current customer-device compatibility. Null means not established, not absence. Model variants without .2 and other editions are not covered.",
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null
     },
     {
       "id": "viessmann-vitodens-200-300-vitotronic",

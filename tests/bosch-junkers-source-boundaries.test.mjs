@@ -1,3 +1,5 @@
+// Reconstruct only the separately verified Task77 addition for historical hashes.
+import { beforeGb172Guide, beforeGb172Registry } from "./fixtures/buderus-gb172i2-history.mjs";
 import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaGuide, beforeAvantaRegistry } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry } from "./fixtures/viessmann-overview-source-safety.mjs";
@@ -88,14 +90,14 @@ test("real SSR exposes all existing rows/scopes/options/source/contact without s
     assert.deepEqual(search("A9", "bosch-serie-3"), [["bosch-serie-3", ["A9"]]]);
     assert.deepEqual(search("UNKNOWN49"), []);
   }
-  assert.equal(faultGuides.reduce((n,g) => n + g.codeEntryCount, 0), 1596);
+  assert.equal(faultGuides.map(beforeGb172Guide).reduce((n,g) => n + g.codeEntryCount, 0), 1596);
 });
 
 test("complete242 code objects, other eleven guides and all registry fields preserve genuine e71 captures", async () => {
   const digest = value => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
   assert.equal(digest(boschCatalogs.map(c => c.codes)), facts.preservation.catalogCodeArrays);
-  assert.equal(digest(faultGuides.filter(g => !["bosch", "junkers"].includes(g.slug)).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide).map(beforeAcvGuide)), facts.preservation.otherElevenGuides);
-  assert.equal(digest(pageRegistry.map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), facts.preservation.allRegistry);
+  assert.equal(digest(faultGuides.map(beforeGb172Guide).filter(g => !["bosch", "junkers"].includes(g.slug)).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide).map(beforeAcvGuide)), facts.preservation.otherElevenGuides);
+  assert.equal(digest(pageRegistry.map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry).map(beforeBoschScopeRegistry)), facts.preservation.allRegistry);
   for (const slug of ["bosch", "junkers"]) {
     assert.equal(digest(beforeBoschScopeGuide(getFaultGuide(slug))), facts.preservation[slug].guide);
     assert.equal(digest(beforeBoschScopeHtml(beforeFaultReadingHtml(await renderFaultGuide(slug)), slug)), facts.preservation[slug].html);

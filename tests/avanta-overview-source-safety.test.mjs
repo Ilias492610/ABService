@@ -1,3 +1,5 @@
+// Reconstruct only the separately verified Task77 addition for historical hashes.
+import { beforeGb172Guide, beforeGb172Registry, beforeGb172Manifest } from "./fixtures/buderus-gb172i2-history.mjs";
 import { beforeCalentaGuide, beforeCalentaCatalog, beforeCalentaHtml, beforeCalentaManifestEntry, beforeCalentaManifestMirror } from "./fixtures/calenta-legacy-source-safety.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -41,7 +43,7 @@ test("Avanta scope distinguishes an observed overview from device fit and instru
   assert.equal(catalog.sourceUrl, f.url); assert.equal(catalog.sourceLabel, f.label);
   assert.equal(beforeCalentaGuide(guide).modelWarning, f.warning); assert.equal(catalog.title, "Avanta");
   assert.equal(hash(guide.catalogs.filter(c => c.id !== f.id).map(beforeCalentaCatalog)), f.preservation.remeha.otherTwelveCatalogs);
-  assert.equal(hash(faultGuides.filter(g => g.slug !== "remeha")), f.preservation.remeha.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeGb172Guide).filter(g => g.slug !== "remeha")), f.preservation.remeha.otherTwelveGuides);
 });
 
 test("real source-code searches preserve selected Avanta and cross-catalog distinctions", () => {
@@ -63,7 +65,7 @@ test("Remeha metadata and substantive sitemap date change without other registry
   assert.equal(m.alternates.canonical, "https://www.abservice24.be/foutcodes/remeha"); assert.equal(m.robots.index, true);
   assert.equal(buildSitemapEntries(pageRegistry).find(p => p.url === m.alternates.canonical).lastModified, "2026-10-12");
   assert.equal(hash(beforeAvantaMetadata(m, "remeha")), f.preservation.remeha.metadata);
-  assert.equal(hash(pageRegistry.map(beforeAvantaRegistry)), f.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeGb172Registry).map(beforeAvantaRegistry)), f.preservation.allRegistry);
 });
 
 test("all659 Remeha SSR cards preserve original leaves outside exact Avanta changes", async () => {
@@ -74,11 +76,11 @@ test("all659 Remeha SSR cards preserve original leaves outside exact Avanta chan
   assert.equal(hash(beforeAvantaHtml(beforeCalentaHtml(html, "remeha"), "remeha")), f.preservation.remeha.html);
   assert.equal(hash(beforeAvantaGuide(beforeCalentaGuide(guide))), f.preservation.remeha.guide);
   assert.equal(hash(beforeAvantaGuide(beforeCalentaGuide(guide)).codes), f.preservation.remeha.codes);
-  assert.equal(hash(faultGuides.map(beforeCalentaGuide).map(beforeAvantaGuide)), f.preservation.allGuides);
+  assert.equal(hash(faultGuides.map(beforeGb172Guide).map(beforeCalentaGuide).map(beforeAvantaGuide)), f.preservation.allGuides);
 });
 
 test("Avanta manifest retains two original responses but only17 distinct codes", async () => {
-  const m = JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json", import.meta.url), "utf8"));
+  const m = beforeGb172Manifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json", import.meta.url), "utf8")));
   const e = m.entries.find(e => e.id === f.id);
   assert.equal(e.modelScope, f.scope); assert.equal(e.sourcePages, f.pages);
   assert.equal(e.language, "nl-BE"); assert.equal(e.sourceServiceMarket, "België");

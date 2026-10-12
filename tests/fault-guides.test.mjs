@@ -2,6 +2,7 @@ import { viessmannFacts } from "./fixtures/viessmann-overview-source-safety.mjs"
 import { avantaFacts } from "./fixtures/avanta-overview-source-safety.mjs";
 import {calentaFacts,expectedCalentaCatalogs} from "./fixtures/calenta-legacy-source-safety.mjs";
 import test from "node:test";
+import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 
 import { faultGuides } from "../content/fault-guides.mjs";
@@ -11,6 +12,7 @@ import { ithoFacts } from "./fixtures/itho-base-cube-source-safety.mjs";
 import { atagFacts } from "./fixtures/atag-overview-source-safety.mjs";
 
 const bySlug = (slug) => faultGuides.find((guide) => guide.slug === slug);
+const gb172 = JSON.parse(readFileSync(new URL("./fixtures/buderus-gb172i2-source-facts.json", import.meta.url), "utf8"));
 
 test("all published fault guides use official sources and explicit model caveats", () => {
   assert.deepEqual(
@@ -46,7 +48,7 @@ test("all published fault guides use official sources and explicit model caveats
         assert.ok([sourceFacts.sourceUrl, source25L.sourceUrl].includes(catalog.sourceUrl));
       } else assert.match(
         hostname,
-        /(^|\.)(vaillant\.be|bulex\.be|bosch-homecomfort\.com|remeha\.be|remehatools\.be|boschtt-documents\.com|viessmann\.de|acv\.com|intergas-verwarming\.nl|nefit-bosch\.nl|atagwarmte\.nl|compano\.com|ferroli\.com)$/
+        /(^|\.)(vaillant\.be|bulex\.be|bosch-homecomfort\.com|remeha\.be|remehatools\.be|boschtt-documents\.com|boschhc-documents\.com|viessmann\.de|acv\.com|intergas-verwarming\.nl|nefit-bosch\.nl|atagwarmte\.nl|compano\.com|ferroli\.com)$/
       );
       assert.ok(catalog.scope.length >= 60);
       assert.ok(catalog.sourcePages.length > 0);
@@ -61,7 +63,7 @@ test("catalog coverage matches every row in the cited manufacturer tables", () =
   assert.equal(bySlug("bosch").codeEntryCount, 242);
   assert.equal(bySlug("junkers").codeEntryCount, 242);
   assert.equal(bySlug("remeha").codeEntryCount, 659);
-  assert.equal(bySlug("buderus").codeEntryCount, 52);
+  assert.equal(bySlug("buderus").codeEntryCount, 121);
   assert.equal(bySlug("viessmann").codeEntryCount, 71);
   assert.equal(bySlug("acv").codeEntryCount, 24);
   assert.equal(bySlug("intergas").codeEntryCount, 11);
@@ -105,6 +107,8 @@ test("every code row is complete, safely worded and unique within its model tabl
                 ? `Online lijstregel ${avantaFacts.literalCodes.indexOf(entry.code) + 1}: ${entry.code}`
               : calentaFacts.ids.includes(catalog.id)
                 ? expectedCalentaCatalogs.find(c=>c.id===catalog.id).codes.find(r=>r.code===entry.code)?.sourcePage
+              : catalog.id === gb172.id
+                ? (() => { const [page, , kind] = gb172.source.groups.find(([, code]) => code === entry.code); return `Tabel 69, p. ${page}; klasse ${gb172.classLabels[String(kind)]}`; })()
               : catalog.sourcePages;
         assert.equal(entry.sourcePage, sourcePage);
         assert.ok(entry.searchTerms.includes(entry.code));

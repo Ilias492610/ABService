@@ -1,3 +1,5 @@
+// Reconstruct only the separately verified Task77 addition for historical hashes.
+import { beforeGb172Guide, beforeGb172Registry, beforeGb172Manifest } from "./fixtures/buderus-gb172i2-history.mjs";
 import { beforeCalentaGuide } from "./fixtures/calenta-legacy-source-safety.mjs";
 import { beforeAvantaRegistry, beforeAvantaGuide } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeViessmannGuide, beforeViessmannRegistry } from "./fixtures/viessmann-overview-source-safety.mjs";
@@ -104,7 +106,7 @@ test("substantive Itho metadata uses realdate and preserves exact genuine regist
   assert.equal(page.lastModified, "2026-10-11"); assert.equal(meta.alternates.canonical, "https://www.abservice24.be/foutcodes/itho-daalderop");
   assert.equal(meta.robots.index, true); assert.equal(buildSitemapEntries(pageRegistry).find(e => e.url === meta.alternates.canonical).lastModified,"2026-10-11");
   assert.equal(hash(beforeIthoMetadata(meta,"itho-daalderop")),f.preservation.metadata);
-  assert.equal(hash(pageRegistry.map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry)),f.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry)),f.preservation.allRegistry);
 });
 
 test("all26 SSR cards and all13 guide leaves restore exact genuine c7b44be capture", async () => {
@@ -114,12 +116,12 @@ test("all26 SSR cards and all13 guide leaves restore exact genuine c7b44be captu
   assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);
   assert.equal(hash(beforeIthoHtml(html,"itho-daalderop")),f.preservation.html);
   assert.equal(hash(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(guide)))),f.preservation.guide); assert.equal(hash(beforeIthoGuide(beforeAtagGuide(beforeViessmannGuide(guide))).codes),f.preservation.codes);
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="itho-daalderop").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide)),f.preservation.otherTwelveGuides);
-  assert.equal(hash(faultGuides.map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide)),f.preservation.allGuides);
+  assert.equal(hash(faultGuides.map(beforeGb172Guide).filter(g=>g.slug!=="itho-daalderop").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide)),f.preservation.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeGb172Guide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide)),f.preservation.allGuides);
 });
 
 test("Itho manifest records original document ID,26keys30entries and explicit devicefit unknowns", async () => {
-  const m = JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));
+  const m = beforeGb172Manifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")));
   const e = m.entries.find(e=>e.id===f.id), s=m.snapshots.find(s=>s.id==="itho-base-cube-pdf");
   assert.equal(e.modelScope,f.scope); assert.equal(e.sourceLabel,f.label); assert.equal(e.sourcePages,f.pages);
   assert.deepEqual(e.models,f.models); assert.equal(e.market,"NL"); assert.equal(e.language,"nl");

@@ -1,3 +1,5 @@
+// Reconstruct only the separately verified Task77 addition for historical hashes.
+import { beforeGb172Guide, beforeGb172Registry, beforeGb172Manifest } from "./fixtures/buderus-gb172i2-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
@@ -50,7 +52,7 @@ test("each Calenta card resolves to its actual section and printed versus PDF pa
 test("Calenta consumer scope separates historical models professional tables and St9 from E",()=>{
   assert.equal(selected[0].scope,f.scopeE);assert.equal(selected[1].scope,f.scopeSu);assert.equal(guide.modelWarning,f.warning);
   assert.equal(hash(guide.catalogs.filter(c=>!f.ids.includes(c.id))),f.before.preservation.remeha.otherElevenCatalogs);
-  assert.equal(hash(faultGuides.filter(g=>g.slug!=="remeha")),f.before.preservation.remeha.otherTwelveGuides);
+  assert.equal(hash(faultGuides.map(beforeGb172Guide).filter(g=>g.slug!=="remeha")),f.before.preservation.remeha.otherTwelveGuides);
 });
 
 test("real Calenta searches preserve exact family and E00 Su0 AvantaE0 distinctions",()=>{
@@ -75,15 +77,15 @@ test("real SSR exposes source-bounded Calenta cards while all other leaves and m
   assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);assert.match(html,/gasgeur/i);
   assert.equal(hash(beforeCalentaHtml(html,"remeha")),f.before.preservation.remeha.html);
   assert.equal(hash(beforeCalentaGuide(guide)),f.before.preservation.remeha.guide);
-  assert.equal(hash(faultGuides.map(beforeCalentaGuide)),f.before.preservation.allGuides);
-  assert.equal(hash(pageRegistry),f.before.preservation.allRegistry);
+  assert.equal(hash(faultGuides.map(beforeGb172Guide).map(beforeCalentaGuide)),f.before.preservation.allGuides);
+  assert.equal(hash(pageRegistry.map(beforeGb172Registry)),f.before.preservation.allRegistry);
   const p=pageRegistry.find(p=>p.path==="/foutcodes/remeha"),meta=buildPageMetadata(p);
   assert.equal(hash(meta),f.before.preservation.remeha.metadata);assert.equal(p.lastModified,"2026-10-12");
   assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url==="https://www.abservice24.be/foutcodes/remeha").lastModified,"2026-10-12");
 });
 
 test("legacy manifest joins both tables to one actual PDF without inventing issue or device fit",async()=>{
-  const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));
+  const m=beforeGb172Manifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")));
   const snapshot=m.snapshots.find(s=>s.id===f.snapshotId);
   assert.equal(snapshot?.sha256,f.sha256);assert.equal(snapshot?.byteLength,f.bytes);assert.equal(snapshot?.pageCount,f.pages);
   for(const [index,id]of f.ids.entries()){
@@ -114,7 +116,7 @@ test("SCU communication messages remain applicable when the expected board is ab
 });
 
 test("manifest inverse preserves untouched and unknown leaves so drift fails the original hash",async()=>{
-  const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));
+  const m=beforeGb172Manifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")));
   for(const id of f.ids){
     const original=m.entries.find(e=>e.id===id);
     for(const [key,value]of Object.entries({models:["UNSUPPORTED"],documentNumber:"UNSUPPORTED",market:["UNSUPPORTED"],component:"UNSUPPORTED",tableIds:["UNSUPPORTED"],unexpectedLeaf:{unsupported:true}})){

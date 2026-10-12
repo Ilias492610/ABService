@@ -1,5 +1,261 @@
 # AB Service SEO Changelog
 
+## 12 October 2026 — Task77: GB172i.2 integrated, local QA; release gates pending
+
+The existing Buderus route now includes one separate Belgian GB172i.2 catalog:
+all69 table69 groups/97 numeric identifiers from [the exact manufacturer manual](https://buderus-be-fl.boschhc-documents.com/download/pdf/file/6721852651),
+6721852651 (2026/06), BE Dutch, four exact model/article pairs. This is an
+observed issue month, not an independently established revision, firmware or
+newest-edition guarantee. GB16252groups/74combinations remain unchanged.
+Visible per-row page/class, three blank classes,1010 O/EMS communication and
+professional-only2980/2981 preserved; no installer remedy becomes a DIY step.
+
+Real TDD8 tests:7 expected assertion failures/1 preservation pass before
+implementation, then8 pass. Named historical inverse7 tests:2 expected failures,
+then7 pass including unrelated/unknown-leaf negative controls; no old hash
+rebased. Full Node24 suite551 pass/0 fail; lint clean, standard build170 outputs,
+production dependency audit0, local crawl82pages/93links/112assets passes.
+Global external-source audit has one unchanged Sibelga403; new Buderus source
+returns200. This is not an all-source pass or reason to remove a valid citation.
+
+Native IAB desktop1280×720/mobile390×844:28 representative range/class/blank/
+lock/negative searches correct, legacy6A227 intact, no horizontal overflow.
+Two empty-form CTA handoffs preserve Herstelling verwarming and#aanvraagformulier;
+observed form tops244.7/394.7px, empty name and no proven field-focus transfer.
+Mobile lock card pixels read; no saved screenshot bundle. Two ad-block extension
+JSON errors observed, not attributed to site code. No form send/account action.
+Complete121-card real SSR/source tests cover unhydrated delivery; native JS-off
+execution and physical assistive technology not claimed. No new renderer,
+shared search heuristic, dependency, URL or business claim.
+
+Manifest39assignments/33distinct catalogs/1665display rows/1423distinct rows/
+19sourceURLs/20originals is bounded model coverage, not1665 unique faults or
+all-model/WP07 completion. Only existing Buderus metadata and true12October
+lastmod broadened. Original213 selected files were HEAD-equal before edits;
+other12guide/registry/GB162 genuine captures and four appendices/137 checkbox
+lines retained. Tasks67–76 documentary history joins this product cohort.
+Next: sole fresh whole-cohort review, one correction wave if needed, exact
+GitHub/CI/integration/live publication. Raw providerREADY403, account/moderation,
+owner proof, field measurements and qualified leads remain separate open gates.
+No release, IndexNow or whole-WP acceptance yet.
+
+## 12 oktober 2026 — Task76: Buderus-bron volledig geïnventariseerd
+
+69 bronrijgroepen/97 numerieke meldingen uit de exacte Belgische GB172i.2-tabel
+vastgelegd, inclusief bedrijfs-/serviceklassen, drie onbekende classificaties,
+codebereiken en uitsluitend professionele veiligheidsontgrendeling. Ontwerp
+voor één aparte toestelreeks binnen de bestaande Buderus-gids; GB162 blijft intact.
+
+97 positieve/19 negatieve zoekproeven met privé-brondata passen bij de bestaande
+zoekfunctie. Voorafgaande bestaande536tests slagen; nog geen nieuwe klantcode,
+modelmanifest, publicatie, gehele WP-afvinking of indexeringsinzending. Volgende:
+brongebonden tests, integratie, behoudcontrole, browser/eindreview en echte release.
+Alle voorgaande account-/publicatie-/bewijsgates blijven afzonderlijk open.
+
+## 12 oktober 2026 — Tasks73–75: toegang en nieuwe modelbron voorbereiden
+
+Bestaande Vercel-projecttoegang één keer read-only geprobeerd:403,10:34 UTC;
+geen oorzaak verondersteld, geen vervolgreads/rechten/configuratie gewijzigd.
+Buderus-ontdekking opgevolgd met één officiële PDF-download200. Exacte Belgische
+GB172i.2-varianten/revisie en tabelplaats zelf gecontroleerd; bronbewijs en twaalf
+volledige paginabeelden bewaard. Nog geen nieuwe foutcoderegels gepubliceerd.
+
+Volgende: afzonderlijke bronrij-inventaris en veilige klantactie-afbakening,
+daarna tests/review/release. Alleen voorbereiding/documentatie; geen websitecode,
+nieuwe indexeringsinzending of gehele werkpakket-afvinking. Eerdere QA blijft gedateerd.
+
+## 12 oktober 2026 — Task71/72: voortgang en redirectdiagnose
+
+Eigenaar krijgt eerst actuele WP00–WP17-status: alleen WP00 en de gedateerde
+WP02-baseline volledig geaccepteerd; overige pakketten met afzonderlijke open gates.
+Lokale telling10:15 UTC bevestigt80published/2 noindex/13foutcodegidsen en behoud
+van vier bronbijlagen/137afvinkregels/exactb702c739. Geen nieuwe integrale audit.
+
+Eén read-only Bing-refresh10:01 toont nog afwijkende URL/body; bestaande juiste
+GSC-tab10:02 geen geladen rapport. Geen actuele receipt/export, nieuwe inzending,
+rechten/DNS, persoonlijke accountwissel of herhaalde ontgrendelvraag.
+Vijf publieke GETs 10:07 bevestigen drie308doorverwijzingen naar juiste onderhoud-
+canonical 200. Lokale Next-volgorde verklaart de emitter niet definitief; geen
+onbewezen configuratiefix. Volgende: daadwerkelijke bestaande routingmetadata
+read-only waar toegang werkt; bestaande accountreceipt/meetdata pas bij leesbaar
+rapport. Alleen status/diagnose, geen websitecode/release/IndexNow of WP-afvinking.
+
+Afgebakende onafhankelijke review: 0 kritisch / 0 belangrijk / 1 kleine
+leesbaarheidsopmerking; spatiëring bijgewerkt, geen extra productcontrole nodig.
+
+## 12 oktober 2026 — Task69/70 afgeronde deelcontrole
+
+Onafhankelijke documentatiereview:0 kritieke/belangrijke/kleine bevindingen;
+raw report en begrensde acceptatie bewaard. Afzonderlijke read-only controle
+om09:37:53 UTC na de GoDaddy-koppeling door de eigenaar: homepage, sitemap en
+ongewijzigd BingSiteAuth.xml alleHTTP200. Geen nieuwe volledige product-QA,
+indexeringspass, release of IndexNow. Volgende actie: actuele bestaande
+sitemapontvangst in Bing lezen; publieke Google-adres-/dienst-/fotogates blijven.
+
+## 12 oktober 2026 — Task69/70: eigenaar herstelt Bing, publieke Google-status
+
+Task68 afgebakende eindreview0C/0I/0M; drie saves/zes exact vernieuwde weergaven.
+Voor Bing specifiek toestemming ontvangen voor bestaande host/XML. Eén agent-
+toevoegpoging, geen XML-verificatie; daarna bedieningsprobleem en eigenaarhandoff.
+Eigenaar rondt GoDaddy Domain Connect af. Succesmelding zelf gelezen, alleen
+teruglink gevolgd; geen eigen DNS-/GoDaddy-/betaalactie. Bing bevestigt actueel
+Abder als verified administrator voor de exacte www-site op09:13:08 UTC.
+Huidige sitemapinhoud nog niet betrouwbaar geladen; geen tweede submission.
+Het lokaal opgeslagen Bing-beeld toont Home, niet de rol; dit verschil vastgelegd.
+
+Anonieme Maps-controle via root-IAB: adres nog publiek zichtbaar09:09:46 UTC,
+geen services op bedrijfslocatie in About. Specifieke dienstteksten niet in deze
+weergaven controleerbaar; badgecontrole beperkt tot een deel van de9 fotoposities,
+dus geen afwezigheidsclaim. Publiek beeldbewijs bewaard, tijdelijke tab gesloten.
+Geen websitecode/release/IndexNow; WP04/WP05 blijven gedeeltelijk.
+
+## 12 oktober 2026 — Task68 vervolgd: drie teksten, zes beheerweergaven
+
+Nieuwste status vervangt de hieronder gedateerde1/5-momentopname: bedieningssessie
+hersteld via een schone tijdelijke tab in hetzelfde Abder-profiel. Onderhoud en
+reparatie elk eenmaal opgeslagen naast de eerder opgeslagen installatie. De
+tweede bestaande categorie toont al dezelfde drie teksten, zonder extra save.
+Na volledige refresh alle zes weergaven exact gecontroleerd (08:13–08:15 UTC):
+227/226/227 tekens, Geen prijs. Drie saves, zes weergaven; geen andere profiel-
+of websitewijziging. Beeldbewijs bewaard en tijdelijke Google-tab gesloten.
+De aanvullende thermostaat-refreshcheck bleef onleesbaar; geen nieuwe passclaim.
+
+Bing blijft na normale heraanmelding met uitsluitend de bestaande Abder-identiteit
+op Welcome/add-site zonder website. Geen nieuwe OAuth/grant/import/DNS of
+herverificatie; gerichte toestemming voor bestaande host/XML-herstel gevraagd.
+WP04/WP05 en publieke uitkomsten blijven open. Geen docs-only deploy of IndexNow.
+
+## 12 oktober 2026 — Task68: juiste eigenaarssessie, één dienstbeschrijving
+
+Na de ontgrendelingsbevestiging Abders bestaande Chrome-profiel en AB SERVICE
+vastgesteld. Adresweergave staat in beheer uit; geen nieuwe adressave en geen
+bewezen publieke verberging. Zes loodgietersteksten en acht aanvankelijk lege
+verwarmingsvelden gelezen. Onafhankelijke controle van drie cv-gasketelteksten:
+0 kritieke/belangrijke/kleine bevindingen, binnen300 tekens.
+
+Alleen installatie onder Verwarming eenmaal opgeslagen en exact teruggelezen
+(227 tekens, Geen prijs). Vijf beoogde velden nog niet opgeslagen; browserbediening
+werd onbruikbaar. Geen andere profielveld- of websitewijziging. Bing gaf in
+dezelfde juiste sessie eerder geen toegang tot de bestaande property; oorzaak
+onbekend, geen rechtenwijziging/herindiening. WP04/WP05 blijven gedeeltelijk.
+Lokaal bewijs bewaard; geen docs-only publicatie, tests/build/crawl of IndexNow
+herhaald. Eerstvolgende actie: bruikbare eigenaarssessie en vijf resterende velden.
+
+## 12 October 2026 — 03:47 UTC heartbeat: recovery and access only
+
+Source: the approved heartbeat, current Git/recovery records and one minimized
+CUA surface inventory. Local main, HEAD and origin/main still identify accepted
+b702c73931784ce5319576351926dcd8aae1ebd4. The three existing unstaged documentary
+backfills and empty index are preserved; no conflicting writer was established.
+The inventory exposes only Hamdaoui's Chrome profile; native access reports a
+locked Mac. No personal tab was opened, account substituted, save repeated or
+new permission requested. The earlier focused owner question remains pending.
+
+This is a continuation/access check, not a new product task or a fresh CI,
+deployment, crawl, schema, indexing or outcome test. Task66's retained acceptance
+stands with raw Vercel READY separately unverified. No code/date/publication-state
+change, repeated suite/build/crawl, new review, deployment or IndexNow submission.
+All four source appendices and original checkbox lines remain unchanged. Next:
+resume correct-owner account actions or a genuinely new source/measurement task
+when its prerequisite becomes available; owner/case/consent/credentials/prices,
+French review, Task51 lifecycle, field/AT and business-outcome gates remain open.
+Keep this status local for the next substantive cohort, not a docs-only release.
+
+04:02 UTC heartbeat follow-up: one new minimized inventory finds the same
+locked Mac and only Hamdaoui Chrome; no business-account action is possible.
+Local refs/three dirty documents/empty index remain unchanged. Log-only update;
+next prerequisites and all open gates above remain, with no repeated question,
+QA cycle, publication or submission.
+
+04:18 UTC heartbeat: minimized CUA inventory is unchanged (Mac locked,
+Hamdaoui profile only). Recovery and next prerequisites above remain intact;
+no new account action, task acceptance, QA cycle, deployment or submission.
+
+04:33 UTC heartbeat: no new access observation; the last actual minimized
+inventory is from 04:18 UTC. Unchanged-access checks back off until 05:18 UTC,
+unless new owner input/access/evidence arrives sooner. Automation stays active;
+no new acceptance, product change, repeated QA or submission. Open gates stand.
+
+04:48 UTC heartbeat: local recovery checked; the 05:18 UTC access-check
+backoff remains in effect. No new browser observation, source evidence or task
+acceptance; the existing open gates and next prerequisites are unchanged.
+
+05:03 UTC heartbeat: local refs, source appendices and checkbox state checked;
+access-check backoff still ends at 05:18 UTC (earlier for new owner evidence).
+Log only; no new access observation, task acceptance, QA or external action.
+
+05:18 UTC heartbeat: the due minimized CUA inventory again exposes only
+Hamdaoui Chrome (47 tabs), IAB (one original tab), no native apps and a locked
+Mac. No personal tab or account action taken; the existing owner question stays
+pending. Next availability check not before 06:18 UTC, unless new owner input or
+access/evidence arrives sooner; automation remains active. Existing gates stay
+open. No new product acceptance, QA cycle, publication or submission.
+
+05:33 UTC heartbeat: local recovery check and log only; the actual 05:18 UTC
+access observation and 06:18 UTC next check remain authoritative. No new source,
+account action, QA or acceptance; existing prerequisites and gates stay open.
+
+05:48 UTC heartbeat: local log-only preservation check; no new browser or
+external observation before the scheduled 06:18 UTC access check. Existing
+prerequisites, gates and WP acceptance remain unchanged; no release/submission.
+
+06:03 UTC heartbeat: local recovery/log-only check; no new account or external
+observation. The actual 05:18 UTC access record, 06:18 UTC next check and existing
+open gates remain; no new WP acceptance, product change, QA or submission.
+
+## 12 October 2026 — Task67: public GBP address follow-up
+
+Source: the known Google Maps CID, read anonymously in IAB during the 06:18 UTC
+heartbeat (focused confirmation completed before 06:23:30 UTC). Public AB SERVICE
+still shows Voorzorgstraat 12A, 2660 Antwerpen as an address. The prior owner-side
+SAB/address-hide save is not a publicly confirmed outcome; current moderation,
+verification or propagation cause is unknown without correct-owner access.
+No login, edit suggestion, repeated save, profile/site/legal-address change,
+review/post/media action or indexing submission. Temporary public tab closed.
+Mac remains locked; only Hamdaoui Chrome exposed by the actual due inventory.
+Next access check not before 07:18 UTC unless new owner input/access/evidence;
+public-address recheck is deferred until new account evidence or a later relevant
+pending-status window. Other gates and all WP checkbox states stay open/unchanged.
+Bounded documentary preservation/link checks pass; sole independent review
+APPROVE (0 Critical/0 Important/0 Minor). No product suite/build/crawl or release,
+fresh deployment or business-result claim.
+
+## 12 October 2026 — Task66 released and externally confirmed
+
+Accepted product commit b702c73931784ce5319576351926dcd8aae1ebd4 is on main/origin.
+Exact [CI38199800609](https://github.com/Ilias492610/ABService/actions/runs/38199800609)
+passes under Node24.21:536 tests, lint, production audit0, build170 and hosted
+crawl82/93/112. Both existing Vercel-created named Production deployments report
+success at this SHA:primary7005823614 before CI completion, secondary7005828936
+after it. GitHub integration evidence is not a separately observed raw READY.
+
+Fresh canonical crawl passes82pages/93links/112assets:290 GETs/290 responses,
+289 ordinary200 plus the one expected404, zero failures. All six retained live
+Article bodies show the canonical author URL with unchanged global graph,
+content dates and visible /over-ons issuer link. Live desktop/mobile CTA tests
+reach the empty service-prefilled form without horizontal overflow; no form
+submission, field-focus guarantee, provider-mail/events or field-CWV claim.
+
+The new anonymous URL-mode [Google result](https://search.google.com/test/rich-results/result?id=jBpd4ZORa-OD6T1076tCTw)
+at03:35:23UTC shows6 valid feature items and2 Organization items WITHOUT the
+duplicate-url warning. Both entries were expanded and show one entity URL.
+The fresh [Schema.org test](https://validator.schema.org/#url=https%3A%2F%2Fwww.abservice24.be%2Fadvies%2Fonderhoudsattest-cv-ketel)
+shows0 errors/0 warnings/4 root items. Article/local-business noncritical labels
+remain; their new detail counts were not re-expanded. Results are diagnostics,
+not selected-canonical/indexing/appearance/rank or business-outcome proof.
+
+No IndexNow notification: customer content is unchanged. Original diagnostics
+and an offline-only elapsed-metadata correction are retained separately.
+This release closes Task66's bounded gates, not all WP12/WP17 or the owner,
+account, credentials/prices/cases/consent/French-review/field/security gates.
+Current access check still finds only Hamdaoui's Chrome profile and a locked
+Mac; it was not used for Abder's business actions. Do not repeat the pending
+owner question or submit unchanged URLs. Next: correct-account pending actions
+and genuine measurement/evidence, not another unchanged full audit.
+
+This actual-release status backfill is local documentation for the next
+substantive cohort; it does not trigger a second docs-only production cycle.
+
 ## 12 October 2026 — Task66 Article issuer URL locally verified
 
 Bounded WP12 correction: Article.author.url now uses the same canonical
