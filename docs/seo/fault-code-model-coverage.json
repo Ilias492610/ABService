@@ -1,16 +1,16 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage; Task80 adds only historical i Zone06.19 six technicalB models and i32EC09.17 one technicalB model, with17/19 source rows; not every ATAG model, current fit or full fault coverage Task83 adds only three paired-source Tzerra Ace-Matic CU-GH16 catalogs from the June2024 BE/Lux books; no other source re-audit or newest/firmware claim.",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage; Task80 adds only historical i Zone06.19 six technicalB models and i32EC09.17 one technicalB model, with17/19 source rows; not every ATAG model, current fit or full fault coverage Task83 adds only three paired-source Tzerra Ace-Matic CU-GH16 catalogs from the June2024 BE/Lux books; no other source re-audit or newest/firmware claim. Task84 adds only three Quinta Ace CU-GH08 catalogs from the Belgian Dutch combined2019book, 14A21H25E literal rows; no current firmware/device fit or newest claim.",
   "incrementalUpdateDate": "2026-10-12",
   "counts": {
     "guides": 13,
-    "catalogAssignments": 44,
-    "distinctCatalogs": 38,
-    "displayedExplanationRows": 1798,
-    "distinctCatalogExplanationRows": 1556,
-    "distinctCatalogSourceURLs": 22
+    "catalogAssignments": 47,
+    "distinctCatalogs": 41,
+    "displayedExplanationRows": 1858,
+    "distinctCatalogExplanationRows": 1616,
+    "distinctCatalogSourceURLs": 23
   },
-  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources. Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses. Task80 adds36 source-row assignments: iZone17 most-common messages, i32EC19 including105program and180/181nonfault;50 ATAG rows are not50 unique fault diagnoses. The97 Tzerra Ace-Matic source rows are explanation rows, not97 new fault diagnoses, search demand or complete Tzerra/brand coverage.",
+  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources. Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses. Task80 adds36 source-row assignments: iZone17 most-common messages, i32EC19 including105program and180/181nonfault;50 ATAG rows are not50 unique fault diagnoses. The97 Tzerra Ace-Matic source rows are explanation rows, not97 new fault diagnoses, search demand or complete Tzerra/brand coverage. The60 Quinta Ace rows include warnings and procedure/check states; they are not60 proven faults, search demand or whole-brand coverage.",
   "method": "Original Task47 record history retained. Task48 added one historical Bulex A/B table. Task49 updates only six shared Bosch/Junkers scopes, two warnings and directly observed NL chapter/source context, adding one original PDF snapshot. Other26 entries/eight snapshots/eleven guide entries remain unchanged; no 242-row re-audit or newest/full-model certification.",
   "guides": [
     {
@@ -73,8 +73,8 @@
     {
       "slug": "remeha",
       "brand": "Remeha",
-      "modelWarning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace, Quinta en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld.",
-      "explanationRowCount": 756,
+      "modelWarning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld. Quinta Ace 45/65/90/115 heeft drie eigen CU-GH08-tabellen uit het Belgische Nederlandstalige installatie- en gebruikersboek 7684362-v.05-10012019: waarschuwingen (A), blokkeringen (H) en vergrendelingen (E). De 60 meldingen horen bij deze editie, niet bij Quinta Ace 160, andere edities of Luxemburg. Controleer of uw eigen toestel en bediening bij deze handleiding horen; de gebruikte software en aanwezige uitbreidingen verschillen per installatie. De actuele toepasbaarheid en nieuwste handleiding zijn hier niet vastgesteld. Lees en noteer de zichtbare melding en gewone gebruikscontext; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen.",
+      "explanationRowCount": 816,
       "catalogIds": [
         "remeha-avanta",
         "remeha-calenta-legacy",
@@ -91,7 +91,10 @@
         "remeha-calenta-ace-matic-25l-scb-blocking",
         "remeha-tzerra-ace-matic-cu-warnings",
         "remeha-tzerra-ace-matic-cu-temporary",
-        "remeha-tzerra-ace-matic-cu-locking"
+        "remeha-tzerra-ace-matic-cu-locking",
+        "remeha-quinta-ace-cu-warnings",
+        "remeha-quinta-ace-cu-blocking",
+        "remeha-quinta-ace-cu-locking"
       ],
       "documentationLabel": "Officiële Remeha Storingswijzer",
       "documentationURL": "https://storingswijzer.remeha.be/"
@@ -431,6 +434,18 @@
       "pageCount": 32,
       "byteLength": 706155,
       "sourceBoundary": "Actual linked original HTTP200 application/pdf, printed7875187 - 01 - 20062024, BE/Lux Dutch four cover variants. Full relevant pages read; literal97codes paired, professional remedies not DIY. No newest/article/serial/firmware or other-generation coverage."
+    },
+    {
+      "id": "remeha-quinta-ace-combined-pdf",
+      "kind": "manufacturer-PDF",
+      "url": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Quinta-Ace/NL/190110_IM_UM_Quinta-Ace-45-115-T-Control_NL.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-ace-combined/original.pdf",
+      "sha256": "adb9bf172ee2d71173ea67d2ad60ef877c12688deac312af9ffcaea15d798fce",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 80,
+      "byteLength": 3216213,
+      "sourceBoundary": "Actual linked combined installation/user book, printed7684362 - v.05 - 10012019, BE Dutch Quinta45/65/90/115, measured original. Tables43–45 all60 literal rows; professional remedies not consumer procedures. Software baseline is not installed/current firmware fit; no160/Lux/newest/serial/article coverage."
     }
   ],
   "entries": [
@@ -1598,6 +1613,180 @@
       "conditions": "Only four printed cover variants and actualCU-GH16 tables. Optional tank/autofill/SCB-09/external devices require real configuration; generic254 and three-digit suffixes are not aliases. Status/reset/filling/calibration requests are not automatic defect diagnoses.",
       "declaredScopePath": "content/remeha-tzerra-ace-matic.mjs",
       "fieldBoundary": "Printed June2024 edition, full primary/companion source locators. Null means unknown, not absent or incompatible. No article/serial/firmware/newest/current-device inference."
+    },
+    {
+      "id": "remeha-quinta-ace-cu-warnings",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Quinta Ace — CU-GH08 — waarschuwingen",
+      "modelScope": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 43. A is een waarschuwing waarbij de ketel volgens tabel 42 kan blijven werken; de oorzaak vraagt beoordeling en de melding kan escaleren. Deze tabel bevat 14 meldingen; dat is geen volledige merkdekking. De handleiding is gebaseerd op CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit bewijst niet welke software uw toestel gebruikt. Een SCB-10-uitbreiding hangt af van de installatie (p. 33; Performance-uitvoering p. 76), dit is geen volledige afzonderlijke lijst voor SCB-10. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Exacte product- en serienummers, toepassing op uw eigen toestel en bediening en de nieuwste handleiding zijn hier niet vastgesteld. Vergelijk uw eigen model- en bedieningshandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Quinta Ace 45–115 installatie- en gebruikershandleiding 7684362-v.05-10012019",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Quinta-Ace/NL/190110_IM_UM_Quinta-Ace-45-115-T-Control_NL.pdf",
+      "sourcePages": "tabel 43, p. 60–61",
+      "explanationRowCount": 14,
+      "modelFamily": "Quinta Ace 45–115",
+      "models": [
+        "45",
+        "65",
+        "90",
+        "115"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "serials": null,
+      "documentNumber": "7684362",
+      "revision": "v.05",
+      "issueDate": "2019-01-10",
+      "issueDatePrecision": "day",
+      "printedIdentifier": "7684362 - v.05 - 10012019",
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "controller": "CU-GH08",
+      "component": "CU-GH08",
+      "sourceSoftwareBaseline": {
+        "CU-GH08": "1.4",
+        "HMI T-control/MK3": "1.29",
+        "SCB-10": "0.5"
+      },
+      "sourceSoftwareBaselinePages": "tabel 1, p. 12",
+      "tableIds": [
+        43
+      ],
+      "sourceClass": "A",
+      "primarySnapshot": "remeha-quinta-ace-combined-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-ace-combined/original.pdf",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-root-read.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-source-inventory-research.md",
+        "tests/fixtures/quinta-ace-source-facts.json"
+      ],
+      "verificationBasis": "Actual combined installation/user book 7684362-v.05-10012019 for BE/nl Quinta45/65/90/115; all14A21H25E rows of tables43–45 pp60–66 independently enumerated. Class42 examples and fault-memory32/status/substatus excluded. Professional safety/remedy boundary pp6–10/47; source software basisp12; SCB-10 conditionalp33/Performancep76. H01.00/H01.08/H02.00/H02.38/H02.70/H03.17/E00.07/E01.04/E02.15/E04.03 source distinctions retained; no consumer technical remedy.",
+      "declaredScopePath": "content/remeha-quinta-ace.mjs",
+      "fieldBoundary": "Source software baseline is a printed manual fact, not firmwareCompatibility or installed/current fit. SCB-10 is conditional, not separately complete or universally present. Null means unestablished, not absent. No article/serial/newest/current-device or Luxembourg fit.",
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "literalPhysicalRowCount": 14
+    },
+    {
+      "id": "remeha-quinta-ace-cu-blocking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Quinta Ace — CU-GH08 — blokkeringen",
+      "modelScope": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 44. H is een blokkering; tabel 42 beschrijft hervatting als de blokkerende oorzaak is verdwenen, geen gegarandeerd automatisch herstel voor elke rij. H01.00 heeft een eigen communicatiebetekenis; H02.00 is een al actieve reset en H03.17 een lopende veiligheidscontrole. Deze tabel bevat 21 meldingen; dat is geen volledige merkdekking. De handleiding is gebaseerd op CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit bewijst niet welke software uw toestel gebruikt. Een SCB-10-uitbreiding hangt af van de installatie (p. 33; Performance-uitvoering p. 76), dit is geen volledige afzonderlijke lijst voor SCB-10. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Exacte product- en serienummers, toepassing op uw eigen toestel en bediening en de nieuwste handleiding zijn hier niet vastgesteld. Vergelijk uw eigen model- en bedieningshandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Quinta Ace 45–115 installatie- en gebruikershandleiding 7684362-v.05-10012019",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Quinta-Ace/NL/190110_IM_UM_Quinta-Ace-45-115-T-Control_NL.pdf",
+      "sourcePages": "tabel 44, p. 61–63",
+      "explanationRowCount": 21,
+      "modelFamily": "Quinta Ace 45–115",
+      "models": [
+        "45",
+        "65",
+        "90",
+        "115"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "serials": null,
+      "documentNumber": "7684362",
+      "revision": "v.05",
+      "issueDate": "2019-01-10",
+      "issueDatePrecision": "day",
+      "printedIdentifier": "7684362 - v.05 - 10012019",
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "controller": "CU-GH08",
+      "component": "CU-GH08",
+      "sourceSoftwareBaseline": {
+        "CU-GH08": "1.4",
+        "HMI T-control/MK3": "1.29",
+        "SCB-10": "0.5"
+      },
+      "sourceSoftwareBaselinePages": "tabel 1, p. 12",
+      "tableIds": [
+        44
+      ],
+      "sourceClass": "H",
+      "primarySnapshot": "remeha-quinta-ace-combined-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-ace-combined/original.pdf",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-root-read.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-source-inventory-research.md",
+        "tests/fixtures/quinta-ace-source-facts.json"
+      ],
+      "verificationBasis": "Actual combined installation/user book 7684362-v.05-10012019 for BE/nl Quinta45/65/90/115; all14A21H25E rows of tables43–45 pp60–66 independently enumerated. Class42 examples and fault-memory32/status/substatus excluded. Professional safety/remedy boundary pp6–10/47; source software basisp12; SCB-10 conditionalp33/Performancep76. H01.00/H01.08/H02.00/H02.38/H02.70/H03.17/E00.07/E01.04/E02.15/E04.03 source distinctions retained; no consumer technical remedy.",
+      "declaredScopePath": "content/remeha-quinta-ace.mjs",
+      "fieldBoundary": "Source software baseline is a printed manual fact, not firmwareCompatibility or installed/current fit. SCB-10 is conditional, not separately complete or universally present. Null means unestablished, not absent. No article/serial/newest/current-device or Luxembourg fit.",
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "literalPhysicalRowCount": 21
+    },
+    {
+      "id": "remeha-quinta-ace-cu-locking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Quinta Ace — CU-GH08 — vergrendelingen",
+      "modelScope": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 45. E is een vergrendeling. Tabel 42 beschrijft herstel van de oorzaak en handmatige reset als professionele context, geen klantstap. Deze tabel bevat 25 meldingen; dat is geen volledige merkdekking. De handleiding is gebaseerd op CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit bewijst niet welke software uw toestel gebruikt. Een SCB-10-uitbreiding hangt af van de installatie (p. 33; Performance-uitvoering p. 76), dit is geen volledige afzonderlijke lijst voor SCB-10. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Exacte product- en serienummers, toepassing op uw eigen toestel en bediening en de nieuwste handleiding zijn hier niet vastgesteld. Vergelijk uw eigen model- en bedieningshandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Quinta Ace 45–115 installatie- en gebruikershandleiding 7684362-v.05-10012019",
+      "sourceURL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Quinta-Ace/NL/190110_IM_UM_Quinta-Ace-45-115-T-Control_NL.pdf",
+      "sourcePages": "tabel 45, p. 63–66",
+      "explanationRowCount": 25,
+      "modelFamily": "Quinta Ace 45–115",
+      "models": [
+        "45",
+        "65",
+        "90",
+        "115"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "serials": null,
+      "documentNumber": "7684362",
+      "revision": "v.05",
+      "issueDate": "2019-01-10",
+      "issueDatePrecision": "day",
+      "printedIdentifier": "7684362 - v.05 - 10012019",
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "controller": "CU-GH08",
+      "component": "CU-GH08",
+      "sourceSoftwareBaseline": {
+        "CU-GH08": "1.4",
+        "HMI T-control/MK3": "1.29",
+        "SCB-10": "0.5"
+      },
+      "sourceSoftwareBaselinePages": "tabel 1, p. 12",
+      "tableIds": [
+        45
+      ],
+      "sourceClass": "E",
+      "primarySnapshot": "remeha-quinta-ace-combined-pdf",
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-ace-combined/original.pdf",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-root-read.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-84-quinta-source-inventory-research.md",
+        "tests/fixtures/quinta-ace-source-facts.json"
+      ],
+      "verificationBasis": "Actual combined installation/user book 7684362-v.05-10012019 for BE/nl Quinta45/65/90/115; all14A21H25E rows of tables43–45 pp60–66 independently enumerated. Class42 examples and fault-memory32/status/substatus excluded. Professional safety/remedy boundary pp6–10/47; source software basisp12; SCB-10 conditionalp33/Performancep76. H01.00/H01.08/H02.00/H02.38/H02.70/H03.17/E00.07/E01.04/E02.15/E04.03 source distinctions retained; no consumer technical remedy.",
+      "declaredScopePath": "content/remeha-quinta-ace.mjs",
+      "fieldBoundary": "Source software baseline is a printed manual fact, not firmwareCompatibility or installed/current fit. SCB-10 is conditional, not separately complete or universally present. Null means unestablished, not absent. No article/serial/newest/current-device or Luxembourg fit.",
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "literalPhysicalRowCount": 25
     },
     {
       "id": "buderus-logamax-gb162-v2",

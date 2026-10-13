@@ -1,6 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { faultGuides } from "../content/fault-guides.mjs";
+import { faultGuides as liveFaultGuides } from "../content/fault-guides.mjs";
+import {beforeQuintaGuide} from "./fixtures/quinta-ace-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeQuintaGuide);
 import { filterFaultCatalogs } from "../libs/fault-search.mjs";
 import { buildFaultCodeAliases } from "../libs/fault-code-aliases.mjs";
 

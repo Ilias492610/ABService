@@ -1,4 +1,5 @@
 import {readFileSync} from "node:fs";
+import {beforeQuintaGuide,beforeQuintaRegistry,beforeQuintaMetadata,beforeQuintaHtml,beforeQuintaManifest} from "./quinta-ace-history.mjs";
 // Named Task83 inverse, never a snapshot/hash rebase or unknown-field projection.
 // Actual customer behavior is tested separately against pre-product source facts.
 const f=JSON.parse(readFileSync(new URL("./tzerra-ace-matic-source-facts.json",import.meta.url),"utf8"));
@@ -7,21 +8,25 @@ const snapshotIds=new Set(["remeha-tzerra-ace-matic-installer-pdf","remeha-tzerr
 const restore=(value,current,old)=>value===current?old:value;
 const esc=v=>v.replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#x27;");
 export function beforeTzerraGuide(g){
+ g=beforeQuintaGuide(g);
  if(g.slug!=="remeha"||!g.catalogs.some(c=>ids.has(c.id)))return g;
  return {...g,modelWarning:g.modelWarning.replace(f.warning,f.before.warning),
   catalogs:g.catalogs.filter(c=>!ids.has(c.id)),codeEntryCount:g.codeEntryCount-97,codes:g.codes.slice(0,-97)};
 }
 export function beforeTzerraRegistry(p){
+ p=beforeQuintaRegistry(p);
  if(p.path!==f.page.path)return p;
  return {...p,title:restore(p.title,f.page.title,f.before.page.title),description:restore(p.description,f.page.description,f.before.page.description)};
 }
 export function beforeTzerraMetadata(m,slug){
+ m=beforeQuintaMetadata(m,slug);
  if(slug!=="remeha")return m;
  const text=value=>({...value,title:restore(value.title,f.page.title,f.before.page.title),description:restore(value.description,f.page.description,f.before.page.description)});
  const alt=f.page.title.replace(/\s*\|\s*AB Service$/,"")+" — AB Service";
  return {...text(m),openGraph:{...text(m.openGraph),images:m.openGraph.images.map(i=>({...i,alt:restore(i.alt,alt,f.before.metadata.openGraph.images[0].alt)}))},twitter:text(m.twitter)};
 }
 export function beforeTzerraHtml(html,slug){
+ html=beforeQuintaHtml(html,slug);
  if(slug!=="remeha")return html;
  let old=html.replace(esc(f.warning),esc(f.before.warning))
   .replace('<p class="eyebrow">756 brongebonden codeverklaringen</p>','<p class="eyebrow">659 brongebonden codeverklaringen</p>')
@@ -31,6 +36,7 @@ export function beforeTzerraHtml(html,slug){
  return old;
 }
 export function beforeTzerraManifest(m){
+ m=beforeQuintaManifest(m);
  if(!m.entries.some(e=>ids.has(e.id)))return m;
  const increments={catalogAssignments:3,distinctCatalogs:3,displayedExplanationRows:97,distinctCatalogExplanationRows:97,distinctCatalogSourceURLs:1};
  return {...m,purpose:m.purpose.replace(f.manifestPurposeSuffix,""),countBoundary:m.countBoundary.replace(f.manifestCountSuffix,""),

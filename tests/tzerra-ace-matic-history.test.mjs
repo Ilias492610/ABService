@@ -2,13 +2,20 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
 import {createHash} from "node:crypto";
-import {faultGuides,getFaultGuide} from "../content/fault-guides.mjs";
-import {pageRegistry,getPageDefinition} from "../content/site-content.mjs";
-import {buildPageMetadata} from "../libs/seo-data.mjs";
-import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {faultGuides as liveFaultGuides,getFaultGuide as liveGetFaultGuide} from "../content/fault-guides.mjs";
+import {pageRegistry as livePageRegistry,getPageDefinition as liveGetPageDefinition} from "../content/site-content.mjs";
+import {buildPageMetadata as liveBuildPageMetadata} from "../libs/seo-data.mjs";
+import {renderFaultGuide as liveRenderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {beforeQuintaGuide,beforeQuintaRegistry,beforeQuintaMetadata,beforeQuintaHtml,beforeQuintaManifest} from "./fixtures/quinta-ace-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeQuintaGuide);
+const getFaultGuide=slug=>beforeQuintaGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeQuintaRegistry);
+const getPageDefinition=path=>beforeQuintaRegistry(liveGetPageDefinition(path));
+const buildPageMetadata=p=>beforeQuintaMetadata(liveBuildPageMetadata(p),p.path==="/foutcodes/remeha"?"remeha":"");
+const renderFaultGuide=async slug=>beforeQuintaHtml(await liveRenderFaultGuide(slug),slug);
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraMetadata,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
 const f=JSON.parse(await readFile(new URL("./fixtures/tzerra-ace-matic-source-facts.json",import.meta.url),"utf8"));
-const manifest=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));
+const manifest=beforeQuintaManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")));
 const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v)).digest("hex");
 
 test("named Tzerra inverse restores actual pre-edit full guide registry metadata and SSR capture",async()=>{

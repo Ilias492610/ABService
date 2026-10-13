@@ -5,7 +5,9 @@ import test from "node:test";
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 
-import { faultGuides } from "../content/fault-guides.mjs";
+import { faultGuides as liveFaultGuides } from "../content/fault-guides.mjs";
+import {beforeQuintaGuide} from "./fixtures/quinta-ace-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeQuintaGuide);
 import { sourceFacts } from "./fixtures/remeha-calenta-ace-matic.mjs";
 import { sourceFacts as source25L } from "./fixtures/remeha-calenta-ace-matic-25l.mjs";
 import { ithoFacts } from "./fixtures/itho-base-cube-source-safety.mjs";

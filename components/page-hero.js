@@ -6,6 +6,7 @@ export default function PageHero({
   eyebrow,
   title,
   intro,
+  preIntro = null,
   ctaLabel = "Bespreek uw aanvraag",
   ctaHref = "/contact#aanvraagformulier",
   protectReading = false,
@@ -16,6 +17,7 @@ export default function PageHero({
         <div>
           {eyebrow && <p className="eyebrow">{eyebrow}</p>}
           <h1>{title}</h1>
+          {preIntro}
           <p className="hero-intro">{intro}</p>
           <div className="button-row">
             <Link href={ctaHref} className="button">

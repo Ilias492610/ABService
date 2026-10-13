@@ -1,0 +1,792 @@
+{
+  "reading": {
+    "orientation": "Noteer uw volledige code en kies de toestelreeks die bij uw eigen handleiding hoort. Lees eerst de veiligheidsmelding; deze tabel vervangt geen beoordeling door een installateur.",
+    "entranceHtml": "<div class=\"remeha-fault-entrance\"><p>Noteer uw volledige code en kies de toestelreeks die bij uw eigen handleiding hoort. Lees eerst de veiligheidsmelding; deze tabel vervangt geen beoordeling door een installateur.</p><a href=\"#remeha-foutcode-veiligheid\" class=\"button button-secondary\">Naar veiligheid en codezoeker</a></div>",
+    "safetyMarker": "<section class=\"section section-compact remeha-fault-safety\" id=\"remeha-foutcode-veiligheid\">",
+    "beforeSafetyMarker": "<section class=\"section section-compact\">",
+    "beforeSafetyHtml": "<section class=\"section section-compact\"><div class=\"shell narrow\"><div class=\"warning-box\"><strong>Veiligheid en modelcontrole</strong><p>Een code is geen diagnose. Controleer eerst merk, exacte modelaanduiding, bouwjaar en de volledige hoofd- en subcode. Reset niet herhaaldelijk en open geen verbrandings-, gas- of elektrische onderdelen. Bij gasgeur of een CO-melding verlaat u de onveilige ruimte en neemt u vanuit een veilige plaats contact op met de bevoegde hulpdienst; bij vermoeden van CO-vergiftiging of direct gevaar belt u 112. Bedien in een ruimte met gasgeur geen elektrische schakelaars of toestellen. Blijf uit een natte zone met elektrische delen en ga niet terug naar binnen voor foto’s.</p></div></div></section>",
+    "beforeOtherGuideHtml": [
+      [
+        "vaillant",
+        "ae8633d3a262380fff219eb19090ce64d909b0bfa862cffd21061a7c59048da3"
+      ],
+      [
+        "bulex",
+        "fb315afb85ac65ab94744ca8c33ad6e43dd81572b88d83b17ab5dd0db30dd088"
+      ],
+      [
+        "bosch",
+        "f2415941ffc8d4425495da81c7b04bdabb934895399f50fc1e142631c041a588"
+      ],
+      [
+        "junkers",
+        "adacdf307c27ab3e994db6d77283f0364dc79ba0a4667daef29df1e10e0fc96f"
+      ],
+      [
+        "buderus",
+        "7cdabccf40bcf157e4960a89fa9f0f1b4e18c5e87e76b013c39c7508aa667af6"
+      ],
+      [
+        "viessmann",
+        "266e25d7d57e961d67b0bb9914013c46725faa1e1bdb2c15ca0ecaf17345ae27"
+      ],
+      [
+        "acv",
+        "ca063a137c5614d6aa28acf575194bbcfbf8f2dbe5e6d1b1c3c8e1e667d0b579"
+      ],
+      [
+        "intergas",
+        "04ee2249de4ccb923c48b68c89a2abcfb37babb0c2cbba1c92b345ee0f254a52"
+      ],
+      [
+        "nefit-bosch",
+        "31a5c7e6dd89a81a5e8cf1a90608259e772728979ba8071e858ba4cda410c1b8"
+      ],
+      [
+        "atag",
+        "3ea2315495781a82b754a29a13111e66f75d01c9df6bf953cc97f59ce0f19c00"
+      ],
+      [
+        "itho-daalderop",
+        "543f1db5f3803ba427b7d882941ea849e91095c23f7a44110932ddbed23fcbbd"
+      ],
+      [
+        "ferroli",
+        "fcee17fd6bb510a54640a9f3ac2b1a90ab732ab3a7b8c4ccfcc1769a8415dc69"
+      ]
+    ],
+    "beforeDefaultHero": "6854ff3afd908c85b99277c44182e605651100d29670816f99aa381a9e799c81",
+    "copyRecord": {
+      "warning": {
+        "before": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld. Quinta Ace 45/65/90/115 heeft drie eigen CU-GH08-tabellen uit het Belgische Nederlandstalige installatie- en gebruikersboek 7684362-v.05-10012019: A-waarschuwingen, H-blokkeringen en E-vergrendelingen. De bronbasis noemt CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5; dit is geen actuele firmware- of toestelcompatibiliteit. SCB-10 hangt af van de configuratie, niet elke ketel heeft deze uitbreiding. Vergelijk uw eigen model- en regelaarhandleiding. Deze 60 letterlijke bronrijen gelden niet voor Quinta Ace 160, andere edities of Luxemburg; artikelnummers, model-artikelparen, serials, huidige regelaarfit en nieuwste editie zijn niet vastgesteld. Lees en noteer de zichtbare melding en gewone gebruikscontext; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen.",
+        "after": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld. Quinta Ace 45/65/90/115 heeft drie eigen CU-GH08-tabellen uit het Belgische Nederlandstalige installatie- en gebruikersboek 7684362-v.05-10012019: waarschuwingen (A), blokkeringen (H) en vergrendelingen (E). De 60 meldingen horen bij deze editie, niet bij Quinta Ace 160, andere edities of Luxemburg. Controleer of uw eigen toestel en bediening bij deze handleiding horen; de gebruikte software en aanwezige uitbreidingen verschillen per installatie. De actuele toepasbaarheid en nieuwste handleiding zijn hier niet vastgesteld. Lees en noteer de zichtbare melding en gewone gebruikscontext; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen."
+      },
+      "scopes": [
+        {
+          "id": "remeha-quinta-ace-cu-warnings",
+          "before": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 43. A is een waarschuwing waarbij de ketel volgens tabel 42 kan blijven werken; de oorzaak vraagt beoordeling en de melding kan escaleren. Deze tabel bevat 14 letterlijke bronrijen; dat is geen volledige merkdekking. Bronbasis: CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit stelt de software of compatibiliteit van uw toestel niet vast. SCB-10 is configuratieafhankelijk (p. 33; Performance-uitvoering p. 76), geen afzonderlijk complete SCB-10-catalogus. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Artikelnummers, model-artikelparen, serials, actuele regelaar-/toestelfit en nieuwste editie zijn niet vastgesteld. Vergelijk uw eigen model- en regelaarhandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling.",
+          "after": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 43. A is een waarschuwing waarbij de ketel volgens tabel 42 kan blijven werken; de oorzaak vraagt beoordeling en de melding kan escaleren. Deze tabel bevat 14 meldingen; dat is geen volledige merkdekking. De handleiding is gebaseerd op CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit bewijst niet welke software uw toestel gebruikt. Een SCB-10-uitbreiding hangt af van de installatie (p. 33; Performance-uitvoering p. 76), dit is geen volledige afzonderlijke lijst voor SCB-10. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Exacte product- en serienummers, toepassing op uw eigen toestel en bediening en de nieuwste handleiding zijn hier niet vastgesteld. Vergelijk uw eigen model- en bedieningshandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling."
+        },
+        {
+          "id": "remeha-quinta-ace-cu-blocking",
+          "before": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 44. H is een blokkering; tabel 42 beschrijft hervatting als de blokkerende oorzaak is verdwenen, geen gegarandeerd automatisch herstel voor elke rij. H01.00 heeft een eigen communicatiebetekenis; H02.00 is een al actieve reset en H03.17 een lopende veiligheidscontrole. Deze tabel bevat 21 letterlijke bronrijen; dat is geen volledige merkdekking. Bronbasis: CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit stelt de software of compatibiliteit van uw toestel niet vast. SCB-10 is configuratieafhankelijk (p. 33; Performance-uitvoering p. 76), geen afzonderlijk complete SCB-10-catalogus. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Artikelnummers, model-artikelparen, serials, actuele regelaar-/toestelfit en nieuwste editie zijn niet vastgesteld. Vergelijk uw eigen model- en regelaarhandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling.",
+          "after": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 44. H is een blokkering; tabel 42 beschrijft hervatting als de blokkerende oorzaak is verdwenen, geen gegarandeerd automatisch herstel voor elke rij. H01.00 heeft een eigen communicatiebetekenis; H02.00 is een al actieve reset en H03.17 een lopende veiligheidscontrole. Deze tabel bevat 21 meldingen; dat is geen volledige merkdekking. De handleiding is gebaseerd op CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit bewijst niet welke software uw toestel gebruikt. Een SCB-10-uitbreiding hangt af van de installatie (p. 33; Performance-uitvoering p. 76), dit is geen volledige afzonderlijke lijst voor SCB-10. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Exacte product- en serienummers, toepassing op uw eigen toestel en bediening en de nieuwste handleiding zijn hier niet vastgesteld. Vergelijk uw eigen model- en bedieningshandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling."
+        },
+        {
+          "id": "remeha-quinta-ace-cu-locking",
+          "before": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 45. E is een vergrendeling. Tabel 42 beschrijft herstel van de oorzaak en handmatige reset als professionele context, geen klantstap. Deze tabel bevat 25 letterlijke bronrijen; dat is geen volledige merkdekking. Bronbasis: CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit stelt de software of compatibiliteit van uw toestel niet vast. SCB-10 is configuratieafhankelijk (p. 33; Performance-uitvoering p. 76), geen afzonderlijk complete SCB-10-catalogus. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Artikelnummers, model-artikelparen, serials, actuele regelaar-/toestelfit en nieuwste editie zijn niet vastgesteld. Vergelijk uw eigen model- en regelaarhandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling.",
+          "after": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 45. E is een vergrendeling. Tabel 42 beschrijft herstel van de oorzaak en handmatige reset als professionele context, geen klantstap. Deze tabel bevat 25 meldingen; dat is geen volledige merkdekking. De handleiding is gebaseerd op CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit bewijst niet welke software uw toestel gebruikt. Een SCB-10-uitbreiding hangt af van de installatie (p. 33; Performance-uitvoering p. 76), dit is geen volledige afzonderlijke lijst voor SCB-10. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Exacte product- en serienummers, toepassing op uw eigen toestel en bediening en de nieuwste handleiding zijn hier niet vastgesteld. Vergelijk uw eigen model- en bedieningshandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling."
+        }
+      ],
+      "meanings": [
+        {
+          "code": "H02.70",
+          "before": "Een test van het externe warmteterugwinningssysteem is mislukt. Dit is niet een SCB09-test.",
+          "after": "Een test van het externe warmteterugwinningssysteem is mislukt."
+        },
+        {
+          "code": "E00.07",
+          "before": "De beschrijvingskolom noemt een te groot verschil in retourtemperatuur. De oplossingskolom spreekt over een te groot verschil tussen aanvoer en retour. Deze broninconsistentie blijft zichtbaar.",
+          "after": "De handleiding omschrijft het temperatuurverschil op twee manieren: in de beschrijving gaat het om een te groot verschil in retourtemperatuur, terwijl de oplossingskolom een te groot verschil tussen aanvoer en retour noemt. Laat de installateur beoordelen wat deze melding bij uw toestel betekent."
+        }
+      ]
+    }
+  },
+  "source": {
+    "URL": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Quinta-Ace/NL/190110_IM_UM_Quinta-Ace-45-115-T-Control_NL.pdf",
+    "parentURL": "https://www.remeha.be/product/quinta-ace",
+    "printedIdentifier": "7684362 - v.05 - 10012019",
+    "sha256": "adb9bf172ee2d71173ea67d2ad60ef877c12688deac312af9ffcaea15d798fce",
+    "byteLength": 3216213,
+    "pageCount": 80,
+    "models": [
+      "45",
+      "65",
+      "90",
+      "115"
+    ],
+    "market": [
+      "België"
+    ],
+    "language": "nl",
+    "sourceSoftwareBaseline": {
+      "CU-GH08": "1.4",
+      "HMI T-control/MK3": "1.29",
+      "SCB-10": "0.5"
+    }
+  },
+  "catalogs": [
+    {
+      "id": "remeha-quinta-ace-cu-warnings",
+      "title": "Quinta Ace — CU-GH08 — waarschuwingen",
+      "sourceClass": "A",
+      "table": 43,
+      "scope": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 43. A is een waarschuwing waarbij de ketel volgens tabel 42 kan blijven werken; de oorzaak vraagt beoordeling en de melding kan escaleren. Deze tabel bevat 14 meldingen; dat is geen volledige merkdekking. De handleiding is gebaseerd op CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit bewijst niet welke software uw toestel gebruikt. Een SCB-10-uitbreiding hangt af van de installatie (p. 33; Performance-uitvoering p. 76), dit is geen volledige afzonderlijke lijst voor SCB-10. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Exacte product- en serienummers, toepassing op uw eigen toestel en bediening en de nieuwste handleiding zijn hier niet vastgesteld. Vergelijk uw eigen model- en bedieningshandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Quinta Ace 45–115 installatie- en gebruikershandleiding 7684362-v.05-10012019",
+      "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Quinta-Ace/NL/190110_IM_UM_Quinta-Ace-45-115-T-Control_NL.pdf",
+      "sourcePages": "tabel 43, p. 60–61",
+      "rows": [
+        {
+          "code": "A00.34",
+          "sourceClass": "A",
+          "printedPage": 60,
+          "meaning": "De regeling verwacht een buitentemperatuursensor, maar vindt die sensor niet. De code bewijst niet welke aansluiting of sensor defect is.",
+          "professionalBoundary": "Installateur bepaalt of de verwachte sensor aanwezig en correct aangesloten is; aansluiten of aansluiting herstellen hoort bij die controle.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de volledige code en of ze na een bekende installatie- of onderhoudswijziging verscheen; geef dit door zonder de sensor of bedrading te onderzoeken. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 60"
+        },
+        {
+          "code": "A00.42",
+          "sourceClass": "A",
+          "printedPage": 60,
+          "meaning": "De regeling verwacht de waterdruksensor, maar krijgt geen detectie daarvan. Dit is een detectiemelding, geen bewijs van een bepaalde werkelijke waterdruk.",
+          "professionalBoundary": "Installateur controleert aanwezigheid en correcte aansluiting van de sensor.",
+          "userAction": "Lees de volledige zichtbare code. Fotografeer de zichtbare melding en meld wanneer ze begon; verricht zelf geen drukmeting, bijvulling of aansluitingscontrole. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 60"
+        },
+        {
+          "code": "A01.23",
+          "sourceClass": "A",
+          "printedPage": 60,
+          "meaning": "De bron meldt een ongunstige verbranding. De oplossingskolom behandelt hierbij vlamwegval tijdens werking en ontbrekende ionisatiestroom.",
+          "professionalBoundary": "Beoordeling van gasaanvoer, gasblok, verbrandingslucht, rookgasafvoer en recirculatie behoort volledig aan de vakman.",
+          "userAction": "Lees de volledige zichtbare code. Meld de exacte code en of verwarming of warm water merkbaar wegviel; zoek zelf niet naar een vlam en raak gas- of rookgasdelen niet aan. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 60"
+        },
+        {
+          "code": "A02.06",
+          "sourceClass": "A",
+          "printedPage": 60,
+          "meaning": "Een waarschuwing over waterdruk is actief. De oplossingskolom noemt een te lage druk als te onderzoeken toestand.",
+          "professionalBoundary": "De vakman beoordeelt de installatiedruk en oorzaak; de code alleen stelt geen oorzaak vast en geeft hier geen klantprocedure voor vullen.",
+          "userAction": "Lees de volledige zichtbare code. Geef code, tijdstip en eventueel merkbaar verminderde verwarming door; verander niets aan de waterinstallatie. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 60"
+        },
+        {
+          "code": "A02.36",
+          "sourceClass": "A",
+          "printedPage": 60,
+          "meaning": "Een functioneel apparaat is losgekoppeld; de tabel behandelt een SCB die niet wordt gevonden.",
+          "professionalBoundary": "Een professional onderzoekt SCB-bedrading en connectoren en beoordeelt eventuele SCB-vervanging.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en welke gewone verwarmingsfunctie niet meer beschikbaar lijkt; maak de behuizing niet open. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 60"
+        },
+        {
+          "code": "A02.37",
+          "sourceClass": "A",
+          "printedPage": 61,
+          "meaning": "Een niet-kritisch apparaat is losgekoppeld; ook hier behandelt de tabel een niet gevonden SCB. Niet-kritisch betekent niet dat de oorzaak al bekend is.",
+          "professionalBoundary": "SCB-verbindingen en een eventueel defecte SCB worden door de professional gecontroleerd.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de code en of ze volgde op een bekende wijziging aan de installatie; geef dat aan de installateur door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 61"
+        },
+        {
+          "code": "A02.45",
+          "sourceClass": "A",
+          "printedPage": 61,
+          "meaning": "De CAN-verbindingsmatrix is vol. De bron koppelt haar oplossingskolom aan het niet vinden van een SCB.",
+          "professionalBoundary": "De bron noemt automatische detectie door de professional; niet eigenmachtig vertalen naar bedrading repareren, geheugen vervangen of klantconfiguratie.",
+          "userAction": "Lees de volledige zichtbare code. Bewaar een foto van de melding en meld recente bekende installatiewijzigingen; laat detectie of instellingen aan de installateur. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 61"
+        },
+        {
+          "code": "A02.46",
+          "sourceClass": "A",
+          "printedPage": 61,
+          "meaning": "De CAN-administratie voor apparaten is vol. De oplossingskolom verwijst naar een niet gevonden SCB.",
+          "professionalBoundary": "Professionele automatische detectie is de genoemde remedie; de bron bewijst geen specifieke kapotte print.",
+          "userAction": "Lees de volledige zichtbare code. Geef de volledige code en bekende voorgeschiedenis door; wijzig geen aangesloten apparatuur of configuratie. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 61"
+        },
+        {
+          "code": "A02.48",
+          "sourceClass": "A",
+          "printedPage": 61,
+          "meaning": "Er is een configuratiefout in een functiegroep. De bron behandelt daarbij een niet gevonden SCB.",
+          "professionalBoundary": "Een vakman voert de in de tabel genoemde automatische detectie uit en beoordeelt de apparaatconfiguratie.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en of een zone of warmwaterfunctie anders werkt dan voordien; herstel geen instellingen zelf. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 61"
+        },
+        {
+          "code": "A02.49",
+          "sourceClass": "A",
+          "printedPage": 61,
+          "meaning": "Het initialiseren van een node is mislukt. De oplossingskolom behandelt een niet gevonden SCB.",
+          "professionalBoundary": "De bron noemt automatische detectie als professionele stap. Geen bewijs van een bepaalde defecte node of universele herstelactie.",
+          "userAction": "Lees de volledige zichtbare code. Noteer of de melding bij een gewone start of na recent bekend onderhoud verscheen en geef dit door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 61"
+        },
+        {
+          "code": "A02.55",
+          "sourceClass": "A",
+          "printedPage": 61,
+          "meaning": "Het serienummer van het apparaat ontbreekt of wordt als ongeldig gezien.",
+          "professionalBoundary": "De fabrikant verwijst naar de leverancier; identiteit/configuratie laten beoordelen, geen serienummer laten invoeren door de klant.",
+          "userAction": "Lees de volledige zichtbare code. Stuur de code en alleen veilig reeds beschikbare toestelgegevens of bestaande documentatie naar de leverancier. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 61"
+        },
+        {
+          "code": "A02.69",
+          "sourceClass": "A",
+          "printedPage": 61,
+          "meaning": "De demomodus is actief. De rij noemt een bedrijfsmodus, niet een bewezen defect.",
+          "professionalBoundary": "De tabel verwijst naar de leverancier; de klant krijgt geen handeling om demo te verlaten.",
+          "userAction": "Lees de volledige zichtbare code. Geef de melding aan de leverancier door. Voer geen reset, stroomonderbreking of configuratiewijziging uit. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 61"
+        },
+        {
+          "code": "A02.76",
+          "sourceClass": "A",
+          "printedPage": 61,
+          "meaning": "De gereserveerde opslagruimte voor aangepaste parameters is vol; gebruikerswijzigingen zijn daardoor niet meer mogelijk. Dit is geen bewering van een RAM-defect.",
+          "professionalBoundary": "De tabel noemt configuratieherstel van CN1/CN2, beoordeling/vervanging van CSU en eventueel CU-GH. Dit is uitsluitend professioneel werk en geen vastgestelde defectdiagnose.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en welke wijziging niet meer kon worden opgeslagen; herhaal geen instelwijzigingen en laat de configuratie beoordelen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 61"
+        },
+        {
+          "code": "A08.02",
+          "sourceClass": "A",
+          "printedPage": 61,
+          "meaning": "De voor het douchen gereserveerde tijd is verstreken.",
+          "professionalBoundary": "De bron noemt korter douchen of parameter DP357 aanpassen; die parameterbeoordeling blijft bij de professional en mag niet als algemene storingsreset worden vertaald.",
+          "userAction": "Lees de volledige zichtbare code. Meld of de waarschuwing na een langere douche verscheen en geef de volledige code door; pas geen parameter aan. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 43, p. 61"
+        }
+      ]
+    },
+    {
+      "id": "remeha-quinta-ace-cu-blocking",
+      "title": "Quinta Ace — CU-GH08 — blokkeringen",
+      "sourceClass": "H",
+      "table": 44,
+      "scope": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 44. H is een blokkering; tabel 42 beschrijft hervatting als de blokkerende oorzaak is verdwenen, geen gegarandeerd automatisch herstel voor elke rij. H01.00 heeft een eigen communicatiebetekenis; H02.00 is een al actieve reset en H03.17 een lopende veiligheidscontrole. Deze tabel bevat 21 meldingen; dat is geen volledige merkdekking. De handleiding is gebaseerd op CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit bewijst niet welke software uw toestel gebruikt. Een SCB-10-uitbreiding hangt af van de installatie (p. 33; Performance-uitvoering p. 76), dit is geen volledige afzonderlijke lijst voor SCB-10. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Exacte product- en serienummers, toepassing op uw eigen toestel en bediening en de nieuwste handleiding zijn hier niet vastgesteld. Vergelijk uw eigen model- en bedieningshandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Quinta Ace 45–115 installatie- en gebruikershandleiding 7684362-v.05-10012019",
+      "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Quinta-Ace/NL/190110_IM_UM_Quinta-Ace-45-115-T-Control_NL.pdf",
+      "sourcePages": "tabel 44, p. 61–63",
+      "rows": [
+        {
+          "code": "H00.81",
+          "sourceClass": "H",
+          "printedPage": 61,
+          "meaning": "Een verwachte kamertemperatuursensor is niet gedetecteerd.",
+          "professionalBoundary": "De professional beoordeelt aanwezigheid en correcte aansluiting van de ruimtesensor.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de code en of een kamerregeling recent door een professional is gewijzigd; onderzoek de aansluiting niet zelf. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 61"
+        },
+        {
+          "code": "H01.00",
+          "sourceClass": "H",
+          "printedPage": 61,
+          "meaning": "Er is een communicatiefout opgetreden; de oplossingskolom lokaliseert die bij de veiligheidskern en noemt professionele herstart en mogelijke CU-GH-vervanging. De algemene H-klasse bewijst niet dat deze specifieke melding vanzelf herstelt.",
+          "professionalBoundary": "De bron noemt de ketel herstarten en CU-GH vervangen als professionele remedies. De algemene H-klasse rechtvaardigt geen belofte dat deze rij vanzelf herstelt.",
+          "userAction": "Lees de volledige zichtbare code. Leg de zichtbare code vast en meld duur en eventuele uitval; start, reset of onderbreek de voeding niet op basis van deze inventaris. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 61"
+        },
+        {
+          "code": "H01.05",
+          "sourceClass": "H",
+          "printedPage": 61,
+          "meaning": "Het maximaal toegelaten temperatuurverschil tussen aanvoer en retour is bereikt of overschreden.",
+          "professionalBoundary": "De vakman beoordeelt circulatie, pomp/kleppen/richting, druk en vervuiling van de warmtewisselaar, plus werking en montage van sensoren.",
+          "userAction": "Lees de volledige zichtbare code. Geef code en merkbare verwarmingsuitval door; manipuleer geen pomp, kleppen, sensoren of druk. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 61"
+        },
+        {
+          "code": "H01.08",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "De maximale temperatuurstijging van de warmtewisselaar is overschreden. De korte beschrijving luidt Delta T Max 3; deze nadere betekenis komt uit de oplossingskolom. De bron geeft geen tijds- of stijgsnelheidseenheid.",
+          "professionalBoundary": "Professionele controle van circulatie, druk, vervuiling, ontluchting en werking/montage van sensoren. Geen klantontluchting afleiden.",
+          "userAction": "Lees de volledige zichtbare code. Meld wanneer de code in gewone verwarmingswerking verscheen en of de warmteafgifte verminderde; laat de technische oorzaak beoordelen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H01.14",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "De aanvoertemperatuur is boven de maximale bedrijfswaarde gekomen.",
+          "professionalBoundary": "De vakman onderzoekt sensorverbindingen, circulatie, druk en vervuiling; de code bewijst op zichzelf niet welke daarvan de oorzaak is.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de code en het gewone gebruiksmoment waarop de verwarming wegviel; ga niet zelf temperatuurinstellingen of watercirculatie veranderen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H01.15",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "De rookgastemperatuur heeft de maximale bedrijfswaarde overschreden.",
+          "professionalBoundary": "Rookgasafvoersysteem, vervuiling aan de rookgaszijde van de warmtewisselaar en eventuele sensorvervanging zijn professioneel onderzoek.",
+          "userAction": "Lees de volledige zichtbare code. Geef code en tijdstip door; raak geen rookgasdelen aan en inspecteer ze niet. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H02.00",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "Er wordt een reset uitgevoerd; de resetprocedure is actief.",
+          "professionalBoundary": "De oplossingskolom vermeldt expliciet geen actie. Niet herinterpreteren als verzoek om nogmaals te resetten of als bewezen defect.",
+          "userAction": "Lees de volledige zichtbare code. Bewaar alleen de zichtbare melding. Voer geen extra reset of stroomonderbreking uit; meld aan de installateur als deze toestand langdurig blijft staan. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H02.02",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "De regeling wacht op het configuratienummer. De bron behandelt een onbekend nummer of configuratiefout.",
+          "professionalBoundary": "CN1/CN2 opnieuw instellen is een professionele configuratiestap.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en of de melding begon na bekend onderhoud; voer geen configuratienummer in. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H02.03",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "Er is een configuratiefout, met een onbekend configuratienummer als genoemde onderzoeksrichting.",
+          "professionalBoundary": "Alleen de professional beoordeelt en herstelt CN1/CN2.",
+          "userAction": "Lees de volledige zichtbare code. Geef de exacte code en bekende toestel-/regelaarinformatie uit bestaande documentatie door; wijzig niets in het installateursmenu. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H02.04",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "Er is een parameterfout; de tabel zegt dat de fabrieksinstellingen niet in orde zijn.",
+          "professionalBoundary": "Professionele remedies omvatten herstart, CN1/CN2 opnieuw instellen en mogelijke CU-GH-printvervanging. Het zijn geen klantstappen.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de code en bekende voorafgaande onderhouds- of instelwerkzaamheden; laat de parametercontrole aan de installateur. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H02.05",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "De CSU past niet bij het type CU. Dit is een configuratiemismatch, niet automatisch een bewezen kapotte CSU.",
+          "professionalBoundary": "De vakman beoordeelt de configuratie en stelt zo nodig CN1/CN2 volgens de bron opnieuw in.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en gegevens uit al beschikbare onderhoudsdocumenten door; open de ketel niet om printtypes vast te stellen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H02.09",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "Er is een gedeeltelijke blokkering van het apparaat. De bron noemt een blokkerende ingang of actieve vorstbeveiliging.",
+          "professionalBoundary": "Een professional beoordeelt externe oorzaak, ingestelde parameters en verbindingen; een beveiliging niet omzeilen.",
+          "userAction": "Lees de volledige zichtbare code. Meld welke normale functie nog wel of niet werkt en wanneer de code begon; verander geen externe schakeling of beveiliging. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H02.10",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "Er is een volledige blokkering. De blokkerende ingang is actief, in deze rij expliciet zonder vorstbeveiliging.",
+          "professionalBoundary": "Professionele beoordeling van externe oorzaak, parameters en verbindingen; geen vrijgave door de klant afleiden.",
+          "userAction": "Lees de volledige zichtbare code. Geef de volledige code en merkbare uitval door; laat de blokkerende ingang beoordelen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H02.12",
+          "sourceClass": "H",
+          "printedPage": 62,
+          "meaning": "Het verwachte vrijgavesignaal uit de externe apparaatomgeving is niet tijdig beschikbaar; de oplossingskolom zegt dat de wachttijd is verstreken.",
+          "professionalBoundary": "De vakman beoordeelt externe oorzaak, parameterinstelling en verbindingen.",
+          "userAction": "Lees de volledige zichtbare code. Noteer tijdstip en zichtbare code, en meld welke normale verwarmingsvraag er toen was; test of overbrug de externe vrijgave niet. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 62"
+        },
+        {
+          "code": "H02.38",
+          "sourceClass": "H",
+          "printedPage": 63,
+          "meaning": "De rij meldt dat er geen waterhardheid is. De remediekolom bevat alleen een streepje; de bron geeft geen verdere oorzaak, hardheidswaarde of herstelhandeling.",
+          "professionalBoundary": "De remediekolom bevat alleen een streepje. Geen hardheidswaarde, oorzaak, reparatie, sensor of instelprocedure verzinnen.",
+          "userAction": "Lees de volledige zichtbare code. Geef de exacte melding en het passende toesteltype door aan de installateur; verricht geen meting of instelling op basis van deze onuitgewerkte rij. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 63"
+        },
+        {
+          "code": "H02.70",
+          "sourceClass": "H",
+          "printedPage": 63,
+          "meaning": "Een test van het externe warmteterugwinningssysteem is mislukt.",
+          "professionalBoundary": "De vakman controleert het externe warmteterugwinningssysteem. De tabel identificeert geen specifiek onderdeel als defect.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code door en meld alleen wat al bekend is over een aangesloten extern warmteterugwinningssysteem; open of test het systeem niet. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 63"
+        },
+        {
+          "code": "H03.00",
+          "sourceClass": "H",
+          "printedPage": 63,
+          "meaning": "Veiligheidsparameters van niveaus 2, 3 en 4 ontbreken of kloppen niet.",
+          "professionalBoundary": "De bron behandelt een parameterfout in de veiligheidskern, met professionele herstart en mogelijke CU-GH-vervanging.",
+          "userAction": "Lees de volledige zichtbare code. Leg de code vast en meld uitval of recente bekende werkzaamheden; geen veiligheidsparameter wijzigen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 63"
+        },
+        {
+          "code": "H03.01",
+          "sourceClass": "H",
+          "printedPage": 63,
+          "meaning": "De gasklepregeling heeft geen geldige gegevens van de CU ontvangen.",
+          "professionalBoundary": "De tabel noemt een communicatiefout met CU-GH en een professionele herstart; geen klantreset of bewezen printdefect afleiden.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de code en het moment waarop ze verscheen; geef dit aan de installateur zonder communicatieverbindingen te onderzoeken. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 63"
+        },
+        {
+          "code": "H03.02",
+          "sourceClass": "H",
+          "printedPage": 63,
+          "meaning": "De gemeten ionisatiestroom ligt onder de grens. De oplossingskolom behandelt vlamwegval tijdens werking.",
+          "professionalBoundary": "Controle van gasaanvoer, gasblok, verbrandingslucht, rookgasafvoer en recirculatie is uitsluitend professioneel.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en eventueel opgemerkte onderbreking van warmte of warm water; probeer de vlam niet te observeren of te herstellen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 63"
+        },
+        {
+          "code": "H03.05",
+          "sourceClass": "H",
+          "printedPage": 63,
+          "meaning": "De gasklepregeling heeft een interne blokkering vastgesteld. De tabel koppelt dit aan een fout in de veiligheidskern.",
+          "professionalBoundary": "De genoemde herstart en mogelijke CU-GH-vervanging zijn professionele remedies; geen gasblokhandeling door de klant.",
+          "userAction": "Lees de volledige zichtbare code. Bewaar de code en meld merkbare uitval; raak geen gas- of elektrische delen aan. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 63"
+        },
+        {
+          "code": "H03.17",
+          "sourceClass": "H",
+          "printedPage": 63,
+          "meaning": "Er wordt een periodieke veiligheidscontrole uitgevoerd; de betekenis beschrijft een controletoestand, geen bewezen defect. Dezelfde bron noemt tegelijk professionele herstart en CU-GH-vervanging in de remediekolom. Alleen de professional beoordeelt een aanhoudende of terugkerende melding; de bron noemt geen duurgrens.",
+          "professionalBoundary": "De bron noemt tegelijk herstart en CU-GH-vervanging in de remediekolom. Deze spanning niet wegschrijven: alleen een professional beoordeelt een aanhoudende of terugkerende melding.",
+          "userAction": "Lees de volledige zichtbare code. Observeer alleen of de zichtbare melding kortstondig of aanhoudend is en geef dat zo nodig door; onderbreek de controle niet en voer geen reset uit. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 44, p. 63"
+        }
+      ]
+    },
+    {
+      "id": "remeha-quinta-ace-cu-locking",
+      "title": "Quinta Ace — CU-GH08 — vergrendelingen",
+      "sourceClass": "E",
+      "table": 45,
+      "scope": "Uitsluitend Quinta Ace 45, 65, 90 en 115 voor België, CU-GH08, gecombineerd installatie- en gebruikersboek 7684362-v.05-10012019, tabel 45. E is een vergrendeling. Tabel 42 beschrijft herstel van de oorzaak en handmatige reset als professionele context, geen klantstap. Deze tabel bevat 25 meldingen; dat is geen volledige merkdekking. De handleiding is gebaseerd op CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en SCB-10 software 0.5 (tabel 1, p. 12); dit bewijst niet welke software uw toestel gebruikt. Een SCB-10-uitbreiding hangt af van de installatie (p. 33; Performance-uitvoering p. 76), dit is geen volledige afzonderlijke lijst voor SCB-10. Niet voor Quinta Ace 160, andere revisies of Luxemburg. Exacte product- en serienummers, toepassing op uw eigen toestel en bediening en de nieuwste handleiding zijn hier niet vastgesteld. Vergelijk uw eigen model- en bedieningshandleiding; lees de volledige displaycode. Professionele remedies zijn geen gebruikersprocedure: deze tabellen geven geen druk-, vul-, ontluchtings-, reset-, stroomonderbrekings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Quinta Ace 45–115 installatie- en gebruikershandleiding 7684362-v.05-10012019",
+      "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Quinta-Ace/NL/190110_IM_UM_Quinta-Ace-45-115-T-Control_NL.pdf",
+      "sourcePages": "tabel 45, p. 63–66",
+      "rows": [
+        {
+          "code": "E00.04",
+          "sourceClass": "E",
+          "printedPage": 63,
+          "meaning": "De retourtemperatuursensor is weggenomen of geeft een waarde onder het meetbereik. De oplossingskolom noemt een open sensorcircuit.",
+          "professionalBoundary": "Een professional onderzoekt verbindingen, sensormontage en eventuele vervanging. Geen uitleg over een opstartbedrijfstoestand toevoegen.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en datum/tijd door; controleer of verplaats de sensor niet zelf. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 63"
+        },
+        {
+          "code": "E00.05",
+          "sourceClass": "E",
+          "printedPage": 63,
+          "meaning": "De retourtemperatuursensor heeft een kortsluiting of geeft een waarde boven het meetbereik.",
+          "professionalBoundary": "De professional beoordeelt bedrading/connectoren, montage en mogelijke sensorvervanging.",
+          "userAction": "Lees de volledige zichtbare code. Fotografeer de melding en meld de uitval; neem geen sensor- of elektrische meting. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 63"
+        },
+        {
+          "code": "E00.06",
+          "sourceClass": "E",
+          "printedPage": 63,
+          "meaning": "Een retourtemperatuursensor wordt verwacht, maar niet gedetecteerd. Dit is geen beschrijving van normaal opstartgedrag.",
+          "professionalBoundary": "De vakman controleert verbindingen en een mogelijke defecte sensor. De bron noemt hier geen minimumwaarde of startup-betekenis.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de volledige code en bekende voorafgaande onderhoudswerkzaamheden; open het toestel niet. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 63"
+        },
+        {
+          "code": "E00.07",
+          "sourceClass": "E",
+          "printedPage": 64,
+          "meaning": "De handleiding omschrijft het temperatuurverschil op twee manieren: in de beschrijving gaat het om een te groot verschil in retourtemperatuur, terwijl de oplossingskolom een te groot verschil tussen aanvoer en retour noemt. Laat de installateur beoordelen wat deze melding bij uw toestel betekent.",
+          "professionalBoundary": "Professionele beoordeling van circulatie, ontluchting, druk, keteltypeparameter indien aanwezig, pomp, warmtewisselaar, sensoraansluiting/montage en eventuele sensorvervanging. Geen van deze handelingen is een klantstap.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en eventuele verwarmingsuitval door; presenteer niet zelf een berekend aanvoer-/retourverschil of een zekere oorzaak. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 64"
+        },
+        {
+          "code": "E00.16",
+          "sourceClass": "E",
+          "printedPage": 64,
+          "meaning": "De temperatuursensor van de sanitair-warmwatertank is weggenomen of geeft een waarde onder het meetbereik; de bron behandelt een open boilersensor.",
+          "professionalBoundary": "De professional onderzoekt sensorverbindingen en eventuele vervanging.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en of de warmwatervoorziening merkbaar veranderde; open de boiler/sensoraansluiting niet. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 64"
+        },
+        {
+          "code": "E00.17",
+          "sourceClass": "E",
+          "printedPage": 64,
+          "meaning": "De temperatuursensor van de sanitair-warmwatertank is kortgesloten of geeft een waarde boven het meetbereik.",
+          "professionalBoundary": "Professionele controle van verbindingen en mogelijke sensorvervanging.",
+          "userAction": "Lees de volledige zichtbare code. Geef de volledige code en gewone gebruikscontext door; geen weerstand-, aansluitings- of temperatuurtest uitvoeren. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 64"
+        },
+        {
+          "code": "E01.04",
+          "sourceClass": "E",
+          "printedPage": 64,
+          "meaning": "Er zijn vijf ongewenste gevallen van vlamverlies opgetreden volgens displaytekst en remediekolom. De beschrijvingskolom bevat de afwijkende bronformulering ‘5x fout onbedoeld foutverlies opgetreden’; de kolommen stemmen niet letterlijk overeen.",
+          "professionalBoundary": "Controle van gasaanvoer, gasblok, lucht-/rookgasroutes en recirculatie gebeurt door de professional.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en opgemerkte onderbrekingen van warmte; lok geen nieuwe start of vlamtest uit. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 64"
+        },
+        {
+          "code": "E01.11",
+          "sourceClass": "E",
+          "printedPage": 64,
+          "meaning": "Het ventilatortoerental ligt buiten het normale werkingsbereik.",
+          "professionalBoundary": "De vakman beoordeelt verbindingen, een mogelijke defecte ventilator en onbedoeld draaien door te sterke schoorsteentrek.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en eventuele reeds opgemerkte ongewone geluiden door; raak ventilator of rookgasdelen niet aan. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 64"
+        },
+        {
+          "code": "E01.12",
+          "sourceClass": "E",
+          "printedPage": 64,
+          "meaning": "De gemeten retourtemperatuur is hoger dan de gemeten aanvoertemperatuur. De remediekolom noemt verwisselde aanvoer/retour als onderzoeksrichting, niet als al bewezen oorzaak.",
+          "professionalBoundary": "Professionele controle van verbindingen, stroomrichting/pomp/kleppen, sensormontage en sensorweerstand, met eventuele vervanging.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de code en wanneer de verwarming uitviel; verwissel zelf geen aansluitingen en verander geen circulatie. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 64"
+        },
+        {
+          "code": "E01.24",
+          "sourceClass": "E",
+          "printedPage": 64,
+          "meaning": "Binnen 24 uur zijn meerdere verbrandingsfouten geregistreerd. De oplossingskolom behandelt een lage ionisatiestroom.",
+          "professionalBoundary": "Gasaanvoer, gasblok, luchttoevoer, rookgasafvoer en recirculatie laten beoordelen door de vakman.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en de ongeveer waargenomen begin- en herhalingsmomenten; probeer de storing niet door herstarten te reproduceren. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 64"
+        },
+        {
+          "code": "E02.13",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "Een ingang van de besturingsautomaat wordt door een externe toestand geblokkeerd.",
+          "professionalBoundary": "De professional onderzoekt de externe oorzaak en parameterinstelling. Geen instructie om een beveiliging te overbruggen.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en bekende recente veranderingen aan externe regeling door; wijzig die regeling of aansluiting niet zelf. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E02.15",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "De bron meldt een time-out voor/met de externe CSU; daarmee is niet vastgesteld dat de CSU zelf de melding uitzendt. De rij noemt geen minimale duur of andere numerieke grens.",
+          "professionalBoundary": "Professionele controle van bedrading/connectoren en beoordeling van mogelijke CSU-vervanging.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de volledige code en tijdstip; geef bekende onderhoudscontext door zonder een tijdsgrens of defecte CSU te veronderstellen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E02.17",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "De gasklepregeling heeft de toegestane terugmeldingstijd overschreden.",
+          "professionalBoundary": "De bron behandelt communicatie met de veiligheidskern, met professionele herstart en mogelijke CU-GH-vervanging.",
+          "userAction": "Lees de volledige zichtbare code. Leg de zichtbare code vast en meld de uitval; voer geen reset, voedingstest of gascontrole uit. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E02.35",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "Een kritisch veiligheidsapparaat is losgekoppeld.",
+          "professionalBoundary": "De tabel noemt een communicatiefout en automatische detectie door de professional. Een kritisch apparaat niet laten aansluiten of overbruggen door de klant.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en bekende voorafgaande werkzaamheden door; blijf uit de behuizing en laat het veiligheidsapparaat beoordelen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E02.47",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "De verbinding met een functiegroep is niet gelukt.",
+          "professionalBoundary": "De professional onderzoekt de ontbrekende functiegroep; de bron noemt automatische detectie, herstart en mogelijke CU-GH-vervanging.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en welke gewone installatie-/zonefunctie niet meer beschikbaar lijkt; wijzig geen functiegroep of printconfiguratie. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E04.00",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "Veiligheidsparameters van niveau 5 ontbreken of zijn onjuist.",
+          "professionalBoundary": "De oplossingskolom noemt CU-GH-vervanging. Geen CN-herprogrammering of algemene klantreset toevoegen als bronremedie voor deze rij.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en bestaande toestel-/onderhoudsdocumentatie aan de installateur; verander geen veiligheidsinstellingen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E04.01",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "De aanvoertemperatuursensor is kortgesloten of geeft een waarde boven het meetbereik.",
+          "professionalBoundary": "Professionele controle van verbindingen, montage en mogelijke vervanging van de sensor.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de code en opgemerkte verwarmingsuitval; onderzoek of meet de sensor niet. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E04.02",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "De aanvoertemperatuursensor is weggenomen of geeft een waarde onder het meetbereik; de bron behandelt een open sensorcircuit.",
+          "professionalBoundary": "De tabel noemt verbindingen controleren en mogelijke sensorvervanging door de professional.",
+          "userAction": "Lees de volledige zichtbare code. Bewaar de zichtbare melding en meld het beginmoment; geen sensoraansluiting losnemen of herstellen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E04.03",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "Een gemeten temperatuur is boven de veiligheidslimiet gekomen. De bronbeschrijving benoemt hier niet expliciet welk meetpunt.",
+          "professionalBoundary": "De vakman onderzoekt geen of te weinig circulatie, richting/pomp/kleppen, druk en warmtewisselaarvervuiling.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en merkbare uitval door; maak geen temperatuur-, druk- of circulatie-ingreep. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E04.07",
+          "sourceClass": "E",
+          "printedPage": 65,
+          "meaning": "Er is een afwijking tussen aanvoersensor 1 en aanvoersensor 2 vastgesteld. Dit gaat niet om aanvoer tegenover retour.",
+          "professionalBoundary": "Professionele beoordeling van sensorverbindingen en mogelijke vervanging.",
+          "userAction": "Lees de volledige zichtbare code. Meld de exacte code en tijdstip; verplaats of vergelijk zelf geen sensoren. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 65"
+        },
+        {
+          "code": "E04.10",
+          "sourceClass": "E",
+          "printedPage": 66,
+          "meaning": "Er zijn vijf mislukte branderstarts gedetecteerd. De bron splitst professionele diagnose op in geen vonk, wel vonk zonder vlam, en wel vlam met geen of te weinig ionisatie.",
+          "professionalBoundary": "Elektrische ontstekingsketen, elektrode/aarding/brander, gasvoorziening/gasblok, lucht-/rookgasroutes en eventuele CU-GH-vervanging zijn volledig professioneel; de drie takken zijn geen klanttest.",
+          "userAction": "Lees de volledige zichtbare code. Meld de code en of de gewone warmteaanvraag niet meer werd beantwoord; probeer geen extra start en zoek niet naar vonk of vlam. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 66"
+        },
+        {
+          "code": "E04.12",
+          "sourceClass": "E",
+          "printedPage": 66,
+          "meaning": "Voor de branderstart is een vals vlamsignaal vastgesteld. Dat bewijst niet dat de klant een werkelijke vlam kan of moet zien.",
+          "professionalBoundary": "De bron noemt nagloei/O2-afstelling, ionisatiemeting, elektrode, gasklep en ontstekingstrafo als professionele onderzoeks-/vervangingsrichtingen.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en tijdstip door; geen verbrandingstest of inspectie van de brander uitvoeren. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 66"
+        },
+        {
+          "code": "E04.13",
+          "sourceClass": "E",
+          "printedPage": 66,
+          "meaning": "Het ventilatortoerental valt buiten het normale werkingsbereik.",
+          "professionalBoundary": "De professional onderzoekt verbindingen, ongewenst draaien door schoorsteentrek en eventuele ventilatorvervanging.",
+          "userAction": "Lees de volledige zichtbare code. Meld code en reeds opgemerkte geluiden of uitval; raak geen ventilator of rookgasdelen aan. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 66"
+        },
+        {
+          "code": "E04.17",
+          "sourceClass": "E",
+          "printedPage": 66,
+          "meaning": "De aansturing van de gasklep is defect volgens de gemelde toestand. De code alleen bewijst niet welk fysiek onderdeel vervangen moet worden.",
+          "professionalBoundary": "De vakman onderzoekt bedrading/connectoren en beoordeelt mogelijke vervanging van het gasblok.",
+          "userAction": "Lees de volledige zichtbare code. Bewaar de melding en meld uitval; geen gas- of elektrische handeling uitvoeren. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 66"
+        },
+        {
+          "code": "E04.23",
+          "sourceClass": "E",
+          "printedPage": 66,
+          "meaning": "De gasklepregeling heeft intern vergrendeld.",
+          "professionalBoundary": "De tabel noemt een professionele herstart en mogelijke CU-GH-vervanging. Geen klantreset of gasblokhandeling afleiden.",
+          "userAction": "Lees de volledige zichtbare code. Geef de code en begin-/herhalingsmomenten door; laat de interne vergrendeling door de installateur beoordelen. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen.",
+          "sourcePage": "tabel 45, p. 66"
+        }
+      ]
+    }
+  ],
+  "warning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld. Quinta Ace 45/65/90/115 heeft drie eigen CU-GH08-tabellen uit het Belgische Nederlandstalige installatie- en gebruikersboek 7684362-v.05-10012019: waarschuwingen (A), blokkeringen (H) en vergrendelingen (E). De 60 meldingen horen bij deze editie, niet bij Quinta Ace 160, andere edities of Luxemburg. Controleer of uw eigen toestel en bediening bij deze handleiding horen; de gebruikte software en aanwezige uitbreidingen verschillen per installatie. De actuele toepasbaarheid en nieuwste handleiding zijn hier niet vastgesteld. Lees en noteer de zichtbare melding en gewone gebruikscontext; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen.",
+  "page": {
+    "path": "/foutcodes/remeha",
+    "lastModified": "2026-10-13",
+    "status": "published",
+    "title": "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta | AB Service",
+    "description": "Zoek Remeha foutcodes per Avanta-, Calenta-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie, volledige melding en veilige vervolgstap.",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  "expectedManifestCounts": {
+    "guides": 13,
+    "catalogAssignments": 47,
+    "distinctCatalogs": 41,
+    "displayedExplanationRows": 1858,
+    "distinctCatalogExplanationRows": 1616,
+    "distinctCatalogSourceURLs": 23
+  },
+  "manifestPurposeSuffix": " Task84 adds only three Quinta Ace CU-GH08 catalogs from the Belgian Dutch combined2019book, 14A21H25E literal rows; no current firmware/device fit or newest claim.",
+  "manifestCountSuffix": " The60 Quinta Ace rows include warnings and procedure/check states; they are not60 proven faults, search demand or whole-brand coverage.",
+  "before": {
+    "warning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace, Quinta en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld.",
+    "page": {
+      "path": "/foutcodes/remeha",
+      "lastModified": "2026-10-12",
+      "status": "published",
+      "title": "Remeha foutcodes: Avanta, Calenta en Tzerra | AB Service",
+      "description": "Zoek Remeha foutcodes per Avanta-, Calenta- of Tzerra Ace-Matic-bron. Bekijk model, revisie, volledige melding en veilige vervolgstap; geen universele diagnose.",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    "metadata": {
+      "title": "Remeha foutcodes: Avanta, Calenta en Tzerra | AB Service",
+      "description": "Zoek Remeha foutcodes per Avanta-, Calenta- of Tzerra Ace-Matic-bron. Bekijk model, revisie, volledige melding en veilige vervolgstap; geen universele diagnose.",
+      "alternates": {
+        "canonical": "https://www.abservice24.be/foutcodes/remeha"
+      },
+      "robots": {
+        "index": true,
+        "follow": true,
+        "googleBot": {
+          "index": true,
+          "follow": true,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+          "max-video-preview": -1
+        }
+      },
+      "openGraph": {
+        "title": "Remeha foutcodes: Avanta, Calenta en Tzerra | AB Service",
+        "description": "Zoek Remeha foutcodes per Avanta-, Calenta- of Tzerra Ace-Matic-bron. Bekijk model, revisie, volledige melding en veilige vervolgstap; geen universele diagnose.",
+        "url": "https://www.abservice24.be/foutcodes/remeha",
+        "siteName": "AB Service",
+        "locale": "nl_BE",
+        "type": "website",
+        "images": [
+          {
+            "url": "https://www.abservice24.be/social/foutcodes/remeha",
+            "width": 1200,
+            "height": 630,
+            "alt": "Remeha foutcodes: Avanta, Calenta en Tzerra — AB Service"
+          }
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Remeha foutcodes: Avanta, Calenta en Tzerra | AB Service",
+        "description": "Zoek Remeha foutcodes per Avanta-, Calenta- of Tzerra Ace-Matic-bron. Bekijk model, revisie, volledige melding en veilige vervolgstap; geen universele diagnose.",
+        "images": [
+          "https://www.abservice24.be/social/foutcodes/remeha"
+        ]
+      }
+    },
+    "guideCount": 16,
+    "explanationRows": 756,
+    "manifestCounts": {
+      "guides": 13,
+      "catalogAssignments": 44,
+      "distinctCatalogs": 38,
+      "displayedExplanationRows": 1798,
+      "distinctCatalogExplanationRows": 1556,
+      "distinctCatalogSourceURLs": 22
+    },
+    "manifestSnapshotCount": 24,
+    "preservation": {
+      "remehaCatalogs": "7702faa031b2c4ee6d1500db85d73554aaaf7fa4e1785ea008e57d26bd72fd1b",
+      "otherGuides": "50de5d8beb2929eb5cb2c719bd61dd38706107b4c3cdfa4411f5fc5e73324f4f",
+      "allGuides": "fd3d6a05468ed77381e62942c28ad12aa8ffd0a0bffbfab6506044580f007a81",
+      "otherRegistry": "f44a4496ae8cbb7babb34940a372a7faddbf6935c53bf995dbcee949490adb18",
+      "allRegistry": "10b0c01e477ea6ef912e936191cd2ace0175ed2b73929fa0f70f9305f7648e07",
+      "remehaHtml": "8def8d248a34b2b82b093d010c1d7c1f2c06e7ee61cca7cb43858e64cddaa1af",
+      "allManifest": "a3186e53577bbb7836cde9c42490d830e32e3a05beafb9788c0cbfcefe3df98e",
+      "allSnapshots": "99884e9a8e69c3236df5128270bed401c61620c8fb9f4c53ccf5bf386691793d",
+      "allManifestEntries": "d97317196f8b1bc6d863aa92ea79686281fcef81a65b7f6102ee41d2fc545c29"
+    }
+  }
+}

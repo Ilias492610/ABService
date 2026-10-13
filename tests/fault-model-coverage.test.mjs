@@ -1,13 +1,15 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { faultGuides } from "../content/fault-guides.mjs";
+import { faultGuides as liveFaultGuides } from "../content/fault-guides.mjs";
+import {beforeQuintaGuide,beforeQuintaManifest} from "./fixtures/quinta-ace-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeQuintaGuide);
 import { boschBoundaryFacts } from "./fixtures/bosch-junkers-source-boundaries.mjs";
 import { acvFacts } from "./fixtures/acv-prestige-source-safety.mjs";
 import { intergasFacts } from "./fixtures/intergas-prestige-source-context.mjs";
 import { nefitFacts } from "./fixtures/nefit-proline-source-safety.mjs";
 
-const manifest = JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json", import.meta.url), "utf8"));
+const manifest = beforeQuintaManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json", import.meta.url), "utf8")));
 const catalogs = [...new Map(faultGuides.flatMap(g => g.catalogs.map(c => [c.id, c]))).values()];
 
 test("the bounded model inventory matches every real guide assignment, scope, source and row count", () => {

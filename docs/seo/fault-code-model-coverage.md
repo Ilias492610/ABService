@@ -1,5 +1,60 @@
 # WP07 — actuele model- en brondekking
 
+## 12 October 2026 — Task84 lokale Quinta Ace-broncohort
+
+De huidige machineleesbare inventaris telt 13 gidsen, 47 catalogustoewijzingen,
+41 afzonderlijke catalogi, 1.858 weergegeven uitlegregels en 1.616 regels zonder
+Bosch/Junkers-hergebruik, met 23 catalogusbron-URL’s en 25 bewaarde snapshots.
+Remeha heeft nu 19 catalogi/816 regels: de 16 bestaande catalogi/756 regels
+blijven behouden; drie Quinta Ace-tabellen voegen 14 A-, 21 H- en 25 E-regels toe.
+De oorspronkelijke 24 snapshots en alle 38 eerdere catalogusrecords blijven
+ongewijzigd; alleen het Remeha-gidsrecord volgt de nieuwe waarschuwing/aantallen.
+De hieronder bewaarde Task47–62-aantallen en releasebeschrijvingen zijn historische
+momentopnamen en certificeren de nieuwe lokale cohort niet.
+
+De daadwerkelijk gelinkte Belgische Nederlandstalige gecombineerde installatie-
+en gebruikershandleiding is `7684362 - v.05 - 10012019`, voor Quinta Ace
+45/65/90/115. Tabellen 43, 44 en 45 staan op gedrukte p. 60–66. De oorspronkelijke
+PDF telt 80 pagina’s/3.216.213 bytes, SHA-256
+`adb9bf172ee2d71173ea67d2ad60ef877c12688deac312af9ffcaea15d798fce`.
+Het bronregister voegt uitsluitend `remeha-quinta-ace-combined-pdf` toe; een
+eerdere gepinde hash bestaat hier niet (`expectedSha256`/`hashMatchesPriorRecord`
+blijven `null`). [Officiële productpagina](https://www.remeha.be/product/quinta-ace)
+is de bronherkomst; [de gecombineerde handleiding](https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaBE/RemehaBE/Documentatie/Consument/01---Gasketels/Quinta-Ace/NL/190110_IM_UM_Quinta-Ace-45-115-T-Control_NL.pdf)
+is het daadwerkelijk gelezen document, geen afzonderlijk gebruikersboek.
+
+| Nieuwe catalogus | Letterlijke bronregels | Gedrukte bronplaats |
+|---|---:|---|
+| `remeha-quinta-ace-cu-warnings` | 14 | tabel 43, p. 60–61 |
+| `remeha-quinta-ace-cu-blocking` | 21 | tabel 44, p. 61–63 |
+| `remeha-quinta-ace-cu-locking` | 25 | tabel 45, p. 63–66 |
+
+Tabel 1/p. 12 noemt CU-GH08 software 1.4, HMI T-control/MK3 software 1.29 en
+SCB-10 software 0.5 als bronbasis, geen actuele firmwarecompatibiliteit. SCB-10
+is configuratieafhankelijk (p. 33; Performance-uitvoering p. 76); geen aparte
+volledige SCB-10-tabel of aanwezigheid op iedere ketel is vastgesteld. Quinta
+Ace 160, Luxemburg, andere edities, individuele model-artikelparen, serials,
+actuele regelaar-/toestelfit en nieuwste editie zijn niet gedekt of vastgesteld.
+De 60 regels omvatten waarschuwingen en procedure-/controletoestanden; het zijn
+geen 60 bewezen defecten of bewijs van zoekvraag. Tabel 42-klassevoorbeelden en
+de laatste 32 opgeslagen fouten/status/substatus zijn geen extra diagnoserijen.
+
+Bronverschillen blijven zichtbaar: H01.00 betreft communicatie bij de
+veiligheidskern; H01.08 geeft geen stijgsnelheidseenheid; H02.00 is al actieve
+reset; H02.38 heeft alleen een streepje als remedie; H02.70 noemt externe
+warmteterugwinning; H03.17 is een lopende controle met tegelijk professionele
+herstart/vervanging in de remediekolom. E00.07 houdt retourverschil tegenover
+aanvoer/retourverschil zichtbaar; E01.04 bewaart de afwijkende beschrijvingscel;
+E02.15 bewijst geen emitter of duurgrens; E04.03 noemt geen precies meetpunt.
+Klanten lezen uitsluitend zichtbare meldingen, noteren gewone bekende context
+en dragen aanhoudende/herhaalde toestanden over aan een vakman. Technische
+remedies, vullen/ontluchten/reset/voeding/configuratie zijn geen klantprocedure.
+
+Dit is een lokale bronuitbreiding binnen WP07. Onafhankelijke review, build,
+browser-/crawlacceptatie en vrijgave blijven bij de hoofdonderzoeker; dit
+document sluit geen account-, veld-/AT-, Fransereview-, casebewijs-, index-,
+rangschikkings- of leadresultaatgate.
+
 ## 12 October 2026 — Task62 Calenta locally verified; Task61 released
 
 ### Current post-review correction phase

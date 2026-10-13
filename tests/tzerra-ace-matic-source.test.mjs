@@ -2,12 +2,19 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
 import {createHash} from "node:crypto";
-import {getFaultGuide,faultGuides} from "../content/fault-guides.mjs";
-import {getPageDefinition,pageRegistry} from "../content/site-content.mjs";
-import {buildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
+import {getFaultGuide as liveGetFaultGuide,faultGuides as liveFaultGuides} from "../content/fault-guides.mjs";
+import {getPageDefinition as liveGetPageDefinition,pageRegistry as livePageRegistry} from "../content/site-content.mjs";
+import {buildPageMetadata as liveBuildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
 import {filterFaultCatalogs} from "../libs/fault-search.mjs";
-import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {renderFaultGuide as liveRenderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
 import {getCitedSources} from "../libs/cited-sources.mjs";
+import {beforeQuintaGuide,beforeQuintaRegistry,beforeQuintaMetadata,beforeQuintaHtml,beforeQuintaManifest} from "./fixtures/quinta-ace-history.mjs";
+const faultGuides=liveFaultGuides.map(beforeQuintaGuide);
+const getFaultGuide=slug=>beforeQuintaGuide(liveGetFaultGuide(slug));
+const pageRegistry=livePageRegistry.map(beforeQuintaRegistry);
+const getPageDefinition=path=>beforeQuintaRegistry(liveGetPageDefinition(path));
+const buildPageMetadata=p=>beforeQuintaMetadata(liveBuildPageMetadata(p),p.path==="/foutcodes/remeha"?"remeha":"");
+const renderFaultGuide=async slug=>beforeQuintaHtml(await liveRenderFaultGuide(slug),slug);
 
 const f=JSON.parse(await readFile(new URL("./fixtures/tzerra-ace-matic-source-facts.json",import.meta.url),"utf8"));
 const guide=getFaultGuide("remeha");
@@ -109,7 +116,7 @@ test("new visible Tzerra companion links enter source monitoring under their act
 });
 
 test("Tzerra manifest retains both measured originals and explicit unknown article serial firmware newest fit",async()=>{
- const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));assert.deepEqual(m.counts,f.expectedManifestCounts);assert.equal(m.snapshots.length,24);
+ const m=beforeQuintaManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")));assert.deepEqual(m.counts,f.expectedManifestCounts);assert.equal(m.snapshots.length,24);
  for(const c of f.catalogs){const e=m.entries.find(e=>e.id===c.id);assert.ok(e,c.id);assert.equal(e.modelScope,c.scope);assert.equal(e.sourcePages,c.sourcePages);assert.deepEqual(e.models,f.models);assert.deepEqual(e.market,f.market);assert.equal(e.controller,"CU-GH16");assert.equal(e.explanationRowCount,c.rows.length);assert.equal(e.primarySnapshot,"remeha-tzerra-ace-matic-installer-pdf");assert.equal(e.companionSnapshot,"remeha-tzerra-ace-matic-user-pdf");for(const field of ["articleNumbers","modelArticlePairs","firmwareCompatibility","controllerVariantCoverage","customerDeviceCompatibility","newestEdition"])assert.equal(e[field],null,field);}
  for(const kind of ["installer","user"]){const s=m.snapshots.find(s=>s.id==="remeha-tzerra-ace-matic-"+kind+"-pdf");assert.ok(s,kind);assert.equal(s.sha256,f.sources[kind].sha256);assert.equal(s.byteLength,f.sources[kind].byteLength);assert.equal(s.pageCount,f.sources[kind].physicalPageCount);assert.equal(s.expectedSha256,null);assert.equal(s.hashMatchesPriorRecord,null);}
 });

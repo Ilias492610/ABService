@@ -1,5 +1,52 @@
 # AB Service SEO Content Inventory
 
+## 13 oktober 2026 — Task84 reviewcorrectie: lokale controle, release nog open
+
+De bronreview aanvaardt de 60 Quinta Ace-rijen. I1 krijgt een vroege Remeha-ingang
+naar de volledige veiligheidsmelding; M1 krijgt gewone klanttaal, zonder wijziging
+van oudere brongegevens. Op390px staat de link op619px; muis en natuurlijke
+Tab/Enter-route landen met de veiligheidssectie op142px onder de126px-header.
+De oude modeluitleg blijft zichtbaar. Root:606 tests geslaagd, lint0,
+productie-dependencyaudit0, build170 en lokale crawl82/93/112. Andere merk/default-
+markup en60 code/klasse/paginatuples behouden. Alleen Remeha krijgt de echte
+13oktober-wijzigingsdatum. Gerichte fixreview en exacte commit/hostedCI/provider/
+livecontrole blijven releasevoorwaarden; nog geen Task84-publicatie of IndexNow.
+Andere account-, eigenaar-, case-, Franse, veld-, toegankelijkheids- en effectgates
+blijven afzonderlijk open. De voorafgaande bewijslog blijft integraal bewaard.
+
+## 12 oktober 2026 — Task84 Quinta Ace lokale broninventaris
+
+Kandidaat `/foutcodes/remeha`:19catalogi/816verklaringen, waaronder60letterlijke
+Quinta Ace45/65/90/115 BE/nl CU-GH08-rijen uit 7684362-v.05-10012019 tabel43–45.
+De oorspronkelijke16catalogi/756rijen en overige12gidsen blijven behouden.
+Global13gidsen/47assignments/41catalogi/1858displayrijen/1616onderscheiden
+catalogusrijen/23catalogusbronURLs/25snapshots. Rijen omvatten waarschuwingen en
+procedurestaten, geen60bewezen defecten of zoekvragen. Softwarebronbasis is geen
+firmwarecompatibiliteit; geen artikel/serial/currentfit/latest/160/Lux-bewijs.
+Review en exacte productieacceptatie nog open; Calenta Ace-2018 alleen voorbereiding.
+
+## 12 oktober 2026 — Task83 liveinventaris bevestigd, Quinta nog voorbereiding
+
+Canonical `/foutcodes/remeha` is20:56Z werkelijk gecontroleerd op16catalogi/
+756verklaringen: alle97letterlijke Tzerra Ace-Matic CU-GH16-rijen,659bestaande
+rijen, vier velden per rij en juiste bronnen. Beide Tzerra-handleidingen zijn
+klikbaar in de huidige browser. Exactmain aa069d9/providerReady bevestigd.
+Dit vervangt alleen de gedateerde release-pendingwaarnemingen hieronder;
+geen volledige merk-, actuele toestelcompatibiliteits-, vraag- of indexeringsclaim.
+Quinta Ace blijft uitsluitend private bronvoorbereiding voor de volgende cohort.
+
+## 12 oktober 2026 — Task83 broncohort committed, liveinventaris afzonderlijk
+
+Main`aa069d9b695b68baf706ea03d3004d2c7d946ebf` bevat16 Remeha-tabellen/
+756verklaringen, waaronder97 CU-GH16 Tzerra Ace-Matic-bronrijen en beide
+klikbare officiële handleidingen. HostedCI585tests is groen. De werkelijk
+waargenomen canonical16:25Z bevat echter nog13tabellen/659rijen; de3nieuwe
+tabellen zijn niet live geaccepteerd. Geen complete merk-/model-/vraagclaim.
+Providerreleasegate/IndexNow blijven open tijdens het [platformincident](https://www.vercel-status.com/incidents/sps6n39gm4sg).
+Quinta Ace45/65/90/115, BE/nl, gecombineerd boek7684362-v.05-10012019:
+24scope-/diagnosepagina's door root gelezen, originele hash behouden.
+Dat is bronvoorbereiding, geen gepubliceerde catalogus of huidige toestelcompatibiliteit.
+
 ## 12 oktober 2026 — Task83 eindreview: companionbron hersteld, release nog open
 
 De enige onafhankelijke whole-cohortreview heeft alle97 Tzerra-betekenissen,

@@ -26,8 +26,13 @@ export default async function FaultGuidePage({ params }) {
   return (
     <>
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Foutcodes", path: "/foutcodes" }, { name: guide.brand, path: `/foutcodes/${guide.slug}` }]} />
-      <PageHero protectReading eyebrow={`${guide.brand} foutcodes`} title={`${guide.brand} foutcodes: catalogus met officiële bronnen`} intro={guide.modelWarning} ctaLabel="Bespreek uw storing" ctaHref={buildContactHref({ service: "Herstelling verwarming" })} />
-      <section className="section section-compact"><div className="shell narrow"><div className="warning-box"><strong>Veiligheid en modelcontrole</strong><p>Een code is geen diagnose. Controleer eerst merk, exacte modelaanduiding, bouwjaar en de volledige hoofd- en subcode. Reset niet herhaaldelijk en open geen verbrandings-, gas- of elektrische onderdelen. Bij gasgeur of een CO-melding verlaat u de onveilige ruimte en neemt u vanuit een veilige plaats contact op met de bevoegde hulpdienst; bij vermoeden van CO-vergiftiging of direct gevaar belt u 112. Bedien in een ruimte met gasgeur geen elektrische schakelaars of toestellen. Blijf uit een natte zone met elektrische delen en ga niet terug naar binnen voor foto’s.</p></div></div></section>
+      <PageHero protectReading eyebrow={`${guide.brand} foutcodes`} title={`${guide.brand} foutcodes: catalogus met officiële bronnen`} intro={guide.modelWarning} preIntro={guide.slug === "remeha" ? (
+        <div className="remeha-fault-entrance">
+          <p>Noteer uw volledige code en kies de toestelreeks die bij uw eigen handleiding hoort. Lees eerst de veiligheidsmelding; deze tabel vervangt geen beoordeling door een installateur.</p>
+          <a href="#remeha-foutcode-veiligheid" className="button button-secondary">Naar veiligheid en codezoeker</a>
+        </div>
+      ) : null} ctaLabel="Bespreek uw storing" ctaHref={buildContactHref({ service: "Herstelling verwarming" })} />
+      <section className={guide.slug === "remeha" ? "section section-compact remeha-fault-safety" : "section section-compact"} id={guide.slug === "remeha" ? "remeha-foutcode-veiligheid" : undefined}><div className="shell narrow"><div className="warning-box"><strong>Veiligheid en modelcontrole</strong><p>Een code is geen diagnose. Controleer eerst merk, exacte modelaanduiding, bouwjaar en de volledige hoofd- en subcode. Reset niet herhaaldelijk en open geen verbrandings-, gas- of elektrische onderdelen. Bij gasgeur of een CO-melding verlaat u de onveilige ruimte en neemt u vanuit een veilige plaats contact op met de bevoegde hulpdienst; bij vermoeden van CO-vergiftiging of direct gevaar belt u 112. Bedien in een ruimte met gasgeur geen elektrische schakelaars of toestellen. Blijf uit een natte zone met elektrische delen en ga niet terug naar binnen voor foto’s.</p></div></div></section>
       <section className="section fault-guide-reading">
         <div className="shell">
           <div className="fault-catalog-intro">

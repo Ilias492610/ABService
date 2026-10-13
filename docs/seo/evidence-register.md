@@ -1,5 +1,78 @@
 # Evidence Register
 
+## 13 oktober 2026 — Task84 reviewcorrectie: lokale controle, release nog open
+
+De bronreview aanvaardt de 60 Quinta Ace-rijen. I1 krijgt een vroege Remeha-ingang
+naar de volledige veiligheidsmelding; M1 krijgt gewone klanttaal, zonder wijziging
+van oudere brongegevens. Op390px staat de link op619px; muis en natuurlijke
+Tab/Enter-route landen met de veiligheidssectie op142px onder de126px-header.
+De oude modeluitleg blijft zichtbaar. Root:606 tests geslaagd, lint0,
+productie-dependencyaudit0, build170 en lokale crawl82/93/112. Andere merk/default-
+markup en60 code/klasse/paginatuples behouden. Alleen Remeha krijgt de echte
+13oktober-wijzigingsdatum. Gerichte fixreview en exacte commit/hostedCI/provider/
+livecontrole blijven releasevoorwaarden; nog geen Task84-publicatie of IndexNow.
+Andere account-, eigenaar-, case-, Franse, veld-, toegankelijkheids- en effectgates
+blijven afzonderlijk open. De voorafgaande bewijslog blijft integraal bewaard.
+
+## 12 oktober 2026 — Task84 Quinta Ace kandidaatbron, nog geen releasebewijs
+
+Bron: officiële Quinta Ace-productlink naar gecombineerd BE/nl installatie-/
+gebruikersboek7684362-v.05-10012019,45/65/90/115,80pagina's/3216213B/SHAadb9bf….
+Root24volledige bronpagina's en onafhankelijke60letterlijke tabelrijen behouden;
+freshGET200/hashgelijk. Tabellen43/44/45→14A/21H/25E, expliciete veilige
+klantobservaties. E00.07/E01.04 bronkolomverschillen, H02.38 onuitgewerkt en
+H03.17 procedure/remediespanning blijven zichtbaar. Source-softwarebaseline
+CU-GH08 1.4/MK3 1.29/SCB-10 0.5 is geen individuele firmwarefit; SCB conditioneel.
+Artikel/serial/currentdevice/newest/160/Lux blijven onbewezen. Lokale QA600/
+lint0/audit0/build170/crawl82-93-112 en proportionele browserwaarnemingen zijn
+kandidaatbewijs, geen providerReady/index/ranking/lead. Lange mobiele context
+expliciet ter review. Calenta Ace-2018 alleen verworven/read-only bronvoorbereiding.
+
+## 12 oktober 2026 — Task83 releasebewijs, ontvangst is geen zoekresultaat
+
+Provider CYYmTWsFWzzrpFg8XfUz3YPWpDBv toont exact aa069d9, Ready/Production en
+huidig www.abservice24.be. GitHubdeployment7023778117/state en commitstatus success.
+Root liveGET20:56Z verifieert alle16groepen/756rijen met vier velden/bronnen,
+waaronder97nieuwe Tzerra-rijen; onafhankelijke livecrawl82/93/112 exit0.
+Werkelijke desktop-/mobielbediening en lege contacthandoff gecontroleerd;
+schermafbeelding bewaard/bekeken. Eén gedocumenteerde gerichte eerste creatie
+in het bestaande project, geen nieuwe koppeling/grant of retry. De oorspronkelijke
+Git-eventoorzaak blijft onbekend. IndexNow HTTP200 is ontvangst voor één URL,
+geen huidige Google/Bing-indexering, vraag, ranking, lead of zakelijke uitkomst.
+Gedateerde accountwaarnemingen en alle verdere eigenaar-/publieke gates blijven.
+
+## 12 oktober 2026 — Task85: nieuwe accountwaarneming, oude crawlcontext
+
+Native ABDER-identiteit en exacte Bing www-property zijn opnieuw werkelijk
+gelezen: beheerder, sitemapSucces/79gevonden/0fouten/0waarschuwingen met
+10oktoberdatums. Remeha-URL rapporteert geïndexeerd maar laatste crawl
+26september13:40; geen actueel oktobercontent-/Tzerra-indexeringsbewijs.
+AI0/lege tabellen12juli–11oktober zijn beperkte platformdata, geen zoekvolume.
+Google-info toont opgeslagen SAB/no-location; eigenaar-SERP toont nog adres,
+zonder formeel moderatiebewijs. Geen publieke anonieme-/foto-/serviceacceptatie.
+Read-only root-AX plus afzonderlijke primaire Microsoft-broncontrole in private
+`task-85-account-observations.json`/`task-85-bing-observation-boundaries.md`;
+geen onafhankelijke browserreplay of screenshotarchief voor deze accountlezing.
+Geen save/submission/grant. Task83 blijft18:06Z659/0Tzerra/0providerrecords.
+Product- en bronbehoud18:24Z volledig gecontroleerd; geen nieuwe tests/build.
+
+## 12 oktober 2026 — Task83 GitHub/CI en nog ontbrekend productie-bewijs
+
+Gecontroleerdecommit`aa069d9b695b68baf706ea03d3004d2c7d946ebf`,
+bestaandmain/remote geverifieerd, hostedCI38274588568 success:
+585tests/0fail/0skipped, audit0,170outputs, crawl82/93/112.
+Tegenbewijs voor liveacceptatie: canonical16:25:58Z200/659rijen/
+0Tzerra-secties; exactSHA-deployment16:36Z0records; bestaandeprovider
+toont parented50f8b Ready. Geen indexverzoek, nieuwe publicatie- of uitkomstclaim.
+Root las [Vercels actuele incident](https://www.vercel-status.com/incidents/sps6n39gm4sg)
+16:28:51Z/HTTP200: update16:10UTC noemt GitHub-connected failures.
+Dit is platformbewijs, geen causaliteitsbewijs voor de exacte commit.
+Private `task-83-release-observations.md/.json` houden onderscheiden statussen,
+review/cleanup/volgende gate vast. Quinta-original3216213bytes/SHA
+`adb9bf172ee2d71173ea67d2ad60ef877c12688deac312af9ffcaea15d798fce`
+opnieuw geverifieerd;24volledige pagina's persoonlijk gelezen, private
+`task-84-quinta-root-read.md`. Nog geen geteste/uitgerolde Quinta-rijen.
+
 ## 12 oktober 2026 — Task83 eindreview: companionbron hersteld, release nog open
 
 De enige onafhankelijke whole-cohortreview heeft alle97 Tzerra-betekenissen,

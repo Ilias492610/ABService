@@ -1,5 +1,187 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 13 oktober 2026 — Task84 reviewcorrectie: lokale controle, release nog open
+
+De bronreview aanvaardt de 60 Quinta Ace-rijen. I1 krijgt een vroege Remeha-ingang
+naar de volledige veiligheidsmelding; M1 krijgt gewone klanttaal, zonder wijziging
+van oudere brongegevens. Op390px staat de link op619px; muis en natuurlijke
+Tab/Enter-route landen met de veiligheidssectie op142px onder de126px-header.
+De oude modeluitleg blijft zichtbaar. Root:606 tests geslaagd, lint0,
+productie-dependencyaudit0, build170 en lokale crawl82/93/112. Andere merk/default-
+markup en60 code/klasse/paginatuples behouden. Alleen Remeha krijgt de echte
+13oktober-wijzigingsdatum. Gerichte fixreview en exacte commit/hostedCI/provider/
+livecontrole blijven releasevoorwaarden; nog geen Task84-publicatie of IndexNow.
+Andere account-, eigenaar-, case-, Franse, veld-, toegankelijkheids- en effectgates
+blijven afzonderlijk open. De voorafgaande bewijslog blijft integraal bewaard.
+
+## 12 oktober 2026 — 21:14-heartbeat: Task84 lokale kandidaat binnen WP07
+
+Approved bestaande uitvoering hervat, geen nieuwe planronde of tweede schrijver.
+Pre-edit320tracked hashes, zes documentaire backfills, vier integrale bronnen en
+137checklistregels bewaard. Drie Quinta Ace45/65/90/115 BE/nl CU-GH08-tabellen
+uit gecombineerd7684362-v.05-10012019 voegen60letterlijke rijen toe (14A/21H/25E):
+kandidaat19/816Remeha, oude16/756behouden. EchteRED→GREEN;600tests/finale lint0/
+productie-dependency0/build170/lokale82-93-112 en desktop/mobiel/keyboard/lege
+contactoverdracht zonderoverflow/verzending. Fresh primairePDF200/hashgelijk.
+Lange mobiele broncontext explicietreviewpunt; geen nieuweLighthouse/field/ATclaim.
+Eén onafhankelijke whole-cohortreview, exactecommit/hosted/provider/canonicallive
+blijven gates. Task87 bracht Calenta Ace2018 alleen als onafhankelijke private
+bronvoorbereiding; root las13fullpages, geen nieuwe catalogus of vraag/fitclaim.
+Alle oorspronkelijke137afvinkregels en bredere eigenaar/account/Franse/field/
+AT/focus/source403/uitkomstgates blijven; geen geheleWP07 of andereWPafgerond.
+
+## 12 oktober 2026 — 20:42-heartbeat: Task83-releasegate werkelijk gesloten
+
+Begrensde build-/Production-/Git-deliverydiagnose vindt geen bewezen oorzaak;
+main/Automatic/geen skipfilter zijn gelezen zonder wijziging. ExactSHA-only
+NoResults en frisse40commithashes/CI-success vormen de grondslag voor één
+[ondersteunde gerichte Git-reference uitrol](https://vercel.com/docs/git#creating-a-deployment-from-a-git-reference)
+van dezelfde beoordeelde SHA in het bestaande project, onder standing publicatie-
+opdracht. Geen blinde retry, lege commit, nieuw project of rechten-/configwijziging.
+Provider CYYmTWsFWzzrpFg8XfUz3YPWpDBv Ready/Production/exact aa069d9/huidigwww;
+GitHub7023778117/status success. Live20:56Z alle16groepen/756rijen, waaronder97
+Tzerra-rijen en659oude, inclusief bronlinks/vier velden. Onafhankelijke livecrawl
+82/93/112 exit0; daadwerkelijke desktop/mobiel en lege contactoverdracht zonder
+verzending/overflow gecontroleerd. Eén IndexNow ontvangen200, geen indexerings-
+of resultaatbewijs. Dit sluit alleen Task83-release, niet geheelWP07 of andere
+werkpakketten; alle137afvinkregels behouden. Volgende: Task84 Quinta Ace45/65/90/115
+binnen de echte BE/nl/2019-bronafbakening, bestaande private voorbereiding hergebruiken.
+Alle overige account-/eigenaar-/Franse-/field-/AT-/bron403-/uitkomstgates blijven.
+
+## 12 oktober 2026 — 20:26-heartbeat: releasegate na platformherstel
+
+Beide officiële incidenten zijn resolved; exactTask83 blijft20:28Z nietlive:
+200/659oude rijen/geen Tzerra. Bestaande Vercel-productie ised50f8b Ready.
+Echte commitfilter met alleenSHA toont No Results;40recente teamactiviteiten
+hebben geen kandidaat of bewezen blokkadereden. Dit is geen volledige oorzaak.
+Read-only Git-controls en primaire documentatie gecontroleerd; geen save,
+heruitrol, rechtenwijziging of IndexNow. Tijdelijke tab gesloten. Vervolg:
+begrensde ontbrekende Git-event/creation-diagnose, daarna exacte provider/
+liveacceptatie. Geen nieuwe tracked cohort of afvinking; overige gates behouden.
+
+## 12 oktober 2026 — 20:11-heartbeat: platformprogressie apart van publicatie
+
+Vercels officiële incident is om 20:11Z resolved; GitHub nog investigating.
+Exacte Task83-providerrecords/statuses en nieuwe canonicalcopy ontbreken 20:12Z:
+200/659 oude rijen/geen Tzerra. Platformherstel is geen release- of indexeringsbewijs.
+Geen nieuwe cohort, heruitrol, accountactie of afvinking. Eerst exacte provider/
+liveacceptatie; bestaande eigenaar-, bron-, account- en uitkomstgates blijven open.
+
+## 12 oktober 2026 — 19:56-heartbeat: korte recovery
+
+Zelfde Task83-gate hervat; recente providercontrole niet herhaald. Geen nieuwe
+cohort of afvinking. Eerst exacte provider/liveacceptatie; overige gates open.
+
+## 12 oktober 2026 — 19:41-heartbeat: providercontrole aangevuld
+
+19:43Z geen exacte Task83-deployment/status; canonical 200/659 oude rijen/geen Tzerra.
+Het bestaande Vercel-project toont daadwerkelijk nog ed50f8b Ready/Production.
+Geen nieuwe kandidaat in de begrensde uitrollijst, geen volledige oorzaakdiagnose.
+Mac-native bediening was vergrendeld; bestaande Chrome-verbinding liet deze
+Vercel-controle zonder nieuwe login toe. Geen Google-actie in Hamdaoui's profiel,
+accountmutatie, heruitrol of IndexNow; tijdelijke tab gesloten. 19:50Z zijn vorige
+documentlichamen, HEAD/index, vier bronhashes en 137 checks behouden. Eerst
+exacte providerReady/liveacceptatie; volgende cohort en overige gates blijven open.
+
+## 12 oktober 2026 — 19:26-heartbeat: geen heruitvoering
+
+Hervat hetzelfde 19:24-checkpoint; recente externe waarnemingen niet herhaald.
+Geen nieuwe cohort of afvinking. Eerst exacte provider/liveacceptatie; bestaande
+eigenaar-, publieke account-, bron- en uitkomstgates blijven open.
+
+## 12 oktober 2026 — 19:08-heartbeat: provider/livegate blijft open
+
+Exacte Task83-SHA heeft 19:18Z geen providerrecords/statuses; canonical 200
+toont nog 659 oude rijen zonder Tzerra. Officiële incidenten blijven open.
+19:21Z herstelcontrole bewaart HEAD/index, vorige documentlichamen, vier
+bronhashes en 137 checks. Geen nieuwe cohort, tests/review, accountsave of
+submission. Eerst exacte liveacceptatie; bestaande bewijs-/uitkomstgates open.
+
+## 12 oktober 2026 — 18:53-heartbeat: korte recovery
+
+Hervat dezelfde Task83-releasegate vanuit het 18:51-checkpoint. Geen nieuwe
+externe waarneming of productcohort: recente controles hergebruikt. HEAD,
+lege index, vier integrale bronnen en 137 afvinkregels gecontroleerd. Eerst
+exacte provider/liveacceptatie; alle bestaande bewijs- en accountgates open.
+
+## 12 oktober 2026 — 18:34-heartbeat: dezelfde releasegate behouden
+
+Task83 blijft op dezelfde maincommit; om 18:41Z geen providerrecords/statuses
+en canonical 200 met 659 oude rijen, zonder Tzerra. De officiële platformupdate
+over vertraagde deploymentgebeurtenissen is geen oorzaakbewijs voor deze commit.
+Eén read-only onderzoeker controleerde beide incident-API's; root controleerde
+repositorybehoud en de echte pagina. Geen herreview, test/build, profielsave,
+submission, docs-only deploy of nieuwe productcohort. Om 18:48Z zijn alle
+320 tracked bytes, 40 geaccepteerde hashes, vier bronnen, 137 afvinkregels en
+de zes documentaire paden intact. Vorige note-lagen blijven volledig behouden.
+Eerstvolgende actie: exact providerReady/live/crawl/interacties; pas daarna
+volgende broncohort. Publieke account-, eigenaar-, Franse en uitkomstgates open.
+
+## 12 oktober 2026 — 17:50-heartbeat: Task85-accountlezing, gates afzonderlijk
+
+Abders bestaande profiel is opnieuw bruikbaar zonder nieuwe aanmelding/rechten.
+Bing beheerder en exactwww-sitemapSucces/79gevonden/0fouten/0waarschuwingen
+daadwerkelijk gelezen; indiening/crawl10oktober. Eén nieuwe Remeha-inspectie
+rapporteert geïndexeerd met laatste crawl26september13:40, dus geen bewijs voor
+oktobercopy/Tzerra. AI-rapport12juli–11oktober heeft0totalen/geen rijen; nog geen
+bruikbare vraag- of uitkomstbaseline. Google-info toont opgeslagen SAB/no-location,
+terwijl eigenaar-SERP nog adres toont. Geen formele moderatie-/anonieme publieke
+acceptatie, nieuwe detailtekst-/fotocontrole of save. Bing Places/Apple/KBO open.
+Een private onderzoeker begrenst interpretaties met primaire Microsoft-bronnen;
+geen productreview herhaald. 18:24Z behouden320tracked/40acceptedhashes/
+vier integrale bijlagen/137checks; geen checkbox toegevoegd of gesloten.
+Task83 blijft18:06Z nietlive:659oude Remeha-rijen/0Tzerra/geen providerrecords.
+Geen herindiening, IndexNow, nieuwe productcohort of docs-only deploy. Volgende:
+exactproviderReady/liveacceptatie; overige eigenaar/Franse/field/AT/uitkomstgates
+blijven open. Abders oorspronkelijke lege tab is zonder wijzigingen hersteld.
+
+## 12 oktober 2026 — 17:35: recovery, geen nieuwe acceptatie
+
+Hervat het17:32-checkpoint van dezelfde Task83commit. Geen nieuwe externe
+waarneming geclaimd: de recente providerprobe is hergebruikt, zonder identieke
+poll/review/tests/build/broninventaris of volgende productcohort te herhalen.
+HEAD/lege index/vier integrale bronhashes/137checks zijn17:38Z gecontroleerd.
+Alle release-, account-, bron-, eigenaar- en uitkomstgates blijven ongewijzigd.
+Eerstvolgende actie: passende provider/livecontrole; daarna pas volgende cohort.
+
+## 12 oktober 2026 — 17:00-heartbeat: bestaande releasegate, geen nieuwe afvinking
+
+ExacteTask83maincommit blijft `aa069d9b695b68baf706ea03d3004d2c7d946ebf`.
+Providerrecords/statuses blijven leeg; canonicalHTTP200 om17:17Z heeft659oude
+rijen/0Tzerra-secties. De officiële Vercel- en GitHubincidenten zijn nog open,
+zonder bewezen oorzaak voor deze commit. Geen redeploy/accountactie/IndexNow
+of tweede tracked productcohort. De40 geaccepteerde commithashes, alle320
+tracked bestanden, vier integrale bijlagen en137afvinkregels zijn gecontroleerd;
+alleen bestaande documentaire backfills plus deze twee additive runnotities.
+Geen nieuwe tests/build gedraaid of verse585tests-/liveclaim gedaan.
+Private Quinta-broninventaris heeft60 exact aan het origineel getoetste
+codes/klassen/volgorde/pagina's (14A/21H/25E). Root las de volledige onderzoekstabel
+en opnieuw alle diagnostische kolommen60–66 naast zijn eerdere24 volledige
+page-reads. DeltaTMax3 zonder snelheids-/tijdseenheid en de afwijkende
+E01.04-beschrijving blijven expliciet; geen modeloverdracht of consumentenremedie.
+Dit is bronvoorbereiding, niet Task84-acceptatie of volledigeWP07-afronding.
+Volgende onveranderd: exactproviderReady/canonical/interacties/crawl van Task83;
+pas daarna de volgende geteste broncohort. Externe/eigenaar/Franse/field-/AT-/
+focus-/Sibelga403-/zakelijke-uitkomstgates blijven open.
+
+## 12 oktober 2026 — WP07 Task83 reviewed/pushed; provider/livegate nog open
+
+De97 brongebonden Tzerra Ace-Matic-rijen plus beide handleidinglinks zijn
+onafhankelijk beoordeeld en in één rootcorrectiepass afgewerkt. Gecontroleerde
+main`aa069d9b695b68baf706ea03d3004d2c7d946ebf`/hostedCI38274588568:
+585tests, audit0,170outputs, hostedcrawl82/93/112. Dit is geen live-afvinkbewijs:
+canonical16:25Z heeft659oude rijen/geen nieuwe Tzerra-secties en exactSHA
+16:36Z geen waargenomen providerdeployment. [Vercels lopende
+GitHub-/buildincident](https://www.vercel-status.com/incidents/sps6n39gm4sg)
+ondersteunt wachten, niet een specifieke foutoorzaak of blind redeployen.
+Eerst exactSHA/providerReady/canonical+interacties/crawl bevestigen; dan één
+substantieve Remeha-IndexNow met geldig openbaar bewijs. Geen tweede tracked
+productcohort terwijl die releasegate open is. Intussen Quinta Ace-bronvoorbereiding:
+root24volledige scope-/diagnosepagina's gelezen, geen cataloguspublicatie.
+137afvinkregels/vier integrale bronbijlagen en alle eigenaar-/account-/Franse/
+field-/AT-/focus-/Sibelga403-/zakelijke-uitkomstgates behouden. Geen percentage,
+rankingbelofte of volledigeWP07-acceptatie. Deze documentaire backfill lokaal.
+
 ## 12 oktober 2026 — Task83 eindreview: companionbron hersteld, release nog open
 
 De enige onafhankelijke whole-cohortreview heeft alle97 Tzerra-betekenissen,

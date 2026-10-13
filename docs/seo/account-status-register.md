@@ -1,5 +1,71 @@
 # WP04–WP05: accountstatus en uitgevoerde acties
 
+## 13 oktober 2026 — Task84 reviewcorrectie: lokale controle, release nog open
+
+De bronreview aanvaardt de 60 Quinta Ace-rijen. I1 krijgt een vroege Remeha-ingang
+naar de volledige veiligheidsmelding; M1 krijgt gewone klanttaal, zonder wijziging
+van oudere brongegevens. Op390px staat de link op619px; muis en natuurlijke
+Tab/Enter-route landen met de veiligheidssectie op142px onder de126px-header.
+De oude modeluitleg blijft zichtbaar. Root:606 tests geslaagd, lint0,
+productie-dependencyaudit0, build170 en lokale crawl82/93/112. Andere merk/default-
+markup en60 code/klasse/paginatuples behouden. Alleen Remeha krijgt de echte
+13oktober-wijzigingsdatum. Gerichte fixreview en exacte commit/hostedCI/provider/
+livecontrole blijven releasevoorwaarden; nog geen Task84-publicatie of IndexNow.
+Andere account-, eigenaar-, case-, Franse, veld-, toegankelijkheids- en effectgates
+blijven afzonderlijk open. De voorafgaande bewijslog blijft integraal bewaard.
+
+## 12 oktober 2026 — Task84 kandidaat, geen nieuwe accountactie
+
+Quinta Ace-cohort is lokaal getest, niet daarmee gehost of geïndexeerd.
+Geen GBP/Bing/Apple/KBO-login/save/grant/request of outreach; Task85-waarnemingen
+blijven gedateerd. Remeha-Task83 eerdere IndexNowontvangst blijft afzonderlijk;
+geen Task84melding vóór review en exacte liveacceptatie. Publieke SAB-moderatie,
+Places/Apple/KBO-toegang en echte AI-/zoek-/leaduitkomsten blijven open.
+
+## 12 oktober 2026 — releasegrens bijgewerkt, accounts niet opnieuw gewijzigd
+
+Task83 staat nu werkelijk live op exact aa069d9/providerReady; één substantieel
+gewijzigde Remeha-URL is via IndexNow ontvangen200. Dit verandert niet de hieronder
+vastgelegde Bing-crawldatum26september of Google-moderatie-/adresstatus. Geen nieuwe
+accountlezing, profielsave, sitemapherindiening, OAuth/grant of eigenaarlogin.
+Indexering van de nieuwe rijcopy, Places/Apple/KBO en publieke acceptatie blijven open.
+
+## 12 oktober 2026 — Task85: Abders actuele Bing- en Google-uitlezing
+
+Tijdens de17:50-heartbeat is het bestaande ABDER-profiel via het zichtbare
+Chrome-profielenmenu geopend en de juiste Google-identiteit gelezen. Geen
+andere Google-account, nieuwe aanmelding, grant, import of rechtwijziging.
+Dit herstelt de bereikbare UI, niet een bewezen gewijzigde accountmachtiging.
+
+Bing toont `verified administrator`/Administrator voor de exacte
+`https://www.abservice24.be/`-scope. De bestaande sitemap heeft Succes,
+79 gevonden URL's, nul fouten/waarschuwingen; indiening én crawl staan op
+10 oktober. Dat zijn ontdekte URL's, niet79 geïndexeerde pagina's; de eerder
+publieke80-telling geeft zonder URL-/tijdmatch geen oorzaak of herindienreden.
+Een nieuwe read-only URL-inspectie van `/foutcodes/remeha` toont succesvol
+geïndexeerd, ontdekt26september en laatste crawl26september13:40. Dat bewijst
+geen indexering van oktoberuitbreidingen of de nog niet live Tzerra-rijen.
+Canonicalveld `- -`, crawl/fetch/indexing toegestaan; geen indexaanvraag gedaan.
+AI Performance voor12juli–11oktober/3M heeft0 citaties/0 gemiddeld geciteerde
+pagina's en geen query-/paginatabellen. Beperkte steekproef, geen globale AI-
+afwezigheid, vraag-/rankingmeting of bewezen effect. De48uur-Homemelding gaat
+over rapportverwerking, niet een gegarandeerde indexeringstermijn.
+[Microsoft onderscheidt sitemapstatus en laatste lezing](https://blogs.bing.com/webmaster/2025/7/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search/);
+[URL-inspectie](https://www.bing.com/webmasters/help/url-inspection-55a30305)
+is afzonderlijk van een indexeringsverzoek.
+
+Google-beheer van de juiste AB SERVICE-identiteit is weer uitleesbaar. Info
+toont Geen locatie. Alleen leveringen en diensten aan huis, juiste telefoon/
+site/WhatsApp en zeven24uurdagen. Geen beoordelingsmelding in dit beperkte
+paneel; geen formele moderatie- of publieke goedkeuringsclaim. De eigenaar-SERP
+toont nog Voorzorgstraat12A; geen nieuwe anonieme Mapscontrole uitgevoerd.
+Dienstenlijst toont de bestaande zes loodgietersdiensten en beide vier-entry
+verwarmingscategorieën. Geen detailtekst/save of publieke servicecontrole
+herhaald. Foto's/badge, Microsoft/Bing Places, Apple en KBO blijven open.
+Geen veldsave, nieuwe sitemap, indexaanvraag, recrawltest, OAuth/DNS/XML/grant,
+advertentie of bericht. Editor gesloten; oorspronkelijke lege Abder-tab hersteld.
+Private Task85-observaties bewaren bronweergave en grenzen; WP04/WP05 niet af.
+
 ## 12 oktober 2026 — Task81/82: accountgrenzen en Tzerra-bronvoorbereiding
 
 Abders bestaande native Chrome-venster is gebruikt; geen ander Google-account.

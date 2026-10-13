@@ -1,5 +1,99 @@
 # AB Service SEO QA Report
 
+## 13 oktober 2026 — Task84 reviewcorrectie: lokale controle, release nog open
+
+De bronreview aanvaardt de 60 Quinta Ace-rijen. I1 krijgt een vroege Remeha-ingang
+naar de volledige veiligheidsmelding; M1 krijgt gewone klanttaal, zonder wijziging
+van oudere brongegevens. Op390px staat de link op619px; muis en natuurlijke
+Tab/Enter-route landen met de veiligheidssectie op142px onder de126px-header.
+De oude modeluitleg blijft zichtbaar. Root:606 tests geslaagd, lint0,
+productie-dependencyaudit0, build170 en lokale crawl82/93/112. Andere merk/default-
+markup en60 code/klasse/paginatuples behouden. Alleen Remeha krijgt de echte
+13oktober-wijzigingsdatum. Gerichte fixreview en exacte commit/hostedCI/provider/
+livecontrole blijven releasevoorwaarden; nog geen Task84-publicatie of IndexNow.
+Andere account-, eigenaar-, case-, Franse, veld-, toegankelijkheids- en effectgates
+blijven afzonderlijk open. De voorafgaande bewijslog blijft integraal bewaard.
+
+## 12 oktober 2026 — Task84 lokale verificatie, onafhankelijke review volgt
+
+Writer585baseline; echte14RED(6pass/8verwachte assertions) vóór product. Copy-
+zelfreview1RED; eerste volledige suite599/600 met één historische zoek-count-
+adapterfout, expliciet behouden en via named beforeQuinta opgelost zonder oude
+756verwachting te wijzigen. Definitief600/600/0skipped; root finale lint0,
+productie-dependencyaudit0, build170 en kandidaatcrawl82/93/112. Geen install.
+Fresh fabrikantGET200/3216213B/SHAadb9bf… en80pagina's in behouden origineel.
+Root IAB1280×720/390×844: exacte A02.69/H01.00/E00.07/H02.38/H03.17/E04.07,
+modelwisseling H01.00 naar Tzerra geeft andere betekenis, onbekende melding0.
+Keyboardwissen herstelt25rijen; Tab naar select metsolid3pxoutline; geobserveerd
+native menustap gevolgd door ArrowUp/Enter→21blokrijen. Bronlinks aanwezig.
+Contact: eerste animatiepositie−26,25px, daarna142,75px onderheader126,59px;
+lege naam/e-mail/telefoon, consentuit, niets verstuurd, geenoverflow. Visueel
+nieuwe kaart/bronlink leesbaar; mobiele zoekpositie circa4154px door lange
+broncontext is expliciet reviewpunt. Geen fullkeyboard/physicalAT/Lighthouse/
+field/production/index/leadclaim. Tijdelijke tabs11/12gesloten/viewportreset.
+Alle23oude factfixtures bytegelijk; alleen oudehistoryhelper krijgt named inverse.
+Eén onafhankelijke whole-cohortreview en exacte release/liveacceptatie blijven gates.
+
+## 12 oktober 2026 — Task83 exacte productieacceptatie na gerichte uitrol
+
+Exact reviewed aa069d9/40commithashes opnieuw geverifieerd20:53Z; hostedCI
+38274588568 heeft success voor die SHA. Daterende585tests/lint/build170/audit0
+zijn niet opnieuw uitgevoerd in deze recoveryrun. Eén gerichte eerste creatie
+in bestaand Vercelproject: CYYmTWsFWzzrpFg8XfUz3YPWpDBv Ready/Production,
+huidig www-domein, bron exactSHA; GitHub7023778117/state en commitstatus success.
+Root canonicalGET20:56Z200: alle16groepen/756rijen, vier velden en bronnen
+gecontroleerd, inclusief97nieuwe Tzerra-rijen en659voorgaande rijen.
+Afzonderlijke read-only livecrawl20:55–20:57Z: exit0,82pagina's/93links/112assets.
+Werkelijke IAB1280×720 en390×844: vier exacte codes, onbekende melding, leegmaken
+naar46rijen en twee bronlinks; geen horizontale overflow. Mobiele contacthandoff
+21:01Z geeft Herstelling verwarming, formTop142,75px, lege naam/e-mail/telefoon,
+consentuit, niets verstuurd. Tijdelijke tabs gesloten en viewport hersteld.
+Geen nieuwe native-/AT-/focus-/veld-/Lighthouseclaim. Private exacte observaties
+staan in task-86-targeted-publication-observations.json; schermafbeelding bekeken.
+Eén IndexNow-URL ontvangen200 na publiek bewijs; indexering blijft onbevestigd.
+De oorzaak van ontbrekende automatische creatie is niet bewezen of 'gerepareerd'.
+
+## 12 oktober 2026 — Task85: actuele accountuitlezing, geen nieuwe release
+
+Native Chrome-profiel ABDER en Google-identiteit ABDER MADI daadwerkelijk gelezen;
+alleen dit profiel voor Bing/Google gebruikt. Bing User management bevestigt
+verified administrator voor `https://www.abservice24.be/`. Sitemap: 1 bekend,
+0 fouten, 0 waarschuwingen, 79 gevonden, Succes; beide datums 10 oktober.
+Remeha-URL Inspectie: succesvol geïndexeerd, crawl toegestaan/fetch geslaagd/
+indexering toegestaan; laatste crawl 26 september 13:40, ontdekt 26 september.
+Canonicalveld `- -`; geen huidige canonical uit dit lege veld afgeleid. UI meldt
+geen SEO/GEO-problemen en twee opmaaktypen; dit is geen volledige schema-/SEO-QA.
+Geen Live URL-test, View Indexed page of Indexering aanvragen aangeklikt.
+AI-rapport: 3 M, 12 juli–11 oktober, Microsoft Copilots en Partners, beide totalen
+0 en beide query-/paginatabellen No data available. Geen volwassen nulmeting.
+Google-bedrijfsinfo is weer uitleesbaar: Geen locatie, correcte contacten/24uur
+en opgeslagen beschrijving; geen beoordelingsmelding in die beperkte weergave.
+Eigenaar-SERP toont nog Voorzorgstraat12A. Dienstenlijst heeft de bestaande zes
+loodgietersdiensten en twee bestaande verwarmingscategorieën; detailteksten,
+publieke goedkeuring, anonieme Maps en fotoverwijdering hier niet opnieuw bewezen.
+Geen save/grant/submission. Editor gesloten; Abders lege tab hersteld.
+Task83 om18:06:04Z: canonical200/659/0Tzerra, exactSHA-deployments/statuses leeg.
+18:24:28Z: alle320 tracked bytes/40 geaccepteerde hashes/vier bronnen/137checks
+gecontroleerd vóór deze documentaire backfill, productbytes HEAD-gelijk.
+Geen nieuwe suite/build/audit/crawl; oude585-tests zijn gedateerd bewijs.
+
+## 12 oktober 2026 — Task83 releasegate blijft open ondanks groene hostedCI
+
+Exactmain`aa069d9b695b68baf706ea03d3004d2c7d946ebf` en
+CI38274588568 zijn bevestigd:585pass/0fail/0skipped, Node24.21.0,
+productieaudit0,170buildoutputs en hostedcrawl82/93/112. Native lokale
+desktop-/mobiele bron- en codechecks blijven gedateerd lokaal bewijs.
+CanonicalHTTP200 op16:25:58Z toont659oude Remeha-rijen/0nieuwe Tzerra-secties.
+ExactSHA-deployments16:36Z leeg; commitstatus16:25Z pending met0records;
+bestaand Vercel-overview toont parented50f8b Ready. Dus geen nieuwe756-regels
+livepass, hostedproviderReady, productie-interactie-/crawlpass of indexeringsclaim.
+[Officieel platformincident](https://www.vercel-status.com/incidents/sps6n39gm4sg)
+heeft16:10UTC nog GitHub-gerelateerde failures; specifieke uitroloorzaak onbekend.
+Geen workaround of IndexNow. Eén onafhankelijke review/één rootcorrectiepass;
+Sibelga403, field/AT/focus/account/uitkomstgates ongewijzigd. Tijdelijke testtab
+gesloten/viewportreset/server gestopt; oorspronkelijke native tabselectie niet
+bevestigd nadat bediening “Mac locked” meldde. Geen herhaalde accountvraag.
+
 ## 12 oktober 2026 — Task83 eindreview: companionbron hersteld, release nog open
 
 De enige onafhankelijke whole-cohortreview heeft alle97 Tzerra-betekenissen,

@@ -218,11 +218,11 @@ export const pageRegistry = Object.freeze([
   },
   {
     path: "/foutcodes/remeha",
-    lastModified: "2026-10-12",
+    lastModified: "2026-10-13",
     status: CONTENT_STATUS.PUBLISHED,
-    title: "Remeha foutcodes: Avanta, Calenta en Tzerra | AB Service",
+    title: "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta | AB Service",
     description:
-      "Zoek Remeha foutcodes per Avanta-, Calenta- of Tzerra Ace-Matic-bron. Bekijk model, revisie, volledige melding en veilige vervolgstap; geen universele diagnose.",
+      "Zoek Remeha foutcodes per Avanta-, Calenta-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie, volledige melding en veilige vervolgstap.",
     changeFrequency: "monthly",
     priority: 0.6,
   },
