@@ -21,7 +21,7 @@ export default async function ContactPage({ searchParams }) {
       <PageHero
         eyebrow="Contact"
         title="Leg uw vraag voor aan AB Service"
-        intro="Omschrijf het werk of probleem zo concreet mogelijk. Een timing, prijs of afspraak is pas definitief nadat AB Service de aanvraag heeft beoordeeld en bevestigd."
+        intro="Omschrijf het werk of probleem zo concreet mogelijk. Een timing, prijs of afspraak is pas definitief nadat AB Service de aanvraag heeft beoordeeld en bevestigd. AB Service werkt bij klanten op locatie. Er is geen klantontvangst op het bedrijfsadres."
         ctaLabel="Ga naar het formulier"
         ctaHref="#aanvraagformulier"
       />

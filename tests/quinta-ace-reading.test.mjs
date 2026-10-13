@@ -12,6 +12,7 @@ import {getFaultGuide} from "../content/fault-guides.mjs";
 import {getPageDefinition,pageRegistry} from "../content/site-content.mjs";
 import {beforeQuintaHtml,beforeQuintaRegistry} from "./fixtures/quinta-ace-history.mjs";
 import {beforeCalentaAceGuide} from "./fixtures/calenta-ace-history.mjs";
+import {beforeCustomerLocationRegistry} from "./fixtures/customer-location-history.mjs";
 const f=JSON.parse(await readFile(new URL("./fixtures/quinta-ace-source-facts.json",import.meta.url),"utf8")),r=f.reading;
 const hash=v=>createHash("sha256").update(v).digest("hex");
 
@@ -66,5 +67,5 @@ test("only Remeha has the true13October candidate date and its inverse preserves
  const p=getPageDefinition("/foutcodes/remeha");assert.equal(p.lastModified,"2026-10-13");
  assert.deepEqual(beforeQuintaRegistry(p),f.before.page);
  assert.equal(beforeQuintaRegistry({...p,lastModified:"2026-10-14"}).lastModified,"2026-10-14");
- assert.equal(hash(JSON.stringify(pageRegistry.filter(p=>p.path!==f.page.path))),f.before.preservation.otherRegistry);
+ assert.equal(hash(JSON.stringify(pageRegistry.filter(p=>p.path!==f.page.path).map(beforeCustomerLocationRegistry))),f.before.preservation.otherRegistry);
 });

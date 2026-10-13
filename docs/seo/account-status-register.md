@@ -1,5 +1,60 @@
 # WP04–WP05: accountstatus en uitgevoerde acties
 
+## 13 oktober 2026 — Task90 klantlocatie: lokaal getest, review/release open
+
+Homewerkgebied en contacthero vermelden nu eigenaarbevestigdBF-F06: werk bij
+klanten op locatie, geen klantontvangst op het bedrijfsadres. Complete bestaande
+aanbod/scope/timing/prijs-/afspraakcopy en formulieren/beelden/reviews/WhatsApp/
+24uur/safety blijven behouden. Alleen deze twee werkelijk gewijzigde registryURLs
+krijgen13October lastmod; titles/descriptions/canonicals/status/overigebrondata gelijk.
+Vóór product actual332capture/completeSSR/registry/metadata/80sitemap bevroren;
+rootcapture miste één homesitemapveld door slashlookup, niet de werkelijkefixture.
+Eerste npmchild25baseline afgewezen; juisteNode24baseline621 herhaald vóór product.
+EchteRED3ontbrekendecopy/date;3realhidden/misplaced/lostconditionmutaties falen
+en zijn hersteld. Drie oude historischedate/hashchecks bypasseden laterecompositie;
+exactnamedlocationregistry/sitemap-inverse bewaart alleoudehashes/fixtures en
+wrongdate/URL/unknownleafdrift. Geen verwachtewaarde met actueleoutput gerebased.
+Root vers626/626, lint0, productieaudit0, build170, crawl82/93/112. TweeHTTP200/
+oneH1/canonical/true13Octsitemap/tekst/contactingangen gecontroleerd. IAB1280/390:
+zichtbarewerkgebiedcopy, negenservicecards, reviewfallback/profiellink behouden,
+contacthero tot622px mobiel; pointer+Enter landen naanimatie142.6px onder126.6px
+header, focusblijftanchor. Legevelden/consentuit/nietsverstuurd/geenoverflow.
+Dit is geen volledigefocus-/AT-,Googleupstream-,veld-/Lighthouse- ofontvangstclaim.
+Eén onafhankelijke eindreview en exactecommit/hosted/provider/live blijven gates;
+geen IndexNow voor deze kleine verduidelijking. Task87exact3615bbdrelease gesloten.
+Task91 afzonderlijkread-only: officiëleFODwebsite-identiteitsgids en verseKBOzetel
+bekeken; lokalelegal/privacy/terms bevatten nog geenpostadres. Registeredseat,
+vestiging/operatie enno-reception blijven apart; geen adres of complianceclaim
+gepubliceerd, volgende wettelijkeinformatietaak vereist eigen bron-/scopecontrole.
+Andere account/case/French/field/AT/source403/Task51/outcome en heleWPs blijvenopen.
+Vierintegralebijlagen/137checks en alle eerdere bewijslog behouden.
+
+## 13 oktober 2026 — Task87 Calenta Ace2018: exacte release gesloten
+
+Commit3615bbd3f02821f4dc83071e028bdeaf8e470136, parentd8fa562, bevat21exact
+gereviewde bestanden. Eén onafhankelijke hele-cohortreview: bron/spec/kwaliteit
+akkoord, geenCritical/Important/Minor. Root vers621tests/lint0/productieaudit0/
+build170/crawl82-93-112; exacthostedCI38447134766 slaagt opNode24.21.0 met621
+tests, productieaudit0/build170/crawl82-93-112. CIinstall toont afzonderlijk nog
+de bekende9ontwikkelbevindingen; Task51lifecycle/security blijft open, geen algemene
+veiligheidsclaim. Normale mainpush, geen instellingen, rechten of nieuwproject.
+Bestaand Vercelab-service toontHyZGvsqybwpF23MjQbV13CYx8jhP Ready/Production/
+Current/www.abservice24.be/exactSHA; GitHub7046760722 success. Canonical18:32:47Z
+HTTP200: alle22/887regels/scopes/velden/directe bronnen, oude816 en echte
+lastmod13October gecontroleerd. Livecrawl82/93/112 exit0. Werkelijke390/1280
+bediening: ingang619px/veiligheid148px onder126px-header, E04.01/02/H03.17/
+H01.00/modelverschilQuinta/E04.08→0/A02.33, keyboardwissen→24, geenoverflow.
+Contactform142.7px, lege persoonsgegevens/consentuit/nietsverstuurd. Eén nieuwe
+substantiële Remeha-URLmelding viaIndexNow HTTP200ontvangen; niet indexerings-,
+ranking- of leadbewijs. Live54701B JPEG bewaard/bekeken; tijdelijke tabs gesloten,
+viewporthersteld/eigenservergestopt. Dit sluit Task87release, niet geheelWP07.
+Task88Maps blijft publiekadres tonen; geen herhaaldeprofielsave of moderatieclaim.
+Task89homepage-audit afgebakend gereed; korte klantlocatieverduidelijking is volgende
+taak, nog niet geïmplementeerd. Andere eigenaar/account/case/Frans/veld/AT/
+source403/Task51/effectgates blijven afzonderlijk open. Deze documentaire backfill
+blijft lokaal voor de volgende productwijziging; geen docs-onlydeployment of
+duplicaatIndexNow. Vier bronbijlagen/137checks en voorafgaande bewijslog behouden.
+
 ## 13 oktober 2026 — Task87 Calenta Ace2018: lokale kandidaat, release open
 
 Afgebakende uitbreiding van bestaandeRemeha-URL:17A/24H/30E uit tabellen85–87,

@@ -1,4 +1,5 @@
 import {readFileSync} from "node:fs";
+import {beforeCustomerLocationRegistry} from "./customer-location-history.mjs";
 // Named Task87 inverse: remove only this frozen addition, retain old/unknown drift.
 const f=JSON.parse(readFileSync(new URL("./calenta-ace-source-facts.json",import.meta.url),"utf8"));
 const ids=new Set(f.catalogs.map(c=>c.id));
@@ -11,6 +12,7 @@ export function beforeCalentaAceGuide(g){
   catalogs:g.catalogs.filter(c=>!ids.has(c.id)),codeEntryCount:g.codeEntryCount-71,codes:g.codes.slice(0,-71)};
 }
 export function beforeCalentaAceRegistry(p){
+ p=beforeCustomerLocationRegistry(p);
  if(p.path!==f.page.path)return p;
  return {...p,description:restore(p.description,f.page.description,f.before.page.description)};
 }

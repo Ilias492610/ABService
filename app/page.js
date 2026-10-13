@@ -127,6 +127,9 @@ export default function HomePage() {
               AB Service neemt passende aanvragen aan uit alle Vlaamse en Brusselse gemeenten.
               Afstand, technische scope en planning worden vóór de afspraak beoordeeld.
             </p>
+            <p className="section-lead">
+              AB Service werkt bij klanten op locatie. Er is geen klantontvangst op het bedrijfsadres.
+            </p>
           </div>
           <div className="card">
             <h3>Controleer uw gemeente</h3>

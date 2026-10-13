@@ -16,6 +16,7 @@ export const getIndexableEntries = (entries) =>
 export const pageRegistry = Object.freeze([
   {
     path: "/",
+    lastModified: "2026-10-13",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Loodgieter en verwarmingsservice in Antwerpen | AB Service",
     description:
@@ -142,6 +143,7 @@ export const pageRegistry = Object.freeze([
   },
   {
     path: "/contact",
+    lastModified: "2026-10-13",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Contact opnemen met AB Service",
     description:

@@ -1,0 +1,1258 @@
+{
+  "ownerCopy": "AB Service werkt bij klanten op locatie. Er is geen klantontvangst op het bedrijfsadres.",
+  "modifiedAt": "2026-10-13",
+  "before": {
+    "pages": [
+      {
+        "page": {
+          "path": "/",
+          "status": "published",
+          "title": "Loodgieter en verwarmingsservice in Antwerpen | AB Service",
+          "description": "AB Service is 24/7 bereikbaar voor sanitair, onderhoud, herstellingen, keuringen en gasketelinstallaties in Antwerpen.",
+          "changeFrequency": "weekly",
+          "priority": 1
+        },
+        "metadata": {
+          "title": "Loodgieter en verwarmingsservice in Antwerpen | AB Service",
+          "description": "AB Service is 24/7 bereikbaar voor sanitair, onderhoud, herstellingen, keuringen en gasketelinstallaties in Antwerpen.",
+          "alternates": {
+            "canonical": "https://www.abservice24.be/"
+          },
+          "robots": {
+            "index": true,
+            "follow": true,
+            "googleBot": {
+              "index": true,
+              "follow": true,
+              "max-image-preview": "large",
+              "max-snippet": -1,
+              "max-video-preview": -1
+            }
+          },
+          "openGraph": {
+            "title": "Loodgieter en verwarmingsservice in Antwerpen | AB Service",
+            "description": "AB Service is 24/7 bereikbaar voor sanitair, onderhoud, herstellingen, keuringen en gasketelinstallaties in Antwerpen.",
+            "url": "https://www.abservice24.be/",
+            "siteName": "AB Service",
+            "locale": "nl_BE",
+            "type": "website",
+            "images": [
+              {
+                "url": "https://www.abservice24.be/opengraph-image",
+                "width": 1200,
+                "height": 630,
+                "alt": "AB Service"
+              }
+            ]
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Loodgieter en verwarmingsservice in Antwerpen | AB Service",
+            "description": "AB Service is 24/7 bereikbaar voor sanitair, onderhoud, herstellingen, keuringen en gasketelinstallaties in Antwerpen.",
+            "images": [
+              "https://www.abservice24.be/opengraph-image"
+            ]
+          }
+        }
+      },
+      {
+        "page": {
+          "path": "/contact",
+          "status": "published",
+          "title": "Contact opnemen met AB Service",
+          "description": "AB Service is 24/7 bereikbaar voor aanvragen over sanitair, verwarming, onderhoud, herstelling, keuring en gasketelinstallaties.",
+          "changeFrequency": "monthly",
+          "priority": 0.8
+        },
+        "metadata": {
+          "title": "Contact opnemen met AB Service",
+          "description": "AB Service is 24/7 bereikbaar voor aanvragen over sanitair, verwarming, onderhoud, herstelling, keuring en gasketelinstallaties.",
+          "alternates": {
+            "canonical": "https://www.abservice24.be/contact"
+          },
+          "robots": {
+            "index": true,
+            "follow": true,
+            "googleBot": {
+              "index": true,
+              "follow": true,
+              "max-image-preview": "large",
+              "max-snippet": -1,
+              "max-video-preview": -1
+            }
+          },
+          "openGraph": {
+            "title": "Contact opnemen met AB Service",
+            "description": "AB Service is 24/7 bereikbaar voor aanvragen over sanitair, verwarming, onderhoud, herstelling, keuring en gasketelinstallaties.",
+            "url": "https://www.abservice24.be/contact",
+            "siteName": "AB Service",
+            "locale": "nl_BE",
+            "type": "website",
+            "images": [
+              {
+                "url": "https://www.abservice24.be/social/contact",
+                "width": 1200,
+                "height": 630,
+                "alt": "Contact opnemen met AB Service — AB Service"
+              }
+            ]
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Contact opnemen met AB Service",
+            "description": "AB Service is 24/7 bereikbaar voor aanvragen over sanitair, verwarming, onderhoud, herstelling, keuring en gasketelinstallaties.",
+            "images": [
+              "https://www.abservice24.be/social/contact"
+            ]
+          }
+        },
+        "sitemap": {
+          "url": "https://www.abservice24.be/contact",
+          "changeFrequency": "monthly",
+          "priority": 0.8
+        }
+      }
+    ],
+    "registry": [
+      {
+        "path": "/",
+        "status": "published",
+        "title": "Loodgieter en verwarmingsservice in Antwerpen | AB Service",
+        "description": "AB Service is 24/7 bereikbaar voor sanitair, onderhoud, herstellingen, keuringen en gasketelinstallaties in Antwerpen.",
+        "changeFrequency": "weekly",
+        "priority": 1
+      },
+      {
+        "path": "/onderhoud",
+        "status": "published",
+        "title": "Onderhoud van uw cv-ketel in Antwerpen | AB Service",
+        "description": "Lees wanneer cv-ketelonderhoud verplicht is, wat een onderhoud inhoudt en welke gegevens AB Service nodig heeft voor uw aanvraag.",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "path": "/herstelling",
+        "status": "published",
+        "title": "Herstelling van verwarming en cv-ketel | AB Service",
+        "description": "Problemen met verwarming of warm water? Bekijk veilige eerste stappen en bezorg AB Service de juiste informatie voor een herstellingsaanvraag.",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "path": "/keuring",
+        "status": "published",
+        "title": "Keuring van een cv-installatie in Antwerpen | AB Service",
+        "description": "Informatie over de keuring bij eerste ingebruikname of wijziging van een cv-installatie, los van het periodieke onderhoud.",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "path": "/installaties",
+        "status": "published",
+        "title": "Installaties voor verwarming en sanitair | AB Service",
+        "description": "Ontdek hoe AB Service aanvragen voor gasketel- en sanitaire installaties beoordeelt, van plaatsbezoek en offerte tot oplevering.",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "path": "/installaties/gasketels",
+        "lastModified": "2026-10-11",
+        "status": "published",
+        "title": "Gasketel laten installeren in Antwerpen | AB Service",
+        "description": "Vraag een beoordeling en duidelijke offerte aan voor de vervanging of plaatsing van een gasketel in Antwerpen.",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "path": "/installaties/sanitair",
+        "status": "published",
+        "title": "Sanitaire installatie en loodgieterswerk | AB Service",
+        "description": "Voor sanitaire installaties en loodgieterswerk in Antwerpen: leg uw situatie voor en ontvang een voorstel op basis van de werkelijke omvang.",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "path": "/diensten",
+        "status": "published",
+        "title": "Loodgieter- en verwarmingsdiensten | AB Service",
+        "description": "Bekijk alle diensten van AB Service voor verwarming, cv-ketels, sanitair, lekken, afvoer, boilers, leidingen en badkamerrenovatie.",
+        "changeFrequency": "monthly",
+        "priority": 0.85
+      },
+      {
+        "path": "/diensten/lekdetectie",
+        "status": "published",
+        "title": "Lekdetectie in Antwerpen | AB Service",
+        "description": "Laat een vermoedelijk waterlek gericht onderzoeken door AB Service. Deel zichtbare signalen, foto’s en de plaats van vocht of drukverlies.",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "path": "/diensten/waterlek-herstellen",
+        "status": "published",
+        "title": "Waterlek laten herstellen | AB Service",
+        "description": "AB Service herstelt bereikbare waterlekken aan sanitaire leidingen en aansluitingen na beoordeling van bron, toegang en materiaal.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "path": "/diensten/ontstopping",
+        "status": "published",
+        "title": "Ontstopping van afvoer en sanitair | AB Service",
+        "description": "Afvoer verstopt? AB Service beoordeelt en ontstopt bereikbare sanitaire afvoeren in Antwerpen en bespreekt vervolgonderzoek bij terugkerende problemen.",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "path": "/diensten/boiler",
+        "status": "published",
+        "title": "Boiler plaatsen, onderhouden of herstellen | AB Service",
+        "description": "AB Service helpt met elektrische boilers en warmwatertoestellen: diagnose, vervanging en aansluiting op basis van toestel en bestaande installatie.",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "path": "/diensten/leidingen",
+        "status": "published",
+        "title": "Water- en verwarmingsleidingen plaatsen of aanpassen | AB Service",
+        "description": "AB Service plaatst en wijzigt bereikbare water- en verwarmingsleidingen voor renovatie, sanitair en cv-installaties.",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "path": "/diensten/badkamerrenovatie",
+        "status": "published",
+        "title": "Badkamerrenovatie en sanitair vernieuwen | AB Service",
+        "description": "AB Service verzorgt het loodgieters- en sanitaire deel van badkamerrenovaties, van leidingwerk tot plaatsing van toestellen volgens afgesproken scope.",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "path": "/merken",
+        "status": "published",
+        "title": "Cv-ketelmerken voor onderhoud en herstelling | AB Service",
+        "description": "Bekijk de cv-ketelmerken waarvoor AB Service onderhoud, diagnose en herstelling uitvoert in Antwerpen, Vlaanderen en Brussel.",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "path": "/merken/vaillant",
+        "status": "published",
+        "title": "Vaillant onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt wandketels en cv-installaties van Vaillant. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/bulex",
+        "status": "published",
+        "title": "Bulex onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt wandketels en cv-installaties van Bulex. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/bosch",
+        "status": "published",
+        "title": "Bosch onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt cv-ketels en verwarmingssystemen van Bosch Home Comfort. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/junkers",
+        "status": "published",
+        "title": "Junkers onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt courante en oudere Junkers cv-ketels. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/remeha",
+        "status": "published",
+        "title": "Remeha onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt cv-ketels uit onder meer de Avanta-, Calenta-, Quinta- en Tzerra-reeksen. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/buderus",
+        "status": "published",
+        "title": "Buderus onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt Logamax cv-ketels en andere Buderus verwarmingssystemen. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/viessmann",
+        "status": "published",
+        "title": "Viessmann onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt Vitodens en andere Viessmann cv-ketels. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/acv",
+        "status": "published",
+        "title": "ACV onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt Prestige, HeatMaster en andere ACV verwarmingssystemen. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/intergas",
+        "status": "published",
+        "title": "Intergas onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt Intergas cv-ketels, afhankelijk van model en onderdelenbeschikbaarheid. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/nefit-bosch",
+        "status": "published",
+        "title": "Nefit Bosch onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt Nefit Bosch cv-ketels, waaronder toestellen uit de ProLine-reeks. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/atag",
+        "status": "published",
+        "title": "ATAG onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt ATAG cv-ketels en bijbehorende verwarmingsinstallaties. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/itho-daalderop",
+        "status": "published",
+        "title": "Itho Daalderop onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt Itho Daalderop cv-ketels en warmwatertoestellen. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/merken/ferroli",
+        "status": "published",
+        "title": "Ferroli onderhoud en herstelling | AB Service",
+        "description": "AB Service onderhoudt en herstelt Ferroli cv-ketels, waaronder toestellen uit de BlueSense-reeks. Vraag een beoordeling aan met model, productcode en foutmelding.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/projecten",
+        "status": "published",
+        "title": "Uitgevoerde projecten voor verwarming en sanitair | AB Service",
+        "description": "Bekijk geanonimiseerde praktijkcases van AB Service rond cv-ketels, waterlekken, sanitair, afvoer en badkamerleidingwerk.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/projecten/cv-ketel-storing-gediagnosticeerd",
+        "status": "published",
+        "title": "Terugkerende cv-ketelstoring onderzocht en hersteld | AB Service",
+        "description": "De cv-ketel viel herhaaldelijk uit en leverde niet betrouwbaar verwarming en warm water. Lees welke werken AB Service uitvoerde en wat bij de oplevercontrole werd vastgesteld.",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "path": "/projecten/gasketel-vervangen",
+        "status": "published",
+        "title": "Verouderde gasketel vervangen en installatie ingeregeld | AB Service",
+        "description": "De bestaande gasketel was aan vervanging toe en de aansluitingen moesten vooraf worden beoordeeld. Lees welke werken AB Service uitvoerde en wat bij de oplevercontrole werd vastgesteld.",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "path": "/projecten/waterlek-leiding-herstellen",
+        "status": "published",
+        "title": "Waterlek gelokaliseerd en bereikbare leiding hersteld | AB Service",
+        "description": "Er was zichtbaar vocht en de exacte bron moest eerst worden afgebakend om onnodig openbreken te vermijden. Lees welke werken AB Service uitvoerde en wat bij de oplevercontrole werd vastgesteld.",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "path": "/projecten/sanitair-vernieuwd",
+        "status": "published",
+        "title": "Sanitair toestel en aansluitingen vernieuwd | AB Service",
+        "description": "Een bestaand sanitair toestel en de bereikbare aansluitingen moesten worden vervangen. Lees welke werken AB Service uitvoerde en wat bij de oplevercontrole werd vastgesteld.",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "path": "/projecten/afvoer-ontstopt",
+        "status": "published",
+        "title": "Verstopte sanitaire afvoer vrijgemaakt | AB Service",
+        "description": "Een sanitaire afvoer liep niet meer door en veroorzaakte lokaal terugstaand water. Lees welke werken AB Service uitvoerde en wat bij de oplevercontrole werd vastgesteld.",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "path": "/projecten/badkamer-leidingwerk",
+        "status": "published",
+        "title": "Leidingwerk en sanitair voor badkamervernieuwing | AB Service",
+        "description": "De indeling van een badkamer veranderde, waardoor toevoer- en afvoerpunten moesten worden aangepast. Lees welke werken AB Service uitvoerde en wat bij de oplevercontrole werd vastgesteld.",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "path": "/tarieven",
+        "lastModified": "2026-10-11",
+        "status": "published",
+        "title": "Tarieven en offertes voor loodgieterswerk | AB Service",
+        "description": "Bekijk welke factoren de prijs van onderhoud, herstelling en installatie bepalen en welke informatie nodig is voor een duidelijke offerte.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/contact",
+        "status": "published",
+        "title": "Contact opnemen met AB Service",
+        "description": "AB Service is 24/7 bereikbaar voor aanvragen over sanitair, verwarming, onderhoud, herstelling, keuring en gasketelinstallaties.",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "path": "/faq",
+        "status": "published",
+        "title": "Veelgestelde vragen over verwarming en sanitair | AB Service",
+        "description": "Heldere antwoorden over onderhoud, keuring, herstellingen, installaties, offertes en contact met AB Service.",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/over-ons",
+        "status": "published",
+        "title": "Over AB Service | Loodgieter en verwarming Antwerpen",
+        "description": "Lees waarvoor u bij AB Service terechtkunt en hoe aanvragen voor loodgieterswerk, verwarming en sanitair worden behandeld.",
+        "changeFrequency": "yearly",
+        "priority": 0.5
+      },
+      {
+        "path": "/foutcodes",
+        "status": "published",
+        "title": "Foutcodes van cv-ketels: veilige eerste stappen | AB Service",
+        "description": "Doorzoek 13 modelgebonden foutcodecatalogi voor courante cv-ketelmerken, met officiële fabrikantbronnen en veilige eerste stappen.",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/foutcodes/vaillant",
+        "status": "published",
+        "title": "Vaillant foutcodes: betekenis en veilig handelen | AB Service",
+        "description": "Vaillant-codes uit het Belgische consumentenoverzicht en ecoTEC plus CS/1-5-handleiding 0020282230_00 voor negen benoemde modellen. Controleer uw typeplaatje.",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "path": "/foutcodes/bulex",
+        "status": "published",
+        "title": "Bulex foutcodes: betekenis en veilig handelen | AB Service",
+        "description": "Bulex-codes uit het Belgische consumentenoverzicht en de handleiding voor THEMA Condens FAS 65 (0010010389), met modelgrenzen en veilige eerste stappen.",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "path": "/foutcodes/bosch",
+        "status": "published",
+        "title": "Bosch foutcodes: officiële bron en veilige stappen | AB Service",
+        "description": "Zoek Bosch-foutcodes binnen zes gedocumenteerde ketelreeksen. Lees model- en bouwjaargrenzen, officiële bronnen en veilige eerste stappen.",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "path": "/foutcodes/junkers",
+        "status": "published",
+        "title": "Junkers foutcodes: officiële bron en veilige stappen | AB Service",
+        "description": "Zoek Junkers-foutcodes binnen zes hoofdstukken van het Bosch/Junkers-codeboek. Controleer toestelreeks, bouwjaar en subcode vóór toepassing.",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "path": "/foutcodes/remeha",
+        "lastModified": "2026-10-13",
+        "status": "published",
+        "title": "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta | AB Service",
+        "description": "Zoek Remeha foutcodes per Avanta-, historische Calenta-, Calenta Ace (2018)-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie en veilige vervolgstap.",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/foutcodes/buderus",
+        "status": "published",
+        "title": "Buderus GB162 en GB172i.2 foutcodes | AB Service",
+        "description": "Buderus GB162 V2 en GB172i.2-meldingen uit aparte Belgische handleidingen. Kies uw exacte model, vergelijk de volledige code en lees veilige eerste stappen.",
+        "lastModified": "2026-10-12",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/foutcodes/viessmann",
+        "status": "published",
+        "title": "Viessmann foutcodes: Vitodens en Vitotronic | AB Service",
+        "description": "Zoek 71 Viessmann-meldingen uit de officiële Vitodens-overzichtstabel. Controleer toestelgegevens, bron en veilige eerste stappen zonder vakmanprocedures.",
+        "lastModified": "2026-10-12",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/foutcodes/acv",
+        "status": "published",
+        "title": "ACV Prestige foutcodes: betekenis en stappen | AB Service",
+        "description": "Zoek 24 ACV-codegroepen voor Prestige Solo en Excellence 18/32 MkIII met ESYS, bron 664Y4200 H (03/2011). Lees betekenis en veilige eerste stappen.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/foutcodes/intergas",
+        "status": "published",
+        "title": "Intergas Prestige foutcodes: officiële bron | AB Service",
+        "description": "Zoek 11 Intergas Prestige A CW6-codegroepen uit 88136803. Controleer storingsled en temperatuurdisplay; lees de bron en veilige eerste stappen.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/foutcodes/nefit-bosch",
+        "status": "published",
+        "title": "Nefit Bosch ProLine foutcodes | AB Service",
+        "description": "Zoek 54 Nefit ProLine HRC-codegroepen voor 24/CW3, 24/CW4 en 30/CW5 uit 6720646227 (04/2013, NL). Lees de bron en veilige eerste stappen.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/foutcodes/atag",
+        "status": "published",
+        "title": "ATAG i Zone en i32EC foutcodes | AB Service",
+        "description": "ATAG i Zone en i32EC-meldingen uit aparte Belgische handleidingen, naast het algemene overzicht. Kies uw model en bron; lees veilige eerste stappen.",
+        "lastModified": "2026-10-12",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/foutcodes/itho-daalderop",
+        "status": "published",
+        "title": "Itho Daalderop Base Cube foutcodes | AB Service",
+        "description": "Zoek 26 Itho Daalderop Base Cube W/B/E-codegroepen uit handleiding 01-04199-001. Lees de drie modelvarianten, bron en veilige eerste stappen.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/foutcodes/ferroli",
+        "status": "published",
+        "title": "Ferroli BlueSense foutcodes: officiële bron | AB Service",
+        "description": "Zoek 37 Ferroli BlueSense-codegroepen uit DRS9100 versie 9 (augustus 2015). Lees de modelgrenzen, A/F-resetregels en veilige eerste stappen.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/advies",
+        "status": "published",
+        "title": "Advies over cv-ketels, warm water en loodgieterswerk | AB Service",
+        "description": "Vind veilige eerste stappen bij drukverlies, koude radiatoren, waterlekken en verstopte afvoeren. Met officiële bronnen, onderhoudscheck en watermetercheck.",
+        "changeFrequency": "monthly",
+        "priority": 0.75,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "path": "/tools/onderhoudscheck",
+        "status": "published",
+        "title": "Gratis cv-ketel onderhoudscheck: Vlaanderen en Brussel | AB Service",
+        "description": "Wanneer moet uw cv-ketel onderhouden worden? Controleer gratis de regel voor Vlaanderen of Brussel en bereken een richtdatum. Zonder account, met officiële bronnen.",
+        "changeFrequency": "monthly",
+        "priority": 0.75,
+        "lastModified": "2026-10-10"
+      },
+      {
+        "path": "/tools/watermetercheck",
+        "status": "published",
+        "title": "Watermetercheck: vergelijk uw totale meterstanden | AB Service",
+        "description": "Vergelijk twee totale meterstanden en een bekende meetduur. Bekijk de geregistreerde hoeveelheid en beperkingen, zonder lekdiagnose of account.",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "path": "/advies/watermeter-blijft-draaien",
+        "status": "published",
+        "title": "Watermeter blijft draaien zonder watergebruik: wat controleren? | AB Service",
+        "description": "Lees hoe u onverwacht waterverbruik veilig vastlegt, automatische verbruikers herkent en een vermoedelijk waterlek gericht laat onderzoeken.",
+        "kind": "article",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/advies/radiator-blijft-koud",
+        "status": "published",
+        "title": "Radiator blijft koud terwijl andere radiatoren warm worden | AB Service",
+        "description": "Eén koude radiator of helemaal geen verwarming? Noteer de verschillen, controleer gewone gebruikersinstellingen en lees wanneer onderzoek nodig is.",
+        "kind": "article",
+        "lastModified": "2026-10-10",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/advies/geen-warm-water",
+        "status": "published",
+        "title": "Geen warm water: welke gegevens helpen bij de diagnose? | AB Service",
+        "description": "Geen warm water aan één kraan of in de hele woning? Vergelijk tappunten, herken het toesteltype en bereid een gerichte herstellingsaanvraag voor.",
+        "kind": "article",
+        "lastModified": "2026-10-10",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/advies/boiler-veiligheidsgroep-druppelt",
+        "status": "published",
+        "title": "Veiligheidsgroep van uw boiler druppelt: wanneer controleren? | AB Service",
+        "description": "Water bij een voorraadboiler? Noteer waar en wanneer het vrijkomt, onderscheid afvoer van lekkage en laat aanhoudend waterverlies beoordelen.",
+        "kind": "article",
+        "lastModified": "2026-10-10",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/advies/afvoer-verstopt-wat-doen",
+        "status": "published",
+        "title": "Afvoer verstopt: wat geeft u door vóór een ontstopping? | AB Service",
+        "description": "Bereid een veilige ontstopping voor: vermeld getroffen afvoeren, terugkerende klachten, bereikbaarheid en eerder gebruikte chemische producten.",
+        "kind": "article",
+        "lastModified": "2026-10-10",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/advies/onderhoudsattest-cv-ketel",
+        "status": "published",
+        "title": "Onderhoudsattest cv-ketel: wat bewaren en doorgeven? | AB Service",
+        "description": "Welke cv-documenten bewaart u in Vlaanderen of Brussel? Lees het verschil tussen onderhoudsattesten, EPB-controle en een rapport bij ingebruikname.",
+        "kind": "article",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/advies/drukverlies-cv-ketel",
+        "status": "published",
+        "title": "Drukverlies bij uw cv-ketel: oorzaken en veilige controle | AB Service",
+        "description": "Daalt de druk van uw cv-installatie? Lees wat u veilig kunt controleren, waarom de juiste druk modelafhankelijk is en wanneer technisch onderzoek nodig is.",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/werkgebied",
+        "status": "published",
+        "title": "Werkgebied AB Service | Heel Vlaanderen en Brussel",
+        "description": "Controleer in welke gemeenten AB Service actief is voor verwarming, sanitair en loodgieterswerk: alle 285 Vlaamse en 19 Brusselse gemeenten.",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "path": "/werkgebied/antwerpen",
+        "status": "published",
+        "title": "Loodgieter en verwarmingsservice in provincie Antwerpen | AB Service",
+        "description": "Bekijk het werkgebied van AB Service in provincie Antwerpen, inclusief alle gemeenten en de afzonderlijke Antwerpse districten.",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "path": "/werkgebied/limburg",
+        "status": "published",
+        "title": "Loodgieter en verwarmingsservice in Limburg | AB Service",
+        "description": "AB Service bedient alle 38 Limburgse gemeenten voor passende verwarmings-, sanitaire en loodgietersaanvragen na beoordeling.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/werkgebied/oost-vlaanderen",
+        "status": "published",
+        "title": "Loodgieter en verwarmingsservice in Oost-Vlaanderen | AB Service",
+        "description": "Van Gent en Aalst tot het Waasland en de Vlaamse Ardennen: bekijk waar AB Service in Oost-Vlaanderen actief is.",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/werkgebied/vlaams-brabant",
+        "status": "published",
+        "title": "Loodgieter en verwarmingsservice in Vlaams-Brabant | AB Service",
+        "description": "Bekijk de volledige dekking van AB Service in de 63 gemeenten van Vlaams-Brabant, van Leuven tot de Vlaamse Rand.",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/werkgebied/west-vlaanderen",
+        "status": "published",
+        "title": "Loodgieter en verwarmingsservice in West-Vlaanderen | AB Service",
+        "description": "AB Service behandelt passende aanvragen in alle 62 West-Vlaamse gemeenten, aan de kust en in het binnenland.",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/werkgebied/brussel",
+        "status": "published",
+        "title": "Loodgieter en verwarmingsservice in Brussel | AB Service",
+        "description": "AB Service bedient de 19 gemeenten van het Brussels Hoofdstedelijk Gewest voor passende verwarmings- en sanitaire aanvragen.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "path": "/loodgieter-berchem",
+        "status": "published",
+        "title": "Loodgieter Berchem | Verwarming en sanitair | AB Service",
+        "description": "AB Service helpt klanten in Berchem met verwarming, cv-ketels, sanitair en gerichte loodgieterswerken. Leg uw situatie voor.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/loodgieter-berendrecht-zandvliet-lillo",
+        "status": "noindex",
+        "title": "Loodgieter Berendrecht, Zandvliet en Lillo | AB Service",
+        "description": "Verwarming of sanitair laten beoordelen in Berendrecht, Zandvliet of Lillo? AB Service plant opdrachten op basis van locatie en technische informatie.",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/loodgieter-borgerhout",
+        "status": "published",
+        "title": "Loodgieter Borgerhout | Cv-ketel en sanitair | AB Service",
+        "description": "AB Service behandelt aanvragen voor cv-ketels, verwarming en sanitair in Borgerhout. Deel foutcode, toestelgegevens en toegangssituatie.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/loodgieter-borsbeek",
+        "status": "published",
+        "title": "Loodgieter Borsbeek | Sanitair en verwarming | AB Service",
+        "description": "Loodgieters- of verwarmingsvraag in Borsbeek? AB Service beoordeelt onderhoud, herstelling, sanitair en installatiewerk op basis van uw situatie.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/loodgieter-deurne",
+        "status": "published",
+        "title": "Loodgieter Deurne | Herstelling en onderhoud | AB Service",
+        "description": "AB Service helpt in Deurne met cv-ketelonderhoud, verwarmingsproblemen, sanitair en installaties. Vraag een beoordeling aan.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/loodgieter-ekeren",
+        "status": "published",
+        "title": "Loodgieter Ekeren | Verwarming en sanitair | AB Service",
+        "description": "Voor verwarming, gasketels en sanitaire werken in Ekeren kunt u uw aanvraag met foto’s en toestelgegevens aan AB Service bezorgen.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/loodgieter-hoboken",
+        "status": "published",
+        "title": "Loodgieter Hoboken | Cv-ketel en sanitair | AB Service",
+        "description": "AB Service behandelt loodgieters-, verwarmings- en sanitaire aanvragen in Hoboken. Deel uw toestelgegevens en gewenste werkzaamheden.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/loodgieter-merksem",
+        "status": "published",
+        "title": "Loodgieter Merksem | Verwarming en sanitair | AB Service",
+        "description": "Cv-ketel, verwarming of sanitair laten beoordelen in Merksem? Bezorg AB Service de relevante toestel- en locatiegegevens.",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/loodgieter-wilrijk",
+        "status": "published",
+        "title": "Loodgieter Wilrijk | Sanitair en gasketels | AB Service",
+        "description": "AB Service helpt klanten in Wilrijk met sanitair, cv-ketelonderhoud, herstellingen en installaties. Bespreek uw concrete situatie.",
+        "lastModified": "2026-10-11",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "path": "/privacy-policy",
+        "lastModified": "2026-10-11",
+        "status": "published",
+        "title": "Privacybeleid | AB Service",
+        "description": "Lees hoe AB Service persoonsgegevens uit contactaanvragen en websitegebruik verwerkt en welke rechten u heeft.",
+        "changeFrequency": "yearly",
+        "priority": 0.3
+      },
+      {
+        "path": "/algemene-voorwaarden",
+        "status": "published",
+        "title": "Algemene voorwaarden | AB Service",
+        "description": "Lees de algemene voorwaarden die van toepassing zijn op offertes en werkzaamheden van AB Service.",
+        "changeFrequency": "yearly",
+        "priority": 0.3
+      },
+      {
+        "path": "/installaties/airconditioning",
+        "status": "noindex",
+        "title": "Airconditioning | AB Service",
+        "description": "Deze dienst is momenteel niet opgenomen in het actieve dienstenaanbod van de website."
+      }
+    ],
+    "allRegistrySha256": "850abbc6ebfe0be9b2ecb5088633b83b70a2ab5d96b8ea54976e9bc8385a2241",
+    "sitemapSha256": "e8eff260af3b047d7bf81ea2a37fcde990c995ee80269c6dafad0b0c3d6ce413",
+    "faultGuidesSha256": "637c28e0db99321b4c44d0c17f81e2ab88e02555bb26eb6c4039d6824db62c59",
+    "businessSha256": "c7c0f35e8f6487e6ceae8dcdc9737245400bc6f6a8980adb28b82b4afec9887c",
+    "mediaSha256": "1f30a15458779e462a07815597aa17eb15d96b2174ac914ac6c199cde7a71362",
+    "sitemap": [
+      {
+        "url": "https://www.abservice24.be/",
+        "changeFrequency": "weekly",
+        "priority": 1
+      },
+      {
+        "url": "https://www.abservice24.be/onderhoud",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "url": "https://www.abservice24.be/herstelling",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "url": "https://www.abservice24.be/keuring",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "url": "https://www.abservice24.be/installaties",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "url": "https://www.abservice24.be/installaties/gasketels",
+        "changeFrequency": "monthly",
+        "priority": 0.8,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/installaties/sanitair",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "url": "https://www.abservice24.be/diensten",
+        "changeFrequency": "monthly",
+        "priority": 0.85
+      },
+      {
+        "url": "https://www.abservice24.be/diensten/lekdetectie",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "url": "https://www.abservice24.be/diensten/waterlek-herstellen",
+        "changeFrequency": "monthly",
+        "priority": 0.75,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/diensten/ontstopping",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "url": "https://www.abservice24.be/diensten/boiler",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "url": "https://www.abservice24.be/diensten/leidingen",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "url": "https://www.abservice24.be/diensten/badkamerrenovatie",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "url": "https://www.abservice24.be/merken",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "url": "https://www.abservice24.be/merken/vaillant",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/bulex",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/bosch",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/junkers",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/remeha",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/buderus",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/viessmann",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/acv",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/intergas",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/nefit-bosch",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/atag",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/itho-daalderop",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/merken/ferroli",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/projecten",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/projecten/cv-ketel-storing-gediagnosticeerd",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "url": "https://www.abservice24.be/projecten/gasketel-vervangen",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "url": "https://www.abservice24.be/projecten/waterlek-leiding-herstellen",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "url": "https://www.abservice24.be/projecten/sanitair-vernieuwd",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "url": "https://www.abservice24.be/projecten/afvoer-ontstopt",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "url": "https://www.abservice24.be/projecten/badkamer-leidingwerk",
+        "changeFrequency": "yearly",
+        "priority": 0.6
+      },
+      {
+        "url": "https://www.abservice24.be/tarieven",
+        "changeFrequency": "monthly",
+        "priority": 0.7,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/contact",
+        "changeFrequency": "monthly",
+        "priority": 0.8
+      },
+      {
+        "url": "https://www.abservice24.be/faq",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "url": "https://www.abservice24.be/over-ons",
+        "changeFrequency": "yearly",
+        "priority": 0.5
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/vaillant",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/bulex",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/bosch",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/junkers",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/remeha",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-13"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/buderus",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-12"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/viessmann",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-12"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/acv",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/intergas",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/nefit-bosch",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/atag",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-12"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/itho-daalderop",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/foutcodes/ferroli",
+        "changeFrequency": "monthly",
+        "priority": 0.6,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/advies",
+        "changeFrequency": "monthly",
+        "priority": 0.75,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/tools/onderhoudscheck",
+        "changeFrequency": "monthly",
+        "priority": 0.75,
+        "lastModified": "2026-10-10"
+      },
+      {
+        "url": "https://www.abservice24.be/tools/watermetercheck",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/advies/watermeter-blijft-draaien",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/advies/radiator-blijft-koud",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-10"
+      },
+      {
+        "url": "https://www.abservice24.be/advies/geen-warm-water",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-10"
+      },
+      {
+        "url": "https://www.abservice24.be/advies/boiler-veiligheidsgroep-druppelt",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-10"
+      },
+      {
+        "url": "https://www.abservice24.be/advies/afvoer-verstopt-wat-doen",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-10"
+      },
+      {
+        "url": "https://www.abservice24.be/advies/onderhoudsattest-cv-ketel",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/advies/drukverlies-cv-ketel",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "url": "https://www.abservice24.be/werkgebied",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "url": "https://www.abservice24.be/werkgebied/antwerpen",
+        "changeFrequency": "monthly",
+        "priority": 0.75
+      },
+      {
+        "url": "https://www.abservice24.be/werkgebied/limburg",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/werkgebied/oost-vlaanderen",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "url": "https://www.abservice24.be/werkgebied/vlaams-brabant",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "url": "https://www.abservice24.be/werkgebied/west-vlaanderen",
+        "changeFrequency": "monthly",
+        "priority": 0.65
+      },
+      {
+        "url": "https://www.abservice24.be/werkgebied/brussel",
+        "changeFrequency": "monthly",
+        "priority": 0.65,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/loodgieter-berchem",
+        "changeFrequency": "monthly",
+        "priority": 0.7,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/loodgieter-borgerhout",
+        "changeFrequency": "monthly",
+        "priority": 0.7,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/loodgieter-borsbeek",
+        "changeFrequency": "monthly",
+        "priority": 0.7,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/loodgieter-deurne",
+        "changeFrequency": "monthly",
+        "priority": 0.7,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/loodgieter-ekeren",
+        "changeFrequency": "monthly",
+        "priority": 0.7,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/loodgieter-hoboken",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/loodgieter-merksem",
+        "changeFrequency": "monthly",
+        "priority": 0.7
+      },
+      {
+        "url": "https://www.abservice24.be/loodgieter-wilrijk",
+        "changeFrequency": "monthly",
+        "priority": 0.7,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/privacy-policy",
+        "changeFrequency": "yearly",
+        "priority": 0.3,
+        "lastModified": "2026-10-11"
+      },
+      {
+        "url": "https://www.abservice24.be/algemene-voorwaarden",
+        "changeFrequency": "yearly",
+        "priority": 0.3
+      }
+    ],
+    "homeHtml": "<link rel=\"preload\" as=\"image\" href=\"/media/marketing-huisbezoek.webp\" imageSizes=\"(max-width: 860px) calc(100vw - 2rem), 820px\"/><section class=\"page-hero\"><div class=\"shell hero-grid\"><div><p class=\"eyebrow\">24/7 bereikbaar · Loodgieter Antwerpen</p><h1>Verwarming en sanitair, helder aangepakt</h1><p class=\"hero-intro\">AB Service behandelt aanvragen voor loodgieterswerk, sanitair, cv-ketelonderhoud, herstellingen, keuringen en gasketelinstallaties in Antwerpen. U krijgt eerst duidelijkheid over de situatie en de volgende stap.</p><div class=\"button-row\"><a href=\"/contact#aanvraagformulier\" class=\"button\">Leg uw situatie voor</a><a href=\"tel:+32484906966\" class=\"button button-secondary\">Bel 0484 90 69 66</a></div></div><aside class=\"hero-aside\" aria-label=\"Zo verloopt uw aanvraag\"><strong>Gericht contact</strong><p>Vermeld het type toestel of werk, de foutmelding en wat u al heeft gecontroleerd. Zo kan AB Service uw vraag beter beoordelen.</p><a href=\"/tarieven\">Lees hoe prijzen en offertes worden bepaald →</a></aside></div></section><section class=\"section section-compact\"><div class=\"shell narrow\"><p class=\"answer-box\">Een goede aanvraag begint met de juiste informatie. Vermeld het toesteltype, een eventuele foutcode, wat er precies gebeurt en voeg waar mogelijk duidelijke foto’s toe. AB Service beoordeelt daarna welke vervolgstap passend is.</p><figure class=\"content-visual\"><img src=\"/media/marketing-huisbezoek.webp\" alt=\"AB Service bij de start van een technisch huisbezoek\" width=\"1280\" height=\"960\" sizes=\"(max-width: 860px) calc(100vw - 2rem), 820px\"/></figure></div></section><section class=\"section\"><div class=\"shell\"><p class=\"eyebrow\">Diensten</p><h2>Waarmee kan AB Service helpen?</h2><p class=\"section-lead\">Kies de dienst die bij uw situatie past. U vindt er uitleg over de werkzaamheden en welke gegevens helpen om uw aanvraag te beoordelen.</p><div class=\"cards-grid\" style=\"margin-top:2rem\"><article class=\"card\"><h3>Onderhoud van uw cv-ketel</h3><p>Duidelijke uitleg over het onderhoud, de wettelijke frequentie en de informatie die nodig is om uw toestel correct te beoordelen.</p><a href=\"/onderhoud\">Lees verder →</a></article><article class=\"card\"><h3>Herstelling van verwarming</h3><p>Hulp bij uitval, foutcodes, drukverlies of problemen met warm water. Geef uw toestelgegevens en symptomen door voor een gerichte beoordeling.</p><a href=\"/herstelling\">Lees verder →</a></article><article class=\"card\"><h3>Keuring van een cv-installatie</h3><p>De keuring bij eerste ingebruikname of wijziging staat los van het periodieke onderhoud. Lees wanneer ze relevant is.</p><a href=\"/keuring\">Lees verder →</a></article><article class=\"card\"><h3>Gasketelinstallatie</h3><p>Van beoordeling en dimensionering tot een duidelijke offerte, plaatsing, ingebruikname en overdracht van documenten.</p><a href=\"/installaties/gasketels\">Lees verder →</a></article><article class=\"card\"><h3>Sanitair en loodgieterswerk</h3><p>Voor sanitaire toestellen, leidingen en gerichte loodgieterswerken in Antwerpen, op basis van de concrete situatie.</p><a href=\"/installaties/sanitair\">Lees verder →</a></article><article class=\"card\"><h3>Tarieven en offertes</h3><p>Lees welke factoren de kosten van onderhoud, herstelling of installatie bepalen en welke informatie nodig is voor een offerte.</p><a href=\"/tarieven\">Lees verder →</a></article><article class=\"card\"><h3>Lekdetectie en waterlekken</h3><p>Gericht onderzoek en herstel bij vocht, zichtbaar lekverlies of een verdachte leiding of aansluiting.</p><a href=\"/diensten/lekdetectie\">Lees verder →</a></article><article class=\"card\"><h3>Ontstopping en afvoer</h3><p>Beoordeling en ontstopping van bereikbare sanitaire afvoeren, met vervolgadvies bij terugkerende problemen.</p><a href=\"/diensten/ontstopping\">Lees verder →</a></article><article class=\"card\"><h3>Alle diensten</h3><p>Bekijk ook boilers, leidingwerk, waterlekherstel en het loodgieterswerk binnen een badkamerrenovatie.</p><a href=\"/diensten\">Lees verder →</a></article></div></div></section><section class=\"section section-muted\"><div class=\"shell related-grid\"><div><p class=\"eyebrow\">Onderhoud voorbereiden</p><h2>Wanneer laat u uw toestel onderhouden?</h2><p class=\"section-lead\">Regio, toesteltype, brandstof en vermogen bepalen welke onderhoudsregel van toepassing is. De onderhoudscheck helpt u de juiste informatie te vinden en een volgende onderhoudsbeurt te plannen.</p><a href=\"/tools/onderhoudscheck\">Doe de onderhoudscheck →</a></div><div><p class=\"eyebrow\">Praktische hulp</p><h2>Wat kunt u veilig controleren?</h2><p class=\"section-lead\">Lees wat u kunt vastleggen bij drukverlies, een koude radiator, een waterlek of problemen met warm water. U vindt ook wanneer verder onderzoek nodig is.</p><a href=\"/advies\">Bekijk het praktische advies →</a></div></div></section><section class=\"section section-muted\"><div class=\"shell related-grid\"><div><p class=\"eyebrow\">Werkgebied</p><h2>Antwerpen als basis, heel Vlaanderen en Brussel als werkgebied</h2><p class=\"section-lead\">AB Service neemt passende aanvragen aan uit alle Vlaamse en Brusselse gemeenten. Afstand, technische scope en planning worden vóór de afspraak beoordeeld.</p></div><div class=\"card\"><h3>Controleer uw gemeente</h3><p>Bekijk alle 304 gemeenten, de zes regionale overzichtspagina’s en de tien districten van Antwerpen.</p><a href=\"/werkgebied\">Bekijk het volledige werkgebied →</a></div></div></section><section class=\"section section-dark\"><div class=\"shell\"><p class=\"eyebrow\">Eerst veilig handelen</p><h2>Gasgeur of mogelijk koolstofmonoxide?</h2><div class=\"related-grid\"><div><h3>Bij gasgeur</h3><p>Gebruik geen vlammen of elektrische schakelaars. Ventileer alleen als dat veilig kan, verlaat de ruimte en contacteer vanop een veilige plaats de officiële nood- of distributiedienst.</p></div><div><h3>Bij mogelijke CO</h3><p>Ga onmiddellijk naar frisse lucht, waarschuw hulpdiensten en ga niet terug naar binnen. Start het toestel niet opnieuw voordat een bevoegde professional de situatie veilig heeft verklaard.</p></div></div></div></section><section class=\"section section-muted google-reviews-section\" aria-labelledby=\"google-reviews-title\"><div class=\"shell\"><div class=\"reviews-heading\"><div><p class=\"eyebrow\">Klantervaringen</p><h2 id=\"google-reviews-title\">Beoordelingen op Google</h2><p class=\"section-lead\">De score en het aantal worden bij elk bezoek rechtstreeks via de officiële Google Places-koppeling opgehaald. AB Service bewerkt de Google-gegevens niet.</p></div><div class=\"google-review-summary\" aria-live=\"polite\"><span class=\"google-maps-attribution\" translate=\"no\">Google Maps</span><span>Actuele gegevens tijdelijk niet beschikbaar</span><a href=\"https://maps.google.com/?cid=4063521367014109489\" target=\"_blank\" rel=\"noopener noreferrer\">Bekijk alle beoordelingen →</a></div></div><div class=\"review-api-note\"><p>De Google-koppeling is momenteel niet beschikbaar. Bekijk de actuele score en geschreven ervaringen op het Google-profiel.</p></div><p class=\"google-review-disclosure\">Google rangschikt getoonde reviews standaard op relevantie. Reviews worden niet vooraf door Google geverifieerd; Google controleert en verwijdert wel content die als nep wordt vastgesteld. Lees het <a href=\"https://support.google.com/contributionpolicy/answer/7400114\" target=\"_blank\" rel=\"noopener noreferrer\">Google Maps-beleid voor gebruikerscontent</a>.</p></div></section><section class=\"section section-muted\"><div class=\"shell related-grid\"><div><p class=\"eyebrow\">Uitgevoerd werk</p><h2>Bekijk praktijkcases van AB Service</h2><p class=\"section-lead\">Geanonimiseerde voorbeelden tonen het probleem, de uitgevoerde werkzaamheden en de controle bij oplevering.</p><a href=\"/projecten\">Bekijk de projecten →</a></div><div><p class=\"eyebrow\">Cv-ketelmerken</p><h2>Onderhoud en herstelling voor 13 merken</h2><p class=\"section-lead\">Van Vaillant en Bulex tot Remeha, Buderus, Viessmann, ACV, ATAG en Ferroli.</p><a href=\"/merken\">Bekijk alle merken →</a></div></div></section><section class=\"contact-cta\"><div class=\"shell cta-card\"><div><p class=\"eyebrow\">Contact</p><h2>Wilt u uw situatie bespreken?</h2><p>Bezorg de belangrijkste gegevens via het formulier of neem rechtstreeks contact op. Een afspraak of prijs is pas bevestigd na beoordeling van uw aanvraag.</p></div><div class=\"button-row\"><a href=\"/contact#aanvraagformulier\" class=\"button\">Naar het contactformulier</a><a href=\"https://wa.me/32484906966?text=Hallo%2C%20ik%20heb%20een%20vraag.\" class=\"button button-secondary\" target=\"_blank\" rel=\"noreferrer\">WhatsApp</a></div></div></section>",
+    "contactHtml": "<link rel=\"preload\" as=\"image\" href=\"/media/marketing-klantadvies.webp\" imageSizes=\"(max-width: 860px) calc(100vw - 2rem), 820px\"/><nav class=\"breadcrumbs shell\" aria-label=\"Kruimelpad\"><ol><li><a href=\"/\">Home</a></li><li><span aria-current=\"page\">Contact</span></li></ol></nav><script id=\"breadcrumb-schema\" type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.abservice24.be/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact\",\"item\":\"https://www.abservice24.be/contact\"}]}</script><section class=\"page-hero\"><div class=\"shell hero-grid\"><div><p class=\"eyebrow\">Contact</p><h1>Leg uw vraag voor aan AB Service</h1><p class=\"hero-intro\">Omschrijf het werk of probleem zo concreet mogelijk. Een timing, prijs of afspraak is pas definitief nadat AB Service de aanvraag heeft beoordeeld en bevestigd.</p><div class=\"button-row\"><a href=\"#aanvraagformulier\" class=\"button\">Ga naar het formulier</a><a href=\"tel:+32484906966\" class=\"button button-secondary\">Bel 0484 90 69 66</a></div></div><aside class=\"hero-aside\" aria-label=\"Zo verloopt uw aanvraag\"><strong>Gericht contact</strong><p>Vermeld het type toestel of werk, de foutmelding en wat u al heeft gecontroleerd. Zo kan AB Service uw vraag beter beoordelen.</p><a href=\"/tarieven\">Lees hoe prijzen en offertes worden bepaald →</a></aside></div></section><section class=\"section\"><div class=\"shell contact-layout\"><div id=\"aanvraagformulier\" class=\"contact-form-panel\" tabindex=\"-1\"><p class=\"eyebrow\">Aanvraagformulier</p><h2>Welke informatie helpt?</h2><form noValidate=\"\" aria-describedby=\"form-note\" aria-busy=\"false\" action=\"/api/contact\" method=\"post\"><p id=\"form-note\" class=\"section-lead\">Velden met een * zijn verplicht. Vermeld geen gevoelige medische of financiële gegevens.</p><div class=\"form-grid\"><div class=\"field\"><label for=\"name\">Naam *</label><input id=\"name\" autoComplete=\"name\" maxLength=\"120\" aria-invalid=\"false\" name=\"name\" value=\"\"/></div><div class=\"field\"><label for=\"phone\">Telefoon *</label><input id=\"phone\" type=\"tel\" autoComplete=\"tel\" maxLength=\"40\" aria-invalid=\"false\" name=\"phone\" value=\"\"/></div><div class=\"field field-full\"><label for=\"email\">E-mail *</label><input id=\"email\" type=\"email\" autoComplete=\"email\" maxLength=\"200\" aria-invalid=\"false\" name=\"email\" value=\"\"/></div><div class=\"field field-full\"><label for=\"service\">Waarover gaat uw aanvraag?</label><select id=\"service\" name=\"service\" aria-invalid=\"false\"><option value=\"\" selected=\"\">Kies een dienst</option><option>Onderhoud cv-ketel</option><option>Herstelling verwarming</option><option>Keuring cv-installatie</option><option>Installatie gasketel</option><option>Sanitair of loodgieterswerk</option><option>Lekdetectie</option><option>Waterlek herstellen</option><option>Ontstopping</option><option>Boiler plaatsen of herstellen</option><option>Leidingen plaatsen of aanpassen</option><option>Badkamerrenovatie</option><option>Andere vraag</option></select></div><div class=\"field\"><label for=\"address\">Straat en huisnummer (optioneel)</label><input id=\"address\" autoComplete=\"street-address\" maxLength=\"200\" aria-invalid=\"false\" name=\"address\" value=\"\"/></div><div class=\"field\"><label for=\"city\">Gemeente (optioneel)</label><input id=\"city\" autoComplete=\"address-level2\" maxLength=\"100\" aria-invalid=\"false\" name=\"city\" value=\"\"/></div><div class=\"field\"><label for=\"postalCode\">Postcode (optioneel)</label><input id=\"postalCode\" autoComplete=\"postal-code\" maxLength=\"20\" aria-invalid=\"false\" name=\"postalCode\" value=\"\"/></div><div class=\"field\"><label for=\"brand\">Merk en model (optioneel)</label><input id=\"brand\" maxLength=\"120\" aria-invalid=\"false\" name=\"brand\" value=\"\"/></div><div class=\"field field-full\"><label for=\"boilerType\">Type of productcode (optioneel)</label><input id=\"boilerType\" maxLength=\"120\" aria-invalid=\"false\" name=\"boilerType\" value=\"\"/></div><div class=\"field field-full\"><label for=\"message\">Wat gebeurt er en sinds wanneer?</label><textarea id=\"message\" name=\"message\" maxLength=\"3000\" aria-invalid=\"false\"></textarea></div><div class=\"field-full checkbox-row\"><input id=\"consent\" type=\"checkbox\" aria-invalid=\"false\" name=\"consent\"/><div><label for=\"consent\">Ik heb het <a href=\"/privacy-policy\">privacybeleid</a> gelezen en geef toestemming om mijn gegevens te gebruiken voor deze aanvraag. *</label></div></div></div><button class=\"button\" type=\"submit\">Aanvraag verzenden</button></form><figure class=\"content-visual\"><img src=\"/media/marketing-klantadvies.webp\" alt=\"AB Service geeft uitleg over een verwarmingsinstallatie\" width=\"1280\" height=\"960\" sizes=\"(max-width: 860px) calc(100vw - 2rem), 820px\"/></figure></div><aside class=\"contact-aside\"><h2>Rechtstreeks contact</h2><dl><div><dt>Telefoon</dt><dd><a href=\"tel:+32484906966\">0484 90 69 66</a></dd></div><div><dt>E-mail</dt><dd><a href=\"mailto:info@abservice24.be\">info@abservice24.be</a></dd></div><div><dt>WhatsApp</dt><dd><a href=\"https://wa.me/32484906966?text=Hallo%2C%20ik%20heb%20een%20vraag.\" target=\"_blank\" rel=\"noreferrer\">Start een gesprek</a></dd></div><div><dt>Bereikbaarheid</dt><dd>24 uur per dag, 7 dagen per week</dd></div><div><dt>Onderneming</dt><dd>BE0792.534.639</dd></div></dl><div class=\"warning-box\"><strong>Geen noodkanaal</strong><p>Gebruik het formulier niet bij gasgeur, mogelijke CO of direct gevaar. Verlaat de ruimte en contacteer de bevoegde nood- of distributiedienst.</p></div></aside></div></section>",
+    "homeHtmlSha256": "e03c5d1ce83b95f9b60c706b0ef3807db4e6223b986ef8dc6ec48dbdee73b7f9",
+    "contactHtmlSha256": "b3f370e35bbe7a520eb3543f431ce68ce2dc7e673ed295d8f53ddca3e49c6d38"
+  }
+}

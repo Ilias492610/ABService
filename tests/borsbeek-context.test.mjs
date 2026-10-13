@@ -11,6 +11,7 @@ import * as seo from "../libs/seo-data.mjs";
 import * as schema from "../libs/schema-data.mjs";
 import { getCitedSources } from "../libs/cited-sources.mjs";
 import { areaDrafts } from "../content/content-backlog.mjs";
+import { beforeCustomerLocationRegistry } from "./fixtures/customer-location-history.mjs";
 
 // Execute complete production modules, real Next links and notFound. Only the
 // analytics transport is adapted; static rendering never sends an enquiry.
@@ -190,7 +191,7 @@ test("all other nine districts retain source and public status with five genuine
       assert.deepEqual(record.localSource, { label: "Stad Antwerpen: officiële wijkgegevens en clusterindeling 2026", href: wijkUrl, verifiedStatus: 200, verifiedAt: "2026-09-16" });
     }
     assert.equal(areas.getDistrictPublicHref(district), publicHref);
-    const definition = registry.getPageDefinition(district.canonicalPath);
+    const definition = beforeCustomerLocationRegistry(registry.getPageDefinition(district.canonicalPath));
     assert.equal(definition.status, status);
     assert.equal(Object.hasOwn(definition, "lastModified"), Object.hasOwn(modified, slug), slug);
     assert.equal(definition.lastModified, modified[slug], slug);

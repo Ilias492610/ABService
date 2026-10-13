@@ -8,6 +8,7 @@ import {buildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
 import {filterFaultCatalogs} from "../libs/fault-search.mjs";
 import {getCitedSources} from "../libs/cited-sources.mjs";
 import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {beforeCustomerLocationRegistry} from "./fixtures/customer-location-history.mjs";
 const f=JSON.parse(await readFile(new URL("./fixtures/calenta-ace-source-facts.json",import.meta.url),"utf8"));
 const guide=getFaultGuide("remeha");
 const catalog=id=>{const c=guide.catalogs.find(c=>c.id===id);assert.ok(c,"missing bounded Calenta Ace2018 catalog "+id);return c;};
@@ -86,5 +87,5 @@ test("Calenta manifest measures two originals and three entries without claiming
 });
 
 test("all19 old Remeha catalogs and other12guides retain actual captured hashes",()=>{
- const ids=new Set(f.catalogs.map(c=>c.id));assert.equal(hash(guide.catalogs.filter(c=>!ids.has(c.id))),f.before.preservation.remehaCatalogs);assert.equal(hash(faultGuides.filter(g=>g.slug!=="remeha")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
+ const ids=new Set(f.catalogs.map(c=>c.id));assert.equal(hash(guide.catalogs.filter(c=>!ids.has(c.id))),f.before.preservation.remehaCatalogs);assert.equal(hash(faultGuides.filter(g=>g.slug!=="remeha")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.filter(p=>p.path!==f.page.path).map(beforeCustomerLocationRegistry)),f.before.preservation.otherRegistry);
 });
