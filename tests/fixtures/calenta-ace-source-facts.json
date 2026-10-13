@@ -1,0 +1,1064 @@
+{
+  "provenance": {
+    "frozenBeforeProduct": true,
+    "capture": "2026-10-13T17:49:32.856Z",
+    "base": "d8fa5623fcd7f2d37ae7090dcce8542fb27bb7c8",
+    "actualTrackedFileCount": 326,
+    "independentInventorySha256": "f2ac82d31e0bafabb6391050216565cb0c58027b01a07046bfa8e3a4db2acc0c",
+    "sourceTuples": [
+      [
+        "A00.34",
+        "A",
+        121
+      ],
+      [
+        "A00.42",
+        "A",
+        121
+      ],
+      [
+        "A01.23",
+        "A",
+        122
+      ],
+      [
+        "A02.06",
+        "A",
+        122
+      ],
+      [
+        "A02.18",
+        "A",
+        122
+      ],
+      [
+        "A02.33",
+        "A",
+        122
+      ],
+      [
+        "A02.34",
+        "A",
+        122
+      ],
+      [
+        "A02.36",
+        "A",
+        122
+      ],
+      [
+        "A02.37",
+        "A",
+        122
+      ],
+      [
+        "A02.45",
+        "A",
+        122
+      ],
+      [
+        "A02.46",
+        "A",
+        122
+      ],
+      [
+        "A02.48",
+        "A",
+        122
+      ],
+      [
+        "A02.49",
+        "A",
+        122
+      ],
+      [
+        "A02.55",
+        "A",
+        123
+      ],
+      [
+        "A02.69",
+        "A",
+        123
+      ],
+      [
+        "A02.76",
+        "A",
+        123
+      ],
+      [
+        "A08.02",
+        "A",
+        123
+      ],
+      [
+        "H00.81",
+        "H",
+        123
+      ],
+      [
+        "H01.00",
+        "H",
+        123
+      ],
+      [
+        "H01.05",
+        "H",
+        123
+      ],
+      [
+        "H01.08",
+        "H",
+        123
+      ],
+      [
+        "H01.09",
+        "H",
+        123
+      ],
+      [
+        "H01.14",
+        "H",
+        124
+      ],
+      [
+        "H01.15",
+        "H",
+        124
+      ],
+      [
+        "H01.21",
+        "H",
+        124
+      ],
+      [
+        "H02.00",
+        "H",
+        124
+      ],
+      [
+        "H02.02",
+        "H",
+        124
+      ],
+      [
+        "H02.03",
+        "H",
+        124
+      ],
+      [
+        "H02.04",
+        "H",
+        124
+      ],
+      [
+        "H02.05",
+        "H",
+        124
+      ],
+      [
+        "H02.09",
+        "H",
+        124
+      ],
+      [
+        "H02.10",
+        "H",
+        124
+      ],
+      [
+        "H02.12",
+        "H",
+        124
+      ],
+      [
+        "H02.31",
+        "H",
+        124
+      ],
+      [
+        "H02.38",
+        "H",
+        124
+      ],
+      [
+        "H02.70",
+        "H",
+        125
+      ],
+      [
+        "H03.00",
+        "H",
+        125
+      ],
+      [
+        "H03.01",
+        "H",
+        125
+      ],
+      [
+        "H03.02",
+        "H",
+        125
+      ],
+      [
+        "H03.05",
+        "H",
+        125
+      ],
+      [
+        "H03.17",
+        "H",
+        125
+      ],
+      [
+        "E00.04",
+        "E",
+        125
+      ],
+      [
+        "E00.05",
+        "E",
+        125
+      ],
+      [
+        "E00.06",
+        "E",
+        125
+      ],
+      [
+        "E00.07",
+        "E",
+        126
+      ],
+      [
+        "E00.16",
+        "E",
+        126
+      ],
+      [
+        "E00.17",
+        "E",
+        126
+      ],
+      [
+        "E00.44",
+        "E",
+        126
+      ],
+      [
+        "E00.45",
+        "E",
+        126
+      ],
+      [
+        "E01.04",
+        "E",
+        126
+      ],
+      [
+        "E01.11",
+        "E",
+        126
+      ],
+      [
+        "E01.12",
+        "E",
+        126
+      ],
+      [
+        "E01.24",
+        "E",
+        126
+      ],
+      [
+        "E02.13",
+        "E",
+        127
+      ],
+      [
+        "E02.15",
+        "E",
+        127
+      ],
+      [
+        "E02.17",
+        "E",
+        127
+      ],
+      [
+        "E02.32",
+        "E",
+        127
+      ],
+      [
+        "E02.35",
+        "E",
+        127
+      ],
+      [
+        "E02.39",
+        "E",
+        127
+      ],
+      [
+        "E02.47",
+        "E",
+        127
+      ],
+      [
+        "E02.78",
+        "E",
+        127
+      ],
+      [
+        "E04.00",
+        "E",
+        127
+      ],
+      [
+        "E04.01",
+        "E",
+        127
+      ],
+      [
+        "E04.02",
+        "E",
+        127
+      ],
+      [
+        "E04.03",
+        "E",
+        128
+      ],
+      [
+        "E04.07",
+        "E",
+        128
+      ],
+      [
+        "E04.10",
+        "E",
+        128
+      ],
+      [
+        "E04.12",
+        "E",
+        128
+      ],
+      [
+        "E04.13",
+        "E",
+        128
+      ],
+      [
+        "E04.17",
+        "E",
+        129
+      ],
+      [
+        "E04.23",
+        "E",
+        129
+      ]
+    ],
+    "reading": "Personally inspected29full original retained images: both covers, installer7–11/25/47/82/90/121–129 and user5–10/15/31–32; no snippet-only source or other-model copy."
+  },
+  "before": {
+    "warning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld. Quinta Ace 45/65/90/115 heeft drie eigen CU-GH08-tabellen uit het Belgische Nederlandstalige installatie- en gebruikersboek 7684362-v.05-10012019: waarschuwingen (A), blokkeringen (H) en vergrendelingen (E). De 60 meldingen horen bij deze editie, niet bij Quinta Ace 160, andere edities of Luxemburg. Controleer of uw eigen toestel en bediening bij deze handleiding horen; de gebruikte software en aanwezige uitbreidingen verschillen per installatie. De actuele toepasbaarheid en nieuwste handleiding zijn hier niet vastgesteld. Lees en noteer de zichtbare melding en gewone gebruikscontext; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen.",
+    "page": {
+      "path": "/foutcodes/remeha",
+      "lastModified": "2026-10-13",
+      "status": "published",
+      "title": "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta | AB Service",
+      "description": "Zoek Remeha foutcodes per Avanta-, Calenta-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie, volledige melding en veilige vervolgstap.",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    "metadata": {
+      "title": "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta | AB Service",
+      "description": "Zoek Remeha foutcodes per Avanta-, Calenta-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie, volledige melding en veilige vervolgstap.",
+      "alternates": {
+        "canonical": "https://www.abservice24.be/foutcodes/remeha"
+      },
+      "robots": {
+        "index": true,
+        "follow": true,
+        "googleBot": {
+          "index": true,
+          "follow": true,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+          "max-video-preview": -1
+        }
+      },
+      "openGraph": {
+        "title": "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta | AB Service",
+        "description": "Zoek Remeha foutcodes per Avanta-, Calenta-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie, volledige melding en veilige vervolgstap.",
+        "url": "https://www.abservice24.be/foutcodes/remeha",
+        "siteName": "AB Service",
+        "locale": "nl_BE",
+        "type": "website",
+        "images": [
+          {
+            "url": "https://www.abservice24.be/social/foutcodes/remeha",
+            "width": 1200,
+            "height": 630,
+            "alt": "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta — AB Service"
+          }
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta | AB Service",
+        "description": "Zoek Remeha foutcodes per Avanta-, Calenta-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie, volledige melding en veilige vervolgstap.",
+        "images": [
+          "https://www.abservice24.be/social/foutcodes/remeha"
+        ]
+      }
+    },
+    "guideCount": 19,
+    "explanationRows": 816,
+    "manifestCounts": {
+      "guides": 13,
+      "catalogAssignments": 47,
+      "distinctCatalogs": 41,
+      "displayedExplanationRows": 1858,
+      "distinctCatalogExplanationRows": 1616,
+      "distinctCatalogSourceURLs": 23
+    },
+    "manifestSnapshotCount": 25,
+    "preservation": {
+      "remehaCatalogs": "c8e8273d719af9ddddbc9b6b9d2f7c33b6f4df0f635a5970e9737facc8081638",
+      "otherGuides": "50de5d8beb2929eb5cb2c719bd61dd38706107b4c3cdfa4411f5fc5e73324f4f",
+      "allGuides": "592bc97e8627e5a12891fa58f3f51fedfdcbcd3cdafc104c811412437e99bd0f",
+      "otherRegistry": "f44a4496ae8cbb7babb34940a372a7faddbf6935c53bf995dbcee949490adb18",
+      "allRegistry": "c26eb5e4c49601cba24f504b9a703c697a3cc9118bcf6075667aec18fe750118",
+      "remehaHtml": "af0a557714a87c76d409b38284ea904c38b4fc2fa54fa76c37a26436b55b53b9",
+      "allManifest": "81141ffac73daaca056330d6cd50ad74983cc3df580c8db8d6714f1440a4afc0",
+      "allSnapshots": "cce30bd976d55c1ae29f221fb26d2f541265e4ca6c7470f4344982da14774328",
+      "allManifestEntries": "833b85d12706fbbde0e44c331cc2e722028697dfecefd72a6ab6ab2667314071"
+    }
+  },
+  "sources": {
+    "installer": {
+      "URL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_IM_SM_Calenta_Ace_NL.pdf",
+      "sha256": "22713454d22089e9c1fd3f876aa6bc0b623f0c6205a798f9e3294de36699eef4",
+      "byteLength": 16992150,
+      "pageCount": 144,
+      "printedIdentifier": "7688047 - v.01 - 08052018",
+      "documentNumber": "7688047",
+      "revision": "v.01",
+      "issueDate": "2018-05-08",
+      "archiveModifiedDate": "2018-05-31",
+      "models": [
+        "15ds",
+        "25ds",
+        "25/28",
+        "35ds",
+        "35/39"
+      ],
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-13T17:49:35.096Z"
+    },
+    "user": {
+      "URL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_UM_Calenta_Ace_NL.pdf",
+      "sha256": "d48fce2bd343f76e1f2fba399ee8cc703a406cc007b550fb376426591580aaf9",
+      "byteLength": 1099445,
+      "pageCount": 44,
+      "printedIdentifier": "7688050 - v.01 - 08052018",
+      "documentNumber": "7688050",
+      "revision": "v.01",
+      "issueDate": "2018-05-08",
+      "archiveModifiedDate": "2018-05-31",
+      "models": [
+        "15ds",
+        "25ds",
+        "25/28",
+        "35ds",
+        "35/39"
+      ],
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-13T17:49:33.540Z"
+    }
+  },
+  "actions": {
+    "observe": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+    "pressure": "Lees de volledige zichtbare code. Noteer alleen een reeds veilig zichtbare drukwaarde en bekende verwarmingsklachten. Laat een aanhoudende of terugkerende melding, drukverlies of lekkage door een bevoegde installateur beoordelen. Vul niet bij, ontlucht niet en activeer geen vulprogramma op basis van deze tabel.",
+    "configuration": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+    "combustion": "Lees de volledige zichtbare code. Bij gasgeur, rookgasgeur of een CO-alarm: volg eerst de veiligheidsmelding boven de codezoeker en blijf uit de gevarenzone. Geef zonder zulke signalen de code en reeds opgemerkte uitval door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Zoek niet naar vonk of vlam en voer geen gascontrole, reset of stroomonderbreking uit.",
+    "resetState": "Lees de volledige zichtbare code. De resetprocedure loopt al; start geen extra reset en onderbreek de stroom niet. Noteer de melding en bekende context. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen; de procedurestatus bewijst geen verholpen oorzaak.",
+    "safetyCheck": "Lees de volledige zichtbare code. Noteer de lopende controle en bekende context; onderbreek de controle niet en voer geen reset of stroomonderbreking uit. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. De bron geeft geen wachttijd of herstelhandeling voor deze rij.",
+    "supplier": "Lees de volledige zichtbare code. Geef de melding en veilig reeds beschikbare modelgegevens aan uw leverancier door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en verander geen instellingen; voer geen reset of stroomonderbreking uit.",
+    "shower": "Lees de volledige zichtbare code. Noteer of de melding tijdens het douchen verscheen en geef de bekende gebruikscontext door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Wijzig geen doucheprogramma of parameter en voer geen reset of stroomonderbreking uit."
+  },
+  "catalogs": [
+    {
+      "id": "remeha-calenta-ace-cu-warnings",
+      "title": "Calenta Ace (2018) — CU-GH08 — waarschuwingen",
+      "scope": "Alleen Calenta Ace 15ds, 25ds, 25/28, 35ds en 35/39 voor België, Nederlandstalige editie 7688047-v.01-08052018, CU-GH08 met HMI T-control. Tabel 85 bevat 17 meldingen. A is een waarschuwing: de ketel kan volgens de bron blijven werken, maar de oorzaak vraagt onderzoek en de melding kan escaleren. Het afzonderlijke gebruikersboek 7688050-v.01-08052018, § 8, p. 31–32 geeft algemene meldings-, klasse- en probleemcontext, geen overeenkomende volledige tabel van deze codes. De handleiding bespreekt SCB-printen en aangesloten apparaten; welke uitbreiding of software uw toestel gebruikt is hier niet vastgesteld. Automatische bijvulling geldt alleen als die aanwezig en daarvoor ingesteld is. Niet voor historische Calenta 117061, Ace-Matic, 25L of andere edities. Exacte product- en serienummers, de toepasbaarheid op uw eigen toestel en de nieuwste handleiding zijn niet vastgesteld. Lees de volledige zichtbare code en vergelijk uw eigen gebruikershandleiding. Technische remedies zijn voor de installateur; deze tabel geeft geen reset-, stroomonderbrekings-, vul-, ontluchtings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Calenta Ace installatie- en servicehandleiding 7688047-v.01-08052018",
+      "sourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_IM_SM_Calenta_Ace_NL.pdf",
+      "sourcePages": "tabel 85, p. 121–123",
+      "companionSourceLabel": "Remeha België — Calenta Ace gebruikershandleiding 7688050-v.01-08052018 — algemene context, geen volledige codetabel",
+      "companionSourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_UM_Calenta_Ace_NL.pdf",
+      "table": 85,
+      "sourceClass": "A",
+      "rows": [
+        {
+          "code": "A00.34",
+          "meaning": "De regeling verwacht een buitentemperatuursensor, maar detecteert die niet.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 121"
+        },
+        {
+          "code": "A00.42",
+          "meaning": "De regeling verwacht een waterdruksensor, maar detecteert die niet. Dit zegt niets over een gemeten drukwaarde.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 121"
+        },
+        {
+          "code": "A01.23",
+          "meaning": "Er is slechte verbranding gemeld. De advieskolom behandelt vlamwegval tijdens bedrijf en ontbrekende ionisatiestroom; de code bewijst geen afzonderlijk defect onderdeel.",
+          "userAction": "Lees de volledige zichtbare code. Bij gasgeur, rookgasgeur of een CO-alarm: volg eerst de veiligheidsmelding boven de codezoeker en blijf uit de gevarenzone. Geef zonder zulke signalen de code en reeds opgemerkte uitval door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Zoek niet naar vonk of vlam en voer geen gascontrole, reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.06",
+          "meaning": "De waterdruk ligt volgens de waarschuwing onder de minimale waterdruk. Deze rij geeft geen numerieke drukgrens.",
+          "userAction": "Lees de volledige zichtbare code. Noteer alleen een reeds veilig zichtbare drukwaarde en bekende verwarmingsklachten. Laat een aanhoudende of terugkerende melding, drukverlies of lekkage door een bevoegde installateur beoordelen. Vul niet bij, ontlucht niet en activeer geen vulprogramma op basis van deze tabel.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.18",
+          "meaning": "Er is een fout in de Object Dictionary gemeld; de bron behandelt dit als een configuratiefout.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.33",
+          "meaning": "Automatisch bijvullen duurt te lang en wordt gestopt. De bron noemt verschillende mogelijke oorzaken, geen vastgestelde lekkage. Het gebruikersboek bespreekt deze melding alleen als automatische bijvulling aanwezig en daarvoor ingesteld is.",
+          "userAction": "Lees de volledige zichtbare code. Noteer alleen een reeds veilig zichtbare drukwaarde en bekende verwarmingsklachten. Laat een aanhoudende of terugkerende melding, drukverlies of lekkage door een bevoegde installateur beoordelen. Vul niet bij, ontlucht niet en activeer geen vulprogramma op basis van deze tabel.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.34",
+          "meaning": "Automatisch vullen start niet omdat de tijd sinds de vorige vulpoging te kort is. De bron noemt onder meer lekkage of een vorige vulling die net boven het minimum eindigde; geen van deze oorzaken staat daarmee vast.",
+          "userAction": "Lees de volledige zichtbare code. Noteer alleen een reeds veilig zichtbare drukwaarde en bekende verwarmingsklachten. Laat een aanhoudende of terugkerende melding, drukverlies of lekkage door een bevoegde installateur beoordelen. Vul niet bij, ontlucht niet en activeer geen vulprogramma op basis van deze tabel.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.36",
+          "meaning": "De communicatie met een functioneel component is weggevallen; de advieskolom behandelt een niet gevonden SCB-print. De beschrijving noemt dit een blokkering, maar de rij staat in de A-waarschuwingstabel.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.37",
+          "meaning": "De communicatie met een niet-kritisch component is weggevallen. De advieskolom behandelt een niet gevonden SCB-print; de aanwezige print is hiermee niet vastgesteld.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.45",
+          "meaning": "De CAN-verbindingsmatrix is vol. De advieskolom behandelt daarnaast een niet gevonden SCB-print.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.46",
+          "meaning": "De CAN-administratie in het toestel is vol. De advieskolom behandelt daarnaast een niet gevonden SCB-print.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.48",
+          "meaning": "De configuratie van een functiegroep is mislukt. De advieskolom behandelt een niet gevonden SCB-print.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.49",
+          "meaning": "De initialisatie is mislukt. De advieskolom behandelt een niet gevonden SCB-print.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 122"
+        },
+        {
+          "code": "A02.55",
+          "meaning": "Het toestel heeft een ongeldig of ontbrekend serienummer volgens de melding. De bron verwijst naar de leverancier.",
+          "userAction": "Lees de volledige zichtbare code. Geef de melding en veilig reeds beschikbare modelgegevens aan uw leverancier door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en verander geen instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 123"
+        },
+        {
+          "code": "A02.69",
+          "meaning": "De demomodus is actief. Dat is een genoemde bedrijfsmodus, geen bewezen defect; de bron verwijst naar de leverancier.",
+          "userAction": "Lees de volledige zichtbare code. Geef de melding en veilig reeds beschikbare modelgegevens aan uw leverancier door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en verander geen instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 123"
+        },
+        {
+          "code": "A02.76",
+          "meaning": "De gereserveerde geheugenruimte voor aangepaste parameters is vol; verdere veranderingen zijn niet mogelijk. Dit gaat niet over het geheugen voor de laatste 32 storingen of een vastgesteld RAM-defect.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 123"
+        },
+        {
+          "code": "A08.02",
+          "meaning": "De voor het douchen gereserveerde tijd is verstreken. De bron noemt een kortere douche of een professionele parameterwijziging; de rij bewijst geen defect.",
+          "userAction": "Lees de volledige zichtbare code. Noteer of de melding tijdens het douchen verscheen en geef de bekende gebruikscontext door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Wijzig geen doucheprogramma of parameter en voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "A",
+          "sourcePage": "tabel 85, p. 123"
+        }
+      ]
+    },
+    {
+      "id": "remeha-calenta-ace-cu-blocking",
+      "title": "Calenta Ace (2018) — CU-GH08 — blokkeringen",
+      "scope": "Alleen Calenta Ace 15ds, 25ds, 25/28, 35ds en 35/39 voor België, Nederlandstalige editie 7688047-v.01-08052018, CU-GH08 met HMI T-control. Tabel 86 bevat 24 meldingen. H is een blokkering: hervatting volgt volgens de bron pas als de oorzaak is verdwenen. H02.00 is een actieve reset en H03.17 een lopende controle; er is geen vaste wachttijd beloofd. Het afzonderlijke gebruikersboek 7688050-v.01-08052018, § 8, p. 31–32 geeft algemene meldings-, klasse- en probleemcontext, geen overeenkomende volledige tabel van deze codes. De handleiding bespreekt SCB-printen en aangesloten apparaten; welke uitbreiding of software uw toestel gebruikt is hier niet vastgesteld. Automatische bijvulling geldt alleen als die aanwezig en daarvoor ingesteld is. Niet voor historische Calenta 117061, Ace-Matic, 25L of andere edities. Exacte product- en serienummers, de toepasbaarheid op uw eigen toestel en de nieuwste handleiding zijn niet vastgesteld. Lees de volledige zichtbare code en vergelijk uw eigen gebruikershandleiding. Technische remedies zijn voor de installateur; deze tabel geeft geen reset-, stroomonderbrekings-, vul-, ontluchtings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Calenta Ace installatie- en servicehandleiding 7688047-v.01-08052018",
+      "sourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_IM_SM_Calenta_Ace_NL.pdf",
+      "sourcePages": "tabel 86, p. 123–125",
+      "companionSourceLabel": "Remeha België — Calenta Ace gebruikershandleiding 7688050-v.01-08052018 — algemene context, geen volledige codetabel",
+      "companionSourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_UM_Calenta_Ace_NL.pdf",
+      "table": 86,
+      "sourceClass": "H",
+      "rows": [
+        {
+          "code": "H00.81",
+          "meaning": "De regeling verwacht een ruimtetemperatuursensor, maar detecteert die niet.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 123"
+        },
+        {
+          "code": "H01.00",
+          "meaning": "Er is een communicatiefout opgetreden; de advieskolom noemt communicatie met de veiligheidskern en een professionele herstart. Deze rij belooft geen automatisch herstel en noemt geen vervanging van de besturing.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 123"
+        },
+        {
+          "code": "H01.05",
+          "meaning": "Het maximale verschil tussen aanvoer- en retourtemperatuur is overschreden. De bron noemt doorstroming en sensoren als professionele onderzoekspunten, geen vastgestelde oorzaak.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 123"
+        },
+        {
+          "code": "H01.08",
+          "meaning": "De advieskolom meldt een overschrijding van de maximale stijging van de warmtewisselaartemperatuur bij de korte omschrijving Delta T Max 3. Deze rij noemt geen tijds- of stijgsnelheidseenheid.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 123"
+        },
+        {
+          "code": "H01.09",
+          "meaning": "De melding betreft de gasdrukschakelaar; de advieskolom behandelt te lage gasdruk en de afstelling van die schakelaar. Daarmee is geen afzonderlijke oorzaak bewezen.",
+          "userAction": "Lees de volledige zichtbare code. Bij gasgeur, rookgasgeur of een CO-alarm: volg eerst de veiligheidsmelding boven de codezoeker en blijf uit de gevarenzone. Geef zonder zulke signalen de code en reeds opgemerkte uitval door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Zoek niet naar vonk of vlam en voer geen gascontrole, reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 123"
+        },
+        {
+          "code": "H01.14",
+          "meaning": "De aanvoertemperatuur heeft de maximale bedrijfswaarde overschreden.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H01.15",
+          "meaning": "De rookgastemperatuur heeft de maximale bedrijfswaarde overschreden. De advieskolom bevat alleen een streepje en geeft hier geen herstelhandeling.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H01.21",
+          "meaning": "De warmtewisselaartemperatuur stijgt te snel; de advieskolom spreekt over te snel gestegen aanvoertemperatuur. De korte schermtekst bewijst geen uitsluitend warmwaterprobleem.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.00",
+          "meaning": "Het toestel wordt al gereset. De bron noemt een actieve resetprocedure en geen actie; dit is geen verzoek om opnieuw te resetten.",
+          "userAction": "Lees de volledige zichtbare code. De resetprocedure loopt al; start geen extra reset en onderbreek de stroom niet. Noteer de melding en bekende context. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen; de procedurestatus bewijst geen verholpen oorzaak.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.02",
+          "meaning": "Het toestel wacht op een configuratienummer; de advieskolom noemt een onbekend configuratienummer.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.03",
+          "meaning": "De ingevoerde configuratiecode bestaat niet volgens de melding en veroorzaakt een blokkering.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.04",
+          "meaning": "Een fout in de parameterlijst veroorzaakt een blokkering. De bron behandelt niet-correcte fabrieksinstellingen of parameters.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.05",
+          "meaning": "Een verkeerd aangesloten configuratieopslageenheid veroorzaakt een blokkering.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.09",
+          "meaning": "Het verbreken van de externe blokkeeringang blokkeert cv- en warmwaterbedrijf. De advieskolom noemt de blokkerende ingang of actieve vorstbeveiliging; dit is niet de volledige blokkering zonder vorstbeveiliging van H02.10.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.10",
+          "meaning": "Het toestel is geblokkeerd door het verbreken van de externe blokkeeringang. De advieskolom noemt een actieve blokkerende ingang zonder vorstbeveiliging.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.12",
+          "meaning": "Het externe vrijgavecontact voor de branderstart sluit niet. De advieskolom noemt een verlopen wachttijd voor het vrijgavesignaal, zonder numerieke duur.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.31",
+          "meaning": "Na spanningsuitval is een blokkering gemeld omdat de waterdruk lager is dan de gewenste vuldruk. De bron bespreekt vrijgave van automatisch vullen; dit is geen opdracht om zelf een vulprogramma te starten.",
+          "userAction": "Lees de volledige zichtbare code. Noteer alleen een reeds veilig zichtbare drukwaarde en bekende verwarmingsklachten. Laat een aanhoudende of terugkerende melding, drukverlies of lekkage door een bevoegde installateur beoordelen. Vul niet bij, ontlucht niet en activeer geen vulprogramma op basis van deze tabel.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.38",
+          "meaning": "De bron vermeldt geen waterhardheid. De advieskolom bevat alleen een streepje; een oorzaak, hardheidswaarde of parameter is hier niet uitgewerkt.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 124"
+        },
+        {
+          "code": "H02.70",
+          "meaning": "Een test van de externe warmteterugwinunit is mislukt. De code stelt niet vast welke externe apparatuur op uw toestel aanwezig is.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 125"
+        },
+        {
+          "code": "H03.00",
+          "meaning": "De beschrijving zegt letterlijk dat veiligheidsparameters van niveau 2, 3 en 4 ‘niet fout of ontbreken’. De advieskolom behandelt een parameterfout in de veiligheidskern. De onduidelijke beschrijving blijft zichtbaar voor beoordeling door de installateur.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 125"
+        },
+        {
+          "code": "H03.01",
+          "meaning": "Een interne communicatiefout veroorzaakt een blokkering; de advieskolom noemt communicatie met de CU-GH-print.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 125"
+        },
+        {
+          "code": "H03.02",
+          "meaning": "Een te laag vlamsignaal veroorzaakt een blokkering. De advieskolom behandelt vlamwegval tijdens bedrijf en ontbrekende ionisatiestroom; de oorzaak is niet vastgesteld.",
+          "userAction": "Lees de volledige zichtbare code. Bij gasgeur, rookgasgeur of een CO-alarm: volg eerst de veiligheidsmelding boven de codezoeker en blijf uit de gevarenzone. Geef zonder zulke signalen de code en reeds opgemerkte uitval door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Zoek niet naar vonk of vlam en voer geen gascontrole, reset of stroomonderbreking uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 125"
+        },
+        {
+          "code": "H03.05",
+          "meaning": "Een interne fout van de veiligheidsunit veroorzaakt een blokkering. De advieskolom spreekt over de veiligheidskern.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 125"
+        },
+        {
+          "code": "H03.17",
+          "meaning": "De interne veiligheidscontrole wordt uitgevoerd. De advieskolom bevat alleen een streepje; deze lopende controle bewijst geen defect en heeft hier geen duurgrens of herstartadvies.",
+          "userAction": "Lees de volledige zichtbare code. Noteer de lopende controle en bekende context; onderbreek de controle niet en voer geen reset of stroomonderbreking uit. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. De bron geeft geen wachttijd of herstelhandeling voor deze rij.",
+          "sourceClass": "H",
+          "sourcePage": "tabel 86, p. 125"
+        }
+      ]
+    },
+    {
+      "id": "remeha-calenta-ace-cu-locking",
+      "title": "Calenta Ace (2018) — CU-GH08 — vergrendelingen",
+      "scope": "Alleen Calenta Ace 15ds, 25ds, 25/28, 35ds en 35/39 voor België, Nederlandstalige editie 7688047-v.01-08052018, CU-GH08 met HMI T-control. Tabel 87 bevat 30 meldingen. E is een vergrendeling, ook waar een beschrijving het woord blokkering gebruikt. De bron beschrijft herstel na het wegnemen van de oorzaak en reset; dit is hier geen gebruikersprocedure. Het afzonderlijke gebruikersboek 7688050-v.01-08052018, § 8, p. 31–32 geeft algemene meldings-, klasse- en probleemcontext, geen overeenkomende volledige tabel van deze codes. De handleiding bespreekt SCB-printen en aangesloten apparaten; welke uitbreiding of software uw toestel gebruikt is hier niet vastgesteld. Automatische bijvulling geldt alleen als die aanwezig en daarvoor ingesteld is. Niet voor historische Calenta 117061, Ace-Matic, 25L of andere edities. Exacte product- en serienummers, de toepasbaarheid op uw eigen toestel en de nieuwste handleiding zijn niet vastgesteld. Lees de volledige zichtbare code en vergelijk uw eigen gebruikershandleiding. Technische remedies zijn voor de installateur; deze tabel geeft geen reset-, stroomonderbrekings-, vul-, ontluchtings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Calenta Ace installatie- en servicehandleiding 7688047-v.01-08052018",
+      "sourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_IM_SM_Calenta_Ace_NL.pdf",
+      "sourcePages": "tabel 87, p. 125–129",
+      "companionSourceLabel": "Remeha België — Calenta Ace gebruikershandleiding 7688050-v.01-08052018 — algemene context, geen volledige codetabel",
+      "companionSourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_UM_Calenta_Ace_NL.pdf",
+      "table": 87,
+      "sourceClass": "E",
+      "rows": [
+        {
+          "code": "E00.04",
+          "meaning": "De retourtemperatuursensor is verwijderd of meet onder zijn bereik; de advieskolom behandelt een open sensorcircuit.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 125"
+        },
+        {
+          "code": "E00.05",
+          "meaning": "De retourtemperatuursensor is kortgesloten of meet boven zijn bereik.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 125"
+        },
+        {
+          "code": "E00.06",
+          "meaning": "De regeling verwacht de retourtemperatuursensor, maar detecteert die niet. De advieskolom noemt ontbrekende verbinding.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 125"
+        },
+        {
+          "code": "E00.07",
+          "meaning": "De beschrijving noemt een te groot verschil in retourtemperatuur, terwijl de advieskolom een te groot verschil tussen aanvoer en retour behandelt. Laat de installateur beoordelen wat deze verschillende omschrijvingen bij uw toestel betekenen.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 126"
+        },
+        {
+          "code": "E00.16",
+          "meaning": "De temperatuursensor van de sanitair-warmwatertank is verwijderd of meet onder zijn bereik; de advieskolom behandelt een open boilersensor. Dit is niet de uittredesensor van E00.44.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 126"
+        },
+        {
+          "code": "E00.17",
+          "meaning": "De temperatuursensor van de sanitair-warmwatertank is kortgesloten of meet boven zijn bereik; dit is de boilersensor, niet de uittredesensor van E00.45.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 126"
+        },
+        {
+          "code": "E00.44",
+          "meaning": "De uittredetemperatuursensor voor sanitair warm water ontbreekt of meet onder zijn bereik; de advieskolom behandelt een open SWW-sensor.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 126"
+        },
+        {
+          "code": "E00.45",
+          "meaning": "De uittredetemperatuursensor voor sanitair warm water is kortgesloten of meet boven zijn bereik.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 126"
+        },
+        {
+          "code": "E01.04",
+          "meaning": "Er is onbedoeld vlamverlies opgetreden; de schermtekst en advieskolom noemen vijf keer vlamverlies. Dit is niet de vijf mislukte branderstarts van E04.10.",
+          "userAction": "Lees de volledige zichtbare code. Bij gasgeur, rookgasgeur of een CO-alarm: volg eerst de veiligheidsmelding boven de codezoeker en blijf uit de gevarenzone. Geef zonder zulke signalen de code en reeds opgemerkte uitval door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Zoek niet naar vonk of vlam en voer geen gascontrole, reset of stroomonderbreking uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 126"
+        },
+        {
+          "code": "E01.11",
+          "meaning": "Het ventilatortoerental heeft het normale werkbereik overschreden. De code bewijst niet welke oorzaak uit de professionele onderzoekskolom van toepassing is.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 126"
+        },
+        {
+          "code": "E01.12",
+          "meaning": "De retourtemperatuur is hoger dan de aanvoertemperatuur. De advieskolom behandelt verwisselde aanvoer en retour en meerdere onderzoekspunten; de code bewijst geen bepaalde verkeerde aansluiting.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 126"
+        },
+        {
+          "code": "E01.24",
+          "meaning": "De beschrijving noemt meerdere verbrandingsfouten ‘met 24 uur’, terwijl de advieskolom te veel geresette fouten behandelt. De schermtekst over een branderverschil verklaart dit niet eenduidig; deze verschillen bewijzen geen specifieke oorzaak.",
+          "userAction": "Lees de volledige zichtbare code. Bij gasgeur, rookgasgeur of een CO-alarm: volg eerst de veiligheidsmelding boven de codezoeker en blijf uit de gevarenzone. Geef zonder zulke signalen de code en reeds opgemerkte uitval door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Zoek niet naar vonk of vlam en voer geen gascontrole, reset of stroomonderbreking uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 126"
+        },
+        {
+          "code": "E02.13",
+          "meaning": "De besturing meldt een blokkerende ingang door een externe toestand rond het toestel. Ondanks de woorden over blokkering staat deze rij in de E-vergrendelingstabel.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E02.15",
+          "meaning": "De beschrijving noemt blokkering door een defecte of niet aangesloten configuratieopslageenheid; de advieskolom noemt een CSU-time-out. De rij staat in de E-vergrendelingstabel en noemt geen minimale duur of vastgestelde fout in de CU-GH08.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E02.17",
+          "meaning": "Er is een communicatietime-out van de veiligheidsunit. De advieskolom noemt de veiligheidskern; dit is niet de CSU-melding van E02.15.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E02.32",
+          "meaning": "Het automatisch vullen of bijvullen duurt te lang en veroorzaakt een vergrendeling. Dit heeft een andere klasse dan de waarschuwing A02.33; de code bewijst geen lekkage.",
+          "userAction": "Lees de volledige zichtbare code. Noteer alleen een reeds veilig zichtbare drukwaarde en bekende verwarmingsklachten. Laat een aanhoudende of terugkerende melding, drukverlies of lekkage door een bevoegde installateur beoordelen. Vul niet bij, ontlucht niet en activeer geen vulprogramma op basis van deze tabel.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E02.35",
+          "meaning": "De communicatie met een veiligheidskritisch component is weggevallen en veroorzaakt een vergrendeling. Het betrokken component is niet nader vastgesteld.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E02.39",
+          "meaning": "De waterdruk stijgt onvoldoende tijdens automatisch vullen en veroorzaakt een vergrendeling. De verschillende professionele onderzoekspunten bewijzen geen lekkage of defecte druksensor.",
+          "userAction": "Lees de volledige zichtbare code. Noteer alleen een reeds veilig zichtbare drukwaarde en bekende verwarmingsklachten. Laat een aanhoudende of terugkerende melding, drukverlies of lekkage door een bevoegde installateur beoordelen. Vul niet bij, ontlucht niet en activeer geen vulprogramma op basis van deze tabel.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E02.47",
+          "meaning": "Het koppelen van een functiegroep is mislukt; de advieskolom noemt een niet gevonden functiegroep.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E02.78",
+          "meaning": "De beschrijving meldt verwisselde aansluitingen van sanitair warm en koud water. De advieskolom spreekt daarentegen over cv- en SWW-leidingen; dat is een ander leidingpaar en vraagt beoordeling door de installateur.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E04.00",
+          "meaning": "Een fout in de veiligheidsparameters veroorzaakt een vergrendeling. De bron specificeert in deze rij geen parameterniveau.",
+          "userAction": "Lees de volledige zichtbare code. Geef het model en bekende installatie- of onderhoudswijzigingen door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Open geen onderdelen en wijzig geen configuratie, veiligheidscontacten of instellingen; voer geen reset of stroomonderbreking uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E04.01",
+          "meaning": "De schermtekst zegt ‘Vergr T aanv Laag’, maar de beschrijving en advieskolom behandelen een kortgesloten aanvoertemperatuursensor of een waarde boven het meetbereik. Deze verschillende omschrijvingen blijven zichtbaar; wissel de betekenis niet met E04.02.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E04.02",
+          "meaning": "De schermtekst zegt ‘Vergr T aanv kortsl’, maar de beschrijving behandelt een verwijderde aanvoertemperatuursensor of een waarde beneden het bereik en het advies een open sensorcircuit. Deze verschillende omschrijvingen blijven zichtbaar; wissel de betekenis niet met E04.01.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 127"
+        },
+        {
+          "code": "E04.03",
+          "meaning": "De beschrijving meldt een aanvoertemperatuur boven de maximale veiligheidswaarde. De advieskolom begint daarentegen bij een overschreden maximale stijging van de warmtewisselaartemperatuur. Een te hoge temperatuur en een te snelle stijging zijn verschillende omschrijvingen die de installateur moet beoordelen.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 128"
+        },
+        {
+          "code": "E04.07",
+          "meaning": "Er is een te groot temperatuurverschil tussen twee aanvoertemperatuursensoren. Ondanks de korte schermtekst ‘a-r’ gaat de beschrijving niet over aanvoer tegenover retour.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 128"
+        },
+        {
+          "code": "E04.10",
+          "meaning": "Er is een vergrendeling na vijf mislukte branderstarts. De bron onderscheidt professionele onderzoeken bij geen vonk, bij vonk zonder vlam en bij vlam met geen of te weinig ionisatie; de code bewijst niet welk geval speelt.",
+          "userAction": "Lees de volledige zichtbare code. Bij gasgeur, rookgasgeur of een CO-alarm: volg eerst de veiligheidsmelding boven de codezoeker en blijf uit de gevarenzone. Geef zonder zulke signalen de code en reeds opgemerkte uitval door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Zoek niet naar vonk of vlam en voer geen gascontrole, reset of stroomonderbreking uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 128"
+        },
+        {
+          "code": "E04.12",
+          "meaning": "Er is een vals vlamsignaal vóór de branderstart gemeld. Dit bewijst niet dat u een werkelijke vlam kunt of moet waarnemen.",
+          "userAction": "Lees de volledige zichtbare code. Bij gasgeur, rookgasgeur of een CO-alarm: volg eerst de veiligheidsmelding boven de codezoeker en blijf uit de gevarenzone. Geef zonder zulke signalen de code en reeds opgemerkte uitval door. Laat een aanhoudende of terugkerende melding door een bevoegde installateur beoordelen. Zoek niet naar vonk of vlam en voer geen gascontrole, reset of stroomonderbreking uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 128"
+        },
+        {
+          "code": "E04.13",
+          "meaning": "Het ventilatortoerental wijkt af van het verwachte toerental en veroorzaakt een vergrendeling.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 128"
+        },
+        {
+          "code": "E04.17",
+          "meaning": "Een defect in de gasblokaansturing veroorzaakt een vergrendeling. De professionele advieskolom noemt vervanging van de besturing, geen bewezen noodzaak om het gasblok te vervangen.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 129"
+        },
+        {
+          "code": "E04.23",
+          "meaning": "Een interne fout van de veiligheidsunit veroorzaakt een vergrendeling. De professionele advieskolom noemt vervanging van de besturing; er is hier geen herstartadvies.",
+          "userAction": "Lees de volledige zichtbare code. Noteer het model uit veilig beschikbare documentatie en reeds opgemerkte gebruiksklachten. Laat een aanhoudende of terugkerende melding door een bevoegde installateur of leverancier beoordelen. Open geen onderdelen en voer geen reset, stroomonderbreking of technische controle uit.",
+          "sourceClass": "E",
+          "sourcePage": "tabel 87, p. 129"
+        }
+      ]
+    }
+  ],
+  "warning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Legacy Tzerra, Tzerra Ace en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld. Quinta Ace 45/65/90/115 heeft drie eigen CU-GH08-tabellen uit het Belgische Nederlandstalige installatie- en gebruikersboek 7684362-v.05-10012019: waarschuwingen (A), blokkeringen (H) en vergrendelingen (E). De 60 meldingen horen bij deze editie, niet bij Quinta Ace 160, andere edities of Luxemburg. Controleer of uw eigen toestel en bediening bij deze handleiding horen; de gebruikte software en aanwezige uitbreidingen verschillen per installatie. De actuele toepasbaarheid en nieuwste handleiding zijn hier niet vastgesteld. Lees en noteer de zichtbare melding en gewone gebruikscontext; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen. Calenta Ace 15ds/25ds/25/28/35ds/35/39 heeft daarnaast drie eigen tabellen voor CU-GH08 met HMI T-control uit het Belgische installatieboek van 8 mei 2018: 17 waarschuwingen, 24 blokkeringen en 30 vergrendelingen. Het afzonderlijke gebruikersboek geeft algemene meldings- en probleemcontext, geen volledige tabel van deze 71 codes. Kies deze editie alleen als ze bij uw eigen toestel hoort. Verschillen tussen schermtekst, beschrijving en professioneel advies blijven bij de betrokken code vermeld. De gebruikte software, aanwezige uitbreidingen en nieuwste handleiding zijn niet vastgesteld. Noteer de volledige zichtbare melding en veilig beschikbare modelgegevens; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen.",
+  "page": {
+    "path": "/foutcodes/remeha",
+    "lastModified": "2026-10-13",
+    "status": "published",
+    "title": "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta | AB Service",
+    "description": "Zoek Remeha foutcodes per Avanta-, historische Calenta-, Calenta Ace (2018)-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie en veilige vervolgstap.",
+    "changeFrequency": "monthly",
+    "priority": 0.6
+  },
+  "manifestPurposeSuffix": " Task87 adds only three Calenta Ace CU-GH08 catalogs from separate Belgian Dutch May2018 installer/user originals:17A24H30E installer rows; user context is not a matching71-row table. No software/current-device/latest fit claim.",
+  "manifestCountSuffix": " The71 Calenta Ace2018 rows include warnings, reset and safety-check states; no71 proven faults, demand or whole-brand coverage. User examples, class patterns and32-event memory are not additional rows.",
+  "expectedManifestCounts": {
+    "guides": 13,
+    "catalogAssignments": 50,
+    "distinctCatalogs": 44,
+    "displayedExplanationRows": 1929,
+    "distinctCatalogExplanationRows": 1687,
+    "distinctCatalogSourceURLs": 24
+  }
+}

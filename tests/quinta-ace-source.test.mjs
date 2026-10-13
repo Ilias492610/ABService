@@ -2,12 +2,19 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
 import {createHash} from "node:crypto";
-import {getFaultGuide,faultGuides} from "../content/fault-guides.mjs";
-import {getPageDefinition,pageRegistry} from "../content/site-content.mjs";
-import {buildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
+import {getFaultGuide as liveGetFaultGuide,faultGuides as liveFaultGuides} from "../content/fault-guides.mjs";
+import {getPageDefinition as liveGetPageDefinition,pageRegistry as livePageRegistry} from "../content/site-content.mjs";
+import {buildPageMetadata as liveBuildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
 import {filterFaultCatalogs} from "../libs/fault-search.mjs";
 import {getCitedSources} from "../libs/cited-sources.mjs";
-import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {renderFaultGuide as liveRenderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
+import {beforeCalentaAceGuide,beforeCalentaAceRegistry,beforeCalentaAceMetadata,beforeCalentaAceHtml,beforeCalentaAceManifest} from "./fixtures/calenta-ace-history.mjs";
+const getFaultGuide=slug=>beforeCalentaAceGuide(liveGetFaultGuide(slug));
+const faultGuides=liveFaultGuides.map(beforeCalentaAceGuide);
+const getPageDefinition=path=>beforeCalentaAceRegistry(liveGetPageDefinition(path));
+const pageRegistry=livePageRegistry.map(beforeCalentaAceRegistry);
+const buildPageMetadata=p=>beforeCalentaAceMetadata(liveBuildPageMetadata(p),p.path==="/foutcodes/remeha"?"remeha":"");
+const renderFaultGuide=async slug=>beforeCalentaAceHtml(await liveRenderFaultGuide(slug),slug);
 
 // Frozen before product, derived from original source/inventory and root capture.
 const f=JSON.parse(await readFile(new URL("./fixtures/quinta-ace-source-facts.json",import.meta.url),"utf8"));
@@ -108,7 +115,7 @@ test("real Remeha SSR renders816 cards with all60 Quinta meanings actions locato
 });
 
 test("Quinta manifest adds one measured combined original while article serial current fit remain unknown",async()=>{
- const m=JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"));assert.deepEqual(m.counts,f.expectedManifestCounts);assert.equal(m.snapshots.length,25);
+ const m=beforeCalentaAceManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8")));assert.deepEqual(m.counts,f.expectedManifestCounts);assert.equal(m.snapshots.length,25);
  for(const c of f.catalogs){const entry=m.entries.find(e=>e.id===c.id);assert.ok(entry,c.id);
   assert.equal(entry.modelScope,c.scope);assert.equal(entry.sourcePages,c.sourcePages);assert.equal(entry.explanationRowCount,c.rows.length);
   assert.deepEqual(entry.models,f.source.models);assert.deepEqual(entry.market,f.source.market);assert.equal(entry.controller,"CU-GH08");assert.deepEqual(entry.sourceSoftwareBaseline,f.source.sourceSoftwareBaseline);

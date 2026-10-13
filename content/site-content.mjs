@@ -222,7 +222,7 @@ export const pageRegistry = Object.freeze([
     status: CONTENT_STATUS.PUBLISHED,
     title: "Remeha foutcodes: Avanta, Calenta, Tzerra en Quinta | AB Service",
     description:
-      "Zoek Remeha foutcodes per Avanta-, Calenta-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie, volledige melding en veilige vervolgstap.",
+      "Zoek Remeha foutcodes per Avanta-, historische Calenta-, Calenta Ace (2018)-, Tzerra Ace-Matic- of Quinta Ace-bron. Vergelijk model, editie en veilige vervolgstap.",
     changeFrequency: "monthly",
     priority: 0.6,
   },

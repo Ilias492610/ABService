@@ -11,6 +11,7 @@ import {business} from "../content/business.mjs";
 import {getFaultGuide} from "../content/fault-guides.mjs";
 import {getPageDefinition,pageRegistry} from "../content/site-content.mjs";
 import {beforeQuintaHtml,beforeQuintaRegistry} from "./fixtures/quinta-ace-history.mjs";
+import {beforeCalentaAceGuide} from "./fixtures/calenta-ace-history.mjs";
 const f=JSON.parse(await readFile(new URL("./fixtures/quinta-ace-source-facts.json",import.meta.url),"utf8")),r=f.reading;
 const hash=v=>createHash("sha256").update(v).digest("hex");
 
@@ -23,7 +24,7 @@ test("Remeha provides a native entrance before the full warning landing on compl
  const section=html.slice(safety,html.indexOf("</section>",safety)+10);
  assert.equal(section.replace(r.safetyMarker,r.beforeSafetyMarker),r.beforeSafetyHtml);
  assert.ok(html.includes(getFaultGuide("remeha").modelWarning));
- assert.equal((html.match(/class="fault-code-card"/g)||[]).length,816);
+ assert.equal((html.match(/class="fault-code-card"/g)||[]).length,887);
 });
 
 // Break: target offset/focus styling no longer protects the rendered native anchor.
@@ -47,7 +48,7 @@ test("all12 other guides and PageHero without its optional slot retain actual be
 // Break: naturalization drops a source-column difference or leaves private register jargon.
 test("new Quinta wording states positive heat recovery meaning and both temperature columns in ordinary Dutch",()=>{
  const guide=getFaultGuide("remeha"),newWarning=guide.modelWarning.slice(guide.modelWarning.indexOf(" Quinta Ace 45/65/90/115"));
- assert.equal(guide.modelWarning,r.copyRecord.warning.after);
+ assert.equal(beforeCalentaAceGuide(guide).modelWarning,r.copyRecord.warning.after);
  assert.doesNotMatch(newWarning,/letterlijke bronrijen|model-artikelparen|serials|regelaarfit/);
  for(const c of f.catalogs){const actual=guide.catalogs.find(a=>a.id===c.id);assert.equal(actual.scope,c.scope);assert.doesNotMatch(actual.scope,/letterlijke bronrijen|model-artikelparen|serials|regelaar-\/toestelfit/);}
  for(const m of r.copyRecord.meanings){const id=m.code==="H02.70"?"remeha-quinta-ace-cu-blocking":"remeha-quinta-ace-cu-locking";assert.equal(guide.catalogs.find(c=>c.id===id).codes.find(row=>row.code===m.code).meaning,m.after);}
@@ -58,7 +59,7 @@ test("new Quinta wording states positive heat recovery meaning and both temperat
 test("named layout inverse keeps historical SSR exact without hiding entrance safety class anchor text or count drift",async()=>{
  const html=await renderFaultGuide("remeha");assert.equal(hash(beforeQuintaHtml(html,"remeha")),f.before.preservation.remehaHtml);
  assert.ok(html.includes(r.entranceHtml)&&html.includes(r.safetyMarker));
- for(const bad of [html.replace('class="remeha-fault-entrance"','class="remeha-fault-entrance extra"'),html.replace("Naar veiligheid en codezoeker","DRIFT"),html.replace('href="#remeha-foutcode-veiligheid"','href="#fault-search"'),html.replace('id="remeha-foutcode-veiligheid"','id="DRIFT"'),html.replace("section-compact remeha-fault-safety","section-compact remeha-fault-safety extra"),html.replace("Een code is geen diagnose.","DRIFT"),html.replace("816 brongebonden","817 brongebonden"),html+"<p>DRIFT</p>"]){assert.notEqual(hash(beforeQuintaHtml(bad,"remeha")),f.before.preservation.remehaHtml);}
+ for(const bad of [html.replace('class="remeha-fault-entrance"','class="remeha-fault-entrance extra"'),html.replace("Naar veiligheid en codezoeker","DRIFT"),html.replace('href="#remeha-foutcode-veiligheid"','href="#fault-search"'),html.replace('id="remeha-foutcode-veiligheid"','id="DRIFT"'),html.replace("section-compact remeha-fault-safety","section-compact remeha-fault-safety extra"),html.replace("Een code is geen diagnose.","DRIFT"),html.replace("887 brongebonden","888 brongebonden").replace("816 brongebonden","817 brongebonden"),html+"<p>DRIFT</p>"]){assert.notEqual(hash(beforeQuintaHtml(bad,"remeha")),f.before.preservation.remehaHtml);}
 });
 
 test("only Remeha has the true13October candidate date and its inverse preserves wrong date drift",()=>{

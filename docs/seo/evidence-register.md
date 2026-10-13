@@ -1,5 +1,51 @@
 # Evidence Register
 
+## 13 oktober 2026 — Task87 Calenta Ace2018: lokale kandidaat, release open
+
+Afgebakende uitbreiding van bestaandeRemeha-URL:17A/24H/30E uit tabellen85–87,
+p121–129 van7688047-v.01-08052018, BE/nl15ds/25ds/25/28/35ds/35/39,
+CU-GH08/HMI T-control. Apart7688050-v.01-08052018 §8p31–32 is algemene
+gebruikerscontext, niet een tweede volledige71codetabel; E04.08 blijft voorbeeld.
+Beide directe originalen, bronkolomspanningen en veilige klantacties behouden.
+Root las29hele relevante bronpagina's; onafhankelijke71tuples, beide actuele
+HTTP200/bytes/SHA en vóór product bevroren feiten bevestigen deze beperkte editie.
+Geen nieuwste/toestel-/softwarefit, reset-/vuladvies of diagnoseclaim afgeleid.
+Remeha lokaal22tabellen/887regels, oude19/816 en twaalf andere gidsen behouden;
+manifest13/50/44/1929/1687/24primaireURLs/27snapshots, geen vraag- of leadcijfers.
+Werkelijke historische hashes/fixtures en negatieve driftguards blijven intact.
+Root vers621/621, lint0, productie-audit0, build170, crawl82/93/112; alle887
+regelvelden/scopes/directe bronlinks en canonical/lastmod13October gecontroleerd.
+IAB390/1280: ingang619px, veiligheid onder126px-header, E04.01/02/E01.24,
+H03.17/H01.00/A02.33, modelverschilQuinta, E04.08→0, keyboardwissen→17,
+geenoverflow; lege contactoverdracht form142.7px/consentuit/nietsverstuurd.
+Onafhankelijke eindreview, exactecommit/hostedCI/provider/live blijven gates;
+geen Task87IndexNow of geheleWP07-afvinking. Task84exactd8release blijft gesloten.
+Één anoniemeMapscontrole13Oct18:01Z toont nogVoorzorgstraat12A,24uur en correct
+nummer/site/5.0/44; geen save of moderatie-uitkomst. Aparthomepage-audit bevestigt
+nuttige bestemming/reviews/contact zonder verplichtekaart; klantontvangstclarificatie
+is volgende begrensde taak, nog geen rewrite. Eigenaar/account/case/Frans/veld/AT/
+source403/effectgates blijven open. Bestaande bronbijlagen en137checks ongewijzigd.
+
+## 13 oktober 2026 — Task84 Quinta Ace: exacte productieversie gecontroleerd
+
+Commit `d8fa5623fcd7f2d37ae7090dcce8542fb27bb7c8` is na bronreview, I1/M1-fixreview
+zonder open findings en606 verse tests naar bestaande main gepubliceerd. Exacte
+hostedCI38432596938 slaagt metNode24.21.0,606tests, audit0, build170 en crawl82/93/112.
+Bestaand Vercelproject ab-service toont5t3kYYJaxV82D9X7vfVRZpvsD75n als Ready,
+Production/Current, dezelfde SHA enwww.abservice24.be. Automatische Gitpublicatie
+werkte deze keer; geen nieuw project, domein, rechten of instellingen gewijzigd.
+Canonical heeft19Remeha-tabellen/816uitlegregels, waaronder60nieuweQuinta-rijen;
+alle oude756rijen, scopes en directe bronlinks zijn live gecontroleerd. Verse
+livecrawl82/93/112 en390/1280px-bediening slagen: vroege ingang619px, veiligheids-
+landing142px onder126px-header, modelgebonden zoeken/wissen en leeg oningediend
+contactformulier. Eén substantieel gewijzigde Remeha-URL viaIndexNow ontvangen
+(HTTP200); indexering/ranking/leads zijn niet bewezen. Task84-release is gesloten,
+niet het geheleWP07. Task87 CalentaAce2018 heeft alleen geverifieerde primaire
+bronnen en een71rijen-inventaris; implementatie/review/release zijn volgende gates.
+Alle overige eigenaar/account/case/Franse/veld/AT/source403/effectgates blijven open.
+Deze verificatienotitie blijft lokaal voor de volgende echte productwijziging;
+geen documentatie-only deployment of herhaaldeIndexNow-melding.
+
 ## 13 oktober 2026 — Task84 reviewcorrectie: lokale controle, release nog open
 
 De bronreview aanvaardt de 60 Quinta Ace-rijen. I1 krijgt een vroege Remeha-ingang

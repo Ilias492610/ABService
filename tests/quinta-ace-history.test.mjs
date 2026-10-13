@@ -41,7 +41,7 @@ test("Quinta inverse keeps registry metadata canonical unknown leaves and nonexa
 
 test("Quinta SSR inverse preserves old card classes text unknown markup and wrong count drift",async()=>{
  const html=await renderFaultGuide("remeha");
- for(const value of [html.replace("E:01","DRIFT"),html.replace('class="fault-code-card"','class="DRIFT"'),html+"<p>DRIFT</p>",html.replace("816 brongebonden","817 brongebonden").replace("756 brongebonden","757 brongebonden")])assert.notEqual(hash(beforeQuintaHtml(value,"remeha")),f.before.preservation.remehaHtml);
+ for(const value of [html.replace("E:01","DRIFT"),html.replace('class="fault-code-card"','class="DRIFT"'),html+"<p>DRIFT</p>",html.replace("887 brongebonden","888 brongebonden").replace("816 brongebonden","817 brongebonden").replace("756 brongebonden","757 brongebonden")])assert.notEqual(hash(beforeQuintaHtml(value,"remeha")),f.before.preservation.remehaHtml);
 });
 
 test("Quinta inverse is a no-op outside Remeha and idempotent after reversal",async()=>{

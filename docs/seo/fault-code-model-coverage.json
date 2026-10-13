@@ -1,16 +1,16 @@
 {
   "capturedAt": "2026-10-11T13:13:40.886Z",
-  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage; Task80 adds only historical i Zone06.19 six technicalB models and i32EC09.17 one technicalB model, with17/19 source rows; not every ATAG model, current fit or full fault coverage Task83 adds only three paired-source Tzerra Ace-Matic CU-GH16 catalogs from the June2024 BE/Lux books; no other source re-audit or newest/firmware claim. Task84 adds only three Quinta Ace CU-GH08 catalogs from the Belgian Dutch combined2019book, 14A21H25E literal rows; no current firmware/device fit or newest claim.",
-  "incrementalUpdateDate": "2026-10-12",
+  "purpose": "Task47 bounded WP07 coverage reporting aid, incremented by Task48 one-source31-row reading and Task49 six Bosch/Junkers source-scope corrections; not source re-audit of other catalogs or complete13-brand/model certification; Task50 adds historical ACV selected-table source identity and four safe action corrections, not whole-brand or latest-device fit; Task52 adds Intergas Prestige A CW6 selected11-group table and display/source context, not current Belgian device fit; Task54 adds Nefit historical three-model table identity,78 selected combinations and19 bounded safety/identifier leaves, not all-brand or currentBelgian fit; Task56 adds historical Ferroli DRS9100 version9/2015-08,37blocks38codes and local A/F safety controls, not current Belgian/device/latest fit; Task58 adds Itho Base Cube 01-04199-001 observed imprint ID2020-07-20-1100, three NL models and26 W/B/E groups covering30 diagnostic entries, not HP COOL Cube, separately established issue/revision or current Belgian/device/latest fit; Task77 adds only the four documented Belgian GB172i.2 model/article pairs and all69 table69 groups/97 numeric identifiers from 6721852651(2026/06), not all-Buderus/current-device or newest-firmware coverage; Task80 adds only historical i Zone06.19 six technicalB models and i32EC09.17 one technicalB model, with17/19 source rows; not every ATAG model, current fit or full fault coverage Task83 adds only three paired-source Tzerra Ace-Matic CU-GH16 catalogs from the June2024 BE/Lux books; no other source re-audit or newest/firmware claim. Task84 adds only three Quinta Ace CU-GH08 catalogs from the Belgian Dutch combined2019book, 14A21H25E literal rows; no current firmware/device fit or newest claim. Task87 adds only three Calenta Ace CU-GH08 catalogs from separate Belgian Dutch May2018 installer/user originals:17A24H30E installer rows; user context is not a matching71-row table. No software/current-device/latest fit claim.",
+  "incrementalUpdateDate": "2026-10-13",
   "counts": {
     "guides": 13,
-    "catalogAssignments": 47,
-    "distinctCatalogs": 41,
-    "displayedExplanationRows": 1858,
-    "distinctCatalogExplanationRows": 1616,
-    "distinctCatalogSourceURLs": 23
+    "catalogAssignments": 50,
+    "distinctCatalogs": 44,
+    "displayedExplanationRows": 1929,
+    "distinctCatalogExplanationRows": 1687,
+    "distinctCatalogSourceURLs": 24
   },
-  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources. Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses. Task80 adds36 source-row assignments: iZone17 most-common messages, i32EC19 including105program and180/181nonfault;50 ATAG rows are not50 unique fault diagnoses. The97 Tzerra Ace-Matic source rows are explanation rows, not97 new fault diagnoses, search demand or complete Tzerra/brand coverage. The60 Quinta Ace rows include warnings and procedure/check states; they are not60 proven faults, search demand or whole-brand coverage.",
+  "countBoundary": "Rows are explanation/table assignments, not unique error codes, exact model counts, search demand, leads or universal manufacturer coverage. Bosch six catalogs are shared by Bosch/Junkers. Buderus52groups/74combinations are distinct concepts. Task47 historical site-wide source count58 is outside this catalog-only enumeration; Task48 adds one cited URL, not a new accessibility/content audit of unchanged sources. Task77 GB172i.2 contributes69 physical explanation groups/97 numeric identifiers including O operating and W service states;121 Buderus groups are not121 fault diagnoses. Task80 adds36 source-row assignments: iZone17 most-common messages, i32EC19 including105program and180/181nonfault;50 ATAG rows are not50 unique fault diagnoses. The97 Tzerra Ace-Matic source rows are explanation rows, not97 new fault diagnoses, search demand or complete Tzerra/brand coverage. The60 Quinta Ace rows include warnings and procedure/check states; they are not60 proven faults, search demand or whole-brand coverage. The71 Calenta Ace2018 rows include warnings, reset and safety-check states; no71 proven faults, demand or whole-brand coverage. User examples, class patterns and32-event memory are not additional rows.",
   "method": "Original Task47 record history retained. Task48 added one historical Bulex A/B table. Task49 updates only six shared Bosch/Junkers scopes, two warnings and directly observed NL chapter/source context, adding one original PDF snapshot. Other26 entries/eight snapshots/eleven guide entries remain unchanged; no 242-row re-audit or newest/full-model certification.",
   "guides": [
     {
@@ -73,8 +73,8 @@
     {
       "slug": "remeha",
       "brand": "Remeha",
-      "modelWarning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Calenta Ace, legacy Tzerra, Tzerra Ace en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld. Quinta Ace 45/65/90/115 heeft drie eigen CU-GH08-tabellen uit het Belgische Nederlandstalige installatie- en gebruikersboek 7684362-v.05-10012019: waarschuwingen (A), blokkeringen (H) en vergrendelingen (E). De 60 meldingen horen bij deze editie, niet bij Quinta Ace 160, andere edities of Luxemburg. Controleer of uw eigen toestel en bediening bij deze handleiding horen; de gebruikte software en aanwezige uitbreidingen verschillen per installatie. De actuele toepasbaarheid en nieuwste handleiding zijn hier niet vastgesteld. Lees en noteer de zichtbare melding en gewone gebruikscontext; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen.",
-      "explanationRowCount": 816,
+      "modelWarning": "Kies uw toestelreeks en generatie: Avanta gebruikt 17 korte meldingen uit de Belgische Storingswijzer, gelezen op 12 oktober 2026. De tweede archiefpagina herhaalt deze lijst; exact model, generatie en revisie zijn niet vastgesteld en het overzicht geeft geen herstelhandelingen. Controleer de volledige displaycode en het veilig bereikbare typeplaatje zonder onderdelen te openen; historische Calenta 15s/25s/28c/35s/40c volgt installatie- en servicehandleiding 117061-08: E is een vergrendeling, Su hoort bij tijdelijke blokkering St:9. De professionele herstelkolommen zijn geen gebruikersinstructies; Su:20 kort na inschakelen vraagt geen actie. Calenta Ace-Matic 25s/35s/30c/40c volgt revisie 7871265-05-04072025. Calenta Ace-Matic 25L heeft eigen tabellen uit de afzonderlijke handleiding 7871254-04-04072025. Kies hieronder het juiste model en de component CU-GH-21 of SCB-10; SCB-10-tabellen gelden alleen als de uitbreiding en betrokken componenten aanwezig zijn. De betekenis hangt af van model, generatie en configuratie. Tzerra Ace-Matic 28c/28c G31/35c/25s heeft aparte CU-GH16-tabellen uit installatieboek 7875188-01-20062024 en gebruikersboek 7875187-01-20062024 voor België en Luxemburg. De installatiebron onderscheidt A-waarschuwingen, H-tijdelijke stops en E-vergrendelingen; het gebruikersboek groepeert A/H als tijdelijke meldingen maar beschrijft verschillend gedrag. OpenTherm kan generiek 254 tonen: lees de volledige code op het toestel, niet een veronderstelde alias. Resetknoppen, tijden en drukadviezen verschillen per bronpassage; deze tabellen geven geen universele reset- of vulhandeling. Legacy Tzerra, Tzerra Ace en andere revisies vallen niet onder deze dekking. Artikelnummers, serials, firmware, aanwezige opties, actuele toestelcompatibiliteit en nieuwste editie zijn voor Tzerra Ace-Matic niet vastgesteld. Quinta Ace 45/65/90/115 heeft drie eigen CU-GH08-tabellen uit het Belgische Nederlandstalige installatie- en gebruikersboek 7684362-v.05-10012019: waarschuwingen (A), blokkeringen (H) en vergrendelingen (E). De 60 meldingen horen bij deze editie, niet bij Quinta Ace 160, andere edities of Luxemburg. Controleer of uw eigen toestel en bediening bij deze handleiding horen; de gebruikte software en aanwezige uitbreidingen verschillen per installatie. De actuele toepasbaarheid en nieuwste handleiding zijn hier niet vastgesteld. Lees en noteer de zichtbare melding en gewone gebruikscontext; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen. Calenta Ace 15ds/25ds/25/28/35ds/35/39 heeft daarnaast drie eigen tabellen voor CU-GH08 met HMI T-control uit het Belgische installatieboek van 8 mei 2018: 17 waarschuwingen, 24 blokkeringen en 30 vergrendelingen. Het afzonderlijke gebruikersboek geeft algemene meldings- en probleemcontext, geen volledige tabel van deze 71 codes. Kies deze editie alleen als ze bij uw eigen toestel hoort. Verschillen tussen schermtekst, beschrijving en professioneel advies blijven bij de betrokken code vermeld. De gebruikte software, aanwezige uitbreidingen en nieuwste handleiding zijn niet vastgesteld. Noteer de volledige zichtbare melding en veilig beschikbare modelgegevens; laat aanhoudende of terugkerende meldingen professioneel beoordelen zonder zelf te resetten, vullen, ontluchten of instellingen te wijzigen.",
+      "explanationRowCount": 887,
       "catalogIds": [
         "remeha-avanta",
         "remeha-calenta-legacy",
@@ -94,7 +94,10 @@
         "remeha-tzerra-ace-matic-cu-locking",
         "remeha-quinta-ace-cu-warnings",
         "remeha-quinta-ace-cu-blocking",
-        "remeha-quinta-ace-cu-locking"
+        "remeha-quinta-ace-cu-locking",
+        "remeha-calenta-ace-cu-warnings",
+        "remeha-calenta-ace-cu-blocking",
+        "remeha-calenta-ace-cu-locking"
       ],
       "documentationLabel": "Officiële Remeha Storingswijzer",
       "documentationURL": "https://storingswijzer.remeha.be/"
@@ -446,6 +449,30 @@
       "pageCount": 80,
       "byteLength": 3216213,
       "sourceBoundary": "Actual linked combined installation/user book, printed7684362 - v.05 - 10012019, BE Dutch Quinta45/65/90/115, measured original. Tables43–45 all60 literal rows; professional remedies not consumer procedures. Software baseline is not installed/current firmware fit; no160/Lux/newest/serial/article coverage."
+    },
+    {
+      "id": "remeha-calenta-ace-installer-pdf",
+      "kind": "manufacturer-PDF",
+      "url": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_IM_SM_Calenta_Ace_NL.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-87-calenta-ace-source/180508_IM_SM_Calenta_Ace_NL.pdf",
+      "sha256": "22713454d22089e9c1fd3f876aa6bc0b623f0c6205a798f9e3294de36699eef4",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 144,
+      "byteLength": 16992150,
+      "sourceBoundary": "Actual archived original HTTP200 application/pdf, 7688047-v.01-08052018 BE/nl exact five cover models. Full installer tables85–87 read;71 literal rows, professional remedies not customer procedures. Internal8May2018 differs archive31May; no firmware/current/latest inference."
+    },
+    {
+      "id": "remeha-calenta-ace-user-pdf",
+      "kind": "manufacturer-PDF",
+      "url": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_UM_Calenta_Ace_NL.pdf",
+      "path": ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-87-calenta-ace-source/180508_UM_Calenta_Ace_NL.pdf",
+      "sha256": "d48fce2bd343f76e1f2fba399ee8cc703a406cc007b550fb376426591580aaf9",
+      "expectedSha256": null,
+      "hashMatchesPriorRecord": null,
+      "pageCount": 44,
+      "byteLength": 1099445,
+      "sourceBoundary": "Separate archived user original HTTP200 application/pdf, 7688050-v.01-08052018 BE/nl exact five cover models. §8 pp31–32 is general class/reporting/seven-problem context with five literal mentions, not a matching71-row code table; E04.08 is an example only."
     }
   ],
   "entries": [
@@ -2637,6 +2664,186 @@
       "firmwareCompatibility": null,
       "currentBelgianVariantCompatibility": null,
       "newestEdition": null
+    },
+    {
+      "id": "remeha-calenta-ace-cu-warnings",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace (2018) — CU-GH08 — waarschuwingen",
+      "modelScope": "Alleen Calenta Ace 15ds, 25ds, 25/28, 35ds en 35/39 voor België, Nederlandstalige editie 7688047-v.01-08052018, CU-GH08 met HMI T-control. Tabel 85 bevat 17 meldingen. A is een waarschuwing: de ketel kan volgens de bron blijven werken, maar de oorzaak vraagt onderzoek en de melding kan escaleren. Het afzonderlijke gebruikersboek 7688050-v.01-08052018, § 8, p. 31–32 geeft algemene meldings-, klasse- en probleemcontext, geen overeenkomende volledige tabel van deze codes. De handleiding bespreekt SCB-printen en aangesloten apparaten; welke uitbreiding of software uw toestel gebruikt is hier niet vastgesteld. Automatische bijvulling geldt alleen als die aanwezig en daarvoor ingesteld is. Niet voor historische Calenta 117061, Ace-Matic, 25L of andere edities. Exacte product- en serienummers, de toepasbaarheid op uw eigen toestel en de nieuwste handleiding zijn niet vastgesteld. Lees de volledige zichtbare code en vergelijk uw eigen gebruikershandleiding. Technische remedies zijn voor de installateur; deze tabel geeft geen reset-, stroomonderbrekings-, vul-, ontluchtings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Calenta Ace installatie- en servicehandleiding 7688047-v.01-08052018",
+      "sourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_IM_SM_Calenta_Ace_NL.pdf",
+      "sourcePages": "tabel 85, p. 121–123",
+      "explanationRowCount": 17,
+      "modelFamily": "Calenta Ace (2018)",
+      "models": [
+        "15ds",
+        "25ds",
+        "25/28",
+        "35ds",
+        "35/39"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "serials": null,
+      "documentNumber": "7688047",
+      "revision": "v.01",
+      "issueDate": "2018-05-08",
+      "issueDatePrecision": "day",
+      "archiveModifiedDate": "2018-05-31",
+      "printedIdentifier": "7688047 - v.01 - 08052018",
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "controller": "CU-GH08",
+      "component": "CU-GH08",
+      "panel": "HMI T-control",
+      "sourceSoftwareBaseline": null,
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "tableIds": [
+        85
+      ],
+      "sourceClass": "A",
+      "primarySnapshot": "remeha-calenta-ace-installer-pdf",
+      "companionSnapshot": "remeha-calenta-ace-user-pdf",
+      "companionSourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_UM_Calenta_Ace_NL.pdf",
+      "companionPrintedIdentifier": "7688050 - v.01 - 08052018",
+      "companionSourcePages": "§ 8, p. 31–32",
+      "companionSourceRole": "general-class-reporting-and-problem-context-not-matching-code-table",
+      "literalPhysicalRowCount": 17,
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-87-calenta-ace-row-inventory.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-87-root-source-preparation.md",
+        "tests/fixtures/calenta-ace-source-facts.json"
+      ],
+      "verificationBasis": "Full original covers and29 relevant safety/control/diagnostic pages personally read; installer85/86/87 all17A24H30E independently enumerated and compared with source tuples. Companion §8 general context only. Preserve display/description/advice tensions E04.01/02/03,E01.24,E02.15,A02.36,E02.78,E04.07,H03.00,H03.17. H01.00 restart remains professional;32-event memory/status/substatus/classpatterns/userE04.08example excluded.",
+      "declaredScopePath": "content/remeha-calenta-ace.mjs",
+      "fieldBoundary": "Null means unestablished, not known-none. Exact source models/market/date are printed facts; archive modification is a separate date. No software baseline borrowed from another CU-GH08 edition, SCB presence/optionality inferred, article/serial/current-device/latest claim."
+    },
+    {
+      "id": "remeha-calenta-ace-cu-blocking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace (2018) — CU-GH08 — blokkeringen",
+      "modelScope": "Alleen Calenta Ace 15ds, 25ds, 25/28, 35ds en 35/39 voor België, Nederlandstalige editie 7688047-v.01-08052018, CU-GH08 met HMI T-control. Tabel 86 bevat 24 meldingen. H is een blokkering: hervatting volgt volgens de bron pas als de oorzaak is verdwenen. H02.00 is een actieve reset en H03.17 een lopende controle; er is geen vaste wachttijd beloofd. Het afzonderlijke gebruikersboek 7688050-v.01-08052018, § 8, p. 31–32 geeft algemene meldings-, klasse- en probleemcontext, geen overeenkomende volledige tabel van deze codes. De handleiding bespreekt SCB-printen en aangesloten apparaten; welke uitbreiding of software uw toestel gebruikt is hier niet vastgesteld. Automatische bijvulling geldt alleen als die aanwezig en daarvoor ingesteld is. Niet voor historische Calenta 117061, Ace-Matic, 25L of andere edities. Exacte product- en serienummers, de toepasbaarheid op uw eigen toestel en de nieuwste handleiding zijn niet vastgesteld. Lees de volledige zichtbare code en vergelijk uw eigen gebruikershandleiding. Technische remedies zijn voor de installateur; deze tabel geeft geen reset-, stroomonderbrekings-, vul-, ontluchtings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Calenta Ace installatie- en servicehandleiding 7688047-v.01-08052018",
+      "sourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_IM_SM_Calenta_Ace_NL.pdf",
+      "sourcePages": "tabel 86, p. 123–125",
+      "explanationRowCount": 24,
+      "modelFamily": "Calenta Ace (2018)",
+      "models": [
+        "15ds",
+        "25ds",
+        "25/28",
+        "35ds",
+        "35/39"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "serials": null,
+      "documentNumber": "7688047",
+      "revision": "v.01",
+      "issueDate": "2018-05-08",
+      "issueDatePrecision": "day",
+      "archiveModifiedDate": "2018-05-31",
+      "printedIdentifier": "7688047 - v.01 - 08052018",
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "controller": "CU-GH08",
+      "component": "CU-GH08",
+      "panel": "HMI T-control",
+      "sourceSoftwareBaseline": null,
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "tableIds": [
+        86
+      ],
+      "sourceClass": "H",
+      "primarySnapshot": "remeha-calenta-ace-installer-pdf",
+      "companionSnapshot": "remeha-calenta-ace-user-pdf",
+      "companionSourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_UM_Calenta_Ace_NL.pdf",
+      "companionPrintedIdentifier": "7688050 - v.01 - 08052018",
+      "companionSourcePages": "§ 8, p. 31–32",
+      "companionSourceRole": "general-class-reporting-and-problem-context-not-matching-code-table",
+      "literalPhysicalRowCount": 24,
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-87-calenta-ace-row-inventory.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-87-root-source-preparation.md",
+        "tests/fixtures/calenta-ace-source-facts.json"
+      ],
+      "verificationBasis": "Full original covers and29 relevant safety/control/diagnostic pages personally read; installer85/86/87 all17A24H30E independently enumerated and compared with source tuples. Companion §8 general context only. Preserve display/description/advice tensions E04.01/02/03,E01.24,E02.15,A02.36,E02.78,E04.07,H03.00,H03.17. H01.00 restart remains professional;32-event memory/status/substatus/classpatterns/userE04.08example excluded.",
+      "declaredScopePath": "content/remeha-calenta-ace.mjs",
+      "fieldBoundary": "Null means unestablished, not known-none. Exact source models/market/date are printed facts; archive modification is a separate date. No software baseline borrowed from another CU-GH08 edition, SCB presence/optionality inferred, article/serial/current-device/latest claim."
+    },
+    {
+      "id": "remeha-calenta-ace-cu-locking",
+      "usedBy": [
+        "remeha"
+      ],
+      "title": "Calenta Ace (2018) — CU-GH08 — vergrendelingen",
+      "modelScope": "Alleen Calenta Ace 15ds, 25ds, 25/28, 35ds en 35/39 voor België, Nederlandstalige editie 7688047-v.01-08052018, CU-GH08 met HMI T-control. Tabel 87 bevat 30 meldingen. E is een vergrendeling, ook waar een beschrijving het woord blokkering gebruikt. De bron beschrijft herstel na het wegnemen van de oorzaak en reset; dit is hier geen gebruikersprocedure. Het afzonderlijke gebruikersboek 7688050-v.01-08052018, § 8, p. 31–32 geeft algemene meldings-, klasse- en probleemcontext, geen overeenkomende volledige tabel van deze codes. De handleiding bespreekt SCB-printen en aangesloten apparaten; welke uitbreiding of software uw toestel gebruikt is hier niet vastgesteld. Automatische bijvulling geldt alleen als die aanwezig en daarvoor ingesteld is. Niet voor historische Calenta 117061, Ace-Matic, 25L of andere edities. Exacte product- en serienummers, de toepasbaarheid op uw eigen toestel en de nieuwste handleiding zijn niet vastgesteld. Lees de volledige zichtbare code en vergelijk uw eigen gebruikershandleiding. Technische remedies zijn voor de installateur; deze tabel geeft geen reset-, stroomonderbrekings-, vul-, ontluchtings- of instelhandeling.",
+      "sourceLabel": "Remeha België — Calenta Ace installatie- en servicehandleiding 7688047-v.01-08052018",
+      "sourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_IM_SM_Calenta_Ace_NL.pdf",
+      "sourcePages": "tabel 87, p. 125–129",
+      "explanationRowCount": 30,
+      "modelFamily": "Calenta Ace (2018)",
+      "models": [
+        "15ds",
+        "25ds",
+        "25/28",
+        "35ds",
+        "35/39"
+      ],
+      "articleNumbers": null,
+      "modelArticlePairs": null,
+      "serials": null,
+      "documentNumber": "7688047",
+      "revision": "v.01",
+      "issueDate": "2018-05-08",
+      "issueDatePrecision": "day",
+      "archiveModifiedDate": "2018-05-31",
+      "printedIdentifier": "7688047 - v.01 - 08052018",
+      "market": [
+        "België"
+      ],
+      "language": "nl",
+      "controller": "CU-GH08",
+      "component": "CU-GH08",
+      "panel": "HMI T-control",
+      "sourceSoftwareBaseline": null,
+      "firmwareCompatibility": null,
+      "controllerVariantCoverage": null,
+      "customerDeviceCompatibility": null,
+      "newestEdition": null,
+      "tableIds": [
+        87
+      ],
+      "sourceClass": "E",
+      "primarySnapshot": "remeha-calenta-ace-installer-pdf",
+      "companionSnapshot": "remeha-calenta-ace-user-pdf",
+      "companionSourceURL": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Calenta%20Ace/180508_UM_Calenta_Ace_NL.pdf",
+      "companionPrintedIdentifier": "7688050 - v.01 - 08052018",
+      "companionSourcePages": "§ 8, p. 31–32",
+      "companionSourceRole": "general-class-reporting-and-problem-context-not-matching-code-table",
+      "literalPhysicalRowCount": 30,
+      "sourceEvidencePath": [
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-87-calenta-ace-row-inventory.md",
+        ".superpowers/sdd/2026-10-10-complete-source-seo-masterplan/task-87-root-source-preparation.md",
+        "tests/fixtures/calenta-ace-source-facts.json"
+      ],
+      "verificationBasis": "Full original covers and29 relevant safety/control/diagnostic pages personally read; installer85/86/87 all17A24H30E independently enumerated and compared with source tuples. Companion §8 general context only. Preserve display/description/advice tensions E04.01/02/03,E01.24,E02.15,A02.36,E02.78,E04.07,H03.00,H03.17. H01.00 restart remains professional;32-event memory/status/substatus/classpatterns/userE04.08example excluded.",
+      "declaredScopePath": "content/remeha-calenta-ace.mjs",
+      "fieldBoundary": "Null means unestablished, not known-none. Exact source models/market/date are printed facts; archive modification is a separate date. No software baseline borrowed from another CU-GH08 edition, SCB presence/optionality inferred, article/serial/current-device/latest claim."
     }
   ],
   "limits": [

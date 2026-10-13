@@ -1,5 +1,49 @@
 # WP07 — actuele model- en brondekking
 
+## 13 oktober 2026 — Task87 lokale Calenta Ace (2018)-broncohort
+
+De daadwerkelijk gemeten telling vóór deze cohort was 13 gidsen, 47
+catalogustoewijzingen, 41 afzonderlijke catalogi, 1.858 weergegeven uitlegregels,
+1.616 regels zonder Bosch/Junkers-hergebruik, 23 primaire catalogusbron-URL’s
+en 25 snapshots. Drie nieuwe tabellen voegen 71 regels toe: nu 50 toewijzingen,
+44 catalogi, 1.929 weergegeven regels, 1.687 afzonderlijke catalogusregels,
+24 primaire bron-URL’s en 27 snapshots. De aparte gebruikerslink is een
+companionbron, geen extra primaire catalogus-URL. Remeha gaat van 19/816 naar
+22 catalogi/887 regels. Alle 19 oude Remeha-catalogi, 41 oude manifestrecords,
+25 snapshots en de tellingen van de overige twaalf gidsen blijven behouden.
+
+Uitsluitend Calenta Ace 15ds, 25ds, 25/28, 35ds en 35/39 voor België/nl, met
+CU-GH08 en HMI T-control, uit installatie- en serviceboek
+`7688047 - v.01 - 08052018`. Tabellen 85/86/87 op p. 121–129 bevatten exact
+17 A-waarschuwingen, 24 H-blokkeringen en 30 E-vergrendelingen. Het separate
+gebruikersboek `7688050 - v.01 - 08052018`, § 8 p. 31–32, geeft algemene
+klasse-, meldings- en probleemcontext; het is geen overeenkomstige volledige
+codetabel. De interne editie is 8 mei 2018; de archiefwijziging van 31 mei is
+een ander gegeven. De twee rechtstreeks gekoppelde oorspronkelijke PDFs zijn
+afzonderlijk gemeten en vers door root als HTTP200/hashgelijk gecontroleerd.
+
+| Nieuwe catalogus | Bronregels | Installateurbron |
+|---|---:|---|
+| `remeha-calenta-ace-cu-warnings` | 17 | tabel 85, p. 121–123 |
+| `remeha-calenta-ace-cu-blocking` | 24 | tabel 86, p. 123–125 |
+| `remeha-calenta-ace-cu-locking` | 30 | tabel 87, p. 125–129 |
+
+[De volledige cohortinventaris](calenta-ace-2018-source-inventory.md) vermeldt
+beide oorspronkelijke links, gemeten bytes/SHA’s en de bronkolomverschillen.
+De 71 regels zijn geen 71 bewezen defecten of zoekvragen. De 32 opgeslagen
+storingen, status/substatus, klassepatronen en E04.08-gebruikersvoorbeeld worden
+geen extra rijen. Bronverschillen blijven zichtbaar, onder meer E04.01/02,
+E04.03, E01.24, E02.15, A02.36, E02.78, H03.00 en H03.17. Automatisch vullen
+is conditionele broncontext, geen klantinstructie of vastgesteld lek. Klanten
+noteren zichtbare codes, veilig beschikbare modelgegevens en gewone klachten;
+aanhoudende of terugkerende meldingen vragen professionele beoordeling.
+
+Geen artikel-/modelartikelparen, serials, softwarebasis, individuele actuele
+toestel-/regelaarfit of nieuwste editie is vastgesteld; deze velden blijven
+`null`, niet een lege lijst die bekende afwezigheid suggereert. Dit is een
+lokale bronuitbreiding; root houdt review, build, browser/crawl en vrijgave als
+afzonderlijke gates. De oudere gedateerde registraties hieronder blijven intact.
+
 ## 12 October 2026 — Task84 lokale Quinta Ace-broncohort
 
 De huidige machineleesbare inventaris telt 13 gidsen, 47 catalogustoewijzingen,
