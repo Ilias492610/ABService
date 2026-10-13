@@ -9,6 +9,7 @@ import { buildGlobalSchemaGraph } from "../libs/schema-data.mjs";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { renderFooter, renderFooterWithDate, renderPrivacy, renderTerms, renderGlobalSchema, privacyRoute, termsRoute, renderEvents } from "./helpers/registered-seat-runtime.mjs";
 import { beforeRegisteredSeatRegistry, beforeRegisteredSeatSitemapEntry, beforeRegisteredSeatHtml } from "./fixtures/registered-seat-history.mjs";
+import { beforeFooterFactsCss } from "./fixtures/footer-facts-layout-history.mjs";
 const bytes = await readFile(new URL("./fixtures/registered-seat-facts.json", import.meta.url));
 const f = JSON.parse(bytes);
 const hash = value => createHash("sha256").update(typeof value === "string" || Buffer.isBuffer(value) ? value : JSON.stringify(value)).digest("hex");
@@ -91,7 +92,10 @@ test("only the two legal routes publish true13October dates with all registry me
   assert.equal(hash(buildGlobalSchemaGraph()), f.before.globalSchemaSha256);
   assert.equal(renderGlobalSchema(), f.before.renders.globalSchema);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
-  for (const file of f.before.protectedFiles) assert.equal(hash(await readFile(new URL(`../${file.path}`, import.meta.url))), file.sha256, file.path);
+  for (const file of f.before.protectedFiles) {
+    const actual = await readFile(new URL(`../${file.path}`, import.meta.url));
+    assert.equal(hash(file.path === "app/globals.css" ? beforeFooterFactsCss(actual.toString("utf8")) : actual), file.sha256, file.path);
+  }
   assert.deepEqual(renderEvents, []);
 });
 

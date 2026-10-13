@@ -1,5 +1,61 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 13 oktober 2026 — Task94: footerlabels lokaal hersteld, release nog open
+
+Binnen WP12 zijn uitsluitend twee CSS-regels aangepast: labels krijgen hun
+benodigde breedte, waarden een krimpbare kolom, 12px tussenruimte en veilige
+regelafbreking. Vier bestaande bedrijfsregels, alle links, 24/7, wettelijke
+zetel en geen-klantontvangst blijven bytegelijk; registry/metadata/sitemap/schema,
+beelden, formulieren en broncatalogi onveranderd. Geen SEO-datumwijziging.
+Vooraf echte browser-RED: 22,89px overlap op 1280/390/320. Herstelde gebouwde
+GREEN: alle twaalf label/waardeparen zonder overlap of kolom/documentoverflow.
+Werkelijke verkeerde-kolommutatie reproduceert 10,89px overlap; daarna exact
+hersteld, oorspronkelijke fixtures/hashes behouden. Zes nieuwe preservatietests
+met smalle named CSS-inverse; geen nagebootst layoutmodel. Node24 638/638, lint
+schoon, productieaudit0, build170, crawl82/93/112; vier HTTP200-consumenten hebben
+volledig bytegelijke footer. Eerste screenshot toont niet de footer en is geen
+bewijs; aparte settled opname persoonlijk bekeken toont de complete correctie.
+Advertised viewport biedt alleen breedte/hoogte: vergrote tekst, volledige AT,
+alle schermen en fieldperformance zijn niet aanvaard. Onafhankelijke eindreview,
+exacte commit/hostedCI/provider/live blijven gates. Geen IndexNow voor CSS/docs.
+Task92-releasebackfill en twee exact onderbouwde Task93-auditvinkjes blijven
+behouden; alle 137 huidige regels/statussen en vier integrale bronnen ongewijzigd.
+Accountmoderatie/toegang, echte casebewijzen, Franse review, source403, Task51,
+volledige juridische/privacycontrole en zakelijke uitkomsten blijven apart open.
+
+## 13 oktober 2026 — Task92 release afgerond; twee auditpunten afgevinkt
+
+Commit `5ce9131057103ceb5e8705cbf26482c91cec9b0f` bevat de 20 exact beoordeelde
+bestanden. Onafhankelijke bron/spec- en kwaliteitsreview PASS, geen nieuwe findings.
+Root/precommit632, lint schoon, productieaudit0, build170, crawl82/93/112. Exacte
+hosted CI `38460717641` slaagt op Node24.21.0 met632 en dezelfde QA-aantallen.
+De bekende negen ontwikkelbevindingen en Task51-lifecycle blijven apart open.
+Bestaand Vercel `ab-service` toont `4iEVT3p8uarB51CQUrWHfoCuVaoC` als
+Ready/Production/Current/www.abservice24.be/exacte SHA; GitHub7048966042 success.
+De aanvankelijk oude overview is via de exacte provider-target opgehelderd;
+geen redeploy, nieuw project, instellingen, grant of accountwijziging.
+Canonical20:15Z: home/contact/privacy/voorwaarden200, één H1/canonical, volledige
+zetel/no-reception, operationele contacten en ongewijzigd global schema, echte
+juridische13-oktoberdatums; livecrawl82/93/112. Acht echte1280/390 UI-profielen
+zichtbaar/static/zonder verborgen ancestors of overflow. Lege native contact-
+ingang142,6px onder126,6px-header, consent uit/niets verstuurd; focus blijftA.
+Settled live footerbewijs toont de volledige nieuwe vermelding685–791px. Bestaande
+urenlabel-overlap is nog zichtbaar en blijft de eerstvolgende Task94-hersteltaak.
+Geen volledige footer-/AT-/field-, contactontvangst-, juridische of effectclaim.
+Tijdelijke tabs gesloten/viewport hersteld; geen IndexNow voor deze verduidelijking.
+Dit sluit de Task92-release, niet de volledige WP05 of wettelijke voldoendeheid.
+Task93 is apart in zijn geheel gelezen: alleen de WP04-profielbestemmingsaudit
+én dezelfde WP06-landingsaudit volgens C-101–C-106 worden nu afgevinkt op Task89
+plus Task90 exact/live bewijs. Beschrijvende intentie, echte dienstrubrieken,
+Google-summary/fallback en hetzelfde internationale nummer zijn gecontroleerd;
+Maps-embed is conditioneel en heeft hier geen aangetoond nut. Geen verborgen
+klantlocatie of storefrontclaim toegevoegd; wettelijke zetel is afzonderlijk bewezen.
+Publieke Google-adres/dienstmoderatie, actuele categorielijst, profielnavigatie,
+contactontvangst, overige wettelijke gegevens en zakelijke uitkomsten blijven open.
+Alle137 originele regels behouden, alleen deze twee onderbouwde auditstatussen
+wijzigen; vier integrale bronbijlagen en eerdere bewijslog onveranderd. Deze
+post-releasebackfill blijft lokaal voor de volgende echte productwijziging.
+
 ## 13 oktober 2026 — Task92: wettelijke zetel lokaal gecontroleerd, release open
 
 De [verse KBO-entiteit](https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=0792534639)
@@ -1621,7 +1677,7 @@ Afgevinkt 10 oktober: correcte geverifieerde Abder-property, echte huidige/verge
 - [x] Achtweekse optionele kalender: weken 1–4 volledige concepten, 5–8 outlines. Bronritme 2–3 posts/week, 100–150 woorden is een capaciteitstest. Seizoen, echte cases/reviews/personen en educatie; bron/media/CTA per item.
 - [ ] Fotoaudit: type, kwaliteit, authenticiteit, rechten, aantallen en zichtbare recency 30/90 dagen. Shotlist voor echte werken; geen nep-GPS, staged storefront, +50%-quotum of onbewezen uplift.
 - [x] Indien echte rankgridexport beschikbaar: top-3-aandeel = top-3-punten / geldige gemeten punten. Noteer ontbrekende punten, query, locaties en datum. 13×13 en 25–50%-leiderdrempel zijn geen vereisten.
-- [ ] Controleer profielbestemming samen met WP06: title/H1-intentie, dienst-H2's, echte reviews, consistent contact en Maps-embed alleen bij nut/privacy/performance. Geen verborgen SAB-adres openbaar maken.
+- [x] Controleer profielbestemming samen met WP06: title/H1-intentie, dienst-H2's, echte reviews, consistent contact en Maps-embed alleen bij nut/privacy/performance. Geen verborgen SAB-adres openbaar maken.
 
 **Done:** gedateerde audit van alle twintig promptrubrieken, concrete concepten met feiten/rechten en afzonderlijk bevestigde profielmutaties. Een website-deployment telt niet als GBP-update.
 
@@ -1672,7 +1728,7 @@ blijven apart. Echte prijsregels en volledige WP06 blijven open.
 - [ ] Bovenaan: voor wie, welk probleem, scope, gebied en volgende actie. Daarna proces, inclusies/uitsluitingen, voorbereiding, modelinfo, relevante merken, echte proof, eigen FAQ en bekende tarieffactoren.
 - [ ] Vul contextuele links aan: home→dienst/merk/project/tarieven; dienst→merk/advies/regio/case; gebied→dienst/nabij gebied/proof; merk→onderhoud/herstel/fout/case; fout→merk/herstel/verwante code; case→dienst/merk/plaats/provincie; advies→dienst.
 - [ ] Geen vijf of 3–5 links als quota. Iedere belangrijke bestemming heeft een relevante ingang; mobiel menu/footer compact, geen sitewide exact-matchspam.
-- [ ] Controleer GBP-landingspagina volgens WP04 en C-101–C-106; Maps-embed is conditioneel, geen verplicht contact- of rankingelement.
+- [x] Controleer GBP-landingspagina volgens WP04 en C-101–C-106; Maps-embed is conditioneel, geen verplicht contact- of rankingelement.
 - [x] Inventariseer vóór rewrite formulieren/quizzes/tabellen/media/embeds/bronnen/links/claims. Beoordeel ieder verlies; verwijder geen zakelijke functie om een labscore te verhogen.
 - [ ] Prijsvragen: interventie, diagnose, verplaatsing, materialen, arbeid, overleg, onderhoudsprijs, avond/weekend en offerte. Alleen echte beleidsdata, geen bedragen of voordeel verzinnen.
 

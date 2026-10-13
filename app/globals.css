@@ -147,9 +147,9 @@ h3 { margin: 0 0 .7rem; font-size: 1.2rem; }
 .site-footer h2 { color: white; font-size: 1rem; letter-spacing: 0; }
 .site-footer ul { display: grid; gap: .48rem; margin: 0; padding: 0; list-style: none; }
 .business-facts { display: grid; gap: .35rem; margin-top: 1.4rem; }
-.business-facts div { display: grid; grid-template-columns: 6rem 1fr; }
+.business-facts div { display: grid; grid-template-columns: max-content minmax(0, 1fr); column-gap: .75rem; }
 .business-facts dt { color: white; font-weight: 700; }
-.business-facts dd { margin: 0; }
+.business-facts dd { margin: 0; overflow-wrap: anywhere; }
 .footer-bottom { justify-content: space-between; border-top: 1px solid rgb(255 255 255 / 15%); padding-block: 1.2rem; font-size: .82rem; }
 .whatsapp-button { position: fixed; left: 1rem; bottom: 1rem; z-index: 80; display: grid; width: 3.75rem; height: 3.75rem; place-items: center; border-radius: 999px; background: #25d366; color: white; box-shadow: 0 8px 24px rgb(0 0 0 / 22%); text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
 .whatsapp-button:hover { transform: translateY(-2px) scale(1.04); box-shadow: 0 12px 28px rgb(0 0 0 / 27%); }
