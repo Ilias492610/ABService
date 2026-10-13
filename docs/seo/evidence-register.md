@@ -1,5 +1,66 @@
 # Evidence Register
 
+## 13 oktober 2026 — Task92: wettelijke zetel lokaal gecontroleerd, release open
+
+De [verse KBO-entiteit](https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=0792534639)
+(13 oktober 19:14Z, database 12 oktober) bevestigt uitsluitend de geregistreerde
+zetel: Voorzorgstraat 12A bus 1, 2660 Antwerpen. Eén servercomponent toont dit
+als ‘Maatschappelijke zetel (juridisch adres)’ naast eigenaarbevestigde tekst:
+geen klantontvangst, werk bij klanten. Footer, privacy §1 en voorwaarden §9;
+geen bezoek-/operationeel adres, vestigingskeuze, kaart, address-schema of grant.
+De [officiële FOD-identiteitsgids](https://economie.fgov.be/nl/themas/online/elektronische-handel/verkoop-internet/bedrijfswebsite-en-accounts-op)
+ondersteunt de afgebakende website-informatietaak, geen volledige juridische
+voldoendeheidsclaim. Andere toepasselijke gegevens blijven eigenaar/jurist-gates.
+Alle oude bedrijfscontacten, uren, teksten, verwerking, voorwaarden, beelden,
+reviews, WhatsApp, formulieren en global schema behouden. Alleen twee juridische
+pagina’s krijgen hun echte 13-oktober-wijzigingsdatum; geen massale lastmod.
+Actual-before336 en volledige SSR/registry/metadata/sitemap bevroren vóór product;
+echte RED4, verkeerde bus/ontbrekende guidance/hidden block/ancestor-mutaties falen,
+hersteld. Smalle named inverses bewaren oude fixtures/hashwaarden/driftcontroles.
+Testklok alleen footer vast op echte capture; toekomstjaar2037 blijft gecontroleerd,
+productiejaar dynamisch. Key-order- en testvariabelenaamfouten gemeld/hersteld.
+Root vers632/632, lint schoon, productie-audit0, build170, crawl82/93/112.
+Vier gebouwde HTTP200-pagina’s/één H1/canonicals/echte juridische dates gecontroleerd;
+1280/390px acht UI-profielen: zichtbaar/static, geen hidden ancestor of overflow.
+Lege native formulieringang142,6px onder126,6px-header; consent uit/niets verzonden,
+focus anchor; geen volledige AT-/field-/ontvangst- of effectclaim.
+Eerste footeropname was tijdens scrollanimatie, niet geaccepteerd; bewaarde
+settled opname toont nieuwe tekst volledig. Bestaande overlap van footerurenlabel
+blijft expliciet Task94-vervolg; geen brede leesbaarheidsclaim of stilzwijgende fix.
+Eén onafhankelijke volledige eindreview, exacte commit/hosted/provider/live blijven
+gates; geen IndexNow voor juridische identiteitsverduidelijking. Task90-release af.
+Task93 aanvaardt twee landingsauditregels op Task89/90-bewijs, niet hele WP04/WP06;
+afvinkdelta volgt apart na Task92-release. Alle 137 huidige checkliststatussen en
+vier integrale bronbijlagen blijven in deze kandidaat ongewijzigd. Accountmoderatie,
+Bing/Apple-toegang, cases, Frans, source403, Task51 en zakelijke uitkomsten blijven open.
+
+## 13 oktober 2026 — Task90: exacte release en livecontrole afgerond
+
+Commit `68b4311344ca9e93128bbc198b59cdc6cd9a4c22` bevat de 18 exact
+beoordeelde bestanden. Eén onafhankelijke eindreview: bron/spec en kwaliteit PASS,
+geen open bevindingen. Verse Node24-controle: 626 tests, lint schoon, productie-
+dependencyaudit 0, build 170; technische crawl 82 pagina’s/93 links/112 assets.
+Exacte hosted CI `38454393609` slaagt op Node24.21.0 met dezelfde aantallen.
+De bekende negen ontwikkelbevindingen en Task51-lifecycle blijven apart open.
+Bestaand Vercelproject `ab-service`: `2iy6cLdTA9KLgW8Q9F3YvC8HdTmC` is
+Ready/Production/Current, www.abservice24.be en dezelfde SHA. GitHub-deployment
+`7047960713` heeft success. Geen nieuw project, rechten of instellingen gewijzigd.
+Canonical 19:27Z: home/contact HTTP200, één H1, juiste canonical, zichtbare
+klantlocatiecopy en beide echte 13-oktober-sitemapdatums. Livecrawl 82/93/112.
+Werkelijke 1280/390px-controle: negen diensten, Google 5,0/44 met officiële
+profielingang en zonder losse reviewteksten; tekst zichtbaar, geen overflow.
+Pointer en native Enter landen met het lege formulier op 142,6px onder de
+126,6px-header; consent uit, niets verzonden. Focus blijft op de anchor, geen
+volledige AT-/focus-, ontvangst-, field-performance- of juridische acceptatie.
+Live desktopbewijs bewaard; tijdelijke tabs gesloten, viewport hersteld,
+eigen lokale server gestopt. Geen IndexNow voor deze kleine verduidelijking.
+Task90-release is gesloten, niet geheel WP04/WP05/WP06. Task91 read-only audit
+en Task92 primaire zetelcontrole zijn voorbereiding voor wettelijke identiteit,
+nog geen adrespublicatie. Publieke Maps-moderatie, andere accounts, cases, Frans,
+source403, security/lifecycle en zakelijke resultaten blijven afzonderlijk open.
+Vier integrale bronbijlagen, alle 137 checklistregels en eerdere bewijslog blijven
+behouden. Deze backfill blijft lokaal voor de volgende echte productwijziging.
+
 ## 13 oktober 2026 — Task90 klantlocatie: lokaal getest, review/release open
 
 Homewerkgebied en contacthero vermelden nu eigenaarbevestigdBF-F06: werk bij

@@ -383,7 +383,7 @@ export const pageRegistry = Object.freeze([
   })),
   {
     path: "/privacy-policy",
-    lastModified: "2026-10-11",
+    lastModified: "2026-10-13",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Privacybeleid | AB Service",
     description:
@@ -393,6 +393,7 @@ export const pageRegistry = Object.freeze([
   },
   {
     path: "/algemene-voorwaarden",
+    lastModified: "2026-10-13",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Algemene voorwaarden | AB Service",
     description:

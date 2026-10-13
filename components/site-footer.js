@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { business } from "@/content/business.mjs";
 import TrackedLink from "@/components/tracked-link";
+import RegisteredSeat from "@/components/registered-seat";
 
 const serviceLinks = [
   ["Onderhoud cv-ketel", "/onderhoud"],
@@ -84,6 +85,7 @@ export default function SiteFooter() {
               <dd>{business.vatId}</dd>
             </div>
           </dl>
+          <RegisteredSeat />
         </div>
         <div>
           <h2>Diensten</h2>

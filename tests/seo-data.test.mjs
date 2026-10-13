@@ -5,6 +5,7 @@ import { pageRegistry } from "../content/site-content.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { adviceGuides } from "../content/advice-guides.mjs";
 import { loadContactModule } from "./helpers/contact-runtime.mjs";
+import { beforeRegisteredSeatRegistry } from "./fixtures/registered-seat-history.mjs";
 import * as areas from "../content/service-areas.mjs";
 import * as services from "../content/additional-services.mjs";
 import * as brands from "../content/brand-services.mjs";
@@ -112,7 +113,8 @@ test("water meter pilot is published with its own canonical and actual content d
   assert.equal(metadata.alternates.canonical, "https://www.abservice24.be/tools/watermetercheck");
   assert.match(metadata.description, /(?:geregistreerd|meterstanden)/i);
   assert.equal(buildSitemapEntries(pageRegistry).find(({ url }) => url.endsWith("/tools/watermetercheck"))?.lastModified, "2026-10-11");
-  for (const path of ["/advies", "/privacy-policy"]) assert.equal(pageRegistry.find((entry) => entry.path === path).lastModified, "2026-10-11");
+  assert.equal(pageRegistry.find((entry) => entry.path === "/advies").lastModified, "2026-10-11");
+  assert.equal(beforeRegisteredSeatRegistry(pageRegistry.find((entry) => entry.path === "/privacy-policy")).lastModified, "2026-10-11");
 });
 
 test("published pages have distinct topic previews without changing the homepage or noindex fallback", () => {

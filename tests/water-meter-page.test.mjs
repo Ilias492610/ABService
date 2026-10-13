@@ -12,6 +12,8 @@ import * as schema from "../libs/schema-data.mjs";
 import * as advice from "../content/advice-guides.mjs";
 import * as citations from "../libs/cited-sources.mjs";
 import { readContactContext } from "../libs/contact-context.mjs";
+import * as legalIdentity from "../content/legal-identity.mjs";
+import { beforeRegisteredSeatHtml } from "./fixtures/registered-seat-history.mjs";
 
 const require = createRequire(import.meta.url);
 const { parse } = require("next/dist/compiled/node-html-parser");
@@ -20,6 +22,7 @@ const hero = await loadContactModule("components/page-hero.js", { "@/components/
 const jsonLd = await loadContactModule("components/json-ld.js");
 const breadcrumbs = await loadContactModule("components/breadcrumbs.js", { "@/components/json-ld": jsonLd, "@/libs/schema-data.mjs": schema });
 const cta = await loadContactModule("components/contact-cta.js", { "@/components/tracked-link": tracked, "@/content/business.mjs": business });
+const registeredSeat = await loadContactModule("components/registered-seat.js", { "@/content/legal-identity.mjs": legalIdentity });
 const shared = { "@/components/page-hero": hero, "@/components/breadcrumbs": breadcrumbs, "@/components/contact-cta": cta, "@/content/site-content.mjs": registry, "@/libs/seo-data.mjs": seo, "@/content/business.mjs": business, "@/content/advice-guides.mjs": advice, "@/libs/water-meter-check.mjs": water, "@/libs/cited-sources.mjs": citations };
 const component = await loadContactModule("components/water-meter-check.js", { "@/libs/water-meter-check.mjs": water, "@vercel/analytics": { track() {} } });
 const page = await loadContactModule("app/tools/watermetercheck/page.js", { ...shared, "@/components/water-meter-check": component });
@@ -215,8 +218,8 @@ test("hub and water advice expose the useful tool entrance while preserving exis
 });
 
 test("rendered privacy explains local water amounts and coded optional handoff while retaining existing processing", async () => {
-  const compiled = await loadContactModule("app/privacy-policy/page.js", shared);
-  const text = dom(React.createElement(compiled.default)).textContent;
+  const compiled = await loadContactModule("app/privacy-policy/page.js", { ...shared, "@/components/registered-seat": registeredSeat });
+  const text = parse(beforeRegisteredSeatHtml(renderToStaticMarkup(React.createElement(compiled.default)), "/privacy-policy")).textContent;
   assert.match(text, /watermetercheck/i);
   assert.match(text, /meterstanden.*meetduur.*hoeveelheden.*browser/i);
   assert.match(text, /positief.*nul.*dienst/i);

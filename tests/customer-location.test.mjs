@@ -7,6 +7,7 @@ import { faultGuides } from "../content/fault-guides.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { renderHome, renderContact, homeRoute, contactRoute, renderEvents } from "./helpers/customer-location-runtime.mjs";
 import { beforeCustomerLocationRegistry, beforeCustomerLocationSitemapEntry } from "./fixtures/customer-location-history.mjs";
+import { beforeRegisteredSeatSitemapEntry } from "./fixtures/registered-seat-history.mjs";
 const f = JSON.parse(await readFile(new URL("./fixtures/customer-location-facts.json", import.meta.url), "utf8"));
 const hash = value => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
 const escape = value => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#x27;");
@@ -87,7 +88,7 @@ test("only home and contact gain actual13October sitemap dates while complete re
   assert.equal(sitemap.length, f.before.sitemap.length);
   assert.deepEqual(sitemap.map(beforeCustomerLocationSitemapEntry), f.before.sitemap);
   assert.equal(hash(sitemap.map(beforeCustomerLocationSitemapEntry)), f.before.sitemapSha256);
-  assert.deepEqual(sitemap, f.before.sitemap.map(entry => ["https://www.abservice24.be/", "https://www.abservice24.be/contact"].includes(entry.url) ? { ...entry, lastModified: "2026-10-13" } : entry));
+  assert.deepEqual(sitemap.map(beforeRegisteredSeatSitemapEntry), f.before.sitemap.map(entry => ["https://www.abservice24.be/", "https://www.abservice24.be/contact"].includes(entry.url) ? { ...entry, lastModified: "2026-10-13" } : entry));
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const [file, expected] of [["business", f.before.businessSha256], ["media", f.before.mediaSha256]]) assert.equal(hash(await readFile(new URL(`../content/${file}.mjs`, import.meta.url), "utf8")), expected);
 });
