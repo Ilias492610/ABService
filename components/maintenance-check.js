@@ -26,6 +26,7 @@ export default function MaintenanceCheck() {
   const [input, setInput] = useState(initialInput);
   const [result, setResult] = useState(null);
   const resultPanel = useRef(null);
+  const firstField = useRef(null);
   const showPower = input.region !== "brussel" && input.device === "central" && input.fuel !== "solid";
   const showFuel = input.device === "central";
 
@@ -43,6 +44,16 @@ export default function MaintenanceCheck() {
     requestAnimationFrame(() => next.kind === "invalid" ? document.getElementById("check-lastDate")?.focus() : resultPanel.current?.focus());
   };
 
+  const reset = () => {
+    setInput(initialInput);
+    setResult(null);
+    requestAnimationFrame(() => {
+      const field = firstField.current;
+      field?.focus({ preventScroll: true });
+      field?.scrollIntoView({ block: "center", behavior: "instant" });
+    });
+  };
+
   return (
     <div className="maintenance-check-layout">
       <form className="maintenance-check-form" onSubmit={submit} noValidate>
@@ -52,7 +63,7 @@ export default function MaintenanceCheck() {
           {selections.filter(([name]) => (name !== "power" || showPower) && (name !== "fuel" || showFuel)).map(([name, label, options]) => (
             <div className="field field-full" key={name}>
               <label htmlFor={`check-${name}`}>{label}</label>
-              <select id={`check-${name}`} name={name} value={input[name]} onChange={update}>
+              <select id={`check-${name}`} name={name} value={input[name]} onChange={update} ref={name === "region" ? firstField : undefined}>
                 {options.map(([value, text]) => <option key={value} value={value}>{text}</option>)}
               </select>
             </div>
@@ -64,7 +75,7 @@ export default function MaintenanceCheck() {
             {result?.kind === "invalid" && <span id="check-date-error" className="form-status error">{result.summary}</span>}
           </div>
         </div>
-        <button type="submit" className="button">Bekijk mijn onderhoudsregel</button>
+        <div className="button-row"><button type="submit" className="button">Bekijk mijn onderhoudsregel</button><button type="button" className="button button-secondary" onClick={reset}>Wis mijn invoer</button></div>
       </form>
       <div className="maintenance-check-result" id="onderhoudsresultaat" ref={resultPanel} tabIndex={-1} role="status" aria-live="polite" aria-atomic="true">
         {result ? (

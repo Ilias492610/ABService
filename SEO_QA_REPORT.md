@@ -1,5 +1,58 @@
 # AB Service SEO QA Report
 
+## 13 oktober 2026 — Task96: onderhoudsinvoer wissen lokaal getest, release open
+
+Binnen WP11 krijgt de onderhoudscheck één native knop ‘Wis mijn invoer’. Alle
+zes keuzes/datum, resultaat, planning, foutmelding en resultaat-CTA worden gewist;
+focus keert na de update terug naar de eerste vraag. Geen extra analytics of
+nieuwe regels, bronnen, contactpayload, account, CSS, schema, metadata of datums.
+Alle oorspronkelijke bereken-/wijzig-/submit-/handoffcode blijft behouden.
+Vóór product: actual345/fullsource/defaultSSR bevroren; ontbrekende-reset-RED,
+vier echte handler-mutaties en herstel, oude fixtures/hashwaarden intact. Eerste
+653-kandidaat had in de browser een afgesneden vraaglabel achter de header;
+beeld/DOM-RED behouden. Alleen resetfocus preventScroll+center/instant aangepast,
+echte nieuwe boundary-RED en twee mutaties; geen nagebootste pixelgeometrie.
+Root vers654/654, lint schoon, productieaudit0, build170, crawl82/93/112.
+Echte1280/390/320 bediening: dertien gecontroleerde resets met muis/Enter,
+herhaling, verborgen fuel/power, geldige en toekomstige datums. Focus check-region,
+label/veld ruim onder126,6px-header, geen overflow of oud resultaat/error/CTA.
+Optionele390px handoff: juiste dienst/testdatum, URL-context opgeschoond, overige
+velden leeg/toestemming uit/form142,6px; niets verstuurd. Native ISO-datuminvoer
+geverifieerd; eerste fill gaf leeg en telt niet als datumtest. Privé QA-vergelijken
+normaliseert voidinput-serialisatie op beide zijden; oorspronkelijke bytes/hash
+niet gerebased, echte Node-SSR apart bytegetest. Settled desktopbewijs gezien.
+Eén onafhankelijke hele11-cohortreview en exacte commit/hosted/provider/live zijn
+nog gates. Geen IndexNow of contentdatums voor deze kleine UX-wijziging.
+Task94 exacte release en twee beperkte Task95-pilotvinkjes blijven behouden;
+alle137 huidige statussen/woorden en vier integrale bronnen onveranderd. Task97
+bevestigt alleen de genoemde Brusselse vastebrandstofregel in gelezen officiële
+processedtekst, geen volledige actuele regels of nieuwe broncontroledatum.
+Volledige WP11/12, bestaande submitfocus, volledige keyboard/AT/zoom/field,
+accountmoderatie/toegang, cases, Frans, source403, Task51, legal/outcomes blijven open.
+
+## 13 oktober 2026 — Task94 exact live; twee WP11-pilotcriteria onderbouwd
+
+Commit `a6e5823c7518b4089fcdc5daea293ebb6ddecafa` bevat de elf exact beoordeelde
+bestanden. Bron/spec- en kwaliteitsreview PASS; root/precommit638, lint schoon,
+productieaudit0, build170, crawl82/93/112. Exact hosted CI38466280843 slaagt op
+Node24.21.0 met638, productie0/build170/crawl82/93/112; bekende negen dev- en
+lifecyclebevindingen blijven Task51. Bestaand Vercelab-service5Npirb2q8XhzW8hvtTvxkZv7HdA5
+Ready/Production/Current/www/exactSHA, GitHub7049826320 success. Canonical20:54Z
+vier200-consumenten met bytegelijke complete footer; livecrawl82/93/112. Echte
+1280/390/320 DOM/pixels: twaalf label/waardeparen zonder overlap of overflow,
+alle contacten/24uur/zetel/no-reception behouden; settled livebewijs gezien/bewaard.
+Tijdelijke tabs gesloten/viewport hersteld/eigen server gestopt. Geen IndexNow:
+CSS/docs, geen contentdatums veranderd. Task94 gesloten, niet geheel WP12/AT/field.
+Task95 volledig gelezen: alleen WP11-watermeterpilot en gevaar-stop/bronafbakening
+zijn technisch ondersteund voor afvinking. Dated11Oct pre-implementatiebronlezing
+plus volledig gelezen34/48/83 regels primaire processedwebtekst (cache2dagen/gisteren,
+geen verse origin200/SHA) onderscheiden. Geen bijlagen, diagnose of effectclaim.
+Onderhoudsregelsactueel, gedeelde UXregel en gebruik/aanvragen blijven open;
+onderhoudscheck mist wisknop, volgende Task96. Alle137 woorden/volgorde behouden,
+alleen twee precies gedocumenteerde WP11-statussen wijzigen. Vier integrale bronnen
+en eerdere bewijslog intact; backfill lokaal tot volgende echte productrelease.
+Overige account/case/French/field/AT/source403/security/legal/outcomegates open.
+
 ## 13 oktober 2026 — Task94: footerlabels lokaal hersteld, release nog open
 
 Binnen WP12 zijn uitsluitend twee CSS-regels aangepast: labels krijgen hun
