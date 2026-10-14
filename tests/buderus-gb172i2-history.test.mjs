@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
 const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
@@ -22,7 +23,7 @@ const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v
 
 test("named GB172 addition reconstructs genuine pre-edit full guides registry metadata and SSR",async()=>{
  assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide)),f.before.preservation.allGuides);
- assert.equal(hash(pageRegistry.map(beforeAtagManualsRegistry).map(beforeGb172Registry)),f.before.preservation.allRegistry);
+ assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry)),f.before.preservation.allRegistry);
  assert.deepEqual(beforeGb172Metadata(beforeAtagManualsMetadata(buildPageMetadata(getPageDefinition(f.page.path)),"buderus"),"buderus"),f.before.metadata);
  assert.equal(hash(beforeGb172Html(beforeAtagManualsHtml(await renderFaultGuide("buderus"),"buderus"),"buderus")),f.before.preservation.buderusHtml);
 });

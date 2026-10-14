@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
 const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
@@ -86,5 +87,5 @@ test("GB172i.2 model manifest binds actual source identity without invented revi
 
 // A named addition must not change any existing model, source table or other URL.
 test("original GB162 catalog other12guides and other registry retain genuine pre-edit captures",()=>{
- assert.equal(hash(guide.catalogs[0]),f.before.preservation.gb162Catalog);assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).filter(g=>g.slug!=="buderus")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.map(beforeAtagManualsRegistry).filter(p=>p.path!=="/foutcodes/buderus")),f.before.preservation.otherRegistry);
+ assert.equal(hash(guide.catalogs[0]),f.before.preservation.gb162Catalog);assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).filter(g=>g.slug!=="buderus")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).filter(p=>p.path!=="/foutcodes/buderus")),f.before.preservation.otherRegistry);
 });

@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
 const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
@@ -64,7 +65,7 @@ test("Viessmann metadata uses genuine12October date and only restores its accept
   assert.equal(p.lastModified,"2026-10-12");assert.equal(m.description,f.description);assert.equal(m.openGraph.description,f.description);assert.equal(m.twitter.description,f.description);
   assert.equal(m.alternates.canonical,"https://www.abservice24.be/foutcodes/viessmann");assert.equal(m.robots.index,true);
   assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-12");
-  assert.equal(hash(beforeViessmannMetadata(m,"viessmann")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry)),f.preservation.allRegistry);
+  assert.equal(hash(beforeViessmannMetadata(m,"viessmann")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry)),f.preservation.allRegistry);
 });
 test("all71 SSR cards plus whole13 guides restore the genuine accepted6b128bc leaves",async()=>{
   const html=await renderFaultGuide("viessmann");assert.equal((html.match(/class="fault-code-card"/g)||[]).length,71);assert.match(html,/\/contact\?dienst=Herstelling\+verwarming#aanvraagformulier/);

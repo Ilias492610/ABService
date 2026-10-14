@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
 const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
@@ -86,7 +87,7 @@ test("real SSR exposes source-bounded Calenta cards while all other leaves and m
   assert.equal(hash(beforeCalentaHtml(html,"remeha")),f.before.preservation.remeha.html);
   assert.equal(hash(beforeCalentaGuide(guide)),f.before.preservation.remeha.guide);
   assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).map(beforeCalentaGuide)),f.before.preservation.allGuides);
-  assert.equal(hash(pageRegistry.map(beforeAtagManualsRegistry).map(beforeGb172Registry)),f.before.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry)),f.before.preservation.allRegistry);
   const p=pageRegistry.find(p=>p.path==="/foutcodes/remeha"),meta=buildPageMetadata(p);
   assert.equal(hash(meta),f.before.preservation.remeha.metadata);assert.equal(p.lastModified,"2026-10-12");
   assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url==="https://www.abservice24.be/foutcodes/remeha").lastModified,"2026-10-12");

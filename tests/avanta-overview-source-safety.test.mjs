@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
 const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
@@ -73,7 +74,7 @@ test("Remeha metadata and substantive sitemap date change without other registry
   assert.equal(m.alternates.canonical, "https://www.abservice24.be/foutcodes/remeha"); assert.equal(m.robots.index, true);
   assert.equal(buildSitemapEntries(pageRegistry).find(p => p.url === m.alternates.canonical).lastModified, "2026-10-12");
   assert.equal(hash(beforeAvantaMetadata(m, "remeha")), f.preservation.remeha.metadata);
-  assert.equal(hash(pageRegistry.map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry)), f.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry)), f.preservation.allRegistry);
 });
 
 test("all659 Remeha SSR cards preserve original leaves outside exact Avanta changes", async () => {

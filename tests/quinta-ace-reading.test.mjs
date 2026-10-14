@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
@@ -67,5 +68,5 @@ test("only Remeha has the true13October candidate date and its inverse preserves
  const p=getPageDefinition("/foutcodes/remeha");assert.equal(p.lastModified,"2026-10-13");
  assert.deepEqual(beforeQuintaRegistry(p),f.before.page);
  assert.equal(beforeQuintaRegistry({...p,lastModified:"2026-10-14"}).lastModified,"2026-10-14");
- assert.equal(hash(JSON.stringify(pageRegistry.filter(p=>p.path!==f.page.path).map(beforeCustomerLocationRegistry))),f.before.preservation.otherRegistry);
+ assert.equal(hash(JSON.stringify(pageRegistry.map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path).map(beforeCustomerLocationRegistry))),f.before.preservation.otherRegistry);
 });

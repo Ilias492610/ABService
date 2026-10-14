@@ -1,5 +1,13 @@
 // Shared by consumer pages and the source audit: changed citations cannot escape monitoring.
 export const coreSources = {
+  sanitaryOdourAquafin: {
+    label: "Aquafin: infrastructuurvragen en geurhinder — bij de bevoegde beheerder",
+    href: "https://aquafin.be/nl/veelgestelde-vragen-infrastructuur-aquafin",
+  },
+  sewerOperatorFlanders: {
+    label: "AquaFlanders: uw rioolbeheerder opzoeken in Vlaanderen",
+    href: "https://www.aquaflanders.be/mijn-drinkwaterbedrijf-en-rioolbeheerder",
+  },
   waterLeakFlanders: {
     label: "Vlaanderen: zichtbare waterlekken en doorverwijzing naar uw waterbedrijf",
     href: "https://www.vlaanderen.be/bouwen-wonen-en-energie/water/een-lek-in-de-waterleiding",

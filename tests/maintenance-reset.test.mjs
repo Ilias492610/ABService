@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -233,9 +234,9 @@ test("untouched frozen before capture and named reset inverses preserve complete
   assert.equal(beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(source))), f.before.source, "every byte of original calculate, update, source wording and handoff retained");
   assert.equal(beforeMaintenanceResetSource(f.before.source), f.before.source);
   assert.equal(beforeMaintenanceResetHtml(f.before.defaultHtml), f.before.defaultHtml);
-  assert.equal(hash(pageRegistry), f.before.registrySha256);
+  assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry)), f.before.registrySha256);
   assert.equal(hash(pageRegistry.map(page => ({ path: page.path, metadata: buildPageMetadata(page) }))), f.before.metadataSha256);
-  assert.equal(hash(buildSitemapEntries(pageRegistry)), f.before.sitemapSha256);
+  assert.equal(hash(buildSitemapEntries(pageRegistry).map(beforeSanitaryReferralSitemapEntry)), f.before.sitemapSha256);
   assert.equal(hash(buildGlobalSchemaGraph()), f.before.globalSchemaSha256);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   assert.equal(hash(await readFile(new URL("../content/business.mjs", import.meta.url))), f.before.businessSha256);

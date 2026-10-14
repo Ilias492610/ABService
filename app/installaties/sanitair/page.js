@@ -1,5 +1,6 @@
 import ServicePage from "@/components/service-page";
 import { contentImages } from "@/content/media.mjs";
+import { coreSources } from "@/content/core-sources.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 
@@ -44,6 +45,17 @@ export default function SanitairPage() {
             "Hetzelfde toestel kan in twee woningen een heel andere werkhoeveelheid vragen. Leidingtracé, afsluitbaarheid, bereikbaarheid, afvoer, wandopbouw en gewenste afwerking zijn daarom relevante prijsfactoren.",
           ],
         },
+        {
+          eyebrow: "Geur bij sanitair",
+          title: "Geur bij sanitair: wat doorgeven en wie contacteren?",
+          paragraphs: [
+            "Beschrijf alleen wat u al weet: waar en wanneer u de geur merkt, bij welk sanitair toestel, of de afvoer normaal of traag loopt en of er recente werken waren. Is de plaats, bron of context onbekend, vermeld dan onbekend en ga niet gokken of extra onderzoek doen. Geur alleen is geen vaststelling van een verstopping; AB Service kan beoordelen of uw omschreven vraag binnen het sanitaire aanbod past.",
+            "Aquafin behandelt geurklachten binnenshuis en buitenshuis afzonderlijk. Noteer waar de geur opvalt, maar leid daar zelf geen oorzaak of verantwoordelijke uit af.",
+            "Bij een vraag over de openbare riolering in Vlaanderen: zoek via AquaFlanders uw werkelijke rioolbeheerder en volg diens meldprocedure. Contacteer Aquafin alleen als Aquafin de bevestigde beheerder is. De Vlaamse zoekhulp bepaalt geen beheerder voor Brussel; vraag daar de bevoegde instantie wie uw rioolbeheerder is. Dit is geen toezegging dat AB Service werk aan het openbare riool uitvoert.",
+            "Bij direct gevaar: schakel de bevoegde noodhulp in en wacht niet op een online formulier.",
+          ],
+          links: [coreSources.sanitaryOdourAquafin, coreSources.sewerOperatorFlanders],
+        },
       ]}
       steps={[
         { title: "Foto’s", text: "Toon de ruimte, aansluitingen en het huidige toestel." },
@@ -60,6 +72,7 @@ export default function SanitairPage() {
         { label: "Tarieven en offertes", href: "/tarieven" },
         { label: "Contact opnemen", href: "/contact" },
       ]}
+      sourceLinks={[coreSources.sanitaryOdourAquafin, coreSources.sewerOperatorFlanders]}
     />
   );
 }

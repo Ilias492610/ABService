@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
@@ -20,7 +21,7 @@ const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v
 
 test("named Tzerra inverse restores actual pre-edit full guide registry metadata and SSR capture",async()=>{
  assert.equal(hash(faultGuides.map(beforeTzerraGuide)),f.before.preservation.allGuides);
- assert.equal(hash(pageRegistry.map(beforeTzerraRegistry)),f.before.preservation.allRegistry);
+ assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeTzerraRegistry)),f.before.preservation.allRegistry);
  assert.deepEqual(beforeTzerraMetadata(buildPageMetadata(getPageDefinition(f.page.path)),"remeha"),f.before.metadata);
  assert.equal(hash(beforeTzerraHtml(await renderFaultGuide("remeha"),"remeha")),f.before.preservation.remehaHtml);
 });
@@ -37,7 +38,7 @@ test("Tzerra inverse does not hide earlier model row drift count drift or unknow
  }
 });
 test("Tzerra registry metadata inverse keeps unknown fields bad canonical image and nonexact titles visible",()=>{
- assert.equal(hash(pageRegistry.map(beforeTzerraRegistry)),f.before.preservation.allRegistry);
+ assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeTzerraRegistry)),f.before.preservation.allRegistry);
  const p=getPageDefinition(f.page.path),m=buildPageMetadata(p);
  assert.deepEqual(beforeTzerraMetadata(m,"remeha"),f.before.metadata);
  for(const update of [{priority:0.99},{description:"DRIFT"},{title:"DRIFT"},{unexpectedLeaf:true}])assert.notDeepEqual(beforeTzerraRegistry({...p,...update}),f.before.page);

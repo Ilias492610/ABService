@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
@@ -124,5 +125,5 @@ test("Tzerra manifest retains both measured originals and explicit unknown artic
 test("original13 Remeha catalogs and all other12guides and registry entries retain actual pre-edit bytes",()=>{
  const ids=new Set(f.catalogs.map(c=>c.id));assert.equal(hash(guide.catalogs.filter(c=>!ids.has(c.id))),f.before.preservation.remehaCatalogs);
  assert.equal(hash(faultGuides.filter(g=>g.slug!=="remeha")),f.before.preservation.otherGuides);
- assert.equal(hash(pageRegistry.filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
+ assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
 });

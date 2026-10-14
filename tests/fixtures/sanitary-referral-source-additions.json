@@ -1,0 +1,10 @@
+{
+  "app/installaties/sanitair/page.js": [
+    "import { coreSources } from \"@/content/core-sources.mjs\";\n",
+    "        {\n          eyebrow: \"Geur bij sanitair\",\n          title: \"Geur bij sanitair: wat doorgeven en wie contacteren?\",\n          paragraphs: [\n            \"Beschrijf alleen wat u al weet: waar en wanneer u de geur merkt, bij welk sanitair toestel, of de afvoer normaal of traag loopt en of er recente werken waren. Is de plaats, bron of context onbekend, vermeld dan onbekend en ga niet gokken of extra onderzoek doen. Geur alleen is geen vaststelling van een verstopping; AB Service kan beoordelen of uw omschreven vraag binnen het sanitaire aanbod past.\",\n            \"Aquafin behandelt geurklachten binnenshuis en buitenshuis afzonderlijk. Noteer waar de geur opvalt, maar leid daar zelf geen oorzaak of verantwoordelijke uit af.\",\n            \"Bij een vraag over de openbare riolering in Vlaanderen: zoek via AquaFlanders uw werkelijke rioolbeheerder en volg diens meldprocedure. Contacteer Aquafin alleen als Aquafin de bevestigde beheerder is. De Vlaamse zoekhulp bepaalt geen beheerder voor Brussel; vraag daar de bevoegde instantie wie uw rioolbeheerder is. Dit is geen toezegging dat AB Service werk aan het openbare riool uitvoert.\",\n            \"Bij direct gevaar: schakel de bevoegde noodhulp in en wacht niet op een online formulier.\",\n          ],\n          links: [coreSources.sanitaryOdourAquafin, coreSources.sewerOperatorFlanders],\n        },\n",
+    "      sourceLinks={[coreSources.sanitaryOdourAquafin, coreSources.sewerOperatorFlanders]}\n"
+  ],
+  "content/core-sources.mjs": [
+    "  sanitaryOdourAquafin: {\n    label: \"Aquafin: infrastructuurvragen en geurhinder — bij de bevoegde beheerder\",\n    href: \"https://aquafin.be/nl/veelgestelde-vragen-infrastructuur-aquafin\",\n  },\n  sewerOperatorFlanders: {\n    label: \"AquaFlanders: uw rioolbeheerder opzoeken in Vlaanderen\",\n    href: \"https://www.aquaflanders.be/mijn-drinkwaterbedrijf-en-rioolbeheerder\",\n  },\n"
+  ]
+}

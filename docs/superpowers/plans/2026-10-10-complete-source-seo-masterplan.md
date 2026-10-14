@@ -1,5 +1,118 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 14 oktober 2026 — Task112 lokaal gecontroleerd: geurvraag bij sanitair
+
+Eén brongebonden intake-/doorverwijssectie op `/installaties/sanitair`; geen nieuwe
+URL, diagnose, technische proef, openbare-rioolbelofte, prijs of fabrikantclaim.
+Alle drie oorspronkelijke secties, stappen, media, waarschuwing, bronloze oude
+inhoud, negen handmatige/opgeloste links en beide sanitaire CTA's blijven behouden.
+Root las primaire Aquafin-FAQ/geurbody en AquaFlanders-ingang volledig; de twee
+geciteerde links geven afzonderlijk200 bij één nieuwe bronaudit, geen retry/403-masker.
+Bronlees-/bereikbaarheidsbewijs is geen adreslookup of algemene technische review.
+Alleen echte sanitair-lastmod14oktober; alle overige registry/sitemap/meta/schema
+leaves, oude bronlijst, business/24uur/legal/media en vier integrale bijlagen intact.
+Root vóór product:354files/fullSSR dab2f1a9; vóór publicatiecanonical13:48Z200 bewaard.
+27 historische vergelijkingen krijgen uitsluitend exact sanitaire datuminverse;
+registered-seat twee exacte toevoegingsinverses houden oude e7317/75adehashs vast.
+Geen oude fixture/herbase/uitgeschakelde assert; extra titel/datum/URL/label/import/
+leaf/duplicaatmutaties blijven falen. Eerste writer677/675/2fail blijft vastgelegd;
+de twee exacte datumconsumers hersteld, root verse677/677/lint schoon/productieaudit0/
+build170/localcrawl82/93/112. Volledige origin-main/footer behouden na uitsluitend
+twee nieuwe subtrees wegnemen; meta/canonical/H1 en sourcecollector afzonderlijk.
+Native JS-enabled1280/390/320x900: tekst/bronlinks passen zonder horizontale overflow;
+twee werkelijk zichtbare bronlinks met Tab, desktop terug met ShiftTab/3px-outline.
+Vroege offscreen390focus en gewone scrollposities bewaard, tellen niet als acceptatie.
+390-aanvraagknop: sanitairvoorkeuze, overige velden leeg/consentuit/form142,6px onder
+126,6px-header; publieke dienstquery blijft bewust staan, niets verzonden. Vier lokale
+adblocker-JSONfouten met uitsluitend extensionstack bewaard; geen console0-claim.
+Echte desktop- en mobiele beelden gezien; eigen tab14 gesloten/viewport hersteld.
+Onafhankelijke volledige cohortreview, commit/hosted/provider/live en eventuele
+substantieve IndexNow zijn nog gates. Mac/Abder volgens eigenaar open, toolcontrole
+volgt; nativeJSoff/AT/field/accounts/cases/Frans/Task51/source403/effect blijven apart.
+Geen checklistafsluiting of volledigeWP10; bestaande releasebackfill meegedragen.
+
+
+## 14 oktober 2026 — Task109–111: adviesdekking en concrete bronvoorbereiding
+
+Task110: alle veertien oorspronkelijke adviesonderwerpen beoordeeld tegen actuele
+gepubliceerde bodies; algemene antwoorden, gedeeltelijke dekking en gaten apart.
+Gesprongen-leidingintake bestaat inmiddels; prijzen, concrete huurkostencasus,
+kraandiagnose en rioolgeuroorzaak blijven bewijs-/technische gates. Geen veertien-URLquotum.
+Task111: root las volledige primaire Aquafin-FAQ/geurbody en AquaFlanders-beheerderingang.
+De echte publieke FAQ-vraag draagt één beperkte intake-/doorverwijsaanvulling op
+bestaande sanitairpagina; geen AB-klantvraag/volume, diagnose of altijd-Aquafinclaim.
+Voorbereiding is klaar, niet de product-/review-/release-/effectacceptatie; Task112
+heeft nog geen schrijver of code. Bronleesdatum is geen live-origin- of lastmodbewijs.
+Task109 blijft open: actuele inventaris meldt Mac vergrendeld/geen Abder-profiel;
+één gerichte ontgrendelvraag gesteld, geen persoonlijke accountsubstitutie of settingwijziging.
+Volledige nativeJSoff/AT/field/accountgates apart; geen herhaalde107/108-poll, QA,
+publicatie, IndexNow of checkboxsluiting. Alle137 statussen/vier bronbijlagen behouden.
+
+## 14 oktober 2026 — Task107 afgerond: nog geen compatibele upstream-oplossing
+
+Negen primaire npm-responses200, één per package/geen retry: relevante stabiele versies
+en afhankelijkheids-/peergrenzen zijn onveranderd sinds11oktober. Alleen canary/insiders
+zijn gewijzigd. Geen compatibele nieuwe herstelkandidaat; Task51 blijft open, zonder
+install/override/major/downgrade/auditfix of nieuwe runtime-/veiligheidsclaim.
+Root las het volledige rapport en de relevante ontvangen declaraties; Sibelga403
+blijft afzonderlijk open. Geen productwijziging, release, IndexNow of checklistsluiting.
+
+## 14 oktober 2026 — Task107/108: afgebakende controle van open WP12-gates
+
+Task108: één GET met de bestaande bronaudit naar de bestaande Sibelga-contactbron
+geeft12:38:10Z opnieuw403/exit1. Geen retry, omzeiling, link- of datumwijziging; eerder
+handmatig inhoudsbewijs en deze bereikbaarheidsgate blijven afzonderlijk.
+Task107: read-onlycontrole van primaire npm-metadata sinds11oktober loopt nog;
+geen install/override/majorupdate/auditfix of tweede schrijver. Task51 blijft open
+tot werkelijk compatible herstel en regressiecontrole zijn aangetoond.
+Productcode blijft exactdce7518; geen nieuwe publicatie, IndexNow of checkboxsluiting.
+
+## 14 oktober 2026 — Task106: sanitaire vergelijking aangevuld, geen rewrite nodig
+
+Twee primaire dienstbodies volledig gelezen: Omnibouw en Master Technics; cache-/leesdatum
+onderscheiden, geen uniforme live-originclaim. SIMS' specifieke sanitairbody blijft na
+timeouts ongelezen; discoveryhub telt niet als derde servicepagina. Drie afgebakende
+vragen over verplaatsing/product, foto-maten-toegang en scope-afwerking-offerte zijn
+al beantwoord in bestaande AB-body/gekoppelde pagina's. Geen concurrentsprijs, spoed,
+erkenning, extra discipline of onbewezen FAQ-content overgenomen. Geen product-/datum-/
+IndexNowwijziging; volledige3-bedrijvensample en echte klantvragen/uitkomsten blijven open.
+
+## 14 oktober 2026 — Task103–105: afgebakende catalogus-, link- en keyboardcontrole
+
+Vaillant:78modelcodes/12algemene headings volledig binnen de behouden11oktober-bronnen;
+geen ontbrekende rij, geen actuele fabrikant-/nieuwste-modelclaim of kunstmatige uitbreiding.
+BestaandeSSR bevestigt13merk↔foutgidsparen plus onderhoud/herstelling; geen linkquotum.
+Native390x900-toetsenbordproef bereikt5selects,4datumstops en2knoppen; Space-reset
+geeft eerstevraagfocus. Datumicoon heeft zichtbare nativeblauwe focus ondanks hostoutline
+none. Return-popover niet observeerbaar: activatie blijft onbevestigd; Tab4bottom900,125
+bewaard, geen volledige3px-outline-fitclaim. Geen nieuwe productwijziging/publicatie/
+datums/IndexNow/checkboxsluiting; bredeWP06/07/11/12,JSoff/AT/field/ownergates blijven open.
+
+## 14 oktober 2026 — Task102 exact live: onderhoudscheck pas actief na laden
+
+Commit `dce75189efcd47ead958629d5871692280b0d84d`: exact13 beoordeelde bestanden,
+bron/spec PASS, kwaliteit PASS met nonblocking M1 (verouderde testcommentaar).
+671 tests lokaal/precommit/hosted geslaagd; lint schoon, productieaudit0/build170.
+CI38559814227 Node24.21; primaire VercelDhemg9TLeZH5E8UftbAjudW8YNgN daadwerkelijk
+Ready/Production/Latest/exactSHA/www,29s; GitHub7064573544 success apart bevestigd.
+Canonical14:00CEST200: initialalle6controls/fieldset/buttonsdisabled/noscript buiten,
+volledige eerdere toolmarkup via exactinverse behouden; complete livecrawl82/93/112.
+Native onbekend/periodiek1280/390/320x900 gereed en bruikbaar, koppen zichtbaar,
+planning2024→2026; datumfout/reset390 en native bron→CTA320. Optionele390-overgang:
+cleanURL/dienst/testdatum juist/identiteit leeg/consentuit/form142,6px; niets verstuurd.
+Echt desktopbeeld gezien/getoond. Eén live extension-listenererror bewaard, geen
+console0; lokale adblockerstack afzonderlijk. Alle40 reviewgrenzen afzonderlijk
+behouden; release-identiteit/CI/provider/livegates nu gesloten, volledigeJSoff/
+pending/hydrationrace/AT/privacy/currentness/field/account/case/Frans/Task51 open.
+Eigen tabs8/9/10 gesloten, viewport hersteld, server75349 gestopt130/no listener.
+Task100 aanvulling: echte390/320x900-watermeterreset wist8velden, eerstevraag
+uiteindelijk zichtbaar; originele overgangmetingen bewaard, geen codewijziging.
+Alle137 statussen/vier integrale bronnen behouden; geen IndexNow of inhoudsdatums.
+Private finalcheckerprintfout (console-shadowing) exit1 bewaard; uitsluitend lokale
+naam hersteld, verse identieke checks exit0/receipt-equality12:07:54Z bevestigd.
+Dit is geen volledigeWP11/12-voltooiing; releasebackfill meegedragen bij volgende
+echte productwijziging, geen afzonderlijke docs-only-publicatie.
+
 ## 14 oktober 2026 — Task102: laadbescherming lokaal getest, release open
 
 Onderhoudscheck: server/pending disabledfieldset en beide knoppen uit tot client

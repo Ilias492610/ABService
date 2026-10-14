@@ -1,3 +1,4 @@
+import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
 const faultGuides=liveFaultGuides.map(beforeTzerraGuide);
@@ -97,5 +98,5 @@ test("ATAG model manifest pins two actual originals and explicitly unknown curre
 test("original ATAG overview and other12guide/registry values retain actual pre-edit captures",()=>{
  assert.equal(hash(guide.catalogs[0]),f.before.preservation.atagCatalog);
  assert.equal(hash(faultGuides.filter(g=>g.slug!=="atag")),f.before.preservation.otherGuides);
- assert.equal(hash(pageRegistry.filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
+ assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
 });
