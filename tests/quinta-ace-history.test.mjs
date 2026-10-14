@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -15,7 +16,7 @@ const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v
 
 test("Quinta inverse restores full actual pre-edit guides registry metadata SSR and manifest hashes",async()=>{
  assert.equal(hash(faultGuides.map(beforeQuintaGuide)),f.before.preservation.allGuides);
- assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeQuintaRegistry)),f.before.preservation.allRegistry);
+ assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeQuintaRegistry)),f.before.preservation.allRegistry);
  assert.deepEqual(beforeQuintaMetadata(buildPageMetadata(getPageDefinition(f.page.path)),"remeha"),f.before.metadata);
  assert.equal(hash(beforeQuintaHtml(await renderFaultGuide("remeha"),"remeha")),f.before.preservation.remehaHtml);
  const restored=beforeQuintaManifest(manifest);assert.equal(hash(restored),f.before.preservation.allManifest);

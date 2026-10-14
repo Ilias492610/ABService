@@ -4,6 +4,7 @@ import ContactCta from "@/components/contact-cta";
 import PageHero from "@/components/page-hero";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
+import { coreSources } from "@/content/core-sources.mjs";
 
 export const metadata = buildPageMetadata(getPageDefinition("/faq"));
 
@@ -14,6 +15,10 @@ const groups = [
       ["Moet elke gasketel jaarlijks worden onderhouden?", "Nee. In Vlaanderen geldt voor centrale stooktoestellen op gas vanaf 20 kW in het algemeen een tweejaarlijkse onderhoudsplicht. Voor lagere vermogens is onderhoud aanbevolen, maar de wettelijke situatie verschilt."],
       ["Is onderhoud hetzelfde als een keuring?", "Nee. Periodiek onderhoud gaat over een bestaande installatie. Een keuring bij eerste ingebruikname is een afzonderlijke controle na bepaalde plaatsingen, vervangingen of wijzigingen."],
       ["Wie mag een verplicht onderhoud of keuring uitvoeren?", "Dat hangt af van brandstof en handeling. Wanneer een erkenning vereist is, moet de uitvoerende technicus de passende actuele erkenning bezitten."],
+      [
+        "Hoe controleer ik de erkenning voor verplicht ketelonderhoud?",
+        <>Vraag vóór de afspraak naar de naam en het erkenningsnummer van de technicus die het werk uitvoert. In Vlaanderen raadpleegt u de <a className="underline" href={coreSources.recognitionListsFlanders.href}>Vlaamse overzichtslijsten</a> voor de juiste brandstof. Voor een Brusselse EPB-periodieke controle kiest u de passende <a className="underline" href={coreSources.recognitionListsBrussels.href}>EPB-verwarmingsketeltechnici</a>. Laat bevestigen dat de erkenning bij uw toestel en de handeling past; alleen een bedrijfsnaam of logo is niet genoeg.</>,
+      ],
     ],
   },
   {

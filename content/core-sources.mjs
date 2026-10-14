@@ -1,5 +1,13 @@
 // Shared by consumer pages and the source audit: changed citations cannot escape monitoring.
 export const coreSources = {
+  recognitionListsFlanders: {
+    label: "Vlaanderen: overzichtslijsten voor erkende brandstoftechnici",
+    href: "https://www.vlaanderen.be/erkenning-als-technicus-vloeibare-brandstof-of-technicus-gasvormige-brandstof",
+  },
+  recognitionListsBrussels: {
+    label: "Leefmilieu Brussel: EPB-professionals per handeling",
+    href: "https://leefmilieu.brussels/burgers/diensten-en-aanvragen/erkende-en-geregistreerde-professionals-vinden/vind-een-epb-professional",
+  },
   sanitaryOdourAquafin: {
     label: "Aquafin: infrastructuurvragen en geurhinder — bij de bevoegde beheerder",
     href: "https://aquafin.be/nl/veelgestelde-vragen-infrastructuur-aquafin",

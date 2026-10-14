@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -88,7 +89,7 @@ test("Tzerra broadens only existing Remeha metadata social description canonical
  const p=getPageDefinition(f.page.path),m=buildPageMetadata(p);assert.deepEqual(p,f.page);
  assert.equal(m.title,f.page.title);assert.equal(m.description,f.page.description);assert.equal(m.openGraph.description,f.page.description);assert.equal(m.twitter.description,f.page.description);
  assert.equal(m.alternates.canonical,"https://www.abservice24.be/foutcodes/remeha");assert.equal(m.robots.index,true);
- assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-12");
+ assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-12");
 });
 
 test("real Remeha SSR renders756 cards in16 source sections with exact97 meanings locators and enquiry anchor",async()=>{
@@ -125,5 +126,5 @@ test("Tzerra manifest retains both measured originals and explicit unknown artic
 test("original13 Remeha catalogs and all other12guides and registry entries retain actual pre-edit bytes",()=>{
  const ids=new Set(f.catalogs.map(c=>c.id));assert.equal(hash(guide.catalogs.filter(c=>!ids.has(c.id))),f.before.preservation.remehaCatalogs);
  assert.equal(hash(faultGuides.filter(g=>g.slug!=="remeha")),f.before.preservation.otherGuides);
- assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
+ assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
 });

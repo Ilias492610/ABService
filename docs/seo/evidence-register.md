@@ -1,5 +1,33 @@
 # Evidence Register
 
+## 14 oktober 2026 — Task122/123 nieuwe richting en begrensd FAQ-bewijs
+
+Direct eigenaarverzoek ligt vast in meesterplan/accountregister/businessbrief/topic-
+dekking: toegang/prijzen later; veilige brongebonden vragen zelfstandig. Private
+Task122 volledige8thema-bronnotitie bewaart Bros-servicecopy versus expliciete Master-
+FAQ, cache/extractiegrenzen en onbruikbare prijsplaceholder. Primaire Vlaamse body
+en Brusselse professional/onderhoudcontext gelezen; geen persoonslijsten gematcht.
+Task123-before bewaart362trackedhashes, geheleFAQ-SSR/meta/registry/sitemap/schema/
+citations vóór productwijziging. Echte REDs, eerste32 historische failures, vervolgens
+vier resterende failures en exacte compatibiliteitsinverses blijven bewaard; geen
+oude fixture/hashliterals vervangen.691green/lint0/prod0/build170/local82/93/112.
+Private echte browserreceipts bewaren snelle offscreenmetingen apart van zes vrije
+gespreide lineboxfocuswaarnemingen. Onafhankelijke canonical-before200/main/footer/
+80XMLrecords bevroren. Eén cohortreview en release/live zijn nog aparte voorwaarden.
+
+
+## 14 oktober 2026 — Task120 gecontroleerde releasebewijsset
+
+Private `task-120-review-cohort.json`, sole whole-cohortreview/rootacceptatie,
+committed362file-manifest, exact CI38629583290/log en primaire provider-Ready-DOM
+leggen commit `d5dbc92bc1114592c2c239514ed33edc201fb2b6` vast. Live HTTP-/sitemap/
+volledige vóór-main/footer-behoudsreceipts, crawl82/93/112,12gerichte focusobservaties,
+vier390-kliks en widgetrestauratie afzonderlijk. Eerste mobiele auto-scroll/rapid-
+burst/H2-probe failures behouden; targeted eerste focus is geen volle nativeketen.
+Drie extensionerrors/own-tab9/8cleanup/reset/own-serverexit130 vastgelegd. Native116
+cleanup/kalender, Franse menselijke review, account/moderatie/field/lead/effectgates
+niet afgeleid. Geen extra IndexNow. Deze documentaire releasebackfill nog niet gepusht.
+
 ## 14 oktober 2026 — Task120 cohort; Task116/121 afzonderlijke bewijsgrenzen
 
 Private SDD-map bewaart Task120-brief, volledige vóór-SSR/tracked hashes, originele

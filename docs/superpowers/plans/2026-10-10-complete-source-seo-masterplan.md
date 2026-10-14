@@ -1,5 +1,63 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 14 oktober 2026 — Task123 één FAQ lokaal klaar; onafhankelijke releasegate open
+
+WP07/10/11: eigen brongebonden antwoord over individuele erkenningscontrole voor
+verplicht onderhoud, met juiste Vlaamse brandstof-/Brusselse handelingingangen.
+Geen Abder-certificaat, alle-modellenclaim, diagnose of nieuwe prijsafspraak. Oude
+12FAQ's/viergroepen/main/CTA's/links/meta/schema behouden; alleenFAQ-contentdatum14Oct.
+691Node24tests/lint0/prod0/build170/crawl82/93/112 en gerichte1280/390/320-browser-
+focus groen. Eerste offscreen-/rolelocatorobservaties behouden, geen nativeketen/
+AT/fieldeffect afgeleid. Eén onafhankelijke hele-cohortreview en exactcommit/hosted/
+providerReady/fullSHA/www/live blijven echte gates.137checkboxes/vierintegralen
+ongewijzigd; geen geheleWP of masterplan als af gemarkeerd. Eerstvolgende: review/
+release van deze begrensdeFAQ, daarna veilige onafhankelijke bestaande-routevragen.
+Hieronder vastgelegd eigenaar-uitstel blijft leidend, niet oud account-firstwerk.
+
+## 14 oktober 2026 — eigenaarbeslissing: toegang/prijzen later, FAQ-werk zelfstandig
+
+De eigenaar vraagt accounttoegang en het echte prijsbeleid voor later te bewaren,
+en het onderzoek/uitwerken van FAQ's en technische broninformatie zelf te doen,
+met onder meer Verwarmingbros als vraagbron. Dit supersedeert eerdere account-first-
+vervolgnotities; geen nieuwe ontgrendel-/login-/tariefvraag tijdens dit uitstel.
+
+| Onderdeel | Actuele status en vervolg |
+|---|---|
+| WP04/05: bereikbaar Abder-GBP/GSC-venster en bestaande zakelijke Microsoft/Bing Places-/Apple-toegang | **Uitgesteld door eigenaar — later eventueel hervatten.** Bestaande saves/verificaties blijven behouden; geen nieuwe accounts, persoonlijke substituten, rechten/import/DNS of herhaalde saves. Publieke moderatie blijft een aparte externe status. |
+| WP06/10: verplaatsing, diagnose, arbeid/materialen, btw, avond/weekend en offertevoorwaarden | **Uitgesteld door eigenaar — later eventueel aanvullen.** Geen concurrentsprijs, gratis-offertebeleid, toeslag, bedrag of garantie als AB-beleid publiceren. Bestaande neutrale tarieffactoren blijven staan. |
+| WP07/10/11: FAQ-/model-/technische informatie | **Zelfstandig uitvoeren waar bronbewijs volstaat.** Onderzoek vragen, controleer actuele primaire fabrikant-/overheidsbronnen, schrijf eigen veilige antwoorden en benut bestaande eigenaars/links. Geen algemene wachtdrempel op een nieuwe AB-klantvraag voor neutrale brongebonden uitleg. |
+
+Concurrentvragen zijn redactionele kandidaten, geen bewezen AB-vraagfrequentie,
+volumes of modelpopulariteit. Broncontrole door de assistent is geen fysieke
+installatiecontrole of menselijke vakmanreview. Persoonlijke erkenning, AB-praktijk,
+onderdelencompatibiliteit en model-/revisiespecifieke reparatieclaims vragen hun echte
+bewijs; gevaarlijke procedures worden niet toegevoegd. Uitgesteld is niet afgerond.
+[Zelfstandig FAQ-dossier](../../seo/wp07-10-11-self-directed-faq.md) bevat acht
+concurrentvraagthema's, eigen antwoorden/bestaande bestemmingen en een brongebonden
+erkenningscheck. Geen nieuwe algemene planronde, URL-quotum of gewijzigde oude flags.
+
+## 14 oktober 2026 — Task120 geaccepteerde release; gerichte eigenaargates
+
+WP06/12-eenheid werkelijk live: vier bestaande dienstcontextlinks op tariefkaarten
+en bescherming tegen floating-bedekking. Exact `d5dbc92bc1114592c2c239514ed33edc201fb2b6`,
+19beoordeelde bestanden; sole whole-cohortreview ReadyYes zonder herstelpunten,
+alle14 reviewgrenzen expliciet beoordeeld. Node24 lokaal683/lint0/prod0/build170/
+crawl82/93/112 en exact CI38629583290 groen. Primair Vercel ACMNMKF3N8zrvCSEcZHByfPFXGoC
+Ready/Production/Latest/fullSHA/www; beide bestaande Productionstatussen success.
+Canonical200 en full-main/footer/exact80sitemap-behoud, live82/93/112 en gerichte
+3breedtes/4mobiele kliks/widgetherstel bevestigd. Eerdere eerste mobiele auto-scroll
+en rapid-burst niet als volle nativeketen geaccepteerd; volledige AT/field/kalender/
+effectacceptatie apart. Eigen releasetabs/server opgeruimd, native116cleanup onbekend.
+Geen nieuwe feiten/URL/contentdatum/IndexNow;137statussen en vierintegralen intact.
+Task121 private315woorden-Franse pilot klaar voor menselijke taal-/technicusreview,
+geen Franse publicatie. Volgende: bestaande native/accountchecks in veilig bereikbaar
+Abder-venster; eigenaar levert concrete prijsregels, technicus-/erkenningsscope,
+matching case/foto/toestemming, Franse reviewer/beheer en geanonimiseerde vragen/
+event-/leaduitkomsten. Places/Apple bestaande bedrijfstoegang, externe publicatie-
+opdracht en optioneel budget blijven aparte gates; geen persoonlijke substituten.
+Googleadres/moderatie, indexering, fielddata/meetvensters en Task51 blijven afzonderlijk.
+Geen integrale WP-/meesterplansluiting. Releasebackfill lokaal, geen docs-onlydeploy.
+
 ## 14 oktober 2026 — Task120 lokaal afgerond; review/releasegate open
 
 WP06: vier gerichte tariefkaartlinks naar bestaande dienstcontext. WP12: werkelijk

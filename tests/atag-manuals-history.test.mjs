@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
@@ -21,7 +22,7 @@ const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v
 
 test("named ATAG addition restores actual pre-edit guides registry metadata and SSR without hash rebasing",async()=>{
  assert.equal(hash(faultGuides.map(beforeAtagManualsGuide)),f.before.preservation.allGuides);
- assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry)),f.before.preservation.allRegistry);
+ assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry)),f.before.preservation.allRegistry);
  assert.deepEqual(beforeAtagManualsMetadata(buildPageMetadata(getPageDefinition(f.page.path)),"atag"),f.before.metadata);
  assert.equal(hash(beforeAtagManualsHtml(await renderFaultGuide("atag"),"atag")),f.before.preservation.atagHtml);
 });

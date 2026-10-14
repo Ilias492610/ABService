@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
@@ -66,7 +67,7 @@ test("GB172i.2 scope preserves four exact Belgian model article pairs and profes
 test("Buderus metadata broadens only this existing route with a substantive12October date",()=>{
  const p=getPageDefinition("/foutcodes/buderus"),m=buildPageMetadata(p);
  assert.deepEqual(p,f.page);assert.equal(m.description,f.page.description);assert.equal(m.title,f.page.title);assert.equal(m.openGraph.description,f.page.description);assert.equal(m.twitter.description,f.page.description);
- assert.equal(m.alternates.canonical,"https://www.abservice24.be/foutcodes/buderus");assert.equal(m.robots.index,true);assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-12");
+ assert.equal(m.alternates.canonical,"https://www.abservice24.be/foutcodes/buderus");assert.equal(m.robots.index,true);assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-12");
 });
 
 // Exercise the actual server-rendered client component, not a mock row list.
@@ -87,5 +88,5 @@ test("GB172i.2 model manifest binds actual source identity without invented revi
 
 // A named addition must not change any existing model, source table or other URL.
 test("original GB162 catalog other12guides and other registry retain genuine pre-edit captures",()=>{
- assert.equal(hash(guide.catalogs[0]),f.before.preservation.gb162Catalog);assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).filter(g=>g.slug!=="buderus")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).filter(p=>p.path!=="/foutcodes/buderus")),f.before.preservation.otherRegistry);
+ assert.equal(hash(guide.catalogs[0]),f.before.preservation.gb162Catalog);assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).filter(g=>g.slug!=="buderus")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).filter(p=>p.path!=="/foutcodes/buderus")),f.before.preservation.otherRegistry);
 });

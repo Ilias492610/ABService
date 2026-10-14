@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry, beforeFaqRecognitionSource, beforeFaqRecognitionCoreSources } from "./fixtures/faq-recognition-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -60,7 +61,7 @@ test("exact approved source inverse recovers frozen bytes while old title new pa
       source => source + "\nexport const unknown = true;\n",
     ]],
   ]) {
-    const source = await readFile(new URL(`../${path}`, import.meta.url), "utf8");
+    const source = beforeFaqRecognitionSource(await readFile(new URL(`../${path}`, import.meta.url), "utf8"), path);
     assert.equal(beforeSanitaryReferralSource(source, path), f.before.sources[path]);
     assert.equal(hash(beforeSanitaryReferralSource(source, path)), digest);
     assert.equal(beforeSanitaryReferralSource(f.before.sources[path], path), f.before.sources[path]);
@@ -110,7 +111,7 @@ test("both scoped visible sources reach central monitoring and duplicate URLs ar
   const results = await auditExternalSources([...cited, ...cited], async href => { requested.push(href); return { status: 200 }; });
   assert.deepEqual(requested, urls);
   assert.deepEqual(results.map(({ href, status, ok }) => ({ href, status, ok })), urls.map(href => ({ href, status: 200, ok: true })));
-  const { sanitaryOdourAquafin, sewerOperatorFlanders, ...oldSources } = sources.coreSources;
+  const { sanitaryOdourAquafin, sewerOperatorFlanders, ...oldSources } = beforeFaqRecognitionCoreSources(sources.coreSources);
   assert.deepEqual(oldSources, f.before.coreSources);
 });
 
@@ -129,8 +130,8 @@ test("removing only the additive referral and its source list restores complete 
 // Catches marking unrelated pages reviewed/modified and exact inverse hiding a second leaf.
 test("only sanitary gets an actual modification date and exact inverse preserves every other registry and sitemap leaf", () => {
   assert.equal(registry.getPageDefinition("/installaties/sanitair").lastModified, "2026-10-14");
-  assert.deepEqual(registry.pageRegistry.map(beforeSanitaryReferralRegistry), f.before.registry);
-  const sitemap = seo.buildSitemapEntries(registry.pageRegistry);
+  assert.deepEqual(registry.pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry), f.before.registry);
+  const sitemap = seo.buildSitemapEntries(registry.pageRegistry.map(beforeFaqRecognitionRegistry));
   assert.equal(sitemap.find(entry => entry.url === "https://www.abservice24.be/installaties/sanitair").lastModified, "2026-10-14");
   assert.deepEqual(sitemap.map(beforeSanitaryReferralSitemapEntry), f.before.sitemap);
   for (const mutate of [
@@ -141,7 +142,7 @@ test("only sanitary gets an actual modification date and exact inverse preserves
     pages => pages.find(page => page.path === "/installaties").lastModified = "2026-10-14",
     pages => pages.push({ ...pages.find(page => page.path === "/installaties/sanitair") }),
   ]) {
-    const pages = structuredClone(registry.pageRegistry);
+    const pages = structuredClone(registry.pageRegistry.map(beforeFaqRecognitionRegistry));
     mutate(pages);
     assert.notDeepEqual(pages.map(beforeSanitaryReferralRegistry), f.before.registry, "full history must expose extra, duplicate, identity or date drift");
   }

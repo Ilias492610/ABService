@@ -1,5 +1,29 @@
 # AB Service SEO Content Inventory
 
+## 14 oktober 2026 — Task122/123 FAQ-onderzoek en één bruikbare aanvulling
+
+[Acht vraagthema's en eigen korte antwoorden](docs/seo/wp07-10-11-self-directed-faq.md)
+zijn uitgewerkt zonder concurrentprijzen, echte AB-frequentie of modelscope te verzinnen.
+Bestaande `/faq` krijgt lokaal één vraag over het controleren van de individuele
+technicus via Vlaamse brandstoflijsten of passende Brusselse EPB-technici. Twee
+overheidstoegangen centraal bewaakt; geen persoonlijke AB-erkenning vastgesteld.
+Oude12 antwoorden/viergroepen/CTA's/contextlinks behouden; nieuwe13e vraag en alleen
+FAQ-contentdatum14oktober. Geen nieuwe URL/schema/model-/casepublicatie.691tests/
+lint/prod0/build170/local82/93/112; onafhankelijke review en exacte release/live open.
+Accounts/prijzen voor later vastgelegd; uitstel is geen geverifieerde uitvoering.
+
+
+## 14 oktober 2026 — Task120 gepubliceerd; geen nieuwe URL of prijsclaim
+
+`/tarieven` heeft vier gerichte dienstingangen en vrije mobiele linkruimte, live
+op exact `d5dbc92bc1114592c2c239514ed33edc201fb2b6`. Sole onafhankelijke review,
+683 tests/exact CI38629583290/primair VercelReady/fullSHA/www/live82/93/112 bevestigd.
+Volledige oude main/footer en80sitemaprecords behouden; contentdatum11oktober.
+Gerichte focus/klik/widgetherstel bewezen, niet alle nativeketens/AT/field/effect.
+Task121315woorden-Frans blijft private DRAFT_REVIEW_REQUIRED; Task116 gedeeltelijk.
+137statussen/vierintegralen intact. Geen volledige WP-sluiting of IndexNow;
+releasebackfill lokaal tot volgende echte productrelease.
+
 ## 14 oktober 2026 — Task120 navigatie; Task121 private taalvoorbereiding
 
 Bestaande `/tarieven`: vier contextlinks naar `/onderhoud`, `/herstelling`,

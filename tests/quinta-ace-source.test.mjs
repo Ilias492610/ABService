@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -101,7 +102,7 @@ test("Quinta broadens existing Remeha metadata while keeping canonical true date
  const p=getPageDefinition(f.page.path),m=buildPageMetadata(p);assert.deepEqual(p,f.page);
  for(const value of [m,m.openGraph,m.twitter]){assert.equal(value.title,f.page.title);assert.equal(value.description,f.page.description);}
  assert.equal(m.alternates.canonical,"https://www.abservice24.be/foutcodes/remeha");assert.equal(m.robots.index,true);
- assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-13");
+ assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-13");
 });
 
 test("real Remeha SSR renders816 cards with all60 Quinta meanings actions locators and actual source links",async()=>{
@@ -130,5 +131,5 @@ test("Quinta manifest adds one measured combined original while article serial c
 test("all16 pre-Quinta Remeha catalogs and other12guides registry entries retain captured hashes",()=>{
  const ids=new Set(f.catalogs.map(c=>c.id));assert.equal(hash(guide.catalogs.filter(c=>!ids.has(c.id))),f.before.preservation.remehaCatalogs);
  assert.equal(hash(faultGuides.filter(g=>g.slug!=="remeha")),f.before.preservation.otherGuides);
- assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
+ assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
 });

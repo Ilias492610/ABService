@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry, beforeFaqRecognitionProtectedBytes } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry, beforeSanitaryReferralSource } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
 import { beforeTariffEntrySource, beforeTariffEntryProtectionSource, beforeTariffEntryProtectionCss } from "./fixtures/tariffs-entry-links.mjs";
@@ -78,13 +79,13 @@ test("footer capture clock is deterministic while a future clock still renders t
 test("only the two legal routes publish true13October dates with all registry metadata sitemap and existing source leaves preserved", async () => {
   assert.equal(hash(bytes), "58a3d7b8097fa446854c730132ad0bc6a6b63e8e6b14d8aaa9ed4f07f75eff6e");
   const targetPaths = new Set(["/privacy-policy", "/algemene-voorwaarden"]);
-  assert.deepEqual(pageRegistry.map(beforeSanitaryReferralRegistry), f.before.registry.map(page => targetPaths.has(page.path) ? { ...page, lastModified: "2026-10-13" } : page));
-  assert.deepEqual(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeRegisteredSeatRegistry), f.before.registry);
-  assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeRegisteredSeatRegistry)), f.before.allRegistrySha256);
+  assert.deepEqual(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry), f.before.registry.map(page => targetPaths.has(page.path) ? { ...page, lastModified: "2026-10-13" } : page));
+  assert.deepEqual(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeRegisteredSeatRegistry), f.before.registry);
+  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeRegisteredSeatRegistry)), f.before.allRegistrySha256);
   assert.deepEqual(pageRegistry.map(page => ({ path: page.path, metadata: buildPageMetadata(page) })), f.before.allMetadata);
   assert.deepEqual(privacyRoute.metadata, f.before.routeMetadata.privacy);
   assert.deepEqual(termsRoute.metadata, f.before.routeMetadata.terms);
-  const sitemap = buildSitemapEntries(pageRegistry).map(beforeSanitaryReferralSitemapEntry);
+  const sitemap = buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).map(beforeSanitaryReferralSitemapEntry);
   assert.equal(sitemap.length, 80);
   const targetUrls = new Set(["https://www.abservice24.be/privacy-policy", "https://www.abservice24.be/algemene-voorwaarden"]);
   assert.deepEqual(sitemap, f.before.sitemap.map(entry => targetUrls.has(entry.url) ? { ...entry, lastModified: "2026-10-13" } : entry));
@@ -98,7 +99,7 @@ test("only the two legal routes publish true13October dates with all registry me
   assert.equal(renderGlobalSchema(), f.before.renders.globalSchema);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const file of f.before.protectedFiles) {
-    const actual = await readFile(new URL(`../${file.path}`, import.meta.url));
+    const actual = beforeFaqRecognitionProtectedBytes(await readFile(new URL(`../${file.path}`, import.meta.url)), file.path);
     assert.equal(hash(file.path === "app/globals.css" ? beforeFooterFactsCss(beforeTariffEntryProtectionCss(actual.toString("utf8"))) : file.path === "components/floating-trust-signals.js" ? beforeTariffEntryProtectionSource(actual.toString("utf8")) : file.path === "components/maintenance-check.js" ? beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(actual.toString("utf8")))) : file.path === "app/tarieven/page.js" ? beforeTariffEntrySource(actual.toString("utf8")) : ["app/installaties/sanitair/page.js", "content/core-sources.mjs"].includes(file.path) ? beforeSanitaryReferralSource(actual.toString("utf8"), file.path) : actual), file.sha256, file.path);
   }
   assert.deepEqual(renderEvents, []);

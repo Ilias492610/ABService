@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml} from "./fixtures/tzerra-ace-matic-history.mjs";
@@ -79,7 +80,7 @@ test("ACV metadata and sitemap expose historical coverage with only its genuine 
   assert.equal(meta.alternates.canonical, "https://www.abservice24.be/foutcodes/acv");
   assert.equal(meta.robots.index, true);
   assert.equal(page.lastModified, "2026-10-11");
-  assert.equal(buildSitemapEntries(pageRegistry).find(e => e.url === meta.alternates.canonical).lastModified, "2026-10-11");
+  assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(e => e.url === meta.alternates.canonical).lastModified, "2026-10-11");
   assert.equal(hash(beforeAcvMetadata(meta, "acv")), facts.preservation.metadata);
 });
 
@@ -104,7 +105,7 @@ test("ACV real SSR exposes every selected row, safe action, source scope and nat
 // Integrity only: full genuine baseline, no source completeness certification.
 test("all other12 full guides and all registry fields preserve the genuine64 captures", () => {
   assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).filter(g => g.slug !== "acv").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasGuide)), facts.preservation.otherTwelveGuides);
-  assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry)), facts.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry).map(beforeAcvRegistry)), facts.preservation.allRegistry);
   assert.equal(hash(beforeAcvGuide(guide)), facts.preservation.guide);
   assert.equal(hash(beforeAcvGuide(guide).codes), facts.preservation.codes);
   assert.equal(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).reduce((n,g) => n + g.codeEntryCount, 0), 1596);

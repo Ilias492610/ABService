@@ -1,5 +1,14 @@
 # WP04–WP05: accountstatus en uitgevoerde acties
 
+## 14 oktober 2026 — eigenaar stelt accounttoegang uit
+
+Bereikbaar Abder-GBP/GSC-bedrijfsvenster en bestaande zakelijke Microsoft/Bing
+Places-/Apple-toegang bewaren voor later; geen herhaalde login-/ontgrendelvraag.
+Uitgesteld, niet afgevinkt of onbewezen als afwezig verklaard. Alle bestaande
+verified/editor-save/publieke/pending waarnemingen behouden hun eigen datum/status.
+Geen nieuwe accountactie, rechten, import, DNS, persoonlijk account of save.
+Onafhankelijk FAQ-/bronwerk gaat door volgens de actuele meesterplanbeslissing.
+
 ## 14 oktober 2026 — beperkte publieke hercontrole, geen accountactie
 
 Task120: eigen openbare Maps-tab voor de bestaande CID toont nog Voorzorgstraat12A;

@@ -1,5 +1,54 @@
 # AB Service SEO QA Report
 
+## 14 oktober 2026 — Task122/123 zelfstandig FAQ-werk; lokale gate groen
+
+Eigenaar stelde accounttoegang en echte prijzen uit; geen nieuw login-/save-/DNS-/
+rechten-/prijsverzoek. Acht concurrentvraagthema's onderzocht, geen gemeten AB-vraag-
+frequentie of modelpopulariteit. Eén nieuwe native FAQ: individuele erkenning voor
+verplicht onderhoud controleren, met twee overheidstoegangen per gewest/handeling.
+Geen Abder-erkenning, modeldiagnose, gelijkwaardigheid of attestgarantie afgeleid.
+Gehele oude FAQ-SSR/metadata en alle registry/schema/bron-/sitemapleaves behouden na
+uitsluitend benoemde toevoegingsinverses; alleen `/faq` inhoudsdatum14oktober.
+Node24 lokaal691/691,0fail/skipped/cancelled; lint0, productieaudit0, build170/170,
+crawl82/93/112. Task51 ontwikkelissues/lifecycle blijven open. Echte lokale1280/
+390/320×900: disclosure Enter sluit/Space opent; beide bronlinks underline/3px-focus/
+vrije afzonderlijke linebox-hit-targets/geen overflow. Snelle eerste mobiele burst
+observeerde nog scrollende offscreenlinks; origineel behouden, aparte gespreide
+targetfocus/Tab-waarnemingen zijn geen volledige ononderbroken nativeketen/AT/field-
+claim. AX noemt summary button, DOM-rolelocator vindt geen button: oorspronkelijke
+bedieningslaagdeadline behouden; echte native summary werkt via exacte zichtbare tekst.
+Nieuwe twee citations HTTP200 apart van primaire bronlezing. Bestaande FAQ-main en
+sitemap zijn vóór publicatie onafhankelijk publiek bevroren. Eén hele-cohortreview,
+exactcommit/hostedCI/providerReady/live en eventuele enkel-FAQ-IndexNow blijven gates.
+
+
+## 14 oktober 2026 — Task120 gepubliceerd; begrensde liveacceptatie
+
+Exact main/remotecommit `d5dbc92bc1114592c2c239514ed33edc201fb2b6`,19 bevroren en
+onafhankelijk beoordeelde bestanden. Sole whole-cohortreview ReadyYes, geen herstel-
+of minorbevindingen; alle14 reviewgrenzen afzonderlijk door root beoordeeld.
+Precommit683/683 en lint0. Exact CI38629583290 met Node24.21.0:683/683, lint0,
+productieaudit0, build170/170 en crawl82/93/112. Task51 blijft9 ontwikkelissues
+(7high/2moderate) plus ESLint9-lifecycle; geen algemene securityvrijgave.
+Beide bestaande GitHub-Productiondeployments7076033186/7076043369 success. Primaire
+Vercel ACMNMKF3N8zrvCSEcZHByfPFXGoC werkelijk Ready/Production/Latest, exact volledige
+SHA en www-domein. Canonical200 met vier links/marker en volledig dezelfde main als
+lokale productie. Na alleen vier exacte hydration-anchorinverses en markerinverse
+is de volledige oude live-main bytegelijk; footer en gehele80records-sitemap identiek.
+Volledige livecrawl82/93/112 geslaagd. Tarieven-contentdatum blijft11oktober.
+Live1280: vier Tab-focusobservaties,3px-outline/underline/hitvrij/nooverflow.
+Live390/320: drie gespreide volgende Tabs plus apart gerichte eerste Shift-keyfocus,
+zelfde vrije targets/stijlen en geen overflow. Eerste320auto-scroll en snelle390-
+burst blijven bewaarde onvoldoende zichtbare waarnemingen, geen volledige native-
+ketenacceptatie. Niet-focusbare H2-pressdeadline is bedieningslaag; daaropvolgende
+body-Tab start bij skiplink en geldt niet als tarieffocusbewijs. Vier gewone390-
+kliks geven juiste URL/H1. Buiten tariefsectie herstelt WhatsApp/Google werkelijk1/1.
+Drie extension-origin consolefouten behouden, geen productconsole0/AT/noJS/field-
+of conversieclaim. Alleen eigen release-tabs9/8 gesloten, viewport hersteld;
+eigen server96497 exit130 gestopt, geen3190listener. Task116-native-tabcleanup
+en volledige kalenderproef onbevestigd. Geen IndexNow voor navigatie/runtime/docs.
+Deze releasebackfill blijft lokaal voor de volgende echte productrelease.
+
 ## 14 oktober 2026 — Task120 lokaal groen; publicatiegate nog open
 
 Vier gewone dienstlinks op bestaande tariefkaarten; zes prijsfactoren, zeven

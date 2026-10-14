@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -81,9 +82,9 @@ test("complete real footer registry metadata sitemap catalog business media and 
   const html = await renderFooterWithDate(CapturedDate);
   assert.equal(html, f.before.footerHtml);
   assert.equal(hash(html), "dc11f743d150d993b4978088b086ebf93c556586b2c6d3350825115c56be6f05");
-  assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry)), f.before.registrySha256);
+  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry)), f.before.registrySha256);
   assert.equal(hash(pageRegistry.map(page => ({ path: page.path, metadata: buildPageMetadata(page) }))), f.before.metadataSha256);
-  assert.equal(hash(buildSitemapEntries(pageRegistry).map(beforeSanitaryReferralSitemapEntry)), f.before.sitemapSha256);
+  assert.equal(hash(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).map(beforeSanitaryReferralSitemapEntry)), f.before.sitemapSha256);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   assert.equal(hash(await readFile(new URL("../content/business.mjs", import.meta.url))), f.before.businessSha256);
   assert.equal(hash(await readFile(new URL("../content/media.mjs", import.meta.url))), f.before.mediaSha256);

@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraGuide,beforeTzerraRegistry,beforeTzerraHtml,beforeTzerraManifest} from "./fixtures/tzerra-ace-matic-history.mjs";
@@ -80,7 +81,7 @@ test("ATAG metadata broadens only the existing canonical and true12October sitem
  const p=getPageDefinition(f.page.path),m=buildPageMetadata(p);assert.deepEqual(p,f.page);
  assert.equal(m.title,f.page.title);assert.equal(m.description,f.page.description);assert.equal(m.openGraph.description,f.page.description);assert.equal(m.twitter.description,f.page.description);
  assert.equal(m.alternates.canonical,"https://www.abservice24.be/foutcodes/atag");assert.equal(m.robots.index,true);
- assert.equal(buildSitemapEntries(pageRegistry).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-12");
+ assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-12");
 });
 
 // Real server rendered modules, not fixture-generated markup or mock cards.
@@ -98,5 +99,5 @@ test("ATAG model manifest pins two actual originals and explicitly unknown curre
 test("original ATAG overview and other12guide/registry values retain actual pre-edit captures",()=>{
  assert.equal(hash(guide.catalogs[0]),f.before.preservation.atagCatalog);
  assert.equal(hash(faultGuides.filter(g=>g.slug!=="atag")),f.before.preservation.otherGuides);
- assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
+ assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
 });

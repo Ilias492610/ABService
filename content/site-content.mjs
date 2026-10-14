@@ -154,6 +154,7 @@ export const pageRegistry = Object.freeze([
   },
   {
     path: "/faq",
+    lastModified: "2026-10-14",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Veelgestelde vragen over verwarming en sanitair | AB Service",
     description:

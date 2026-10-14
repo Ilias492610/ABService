@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
 import { beforeTariffEntryProtectionCss } from "./fixtures/tariffs-entry-links.mjs";
 import test from "node:test";
@@ -200,9 +201,9 @@ test("independent frozen actual before preserves complete source and raw default
   assert.equal(beforeMaintenanceSubmitFocusSource(f.before.source), f.before.source);
   const compiled = await loadContactModule("components/maintenance-check.js", { "@/libs/maintenance-check.mjs": maintenance });
   assert.equal(beforeMaintenanceReadinessHtml(html(React.createElement(compiled.default))), f.before.defaultHtml);
-  assert.equal(hash(pageRegistry.map(beforeSanitaryReferralRegistry)), f.before.registrySha256);
+  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry)), f.before.registrySha256);
   assert.equal(hash(pageRegistry.map(page => ({ path: page.path, metadata: buildPageMetadata(page) }))), f.before.metadataSha256);
-  assert.equal(hash(buildSitemapEntries(pageRegistry).map(beforeSanitaryReferralSitemapEntry)), f.before.sitemapSha256);
+  assert.equal(hash(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).map(beforeSanitaryReferralSitemapEntry)), f.before.sitemapSha256);
   assert.equal(hash(buildGlobalSchemaGraph()), f.before.globalSchemaSha256);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const [path, key] of [["content/business.mjs", "businessSha256"], ["content/media.mjs", "mediaSha256"], ["libs/maintenance-check.mjs", "maintenanceKernelSha256"], ["app/globals.css", "cssSha256"]]) {

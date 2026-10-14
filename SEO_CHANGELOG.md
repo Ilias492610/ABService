@@ -1,5 +1,55 @@
 # AB Service SEO Changelog
 
+## 14 oktober 2026 — Task123 lokale FAQ-aanvulling; review/release nog open
+
+- Bron: rechtstreeks zelfstandige FAQ-opdracht, Task122-vraagonderzoek en gelezen
+  Vlaamse erkennings-/Brusselse EPB-professional-/onderhoudpagina's; geen concurrents-
+  antwoord of persoonlijke bevoegdheid als AB-feit overgenomen.
+- Actie: één native vraag over de individuele erkenning vóór verplicht onderhoud,
+  twee passende officiële lijsteningangen, bestaande underlineutility. AlleenFAQ-
+  inhoudsdatum14oktober. Geen nieuwe URL, vaste prijs, modeldiagnose of credentials.
+- Verificatie: echte RED→GREEN;691Node24tests/lint0/prod0/build170/localcrawl82/93/112;
+  gehele oude route/data/sourcebehoud via exacte toevoegingsinverses. Originele32/
+  vier oude-pin-failures en snelle mobiele offscreenmetingen behouden. Gespreide
+  desktop/390/320-linkfocus vrij/underline/3px/nooverflow; geen volle native/AT/field.
+- Volgende: één onafhankelijke volledige cohortreview; dan exact main/CI/Ready/SHA/
+  canonical-live. IndexNow hoogstens één daadwerkelijk gewijzigdeFAQ na live/proof.
+- Echte gates: account/prijstoegang eigenaar-uitgesteld; persoonlijke erkenning,
+  fysieke technische controle, matching cases/toestemming, Franse menselijke review,
+  Task51/source403, field- en zakelijke effecten blijven afzonderlijk.
+
+
+## 14 oktober 2026 — Task122 eigenaarrichting en zelfstandige FAQ-uitwerking
+
+Bron: rechtstreeks eigenaarverzoek om accounttoegang en echt prijsbeleid voor later
+te bewaren en FAQ-/technisch bronwerk zelfstandig te doen; voorbeeld Verwarmingbros.
+Meesterplan/bedrijfsbrief/accountstatus/topicdekking bijgewerkt: beide afhankelijkheden
+uitgesteld, geen herhaalde inputvraag en niet afgevinkt. Acht vraagthema's uit gelezen
+Verwarmingbros/Master Technics-service-/FAQ-bodies vergeleken; geen rankings, volumes,
+AB-vraagfrequentie, bedragen, certificaten of extra diensten overgenomen.
+Zelfstandig FAQ-dossier geeft eigen antwoorden/bestaande bestemmingen en primaire
+erkenningsbronnen. Brononderzoek is geen vakman-/installatiegoedkeuring. Volgende:
+afgebakende brongebonden erkenningscheck op bestaande FAQ, met RED→GREEN en gewone
+review/release/livegates; geen docs-onlydeploy of IndexNow voor deze documentwijziging.
+
+## 14 oktober 2026 — Task120 werkelijk gepubliceerd en live gecontroleerd
+
+Vier dienstcontextlinks en tariefsectie-clearance staan live in exact `d5dbc92`;
+19 bestanden, één onafhankelijke whole-cohortreview zonder herstelpunten. Lokale
+precommit683 en exact CI38629583290 groen; productieaudit0/build170/crawl82/93/112.
+Primaire Vercel ACMNMKF3N8zrvCSEcZHByfPFXGoC Ready/Production/Latest met volledige
+SHA/www bevestigd; beide bestaande deploymentstatussen success. Canonical200,
+volledige main/footer-behoudscheck, identieke80records-sitemap en livecrawl groen.
+Gerichte1280/390/320-focus, vier gewone mobiele routeovergangen en widgetherstel
+bevestigd; eerste mobiele auto-scroll/volledige nativeketen blijven begrensd,
+geen all-browser/AT/fieldclaim. Eigen release-tabs/server opgeruimd; nativeTask116
+cleanup/proef apart open. Geen prijsfeit, contentdatum, nieuwe URL of IndexNow.
+Volgende: veilig bereikbaar Abder-nativevenster voor bestaande kalender/account-
+checks; gerichte eigenaarinput voor prijzen, technicus, matching cases/toestemming,
+Franse menselijke review en echte vraag-/event-/leadgegevens. WP06/WP12 en volledig
+meesterplan niet gesloten; externe moderatie/indexering/effectgates blijven open.
+Alleen deze documentbackfill gaat mee met een volgende echte productrelease.
+
 ## 14 oktober 2026 — Task120 tariefcontext en mobiele linkruimte, lokaal gecontroleerd
 
 Bron: goedgekeurde WP06/WP12-contracten, private Task119 volledige kernroutelezing,

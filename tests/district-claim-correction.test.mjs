@@ -1,3 +1,4 @@
+import { beforeFaqRecognitionSitemapEntry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
 import { beforeAvantaRegistry } from "./fixtures/avanta-overview-source-safety.mjs";
 import { beforeGb172Registry } from "./fixtures/buderus-gb172i2-history.mjs";
@@ -190,7 +191,7 @@ test("only the six genuinely modified districts have dates and only Borsbeek has
   assert.equal(entries.length, 80);
   assert.equal(registry.pageRegistry.length, 82);
   assert.deepEqual(Object.fromEntries(entries.filter((entry) => entry.url.includes("/loodgieter-") && Object.hasOwn(entry, "lastModified")).map((entry) => [entry.url.split("/loodgieter-")[1], entry.lastModified])), expected);
-  const retained = entries.map(beforeSanitaryReferralSitemapEntry).map(beforeCustomerLocationSitemapEntry).map((entry) => {
+  const retained = entries.map(beforeFaqRecognitionSitemapEntry).map(beforeSanitaryReferralSitemapEntry).map(beforeCustomerLocationSitemapEntry).map((entry) => {
     if (entry.url === "https://www.abservice24.be/foutcodes/buderus") return { ...entry, lastModified: beforeGb172Registry({ path: "/foutcodes/buderus", lastModified: entry.lastModified }).lastModified };
     if (entry.url === "https://www.abservice24.be/foutcodes/remeha") return { ...entry, lastModified: beforeAvantaRegistry({ path: "/foutcodes/remeha", lastModified: entry.lastModified }).lastModified };
     // Tasks40/41/44/49/50/52/54/56/58/59/60 permit only these genuinely edited pages' new dates.

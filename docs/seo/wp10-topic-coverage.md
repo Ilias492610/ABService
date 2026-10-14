@@ -1,5 +1,18 @@
 # WP10 dekking van veertien adviesintenties
 
+## 14 oktober 2026 — FAQ-uitwerking zelfstandig, prijsbeleid uitgesteld
+
+Eigenaar draagt FAQ-/model-/technisch brononderzoek en veilige tekstuitwerking
+aan de assistent op; acht concrete concurrentvraagthema's zijn vergeleken met de
+huidige AB-antwoorden. [Dossier](wp07-10-11-self-directed-faq.md) scheidt bestaande
+dekking, neutrale brongebonden aanvullingen en operationele/modelrisico-gates.
+Een nieuwe geanonimiseerde AB-vraag is nuttig voor prioritering maar geen algemene
+blokkerende voorwaarde voor onafhankelijke neutrale uitleg. Diagnose, onderdelen,
+reparatie, exacte modelrevisie en persoonlijke erkenning krijgen geen fictief bewijs.
+Echte AB-prijzen/voorwaarden blijven uitgesteld voor later; concurrentgegevens zijn
+geen alternatief. De oorspronkelijke14intenties en historische Task117-tabel blijven
+staan; deze werkwijze sluit geen volledige adviesintentie, WP07/10/11 of klantresultaat.
+
 ## 14 oktober 2026 — Task117 kraanbronnen gelezen, gap blijft gedeeltelijk
 
 Twee Belgische hansgrohe-FAQ-bodies onderscheiden nadruppelen, aansluitingen en

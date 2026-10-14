@@ -1,5 +1,15 @@
 # AB Service — actuele bedrijfsbrief
 
+## Eigenaarrichting 14 oktober 2026
+
+Accounttoegang voor GBP/GSC/Bing Places/Apple en het echte prijs-/offertebeleid
+zijn voor later uitgesteld. Bedragen, toeslagen, btwgrond en voorwaarden blijven
+onbekend; een uitstelbesluit is geen nieuwe operationele bevestiging. FAQ-, model-
+en technische broninformatie wordt zelfstandig onderzocht/uitgewerkt met officiële
+bronnen; concurrenten leveren vraagideeën, geen bewezen AB-frequentie of beleid.
+Persoonlijke erkenning en fysieke technische goedkeuring blijven bewijsgebonden,
+niet door AI-brononderzoek bevestigd. Historische feitentabellen hieronder behouden.
+
 Versie 10 oktober 2026; interne werkbrief voor WP00–WP17, geen nieuwe websitepublicatie. Feiten, hypotheses en ontbrekende informatie zijn afzonderlijk benoemd. Bronnen zijn de eigenaarbevestigingen zoals bewaard in het dossier, de huidige centrale registers en de hieronder rechtstreeks gecontroleerde officiële KBO-records. Websitecopy is geen zelfstandig bewijs. [Bronbeslissingen en taskkoppeling](wp00-source-decisions.md) bewaren de bewijsgrenzen van alle bronfamilies.
 
 **Aanvulling 11 oktober 2026:** eigenaar bevestigt uitsluitend werk bij klanten, **geen klantontvangst**. Google-adresweergave daarop uitgezet/opgeslagen; beoordeling/publieke Maps-uitkomst blijft apart. Juridische adressen zijn niet gewijzigd. De gedateerde [accountstatus](account-status-register.md), [zoekbaseline](2026-10-10-search-baseline.md) en [ontvangst-QA](../../SEO_QA_REPORT.md) verversen hieronder genoemde oude account-/testgaten zonder nieuwe lead-, erkennings- of locatieclaims.
