@@ -11,6 +11,7 @@ import { renderFooter, renderFooterWithDate, renderPrivacy, renderTerms, renderG
 import { beforeRegisteredSeatRegistry, beforeRegisteredSeatSitemapEntry, beforeRegisteredSeatHtml } from "./fixtures/registered-seat-history.mjs";
 import { beforeFooterFactsCss } from "./fixtures/footer-facts-layout-history.mjs";
 import { beforeMaintenanceResetSource } from "./fixtures/maintenance-reset-history.mjs";
+import { beforeMaintenanceSubmitFocusSource } from "./fixtures/maintenance-submit-focus-history.mjs";
 const bytes = await readFile(new URL("./fixtures/registered-seat-facts.json", import.meta.url));
 const f = JSON.parse(bytes);
 const hash = value => createHash("sha256").update(typeof value === "string" || Buffer.isBuffer(value) ? value : JSON.stringify(value)).digest("hex");
@@ -95,7 +96,7 @@ test("only the two legal routes publish true13October dates with all registry me
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const file of f.before.protectedFiles) {
     const actual = await readFile(new URL(`../${file.path}`, import.meta.url));
-    assert.equal(hash(file.path === "app/globals.css" ? beforeFooterFactsCss(actual.toString("utf8")) : file.path === "components/maintenance-check.js" ? beforeMaintenanceResetSource(actual.toString("utf8")) : actual), file.sha256, file.path);
+    assert.equal(hash(file.path === "app/globals.css" ? beforeFooterFactsCss(actual.toString("utf8")) : file.path === "components/maintenance-check.js" ? beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(actual.toString("utf8"))) : actual), file.sha256, file.path);
   }
   assert.deepEqual(renderEvents, []);
 });

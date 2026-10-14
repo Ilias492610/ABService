@@ -1,5 +1,67 @@
 # AB Service SEO QA Report
 
+## 14 oktober 2026 — Task98: resultaatfocus lokaal hersteld, release open
+
+Alleen de onderhoudscheck-submitfocus voor niet-ongeldige resultaten is gewijzigd:
+focus preventScroll, daarna start/instant met bestaande scrollmarge. Ongeldige datum
+houdt de oorspronkelijke datumfocus; berekening, invoer, reset, complete resultaat-
+HTML, bronnen/datums, analytics, optionele contactcontext, CSS en publicatiefacts intact.
+Actual348/fullsource/defaultSSR vóór product bevroren; fixture60f onveranderd.
+Echte oude-module RED9: zeven opties/scroll-fouten, twee invalid-passes; elf nieuwe
+consumers. Twee echte productmutaties falen; exact70736c hersteld. Oude reset- en
+zetelguards normaliseren alleen de exact goedgekeurde submitcallback; mutationloop
+blijft gevoelig, 003e/3eb literals en alle111 overige directguards behouden.
+Root vers665/665, lint schoon, productieaudit0, build170/crawl82/93/112. Volledige
+parsed-defaultmarkup onveranderd; rawNodeSSR apart bytegelijk d1f. Echte1280/390/320
+x900: periodieke kop en eyebrow onder126,6px-header, periodiek206,5/194,2/194,5px;
+onbekend390/320 ook zichtbaar. ReviewI1 vond desktoponbekend900-bewijs onvoldoende:
+de oorspronkelijke after-state44,0px en extra720px blijven bewaard. Aanvullende echte
+settled1280x900 op14Oct10:41Z: kop206,52px/eyebrow175,80px/header126,59px,
+actiefresultaat142,80px, geen overflow; JPEG gezien. Dit nieuwe bewijs draagt die gate.
+Datum/label/note/error na scroll uitgelegd zichtbaar; tijdelijke
+negatieve of deels buitenbeeld errorposities blijven als transient-record bewaard.
+NativeTab bron→CTA, desktopShiftTab terug, reset→toestel, correctie/hergebruik/reset
+getest; geen volledige AT/zoom/alle veldpaden. Optionele390px handoff juiste dienst/
+synthetische datum, cleanURL, overige velden leeg/toestemming uit/form142,6px;
+niets verstuurd. Nieuwe tab begint soms op720px: die eerste sample telt alleen extra,
+acceptatie bevat werkelijk gemeten900px-profielen. Eerdere Task96 canon-desktopreset-
+records bevatten geen hoogtemeting; geen nieuwe universele900px-claim daaruit.
+Eén onafhankelijke volledige twaalfbestandenreview en exactcommit/hosted/provider/
+canonical/live blijven gates. Geen IndexNow/content- of broncontroledatum voor UX.
+Eenmalige publieke Maps14Oct toont adres nog: geen servicearea-doorwerking bewezen,
+geen accountsave/moderatie/grant inferred of opnieuw ingediend. Task101 onderzoekt
+alleen initialform/no-JS/privacy; geen wijziging of afgeronde acceptatie daarvan.
+Alle137 actuele checklistregels en vier integrale bronnen behouden; volledigeWP11/12,
+currentness, accounttoegang/moderatie, cases, Frans, AT/field/source403/Task51/legal/
+zakelijke resultaten blijven afzonderlijk open. Task96 exacte releasebackfill behouden.
+
+## 14 oktober 2026 — Task96 exact live: onderhoudsinvoer wissen
+
+Commit `f334b35c509aec73272ca8aad65312a980c81447` bevat de elf exact beoordeelde
+bestanden; beide reviewverdicts PASS, alle23 grenzen afzonderlijk beoordeeld.
+Root/precommit654, lint schoon, productieaudit0, build170 en finale lokale
+crawl82/93/112. Exact CI38473634600: Node24.21.0,654/654, lint, productie0,
+build170/crawl82/93/112 geslaagd; negen dev/lifecyclebevindingen blijven Task51.
+Bestaand Vercelab-service6gZ5t7wvjv4udY5sYAd4L3wbyrqo Ready/Production/Latest,
+www-domein toegewezen, exactSHA; GitHub7051012912 success. Canonical21:54Z200,
+complete oorspronkelijke toolmarkup na exacte resetinverse/parsernormalisatie,
+metadata/registry/sitemap/schema/bronnen/24uur/legal/media intact; livecrawl82/93/112.
+Echte1280/390/320x900 bediening: vijf resets met muis/Enter/herhaling/invalid,
+invoer/resultaat/error/CTA leeg, eerstevraagfocus en label onder de header,
+geen horizontale overflow. Geldige testdatum2024 geeft2026; synthetisch, geen klant.
+Optionele390px contactovergang: juiste dienst/testdatum, URL opgeschoond,
+persoonsvelden leeg/toestemming uit, formulier142,6px onder126,6px-header;
+niets verstuurd. Settled1280x900 livebeeld met zichtbare wisknop bekeken en getoond.
+Tijdelijke eigen tabs gesloten/viewport hersteld/server31443 gestopt, exit130.
+Geen IndexNow of content-/broncontroledatums voor deze kleine UX-wijziging.
+Alle137 huidige checklistregels en vier integrale bronnen behouden. Task96
+release gesloten, niet heel WP11/12. Task98 audit volledig gelezen; nieuw echt
+periodiek desktopresultaat toont kop114,02px achter126,59px-header, herhaald lokaal
+én canonical. Alleen die bestaande submitfocus is de volgende herstelactie;
+onbekende desktopuitslag was zichtbaar, geen blanketfout uit oude panelposities.
+Volledige toetsenbord/AT/zoom/field/currentness, accountmoderatie/toegang, cases,
+Frans, source403, Task51, legal en zakelijke resultaten blijven afzonderlijk open.
+
 ## 13 oktober 2026 — Task96: onderhoudsinvoer wissen lokaal getest, release open
 
 Binnen WP11 krijgt de onderhoudscheck één native knop ‘Wis mijn invoer’. Alle

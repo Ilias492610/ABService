@@ -13,6 +13,7 @@ import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { buildGlobalSchemaGraph } from "../libs/schema-data.mjs";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { beforeMaintenanceResetSource, beforeMaintenanceResetHtml } from "./fixtures/maintenance-reset-history.mjs";
+import { beforeMaintenanceSubmitFocusSource } from "./fixtures/maintenance-submit-focus-history.mjs";
 
 const fixtureBytes = await readFile(new URL("./fixtures/maintenance-reset-facts.json", import.meta.url));
 const f = JSON.parse(fixtureBytes);
@@ -213,7 +214,7 @@ test("untouched frozen before capture and named reset inverses preserve complete
   assert.equal(hash(f.before.source), "5d51bb60e958dbdfe8414d2dd8f5e27e28cc2ddb28ef82479d729c462d71bec2");
   assert.equal(hash(f.before.defaultHtml), "31fd3dd50081b59bf2f672db48ae79613a7fdf811a9afa0f119332d2b3ffa450");
   const source = await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8");
-  assert.equal(beforeMaintenanceResetSource(source), f.before.source, "every byte of original calculate, update, source wording and handoff retained");
+  assert.equal(beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(source)), f.before.source, "every byte of original calculate, update, source wording and handoff retained");
   assert.equal(beforeMaintenanceResetSource(f.before.source), f.before.source);
   assert.equal(beforeMaintenanceResetHtml(f.before.defaultHtml), f.before.defaultHtml);
   assert.equal(hash(pageRegistry), f.before.registrySha256);
@@ -240,11 +241,11 @@ test("named inverses cannot hide wrong reset handlers, extra statements or unkno
     ["Uw resultaat", "Unexpected result"],
   ]) {
     assert.ok(source.includes(from), from);
-    assert.notEqual(hash(beforeMaintenanceResetSource(source.replace(from, to))), f.before.sourceSha256, from);
+    assert.notEqual(hash(beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(source.replace(from, to)))), f.before.sourceSha256, from);
   }
   const alignedFrame = '    requestAnimationFrame(() => {\n      const field = firstField.current;\n      field?.focus({ preventScroll: true });\n      field?.scrollIntoView({ block: "center", behavior: "instant" });\n    });';
   assert.ok(source.includes(alignedFrame));
-  const supersededNativeOnly = source.replace(alignedFrame, '    requestAnimationFrame(() => firstField.current?.focus());');
+  const supersededNativeOnly = beforeMaintenanceSubmitFocusSource(source).replace(alignedFrame, '    requestAnimationFrame(() => firstField.current?.focus());');
   assert.equal(hash(supersededNativeOnly), "003e32c8098c4a5f3b6c38ab522dfcfd37dc678be895b6459ebd0083b3087c7f");
   assert.notEqual(hash(beforeMaintenanceResetSource(supersededNativeOnly)), f.before.sourceSha256, "superseded native-only callback must survive the narrowed inverse");
   for (const [from, to] of [

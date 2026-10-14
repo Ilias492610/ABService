@@ -41,7 +41,15 @@ export default function MaintenanceCheck() {
     const next = getMaintenanceResult(input, today);
     setResult(next);
     emit("maintenance_check_complete", { location: "maintenance_check", region: input.region, result: next.kind });
-    requestAnimationFrame(() => next.kind === "invalid" ? document.getElementById("check-lastDate")?.focus() : resultPanel.current?.focus());
+    requestAnimationFrame(() => {
+      if (next.kind === "invalid") {
+        document.getElementById("check-lastDate")?.focus();
+      } else {
+        const panel = resultPanel.current;
+        panel?.focus({ preventScroll: true });
+        panel?.scrollIntoView({ block: "start", behavior: "instant" });
+      }
+    });
   };
 
   const reset = () => {
