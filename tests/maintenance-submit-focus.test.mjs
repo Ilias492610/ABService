@@ -1,4 +1,5 @@
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
+import { beforeTariffEntryProtectionCss } from "./fixtures/tariffs-entry-links.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -205,7 +206,8 @@ test("independent frozen actual before preserves complete source and raw default
   assert.equal(hash(buildGlobalSchemaGraph()), f.before.globalSchemaSha256);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const [path, key] of [["content/business.mjs", "businessSha256"], ["content/media.mjs", "mediaSha256"], ["libs/maintenance-check.mjs", "maintenanceKernelSha256"], ["app/globals.css", "cssSha256"]]) {
-    assert.equal(hash(await readFile(new URL(`../${path}`, import.meta.url))), f.before[key], path);
+    const actual = await readFile(new URL(`../${path}`, import.meta.url));
+    assert.equal(hash(path === "app/globals.css" ? beforeTariffEntryProtectionCss(actual.toString("utf8")) : actual), f.before[key], path);
   }
 });
 

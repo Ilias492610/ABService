@@ -1,5 +1,84 @@
 # Evidence Register
 
+## 14 oktober 2026 — Task120 cohort; Task116/121 afzonderlijke bewijsgrenzen
+
+Private SDD-map bewaart Task120-brief, volledige vóór-SSR/tracked hashes, originele
+REDs/oud-pin-fouten, 683/683-suite, lint/audit/build/crawl en echte focus-/klikbeelden.
+Named inverses bewaren oude route/source/CSS-pins; registry/meta/date/sourcebijlagen
+en137statussen blijven onveranderd. Lokale1280/390/320-hit/focus/overgang en widget-
+herstel zijn geen live/provider/AT/field/effectbewijs; cohortreview/releasegate open.
+Task116-resume native AX bewijst Abder, kalenderfocus en popup-AX, niet zichtbare
+popuppixels/Escape/volgende focus/datumkeuze/submit/native-tabcleanup. Originele
+onbevestigde tussenstappen behouden. Task121 private315woorden-draft bevat bronnen
+en drie menselijke reviewvragen; niet gepubliceerd of menselijk goedgekeurd.
+Task120 publiek-GBP-pending beperkt Mapsbeeld toont nog adres, geen editorreplay,
+moderatieoorzaak, reviewaudit, nieuwe save/submission of indexeringsbewijs.
+
+## 14 oktober 2026 — Task117 fabrikantpreflight zonder schrijfkandidaat
+
+Private `task-117-faucet-source-preflight.md` en originele
+`task-117-primary-pages.web.json` bewaren de twee volledig gelezen Belgische
+hansgrohe-FAQ-bodies en hun grenzen. Geen exacte product-/parts-/garantievalidatie,
+klantvraag, technicusbewijs of AB-partnerschap afgeleid. Onafhankelijke documentaire
+controle en behoudsreceipt blijven afzonderlijk van publicatie/live/effectbewijs.
+Task116-native state is niet langer lock-only: foreground hamdaoui, actieve
+gebruikersbediening; geen accountactie of geaccepteerde datumkiezerproef.
+
+## 14 oktober 2026 — Task109 native fallback en Task115 herleidbaarheid
+
+Private SDD-map: `task-109-native-nojs-acceptance.md` begrenst de volledige live
+1280/390×900-noJS-proef, echte desktop-Tab, zichtbare mobiele uitleg en daadwerkelijke
+JS-/emulatie-/tabherstelling. Raw AX en originele beelden, inclusief mislukte of
+onbruikbare tussenstappen, blijven behouden; bewijsmanifest en mechanische check
+staan bij `task-109-115-final-preservation.json`. Geen volledige AT/flow/field-claim.
+`task-115-provenance-check.md` is volledig door root gelezen en controleert alleen
+documentaire Task68/69/70-herkomst. Task68 final-account JSON/rootacceptatie/editorreview
+leggen drie saves en zes exacte refresh-weergaven op 12 oktober vast, zonder
+herhaalde secondary-category saves. Eerdere gedeeltelijke checkpoints zijn historie,
+niet de laatste editorstatus. Publieke verschijning/moderatie/adres blijven onbewezen.
+Geen nieuw product- of accountbewijs, nieuwe release of indexeringsclaim uit deze check.
+
+## 14 oktober 2026 — Task112 gepubliceerd en live gecontroleerd
+
+De brongebonden geur-intake en voorwaardelijke doorverwijzing staat op de bestaande
+`/installaties/sanitair`. Exact commit `1eaf3dcbe7e6d5e10686a23acb7a81b8f1541bd9`,
+40 beoordeelde bestanden; onafhankelijke bron/spec- en kwaliteitsreview PASS.
+Alle 58 reviewgrenzen zijn afzonderlijk beoordeeld; geen nieuwe herstelbevindingen.
+677 tests lokaal, vóór commit en in CI geslaagd; lint schoon, productieaudit 0,
+build 170. CI 38580482606 gebruikt Node 24.21.0. De 9 ontwikkelkwetsbaarheden en
+ESLint-lifecyclewaarschuwing blijven afzonderlijk open als Task51.
+Primaire Vercel 2XXAhNWQLeCz4aZC1yRkLGqxTDXk toont daadwerkelijk Ready,
+Production/Latest, exact SHA en www-domein (24 s). Canonical HTTP200 met nieuwe
+sectie; volledige livecrawl 82 pagina’s/93 interne links/112 assets. Alle 80 echte
+sitemaprecords exact gecontroleerd; alleen sanitaire contentdatum 2026-10-14.
+Live 1280/390/320×900: geen horizontale overflow, beide bronlinks zichtbaar met
+toetsenbordfocus; desktop 3px solid-focusstijl nu expliciet opgeslagen. 390-overgang
+kiest sanitair, alle negen persoonlijke/berichtvelden expliciet leeg, toestemming uit.
+Precisering van eerdere “form142,6”-verkorting: de formuliersectie/anker begint op
+142,6px, het eigenlijke form op 222,45px; header eindigt op 126,59px. Publieke
+dienstquery blijft behouden; geen aanvraag verzonden. Zes live extension-errors
+bewaard, geen console0- of volledige privacy-/AT-/JS-off-claim.
+Eén IndexNow-preview en één melding voor uitsluitend sanitair: HTTP200 ontvangen
+na geldige publieke bewijscheck. Dit is geen indexerings- of rankingbewijs.
+Eigen IAB-tabs15/16 gesloten, viewport hersteld; server52209 gestopt, geen3190listener.
+Private opslagpad-/datumrepresentatiefouten bewaard; 12 bestaande bewijsbestanden
+bytegelijk naar bedoelde map gekopieerd, originelen behouden, geen productherstel.
+Reviewer bevestigt dat hij de oorspronkelijke browserbewijzen daadwerkelijk las.
+Definitief checkpoint14:40:23Z PASS:358 bestanden, exact remote, 137 statussen en
+vier integrale bijlagen intact. Dit sluit alleen deze afgebakende WP10-uitbreiding.
+
+Task114: Abders echte native Chrome/Google- en Bing-toegang opnieuw bevestigd.
+Googlebeheer toont geen klantontvangst/diensten aan huis en zeven dagen24uur;
+het openbare zoekpaneel toont nog het adres. Geen herhaalde save of nieuwe grant.
+Bing toont bestaande www-property en sitemap Success/79URLs met crawl10oktober;
+dat bewijst geen actuele indexering van alle pagina’s. Dienstnamen bekeken, de
+eerder open beschrijvingen niet opnieuw ingevuld. Mac daarna weer vergrendeld:
+eigen native accounttab kon nog niet worden gesloten; oorspronkelijke usertab intact.
+Volgende: echte volledige JS-off-browserproef en resterende goedgekeurde
+dienstbeschrijvingen zodra native toegang beschikbaar is. GSC/Places/Apple,
+case-/prijs-/erkennings-/Franse-review-/field-/resultaatgates blijven afzonderlijk.
+Deze releasebackfill gaat mee met een volgende echte productrelease; geen docs-only deploy.
+
 ## 14 oktober 2026 — Task112 lokaal gecontroleerd: geurvraag bij sanitair
 
 Eén brongebonden intake-/doorverwijssectie op `/installaties/sanitair`; geen nieuwe

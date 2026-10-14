@@ -129,6 +129,7 @@ h3 { margin: 0 0 .7rem; font-size: 1.2rem; }
 .card { display: flex; min-height: 100%; flex-direction: column; border: 1px solid var(--line); border-radius: 1rem; background: white; padding: 1.5rem; box-shadow: 0 16px 45px rgb(16 52 71 / 7%); }
 .card p { color: var(--muted); }
 .card a { margin-top: auto; color: var(--teal); font-weight: 800; text-underline-offset: .2em; }
+.tariff-service-context a { scroll-margin-block: calc(var(--header-offset) + 1rem) 1rem; }
 .steps-grid { grid-template-columns: repeat(4, 1fr); margin: 2rem 0 0; padding: 0; list-style: none; }
 .steps-grid li { border-top: 1px solid rgb(255 255 255 / 20%); padding: 1.5rem 1rem 0 0; }
 .steps-grid span { display: inline-grid; width: 2.3rem; height: 2.3rem; place-items: center; margin-bottom: 1rem; border-radius: 50%; background: var(--gold); color: var(--navy-deep); font-weight: 900; }

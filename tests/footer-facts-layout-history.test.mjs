@@ -9,6 +9,7 @@ import { buildGlobalSchemaGraph } from "../libs/schema-data.mjs";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { renderFooterWithDate } from "./helpers/registered-seat-runtime.mjs";
 import { beforeFooterFactsCss } from "./fixtures/footer-facts-layout-history.mjs";
+import { beforeTariffEntryProtectionCss } from "./fixtures/tariffs-entry-links.mjs";
 
 const bytes = await readFile(new URL("./fixtures/footer-facts-layout-facts.json", import.meta.url));
 const f = JSON.parse(bytes);
@@ -35,8 +36,8 @@ test("the named inverse restores only both approved complete rules and leaves th
 
 test("actual stylesheet preserves every before byte after the bounded historical inverse", async () => {
   const actual = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
-  assert.equal(beforeFooterFactsCss(actual), f.before.css);
-  assert.equal(hash(beforeFooterFactsCss(actual)), "f3b518a4cae4a7491004b5fc24acb6aa8f664a838e9731fd52162b56eaf26ccb");
+  assert.equal(beforeFooterFactsCss(beforeTariffEntryProtectionCss(actual)), f.before.css);
+  assert.equal(hash(beforeFooterFactsCss(beforeTariffEntryProtectionCss(actual))), "f3b518a4cae4a7491004b5fc24acb6aa8f664a838e9731fd52162b56eaf26ccb");
 });
 
 test("wrong columns gaps wrap and extra properties survive inversion instead of hiding drift", () => {

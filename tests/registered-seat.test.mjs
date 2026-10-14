@@ -1,5 +1,6 @@
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry, beforeSanitaryReferralSource } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
+import { beforeTariffEntrySource, beforeTariffEntryProtectionSource, beforeTariffEntryProtectionCss } from "./fixtures/tariffs-entry-links.mjs";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -98,7 +99,7 @@ test("only the two legal routes publish true13October dates with all registry me
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const file of f.before.protectedFiles) {
     const actual = await readFile(new URL(`../${file.path}`, import.meta.url));
-    assert.equal(hash(file.path === "app/globals.css" ? beforeFooterFactsCss(actual.toString("utf8")) : file.path === "components/maintenance-check.js" ? beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(actual.toString("utf8")))) : ["app/installaties/sanitair/page.js", "content/core-sources.mjs"].includes(file.path) ? beforeSanitaryReferralSource(actual.toString("utf8"), file.path) : actual), file.sha256, file.path);
+    assert.equal(hash(file.path === "app/globals.css" ? beforeFooterFactsCss(beforeTariffEntryProtectionCss(actual.toString("utf8"))) : file.path === "components/floating-trust-signals.js" ? beforeTariffEntryProtectionSource(actual.toString("utf8")) : file.path === "components/maintenance-check.js" ? beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(actual.toString("utf8")))) : file.path === "app/tarieven/page.js" ? beforeTariffEntrySource(actual.toString("utf8")) : ["app/installaties/sanitair/page.js", "content/core-sources.mjs"].includes(file.path) ? beforeSanitaryReferralSource(actual.toString("utf8"), file.path) : actual), file.sha256, file.path);
   }
   assert.deepEqual(renderEvents, []);
 });

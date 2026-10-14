@@ -1,5 +1,23 @@
 # WP03 — publieke research, intentmapping en vierpassenaudit
 
+## Supplement 14 oktober 2026 — Task118 specifieke sanitaire body-sample
+
+De aanvullende B05-sample uit Task106 telt nu drie specifiek gelezen sanitaire
+bodies: SIMS via publieke IAB, plus Omnibouw en Master uit hun eerdere gedateerde
+Task106-webextracties. SIMS' nieuwe webreader-open blijft Timeout400; gewone browser
+geeft de volledige hoofdinhoud/merken-/offerte-/footercontext. Geen alternatieve
+URLreeks, accounts of bronbeveiliging omzeild. Oud nul-bodybewijs blijft historie.
+Dit is geen actuele SERP-top3 of uniforme origin-/update-/HTTP-statusverificatie.
+De SIMS-body biedt algemene renovatie/leidingen/herstelling/toestel-/lekcategorieën
+en contact/offerte. Geen aanvullende intake-/scopebehoefte voor Task106's drie
+vragen vastgesteld: bestaande AB-sanitaire, leiding- en badkamerpagina's dragen
+die antwoorden al. Merklogo's, preventie-/kwaliteit-, prijs-/planningclaims niet
+overnemen. Geen nieuw AB-vraag-/PAA-/zoekvolume-/ranking-/leadbewijs en geen rewrite.
+Private `task-118-sims-body-supplement.md` bewaart bron/methode/grenzen, echte AX,
+oude fouten en onafhankelijke documentcontrole. De onderstaande 10oktober-data,
+tabellen, bronrijen en B05/M05-meetgrenzen zijn volledig ongewijzigde historie;
+de echte klantvraag-/model-/technicus-/publicatie-/effectvoorwaarden blijven open.
+
 Onderzoeksdatum: 10 oktober 2026. Eerste servicesample afgerond om 16:58 UTC / 18:58 Europe/Brussels; aangevuld met roots Google-sessie circa 17:21 UTC, juiste-accountwaarnemingen en native huidige/vergelijkings-/AI-/langervenster-/exact-queryexports. Dit verslag levert de afgebakende researchoutputs met exacte huidige en uit dagrijen afgeleide vorige propertytotalen, aparte periodekolommen, queryselecties, één native geobserveerd query-paginapaar, één gelezen organische top tien, werkelijke autocomplete en beperkte Trends-observaties. Andere paarmetingen blijven vervolgbeperking; de echte-klantvragen-business-subcheck blijft eigenaarafhankelijk open, zonder volledige WP00–WP03-afsluitclaim. Gemeten top-vijf en eerdere kwalitatieve briefs staan in [wp03-first-five.md](briefs/wp03-first-five.md).
 
 ## Methode en selectiecontext

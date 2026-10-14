@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { renderToStaticMarkup } from "react-dom/server";
 import { loadContactModule } from "./helpers/contact-runtime.mjs";
+import { beforeTariffEntryLinks } from "./fixtures/tariffs-entry-links.mjs";
 import * as business from "../content/business.mjs";
 import * as registry from "../content/site-content.mjs";
 import * as seo from "../libs/seo-data.mjs";
@@ -42,10 +43,10 @@ test("the real offer checklist asks about possible time-dependent costs once and
 });
 
 // Literal full-route fixture captured on c506f47 before any tariffs edits.
-// Only the new li is removed; accidental cards/copy/links/schema loss fails.
+// Only this question and Task120's four exact anchors are removed; old hash retained.
 test("tariffs retains the full original rendered route outside the one new preparation question", () => {
   const html = htmlFor();
-  assert.equal(hash(html.replace(`<li>${question}</li>`, "")), "cbf09382ffe05c6d0d06c28a0fb9f53d70b102bf0a853d4dac497bbd0e0e4749");
+  assert.equal(hash(beforeTariffEntryLinks(html).replace(`<li>${question}</li>`, "")), "cbf09382ffe05c6d0d06c28a0fb9f53d70b102bf0a853d4dac497bbd0e0e4749");
   assert.equal([...html.matchAll(/<article class="card">/g)].length, 6);
   assert.equal([...html.matchAll(/<h1\b/g)].length, 1);
   assert.match(html, /Op deze pagina staat geen vaste prijslijst\./);

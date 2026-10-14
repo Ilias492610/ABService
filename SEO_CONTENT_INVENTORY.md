@@ -1,5 +1,66 @@
 # AB Service SEO Content Inventory
 
+## 14 oktober 2026 — Task120 navigatie; Task121 private taalvoorbereiding
+
+Bestaande `/tarieven`: vier contextlinks naar `/onderhoud`, `/herstelling`,
+`/installaties/gasketels` en `/installaties/sanitair`; geen nieuwe pagina, tarief,
+inhoudsdatum of servicegebied. Werkelijke mobiele linkbedekking lokaal opgelost.
+683 tests en lokale browser/crawl groen; onafhankelijke review en publicatie/live-
+gate nog open. WP06/WP12 niet integraal afgevinkt. Private Franse pilot315woorden
+blijft DRAFT_REVIEW_REQUIRED/published:false, geen Franse route of hreflang.
+Unused oude taalvelden worden niet als foutieve publieke Brusselcopy voorgesteld.
+Echte prijs-/model-/technicus-/case-/taalreview-/account-/field-/leadgates blijven open.
+
+## 14 oktober 2026 — verificatie en correctie, geen nieuwe content
+
+Task109: bestaande onderhoudscheck live zonder JavaScript op 1280/390×900 bekeken;
+disabled invoer en leesbare uitleg bevestigd, normale browserbediening hersteld.
+Task115: de hieronder geïmpliceerde resterende verwarmingsbeschrijvingen waren al
+op 12 oktober afgerond binnen Task68: drie saves/zes exacte refresh-weergaven,
+geen extra save in de tweede categorie. Publieke zichtbaarheid blijft onbewezen.
+Geen nieuwe URL, contentdatum, prijs, project, bronclaim of volledige WP-afvinking.
+
+## 14 oktober 2026 — Task112 gepubliceerd en live gecontroleerd
+
+De brongebonden geur-intake en voorwaardelijke doorverwijzing staat op de bestaande
+`/installaties/sanitair`. Exact commit `1eaf3dcbe7e6d5e10686a23acb7a81b8f1541bd9`,
+40 beoordeelde bestanden; onafhankelijke bron/spec- en kwaliteitsreview PASS.
+Alle 58 reviewgrenzen zijn afzonderlijk beoordeeld; geen nieuwe herstelbevindingen.
+677 tests lokaal, vóór commit en in CI geslaagd; lint schoon, productieaudit 0,
+build 170. CI 38580482606 gebruikt Node 24.21.0. De 9 ontwikkelkwetsbaarheden en
+ESLint-lifecyclewaarschuwing blijven afzonderlijk open als Task51.
+Primaire Vercel 2XXAhNWQLeCz4aZC1yRkLGqxTDXk toont daadwerkelijk Ready,
+Production/Latest, exact SHA en www-domein (24 s). Canonical HTTP200 met nieuwe
+sectie; volledige livecrawl 82 pagina’s/93 interne links/112 assets. Alle 80 echte
+sitemaprecords exact gecontroleerd; alleen sanitaire contentdatum 2026-10-14.
+Live 1280/390/320×900: geen horizontale overflow, beide bronlinks zichtbaar met
+toetsenbordfocus; desktop 3px solid-focusstijl nu expliciet opgeslagen. 390-overgang
+kiest sanitair, alle negen persoonlijke/berichtvelden expliciet leeg, toestemming uit.
+Precisering van eerdere “form142,6”-verkorting: de formuliersectie/anker begint op
+142,6px, het eigenlijke form op 222,45px; header eindigt op 126,59px. Publieke
+dienstquery blijft behouden; geen aanvraag verzonden. Zes live extension-errors
+bewaard, geen console0- of volledige privacy-/AT-/JS-off-claim.
+Eén IndexNow-preview en één melding voor uitsluitend sanitair: HTTP200 ontvangen
+na geldige publieke bewijscheck. Dit is geen indexerings- of rankingbewijs.
+Eigen IAB-tabs15/16 gesloten, viewport hersteld; server52209 gestopt, geen3190listener.
+Private opslagpad-/datumrepresentatiefouten bewaard; 12 bestaande bewijsbestanden
+bytegelijk naar bedoelde map gekopieerd, originelen behouden, geen productherstel.
+Reviewer bevestigt dat hij de oorspronkelijke browserbewijzen daadwerkelijk las.
+Definitief checkpoint14:40:23Z PASS:358 bestanden, exact remote, 137 statussen en
+vier integrale bijlagen intact. Dit sluit alleen deze afgebakende WP10-uitbreiding.
+
+Task114: Abders echte native Chrome/Google- en Bing-toegang opnieuw bevestigd.
+Googlebeheer toont geen klantontvangst/diensten aan huis en zeven dagen24uur;
+het openbare zoekpaneel toont nog het adres. Geen herhaalde save of nieuwe grant.
+Bing toont bestaande www-property en sitemap Success/79URLs met crawl10oktober;
+dat bewijst geen actuele indexering van alle pagina’s. Dienstnamen bekeken, de
+eerder open beschrijvingen niet opnieuw ingevuld. Mac daarna weer vergrendeld:
+eigen native accounttab kon nog niet worden gesloten; oorspronkelijke usertab intact.
+Volgende: echte volledige JS-off-browserproef en resterende goedgekeurde
+dienstbeschrijvingen zodra native toegang beschikbaar is. GSC/Places/Apple,
+case-/prijs-/erkennings-/Franse-review-/field-/resultaatgates blijven afzonderlijk.
+Deze releasebackfill gaat mee met een volgende echte productrelease; geen docs-only deploy.
+
 ## 14 oktober 2026 — Task112 lokaal gecontroleerd: geurvraag bij sanitair
 
 Eén brongebonden intake-/doorverwijssectie op `/installaties/sanitair`; geen nieuwe

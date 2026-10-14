@@ -1,5 +1,36 @@
 # WP10 dekking van veertien adviesintenties
 
+## 14 oktober 2026 — Task117 kraanbronnen gelezen, gap blijft gedeeltelijk
+
+Twee Belgische hansgrohe-FAQ-bodies onderscheiden nadruppelen, aansluitingen en
+de draaibare keukenuitloop. Private preflight houdt deze product-/situatiecontext
+uitdrukkelijk apart; geen universele cartridge-, normaal-/veilig- of garantieclaim.
+De fabrikantbron is nu voorbereid, maar echte aanvullende AB-vraag, concreet toestel,
+passende modelhandleiding en technicusbeoordeling ontbreken. Geen duplicatie van
+bestaande intake, nieuwe URL, bronwiring, contentdatum of volledige kraandekking.
+
+## 14 oktober 2026 — Task109/115 veranderen de inhoudsdekking niet
+
+Task109 verifieert alleen de bestaande onderhoudscheck-fallback op de volledige
+live pagina; Task115 corrigeert historische accountstatus (Task68 drie saves/zes
+refresh-weergaven al afgerond op 12 oktober, publieke zichtbaarheid nog open).
+Geen nieuwe adviesintentie of URL, geen verdere rioolgeurdiagnose/remedies, geen
+algemene WP10/WP11/WP12-acceptatie. De gedeeltelijke dekking hieronder blijft gelden.
+
+## 14 oktober 2026 — beperkte geur-intake live op bestaande sanitaire pagina
+
+Task112 vult alleen de intake-/doorverwijscomponent van de rioolgeurvraag aan op
+`/installaties/sanitair`: al bekende plaats/moment/toestel/afvoer/recente werken,
+expliciet onbekende context, geen verstoppingsdiagnose en de werkelijke rioolbeheerder.
+Aquafin-FAQ en Vlaamse AquaFlanders-zoekhulp zijn primaire verwijzingen; geen
+Brusselse beheerder afgeleid, geen openbare-rioolservice of technische remedie beloofd.
+Commit `1eaf3dcbe7e6d5e10686a23acb7a81b8f1541bd9` onafhankelijk beoordeeld, CI677,
+primaire Vercel Ready/exactSHA/www, canonical200, livecrawl82/93/112 en echte
+desktop/mobiele bronlinks en sanitaire formulierovergang gecontroleerd.
+Geen nieuwe URL, echte AB vraag/volume/rank/resultaat of volledige technische
+rioolgeurdekking. De oorspronkelijke tabel blijft een gedateerde eerdere snapshot.
+WP10 en oorzaak-/technicus-/case-/prijs-/Franse review-/fieldgates blijven open.
+
 **Latere releaseacceptatie869ee4f:** de beperkte Task28-doorverwijs-/intakeaanvulling
 is onafhankelijk whole-branch reviewed, normaal gepubliceerd en live gecontroleerd.
 Exact CI345tests/build170/82/93/112, beide VercelProduction en canonicalcrawl plus

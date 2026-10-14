@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Breadcrumbs from "@/components/breadcrumbs";
 import ContactCta from "@/components/contact-cta";
 import PageHero from "@/components/page-hero";
@@ -7,10 +8,10 @@ import { getPageDefinition } from "@/content/site-content.mjs";
 export const metadata = buildPageMetadata(getPageDefinition("/tarieven"));
 
 const priceFactors = [
-  ["Onderhoud", "Toesteltype, vermogen, bereikbaarheid, vervuiling, eerdere documenten en vereiste metingen."],
-  ["Herstelling", "Diagnose, benodigde tijd, onderdelen, bereikbaarheid, vervolgwerk en de afgesproken planning."],
-  ["Installatie", "Materiaalkeuze, dimensionering, leidingwerk, afvoer, regeling, bescherming, demontage en oplevering."],
-  ["Sanitair", "Toestel, leidingtracé, afsluitbaarheid, afvoer, wandopbouw, bereikbaarheid en gewenste afwerking."],
+  ["Onderhoud", "Toesteltype, vermogen, bereikbaarheid, vervuiling, eerdere documenten en vereiste metingen.", "/onderhoud", "Voorbereiding op cv-ketelonderhoud"],
+  ["Herstelling", "Diagnose, benodigde tijd, onderdelen, bereikbaarheid, vervolgwerk en de afgesproken planning.", "/herstelling", "Hoe een herstelling wordt beoordeeld"],
+  ["Installatie", "Materiaalkeuze, dimensionering, leidingwerk, afvoer, regeling, bescherming, demontage en oplevering.", "/installaties/gasketels", "Gasketel plaatsen of vervangen"],
+  ["Sanitair", "Toestel, leidingtracé, afsluitbaarheid, afvoer, wandopbouw, bereikbaarheid en gewenste afwerking.", "/installaties/sanitair", "Scope en voorbereiding van sanitairwerk"],
   ["Lek of ontstopping", "Diagnose, bereikbaarheid, leidingmateriaal, gebruikte middelen, benodigde apparatuur en vervolgwerk."],
   ["Badkamerrenovatie", "Maatvoering, toestellen, leidingwerk, sloop, afwerking en afstemming met andere vakmensen."],
 ];
@@ -34,15 +35,16 @@ export default function TarievenPage() {
           </p>
         </div>
       </section>
-      <section className="section">
+      <section className="section tariff-service-context">
         <div className="shell">
           <p className="eyebrow">Prijsfactoren</p>
           <h2>Waarom de kost per opdracht verschilt</h2>
           <div className="cards-grid" style={{ marginTop: "2rem" }}>
-            {priceFactors.map(([title, text]) => (
+            {priceFactors.map(([title, text, href, label]) => (
               <article className="card" key={title}>
                 <h3>{title}</h3>
                 <p>{text}</p>
+                {href && <Link className="underline" href={href}>{label} →</Link>}
               </article>
             ))}
           </div>
