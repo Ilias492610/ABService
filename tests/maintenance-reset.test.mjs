@@ -14,6 +14,7 @@ import { buildGlobalSchemaGraph } from "../libs/schema-data.mjs";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { beforeMaintenanceResetSource, beforeMaintenanceResetHtml } from "./fixtures/maintenance-reset-history.mjs";
 import { beforeMaintenanceSubmitFocusSource } from "./fixtures/maintenance-submit-focus-history.mjs";
+import { beforeMaintenanceReadinessSource, beforeMaintenanceReadinessHtml } from "./fixtures/maintenance-readiness-history.mjs";
 
 const fixtureBytes = await readFile(new URL("./fixtures/maintenance-reset-facts.json", import.meta.url));
 const f = JSON.parse(fixtureBytes);
@@ -33,6 +34,7 @@ async function harness() {
   const states = [], refs = [], pending = [], frames = [], focuses = [], events = [], movements = [];
   let stateIndex = 0, refIndex = 0, committedTree;
   const hooks = { ...React,
+    useSyncExternalStore(_subscribe, getSnapshot) { return getSnapshot(); },
     useState(initial) {
       const index = stateIndex++;
       if (!(index in states)) states[index] = initial;
@@ -61,8 +63,20 @@ async function harness() {
     };
     return committedTree;
   };
+  const assertReady = () => {
+    const fieldsets = nodes(committedTree, node => node.type === "fieldset");
+    assert.equal(fieldsets.length, 1, "one ready-client native fieldset");
+    const fieldset = fieldsets[0];
+    assert.equal(fieldset.props.disabled, false, "supplied client snapshot must enable controls");
+    const controls = nodes(committedTree, node => ["select", "input", "button"].includes(node.type));
+    const contained = nodes(fieldset, node => ["select", "input", "button"].includes(node.type));
+    assert.equal(controls.length, contained.length);
+    for (const control of controls) assert.ok(contained.includes(control));
+    for (const button of nodes(fieldset, node => node.type === "button")) assert.equal(button.props.disabled, false);
+  };
   const field = name => {
     const node = nodes(render(), n => n.props.id === `check-${name}`)[0];
+    assertReady();
     assert.ok(node, `real visible field ${name}`);
     return node;
   };
@@ -73,12 +87,14 @@ async function harness() {
   const flush = () => { while (frames.length) frames.shift()(); };
   const submit = (flushFrames = true) => {
     let prevented = false;
-    nodes(render(), n => n.type === "form")[0].props.onSubmit({ preventDefault() { prevented = true; } });
+    const form = nodes(render(), n => n.type === "form")[0];
+    assertReady(); form.props.onSubmit({ preventDefault() { prevented = true; } });
     assert.equal(prevented, true);
     const tree = render(); if (flushFrames) flush(); return tree;
   };
   const reset = (flushFrames = true) => {
     const controls = nodes(render(), n => n.type === "button" && n.props.children === "Wis mijn invoer");
+    assertReady();
     assert.equal(controls.length, 1, "one real reset control must exist");
     assert.equal(controls[0].props.type, "button", "reset must not submit the form");
     assert.equal(typeof controls[0].props.onClick, "function");
@@ -99,7 +115,7 @@ test("real reset focuses without native scrolling then centers the committed fir
       const tree = h.reset(false);
       assert.deepEqual({ ...h.states[0] }, defaults);
       assert.equal(h.states[1], null);
-      assert.equal(beforeMaintenanceResetHtml(html(tree)), f.before.defaultHtml);
+      assert.equal(beforeMaintenanceResetHtml(beforeMaintenanceReadinessHtml(html(tree))), f.before.defaultHtml);
       assert.deepEqual(h.movements, [], "focus and alignment wait until the committed reset frame");
       assert.equal(h.frames.length, 1);
       h.flush();
@@ -122,7 +138,7 @@ test("real default SSR exposes one native reset beside submit without adding res
   assert.equal(buttons[1].textContent, "Wis mijn invoer");
   assert.equal(buttons[1].getAttribute("type"), "button");
   assert.equal(buttons[1].getAttribute("class"), "button button-secondary");
-  assert.equal(buttons[1].hasAttribute("disabled"), false);
+  assert.equal(buttons[1].hasAttribute("disabled"), true, "initial SSR waits for readiness");
   assert.equal(buttons[1].parentNode.getAttribute("class"), "button-row");
   assert.equal(buttons[1].previousElementSibling, buttons[0]);
   for (let element = buttons[1]; element?.tagName; element = element.parentNode) {
@@ -130,7 +146,7 @@ test("real default SSR exposes one native reset beside submit without adding res
     assert.equal(element.hasAttribute("inert"), false);
     assert.notEqual(element.getAttribute("aria-hidden"), "true");
   }
-  assert.equal(beforeMaintenanceResetHtml(output), f.before.defaultHtml);
+  assert.equal(beforeMaintenanceResetHtml(beforeMaintenanceReadinessHtml(output)), f.before.defaultHtml);
   assert.equal(dom.querySelectorAll('a[href^="/contact"]').length, 0);
   assert.equal(dom.querySelectorAll("time, #check-date-error").length, 0);
   assert.equal(dom.querySelector("#check-lastDate").getAttribute("aria-invalid"), "false");
@@ -159,12 +175,12 @@ for (const [label, input, kind] of cases) test(`real reset clears all six fields
   assert.deepEqual({ ...h.states[0] }, defaults, "all six state values including hidden fuel/power return to defaults");
   assert.deepEqual(f.expectedDefaults, defaults);
   assert.equal(h.states[1], null, "old result must disappear");
-  assert.equal(beforeMaintenanceResetHtml(html(resetTree)), f.before.defaultHtml, "entire default result restores with no old planning, notes, CTA or invalid error");
+  assert.equal(beforeMaintenanceResetHtml(beforeMaintenanceReadinessHtml(html(resetTree))), f.before.defaultHtml, "entire default result restores with no old planning, notes, CTA or invalid error");
   assert.deepEqual(h.events, eventsBefore, "reset emits no extra analytics");
   assert.equal(h.focuses.length, focusCount, "focus waits for commit/frame");
   assert.equal(h.frames.length, 1);
   h.flush(); assert.equal(h.focuses.at(-1), "check-region");
-  assert.equal(beforeMaintenanceResetHtml(html(h.reset())), f.before.defaultHtml, "repeated reset stays clear");
+  assert.equal(beforeMaintenanceResetHtml(beforeMaintenanceReadinessHtml(html(h.reset()))), f.before.defaultHtml, "repeated reset stays clear");
   assert.equal(h.focuses.at(-1), "check-region"); assert.deepEqual(h.events, eventsBefore);
   h.update(gas); const reused = h.submit();
   assert.equal(h.states[1].kind, "periodic");
@@ -205,7 +221,7 @@ for (const [label, input, firstFocus] of [["valid", gas, "onderhoudsresultaat"],
     h.flush(); assert.deepEqual(h.focuses, [firstFocus, "check-region"]);
     assert.deepEqual({ ...h.states[0] }, defaults); assert.equal(h.states[1], null);
     assert.deepEqual(h.events, eventsBefore);
-    assert.equal(beforeMaintenanceResetHtml(html(h.render())), f.before.defaultHtml);
+    assert.equal(beforeMaintenanceResetHtml(beforeMaintenanceReadinessHtml(html(h.render()))), f.before.defaultHtml);
   });
 }
 
@@ -214,7 +230,7 @@ test("untouched frozen before capture and named reset inverses preserve complete
   assert.equal(hash(f.before.source), "5d51bb60e958dbdfe8414d2dd8f5e27e28cc2ddb28ef82479d729c462d71bec2");
   assert.equal(hash(f.before.defaultHtml), "31fd3dd50081b59bf2f672db48ae79613a7fdf811a9afa0f119332d2b3ffa450");
   const source = await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8");
-  assert.equal(beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(source)), f.before.source, "every byte of original calculate, update, source wording and handoff retained");
+  assert.equal(beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(source))), f.before.source, "every byte of original calculate, update, source wording and handoff retained");
   assert.equal(beforeMaintenanceResetSource(f.before.source), f.before.source);
   assert.equal(beforeMaintenanceResetHtml(f.before.defaultHtml), f.before.defaultHtml);
   assert.equal(hash(pageRegistry), f.before.registrySha256);
@@ -241,11 +257,11 @@ test("named inverses cannot hide wrong reset handlers, extra statements or unkno
     ["Uw resultaat", "Unexpected result"],
   ]) {
     assert.ok(source.includes(from), from);
-    assert.notEqual(hash(beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(source.replace(from, to)))), f.before.sourceSha256, from);
+    assert.notEqual(hash(beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(source.replace(from, to))))), f.before.sourceSha256, from);
   }
   const alignedFrame = '    requestAnimationFrame(() => {\n      const field = firstField.current;\n      field?.focus({ preventScroll: true });\n      field?.scrollIntoView({ block: "center", behavior: "instant" });\n    });';
   assert.ok(source.includes(alignedFrame));
-  const supersededNativeOnly = beforeMaintenanceSubmitFocusSource(source).replace(alignedFrame, '    requestAnimationFrame(() => firstField.current?.focus());');
+  const supersededNativeOnly = beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(source)).replace(alignedFrame, '    requestAnimationFrame(() => firstField.current?.focus());');
   assert.equal(hash(supersededNativeOnly), "003e32c8098c4a5f3b6c38ab522dfcfd37dc678be895b6459ebd0083b3087c7f");
   assert.notEqual(hash(beforeMaintenanceResetSource(supersededNativeOnly)), f.before.sourceSha256, "superseded native-only callback must survive the narrowed inverse");
   for (const [from, to] of [
@@ -255,6 +271,6 @@ test("named inverses cannot hide wrong reset handlers, extra statements or unkno
     ['Uw regel en planning verschijnen hier', 'Unexpected old heading'],
   ]) {
     assert.ok(output.includes(from), from);
-    assert.notEqual(hash(beforeMaintenanceResetHtml(output.replace(from, to))), f.before.defaultHtmlSha256, from);
+    assert.notEqual(hash(beforeMaintenanceResetHtml(beforeMaintenanceReadinessHtml(output.replace(from, to)))), f.before.defaultHtmlSha256, from);
   }
 });

@@ -12,6 +12,7 @@ import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { buildGlobalSchemaGraph } from "../libs/schema-data.mjs";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { beforeMaintenanceSubmitFocusSource } from "./fixtures/maintenance-submit-focus-history.mjs";
+import { beforeMaintenanceReadinessSource, beforeMaintenanceReadinessHtml } from "./fixtures/maintenance-readiness-history.mjs";
 
 const bytes = await readFile(new URL("./fixtures/maintenance-submit-focus-facts.json", import.meta.url));
 const f = JSON.parse(bytes);
@@ -29,6 +30,7 @@ async function harness() {
   const states = [], refs = [], pending = [], frames = [], movements = [], events = [];
   let stateIndex = 0, refIndex = 0, tree;
   const hooks = { ...React,
+    useSyncExternalStore(_subscribe, getSnapshot) { return getSnapshot(); },
     useState(initial) {
       const index = stateIndex++;
       if (!(index in states)) states[index] = initial;
@@ -58,8 +60,20 @@ async function harness() {
     for (const node of nodes(tree, node => node.props.ref)) node.props.ref.current = target(node.props.id);
     return tree;
   };
+  const assertReady = () => {
+    const fieldsets = nodes(tree, node => node.type === "fieldset");
+    assert.equal(fieldsets.length, 1, "one ready-client native fieldset");
+    const fieldset = fieldsets[0];
+    assert.equal(fieldset.props.disabled, false, "supplied client snapshot must enable controls");
+    const controls = nodes(tree, node => ["select", "input", "button"].includes(node.type));
+    const contained = nodes(fieldset, node => ["select", "input", "button"].includes(node.type));
+    assert.equal(controls.length, contained.length);
+    for (const control of controls) assert.ok(contained.includes(control));
+    for (const button of nodes(fieldset, node => node.type === "button")) assert.equal(button.props.disabled, false);
+  };
   const field = name => {
     const node = nodes(render(), n => n.props.id === `check-${name}`)[0];
+    assertReady();
     assert.ok(node, `real visible ${name} field`); return node;
   };
   const update = values => {
@@ -69,11 +83,13 @@ async function harness() {
   const flush = () => { while (frames.length) frames.shift()(); };
   const submit = () => {
     let prevented = false;
-    nodes(render(), node => node.type === "form")[0].props.onSubmit({ preventDefault() { prevented = true; } });
+    const form = nodes(render(), node => node.type === "form")[0];
+    assertReady(); form.props.onSubmit({ preventDefault() { prevented = true; } });
     assert.equal(prevented, true); return render();
   };
   const reset = () => {
     const button = nodes(render(), node => node.type === "button" && node.props.children === "Wis mijn invoer")[0];
+    assertReady();
     assert.equal(button.props.type, "button"); button.props.onClick(); return render();
   };
   render();
@@ -119,7 +135,7 @@ for (const [kind, input, title, service] of cases) test(`real ${kind} submit foc
     assert.deepEqual(h.events.at(-1), { name: "tool_enquiry_click", props: { location: "maintenance_check", region: input.region ?? "unknown", result: kind, service } });
     h.movements.length = 0;
     const eventsBeforeReset = structuredClone(h.events);
-    assert.equal(html(h.reset()), f.before.defaultHtml);
+    assert.equal(beforeMaintenanceReadinessHtml(html(h.reset())), f.before.defaultHtml);
     assert.deepEqual({ ...h.states[0] }, defaults); assert.equal(h.states[1], null);
     assert.deepEqual(h.movements, []); h.flush();
     assert.deepEqual(h.movements, [
@@ -157,7 +173,7 @@ for (const [label, input] of [["periodic", gas], ["invalid", { ...gas, lastDate:
     { action: "scroll", id: "check-region", options: { block: "center", behavior: "instant" } },
   ]);
   assert.deepEqual({ ...h.states[0] }, defaults); assert.equal(h.states[1], null);
-  assert.equal(html(h.render()), f.before.defaultHtml); assert.equal(h.events.length, 1);
+  assert.equal(beforeMaintenanceReadinessHtml(html(h.render())), f.before.defaultHtml); assert.equal(h.events.length, 1);
 });
 
 test("scheduled result reads the current committed ref and safely ignores a detached null ref", async () => {
@@ -178,10 +194,10 @@ test("independent frozen actual before preserves complete source and raw default
   assert.equal(hash(f.before.source), "00807b345ffc829eb10f5f1245c510106149a7df7696d0f556c94fda57bc075e");
   assert.equal(hash(f.before.defaultHtml), "d1f533c50127382aeb89cd81daa1cca6397a8bb91440099c685378450256f0eb");
   const source = await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8");
-  assert.equal(beforeMaintenanceSubmitFocusSource(source), f.before.source);
+  assert.equal(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(source)), f.before.source);
   assert.equal(beforeMaintenanceSubmitFocusSource(f.before.source), f.before.source);
   const compiled = await loadContactModule("components/maintenance-check.js", { "@/libs/maintenance-check.mjs": maintenance });
-  assert.equal(html(React.createElement(compiled.default)), f.before.defaultHtml);
+  assert.equal(beforeMaintenanceReadinessHtml(html(React.createElement(compiled.default))), f.before.defaultHtml);
   assert.equal(hash(pageRegistry), f.before.registrySha256);
   assert.equal(hash(pageRegistry.map(page => ({ path: page.path, metadata: buildPageMetadata(page) }))), f.before.metadataSha256);
   assert.equal(hash(buildSitemapEntries(pageRegistry)), f.before.sitemapSha256);
@@ -208,6 +224,6 @@ test("exact submit inverse leaves wrong options, missing actions, extra statemen
     ['Uw resultaat', 'Unexpected result'],
   ]) {
     assert.ok(source.includes(from), from);
-    assert.notEqual(hash(beforeMaintenanceSubmitFocusSource(source.replace(from, to))), f.before.sourceSha256, from);
+    assert.notEqual(hash(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(source.replace(from, to)))), f.before.sourceSha256, from);
   }
 });

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { track } from "@vercel/analytics";
 import { buildAnalyticsEvent } from "@/libs/analytics.mjs";
@@ -16,6 +16,9 @@ const selections = [
   ["changed", "Recent geplaatst, vervangen, verplaatst of gewijzigd?", [["unknown", "Weet ik nog niet"], ["no", "Nee"], ["yes", "Ja"]]],
 ];
 
+const subscribe = () => () => {};
+const clientReady = () => true;
+const serverReady = () => false;
 const emit = (name, props) => {
   const event = buildAnalyticsEvent(name, props);
   track(event.name, event.props);
@@ -25,6 +28,7 @@ const displayDate = (value) => new Intl.DateTimeFormat("nl-BE", { dateStyle: "lo
 export default function MaintenanceCheck() {
   const [input, setInput] = useState(initialInput);
   const [result, setResult] = useState(null);
+  const ready = useSyncExternalStore(subscribe, clientReady, serverReady);
   const resultPanel = useRef(null);
   const firstField = useRef(null);
   const showPower = input.region !== "brussel" && input.device === "central" && input.fuel !== "solid";
@@ -67,6 +71,8 @@ export default function MaintenanceCheck() {
       <form className="maintenance-check-form" onSubmit={submit} noValidate>
         <h2>Vul uw toestelgegevens in</h2>
         <p className="section-lead">Geen account nodig. De berekening blijft in uw browser; uw onderhoudsdatum wordt niet naar de analyse verstuurd. Contact is optioneel.</p>
+        <noscript><p className="warning-box">JavaScript is nodig voor de lokale berekening in uw browser. De invoer en beide knoppen zijn uitgeschakeld. Lees hieronder de onderhoudsregels, voorbereiding en officiële bronnen.</p></noscript>
+        <fieldset disabled={!ready} aria-label="Gegevens van de onderhoudscheck">
         <div className="form-grid">
           {selections.filter(([name]) => (name !== "power" || showPower) && (name !== "fuel" || showFuel)).map(([name, label, options]) => (
             <div className="field field-full" key={name}>
@@ -83,7 +89,8 @@ export default function MaintenanceCheck() {
             {result?.kind === "invalid" && <span id="check-date-error" className="form-status error">{result.summary}</span>}
           </div>
         </div>
-        <div className="button-row"><button type="submit" className="button">Bekijk mijn onderhoudsregel</button><button type="button" className="button button-secondary" onClick={reset}>Wis mijn invoer</button></div>
+        <div className="button-row"><button type="submit" className="button" disabled={!ready}>Bekijk mijn onderhoudsregel</button><button type="button" className="button button-secondary" onClick={reset} disabled={!ready}>Wis mijn invoer</button></div>
+        </fieldset>
       </form>
       <div className="maintenance-check-result" id="onderhoudsresultaat" ref={resultPanel} tabIndex={-1} role="status" aria-live="polite" aria-atomic="true">
         {result ? (
