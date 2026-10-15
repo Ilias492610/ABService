@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
@@ -67,7 +68,7 @@ test("Calenta context binds exact2018 BE models and labels companion as general 
 test("Calenta keeps existing Remeha title canonical status and actual13October date while description explains bounded expansion",()=>{
  const p=getPageDefinition(f.page.path),m=buildPageMetadata(p);assert.deepEqual(p,f.page);for(const value of [m,m.openGraph,m.twitter])assert.equal(value.description,f.page.description);
  assert.equal(m.alternates.canonical,"https://www.abservice24.be/foutcodes/remeha");assert.equal(m.robots.index,true);
- assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-13");
+ assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry)).find(e=>e.url===m.alternates.canonical).lastModified,"2026-10-13");
 });
 
 test("real SSR renders887 cards and all71 current Calenta meanings safe actions installer locators and separate links",async()=>{
@@ -89,5 +90,5 @@ test("Calenta manifest measures two originals and three entries without claiming
 });
 
 test("all19 old Remeha catalogs and other12guides retain actual captured hashes",()=>{
- const ids=new Set(f.catalogs.map(c=>c.id));assert.equal(hash(guide.catalogs.filter(c=>!ids.has(c.id))),f.before.preservation.remehaCatalogs);assert.equal(hash(faultGuides.filter(g=>g.slug!=="remeha")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path).map(beforeCustomerLocationRegistry)),f.before.preservation.otherRegistry);
+ const ids=new Set(f.catalogs.map(c=>c.id));assert.equal(hash(guide.catalogs.filter(c=>!ids.has(c.id))),f.before.preservation.remehaCatalogs);assert.equal(hash(faultGuides.filter(g=>g.slug!=="remeha")),f.before.preservation.otherGuides);assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path).map(beforeCustomerLocationRegistry)),f.before.preservation.otherRegistry);
 });

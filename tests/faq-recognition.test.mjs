@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry, beforeFaucetSitemapEntry, beforeFaucetCoreSources, beforeFaucetCitations, beforeFaucetSource } from "./fixtures/faucet-context-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
@@ -47,14 +48,14 @@ test("official lookup links carry the existing visible underline treatment",()=>
 test("both useful official entries reach central citation monitoring with exact labels",()=>{
   const citations=getCitedSources().filter(row=>urls.includes(row.href));
   assert.deepEqual(citations,[{label:"Vlaanderen: overzichtslijsten voor erkende brandstoftechnici",href:urls[0]},{label:"Leefmilieu Brussel: EPB-professionals per handeling",href:urls[1]}]);
-  assert.equal(Object.keys(beforeFaqRecognitionCoreSources(coreSources)).length,11);
-  assert.equal(beforeFaqRecognitionCitations(getCitedSources()).length,111);
+  assert.equal(Object.keys(beforeFaqRecognitionCoreSources(beforeFaucetCoreSources(coreSources))).length,11);
+  assert.equal(beforeFaqRecognitionCitations(beforeFaucetCitations(getCitedSources())).length,111);
 });
 
 // Wrong path/date/unknown metadata must stay visible instead of being broadly normalized.
 test("only the meaningful FAQ update gets a named date inverse and old protected sources remain exact",()=>{
   assert.equal(getPageDefinition("/faq").lastModified,"2026-10-14");
-  for(const [path,digest] of [["app/faq/page.js","1babbf6cc8406e2f9137fa4595258ff1bc66345f510202a3fbaa792424d57ca0"],["content/core-sources.mjs","27a21fd678e453be40d1dea2940f949c6224c63d86cc4d30138644b95f9aa43e"]]){const source=readFileSync(new URL("../"+path,import.meta.url),"utf8");assert.equal(hash(beforeFaqRecognitionSource(source,path)),digest);assert.notEqual(hash(beforeFaqRecognitionSource(source+"\n// unrelated drift\n",path)),digest);}
+  for(const [path,digest] of [["app/faq/page.js","1babbf6cc8406e2f9137fa4595258ff1bc66345f510202a3fbaa792424d57ca0"],["content/core-sources.mjs","27a21fd678e453be40d1dea2940f949c6224c63d86cc4d30138644b95f9aa43e"]]){const source=beforeFaucetSource(readFileSync(new URL("../"+path,import.meta.url),"utf8"),path);assert.equal(hash(beforeFaqRecognitionSource(source,path)),digest);assert.notEqual(hash(beforeFaqRecognitionSource(source+"\n// unrelated drift\n",path)),digest);}
   const base={path:"/faq",title:"old",status:"published"},current={...base,lastModified:"2026-10-14"};
   assert.deepEqual(beforeFaqRecognitionRegistry(current),base);
   for(const mutation of [{...current,lastModified:"2026-10-13"},{...current,path:"/wrong"}])assert.deepEqual(beforeFaqRecognitionRegistry(mutation),mutation);
@@ -73,18 +74,18 @@ test("answer and source inverses expose wrong new fields duplicates and unrelate
 // These whole-data hashes were captured before Task123, not regenerated from its changed consumers.
 test("complete before registry sitemap metadata schema core sources and citations survive only named additions",()=>{
   const checks=[
-    [pageRegistry.map(beforeFaqRecognitionRegistry),"f63dfda5e2a5d1f0f0a2d80cb2de9617997433e23d6736945545db1d3f0bd5e9"],
-    [buildSitemapEntries(pageRegistry).map(beforeFaqRecognitionSitemapEntry),"69537487d0ea4ca79f10f6f6105c22d9fae6cf8c776158f922b57436b3c53e7a"],
+    [pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry),"f63dfda5e2a5d1f0f0a2d80cb2de9617997433e23d6736945545db1d3f0bd5e9"],
+    [buildSitemapEntries(pageRegistry).map(beforeFaucetSitemapEntry).map(beforeFaqRecognitionSitemapEntry),"69537487d0ea4ca79f10f6f6105c22d9fae6cf8c776158f922b57436b3c53e7a"],
     [pageRegistry.map(page=>({path:page.path,metadata:buildPageMetadata(page)})),"39a6706db98a24de4bd46903b56ab96b49f56c89ba53e65ef60c03aedd877295"],
     [buildGlobalSchemaGraph(),"19e9d1cdec2007b78743d16741f43204878d3c0b3cf0e2c9228845e40f72a0f3"],
-    [beforeFaqRecognitionCoreSources(coreSources),"654d73e0b65e1d1f60960f597ae70e12f4963adc4daa5bfc667ccf72e0ed0e16"],
-    [beforeFaqRecognitionCitations(getCitedSources()),"6d15c0345e97b14b2e4a298af18e2f91f41f09ce602056657f79f1dc519f45c3"],
+    [beforeFaqRecognitionCoreSources(beforeFaucetCoreSources(coreSources)),"654d73e0b65e1d1f60960f597ae70e12f4963adc4daa5bfc667ccf72e0ed0e16"],
+    [beforeFaqRecognitionCitations(beforeFaucetCitations(getCitedSources())),"6d15c0345e97b14b2e4a298af18e2f91f41f09ce602056657f79f1dc519f45c3"],
   ];
   for(const [actual,digest] of checks)assert.equal(hash(actual),digest);
   const drift=structuredClone(pageRegistry);drift.find(page=>page.path==="/").description+=" drift";
-  assert.notEqual(hash(drift.map(beforeFaqRecognitionRegistry)),checks[0][1]);
+  assert.notEqual(hash(drift.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry)),checks[0][1]);
   const entries=buildSitemapEntries(pageRegistry);entries.find(entry=>entry.url==="https://www.abservice24.be/").priority=0;
-  assert.notEqual(hash(entries.map(beforeFaqRecognitionSitemapEntry)),checks[1][1]);
+  assert.notEqual(hash(entries.map(beforeFaucetSitemapEntry).map(beforeFaqRecognitionSitemapEntry)),checks[1][1]);
 });
 
 // A text-only compatibility adapter must never decode or hide changes in historical protected binaries.

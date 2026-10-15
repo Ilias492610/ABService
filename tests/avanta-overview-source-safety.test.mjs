@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
@@ -73,9 +74,9 @@ test("Remeha metadata and substantive sitemap date change without other registry
   assert.equal(p.description, f.description); assert.equal(p.lastModified, "2026-10-12");
   assert.equal(m.description, f.description); assert.equal(m.openGraph.description, f.description); assert.equal(m.twitter.description, f.description);
   assert.equal(m.alternates.canonical, "https://www.abservice24.be/foutcodes/remeha"); assert.equal(m.robots.index, true);
-  assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(p => p.url === m.alternates.canonical).lastModified, "2026-10-12");
+  assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry)).find(p => p.url === m.alternates.canonical).lastModified, "2026-10-12");
   assert.equal(hash(beforeAvantaMetadata(m, "remeha")), f.preservation.remeha.metadata);
-  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry)), f.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry)), f.preservation.allRegistry);
 });
 
 test("all659 Remeha SSR cards preserve original leaves outside exact Avanta changes", async () => {

@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
@@ -84,9 +85,9 @@ test("only home and contact gain actual13October sitemap dates while complete re
     assert.deepEqual(buildPageMetadata(current), metadata);
     assert.deepEqual(page.path === "/" ? homeRoute.metadata : contactRoute.metadata, metadata);
   }
-  assert.deepEqual(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeCustomerLocationRegistry), f.before.registry);
-  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeCustomerLocationRegistry)), f.before.allRegistrySha256);
-  const sitemap = buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).map(beforeSanitaryReferralSitemapEntry);
+  assert.deepEqual(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeCustomerLocationRegistry), f.before.registry);
+  assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeCustomerLocationRegistry)), f.before.allRegistrySha256);
+  const sitemap = buildSitemapEntries(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry)).map(beforeSanitaryReferralSitemapEntry);
   assert.equal(sitemap.length, f.before.sitemap.length);
   assert.deepEqual(sitemap.map(beforeCustomerLocationSitemapEntry), f.before.sitemap);
   assert.equal(hash(sitemap.map(beforeCustomerLocationSitemapEntry)), f.before.sitemapSha256);

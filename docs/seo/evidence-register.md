@@ -1,5 +1,36 @@
 # Evidence Register
 
+## 15 oktober 2026 — Task124 lokale bewijsset, geen persoonsbewijs
+
+Private volledige before366/SSR/registry/sitemap/schema/citations-capture en de
+onafhankelijke live-before bewaren de ongewijzigde basis. Belgische badkamer-/keuken-
+FAQ-answers in gewone browser daadwerkelijk uitgeklapt/gelezen; processed-web en
+directe403-responses blijven aparte registraties. Geen technische installatie- of
+persoonlijke erkenningscontrole door een vakman ontstaan. Task124-RED/first-full36-
+failures/adapters/exactbehoud/696green/lint0/prod0/build170/local82/93/112 en echte
+desktop/mobiele disclosure-/linkreceipts zijn behouden. Oude fixtures/hashliterals,
+integrale bronnen, checkboxstatussen en eerdere Task123-releasebackfills blijven
+behouden. Eén hele-cohortreview en exact hosted/provider/canonicalbewijs nog open;
+geen nieuwe IndexNow-melding vóór livegate. Geen volledige WP-/resultaatclaim.
+
+## 14 oktober 2026 — Task123 exact releasebewijs en behouden failures
+
+Private frozen44cohort/solefinalreview/root31rulings, format-onlyrelease44manifest
+(éénEOFnewline,43hashes gelijk), committed366manifest en exactCI38638559504 leggen
+f67d8c07f5226ab266b5764edb31d7a84efa8d36 vast. ProviderReady/Production/Current/fullSHA/
+wwwDOM en tweeProductionstatuses success. Canonical/localfullmain, exactoneanswer-
+oldmaininverse, footerbytebehoud en80XMLnamedFAQdateinverse afzonderlijk bevestigd.
+Livekeyboard/toggle/beelden/delayed2authorityURL-title-H1receipts/console/cleanup
+behouden. Originele livecrawl exit1 met2assetfetchfails blijft ongewijzigd; exact2
+live/local assetprobe200PNG1200×630/bytegelijk sluit alleen die huidige transport-
+waarnemingen, geen retrospectieve exit0 of vastgestelde netwerkoorzaak. Provider-
+tabinitialwait/binding, sourcewait/focusdeadline/wrap/initialclickpending en stagedEOF-
+gate/localeongepubliceerde eerstecommit blijven als originele tussenstappen bestaan.
+Publicproof200textplain/matchingkey en éénFAQpreview/send200received bewaren exacte
+scope; geen indexeringsbewijs. Eigentabs12/11/reset en server73125exit130/nolisten.
+Geen account-/prijs-/persoon-/physical-/case-/FR-/field-/effectgate gesloten. Backfill lokaal.
+
+
 ## 14 oktober 2026 — Task122/123 nieuwe richting en begrensd FAQ-bewijs
 
 Direct eigenaarverzoek ligt vast in meesterplan/accountregister/businessbrief/topic-

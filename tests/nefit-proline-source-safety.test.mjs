@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
@@ -88,7 +89,7 @@ test("real Nefit metadata and sitemap date only the genuine changed model-bound 
   assert.equal(meta.alternates.canonical, "https://www.abservice24.be/foutcodes/nefit-bosch");
   assert.equal(page.lastModified, "2026-10-11");
   assert.equal(meta.robots.index, true);
-  assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(e => e.url === meta.alternates.canonical).lastModified, "2026-10-11");
+  assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry)).find(e => e.url === meta.alternates.canonical).lastModified, "2026-10-11");
   assert.equal(hash(beforeNefitMetadata(meta, "nefit-bosch")), facts.preservation.metadata);
 });
 test("full54-row SSR, unchanged cards and each source/contact element preserve genuine pre-edit HTML", async () => {
@@ -104,6 +105,6 @@ test("full genuine13guides/82registry preserve every leaf except declared Nefit 
   assert.equal(hash(beforeNefitGuide(guide).codes), facts.preservation.codes);
   assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).filter(g => g.slug !== "nefit-bosch").map(beforeIntergasCountGuide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide)), facts.preservation.otherTwelveGuides);
   assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide).map(beforeIntergasCountGuide)), facts.preservation.allGuides);
-  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry)), facts.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry)), facts.preservation.allRegistry);
   assert.equal(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).reduce((n, g) => n + g.codeEntryCount, 0), 1596);
 });

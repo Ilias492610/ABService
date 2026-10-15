@@ -1,5 +1,50 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 15 oktober 2026 — zelfstandige kraancontext lokaal klaar, bewijsgrenzen behouden
+
+De eigenaar vraagt zelfstandig door te werken en een logisch klinkende invulling
+voor persoonlijke erkenning/fysieke vakmancontrole. Redactionele uitleg is zelfstandig
+uitgewerkt, maar niet-bestaande bevoegdheden of niet-uitgevoerde controles worden niet
+als feit gepubliceerd of als bewijs afgevinkt. Die oorspronkelijke gates blijven open.
+Accounts en echte prijsvoorwaarden blijven zoals op14oktober uitgesteld voor later.
+
+Task124 vult alleen de observatiecomponent van een lekkende kraan aan op bestaande
+sanitaire route: één native FAQ met twee gelezen Belgische fabrikantbronnen, zonder
+diagnose, universeel normaal-/veiligheidsadvies, onderdelen- of reparatieprocedure.
+Alleen sanitaire inhoudsdatum15oktober; oude inhoud/media/contact/scope behouden.
+696Node24tests/lint0/prod0/build170/local82/93/112 en gerichte1280/390/320disclosure-
+checks slagen. Oude main/footer/80XMLrecords en data exact behouden na uitsluitend
+benoemde toevoegingsinverses; oude fixtures/hashliterals niet vervangen. Bronbrowser-
+body gelezen tegenover directe403 blijft expliciet gescheiden. Eén onafhankelijke
+hele-cohortreview en exacte commit/hosted/provider/livegate volgen vóór publicatie;
+nog geen IndexNow. Geen van de137oudecheckboxes gewijzigd of volledigeWP afgesloten.
+Volgende: deze afgebakende release afronden; daarna alleen een volgende zelfstandige
+taak met aantoonbare nuttige bron-/gebruikersmeerwaarde, geen herhaalde login/prijsvraag.
+
+## 14 oktober 2026 — Task122/123 afgebakend geaccepteerd; veilige inhoud gaat door
+
+Accounttoegang en echteprijsbeleid blijven hieronder eigenaar-uitgesteld voor later.
+FAQ-/model-/technische bronuitleg wordt zelfstandig uitgewerkt. Acht concrete
+vraagthema's geleverd; één nieuwe individuele erkenningslookup op bestaandeFAQ live
+op exactmain `f67d8c07f5226ab266b5764edb31d7a84efa8d36`. Sole44cohortreview ReadyYes,
+31grenzen afzonderlijk beoordeeld; alleenEOFblank in dossier verwijderd,43hashes gelijk.
+691Node24tests/exactCI38638559504/lint0/prod0/build170/local-hosted82/93/112. Bestaande
+primaire Vercel8Pndyte4QmrUx9aBjgBama4UPAeg Ready/Production/Current/fullSHA/www;
+beide bestaandeProductionstatuses success. Canonicalwholemain/localmatch/oldmain-
+footer/XMLbehoud na alleen éénnieuwantwoord/FAQdatum-inverse;13FAQ's/80sitemapURLs.
+Live1280/390/320 bronlinkfocus/EnterSpace bevestigd, geen hele native-/AT-/fieldclaim.
+Originele volledige livecrawl2assetfetchfails behouden; twee gerichte200/PNG/byte-
+gelijke live/localchecks aanvaarden alleen die huidige ontbrekende waarnemingen,
+niet een nieuwe volledige exit0-run. Autoriteitsbestemmingen uiteindelijkcorrect;
+wait-/focusdeadline bewaard. EénFAQ IndexNow200received na geldige publiekeproof,
+geen indexeringsbewijs/anderebatch. Alle137checkboxes/vierintegralen behouden.
+Volgende: zelfstandige veilige brongebonden bestaande-routevragen/modelcatalogi waar
+werkelijke meerwaarde bestaat; geen herhaalde prijs-/unlockvraag of oudeaccount-first-
+replay. Persoonserkenning/fysieke controle/cases/Franse menselijke review/Task51/
+source403/field/zakenresultaten blijven eigen gates. Deze releasebackfill lokaal
+tot volgende echte productrelease; geen geheleWP/percentage/morgenbelofte.
+
+
 ## 14 oktober 2026 — Task123 één FAQ lokaal klaar; onafhankelijke releasegate open
 
 WP07/10/11: eigen brongebonden antwoord over individuele erkenningscontrole voor

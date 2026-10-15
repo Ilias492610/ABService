@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
@@ -17,7 +18,7 @@ const hash=v=>createHash("sha256").update(typeof v==="string"?v:JSON.stringify(v
 // Break: inverse drops unknown fields or masks an old row instead of only this cohort.
 test("Calenta inverse restores complete actual19catalog816row guides registry metadata SSR and manifest hashes",async()=>{
  assert.equal(hash(faultGuides.map(beforeCalentaAceGuide)),f.before.preservation.allGuides);
- assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeCalentaAceRegistry)),f.before.preservation.allRegistry);
+ assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeCalentaAceRegistry)),f.before.preservation.allRegistry);
  assert.deepEqual(beforeCalentaAceMetadata(buildPageMetadata(getPageDefinition(f.page.path)),"remeha"),f.before.metadata);
  assert.equal(hash(beforeCalentaAceHtml(await renderFaultGuide("remeha"),"remeha")),f.before.preservation.remehaHtml);
  const m=beforeCalentaAceManifest(manifest);assert.equal(hash(m),f.before.preservation.allManifest);assert.equal(hash(m.entries),f.before.preservation.allManifestEntries);assert.equal(hash(m.snapshots),f.before.preservation.allSnapshots);

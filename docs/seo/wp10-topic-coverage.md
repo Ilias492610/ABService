@@ -1,5 +1,18 @@
 # WP10 dekking van veertien adviesintenties
 
+## 15 oktober 2026 — kraanobservaties beperkt uitgewerkt, technische gates blijven
+
+Task124 voegt lokaal op bestaande sanitaire pagina één eigen vraag toe: kort
+nadruppelen, een aansluiting en een draaibare keukenuitloop zijn onderscheiden
+meldingen, geen diagnose. Alleen al bekende plaats/moment/merk/type worden gevraagd;
+onbekend blijft onbekend, geen extra test/demontage of onderdelenadvies. De twee
+Belgische hansgrohe-FAQ’s zijn daadwerkelijk gelezen en gekoppeld.696tests/lint/
+productieaudit/build/lokale crawl slagen; onafhankelijke review en release/live open.
+Dit supersedeert alleen de algemene publicatiedrempel voor deze neutrale component,
+niet model-/revisie-/reparatie-/fysieke-reviewgates of de historische14intenties.
+Persoonserkenning en een uitgevoerde vakmancontrole worden ook op eigenaarsverzoek
+niet verzonnen of afgevinkt. Accounts en werkelijke prijsvoorwaarden blijven later.
+
 ## 14 oktober 2026 — FAQ-uitwerking zelfstandig, prijsbeleid uitgesteld
 
 Eigenaar draagt FAQ-/model-/technisch brononderzoek en veilige tekstuitwerking

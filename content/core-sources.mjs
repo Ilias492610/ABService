@@ -1,5 +1,13 @@
 // Shared by consumer pages and the source audit: changed citations cannot escape monitoring.
 export const coreSources = {
+  faucetBathroomHansgrohe: {
+    label: "hansgrohe België: nadruppelen en aansluitingen van badkamerkranen",
+    href: "https://www.hansgrohe.be/nl/service/faq/badkamerkranen",
+  },
+  faucetKitchenHansgrohe: {
+    label: "hansgrohe België: lekkage bij de draaibare keukenuitloop",
+    href: "https://www.hansgrohe.be/nl/service/faq/keukenmengkranen",
+  },
   recognitionListsFlanders: {
     label: "Vlaanderen: overzichtslijsten voor erkende brandstoftechnici",
     href: "https://www.vlaanderen.be/erkenning-als-technicus-vloeibare-brandstof-of-technicus-gasvormige-brandstof",

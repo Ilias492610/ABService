@@ -72,7 +72,7 @@ export const pageRegistry = Object.freeze([
   },
   {
     path: "/installaties/sanitair",
-    lastModified: "2026-10-14",
+    lastModified: "2026-10-15",
     status: CONTENT_STATUS.PUBLISHED,
     title: "Sanitaire installatie en loodgieterswerk | AB Service",
     description:

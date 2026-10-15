@@ -1,5 +1,51 @@
 # AB Service SEO QA Report
 
+## 15 oktober 2026 — Task124 lokale verificatie, releasegate open
+
+Eén native kraanvraag op bestaande `/installaties/sanitair`, twee exacte Belgische
+fabrikantbronnen en alleen sanitaire15oktober-lastmod. Bestaande4secties, waarschuwing,
+echte foto, stappen, CTA’s en scope behouden; geen universele normale-drup-/diagnose-/
+onderdelen-/garantieclaim. Gehele vóór-SSR en primaire productieserver-main/footer/
+80recordXML behouden via alleen exacte nieuwe FAQ/tweelinks/datum-inverse. Metadata/
+schema en overige registry/citations behouden, oude fixtures/hashliterals intact.
+Echte RED→GREEN5tests; eerste volledige run660/696 had36 oude-pinfailures, behouden;
+na exacte benoemde historische adapters696/696,0fail/skipped/cancelled. Lint0,
+productieaudit0, build170 en lokale crawl82/93/112. Task51dev/lifecycle niet opgelost.
+1280/390/320 geen horizontale overflow; native Enter/Space opent/sluit de disclosure.
+Beide320fabrikantlinks zichtbaar/vrij bij lineboxhit,3pxfocus en gewone lijststijl;
+geen underlineclaim, volle nativeketen, assistive-technologie- of fieldbewijs.
+Gewone bronbrowser toont gelezen antwoorden; directe ongeauthenticeerde bronrequests
+blijven403. Toolinterne telemetryfouten niet als product-/bronfouten geclassificeerd.
+Onafhankelijke review, exacte commit/hostedCI/providerReady/live zijn nog open.
+Persoonserkenning/fysieke vakmanreview/echte AB-prijzen zijn niet door tekst of tests
+bevestigd. Geen gehele WP of indexering afgevinkt.
+
+## 14 oktober 2026 — Task123 live geaccepteerd binnen expliciete bewijsgrenzen
+
+Commit `f67d8c07f5226ab266b5764edb31d7a84efa8d36` exact main/remote.44filecohort,
+sole review zonder bevindingen,31grenzen afzonderlijk beoordeeld. Een lege EOF-regel
+in nieuwdossier is na staged-whitespacefout verwijderd;43andere hashes gelijk en
+oude frozenreview/localeongepubliceerde commit bewaard. Geen inhoudelijke fix/review2.
+691/691freshprecommit en exactCI38638559504 met Node24.21.0/lint0/prod0/build170/
+hosted82/93/112. Task51 blijft9dev/lifecycle. Primaire provider8Pndyte4QmrUx9aBjgBama4UPAeg
+Ready/Production/Current, volledigeSHA/www; tweeGitHubProductionstatuses success.
+Canonical200 volledige main bytegelijk lokaleproductie,13FAQ's; verwijderen alleen
+de gevalideerde nieuwe disclosure herstelt gehele oldmain. Footer bytegelijk; gehele
+80recordXML behoud na alleen benoemdeFAQlastmod14Oct-inverse, geen brede normalizer.
+Live zes gespreide1280/390/320-targets met vrije lineboxhits/underline/3px/nooverflow;
+native320Enterclose/Spaceopen. Geen ononderbroken native-/AT-/alledevicesclaim.
+Volledige originele liveaudit eindigde exit1 met uitsluitend Vaillant/Bulex-asset
+fetchfailed. Twee daaropvolgende gerichte live/lokale GETs geven200 PNG1200×630 en
+identieke bytes; geen productfix/netwerkoorzaak aangenomen. Deze samengestelde
+begrensde acceptatie vervangt niet het oorspronkelijke mislukte runlog met groen.
+Beide overheidsbestemmingen uiteindelijk URL/titel/H1 bevestigd; oorspronkelijke
+wait-/focusdeadline/klikpending/wrapreceipt bewaard, exacteBrusselsactivatieoorzaak
+niet bewezen. Twee laatst geregistreerde extension-originconsolefouten behouden,
+geen algemene productconsole0. Eigentabs12/11 gesloten, viewportreset, server73125
+exit130 gestopt en3190nolisten. EénFAQ-IndexNow200received na publiekeproof200/plain/
+matchingkey; niet geïndexeerdverklaard. Geen anderebatch. Deze backfill lokaal.
+
+
 ## 14 oktober 2026 — Task122/123 zelfstandig FAQ-werk; lokale gate groen
 
 Eigenaar stelde accounttoegang en echte prijzen uit; geen nieuw login-/save-/DNS-/

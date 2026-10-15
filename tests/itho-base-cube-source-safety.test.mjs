@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
@@ -115,9 +116,9 @@ test("substantive Itho metadata uses realdate and preserves exact genuine regist
   const page = getPageDefinition("/foutcodes/itho-daalderop"), meta = buildPageMetadata(page);
   assert.equal(meta.description, f.description); assert.equal(meta.openGraph.description, f.description); assert.equal(meta.twitter.description, f.description);
   assert.equal(page.lastModified, "2026-10-11"); assert.equal(meta.alternates.canonical, "https://www.abservice24.be/foutcodes/itho-daalderop");
-  assert.equal(meta.robots.index, true); assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(e => e.url === meta.alternates.canonical).lastModified,"2026-10-11");
+  assert.equal(meta.robots.index, true); assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry)).find(e => e.url === meta.alternates.canonical).lastModified,"2026-10-11");
   assert.equal(hash(beforeIthoMetadata(meta,"itho-daalderop")),f.preservation.metadata);
-  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry)),f.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry)),f.preservation.allRegistry);
 });
 
 test("all26 SSR cards and all13 guide leaves restore exact genuine c7b44be capture", async () => {

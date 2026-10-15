@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
@@ -66,7 +67,7 @@ test("real Intergas metadata and sitemap expose selected model context and only 
   assert.equal(meta.alternates.canonical,"https://www.abservice24.be/foutcodes/intergas");
   assert.equal(meta.robots.index,true);
   assert.equal(page.lastModified,"2026-10-11");
-  assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaqRecognitionRegistry)).find(e=>e.url===meta.alternates.canonical).lastModified,"2026-10-11");
+  assert.equal(buildSitemapEntries(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry)).find(e=>e.url===meta.alternates.canonical).lastModified,"2026-10-11");
   assert.equal(hash(beforeIntergasMetadata(meta,"intergas")),facts.preservation.metadata);
 });
 test("actual Intergas SSR retains all11 groups and source/contact while exposing the display context", async () => {
@@ -83,6 +84,6 @@ test("actual Intergas SSR retains all11 groups and source/contact while exposing
 test("allother12 complete guides and82registry preserve genuine64d7 captures outside the exact Intergas leaves", () => {
   assert.equal(hash(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).filter(g=>g.slug!=="intergas").map(beforeCalentaGuide).map(beforeAvantaGuide).map(beforeViessmannGuide).map(beforeAtagGuide).map(beforeIthoGuide).map(beforeFerroliGuide).map(beforeNefitGuide)),facts.preservation.otherTwelveGuides);
   assert.equal(hash(beforeIntergasGuide(guide)),facts.preservation.guide);
-  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry)),facts.preservation.allRegistry);
+  assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry)),facts.preservation.allRegistry);
   assert.equal(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).reduce((n,g)=>n+g.codeEntryCount,0),1596);
 });

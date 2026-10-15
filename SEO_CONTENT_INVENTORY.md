@@ -1,5 +1,29 @@
 # AB Service SEO Content Inventory
 
+## 15 oktober 2026 — beperkte kraancontext lokaal toegevoegd
+
+`/installaties/sanitair` krijgt één native FAQ over kort nadruppelen versus lekken
+bij een aansluiting of draaipunt. Alleen al bekende waarnemingen en onbekende context;
+geen extra testen/demontage, diagnose of bewijs van een defect onderdeel. Twee gelezen
+Belgische hansgrohe-FAQ’s centraal bewaakt:115citations versus113 voordien. Alleen
+sanitaire inhoudsdatum15oktober; geen nieuwe URL, prijs, casus of bevoegdheidsclaim.
+696tests/lint/productieaudit/build/lokale crawl slagen; review en release/live nog open.
+Dit vult slechts de observatie-/intakecomponent aan, niet volledige technische
+kraandekking of WP10/11-acceptatie. Werkelijk persoons-/vakmanbewijs blijft nodig.
+
+## 14 oktober 2026 — Task122/123 brongebonden FAQ live; overige gates onveranderd
+
+Acht vragen uitgewerkt; bestaande antwoorden behouden en één nieuwe erkenningslookup
+op `/faq` gepubliceerd op exact `f67d8c07f5226ab266b5764edb31d7a84efa8d36`.13nativeFAQ's,
+viergroepen/oude12/CTA's/links/meta/schema intact; centrale bronnen113/oude111 behouden.
+AlleenFAQcontentdatum14Oct, geen nieuwe URL/model/case/prijs/persoonsclaim. Review/
+691tests/exactCI/primairReady/fullSHA/www/canonical/mobielefocus geverifieerd.
+Originele livecrawl2assetfetchfails bewaard; twee gerichte200/PNG/bytegelijke checks
+vullen die beperkte waarnemingen aan, geen nieuwe volle exit0-livecrawlclaim.
+AlleenFAQ IndexNow200received, niet indexeringsbewijs. Accounttoegang enprijsbeleid
+voor later; persoonlijke/fysieke/Franse/case/field/effectgates open. Backfill lokaal.
+
+
 ## 14 oktober 2026 — Task122/123 FAQ-onderzoek en één bruikbare aanvulling
 
 [Acht vraagthema's en eigen korte antwoorden](docs/seo/wp07-10-11-self-directed-faq.md)

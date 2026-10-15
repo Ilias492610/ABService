@@ -1,5 +1,54 @@
 # AB Service SEO Changelog
 
+## 15 oktober 2026 — Task124 kraanvraag lokaal gecontroleerd
+
+- Bron/actie: Belgische hansgrohe-FAQ’s over badkamer- en keukenkranen daadwerkelijk
+  geopend en relevante antwoorden gelezen. Eén eigen vraag op de bestaande sanitaire
+  pagina onderscheidt al waargenomen lekplaats en moment, zonder diagnose, onderdelen-
+  of doe-het-zelfadvies. Twee fabrikantverwijzingen centraal opgenomen; alleen de
+  inhoudsdatum van sanitair naar 15 oktober. Geen nieuwe URL of verzonnen erkenning.
+- Verificatie: echte RED→GREEN; 696 Node24-tests, lint, productieaudit zonder meldingen,
+  build170 en lokale crawl82/93/112 slagen. Gehele oude main/footer en80sitemaprecords
+  blijven intact na uitsluitend exacte toevoegings-/datumvergelijking. Toetsenbord-
+  disclosure op1280/390/320 en beide320bronlinks vrij met3pxfocus; geen volledige
+  native-/AT-/fieldclaim. Directe bron-HTTP403 blijft apart van gelezen browserbody.
+- Volgende: één onafhankelijke hele-cohortreview, daarna pas gecontroleerde publicatie
+  en exact hosted/provider/livebewijs. IndexNow hoogstens één gewijzigde sanitaire URL
+  na livecontrole en geldige bewijsfile; nog niet ingestuurd.
+- Open: persoonlijke erkenning en uitgevoerde fysieke controle worden niet verzonnen.
+  Accounttoegang en echt prijsbeleid blijven uitgesteld; case-/Franse review-/Task51-/
+  bron-/field-/zakelijke-effectgates blijven afzonderlijk. Geen volledige WP-afsluiting.
+
+## 14 oktober 2026 — Task122/123 gepubliceerd; eigenaar-uitstel blijft leidend
+
+- Bron/actie: accounttoegang en AB-prijsbeleid voor later in meesterplan vastgelegd;
+  acht concurrentvraagthema's zelfstandig uitgewerkt, geen AB-frequentie/model-
+  populariteit of concurrentbeleid verzonnen. Eén praktische erkenningslookup opFAQ.
+- Release: exact main/remote `f67d8c07f5226ab266b5764edb31d7a84efa8d36`,44bestanden;
+  sole whole-cohortreview ReadyYes/geen herstelpunten, alle31 grenzen afzonderlijk
+  beoordeeld. Alleen één lege dossier-eindregel na stagecontrole verwijderd;43andere
+  reviewhashes exact, originele review/ongepubliceerde commit/formatreceipt behouden.
+- Verificatie:691lokaal/exactCI38638559504, Node24/lint0/prod0/build170/crawl lokaal-
+  hosted82/93/112. Beide bestaande Productiondeployments7077394187/7077387130 success;
+  primair8Pndyte4QmrUx9aBjgBama4UPAeg Ready/Production/Current/fullSHA/www werkelijk
+  gezien. Canonical200/13FAQ's gelijk aan lokale volledige main; oude main/footer
+  en80XMLrecords hersteld na uitsluitend exactnieuwantwoord/FAQdatum-inverses.
+  Live1280/390/320 bronlinkfocus vrij/underline/3px/nooverflow; Enter sluit/Space opent.
+  Oorspronkelijke livecrawl faalt op twee merkassets-fetches; beide gerichte nieuwe
+  live/lokale GETs200/PNG1200×630/bytegelijk. Dat is begrensde gecombineerde controle,
+  niet een nieuwe volledige exit0-livecrawl of bewezen netwerkoorzaak.
+- Grenzen: autoriteitsbestemmingen uiteindelijk juiste URL/titel/H1; initiële wait/
+  Brusselsfocusdeadline behouden, geen directe2klik-/hele-native-/AT-/fieldclaim.
+  Twee laatst waargenomen extensionconsolefouten bewaard. Alleen eigentabs12/11 en
+  server73125 afgesloten/reset; geen3190listener. Geen account-/providerconfigwijziging.
+- Eén uitsluitendFAQ-preview/melding na geldig publiek bewijs: HTTP200received,
+  indexering niet bevestigd. Geen docs/runtime/andereongewijzigdeURL-batch.
+- Volgende: veilige bestaande-routevragen/modelbronwerk zelfstandig; account/prijzen
+  eigenaar-uitgesteld. Persoonsbewijs/fysieke controle/cases/Franse review/Task51/
+  source403/field/effect blijven eigen gates. Geen geheleWP/percentage/einddatum.
+  Deze releasebackfill blijft lokaal tot de volgende echte productrelease.
+
+
 ## 14 oktober 2026 — Task123 lokale FAQ-aanvulling; review/release nog open
 
 - Bron: rechtstreeks zelfstandige FAQ-opdracht, Task122-vraagonderzoek en gelezen

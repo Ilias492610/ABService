@@ -63,6 +63,10 @@ export default function SanitairPage() {
         { title: "Scope", text: "Spreek af wat wordt geplaatst en afgewerkt." },
         { title: "Uitvoering", text: "Werk en controle volgen de overeengekomen scope." },
       ]}
+      faq={[[
+        "Wat is het verschil tussen nadruppelen en lekken bij een aansluiting?",
+        "De Belgische FAQ’s van hansgrohe behandelen kort nadruppelen uit de uitloop apart van lekkage bij de aansluitingen van een opbouwmengkraan en water aan het draaibare deel van een keukenmengkraan na het openen. Dat zijn verschillende meldingen, geen diagnose voor uw kraan. Beschrijf alleen wat u al hebt gezien: de lekplaats, wanneer het gebeurt en of het doorgaat nadat de kraan dicht is. Weet u dat niet, vermeld dan onbekend; ga niet extra testen of demonteren. Vermeld het merk en het type of artikelnummer als u die al kent. Een foto en deze observaties bewijzen niet welk onderdeel defect is; modelgebonden controle blijft nodig.",
+      ]]}
       relatedLinks={[
         { label: "Water- en verwarmingsleidingen plaatsen of aanpassen", href: "/diensten/leidingen" },
         { label: "Een waterlek laten herstellen", href: "/diensten/waterlek-herstellen" },
@@ -72,7 +76,7 @@ export default function SanitairPage() {
         { label: "Tarieven en offertes", href: "/tarieven" },
         { label: "Contact opnemen", href: "/contact" },
       ]}
-      sourceLinks={[coreSources.sanitaryOdourAquafin, coreSources.sewerOperatorFlanders]}
+      sourceLinks={[coreSources.sanitaryOdourAquafin, coreSources.sewerOperatorFlanders, coreSources.faucetBathroomHansgrohe, coreSources.faucetKitchenHansgrohe]}
     />
   );
 }

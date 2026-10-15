@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
 // Reconstruct only independently tested Task83 before earlier named history inverses.
@@ -71,7 +72,7 @@ test("ATAG metadata uses substantive realdate and restores exact genuine prior l
   assert.equal(meta.description,f.description);assert.equal(meta.openGraph.description,f.description);assert.equal(meta.twitter.description,f.description);
   assert.equal(page.lastModified,"2026-10-11");assert.equal(meta.alternates.canonical,"https://www.abservice24.be/foutcodes/atag");assert.equal(meta.robots.index,true);
   assert.equal(buildSitemapEntries(pageRegistry.map(beforeAtagManualsRegistry)).find(e=>e.url===meta.alternates.canonical).lastModified,"2026-10-11");
-  assert.equal(hash(beforeAtagMetadata(meta,"atag")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry)),f.preservation.allRegistry);
+  assert.equal(hash(beforeAtagMetadata(meta,"atag")),f.preservation.metadata);assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry)),f.preservation.allRegistry);
 });
 test("all14 SSR cards and entire13-guide preservation restore genuine64c1302 capture",async()=>{
   const html=beforeAtagManualsHtml(await renderFaultGuide("atag"),"atag");assert.equal((html.match(/class="fault-code-card"/g)||[]).length,14);

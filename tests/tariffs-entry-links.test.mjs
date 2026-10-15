@@ -1,3 +1,4 @@
+import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -40,7 +41,7 @@ test("navigation additions preserve every prior tariffs element and meaningful-c
   for (const anchor of tariffEntryAnchors) assert.equal(html.split(anchor).length - 1, 1);
   assert.equal(hash(beforeTariffEntryLinks(html)), beforeHash);
   assert.equal(hash(tariffsRoute.metadata), "475a13e46d8e7a6083ae262229f178035915b059b2c564cfc746f55c84545499");
-  assert.equal(hash(pageRegistry.map(beforeFaqRecognitionRegistry)), "f63dfda5e2a5d1f0f0a2d80cb2de9617997433e23d6736945545db1d3f0bd5e9");
+  assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry)), "f63dfda5e2a5d1f0f0a2d80cb2de9617997433e23d6736945545db1d3f0bd5e9");
   assert.equal(getPageDefinition("/tarieven").lastModified, "2026-10-11");
 });
 
