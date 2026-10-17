@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import PrivacyAnalytics from "@/components/privacy-analytics";
+import CookieConsent from "@/components/cookie-consent";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import JsonLd from "@/components/json-ld";
@@ -49,7 +50,7 @@ export default function RootLayout({ children }) {
           Ga naar de inhoud
         </a>
         <SiteHeader />
-        <main id="main-content">{children}</main>
+        <main id="main-content"><CookieConsent />{children}</main>
         <SiteFooter />
         <FloatingTrustSignals />
         {process.env.VERCEL ? <PrivacyAnalytics /> : null}

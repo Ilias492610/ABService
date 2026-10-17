@@ -4,6 +4,7 @@ import { brandServices } from "./brand-services.mjs";
 import { getPublishedProjects } from "./projects.mjs";
 import { adviceGuides } from "./advice-guides.mjs";
 import { localizedPageCandidates } from "./localization.mjs";
+import { COOKIE_POLICY_UPDATED } from "./cookie-policy-date.mjs";
 
 export const CONTENT_STATUS = Object.freeze({
   PUBLISHED: "published",
@@ -386,7 +387,7 @@ export const pageRegistry = Object.freeze([
   })),
   {
     path: "/privacy-policy",
-    lastModified: "2026-10-13",
+    lastModified: COOKIE_POLICY_UPDATED,
     status: CONTENT_STATUS.PUBLISHED,
     title: "Privacybeleid | AB Service",
     description:

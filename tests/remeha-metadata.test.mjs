@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 // Reconstruct only independently tested Task83 before earlier named history inverses.
 import {beforeTzerraRegistry} from "./fixtures/tzerra-ace-matic-history.mjs";
 const getPageDefinition=path=>beforeTzerraRegistry(liveGetPageDefinition(path));
@@ -33,3 +33,4 @@ test("Remeha sitemap records the actual substantive catalog change without datin
     assert.equal(beforeAcvRegistry(getPageDefinition(path)).lastModified, undefined);
   }
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

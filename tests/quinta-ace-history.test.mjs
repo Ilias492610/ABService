@@ -1,4 +1,4 @@
-const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const pageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -55,3 +55,4 @@ test("Quinta inverse is a no-op outside Remeha and idempotent after reversal",as
  const restored=beforeQuintaManifest(manifest);assert.deepEqual(beforeQuintaManifest(restored),restored);
  const guide=beforeQuintaGuide(getFaultGuide("remeha"));assert.deepEqual(beforeQuintaGuide(guide),guide);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

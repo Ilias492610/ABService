@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -104,3 +104,4 @@ test("original ATAG overview and other12guide/registry values retain actual pre-
  assert.equal(hash(faultGuides.filter(g=>g.slug!=="atag")),f.before.preservation.otherGuides);
  assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path)),f.before.preservation.otherRegistry);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

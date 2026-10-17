@@ -1,4 +1,4 @@
-const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const pageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry, beforeFaucetSitemapEntry, beforeFaucetCoreSources, beforeFaucetCitations, beforeFaucetSource } from "./fixtures/faucet-context-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -102,3 +102,4 @@ test("named source-byte inverse leaves every unrelated buffer and binary intact"
     assert.notEqual(beforeFaqRecognitionProtectedBytes(Buffer.concat([source,Buffer.from("\n// drift\n")]),path),beforeFaqRecognitionProtectedBytes(source,path));
   }
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

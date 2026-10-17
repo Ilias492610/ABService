@@ -1,4 +1,4 @@
-const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const pageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -74,3 +74,4 @@ test("only Remeha has the true13October candidate date and its inverse preserves
  assert.equal(beforeQuintaRegistry({...p,lastModified:"2026-10-14"}).lastModified,"2026-10-14");
  assert.equal(hash(JSON.stringify(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).filter(p=>p.path!==f.page.path).map(beforeCustomerLocationRegistry))),f.before.preservation.otherRegistry);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

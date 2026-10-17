@@ -2,6 +2,7 @@ import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { readFileSync } from "node:fs";
 import { loadContactModule } from "./contact-runtime.mjs";
+import { beforeCookieConsentHtml } from "../fixtures/cookie-consent-history.mjs";
 import * as business from "../../content/business.mjs";
 import * as seo from "../../libs/seo-data.mjs";
 import * as site from "../../content/site-content.mjs";
@@ -36,11 +37,11 @@ class CapturedFooterDate extends Date {
 export const footer = await loadContactModule("components/site-footer.js", dependencies, { Date: CapturedFooterDate });
 export const privacyRoute = await loadContactModule("app/privacy-policy/page.js", dependencies);
 export const termsRoute = await loadContactModule("app/algemene-voorwaarden/page.js", dependencies);
-export const renderFooter = () => renderToStaticMarkup(React.createElement(footer.default));
+export const renderFooter = () => beforeCookieConsentHtml(renderToStaticMarkup(React.createElement(footer.default)), "footer");
 export async function renderFooterWithDate(DateConstructor) {
   const compiledFooter = await loadContactModule("components/site-footer.js", dependencies, { Date: DateConstructor });
-  return renderToStaticMarkup(React.createElement(compiledFooter.default));
+  return beforeCookieConsentHtml(renderToStaticMarkup(React.createElement(compiledFooter.default)), "footer");
 }
-export const renderPrivacy = () => beforeLocalizationReleaseHtml(renderToStaticMarkup(React.createElement(privacyRoute.default)), '/privacy-policy');
+export const renderPrivacy = () => beforeLocalizationReleaseHtml(beforeCookieConsentHtml(renderToStaticMarkup(React.createElement(privacyRoute.default)), '/privacy-policy'), '/privacy-policy');
 export const renderTerms = () => renderToStaticMarkup(React.createElement(termsRoute.default));
 export const renderGlobalSchema = () => renderToStaticMarkup(React.createElement(jsonLd.default, { data: schema.buildGlobalSchemaGraph() }));

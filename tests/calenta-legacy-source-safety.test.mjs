@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -140,3 +140,4 @@ test("manifest inverse preserves untouched and unknown leaves so drift fails the
     }
   }
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

@@ -3,6 +3,7 @@ import { business } from "@/content/business.mjs";
 import TrackedLink from "@/components/tracked-link";
 import RegisteredSeat from "@/components/registered-seat";
 import { LocalizedFooter } from "@/components/localized-shell";
+import CookiePreferencesLink from "@/components/cookie-preferences-link";
 
 const serviceLinks = [
   ["Onderhoud cv-ketel", "/onderhoud"],
@@ -121,6 +122,7 @@ export default function SiteFooter({ locale = "nl-BE" } = {}) {
       <div className="shell footer-bottom">
         <span>© {new Date().getFullYear()} AB Service</span>
         <span>Vlaanderen en Brussel · {business.vatId}</span>
+        <CookiePreferencesLink />
       </div>
     </footer>
   );

@@ -8,7 +8,7 @@ import * as projects from "../content/projects.mjs";
 import * as business from "../content/business.mjs";
 import * as fullLocalizedSite from "../content/site-content.mjs";
 import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
-const registry = {...fullLocalizedSite, pageRegistry:beforeLocalizationRegistry(fullLocalizedSite.pageRegistry)};
+const registry = {...fullLocalizedSite, pageRegistry:beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedSite.pageRegistry))};
 import * as seo from "../libs/seo-data.mjs";
 import * as schema from "../libs/schema-data.mjs";
 
@@ -121,3 +121,4 @@ test("Limburg retains its 38 unlinked municipalities and useful service, tool an
   assert.match(html, /Loodgieter en verwarmingsservice in Limburg<\/h1>/);
   assert.doesNotMatch(html, /reviewRating|datePublished|dateModified|Echte projecten|Uitgevoerde werkzaamheden in deze regio/);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

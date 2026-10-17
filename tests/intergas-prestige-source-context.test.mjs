@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -89,3 +89,4 @@ test("allother12 complete guides and82registry preserve genuine64d7 captures out
   assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeAtagManualsRegistry).map(beforeGb172Registry).map(beforeAvantaRegistry).map(beforeViessmannRegistry).map(beforeAtagRegistry).map(beforeIthoRegistry).map(beforeFerroliRegistry).map(beforeNefitRegistry).map(beforeIntergasRegistry)),facts.preservation.allRegistry);
   assert.equal(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).reduce((n,g)=>n+g.codeEntryCount,0),1596);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

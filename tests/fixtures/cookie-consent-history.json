@@ -58,5 +58,329 @@
         "after": "import { trackWithConsent as track } from \"@/libs/consented-analytics.mjs\";"
       }
     ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "app/layout.js",
+    "actualPath": "app/(nl)/layout.js",
+    "beforeSha256": "cda705530bb13bb669d8e794df1ae271cad4c275e1c258d3b7ab0d1113b66323",
+    "afterSha256": "aeaf71de5973f144bf46a297ce9408b35c12b6d748fb0c2c2cc0fc867374835d",
+    "changes": [
+      {
+        "before": "import { Inter } from \"next/font/google\";\nimport PrivacyAnalytics from \"@/components/privacy-analytics\";\nimport SiteHeader from \"@/components/site-header\";\nimport SiteFooter from \"@/components/site-footer\";\nimport JsonLd from \"@/components/json-ld\";\n",
+        "after": "import { Inter } from \"next/font/google\";\nimport PrivacyAnalytics from \"@/components/privacy-analytics\";\nimport CookieConsent from \"@/components/cookie-consent\";\nimport SiteHeader from \"@/components/site-header\";\nimport SiteFooter from \"@/components/site-footer\";\nimport JsonLd from \"@/components/json-ld\";\n"
+      },
+      {
+        "before": "          Ga naar de inhoud\n        </a>\n        <SiteHeader />\n        <main id=\"main-content\">{children}</main>\n        <SiteFooter />\n        <FloatingTrustSignals />\n        {process.env.VERCEL ? <PrivacyAnalytics /> : null}\n",
+        "after": "          Ga naar de inhoud\n        </a>\n        <SiteHeader />\n        <main id=\"main-content\"><CookieConsent />{children}</main>\n        <SiteFooter />\n        <FloatingTrustSignals />\n        {process.env.VERCEL ? <PrivacyAnalytics /> : null}\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "app/privacy-policy/page.js",
+    "actualPath": "app/(nl)/privacy-policy/page.js",
+    "beforeSha256": "c9712cce6e112b5438209664c34f2bea1f02520bc824730305a5752b34b4c979",
+    "afterSha256": "34a3ae425b9649bd43935366b2a2cfe76eabe693599d47d130961f8b613e6dbc",
+    "changes": [
+      {
+        "before": "import Breadcrumbs from \"@/components/breadcrumbs\";\nimport PageHero from \"@/components/page-hero\";\nimport RegisteredSeat from \"@/components/registered-seat\";\nimport { business } from \"@/content/business.mjs\";\nimport { buildPageMetadata } from \"@/libs/seo-data.mjs\";\nimport { getPageDefinition } from \"@/content/site-content.mjs\";\n",
+        "after": "import Breadcrumbs from \"@/components/breadcrumbs\";\nimport PageHero from \"@/components/page-hero\";\nimport RegisteredSeat from \"@/components/registered-seat\";\nimport CookiePolicy from \"@/components/cookie-policy\";\nimport { COOKIE_POLICY_UPDATED } from \"@/content/cookie-policy-date.mjs\";\nimport { business } from \"@/content/business.mjs\";\nimport { buildPageMetadata } from \"@/libs/seo-data.mjs\";\nimport { getPageDefinition } from \"@/content/site-content.mjs\";\n"
+      },
+      {
+        "before": "        <RegisteredSeat />\n        <h2>2. Contactaanvragen</h2><p>Het formulier kan naam, telefoonnummer, e-mailadres, locatiegegevens, toestelgegevens en uw bericht bevatten. Deze gegevens worden gebruikt om uw vraag te beoordelen, contact op te nemen, een afspraak of offerte voor te bereiden en de communicatie te bewaren zolang dat voor de aanvraag, uitvoering of wettelijke verplichtingen nodig is.</p>\n        <h2>3. E-mailbezorging</h2><p>Formulierberichten worden via Mailgun verzonden naar het ingestelde AB Service-adres. Deel geen gevoelige medische, financiële of identiteitsdocumenten via het vrije berichtveld.</p>\n        <h2>4. Website-analyse</h2><p>De website configureert Vercel Analytics voor geaggregeerd inzicht in paginaweergaven en beperkte interactiegebeurtenissen. De ontvangst van deze gebeurtenissen in de rapportage is nog niet bevestigd; deze configuratie bewijst geen gemeten bezoeken of aanvragen. Voor verzending naar deze analyse worden URL-parameters en fragmenten verwijderd. Contactevents bevatten alleen vooraf bepaalde context zoals paginalocatie en gekozen dienst; naam, e-mail, telefoon, adres en berichtinhoud worden niet als eventeigenschappen verstuurd. De onderhoudscheck gebruikt alleen beperkte keuzecodes voor gewest en uitkomst, niet de ingevoerde onderhoudsdatum. De watermetercheck gebruikt alleen een vaste uitkomstcode (observatie, onbekend, onveilig of ongeldige invoer) en paginalocatie; een optionele contactklik bevat ook de gekozen dienst. Meterstanden, meetduur, eenheid en berekende hoeveelheden worden niet als eventeigenschappen verstuurd. De website configureert momenteel geen Plausible, Google Analytics of Google Ads.</p>\n        <h2>5. Google-profiel en beoordelingen</h2><p>De homepage vraagt via de server actuele publieke profielgegevens op uit Google Places, waaronder de naam, gemiddelde score, het aantal beoordelingen en — wanneer Google ze beschikbaar stelt — maximaal vijf reviewteksten met auteursvermelding. De zwevende profielkoppeling vraagt via een afzonderlijk serverendpoint alleen de actuele score op. Deze Places-inhoud wordt niet vooraf opgehaald of door AB Service opgeslagen. De technische Place ID mag volgens het Google-beleid wel blijvend worden bewaard. Wanneer auteursfoto’s beschikbaar zijn, kan uw browser die rechtstreeks bij Google laden. Op deze verwerking zijn ook het <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacybeleid van Google</a> en de toepasselijke Google Maps-voorwaarden van toepassing.</p>\n        <h2>6. Technische verwerking</h2><p>Hosting-, beveiligings- en analyseleveranciers kunnen technische gegevens zoals IP-adres, browserinformatie, tijdstip en opgevraagde URL verwerken om de website te leveren, misbruik te voorkomen en prestaties te meten. Hun eigen bewaartermijnen en locaties volgen uit de toepasselijke leveranciersvoorwaarden.</p>\n        <h2>7. Uw rechten</h2><p>U kunt vragen om inzage, correctie, verwijdering, beperking, overdraagbaarheid of bezwaar voor zover de toepasselijke regels dat toelaten. Vermeld voldoende informatie om uw verzoek te kunnen terugvinden, maar stuur geen identiteitsbewijs zonder dat dit noodzakelijk en veilig is afgesproken.</p>\n        <h2>8. Lokale hulpmiddelen en wijzigingen</h2><p>De onderhoudscheck berekent zijn uitleg in uw browser zonder account en zonder de invoer als aanvraag te versturen. Alleen als u zelf kiest voor contact, wordt een samenvatting van de gekozen toestelgegevens en eventuele onderhoudsdatum naar het formulier overgenomen.</p><p>Ook de watermetercheck werkt lokaal: meterstanden, meetduur, eenheid en berekende hoeveelheden blijven in uw browser. De tool bewaart ze niet en stuurt ze niet naar een server, account of URL. Bij een optionele contactklik gaat uitsluitend de categorie positief verschil of nulverschil en de bijbehorende dienst via het URL-fragment naar het formulier. Uw standen en meetperiode komen niet in die samenvatting. U kunt de overgenomen tekst aanpassen; verzending van een contactaanvraag gebeurt pas na uw eigen formulieractie.</p><p>Dit beleid is bijgewerkt op <time dateTime=\"2026-10-13\">13 oktober 2026</time>. Bij een verandering van formulieren, analytics, advertenties of andere gegevensverwerking wordt deze pagina aangepast.</p>\n      </div></section>\n    </>\n  );\n",
+        "after": "        <RegisteredSeat />\n        <h2>2. Contactaanvragen</h2><p>Het formulier kan naam, telefoonnummer, e-mailadres, locatiegegevens, toestelgegevens en uw bericht bevatten. Deze gegevens worden gebruikt om uw vraag te beoordelen, contact op te nemen, een afspraak of offerte voor te bereiden en de communicatie te bewaren zolang dat voor de aanvraag, uitvoering of wettelijke verplichtingen nodig is.</p>\n        <h2>3. E-mailbezorging</h2><p>Formulierberichten worden via Mailgun verzonden naar het ingestelde AB Service-adres. Deel geen gevoelige medische, financiële of identiteitsdocumenten via het vrije berichtveld.</p>\n        <h2>4. Website-analyse</h2><CookiePolicy /><p>Alleen na uw statistiekentoestemming worden de hier beschreven analysegegevens verwerkt. De website configureert Vercel Analytics voor geaggregeerd inzicht in paginaweergaven en beperkte interactiegebeurtenissen. De ontvangst van deze gebeurtenissen in de rapportage is nog niet bevestigd; deze configuratie bewijst geen gemeten bezoeken of aanvragen. Voor verzending naar deze analyse worden URL-parameters en fragmenten verwijderd. Contactevents bevatten alleen vooraf bepaalde context zoals paginalocatie en gekozen dienst; naam, e-mail, telefoon, adres en berichtinhoud worden niet als eventeigenschappen verstuurd. De onderhoudscheck gebruikt alleen beperkte keuzecodes voor gewest en uitkomst, niet de ingevoerde onderhoudsdatum. De watermetercheck gebruikt alleen een vaste uitkomstcode (observatie, onbekend, onveilig of ongeldige invoer) en paginalocatie; een optionele contactklik bevat ook de gekozen dienst. Meterstanden, meetduur, eenheid en berekende hoeveelheden worden niet als eventeigenschappen verstuurd. De website configureert momenteel geen Plausible, Google Analytics of Google Ads.</p>\n        <h2>5. Google-profiel en beoordelingen</h2><p>De homepage vraagt via de server actuele publieke profielgegevens op uit Google Places, waaronder de naam, gemiddelde score, het aantal beoordelingen en — wanneer Google ze beschikbaar stelt — maximaal vijf reviewteksten met auteursvermelding. De zwevende profielkoppeling vraagt via een afzonderlijk serverendpoint alleen de actuele score op. Deze Places-inhoud wordt niet vooraf opgehaald of door AB Service opgeslagen. De technische Place ID mag volgens het Google-beleid wel blijvend worden bewaard. Alleen na uw afzonderlijke fototoestemming kan uw browser beschikbare auteursfoto’s rechtstreeks bij Google laden. Op deze verwerking zijn ook het <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacybeleid van Google</a> en de toepasselijke Google Maps-voorwaarden van toepassing.</p>\n        <h2>6. Technische verwerking</h2><p>Hosting-, beveiligings- en analyseleveranciers kunnen technische gegevens zoals IP-adres, browserinformatie, tijdstip en opgevraagde URL verwerken om de website te leveren, misbruik te voorkomen en prestaties te meten. Hun eigen bewaartermijnen en locaties volgen uit de toepasselijke leveranciersvoorwaarden.</p>\n        <h2>7. Uw rechten</h2><p>U kunt vragen om inzage, correctie, verwijdering, beperking, overdraagbaarheid of bezwaar voor zover de toepasselijke regels dat toelaten. Vermeld voldoende informatie om uw verzoek te kunnen terugvinden, maar stuur geen identiteitsbewijs zonder dat dit noodzakelijk en veilig is afgesproken.</p>\n        <h2>8. Lokale hulpmiddelen en wijzigingen</h2><p>De onderhoudscheck berekent zijn uitleg in uw browser zonder account en zonder de invoer als aanvraag te versturen. Alleen als u zelf kiest voor contact, wordt een samenvatting van de gekozen toestelgegevens en eventuele onderhoudsdatum naar het formulier overgenomen.</p><p>Ook de watermetercheck werkt lokaal: meterstanden, meetduur, eenheid en berekende hoeveelheden blijven in uw browser. De tool bewaart ze niet en stuurt ze niet naar een server, account of URL. Bij een optionele contactklik gaat uitsluitend de categorie positief verschil of nulverschil en de bijbehorende dienst via het URL-fragment naar het formulier. Uw standen en meetperiode komen niet in die samenvatting. U kunt de overgenomen tekst aanpassen; verzending van een contactaanvraag gebeurt pas na uw eigen formulieractie.</p><p>Dit beleid is bijgewerkt op <time dateTime={COOKIE_POLICY_UPDATED}>17 oktober 2026</time>. Bij een verandering van formulieren, analytics, advertenties of andere gegevensverwerking wordt deze pagina aangepast.</p>\n      </div></section>\n    </>\n  );\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "components/localized-root.js",
+    "actualPath": "components/localized-root.js",
+    "beforeSha256": "fc1d34c13eaead652a97f2f4ab40a143393ef5358ab549bc4564629518c31c87",
+    "afterSha256": "d24b45886efde27ed9d162955cb0f6d3e59661aaeccb243bf61f9f6c502dceba",
+    "changes": [
+      {
+        "before": "import JsonLd from \"@/components/json-ld\";\nimport FloatingTrustSignals from \"@/components/floating-trust-signals\";\nimport PrivacyAnalytics from \"@/components/privacy-analytics\";\nimport { buildGlobalSchemaGraph } from \"@/libs/schema-data.mjs\";\nimport { getLocaleCopy } from \"@/content/localization.mjs\";\nimport \"../app/globals.css\";\n",
+        "after": "import JsonLd from \"@/components/json-ld\";\nimport FloatingTrustSignals from \"@/components/floating-trust-signals\";\nimport PrivacyAnalytics from \"@/components/privacy-analytics\";\nimport CookieConsent from \"@/components/cookie-consent\";\nimport { buildGlobalSchemaGraph } from \"@/libs/schema-data.mjs\";\nimport { getLocaleCopy } from \"@/content/localization.mjs\";\nimport \"../app/globals.css\";\n"
+      },
+      {
+        "before": "  return <html lang={locale} className={inter.className}><body className={locale === \"nl-BE\" ? undefined : \"localized-shell\"}>\n    <JsonLd data={buildGlobalSchemaGraph()} id=\"global-schema\" />\n    <a className=\"skip-link\" href=\"#main-content\">{copy.skip}</a>\n    <SiteHeader locale={locale} /><main id=\"main-content\">{children}</main><SiteFooter locale={locale} /><FloatingTrustSignals locale={locale} />\n    {process.env.VERCEL ? <PrivacyAnalytics /> : null}\n  </body></html>;\n}\n",
+        "after": "  return <html lang={locale} className={inter.className}><body className={locale === \"nl-BE\" ? undefined : \"localized-shell\"}>\n    <JsonLd data={buildGlobalSchemaGraph()} id=\"global-schema\" />\n    <a className=\"skip-link\" href=\"#main-content\">{copy.skip}</a>\n    <SiteHeader locale={locale} /><main id=\"main-content\"><CookieConsent locale={locale} />{children}</main><SiteFooter locale={locale} /><FloatingTrustSignals locale={locale} />\n    {process.env.VERCEL ? <PrivacyAnalytics /> : null}\n  </body></html>;\n}\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "components/site-footer.js",
+    "actualPath": "components/site-footer.js",
+    "beforeSha256": "ad125db995b2c0cf32de26130b2cbc65eaf9f21ec1678986217e948bfc97af51",
+    "afterSha256": "b7c2be2b856696aec6bf7cd1229627ea192d85bf0328598d6a7ff51f3d0356b3",
+    "changes": [
+      {
+        "before": "import TrackedLink from \"@/components/tracked-link\";\nimport RegisteredSeat from \"@/components/registered-seat\";\nimport { LocalizedFooter } from \"@/components/localized-shell\";\n\nconst serviceLinks = [\n  [\"Onderhoud cv-ketel\", \"/onderhoud\"],\n",
+        "after": "import TrackedLink from \"@/components/tracked-link\";\nimport RegisteredSeat from \"@/components/registered-seat\";\nimport { LocalizedFooter } from \"@/components/localized-shell\";\nimport CookiePreferencesLink from \"@/components/cookie-preferences-link\";\n\nconst serviceLinks = [\n  [\"Onderhoud cv-ketel\", \"/onderhoud\"],\n"
+      },
+      {
+        "before": "      <div className=\"shell footer-bottom\">\n        <span>© {new Date().getFullYear()} AB Service</span>\n        <span>Vlaanderen en Brussel · {business.vatId}</span>\n      </div>\n    </footer>\n  );\n",
+        "after": "      <div className=\"shell footer-bottom\">\n        <span>© {new Date().getFullYear()} AB Service</span>\n        <span>Vlaanderen en Brussel · {business.vatId}</span>\n        <CookiePreferencesLink />\n      </div>\n    </footer>\n  );\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "components/localized-shell.js",
+    "actualPath": "components/localized-shell.js",
+    "beforeSha256": "9848ee72238219468c2c14bdc3e89ea692f6016ff8c055d50247637e456d67eb",
+    "afterSha256": "d8ef32d22c34efbedc4eb34f7e3efbac43636cdaf27b52a7393674b9ce8d6b51",
+    "changes": [
+      {
+        "before": "import TrackedLink from \"@/components/tracked-link\";\nimport HeaderNavigation from \"@/components/header-navigation\";\nimport LanguageSwitcher from \"@/components/language-switcher\";\nimport { navigation } from \"@/content/site-content.mjs\";\nimport { business } from \"@/content/business.mjs\";\nimport { legalIdentity } from \"@/content/legal-identity.mjs\";\n",
+        "after": "import TrackedLink from \"@/components/tracked-link\";\nimport HeaderNavigation from \"@/components/header-navigation\";\nimport LanguageSwitcher from \"@/components/language-switcher\";\nimport CookiePreferencesLink from \"@/components/cookie-preferences-link\";\nimport { navigation } from \"@/content/site-content.mjs\";\nimport { business } from \"@/content/business.mjs\";\nimport { legalIdentity } from \"@/content/legal-identity.mjs\";\n"
+      },
+      {
+        "before": "        </div>\n        {list(copy.services,serviceLinks)}{list(copy.serviceArea,areaLinks)}{list(copy.knowledge,knowledgeLinks)}\n      </div>\n      <div className=\"shell footer-bottom\"><span>© {new Date().getFullYear()} AB Service</span><span>{copy.area} · {business.vatId}</span></div>\n    </footer>\n  );\n}\n",
+        "after": "        </div>\n        {list(copy.services,serviceLinks)}{list(copy.serviceArea,areaLinks)}{list(copy.knowledge,knowledgeLinks)}\n      </div>\n      <div className=\"shell footer-bottom\"><span>© {new Date().getFullYear()} AB Service</span><span>{copy.area} · {business.vatId}</span><CookiePreferencesLink locale={locale} /></div>\n    </footer>\n  );\n}\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "components/floating-trust-signals.js",
+    "actualPath": "components/floating-trust-signals.js",
+    "beforeSha256": "a9893442ba884e1a4480cbc73d86a33cf17a60f98ef96ff48bf38a64fd348a8d",
+    "afterSha256": "0b5812a26c1a9a72f8d2c33d07a50d2605ac68085f77634b3b4756988d780e92",
+    "changes": [
+      {
+        "before": "import { formatGoogleRating } from \"@/libs/google-reviews.mjs\";\nimport { getLocaleCopy, getWhatsAppHref } from \"@/content/localization.mjs\";\n\nconst protectedZones = \"form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row, .faq-list, .fault-guide-reading, .fault-guide-hero, .tariff-service-context\";\n\nfunction focusHeader() {\n  document.querySelector(\".site-header .brand\")?.focus({ preventScroll: true });\n",
+        "after": "import { formatGoogleRating } from \"@/libs/google-reviews.mjs\";\nimport { getLocaleCopy, getWhatsAppHref } from \"@/content/localization.mjs\";\n\nconst protectedZones = \"form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row, .faq-list, .fault-guide-reading, .fault-guide-hero, .tariff-service-context, .cookie-consent-panel\";\n\nfunction focusHeader() {\n  document.querySelector(\".site-header .brand\")?.focus({ preventScroll: true });\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "components/sections/google-reviews.js",
+    "actualPath": "components/sections/google-reviews.js",
+    "beforeSha256": "5ba005e44786b59d9af2ea6459a08b5cdea3b20b9f26fa1b0efaded0330fcab3",
+    "afterSha256": "cfaeb8c36cc6b0007022b9665f58199760c47c7bf3ec6e9e6cc9d2569b52a7fd",
+    "changes": [
+      {
+        "before": "import Image from \"next/image\";\nimport TrackedLink from \"@/components/tracked-link\";\nimport Stars from \"@/components/review-stars.mjs\";\nimport { business } from \"@/content/business.mjs\";\n",
+        "after": "import ConsentedAuthorPhoto from \"@/components/consented-author-photo\";\nimport TrackedLink from \"@/components/tracked-link\";\nimport Stars from \"@/components/review-stars.mjs\";\nimport { business } from \"@/content/business.mjs\";\n"
+      },
+      {
+        "before": "function Author({ review }) {\n  const content = (\n    <>\n      {review.author.photoUri ? (\n        <Image\n          className=\"review-author-avatar\"\n          src={review.author.photoUri}\n          alt=\"\"\n          width={44}\n          height={44}\n          unoptimized\n        />\n      ) : (\n        <span className=\"review-author-fallback\" aria-hidden=\"true\">\n          {review.author.displayName.slice(0, 1).toUpperCase()}\n        </span>\n      )}\n      <span>\n        <strong>{review.author.displayName}</strong>\n        {review.relativePublishTimeDescription ? (\n",
+        "after": "function Author({ review }) {\n  const content = (\n    <>\n      <span>\n        <strong>{review.author.displayName}</strong>\n        {review.relativePublishTimeDescription ? (\n"
+      },
+      {
+        "before": "    </>\n  );\n\n  return review.author.uri ? (\n    <a\n      className=\"review-author\"\n      href={review.author.uri}\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n",
+        "after": "    </>\n  );\n\n  const name = review.author.uri ? (\n    <a\n      href={review.author.uri}\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n"
+      },
+      {
+        "before": "      {content}\n    </a>\n  ) : (\n    <div className=\"review-author\">{content}</div>\n  );\n}\n\nfunction ReviewCard({ review }) {\n",
+        "after": "      {content}\n    </a>\n  ) : (\n    content\n  );\n  return <div className=\"review-author\"><ConsentedAuthorPhoto photoUri={review.author.photoUri} displayName={review.author.displayName} />{name}</div>;\n}\n\nfunction ReviewCard({ review }) {\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "app/globals.css",
+    "actualPath": "app/globals.css",
+    "beforeSha256": "2135047a331a06cce9837cc034517e28158c3aab99a778c06c4fcb66865f5e22",
+    "afterSha256": "c35b5489ff65f485d1b4005446edb67217e197166b910f2ca633c41b42595c9d",
+    "changes": [
+      {
+        "before": "}\n\n.language-entry-links, .language-switcher { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding-block: .5rem; font-size: .875rem; }\n.localized-contact-languages { display: flex; justify-content: flex-end; }\n.language-switcher a[aria-current=\"page\"] { font-weight: 800; text-decoration-thickness: .15em; }\n.localized-shell .nav-row { flex-wrap: wrap; justify-content: space-between; }\n",
+        "after": "}\n\n.language-entry-links, .language-switcher { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding-block: .5rem; font-size: .875rem; }\n.cookie-banner { margin-block: 1rem; padding: 1.25rem; border: 2px solid var(--ink, #103447); border-radius: .75rem; background: #fff; color: #103447; }\n.cookie-banner h2, .cookie-dialog h2 { margin-top: 0; font-size: 1.25rem; }\n.cookie-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }\n.cookie-actions button, .cookie-actions a { max-width: 100%; overflow-wrap: anywhere; }\n.cookie-actions .button { white-space: normal; text-align: center; }\n.cookie-text-button, .cookie-photo-button { color: #103447; background: #fff; border: 1px solid #536f7c; border-radius: .375rem; padding: .65rem .85rem; font: inherit; cursor: pointer; }\n.cookie-text-button:focus-visible, .cookie-photo-button:focus-visible, .cookie-option input:focus-visible { outline: 3px solid #126c8a; outline-offset: 3px; }\n.cookie-dialog { width: min(40rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); padding: 1.5rem; border: 2px solid #103447; border-radius: .75rem; color: #103447; background: #fff; overflow-y: auto; }\n.cookie-dialog:not([open]) { display: none; }\n.cookie-dialog::backdrop { background: rgb(16 52 71 / .65); }\n.cookie-option { display: flex; align-items: flex-start; gap: .75rem; margin-block: 1.25rem; cursor: pointer; }\n.cookie-option input { width: 1.25rem; height: 1.25rem; flex: 0 0 1.25rem; margin-top: .2rem; }\n.cookie-option span span { display: block; margin-top: .25rem; }\n.cookie-consent-panel [role=\"alert\"], .consented-author-photo [role=\"alert\"] { color: #8b2118; font-weight: 600; }\n.consented-author-photo { display: flex; flex: 0 1 9rem; align-items: flex-start; flex-direction: column; gap: .35rem; }\n.cookie-photo-note, .cookie-photo-button { font-size: .75rem; }\n.cookie-photo-button { padding: .4rem .5rem; }\n.cookie-photo-button:disabled { cursor: default; }\n.cookie-policy { scroll-margin-top: 12rem; }\n.footer-bottom { flex-wrap: wrap; }\n.localized-contact-languages { display: flex; justify-content: flex-end; }\n.language-switcher a[aria-current=\"page\"] { font-weight: 800; text-decoration-thickness: .15em; }\n.localized-shell .nav-row { flex-wrap: wrap; justify-content: space-between; }\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "components/localized-privacy-page.js",
+    "actualPath": "components/localized-privacy-page.js",
+    "beforeSha256": "d31e0b76ac75151ebe4de1e1d1a3fdfc046529187a99863c5bea7fb133ad5c2f",
+    "afterSha256": "ef25fa2436069f49ab077d0ab602ba5739980f880ad451fbbae7cf3b3f4093cd",
+    "changes": [
+      {
+        "before": "import JsonLd from '@/components/json-ld';\nimport LanguageSwitcher from '@/components/language-switcher';\nimport { LocalizedBreadcrumbs, LocalizedPageHero } from '@/components/localized-page';\n",
+        "after": "import CookiePolicy from '@/components/cookie-policy';\nimport { COOKIE_POLICY_UPDATED } from '@/content/cookie-policy-date.mjs';\nimport JsonLd from '@/components/json-ld';\nimport LanguageSwitcher from '@/components/language-switcher';\nimport { LocalizedBreadcrumbs, LocalizedPageHero } from '@/components/localized-page';\n"
+      },
+      {
+        "before": "      <h2>{copy.headings[0]}</h2><p>{copy.controller.replace('{vat}',business.vatId)} <a href={`mailto:${business.email}`}>{business.email}</a>.</p><LocalizedSeat locale={locale} />\n      <h2>{copy.headings[1]}</h2><p>{copy.contact}</p>\n      <h2>{copy.headings[2]}</h2><p>{copy.mailgun}</p>\n      <h2>{copy.headings[3]}</h2><p>{copy.analytics}</p>\n      <h2>{copy.headings[4]}</h2><p>{copy.googleBefore}<a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">{copy.googleLink}</a>{copy.googleAfter}</p>\n      <h2>{copy.headings[5]}</h2><p>{copy.technical}</p>\n      <h2>{copy.headings[6]}</h2><p>{copy.rights}</p>\n      <h2>{copy.headings[7]}</h2><p>{copy.maintenance}</p><p>{copy.water}</p><p>{copy.updated}<time dateTime=\"2026-10-13\">{copy.date}</time>{copy.changes}</p>\n    </div></section>\n  </>;\n}\n",
+        "after": "      <h2>{copy.headings[0]}</h2><p>{copy.controller.replace('{vat}',business.vatId)} <a href={`mailto:${business.email}`}>{business.email}</a>.</p><LocalizedSeat locale={locale} />\n      <h2>{copy.headings[1]}</h2><p>{copy.contact}</p>\n      <h2>{copy.headings[2]}</h2><p>{copy.mailgun}</p>\n      <h2>{copy.headings[3]}</h2><CookiePolicy locale={locale} /><p>{copy.analytics}</p>\n      <h2>{copy.headings[4]}</h2><p>{copy.googleBefore}<a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">{copy.googleLink}</a>{copy.googleAfter}</p>\n      <h2>{copy.headings[5]}</h2><p>{copy.technical}</p>\n      <h2>{copy.headings[6]}</h2><p>{copy.rights}</p>\n      <h2>{copy.headings[7]}</h2><p>{copy.maintenance}</p><p>{copy.water}</p><p>{copy.updated}<time dateTime={COOKIE_POLICY_UPDATED}>{copy.date}</time>{copy.changes}</p>\n    </div></section>\n  </>;\n}\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "content/privacy-localization.mjs",
+    "actualPath": "content/privacy-localization.mjs",
+    "beforeSha256": "1936fe5eb1998dfc6ee2d75622aeb118048d04651cb2848a85b643c5a294a753",
+    "afterSha256": "3dc0019af65a707e4dd47ab0ecad6c71b7bf269dfdb808f729e020c9a0102536",
+    "changes": [
+      {
+        "before": "    \"controller\": \"AB Service, numéro d’entreprise {vat}, est votre interlocuteur pour les données que vous communiquez sur ce site. Pour toute question relative à la confidentialité, vous pouvez écrire à\",\n    \"contact\": \"Le formulaire peut contenir votre nom, votre numéro de téléphone, votre adresse e-mail, des informations sur le lieu d’intervention et l’appareil, ainsi que votre message. Ces données servent à évaluer votre demande, à vous contacter, à préparer un rendez-vous ou un devis et à conserver les échanges aussi longtemps que nécessaire pour la demande, l’exécution des travaux ou les obligations légales.\",\n    \"mailgun\": \"Les messages du formulaire sont envoyés via Mailgun à l’adresse configurée pour AB Service. Ne transmettez pas de documents médicaux, financiers ou d’identité sensibles dans le champ de message libre.\",\n    \"analytics\": \"Le site configure Vercel Analytics afin d’obtenir une vue agrégée des pages consultées et d’un nombre limité d’événements d’interaction. La réception de ces événements dans les rapports n’a pas encore été confirmée ; cette configuration ne prouve pas que des visites ou des demandes ont été mesurées. Avant l’envoi à cet outil d’analyse, les paramètres d’URL et les fragments sont supprimés. Les événements de contact ne contiennent qu’un contexte prédéfini, comme l’emplacement de la page et le service choisi ; le nom, l’adresse e-mail, le téléphone, l’adresse et le contenu du message ne sont pas transmis comme propriétés d’événement. L’outil de vérification de l’entretien utilise uniquement des codes de choix limités pour la région et le résultat, sans la date d’entretien saisie. L’outil de vérification du compteur d’eau utilise uniquement un code de résultat fixe (observation, inconnu, situation dangereuse ou saisie non valide) et l’emplacement de la page ; un clic facultatif pour prendre contact inclut également le service choisi. Les relevés du compteur, la durée de mesure, l’unité et les quantités calculées ne sont pas transmis comme propriétés d’événement. Le site ne configure actuellement ni Plausible, ni Google Analytics, ni Google Ads.\",\n    \"googleBefore\": \"La page d’accueil récupère via le serveur des données publiques actualisées du profil Google Places : notamment le nom, la note moyenne, le nombre d’avis et, lorsque Google les fournit, jusqu’à cinq textes d’avis avec attribution à leurs auteurs. Le lien flottant vers le profil demande uniquement la note actualisée via un point d’accès distinct sur le serveur. Ce contenu Places n’est ni récupéré à l’avance ni stocké par AB Service. L’identifiant technique Place ID peut toutefois être conservé durablement conformément aux règles de Google. Lorsque des photos d’auteurs sont disponibles, votre navigateur peut les charger directement auprès de Google. La \",\n    \"googleLink\": \"politique de confidentialité de Google\",\n    \"googleAfter\": \" et les conditions Google Maps applicables régissent également ce traitement.\",\n    \"technical\": \"Les prestataires d’hébergement, de sécurité et d’analyse peuvent traiter des données techniques telles que l’adresse IP, les informations du navigateur, l’heure et l’URL demandée pour fournir le site, prévenir les abus et mesurer les performances. Leurs propres durées et lieux de conservation sont définis dans les conditions applicables de ces prestataires.\",\n",
+        "after": "    \"controller\": \"AB Service, numéro d’entreprise {vat}, est votre interlocuteur pour les données que vous communiquez sur ce site. Pour toute question relative à la confidentialité, vous pouvez écrire à\",\n    \"contact\": \"Le formulaire peut contenir votre nom, votre numéro de téléphone, votre adresse e-mail, des informations sur le lieu d’intervention et l’appareil, ainsi que votre message. Ces données servent à évaluer votre demande, à vous contacter, à préparer un rendez-vous ou un devis et à conserver les échanges aussi longtemps que nécessaire pour la demande, l’exécution des travaux ou les obligations légales.\",\n    \"mailgun\": \"Les messages du formulaire sont envoyés via Mailgun à l’adresse configurée pour AB Service. Ne transmettez pas de documents médicaux, financiers ou d’identité sensibles dans le champ de message libre.\",\n    \"analytics\": \"Ce traitement d’analyse ne démarre qu’après votre consentement aux statistiques. Le site configure Vercel Analytics afin d’obtenir une vue agrégée des pages consultées et d’un nombre limité d’événements d’interaction. La réception de ces événements dans les rapports n’a pas encore été confirmée ; cette configuration ne prouve pas que des visites ou des demandes ont été mesurées. Avant l’envoi à cet outil d’analyse, les paramètres d’URL et les fragments sont supprimés. Les événements de contact ne contiennent qu’un contexte prédéfini, comme l’emplacement de la page et le service choisi ; le nom, l’adresse e-mail, le téléphone, l’adresse et le contenu du message ne sont pas transmis comme propriétés d’événement. L’outil de vérification de l’entretien utilise uniquement des codes de choix limités pour la région et le résultat, sans la date d’entretien saisie. L’outil de vérification du compteur d’eau utilise uniquement un code de résultat fixe (observation, inconnu, situation dangereuse ou saisie non valide) et l’emplacement de la page ; un clic facultatif pour prendre contact inclut également le service choisi. Les relevés du compteur, la durée de mesure, l’unité et les quantités calculées ne sont pas transmis comme propriétés d’événement. Le site ne configure actuellement ni Plausible, ni Google Analytics, ni Google Ads.\",\n    \"googleBefore\": \"La page d’accueil récupère via le serveur des données publiques actualisées du profil Google Places : notamment le nom, la note moyenne, le nombre d’avis et, lorsque Google les fournit, jusqu’à cinq textes d’avis avec attribution à leurs auteurs. Le lien flottant vers le profil demande uniquement la note actualisée via un point d’accès distinct sur le serveur. Ce contenu Places n’est ni récupéré à l’avance ni stocké par AB Service. L’identifiant technique Place ID peut toutefois être conservé durablement conformément aux règles de Google. Uniquement après votre consentement distinct aux photos, votre navigateur peut charger les photos d’auteurs disponibles directement auprès de Google. La \",\n    \"googleLink\": \"politique de confidentialité de Google\",\n    \"googleAfter\": \" et les conditions Google Maps applicables régissent également ce traitement.\",\n    \"technical\": \"Les prestataires d’hébergement, de sécurité et d’analyse peuvent traiter des données techniques telles que l’adresse IP, les informations du navigateur, l’heure et l’URL demandée pour fournir le site, prévenir les abus et mesurer les performances. Leurs propres durées et lieux de conservation sont définis dans les conditions applicables de ces prestataires.\",\n"
+      },
+      {
+        "before": "    \"maintenance\": \"L’outil de vérification de l’entretien produit ses explications dans votre navigateur, sans compte et sans transmettre les données saisies comme demande de contact. Un résumé des informations choisies sur l’appareil et de l’éventuelle date d’entretien n’est repris dans le formulaire que si vous choisissez vous-même de prendre contact.\",\n    \"water\": \"L’outil de vérification du compteur d’eau fonctionne lui aussi localement : les relevés du compteur, la durée de mesure, l’unité et les quantités calculées restent dans votre navigateur. L’outil ne les conserve pas et ne les transmet ni à un serveur, ni à un compte, ni dans une URL. Lors d’un clic facultatif pour prendre contact, seule la catégorie « différence positive » ou « différence nulle », ainsi que le service correspondant, est transmise au formulaire via le fragment de l’URL. Vos relevés et votre période de mesure ne figurent pas dans ce résumé. Vous pouvez modifier le texte repris ; une demande de contact n’est envoyée qu’après votre propre action dans le formulaire.\",\n    \"updated\": \"Cette politique a été mise à jour le \",\n    \"date\": \"13 octobre 2026\",\n    \"changes\": \". Cette page sera adaptée en cas de modification des formulaires, des outils d’analyse, des publicités ou d’autres traitements de données.\"\n  },\n  \"en-BE\": {\n",
+        "after": "    \"maintenance\": \"L’outil de vérification de l’entretien produit ses explications dans votre navigateur, sans compte et sans transmettre les données saisies comme demande de contact. Un résumé des informations choisies sur l’appareil et de l’éventuelle date d’entretien n’est repris dans le formulaire que si vous choisissez vous-même de prendre contact.\",\n    \"water\": \"L’outil de vérification du compteur d’eau fonctionne lui aussi localement : les relevés du compteur, la durée de mesure, l’unité et les quantités calculées restent dans votre navigateur. L’outil ne les conserve pas et ne les transmet ni à un serveur, ni à un compte, ni dans une URL. Lors d’un clic facultatif pour prendre contact, seule la catégorie « différence positive » ou « différence nulle », ainsi que le service correspondant, est transmise au formulaire via le fragment de l’URL. Vos relevés et votre période de mesure ne figurent pas dans ce résumé. Vous pouvez modifier le texte repris ; une demande de contact n’est envoyée qu’après votre propre action dans le formulaire.\",\n    \"updated\": \"Cette politique a été mise à jour le \",\n    \"date\": \"17 octobre 2026\",\n    \"changes\": \". Cette page sera adaptée en cas de modification des formulaires, des outils d’analyse, des publicités ou d’autres traitements de données.\"\n  },\n  \"en-BE\": {\n"
+      },
+      {
+        "before": "    \"controller\": \"AB Service, enterprise number {vat}, is the point of contact for information you provide through this website. For privacy enquiries, email\",\n    \"contact\": \"The form may contain your name, phone number, email address, location information, appliance details and message. This information is used to assess your enquiry, contact you, prepare an appointment or quotation, and keep the correspondence for as long as needed for the enquiry, the work or legal obligations.\",\n    \"mailgun\": \"Form messages are sent through Mailgun to the configured AB Service email address. Do not share sensitive medical or financial information, or identity documents, in the free-text message field.\",\n    \"analytics\": \"The website configures Vercel Analytics to provide aggregate insights into page views and limited interaction events. Receipt of these events in the reports has not yet been confirmed; this configuration does not prove that visits or enquiries have been measured. URL parameters and fragments are removed before information is sent to this analytics service. Contact events contain only predefined context, such as the page location and selected service; names, email addresses, phone numbers, addresses and message content are not sent as event properties. The maintenance check uses only limited selection codes for the region and result, not the maintenance date entered. The water meter check uses only a fixed result code (observation, unknown, unsafe or invalid input) and page location; an optional contact click also includes the selected service. Meter readings, measurement duration, unit and calculated quantities are not sent as event properties. The website does not currently configure Plausible, Google Analytics or Google Ads.\",\n    \"googleBefore\": \"The homepage requests up-to-date public profile information from Google Places through the server, including the name, average rating, number of reviews and, when Google makes them available, up to five review texts with author attribution. The floating profile link requests only the current rating through a separate server endpoint. This Places content is not prefetched or stored by AB Service. Google’s policy does allow the technical Place ID to be retained permanently. When author photos are available, your browser may load them directly from Google. Google’s \",\n    \"googleLink\": \"privacy policy\",\n    \"googleAfter\": \" and the applicable Google Maps terms also apply to this processing.\",\n    \"technical\": \"Hosting, security and analytics providers may process technical information such as your IP address, browser information, the time and requested URL to deliver the website, prevent abuse and measure performance. Their own retention periods and processing locations are governed by the applicable provider terms.\",\n",
+        "after": "    \"controller\": \"AB Service, enterprise number {vat}, is the point of contact for information you provide through this website. For privacy enquiries, email\",\n    \"contact\": \"The form may contain your name, phone number, email address, location information, appliance details and message. This information is used to assess your enquiry, contact you, prepare an appointment or quotation, and keep the correspondence for as long as needed for the enquiry, the work or legal obligations.\",\n    \"mailgun\": \"Form messages are sent through Mailgun to the configured AB Service email address. Do not share sensitive medical or financial information, or identity documents, in the free-text message field.\",\n    \"analytics\": \"This analytics processing starts only after your statistics consent. The website configures Vercel Analytics to provide aggregate insights into page views and limited interaction events. Receipt of these events in the reports has not yet been confirmed; this configuration does not prove that visits or enquiries have been measured. URL parameters and fragments are removed before information is sent to this analytics service. Contact events contain only predefined context, such as the page location and selected service; names, email addresses, phone numbers, addresses and message content are not sent as event properties. The maintenance check uses only limited selection codes for the region and result, not the maintenance date entered. The water meter check uses only a fixed result code (observation, unknown, unsafe or invalid input) and page location; an optional contact click also includes the selected service. Meter readings, measurement duration, unit and calculated quantities are not sent as event properties. The website does not currently configure Plausible, Google Analytics or Google Ads.\",\n    \"googleBefore\": \"The homepage requests up-to-date public profile information from Google Places through the server, including the name, average rating, number of reviews and, when Google makes them available, up to five review texts with author attribution. The floating profile link requests only the current rating through a separate server endpoint. This Places content is not prefetched or stored by AB Service. Google’s policy does allow the technical Place ID to be retained permanently. Only after your separate photo consent may your browser load available author photos directly from Google. Google’s \",\n    \"googleLink\": \"privacy policy\",\n    \"googleAfter\": \" and the applicable Google Maps terms also apply to this processing.\",\n    \"technical\": \"Hosting, security and analytics providers may process technical information such as your IP address, browser information, the time and requested URL to deliver the website, prevent abuse and measure performance. Their own retention periods and processing locations are governed by the applicable provider terms.\",\n"
+      },
+      {
+        "before": "    \"maintenance\": \"The maintenance check calculates its explanation in your browser, without an account and without submitting your input as an enquiry. Only if you choose to contact us is a summary of the selected appliance details and any maintenance date transferred to the form.\",\n    \"water\": \"The water meter check also runs locally: meter readings, measurement duration, unit and calculated quantities stay in your browser. The tool does not store them or send them to a server, account or URL. If you choose the optional contact link, only the category of a positive difference or no difference, and the corresponding service, are passed to the form through the URL fragment. Your readings and measurement period are not included in that summary. You can edit the transferred text; a contact enquiry is only sent when you submit the form yourself.\",\n    \"updated\": \"This policy was updated on \",\n    \"date\": \"13 October 2026\",\n    \"changes\": \". This page will be updated when forms, analytics, advertising or other data processing change.\"\n  }\n};\n",
+        "after": "    \"maintenance\": \"The maintenance check calculates its explanation in your browser, without an account and without submitting your input as an enquiry. Only if you choose to contact us is a summary of the selected appliance details and any maintenance date transferred to the form.\",\n    \"water\": \"The water meter check also runs locally: meter readings, measurement duration, unit and calculated quantities stay in your browser. The tool does not store them or send them to a server, account or URL. If you choose the optional contact link, only the category of a positive difference or no difference, and the corresponding service, are passed to the form through the URL fragment. Your readings and measurement period are not included in that summary. You can edit the transferred text; a contact enquiry is only sent when you submit the form yourself.\",\n    \"updated\": \"This policy was updated on \",\n    \"date\": \"17 October 2026\",\n    \"changes\": \". This page will be updated when forms, analytics, advertising or other data processing change.\"\n  }\n};\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "content/site-content.mjs",
+    "actualPath": "content/site-content.mjs",
+    "beforeSha256": "890e33ebb5d7b97aa9a48f9faf0e6c14ee37088140f58de9a2bc9cb92d817877",
+    "afterSha256": "1e7af7bc49d5b32ad032233587f13b82bdbd99d11bf12156d51e2e352336b663",
+    "changes": [
+      {
+        "before": "import { getPublishedProjects } from \"./projects.mjs\";\nimport { adviceGuides } from \"./advice-guides.mjs\";\nimport { localizedPageCandidates } from \"./localization.mjs\";\n\nexport const CONTENT_STATUS = Object.freeze({\n  PUBLISHED: \"published\",\n",
+        "after": "import { getPublishedProjects } from \"./projects.mjs\";\nimport { adviceGuides } from \"./advice-guides.mjs\";\nimport { localizedPageCandidates } from \"./localization.mjs\";\nimport { COOKIE_POLICY_UPDATED } from \"./cookie-policy-date.mjs\";\n\nexport const CONTENT_STATUS = Object.freeze({\n  PUBLISHED: \"published\",\n"
+      },
+      {
+        "before": "  })),\n  {\n    path: \"/privacy-policy\",\n    lastModified: \"2026-10-13\",\n    status: CONTENT_STATUS.PUBLISHED,\n    title: \"Privacybeleid | AB Service\",\n    description:\n",
+        "after": "  })),\n  {\n    path: \"/privacy-policy\",\n    lastModified: COOKIE_POLICY_UPDATED,\n    status: CONTENT_STATUS.PUBLISHED,\n    title: \"Privacybeleid | AB Service\",\n    description:\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "source",
+    "path": "content/localization.mjs",
+    "actualPath": "content/localization.mjs",
+    "beforeSha256": "df1b7f3522fa0ff06a6e81cd81202df721e3f428d4d60a5a35bef04c3c4823ee",
+    "afterSha256": "3dbb93aa6407f8347aa0204fe50ce912f04cf33810d867c035b75607c1211caf",
+    "changes": [
+      {
+        "before": "import { business } from './business.mjs';\n\nexport const LOCALES = Object.freeze(['nl-BE', 'fr-BE', 'en-BE']);\nexport const LANGUAGE_NAMES = Object.freeze({'nl-BE':'Nederlands','fr-BE':'Français','en-BE':'English'});\n",
+        "after": "import { business } from './business.mjs';\nimport { COOKIE_POLICY_UPDATED } from './cookie-policy-date.mjs';\n\nexport const LOCALES = Object.freeze(['nl-BE', 'fr-BE', 'en-BE']);\nexport const LANGUAGE_NAMES = Object.freeze({'nl-BE':'Nederlands','fr-BE':'Français','en-BE':'English'});\n"
+      },
+      {
+        "before": "  {path:'/en/contact',locale:'en-BE',title:'Contact AB Service',description:'Contact AB Service about plumbing, heating, maintenance, repairs and installations. Enquiries are assessed before confirmation.'},\n  {path:'/fr/confidentialite',locale:'fr-BE',title:'Politique de confidentialité | AB Service',description:'Comment AB Service traite les données des demandes de contact et de l’utilisation du site, et quels sont vos droits.'},\n  {path:'/en/privacy',locale:'en-BE',title:'Privacy policy | AB Service',description:'How AB Service processes information from contact enquiries and website use, and what rights you have.'},\n].map(page=>({...page,status:'published',lastModified:'2026-10-17',changeFrequency:'yearly',priority:page.path.endsWith('contact')?0.8:0.3}));\n",
+        "after": "  {path:'/en/contact',locale:'en-BE',title:'Contact AB Service',description:'Contact AB Service about plumbing, heating, maintenance, repairs and installations. Enquiries are assessed before confirmation.'},\n  {path:'/fr/confidentialite',locale:'fr-BE',title:'Politique de confidentialité | AB Service',description:'Comment AB Service traite les données des demandes de contact et de l’utilisation du site, et quels sont vos droits.'},\n  {path:'/en/privacy',locale:'en-BE',title:'Privacy policy | AB Service',description:'How AB Service processes information from contact enquiries and website use, and what rights you have.'},\n].map(page=>({...page,status:'published',lastModified:page.path.endsWith('contact')?'2026-10-17':COOKIE_POLICY_UPDATED,changeFrequency:'yearly',priority:page.path.endsWith('contact')?0.8:0.3}));\n"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "copy",
+    "locale": "fr-BE",
+    "changes": [
+      {
+        "key": "analytics",
+        "after": "Ce traitement d’analyse ne démarre qu’après votre consentement aux statistiques. Le site configure Vercel Analytics afin d’obtenir une vue agrégée des pages consultées et d’un nombre limité d’événements d’interaction. La réception de ces événements dans les rapports n’a pas encore été confirmée ; cette configuration ne prouve pas que des visites ou des demandes ont été mesurées. Avant l’envoi à cet outil d’analyse, les paramètres d’URL et les fragments sont supprimés. Les événements de contact ne contiennent qu’un contexte prédéfini, comme l’emplacement de la page et le service choisi ; le nom, l’adresse e-mail, le téléphone, l’adresse et le contenu du message ne sont pas transmis comme propriétés d’événement. L’outil de vérification de l’entretien utilise uniquement des codes de choix limités pour la région et le résultat, sans la date d’entretien saisie. L’outil de vérification du compteur d’eau utilise uniquement un code de résultat fixe (observation, inconnu, situation dangereuse ou saisie non valide) et l’emplacement de la page ; un clic facultatif pour prendre contact inclut également le service choisi. Les relevés du compteur, la durée de mesure, l’unité et les quantités calculées ne sont pas transmis comme propriétés d’événement. Le site ne configure actuellement ni Plausible, ni Google Analytics, ni Google Ads.",
+        "before": "Le site configure Vercel Analytics afin d’obtenir une vue agrégée des pages consultées et d’un nombre limité d’événements d’interaction. La réception de ces événements dans les rapports n’a pas encore été confirmée ; cette configuration ne prouve pas que des visites ou des demandes ont été mesurées. Avant l’envoi à cet outil d’analyse, les paramètres d’URL et les fragments sont supprimés. Les événements de contact ne contiennent qu’un contexte prédéfini, comme l’emplacement de la page et le service choisi ; le nom, l’adresse e-mail, le téléphone, l’adresse et le contenu du message ne sont pas transmis comme propriétés d’événement. L’outil de vérification de l’entretien utilise uniquement des codes de choix limités pour la région et le résultat, sans la date d’entretien saisie. L’outil de vérification du compteur d’eau utilise uniquement un code de résultat fixe (observation, inconnu, situation dangereuse ou saisie non valide) et l’emplacement de la page ; un clic facultatif pour prendre contact inclut également le service choisi. Les relevés du compteur, la durée de mesure, l’unité et les quantités calculées ne sont pas transmis comme propriétés d’événement. Le site ne configure actuellement ni Plausible, ni Google Analytics, ni Google Ads."
+      },
+      {
+        "key": "googleBefore",
+        "after": "La page d’accueil récupère via le serveur des données publiques actualisées du profil Google Places : notamment le nom, la note moyenne, le nombre d’avis et, lorsque Google les fournit, jusqu’à cinq textes d’avis avec attribution à leurs auteurs. Le lien flottant vers le profil demande uniquement la note actualisée via un point d’accès distinct sur le serveur. Ce contenu Places n’est ni récupéré à l’avance ni stocké par AB Service. L’identifiant technique Place ID peut toutefois être conservé durablement conformément aux règles de Google. Uniquement après votre consentement distinct aux photos, votre navigateur peut charger les photos d’auteurs disponibles directement auprès de Google. La ",
+        "before": "La page d’accueil récupère via le serveur des données publiques actualisées du profil Google Places : notamment le nom, la note moyenne, le nombre d’avis et, lorsque Google les fournit, jusqu’à cinq textes d’avis avec attribution à leurs auteurs. Le lien flottant vers le profil demande uniquement la note actualisée via un point d’accès distinct sur le serveur. Ce contenu Places n’est ni récupéré à l’avance ni stocké par AB Service. L’identifiant technique Place ID peut toutefois être conservé durablement conformément aux règles de Google. Lorsque des photos d’auteurs sont disponibles, votre navigateur peut les charger directement auprès de Google. La "
+      },
+      {
+        "key": "date",
+        "after": "17 octobre 2026",
+        "before": "13 octobre 2026"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "copy",
+    "locale": "en-BE",
+    "changes": [
+      {
+        "key": "analytics",
+        "after": "This analytics processing starts only after your statistics consent. The website configures Vercel Analytics to provide aggregate insights into page views and limited interaction events. Receipt of these events in the reports has not yet been confirmed; this configuration does not prove that visits or enquiries have been measured. URL parameters and fragments are removed before information is sent to this analytics service. Contact events contain only predefined context, such as the page location and selected service; names, email addresses, phone numbers, addresses and message content are not sent as event properties. The maintenance check uses only limited selection codes for the region and result, not the maintenance date entered. The water meter check uses only a fixed result code (observation, unknown, unsafe or invalid input) and page location; an optional contact click also includes the selected service. Meter readings, measurement duration, unit and calculated quantities are not sent as event properties. The website does not currently configure Plausible, Google Analytics or Google Ads.",
+        "before": "The website configures Vercel Analytics to provide aggregate insights into page views and limited interaction events. Receipt of these events in the reports has not yet been confirmed; this configuration does not prove that visits or enquiries have been measured. URL parameters and fragments are removed before information is sent to this analytics service. Contact events contain only predefined context, such as the page location and selected service; names, email addresses, phone numbers, addresses and message content are not sent as event properties. The maintenance check uses only limited selection codes for the region and result, not the maintenance date entered. The water meter check uses only a fixed result code (observation, unknown, unsafe or invalid input) and page location; an optional contact click also includes the selected service. Meter readings, measurement duration, unit and calculated quantities are not sent as event properties. The website does not currently configure Plausible, Google Analytics or Google Ads."
+      },
+      {
+        "key": "googleBefore",
+        "after": "The homepage requests up-to-date public profile information from Google Places through the server, including the name, average rating, number of reviews and, when Google makes them available, up to five review texts with author attribution. The floating profile link requests only the current rating through a separate server endpoint. This Places content is not prefetched or stored by AB Service. Google’s policy does allow the technical Place ID to be retained permanently. Only after your separate photo consent may your browser load available author photos directly from Google. Google’s ",
+        "before": "The homepage requests up-to-date public profile information from Google Places through the server, including the name, average rating, number of reviews and, when Google makes them available, up to five review texts with author attribution. The floating profile link requests only the current rating through a separate server endpoint. This Places content is not prefetched or stored by AB Service. Google’s policy does allow the technical Place ID to be retained permanently. When author photos are available, your browser may load them directly from Google. Google’s "
+      },
+      {
+        "key": "date",
+        "after": "17 October 2026",
+        "before": "13 October 2026"
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "registry",
+    "after": {
+      "path": "/privacy-policy",
+      "lastModified": "2026-10-17",
+      "status": "published",
+      "title": "Privacybeleid | AB Service",
+      "description": "Lees hoe AB Service persoonsgegevens uit contactaanvragen en websitegebruik verwerkt en welke rechten u heeft.",
+      "changeFrequency": "yearly",
+      "priority": 0.3
+    },
+    "before": {
+      "path": "/privacy-policy",
+      "lastModified": "2026-10-13",
+      "status": "published",
+      "title": "Privacybeleid | AB Service",
+      "description": "Lees hoe AB Service persoonsgegevens uit contactaanvragen en websitegebruik verwerkt en welke rechten u heeft.",
+      "changeFrequency": "yearly",
+      "priority": 0.3
+    }
+  },
+  {
+    "task": 3,
+    "kind": "html",
+    "path": "footer",
+    "changes": [
+      {
+        "after": "<a href=\"/privacy-policy#cookievoorkeuren\">Cookie-instellingen</a>",
+        "before": ""
+      }
+    ]
+  },
+  {
+    "task": 3,
+    "kind": "html",
+    "path": "/privacy-policy",
+    "changes": [
+      {
+        "after": "<div class=\"cookie-policy\" id=\"cookievoorkeuren\"><h3>Cookies en uw voorkeuren</h3><p>AB Service gebruikt de noodzakelijke cookie ab_service_consent om alleen de versie, het keuzetijdstip en uw twee keuzes te onthouden, maximaal 180 dagen op deze website. Deze bevat geen identificatienummer of klantgegevens. Ontbreekt een geldige keuze, dan blijven beide optionele doelen uit. Na afloop vragen we opnieuw.</p><p>Vercel-statistieken zijn optioneel en starten alleen na uw keuze. Vercel ontvangt de hieronder beschreven beperkte pagina- en eventgegevens. De SDK kan het veld __va_attribution in lokale browseropslag gebruiken; deze opslag heeft niet vanzelf een browservervaldatum. Deze site wist dat bekende veld bij intrekken of waargenomen verval. We activeren geen advertentietracking of aanvullende gebruikersidentificatie.</p><p>Google-auteurfoto’s hebben een afzonderlijke optionele keuze. Alleen daarna kan uw browser Google benaderen voor het beeld, met technische aanvraaggegevens zoals uw IP-adres en browserinformatie. De officiële reviewteksten, score en bronvermelding blijven zonder fototoestemming beschikbaar. De fotokeuze zet statistieken niet aan.</p><p>U kunt weigeren of uw keuzes wijzigen en beide toestemmingen intrekken via Cookie-instellingen in de footer. Contact, telefoon, WhatsApp en hulpmiddelen blijven werken. Intrekken verhindert nieuwe optionele verwerking door deze site; reeds gestarte aanvragen, verzonden gegevens of ontvangen beelden kunnen niet worden teruggenomen. Bij mislukte opslag blijft alles optioneel in het huidige document uit en melden we dat bewaren niet lukte.</p><p>Hosting- en beveiligingsverkeer staat los van optionele statistieken. Uitgaande links naar Google of WhatsApp openen hun eigen dienstverlening onder hun eigen voorwaarden. De bewaartermijn van deze voorkeurscookie is niet de bewaartermijn van uw contactaanvraag.</p><p><a href=\"/privacy-policy#cookievoorkeuren\">Cookie-instellingen</a></p></div>",
+        "before": ""
+      },
+      {
+        "after": "Alleen na uw statistiekentoestemming worden de hier beschreven analysegegevens verwerkt. ",
+        "before": ""
+      },
+      {
+        "after": "Alleen na uw afzonderlijke fototoestemming kan uw browser beschikbare auteursfoto’s rechtstreeks bij Google laden.",
+        "before": "Wanneer auteursfoto’s beschikbaar zijn, kan uw browser die rechtstreeks bij Google laden."
+      },
+      {
+        "after": "<time dateTime=\"2026-10-17\">17 oktober 2026</time>",
+        "before": "<time dateTime=\"2026-10-13\">13 oktober 2026</time>"
+      }
+    ]
   }
 ]

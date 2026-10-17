@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { CONTACT_SERVICES } from '../libs/contact-validation.mjs';
+import { beforeCookieConsentCopy } from './fixtures/cookie-consent-history.mjs';
 
 // Execute the real module's initialization with one deliberately incomplete
 // dictionary. No renderer, validator or copy guard is substituted.
@@ -49,11 +50,11 @@ for (const [path, getter, locales, fields, beforeHash] of schemas) {
       }
     });
   }
-  test(`${path} leaves every current dictionary value unchanged`, async () => {
+  test(`${path} preserves every pre-consent dictionary value outside exact approved privacy edits`, async () => {
     const current = await loadCopy(path);
     // Captured independently from the deployed b48f8c9 dictionaries before this
     // fix; do not derive the expected value from another current-code import.
-    assert.equal(createHash('sha256').update(JSON.stringify(locales.map(locale => current[getter](locale)))).digest('hex'), beforeHash);
+    assert.equal(createHash('sha256').update(JSON.stringify(locales.map(locale => path === 'privacy-localization.mjs' ? beforeCookieConsentCopy(current[getter](locale),locale) : current[getter](locale)))).digest('hex'), beforeHash);
   });
 }
 

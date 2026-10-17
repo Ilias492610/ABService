@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -61,3 +61,4 @@ test("named inverse is a no-op for other guides pages HTML and prior manifests",
  assert.equal(beforeGb172Guide(beforeAtagManualsGuide(other)),other);assert.equal(beforeGb172Registry(beforeAtagManualsRegistry(p)),p);assert.equal(beforeGb172Html(beforeAtagManualsHtml(h,"bulex"),"bulex"),h);assert.equal(beforeGb172Metadata(beforeAtagManualsMetadata(metadata,"bulex"),"bulex"),metadata);
  const restored=beforeGb172Manifest(beforeAtagManualsManifest(m));assert.deepEqual(beforeGb172Manifest(beforeAtagManualsManifest(restored)),restored);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

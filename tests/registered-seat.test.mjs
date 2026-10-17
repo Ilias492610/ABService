@@ -1,4 +1,4 @@
-const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const pageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry, beforeFaucetProtectedBytes } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry, beforeFaqRecognitionProtectedBytes } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry, beforeSanitaryReferralSource } from "./fixtures/sanitary-referral-history.mjs";
@@ -159,3 +159,4 @@ test("named registered-seat inverses preserve wrong dates URLs metadata and unkn
     assert.equal(beforeRegisteredSeatHtml(wrongDate, path), wrongDate);
   }
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

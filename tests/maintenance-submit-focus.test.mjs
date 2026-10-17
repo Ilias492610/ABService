@@ -1,4 +1,4 @@
-const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const pageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeLocalizationShellBytes } from "./fixtures/localization-shell-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
@@ -13,6 +13,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { loadContactModule } from "./helpers/contact-runtime.mjs";
 import { analyticsCookie } from "./helpers/consent-browser.mjs";
 import { beforeCookieConsentSource } from "./fixtures/cookie-consent-history.mjs";
+import { beforeCookieConsentBytes } from "./fixtures/cookie-consent-history.mjs";
 import * as maintenance from "../libs/maintenance-check.mjs";
 import { readContactContext } from "../libs/contact-context.mjs";
 import { pageRegistry as fullLocalizedRegistry } from "../content/site-content.mjs";
@@ -213,7 +214,7 @@ test("independent frozen actual before preserves complete source and raw default
   assert.equal(hash(buildGlobalSchemaGraph()), f.before.globalSchemaSha256);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const [path, key] of [["content/business.mjs", "businessSha256"], ["content/media.mjs", "mediaSha256"], ["libs/maintenance-check.mjs", "maintenanceKernelSha256"], ["app/globals.css", "cssSha256"]]) {
-    const actual = beforeLocalizationShellBytes(await readFile(new URL(`../${path}`, import.meta.url)), path);
+    const actual = beforeLocalizationShellBytes(beforeCookieConsentBytes(await readFile(new URL(`../${path}`, import.meta.url)), path), path);
     assert.equal(hash(path === "app/globals.css" ? beforeTariffEntryProtectionCss(actual.toString("utf8")) : actual), f.before[key], path);
   }
 });
@@ -237,3 +238,4 @@ test("exact submit inverse leaves wrong options, missing actions, extra statemen
     assert.notEqual(hash(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(source.replace(from, to)))), f.before.sourceSha256, from);
   }
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

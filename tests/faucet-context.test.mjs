@@ -1,4 +1,4 @@
-const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const pageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
@@ -58,3 +58,4 @@ test("named inverse cannot hide wrong new content duplicate answers source chang
   for(const value of [{path:"/wrong",lastModified:"2026-10-15"},{path:"/installaties/sanitair",lastModified:"2026-10-16"}])assert.equal(beforeFaucetRegistry(value),value);
   const bytes=Buffer.from([0x89,0,0xff,0xfe]);assert.equal(beforeFaucetProtectedBytes(bytes,"app/apple-icon.png"),bytes);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

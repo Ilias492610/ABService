@@ -3,6 +3,7 @@ import Link from "next/link";
 import TrackedLink from "@/components/tracked-link";
 import HeaderNavigation from "@/components/header-navigation";
 import LanguageSwitcher from "@/components/language-switcher";
+import CookiePreferencesLink from "@/components/cookie-preferences-link";
 import { navigation } from "@/content/site-content.mjs";
 import { business } from "@/content/business.mjs";
 import { legalIdentity } from "@/content/legal-identity.mjs";
@@ -51,7 +52,7 @@ export function LocalizedFooter({ locale, serviceLinks, areaLinks, knowledgeLink
         </div>
         {list(copy.services,serviceLinks)}{list(copy.serviceArea,areaLinks)}{list(copy.knowledge,knowledgeLinks)}
       </div>
-      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} AB Service</span><span>{copy.area} · {business.vatId}</span></div>
+      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} AB Service</span><span>{copy.area} · {business.vatId}</span><CookiePreferencesLink locale={locale} /></div>
     </footer>
   );
 }

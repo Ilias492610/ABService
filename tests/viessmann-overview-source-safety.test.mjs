@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -85,3 +85,4 @@ test("Viessmann manifest pins one originalHTML71literalrows without appliance or
   assert.equal(s?.sha256,f.sha256);assert.equal(s?.bytes,f.bytes);for(const k of ["pageCount","expectedSha256","hashMatchesPriorRecord"])assert.equal(s?.[k],null);
   assert.equal(hash(m.entries.filter(e=>e.id!==f.id).map(beforeCalentaManifestEntry).map(beforeAvantaManifestEntry)),f.preservation.otherEntries);assert.equal(hash(m.guides.filter(g=>g.slug!=="viessmann").map(beforeCalentaManifestMirror).map(beforeAvantaManifestMirror)),f.preservation.otherMirrors);assert.equal(hash(m.snapshots.filter(s=>!["remeha-calenta-legacy-pdf","viessmann-overview-html","remeha-avanta-overview-html","remeha-avanta-pagination-html"].includes(s.id))),f.preservation.oldSnapshots);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

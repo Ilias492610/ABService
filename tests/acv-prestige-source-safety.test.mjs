@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -113,3 +113,4 @@ test("all other12 full guides and all registry fields preserve the genuine64 cap
   assert.equal(hash(beforeAcvGuide(guide).codes), facts.preservation.codes);
   assert.equal(faultGuides.map(beforeAtagManualsGuide).map(beforeGb172Guide).reduce((n,g) => n + g.codeEntryCount, 0), 1596);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

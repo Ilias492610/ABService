@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -61,3 +61,4 @@ test("ATAG history inverse is a no-op on other models pages metadata HTML and al
  assert.equal(beforeAtagManualsGuide(other),other);assert.equal(beforeAtagManualsRegistry(page),page);assert.equal(beforeAtagManualsMetadata(meta,"buderus"),meta);assert.equal(beforeAtagManualsHtml(html,"buderus"),html);
  const restored=beforeAtagManualsManifest(manifest);assert.deepEqual(beforeAtagManualsManifest(restored),restored);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

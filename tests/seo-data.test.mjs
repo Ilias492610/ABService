@@ -1,4 +1,5 @@
 import test from "node:test";
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";
 import assert from "node:assert/strict";
 
 import { pageRegistry } from "../content/site-content.mjs";
@@ -114,7 +115,7 @@ test("water meter pilot is published with its own canonical and actual content d
   assert.match(metadata.description, /(?:geregistreerd|meterstanden)/i);
   assert.equal(buildSitemapEntries(pageRegistry).find(({ url }) => url.endsWith("/tools/watermetercheck"))?.lastModified, "2026-10-11");
   assert.equal(pageRegistry.find((entry) => entry.path === "/advies").lastModified, "2026-10-11");
-  assert.equal(beforeRegisteredSeatRegistry(pageRegistry.find((entry) => entry.path === "/privacy-policy")).lastModified, "2026-10-11");
+  assert.equal(beforeRegisteredSeatRegistry(beforeCookieConsentRegistry(pageRegistry).find((entry) => entry.path === "/privacy-policy")).lastModified, "2026-10-11");
 });
 
 test("published pages have distinct topic previews without changing the homepage or noindex fallback", () => {

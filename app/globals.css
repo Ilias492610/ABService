@@ -322,6 +322,26 @@ th { background: var(--mist); }
 }
 
 .language-entry-links, .language-switcher { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding-block: .5rem; font-size: .875rem; }
+.cookie-banner { margin-block: 1rem; padding: 1.25rem; border: 2px solid var(--ink, #103447); border-radius: .75rem; background: #fff; color: #103447; }
+.cookie-banner h2, .cookie-dialog h2 { margin-top: 0; font-size: 1.25rem; }
+.cookie-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.cookie-actions button, .cookie-actions a { max-width: 100%; overflow-wrap: anywhere; }
+.cookie-actions .button { white-space: normal; text-align: center; }
+.cookie-text-button, .cookie-photo-button { color: #103447; background: #fff; border: 1px solid #536f7c; border-radius: .375rem; padding: .65rem .85rem; font: inherit; cursor: pointer; }
+.cookie-text-button:focus-visible, .cookie-photo-button:focus-visible, .cookie-option input:focus-visible { outline: 3px solid #126c8a; outline-offset: 3px; }
+.cookie-dialog { width: min(40rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); padding: 1.5rem; border: 2px solid #103447; border-radius: .75rem; color: #103447; background: #fff; overflow-y: auto; }
+.cookie-dialog:not([open]) { display: none; }
+.cookie-dialog::backdrop { background: rgb(16 52 71 / .65); }
+.cookie-option { display: flex; align-items: flex-start; gap: .75rem; margin-block: 1.25rem; cursor: pointer; }
+.cookie-option input { width: 1.25rem; height: 1.25rem; flex: 0 0 1.25rem; margin-top: .2rem; }
+.cookie-option span span { display: block; margin-top: .25rem; }
+.cookie-consent-panel [role="alert"], .consented-author-photo [role="alert"] { color: #8b2118; font-weight: 600; }
+.consented-author-photo { display: flex; flex: 0 1 9rem; align-items: flex-start; flex-direction: column; gap: .35rem; }
+.cookie-photo-note, .cookie-photo-button { font-size: .75rem; }
+.cookie-photo-button { padding: .4rem .5rem; }
+.cookie-photo-button:disabled { cursor: default; }
+.cookie-policy { scroll-margin-top: 12rem; }
+.footer-bottom { flex-wrap: wrap; }
 .localized-contact-languages { display: flex; justify-content: flex-end; }
 .language-switcher a[aria-current="page"] { font-weight: 800; text-decoration-thickness: .15em; }
 .localized-shell .nav-row { flex-wrap: wrap; justify-content: space-between; }

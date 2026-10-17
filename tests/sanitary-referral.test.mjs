@@ -14,7 +14,7 @@ import * as business from "../content/business.mjs";
 import * as intents from "../content/service-intents.mjs";
 import * as fullLocalizedSite from "../content/site-content.mjs";
 import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
-const registry = {...fullLocalizedSite, pageRegistry:beforeLocalizationRegistry(fullLocalizedSite.pageRegistry)};
+const registry = {...fullLocalizedSite, pageRegistry:beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedSite.pageRegistry))};
 import * as seo from "../libs/seo-data.mjs";
 import * as schema from "../libs/schema-data.mjs";
 import { getCitedSources } from "../libs/cited-sources.mjs";
@@ -175,3 +175,4 @@ test("only sanitary gets an actual modification date and exact inverse preserves
     }
   }
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

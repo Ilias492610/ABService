@@ -1,4 +1,4 @@
-const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const pageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -52,3 +52,4 @@ test("all12 other SSR guides and exact early entrance plus safety markup remain 
  for(const [slug,expected] of q.reading.beforeOtherGuideHtml)assert.equal(hash(await renderFaultGuide(slug)),expected,slug);
  const html=await renderFaultGuide("remeha");assert.ok(html.includes(q.reading.entranceHtml));assert.ok(html.includes(q.reading.safetyMarker));const start=html.indexOf(q.reading.safetyMarker),safety=html.slice(start,html.indexOf("</section>",start)+10);assert.equal(safety.replace(q.reading.safetyMarker,q.reading.beforeSafetyMarker),q.reading.beforeSafetyHtml);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

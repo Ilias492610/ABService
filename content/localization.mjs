@@ -1,4 +1,5 @@
 import { business } from './business.mjs';
+import { COOKIE_POLICY_UPDATED } from './cookie-policy-date.mjs';
 
 export const LOCALES = Object.freeze(['nl-BE', 'fr-BE', 'en-BE']);
 export const LANGUAGE_NAMES = Object.freeze({'nl-BE':'Nederlands','fr-BE':'Français','en-BE':'English'});
@@ -97,4 +98,4 @@ export const localizedPageCandidates = [
   {path:'/en/contact',locale:'en-BE',title:'Contact AB Service',description:'Contact AB Service about plumbing, heating, maintenance, repairs and installations. Enquiries are assessed before confirmation.'},
   {path:'/fr/confidentialite',locale:'fr-BE',title:'Politique de confidentialité | AB Service',description:'Comment AB Service traite les données des demandes de contact et de l’utilisation du site, et quels sont vos droits.'},
   {path:'/en/privacy',locale:'en-BE',title:'Privacy policy | AB Service',description:'How AB Service processes information from contact enquiries and website use, and what rights you have.'},
-].map(page=>({...page,status:'published',lastModified:'2026-10-17',changeFrequency:'yearly',priority:page.path.endsWith('contact')?0.8:0.3}));
+].map(page=>({...page,status:'published',lastModified:page.path.endsWith('contact')?'2026-10-17':COOKIE_POLICY_UPDATED,changeFrequency:'yearly',priority:page.path.endsWith('contact')?0.8:0.3}));

@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -146,3 +146,4 @@ test("Itho manifest records original document ID,26keys30entries and explicit de
   assert.equal(s.sha256,f.sha256); assert.equal(s.pageCount,f.pageCount); assert.equal(s.bytes,f.bytes);
   assert.equal(s.expectedSha256,null); assert.equal(s.hashMatchesPriorRecord,null);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

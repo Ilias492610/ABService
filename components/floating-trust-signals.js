@@ -7,7 +7,7 @@ import { business } from "@/content/business.mjs";
 import { formatGoogleRating } from "@/libs/google-reviews.mjs";
 import { getLocaleCopy, getWhatsAppHref } from "@/content/localization.mjs";
 
-const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row, .faq-list, .fault-guide-reading, .fault-guide-hero, .tariff-service-context";
+const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row, .faq-list, .fault-guide-reading, .fault-guide-hero, .tariff-service-context, .cookie-consent-panel";
 
 function focusHeader() {
   document.querySelector(".site-header .brand")?.focus({ preventScroll: true });

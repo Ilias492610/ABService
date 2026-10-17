@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -111,3 +111,4 @@ test("Avanta manifest retains two original responses but only17 distinct codes",
   assert.equal(hash(m.guides.filter(g => g.slug !== "remeha").map(beforeCalentaManifestMirror)), f.preservation.remeha.otherMirrors);
   assert.equal(hash(m.snapshots.filter(s => !["remeha-calenta-legacy-pdf","remeha-avanta-overview-html", "remeha-avanta-pagination-html"].includes(s.id))), f.preservation.oldSnapshots);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

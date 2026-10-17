@@ -1,4 +1,4 @@
-const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const pageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeLocalizationShellSource } from "./fixtures/localization-shell-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
@@ -40,7 +40,7 @@ test("the named inverse restores only both approved complete rules and leaves th
 });
 
 test("actual stylesheet preserves every before byte after the bounded historical inverse", async () => {
-  const actual = beforeLocalizationShellSource(await readFile(new URL("../app/globals.css", import.meta.url), "utf8"), "app/globals.css");
+  const actual = beforeLocalizationShellSource(beforeCookieConsentSource(await readFile(new URL("../app/globals.css", import.meta.url), "utf8"), "app/globals.css"), "app/globals.css");
   assert.equal(beforeFooterFactsCss(beforeTariffEntryProtectionCss(actual)), f.before.css);
   assert.equal(hash(beforeFooterFactsCss(beforeTariffEntryProtectionCss(actual))), "f3b518a4cae4a7491004b5fc24acb6aa8f664a838e9731fd52162b56eaf26ccb");
 });
@@ -94,3 +94,5 @@ test("complete real footer registry metadata sitemap catalog business media and 
   assert.equal(hash(await readFile(new URL("../content/media.mjs", import.meta.url))), f.before.mediaSha256);
   assert.equal(hash(buildGlobalSchemaGraph()), f.before.globalSchemaSha256);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";
+import { beforeCookieConsentSource } from "./fixtures/cookie-consent-history.mjs";

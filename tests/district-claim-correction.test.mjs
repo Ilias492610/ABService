@@ -15,7 +15,7 @@ import * as projects from "../content/projects.mjs";
 import * as business from "../content/business.mjs";
 import * as fullLocalizedSite from "../content/site-content.mjs";
 import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
-const registry = {...fullLocalizedSite, pageRegistry:beforeLocalizationRegistry(fullLocalizedSite.pageRegistry)};
+const registry = {...fullLocalizedSite, pageRegistry:beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedSite.pageRegistry))};
 import * as seo from "../libs/seo-data.mjs";
 import * as schema from "../libs/schema-data.mjs";
 import { areaDrafts } from "../content/content-backlog.mjs";
@@ -247,3 +247,4 @@ test("coverage and publication boundaries stay unchanged after the accuracy corr
   await assert.rejects(access(new URL("../app/loodgieter-synthetic-unknown-district/page.js", import.meta.url)), { code: "ENOENT" });
   await assert.rejects(regionRoute.default({ params: Promise.resolve({ regio: "synthetic-unknown-region" }) }), (error) => error.digest === "NEXT_HTTP_ERROR_FALLBACK;404");
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

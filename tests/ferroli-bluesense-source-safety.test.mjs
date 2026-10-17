@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -83,3 +83,4 @@ test("Ferroli manifest ties only verified historical fields to retained original
   const m=beforeGb172Manifest(beforeAtagManualsManifest(beforeTzerraManifest(JSON.parse(await readFile(new URL("../docs/seo/fault-code-model-coverage.json",import.meta.url),"utf8"))))),e=m.entries.find(e=>e.id===facts.id),s=m.snapshots.find(s=>s.id==="ferroli-bluesense-pdf");
   assert.equal(e.modelScope,facts.scope);assert.equal(e.sourceLabel,facts.label);assert.deepEqual(e.models,facts.models);assert.equal(e.issueDate,facts.issueMonth);assert.equal(e.issueDatePrecision,"month");assert.equal(e.language,"nl");assert.equal(e.documentNumber,facts.document);assert.equal(e.revision,facts.revision);assert.equal(e.literalCodeGroupCount,37);assert.equal(e.literalIndividualCodeCount,38);assert.equal(e.literalAlarmCodeCount,16);assert.equal(e.literalFaultCodeCount,22);assert.equal(e.normalStateCodeCount,4);for(const k of ["articleNumbers","market","firmwareCompatibility","currentBelgianVariantCompatibility","newestEdition"])assert.equal(e[k],null);assert.equal(s.sha256,facts.sha256);assert.equal(s.pageCount,facts.pageCount);assert.equal(s.expectedSha256,null);assert.equal(s.hashMatchesPriorRecord,null);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

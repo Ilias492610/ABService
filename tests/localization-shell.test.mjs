@@ -8,6 +8,7 @@ import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import history from './fixtures/localization-shell-history.json' with {type:'json'};
 import {beforeLocalizationShellSource} from './fixtures/localization-shell-history.mjs';
+import {beforeCookieConsentSource} from './fixtures/cookie-consent-history.mjs';
 const rootURL=new URL('../components/localized-root.js',import.meta.url);
 const Link=({children,...props})=>React.createElement('a',props,children);
 const Image=({priority:_priority,unoptimized:_unoptimized,...props})=>React.createElement('img',props);
@@ -15,7 +16,7 @@ const hooks={...React,useEffect(){},useRef:()=>({current:null})};
 const dependencies={'react':hooks,'next/link':Link,'next/image':Image,'next/navigation':{usePathname:()=>'/fr/contact'},'next/font/google':{Inter:()=>({className:'test-font'})},'../app/globals.css':{},'@vercel/analytics':{track(){}},'@/components/privacy-analytics':{default:()=>null}};
 test('named shell transitions retain complete old sources and expose extra unrelated drift',()=>{
  const hash=s=>createHash('sha256').update(s).digest('hex');
- for(const row of history){const source=readFileSync(new URL('../'+row.path,import.meta.url),'utf8');assert.equal(hash(beforeLocalizationShellSource(source,row.path)),row.beforeSha256,row.path);assert.notEqual(hash(beforeLocalizationShellSource(source+'\n/* unrelated drift */\n',row.path)),row.beforeSha256);assert.equal(beforeLocalizationShellSource(source,'unknown/path'),source);}
+ for(const row of history){const source=beforeCookieConsentSource(readFileSync(new URL('../'+row.path,import.meta.url),'utf8'),row.path);assert.equal(hash(beforeLocalizationShellSource(source,row.path)),row.beforeSha256,row.path);assert.notEqual(hash(beforeLocalizationShellSource(source+'\n/* unrelated drift */\n',row.path)),row.beforeSha256);assert.equal(beforeLocalizationShellSource(source,'unknown/path'),source);}
 });
 for(const [locale,skip,seat] of [['nl-BE','Ga naar de inhoud','Maatschappelijke zetel'],['fr-BE','Aller au contenu','Siège social'],['en-BE','Skip to content','Registered office']])test('server root renders real document and complete contact shell in '+locale,async()=>{
  assert(existsSync(rootURL),'localized server root exists');

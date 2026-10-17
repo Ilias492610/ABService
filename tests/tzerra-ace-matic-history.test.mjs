@@ -1,4 +1,4 @@
-const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
+const livePageRegistry = beforeLocalizationRegistry(beforeCookieConsentRegistry(fullLocalizedRegistry));
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -66,3 +66,4 @@ test("Tzerra inverse is a no-op outside Remeha and idempotent after its own exac
  assert.equal(hash(beforeTzerraManifest(manifest)),f.before.preservation.allManifest);
  const restored=beforeTzerraManifest(manifest);assert.deepEqual(beforeTzerraManifest(restored),restored);
 });
+import { beforeCookieConsentRegistry } from "./fixtures/cookie-consent-history.mjs";

@@ -15,6 +15,7 @@ import * as citations from "../libs/cited-sources.mjs";
 import { readContactContext } from "../libs/contact-context.mjs";
 import * as legalIdentity from "../content/legal-identity.mjs";
 import { beforeRegisteredSeatHtml } from "./fixtures/registered-seat-history.mjs";
+import { beforeCookieConsentHtml } from "./fixtures/cookie-consent-history.mjs";
 
 const require = createRequire(import.meta.url);
 const { parse } = require("next/dist/compiled/node-html-parser");
@@ -229,7 +230,7 @@ test("hub and water advice expose the useful tool entrance while preserving exis
 
 test("rendered privacy explains local water amounts and coded optional handoff while retaining existing processing", async () => {
   const compiled = await loadContactModule("app/privacy-policy/page.js", { ...shared, "@/components/registered-seat": registeredSeat });
-  const text = parse(beforeRegisteredSeatHtml(renderToStaticMarkup(React.createElement(compiled.default)), "/privacy-policy")).textContent;
+  const text = parse(beforeRegisteredSeatHtml(beforeCookieConsentHtml(renderToStaticMarkup(React.createElement(compiled.default)), "/privacy-policy"), "/privacy-policy")).textContent;
   assert.match(text, /watermetercheck/i);
   assert.match(text, /meterstanden.*meetduur.*hoeveelheden.*browser/i);
   assert.match(text, /positief.*nul.*dienst/i);

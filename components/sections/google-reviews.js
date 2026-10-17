@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ConsentedAuthorPhoto from "@/components/consented-author-photo";
 import TrackedLink from "@/components/tracked-link";
 import Stars from "@/components/review-stars.mjs";
 import { business } from "@/content/business.mjs";
@@ -11,20 +11,6 @@ const GOOGLE_REVIEW_POLICY_URL =
 function Author({ review }) {
   const content = (
     <>
-      {review.author.photoUri ? (
-        <Image
-          className="review-author-avatar"
-          src={review.author.photoUri}
-          alt=""
-          width={44}
-          height={44}
-          unoptimized
-        />
-      ) : (
-        <span className="review-author-fallback" aria-hidden="true">
-          {review.author.displayName.slice(0, 1).toUpperCase()}
-        </span>
-      )}
       <span>
         <strong>{review.author.displayName}</strong>
         {review.relativePublishTimeDescription ? (
@@ -34,9 +20,8 @@ function Author({ review }) {
     </>
   );
 
-  return review.author.uri ? (
+  const name = review.author.uri ? (
     <a
-      className="review-author"
       href={review.author.uri}
       target="_blank"
       rel="noopener noreferrer"
@@ -44,8 +29,9 @@ function Author({ review }) {
       {content}
     </a>
   ) : (
-    <div className="review-author">{content}</div>
+    content
   );
+  return <div className="review-author"><ConsentedAuthorPhoto photoUri={review.author.photoUri} displayName={review.author.displayName} />{name}</div>;
 }
 
 function ReviewCard({ review }) {
