@@ -1,5 +1,5 @@
 import manifest from '../fixtures/dutch-route-source-manifest.json' with {type:'json'};
-const paths=new Map(manifest.map(({from,to})=>[from,to]));
+const paths=new Map([...manifest.map(({from,to})=>[from,to]),['app/opengraph-image.js','components/default-social-image.js']]);
 // This explicit test-source map never rewrites public URLs or unknown files.
 export const resolveRouteSourcePath=path=>paths.get(path)??path;
 export const restoreMovedRootImport=(source,path)=>path==='app/layout.js'

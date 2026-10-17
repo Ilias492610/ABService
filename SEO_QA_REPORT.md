@@ -1,5 +1,98 @@
 # AB Service SEO QA Report
 
+## 17 oktober 2026 — Begrensde socialmetadata-correctie lokaal gecontroleerd
+
+Werkelijke RED: eerste resolverproef2fail/1PNGcontrolgreen; eerste kleine
+verplaatsing11gericht/843volledig groen maar echteHTTPQA vindt oudeURL404 en
+globale404 zonder beeld door Next-routegroephash. Kandidatuur niet gepubliceerd.
+Herziene RED3fail/1controlgreen voor werkelijke root/FR/EN/global404-exporten,
+echteGETregistratie/PNG en exacte historische alias; daarna4groen. Historische
+inverse eerst apart rood; drie bestaande bronhashguards faalden terecht. Alleen
+twee exacte layouthunks teruggenomen op die vergelijkingsgrenzen; oude hashes/
+fixtures niet herschreven, extra/duplicate/unknown/binarydrift blijft zichtbaar.
+
+845volledig groen, lint0/prod0/build178, lokalecrawl86/97/117, taal6/2/5.
+Rootbestandsmetadata vervangen door bestaande URL als gewone statische GET;
+beeldsource930cb36f-hash exact behouden en echtePNG35636529-hash gelijk aan vóór:
+64082bytes/1200×630/png/200/robotsnull.91routevergelijkingen main/schema/status/
+taal identiek; metadata als multiset identiek na uitsluitend de vastgelegde
+oude opaque cachequery op vijf404beeldURLs. Published/noindex200-metadata gelijk.
+Geen registry/datum/schema/copy/consent/contact/Googleproducer/package/lockwijziging.
+
+Build bevat geen metadataBase-waarschuwing; verwachte Google-missingkeydiagnose
+zonder lokale key blijft. Echte CUA1280 toont PNG, ENcontact(en-BE/eigencanonical/
+eigenuitlegbeeld/formulier/consentfalse/nooverflow) en404(noindex/eigenfallback/
+intacte navigatie). Geen volledige AT/JS-uit/veld-/mailclaim. Beeld werkelijk
+geïnspecteerd; private capture/compare/RED/GREEN en foutproeven behouden.
+
+Verseaudit9dev7hoog2matig/productie0, geen forcefix. Bronauditexit1 met ACV0/
+Sibelga403/tweeHansgrohe403; publieke officiële webextracties leesbaar, maar geen
+directeHTTP200 of nieuwe inhoudelijke bronacceptatie afgeleid. Geen bron gewijzigd.
+137flags/vierintegralen/60ouderebewijspaden behouden. Sole review en exacte
+publicatie-/hosted-/provider-/livegates nog open; geen IndexNow voor runtime/docs.
+
+## 17 oktober 2026 — Abder bereikbaar, bestaande Cloud-quotums niet bereikt
+
+Nieuwe eigenaarstoestemming voor deze read-onlycontrole. Native CUA Chrome-
+profielmenu toont ABDER; Google-accountidentiteit werkelijk bevestigd, geen
+Hamdaoui-substitutie. Mapsquotas leidt naar gratis-proefaanmelding/stap1van2/
+voorwaarden/kaartverificatie. Gewone Cloud-startnavigatie eveneens; tijdelijke
+projectselector verdwijnt vóór bruikbare interactie. Eén stale-elementactie had
+geen effect; actuele AX/screenshot bevestigen opnieuw het aanmeldscherm. Een
+adresbalkfocusprobleem eerst herkend en met gerichte klik gecorrigeerd; niet als
+extra accountfeit geteld. Geen projectlijst/quotummetriek/waarde/reset vastgesteld.
+
+Niet verder gegaan of voorwaarden geaccepteerd, geen nieuwe trial/billing/API/
+key/grant/quota. Werkelijk screenshotabder-cloud-quota-blocker.png bewaard en
+geïnspecteerd; eigen profielvenster open voor vervolg, andere uservensters intact.
+Geen code/test/dependencywijziging of nieuwe release-/herstelclaim. Alleen
+feitelijke voortgang, diffcheck0; eerdere840-testrelease blijft apart bewijs.
+Volgende noodzakelijke input: bestaand Cloud-projectnaam/link of insteller van
+de huidige Maps-koppeling. Een afwezige projectlijst is geen bewijs van afwezigheid.
+
+## 17 oktober 2026 — Google-oorzaak en begrensde contactmatrix geverifieerd
+
+Diagnostiekrelease52a53ea3b42442345bb221553d9c05d3ddb3d39c exact geaccepteerd:
+840lokaal/hosted, lint0, productieaudit0, build178, lokale én livecrawl86/97/117
+en taalaudit6/2/5. [CI39060446962](https://github.com/Ilias492610/ABService/actions/runs/39060446962)
+successNode24.21.0. Werkelijke primaire4TCg1e7Pkju7U9hfrnQZ5ugEwpoe
+Ready/Production/fullSHA/www; Production7144323752/7144319755 beide success.
+Sole review0critical/0important/1minor;449frozen bodies gelijk vóór push. Minor
+telfout gecorrigeerd in deze backfill: RED5falend/1groene succescontrole.
+
+Werkelijke eigen home-invocationjk76b-1792263599475-d0174c93791f van19:00:00.425Z
+toont HTTP429/RESOURCE_EXHAUSTED/RATE_LIMIT_EXCEEDED vanuit Places. Dit is geen
+missingkey/ID-/cookievermoeden meer; juiste GET en aanwezige productievariabelen
+waren apart gezien. Exacte quotummetriek/waarde/reset en accountherstel blijven
+onbekend. Screenshotgoogle-rate-limit-confirmed.png en AX behouden/geïnspecteerd.
+Geen sleutels/ruwe body/headers/PII in nieuwe logs; geen API/rechten/billing-/
+quotumwijziging. Bestaande publieke fallback/Maps-link blijven, geen dataherstelclaim.
+
+Actuele NL/FR/EN-contactmatrix op gewone build52a via loopbackadapter4325→4323,
+alleen GET/HEAD doorgestuurd en alle contactPOSTs uitsluitend lokaal afgevangen.
+Per taal: pendinglock/dubbeleEnter, ontbreken van ok, okfalse, niet-JSON, HTTP500
+en socketreset met lokale foutstatus/focus/busyfalse/knopvrij/naambehoud; bewuste
+retry toont succes mét afspraakvoorbehoud, naamleeg/consentfalse.46 ontvangsten,
+0 doorgestuurd, geen Mailgun/GoogleAPI of analytics-intake. Socketreset gaf2/5/5
+ontvangsten bij één submit per taal; oorzaak niet vastgesteld, geen exact-oncePASS.
+Een browserharness-counterverwarring is als harnasfout behouden, geen productfix.
+
+Aparte zes-verzoekenproef: HTTP500 en daarna retry zonder hervullen in NL/FR/EN;
+6/6 payloads voldoen bij de lokale ontvanger aan uitsluitend synthetische
+naam/telefoon/e-mail/consentwaarden. Alleen tellingen/booleans bewaard, geen
+formulierpayloads. Dit bewijst deze drie HTTP-retryflows; exacte privéveld-DOM-
+vergelijking in de browserlaag is niet als bewijs gebruikt.375px mobiel en1265px
+desktopcontent geen overflow, foutfocus zichtbaar onder header. Een direct na
+resize ongunstige tussenmeting blijft behouden; normale volgende submit is apart
+zichtbaar bevestigd. Eigen27/28/23/24 gesloten,1280×720 hersteld, proxyexit0 en
+NextCtrlC130; andere processen/user1/recovery behouden.
+
+Huidige CUA biedt geen gedocumenteerde JS-uit-context/netwerkroutering; historische
+directe Playwrightproef niet uitgevoerd als omweg. Echte JS-uit/AT/lifecycle/veld/
+mailontvangst/menselijke review en volledige WPs blijven open.9dev (7hoog/2matig),
+ESLint-lifecycle en metadataBase blijven gescheiden van productieaudit0. Geen
+nieuwe datum, IndexNow of docs-onlypush. Backfill lokaal voor productvervolg.
+
 ## 17 oktober 2026 — Google-diagnostiek lokaal; herstel nog niet bewezen
 
 Eigen productieaanvraag18:49:44Z/rating200-null en home200/fallback gereproduceerd.

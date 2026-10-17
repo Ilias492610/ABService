@@ -1,0 +1,15 @@
+{
+  "path": "app/layout.js",
+  "beforeSha256": "aeaf71de5973f144bf46a297ce9408b35c12b6d748fb0c2c2cc0fc867374835d",
+  "afterSha256": "3b9b05b054cdb0be325a63f5cbb13f76102a1fc8fe694c98f719494f89666d67",
+  "changes": [
+    {
+      "before": "import { business } from \"@/content/business.mjs\";\n",
+      "after": "import { business } from \"@/content/business.mjs\";\nimport { alt as socialImageAlt, size as socialImageSize, contentType as socialImageType } from \"@/components/default-social-image\";\n"
+    },
+    {
+      "before": "  metadataBase: new URL(business.canonicalOrigin),\n",
+      "after": "  metadataBase: new URL(business.canonicalOrigin),\n  openGraph: {\n    images: [{ url: `${business.canonicalOrigin}/opengraph-image`, ...socialImageSize, alt: socialImageAlt, type: socialImageType }],\n  },\n"
+    }
+  ]
+}

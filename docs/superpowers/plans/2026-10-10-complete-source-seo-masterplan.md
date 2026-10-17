@@ -1,5 +1,92 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 17 oktober 2026 — Zelfstandige WP12-socialmetadata lokaal geverifieerd
+
+Geen accountvervolg na eigenaar-uitstel. Specifieke metadataBase-warning
+teruggevoerd op rootbestandsmetadata vóór taallayouts. Eerste minimale move
+terecht verworpen na echteHTTP404 op oudebeeldURL en verloren globale404preview;
+Next maakt routegroephashes. Niet gepubliceerd. Herziene expliciete statischeGET
+behoudt bestaande `/opengraph-image` en exact beeldsource/PNG, rootfallback uit
+echte alt/size/type-exports; geen brede layout-/taal-/cookie-/bedrijfswijziging.
+
+845tests/lint0/prod0/build178/lokale86-97-117/taal6-2-5 groen, metadataBase-warning
+weg; lokale missingGooglekeydiagnose verwacht.91routes main/schema/status/taal
+exact behouden, metadatawaarden/aantallen gelijk na alleen werkelijk oudeopaque
+cachequery op vijf404beelden. EchtePNG64082bytes/1200×630/hash35636529 gelijk.
+CUAbeeld/Engelscontact/404 gecontroleerd, geen echte mail/events; historische
+inverse exacttweelayouthunks,60ouderebewijspaden/137flags/vierintegralen behouden.
+
+Sole onafhankelijke hele-review/exacte main/CI/primairVercelReadyProduction/fullSHA/
+www/live blijven publicatiegates. Geen inhoudsdatum of IndexNow.9dev/lifecycle,
+echteJS-uit/AT/veld/menselijke bewijsgrenzen blijven open. Versebronaudit4fail:
+ACVnetwork0/Sibelga403/tweeHansgrohe403; leesbare officiële extractie is geen
+verse runnerHTTP200, failures blijven zichtbaar en bronnen ongewijzigd. Geen
+heleWP of meesterplan afgesloten, geen fictieve invulling van eigenaargegevens.
+
+## 17 oktober 2026 — Google-accountwerk eigenaar-uitgesteld; technisch vervolg
+
+De eigenaar zet de verdere Cloud/Mapsquotumcontrole expliciet op later. Niet
+geschrapt als bewijs of afgerond gemarkeerd:429/limit en niet-bereikte quotums
+blijven vastgelegd. Bestaande officiële koppeling, fallback en Maps-link blijven;
+geen verdere accountvragen/submissions/trial/rechten/budgetwijzigingen hiervoor.
+
+Volgende zelfstandige afgebakende WP12-taak: missing-metadataBase-waarschuwing
+onderzoeken en bij bewezen behoud corrigeren. Het algemene deelbeeld staat boven
+de drie rootlayouts; die bevatten de juiste basis al, en paginametadata is absoluut.
+Zelfde publieke URL/beeld/inhoud/canonical/talen/robots/datums/consent behouden;
+RED/GREEN, volledige gates, één review en exacte publicatie/live blijven nodig.
+Geen nieuwe algemene planronde of afsluiting van9dev/echte bewijs-WPgates.
+
+## 17 oktober 2026 — Zelf uitgevoerde Cloud-accountcontrole, projectgate blijft
+
+Eigenaar geeft expliciet toestemming de eerder gevraagde accountcontrole zelf
+te doen. Bestaand ABDERChromeprofiel en juiste Google-identiteit werkelijk
+bereikbaar. Mapsquotums en gewone Cloud-start leiden echter naar stap1van2 van
+gratis-proefaanmelding met voorwaarden/kaartverificatie; geen bestaande project-
+lijst of exacte quotummetriek/waarde/reset bereikt. Niet op Akkoord/verder geklikt.
+Geen nieuwe trial/billing/API/key/rechten/limiet/budget of verkeerde account.
+Scherm open in eigen Abder-venster, bewijs/recovery behouden; overige vensters
+intact. Geen projectafwezigheid of definitieve billingoorzaak afgeleid.
+Volgende gerichte input: naam/link van het bestaande Cloud-project of wie de
+huidige Maps-koppeling heeft ingesteld. Geen code/release/IndexNow/checkboxwijziging.
+
+## 17 oktober 2026 — Google-blokkering vastgesteld; zelfstandig browservervolg afgerond
+
+De afgebakende diagnostiek staat op exact main/remote
+52a53ea3b42442345bb221553d9c05d3ddb3d39c. Eén onafhankelijke review0critical/
+0important/1minor,449reviewhashes gelijk vóór push; de kleine RED-telfout hieronder
+gecorrigeerd naar5falende tests plus1groene succescontrole. Exacte
+[CI39060446962](https://github.com/Ilias492610/ABService/actions/runs/39060446962)
+successNode24.21.0/840tests/lint0/prod0/build178/crawl86-97-117/taal6-2-5.
+Werkelijke primaireVercel4TCg1e7Pkju7U9hfrnQZ5ugEwpoe Ready/Production/fullSHA/www,
+beide bestaandeProduction-records success, livecrawl86/97/117 en taal6/2/5 groen.
+
+Eigen productie-invocation19:00:00.425Z bevestigt HTTP429/RESOURCE_EXHAUSTED/
+RATE_LIMIT_EXCEEDED bij de bestaande Placesaanvraag. De Google-limietfout is nu
+bewezen; exacte quotummetriek/waarde/reset en werkelijke dataherstel zijn niet
+bewezen. Geen sleutel/ruwe providerbody/PII gelogd of limiet/budget/rechten/API
+gewijzigd. Volgende accountgate: uitsluitend Abders juiste bestaande Cloud/Maps-
+project open op Places API(New)-quotums, zonder verhoging/betaling. Een vraag is
+al voorgelegd; geen verkeerde Google-account, nieuwe aanmeldgrant of herhaalde
+submission. [Primaire quota-uitleg](https://developers.google.com/maps/documentation/places/web-service/usage-and-billing#usage-limits).
+
+Zelfstandig WP01/12/15-vervolg: huidige NL/FR/EN-formuliermatrix daadwerkelijk
+in lokale browser doorlopen, alle contactPOSTs lokaal onderschept. Pending/
+dubbeleEnter/vijffouttypen/lokalefoutfocus/naambehoud en bewuste retry met
+afspraakvoorbehoud;46ontvangsten/0doorgestuurd/geen echte mail. Socketreset gaf
+2/5/5ontvangsten per taal bij één submit, oorzaak onbekend; geen exact-oncePASS.
+Aanvullende HTTP500→retry zonder hervullen toont6/6 juiste synthetische naam/
+telefoon/e-mail/consentpayloads aan de lokale API-grens. Geen rawpayload opgeslagen.
+Mobiele/desktopfoutfocus/nooverflow gecontroleerd. Geen productcodewijziging hiervoor.
+
+De echte JS-uit/AT/lifecycle/veld-/mailontvangst-/menselijke gates blijven open;
+CUA biedt geen gedocumenteerde JS-uit-context, geen directe Playwrightomweg.
+9dev/ESLint/metadataBase en bewijs-/eigenaar-uitgestelde WPs blijven afzonderlijk
+open, geen137oorspronkelijke flags afgevinkt. Vierintegralen/ouderefixtures en alle
+recovery behouden. Alleen eigen tabs/servers gesloten/1280×720 hersteld. Geen
+IndexNow of nieuwe inhoudsdatum voor diagnostiek/acceptatie; backfill lokaal tot
+een echte productrelease. Geen nieuwe algemene planronde of masterplanafsluiting.
+
 ## 17 oktober 2026 — Gerichte Google-reviewdiagnose gestart
 
 Eigenaar vraagt onderzoek/veilig herstel en daarna zelfstandig uitvoerbare taken.
@@ -7,7 +94,7 @@ Geen nieuwe algemene planronde. Afgebakende WP04/06/12/17-taskbrief in bestaande
 SDD-recovery: productievariabelen aanwezig en juiste PlacesGET daadwerkelijk in
 Vercel gezien, homefallback/ratingnull gereproduceerd; upstreamreden nog onbekend.
 Root enige schrijver, bestaande checkout en zeven cookieacceptatiebackfills behouden.
-Zes eerst falende gedragstests voor veilige serverdiagnostiek, exacte historische
+Vijf eerst falende diagnostiektests plus één groene succescontrole, exacte historische
 broninverse en840tests/lint0/prod0/build178 groen. Geen andere producentwijziging,
 retry/cache/scraping/fictieve review of nieuwe API/budget/grants. Review/release en
 feitelijk koppelingherstel blijven afzonderlijk open;137broncheckboxes onaangeraakt.

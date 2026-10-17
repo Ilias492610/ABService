@@ -4,6 +4,7 @@ import {readFile} from "node:fs/promises";
 import {createHash} from "node:crypto";
 import rows from "./fixtures/cookie-consent-history.json" with {type:"json"};
 import {beforeCookieConsentSource,beforeCookieConsentBytes,beforeCookieConsentHtml,beforeCookieConsentRegistry,beforeCookieConsentCopy} from "./fixtures/cookie-consent-history.mjs";
+import {beforeSocialImageMetadataSource} from "./fixtures/social-image-metadata-history.mjs";
 const hash = source => createHash("sha256").update(source).digest("hex");
 
 test("unrelated binary assets pass through without UTF8 decoding", () => {
@@ -13,7 +14,7 @@ test("unrelated binary assets pass through without UTF8 decoding", () => {
 
 test("consent source inverse restores only named actual transitions, not extra or duplicate drift", async () => {
   for (const row of rows.filter(row => !row.kind || row.kind === "source")) {
-    const source = await readFile(new URL("../" + (row.actualPath || row.path),import.meta.url),"utf8");
+    const source = beforeSocialImageMetadataSource(await readFile(new URL("../" + (row.actualPath || row.path),import.meta.url),"utf8"),row.path);
     assert.equal(hash(beforeCookieConsentSource(source,row.path)),row.beforeSha256,row.path);
     assert.notEqual(hash(beforeCookieConsentSource(source+"\n// extra drift",row.path)),row.beforeSha256);
     assert.equal(beforeCookieConsentSource(source,"unknown"),source);

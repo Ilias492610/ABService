@@ -6,6 +6,7 @@ import SiteFooter from "@/components/site-footer";
 import JsonLd from "@/components/json-ld";
 import FloatingTrustSignals from "@/components/floating-trust-signals";
 import { business } from "@/content/business.mjs";
+import { alt as socialImageAlt, size as socialImageSize, contentType as socialImageType } from "@/components/default-social-image";
 import { buildGlobalSchemaGraph } from "@/libs/schema-data.mjs";
 import "../globals.css";
 
@@ -19,6 +20,9 @@ export const viewport = {
 
 export const metadata = {
   metadataBase: new URL(business.canonicalOrigin),
+  openGraph: {
+    images: [{ url: `${business.canonicalOrigin}/opengraph-image`, ...socialImageSize, alt: socialImageAlt, type: socialImageType }],
+  },
   title: {
     default: "AB Service | Loodgieter en verwarming in Antwerpen",
     template: "%s",

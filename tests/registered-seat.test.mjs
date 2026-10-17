@@ -11,6 +11,7 @@ import { beforeLocalizationShellBytes } from "./fixtures/localization-shell-hist
 import { beforeLocalizationContactBytes } from "./fixtures/localization-contact-history.mjs";
 import { beforeCookieConsentBytes } from "./fixtures/cookie-consent-history.mjs";
 import { beforeGoogleReviewDiagnosticsBytes } from "./fixtures/google-review-diagnostics-history.mjs";
+import { beforeSocialImageMetadataBytes } from "./fixtures/social-image-metadata-history.mjs";
 import { beforeLocalizationReleaseBytes, beforeLocalizationReleaseMetadata } from "./fixtures/localization-release-history.mjs";
 import { createHash } from "node:crypto";
 import { createRequire } from "node:module";
@@ -111,7 +112,7 @@ test("only the two legal routes publish true13October dates with all registry me
   assert.equal(renderGlobalSchema(), f.before.renders.globalSchema);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const file of f.before.protectedFiles) {
-    const loaded = beforeLocalizationShellBytes(beforeLocalizationContactBytes(beforeLocalizationReleaseBytes(beforeCookieConsentBytes(beforeGoogleReviewDiagnosticsBytes(await readFile(new URL(`../${resolveRouteSourcePath(file.path)}`, import.meta.url)), file.path), file.path), file.path), file.path), file.path);
+    const loaded = beforeLocalizationShellBytes(beforeLocalizationContactBytes(beforeLocalizationReleaseBytes(beforeCookieConsentBytes(beforeGoogleReviewDiagnosticsBytes(beforeSocialImageMetadataBytes(await readFile(new URL(`../${resolveRouteSourcePath(file.path)}`, import.meta.url)), file.path), file.path), file.path), file.path), file.path), file.path);
     const current = file.path === "app/layout.js" ? Buffer.from(restoreMovedRootImport(loaded.toString("utf8"), file.path)) : loaded;
     const searchRestored = file.path === "components/municipality-filter.js" ? beforeMunicipalitySearchSource(current.toString("utf8")) : current;
     const escapeRestored = file.path === "components/header-navigation.js" ? beforeNavigationEscapeSource(searchRestored.toString("utf8")) : searchRestored;

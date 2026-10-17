@@ -1,5 +1,81 @@
 # Evidence Register
 
+## 17 oktober 2026 expliciete gedeelde socialmetadata
+
+Geïnstalleerde Next16.3.8generate-metadata/OG/routehandleiding plus echte
+resolve-metadata/resolve-opengraph/get-metadata-route verklaren rootvolgorde en
+routegroephash. Afgewezen eerste proef daadwerkelijk oudeURL404/global404beeldloos;
+geen publicatie. Herziene gewone statischeGET behoudt `/opengraph-image`, identiek
+beeldmodule en expliciete rootfallback uit echte exports.845tests/lint0/prod0/
+build178/lokaal86-97-117/taal6-2-5; specifieke metadataBase-warning weg.
+
+Private before/after/compare bewaart91identieke main/schema/status/taal, alle
+metadatawaarden/aantallen gelijk na alleen de werkelijk vastgelegde opaque
+beeldquery op vijf404s. EchtePNG200/png/1200×630/64082bytes en hash356365297c756b46
+gelijk; sourcehash930cb36f eveneens gelijk. CUAbeeld/ENcontact/404 geobserveerd,
+geen echte mail/events/API- of accountwijzigingen. Twee specifieke broninverse-
+hunks negatief getest; oudere fixtures/137flags/vierintegralen behouden. Geen
+publieke inhoud/datum/package/lock/IndexNowwijziging; review/release/live nog gates.
+
+Versebrontransportaudit faalt4maal: [ACV](https://www.acv.com/belgie/documentation)
+network0, [Sibelga](https://www.sibelga.be/nl/contact?_country=BE)403,
+[Hansgrohebadkamer](https://www.hansgrohe.be/nl/service/faq/badkamerkranen)403 en
+[Hansgrohekeuken](https://www.hansgrohe.be/nl/service/faq/keukenmengkranen)403.
+Leesbare officiële publieke extracties dateren van gisteren/afgelopenweek en
+wijzen niet op verhuizing; bewijzen geen verse runnerHTTP200 of oorzaak van403.
+Failures niet gemaskeerd, geen bronvervanging of nieuwe technische checkedAt.
+9dev/lifecycle en eigenaar-uitgestelde Google/prijzen/WP16 plus echte gates blijven.
+
+## 17 oktober 2026 toegestane accountinspectie
+
+Eigenaar geeft expliciet toestemming om zelf de bestaande AbderCloud/Mapsquota
+te bekijken. Native Chrome-profiel en Google-accountidentiteit bevestigd; geen
+andere Google-account gebruikt. Officiële quotumroute en gewone Cloud-start
+komen op gratis-proefaanmelding stap1van2 met voorwaarden/kaartverificatie.
+Actuele AX/screenshotabder-cloud-quota-blocker.png in private recovery bewaren
+dit echte obstakel. Geen bestaande projectlijst/exacte limiet gezien; geen
+conclusie dat Abder geen project bezit of dat maandtegoed/billing de429 verklaart.
+Geen akkoord, nieuwe trial, kaart, key/API/billing/rechten/quota of budgetwijziging.
+Naam/link van het bestaande Cloud-project of insteller van de Maps-koppeling is
+nu de gerichte vervolginput. Geen code/release/IndexNow; alleen lokale backfill.
+
+## 17 oktober 2026 Google-limietbewijs en contactacceptatie
+
+Exact main/remote52a53ea3b42442345bb221553d9c05d3ddb3d39c;
+[CI39060446962](https://github.com/Ilias492610/ABService/actions/runs/39060446962)
+successNode24.21.0/840tests/lint0/prod0/build178/crawl86-97-117/taal6-2-5.
+Primaire bestaandeVercel4TCg1e7Pkju7U9hfrnQZ5ugEwpoe daadwerkelijk
+Ready/Production/fullSHA/www; beideProduction7144323752/7144319755success.
+Livecrawl86/97/117 en taal6/2/5 groen; één onafhankelijke hele-review0critical/
+0important/1minor,449bodyhashes gelijk vóór push. MinorREDtelling nu gecorrigeerd.
+
+Eigen home-invocationjk76b-1792263599475-d0174c93791f/19:00:00.425Z toont
+de werkelijke veilige enumdiagnose HTTP429/RESOURCE_EXHAUSTED/RATE_LIMIT_EXCEEDED.
+Screenshot/AX in bewaarde private recovery2026-10-17-google-reviews-recovery
+werkelijk geïnspecteerd; geen geheimen of ruwe providertekst gepubliceerd.
+Juiste PlacesGET/productievariabelen eerder apart bevestigd. Google-limiet als
+foutcategorie bewezen, exacte metriek/waarde/reset niet. Geen herstel of extra
+grants/API/budget; juiste AbderCloud/Mapsquotumweergave nodig. Primaire actuele
+[Google-quotumbron](https://developers.google.com/maps/documentation/places/web-service/usage-and-billing#usage-limits)
+beschrijft method/projectlimieten en onderbreking bij een quotumgrens; de pagina
+bewijst niet welke limiet dit account heeft bereikt.
+
+Actuele lokale browsermatrix gebruikt de gewone52abuild en een GET/HEAD-only
+loopbackadapter; alle contactPOSTs lokaal, geen echte mail. NL/FR/EN pending/
+dubbeleEnter/vijffouten/lokalefocus/naambehoud/retry met afspraakvoorbehoud,
+46ontvangsten/0doorgestuurd. Kunstmatige socketreset gaf2/5/5ontvangsten;
+onverklaarde transportmultipliciteit, geen exact-onceclaim. Aparte HTTP500→retry
+zonder hervullen levert6/6 juiste synthetische naam/telefoon/e-mail/consentchecks
+bij de ontvanger. Geen rawpayload opgeslagen; privéveld-DOMvergelijking niet als
+bewijs gebruikt. Mobiele/desktopfoutfocus en geen overflow visueel gecontroleerd.
+
+Echte JS-uitproef niet beschikbaar via de gedocumenteerde browserbediening,
+geen directe Playwrightomweg. AT/werkelijke lifecycle/veld/echte ontvangst en
+menselijke/persoons-/fysieke-/case-/meetbewijzen blijven apart.9dev/prod0,
+ESLint/metadataBase en eigenaar-uitgestelde gates onveranderd. Geen IndexNow,
+inhoudsdatum, volledigeWPafsluiting of afzonderlijke docspush. Recovery behouden;
+alleen eigen tabs/servers gesloten, viewport hersteld. Acceptatiebackfill lokaal.
+
 ## 17 oktober 2026 Google-reviewdiagnose
 
 Read-only primaireVercelconfig toont Google-variabelen voor Production; eigen

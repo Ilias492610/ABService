@@ -1,5 +1,89 @@
 # AB Service SEO Changelog
 
+## 17 oktober 2026 — Algemene socialmetadata lokaal hersteld
+
+De ontbrekende metadataBase-waarschuwing komt van automatische bestandsmetadata
+boven de taallayouts. Eerste verplaatsingsproef is verworpen: Next gaf een
+routegroephash, oude beeld-URL404 en verlies van globale404-voorvertoning. Niet
+gepubliceerd. De gewone expliciete statische GET op `/opengraph-image` gebruikt
+nu het identieke beeldmodule en de rootmetadata declareert de bestaande fallback
+met diens echte alt/afmetingen/type. Geen taallayout-/bedrijfs-/cookieherschrijving.
+
+845tests/lint0/prod0/build178, lokale86/97/117 en taal6/2/5 groen; specifieke
+metadataBase-waarschuwing verdwenen, verwachte lokale Google-missingkeydiagnose
+blijft.91 voor/na-routes hebben exact dezelfde main/schema/status/taal; alle
+metadatavelden en aantallen gelijk, alleen oude opaque beeldquery op vijf404s
+vervalt. Zelfde PNG64082bytes/1200×630 en exact gelijke SHA256. Browser bevestigt
+beeld, Engelse contactmetadata/formulier en noindex404; geen mail of testevent.
+Nieuwe begrensde historische inverse herstelt twee layouthunks, oudere fixtures/
+137flags/vier integralen behouden. Geen registrydatum, package/lock of IndexNow.
+
+Verse dev-audit blijft9 (7hoog/2matig). Bronaudit heeft4 transportfouten: ACV0,
+Sibelga403 en twee Hansgrohe403. Officiële publieke extracties zijn leesbaar,
+geen verhuizing vastgesteld; dit is geen directe auditHTTP200, failures blijven.
+Google-accountwerk is eigenaar-uitgesteld. Eén onafhankelijke hele-review en
+exacte main/CI/provider/liveacceptatie volgen; nog geen publicatieclaim.
+
+## 17 oktober 2026 — Google-accountwerk op later, zelfstandig WP12-vervolg
+
+Eigenaar stelt verdere Cloud/Mapsquotumcontrole uit. Geen verwijderen van de
+bestaande officiële reviewkoppeling of Maps-link en geen herstelclaim; huidige
+429/accountgate blijft historisch bewijs. Geen nieuwe account-/trial-/budgetactie.
+Afgebakend technisch vervolg onderzoekt metadataBase-waarschuwing bij het algemene
+deelbeeld, met identieke publieke URL/beeldinhoud en expliciete behoudsgates.
+Nog geen productfix, nieuwe tests/publicatie/IndexNow of volledige WP-afsluiting.
+
+## 17 oktober 2026 — Toegestane Abder-accountcontrole uitgevoerd
+
+Met nieuwe expliciete eigenaarstoestemming het bestaande Chrome-profiel ABDER
+geopend en de Google-accountidentiteit bevestigd. De officiële Maps-quotumroute
+stuurt dit account naar stap1van2 van een gratis proefaanmelding, met voorwaarden
+en kaartverificatie. Ook normale Cloud-startnavigatie komt daar terug; een kort
+zichtbare projectselector verdwijnt bij de redirect. Geen bestaande projectlijst
+of exacte quotumwaarde bereikt, dus niet geconcludeerd dat er geen project bestaat.
+Niet op Akkoord/verder geklikt; geen proefabonnement, kaart, billing, key, rechten
+of limiet gewijzigd. Eigen Abder-venster met dit scherm open gelaten voor vervolg;
+andere vensters niet gesloten. Screenshot/SDD bewaard. Nog nodig: naam/link van
+het bestaande Cloud-project of wie de huidige Maps-koppeling heeft ingesteld.
+Geen code/dependency/publicatie/IndexNow; vier lokale acceptatiedocs behouden.
+
+## 17 oktober 2026 — Google-limietfout bevestigd; diagnostiek live geaccepteerd
+
+Exact main/remote `52a53ea3b42442345bb221553d9c05d3ddb3d39c` is gepubliceerd.
+[CI39060446962](https://github.com/Ilias492610/ABService/actions/runs/39060446962)
+is success: Node24.21.0,840tests/lint0/productieaudit0/build178/crawl86-97-117/
+taal6-2-5. De bestaande primaire Vercel4TCg1e7Pkju7U9hfrnQZ5ugEwpoe toont
+werkelijk Ready/Production, volledige SHA en www-domein; beide bestaande
+GitHubProduction-records7144323752/7144319755 zijn success. Livecrawl86/97/117
+en taalaudit6/2/5 slagen. Eén onafhankelijke review:0critical/0important/1minor;
+de kleine RED-telfout hieronder is nu gecorrigeerd: vijf falende diagnostiektests
+plus één al groene succescontrole, niet zes falende tests.
+
+De eigen homepageaanvraag van19:00:00.425Z levert uit deze deployment een veilige
+serverdiagnose: HTTP429, RESOURCE_EXHAUSTED, RATE_LIMIT_EXCEEDED. Dit bevestigt
+een Google-limietblokkering, niet welke quotummetriek, waarde of reset geldt.
+De koppeling is dus nog niet hersteld. Cookie-/fotokeuze verklaart deze serverfout
+niet. Geen sleutel, ruwe providerbody of klantdata gelogd; geen limiet, budget,
+API, rechten of account gewijzigd. Volgende noodzakelijke stap: in Abders juiste
+bestaande Cloud/Maps-project de Places API(New)-quotumweergave bekijken, zonder
+verhoging of nieuwe betaling. [Google-quota-uitleg](https://developers.google.com/maps/documentation/places/web-service/usage-and-billing#usage-limits).
+
+Onafhankelijk vervolg WP01/12/15: echte lokale NL/FR/EN-browsermatrix met
+synthetische, volledig afgevangen contactverzoeken. Pending/dubbele Enter,
+vijf fouttypen, lokale fouttekst/focus/naambehoud en bewuste retry gecontroleerd;
+46 ontvangen testverzoeken,0 doorgestuurd/echte mails. Een kunstmatige socketreset
+gaf2/5/5 ontvangsten per taal bij één submit; oorzaak onbekend, geen exact-onceclaim.
+Aparte HTTP-fout/retryproef zonder hervullen bevestigt aan de lokale API-grens
+6/6 juiste synthetische naam/telefoon/e-mail/consentpayloads. Mobiele375px-content
+en desktop1265px-content tonen geen overflow en zichtbare foutfocus. Geen
+JS-uit-, assistieve-technologie-, echte mailontvangst- of volledige WP-claim.
+
+9dev, ESLint-lifecycle/metadataBase en echte eigenaar-/bewijsgrenzen blijven open.
+Alle137broncheckboxes/vierintegralen/ouderefixtures en recovery behouden. Alleen
+eigen tabs/servers gesloten en1280×720 hersteld. Geen inhoudsdatum of IndexNow:
+dit is diagnostiek/acceptatie, geen substantieel gewijzigde publieke URL-inhoud.
+Deze acceptatiebackfill blijft lokaal tot een volgende echte productrelease.
+
 ## 17 oktober 2026 — Google-reviewonderzoek, beperkte diagnostiek lokaal
 
 Live homepage200 met beschikbaarheidsfallback en rating200/null opnieuw bevestigd.
@@ -13,7 +97,8 @@ De homepageproducent krijgt uitsluitend veilige serverfoutcategorieën: HTTP-sta
 toegestane providerstatus/-reden, ontbrekende configuratie, payload- of requestfout.
 Geen ruwe Google-antwoorden, headers, sleutels, URLs of klantgegevens in logs.
 Fallback, succesvolle officiële data, veldmasker, timeout, no-store en aantal
-aanvragen blijven behouden. Zes gedragstests eerst RED, daarna GREEN; één exact
+aanvragen blijven behouden. Vijf diagnostiektests eerst RED plus één groene
+succescontrole, daarna alle zes GREEN; één exact
 begrensde historische broninverse, oude fixtures behouden.840tests/lint0/prod0/
 build178 lokaal groen; lokale crawl/review/exacte release en echte oorzaak nog
 open. Geen herstelde Google-koppeling of nieuwe IndexNow-melding geclaimd.
