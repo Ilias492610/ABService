@@ -44,6 +44,13 @@ const copy = {
     "defaultCta": "Discuss your enquiry"
   }
 };
+const requiredText = 'home breadcrumbs contact title intro cta form formHeading imageAlt direct company conversation warning danger call heroAsideLabel heroAsideHeading heroAside tariffs defaultCta'.split(' ');
+for (const entry of Object.values(copy)) {
+  for (const key of requiredText) {
+    if (typeof entry[key] !== 'string' || !entry[key].trim()) throw new Error(`Invalid localized copy: contact-page.${key}`);
+  }
+}
+
 export const getContactPageCopy = locale => {
   if (!Object.hasOwn(copy, locale)) throw new Error('Unsupported contact page locale');
   return copy[locale];

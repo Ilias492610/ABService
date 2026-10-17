@@ -1,5 +1,16 @@
 # AB Service SEO Content Inventory
 
+## 17 oktober 2026 — vier taalequivalenten live op b48f8c9
+
+`/fr/contact`, `/en/contact`, `/fr/confidentialite`, `/en/privacy` gecontroleerd live
+op exactb48f8c993f32db0bf5489cad4ea8634320c255a4. Eén review/768lokaal+hosted/
+CI39047560112/primairVercelReadyProduction/fullSHA/www en live86/97/116 bevestigd.
+Eerste live-timeout apart behouden; ongewijzigde bevestigingscrawl met logging exit0.
+Registry84published/2noindex; oude80sitemaprecords/data en NLcontact/privacyinhoud
+behouden. Vier IndexNow200received, geen indexeringsbewijs. Geen taalhome, technische
+gidsvertaling, lokale/case-/prijs-/erkenningsclaim, menselijke review of heleWP15.
+JS-off/echte ontvangst/consent/beheer en overige gates apart. Backfill lokaal.
+
 ## 17 oktober 2026 — Task138 lokale contact/privacytaalrelease
 
 Vier nieuwe volledige equivalenten: `/fr/contact`, `/en/contact`,

@@ -1,5 +1,69 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 17 oktober 2026 — Zelfstandig technisch vervolg en cookieontwerp
+
+De minor uit de geaccepteerde taalrelease is lokaal gerepareerd: expliciete
+volledigheidscontrole van contact-/validatie-/pagina-/privacyteksten, twaalf
+dienstlabels en acht privacykoppen. Echte RED/GREEN, 17 nieuwe/785 volledige tests,
+lint0/prod0/build178, lokale crawl86/97/116 en zes-equivalentenaudit. Alle huidige
+woordenboekwaarden blijven exact gelijk aan de gepubliceerde b48f8c9-basis;
+geen nieuwe inhoud, datums, routes of dependencywijziging. Onafhankelijke review
+en exacte publicatie-/hosted-/provider-/liveacceptatie blijven apart open.
+
+De verse dependencydiagnose blijft9developmentrecords (7hoog/2matig), twee unieke
+advisories. Geen gepatchte braces-release en geen parserfix binnen de opgegeven
+Tailwind3/nested6-ranges; geen veilige geforceerde oplossing geconstrueerd.
+ESLint9-lifecycle blijft afzonderlijk. Dit sluit WP12-security niet af.
+
+De eigenaar heeft het eigen gratis cookieconsentconcept goedgekeurd. Het concrete
+[ontwerp](../specs/2026-10-17-cookie-consent-design.md) is voor geschreven review
+aangeboden: statistieken en externe Google-auteurfoto's afzonderlijk standaard uit,
+eenvoudig weigeren/intrekken, noodzakelijke voorkeurscookie maximaal180dagen,
+NL/FR/EN en behoud van officiële reviews/contact/tools. Nog geen consentcode,
+nieuwe privacyverwerking of juridische conformiteitsclaim. Ontwerpreview en daarna
+afgebakende uitvoeringsstappen zijn de volgende gates. Accounts/Maps, echte prijzen
+enWP16 blijven uitgesteld; persoonlijke/fysieke/case-/meetbewijzen blijven echt.
+137 oorspronkelijke checkboxregels/vier integrale bronnen en recovery behouden.
+
+## 17 oktober 2026 — Task138 gepubliceerd en geaccepteerd
+
+Exact main/remote `b48f8c993f32db0bf5489cad4ea8634320c255a4`, alle411frozen bodies
+vóór acceptatiebackfill geverifieerd. Eén onafhankelijke hele-releasebeoordeling:
+0critical/0important/1minor (toekomstige volledigheidscontrole vertaalsleutels);
+alle19 afgezonderde gedragingen expliciet door root beoordeeld. Geen tweede review.
+
+Fresh lokaal/prepush/task-done768/768; exact hosted
+[CI39047560112](https://github.com/Ilias492610/ABService/actions/runs/39047560112)
+Node24.21.0, lint0, productieaudit0, build178 en crawl86/97/116 plus taal-audit
+zes equivalenten/twee groepen/vijf404s. Bestaande primaire Vercel
+HCgCumuXZKDkiksXMR8rAKQTv7Aw daadwerkelijk Ready/Production, volledige commit en
+www-domein; Production7142117344 en7142112201 success. Geen nieuw project/domein.
+
+Live taalcontrole slaagt. Eerste volledige livecrawl stopte op TimeoutError zonder
+URL-context; fout behouden, oorzaak onbekend. Dezelfde ongewijzigde crawl met alleen
+aanvraaglogging slaagt volledig86/97/116; logging verandert geen timeout/response
+of retries. Nederlandse contact/privacy main/footer/header zijn exact behouden na
+uitsluitend benoemde toevoegingen. Live320 Engelse/Franse validatie en zichtbare
+eerste foutfocus, echte Engelse→Franse toetsenbordtaalwissel en Franse privacylink/
+acht secties geverifieerd. Native invalid-only303 en JSON400 blijven in elke taal;
+geen echte mail. Screenshot werkelijk geïnspecteerd.
+
+Na livecontrole en exact publiek200text/plain-keybewijs: uitsluitend vier nieuwe
+taal-URLs éénmaal via IndexNow gemeld, HTTP200 received; indexering niet bevestigd.
+Geen onveranderde NL-/docs-/runtime-URLs ingestuurd. Eigen tabs15/16 gesloten,
+viewport hersteld, eigenserver79152 exit130; usertab/andere server behouden.
+137oorspronkelijke flags/vierintegralen en beide recoveryledgers intact.
+
+Deze begrensde taalrelease is afgerond, niet heleWP15 of het meesterplan. Echte
+JS-off-browserproef blijft specifiek pending wegens ontbrekende gedocumenteerde
+bediening; nativeHTTP is geen vervanging. AI-review is geen menselijke vakman-/
+juridische review; echte taalontvangst en blijvend beheer niet bewezen. Consent/
+cookiekeuze,9dev/lifecycle, echte erkenning/fysieke/case-/meetbewijzen blijven open;
+accounts/Maps, werkelijke prijzen enWP16 uitgesteld. Volgende zelfstandige taak:
+minor vertaalsleutel-/servicelabel-guard, zonder nieuwe pagina's of feiten.
+Feitelijke acceptatiebackfill lokaal voor een volgende echte productrelease;
+geen afzonderlijke docs-only push.
+
 ## 17 oktober 2026 — Task138 FR/EN lokaal, releaseacceptatie volgt
 
 Het expliciet goedgekeurde [uitvoeringsplan](2026-10-17-contact-privacy-fr-en.md)
@@ -136,7 +200,7 @@ als echte opdrachten. De137oorspronkelijke checkboxregels blijven ongewijzigd.
 | WP12 | Open: geverifieerde productreleases, maar9ontwikkelbevindingen/ESLint-lifecycle, brede route-/AT-/veld-/semantische-/security-/bron403-gates niet volledig gesloten. | Beschikbare echte veld-/accountgegevens voor niet openbaar meetbare onderdelen; geen eigenaarinput nodig voor een concrete veilige code-/broncorrectie. |
 | WP13 | Voorwaardelijk open: prospects/routes voorbereid; geen relatiebasis bij de al genoemde partners, originele vakbijdrage of goedgekeurde outreach/plaatsing. | Echte originele expertise en afzonderlijke concrete opdracht vóór verzending/publicatie; geen herhaalde bewijsvraag voor de bevestigde niet-bestaande relaties. |
 | WP14 | Voorbereid/open: één warmwatertekstconcept toegevoegd, niet geplaatst; geen videopilot of onafhankelijke AI-antwoorden verzameld. | Later juiste bedrijfsaccount, concrete plaatsingsopdracht/opvolgcapaciteit en eventuele echte media/rechten; onafhankelijke meetinterface/context voor echte AI-observaties. |
-| WP15 | Open: Franse dienstverlening is al bevestigd, maar technische Franse tekstcontroleur, onderhouden workflow en geteste Franse contactflow ontbreken. | Een bevoegde Franse tekstcontroleur en verantwoordelijke voor blijvend beheer/opvolging; Franse service niet opnieuw laten bevestigen. |
+| WP15 | Open: FR/EN-contact/privacy staan gecontroleerd live op b48f8c9; echte taalontvangst/opvolging, menselijke technische tekstcontrole en blijvend beheer zijn niet bewezen. | Een bevoegde menselijke technische taalcontroleur, beheerverantwoordelijke en later echt ontvangst-/opvolgbewijs; Franse service en Engelse opvolgmogelijkheid zijn al bevestigd. |
 | WP16 | Research voorbereid, uitvoering bewust uitgesteld; geen campagne of spend. Niet noodzakelijk om autonome organische verbeteringen voort te zetten. | Alleen bij een latere expliciete betaalde opdracht: budget/billing, geschiktheid en capaciteit. Nu geen aankoop of advertentiebudget vragen. |
 | WP17 | Doorlopend open: logs en protocollen aanwezig; verse28v28/afzonderlijke30v30, echte ontvangst-/opdrachttabellen, onafhankelijke AI-/velddata en evaluatievensters niet verzonnen invullen. | Later gedateerde eigen exports en geaggregeerde aanvragen/opdrachten met periode/noemer; onbekend blijft onbekend. |
 

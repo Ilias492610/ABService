@@ -61,6 +61,16 @@ const copy = {
     "changes": ". This page will be updated when forms, analytics, advertising or other data processing change."
   }
 };
+const requiredText = 'name eyebrow title intro controller contact mailgun analytics googleBefore googleLink googleAfter technical rights maintenance water updated date changes'.split(' ');
+for (const entry of Object.values(copy)) {
+  for (const key of requiredText) {
+    if (typeof entry[key] !== 'string' || !entry[key].trim()) throw new Error(`Invalid localized copy: privacy.${key}`);
+  }
+  if (!Array.isArray(entry.headings) || entry.headings.length !== 8 || Array.from(entry.headings).some(value => typeof value !== 'string' || !value.trim())) {
+    throw new Error('Invalid localized copy: privacy.headings');
+  }
+}
+
 export const getPrivacyCopy = locale => {
   if (!Object.hasOwn(copy, locale)) throw new Error('Unsupported privacy locale');
   return copy[locale];

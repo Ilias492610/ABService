@@ -1,5 +1,14 @@
 # WP04–WP05: accountstatus en uitgevoerde acties
 
+## 17 oktober 2026 — taalrelease zonder accountactie
+
+Task138 website-release b48f8c9/CI39047560112/primairVercelReadyProduction/fullSHA/www
+geverifieerd. Dit herbevestigt geen GBP/GSC, BingPlaces/Apple, publiek adres of
+moderatie. Geen nieuwe login/save/grant/XML/DNS/import, appeal of persoonlijk account.
+Accounts/Maps blijven eigenaar-uitgesteld. Alleen vier nieuwe website-taalURLs na
+live/keycontrole via IndexNow200received, niet geïndexeerdverklaring. Laatst gedateerde
+Maps-waarneming hieronder blijft historisch bewijs, geen nieuwe publieke hercontrole.
+
 ## 17 oktober 2026 — Task137 release zonder accountwijziging
 
 Website-runtime gecontroleerd gepubliceerd op exact12bb624, CI39041684520 en echte

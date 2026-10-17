@@ -161,11 +161,20 @@ const copy = {
   }
 };
 
+const requiredText = 'note name phone email service chooseService address city postalCode brand boilerType message consentBefore privacy consentAfter submit submitting pending success nativeError summary transport invalid server recipient'.split(' ');
+const requiredErrors = 'nameRequired nameLength phoneRequired phoneInvalid emailLength emailInvalid address city postalCode service brand boilerType message consent'.split(' ');
+const hasText = value => typeof value === 'string' && value.trim().length > 0;
+
 for (const entry of Object.values(copy)) {
-  for (const key of Object.keys(copy['nl-BE'])) {
-    if (key !== 'errors' && (typeof entry[key] !== 'string' || !entry[key])) throw new Error(`Missing contact copy: ${key}`);
+  for (const key of requiredText) {
+    if (!hasText(entry[key])) throw new Error(`Invalid localized copy: contact.${key}`);
   }
-  for (const key of Object.keys(copy['nl-BE'].errors)) if (!entry.errors[key]) throw new Error(`Missing validation copy: ${key}`);
+  for (const key of requiredErrors) {
+    if (!hasText(entry.errors?.[key])) throw new Error(`Invalid localized copy: validation.${key}`);
+  }
+  if (entry !== copy['nl-BE'] && (!Array.isArray(entry.services) || entry.services.length !== 12 || Array.from(entry.services).some(value => !hasText(value)))) {
+    throw new Error('Invalid localized copy: contact.services');
+  }
   Object.freeze(entry.errors);
   if (entry.services) Object.freeze(entry.services);
   Object.freeze(entry);

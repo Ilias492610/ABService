@@ -1,5 +1,74 @@
 # AB Service SEO Changelog
 
+## 17 oktober 2026 — Vertaalcontrole lokaal gerepareerd en cookieontwerp voorgelegd
+
+De bestaande volledigheidscontrole is aangevuld voor alle verplichte contact-,
+validatie-, contactpagina- en privacyteksten, de twaalf FR/EN-dienstlabels en de
+acht privacykoppen. Ontbrekende, lege, alleen-spaties, niet-string en onvolledige
+lijstwaarden worden afgewezen. Drie onafhankelijk uit de gepubliceerde b48f8c9
+vastgelegde datahashes bewijzen behoud van de huidige teksten; geen nieuwe feiten,
+pagina's, inhoudsdatums, package- of lockwijzigingen.
+
+Echte regressies eerst rood; na de minimale correctie 17 gericht en 785 volledig
+groen. Lint 0 na herstel van een testvariabelenaam; build 178 met de bestaande
+metadataBase-waarschuwingen; productieaudit 0; lokale crawl 86/97/116 en taalaudit
+6 equivalenten/2 groepen/5 noindex404s. Eerste testharness plaatste de mutatie na
+de nieuwe controles; de correcte initialisatiegrens is hersteld, foutlog bewaard.
+Een bezette lokale poort4321 is ongemoeid gelaten; eigen server draait op4323.
+Onafhankelijke review, exacte hosted-/provider-/liveacceptatie volgen nog.
+
+Nieuwe diagnose van de negen ontwikkelmeldingen: 7 hoog/2 matig, twee unieke
+advisories, alle getroffen paden development-only. Braces heeft geen gepatchte
+release; de parserfix7.1.6 valt buiten de door Tailwind3/nested6 opgegeven ranges.
+Geen forcefix, Next-downgrade of major-migratie uitgevoerd. ESLint9-lifecycle is
+een afzonderlijke open onderhoudstaak, niet een tiende auditmelding.
+
+De eigenaar keurde de richting voor eigen cookieconsent goed. Het concrete
+[cookieontwerp](docs/superpowers/specs/2026-10-17-cookie-consent-design.md) is
+geschreven en voor review aangeboden; consentcode is nog niet gewijzigd.
+Statistieken en externe auteurfoto's krijgen afzonderlijke keuzes, officiële
+reviewteksten/score en contactfuncties blijven beschikbaar. Na ontwerpreview volgt
+het afgebakende uitvoeringsplan. Geen IndexNow of volledige WP-afsluiting.
+
+## 17 oktober 2026 — Task138 gepubliceerd en geaccepteerd
+
+Exact main/remote `b48f8c993f32db0bf5489cad4ea8634320c255a4`, alle411frozen bodies
+vóór acceptatiebackfill geverifieerd. Eén onafhankelijke hele-releasebeoordeling:
+0critical/0important/1minor (toekomstige volledigheidscontrole vertaalsleutels);
+alle19 afgezonderde gedragingen expliciet door root beoordeeld. Geen tweede review.
+
+Fresh lokaal/prepush/task-done768/768; exact hosted
+[CI39047560112](https://github.com/Ilias492610/ABService/actions/runs/39047560112)
+Node24.21.0, lint0, productieaudit0, build178 en crawl86/97/116 plus taal-audit
+zes equivalenten/twee groepen/vijf404s. Bestaande primaire Vercel
+HCgCumuXZKDkiksXMR8rAKQTv7Aw daadwerkelijk Ready/Production, volledige commit en
+www-domein; Production7142117344 en7142112201 success. Geen nieuw project/domein.
+
+Live taalcontrole slaagt. Eerste volledige livecrawl stopte op TimeoutError zonder
+URL-context; fout behouden, oorzaak onbekend. Dezelfde ongewijzigde crawl met alleen
+aanvraaglogging slaagt volledig86/97/116; logging verandert geen timeout/response
+of retries. Nederlandse contact/privacy main/footer/header zijn exact behouden na
+uitsluitend benoemde toevoegingen. Live320 Engelse/Franse validatie en zichtbare
+eerste foutfocus, echte Engelse→Franse toetsenbordtaalwissel en Franse privacylink/
+acht secties geverifieerd. Native invalid-only303 en JSON400 blijven in elke taal;
+geen echte mail. Screenshot werkelijk geïnspecteerd.
+
+Na livecontrole en exact publiek200text/plain-keybewijs: uitsluitend vier nieuwe
+taal-URLs éénmaal via IndexNow gemeld, HTTP200 received; indexering niet bevestigd.
+Geen onveranderde NL-/docs-/runtime-URLs ingestuurd. Eigen tabs15/16 gesloten,
+viewport hersteld, eigenserver79152 exit130; usertab/andere server behouden.
+137oorspronkelijke flags/vierintegralen en beide recoveryledgers intact.
+
+Deze begrensde taalrelease is afgerond, niet heleWP15 of het meesterplan. Echte
+JS-off-browserproef blijft specifiek pending wegens ontbrekende gedocumenteerde
+bediening; nativeHTTP is geen vervanging. AI-review is geen menselijke vakman-/
+juridische review; echte taalontvangst en blijvend beheer niet bewezen. Consent/
+cookiekeuze,9dev/lifecycle, echte erkenning/fysieke/case-/meetbewijzen blijven open;
+accounts/Maps, werkelijke prijzen enWP16 uitgesteld. Volgende zelfstandige taak:
+minor vertaalsleutel-/servicelabel-guard, zonder nieuwe pagina's of feiten.
+Feitelijke acceptatiebackfill lokaal voor een volgende echte productrelease;
+geen afzonderlijke docs-only push.
+
 ## 17 oktober 2026 — Task138 FR/EN lokaal gereed, releasegates volgen
 
 Vier complete contact/privacy-equivalenten gebouwd onder eigenaar-goedgekeurd

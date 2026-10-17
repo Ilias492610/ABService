@@ -1,5 +1,31 @@
 # Contact en privacy FR/EN — begrensde release
 
+## Geaccepteerde productieversie — 17 oktober 2026
+
+Exactb48f8c993f32db0bf5489cad4ea8634320c255a4 staat op main/remote. Eén hele-review
+0critical/0important/1minor, root19rulings.411frozenbodies gelijk; original137flags/
+4integralen behouden.768tests/lint0/prod0/build178, hostedCI39047560112 Node24.21.0
+plus86/97/116 en zes-equivalentaudit geslaagd. Primaire provider
+HCgCumuXZKDkiksXMR8rAKQTv7Aw daadwerkelijk Ready/Production/fullSHA/www;
+beide bestaande Productiondeployments success.
+
+Live taalcontrole en volledige bevestigingscrawl86/97/116 slagen. Eerste crawl
+TimeoutError zonder URL-context behouden; zelfde ongewijzigde crawl met alleen
+logging later exit0, geen timeoutverruiming of verzonnen oorzaak. NLcontact/privacy
+main/footer/header exact na named additions. Live320 EN/FRinvalidfocus/taalwissel/
+privacy en echte native303/JSON400 in gekozen taal gecontroleerd zonder echte mail.
+Na publieke exacte key200tekst en livecontrole vier nieuweURLs éénmaal IndexNow200
+received; geen indexeringsbewijs. Eigen tabs/server opgeruimd, recovery behouden.
+
+HeleWP15 blijft open voor echte menselijke technische review, beheerverantwoordelijke
+en operationele taalontvangst. JS-off-browser specifiek pending; cookieconsent apart,
+9dev/lifecycle en andere bewijs-/uitstelgates ongewijzigd. Minor volledigheids-guard
+voor split prose/servicelabels is volgende zelfstandige onderhoudstaak; huidige copy
+is door onafhankelijke reviewer volledig gecontroleerd. Acceptatiebackfill lokaal,
+geen nieuwe docs-only deployment.
+
+## Historische lokale kandidaat — vóór bovenstaande acceptatie
+
 Status 17 oktober 2026: lokaal geïmplementeerd onder expliciet goedgekeurd
 [ontwerp](../superpowers/specs/2026-10-17-contact-privacy-fr-en-design.md) en
 [uitvoeringsplan](../superpowers/plans/2026-10-17-contact-privacy-fr-en.md).

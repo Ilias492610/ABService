@@ -8,6 +8,16 @@
 
 **Tech Stack:** Installed Next16.3.8/React19.3, native ESM, existing CSS/analytics/Mailgun interfaces and actual Node24. No dependency install or package/lock changes.
 
+**Afgerond17October:** alle vier begrensde taken geaccepteerd op exact
+`b48f8c993f32db0bf5489cad4ea8634320c255a4`; sole review0critical/0important/1minor,
+768lokaal/hostedCI39047560112, lint0/prod0/build178/crawl86/97/116 en echte primaire
+VercelReadyProduction/fullSHA/www/livewerking. Eerste live-timeout bewaard; gelijke
+bevestigingscrawl met alleen logging exit0. Vier nieuweURLs IndexNow200received,
+geen indexeringsbewijs. JS-off-browser specifiek pending volgens beschikbare-
+bedieningsexceptie; heleWP15/menselijke review/echte ontvangst/beheer/consent en
+andere bewijs-/uitstelgates blijven apart. Recovery behouden; acceptatiebackfill
+lokaal tot volgende productrelease. [Releasebewijs](../../seo/contact-privacy-fr-en-release.md).
+
 **Spec:** `docs/superpowers/specs/2026-10-17-contact-privacy-fr-en-design.md`, explicitly owner-approved17October. Plan status: owner approved17October2026; inline execution started. Task137 bounded release is accepted at `12bb624c5c8c8e5387ee56a4957db4ab1780c683`.
 
 ## Global Constraints
@@ -91,10 +101,10 @@ Use only an available own port for the actual production server and pass that po
 **Consumes:** Tasks1–3. **Produces:** four complete candidate pages and two reciprocal equivalence groups, faithful privacy content and auditable multilingual release.
 
 - [x] Add RED rendered privacy tests for both languages: same controller/contact/seat/no reception, Mailgun/Vercel/Google/localtool behavior, unconfirmed analytics receipt and retention criteria, rights and exact counterpartlinks; no adopted30day policy or invented transfer/retention/legal compliance. Check oneH1, working local links and page language.
-- [ ] Write natural faithful complete privacy translations and finish every visible shell/form string. AI-assisted author+independent reviewer verify functional meaning; no humanprofessionalreview claim. Existing technical guides and rules remainNL and no extra translation/home/local-page claims appear.
+- [x] Write natural faithful complete privacy translations and finish every visible shell/form string. AI-assisted author+independent reviewer verify functional meaning; no humanprofessionalreview claim. Existing technical guides and rules remainNL and no extra translation/home/local-page claims appear.
 - [x] Run actualNode24 fulltests/lint/build/prodaudit, fulltechnicalcrawl and localization-audit against production output. Check all oldNLroutes/canonicals/XML fields, four new route200s and correct initialHTMLlanguage, six selfcanonicals/reciprocal links, no dead/default-home language targets, stable metadata/API/OGassets and ordinary404. Real desktop/mobile/nativekeyboard language-switch/menu/validation/status/link checks, plus native POST HTTPcontract without real mail. Perform an actual JS-disabled browser check if the available documented browser controls support it; otherwise record that specific browser gate pending, never substitute HTTP or source review for it. Neither test proves actual received language enquiry.
-- [ ] Freeze the whole candidate cohort and obtain one fresh independent highest-capability whole-branch review; root rules on all declined scope and fixes Important/Critical in one TDD pass. No claim of fullWP15/whole-site translation or operational receipt. Owner-price/account/WP16 and case/personal/physical/fieldgates unchanged.
-- [ ] Publish only reviewed exact hashes to existingmain/Vercel under standing instruction; verify exactSHA/hostedCI/actualproviderReadyProductionwww/canonical and live functionality. IndexNow only the genuinely new substantial published URLs after valid public key and actuallive checks; do not resubmit unchangedNL URLs or docs/runtimeonly. Record bounded acceptance/backfills in both plan ledgers; preserve recovery and stop only owned test resources.
+- [x] Freeze the whole candidate cohort and obtain one fresh independent highest-capability whole-branch review; root rules on all declined scope and fixes Important/Critical in one TDD pass. No claim of fullWP15/whole-site translation or operational receipt. Owner-price/account/WP16 and case/personal/physical/fieldgates unchanged.
+- [x] Publish only reviewed exact hashes to existingmain/Vercel under standing instruction; verify exactSHA/hostedCI/actualproviderReadyProductionwww/canonical and live functionality. IndexNow only the genuinely new substantial published URLs after valid public key and actuallive checks; do not resubmit unchangedNL URLs or docs/runtimeonly. Record bounded acceptance/backfills in both plan ledgers; preserve recovery and stop only owned test resources.
 
 ## Self review and handoff
 
