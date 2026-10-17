@@ -1,5 +1,45 @@
 # AB Service SEO Changelog
 
+## 17 oktober 2026 — Task130–133, menunaam en concreet restpuntenoverzicht
+
+- WP12: native mobiele knop meldde ook geopend nog “Menu openen”. Alleen de
+  overbodige aria-label verwijderd; “Menu” plus native geopend/gesloten toestand,
+  alle links, contact, styling en route-/bestemmingssluiting behouden. Echte AX-
+  reproductie, RED→GREEN,703tests/lint0/prod0/build170/local82/93/112. Oude header
+  via exacte inverse behouden, main/footer/gids-main en80XML bytegelijk.
+- WP14: één brongebonden tekst-only warmwaterconcept voor de bestaande pilot;
+  niet approved/plaatsingsklaar/ingediend, geen accountactie of post. Bron is de
+  bestaande gelezen gids, geen nieuwe diagnose, apparaatproef, prijs of expertiseclaim.
+- Meesterplan bevat actueleWP00–17-tabel met onderscheid gedateerd afgerond,
+  gedeeltelijk, open, doorlopend en uitgesteld, plus concrete eigenaarinput.
+  WP00/02-snapshots afgerond; geen brede WP-afsluiting uit deze kleine correctie.
+- Periodieke bronvergelijking leverde geen onderbouwde intervalwijziging op.
+  Brusselse ingebruiknamescope niet verbreed op basis van een algemene paragraaf;
+  bron-/installatiescope blijft open.9dev/lifecycle en echte bewijsgrenzen blijven.
+- Volgende: één onafhankelijke cohortreview en pas daarna gecontroleerde normale
+  publicatie/exact hostedCI/provider/canonical/live. Geen IndexNow of datumtruc.
+  Uitgestelde accounts/prijsbeleid en alle zes eerdere releasebackfills behouden.
+
+## 17 oktober 2026 — Task128 gepubliceerd en live geverifieerd
+
+- De werkgebiedzoeker herkent nu ook gemeentenaam-invoer met spaties in plaats van
+  koppeltekens. Live op exact `1e6de29f431743438964c6e0d918e2cc7f106eb0`;
+  tien beoordeelde bestandshashes ongewijzigd, onafhankelijke review zonder bevindingen.
+- Lokaal702tests/lint0/prod0/build170/crawl82/93/112; exact hostedCI39035959892 op
+  Node24.21.0 slaagt voor dezelfde controles. Beide bestaande Productiondeployments
+  7140107680/7140112364 success; echte primaire provider23DG4hwdMKfWHpFx2onXA92gMsML
+  toont Ready/Production/Current, volledige commitlink en bestaandwwwdomein.
+- Live1280/390/320 zoeken, nativeTab, geen-resultaat en wissen bevestigd. Volledige
+  main/footer/80recordXML gelijk aan vóór de wijziging. De eerste livecrawl faalde
+  op drie afbeeldingsfetches; afzonderlijke GETs leveren200/PNG1200×630/exactlokale
+  bytes. Eén nieuwe volledige bevestigingscrawl slaagt82/93/112. Eerste failure
+  behouden, oorspronkelijke transportoorzaak niet vastgesteld; geen speculatieve patch.
+- Geen IndexNow, nieuwe pagina, prijs/claim of inhoudsdatum.9dev/lifecycle blijven
+  open; productie0 is apart. Modelonderzoek vond geen nieuwe veilige FAS65-gap en
+  toolproeven geen blijvende resetfout. Geen volledigeWP of meesterplan afgesloten.
+  Eigentabs/viewport en eigenserver3192 opgeruimd; eerdere recoverybewijzen behouden.
+  Deze feitelijke releasebackfill blijft lokaal tot een volgende echte productrelease.
+
 ## 17 oktober 2026 — gerichte vier-sporencontrole, zoekherkenning lokaal hersteld
 
 - WP08/11: echte browserreproductie van gemiste bestaande namen bij invoer met

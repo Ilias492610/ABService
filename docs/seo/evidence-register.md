@@ -1,5 +1,40 @@
 # Evidence Register
 
+## 17 oktober 2026 — Task130–133, begrensde restpunten en menunaam
+
+Private371beforemanifest bewaart zes eerdere releasebackfills, registry/citations/
+meta/schema/80sitemapwaarden,137checkboxes en vier integrale bronnen. Task132actual
+390AXvoor toonde expanded/collapsed “Menu openen”; na één attribuutverwijdering
+390/320nativeMenu/state/Enter/spatie, focus vrij/hit/3px/nooverflow en echte
+Tarieven-bestemmingssluiting.703Node24/lint0/prod0/build170/local82/93/112; hele
+home-main/footer/gids-main/XML gelijk en exacte oude-headerinverse. Historische
+fixtures/hashliterals behouden, geen algemene AT-certificatie. Eerste private
+capture-EEXIST stopte veilig; apartepage-before bevestigt oude build/label.
+Task131: bestaande gids gelezen, lokale200 en één niet-goedgekeurd/niet-geplaatst
+tekstconcept; geen profielsave/mediarecht/AI-response/uitkomst ontstaan. Task130-
+statusmatrix onderscheidt gedateerdeWP00/02acceptatie en echte overige gates.
+Task133broninput plus rootlezing van de
+[Brusselse professionele controlegids](https://leefmilieu.brussels/pro/regelgeving-en-inspectie/verplichtingen-en-vergunningen/technische-installaties-epb-controles-en-onderhoud):
+algemene commissioningtekst niet gebruikt om brandstofspecifieke scope/termijn te
+verbreden. Periodieke bronvergelijking leverde geen wijzigingsgrond op; geen kernel-
+of bron-/inhoudsdatum gewijzigd. Actualbrowsernaam is bewijs, geen afgeleide volledige
+toegankelijkheidsconformiteit uit de [HTML-AAM-werkdraft](https://www.w3.org/TR/html-aam-1.0/#el-summary).
+Review/exactrelease/CI/provider/canonical-live volgen apart;9dev/lifecycle en alle
+eigenaar-/field-/effectgates blijven. Geen IndexNow voor runtime-/naamattribuutwerk.
+
+## 17 oktober 2026 — Task128 gepubliceerd en live geverifieerd
+
+Exact `1e6de29f431743438964c6e0d918e2cc7f106eb0`: private frozen10manifest/solefinalreview/
+21rootrulings/committed371manifest,702lokaal en hostedCI39035959892 Node24.21.0.
+Twee bestaande Productionstatuses success; werkelijke primaire providerReady/
+Production/Current/fullSHA/www. Gehele canonical main/footer/80XML bytegelijk;
+live browserreceipt1280/390/320/nativeTab/missing/clear bewijst beperkte zoekruntime.
+Eerste livecrawlexit1/3assetfetchfouten, afzonderlijk3GET200/PNG1200×630/buildbytegelijk
+en nieuwe gehele bevestigingscrawl82/93/112exit0 blijven aparte bestanden; geen
+vastgestelde transportoorzaak. Geen IndexNow of nieuw persoons-/physical-/casebewijs.
+Eigentabs2–6/viewport/eigenserver3192 opgeruimd.137flags/vierintegralen intact,9dev
+en overige echte gates open; deze feitelijke releasebackfill nog niet opnieuw gepusht.
+
 ## 17 oktober 2026 — Task126–129 begrensde verbetering, geen eigenaarbewijs
 
 Private task-126-before bewaart369bestanden, de zes eerdere releasebackfills, alle

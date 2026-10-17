@@ -5,6 +5,9 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { navigation } from "../content/site-content.mjs";
 import { createHarness } from "./helpers/wp12-runtime.mjs";
 import { loadContactModule } from "./helpers/contact-runtime.mjs";
+import { readFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { beforeMobileMenuNameSource } from "./fixtures/mobile-menu-name-history.mjs";
 
 test("real server header renders both native nav trees and original identity/contact channels", async () => {
   const link = ({ children, ...props }) => React.createElement("a", props, children);
@@ -22,7 +25,7 @@ test("real server header renders both native nav trees and original identity/con
   const html = renderToStaticMarkup(React.createElement(SiteHeader));
   assert.match(html, /<nav[^>]*aria-label="Hoofdnavigatie"/);
   assert.match(html, /<details[^>]*class="mobile-menu"/);
-  assert.match(html, /<summary aria-label="Menu openen">Menu<\/summary>/);
+  assert.match(html, /<summary>Menu<\/summary>/, "mobile disclosure keeps the visible Menu name in either native state");
   assert.match(html, /<nav aria-label="Mobiele navigatie"/);
   assert.match(html, /href="\/" class="brand" aria-label="AB Service home"/);
   assert.match(html, /src="\/LogoZ.png"/);
@@ -76,3 +79,13 @@ for (const mobile of [false, true]) {
     } finally { h.dispose(); }
   });
 }
+
+test("stable mobile menu name retains every other navigation source byte", async () => {
+  const source = await readFile(new URL("../components/header-navigation.js", import.meta.url), "utf8");
+  const hash = (value) => createHash("sha256").update(value).digest("hex");
+  assert.equal(hash(beforeMobileMenuNameSource(source)), "047cb3b5ffc35185cd993fe24b52697691569decdb69033f1e61f9e8abf4c479");
+  const otherLabel = source.replace('<summary>Menu</summary>', '<summary aria-label="Andere naam">Menu</summary>');
+  assert.equal(beforeMobileMenuNameSource(otherLabel), otherLabel);
+  const wrongDestination = source.replace('href={child.href}', 'href="/verkeerde-bestemming"');
+  assert.notEqual(hash(beforeMobileMenuNameSource(wrongDestination)), "047cb3b5ffc35185cd993fe24b52697691569decdb69033f1e61f9e8abf4c479");
+});

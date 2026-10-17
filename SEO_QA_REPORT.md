@@ -1,5 +1,41 @@
 # AB Service SEO QA Report
 
+## 17 oktober 2026 — Task132 lokale menunaamcontrole; release nog open
+
+Echte390AX vóór: Menu openen zowel collapsed als expanded. Alleen vaste aria-label
+verwijderd, nu Menu plus juiste native toestand; nativepointer/spatie/Enter en
+Tarieven-bestemmingssluiting daadwerkelijk bekeken.703Node24-tests, lint0/prod0,
+build170/local82/93/112. Bestaande oude sourcehash/fixture behouden met één exacte
+padgebonden inverse plus driftchecks. Hele home-main/footer/gids-main/80XML identiek;
+oude volledige header herstelt door uitsluitend het ene attribuut terug te plaatsen.
+De eerste private paginacapture botste op de bestaande before-manifestnaam en stopte
+metEEXIST: niets overschreven. Apart page-beforebestand uit nog draaiende oude build
+gecontroleerd op oude header, daarna nieuwe build/restart/reload. Geen verborgen reset.
+WP14-concept enWP-reststatus zijn documentair, geen externe publicatie/AI-meting.
+Brusselse commissioning-bronscope blijft te verduidelijken; geen algemene regel naar
+vaste brandstof verbreed en geen overige kernregel/-datum gewijzigd.9dev/lifecycle
+blijven open. Eén onafhankelijk review/exact hosted/provider/live nog vereist;
+geen volledige toegankelijkheids-/screenreader-/field-/wholeWPclaim of IndexNow.
+
+## 17 oktober 2026 — Task128 gepubliceerd en live geverifieerd
+
+Exact main/remote `1e6de29f431743438964c6e0d918e2cc7f106eb0`, alle tienreviewhashes
+behouden; sole onafhankelijke review zonder bevindingen en21grenzen afzonderlijk
+beoordeeld. Lokaal702 en exact hostedCI39035959892 Node24.21.0/lint0/prod0/build170/
+crawl82/93/112. Bestaande Production7140107680/7140112364 success; werkelijk primaire
+provider23DG4hwdMKfWHpFx2onXA92gMsML Ready/Production/Current/fullSHA/www gezien.
+Canonical volledige main/footer/80XMLrecords bytegelijk aan lokale vóór/na-basis.
+Live1280/390/320 levert juiste officiële naam en alleen bestaande regiolink; mobiele
+zoekfocus vrij/inbeeld, geen horizontale overflow. NativeTab naar regio, nulresultaat
+en herstel naar314vermeldingen bevestigd; geen volledige native-/AT-/fieldclaim.
+Eerste livecrawlexit1 met drie fetchfouten bij intergas/nefit-bosch/atag behouden.
+Elk afzonderlijk nieuw GET200, PNG1200×630, exact lokale buildbytes. Eén volledige
+nieuwe bevestigingscrawl daarna exit0/82/93/112. Geen oorzaak toegeschreven, geen
+productfix of eerdere failure gewist. Geen IndexNow/runtime-inhoudsdatumwijziging.
+Eigentabs2–6 gesloten, viewporthersteld, eigenserver10573 exit130.9dev/lifecycle en
+echte eigenaar-/persoons-/physical-/case-/Franse-/field-/effectgates blijven open.
+Releasebackfill lokaal tot volgende echte productrelease; geen docs-onlypublicatie.
+
 ## 17 oktober 2026 — Task126–129 lokale controle; release nog niet bewezen
 
 Task128: echte browser `Sint Jans Molenbeek` gaf0 ondanks bestaande officiële naam.

@@ -1,5 +1,73 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 17 oktober 2026 — Task130–133: resterende WPs en gerichte zelfstandige uitvoering
+
+Geen nieuwe algemene planronde: dit is de actuele acceptatiestand van het bestaande
+plan. Afgeronde bron-/accountsnapshots zijn niet hetzelfde als blijvende monitoring,
+een concept niet hetzelfde als plaatsing en een technische check niet hetzelfde
+als echte opdrachten. De137oorspronkelijke checkboxregels blijven ongewijzigd.
+
+| WP | Volledige status en echte resterende grens | Wat de eigenaar nog moet leveren of kiezen |
+| --- | --- | --- |
+| WP00 | Afgerond als gedateerde bron-/bedrijfsbriefkoppeling van10oktober; feitelijke veranderingen later verversen. | Alleen echte nieuwe bedrijfsfeiten bij verandering. |
+| WP01 | Gedeeltelijk: echte testmail ontvangen; dashboard-eventontvangst, geaggregeerde lead-/opdrachtuitkomsten en operationele retentie nog niet volledig bewezen. Intake is geen boeking. | Beschikbare eigen ontvangst-/meetexport en geanonimiseerde aanvraag-/opdrachtuitkomsten; werkelijke bewaartermijn/werkwijze. Geen nieuwe mailtest of betaald abonnement vereist om deze grens te benoemen. |
+| WP02 | Afgerond voor de afgesproken10oktober-property-/export-/indexeringssnapshot. Nieuwe opname/effecten zijn latere waarnemingen onderWP17. | Een later correct Abder-accountvenster of eigen exports voor verversing; toegang blijft uitgesteld. |
+| WP03 | Gedeeltelijk: echte query-/SERP-analyses, briefs en kandidaatoutputs aanwezig; echte AB-klantvragen en commerciële uitkomsten ontbreken. | Een kleine geanonimiseerde selectie werkelijke vragen/aanvragen en uitkomsten wanneer beschikbaar. Geen concurrentvraag als AB-frequentie voorstellen. |
+| WP04 | Open: opgeslagen beheerwijzigingen versus actuele publieke SAB-/dienstenweergave, categorie-/post-/fotoaudit en moderatiestatus blijven afzonderlijk. Opgeslagen beschrijvingen niet opnieuw opslaan. | Later Abders juiste bedrijfsvenster; echte foto's/rechten uitsluitend als ze gebruikt worden. Geen wachtwoorden delen. |
+| WP05 | Open: publieke citationmatrix aanwezig; Bing Webmaster eerder geverifieerd en sitemapSuccess/79gedateerd, maar actuele opname/AI-baseline en Places-/Apple-bedrijfslistingresultaten blijven open. | Later bestaande zakelijke Bing Places-/Apple-toegang en eventuele bedrijfsspecifieke verificatie; geen persoonlijk vervangaccount of nieuwe grant. |
+| WP06 | Open: veel afgebakende kerncopy-/linkverbeteringen live; brede inhouds-/linkbeoordeling, echte prijsregels en bijbehorende bewijsvelden nog niet volledig afgerond. | Echte kostenbasis/voorwaarden blijven voor later; matching werkbewijs alleen voor gebruikte caseclaims. |
+| WP07 | Open: exact-model-/revisie-/markt-/tabellenwerk gaat gericht door; dertien merken betekenen niet alle toestellen of alle codes. | Werkelijk voorkomende modellen en technicuscontrole waar die nodig zijn voor specifieke claims; officieel bronwerk kan zelfstandig verder. |
+| WP08 | Open: bestaande directory/hubs en gerichte lokale verbeteringen werken; unieke lokale waarde, volledige bewijs-/prioriteitsscores en menselijke publicatiebeoordeling blijven gates.302drafts niet routable. | Echte lokale werkzaamheden/reviews met toestemming indien als bewijs gebruikt; inhoudelijke beoordeling vóór een nieuwe lokale publicatiestatus. |
+| WP09 | Open: intake-/case-infrastructuur aanwezig, maar volledige werk-foto-plaats-datum-toestemmingmatches en expertisebewijs ontbreken. | Per bruikbare case het echte werk, plaats/maand, feitelijk resultaat, matching originele foto's en toestemming; juiste persoonlijke erkenningsscope en echte reviewer. |
+| WP10 | Open: veertien intenties en veilige deelantwoorden uitgewerkt; geen volledige technische oorzaak-/casus-/prijs-/menselijke reviewdekking. | Echte vragen en technische vakmancontrole voor zulke claims; prijsbeleid blijft uitgesteld. Neutrale brongebonden FAQ's wachten hier niet algemeen op. |
+| WP11 | Open: twee hulpmiddelen met begrensde functionele checks; volledige gebruiks-/misinterpretatie-/aanvraagmeting en bron-/apparaatscope blijven afzonderlijk. | Later geaggregeerde echte tool-/aanvraaguitkomsten en concrete technische input waar vereist; bron-/regressiechecks zelfstandig. |
+| WP12 | Open: geverifieerde productreleases, maar9ontwikkelbevindingen/ESLint-lifecycle, brede route-/AT-/veld-/semantische-/security-/bron403-gates niet volledig gesloten. | Beschikbare echte veld-/accountgegevens voor niet openbaar meetbare onderdelen; geen eigenaarinput nodig voor een concrete veilige code-/broncorrectie. |
+| WP13 | Voorwaardelijk open: prospects/routes voorbereid; geen relatiebasis bij de al genoemde partners, originele vakbijdrage of goedgekeurde outreach/plaatsing. | Echte originele expertise en afzonderlijke concrete opdracht vóór verzending/publicatie; geen herhaalde bewijsvraag voor de bevestigde niet-bestaande relaties. |
+| WP14 | Voorbereid/open: één warmwatertekstconcept toegevoegd, niet geplaatst; geen videopilot of onafhankelijke AI-antwoorden verzameld. | Later juiste bedrijfsaccount, concrete plaatsingsopdracht/opvolgcapaciteit en eventuele echte media/rechten; onafhankelijke meetinterface/context voor echte AI-observaties. |
+| WP15 | Open: Franse dienstverlening is al bevestigd, maar technische Franse tekstcontroleur, onderhouden workflow en geteste Franse contactflow ontbreken. | Een bevoegde Franse tekstcontroleur en verantwoordelijke voor blijvend beheer/opvolging; Franse service niet opnieuw laten bevestigen. |
+| WP16 | Research voorbereid, uitvoering bewust uitgesteld; geen campagne of spend. Niet noodzakelijk om autonome organische verbeteringen voort te zetten. | Alleen bij een latere expliciete betaalde opdracht: budget/billing, geschiktheid en capaciteit. Nu geen aankoop of advertentiebudget vragen. |
+| WP17 | Doorlopend open: logs en protocollen aanwezig; verse28v28/afzonderlijke30v30, echte ontvangst-/opdrachttabellen, onafhankelijke AI-/velddata en evaluatievensters niet verzonnen invullen. | Later gedateerde eigen exports en geaggregeerde aanvragen/opdrachten met periode/noemer; onbekend blijft onbekend. |
+
+Zelfstandig uitgevoerd in deze ronde: Task132 verwijdert alleen de tegenstrijdige
+vaste menunaam “Menu openen”; zichtbare naam “Menu” en native toestand blijven samen
+duidelijk. Echte browser-AXreproductie, RED→GREEN en703Node24tests/lint0/prod0/build170/
+lokalecrawl82/93/112; volledige home-main/footer/gids-main/80XML blijven gelijk en
+de volledige oude header herstelt met alleen de exacte attribuutinverse. Native
+mobiele Enter/spatie en bestemmingssluiting gecontroleerd; geen volledige AT-claim.
+Task131 levert één duidelijk gemarkeerd concept in het bestaandeWP14-document,
+geen plaatsing of nieuwe pagina. Task133 vergelijkt periodieke bronregels; geen
+nieuwe intervalregel afgeleid. De Brusselse algemene ingebruiknametekst en de
+brandstofspecifieke tabel geven geen grond voor een autonome verbreding van een
+termijn naar vaste brandstof; die scope blijft afzonderlijk te verduidelijken in
+de [officiële Brusselse controlegids](https://leefmilieu.brussels/pro/regelgeving-en-inspectie/verplichtingen-en-vergunningen/technische-installaties-epb-controles-en-onderhoud).
+Review, exact release-/provider-/livebewijs voor deze kandidaat volgen apart.
+Geen IndexNow of inhoudsdatumwijziging voor de menunaam. Accounts en echte prijzen
+blijven eigenaar-uitgesteld, alle eerdere releasebackfills en bronbijlagen behouden.
+
+## 17 oktober 2026 — Task128 gepubliceerd en live geverifieerd
+
+De beperkte zoekverbetering op `/werkgebied` is live op exact main/remote
+`1e6de29f431743438964c6e0d918e2cc7f106eb0`. Alle tienreviewhashes behouden; één
+onafhankelijke review zonder bevindingen,21grenzen afzonderlijk beoordeeld.702lokaal
+en exact hostedCI39035959892 Node24.21.0/lint0/prod0/build170/crawl82/93/112.
+Bestaande Production7140107680/7140112364 success; werkelijke primaire provider
+23DG4hwdMKfWHpFx2onXA92gMsML Ready/Production/Current/fullSHA/www. Canonical volledige
+main/footer/80XMLrecords gelijk aan vóór/na-basis. Live1280/390/320 juiste namen,
+bestaande links, nativeTab, nulresultaat en wissen bevestigd; geen nieuwe lokale URL.
+Eerste livecrawl had drie assetfetchfouten; afzonderlijke nieuwe GETs200/PNG1200×630/
+exactbuildbytes en één nieuwe gehele bevestigingscrawl82/93/112exit0 apart bewaard.
+Oorzaak niet vastgesteld, geen speculatieve patch of herschreven eerdere failure.
+Geen IndexNow of inhoudsdatum voor runtime-only; eigentabs/viewport/server opgeruimd.
+
+De overige sporen zijn begrensd onderzocht: geen unieke veilige FAS65-gap, geen
+blijvende resetfout, geen veilige compatibele directe dependencyoplossing aangetoond.
+9dev/lifecycle blijven open, productieaudit0 is geen sluiting daarvan.137flags en
+vier integrale bronnen intact. Geen volledigeWP of meesterplan voltooid; accounts/
+echt prijsbeleid blijven uitgesteld en echte persoons-/physical-/case-/Franse-/bron-/
+ontvangst-/field-/indexerings-/zakelijke bewijzen blijven open. Volgende zelfstandige
+wijziging alleen bij concrete aantoonbare meerwaarde; geen tekst-/paginavulling.
+Deze feitelijke releasebackfill blijft lokaal tot volgende echte productrelease.
+
 ## 17 oktober 2026 — vier gerichte werksporen, alleen aantoonbare zoekverbetering
 
 WP08/11 Task128: spaties/gewone en Unicode-koppeltekens gelijkwaardig gemaakt in de

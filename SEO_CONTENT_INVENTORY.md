@@ -1,5 +1,16 @@
 # AB Service SEO Content Inventory
 
+## 17 oktober 2026 — Task128 gepubliceerd en live geverifieerd
+
+Alleen bestaande werkgebiedzoeker verbeterd op exact
+`1e6de29f431743438964c6e0d918e2cc7f106eb0`. Geen nieuwe lokale inhoud/URL of gewijzigde
+publicatiegate; officiële314vermeldingen, main/footer en80sitemaprecords intact.
+Onafhankelijke10file-review,702lokaal/hosted, providerReady/fullSHA/www, live zoeken en
+volledige bevestigingscrawl82/93/112 bevestigd. Eerste drie assetfetchfouten en aparte
+200/PNG/bytegelijke probes blijven afzonderlijk vastgelegd, geen oorzaak verzonnen.
+Geen IndexNow of datumwijziging. Model-/toolonderzoek sluit geen volledigeWP af;
+9dev en echte bewijs-/uitstelgates blijven. Releasebackfill lokaal voor volgende release.
+
 ## 17 oktober 2026 — betere toegang tot bestaande lokale inhoud
 
 Alleen zoekherkenning op `/werkgebied`: spaties en koppeltekens/dashes worden in de

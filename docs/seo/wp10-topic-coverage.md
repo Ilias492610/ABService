@@ -1,5 +1,15 @@
 # WP10 dekking van veertien adviesintenties
 
+## 17 oktober 2026 — Task128 gepubliceerd en live geverifieerd
+
+De vier-sporenronde publiceert alleen zoekherkenning op bestaande `/werkgebied`,
+exact `1e6de29f431743438964c6e0d918e2cc7f106eb0`, onafhankelijk beoordeeld en live
+geverifieerd. De FAS65-bron-/overlapcontrole voegt geen fabrikanttekst of datum toe.
+Geen extra adviesintentie of volledigWP10 afgevinkt, geen persoonlijke erkenning of
+uitgevoerde fysieke vakmancontrole verzonnen. Werkelijke prijsvoorwaarden/accounts
+blijven voor later; oorspronkelijke14intenties en overige bewijsgrenzen intact.
+Releasebackfill lokaal voor volgende echte productrelease, geen docs-onlydeploy.
+
 ## 17 oktober 2026 — afgebakende model-/overlapcontrole, geen extra tekstquota
 
 Task127 vergelijkt de behouden fabrikantrevisie `0020124551_02` voor Bulex THEMA

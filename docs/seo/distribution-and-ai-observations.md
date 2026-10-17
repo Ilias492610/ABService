@@ -1,5 +1,39 @@
 # WP14 — distributie- en AI-observatiecontract
 
+## 17 oktober 2026 — één brongebonden tekstconcept, niet geplaatst
+
+**Task131, concept v1 — niet plaatsingsklaar, niet approved, niet ingediend.**
+Dit vult alleen de ontbrekende tekst voor de hieronder bestaande dertigdagse
+warmwaterpilot aan. Geen tweede pilot of nieuwe kanaalkeuze. De bestaande WP04-
+boilerpost is smaller: dit concept onderscheidt de al bekende klacht aan één of
+meerdere tappunten en verwarming versus warm water. Het beschrijft geen echte
+AB-klantvraag, klus, diagnose, prijs of responstijd.
+
+> Geen warm water? Beschrijf wat u al heeft gemerkt: speelt de klacht bij één of
+> meerdere kranen, stroomt koud water daar normaal en werkt de verwarming nog?
+> Vermeld welk toestel normaal het warme water levert en welke merk-, model- of
+> displaygegevens al veilig afleesbaar zijn. Is iets onbekend, geef dat gerust aan.
+> Open geen toestel of afscherming en voer geen extra proeven of herhaalde resets
+> uit om de klacht te bewijzen. Deze gegevens bepalen geen oorzaak of defect
+> onderdeel. Lees de uitleg en veiligheidsgrenzen vóór uw aanvraag.
+
+Voorgestelde CTA: **Meer informatie** naar
+[de bestaande warmwatergids](https://www.abservice24.be/advies/geen-warm-water).
+De lokale productiebestemming geeft200; de volledige bestaande gidstekst en
+veiligheidsgrenzen zijn gelezen. Exacte publieke inhoud/knop vóór een eventuele
+plaatsing opnieuw controleren. Tekst-only: geen stock- of projectbeeld, reviewquote,
+geverifieerde vakman of recent werk suggereren.
+
+Bron en afbakening: de bestaande `geen-warm-water`-gids in
+[advice-guides.mjs](../../content/advice-guides.mjs), onderdelen antwoord, toesteltype,
+tappunten, veiligheid en aanvraag; geen nieuwe technische of juridische bronclaim.
+De gids, fabrikantrevisies en broncontroledatum zijn niet gewijzigd. Dit concept
+vervangt geen technische goedkeuring of de onderstaande profiel-/inhouds-/capaciteits-
+en plaatsingsgates. Accounttoegang is door de eigenaar uitgesteld. Geen profielactie,
+bericht, plaatsing, beeldgebruik of startdatum is uitgevoerd/toegekend. De tien
+AI-observaties blijven **NOT COLLECTED**; eigen antwoorden of onderzoeksbrowsing
+zijn geen onafhankelijke meting. De oorspronkelijke11oktober-snapshot volgt intact.
+
 **Voorbereid op 11 oktober 2026, Europe/Brussels.** Dit document levert een kanaalkeuze,
 één voorwaardelijke pilotbrief en een lege observatiestructuur. De pilot is niet gestart;
 geen post, video, communityantwoord of handmatige AI-meting is uitgevoerd. Er zijn **nul

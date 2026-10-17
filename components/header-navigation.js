@@ -36,7 +36,7 @@ export default function HeaderNavigation({ navigation, mobile = false }) {
 
   return mobile ? (
     <details className="mobile-menu" ref={root} onClick={selectDestination}>
-      <summary aria-label="Menu openen">Menu</summary>
+      <summary>Menu</summary>
       <nav aria-label="Mobiele navigatie">{items}</nav>
     </details>
   ) : (
