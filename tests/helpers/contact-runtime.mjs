@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import { createRequire } from "node:module";
 import vm from "node:vm";
 import { loadBindings, transformSync } from "next/dist/build/swc/index.js";
@@ -20,15 +21,26 @@ export async function loadContactModule(relativePath, dependencies = {}, globals
     module: { type: "commonjs" },
   });
   const compiledModule = { exports: {} };
+  const moduleRequire = createRequire(filename);
   const known = {
     "@/libs/contact-validation.mjs": validation,
     "@/libs/contact-context.mjs": context,
     "@/libs/analytics.mjs": analytics,
     ...dependencies,
   };
+  // Resolve real newly shared components/data, retaining explicit framework and
+  // external-transport adapters supplied by each test. Never rewrite source.
+  for (const match of source.matchAll(/from\s+["'](@\/[^"']+)["']/g)) {
+    const specifier = match[1];
+    if (Object.hasOwn(known, specifier)) continue;
+    const path = specifier.slice(2);
+    const relative = [path, path + ".js", path + ".mjs"].find(candidate => existsSync(new URL("../../" + candidate, import.meta.url)));
+    if (!relative) throw new Error("Unresolved production alias: " + specifier);
+    known[specifier] = await loadContactModule(relative, dependencies, globals);
+  }
   vm.runInNewContext(code, {
     module: compiledModule, exports: compiledModule.exports,
-    require: (specifier) => Object.hasOwn(known, specifier) ? known[specifier] : require(specifier),
+    require: (specifier) => Object.hasOwn(known, specifier) ? known[specifier] : moduleRequire(specifier),
     console, process, URL, Request, Response, queueMicrotask, ...globals,
   }, { filename: filename.pathname });
   return compiledModule.exports;

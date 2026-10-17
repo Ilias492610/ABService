@@ -2,6 +2,7 @@ import Link from "next/link";
 import { business } from "@/content/business.mjs";
 import TrackedLink from "@/components/tracked-link";
 import RegisteredSeat from "@/components/registered-seat";
+import { LocalizedFooter } from "@/components/localized-shell";
 
 const serviceLinks = [
   ["Onderhoud cv-ketel", "/onderhoud"],
@@ -40,7 +41,8 @@ const areaLinks = [
   ["Brussel", "/werkgebied/brussel"],
 ];
 
-export default function SiteFooter() {
+export default function SiteFooter({ locale = "nl-BE" } = {}) {
+  if (locale !== "nl-BE") return <LocalizedFooter locale={locale} serviceLinks={serviceLinks} areaLinks={areaLinks} knowledgeLinks={knowledgeLinks} />;
   return (
     <footer className="site-footer">
       <div className="shell footer-grid">

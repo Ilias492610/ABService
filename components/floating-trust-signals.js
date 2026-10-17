@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import TrackedLink from "@/components/tracked-link";
 import { business } from "@/content/business.mjs";
 import { formatGoogleRating } from "@/libs/google-reviews.mjs";
+import { getLocaleCopy, getWhatsAppHref } from "@/content/localization.mjs";
 
 const protectedZones = "form, .warning-box, .site-footer, .maintenance-check-result, .page-hero .button-row, .faq-list, .fault-guide-reading, .fault-guide-hero, .tariff-service-context";
 
@@ -31,7 +32,8 @@ function GoogleLogo() {
   );
 }
 
-export default function FloatingTrustSignals() {
+export default function FloatingTrustSignals({ locale = "nl-BE" } = {}) {
+  const copy = getLocaleCopy(locale);
   const [showRating, setShowRating] = useState(true);
   const [rating, setRating] = useState(null);
   const [clearProtectedContent, setClearProtectedContent] = useState(false);
@@ -150,13 +152,13 @@ export default function FloatingTrustSignals() {
   return (
     <>
       {!clearProtectedContent ? <TrackedLink
-        href={business.whatsappHref}
+        href={getWhatsAppHref(locale)}
         eventName="whatsapp_click"
         eventProperties={{ location: "floating_button" }}
         className={clearanceReady ? "whatsapp-button" : "whatsapp-button floating-trust-pending"}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Contacteer AB Service via WhatsApp"
+        aria-label={copy.whatsapp}
       >
         <WhatsAppLogo />
       </TrackedLink> : null}
@@ -182,7 +184,7 @@ export default function FloatingTrustSignals() {
                     <span className="google-stars-filled" style={{ width: `${rating.rating * 20}%` }}>★★★★★</span>
                   </span>
                 </span>
-              ) : <span className="google-profile-fallback">Bekijk ons profiel</span>}
+              ) : <span className="google-profile-fallback">{copy.googleFallback}</span>}
               <small className="google-maps-attribution" translate="no">Google Maps</small>
             </span>
           </TrackedLink>
@@ -191,7 +193,7 @@ export default function FloatingTrustSignals() {
             className="google-rating-close"
             disabled={!clearanceReady}
             onClick={dismissRating}
-            aria-label="Sluit Google-beoordeling"
+            aria-label={copy.googleClose}
           >
             ×
           </button>

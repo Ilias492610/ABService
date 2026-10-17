@@ -320,3 +320,11 @@ th { background: var(--mist); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+.language-entry-links, .language-switcher { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding-block: .5rem; font-size: .875rem; }
+.localized-contact-languages { display: flex; justify-content: flex-end; }
+.language-switcher a[aria-current="page"] { font-weight: 800; text-decoration-thickness: .15em; }
+.localized-shell .nav-row { flex-wrap: wrap; justify-content: space-between; }
+@media (min-width: 981px) {
+  .localized-shell .desktop-nav { flex: 1 1 100%; order: 3; flex-wrap: wrap; gap: .25rem 1rem; margin-left: 0; }
+}

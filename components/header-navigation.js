@@ -10,7 +10,7 @@ function closeDisclosures(root) {
   if (root.matches("details")) root.open = false;
 }
 
-export default function HeaderNavigation({ navigation, mobile = false }) {
+export default function HeaderNavigation({ navigation, mobile = false, labels = { menu: "Menu", mobile: "Mobiele navigatie", desktop: "Hoofdnavigatie" } }) {
   const root = useRef(null);
   const pathname = usePathname();
 
@@ -46,11 +46,11 @@ export default function HeaderNavigation({ navigation, mobile = false }) {
 
   return mobile ? (
     <details className="mobile-menu" ref={root} onClick={selectDestination} onKeyDown={dismissDisclosure}>
-      <summary>Menu</summary>
-      <nav aria-label="Mobiele navigatie">{items}</nav>
+      <summary>{labels.menu}</summary>
+      <nav aria-label={labels.mobile}>{items}</nav>
     </details>
   ) : (
-    <nav className="desktop-nav" aria-label="Hoofdnavigatie" ref={root} onClick={selectDestination} onKeyDown={dismissDisclosure}>
+    <nav className="desktop-nav" aria-label={labels.desktop} ref={root} onClick={selectDestination} onKeyDown={dismissDisclosure}>
       {items}
     </nav>
   );

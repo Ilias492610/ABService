@@ -1,10 +1,11 @@
 import { business } from "../content/business.mjs";
 import { getSocialPreviewPath, getSocialPreviewTitle } from "./social-preview.mjs";
+import { getLanguageAlternates } from "../content/localization.mjs";
 
 const canonicalFor = (path) =>
   new URL(path === "/" ? "/" : path, `${business.canonicalOrigin}/`).toString();
 
-export const buildPageMetadata = (page) => {
+export const buildPageMetadata = (page, { languageAlternates = Boolean(page?.locale) } = {}) => {
   if (!page) {
     throw new Error("A page definition is required to build metadata.");
   }
@@ -17,7 +18,7 @@ export const buildPageMetadata = (page) => {
     title: page.title,
     description: page.description,
     ...(page.kind === "article" ? { authors: [{ name: business.name, url: `${business.canonicalOrigin}/over-ons` }] } : {}),
-    alternates: { canonical },
+    alternates: { canonical, ...(languageAlternates && getLanguageAlternates(page.path) ? { languages: getLanguageAlternates(page.path) } : {}) },
     robots: indexable
       ? {
           index: true,
@@ -36,7 +37,7 @@ export const buildPageMetadata = (page) => {
       description: page.description,
       url: canonical,
       siteName: business.name,
-      locale: "nl_BE",
+      locale: page.locale ? page.locale.replace("-", "_") : "nl_BE",
       type: page.kind === "article" ? "article" : "website",
       ...(page.kind === "article" && page.lastModified ? { modifiedTime: page.lastModified } : {}),
       images: [{ url: image, width: 1200, height: 630, alt: indexable && page.path !== "/" ? `${getSocialPreviewTitle(page)} — ${business.name}` : business.name }],

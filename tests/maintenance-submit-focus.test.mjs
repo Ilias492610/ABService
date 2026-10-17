@@ -1,4 +1,5 @@
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
+import { beforeLocalizationShellBytes } from "./fixtures/localization-shell-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
 import { beforeTariffEntryProtectionCss } from "./fixtures/tariffs-entry-links.mjs";
@@ -208,7 +209,7 @@ test("independent frozen actual before preserves complete source and raw default
   assert.equal(hash(buildGlobalSchemaGraph()), f.before.globalSchemaSha256);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const [path, key] of [["content/business.mjs", "businessSha256"], ["content/media.mjs", "mediaSha256"], ["libs/maintenance-check.mjs", "maintenanceKernelSha256"], ["app/globals.css", "cssSha256"]]) {
-    const actual = await readFile(new URL(`../${path}`, import.meta.url));
+    const actual = beforeLocalizationShellBytes(await readFile(new URL(`../${path}`, import.meta.url)), path);
     assert.equal(hash(path === "app/globals.css" ? beforeTariffEntryProtectionCss(actual.toString("utf8")) : actual), f.before[key], path);
   }
 });

@@ -2,6 +2,13 @@ import { business } from "../content/business.mjs";
 
 const absoluteUrl = (origin, path) => new URL(path, `${origin}/`).toString();
 
+export const buildPageSchema = (page, origin = business.canonicalOrigin) => ({
+  "@context": "https://schema.org", "@type": "WebPage",
+  "@id": `${absoluteUrl(origin, page.path)}#webpage`, url: absoluteUrl(origin, page.path),
+  name: page.title, description: page.description, inLanguage: page.locale || business.language,
+  isPartOf: { "@id": `${origin}/#website` }, publisher: { "@id": `${origin}/#organization` },
+});
+
 export const buildArticleSchema = (guide, origin = business.canonicalOrigin) => ({
   "@context": "https://schema.org",
   "@type": "Article",

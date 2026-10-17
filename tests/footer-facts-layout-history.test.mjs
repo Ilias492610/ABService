@@ -1,4 +1,5 @@
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
+import { beforeLocalizationShellSource } from "./fixtures/localization-shell-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
 import test from "node:test";
@@ -37,7 +38,7 @@ test("the named inverse restores only both approved complete rules and leaves th
 });
 
 test("actual stylesheet preserves every before byte after the bounded historical inverse", async () => {
-  const actual = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  const actual = beforeLocalizationShellSource(await readFile(new URL("../app/globals.css", import.meta.url), "utf8"), "app/globals.css");
   assert.equal(beforeFooterFactsCss(beforeTariffEntryProtectionCss(actual)), f.before.css);
   assert.equal(hash(beforeFooterFactsCss(beforeTariffEntryProtectionCss(actual))), "f3b518a4cae4a7491004b5fc24acb6aa8f664a838e9731fd52162b56eaf26ccb");
 });

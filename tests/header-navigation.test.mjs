@@ -9,6 +9,7 @@ import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { beforeMobileMenuNameSource } from "./fixtures/mobile-menu-name-history.mjs";
 import { beforeNavigationEscapeSource } from "./fixtures/navigation-escape-history.mjs";
+import { beforeLocalizationShellSource } from "./fixtures/localization-shell-history.mjs";
 
 test("real server header renders both native nav trees and original identity/contact channels", async () => {
   const link = ({ children, ...props }) => React.createElement("a", props, children);
@@ -149,7 +150,7 @@ test("navigation does not intercept other keys, consumed Escape, closed disclosu
 });
 
 test("stable mobile menu name retains every other navigation source byte", async () => {
-  const source = await readFile(new URL("../components/header-navigation.js", import.meta.url), "utf8");
+  const source = beforeLocalizationShellSource(await readFile(new URL("../components/header-navigation.js", import.meta.url), "utf8"), "components/header-navigation.js");
   const hash = (value) => createHash("sha256").update(value).digest("hex");
   assert.equal(hash(beforeMobileMenuNameSource(beforeNavigationEscapeSource(source))), "047cb3b5ffc35185cd993fe24b52697691569decdb69033f1e61f9e8abf4c479");
   const otherLabel = source.replace('<summary>Menu</summary>', '<summary aria-label="Andere naam">Menu</summary>');

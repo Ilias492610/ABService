@@ -1,4 +1,5 @@
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
+import { beforeLocalizationShellSource } from "./fixtures/localization-shell-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -71,8 +72,8 @@ test("the whole-site source pin survives only the eight exact navigation and pro
 });
 
 test("tariffs protection preserves every old widget and style source leaf outside its named additions", () => {
-  const widget = readFileSync(new URL("../components/floating-trust-signals.js", import.meta.url), "utf8");
-  const css = readFileSync(new URL("../app/globals.css", import.meta.url), "utf8");
+  const widget = beforeLocalizationShellSource(readFileSync(new URL("../components/floating-trust-signals.js", import.meta.url), "utf8"), "components/floating-trust-signals.js");
+  const css = beforeLocalizationShellSource(readFileSync(new URL("../app/globals.css", import.meta.url), "utf8"), "app/globals.css");
   assert.equal(hash(beforeTariffEntryProtectionSource(widget)), "87b7740f97bbcf56d535be7f7e86ff018b799d32076c0ec52843e4d7c702361a");
   assert.equal(hash(beforeTariffEntryProtectionCss(css)), "453d502783be287b84e65512e63d7cdecd6ef1b58b9b1cdc3b19e34061fc468b");
   assert.notEqual(hash(beforeTariffEntryProtectionSource(widget.replace('"/api/google-rating"', '"/wrong"'))), "87b7740f97bbcf56d535be7f7e86ff018b799d32076c0ec52843e4d7c702361a");

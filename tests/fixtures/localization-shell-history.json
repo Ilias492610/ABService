@@ -1,0 +1,124 @@
+[
+  {
+    "path": "app/globals.css",
+    "beforeSha256": "a7571ad7c9b5b26064a54815f9913983adf0580fec4fe4187a4dd9dab19f1f61",
+    "changes": [
+      {
+        "after": "\n.language-entry-links, .language-switcher { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding-block: .5rem; font-size: .875rem; }\n.localized-contact-languages { display: flex; justify-content: flex-end; }\n.language-switcher a[aria-current=\"page\"] { font-weight: 800; text-decoration-thickness: .15em; }\n.localized-shell .nav-row { flex-wrap: wrap; justify-content: space-between; }\n@media (min-width: 981px) {\n  .localized-shell .desktop-nav { flex: 1 1 100%; order: 3; flex-wrap: wrap; gap: .25rem 1rem; margin-left: 0; }\n}\n",
+        "before": ""
+      }
+    ]
+  },
+  {
+    "path": "components/site-header.js",
+    "beforeSha256": "88dae99ed2bbe241b178180039c7b40793d24d89fe495a89a27c75a6f0726384",
+    "changes": [
+      {
+        "after": "import { LocalizedHeader } from \"@/components/localized-shell\";\nimport LanguageSwitcher from \"@/components/language-switcher\";\n",
+        "before": ""
+      },
+      {
+        "after": "export default function SiteHeader({ locale = \"nl-BE\" } = {}) {\n  if (locale !== \"nl-BE\") return <LocalizedHeader locale={locale} />;\n",
+        "before": "export default function SiteHeader() {\n"
+      },
+      {
+        "after": "      <div className=\"shell localized-contact-languages\"><LanguageSwitcher /></div>\n",
+        "before": ""
+      }
+    ]
+  },
+  {
+    "path": "components/site-footer.js",
+    "beforeSha256": "c8e46578cbd36765a48f72906de7da52625ff95b4dbe2aa62ad404acd15f65d5",
+    "changes": [
+      {
+        "after": "import { LocalizedFooter } from \"@/components/localized-shell\";\n",
+        "before": ""
+      },
+      {
+        "after": "export default function SiteFooter({ locale = \"nl-BE\" } = {}) {\n  if (locale !== \"nl-BE\") return <LocalizedFooter locale={locale} serviceLinks={serviceLinks} areaLinks={areaLinks} knowledgeLinks={knowledgeLinks} />;\n",
+        "before": "export default function SiteFooter() {\n"
+      }
+    ]
+  },
+  {
+    "path": "components/header-navigation.js",
+    "beforeSha256": "5584596082921a0a35a0e94558d03dd11ac8e3c63f71cfe757d2d43c8b83dd52",
+    "changes": [
+      {
+        "after": "export default function HeaderNavigation({ navigation, mobile = false, labels = { menu: \"Menu\", mobile: \"Mobiele navigatie\", desktop: \"Hoofdnavigatie\" } }) {\n",
+        "before": "export default function HeaderNavigation({ navigation, mobile = false }) {\n"
+      },
+      {
+        "after": "      <summary>{labels.menu}</summary>\n      <nav aria-label={labels.mobile}>{items}</nav>\n",
+        "before": "      <summary>Menu</summary>\n      <nav aria-label=\"Mobiele navigatie\">{items}</nav>\n"
+      },
+      {
+        "after": "    <nav className=\"desktop-nav\" aria-label={labels.desktop} ref={root} onClick={selectDestination} onKeyDown={dismissDisclosure}>\n",
+        "before": "    <nav className=\"desktop-nav\" aria-label=\"Hoofdnavigatie\" ref={root} onClick={selectDestination} onKeyDown={dismissDisclosure}>\n"
+      }
+    ]
+  },
+  {
+    "path": "components/floating-trust-signals.js",
+    "beforeSha256": "db1d51e349d4aee95505131bf233fa77b7a5da42bfaafead5413247203df4eb9",
+    "changes": [
+      {
+        "after": "import { getLocaleCopy, getWhatsAppHref } from \"@/content/localization.mjs\";\n",
+        "before": ""
+      },
+      {
+        "after": "export default function FloatingTrustSignals({ locale = \"nl-BE\" } = {}) {\n  const copy = getLocaleCopy(locale);\n",
+        "before": "export default function FloatingTrustSignals() {\n"
+      },
+      {
+        "after": "        href={getWhatsAppHref(locale)}\n",
+        "before": "        href={business.whatsappHref}\n"
+      },
+      {
+        "after": "        aria-label={copy.whatsapp}\n",
+        "before": "        aria-label=\"Contacteer AB Service via WhatsApp\"\n"
+      },
+      {
+        "after": "              ) : <span className=\"google-profile-fallback\">{copy.googleFallback}</span>}\n",
+        "before": "              ) : <span className=\"google-profile-fallback\">Bekijk ons profiel</span>}\n"
+      },
+      {
+        "after": "            aria-label={copy.googleClose}\n",
+        "before": "            aria-label=\"Sluit Google-beoordeling\"\n"
+      }
+    ]
+  },
+  {
+    "path": "libs/seo-data.mjs",
+    "beforeSha256": "31c6c3193ad84c80a4637934d7e168bb6c1561fb2bb40375a0d8eab3cfb46717",
+    "changes": [
+      {
+        "after": "import { getLanguageAlternates } from \"../content/localization.mjs\";\n",
+        "before": ""
+      },
+      {
+        "after": "export const buildPageMetadata = (page, { languageAlternates = Boolean(page?.locale) } = {}) => {\n",
+        "before": "export const buildPageMetadata = (page) => {\n"
+      },
+      {
+        "after": "    alternates: { canonical, ...(languageAlternates && getLanguageAlternates(page.path) ? { languages: getLanguageAlternates(page.path) } : {}) },\n",
+        "before": "    alternates: { canonical },\n"
+      },
+      {
+        "after": "      locale: page.locale ? page.locale.replace(\"-\", \"_\") : \"nl_BE\",\n",
+        "before": "      locale: \"nl_BE\",\n"
+      }
+    ]
+  },
+  {
+    "path": "libs/schema-data.mjs",
+    "beforeSha256": "95d88e4a678ecc11aa41f1b1d3da27baa52c5ebaa4d623eb1ed905be87873476",
+    "changes": [
+      {
+        "after": "export const buildPageSchema = (page, origin = business.canonicalOrigin) => ({\n  \"@context\": \"https://schema.org\", \"@type\": \"WebPage\",\n  \"@id\": `${absoluteUrl(origin, page.path)}#webpage`, url: absoluteUrl(origin, page.path),\n  name: page.title, description: page.description, inLanguage: page.locale || business.language,\n  isPartOf: { \"@id\": `${origin}/#website` }, publisher: { \"@id\": `${origin}/#organization` },\n});\n\n",
+        "before": ""
+      }
+    ]
+  }
+]

@@ -4,8 +4,11 @@ import { navigation } from "@/content/site-content.mjs";
 import { business } from "@/content/business.mjs";
 import TrackedLink from "@/components/tracked-link";
 import HeaderNavigation from "@/components/header-navigation";
+import { LocalizedHeader } from "@/components/localized-shell";
+import LanguageSwitcher from "@/components/language-switcher";
 
-export default function SiteHeader() {
+export default function SiteHeader({ locale = "nl-BE" } = {}) {
+  if (locale !== "nl-BE") return <LocalizedHeader locale={locale} />;
   return (
     <header className="site-header">
       <div className="topline">
@@ -48,6 +51,7 @@ export default function SiteHeader() {
         </TrackedLink>
         <HeaderNavigation navigation={navigation} mobile />
       </div>
+      <div className="shell localized-contact-languages"><LanguageSwitcher /></div>
     </header>
   );
 }
