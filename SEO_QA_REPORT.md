@@ -1,5 +1,50 @@
 # AB Service SEO QA Report
 
+## 17 oktober 2026 — Task126–129 lokale controle; release nog niet bewezen
+
+Task128: echte browser `Sint Jans Molenbeek` gaf0 ondanks bestaande officiële naam.
+Echte componenttests eerst RED; na beperkte zoeknormalisatie zes tests en volledige
+Node24.19.0-suite702/702,0fail/skipped/cancelled. De eerste volledige run700/701 faalde
+alleen op een historische bronhash; exacte inverse herstelt de oude volledige bytes,
+onbekende tekst-/patroondrift blijft falen. Oude fixture/hashliterals niet vervangen.
+Lint0, productieaudit0, build170, lokale crawl82/93/112. Volledige werkgebied-main/
+footer en80recordXML vóór/na identiek, geen inhouds-/lastmodwijziging. Gericht echt
+desktop/mobiel zoeken en nativeTab naar bestaande regiolink gecontroleerd; lange
+districtnaam, geen-resultaat en wissen worden ook door de echte component getest.
+Watermeter-reset op1280/390/320: gestabiliseerde eerste-veldfocus inbeeld, geen
+horizontale overflow. Een eerste snelle20px-headeroverlapmeting was tijdelijk;
+latere geometrie en screenshot bevestigen zichtbare focus. Geen toolpatch of
+hele-native-/AT-/field-performanceclaim op basis van die tijdelijke meting.
+Task126: officiële npm-metadata/advisories/lifecycle opnieuw gelezen;9dev (7hoog/
+2matig), productie0; geen compatibele drop-in vastgesteld of dependency gewijzigd.
+Task127: broninputvergelijking FAS65-revisie, geen unieke veilige nieuwe codegap;
+geen alle-modellen-/technische-vakman-/bewijsclaim. Review, exact hostedCI/provider/
+canonical live staan nog open. Geen IndexNow voor runtime-only.137flags/vierintegralen
+en eerdere recoverybewijzen intact. Dit sluit geen volledigWP af.
+
+## 15 oktober 2026 — Task124 afgebakende liveacceptatie
+
+Exact main/remote `2daad8116b5b98192a421676261ca5a1600e9ef9`,42ongewijzigde reviewhashes,
+sole onafhankelijke review ReadyYes/geen bevindingen;22grenzen afzonderlijk beslist.
+Fresh lokaal696 en exactCI38769814272 Node24.21.0:696/lint0/prod0/build170/82/93/112.
+Task51blijft9dev/lifecycle, ook in hostednpmci zichtbaar; productieaudit0 is apart.
+Beide bestaande Production7098408597/7098417058 success. Primaire werkelijke provider
+HJYsLh9424RFEX1pNtJ9TGMtBirc Ready/Production/Latest, volledige commitlink/wwwdomein.
+Canonical200 volledige main gelijk aan lokaleproductie. Alleen exacte nieuweFAQ en
+tweefabrikantlinkitems verwijderen herstelt alle oude main; footer identiek. Alleen
+sanitaire15→14lastmod herstelt complete80recordXML. Volledige actuele liveauditexit0:
+82pagina’s/93interne links/112assets. Dit herschrijft Task123's eerdere failure niet.
+Vijf gespreide livefocusmetingen: summary1280/390/320 en beidebronlinks320, alle
+lineboxes inbeeld/vrij/3pxfocus/nooverflow; echte nativeReturn/Space en adjacentTab
+bevestigd. Eerste snelle offscreenobservaties/screenshots behouden, geen productfout
+of volledige native-/AT-/fielddekking afgeleid. Provider-tabinitialtimeout/ongebonden
+variabele hersteld via dezelfde bestaande browser/tab, geen project/configmutatie.
+Publiek keybewijs200/plain/exact; één uitsluitendsanitair-preview/send200received,
+indexering onbekend. Eigentabs13/14/15/16 gesloten/reset; eigenserver88874exit130.
+Persoons-/physical-/case-/Franse-/account-/prijs-/field-/effectgates niet gesloten.
+Task125radiatorpreflight: geen eigen veilige gap; geen product-/datumwijziging.
+Releasebackfill lokaal; geen docs-onlydeploy of extra submission.
+
 ## 15 oktober 2026 — Task124 lokale verificatie, releasegate open
 
 Eén native kraanvraag op bestaande `/installaties/sanitair`, twee exacte Belgische

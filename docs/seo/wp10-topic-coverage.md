@@ -1,5 +1,27 @@
 # WP10 dekking van veertien adviesintenties
 
+## 17 oktober 2026 — afgebakende model-/overlapcontrole, geen extra tekstquota
+
+Task127 vergelijkt de behouden fabrikantrevisie `0020124551_02` voor Bulex THEMA
+Condens FAS65 met de bestaande catalogus. De afgebakende broninput vindt geen
+ontbrekende veilige code-uitleg; S-statussen worden niet als ontbrekende F-fouten
+ingevuld en andere modellen/revisies niet gemengd. Geen nieuwe tekst of datum en
+geen bewijs van actuele geïnstalleerde toestellen, persoonlijke erkenning of echte
+fysieke vakmancontrole. De oorspronkelijke14intenties en alle volledigeWP10-gates
+blijven intact. Account-/prijsbeleid blijft voor later zoals door de eigenaar gevraagd.
+
+## 15 oktober 2026 — Task124 beperkte kraancomponent gepubliceerd
+
+De hieronder beschreven observatievraag is onafhankelijk beoordeeld en live op
+`2daad8116b5b98192a421676261ca5a1600e9ef9`.696Node24tests/exacthostedCI/Ready/fullSHA/
+www/canonical/volledige livecrawl en gerichte mobiele toetsenbordchecks bevestigd.
+Oude main/footer/80XMLrecords behouden; éénsanitairmelding ontvangen, indexingonbekend.
+Dit voltooit alleen die neutrale observatiecomponent. Modellekkage-/reparatieadvies,
+persoonlijke erkenning en fysieke vakmanreview hebben nog steeds hun echte bewijs nodig.
+Task125radiator/druk-bronvergelijking vond geen unieke veilige gap: bestaande uitleg
+blijft ongewijzigd, geen nieuwe datum of dubbele alinea. De oorspronkelijke14intenties
+en volledigeWP10-gates blijven intact. Accounts/prijzen later; backfill lokaal.
+
 ## 15 oktober 2026 — kraanobservaties beperkt uitgewerkt, technische gates blijven
 
 Task124 voegt lokaal op bestaande sanitaire pagina één eigen vraag toe: kort

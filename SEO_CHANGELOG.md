@@ -1,5 +1,50 @@
 # AB Service SEO Changelog
 
+## 17 oktober 2026 — gerichte vier-sporencontrole, zoekherkenning lokaal hersteld
+
+- WP08/11: echte browserreproductie van gemiste bestaande namen bij invoer met
+  spaties. De werkgebiedzoeker behandelt spaties en gewone/Unicode-koppeltekens nu
+  gelijkwaardig; officiële namen, alle 314 lijstvermeldingen, bestaande links en
+  publicatiegates blijven intact. Geen nieuwe gemeentepagina of lokale claim.
+- WP07/10: afgebakende vergelijking van de behouden Bulex FAS65-handleiding
+  `0020124551_02` met de bestaande catalogus levert geen nieuwe veilige foutcodegap.
+  Dit is bron-/overlaponderzoek, geen volledige modeldekking of fysieke vakmanreview.
+- WP12: primaire npm-/advisory-/ESLint-bronnen opnieuw gecontroleerd. Nog 9 ontwikkel-
+  bevindingen (7 hoog, 2 matig), productieaudit 0. Geen compatibele directe oplossing
+  aangetoond: braces heeft geen patch, parser7 valt buiten Tailwind3-ranges en de
+  onderzochte ESLint-plugins ondersteunen major10 niet. Geen geforceerde upgrade.
+- Verificatie: oorspronkelijke zoektests RED, daarna zes regressietests en volledige
+  Node24-suite 702/702; lint0, productieaudit0, build170, lokale crawl82/93/112.
+  Volledige werkgebied-main/footer en alle80 sitemaprecords bytegelijk. Gerichte
+  browserchecks van zoekinvoer en watermeter-reset op desktop/mobiel; geen blijvende
+  toolfout of snelheidswinst geclaimd. Een oude bronbytebewaking is uitsluitend via
+  een exact benoemde inverse aangepast; oorspronkelijke fixtures/hashes behouden.
+- Volgende gates: één onafhankelijke cohortreview, dan pas exact commit/hostedCI/
+  providerReady/canonical-livebewijs. Geen IndexNow of inhoudsdatumwijziging voor deze
+  zoekruntime. Accounts/echt prijsbeleid blijven uitgesteld; persoons-/fysieke-/case-/
+  Franse-/field-/indexerings-/zakelijke bewijzen blijven afzonderlijk open.
+
+## 15 oktober 2026 — Task124 gepubliceerd en live geverifieerd
+
+- Eén brongebonden kraanvraag live op `/installaties/sanitair`, exact commit
+  `2daad8116b5b98192a421676261ca5a1600e9ef9`. Alle42reviewhashes gelijk gebleven;
+  sole onafhankelijke review akkoord zonder bevindingen,22grenzen expliciet beoordeeld.
+- Lokaal en exact hostedCI38769814272:696tests/lint0/prod0/build170/crawl82/93/112.
+  Twee bestaande Productiondeployments7098408597/7098417058 success; primaire provider
+  HJYsLh9424RFEX1pNtJ9TGMtBirc daadwerkelijk Ready/Production/Latest/fullSHA/www.
+  Canonical200/gehele main gelijk aan lokale productie; oude main/footer/80XMLrecords
+  behouden na alleen exactnieuweFAQ/tweebronlinks/sanitaire15→14datum-inverse.
+- Ook volledige actuele livecrawl82/93/112 slaagt. Gespreide live1280/390/320focus
+  vrij/3px/nooverflow, nativeEnter/Space en twee320bronlinks bevestigd. Eerste snelle
+  offscreenmetingen apart behouden; geen alle-devices/AT/volle navigatieketenclaim.
+- Alleen sanitair: één preview en één IndexNow200received na geldig publiek bewijs;
+  niet hetzelfde als indexering. Eigentabs13–16 gesloten/viewporthersteld; server3191
+  gestopt. Geen account-, domein-, prijs- of bewijsstatus gewijzigd.
+- Task125 radiatorvergelijking levert geen afzonderlijke veilige inhoudsgap; geen
+  dubbele paragraaf of nieuwe datum toegevoegd. Echte erkenning/fysieke controle,
+  uitgestelde accounts/prijzen, cases/Franse review/Task51/field/effect blijven open.
+  Deze feitelijke releasebackfill blijft lokaal tot een volgende echte productrelease.
+
 ## 15 oktober 2026 — Task124 kraanvraag lokaal gecontroleerd
 
 - Bron/actie: Belgische hansgrohe-FAQ’s over badkamer- en keukenkranen daadwerkelijk

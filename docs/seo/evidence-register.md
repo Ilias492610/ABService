@@ -1,5 +1,38 @@
 # Evidence Register
 
+## 17 oktober 2026 — Task126–129 begrensde verbetering, geen eigenaarbewijs
+
+Private task-126-before bewaart369bestanden, de zes eerdere releasebackfills, alle
+registry/meta/schema/citations/sitemapwaarden,137checkboxes en vier integrale hashes.
+Task128-brief/echte browser-RED/component-RED→GREEN/exacthistorische-inverse en
+volledige vóór/na main/footer/XML vormen lokaal bewijs van alleen zoekherkenning.
+702Node24/lint0/prod0/build170/localcrawl82/93/112; oorspronkelijke701run met één
+historische-hashfailure blijft behouden. Watermeterfocus: eerste snelle meting en
+latere gestabiliseerde mobiele/desktopgeometrie apart; geen blijvende fout verzonnen.
+Officiële broncontrole: [braces-advisory](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm),
+[selector-parser-advisory](https://github.com/advisories/GHSA-rj75-hqrm-r3gf),
+[ESLint lifecycle](https://eslint.org/version-support/) en npm-registrymetadata.
+Nog9dev/geen compatibele drop-in, productie0; geen package/lock/configwijziging.
+Task127-source-inputnote: bestaande exacte FAS65-revisie vergeleken, geen nieuwe
+veilige gap. Geen onafhankelijke vakman-/persoonserkennings- of volledige modelreview.
+Eén onafhankelijke cohortreview en exact release/livebewijs nog vereist; geen
+IndexNow voor runtime-only en geen verandering aan uitgestelde/eigenaarbewijs-gates.
+
+## 15 oktober 2026 — Task124 releasebewijs, geen nieuwe menselijke goedkeuring
+
+Private frozen42cohort/solefinalreview/22rootrulings/committed369manifest koppelen
+exact `2daad8116b5b98192a421676261ca5a1600e9ef9` aan lokaal696 en hostedCI38769814272.
+Twee Productionstatuses success, echte primaire Ready/Production/Latest/fullSHA/www-
+DOM, canonical/localwholemain/beforemain-footer-80XMLbehoud en volledige livecrawl
+82/93/112exit0 afzonderlijk vastgelegd. Vijf gespreidefocus/native-toggle/beelden
+bevestigen alleen gericht1280/390/320 en twee320source targets. Snelle offscreen-
+metingen en providerinitialtimeout/bindingfout blijven herkenbaar, niet gewist.
+Publiek bewijs200/plain/exactkey en éénsanitair-preview/send200received, indexing
+niet bevestigd. Eigentabs13–16/viewportreset en server88874exit130 geregistreerd.
+Task125 privatebron-/overlapnotitie: geen nieuwe veilige radiatorgap, geen publicatie.
+Geen erkennings-/physical-/case-/Franse-/ontvangst-/field-/zakelijke bewijscreatie.
+Alle137flags/vierintegralen en eerdere releasedocs behouden; backfill lokaal.
+
 ## 15 oktober 2026 — Task124 lokale bewijsset, geen persoonsbewijs
 
 Private volledige before366/SSR/registry/sitemap/schema/citations-capture en de

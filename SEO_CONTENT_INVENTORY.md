@@ -1,5 +1,28 @@
 # AB Service SEO Content Inventory
 
+## 17 oktober 2026 — betere toegang tot bestaande lokale inhoud
+
+Alleen zoekherkenning op `/werkgebied`: spaties en koppeltekens/dashes worden in de
+vergelijking gelijkgetrokken. Officiële namen blijven exact zichtbaar, bestaande314
+vermeldingen/links en lokale draftgates ongewijzigd. Geen nieuwe pagina, claim, bron,
+inhoudsdatum of sitemapdatum. Lokaal702tests/build170/crawl82/93/112; review/release
+nog apart. Afgebakende FAS65-bronvergelijking vond geen aanvullende veilige codegap;
+geen dubbele uitleg toegevoegd of volledige model-/WP07/10-dekking afgevinkt.
+
+## 15 oktober 2026 — kraancontext live, radiatorduplicatie vermeden
+
+Eén nieuwe observatievraag op bestaande sanitairepagina live op exact
+`2daad8116b5b98192a421676261ca5a1600e9ef9`: kort nadruppelen versus aansluiting/
+draaipunt, onbekend toegestaan, geen diagnose of demontageadvies. Twee Belgische
+hansgrohe-bronnen centraal;115citations. Alleen sanitairelastmod15oktober.
+Sole42file-review/696lokaal+hosted/primairReady/fullSHA/www/canonical/volledige
+livecrawl en gerichte mobiele bediening bevestigd; oude inhoud/media/CTA’s/data
+behouden. Eénsanitair IndexNow200received, niet geïndexeerdverklaring.
+Task125bronvergelijking: radiator/drukpagina beantwoorden veilige context al;
+geen duplicaat of datum toegevoegd. Geen volledige kraanintentie/WP10 afgesloten.
+Persoonlijke erkenning en echte fysieke review blijven bewijsgebonden; uitgestelde
+accounts/prijzen blijven voor later. Releasebackfill lokaal voor volgende productrelease.
+
 ## 15 oktober 2026 — beperkte kraancontext lokaal toegevoegd
 
 `/installaties/sanitair` krijgt één native FAQ over kort nadruppelen versus lekken

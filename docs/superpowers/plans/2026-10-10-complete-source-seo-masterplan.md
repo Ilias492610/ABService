@@ -1,5 +1,51 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 17 oktober 2026 — vier gerichte werksporen, alleen aantoonbare zoekverbetering
+
+WP08/11 Task128: spaties/gewone en Unicode-koppeltekens gelijkwaardig gemaakt in de
+bestaande werkgebiedzoeker na echte nulresultaatreproductie. Officiële namen,314
+vermeldingen, links en lokale publicatiestatussen intact; geen nieuwe gemeentepagina.
+WP07/10 Task127: afgebakende FAS65-revisie-/overlapcontrole levert geen unieke veilige
+inhoudsgap; niets verzonnen of dubbel toegevoegd. WP11/12 Task129: gerichte echte
+mobiele/desktoptool-resetfocus na uitrollen zichtbaar, geen blijvende fout aangetoond.
+Geen snelheidswinst, volledige AT-/native-/fieldcontrole of vakmanreview geclaimd.
+WP12 Task126: actuele primaire package/advisory/lifecyclecontrole;9devbevindingen
+(7hoog/2matig) blijven open, productieaudit0. Geen veilige compatibele drop-in
+aangetoond, geen override/frameworkdowngrade of ongemerkte grote migratie uitgevoerd.
+
+Lokaal echte zoek-RED→GREEN en volledige Node24-suite702/702, lint0/prod0/build170/
+crawl82/93/112. Gehele werkgebied-main/footer/80XMLrecords exact gelijk, geen
+inhoudsdatum of IndexNow voor deze runtimewijziging. Eén historische byteguard via
+alleen benoemde exacte inverse bijgewerkt; oude fixtures/hashes en alle137flags/
+vierintegralen behouden. Volgende: één onafhankelijke hele-cohortreview, daarna exact
+commit/hostedCI/providerReady/www/canonical live. Geen volledigeWP-afsluiting.
+Accounts en werkelijk prijsbeleid blijven uitgesteld; persoons-/fysieke-/case-/Franse-/
+bron-/ontvangst-/field-/indexerings-/zakelijke-effectgates blijven apart open.
+
+## 15 oktober 2026 — Task124 afgebakend afgerond; echte bewijsstatussen open
+
+Eén brongebonden kraanvraag en twee passende fabrikantverwijzingen op bestaande
+sanitairepagina live: exact main/remote `2daad8116b5b98192a421676261ca5a1600e9ef9`.
+Alle42reviewhashes identiek; sole onafhankelijke review zonder bevindingen,22grenzen
+expliciet beoordeeld.696lokaal/exactCI38769814272 Node24.21.0/lint0/prod0/build170/
+82/93/112. Bestaande Production7098408597/7098417058 success; echte primaire provider
+HJYsLh9424RFEX1pNtJ9TGMtBirc Ready/Production/Latest/fullSHA/www. Canonical/localmain
+identiek, oude main/footer/80XMLrecords behouden na uitsluitend exactnieuweFAQ/
+tweelinks/sanitaire15→14datum-inverse. Volledige actuele livecrawl82/93/112exit0.
+Gerichte gespreide1280/390/320focus/native-toggle/twee320bronlinks bevestigd;
+snelle offscreenmetingen behouden, geen hele-native/AT/fieldclaim. Alleen éénsanitair-
+IndexNowmelding200received na geldig publiek bewijs, geen indexeringsbewijs.
+Eigentabs13–16/viewport en server3191 opgeruimd; alle137flags/vierintegralen behouden.
+
+Task125 onderzocht radiator/drukcontext: geen nieuwe veilige inhoudsgap, dus geen
+duplicaat, nieuwe URL of datum. Volgende zelfstandige taak alleen bij aantoonbare
+bron-/gebruikersmeerwaarde, zonder algemene herplanning of herhaalde login/prijsvraag.
+Persoonlijke erkenning en een werkelijk uitgevoerde vakmancontrole zijn niet verzonnen
+en blijven open; hetzelfde geldt voor cases/toestemming, Franse menselijke review,
+Task51dev/lifecycle, bron403, ontvangst/field/zoek-/zakelijke effecten. Accounts en echt
+prijsbeleid blijven voor later. Deze releasebackfill blijft lokaal tot volgende
+echte productrelease; dit sluit geen volledigeWP of geheel meesterplan af.
+
 ## 15 oktober 2026 — zelfstandige kraancontext lokaal klaar, bewijsgrenzen behouden
 
 De eigenaar vraagt zelfstandig door te werken en een logisch klinkende invulling

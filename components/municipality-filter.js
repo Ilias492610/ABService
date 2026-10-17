@@ -7,7 +7,9 @@ const normalize = (value) =>
   value
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
+    .toLowerCase()
+    .replace(/[-\s\u2010-\u2015]+/g, " ")
+    .trim();
 
 export default function MunicipalityFilter({ groups }) {
   const [query, setQuery] = useState("");
