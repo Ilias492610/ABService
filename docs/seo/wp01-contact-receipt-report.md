@@ -1,5 +1,15 @@
 # WP01 contactontvangst en meetstatus
 
+## 17 oktober 2026 voorgestelde intake en gegevensbeheer
+
+Op verzoek van de eigenaar zijn vijf synthetische sectorvragen en een minimale
+intake-/bewaarwerkwijze uitgewerkt in het
+[werkvoorstel](intake-en-privacy-werkvoorstel.md). Deze vervangen geen echte
+aanvragen, uitkomsten, meetexports of vastgestelde bewaartermijnen. Het maandelijkse
+beoordelingsritme is een voorgestelde bedrijfskeuze, geen bestaande praktijk of
+wettelijke bewaartermijn. Er zijn geen gegevens verzameld, verwijderd of ingestuurd.
+De gedateerde ontvangst- en analyticswaarnemingen hieronder blijven ongewijzigd.
+
 Op 10 oktober 2026 is één herkenbare technische testaanvraag via de publieke website aanvaard, door Mailgun bezorgd en door de eigenaar in de zakelijke inbox bevestigd. De geharde contactcode heeft afzonderlijk de lokale desktop- en mobiele controles doorstaan. WP01 blijft open voor aantoonbare eventingestie en een commerciële uitkomstenbaseline; ontvangst van deze test bewijst geen klant, opdracht of omzet.
 
 Dit is de actuele WP01-aanvulling op het [uitvoeringsplan](../superpowers/plans/2026-10-10-complete-source-seo-masterplan.md) en de [zoek- en leadbaseline van 10 oktober](2026-10-10-search-baseline.md). Eerdere releasewaarnemingen in de baseline behouden hun historische betekenis.

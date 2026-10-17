@@ -1,5 +1,42 @@
 # AB Service SEO Changelog
 
+## 17 oktober 2026 eigenaarinput en lokale Escape verbetering
+
+- WP12: echt desktopmenu bleef na Escape open. Lokale handler sluit alleen het
+  dichtstbijzijnde open disclosure rond de focus en focust zijn eigen summary.
+  Mobiel genest submenu en daarna Menu sluiten afzonderlijk; native Enter/spatie,
+  bestemming en routegedrag behouden. Vier werkelijke RED-asserties → 18 gericht
+  groen, volledige Node24-suite 708, lint 0/build 170/localcrawl 82/93/112.
+- Verse volledige audit blijft 9 dev (7 hoog/2 matig), productieaudit 0. Primaire
+  metadata bevestigt nog geen veilige compatibele update; geen package/lockwijziging.
+- Eigenaar bevestigt Engelse opvolging en kiest FR/EN-contact/privacy; geschreven
+  ontwerp goedgekeurd, implementatieplan/uitvoering nog apart. Geen taalroute live.
+- Vaillant-boilerplaatsing Vilvoorde als echte beperkte casebasis vastgelegd, zonder
+  verzonnen model/datum/resultaat of fotojobmatch. Intake-/bewaarvoorstel en eigen
+  bijdrageconcept geschreven; geen echte klantdataset, ingevoerd beleid of outreach.
+- Accountwerk/adresherstel, echte prijzen en WP16 voorlopig uitgesteld. Bestaande
+  bewijsstatussen intact. Volgende: onafhankelijke hele-cohortreview en exacte
+  releasegates voor Escape; daarna het afgebakende taaltraject. Geen IndexNow.
+
+## 17 oktober 2026 — Task132 liveacceptatie en actuele open WPs
+
+- Gepubliceerd: exact `94c930559b0bd90fae77e45a84fcbb289668441e`, elf ongewijzigde
+  reviewhashes; één onafhankelijke review zonder bevindingen, 28 grenzen beoordeeld.
+- Verificatie: lokaal en exact CI `39038374815` 703 tests/lint 0/prod 0/build 170/
+  crawl 82/93/112. Werkelijke bestaande Vercel `BRwYBm11Ymx2NvAtFsTshHw383ai`
+  Ready/Production/Latest/full SHA/www; beide bestaande deployments success.
+- Live: Menu met afzonderlijke native toestand, Enter/spatie/Tab en sluiten na
+  bestemmingskeuze; 390/320/1280 gecontroleerd. Eerste livecrawl 82/93/112, exit 0.
+  Header/footer/gids/XML exact; home buiten drie expliciet waargenomen Google-
+  reviewfragmenten exact. Live 5,0/44 versus lokale fallback, reviewcode onveranderd.
+- Alleen publiek nagekeken: Maps toont nog Voorzorgstraat 12A. Geen accountsave,
+  nieuwe bevoegdheid, post, inhoudsdatum of IndexNow. WP14-tekst blijft concept.
+- Volgende: uitsluitend concrete zelfstandige bron-/codeverbeteringen; WP00 en
+  gedateerde WP02 klaar, overige WP-gates in de actuele meesterplantabel. Echte
+  erkenningen, vakmancontrole, cases/toestemming, Franse review en meetuitkomsten
+  niet verzonnen. Accounts/prijzen blijven eigenaar-uitgesteld. Eigen testmiddelen
+  opgeruimd, recovery bewaard. Feitelijke backfill lokaal tot echte productrelease.
+
 ## 17 oktober 2026 — Task130–133, menunaam en concreet restpuntenoverzicht
 
 - WP12: native mobiele knop meldde ook geopend nog “Menu openen”. Alleen de

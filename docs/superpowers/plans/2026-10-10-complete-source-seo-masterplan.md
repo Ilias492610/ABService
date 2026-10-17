@@ -1,5 +1,71 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 17 oktober 2026 nieuwe eigenaarinput en begrensde vervolgtaken
+
+De eigenaar stelt accountwerk/Maps-adresherstel, echte prijzen en WP16 voorlopig
+uit. De bekende adres-/accountgates blijven in het dossier, zonder nieuwe save of
+herhaalde toegangsvraag. Uitgesteld betekent niet afgehandeld of onbelangrijk.
+
+Engelse opvolging is bevestigd; Franse dienstverlening was al bevestigd. De
+gekozen eerste taalrelease is contact en privacy. Het geschreven
+[FR/EN-ontwerp](../specs/2026-10-17-contact-privacy-fr-en-design.md) is door de
+eigenaar goedgekeurd. Implementatieplan, correcte servertaal/rootlayouts, volledige
+formuliertaal/privacy-equivalenten en QA volgen als apart afgebakend traject.
+Er zijn nog geen taalroutes, hreflang of volledige sitevertalingen gepubliceerd;
+AI-ondersteunde taalcontrole is geen verzonnen menselijke vakmanreview.
+
+Eigenaarfeit: een Vaillant-boiler geplaatst in Vilvoorde. De
+[casebasis](../../seo/case-draft-vaillant-boiler-vilvoorde.md) bevat uitsluitend
+die feiten. Model, werkdatum, uitvoeringsscope/resultaat en individuele foto-/
+publicatiematch blijven open. Het openbare Google-archief is bekeken, niet als
+bewijs van een specifieke klus of toestemming overgenomen. Geen nieuwe case-URL.
+Het [intake-/gegevensvoorstel](../../seo/intake-en-privacy-werkvoorstel.md) levert
+vijf synthetische sectorvragen, een werkproces en een originele beeldbijdrage,
+geen echte klantdata, bestaande bewaartermijn of externe plaatsing. Apparatuur-
+gebruik bevestigt geen persoonlijke erkenning of fysieke technische controle.
+
+WP12 Task137: echte desktop-Escape-reproductie liet dropdown/focus staan; minimale
+lokale handler sluit het owning disclosure en geeft zijn summary focus. Op mobiel
+eerst submenu, dan bij tweede Escape Menu; andere toetsen, native bediening en
+bestemmingssluiting blijven behouden. Vier RED-asserties, daarna 18 gerichte en
+708 volledige Node24-tests, lint 0/build 170/localcrawl 82/93/112. Header/main/
+footer/gids/80XML lokaal geheel gelijk vóór/na. Verse audit: 9 dev (7 hoog/2 matig),
+productie 0. Actuele officiële metadata toont geen compatibele gerichte oplossing;
+geen package-, lock-, override- of lifecyclewijziging uitgevoerd. Eén onafhankelijke
+cohortreview en exact release-/CI-/provider-/livebewijs volgen nog apart. Geen
+IndexNow of inhoudsdatum voor deze runtimewijziging; geen volledige WP-afsluiting.
+
+## 17 oktober 2026 — Task132 gepubliceerd; overige WP-gates blijven open
+
+De beperkte mobiele menunaamverbetering is live op exact main/remote
+`94c930559b0bd90fae77e45a84fcbb289668441e`. Eén onafhankelijke hele-cohortreview:
+geen bevindingen; alle elf beoordeelde bestandshashes behouden en 28 grenzen
+afzonderlijk beoordeeld. Lokaal en exact hosted CI `39038374815`: 703 tests,
+lint 0, productieaudit 0, build 170 en crawl 82/93/112. De bestaande primaire
+Vercel-deployment `BRwYBm11Ymx2NvAtFsTshHw383ai` toont Ready/Production/Latest,
+de volledige commit en het www-domein; beide bestaande GitHub-deployments slagen.
+Live native Enter/spatie/Tab, bestemmingssluiting en 390/320/1280-bediening
+gecontroleerd; de eerste volledige livecrawl slaagt met 82/93/112.
+
+Header, footer, warmwatergids en 80 XML-records zijn canonical/lokaal gelijk.
+De oude header herstelt met uitsluitend het verwijderde naamattribuut. Volledige
+lokale home-main is vóór/na gelijk; de live home toont de bestaande Google-score
+5,0/44 waar lokaal de onbeschikbaarheidsfallback staat. Alleen drie exacte,
+waargenomen reviewfragmenten verschillen; alle overige home-main-bytes en de
+reviewbroncode zijn behouden. Geen algemene canonical-main-bytegelijkheid geclaimd.
+Geen IndexNow, inhoudsdatumwijziging, nieuwe pagina of externe post uitgevoerd.
+
+De publieke Maps-hercontrole van 17 oktober 13:49 UTC toont nog Voorzorgstraat 12A;
+publiek verbergen blijft onbevestigd, moderatieoorzaak onbekend. Geen accountsave.
+WP00 en de gedateerde WP02-snapshot blijven afgerond; WP01 en WP03–WP17 hebben
+de hieronder gespecificeerde open/voorwaardelijke/uitgestelde gates. Accounts en
+echt prijsbeleid blijven voor later. De warmwatertekst is alleen een concept.
+Volgende zelfstandige actie vereist een concrete, brongebonden of reproduceerbare
+verbetering; geen herhaalde saves, verzonnen vakmanbewijs of extra paginavulling.
+Eigen tabs/viewport/server zijn opgeruimd; checkout, 137 flags en vier bronbijlagen
+behouden. Deze feitelijke releasebackfill blijft lokaal tot een volgende echte
+productrelease; geen docs-only push.
+
 ## 17 oktober 2026 — Task130–133: resterende WPs en gerichte zelfstandige uitvoering
 
 Geen nieuwe algemene planronde: dit is de actuele acceptatiestand van het bestaande

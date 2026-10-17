@@ -145,6 +145,7 @@ export async function createHarness(kind, { mobile = false, zones = [], fetchRes
     query: (selector) => host.querySelector(selector), all: (selector) => host.querySelectorAll(selector),
     navigate: (path) => { pathname = path; return render(); },
     click(node, target = node) { const event = { target, currentTarget: node, defaultPrevented: false, preventDefault() { this.defaultPrevented = true; } }; let parent = target; while (parent && parent !== host) { event.currentTarget = parent; parent.props.onClick?.(event); parent = parent.parentElement; } render(); return event; },
+    keydown(target, key, { defaultPrevented = false } = {}) { const event = { key, target, currentTarget: target, defaultPrevented, preventDefault() { this.defaultPrevented = true; } }; let parent = target; while (parent && parent !== host) { event.currentTarget = parent; parent.props.onKeyDown?.(event); parent = parent.parentElement; } render(); return event; },
     async loadRating() { await idle[0]?.(); render(); },
     dispose() { for (const slot of slots) slot?.cleanup?.(); },
   };

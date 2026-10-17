@@ -8,6 +8,7 @@ import { loadContactModule } from "./helpers/contact-runtime.mjs";
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { beforeMobileMenuNameSource } from "./fixtures/mobile-menu-name-history.mjs";
+import { beforeNavigationEscapeSource } from "./fixtures/navigation-escape-history.mjs";
 
 test("real server header renders both native nav trees and original identity/contact channels", async () => {
   const link = ({ children, ...props }) => React.createElement("a", props, children);
@@ -80,12 +81,79 @@ for (const mobile of [false, true]) {
   });
 }
 
+for (const focusedTag of ["summary", "a"]) {
+  test(`desktop Escape from ${focusedTag} closes its owning disclosure and returns its summary focus`, async () => {
+    const h = await createHarness("navigation");
+    try {
+      const [details, sibling] = h.all("details");
+      details.open = true; sibling.open = true;
+      const target = details.querySelector(focusedTag); target.focus();
+      const event = h.keydown(target, "Escape");
+      assert.equal(details.open, false);
+      assert.equal(sibling.open, true, "does not choose an arbitrary sibling controller");
+      assert.equal(h.document.activeElement, details.querySelector("summary"));
+      assert.equal(event.defaultPrevented, true);
+    } finally { h.dispose(); }
+  });
+}
+
+test("mobile Escape closes the focused submenu first, then its parent with direct-summary focus", async () => {
+  const h = await createHarness("navigation", { mobile: true });
+  try {
+    const root = h.query(".mobile-menu"), submenu = root.querySelector("details");
+    root.open = true; submenu.open = true;
+    const link = submenu.querySelector("a"); link.focus();
+    assert.equal(h.keydown(link, "Escape").defaultPrevented, true);
+    assert.equal(submenu.open, false); assert.equal(root.open, true);
+    assert.equal(h.document.activeElement, submenu.querySelector("summary"));
+    assert.equal(h.keydown(h.document.activeElement, "Escape").defaultPrevented, true);
+    assert.equal(root.open, false);
+    assert.equal(h.document.activeElement, root.children.find(child => child.tagName === "SUMMARY"));
+  } finally { h.dispose(); }
+});
+
+test("mobile Escape from a top-level link resets all descendants before reopening", async () => {
+  const h = await createHarness("navigation", { mobile: true });
+  try {
+    const root = h.query(".mobile-menu"), submenu = root.querySelector("details");
+    root.open = true; submenu.open = true;
+    const home = root.querySelector("a"); home.focus();
+    h.keydown(home, "Escape");
+    assert.equal(root.open, false); assert.equal(submenu.open, false);
+    assert.equal(h.document.activeElement, root.children.find(child => child.tagName === "SUMMARY"));
+    root.open = true; assert.equal(submenu.open, false);
+  } finally { h.dispose(); }
+});
+
+test("navigation does not intercept other keys, consumed Escape, closed disclosures or outside targets", async () => {
+  const h = await createHarness("navigation");
+  try {
+    const root = h.query(".desktop-nav"), details = root.querySelector("details"), summary = details.querySelector("summary");
+    for (const key of ["Enter", " ", "Tab", "ArrowDown"]) {
+      details.open = true; summary.focus();
+      assert.equal(h.keydown(summary, key).defaultPrevented, false);
+      assert.equal(details.open, true); assert.equal(h.document.activeElement, summary);
+    }
+    const link = details.querySelector("a"); link.focus();
+    h.keydown(link, "Escape", { defaultPrevented: true });
+    assert.equal(details.open, true); assert.equal(h.document.activeElement, link);
+    details.open = false; summary.focus();
+    assert.equal(h.keydown(summary, "Escape").defaultPrevented, false);
+    assert.equal(h.document.activeElement, summary);
+    details.open = true; h.brand.focus();
+    const event = { key: "Escape", target: h.brand, defaultPrevented: false, preventDefault() { this.defaultPrevented = true; } };
+    root.props.onKeyDown?.(event);
+    assert.equal(details.open, true); assert.equal(h.document.activeElement, h.brand);
+    assert.equal(event.defaultPrevented, false);
+  } finally { h.dispose(); }
+});
+
 test("stable mobile menu name retains every other navigation source byte", async () => {
   const source = await readFile(new URL("../components/header-navigation.js", import.meta.url), "utf8");
   const hash = (value) => createHash("sha256").update(value).digest("hex");
-  assert.equal(hash(beforeMobileMenuNameSource(source)), "047cb3b5ffc35185cd993fe24b52697691569decdb69033f1e61f9e8abf4c479");
+  assert.equal(hash(beforeMobileMenuNameSource(beforeNavigationEscapeSource(source))), "047cb3b5ffc35185cd993fe24b52697691569decdb69033f1e61f9e8abf4c479");
   const otherLabel = source.replace('<summary>Menu</summary>', '<summary aria-label="Andere naam">Menu</summary>');
   assert.equal(beforeMobileMenuNameSource(otherLabel), otherLabel);
   const wrongDestination = source.replace('href={child.href}', 'href="/verkeerde-bestemming"');
-  assert.notEqual(hash(beforeMobileMenuNameSource(wrongDestination)), "047cb3b5ffc35185cd993fe24b52697691569decdb69033f1e61f9e8abf4c479");
+  assert.notEqual(hash(beforeMobileMenuNameSource(beforeNavigationEscapeSource(wrongDestination))), "047cb3b5ffc35185cd993fe24b52697691569decdb69033f1e61f9e8abf4c479");
 });

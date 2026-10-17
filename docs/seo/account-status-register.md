@@ -1,5 +1,25 @@
 # WP04–WP05: accountstatus en uitgevoerde acties
 
+## 17 oktober 2026 accountwerk voorlopig uitgesteld
+
+De eigenaar zet GBP/GSC, bestaande zakelijke Bing Places-/Apple-toegang en het
+Maps-adresherstel voorlopig op uitgesteld. De laatst bekende publieke adresgate
+hieronder blijft bewaard; niet afgevinkt, onbelangrijk verklaard of opnieuw
+opgeslagen. Er is geen nieuwe login, grant, DNS-/importactie of toegangsvraag.
+Het openbare fotoarchief is alleen gelezen voor de door de eigenaar genoemde
+Vilvoorde-case; geen foto geplaatst of als specifieke klus geïdentificeerd.
+
+## 17 oktober 2026 — alleen publieke Maps-hercontrole
+
+Om 13:49 UTC toont de anonieme [weergave van de bestaande CID](https://maps.google.com/?cid=4063521367014109489)
+nog **Adres: Voorzorgstraat 12A, 2660 Antwerpen**. Het verbergen is in die publieke
+weergave dus niet bevestigd. De actuele moderatie-/verificatiestatus en oorzaak
+zijn niet vastgesteld. Dit heropent geen reeds uitgevoerde save en is geen bewijs
+dat Google de wijziging heeft geweigerd. Eigen tijdelijke tab gesloten; geen login,
+bewerking, save, review, appeal of nieuw recht uitgevoerd. De uitstelling van
+accounttoegang op 14 oktober blijft gelden; geen nieuwe ontgrendelvraag. Bron:
+private Task132-public-maps-AX. Feitelijke backfill lokaal tot echte productrelease.
+
 ## 14 oktober 2026 — eigenaar stelt accounttoegang uit
 
 Bereikbaar Abder-GBP/GSC-bedrijfsvenster en bestaande zakelijke Microsoft/Bing

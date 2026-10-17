@@ -1,5 +1,15 @@
 # AB Service — voorwaardelijke verdiende vermeldingen
 
+## 17 oktober 2026 eigen bijdrageconcept zonder externe actie
+
+De eigenaar vraagt eigen inhoudelijke input. Het
+[werkvoorstel over aanvraagfoto's](intake-en-privacy-werkvoorstel.md)
+bevat een originele redactionele bijdrage over het verschil tussen een foto voor
+een herstelling en een foto voor de website. Dit is geen verklaring van persoonlijke
+vakervaring, goedgekeurde externe pitch, partnerrelatie of verdiende link.
+Technische/privacyreview, concrete ontvanger-/plaatsingsopdracht en eventuele
+externe aanvaarding blijven afzonderlijk. Geen tweede pilot, verzending of post.
+
 Documentaire stand **11 oktober 2026**, Europe/Brussels. **WP13 gedeeltelijk**:
 vier feitelijke, voorwaardelijke prospects, geen goedgekeurd concept, outreach of
 nieuwe verdiende plaatsing. Dit register verwerkt de publieke onderzoekssteekproef

@@ -1,5 +1,27 @@
 # AB Service — actuele bedrijfsbrief
 
+## Eigenaarrichting 17 oktober 2026
+
+Engelse aanvraagopvolging is rechtstreeks bevestigd; Franse dienstverlening was
+al bevestigd. De eigenaar kiest als eerste taalrelease contact en privacy in
+Frans en Engels, met behoud van Nederlandse URLs. Het
+[goedgekeurde ontwerp](../superpowers/specs/2026-10-17-contact-privacy-fr-en-design.md)
+onderscheidt implementatie/taal-QA van een niet uitgevoerde menselijke vakmanreview.
+Er zijn op dit moment nog geen Franse/Engelse routes gepubliceerd.
+
+De eigenaar bevestigt plaatsing van een Vaillant-boiler in Vilvoorde en verwijst
+naar openbare Google-foto's. De [casebasis](case-draft-vaillant-boiler-vilvoorde.md)
+blijft draft totdat de benodigde concrete werk-/foto-/publicatiekoppelingen kloppen.
+De algemene uitspraak over gebruik van de meeste tools is geen gecontroleerde
+instrumentenlijst, erkenningsscope of fysieke goedkeuring.
+
+Sectorvragen, intakewerkwijze en een originele beeldbijdrage mogen zelfstandig
+worden uitgewerkt als [gelabeld werkvoorstel](intake-en-privacy-werkvoorstel.md),
+niet als echte klantrecords of reeds ingevoerd beleid. Accountwerk en de publieke
+Maps-adresgate blijven voorlopig uitgesteld, niet inhoudelijk opgelost of uit de
+geschiedenis verwijderd. Echte prijzen/offertevoorwaarden en WP16 blijven voor later.
+Geen nieuwe accountrechten, outreach, post, betaalde tool of campagne geautoriseerd.
+
 ## Eigenaarrichting 14 oktober 2026
 
 Accounttoegang voor GBP/GSC/Bing Places/Apple en het echte prijs-/offertebeleid

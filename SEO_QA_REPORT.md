@@ -1,5 +1,49 @@
 # AB Service SEO QA Report
 
+## 17 oktober 2026 Task137 lokale Escape controle
+
+Echte productiebuild op 1280: Diensten open via summary; Escape liet het menu
+open, zowel vanaf summary als na native Tab naar /diensten. Unitregressies zagen
+vier verwachte failures. Minimale lokale root-keyhandler: 18 gericht/708 volledig,
+lint 0/build 170/localcrawl 82/93/112. Oude fixtures/hashes blijven behouden via
+één benoemde exacte broninverse. Geen nieuwe ARIA-rollen, listener of focusval.
+
+Nieuwe build/herstart/reload: desktop Escape vanaf link sluit/focust Diensten.
+Op 390 sluit eerst submenu met focus Diensten, daarna Menu met focus Menu. Op 320
+blijven native Enter/spatie werken en sluit Escape met zichtbare vrije 3px focus,
+zonder overflow. Werkelijke screenshot geïnspecteerd. Header/main/footer/gids/80XML
+zijn volledig gelijk vóór/na lokaal. Dit is geen gehele WAI-implementatie of AT-test;
+Escape buiten een owning open desktopdisclosure kiest geen willekeurige sibling.
+
+Verse npm-audit: 9 dev, exit 1 zoals gerapporteerd; prod 0, exit 0. Geen veilige
+compatibele gerichte update gevonden, geen geforceerde oplossing of packagewijziging.
+Nieuw ontwerp, casebasis en intake-/bijdragevoorstel zijn documentair; geen nieuwe
+taalroute/case/beleid/plaatsing geclaimd. Onafhankelijke review en exacte publicatie-/
+hosted-/provider-/livegates staan nog open. Geen inhoudsdatum of IndexNow.
+
+## 17 oktober 2026 — Task132 volledig begrensd releasebewijs
+
+Exact main/remote `94c930559b0bd90fae77e45a84fcbb289668441e`; elf frozen hashes
+behouden. Onafhankelijke review: 0 critical/important/minor, 28 grenzen afzonderlijk
+beoordeeld. Fresh lokaal 703 tests en exact hosted CI `39038374815` Node 24.21.0:
+703/lint 0/prod 0/build 170/crawl 82/93/112. Beide bestaande Production-deployments
+7140619580/7140614190 success; echte primaire `BRwYBm11Ymx2NvAtFsTshHw383ai`
+Ready/Production/Latest met volledige commit en www. Eerste livecrawl exit 0.
+
+Live 390/320: Menu in collapsed/expanded, native Return/spatie, Tab naar Home en
+Tarieven-bestemming sluit het menu. Focus zichtbaar/vrij, 3px outline, geen overflow;
+1280 oorspronkelijke desktopnavigatie intact. Werkelijke 320-screenshot geïnspecteerd.
+Header/footer/gids/80XML canonical/lokaal exact; lokale home-main vóór/na exact.
+Live home-main is NIET integraal bytegelijk: bestaande Google-summary geeft 5,0/44
+en geen losse reviewteksten, tegenover de lokale onbeschikbaarheidsfallback.
+Drie exacte waargenomen fragmenten herstellen alle overige bytes; alle relevante
+reviewbronnen zijn onveranderd. Oorzaak van lokale fallback niet vastgesteld en
+geen productpatch nodig of uitgevoerd. Geen hele-AT-/field-/conformiteitsclaim.
+137 flags/vier integralen/recovery behouden; Task132-done opnieuw 703 tests geslaagd.
+Eigen tabs 7–10 gesloten, viewport hersteld, eigen server16113 exit130; andere
+server/user-tab onaangeraakt. 9 dev/lifecycle en overige echte WP-gates blijven open.
+Geen IndexNow/runtime-inhoudsdatum of docs-only push; deze backfill nog lokaal.
+
 ## 17 oktober 2026 — Task132 lokale menunaamcontrole; release nog open
 
 Echte390AX vóór: Menu openen zowel collapsed als expanded. Alleen vaste aria-label

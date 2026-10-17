@@ -1,5 +1,51 @@
 # Evidence Register
 
+## 17 oktober 2026 eigenaarinput en Task137 kandidaat
+
+Nieuwe directe eigenaarantwoorden bevestigen Engelse opvolging, de eerste scope
+FR/EN-contact/privacy en het geschreven ontwerp. Geen menselijke technische
+taalreview, echte taalontvangst of bestaande publieke taalroute afgeleid. De
+Vaillant-boilerplaatsing in Vilvoorde is eigenaarfeit; model/datum/resultaat/foto-
+jobmatch/rechten blijven afzonderlijk. Publieke Google-galerij bekeken, eerste
+geselecteerde foto bedrijfswagen/Google-datum dec2025; geen werkdatum of passende
+casefoto aangenomen. Geen download/herpublicatie. Accountwerk, prijzen en WP16 uitgesteld.
+
+Task137 private before372 bewaart vijf releasebackfills, 137 flags, vier integralen
+en registry/citations/meta/schema/XML. Echte desktop-Escape en vier unitfailures,
+daarna 18 gerichte/708 volledige tests, lint0/build170/local82/93/112 en actual
+1280/390/320 native focus/sluiting. Hele lokale header/main/footer/gids/XML gelijk.
+De [WAI-disclosurevoorbeelden](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/examples/disclosure-navigation/)
+zijn gedragsreferentie, geen native-details- of conformiteitscertificaat.
+Verse audit9dev/prod0; officiële registry/advisory-input toont geen ondersteunde
+compatibele gerichte oplossing. Geen package/lock/override of lifecyclefix geclaimd.
+
+Het intake-/bewaarwerkvoorstel gebruikt synthetische voorbeelden en primaire
+[AVG](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32016R0679)-/
+[GBA-informatiecriteria](https://www.gegevensbeschermingsautoriteit.be/professioneel/avg/rechten-van-de-burgers/het-recht-op-informatie),
+niet echte klantdata of aangenomen branchetermijnen. Eigen beeldbijdrage blijft
+concept; geen persoonlijke expertise, partner, plaatsing of resultaat afgeleid.
+Eén onafhankelijke gehele review en exact release/livebewijs volgen nog apart;
+geen IndexNow/runtime-inhoudsdatum of volledige WP-afsluiting.
+
+## 17 oktober 2026 — Task132 exact gepubliceerd en live gecontroleerd
+
+Private before371/frozen11/sole review/28 rootrulings/committed372/acceptance/done
+koppelen exact `94c930559b0bd90fae77e45a84fcbb289668441e` aan 703 lokale en
+hosted tests, CI39038374815, echte bestaande provider Ready/Production/Latest/
+fullSHA/www en twee Production-successstatussen. Volledige livecrawl 82/93/112
+slaagt bij de eerste run. Werkelijke live native Menu/Space/Return/Tab/Tarieven-
+sluiting en 390/320/1280-bewijzen blijven apart van volledige AT/veldmetingen.
+Canonical header/footer/warmwatergids/80XML exact; oude header met één inverse.
+De volledige lokale home-main blijft gelijk, maar canonical Google-summary niet:
+5,0/44/geen losse teksten versus lokale fallback. Drie exacte geobserveerde
+fragmenten herstellen alle overige main-bytes; reviewcode ongewijzigd. Beide
+captures bewaard, geen gehele canonical-main-bytegelijkheid of oorzaak verzonnen.
+Publieke Maps-AX17okt13:49UTC toont nog adres; geen owner-/moderatieactie of oorzaak.
+WP-resttabel en niet-geplaatst WP14-concept zijn geen operationele afsluiting.
+Geen IndexNow of nieuwe eigenaar-/persoons-/fysieke-/case-/effectbewijzen. Eigen
+tabs/viewport/server opgeruimd, 137 flags/vier integralen/recovery intact. Deze
+feitelijke releasebackfill blijft lokaal tot een volgende echte productrelease.
+
 ## 17 oktober 2026 — Task130–133, begrensde restpunten en menunaam
 
 Private371beforemanifest bewaart zes eerdere releasebackfills, registry/citations/

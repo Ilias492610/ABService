@@ -19,6 +19,7 @@ import { beforeMaintenanceSubmitFocusSource } from "./fixtures/maintenance-submi
 import { beforeMaintenanceReadinessSource } from "./fixtures/maintenance-readiness-history.mjs";
 import { beforeMunicipalitySearchSource } from "./fixtures/municipality-filter-history.mjs";
 import { beforeMobileMenuNameSource } from "./fixtures/mobile-menu-name-history.mjs";
+import { beforeNavigationEscapeSource } from "./fixtures/navigation-escape-history.mjs";
 const bytes = await readFile(new URL("./fixtures/registered-seat-facts.json", import.meta.url));
 const f = JSON.parse(bytes);
 const hash = value => createHash("sha256").update(typeof value === "string" || Buffer.isBuffer(value) ? value : JSON.stringify(value)).digest("hex");
@@ -104,7 +105,8 @@ test("only the two legal routes publish true13October dates with all registry me
   for (const file of f.before.protectedFiles) {
     const current = await readFile(new URL(`../${file.path}`, import.meta.url));
     const searchRestored = file.path === "components/municipality-filter.js" ? beforeMunicipalitySearchSource(current.toString("utf8")) : current;
-    const menuRestored = file.path === "components/header-navigation.js" ? beforeMobileMenuNameSource(searchRestored.toString("utf8")) : searchRestored;
+    const escapeRestored = file.path === "components/header-navigation.js" ? beforeNavigationEscapeSource(searchRestored.toString("utf8")) : searchRestored;
+    const menuRestored = file.path === "components/header-navigation.js" ? beforeMobileMenuNameSource(escapeRestored.toString("utf8")) : escapeRestored;
     const actual = beforeFaqRecognitionProtectedBytes(beforeFaucetProtectedBytes(menuRestored, file.path), file.path);
     assert.equal(hash(file.path === "app/globals.css" ? beforeFooterFactsCss(beforeTariffEntryProtectionCss(actual.toString("utf8"))) : file.path === "components/floating-trust-signals.js" ? beforeTariffEntryProtectionSource(actual.toString("utf8")) : file.path === "components/maintenance-check.js" ? beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(actual.toString("utf8")))) : file.path === "app/tarieven/page.js" ? beforeTariffEntrySource(actual.toString("utf8")) : ["app/installaties/sanitair/page.js", "content/core-sources.mjs"].includes(file.path) ? beforeSanitaryReferralSource(actual.toString("utf8"), file.path) : actual), file.sha256, file.path);
   }
