@@ -3,6 +3,7 @@ import { additionalServices } from "./additional-services.mjs";
 import { brandServices } from "./brand-services.mjs";
 import { getPublishedProjects } from "./projects.mjs";
 import { adviceGuides } from "./advice-guides.mjs";
+import { localizedPageCandidates } from "./localization.mjs";
 
 export const CONTENT_STATUS = Object.freeze({
   PUBLISHED: "published",
@@ -410,6 +411,7 @@ export const pageRegistry = Object.freeze([
     description:
       "Deze dienst is momenteel niet opgenomen in het actieve dienstenaanbod van de website.",
   },
+  ...localizedPageCandidates,
 ]);
 
 export const indexablePages = Object.freeze(getIndexableEntries(pageRegistry));

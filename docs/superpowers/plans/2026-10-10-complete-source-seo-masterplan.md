@@ -1,5 +1,51 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 17 oktober 2026 — Task138 FR/EN lokaal, releaseacceptatie volgt
+
+Het expliciet goedgekeurde [uitvoeringsplan](2026-10-17-contact-privacy-fr-en.md)
+is in uitvoering: complete FR/EN-contact/privacy/shell/formulierstatus, vaste
+nativepaden, echte initiële documenttalen en twee wederkerige equivalentgroepen.
+Nederlandse URLs/inhoud/datums behouden; lokale86/97/116crawl, zes-equivalentaudit,
+lint/prod0/build178 gecontroleerd.
+[Begrensd releasebewijs](../../seo/contact-privacy-fr-en-release.md).
+Sole eindreview en exact publiceren/hostedCI/provider/live volgen; nog geen live-
+of IndexNow-claim. HeleWP15, menselijke technische review/blijvend beheer/echte
+taalontvangst blijven open. Accounts/Maps, echte prijzen enWP16 voor later.
+Cookieconsent is apart, geen implementatie of juridische vrijstelling.9dev/lifecycle
+en echte case-/persoons-/fysieke-/meetgates ongewijzigd.137oorspronkelijke checkbox-
+regels/vierintegralen en beide recoveryledgers intact; geen reset/tweede schrijver.
+
+## 17 oktober 2026 — Task137 geaccepteerd, FR/EN-implementatieplan volgt
+
+Escape-menuverbetering staat live op main/remote exact
+`12bb624c5c8c8e5387ee56a4957db4ab1780c683`. Eén hele-cohortreview zonder
+bevindingen; alle16 hashes en32 afzonderlijke rootrulings behouden. Fresh lokaal,
+precommit en done708; exact hosted CI39041684520 Node24.21.0/lint0/prod0/build170/
+crawl82/93/112. Werkelijke bestaande primaire Vercel GRkAP4tDJBAiKmraogZgyC7h4H4C
+Ready/Production/Current/fullSHA/www; beide Productiondeployments success.
+Live1280/390/320 native Escape, juiste terugkeerfocus, Enter/spatie/Tab en sluiten
+na bestemming gecontroleerd; eerste livecrawl82/93/112 exit0. Geen gehele
+toegankelijkheids-/AT-/veldconformiteit afgeleid.
+
+Header/footer/gids/80XML canonical/lokaal exact, lokale hele home-main vóór/na
+gelijk. De canonicalhome bevat de bestaande Google5,0/44-summary tegenover lokale
+fallback; alleen drie exacte geobserveerde fragmenten verschillen en alle overige
+bytes herstellen exact. Reviewcode ongewijzigd; geen hele canonical-main-gelijkheid.
+137 oorspronkelijke checkboxregels/vier integrale bijlagen/recovery intact.
+Eigen tabs/server opgeruimd. Geen nieuwe pagina, inhoudsdatum of IndexNow.
+
+Nieuwe eigenaarinput is begrensd verwerkt: Engelse opvolging bevestigd, FR/EN-
+contact/privacyontwerp goedgekeurd, intake-/bewaar-/bijdragevoorstel en alleen de
+echte Vaillant-boilerplaatsing Vilvoorde als niet-routable casebasis. Dit bewijst
+geen ingevoerd beleid, echte klantdataset, werkdatum/fotojobmatch/toestemming,
+persoonlijke erkenning of fysieke vakmanreview. Accountwerk/Maps, prijsbeleid en
+WP16 blijven later;9dev/lifecycle blijven open, productieaudit0 is apart.
+Volgende: review van het geschreven, afgebakende
+[FR/EN-implementatieplan](2026-10-17-contact-privacy-fr-en.md) en daarna uitvoering
+met echte root-/formulier-/privacy-/taal-SEO-controles. Nog geen
+taalroute/hreflang live en geen volledige WP15-afsluiting. Deze releasebackfill
+blijft lokaal tot een volgende echte productrelease, geen docs-only push.
+
 ## 17 oktober 2026 nieuwe eigenaarinput en begrensde vervolgtaken
 
 De eigenaar stelt accountwerk/Maps-adresherstel, echte prijzen en WP16 voorlopig

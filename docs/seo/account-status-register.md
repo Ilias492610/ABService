@@ -1,5 +1,15 @@
 # WP04–WP05: accountstatus en uitgevoerde acties
 
+## 17 oktober 2026 — Task137 release zonder accountwijziging
+
+Website-runtime gecontroleerd gepubliceerd op exact12bb624, CI39041684520 en echte
+Vercel Ready/Production/Current/fullSHA/www bevestigd. Dit verandert geen GBP/GSC,
+Bing Places/Apple-, publieke adres-, verificatie- of moderatiestatus. Geen nieuwe
+login, save, rechten, XML-/DNS-/importactie, fotohergebruik of externe inzending.
+De uitstelling blijft gelden; openbare Google-fotogalerijlezing hieronder is geen
+bewijs van de Vilvoorde-foto, werkdatum of toestemming. Geen IndexNow voor dit
+runtime-/documentatiewerk; feitelijke backfill lokaal tot echte productrelease.
+
 ## 17 oktober 2026 accountwerk voorlopig uitgesteld
 
 De eigenaar zet GBP/GSC, bestaande zakelijke Bing Places-/Apple-toegang en het

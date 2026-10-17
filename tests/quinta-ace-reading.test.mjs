@@ -1,3 +1,4 @@
+const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -12,7 +13,8 @@ import {renderFaultGuide} from "./helpers/fault-guide-runtime.mjs";
 import {loadContactModule} from "./helpers/contact-runtime.mjs";
 import {business} from "../content/business.mjs";
 import {getFaultGuide} from "../content/fault-guides.mjs";
-import {getPageDefinition,pageRegistry} from "../content/site-content.mjs";
+import {getPageDefinition,pageRegistry as fullLocalizedRegistry} from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
 import {beforeQuintaHtml,beforeQuintaRegistry} from "./fixtures/quinta-ace-history.mjs";
 import {beforeCalentaAceGuide} from "./fixtures/calenta-ace-history.mjs";
 import {beforeCustomerLocationRegistry} from "./fixtures/customer-location-history.mjs";

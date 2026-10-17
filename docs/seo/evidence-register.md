@@ -1,5 +1,38 @@
 # Evidence Register
 
+## 17 oktober 2026 — Task138 lokale taalimplementatie
+
+Eigenaar keurde ontwerp/uitvoeringsplan expliciet goed; Engelse opvolging bevestigd,
+Franse dienstverlening eerder bevestigd. Geen heleWP15, menselijke review of nieuwe
+erkenning afgeleid. Eigen SDD `2026-10-17-contact-privacy-fr-en` bewaart before377,
+41NL-bronpaden,137flags/vierintegralen, echteRED/GREEN en91responsevergelijking.
+Tasks1–3 lokaal2f673fb/1ea121e/0c55b9c, geen tussenpush. Task4 privacy/registry/
+taalSEO en lokale86/97/116 + zes-equivalentaudit uitgevoerd. AI-taalinput bewaard
+en door root verwerkt, geen menselijke professionele review. Browser/nativeHTTP
+begrensd; JS-off/echte taalontvangst niet geclaimd.
+[Releasebewijs](contact-privacy-fr-en-release.md). Eén finale review en exacte
+CI/provider/live volgen; cookiekeuze apart.
+
+## 17 oktober 2026 — Task137 exacte publicatieketen bevestigd
+
+Private before372/frozen16/whole-review/root32rulings/committed376/acceptance/done
+leggen exact12bb624c5c8c8e5387ee56a4957db4ab1780c683 vast. Lokaal/freshprecommit/
+done708 en exact CI39041684520 Node24.21.0/lint0/prod0/build170/crawl82/93/112.
+Werkelijke bestaande primaire provider GRkAP4tDJBAiKmraogZgyC7h4H4C toont Ready,
+Production/Current, volledige commitlink en www; beide Production-statussen success.
+Live native1280/390/320 Escape/sluiting/focus en Enter/spatie/Tab/Tarieven behouden;
+echte screenshot geïnspecteerd. Eerste livecrawl82/93/112 exit0.
+
+Volledige lokale header/main/footer/gids/XML gelijk vóór/na; canonical header/
+footer/gids/80XML gelijk. Canonical home is niet integraal bytegelijk: precies drie
+waargenomen Google-summaryvarianten tegenover lokale fallback; exacte substitutie
+herstelt alle overige bytes, reviewbron onveranderd. Geen generieke normalisatie,
+oorzaakclaim of reviewmanipulatie. 137 flags/vier integralen/recovery behouden.
+Geen IndexNow/inhoudsdatum/accountactie of volledige WP-afsluiting. 9 dev/lifecycle,
+echte foto-/case-/persoonlijke-/fysieke-/ontvangst-/meetgates blijven. Taalontwerp
+is goedgekeurd, implementatieplanreview/uitvoering staan apart. Feitelijke backfill
+blijft lokaal tot een volgende echte productrelease.
+
 ## 17 oktober 2026 eigenaarinput en Task137 kandidaat
 
 Nieuwe directe eigenaarantwoorden bevestigen Engelse opvolging, de eerste scope

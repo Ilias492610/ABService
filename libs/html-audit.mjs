@@ -20,7 +20,7 @@ const textInside = (html, name) => {
   return match?.[1]?.replace(/<[^>]+>/g, "").trim() || "";
 };
 
-export const auditHtml = ({ html, url, indexable }) => {
+export const auditHtml = ({ html, url, indexable, expectedLanguage = "nl-BE" }) => {
   const issues = [];
   const title = textInside(html, "title");
   const descriptionTag = tags(html, "meta").find(
@@ -42,8 +42,8 @@ export const auditHtml = ({ html, url, indexable }) => {
   if (!description) issues.push("description ontbreekt");
   if (!canonical) issues.push("canonical ontbreekt");
   if (h1Count !== 1) issues.push(`pagina heeft ${h1Count} H1-elementen`);
-  if (getAttribute(htmlTag, "lang") !== "nl-BE") {
-    issues.push("html lang ontbreekt of is niet nl-BE");
+  if (getAttribute(htmlTag, "lang") !== expectedLanguage) {
+    issues.push(`html lang ontbreekt of is niet ${expectedLanguage}`);
   }
   if (!indexable && !robots.toLowerCase().includes("noindex")) {
     issues.push("noindex ontbreekt");

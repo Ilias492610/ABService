@@ -1,3 +1,4 @@
+const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeLocalizationShellSource } from "./fixtures/localization-shell-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
@@ -8,7 +9,8 @@ import { readFileSync } from "node:fs";
 import { resolveRouteSourcePath } from "./helpers/route-source-path.mjs";
 import { renderTariffs, tariffsRoute } from "./helpers/tariffs-runtime.mjs";
 import { beforeTariffEntryLinks, beforeTariffEntrySource, beforeTariffEntryProtectionSource, beforeTariffEntryProtectionCss, tariffEntryAnchors } from "./fixtures/tariffs-entry-links.mjs";
-import { getPageDefinition, pageRegistry } from "../content/site-content.mjs";
+import { getPageDefinition, pageRegistry as fullLocalizedRegistry } from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
 
 const hash = value => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
 const beforeHash = "6a3ec570305f50eba6575609e5976e6a9f926ed6444c478b1292188b73fbecf9";

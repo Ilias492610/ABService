@@ -1,5 +1,16 @@
 # AB Service SEO Content Inventory
 
+## 17 oktober 2026 — Task138 lokale contact/privacytaalrelease
+
+Vier nieuwe volledige equivalenten: `/fr/contact`, `/en/contact`,
+`/fr/confidentialite`, `/en/privacy`. Nederlandse URLs/tekst/media/sitemapdatums
+behouden;84published/2noindex. Geen technische gids, taalhome of lokale stapeling.
+Alleen twee echte groepen hebben hreflang; andere NL-bestemmingen zijn gelabeld.
+Lokale86/97/116crawl en zes-equivalenttaalaudit gecontroleerd. Review/publicatie/
+CI/provider/live nog apart; geen IndexNow, heleWP15, menselijke vakman-/juridische
+review, bewaarbeleid of ontvangst geclaimd.
+[Releasegrenzen](docs/seo/contact-privacy-fr-en-release.md).
+
 ## 17 oktober 2026 — Task128 gepubliceerd en live geverifieerd
 
 Alleen bestaande werkgebiedzoeker verbeterd op exact

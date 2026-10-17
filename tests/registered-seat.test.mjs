@@ -1,3 +1,4 @@
+const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
 import { beforeFaucetRegistry, beforeFaucetProtectedBytes } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry, beforeFaqRecognitionProtectedBytes } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry, beforeSanitaryReferralSource } from "./fixtures/sanitary-referral-history.mjs";
@@ -8,9 +9,11 @@ import { readFile } from "node:fs/promises";
 import { resolveRouteSourcePath, restoreMovedRootImport } from "./helpers/route-source-path.mjs";
 import { beforeLocalizationShellBytes } from "./fixtures/localization-shell-history.mjs";
 import { beforeLocalizationContactBytes } from "./fixtures/localization-contact-history.mjs";
+import { beforeLocalizationReleaseBytes, beforeLocalizationReleaseMetadata } from "./fixtures/localization-release-history.mjs";
 import { createHash } from "node:crypto";
 import { createRequire } from "node:module";
-import { pageRegistry } from "../content/site-content.mjs";
+import { pageRegistry as fullLocalizedRegistry } from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { buildGlobalSchemaGraph } from "../libs/schema-data.mjs";
 import { faultGuides } from "../content/fault-guides.mjs";
@@ -90,7 +93,7 @@ test("only the two legal routes publish true13October dates with all registry me
   assert.deepEqual(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeRegisteredSeatRegistry), f.before.registry);
   assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeRegisteredSeatRegistry)), f.before.allRegistrySha256);
   assert.deepEqual(pageRegistry.map(page => ({ path: page.path, metadata: buildPageMetadata(page) })), f.before.allMetadata);
-  assert.deepEqual(privacyRoute.metadata, f.before.routeMetadata.privacy);
+  assert.deepEqual(beforeLocalizationReleaseMetadata(privacyRoute.metadata, '/privacy-policy'), f.before.routeMetadata.privacy);
   assert.deepEqual(termsRoute.metadata, f.before.routeMetadata.terms);
   const sitemap = buildSitemapEntries(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry)).map(beforeSanitaryReferralSitemapEntry);
   assert.equal(sitemap.length, 80);
@@ -106,7 +109,7 @@ test("only the two legal routes publish true13October dates with all registry me
   assert.equal(renderGlobalSchema(), f.before.renders.globalSchema);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const file of f.before.protectedFiles) {
-    const loaded = beforeLocalizationShellBytes(beforeLocalizationContactBytes(await readFile(new URL(`../${resolveRouteSourcePath(file.path)}`, import.meta.url)), file.path), file.path);
+    const loaded = beforeLocalizationShellBytes(beforeLocalizationContactBytes(beforeLocalizationReleaseBytes(await readFile(new URL(`../${resolveRouteSourcePath(file.path)}`, import.meta.url)), file.path), file.path), file.path);
     const current = file.path === "app/layout.js" ? Buffer.from(restoreMovedRootImport(loaded.toString("utf8"), file.path)) : loaded;
     const searchRestored = file.path === "components/municipality-filter.js" ? beforeMunicipalitySearchSource(current.toString("utf8")) : current;
     const escapeRestored = file.path === "components/header-navigation.js" ? beforeNavigationEscapeSource(searchRestored.toString("utf8")) : searchRestored;

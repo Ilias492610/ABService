@@ -4,13 +4,18 @@ import RegisteredSeat from "@/components/registered-seat";
 import { business } from "@/content/business.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
+import LanguageSwitcher from "@/components/language-switcher";
+import JsonLd from "@/components/json-ld";
+import { buildPageSchema } from "@/libs/schema-data.mjs";
 
-export const metadata = buildPageMetadata(getPageDefinition("/privacy-policy"));
+export const metadata = buildPageMetadata(getPageDefinition("/privacy-policy"), { languageAlternates: true });
 
 export default function PrivacyPage() {
   return (
     <>
+      <JsonLd data={buildPageSchema(getPageDefinition("/privacy-policy"))} id="page-schema" />
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Privacybeleid", path: "/privacy-policy" }]} />
+      <div className="shell"><LanguageSwitcher path="/privacy-policy" /></div>
       <PageHero eyebrow="Privacy" title="Hoe AB Service website- en contactgegevens verwerkt" intro="Dit beleid beschrijft de systemen die de website daadwerkelijk gebruikt: het contactformulier, Mailgun voor e-mailbezorging, Vercel voor hosting en analyse, en Google Places voor actuele profiel- en beoordelingsgegevens." />
       <section className="section"><div className="shell legal-copy">
         <h2>1. Wie verwerkt uw gegevens?</h2><p>AB Service, ondernemingsnummer {business.vatId}, is het aanspreekpunt voor gegevens die u via deze website verstrekt. Voor privacyvragen kunt u mailen naar <a href={`mailto:${business.email}`}>{business.email}</a>.</p>

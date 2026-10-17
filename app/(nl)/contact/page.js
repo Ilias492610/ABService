@@ -8,8 +8,11 @@ import { contentImages } from "@/content/media.mjs";
 import { buildPageMetadata } from "@/libs/seo-data.mjs";
 import { getPageDefinition } from "@/content/site-content.mjs";
 import { CONTACT_SERVICES } from "@/libs/contact-validation.mjs";
+import LanguageSwitcher from "@/components/language-switcher";
+import JsonLd from "@/components/json-ld";
+import { buildPageSchema } from "@/libs/schema-data.mjs";
 
-export const metadata = buildPageMetadata(getPageDefinition("/contact"));
+export const metadata = buildPageMetadata(getPageDefinition("/contact"), { languageAlternates: true });
 
 export default async function ContactPage({ searchParams }) {
   const params = await searchParams;
@@ -17,7 +20,9 @@ export default async function ContactPage({ searchParams }) {
   const initialService = typeof params?.dienst === "string" && CONTACT_SERVICES.includes(params.dienst) ? params.dienst : "";
   return (
     <>
+      <JsonLd data={buildPageSchema(getPageDefinition("/contact"))} id="page-schema" />
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }]} />
+      <div className="shell"><LanguageSwitcher path="/contact" /></div>
       <PageHero
         eyebrow="Contact"
         title="Leg uw vraag voor aan AB Service"

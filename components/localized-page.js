@@ -17,7 +17,7 @@ export function LocalizedPageHero({ locale, eyebrow, title, intro, ctaLabel, cta
   return <section className="page-hero"><div className="shell hero-grid"><div>
     <p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="hero-intro">{intro}</p>
     <div className="button-row"><Link href={ctaHref || `${getContactRoute(locale)}#aanvraagformulier`} className="button">{ctaLabel || copy.defaultCta}</Link>
-      <TrackedLink href={business.phoneHref} eventName="phone_click" eventProperties={{location:'hero'}} className="button button-secondary">{copy.call} {business.phoneDisplay}</TrackedLink></div>
+      <TrackedLink href={business.phoneHref} eventName="phone_click" eventProperties={{location:'hero'}} className="button button-secondary">{`${copy.call} ${business.phoneDisplay}`}</TrackedLink></div>
     </div><aside className="hero-aside" aria-label={copy.heroAsideLabel}><strong>{copy.heroAsideHeading}</strong><p>{copy.heroAside}</p><Link href="/tarieven">{copy.tariffs}</Link></aside>
   </div></section>;
 }

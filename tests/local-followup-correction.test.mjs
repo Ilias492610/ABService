@@ -6,7 +6,9 @@ import { loadContactModule } from "./helpers/contact-runtime.mjs";
 import * as areas from "../content/service-areas.mjs";
 import * as projects from "../content/projects.mjs";
 import * as business from "../content/business.mjs";
-import * as registry from "../content/site-content.mjs";
+import * as fullLocalizedSite from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
+const registry = {...fullLocalizedSite, pageRegistry:beforeLocalizationRegistry(fullLocalizedSite.pageRegistry)};
 import * as seo from "../libs/seo-data.mjs";
 import * as schema from "../libs/schema-data.mjs";
 

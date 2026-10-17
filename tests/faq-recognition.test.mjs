@@ -1,3 +1,4 @@
+const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
 import { beforeFaucetRegistry, beforeFaucetSitemapEntry, beforeFaucetCoreSources, beforeFaucetCitations, beforeFaucetSource } from "./fixtures/faucet-context-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -7,7 +8,8 @@ import {resolveRouteSourcePath} from "./helpers/route-source-path.mjs";
 import {createRequire} from "node:module";
 import {renderFaq,faqRoute} from "./helpers/faq-runtime.mjs";
 import {faqRecognitionHtml,beforeFaqRecognitionHtml,beforeFaqRecognitionSource,beforeFaqRecognitionProtectedBytes,beforeFaqRecognitionRegistry,beforeFaqRecognitionSitemapEntry,beforeFaqRecognitionCoreSources,beforeFaqRecognitionCitations} from "./fixtures/faq-recognition-history.mjs";
-import {pageRegistry,getPageDefinition} from "../content/site-content.mjs";
+import {pageRegistry as fullLocalizedRegistry,getPageDefinition} from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
 import {coreSources} from "../content/core-sources.mjs";
 import {getCitedSources} from "../libs/cited-sources.mjs";
 import {buildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";

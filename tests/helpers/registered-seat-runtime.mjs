@@ -6,6 +6,7 @@ import * as business from "../../content/business.mjs";
 import * as seo from "../../libs/seo-data.mjs";
 import * as site from "../../content/site-content.mjs";
 import * as schema from "../../libs/schema-data.mjs";
+import {beforeLocalizationReleaseHtml} from '../fixtures/localization-release-history.mjs';
 
 // The complete real modules run through SWC and React. Only framework Link and
 // inert analytics transport are adapted; no legal identity or consumer is mocked.
@@ -40,6 +41,6 @@ export async function renderFooterWithDate(DateConstructor) {
   const compiledFooter = await loadContactModule("components/site-footer.js", dependencies, { Date: DateConstructor });
   return renderToStaticMarkup(React.createElement(compiledFooter.default));
 }
-export const renderPrivacy = () => renderToStaticMarkup(React.createElement(privacyRoute.default));
+export const renderPrivacy = () => beforeLocalizationReleaseHtml(renderToStaticMarkup(React.createElement(privacyRoute.default)), '/privacy-policy');
 export const renderTerms = () => renderToStaticMarkup(React.createElement(termsRoute.default));
 export const renderGlobalSchema = () => renderToStaticMarkup(React.createElement(jsonLd.default, { data: schema.buildGlobalSchemaGraph() }));

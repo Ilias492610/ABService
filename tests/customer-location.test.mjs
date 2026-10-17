@@ -1,3 +1,4 @@
+const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
@@ -5,7 +6,9 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { pageRegistry, getPageDefinition } from "../content/site-content.mjs";
+import { pageRegistry as fullLocalizedRegistry, getPageDefinition } from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
+import { beforeLocalizationReleaseHtml, beforeLocalizationReleaseMetadata } from "./fixtures/localization-release-history.mjs";
 import { faultGuides } from "../content/fault-guides.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { renderHome, renderContact, homeRoute, contactRoute, renderEvents } from "./helpers/customer-location-runtime.mjs";
@@ -59,7 +62,7 @@ test("contact visitors see no-reception guidance before intake while situation t
   visibleParagraph(hero, `${oldContactIntro} ${copy}`, "hero-intro");
   visibleParagraph(html, `${oldContactIntro} ${copy}`, "hero-intro");
   assert.ok(html.indexOf(escape(copy)) < html.indexOf('id="aanvraagformulier"'));
-  assert.equal(contactBefore(html), f.before.contactHtml, "whole form, labels, contacts, 24h, photo, emergency boundary and legal link survive");
+  assert.equal(contactBefore(beforeLocalizationReleaseHtml(html, '/contact')), f.before.contactHtml, "whole form, labels, contacts, 24h, photo, emergency boundary and legal link survive");
   assert.equal(hash(f.before.contactHtml), f.before.contactHtmlSha256);
 });
 
@@ -83,7 +86,7 @@ test("only home and contact gain actual13October sitemap dates while complete re
     assert.equal(current.lastModified, "2026-10-13");
     assert.deepEqual(beforeCustomerLocationRegistry(current), page);
     assert.deepEqual(buildPageMetadata(current), metadata);
-    assert.deepEqual(page.path === "/" ? homeRoute.metadata : contactRoute.metadata, metadata);
+    assert.deepEqual(beforeLocalizationReleaseMetadata(page.path === "/" ? homeRoute.metadata : contactRoute.metadata, page.path), metadata);
   }
   assert.deepEqual(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeCustomerLocationRegistry), f.before.registry);
   assert.equal(hash(pageRegistry.map(beforeFaucetRegistry).map(beforeFaqRecognitionRegistry).map(beforeSanitaryReferralRegistry).map(beforeCustomerLocationRegistry)), f.before.allRegistrySha256);

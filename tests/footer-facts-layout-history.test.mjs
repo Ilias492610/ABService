@@ -1,3 +1,4 @@
+const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeLocalizationShellSource } from "./fixtures/localization-shell-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
@@ -6,7 +7,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { pageRegistry } from "../content/site-content.mjs";
+import { pageRegistry as fullLocalizedRegistry } from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { buildGlobalSchemaGraph } from "../libs/schema-data.mjs";
 import { faultGuides } from "../content/fault-guides.mjs";

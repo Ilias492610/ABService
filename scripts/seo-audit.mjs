@@ -48,7 +48,7 @@ for (const page of [...expectedPublished, ...expectedNoindex]) {
   record(response.url === targets.fetchUrl, `${page.path} redirect naar ${response.url}`);
   record(page.status !== "published" || !/noindex/i.test(response.headers.get("x-robots-tag") || ""), `${page.path}: indexeerbare pagina heeft X-Robots-Tag noindex`);
 
-  const audit = auditHtml({ html, url: targets.fetchUrl, indexable: page.status === "published" });
+  const audit = auditHtml({ html, url: targets.fetchUrl, indexable: page.status === "published", expectedLanguage: page.locale || "nl-BE" });
   for (const issue of audit.issues) failures.push(`${page.path}: ${issue}`);
   record(
     normalizeCanonical(audit.canonical) === normalizeCanonical(targets.canonicalUrl),

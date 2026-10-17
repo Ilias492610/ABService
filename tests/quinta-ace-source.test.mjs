@@ -1,3 +1,4 @@
+const livePageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry } from "./fixtures/sanitary-referral-history.mjs";
@@ -6,7 +7,8 @@ import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
 import {createHash} from "node:crypto";
 import {getFaultGuide as liveGetFaultGuide,faultGuides as liveFaultGuides} from "../content/fault-guides.mjs";
-import {getPageDefinition as liveGetPageDefinition,pageRegistry as livePageRegistry} from "../content/site-content.mjs";
+import {getPageDefinition as liveGetPageDefinition,pageRegistry as fullLocalizedRegistry} from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
 import {buildPageMetadata as liveBuildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";
 import {filterFaultCatalogs} from "../libs/fault-search.mjs";
 import {getCitedSources} from "../libs/cited-sources.mjs";

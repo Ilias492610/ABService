@@ -1,5 +1,39 @@
 # AB Service SEO Changelog
 
+## 17 oktober 2026 — Task138 FR/EN lokaal gereed, releasegates volgen
+
+Vier complete contact/privacy-equivalenten gebouwd onder eigenaar-goedgekeurd
+ontwerp/plan; geen sitekloon. Nederlandse URLs/inhoud/datums behouden. Veilige
+allowlisted taal en vaste native303 houden validatie/consent/ontvangers/analytics
+intact; geen echte testmail. Registry84published/2noindex, lokale86/97/116crawl,
+zes initiële documenttalen/canonicals en twee hreflanggroepen gecontroleerd; prod0.
+[Releasebewijs en grenzen](docs/seo/contact-privacy-fr-en-release.md).
+AI-ondersteund, geen menselijke vakman-/juridische review of volledigeWP15.
+JS-off-browserproef, echte taalontvangst en overige bewijs-/uitstelgates open.
+Cookiekeuze apart. Volgende: sole onafhankelijke review, exact publiceren/CI/
+provider/live; nog geen IndexNow of liveclaim.
+
+## 17 oktober 2026 — Task137 gepubliceerd en live gecontroleerd
+
+- Exact `12bb624c5c8c8e5387ee56a4957db4ab1780c683` op main/remote; alle zestien
+  reviewhashes behouden. Eén onafhankelijke hele-cohortreview zonder bevindingen;
+  alle 32 begrenzingen afzonderlijk beoordeeld. Geen tweede schrijver of reviewronde.
+- Lokaal en exact CI `39041684520`: 708 tests, lint 0, productieaudit 0, build 170,
+  crawl 82/93/112. Echte primaire Vercel `GRkAP4tDJBAiKmraogZgyC7h4H4C` toont
+  Ready/Production/Current, volledige SHA en bestaand www; beide deployments success.
+- Live native Escape op 1280, genest op 390 en 320-bediening/focusring gecontroleerd;
+  Enter/spatie/Tab/bestemmingssluiting behouden. Eerste livecrawl 82/93/112 exit 0.
+  Header/footer/gids/80XML exact; home behoudt buiten de drie daadwerkelijk
+  geobserveerde Google-reviewvarianten alle bytes. Geen volledige canonical-main-
+  gelijkheid geclaimd. Werkelijke mobiele screenshot geïnspecteerd.
+- 9 dev/lifecycle blijven open; geen veilige compatibele gerichte dependencyfix.
+  Nieuwe intake-/bewaar-/bijdragevoorstellen en Vilvoorde-casebasis zijn concepten,
+  niet ingevoerd beleid, echte klantdataset, nieuwe case-URL, mediarecht of outreach.
+  FR/EN-ontwerp goedgekeurd, nog geen taalpagina live. Volgende: review van het
+  afgebakende implementatieplan, daarna uitvoering. Accounts/prijzen/WP16 later.
+  Eigen tabs/server opgeruimd, recovery bewaard. Geen IndexNow of docs-only push;
+  deze feitelijke releasebackfill blijft lokaal tot een echte volgende productrelease.
+
 ## 17 oktober 2026 eigenaarinput en lokale Escape verbetering
 
 - WP12: echt desktopmenu bleef na Escape open. Lokale handler sluit alleen het

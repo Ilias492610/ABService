@@ -1,0 +1,144 @@
+{
+  "sources": [
+    {
+      "path": "app/contact/page.js",
+      "beforeSha256": "4354e55d07d7b81c27d26c7f34408bb1f5da559126cf463ed577affc20debd78",
+      "changes": [
+        {
+          "after": "import { buildPageMetadata } from \"@/libs/seo-data.mjs\";\nimport { getPageDefinition } from \"@/content/site-content.mjs\";\nimport { CONTACT_SERVICES } from \"@/libs/contact-validation.mjs\";\nimport LanguageSwitcher from \"@/components/language-switcher\";\nimport JsonLd from \"@/components/json-ld\";\nimport { buildPageSchema } from \"@/libs/schema-data.mjs\";\n\nexport const metadata = buildPageMetadata(getPageDefinition(\"/contact\"), { languageAlternates: true });\n\nexport default async function ContactPage({ searchParams }) {\n  const params = await searchParams;\n",
+          "before": "import { buildPageMetadata } from \"@/libs/seo-data.mjs\";\nimport { getPageDefinition } from \"@/content/site-content.mjs\";\nimport { CONTACT_SERVICES } from \"@/libs/contact-validation.mjs\";\n\nexport const metadata = buildPageMetadata(getPageDefinition(\"/contact\"));\n\nexport default async function ContactPage({ searchParams }) {\n  const params = await searchParams;\n"
+        },
+        {
+          "after": "  const initialService = typeof params?.dienst === \"string\" && CONTACT_SERVICES.includes(params.dienst) ? params.dienst : \"\";\n  return (\n    <>\n      <JsonLd data={buildPageSchema(getPageDefinition(\"/contact\"))} id=\"page-schema\" />\n      <Breadcrumbs items={[{ name: \"Home\", path: \"/\" }, { name: \"Contact\", path: \"/contact\" }]} />\n      <div className=\"shell\"><LanguageSwitcher path=\"/contact\" /></div>\n      <PageHero\n        eyebrow=\"Contact\"\n        title=\"Leg uw vraag voor aan AB Service\"\n",
+          "before": "  const initialService = typeof params?.dienst === \"string\" && CONTACT_SERVICES.includes(params.dienst) ? params.dienst : \"\";\n  return (\n    <>\n      <Breadcrumbs items={[{ name: \"Home\", path: \"/\" }, { name: \"Contact\", path: \"/contact\" }]} />\n      <PageHero\n        eyebrow=\"Contact\"\n        title=\"Leg uw vraag voor aan AB Service\"\n"
+        }
+      ]
+    },
+    {
+      "path": "app/privacy-policy/page.js",
+      "beforeSha256": "bc25eb5bdfc5160116eef811bb87e0a2436e7c9553db9addac42b2a6ab523466",
+      "changes": [
+        {
+          "after": "import { business } from \"@/content/business.mjs\";\nimport { buildPageMetadata } from \"@/libs/seo-data.mjs\";\nimport { getPageDefinition } from \"@/content/site-content.mjs\";\nimport LanguageSwitcher from \"@/components/language-switcher\";\nimport JsonLd from \"@/components/json-ld\";\nimport { buildPageSchema } from \"@/libs/schema-data.mjs\";\n\nexport const metadata = buildPageMetadata(getPageDefinition(\"/privacy-policy\"), { languageAlternates: true });\n\nexport default function PrivacyPage() {\n  return (\n    <>\n      <JsonLd data={buildPageSchema(getPageDefinition(\"/privacy-policy\"))} id=\"page-schema\" />\n      <Breadcrumbs items={[{ name: \"Home\", path: \"/\" }, { name: \"Privacybeleid\", path: \"/privacy-policy\" }]} />\n      <div className=\"shell\"><LanguageSwitcher path=\"/privacy-policy\" /></div>\n      <PageHero eyebrow=\"Privacy\" title=\"Hoe AB Service website- en contactgegevens verwerkt\" intro=\"Dit beleid beschrijft de systemen die de website daadwerkelijk gebruikt: het contactformulier, Mailgun voor e-mailbezorging, Vercel voor hosting en analyse, en Google Places voor actuele profiel- en beoordelingsgegevens.\" />\n      <section className=\"section\"><div className=\"shell legal-copy\">\n        <h2>1. Wie verwerkt uw gegevens?</h2><p>AB Service, ondernemingsnummer {business.vatId}, is het aanspreekpunt voor gegevens die u via deze website verstrekt. Voor privacyvragen kunt u mailen naar <a href={`mailto:${business.email}`}>{business.email}</a>.</p>\n",
+          "before": "import { business } from \"@/content/business.mjs\";\nimport { buildPageMetadata } from \"@/libs/seo-data.mjs\";\nimport { getPageDefinition } from \"@/content/site-content.mjs\";\n\nexport const metadata = buildPageMetadata(getPageDefinition(\"/privacy-policy\"));\n\nexport default function PrivacyPage() {\n  return (\n    <>\n      <Breadcrumbs items={[{ name: \"Home\", path: \"/\" }, { name: \"Privacybeleid\", path: \"/privacy-policy\" }]} />\n      <PageHero eyebrow=\"Privacy\" title=\"Hoe AB Service website- en contactgegevens verwerkt\" intro=\"Dit beleid beschrijft de systemen die de website daadwerkelijk gebruikt: het contactformulier, Mailgun voor e-mailbezorging, Vercel voor hosting en analyse, en Google Places voor actuele profiel- en beoordelingsgegevens.\" />\n      <section className=\"section\"><div className=\"shell legal-copy\">\n        <h2>1. Wie verwerkt uw gegevens?</h2><p>AB Service, ondernemingsnummer {business.vatId}, is het aanspreekpunt voor gegevens die u via deze website verstrekt. Voor privacyvragen kunt u mailen naar <a href={`mailto:${business.email}`}>{business.email}</a>.</p>\n"
+        }
+      ]
+    },
+    {
+      "path": "content/site-content.mjs",
+      "beforeSha256": "ce4e66714e5870a2bd7826e7c13f74dbdacdee648d8e5df2e264f0906b7059bb",
+      "changes": [
+        {
+          "after": "import { brandServices } from \"./brand-services.mjs\";\nimport { getPublishedProjects } from \"./projects.mjs\";\nimport { adviceGuides } from \"./advice-guides.mjs\";\nimport { localizedPageCandidates } from \"./localization.mjs\";\n\nexport const CONTENT_STATUS = Object.freeze({\n  PUBLISHED: \"published\",\n",
+          "before": "import { brandServices } from \"./brand-services.mjs\";\nimport { getPublishedProjects } from \"./projects.mjs\";\nimport { adviceGuides } from \"./advice-guides.mjs\";\n\nexport const CONTENT_STATUS = Object.freeze({\n  PUBLISHED: \"published\",\n"
+        },
+        {
+          "after": "    description:\n      \"Deze dienst is momenteel niet opgenomen in het actieve dienstenaanbod van de website.\",\n  },\n  ...localizedPageCandidates,\n]);\n\nexport const indexablePages = Object.freeze(getIndexableEntries(pageRegistry));\n",
+          "before": "    description:\n      \"Deze dienst is momenteel niet opgenomen in het actieve dienstenaanbod van de website.\",\n  },\n]);\n\nexport const indexablePages = Object.freeze(getIndexableEntries(pageRegistry));\n"
+        }
+      ]
+    },
+    {
+      "path": "components/social-preview-card.mjs",
+      "beforeSha256": "1e2affcc334ad32c318e69153ead8f2363ddb5fe66bd2c754ac1bf873fae09fa",
+      "changes": [
+        {
+          "before": "\nexport const SocialPreviewCard = ({ page }) => {\n  const title = getSocialPreviewTitle(page);\n  const topic = topics.find(([path]) => page.path === path || page.path.startsWith(`${path}/`))?.[1]\n    || \"Loodgieter · verwarming · sanitair\";\n  return h(\"div\", {\n    style: { width: \"100%\", height: \"100%\", display: \"flex\", flexDirection: \"column\", padding: \"64px 76px\", background: \"linear-gradient(135deg, #092431 0%, #103447 65%, #168b91 100%)\", color: \"white\", fontFamily: \"sans-serif\" },\n",
+          "after": "\nexport const SocialPreviewCard = ({ page }) => {\n  const title = getSocialPreviewTitle(page);\n  const topic = ({'fr-BE':'Plomberie · chauffage · sanitaires','en-BE':'Plumbing · heating · sanitary installations'})[page.locale]\n    || topics.find(([path]) => page.path === path || page.path.startsWith(`${path}/`))?.[1]\n    || \"Loodgieter · verwarming · sanitair\";\n  return h(\"div\", {\n    style: { width: \"100%\", height: \"100%\", display: \"flex\", flexDirection: \"column\", padding: \"64px 76px\", background: \"linear-gradient(135deg, #092431 0%, #103447 65%, #168b91 100%)\", color: \"white\", fontFamily: \"sans-serif\" },\n"
+        }
+      ]
+    },
+    {
+      "path": "libs/html-audit.mjs",
+      "beforeSha256": "101046b8742a4f4ad9c441e53af4856d835f7a631066d7781851cc3755c59c5b",
+      "changes": [
+        {
+          "before": "  return match?.[1]?.replace(/<[^>]+>/g, \"\").trim() || \"\";\n};\n\nexport const auditHtml = ({ html, url, indexable }) => {\n  const issues = [];\n  const title = textInside(html, \"title\");\n  const descriptionTag = tags(html, \"meta\").find(\n",
+          "after": "  return match?.[1]?.replace(/<[^>]+>/g, \"\").trim() || \"\";\n};\n\nexport const auditHtml = ({ html, url, indexable, expectedLanguage = \"nl-BE\" }) => {\n  const issues = [];\n  const title = textInside(html, \"title\");\n  const descriptionTag = tags(html, \"meta\").find(\n"
+        },
+        {
+          "before": "  if (!description) issues.push(\"description ontbreekt\");\n  if (!canonical) issues.push(\"canonical ontbreekt\");\n  if (h1Count !== 1) issues.push(`pagina heeft ${h1Count} H1-elementen`);\n  if (getAttribute(htmlTag, \"lang\") !== \"nl-BE\") {\n    issues.push(\"html lang ontbreekt of is niet nl-BE\");\n  }\n  if (!indexable && !robots.toLowerCase().includes(\"noindex\")) {\n    issues.push(\"noindex ontbreekt\");\n",
+          "after": "  if (!description) issues.push(\"description ontbreekt\");\n  if (!canonical) issues.push(\"canonical ontbreekt\");\n  if (h1Count !== 1) issues.push(`pagina heeft ${h1Count} H1-elementen`);\n  if (getAttribute(htmlTag, \"lang\") !== expectedLanguage) {\n    issues.push(`html lang ontbreekt of is niet ${expectedLanguage}`);\n  }\n  if (!indexable && !robots.toLowerCase().includes(\"noindex\")) {\n    issues.push(\"noindex ontbreekt\");\n"
+        }
+      ]
+    },
+    {
+      "path": "scripts/seo-audit.mjs",
+      "beforeSha256": "4f870e2dc8163ad93f0c42b8e8bf99f033c5b536179d7bf5964fdd0b66643e11",
+      "changes": [
+        {
+          "before": "  record(response.url === targets.fetchUrl, `${page.path} redirect naar ${response.url}`);\n  record(page.status !== \"published\" || !/noindex/i.test(response.headers.get(\"x-robots-tag\") || \"\"), `${page.path}: indexeerbare pagina heeft X-Robots-Tag noindex`);\n\n  const audit = auditHtml({ html, url: targets.fetchUrl, indexable: page.status === \"published\" });\n  for (const issue of audit.issues) failures.push(`${page.path}: ${issue}`);\n  record(\n    normalizeCanonical(audit.canonical) === normalizeCanonical(targets.canonicalUrl),\n",
+          "after": "  record(response.url === targets.fetchUrl, `${page.path} redirect naar ${response.url}`);\n  record(page.status !== \"published\" || !/noindex/i.test(response.headers.get(\"x-robots-tag\") || \"\"), `${page.path}: indexeerbare pagina heeft X-Robots-Tag noindex`);\n\n  const audit = auditHtml({ html, url: targets.fetchUrl, indexable: page.status === \"published\", expectedLanguage: page.locale || \"nl-BE\" });\n  for (const issue of audit.issues) failures.push(`${page.path}: ${issue}`);\n  record(\n    normalizeCanonical(audit.canonical) === normalizeCanonical(targets.canonicalUrl),\n"
+        }
+      ]
+    }
+  ],
+  "html": [
+    {
+      "path": "/contact",
+      "additions": [
+        "<script id=\"page-schema\" type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.abservice24.be/contact#webpage\",\"url\":\"https://www.abservice24.be/contact\",\"name\":\"Contact opnemen met AB Service\",\"description\":\"AB Service is 24/7 bereikbaar voor aanvragen over sanitair, verwarming, onderhoud, herstelling, keuring en gasketelinstallaties.\",\"inLanguage\":\"nl-BE\",\"isPartOf\":{\"@id\":\"https://www.abservice24.be/#website\"},\"publisher\":{\"@id\":\"https://www.abservice24.be/#organization\"}}</script>",
+        "<div class=\"shell\"><nav class=\"language-switcher\" aria-label=\"Taal\"><a href=\"/contact\" hrefLang=\"nl-BE\" lang=\"nl\" aria-current=\"page\">Nederlands</a><a href=\"/fr/contact\" hrefLang=\"fr-BE\" lang=\"fr\">Français</a><a href=\"/en/contact\" hrefLang=\"en-BE\" lang=\"en\">English</a></nav></div>"
+      ],
+      "languages": {
+        "nl-BE": "https://www.abservice24.be/contact",
+        "fr-BE": "https://www.abservice24.be/fr/contact",
+        "en-BE": "https://www.abservice24.be/en/contact"
+      }
+    },
+    {
+      "path": "/privacy-policy",
+      "additions": [
+        "<script id=\"page-schema\" type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.abservice24.be/privacy-policy#webpage\",\"url\":\"https://www.abservice24.be/privacy-policy\",\"name\":\"Privacybeleid | AB Service\",\"description\":\"Lees hoe AB Service persoonsgegevens uit contactaanvragen en websitegebruik verwerkt en welke rechten u heeft.\",\"inLanguage\":\"nl-BE\",\"isPartOf\":{\"@id\":\"https://www.abservice24.be/#website\"},\"publisher\":{\"@id\":\"https://www.abservice24.be/#organization\"}}</script>",
+        "<div class=\"shell\"><nav class=\"language-switcher\" aria-label=\"Taal\"><a href=\"/privacy-policy\" hrefLang=\"nl-BE\" lang=\"nl\" aria-current=\"page\">Nederlands</a><a href=\"/fr/confidentialite\" hrefLang=\"fr-BE\" lang=\"fr\">Français</a><a href=\"/en/privacy\" hrefLang=\"en-BE\" lang=\"en\">English</a></nav></div>"
+      ],
+      "languages": {
+        "nl-BE": "https://www.abservice24.be/privacy-policy",
+        "fr-BE": "https://www.abservice24.be/fr/confidentialite",
+        "en-BE": "https://www.abservice24.be/en/privacy"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "path": "/fr/contact",
+      "locale": "fr-BE",
+      "title": "Contacter AB Service",
+      "description": "AB Service est joignable 24 h/24 et 7 j/7 pour vos demandes de plomberie et de chauffage.",
+      "status": "published",
+      "lastModified": "2026-10-17",
+      "changeFrequency": "yearly",
+      "priority": 0.8
+    },
+    {
+      "path": "/en/contact",
+      "locale": "en-BE",
+      "title": "Contact AB Service",
+      "description": "Contact AB Service about plumbing, heating, maintenance, repairs and installations. Enquiries are assessed before confirmation.",
+      "status": "published",
+      "lastModified": "2026-10-17",
+      "changeFrequency": "yearly",
+      "priority": 0.8
+    },
+    {
+      "path": "/fr/confidentialite",
+      "locale": "fr-BE",
+      "title": "Politique de confidentialité | AB Service",
+      "description": "Comment AB Service traite les données des demandes de contact et de l’utilisation du site, et quels sont vos droits.",
+      "status": "published",
+      "lastModified": "2026-10-17",
+      "changeFrequency": "yearly",
+      "priority": 0.3
+    },
+    {
+      "path": "/en/privacy",
+      "locale": "en-BE",
+      "title": "Privacy policy | AB Service",
+      "description": "How AB Service processes information from contact enquiries and website use, and what rights you have.",
+      "status": "published",
+      "lastModified": "2026-10-17",
+      "changeFrequency": "yearly",
+      "priority": 0.3
+    }
+  ]
+}

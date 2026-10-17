@@ -12,7 +12,8 @@ const topics = [
 
 export const SocialPreviewCard = ({ page }) => {
   const title = getSocialPreviewTitle(page);
-  const topic = topics.find(([path]) => page.path === path || page.path.startsWith(`${path}/`))?.[1]
+  const topic = ({'fr-BE':'Plomberie · chauffage · sanitaires','en-BE':'Plumbing · heating · sanitary installations'})[page.locale]
+    || topics.find(([path]) => page.path === path || page.path.startsWith(`${path}/`))?.[1]
     || "Loodgieter · verwarming · sanitair";
   return h("div", {
     style: { width: "100%", height: "100%", display: "flex", flexDirection: "column", padding: "64px 76px", background: "linear-gradient(135deg, #092431 0%, #103447 65%, #168b91 100%)", color: "white", fontFamily: "sans-serif" },

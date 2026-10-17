@@ -1,3 +1,4 @@
+const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
 import { beforeFaucetRegistry } from "./fixtures/faucet-context-history.mjs";
 import { beforeFaqRecognitionRegistry } from "./fixtures/faq-recognition-history.mjs";
 import { beforeSanitaryReferralRegistry, beforeSanitaryReferralSitemapEntry } from "./fixtures/sanitary-referral-history.mjs";
@@ -11,7 +12,8 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { loadContactModule } from "./helpers/contact-runtime.mjs";
 import * as maintenance from "../libs/maintenance-check.mjs";
 import { readContactContext } from "../libs/contact-context.mjs";
-import { pageRegistry } from "../content/site-content.mjs";
+import { pageRegistry as fullLocalizedRegistry } from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
 import { buildPageMetadata, buildSitemapEntries } from "../libs/seo-data.mjs";
 import { buildGlobalSchemaGraph } from "../libs/schema-data.mjs";
 import { faultGuides } from "../content/fault-guides.mjs";

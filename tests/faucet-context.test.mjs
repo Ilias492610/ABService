@@ -1,10 +1,12 @@
+const pageRegistry = beforeLocalizationRegistry(fullLocalizedRegistry);
 import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
 import {createRequire} from "node:module";
 import {renderSanitary,sanitaryRoute} from "./helpers/sanitary-runtime.mjs";
 import {faucetQuestion,faucetHtml,faucetRecords,beforeFaucetHtml,beforeFaucetRegistry,beforeFaucetSitemapEntry,beforeFaucetCoreSources,beforeFaucetCitations,beforeFaucetProtectedBytes} from "./fixtures/faucet-context-history.mjs";
-import {pageRegistry,getPageDefinition} from "../content/site-content.mjs";
+import {pageRegistry as fullLocalizedRegistry,getPageDefinition} from "../content/site-content.mjs";
+import { beforeLocalizationRegistry } from "./fixtures/localization-release-history.mjs";
 import {coreSources} from "../content/core-sources.mjs";
 import {getCitedSources} from "../libs/cited-sources.mjs";
 import {buildPageMetadata,buildSitemapEntries} from "../libs/seo-data.mjs";

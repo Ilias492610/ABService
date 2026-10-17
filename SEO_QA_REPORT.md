@@ -1,5 +1,42 @@
 # AB Service SEO QA Report
 
+## 17 oktober 2026 — Task138 lokale FR/EN-controle
+
+Echte RED→GREEN-formulier/pad/privacy/registry/equivalentregressies. Volledige
+suite768/768 inclusief telefoonlabel-/CI-gateregressies bij verse freeze-eindrun.
+Lint0/prod0/build178 met benoemde frameworkmetadataBase-warnings. Lokale volledige
+crawl86/97/116 en zes-equivalent/2groepen/5noindex404-taalaudit. Alle91oude responses
+behouden na alleen exacte contactingang/schema/taalnav/vierXML-toevoegingen en vier
+legeReact404markers. Oude fixture/hashliterals intact; extra drift blijft falen.
+Echte320/390/1280 taalwissel/validatie/menutoetsen/focus/overflow gecontroleerd.
+Geen echte mail, JS-off-browserproef, menselijke review of heleWP15-claim.
+[Details](docs/seo/contact-privacy-fr-en-release.md). Finale onafhankelijke review,
+CI/provider/live en IndexNow nog apart.
+
+## 17 oktober 2026 — Task137 exacte releaseacceptatie
+
+Alle zestien frozen hashes staan op main/remote `12bb624c5c8c8e5387ee56a4957db4ab1780c683`.
+Sole onafhankelijke review 0 critical/important/minor; 32 grenzen afzonderlijk
+beoordeeld. Fresh precommit en task-done elk 708/708, exact hosted CI39041684520
+Node24.21.0: 708/lint0/prod0/build170/crawl82/93/112. Bestaande Production-statussen
+7141176052/7141170901 success. Primaire provider GRkAP4tDJBAiKmraogZgyC7h4H4C
+daadwerkelijk Ready/Production/Current met volledige commit en www-domein.
+
+Live1280: native Tab vanaf Diensten naar /diensten, Escape sluit en focust summary.
+Live390: eerste Escape sluit alleen submenu/focust Diensten, tweede sluit/focust
+Menu. Live320: Enter opent, spatie sluit, Escape sluit met vrije zichtbare 3px
+focusring zonder overflow; native Tab bereikt Home en Tarieven sluit bij keuze.
+Screenshot visueel geïnspecteerd. Eerste volledige livecrawl slaagt82/93/112.
+Header/footer/gids/80XML canonical/lokaal exact; lokale hele home-main vóór/na
+gelijk. Canonical Google5,0/44/geen losse teksten versus lokale fallback verschilt
+in precies drie geobserveerde fragmenten; alle overige main-bytes en relevante
+reviewbronnen gelijk. Geen oorzaak of gehele canonical-main-bytegelijkheid verzonnen.
+
+Geen hele AT-/WCAG-/APG-/fieldclaim, inhoudsdatum of IndexNow. 9 dev/lifecycle en
+echte WP-gates blijven open. Eigen11/13/14 gesloten, viewport reset, eigenserver82321
+exit130; usertab/andere server behouden. Alle376 commitbodies, oorspronkelijke137
+flags/vier integralen en recovery blijven controleerbaar. Deze backfill nog lokaal.
+
 ## 17 oktober 2026 Task137 lokale Escape controle
 
 Echte productiebuild op 1280: Diensten open via summary; Escape liet het menu
