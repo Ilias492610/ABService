@@ -8,6 +8,7 @@ import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import transitions from './fixtures/localization-contact-history.json' with {type:'json'};
 import {beforeLocalizationContactSource} from './fixtures/localization-contact-history.mjs';
+import {beforeCookieConsentSource} from './fixtures/cookie-consent-history.mjs';
 const request=(data,native=false)=>new Request('https://qa.example.invalid/api/contact',{method:'POST',headers:{'content-type':native?'application/x-www-form-urlencoded':'application/json',...(native?{'sec-fetch-mode':'navigate'}:{})},body:native?new URLSearchParams(data):JSON.stringify(data)});
 const route=sendEmail=>loadContactModule('app/api/contact/route.js',{'@/config':{mailgun:{supportEmail:'recipient@example.invalid'}},'@/libs/mailgun':{sendEmail}},{process:{env:{}},console:{info(){},error(){}}});
 for(const [locale,name,email,consent] of [['fr-BE','Indiquez votre nom.','Indiquez une adresse e-mail valide.','Confirmez que vous avez lu la politique de confidentialité.'],['en-BE','Enter your name.','Enter a valid email address.','Confirm that you have read the privacy policy.']]){
@@ -48,5 +49,5 @@ test('English JSON client carries locale without changing cleaned data or sendin
 });
 test('contact source history restores only the exact named transitions, leaving extra drift visible',async()=>{
  const hash=source=>createHash('sha256').update(source).digest('hex');
- for(const row of transitions){const source=await readFile(new URL('../'+row.path,import.meta.url),'utf8');assert.equal(hash(beforeLocalizationContactSource(source,row.path)),row.beforeSha256);assert.notEqual(hash(beforeLocalizationContactSource(source+'// extra drift\n',row.path)),row.beforeSha256);assert.equal(beforeLocalizationContactSource(source,'unrelated'),source);}
+ for(const row of transitions){const source=beforeCookieConsentSource(await readFile(new URL('../'+row.path,import.meta.url),'utf8'),row.path);assert.equal(hash(beforeLocalizationContactSource(source,row.path)),row.beforeSha256);assert.notEqual(hash(beforeLocalizationContactSource(source+'// extra drift\n',row.path)),row.beforeSha256);assert.equal(beforeLocalizationContactSource(source,'unrelated'),source);}
 });

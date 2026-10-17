@@ -6,6 +6,7 @@ import { createRequire } from "node:module";
 import * as React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { loadContactModule } from "./helpers/contact-runtime.mjs";
+import { beforeCookieConsentSource } from "./fixtures/cookie-consent-history.mjs";
 import * as maintenance from "../libs/maintenance-check.mjs";
 import { beforeMaintenanceReadinessSource, beforeMaintenanceReadinessHtml } from "./fixtures/maintenance-readiness-history.mjs";
 
@@ -139,7 +140,7 @@ test("exact immutable actual-before source and HTML recover while unknown mutati
   assert.equal(hash(bytes), "39517e61dec105776aefcd800ac4bf4d19c75bd3cd457a3852648c5b0c85dd2a");
   assert.equal(hash(f.before.source), "70736cfd17e9db59276f54db61af9addcf9042299972c35b47c226e757ab1b56");
   assert.equal(hash(f.before.defaultHtml), "d1f533c50127382aeb89cd81daa1cca6397a8bb91440099c685378450256f0eb");
-  const source = await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8");
+  const source = beforeCookieConsentSource(await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8"), "components/maintenance-check.js");
   assert.equal(beforeMaintenanceReadinessSource(source), f.before.source);
   assert.equal(beforeMaintenanceReadinessSource(f.before.source), f.before.source);
   assert.equal(beforeMaintenanceReadinessHtml(f.before.defaultHtml), f.before.defaultHtml);

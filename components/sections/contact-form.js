@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { track } from "@vercel/analytics";
+import { trackWithConsent as track } from "@/libs/consented-analytics.mjs";
 import { buildAnalyticsEvent } from "@/libs/analytics.mjs";
 import { CONTACT_SERVICES, validateContactInput } from "@/libs/contact-validation.mjs";
 import { readContactContext } from "@/libs/contact-context.mjs";

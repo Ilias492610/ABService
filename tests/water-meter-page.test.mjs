@@ -4,6 +4,7 @@ import React from "react";
 import { createRequire } from "node:module";
 import { renderToStaticMarkup } from "react-dom/server";
 import { loadContactModule } from "./helpers/contact-runtime.mjs";
+import { consentBrowser, analyticsCookie } from "./helpers/consent-browser.mjs";
 import * as water from "../libs/water-meter-check.mjs";
 import * as registry from "../content/site-content.mjs";
 import * as seo from "../libs/seo-data.mjs";
@@ -34,7 +35,7 @@ const nodes = (element, predicate) => {
   return [...(predicate(element) ? [element] : []), ...nodes(element.props?.children, predicate)];
 };
 
-async function harness() {
+async function harness(cookie = analyticsCookie()) {
   const states = [], refs = [], events = [], frames = [], focuses = [], movements = [];
   let stateIndex = 0, refIndex = 0;
   const hooks = { ...React,
@@ -42,7 +43,7 @@ async function harness() {
     useState(initial) { const index = stateIndex++; if (!(index in states)) states[index] = initial; return [states[index], (next) => { states[index] = typeof next === "function" ? next(states[index]) : next; }]; },
     useRef(initial) { const index = refIndex++; return refs[index] ||= { current: initial }; },
   };
-  const compiled = await loadContactModule("components/water-meter-check.js", { react: hooks, "@/libs/water-meter-check.mjs": water, "@vercel/analytics": { track: (name, props) => events.push({ name, props }) } }, { requestAnimationFrame: (callback) => frames.push(callback) });
+  const compiled = await loadContactModule("components/water-meter-check.js", { react: hooks, "@/libs/water-meter-check.mjs": water, "@vercel/analytics": { track: (name, props) => events.push({ name, props }) } }, { ...consentBrowser(cookie).globals, requestAnimationFrame: (callback) => frames.push(callback) });
   const render = () => {
     stateIndex = 0; refIndex = 0;
     const element = compiled.default();
@@ -74,6 +75,15 @@ async function harness() {
   return { render, update, submit, events, focuses, frames, movements };
 }
 const valid = { safeAccess: "yes", waterNearElectricity: "no", meterScope: "own", waterUse: "none", unit: "m3", firstReading: "123,456", secondReading: "123,457", minutes: "30" };
+
+test("no statistics consent still produces the real water observation and contact handoff", async () => {
+  const h = await harness("");
+  h.update(valid);
+  const output = renderToStaticMarkup(h.submit());
+  assert.match(output, /1 liter/);
+  assert.match(output, /context=watermetercheck/);
+  assert.deepEqual(h.events, []);
+});
 
 for (const [label, input] of [
   ["positive observation", valid],

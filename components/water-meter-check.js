@@ -2,7 +2,7 @@
 
 import { useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
-import { track } from "@vercel/analytics";
+import { trackWithConsent as track } from "@/libs/consented-analytics.mjs";
 import { buildAnalyticsEvent } from "@/libs/analytics.mjs";
 import { buildContactHref } from "@/libs/contact-context.mjs";
 import { getWaterMeterObservation } from "@/libs/water-meter-check.mjs";

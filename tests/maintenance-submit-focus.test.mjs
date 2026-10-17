@@ -11,6 +11,8 @@ import { createHash } from "node:crypto";
 import * as React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { loadContactModule } from "./helpers/contact-runtime.mjs";
+import { analyticsCookie } from "./helpers/consent-browser.mjs";
+import { beforeCookieConsentSource } from "./fixtures/cookie-consent-history.mjs";
 import * as maintenance from "../libs/maintenance-check.mjs";
 import { readContactContext } from "../libs/contact-context.mjs";
 import { pageRegistry as fullLocalizedRegistry } from "../content/site-content.mjs";
@@ -58,7 +60,7 @@ async function harness() {
     localStorage: { setItem: forbid, removeItem: forbid, clear: forbid },
     sessionStorage: { setItem: forbid, removeItem: forbid, clear: forbid },
     window: { location: { assign: forbid, replace: forbid }, localStorage: { setItem: forbid }, sessionStorage: { setItem: forbid } },
-    document: { getElementById: id => nodes(tree, node => node.props.id === id).length ? target(id) : null },
+    document: { cookie: analyticsCookie(), getElementById: id => nodes(tree, node => node.props.id === id).length ? target(id) : null },
   });
   const render = () => {
     while (pending.length) pending.shift()();
@@ -200,7 +202,7 @@ test("independent frozen actual before preserves complete source and raw default
   assert.equal(hash(bytes), "60f5e9840c727bca1b894bdceb9d8c13641a628410e6dc146b782555aa17d196");
   assert.equal(hash(f.before.source), "00807b345ffc829eb10f5f1245c510106149a7df7696d0f556c94fda57bc075e");
   assert.equal(hash(f.before.defaultHtml), "d1f533c50127382aeb89cd81daa1cca6397a8bb91440099c685378450256f0eb");
-  const source = await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8");
+  const source = beforeCookieConsentSource(await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8"), "components/maintenance-check.js");
   assert.equal(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(source)), f.before.source);
   assert.equal(beforeMaintenanceSubmitFocusSource(f.before.source), f.before.source);
   const compiled = await loadContactModule("components/maintenance-check.js", { "@/libs/maintenance-check.mjs": maintenance });
@@ -217,7 +219,7 @@ test("independent frozen actual before preserves complete source and raw default
 });
 
 test("exact submit inverse leaves wrong options, missing actions, extra statements, branches and unrelated reset drift intact", async () => {
-  const source = await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8");
+  const source = beforeCookieConsentSource(await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8"), "components/maintenance-check.js");
   for (const [from, to] of [
     ['panel?.focus({ preventScroll: true });', 'panel?.focus();'],
     ['panel?.focus({ preventScroll: true });', ''],

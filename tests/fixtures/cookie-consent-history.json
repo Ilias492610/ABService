@@ -1,0 +1,62 @@
+[
+  {
+    "task": 2,
+    "path": "components/privacy-analytics.js",
+    "beforeSha256": "80ad565189940cedf2411dfeb459ff31d1f7e4d253416a228b3beaa3c79ec175",
+    "afterSha256": "0f3e1b6c0e2c8692778c8adb096cdef497b111d6ef4f57b6f0e978ca617483bd",
+    "changes": [
+      {
+        "before": "import { sanitizeAnalyticsEvent } from \"@/libs/analytics.mjs\";\n\nexport default function PrivacyAnalytics() {\n  return <Analytics beforeSend={sanitizeAnalyticsEvent} />;",
+        "after": "import { beforeSendWithConsent } from \"@/libs/consented-analytics.mjs\";\nimport { useCookieConsent } from \"@/components/use-cookie-consent\";\n\nexport default function PrivacyAnalytics() {\n  const consent = useCookieConsent();\n  if (consent !== \"analytics\" && consent !== \"both\") return null;\n  return <Analytics beforeSend={beforeSendWithConsent} />;"
+      }
+    ]
+  },
+  {
+    "task": 2,
+    "path": "components/tracked-link.js",
+    "beforeSha256": "0a404a563838f1618e757eab7b70bdba1012a61f9d34cada7097fa72176ee6ab",
+    "afterSha256": "e95a30bd0d88478bf9ccebe0a84ebc5f79ba3c9ae35a58fdfbe9ebfd0206db70",
+    "changes": [
+      {
+        "before": "import { track } from \"@vercel/analytics\";",
+        "after": "import { trackWithConsent as track } from \"@/libs/consented-analytics.mjs\";"
+      }
+    ]
+  },
+  {
+    "task": 2,
+    "path": "components/sections/contact-form.js",
+    "beforeSha256": "19b5122a2adc8d91bd2618e167288e2a2f829d554b225b5ec178122db4b34ef6",
+    "afterSha256": "104c72da4d016ed44ab964b311c4eab9bd526778b2b4af309be129a59f10803d",
+    "changes": [
+      {
+        "before": "import { track } from \"@vercel/analytics\";",
+        "after": "import { trackWithConsent as track } from \"@/libs/consented-analytics.mjs\";"
+      }
+    ]
+  },
+  {
+    "task": 2,
+    "path": "components/maintenance-check.js",
+    "beforeSha256": "1282c549084e525ebfdb75ba00a6313b2b5ded5e426c3830d0650e15ea20384e",
+    "afterSha256": "f65cdff436a932cc518a1cb2dcbd71a30e834c9fdb5022cbd3dc3e0823bdbab9",
+    "changes": [
+      {
+        "before": "import { track } from \"@vercel/analytics\";",
+        "after": "import { trackWithConsent as track } from \"@/libs/consented-analytics.mjs\";"
+      }
+    ]
+  },
+  {
+    "task": 2,
+    "path": "components/water-meter-check.js",
+    "beforeSha256": "b842e19fbda7757478050b02f5ffa144c9dee78591024b404e5e2470aa4afba6",
+    "afterSha256": "d92c3319084a5ff4be6db328b487510c32544c0f71230bde9132f3ce847e3468",
+    "changes": [
+      {
+        "before": "import { track } from \"@vercel/analytics\";",
+        "after": "import { trackWithConsent as track } from \"@/libs/consented-analytics.mjs\";"
+      }
+    ]
+  }
+]

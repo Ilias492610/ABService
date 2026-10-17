@@ -14,7 +14,7 @@ const Link = ({ children, ...props }) => React.createElement("a", props, childre
 export const renderEvents = [];
 const tracked = await loadContactModule("components/tracked-link.js", {
   "next/link": Link, "@vercel/analytics": { track: (...args) => renderEvents.push(args) },
-});
+}, {document:{cookie:`ab_service_consent=1.${Date.now()}.1.0`},window:{}});
 const common = { "next/link": Link, "@/components/tracked-link": tracked, "@/content/business.mjs": business };
 const hero = await loadContactModule("components/page-hero.js", common);
 const jsonLd = await loadContactModule("components/json-ld.js");

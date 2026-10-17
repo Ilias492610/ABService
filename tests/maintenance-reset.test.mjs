@@ -10,6 +10,8 @@ import { createRequire } from "node:module";
 import * as React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { loadContactModule } from "./helpers/contact-runtime.mjs";
+import { analyticsCookie } from "./helpers/consent-browser.mjs";
+import { beforeCookieConsentSource } from "./fixtures/cookie-consent-history.mjs";
 import * as maintenance from "../libs/maintenance-check.mjs";
 import { readContactContext } from "../libs/contact-context.mjs";
 import { pageRegistry as fullLocalizedRegistry } from "../content/site-content.mjs";
@@ -35,7 +37,7 @@ const html = tree => renderToStaticMarkup(tree);
 // Entire SWC-compiled production component, kernel, context parser, analytics
 // builder and Next Link are real. Adapters host hooks and observe external
 // analytics/focus boundaries. This does not model native browser geometry/AT.
-async function harness() {
+async function harness(cookie = analyticsCookie()) {
   const states = [], refs = [], pending = [], frames = [], focuses = [], events = [], movements = [];
   let stateIndex = 0, refIndex = 0, committedTree;
   const hooks = { ...React,
@@ -56,7 +58,7 @@ async function harness() {
     requestAnimationFrame: callback => frames.push(callback), fetch: forbid,
     localStorage: { setItem: forbid }, sessionStorage: { setItem: forbid },
     window: { location: { assign: forbid, replace: forbid }, localStorage: { setItem: forbid } },
-    document: { getElementById: id => nodes(committedTree, node => node.props.id === id).length ? { focus: () => focuses.push(id) } : null },
+    document: { cookie, getElementById: id => nodes(committedTree, node => node.props.id === id).length ? { focus: () => focuses.push(id) } : null },
   });
   const render = () => {
     while (pending.length) pending.shift()();
@@ -109,6 +111,17 @@ async function harness() {
   render();
   return { render, field, update, submit, reset, flush, states, frames, focuses, events, movements };
 }
+
+test("without statistics permission the real maintenance result and reset remain available", async () => {
+  const h = await harness("");
+  h.update(gas);
+  assert.match(html(h.submit()), /Uw resultaat/);
+  assert.equal(h.states[1].kind, "periodic");
+  assert.deepEqual(h.events, []);
+  h.reset();
+  assert.equal(h.states[1], null);
+  assert.deepEqual(h.events, []);
+});
 
 test("real reset focuses without native scrolling then centers the committed first question instantly", async () => {
   // Native-only focus, wrong ordering/options or missing scroll must fail.
@@ -234,7 +247,7 @@ test("untouched frozen before capture and named reset inverses preserve complete
   assert.equal(hash(fixtureBytes), "3eb117da5c198eea35f0293c0e3d52f796bed3400c51acb955b6e09890ee6f17");
   assert.equal(hash(f.before.source), "5d51bb60e958dbdfe8414d2dd8f5e27e28cc2ddb28ef82479d729c462d71bec2");
   assert.equal(hash(f.before.defaultHtml), "31fd3dd50081b59bf2f672db48ae79613a7fdf811a9afa0f119332d2b3ffa450");
-  const source = await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8");
+  const source = beforeCookieConsentSource(await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8"), "components/maintenance-check.js");
   assert.equal(beforeMaintenanceResetSource(beforeMaintenanceSubmitFocusSource(beforeMaintenanceReadinessSource(source))), f.before.source, "every byte of original calculate, update, source wording and handoff retained");
   assert.equal(beforeMaintenanceResetSource(f.before.source), f.before.source);
   assert.equal(beforeMaintenanceResetHtml(f.before.defaultHtml), f.before.defaultHtml);
@@ -248,7 +261,7 @@ test("untouched frozen before capture and named reset inverses preserve complete
 });
 
 test("named inverses cannot hide wrong reset handlers, extra statements or unknown source/HTML changes", async () => {
-  const source = await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8");
+  const source = beforeCookieConsentSource(await readFile(new URL("../components/maintenance-check.js", import.meta.url), "utf8"), "components/maintenance-check.js");
   const compiled = await loadContactModule("components/maintenance-check.js", { "@/libs/maintenance-check.mjs": maintenance });
   const output = html(React.createElement(compiled.default));
   for (const [from, to] of [

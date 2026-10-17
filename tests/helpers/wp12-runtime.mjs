@@ -5,6 +5,7 @@ import { navigation } from "../../content/site-content.mjs";
 import * as business from "../../content/business.mjs";
 import * as ratings from "../../libs/google-reviews.mjs";
 import * as analytics from "../../libs/analytics.mjs";
+import { analyticsCookie } from "./consent-browser.mjs";
 
 // Complete production modules execute. Doubles cover only hooks, the host DOM
 // and browser observation/network boundaries; effects and handlers really run.
@@ -38,8 +39,8 @@ class Element {
   append(node) { this.children.push(node); node.parentElement = this; node.isConnected = true; }
 }
 
-export async function createHarness(kind, { mobile = false, zones = [], fetchResponse, deferEffects = false } = {}) {
-  const document = { activeElement: null, documentElement: { clientWidth: 390, clientHeight: 844, style: { setProperty() {} } } };
+export async function createHarness(kind, { mobile = false, zones = [], fetchResponse, deferEffects = false, cookie = analyticsCookie() } = {}) {
+  const document = { cookie, activeElement: null, documentElement: { clientWidth: 390, clientHeight: 844, style: { setProperty() {} } } };
   const body = new Element("body", {}, document);
   document.body = body; document.activeElement = body;
   document.querySelectorAll = (selector) => body.querySelectorAll(selector);

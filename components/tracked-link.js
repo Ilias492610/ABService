@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { track } from "@vercel/analytics";
+import { trackWithConsent as track } from "@/libs/consented-analytics.mjs";
 import { buildAnalyticsEvent } from "@/libs/analytics.mjs";
 
 export default function TrackedLink({

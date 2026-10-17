@@ -7,13 +7,15 @@ import * as validation from "../../libs/contact-validation.mjs";
 import * as context from "../../libs/contact-context.mjs";
 import * as analytics from "../../libs/analytics.mjs";
 import { resolveRouteSourcePath } from "./route-source-path.mjs";
+import { consentBrowser, analyticsCookie } from "./consent-browser.mjs";
 
 const require = createRequire(import.meta.url);
 await loadBindings();
 
 // Compile the complete production module; replace only dependencies supplied by a test.
-export async function loadContactModule(relativePath, dependencies = {}, globals = {}) {
+export async function loadContactModule(relativePath, dependencies = {}, globals = {}, graph = new Map()) {
   const filename = new URL(`../../${resolveRouteSourcePath(relativePath)}`, import.meta.url);
+  if (graph.has(filename.href)) return graph.get(filename.href).exports;
   const source = await readFile(filename, "utf8");
   const { code } = transformSync(source, {
     filename: filename.pathname,
@@ -21,6 +23,7 @@ export async function loadContactModule(relativePath, dependencies = {}, globals
     module: { type: "commonjs" },
   });
   const compiledModule = { exports: {} };
+  graph.set(filename.href, compiledModule);
   const moduleRequire = createRequire(filename);
   const known = {
     "@/libs/contact-validation.mjs": validation,
@@ -36,7 +39,7 @@ export async function loadContactModule(relativePath, dependencies = {}, globals
     const path = specifier.slice(2);
     const relative = [path, path + ".js", path + ".mjs"].find(candidate => existsSync(new URL("../../" + candidate, import.meta.url)));
     if (!relative) throw new Error("Unresolved production alias: " + specifier);
-    known[specifier] = await loadContactModule(relative, dependencies, globals);
+    known[specifier] = await loadContactModule(relative, dependencies, globals, graph);
   }
   vm.runInNewContext(code, {
     module: compiledModule, exports: compiledModule.exports,
@@ -46,7 +49,7 @@ export async function loadContactModule(relativePath, dependencies = {}, globals
   return compiledModule.exports;
 }
 
-export async function createFormHarness(fetch, initialProps = {}) {
+export async function createFormHarness(fetch, initialProps = {}, {cookie = analyticsCookie()} = {}) {
   const react = require("react");
   const states = [];
   const refs = [];
@@ -71,7 +74,7 @@ export async function createFormHarness(fetch, initialProps = {}) {
     react: hooks,
     "next/link": ({ children }) => children,
     "@vercel/analytics": { track: (name, props) => events.push({ name, props }) },
-  }, { fetch, requestAnimationFrame: (callback) => frames.push(callback) });
+  }, { ...consentBrowser(cookie).globals, fetch, requestAnimationFrame: (callback) => frames.push(callback) });
   const render = (props = initialProps) => {
     stateIndex = 0; refIndex = 0;
     return ContactForm(props);

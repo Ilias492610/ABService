@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { loadContactModule, syntheticInput } from "./helpers/contact-runtime.mjs";
+import { analyticsCookie } from "./helpers/consent-browser.mjs";
 import * as business from "../content/business.mjs";
 import * as media from "../content/media.mjs";
 import * as seo from "../libs/seo-data.mjs";
@@ -162,7 +163,7 @@ async function effectHarness(props = {}, href = "/contact", fetchResponse) {
     react: hooks, "@vercel/analytics": { track: (name, properties) => intakeEvents.push({ name, properties }) },
   }, {
     window: { location, history: { replaceState: (...args) => { replacements.push(args); location.href = new URL(args[2], location).href; } } },
-    document: { getElementById: (id) => id === "aanvraagformulier" ? { scrollIntoView: (options) => scrolls.push(options) } : null },
+    document: { cookie: analyticsCookie(), getElementById: (id) => id === "aanvraagformulier" ? { scrollIntoView: (options) => scrolls.push(options) } : null },
     queueMicrotask: (callback) => microtasks.push(callback), requestAnimationFrame: (callback) => frames.push(callback),
     fetch: (...args) => { requests.push(args); return fetchResponse?.(...args); },
   });
