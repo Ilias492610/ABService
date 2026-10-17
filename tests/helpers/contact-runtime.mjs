@@ -5,13 +5,14 @@ import { loadBindings, transformSync } from "next/dist/build/swc/index.js";
 import * as validation from "../../libs/contact-validation.mjs";
 import * as context from "../../libs/contact-context.mjs";
 import * as analytics from "../../libs/analytics.mjs";
+import { resolveRouteSourcePath } from "./route-source-path.mjs";
 
 const require = createRequire(import.meta.url);
 await loadBindings();
 
 // Compile the complete production module; replace only dependencies supplied by a test.
 export async function loadContactModule(relativePath, dependencies = {}, globals = {}) {
-  const filename = new URL(`../../${relativePath}`, import.meta.url);
+  const filename = new URL(`../../${resolveRouteSourcePath(relativePath)}`, import.meta.url);
   const source = await readFile(filename, "utf8");
   const { code } = transformSync(source, {
     filename: filename.pathname,

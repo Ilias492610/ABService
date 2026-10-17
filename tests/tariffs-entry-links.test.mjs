@@ -4,6 +4,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { resolveRouteSourcePath } from "./helpers/route-source-path.mjs";
 import { renderTariffs, tariffsRoute } from "./helpers/tariffs-runtime.mjs";
 import { beforeTariffEntryLinks, beforeTariffEntrySource, beforeTariffEntryProtectionSource, beforeTariffEntryProtectionCss, tariffEntryAnchors } from "./fixtures/tariffs-entry-links.mjs";
 import { getPageDefinition, pageRegistry } from "../content/site-content.mjs";
@@ -57,7 +58,7 @@ test("the exact historic inverse never hides wrong links, duplicates or unrelate
 });
 
 test("the whole-site source pin survives only the eight exact navigation and protection edits", () => {
-  const source = readFileSync(new URL("../app/tarieven/page.js", import.meta.url), "utf8");
+  const source = readFileSync(new URL("../" + resolveRouteSourcePath("app/tarieven/page.js"), import.meta.url), "utf8");
   const oldSourceHash = "ba1dedbaadeed1687cde1e52b3e9ff24df0c821dbd71cdd30b1200e3885883ea";
   assert.equal(hash(beforeTariffEntrySource(source)), oldSourceHash);
   for (const mutation of [

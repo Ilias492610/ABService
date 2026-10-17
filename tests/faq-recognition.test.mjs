@@ -3,6 +3,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
 import {readFileSync} from "node:fs";
+import {resolveRouteSourcePath} from "./helpers/route-source-path.mjs";
 import {createRequire} from "node:module";
 import {renderFaq,faqRoute} from "./helpers/faq-runtime.mjs";
 import {faqRecognitionHtml,beforeFaqRecognitionHtml,beforeFaqRecognitionSource,beforeFaqRecognitionProtectedBytes,beforeFaqRecognitionRegistry,beforeFaqRecognitionSitemapEntry,beforeFaqRecognitionCoreSources,beforeFaqRecognitionCitations} from "./fixtures/faq-recognition-history.mjs";
@@ -55,7 +56,7 @@ test("both useful official entries reach central citation monitoring with exact 
 // Wrong path/date/unknown metadata must stay visible instead of being broadly normalized.
 test("only the meaningful FAQ update gets a named date inverse and old protected sources remain exact",()=>{
   assert.equal(getPageDefinition("/faq").lastModified,"2026-10-14");
-  for(const [path,digest] of [["app/faq/page.js","1babbf6cc8406e2f9137fa4595258ff1bc66345f510202a3fbaa792424d57ca0"],["content/core-sources.mjs","27a21fd678e453be40d1dea2940f949c6224c63d86cc4d30138644b95f9aa43e"]]){const source=beforeFaucetSource(readFileSync(new URL("../"+path,import.meta.url),"utf8"),path);assert.equal(hash(beforeFaqRecognitionSource(source,path)),digest);assert.notEqual(hash(beforeFaqRecognitionSource(source+"\n// unrelated drift\n",path)),digest);}
+  for(const [path,digest] of [["app/faq/page.js","1babbf6cc8406e2f9137fa4595258ff1bc66345f510202a3fbaa792424d57ca0"],["content/core-sources.mjs","27a21fd678e453be40d1dea2940f949c6224c63d86cc4d30138644b95f9aa43e"]]){const source=beforeFaucetSource(readFileSync(new URL("../"+resolveRouteSourcePath(path),import.meta.url),"utf8"),path);assert.equal(hash(beforeFaqRecognitionSource(source,path)),digest);assert.notEqual(hash(beforeFaqRecognitionSource(source+"\n// unrelated drift\n",path)),digest);}
   const base={path:"/faq",title:"old",status:"published"},current={...base,lastModified:"2026-10-14"};
   assert.deepEqual(beforeFaqRecognitionRegistry(current),base);
   for(const mutation of [{...current,lastModified:"2026-10-13"},{...current,path:"/wrong"}])assert.deepEqual(beforeFaqRecognitionRegistry(mutation),mutation);
@@ -94,7 +95,7 @@ test("named source-byte inverse leaves every unrelated buffer and binary intact"
   for(const path of ["app/apple-icon.png","unknown/path.js","app/globals.css"])
     assert.equal(beforeFaqRecognitionProtectedBytes(bytes,path),bytes);
   for(const path of ["app/faq/page.js","content/core-sources.mjs"]){
-    const source=readFileSync(new URL("../"+path,import.meta.url));
+    const source=readFileSync(new URL("../"+resolveRouteSourcePath(path),import.meta.url));
     assert.equal(beforeFaqRecognitionProtectedBytes(source,path),beforeFaqRecognitionSource(source.toString("utf8"),path));
     assert.notEqual(beforeFaqRecognitionProtectedBytes(Buffer.concat([source,Buffer.from("\n// drift\n")]),path),beforeFaqRecognitionProtectedBytes(source,path));
   }

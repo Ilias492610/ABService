@@ -6,7 +6,7 @@ import JsonLd from "@/components/json-ld";
 import FloatingTrustSignals from "@/components/floating-trust-signals";
 import { business } from "@/content/business.mjs";
 import { buildGlobalSchemaGraph } from "@/libs/schema-data.mjs";
-import "./globals.css";
+import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 

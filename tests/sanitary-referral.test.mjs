@@ -3,6 +3,7 @@ import { beforeFaqRecognitionRegistry, beforeFaqRecognitionSource, beforeFaqReco
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import { resolveRouteSourcePath } from "./helpers/route-source-path.mjs";
 import { createHash } from "node:crypto";
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
@@ -62,7 +63,7 @@ test("exact approved source inverse recovers frozen bytes while old title new pa
       source => source + "\nexport const unknown = true;\n",
     ]],
   ]) {
-    const source = beforeFaqRecognitionSource(beforeFaucetSource(await readFile(new URL(`../${path}`, import.meta.url), "utf8"), path), path);
+    const source = beforeFaqRecognitionSource(beforeFaucetSource(await readFile(new URL(`../${resolveRouteSourcePath(path)}`, import.meta.url), "utf8"), path), path);
     assert.equal(beforeSanitaryReferralSource(source, path), f.before.sources[path]);
     assert.equal(hash(beforeSanitaryReferralSource(source, path)), digest);
     assert.equal(beforeSanitaryReferralSource(f.before.sources[path], path), f.before.sources[path]);

@@ -1,0 +1,207 @@
+[
+  {
+    "from": "app/advies/[slug]/page.js",
+    "to": "app/(nl)/advies/[slug]/page.js",
+    "sha256": "d386f77ffa36b537c67f5a4d4c7f0684980057e36302b8c13e7c0c1890d61894"
+  },
+  {
+    "from": "app/advies/drukverlies-cv-ketel/page.js",
+    "to": "app/(nl)/advies/drukverlies-cv-ketel/page.js",
+    "sha256": "678fb437a1e50e0bb7df8472bc95d82380e9394334c3a8391cf2611be105318c"
+  },
+  {
+    "from": "app/advies/page.js",
+    "to": "app/(nl)/advies/page.js",
+    "sha256": "959fd6981d5cb6b27d620d1014e2d44c728065213fcd7973dad9be5b62b7500f"
+  },
+  {
+    "from": "app/algemene-voorwaarden/page.js",
+    "to": "app/(nl)/algemene-voorwaarden/page.js",
+    "sha256": "8dff2b90ed7296ba64a785d276a8be2d3266396fd5193644f44e21fe752401af"
+  },
+  {
+    "from": "app/contact/page.js",
+    "to": "app/(nl)/contact/page.js",
+    "sha256": "4354e55d07d7b81c27d26c7f34408bb1f5da559126cf463ed577affc20debd78"
+  },
+  {
+    "from": "app/diensten/[slug]/page.js",
+    "to": "app/(nl)/diensten/[slug]/page.js",
+    "sha256": "48da5fd61a95d4adf7be56867a19372ce3981e9564d8b35ab02705ad19b70c1c"
+  },
+  {
+    "from": "app/diensten/page.js",
+    "to": "app/(nl)/diensten/page.js",
+    "sha256": "f79a1da7a6f987d32963ead978432973c5cea177da5bc689c8360e2eb81e817b"
+  },
+  {
+    "from": "app/error.js",
+    "to": "app/(nl)/error.js",
+    "sha256": "d0d75ac5bcff21f8132a6525713cfd60ce3dc83fe3ce29f89a30b9cffd4b0ff7"
+  },
+  {
+    "from": "app/faq/page.js",
+    "to": "app/(nl)/faq/page.js",
+    "sha256": "ea86aca5af0404df712aa47dc43022db75782d6980ad32da05d57428b9de589e"
+  },
+  {
+    "from": "app/foutcodes/[merk]/page.js",
+    "to": "app/(nl)/foutcodes/[merk]/page.js",
+    "sha256": "8561d9dda33854a586fce79cdb2c417fc12bda106dc9c183fce4e8d83854dc0a"
+  },
+  {
+    "from": "app/foutcodes/page.js",
+    "to": "app/(nl)/foutcodes/page.js",
+    "sha256": "a2c29c74216f541153fb24f337d312c8b7cf083253358c75ee1b588cc2259990"
+  },
+  {
+    "from": "app/herstelling/page.js",
+    "to": "app/(nl)/herstelling/page.js",
+    "sha256": "a799e52a290feadc0de6be4268634b336b4a5c1971a7a5abcaa1db0d969c656b"
+  },
+  {
+    "from": "app/installaties/airconditioning/page.js",
+    "to": "app/(nl)/installaties/airconditioning/page.js",
+    "sha256": "c4aa6918c5ccb795372b1136621989b73a0cc95ba1d6623d726e8c5ac630375f"
+  },
+  {
+    "from": "app/installaties/gasketels/page.js",
+    "to": "app/(nl)/installaties/gasketels/page.js",
+    "sha256": "a42e8f79de8c760168d0171bc0022aad853e11b4c4ba2cc21d8ff1f6d9e1057d"
+  },
+  {
+    "from": "app/installaties/page.js",
+    "to": "app/(nl)/installaties/page.js",
+    "sha256": "6eb5dea57da426a91949ea8a7c1c7e28a0de9beba680309d3cc3b63f3d824cf3"
+  },
+  {
+    "from": "app/installaties/sanitair/page.js",
+    "to": "app/(nl)/installaties/sanitair/page.js",
+    "sha256": "776736935a78f7ff165ddd0e2cd39f766b421940fb69256cf6d4438684dd4716"
+  },
+  {
+    "from": "app/keuring/page.js",
+    "to": "app/(nl)/keuring/page.js",
+    "sha256": "bc0677d0f693ab9490ab85d21741260f9bc28d5f209d829bbd8423e830227a5e"
+  },
+  {
+    "from": "app/layout.js",
+    "to": "app/(nl)/layout.js",
+    "sha256": "92668e6e7e162c401e19558e2fed9a4f121e1a9dbcd0c1a4dea2aced751016a2"
+  },
+  {
+    "from": "app/loodgieter-berchem/page.js",
+    "to": "app/(nl)/loodgieter-berchem/page.js",
+    "sha256": "6942a6efd8f5a28b810a905575913c7ba353698005762c98b4f6d7149a9f9b60"
+  },
+  {
+    "from": "app/loodgieter-berendrecht-zandvliet-lillo/page.js",
+    "to": "app/(nl)/loodgieter-berendrecht-zandvliet-lillo/page.js",
+    "sha256": "2be48b2b2a04b14ae3e9ac222e6d9c694e24ff09a2a6609389ad439c961f1f0a"
+  },
+  {
+    "from": "app/loodgieter-borgerhout/page.js",
+    "to": "app/(nl)/loodgieter-borgerhout/page.js",
+    "sha256": "d6e974e036e923586ccf80fb44c8c872dc3d5c055e357a5cac3048bd7809bc02"
+  },
+  {
+    "from": "app/loodgieter-borsbeek/page.js",
+    "to": "app/(nl)/loodgieter-borsbeek/page.js",
+    "sha256": "19634f8cd7025c4351fbc371126a756b15e72dc2c4e5af343b2671c5213406e6"
+  },
+  {
+    "from": "app/loodgieter-deurne/page.js",
+    "to": "app/(nl)/loodgieter-deurne/page.js",
+    "sha256": "3fc0d8733abd68e4c0d2923ea21ce22cb49fefaba617c741d339f9891647c458"
+  },
+  {
+    "from": "app/loodgieter-ekeren/page.js",
+    "to": "app/(nl)/loodgieter-ekeren/page.js",
+    "sha256": "ebdbc0c8a196dc88996419be100afe91fb198f921890662c3191fa36a9a80b11"
+  },
+  {
+    "from": "app/loodgieter-hoboken/page.js",
+    "to": "app/(nl)/loodgieter-hoboken/page.js",
+    "sha256": "aadf261c99a14f0d57ec916ef029930ce52fd47b82c57a1488ab8b3c5449b6b4"
+  },
+  {
+    "from": "app/loodgieter-merksem/page.js",
+    "to": "app/(nl)/loodgieter-merksem/page.js",
+    "sha256": "35762e00208bdbd420dbf40566be3860639dbd77887917b41e98ebcd73de50f1"
+  },
+  {
+    "from": "app/loodgieter-wilrijk/page.js",
+    "to": "app/(nl)/loodgieter-wilrijk/page.js",
+    "sha256": "c36667f2a9a06cad5a2cb914299cda27be9d4f58260c6ba5b82d7edb32d42dc7"
+  },
+  {
+    "from": "app/merken/[merk]/page.js",
+    "to": "app/(nl)/merken/[merk]/page.js",
+    "sha256": "141448e2e962bebc3bb3519b513ae022f15516686b64cdc06f4bc4c9b7f8566c"
+  },
+  {
+    "from": "app/merken/page.js",
+    "to": "app/(nl)/merken/page.js",
+    "sha256": "c5f52a7fac139ed8550f5f4b7b14291cbc6f0266dcde0cba6bd04849d66b98f7"
+  },
+  {
+    "from": "app/not-found.js",
+    "to": "app/(nl)/not-found.js",
+    "sha256": "4630cdf360dc69ae4442a6131e89681b8302866c515ae74bf8a47ecd021f200e"
+  },
+  {
+    "from": "app/onderhoud/page.js",
+    "to": "app/(nl)/onderhoud/page.js",
+    "sha256": "6dad76d615b92bb147075b7b795a9a8eded06944539971f13d7e6e7a5ab0d72f"
+  },
+  {
+    "from": "app/over-ons/page.js",
+    "to": "app/(nl)/over-ons/page.js",
+    "sha256": "bf233025587b0ac3439fe52aff3c2e4bf2409b4209b24ef8a725cb5a9a53d363"
+  },
+  {
+    "from": "app/page.js",
+    "to": "app/(nl)/page.js",
+    "sha256": "45aa79deeeb2e1e1f8d3f66da9f3c5d7a92778251ca846ee7ce4d6ac1543b093"
+  },
+  {
+    "from": "app/privacy-policy/page.js",
+    "to": "app/(nl)/privacy-policy/page.js",
+    "sha256": "bc25eb5bdfc5160116eef811bb87e0a2436e7c9553db9addac42b2a6ab523466"
+  },
+  {
+    "from": "app/projecten/[slug]/page.js",
+    "to": "app/(nl)/projecten/[slug]/page.js",
+    "sha256": "fee3a8b40f877116543842fa8bf894b687ff358a3c02f1d66eca2d7cb9e5a172"
+  },
+  {
+    "from": "app/projecten/page.js",
+    "to": "app/(nl)/projecten/page.js",
+    "sha256": "4f98bbf1f56e4c12bc0ca2eb7f3e60616b33954d4c75e10f1731162f1717997c"
+  },
+  {
+    "from": "app/tarieven/page.js",
+    "to": "app/(nl)/tarieven/page.js",
+    "sha256": "84d388264642f8e1d2fdd41a5468c41e55e988866a6cee48894e7f6106b02660"
+  },
+  {
+    "from": "app/tools/onderhoudscheck/page.js",
+    "to": "app/(nl)/tools/onderhoudscheck/page.js",
+    "sha256": "71b2e18adbeb8775275cd66aef55e87a4df3096f6196a308d3da74b078d68a63"
+  },
+  {
+    "from": "app/tools/watermetercheck/page.js",
+    "to": "app/(nl)/tools/watermetercheck/page.js",
+    "sha256": "a319177e12b3889fc7884b11f2af2f8371f85d0c30ec9f7a2c21998cddba43ea"
+  },
+  {
+    "from": "app/werkgebied/[regio]/page.js",
+    "to": "app/(nl)/werkgebied/[regio]/page.js",
+    "sha256": "3545ed7ac23ef4c32b2b6424181861206672f1cb032b0388d57a0e4501f923dd"
+  },
+  {
+    "from": "app/werkgebied/page.js",
+    "to": "app/(nl)/werkgebied/page.js",
+    "sha256": "4f29eaa440e8dfd4c5e03cd16399a03d379c77d69f1cc3cb16e55c86c5a56732"
+  }
+]

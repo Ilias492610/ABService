@@ -5,6 +5,7 @@ import test from "node:test";
 import { beforeTariffEntrySource, beforeTariffEntryProtectionSource, beforeTariffEntryProtectionCss } from "./fixtures/tariffs-entry-links.mjs";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import { resolveRouteSourcePath, restoreMovedRootImport } from "./helpers/route-source-path.mjs";
 import { createHash } from "node:crypto";
 import { createRequire } from "node:module";
 import { pageRegistry } from "../content/site-content.mjs";
@@ -103,7 +104,8 @@ test("only the two legal routes publish true13October dates with all registry me
   assert.equal(renderGlobalSchema(), f.before.renders.globalSchema);
   assert.equal(hash(faultGuides), f.before.faultGuidesSha256);
   for (const file of f.before.protectedFiles) {
-    const current = await readFile(new URL(`../${file.path}`, import.meta.url));
+    const loaded = await readFile(new URL(`../${resolveRouteSourcePath(file.path)}`, import.meta.url));
+    const current = file.path === "app/layout.js" ? Buffer.from(restoreMovedRootImport(loaded.toString("utf8"), file.path)) : loaded;
     const searchRestored = file.path === "components/municipality-filter.js" ? beforeMunicipalitySearchSource(current.toString("utf8")) : current;
     const escapeRestored = file.path === "components/header-navigation.js" ? beforeNavigationEscapeSource(searchRestored.toString("utf8")) : searchRestored;
     const menuRestored = file.path === "components/header-navigation.js" ? beforeMobileMenuNameSource(escapeRestored.toString("utf8")) : escapeRestored;
