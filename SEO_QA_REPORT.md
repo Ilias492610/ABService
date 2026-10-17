@@ -2,7 +2,7 @@
 
 ## 17 oktober 2026 — Lokale consentverificatie
 
-831 Node24-tests, lint0/prod0/build178, gewone lokale crawl86/97/117 en taal6/2/5.
+833 Node24-tests, lint0/prod0/build178, gewone lokale crawl86/97/117 en taal6/2/5.
 Echte SDK draait aantoonbaar via afwijkende view/eventpaden in een loopbackprobe;
 vóór keuze/weigering/foto-only geen analyticsopslag of -aanvragen. Na intrekken,
 oudeallow+writefailure, readerror, timerverval en gecontroleerde focushercontrole
@@ -15,12 +15,16 @@ aangevinkte doelen, zichtbare fout bij mislukte opslag en formulierbehoud bevest
 Geen overflow, cookieknoppen vrij van floatingbediening. Eerste reload behield
 scrollpositie; correcte topweergave apart vastgelegd en geïnspecteerd. Lokale lab-
 observatie480,5ms/0,02395layoutverschuiving, geen veld-/verbeterings-/WCAGclaim.
-831 omvat huidige runtime en exacte historische inverses; oude fixtures/hashwaarden,
+833 omvat huidige runtime en exacte historische inverses; oude fixtures/hashwaarden,
 137flags/vier integralen behouden. [Releasebewijs](docs/seo/cookie-consent-release.md).
 
 Verse dev-audit9/7hoog2matig, twee advisories; geen veilige compatibele fix,
 package-/lockwijziging of algemene securityclaim. MetadataBase-waarschuwingen
-blijven. Sole eindreview en exacte hosted/provider/liveacceptatie nog open;
+blijven. Eén eindreview vond P2: verouderde opslagfout na een geslaagde keuze via
+een andere knop. Twee eerst falende regressies bevestigen het herstel, meerdere
+foto's en geen terugkerende fout bij later verval inbegrepen. Dertien afgezonderde
+gedragingen afzonderlijk door root beoordeeld; geen tweede review.
+Exacte hosted/provider/liveacceptatie nog open;
 geen cookie-publicatie of IndexNow afgeleid uit lokale controles.
 
 ## 17 oktober 2026 — Vertaalcontrole exact live geaccepteerd

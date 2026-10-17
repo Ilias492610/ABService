@@ -1,14 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useCookieConsent } from "@/components/use-cookie-consent";
-import { readConsent, saveConsent } from "@/libs/cookie-consent-store.mjs";
+import { getConsentSnapshot, readConsent, saveConsent, subscribeConsent } from "@/libs/cookie-consent-store.mjs";
 import { getCookieConsentCopy } from "@/content/cookie-consent-copy.mjs";
 
 export default function ConsentedAuthorPhoto({photoUri,displayName,locale = "nl-BE"}) {
   const consent = useCookieConsent();
   const [error,setError] = useState(false);
+  useEffect(() => subscribeConsent(() => {
+    if (getConsentSnapshot() !== "unknown") setError(false);
+  }), []);
   const copy = getCookieConsentCopy(locale);
   const allowed = consent === "googlePhotos" || consent === "both";
   return <span className="consented-author-photo">

@@ -4,13 +4,15 @@
 
 Ontwerp én concreet uitvoeringsplan expliciet eigenaar-goedgekeurd. Drie
 implementatietaken lokaal voltooid; de vierde heeft netwerk-/opslagproeven en
-gewone kwaliteitsgates doorlopen. Eén onafhankelijke eindreview en exacte
-main/hostedCI/bestaande primaireVercelReadyProduction/fullSHA/www/live blijven
+gewone kwaliteitsgates doorlopen. Eén onafhankelijke eindreview vond een P2
+in verouderde foutmeldingen na een geslaagde keuze elders; gericht hersteld
+met twee eerst falende regressies. Dertien reviewgrenzen afzonderlijk beoordeeld.
+Exacte main/hostedCI/bestaande primaireVercelReadyProduction/fullSHA/www/live blijven
 de publicatiegrens. [Releasebewijs](../../seo/cookie-consent-release.md).
 
 NL/FR/EN, onafhankelijke optionele statistieken/foto’s,180dagen, weigeren en
 intrekken, fail-closed opslag/leesfout/verval en behoud van zakelijke functies.
-831tests/lint0/prod0/build178/lokale86-97-117/taal6-2-5. Werkelijke SDK-positieve
+833tests/lint0/prod0/build178/lokale86-97-117/taal6-2-5. Werkelijke SDK-positieve
 controle plus vijf gelijkblijvende tellerparen; alleen loopbackintake en duidelijk
 synthetische Places-data, geen API-budget/echte mail.320/390/1280 en formulierbehoud
 gecontroleerd; lokale labmeting geen veldresultaat. Geen nieuwe pagina of feitclaim.

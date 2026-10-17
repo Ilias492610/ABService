@@ -7,7 +7,8 @@ statistiek-/auteurfotokeuze met footerinstellingen. Drie privacyteksten beschrij
 180dagen, ontvangers en intrekken; zichtbare datum17oktober. Alleen NL-registrydatum
 wijzigt13→17; FR/EN stonden al17. Officiële reviewinhoud/bronlinks/score behouden,
 alleen externe auteurafbeeldingen optioneel.84published/2noindex; lokale86/97/117
-crawl en taal6/2/5 gecontroleerd. Review/publicatie/exacte acceptatie volgen nog.
+crawl en taal6/2/5 gecontroleerd. Eén eindreview en gericht foutmeldingherstel
+met twee regressies afgerond; publicatie/exacte acceptatie volgen nog.
 Geen lokale/case-/erkennings-/prijsclaim of heleWP15/12-afsluiting.
 
 ## 17 oktober 2026 — vier taalequivalenten live op b48f8c9

@@ -1,7 +1,7 @@
 # Cookieconsent voor AB Service
 
 De eigen cookievoorziening is lokaal geïmplementeerd en geverifieerd. Publicatie
-wacht nog op de onafhankelijke eindreview en de controles van de exacte commit,
+wacht nog op de controles van de exacte commit,
 hosted CI, bestaande Vercel-productiedeployment en livewerking.
 
 ## Keuzes en behoud van functies
@@ -66,7 +66,13 @@ verbeteringsclaim tegenover een niet gemeten uitgangssituatie.
 
 ## Technische controles en publicatiegrenzen
 
-Node24: 831 tests, lint 0, productieaudit 0, gewone build 178 uitvoerpunten,
+Eén onafhankelijke hele-releasebeoordeling vond één belangrijke inconsistentie:
+een mislukte opslag kon na een geslaagde keuze via een andere knop nog als fout
+worden aangekondigd. Root herstelde dit met twee eerst falende regressies voor
+beide richtingen, meerdere foto's en later verval. Alle dertien afgezonderde
+reviewgrenzen afzonderlijk beoordeeld; geen tweede review of ruimere bewijsclaim.
+
+Node24: 833 tests, lint 0, productieaudit 0, gewone build 178 uitvoerpunten,
 technische crawl 86 pagina’s / 97 interne links / 117 assets en taalaudit
 6 equivalenten / 2 groepen / 5 noindex404s. De bestaande metadataBase-waarschuwingen
 blijven zichtbaar. De verse volledige audit blijft 9 ontwikkelrecords

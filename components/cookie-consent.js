@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useCookieConsent } from "@/components/use-cookie-consent";
 import { getCookieConsentCopy } from "@/content/cookie-consent-copy.mjs";
 import { getPrivacyRoute } from "@/content/localization.mjs";
-import { readConsent, saveConsent } from "@/libs/cookie-consent-store.mjs";
+import { getConsentSnapshot, readConsent, saveConsent, subscribeConsent } from "@/libs/cookie-consent-store.mjs";
 
 export default function CookieConsent({locale = "nl-BE"}) {
   const consent = useCookieConsent();
@@ -14,6 +14,10 @@ export default function CookieConsent({locale = "nl-BE"}) {
   const [error, setError] = useState("");
   const dialog = useRef(null);
   const returnFocus = useRef(null);
+
+  useEffect(() => subscribeConsent(() => {
+    if (getConsentSnapshot() !== "unknown") setError("");
+  }), []);
 
   useEffect(() => {
     const open = event => {

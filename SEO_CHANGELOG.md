@@ -1,6 +1,6 @@
 # AB Service SEO Changelog
 
-## 17 oktober 2026 — Cookieconsent lokaal gereed voor eindreview
+## 17 oktober 2026 — Cookieconsent lokaal gecontroleerd voor publicatie
 
 Het geschreven ontwerp en uitvoeringsplan zijn expliciet eigenaar-goedgekeurd.
 Root implementeert één eigen NL/FR/EN-voorziening: onafhankelijke statistiek- en
@@ -8,7 +8,7 @@ Google-auteurfotokeuze, beide standaard uit, weigeren/intrekken via footer,
 noodzakelijke voorkeur maximaal 180 dagen en geverifieerd opslaan. Officiële
 reviews/score, contact, 24/7, WhatsApp, echte beelden en hulpmiddelen behouden.
 
-Echte RED/GREEN en 831 Node24-tests; lint 0, productieaudit 0, build 178,
+Echte RED/GREEN en 833 Node24-tests; lint 0, productieaudit 0, build 178,
 lokale crawl 86/97/117 en taal 6/2/5. Werkelijke SDK-/netwerk-/opslagproef met
 positieve controle en afwijkende lokale intake: geen nieuwe verwerking vóór
 keuze/na weigeren, foto-only zonder analytics, en gelijkblijvende tellers na
@@ -21,7 +21,11 @@ NL-registrydatum13→17, FR/EN al17. Alle137 oorspronkelijke flags/vier integral
 oudere fixtures en recovery intact. Geen nieuwe URL, package- of lockwijziging.
 Verse dev-audit blijft9 (7hoog/2matig); veilige compatibele patch ontbreekt.
 ESLint-lifecycle/bestaande metadataBase-waarschuwingen en echte WP-gates blijven.
-Volgende: één onafhankelijke hele-releasebeoordeling, dan exact main/CI/primair
+Eén onafhankelijke hele-releasebeoordeling vond één belangrijke foutmelding:
+een oude opslagfout bleef na een geslaagde keuze via een andere knop zichtbaar.
+Root herstelde die met twee eerst falende regressies, ook voor meerdere foto's
+en later verval. Alle dertien afgezonderde reviewgrenzen afzonderlijk beoordeeld;
+geen tweede reviewer of schrijver. Volgende: exact main/CI/primair
 VercelReadyProduction/fullSHA/www en liveacceptatie. Nog geen cookie-liveclaim,
 IndexNow, juridische garantie of volledige WP-afsluiting.
 

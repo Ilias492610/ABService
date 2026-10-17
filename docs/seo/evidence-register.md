@@ -3,7 +3,7 @@
 ## 17 oktober 2026 cookieconsent en werkelijke SDK-grenzen
 
 Geschreven ontwerp/plan expliciet goedgekeurd. Eigen cookie/store, alle eventgates,
-NL/FR/EN-bediening en aparte fotokeuze lokaal uitgevoerd;831tests/lint0/prod0/
+NL/FR/EN-bediening en aparte fotokeuze lokaal uitgevoerd;833tests/lint0/prod0/
 build178/lokale86-97-117/taal6-2-5. [Releasebewijs](cookie-consent-release.md)
 verwijst naar primaire GBA/Vercel/Google-bronnen en private observatielogs.
 Actuele echte SDKhash050e35bf7e6e96590f2a9de114c14ff792806ed28457b3248762944350c0ba4c;
@@ -15,7 +15,10 @@ Synthetic fixture blijft test-only; gewone build vrij van proefinstrumentatie.
 Negen dev-records blijven9 (7hoog2matig)/twee advisories; productie0. Bestaande
 compatibiliteitsdiagnose blijft van toepassing, geen geforceerde oplossing of
 ESLint-major uitgevoerd.137flags/vierintegralen/ouderefixtures/recovery behouden.
-Review/hostedCI/bestaande primaire provider/live nog open; geen algemene wettelijke
+Eén review: P2 oude foutmelding na geslaagde keuze elders, hersteld met twee
+eerst falende regressies; meerdere foto's en later verval getest. Dertien
+afgezonderde reviewgrenzen apart beoordeeld. Geen tweede review.
+HostedCI/bestaande primaire provider/live nog open; geen algemene wettelijke
 vrijstelling, indexering of volledige WP-acceptatie geclaimd.
 
 ## 17 oktober 2026 technische vertaalcontrole en dependencyonderzoek

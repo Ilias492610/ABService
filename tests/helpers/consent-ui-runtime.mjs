@@ -6,13 +6,14 @@ export const nodes = tree => Array.isArray(tree) ? tree.flatMap(nodes) : !React.
 export const text = tree => Array.isArray(tree) ? tree.map(text).join("") : React.isValidElement(tree) ? text(tree.props.children) : tree == null ? "" : String(tree);
 
 export async function consentUi(cookie = "", locale = "nl-BE") {
-  const b=consentBrowser(cookie), slots=[], effects=[];
+  const b=consentBrowser(cookie), mainSlots=[], photoSlots=new Map(), effects=[];
+  let slots=mainSlots;
   let index=0;
   const hooks={...React,
     useSyncExternalStore:(_subscribe,snapshot)=>snapshot(),
-    useState(initial){const i=index++;if(!(i in slots))slots[i]=typeof initial==="function"?initial():initial;return[slots[i],next=>{slots[i]=typeof next==="function"?next(slots[i]):next;}];},
+    useState(initial){const i=index++,current=slots;if(!(i in current))current[i]=typeof initial==="function"?initial():initial;return[current[i],next=>{current[i]=typeof next==="function"?next(current[i]):next;}];},
     useRef(initial){const i=index++;return slots[i]||={current:initial};},
-    useEffect(callback,deps){const i=index++,old=slots[i];if(!old||deps.some((value,j)=>!Object.is(value,old.deps[j])))effects.push(()=>{old?.cleanup?.();slots[i]={deps,cleanup:callback()};});},
+    useEffect(callback,deps){const i=index++,current=slots,old=current[i];if(!old||deps.some((value,j)=>!Object.is(value,old.deps[j])))effects.push(()=>{old?.cleanup?.();current[i]={deps,cleanup:callback()};});},
   };
   const api=await loadContactModule("tests/helpers/consent-ui-entry.mjs",{react:hooks,"next/image":({unoptimized:_u,...props})=>React.createElement("img",props)},b.globals);
   const nativeDialog={open:false,showModal(){this.open=true;},close(){this.open=false;dialogProps.onClose?.();}};
@@ -23,7 +24,13 @@ export async function consentUi(cookie = "", locale = "nl-BE") {
   const opener={focused:0,focus(){this.focused++;}};
   b.document.activeElement=opener;
   render();
-  return{...b,api,render,button,option,opener,nativeDialog,dialog:()=>dialogProps,
-    dispose(){for(const slot of slots)slot?.cleanup?.();},
+  const photo=(key,props)=>{
+    if(!photoSlots.has(key))photoSlots.set(key,[]);
+    const previousSlots=slots,previousIndex=index;slots=photoSlots.get(key);index=0;
+    try{const result=api.ConsentedAuthorPhoto(props);while(effects.length)effects.shift()();return result;}
+    finally{slots=previousSlots;index=previousIndex;}
+  };
+  return{...b,api,render,photo,button,option,opener,nativeDialog,dialog:()=>dialogProps,
+    dispose(){for(const instance of [mainSlots,...photoSlots.values()])for(const slot of instance)slot?.cleanup?.();},
   };
 }
