@@ -1,3 +1,5 @@
+import { getContactCopy } from '../content/contact-localization.mjs';
+
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phonePattern = /^\+?[0-9][0-9\s()./-]{6,38}[0-9]$/;
 
@@ -18,7 +20,8 @@ export const CONTACT_SERVICES = Object.freeze([
 
 const clean = (value) => (typeof value === "string" ? value.trim() : "");
 
-export const validateContactInput = (input = {}) => {
+export const validateContactInput = (input = {}, { locale = 'nl-BE' } = {}) => {
+  const copy = getContactCopy(locale).errors;
   if (!input || typeof input !== "object" || Array.isArray(input)) input = {};
   const name = clean(input.name);
   const phone = clean(input.phone);
@@ -34,27 +37,27 @@ export const validateContactInput = (input = {}) => {
     input.consent === true || input.consent === "true" || input.consent === "on";
   const errors = {};
 
-  if (!name) errors.name = "Vul uw naam in.";
-  else if (name.length > 120) errors.name = "Gebruik maximaal 120 tekens voor uw naam.";
+  if (!name) errors.name = copy.nameRequired;
+  else if (name.length > 120) errors.name = copy.nameLength;
 
-  if (!phone) errors.phone = "Vul uw telefoonnummer in.";
+  if (!phone) errors.phone = copy.phoneRequired;
   else if (!phonePattern.test(phone) || phone.replace(/\D/g, "").length < 8) {
-    errors.phone = "Vul een geldig telefoonnummer in.";
+    errors.phone = copy.phoneInvalid;
   }
 
-  if (email.length > 200) errors.email = "Gebruik maximaal 200 tekens voor uw e-mailadres.";
-  else if (!emailPattern.test(email)) errors.email = "Vul een geldig e-mailadres in.";
+  if (email.length > 200) errors.email = copy.emailLength;
+  else if (!emailPattern.test(email)) errors.email = copy.emailInvalid;
 
-  if (address.length > 200) errors.address = "Gebruik maximaal 200 tekens voor het adres.";
-  if (city.length > 100) errors.city = "Gebruik maximaal 100 tekens voor de gemeente.";
-  if (postalCode.length > 20) errors.postalCode = "Gebruik maximaal 20 tekens voor de postcode.";
+  if (address.length > 200) errors.address = copy.address;
+  if (city.length > 100) errors.city = copy.city;
+  if (postalCode.length > 20) errors.postalCode = copy.postalCode;
   if (service && !CONTACT_SERVICES.includes(service)) {
-    errors.service = "Kies een geldige dienst of laat het veld leeg.";
+    errors.service = copy.service;
   }
-  if (brand.length > 120) errors.brand = "Gebruik maximaal 120 tekens voor merk en model.";
-  if (boilerType.length > 120) errors.boilerType = "Gebruik maximaal 120 tekens voor type of productcode.";
-  if (message.length > 3000) errors.message = "Gebruik maximaal 3000 tekens voor uw toelichting.";
-  if (!consent) errors.consent = "Bevestig dat u het privacybeleid heeft gelezen.";
+  if (brand.length > 120) errors.brand = copy.brand;
+  if (boilerType.length > 120) errors.boilerType = copy.boilerType;
+  if (message.length > 3000) errors.message = copy.message;
+  if (!consent) errors.consent = copy.consent;
 
   if (Object.keys(errors).length > 0) {
     return { ok: false, errors };

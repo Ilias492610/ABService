@@ -46,7 +46,7 @@ export async function loadContactModule(relativePath, dependencies = {}, globals
   return compiledModule.exports;
 }
 
-export async function createFormHarness(fetch) {
+export async function createFormHarness(fetch, initialProps = {}) {
   const react = require("react");
   const states = [];
   const refs = [];
@@ -72,7 +72,7 @@ export async function createFormHarness(fetch) {
     "next/link": ({ children }) => children,
     "@vercel/analytics": { track: (name, props) => events.push({ name, props }) },
   }, { fetch, requestAnimationFrame: (callback) => frames.push(callback) });
-  const render = (props) => {
+  const render = (props = initialProps) => {
     stateIndex = 0; refIndex = 0;
     return ContactForm(props);
   };

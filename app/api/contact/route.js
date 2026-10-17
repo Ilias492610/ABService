@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import config from '@/config';
 import { sendEmail } from '@/libs/mailgun';
 import { validateContactInput } from '@/libs/contact-validation.mjs';
+import { getContactCopy } from '@/content/contact-localization.mjs';
+import { getContactRoute, LANGUAGE_NAMES, normalizeContactLocale } from '@/content/localization.mjs';
 
 const escapeHtml = (value) =>
   value
@@ -13,11 +15,11 @@ const escapeHtml = (value) =>
 
 const isNavigationPost = (request) => request.headers.get('sec-fetch-mode') === 'navigate';
 
-const getRedirectUrl = (request) => new URL('/contact#aanvraagformulier', request.url);
+const getRedirectUrl = (request, locale) => new URL(`${getContactRoute(locale)}#aanvraagformulier`, request.url);
 
-const buildErrorResponse = (request, message, status = 400) => {
+const buildErrorResponse = (request, message, status = 400, locale = 'nl-BE') => {
   if (isNavigationPost(request)) {
-    const redirectUrl = getRedirectUrl(request);
+    const redirectUrl = getRedirectUrl(request, locale);
     redirectUrl.searchParams.set('contact', 'error');
     return NextResponse.redirect(redirectUrl, 303);
   }
@@ -25,9 +27,9 @@ const buildErrorResponse = (request, message, status = 400) => {
   return NextResponse.json({ error: message }, { status });
 };
 
-const buildSuccessResponse = (request) => {
+const buildSuccessResponse = (request, locale) => {
   if (isNavigationPost(request)) {
-    const redirectUrl = getRedirectUrl(request);
+    const redirectUrl = getRedirectUrl(request, locale);
     redirectUrl.searchParams.set('contact', 'success');
     return NextResponse.redirect(redirectUrl, 303);
   }
@@ -56,13 +58,15 @@ export async function POST(request) {
       'Controleer de ingevulde velden en uw akkoord met het privacybeleid.'
     );
   }
+  const locale = normalizeContactLocale(data?.locale);
+  const copy = getContactCopy(locale);
   try {
-    const validation = validateContactInput(data);
+    const validation = validateContactInput(data, { locale });
 
     if (!validation.ok) {
       return buildErrorResponse(
         request,
-        'Controleer de ingevulde velden en uw akkoord met het privacybeleid.'
+        copy.invalid, 400, locale
       );
     }
 
@@ -80,8 +84,8 @@ export async function POST(request) {
     if (recipients.length === 0) {
       return buildErrorResponse(
         request,
-        'Geen ontvanger ingesteld voor contactaanvragen.',
-        500
+        copy.recipient,
+        500, locale
       );
     }
 
@@ -97,6 +101,7 @@ export async function POST(request) {
       ['Type', boilerType || '-'],
       ['Extra informatie', message || '-'],
       ['Privacy akkoord', 'Ja'],
+      ...(locale === 'nl-BE' ? [] : [['Voorkeurstaal', LANGUAGE_NAMES[locale]]]),
     ];
 
     const text = details.map(([label, value]) => `${label}: ${value}`).join('\n');
@@ -121,13 +126,13 @@ export async function POST(request) {
     });
     console.info('Contact aanvraag verstuurd via Mailgun', { id: mailgunResponse?.id });
 
-    return buildSuccessResponse(request);
+    return buildSuccessResponse(request, locale);
   } catch (error) {
     console.error('Contact form submission failed:', error);
     return buildErrorResponse(
       request,
-      'Serverfout bij het verzenden van de aanvraag. Probeer het later opnieuw.',
-      500
+      copy.server,
+      500, locale
     );
   }
 }
