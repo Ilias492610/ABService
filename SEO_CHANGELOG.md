@@ -1,5 +1,78 @@
 # AB Service SEO Changelog
 
+## 17 oktober 2026 — Cookieconsent lokaal gereed voor eindreview
+
+Het geschreven ontwerp en uitvoeringsplan zijn expliciet eigenaar-goedgekeurd.
+Root implementeert één eigen NL/FR/EN-voorziening: onafhankelijke statistiek- en
+Google-auteurfotokeuze, beide standaard uit, weigeren/intrekken via footer,
+noodzakelijke voorkeur maximaal 180 dagen en geverifieerd opslaan. Officiële
+reviews/score, contact, 24/7, WhatsApp, echte beelden en hulpmiddelen behouden.
+
+Echte RED/GREEN en 831 Node24-tests; lint 0, productieaudit 0, build 178,
+lokale crawl 86/97/117 en taal 6/2/5. Werkelijke SDK-/netwerk-/opslagproef met
+positieve controle en afwijkende lokale intake: geen nieuwe verwerking vóór
+keuze/na weigeren, foto-only zonder analytics, en gelijkblijvende tellers na
+intrekken, mislukte opslag met oude opt-in, leesfout, timerverval en gecontroleerde
+tabterugkeer. 320/390/1280 en formulierbehoud getest; geen echte mail of Google API.
+[Begrensd releasebewijs](docs/seo/cookie-consent-release.md).
+
+Privacycopy in drie talen en zichtbare beleidsdatum17oktober aangepast; alleen
+NL-registrydatum13→17, FR/EN al17. Alle137 oorspronkelijke flags/vier integralen/
+oudere fixtures en recovery intact. Geen nieuwe URL, package- of lockwijziging.
+Verse dev-audit blijft9 (7hoog/2matig); veilige compatibele patch ontbreekt.
+ESLint-lifecycle/bestaande metadataBase-waarschuwingen en echte WP-gates blijven.
+Volgende: één onafhankelijke hele-releasebeoordeling, dan exact main/CI/primair
+VercelReadyProduction/fullSHA/www en liveacceptatie. Nog geen cookie-liveclaim,
+IndexNow, juridische garantie of volledige WP-afsluiting.
+
+## 17 oktober 2026 — Cookieontwerp goedgekeurd en uitvoeringsplan ter review
+
+De eigenaar heeft het geschreven cookieontwerp expliciet goedgekeurd. Het
+[afgebakende uitvoeringsplan](docs/superpowers/plans/2026-10-17-cookie-consent.md)
+werkt vier taken uit: betrouwbare voorkeur, analyticsblokkering, NL/FR/EN-bediening
+en foto's, daarna behoud/browserverificatie/publicatie. Root blijft de enige
+schrijver met één onafhankelijke eindreview. Er zijn nog geen consentcode,
+nieuwe tests, packages, routes of productiehandelingen uitgevoerd in deze planslice.
+
+Bronnen: goedgekeurd ontwerp, actuele code en bestaande testharnassen plus één
+read-only inventaris van historische read boundaries. Zelfreview controleerde
+dekking, interfaces, volgorde, vijf risicoscenario's en expliciete RED/GREEN-gates;
+de vereiste historische adapters staan in de taak die ze meteen nodig heeft,
+niet pas na een daardoor onmogelijke volledige groene suite. Planstructuur en
+vervalberekening gecontroleerd, diff-check schoon. Volgende gate is eigenaarreview
+van het geschreven uitvoeringsplan; eerdere vier releasebackfills/recovery intact.
+Geen nieuwe runtime-/live-/IndexNowclaim of afsluiting van9dev/andereWPs.
+
+## 17 oktober 2026 — Vertaalcontrole gepubliceerd en geaccepteerd
+
+De afgebakende vertaalfix staat op exact main/remote
+`35ef4a9cea07a0f931f59a592c3f674268346618`. Alle413 onafhankelijk beoordeelde
+bestandsinhouden zijn vóór deze acceptatiebackfill opnieuw gelijk bevonden.
+Eén onafhankelijke review: geen bevindingen; alle twintig afgezonderde gedragingen
+afzonderlijk door root beoordeeld. Geen tweede review of schrijver.
+
+Lokaal/precommit785 tests, lint0, productieaudit0, build178 en lokale86/97/116crawl.
+[Exacte CI39052935365](https://github.com/Ilias492610/ABService/actions/runs/39052935365)
+is success met Node24.21.0, dezelfde785 tests, lint/prod0/build178/crawl en taalaudit.
+De bestaande primaire Vercel6fjUXim4W9qoTEfxUU8boivA1poS toont werkelijk
+Ready/Production/Current, de volledige commit en www-domein; beide bestaande
+GitHub-Productiondeployments7143041389/7143045594 success. Bestaande
+metadataBase-waarschuwingen blijven apart geregistreerd, geen warning-freeclaim.
+
+Eerste volledige livecrawl86/97/116 en taalaudit6/2/5 geslaagd. Echte Franse
+320px-validatie focust naam, na de bestaande scrollanimatie zichtbaar onder de
+header; privévelden leeg, formulierconsent uit, dertien opties inclusief
+placeholder, geen overflow of echte mail. Eerste pre-scrollbeeld en uiteindelijke
+focusweergave beide bewaard. Eigen tabs17/18 gesloten, viewport1280×720 hersteld,
+eigenserver4323 exit130; andere processen niet gestopt.
+
+Geen inhoudsdatum of IndexNow voor deze guardwijziging. Negen ontwikkelmeldingen
+en ESLint-lifecycle blijven open; package/lock onveranderd. Cookieontwerprichting
+goedgekeurd, het geschreven ontwerp wacht nog op eigenaarreview; geen consentcode
+of verwerkingswijziging gepubliceerd. Volgende: geschreven cookieontwerpreview,
+afgebakend uitvoeringsplan en daarna implementatie met echte netwerk-/opslagproeven.
+Deze feitelijke backfill blijft lokaal tot een volgende echte productrelease.
+
 ## 17 oktober 2026 — Vertaalcontrole lokaal gerepareerd en cookieontwerp voorgelegd
 
 De bestaande volledigheidscontrole is aangevuld voor alle verplichte contact-,

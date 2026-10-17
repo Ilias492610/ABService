@@ -1,5 +1,70 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 17 oktober 2026 — Cookievoorziening lokaal uitgevoerd
+
+Ontwerp én concreet uitvoeringsplan expliciet eigenaar-goedgekeurd. Drie
+implementatietaken lokaal voltooid; de vierde heeft netwerk-/opslagproeven en
+gewone kwaliteitsgates doorlopen. Eén onafhankelijke eindreview en exacte
+main/hostedCI/bestaande primaireVercelReadyProduction/fullSHA/www/live blijven
+de publicatiegrens. [Releasebewijs](../../seo/cookie-consent-release.md).
+
+NL/FR/EN, onafhankelijke optionele statistieken/foto’s,180dagen, weigeren en
+intrekken, fail-closed opslag/leesfout/verval en behoud van zakelijke functies.
+831tests/lint0/prod0/build178/lokale86-97-117/taal6-2-5. Werkelijke SDK-positieve
+controle plus vijf gelijkblijvende tellerparen; alleen loopbackintake en duidelijk
+synthetische Places-data, geen API-budget/echte mail.320/390/1280 en formulierbehoud
+gecontroleerd; lokale labmeting geen veldresultaat. Geen nieuwe pagina of feitclaim.
+
+Drie privacyteksten zichtbaar17oktober; alleen NL-registrydatum13→17, FR/EN al17.
+137 oorspronkelijke checkboxregels/vier integralen/ouderefixtures/recovery intact.
+9dev/ESLint en metadataBase-waarschuwingen blijven open, geen package/lockwijziging.
+Accounts/Maps/prijzen/WP16 blijven eigenaar-uitgesteld; persoonlijke/fysieke/case-/
+meet-/menselijke reviewgates blijven echt. Nog geen cookie-live-, IndexNow-,
+juridische conformiteits- of volledige WP-/meesterplanafsluitingsclaim.
+
+## 17 oktober 2026 — Geschreven cookieontwerp goedgekeurd
+
+De eigenaar bevestigt expliciet het geschreven cookieontwerp, inclusief aparte
+Google-auteurfotokeuze en behoud van officiële reviews/contactfuncties. Het
+[uitvoeringsplan](2026-10-17-cookie-consent.md) staat klaar voor eigenaarreview.
+Vier afhankelijk opgebouwde taken, root als enige schrijver, één onafhankelijke
+eindreview en echte netwerk-/opslag-/intrekproeven vóór gecontroleerde publicatie.
+
+Zelfreview koppelt iedere ontwerpvoorwaarde en vijf concrete risicoscenario's
+aan interfaces/tests; bron-/copy-/HTML-/registrybehoud blijft per taak groen via
+exacte nieuwe inverses, zonder oude fixtures/hashliterals te veranderen. Ook
+opslaan-fout met oude opt-in, tabterugkeer/verval, ingevuld formulier, geladen SDK
+en mobiele/fotoverzoeken zijn expliciet opgenomen. Structuur/diff/vervalsom
+gecontroleerd; nog geen productimplementatie, nieuwe audit of publicatie.
+Eerst eigenaarreview van het geschreven plan, daarna de bewaarde native uitvoering.
+Dezelfde checkout, vier lokale acceptatiebackfills en bestaande recovery blijven;
+9dev/ESLint, uitgestelde accounts/prijzen/WP16 en echte bewijs-WPgates blijven open.
+
+## 17 oktober 2026 — Technische vertaalcontrole live afgerond
+
+Exact main/remote35ef4a9cea07a0f931f59a592c3f674268346618; alle413reviewhashes
+geverifieerd. Eén onafhankelijke review zonder bevindingen en twintig expliciete
+rootrulings.785tests/lint0/prod0/build178/lokale86-97-116 en exacte
+[CI39052935365](https://github.com/Ilias492610/ABService/actions/runs/39052935365)
+success onderNode24.21.0, inclusief taal6/2/5. Werkelijke primaire Vercel
+6fjUXim4W9qoTEfxUU8boivA1poS Ready/Production/Current/fullSHA/www;
+bestaande Production7143041389/7143045594 success. Eerste live86/97/116crawl en
+taalaudit geslaagd; echte320FR-legefoutfocus zichtbaar, privévelden leeg/consentuit,
+geen overflow of echte mail. Eigen tabs/server opgeruimd, andere processen behouden.
+
+Dit sluit uitsluitend de aangekondigde minor-volledigheidscontrole van de
+taalrelease. Bestaande teksten, URLs, datums,137oorspronkelijke flags en vier
+integrale bronnen blijven gelijk. Geen IndexNow.9dev/lifecycle en de bestaande
+metadataBase-waarschuwingen blijven open; geen package-/lockwijziging of algemene
+security-/WP15-/meesterplanafsluiting.
+
+De eigenaar keurde de eigen consentvoorziening als richting goed. Het
+[geschreven cookieontwerp](../specs/2026-10-17-cookie-consent-design.md) wacht op
+eigenaarreview; daarna volgt het concrete uitvoeringsplan en echte implementatie.
+Nog geen cookieconsent live of wettelijke conformiteitsclaim. Uitgestelde
+accounts/Maps/prijzen/WP16 en bewijsgebonden persoonlijke/fysieke/case-/meetgates
+blijven ongewijzigd. Deze acceptatiebackfill blijft lokaal tot productvervolg.
+
 ## 17 oktober 2026 — Zelfstandig technisch vervolg en cookieontwerp
 
 De minor uit de geaccepteerde taalrelease is lokaal gerepareerd: expliciete

@@ -1,5 +1,52 @@
 # AB Service SEO QA Report
 
+## 17 oktober 2026 — Lokale consentverificatie
+
+831 Node24-tests, lint0/prod0/build178, gewone lokale crawl86/97/117 en taal6/2/5.
+Echte SDK draait aantoonbaar via afwijkende view/eventpaden in een loopbackprobe;
+vóór keuze/weigering/foto-only geen analyticsopslag of -aanvragen. Na intrekken,
+oudeallow+writefailure, readerror, timerverval en gecontroleerde focushercontrole
+blijven de tellerparen gelijk; expliciete attributiewisactie apart. Geen externe
+SDK-intake, Google API-call of echte mail. Gecontroleerd synthetische review/photo
+blijft uitsluitend lokaal; normale build bevat geen testinstrumentatie.
+
+NL/FR/EN,320/390/1280, Escape/Enter/Space en terugkeerfocus, twee niet vooraf
+aangevinkte doelen, zichtbare fout bij mislukte opslag en formulierbehoud bevestigd.
+Geen overflow, cookieknoppen vrij van floatingbediening. Eerste reload behield
+scrollpositie; correcte topweergave apart vastgelegd en geïnspecteerd. Lokale lab-
+observatie480,5ms/0,02395layoutverschuiving, geen veld-/verbeterings-/WCAGclaim.
+831 omvat huidige runtime en exacte historische inverses; oude fixtures/hashwaarden,
+137flags/vier integralen behouden. [Releasebewijs](docs/seo/cookie-consent-release.md).
+
+Verse dev-audit9/7hoog2matig, twee advisories; geen veilige compatibele fix,
+package-/lockwijziging of algemene securityclaim. MetadataBase-waarschuwingen
+blijven. Sole eindreview en exacte hosted/provider/liveacceptatie nog open;
+geen cookie-publicatie of IndexNow afgeleid uit lokale controles.
+
+## 17 oktober 2026 — Vertaalcontrole exact live geaccepteerd
+
+Exact main/remote35ef4a9cea07a0f931f59a592c3f674268346618, alle413reviewhashes
+opnieuw gecontroleerd vóór acceptatiebackfill. Sole onafhankelijke review0bevindingen,
+twintig afzonderlijke rootrulings. Lokale/precommit785/lint0/prod0/build178/
+crawl86/97/116; exacte hostedCI39052935365 success onderNode24.21.0 met dezelfde
+gates plus taal6/2/5. Primaire Vercel6fjUXim4W9qoTEfxUU8boivA1poS werkelijk
+Ready/Production/Current/fullSHA/www. Bestaande Production7143041389/7143045594
+beide success; geen nieuw project, domein of rechten.
+
+Eerste volledige livecrawl86/97/116 en zes-equivalentenaudit geslaagd. LiveFR320
+lege validatie toont Franse fouten, focust naam en behoudt13opties/privéleeg/
+consentfalse/geenoverflow. Eerste screenshot zat midden in de bestaande scroll;
+uiteindelijknaamtop373,8px onderheader165,7px en echte zichtbare focus bevestigd.
+Beide beelden behouden, geen echte mail of JS-off-/AT-/algemene WCAG-claim.
+Providerbeeld daadwerkelijk geïnspecteerd, eigen17/18gesloten,1280×720 hersteld,
+eigen4323serverCtrlCexit130. Geen andere processen gestopt.
+
+Geen source-/fixture-/copy-/inhoudsdatum-/IndexNowwijziging buiten benoemde guards
+en nieuwe guardtests. Bestaande metadataBase-warnings,9dev/lifecycle en echte
+WP-gates blijven open. Consent is nog uitsluitend een voorgelegd geschreven
+ontwerp; geen nieuwe toestemming, privacyverwerking of conformiteit geclaimd.
+Deze acceptatiebackfill is lokaal voor de volgende echte productrelease.
+
 ## 17 oktober 2026 — Vertaalcontrole lokaal geverifieerd
 
 17 nieuwe initialisatieregressies controleren ontbrekende, lege, whitespace- en

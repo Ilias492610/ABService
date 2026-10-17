@@ -1,5 +1,55 @@
 # Evidence Register
 
+## 17 oktober 2026 cookieconsent en werkelijke SDK-grenzen
+
+Geschreven ontwerp/plan expliciet goedgekeurd. Eigen cookie/store, alle eventgates,
+NL/FR/EN-bediening en aparte fotokeuze lokaal uitgevoerd;831tests/lint0/prod0/
+build178/lokale86-97-117/taal6-2-5. [Releasebewijs](cookie-consent-release.md)
+verwijst naar primaire GBA/Vercel/Google-bronnen en private observatielogs.
+Actuele echte SDKhash050e35bf7e6e96590f2a9de114c14ff792806ed28457b3248762944350c0ba4c;
+positieve lokale view/eventcontrole bewijst runtimeactiviteit. Vijf tellerparen
+blijven gelijk na intrekken/opslagfout/leesfout/verval/focushercontrole, bekende
+attributiewissing apart. Geen externe SDK-request, echte mail of Google API-call.
+Synthetic fixture blijft test-only; gewone build vrij van proefinstrumentatie.
+
+Negen dev-records blijven9 (7hoog2matig)/twee advisories; productie0. Bestaande
+compatibiliteitsdiagnose blijft van toepassing, geen geforceerde oplossing of
+ESLint-major uitgevoerd.137flags/vierintegralen/ouderefixtures/recovery behouden.
+Review/hostedCI/bestaande primaire provider/live nog open; geen algemene wettelijke
+vrijstelling, indexering of volledige WP-acceptatie geclaimd.
+
+## 17 oktober 2026 technische vertaalcontrole en dependencyonderzoek
+
+Afgebakende guardrelease exact main/remote35ef4a9cea07a0f931f59a592c3f674268346618,
+413reviewhashes behouden vóór backfill, sole review0bevindingen/20rootrulings.
+785/lint0/prod0/build178/local86-97-116; exacte
+[CI39052935365](https://github.com/Ilias492610/ABService/actions/runs/39052935365)
+successNode24.21.0. Werkelijke bestaande primaire Vercel
+6fjUXim4W9qoTEfxUU8boivA1poS Ready/Production/Current/fullSHA/www;
+Production7143041389/7143045594 success. Eerste livecrawl86/97/116, taal6/2/5 en
+FR320legevalidatie/focus/13opties/privateblank/consentfalse/nooverflow gecontroleerd.
+Eerste pre-scrollbeeld en uiteindelijke zichtbare focus bewaard. Geen echte mail,
+AT-/JS-off-/veld-/algemene conformiteitsclaim, inhoudsdatum of IndexNow.
+
+Verse root- en onafhankelijke diagnose:9developmentrecords7hoog2matig, twee unieke
+advisories; productieaudit0. De [braces-advisory](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm)
+meldt <=3.0.3 geraakt en geen gepatchte versie; officiële npm-metadata bevestigt
+latest3.0.3. De [parser-advisory](https://github.com/advisories/GHSA-rj75-hqrm-r3gf)
+noemt fix7.1.6; npmlegacy-v6blijft6.1.4, Tailwind3.4.19 vereist^6.1.2 en
+nested6.2.0 vereist^6.1.1. De major-override is dus geen ondersteunde compatibele
+patch. Next-plugin16.4.2 pint nogfast-glob3.3.1. Geen forcefix/Tailwindmajor/
+Nextdowngrade/package-/lockwijziging. [ESLint9EOL](https://eslint.org/version-support/)
+blijft een afzonderlijke lifecyclegrens, geen extra auditrecord.
+
+De richting voor eigen cookieconsent is eigenaar-goedgekeurd; het concrete
+[ontwerp](../superpowers/specs/2026-10-17-cookie-consent-design.md) wacht nog op
+geschreven review. Geïnstalleerde SDK2.0.1 heeft geen unmount-opruiming; het publiek
+200-script bevat `__va_attribution`-localStoragetoegang. Geen toestemmingsexemptie
+afgeleid uit cookie-free, geen banner/gating/netwerk-/opslagtest al geïmplementeerd.
+Officiële Google-reviews/score/contact blijven het behoudscriterium. Volgende gate:
+ontwerpreview, uitvoeringsplan en daarna uitvoering. Accounts/prijzen/WP16 later;
+echte persoons-/fysieke-/case-/meetbewijzen onveranderd open. Backfill nog lokaal.
+
 ## 17 oktober 2026 — Task138 gepubliceerd en geaccepteerd
 
 Exact main/remote `b48f8c993f32db0bf5489cad4ea8634320c255a4`, alle411frozen bodies
