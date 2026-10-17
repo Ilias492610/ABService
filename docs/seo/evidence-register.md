@@ -1,5 +1,34 @@
 # Evidence Register
 
+## 17 oktober 2026 Google-reviewdiagnose
+
+Read-only primaireVercelconfig toont Google-variabelen voor Production; eigen
+runtimeaanvraag bewijst juiste PlacesGET, terwijl homefallback/ratingnull blijven.
+Geen waarden/sleutels geopend en geen oorzaak uit alleen HTTP200 afgeleid.
+Serverlogging lokaal begrensd tot vaste categorieën/status/allowlistedErrorInfo;
+geen body/message/header/metadata/URL/PII.840tests/lint0/prod0/build178 en exacte
+historische inverses groen; verdere review/release/werkelijke upstreamreden open.
+Actuele primaire bronnen:
+[Google Places FAQ](https://developers.google.com/maps/documentation/places/web-service/faq),
+[Vercel runtime logs](https://vercel.com/docs/logs/runtime) en geïnstalleerde
+Next connection/fetch-documentatie. Google noemt meerdere mogelijke key/API/
+restrictieoorzaken; dit zijn hypotheses, geen vastgestelde accountfout.
+
+## 17 oktober 2026 cookie-releaseacceptatie
+
+Exact main/remote2ca4a3d1f82329b93e5d11d6880db4815fe9806b,
+[CI39058716143](https://github.com/Ilias492610/ABService/actions/runs/39058716143)
+successNode24.21.0/833tests/lint0/prod0/build178/crawl86-97-117/taal6-2-5.
+Werkelijke primaire Er1DV3BJwF8JMbL1v5qVzXhsCvbY Ready/Production/Latest/fullSHA/www;
+GitHubProduction7143998580/7143998896 success. Live86/97/117, taal6/2/5,
+drieprivacyteksten/nativeNL-FR-ENkeuzes/formulierbehoud gecontroleerd.
+LiveSDK opconfig238b62fb9a972566 heeft dezelfde050e35bf-hash als lokaleprobe,
+read-onlyGET zonderproductie-testevents. DrieprivacyURLs IndexNow200received na
+publiekbewijs, geen indexering. Googlefallback/ratingnull apart open, oorzaak
+onbekend en producenten onveranderd.9dev/ESLint/metadataBase en echteWPgates blijven.
+Eigenresourcesopgeruimd/recoverybehouden; deze acceptatiebackfill blijft lokaal.
+[Begrensd bewijs en open grenzen](cookie-consent-release.md).
+
 ## 17 oktober 2026 cookieconsent en werkelijke SDK-grenzen
 
 Geschreven ontwerp/plan expliciet goedgekeurd. Eigen cookie/store, alle eventgates,

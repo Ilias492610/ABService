@@ -1,5 +1,39 @@
 # Volledig SEO-meesterplan voor AB Service
 
+## 17 oktober 2026 — Gerichte Google-reviewdiagnose gestart
+
+Eigenaar vraagt onderzoek/veilig herstel en daarna zelfstandig uitvoerbare taken.
+Geen nieuwe algemene planronde. Afgebakende WP04/06/12/17-taskbrief in bestaande
+SDD-recovery: productievariabelen aanwezig en juiste PlacesGET daadwerkelijk in
+Vercel gezien, homefallback/ratingnull gereproduceerd; upstreamreden nog onbekend.
+Root enige schrijver, bestaande checkout en zeven cookieacceptatiebackfills behouden.
+Zes eerst falende gedragstests voor veilige serverdiagnostiek, exacte historische
+broninverse en840tests/lint0/prod0/build178 groen. Geen andere producentwijziging,
+retry/cache/scraping/fictieve review of nieuwe API/budget/grants. Review/release en
+feitelijk koppelingherstel blijven afzonderlijk open;137broncheckboxes onaangeraakt.
+Daarna: actuele NL/FR/EN-browsergaps waar gedocumenteerde bediening dat toelaat;
+eigenaar-uitgestelde/bewijsgebonden taken en9dev niet fictief sluiten.
+
+## 17 oktober 2026 — Cookievoorziening gepubliceerd; overige gates gescheiden
+
+De vier taken van het goedgekeurde cookie-uitvoeringsplan zijn uitgevoerd op
+exact main/remote2ca4a3d1f82329b93e5d11d6880db4815fe9806b. Eén eindreview,
+gericht P2-herstel met twee RED/GREEN-regressies,833lokaal/hosted en CI39058716143
+successNode24.21.0/lint0/prod0/build178/crawl86-97-117/taal6-2-5.
+Werkelijke primaireVercelEr1DV3BJwF8JMbL1v5qVzXhsCvbY Ready/Production/Latest/
+fullSHA/www; live86/97/117 en taalaudit plus NL/FR/EN-instellingen/intrekken/
+formulierbehoud bevestigd. Actuele liveSDKhash gelijk aan lokaleprobe, geen
+productie-testevents. DrieprivacyURLs IndexNow200received, geen indexering.
+
+Geen oorspronkelijke WP-checkbox gesloten door alleen deze release:137regels/
+vierintegralen intact.9dev/lifecycle/metadataBase, bredereJS-off/AT/veld/menselijke
+review en eigenaar-uitgestelde/prijsmatige/erkennings-/case-/meetgates blijven.
+LiveGoogledata momenteel niet beschikbaar (ratingnull); bronkoppeling behouden,
+oorzaak niet vastgesteld, geen echtefoto-/reviewdataPASS. Alleen eigenresources
+gesloten/1280×720hersteld/recoverybehouden. Volgende zelfstandige taak: deze
+Googlebeschikbaarheidsgrens read-only diagnosticeren; geen nieuweAPI/grants/budget.
+Acceptatiebackfill lokaal, geen docs-onlypush of nieuwe algemene planronde.
+
 ## 17 oktober 2026 — Cookievoorziening lokaal uitgevoerd
 
 Ontwerp én concreet uitvoeringsplan expliciet eigenaar-goedgekeurd. Drie

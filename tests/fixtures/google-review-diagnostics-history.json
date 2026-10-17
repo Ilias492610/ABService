@@ -1,0 +1,20 @@
+{
+  "path": "libs/google-reviews.server.js",
+  "base": "2ca4a3d1f82329b93e5d11d6880db4815fe9806b",
+  "beforeSha256": "fc46ec555444a69184aefec604eac0e1e9f1ac91e2ea274f7ae13f9b16c5e54b",
+  "afterSha256": "ee129717f89b9503af06b1a3e0f2fbb19d4a3d98ed9c8a5cc1035dd0555e15db",
+  "changes": [
+    {
+      "before": "import { connection } from \"next/server\";\nimport { business } from \"@/content/business.mjs\";\nimport { normalizeGooglePlace } from \"@/libs/google-reviews.mjs\";\n\nconst PLACE_FIELDS = [\n  \"id\",\n",
+      "after": "import { connection } from \"next/server\";\nimport { business } from \"@/content/business.mjs\";\nimport { normalizeGooglePlace } from \"@/libs/google-reviews.mjs\";\nimport { describeGooglePlacesFailure } from \"@/libs/google-places-diagnostics.mjs\";\n\nconst PLACE_FIELDS = [\n  \"id\",\n"
+    },
+    {
+      "before": "  const apiKey = process.env.GOOGLE_PLACES_API_KEY;\n  const placeId = process.env.GOOGLE_PLACE_ID || business.googlePlaceId;\n\n  if (!apiKey || !placeId) return null;\n\n  await connection();\n\n",
+      "after": "  const apiKey = process.env.GOOGLE_PLACES_API_KEY;\n  const placeId = process.env.GOOGLE_PLACE_ID || business.googlePlaceId;\n\n  if (!apiKey || !placeId) {\n    console.warn(\"[google-places]\", {operation:\"reviews\",category:\"missing_configuration\",apiKeyPresent:Boolean(apiKey),placeIdPresent:Boolean(placeId)});\n    return null;\n  }\n\n  await connection();\n\n"
+    },
+    {
+      "before": "      }\n    );\n\n    if (!response.ok) return null;\n\n    return normalizeGooglePlace(await response.json(), placeId);\n  } catch {\n    return null;\n  }\n}\n",
+      "after": "      }\n    );\n\n    if (!response.ok) {\n      console.warn(\"[google-places]\", {operation:\"reviews\",category:\"http_error\",...await describeGooglePlacesFailure(response)});\n      return null;\n    }\n\n    const place = normalizeGooglePlace(await response.json(), placeId);\n    if (!place) console.warn(\"[google-places]\", {operation:\"reviews\",category:\"invalid_payload\"});\n    return place;\n  } catch (error) {\n    const category = [\"TimeoutError\", \"AbortError\"].includes(error?.name) ? \"timeout\" : \"request_or_json_failed\";\n    console.warn(\"[google-places]\", {operation:\"reviews\",category});\n    return null;\n  }\n}\n"
+    }
+  ]
+}

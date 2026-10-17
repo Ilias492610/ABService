@@ -1,5 +1,41 @@
 # Cookieconsent voor AB Service
 
+## Publicatieacceptatie — 17 oktober 2026
+
+Gepubliceerd op exact main/remote `2ca4a3d1f82329b93e5d11d6880db4815fe9806b`.
+[CI39058716143](https://github.com/Ilias492610/ABService/actions/runs/39058716143)
+is success met Node24.21.0,833tests/lint0/prod0/build178/crawl86-97-117/taal6-2-5.
+De werkelijke primaire bestaande Verceldeployment
+Er1DV3BJwF8JMbL1v5qVzXhsCvbY toont Ready/Production/Latest, de volledige commit
+en www-domein. GitHubProduction7143998580/7143998896 zijn beide success.
+De volledige livecrawl86/97/117 en taalaudit6/2/5 slagen.
+
+Live390: twee opties uit, weigering opgeslagen over taalnavigatie, FR/EN-bediening,
+native dialoog en footerfocus bevestigd. Een synthetische Engelse formuliernaam
+blijft na openen/opslaan staan; telefoon/e-mail leeg,13opties,contactconsentfalse,
+geen overflow of verzending. Foto-only zet statistieken niet aan; intrekken zet
+beide uit. De actuele liveSDKconfig gebruikt238b62fb9a972566/{script.js,view,event,
+session}. Read-only ophalen bevestigt exact dezelfde050e35bf-hash als de lokale
+netwerkproef, zonder een productie-analyticsevent te versturen. De eerste private
+configparser verwachtte onterecht escapedquotes; die foutlog blijft behouden,
+feitelijke plainJSONparse en hashcontrole slagen, geen productwijziging.
+
+De drie substantieel gewijzigde privacyURLs zijn na livecontrole en geldige
+publieke bewijsfile eenmaal via IndexNowHTTP200received gemeld. Geen melding
+voor runtime/docs/ongewijzigde URLs; geen indexeringsbewijs.
+
+De echte Googledata zijn bij deze livecontrole tijdelijk niet beschikbaar:
+homepagefallback en openbaar ratingendpoint200/ratingnull. Review-/ratingproducenten
+zijn in deze release bytegelijk gebleven en de Maps-link blijft beschikbaar.
+Oorzaak niet vastgesteld; echte reviewdata/fotoloads niet als livePASS aangemerkt.
+De fotohoudende lokaleprobe hieronder blijft apart bewijs, geen vervanging van
+Googlebeschikbaarheid.9dev,ESLint,metadataBase en bredere menselijke/JS-off/AT/veld-
+en eigenaar-uitgestelde gates blijven open. Alle recovery behouden; eigen tabs/
+servers gesloten,1280×720hersteld. Deze acceptatiebackfill blijft lokaal tot een
+volgende echte productwijziging.
+
+## Lokale uitvoeringsgeschiedenis
+
 De eigen cookievoorziening is lokaal geïmplementeerd en geverifieerd. Publicatie
 wacht nog op de controles van de exacte commit,
 hosted CI, bestaande Vercel-productiedeployment en livewerking.

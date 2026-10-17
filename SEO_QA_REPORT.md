@@ -1,5 +1,48 @@
 # AB Service SEO QA Report
 
+## 17 oktober 2026 — Google-diagnostiek lokaal; herstel nog niet bewezen
+
+Eigen productieaanvraag18:49:44Z/rating200-null en home200/fallback gereproduceerd.
+Vercel toont beide Google-variabelen voor Production, zonder waarden te onthullen;
+eigen invocationkqr48-1792262984877-2655852a921d doet werkelijk GET naar het
+canonieke PlaceID in573ms. Geen bewijs voor ontbrekende key, verkeerde ID of
+lokale ratinglimiet bij die specifieke aanvraag. De upstreamstatus ontbreekt in
+de huidige gratis logweergave; oorzaak nog niet vastgesteld.
+
+Nieuwe serverdiagnostiek getest via de werkelijke volledige producent met uitsluitend
+externe fetch/connection/env/console-adapters.403/knownenum, onbekende/malformed
+providerbody, genormaliseerd succes, invalidpayload, timeout/network/JSON en
+missingkey: geen rawerror/message/metadata/URL/key/klantinhoud in logs. Eerste
+RED ontbrekende waarschuwingen; eerste GREEN had alleen cross-realm prototype-
+vergelijkingen in de testadapter, gecorrigeerd met structuredClone van logargumenten.
+Historische bronhash faalde terecht; exacte nieuwe inverse plus drift/binarytests
+herstelt alleen de goedgekeurde loggerwijziging, geen oudere fixture/hash herschreven.
+840tests/lint0/prod0/build178 groen. Normale lokale build meldt eerlijk missingkey
+(hier geen Googlekey) plus bestaande metadataBase-warnings. Review/release/live
+oorzaak nog open. Geen koppelingherstel, extra API of IndexNow geclaimd.
+
+## 17 oktober 2026 — Cookie-release exact live geaccepteerd
+
+Exact main/remote2ca4a3d1f82329b93e5d11d6880db4815fe9806b. Eén onafhankelijke
+review met één P2, root TDD-herstel/twee regressies,833lokaal en833hosted groen.
+CI39058716143 successNode24.21.0/lint0/prod0/build178/crawl86-97-117/taal6-2-5.
+Primaire Er1DV3BJwF8JMbL1v5qVzXhsCvbY werkelijk Ready/Production/Latest/fullSHA/www;
+GitHubProduction7143998580/7143998896 success. Geen nieuw project/domein/grant.
+Live86/97/117 en taal6/2/5, drie privacyteksten/datum/voorkeursanker bevestigd.
+Exacte liveSDKconfig238b62fb9a972566/{script.js,view,event,session}, bronhash050e35bf
+gelijk aan de lokale echteSDKproef; alleen read-onlyGET, geen analytics-testevent.
+
+Live390-nativekeuzes uit, weigering blijft na taalnavigatie, FR/EN-bediening,
+footerterugkeerfocus, Engelse formuliernaam behouden/13opties/telefoon-emailleeg/
+contactconsentfalse/nooverflow, foto-onlylaatstatistiekenuit en intrekkenbeideuit.
+Screenshotrelease-live-390-settings.png werkelijk geïnspecteerd. Geen echte mail.
+LiveGooglebeschikbaarheidsfallback en200/ratingnull zijn een open externe gate,
+geen bewijs dat reviewdata of echtefoto's nu geladen worden; producentcodeongewijzigd.
+DrieprivacyURLs IndexNow200received na bewijscontrole; indexeringnietbevestigd.
+9dev/7hoog2matig, metadataBase/ESLint en bredere JS-off/AT/veld/menselijke gates open.
+Eigen20/21/22gesloten,1280×720hersteld, eigen71024serverCtrlC130, recoverybehouden.
+Lokale acceptatiebackfill; geen docs-onlypush.
+
 ## 17 oktober 2026 — Lokale consentverificatie
 
 833 Node24-tests, lint0/prod0/build178, gewone lokale crawl86/97/117 en taal6/2/5.

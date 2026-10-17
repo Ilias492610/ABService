@@ -1,5 +1,44 @@
 # AB Service SEO Changelog
 
+## 17 oktober 2026 — Google-reviewonderzoek, beperkte diagnostiek lokaal
+
+Live homepage200 met beschikbaarheidsfallback en rating200/null opnieuw bevestigd.
+De bestaande primaire productieconfiguratie bevat de twee Google-variabelen;
+runtimebewijs toont een echte GET naar het juiste PlaceID. Geen geheimen geopend,
+nieuwe API/budget/rechten of correctie op vermoeden. Bestaande serverproducenten
+waren onveranderd sinds de eerder werkende release; fototoestemming verklaart
+geen ontbrekende serverdata.
+
+De homepageproducent krijgt uitsluitend veilige serverfoutcategorieën: HTTP-status,
+toegestane providerstatus/-reden, ontbrekende configuratie, payload- of requestfout.
+Geen ruwe Google-antwoorden, headers, sleutels, URLs of klantgegevens in logs.
+Fallback, succesvolle officiële data, veldmasker, timeout, no-store en aantal
+aanvragen blijven behouden. Zes gedragstests eerst RED, daarna GREEN; één exact
+begrensde historische broninverse, oude fixtures behouden.840tests/lint0/prod0/
+build178 lokaal groen; lokale crawl/review/exacte release en echte oorzaak nog
+open. Geen herstelde Google-koppeling of nieuwe IndexNow-melding geclaimd.
+
+## 17 oktober 2026 — Cookieconsent gepubliceerd en exact gecontroleerd
+
+Main/remote `2ca4a3d1f82329b93e5d11d6880db4815fe9806b` is gepubliceerd.
+[Exacte CI39058716143](https://github.com/Ilias492610/ABService/actions/runs/39058716143)
+is success: Node24.21.0,833tests/lint0/prod0/build178/crawl86-97-117/taal6-2-5.
+Werkelijke primaire VercelEr1DV3BJwF8JMbL1v5qVzXhsCvbY toont Ready/Production/Latest,
+volledigeSHA en www-domein. Beide bestaande GitHubProduction-records zijn success.
+Livecrawl86/97/117 en taalaudit6/2/5 slagen; NL/FR/EN-keuzes,180dagen, weigeren,
+afzonderlijke fotokeuze/intrekken en behoud van ingevulde Engelse formuliernaam
+zonder verzending bevestigd. LiveSDK op afwijkend238b62fb9a972566-pad heeft exact
+dezelfde050e35bf-bronhash als de lokale netwerkproef. Geen productie-testevents.
+
+Drie substantieel gewijzigde privacyteksten na livecontrole/geldig publiek bewijs
+eenmaal IndexNowHTTP200received; geen runtime-/docs-batch of indexeringsclaim.
+Google toont momenteel de bestaande onbeschikbaarheidsmelding; openbaar rating-
+endpoint geeft200/ratingnull. Reviewproducenten onveranderd, Maps-link behouden,
+oorzaak niet vastgesteld; echte reviewdata/fotoloads niet live alsPASS aangemerkt.
+9dev/lifecycle/metadataBase, JS-off/AT/veld/menselijke review en echte WP-gates blijven.
+Alle recovery behouden; alleen eigen tabs/servers gesloten,1280×720 hersteld.
+Deze acceptatiebackfill blijft lokaal tot een volgende echte productwijziging.
+
 ## 17 oktober 2026 — Cookieconsent lokaal gecontroleerd voor publicatie
 
 Het geschreven ontwerp en uitvoeringsplan zijn expliciet eigenaar-goedgekeurd.

@@ -1,5 +1,15 @@
 # AB Service SEO Content Inventory
 
+## 17 oktober 2026 — Cookie/privacyrelease live op2ca4a3d
+
+Geen nieuweURL. Drie inhoudelijk bijgewerkte privacyteksten met cookiekeuzes en
+17oktober bevestigd op exact2ca4a3d1f82329b93e5d11d6880db4815fe9806b;
+CI39058716143/833tests/primairReadyProduction/fullSHA/www/live86-97-117/taal6-2-5.
+DrieprivacyURLs IndexNow200received, geen indexeringsbewijs. Officiële review-
+producent en Maps-bron behouden; liveGoogledata nu tijdelijk onbeschikbaar,
+geen fictieve score/foto's als vervanging. Geen heleWP12/15-afsluiting.
+Deze acceptatiebackfill blijft lokaal voor een volgende echte productrelease.
+
 ## 17 oktober 2026 — Cookiekeuzes en drie privacyteksten lokaal
 
 Geen nieuwe URLs. Bestaande NL/FR/EN-contact/privacy-shell krijgt onafhankelijke
